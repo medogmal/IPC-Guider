@@ -1,0 +1,1433 @@
+{
+  "version": 2,
+  "updatedAt": "2025-01-23T22:00:00Z",
+  "id": "bone-joint-infections",
+  "name": "Bone & Joint Infections",
+  "description": "Osteomyelitis, septic arthritis, prosthetic joint infections, and musculoskeletal infections",
+  "icon": "accessibility",
+  "color": "#795548",
+  "conditions": [
+    {
+      "id": "septic-arthritis",
+      "name": "Septic Arthritis (Bacterial)",
+      "synonyms": [
+        "infectious arthritis",
+        "pyogenic arthritis",
+        "bacterial joint infection"
+      ],
+      "icd10": [
+        "M00.9"
+      ],
+      "severity": [
+        "severe",
+        "critical"
+      ],
+      "shortDescription": "Surgical emergency requiring urgent drainage to prevent joint destruction",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Septic arthritis is bacterial infection of joint space. Surgical emergency. Incidence: 2-10 cases per 100,000/year. Mortality: 5-15%. Permanent joint damage: 25-50% (if delayed treatment). Requires urgent drainage + antibiotics. Most common: Knee (50%), hip (20%), shoulder (10%), ankle (8%), wrist (5%). Time-critical emergency (irreversible cartilage damage within 24-48 hours).",
+            "clinical_presentation": "Acute onset (hours-days): Joint pain (95%), swelling (90%), warmth (85%), erythema (70%), fever (60%), inability to bear weight (knee/hip). Physical exam: Joint effusion, tenderness, limited range of motion (pain with passive movement), warmth, erythema. Monoarticular (90%), polyarticular (10%, worse prognosis).",
+            "diagnostic_criteria": "Clinical suspicion (acute monoarticular arthritis + fever) + synovial fluid analysis (WBC >50,000 cells/mm³, PMN >90%, positive Gram stain or culture). Synovial fluid WBC >50,000 = septic arthritis until proven otherwise.",
+            "risk_factors": [
+              "Prosthetic joint (10-20x increased risk)",
+              "Rheumatoid arthritis or osteoarthritis (pre-existing joint disease)",
+              "Diabetes mellitus (3-5x increased risk)",
+              "Immunosuppression (HIV, corticosteroids, biologics, chemotherapy)",
+              "IV drug use (hematogenous spread)",
+              "Recent joint injection or arthroscopy (iatrogenic)",
+              "Skin infection or cellulitis (contiguous spread)",
+              "Bacteremia or endocarditis (hematogenous spread)"
+            ],
+            "red_flags": [
+              "Hip involvement - surgical emergency, high risk of avascular necrosis, urgent drainage",
+              "Prosthetic joint - requires removal or two-stage revision, high failure rate with antibiotics alone",
+              "Polyarticular (>1 joint) - worse prognosis, higher mortality, disseminated infection",
+              "Gonococcal arthritis - young sexually active, migratory polyarthralgia, tenosynovitis, skin lesions",
+              "Immunocompromised - broader differential (fungi, mycobacteria, atypical bacteria)"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Arthrocentesis (joint aspiration) URGENT (gold standard). Perform BEFORE antibiotics if possible (but do NOT delay antibiotics >1 hour). Send synovial fluid for: Cell count with differential, Gram stain, culture (aerobic + anaerobic), crystal analysis (rule out gout/pseudogout). Blood cultures x2 sets (positive in 50-70%).",
+            "essential_tests": [
+              "Arthrocentesis (synovial fluid analysis): WBC >50,000 cells/mm³ (sensitivity 60-70%, specificity 90-95%), PMN >90% (sensitivity 70-80%). Gram stain positive in 50-75%. Culture positive in 70-90% (gold standard).",
+              "Blood cultures x2 sets BEFORE antibiotics (positive in 50-70%)",
+              "CBC with differential (leukocytosis 12,000-20,000)",
+              "CMP (assess renal function)",
+              "ESR, CRP (elevated, ESR >30 mm/hr in 90%, CRP >100 mg/L in 80%)",
+              "X-ray of affected joint (baseline, assess for osteomyelitis, foreign body)"
+            ],
+            "conditional_tests": [
+              "MRI of affected joint: If osteomyelitis suspected (bone marrow edema, periosteal reaction). Sensitivity 90-95%.",
+              "Ultrasound of affected joint: If hip or shoulder (guide arthrocentesis, detect effusion). Sensitivity 90-95% for effusion.",
+              "Gonococcal testing: If young sexually active, migratory polyarthralgia, tenosynovitis, skin lesions. Synovial fluid NAAT (PCR) for N. gonorrhoeae. Urogenital, pharyngeal, rectal swabs for culture.",
+              "Lyme serology: If endemic area (Northeast US), subacute presentation, large joint (knee)."
+            ],
+            "when_not_to_test": "Do NOT delay arthrocentesis for imaging (perform immediately). Do NOT delay antibiotics >1 hour if unable to perform arthrocentesis (start empiric antibiotics, attempt arthrocentesis later). Do NOT perform arthrocentesis through cellulitis (risk of introducing infection).",
+            "turnaround_time": "Arthrocentesis: <1 hour (urgent). Synovial fluid Gram stain: 30-60 minutes. Synovial fluid culture: Preliminary 24-48 hours, final 5-7 days. Blood cultures: Preliminary 24-48 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "staphylococcus_aureus": "Most common (40-50%). MRSA common (30-50%). Source: Hematogenous, contiguous spread, iatrogenic. All ages.",
+            "streptococcus_species": "20-30%: S. pyogenes (Group A Strep, 10-15%), S. pneumoniae (5-10%), viridans streptococci (5-10%). Source: Hematogenous, contiguous spread.",
+            "neisseria_gonorrhoeae": "10-20% in young sexually active adults (<40 years). Presentation: Migratory polyarthralgia, tenosynovitis, skin lesions (pustules). Synovial fluid culture often negative (NAAT/PCR more sensitive). Urogenital, pharyngeal, rectal cultures positive.",
+            "gram_negative_bacilli": "10-20%: E. coli, Pseudomonas, Klebsiella. Source: Hematogenous (UTI, GI), IV drug use. Elderly, immunocompromised. ESBL common (30-50%).",
+            "polymicrobial": "5-10%: Mixed aerobic and anaerobic bacteria. Source: Contiguous spread (diabetic foot, decubitus ulcer), trauma.",
+            "culture_negative": "10-20%: Prior antibiotics, fastidious organisms (Kingella kingae in children <5 years, Brucella, fungi, mycobacteria).",
+            "resistance_patterns": "MRSA 30-50%. ESBL Gram-negatives 30-50%. Multidrug-resistant Pseudomonas 30-40%."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "standard_regimen": "Vancomycin 15-20mg/kg IV q8-12h + Ceftriaxone 2g IV q24h. Covers MRSA, Streptococcus, N. gonorrhoeae. Duration: 2-4 weeks (IV, then PO if improving).",
+            "iv_drug_use_or_mrsa_risk": "Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h. Covers MRSA, Pseudomonas. Duration: 2-4 weeks.",
+            "immunocompromised_or_gram_negative_risk": "Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h OR Meropenem 2g IV q8h. Covers MRSA, Pseudomonas, ESBL. Duration: 2-4 weeks.",
+            "gonococcal_arthritis_suspected": "Ceftriaxone 1-2g IV q24h. Covers N. gonorrhoeae (including cephalosporin-resistant strains). Duration: 7-14 days (shorter than non-gonococcal). Treat sexual partners.",
+            "urgent_drainage": "CRITICAL for cure. Arthroscopic drainage (preferred, allows visualization, debridement) OR Open surgical drainage (if hip, shoulder, or failed arthroscopy) OR Serial arthrocentesis (if gonococcal, small effusion, or high surgical risk). Indications: All cases (septic arthritis requires drainage, antibiotics alone fail). Timing: Within 24 hours (urgent, ideally within 6-12 hours).",
+            "alternatives": "Beta-lactam allergy: Vancomycin 15-20mg/kg IV q8-12h + Aztreonam 2g IV q8h (Gram-negatives) OR Fluoroquinolone (levofloxacin 750mg IV daily, if susceptible).",
+            "avoid_list": "Avoid antibiotics alone without drainage (high failure rate 50-70%, irreversible cartilage damage). Avoid inadequate MRSA coverage (vancomycin required). Avoid delaying drainage >24 hours (cartilage damage within 24-48 hours)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "urgent_drainage": "CRITICAL for cure. Arthroscopic drainage (preferred, allows visualization, debridement, irrigation) OR Open surgical drainage (if hip, shoulder, failed arthroscopy, or extensive joint destruction) OR Serial arthrocentesis (if gonococcal, small effusion, or high surgical risk). Timing: Within 24 hours (urgent, ideally within 6-12 hours). Delay >24 hours = higher risk of permanent joint damage (25-50%). Antibiotics alone = high failure rate (50-70%).",
+            "targeted_antibiotics": "Narrow based on synovial fluid or blood culture results. MRSA: Vancomycin 15-20mg/kg IV q8-12h. MSSA: Nafcillin 2g IV q4h OR Cefazolin 2g IV q8h. Streptococcus: Penicillin G 4 million units IV q4h OR Ceftriaxone 2g IV q24h. N. gonorrhoeae: Ceftriaxone 1-2g IV q24h. Gram-negatives: Ceftriaxone 2g IV q24h OR Cefepime 2g IV q8h. ESBL: Meropenem 2g IV q8h.",
+            "duration": "2-4 weeks total (IV + PO). Non-gonococcal: 3-4 weeks (IV 2-3 weeks, then PO 1-2 weeks). Gonococcal: 7-14 days (shorter, IV 1-2 days until improvement, then PO 5-12 days). Prosthetic joint: 4-6 weeks (longer, often requires removal).",
+            "monitoring": "Daily: Vital signs, joint exam (pain, swelling, range of motion). Every 2-3 days: CBC, CMP, ESR, CRP (monitor WBC normalization, CRP decline). Repeat arthrocentesis if no improvement in 48-72 hours (assess synovial fluid WBC, culture). Repeat drainage if persistent effusion or worsening symptoms.",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Discontinue vancomycin if no MRSA. Narrow Gram-negative coverage if ESBL-negative. Switch IV to PO when: (1) Afebrile >48 hours, (2) Improving clinically (pain, swelling, range of motion), (3) CRP declining (>50% reduction).",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >48 hours, (2) Improving clinically, (3) CRP declining >50%. PO options: Linezolid 600mg PO BID (MRSA) OR Cephalexin 500mg PO QID (MSSA, Streptococcus) OR Ciprofloxacin 500-750mg PO BID (Gram-negatives, if susceptible) OR Amoxicillin-clavulanate 875mg PO BID."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "total_duration": "2-4 weeks (IV + PO). Non-gonococcal: 3-4 weeks (IV 2-3 weeks, then PO 1-2 weeks). Gonococcal: 7-14 days (IV 1-2 days, then PO 5-12 days). Prosthetic joint: 4-6 weeks (often requires removal).",
+            "monitoring": "Daily: Vital signs, joint exam (pain, swelling, range of motion). Every 2-3 days: CBC, CMP, ESR, CRP (monitor WBC normalization, CRP decline >50%). Repeat arthrocentesis if no improvement in 48-72 hours. Physical therapy: Start early (passive range of motion within 48-72 hours, active range of motion when pain allows).",
+            "stop_criteria": "Completed 2-4 weeks. Afebrile >1 week. Improving clinically (pain, swelling, range of motion). CRP normalized or near baseline. No complications (osteomyelitis, recurrence, joint destruction)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "hip_septic_arthritis": "Surgical emergency. High risk of avascular necrosis (blood supply compromised by increased intra-articular pressure). Urgent open surgical drainage (within 6-12 hours). Arthroscopic drainage less effective for hip. Antibiotics: Same as standard regimen. Duration: 3-4 weeks. Prognosis: Worse than other joints (higher risk of permanent damage).",
+            "prosthetic_joint_infection": "Requires removal or two-stage revision (antibiotics alone fail 80-90%). Early infection (<3 months post-op): Debridement, antibiotics, retention (DAIR) if stable implant. Late infection (>3 months): Two-stage revision (removal, antibiotics 6 weeks, reimplantation). Antibiotics: Vancomycin + cefepime or meropenem x 4-6 weeks. Biofilm formation (difficult to eradicate). Orthopedic surgery consultation CRITICAL.",
+            "gonococcal_arthritis": "Young sexually active adults (<40 years). Presentation: Migratory polyarthralgia, tenosynovitis (wrist, ankle, fingers), skin lesions (pustules on extremities). Synovial fluid culture often negative (NAAT/PCR more sensitive). Urogenital, pharyngeal, rectal cultures positive. Treatment: Ceftriaxone 1-2g IV q24h x 1-2 days, then cefixime 400mg PO BID x 5-12 days (total 7-14 days). Treat sexual partners. Test for other STIs (chlamydia, HIV, syphilis).",
+            "lyme_arthritis": "Endemic areas (Northeast US). Subacute presentation (weeks-months). Large joint (knee, 90%). Synovial fluid WBC 10,000-50,000 (lower than bacterial). Lyme serology positive (IgG). Treatment: Doxycycline 100mg PO BID x 28 days OR Amoxicillin 500mg PO TID x 28 days. IV ceftriaxone 2g IV q24h x 14-28 days if neurological involvement.",
+            "polyarticular_septic_arthritis": "Worse prognosis. Higher mortality (15-30%). Disseminated infection (bacteremia, endocarditis). Requires drainage of all affected joints. Antibiotics: Same as standard regimen. Duration: 4-6 weeks (longer than monoarticular). Echocardiography (rule out endocarditis).",
+            "osteomyelitis_complication": "Occurs in 10-20% (contiguous spread from joint to bone). MRI: Bone marrow edema, periosteal reaction. Treatment: Longer antibiotics (4-6 weeks), may require surgical debridement. Orthopedic surgery consultation."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "De-escalate within 48-72 hours based on synovial fluid or blood culture results",
+              "Discontinue vancomycin if no MRSA",
+              "Narrow Gram-negative coverage if ESBL-negative",
+              "Switch IV to PO when afebrile >48 hours, improving clinically, CRP declining >50%",
+              "Fixed duration 2-4 weeks (avoid prolonged courses unless osteomyelitis)"
+            ],
+            "timeout_checklist": [
+              "Is drainage performed? (CRITICAL for cure, antibiotics alone fail 50-70%)",
+              "Are synovial fluid or blood culture results available? (Narrow antibiotics based on results)",
+              "Is patient improving clinically? (Pain, swelling, range of motion)",
+              "Is CRP declining? (>50% reduction indicates response)",
+              "Can I de-escalate antibiotics? (Based on culture results)",
+              "Can I switch IV to PO? (If afebrile >48 hours, improving clinically, CRP declining)",
+              "Can I stop antibiotics? (If 2-4 weeks completed, CRP normalized)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use antibiotics alone without drainage (high failure rate 50-70%). Do NOT use prolonged antibiotics beyond 2-4 weeks (unless osteomyelitis). Do NOT delay drainage >24 hours (irreversible cartilage damage).",
+            "patient_education": "Septic arthritis is surgical emergency requiring urgent drainage + antibiotics (2-4 weeks). Complete full antibiotic course. Physical therapy CRITICAL (start early, passive range of motion within 48-72 hours). Watch for complications (joint destruction, osteomyelitis, recurrence). Follow-up with orthopedics (assess joint function, range of motion). Permanent joint damage risk (25-50% if delayed treatment)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Septic Arthritis Guidelines (2015)",
+              "url": "https://academic.oup.com/cid/article/61/9/e26/452579"
+            },
+            {
+              "label": "Orthopedic Surgery Septic Arthritis Guidelines (2018)",
+              "url": "https://journals.lww.com/jaaos/Abstract/2018/09150/Septic_Arthritis.3.aspx"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "acute-osteomyelitis",
+      "name": "Acute Osteomyelitis",
+      "synonyms": [
+        "bone infection",
+        "acute bone infection"
+      ],
+      "icd10": [
+        "M86.10"
+      ],
+      "severity": [
+        "moderate",
+        "severe"
+      ],
+      "shortDescription": "Acute bone infection requiring prolonged antibiotics and possible surgery",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Acute osteomyelitis is bacterial infection of bone (onset <2 weeks). Incidence: 2-5 cases per 100,000/year (children), 0.5-2 cases per 100,000/year (adults). Mortality: <5% (with treatment). Chronic osteomyelitis risk: 10-30% (if delayed treatment). Requires prolonged antibiotics (4-6 weeks) ± surgical debridement. Most common sites: Long bones (femur, tibia) in children, vertebrae in adults.",
+            "clinical_presentation": "Acute onset (days-weeks): Bone pain (90%), fever (60-70%), localized tenderness (80%), swelling (60%), erythema (50%), inability to bear weight (if lower extremity). Physical exam: Point tenderness over affected bone, warmth, swelling, limited range of motion (adjacent joint).",
+            "diagnostic_criteria": "Clinical suspicion (bone pain + fever + localized tenderness) + imaging (MRI: bone marrow edema, periosteal reaction) + elevated inflammatory markers (ESR, CRP) ± positive blood or bone culture.",
+            "risk_factors": [
+              "Diabetes mellitus (10-20x increased risk, especially foot)",
+              "Peripheral vascular disease (impaired blood supply)",
+              "Trauma or open fracture (contiguous spread)",
+              "Orthopedic surgery or hardware (iatrogenic)",
+              "Bacteremia or endocarditis (hematogenous spread)",
+              "IV drug use (hematogenous spread, vertebral osteomyelitis)",
+              "Immunosuppression (HIV, corticosteroids, chemotherapy)",
+              "Sickle cell disease (Salmonella osteomyelitis)"
+            ],
+            "red_flags": [
+              "Vertebral osteomyelitis - risk of epidural abscess, paralysis, urgent MRI spine",
+              "Diabetic foot osteomyelitis - high amputation risk, requires aggressive management",
+              "Prosthetic joint or hardware - requires removal, high failure rate with antibiotics alone",
+              "Bacteremia or endocarditis - hematogenous spread, higher mortality",
+              "Immunocompromised - broader differential (fungi, mycobacteria, atypical bacteria)"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "MRI of affected bone (gold standard, sensitivity 90-95%). Blood cultures x2 sets BEFORE antibiotics (positive in 50-60%). Bone biopsy or aspiration for culture (if blood cultures negative, guides therapy). ESR, CRP (elevated, monitor response).",
+            "essential_tests": [
+              "MRI of affected bone: Bone marrow edema (T1 hypointense, T2 hyperintense), periosteal reaction, soft tissue edema, abscess. Sensitivity 90-95%, specificity 80-90%. Gold standard.",
+              "Blood cultures x2 sets BEFORE antibiotics (positive in 50-60%)",
+              "CBC with differential (leukocytosis 12,000-18,000)",
+              "CMP (assess renal function)",
+              "ESR, CRP (elevated, ESR >30 mm/hr in 90%, CRP >50 mg/L in 80%). Monitor response (CRP declines within 1-2 weeks).",
+              "X-ray of affected bone (baseline, assess for fracture, foreign body). Insensitive early (changes appear after 10-14 days)."
+            ],
+            "conditional_tests": [
+              "Bone biopsy or aspiration for culture: If blood cultures negative (50%), guides antibiotic therapy. Obtain BEFORE antibiotics if possible. Send for Gram stain, culture (aerobic + anaerobic + fungal + mycobacterial).",
+              "CT of affected bone: If MRI contraindicated (pacemaker, metal implants). Less sensitive than MRI (sensitivity 70-80%).",
+              "Nuclear medicine scan (bone scan, WBC scan): If MRI unavailable or multifocal osteomyelitis suspected. Sensitivity 80-90%, specificity 70-80%.",
+              "Echocardiography (TEE): If bacteremia or multiple sites (rule out endocarditis, hematogenous source)."
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics for bone biopsy if septic or unstable (start empiric antibiotics, perform biopsy later if needed). Do NOT rely on X-ray alone (insensitive early, changes appear after 10-14 days).",
+            "turnaround_time": "MRI: 1-4 hours. Blood cultures: Preliminary 24-48 hours. Bone culture: 24-72 hours (aerobic/anaerobic), 4-6 weeks (mycobacterial). ESR, CRP: 1-2 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "staphylococcus_aureus": "Most common (60-80%). MRSA common (30-50%). Source: Hematogenous, contiguous spread, trauma. All ages.",
+            "streptococcus_species": "10-15%: S. pyogenes (Group A Strep), S. agalactiae (Group B Strep, neonates), viridans streptococci. Source: Hematogenous, contiguous spread.",
+            "gram_negative_bacilli": "10-20%: E. coli, Pseudomonas, Klebsiella, Salmonella (sickle cell disease). Source: Hematogenous (UTI, GI), IV drug use, diabetic foot. ESBL common (30-50%).",
+            "polymicrobial": "10-20%: Mixed aerobic and anaerobic bacteria. Source: Contiguous spread (diabetic foot, decubitus ulcer, trauma), open fracture.",
+            "anaerobes": "5-10%: Bacteroides, Peptostreptococcus. Source: Contiguous spread (diabetic foot, decubitus ulcer), human/animal bite.",
+            "culture_negative": "20-30%: Prior antibiotics, fastidious organisms (Kingella kingae in children <5 years, Brucella, fungi, mycobacteria).",
+            "resistance_patterns": "MRSA 30-50%. ESBL Gram-negatives 30-50%. Multidrug-resistant Pseudomonas 30-40%."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "standard_regimen": "Vancomycin 15-20mg/kg IV q8-12h + Ceftriaxone 2g IV q24h. Covers MRSA, Streptococcus, Gram-negatives. Duration: 4-6 weeks (IV, then PO if improving).",
+            "iv_drug_use_or_pseudomonas_risk": "Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h. Covers MRSA, Pseudomonas. Duration: 4-6 weeks.",
+            "diabetic_foot_or_polymicrobial": "Vancomycin 15-20mg/kg IV q8-12h + Piperacillin-tazobactam 4.5g IV q6h OR Meropenem 2g IV q8h. Covers MRSA, Gram-negatives, anaerobes. Duration: 4-6 weeks.",
+            "sickle_cell_disease": "Ceftriaxone 2g IV q24h + Vancomycin 15-20mg/kg IV q8-12h. Covers Salmonella (most common in sickle cell), S. aureus. Duration: 4-6 weeks.",
+            "surgical_debridement": "Indicated if: (1) Abscess or sequestrum (dead bone), (2) Prosthetic hardware, (3) Failed medical therapy (no improvement after 2-4 weeks), (4) Chronic osteomyelitis. Timing: Urgent if abscess or septic. Obtain intraoperative cultures (guides antibiotic therapy).",
+            "alternatives": "Beta-lactam allergy: Vancomycin 15-20mg/kg IV q8-12h + Aztreonam 2g IV q8h (Gram-negatives) OR Fluoroquinolone (levofloxacin 750mg IV daily, if susceptible).",
+            "avoid_list": "Avoid inadequate MRSA coverage (vancomycin required). Avoid inadequate Gram-negative coverage (ceftriaxone or cefepime required). Avoid short antibiotic courses <4 weeks (high relapse rate 30-50%)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "targeted_antibiotics": "Narrow based on blood or bone culture results. MRSA: Vancomycin 15-20mg/kg IV q8-12h. MSSA: Nafcillin 2g IV q4h OR Cefazolin 2g IV q8h. Streptococcus: Penicillin G 4 million units IV q4h OR Ceftriaxone 2g IV q24h. Gram-negatives: Ceftriaxone 2g IV q24h OR Cefepime 2g IV q8h. ESBL: Meropenem 2g IV q8h. Pseudomonas: Cefepime 2g IV q8h OR Meropenem 2g IV q8h.",
+            "duration": "4-6 weeks total (IV + PO). IV therapy: 2-4 weeks minimum. Switch to PO when: (1) Afebrile >1 week, (2) Improving clinically (pain, swelling), (3) CRP declining (>50% reduction). PO therapy: 2-4 weeks (after IV).",
+            "monitoring": "Weekly: CBC, CMP, ESR, CRP (monitor WBC normalization, CRP decline >50%). Repeat MRI at 4-6 weeks: Assess bone marrow edema resolution (should improve). If no improvement: Consider surgical debridement, alternative diagnosis, or resistant organism.",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Discontinue vancomycin if no MRSA. Narrow Gram-negative coverage if ESBL-negative. Switch IV to PO when afebrile >1 week, improving clinically, CRP declining >50%.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >1 week, (2) Improving clinically, (3) CRP declining >50%. PO options: Linezolid 600mg PO BID (MRSA) OR Cephalexin 500mg PO QID (MSSA, Streptococcus) OR Ciprofloxacin 500-750mg PO BID + Rifampin 600mg PO daily (if susceptible) OR Levofloxacin 750mg PO daily (Gram-negatives).",
+            "surgical_debridement": "Indicated if: (1) Abscess or sequestrum (dead bone), (2) Prosthetic hardware (requires removal), (3) Failed medical therapy (no improvement after 2-4 weeks), (4) Chronic osteomyelitis. Obtain intraoperative cultures (guides antibiotic therapy). Antibiotics: Continue 4-6 weeks after debridement."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "total_duration": "4-6 weeks (IV + PO). IV therapy: 2-4 weeks minimum. PO therapy: 2-4 weeks (after IV). Longer if: Prosthetic hardware (6-12 weeks), chronic osteomyelitis (6-12 weeks), vertebral osteomyelitis (6-12 weeks).",
+            "monitoring": "Weekly: CBC, CMP, ESR, CRP (monitor WBC normalization, CRP decline >50%). Repeat MRI at 4-6 weeks: Assess bone marrow edema resolution. If no improvement: Consider surgical debridement, alternative diagnosis, or resistant organism. Physical therapy: Start early (weight-bearing as tolerated, range of motion).",
+            "stop_criteria": "Completed 4-6 weeks. Afebrile >2 weeks. Improving clinically (pain, swelling, weight-bearing). CRP normalized or near baseline. No complications (abscess, sequestrum, chronic osteomyelitis)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "vertebral_osteomyelitis": "See separate condition (Vertebral Osteomyelitis/Spondylodiscitis). Risk of epidural abscess (10-20%), paralysis. Urgent MRI spine. Duration: 6-12 weeks (longer than peripheral osteomyelitis). May require surgical stabilization.",
+            "diabetic_foot_osteomyelitis": "See separate condition (Diabetic Foot Osteomyelitis). High amputation risk (10-30%). Probe-to-bone test (sensitivity 90%). Polymicrobial (60-80%). Duration: 6-12 weeks. May require amputation.",
+            "prosthetic_joint_or_hardware": "Requires removal (antibiotics alone fail 80-90%). Biofilm formation (difficult to eradicate). Two-stage revision: Removal, antibiotics 6 weeks, reimplantation. Antibiotics: Vancomycin + cefepime or meropenem x 6-12 weeks. Orthopedic surgery consultation CRITICAL.",
+            "chronic_osteomyelitis": "Onset >2 weeks or recurrent. Sequestrum (dead bone), sinus tract, fistula. Requires surgical debridement (antibiotics alone fail 70-90%). Duration: 6-12 weeks (longer than acute). May require multiple surgeries, bone grafting, flap coverage.",
+            "sickle_cell_disease": "Salmonella most common (50-70%, vs. 1-2% in general population). S. aureus also common (30-40%). Presentation: Difficult to distinguish from vaso-occlusive crisis (both cause bone pain, fever). MRI required. Treatment: Ceftriaxone 2g IV q24h + vancomycin x 4-6 weeks.",
+            "children": "Hematogenous spread most common (metaphysis of long bones, rich blood supply). Kingella kingae common in children <5 years (fastidious, culture-negative). Empiric: Nafcillin or cefazolin (MSSA coverage). Duration: 3-4 weeks (shorter than adults)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "De-escalate within 48-72 hours based on blood or bone culture results",
+              "Discontinue vancomycin if no MRSA",
+              "Narrow Gram-negative coverage if ESBL-negative",
+              "Switch IV to PO when afebrile >1 week, improving clinically, CRP declining >50%",
+              "Fixed duration 4-6 weeks (avoid prolonged courses unless chronic osteomyelitis or prosthetic hardware)"
+            ],
+            "timeout_checklist": [
+              "Are blood or bone culture results available? (Narrow antibiotics based on results)",
+              "Is patient improving clinically? (Pain, swelling, weight-bearing)",
+              "Is CRP declining? (>50% reduction indicates response)",
+              "Is surgical debridement indicated? (Abscess, sequestrum, prosthetic hardware, failed medical therapy)",
+              "Can I de-escalate antibiotics? (Based on culture results)",
+              "Can I switch IV to PO? (If afebrile >1 week, improving clinically, CRP declining)",
+              "Can I stop antibiotics? (If 4-6 weeks completed, CRP normalized)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use short antibiotic courses <4 weeks (high relapse rate 30-50%). Do NOT use prolonged antibiotics beyond 4-6 weeks (unless chronic osteomyelitis, prosthetic hardware, or vertebral osteomyelitis). Do NOT delay surgical debridement if abscess, sequestrum, or prosthetic hardware.",
+            "patient_education": "Acute osteomyelitis requires prolonged antibiotics (4-6 weeks, IV then PO). Complete full antibiotic course (relapse risk 30-50% if incomplete). Physical therapy CRITICAL (weight-bearing as tolerated, range of motion). Watch for complications (abscess, chronic osteomyelitis, recurrence). Follow-up with orthopedics (assess bone healing, function). Chronic osteomyelitis risk (10-30% if delayed treatment)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Osteomyelitis Guidelines (2015)",
+              "url": "https://academic.oup.com/cid/article/61/9/e26/452579"
+            },
+            {
+              "label": "Orthopedic Surgery Osteomyelitis Guidelines (2019)",
+              "url": "https://journals.lww.com/jaaos/Abstract/2019/10150/Osteomyelitis.4.aspx"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "prosthetic-joint-infection",
+      "name": "Prosthetic Joint Infection (PJI)",
+      "synonyms": [
+        "periprosthetic joint infection",
+        "implant infection"
+      ],
+      "icd10": [
+        "T84.50XA"
+      ],
+      "severity": [
+        "severe",
+        "critical"
+      ],
+      "shortDescription": "Requires removal or two-stage revision with prolonged antibiotics",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Prosthetic joint infection (PJI) is bacterial infection of prosthetic joint (hip, knee most common). Incidence: 1-2% (primary arthroplasty), 3-5% (revision arthroplasty). Mortality: 2-5%. Requires removal or two-stage revision (antibiotics alone fail 80-90%). Biofilm formation (bacteria adhere to prosthesis, difficult to eradicate). Time-critical emergency (early infection <3 months post-op may salvage implant with DAIR).",
+            "clinical_presentation": "Early infection (<3 months post-op): Acute onset, fever (70%), wound drainage (60%), erythema (50%), pain (90%). Late infection (>3 months post-op): Subacute/chronic onset, pain (90%), loosening (50%), sinus tract (20%), fever uncommon (20%). Physical exam: Joint effusion, tenderness, warmth, erythema, wound drainage, sinus tract.",
+            "diagnostic_criteria": "Clinical suspicion (pain + fever/drainage) + synovial fluid analysis (WBC >3,000 cells/mm³, PMN >80%) + positive culture (≥2 positive cultures of same organism) OR sinus tract communicating with prosthesis.",
+            "risk_factors": [
+              "Revision arthroplasty (3-5x increased risk)",
+              "Diabetes mellitus (2-3x increased risk)",
+              "Obesity (BMI >30, 2-3x increased risk)",
+              "Rheumatoid arthritis or immunosuppression",
+              "Prolonged operative time (>2.5 hours)",
+              "Wound complications (hematoma, dehiscence)",
+              "Bacteremia or remote infection (hematogenous spread)",
+              "Prior PJI (10-20x increased risk)"
+            ],
+            "red_flags": [
+              "Early infection (<3 months post-op) - may salvage implant with DAIR (debridement, antibiotics, implant retention), urgent surgery",
+              "Sinus tract - definitive PJI, requires removal or two-stage revision",
+              "Loosening - late infection, requires removal or two-stage revision",
+              "Bacteremia - hematogenous spread, higher mortality, rule out endocarditis",
+              "Difficult-to-treat organisms (MRSA, Pseudomonas, fungi) - higher failure rate, longer antibiotics"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Arthrocentesis (synovial fluid analysis) BEFORE antibiotics. Send for: Cell count with differential, Gram stain, culture (aerobic + anaerobic, hold 14 days). Intraoperative cultures (≥3-5 samples from different sites). Blood cultures x2 sets. ESR, CRP (elevated).",
+            "essential_tests": [
+              "Arthrocentesis (synovial fluid analysis): WBC >3,000 cells/mm³ (sensitivity 80%, specificity 90%), PMN >80% (sensitivity 80%, specificity 85%). Lower threshold than native joint septic arthritis. Culture positive in 70-90%.",
+              "Intraoperative cultures: ≥3-5 samples from different sites (periprosthetic tissue, synovial fluid, bone). ≥2 positive cultures of same organism = definitive PJI. Hold cultures 14 days (slow-growing organisms).",
+              "Blood cultures x2 sets BEFORE antibiotics (positive in 20-40%)",
+              "CBC with differential (leukocytosis 10,000-15,000, often normal)",
+              "CMP (assess renal function)",
+              "ESR, CRP (elevated, ESR >30 mm/hr in 90%, CRP >10 mg/L in 95%). Monitor response (CRP declines within 2-4 weeks).",
+              "X-ray of affected joint (loosening, osteolysis, periosteal reaction)"
+            ],
+            "conditional_tests": [
+              "Synovial fluid alpha-defensin: Biomarker for PJI (sensitivity 90%, specificity 95%). Useful if cultures negative.",
+              "Synovial fluid leukocyte esterase: Point-of-care test (sensitivity 80%, specificity 90%). Useful if arthrocentesis limited.",
+              "Nuclear medicine scan (WBC scan, FDG-PET): If diagnosis uncertain. Sensitivity 80-90%, specificity 70-80%.",
+              "Echocardiography (TEE): If bacteremia or multiple sites (rule out endocarditis, hematogenous source).",
+              "Sonication of explanted prosthesis: Disrupts biofilm, increases culture yield (sensitivity 80-90%). Perform if cultures negative."
+            ],
+            "when_not_to_test": "Do NOT start antibiotics before arthrocentesis or intraoperative cultures (reduces culture yield 30-50%). Do NOT rely on single positive culture (may be contaminant, require ≥2 positive cultures of same organism).",
+            "turnaround_time": "Arthrocentesis: <1 hour. Synovial fluid culture: Preliminary 24-48 hours, hold 14 days (slow-growing organisms). Intraoperative cultures: 24-72 hours, hold 14 days. Alpha-defensin: 1-2 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "staphylococcus_aureus": "30-40%. MRSA common (30-50%). Source: Perioperative, hematogenous. Acute presentation. Biofilm formation.",
+            "coagulase_negative_staphylococci": "30-40%: S. epidermidis (most common). Source: Perioperative (skin flora). Subacute/chronic presentation. Strong biofilm formation (difficult to eradicate).",
+            "streptococcus_species": "10-15%: Viridans streptococci, S. agalactiae (Group B Strep). Source: Hematogenous (dental, endocarditis).",
+            "gram_negative_bacilli": "10-15%: E. coli, Pseudomonas, Klebsiella, Enterobacter. Source: Perioperative, hematogenous (UTI, GI). ESBL common (30-50%). Difficult to treat.",
+            "polymicrobial": "10-20%: Mixed aerobic and anaerobic bacteria. Source: Perioperative, wound complications.",
+            "culture_negative": "10-20%: Prior antibiotics, fastidious organisms (Propionibacterium acnes, fungi, mycobacteria). Consider sonication of explanted prosthesis.",
+            "resistance_patterns": "MRSA 30-50%. ESBL Gram-negatives 30-50%. Multidrug-resistant Pseudomonas 30-40%. Biofilm formation (all organisms, difficult to eradicate)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "early_infection_dair": "Early infection (<3 months post-op), stable implant, no sinus tract: DAIR (debridement, antibiotics, implant retention). Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h OR Meropenem 2g IV q8h. Covers MRSA, coagulase-negative Staph, Gram-negatives. Duration: 4-6 weeks IV, then 3-6 months PO suppression. Success rate: 50-70%.",
+            "late_infection_two_stage": "Late infection (>3 months post-op), loosening, or sinus tract: Two-stage revision (removal, antibiotics 6 weeks, reimplantation). Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h OR Meropenem 2g IV q8h. Duration: 6 weeks IV (between stages), then 3-6 months PO (after reimplantation). Success rate: 80-90%.",
+            "one_stage_revision": "Selected cases (healthy patient, known organism, no sinus tract): One-stage revision (removal + reimplantation same surgery). Antibiotics: Same as two-stage. Duration: 6 weeks IV, then 3-6 months PO. Success rate: 70-80%. Less common in US.",
+            "resection_arthroplasty": "Salvage option (failed two-stage, poor surgical candidate, difficult organism): Permanent removal without reimplantation. Antibiotics: 6 weeks IV. Functional outcome poor (limited mobility).",
+            "chronic_suppression": "If surgery not feasible (poor surgical candidate, patient refusal): Chronic oral suppression (indefinite). PO antibiotics: Rifampin 600mg PO daily + fluoroquinolone OR TMP-SMX. Success rate: 30-50% (high failure rate).",
+            "alternatives": "Beta-lactam allergy: Vancomycin 15-20mg/kg IV q8-12h + Aztreonam 2g IV q8h (Gram-negatives).",
+            "avoid_list": "Avoid antibiotics alone without surgery (high failure rate 80-90%). Avoid DAIR if late infection, loosening, or sinus tract (high failure rate 70-90%). Avoid inadequate duration <4-6 weeks IV (high relapse rate)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "targeted_antibiotics": "Narrow based on intraoperative culture results (≥2 positive cultures of same organism). MRSA: Vancomycin 15-20mg/kg IV q8-12h OR Daptomycin 8-10mg/kg IV q24h. MSSA: Nafcillin 2g IV q4h OR Cefazolin 2g IV q8h. Coagulase-negative Staph: Vancomycin 15-20mg/kg IV q8-12h (often methicillin-resistant). Streptococcus: Penicillin G 4 million units IV q4h OR Ceftriaxone 2g IV q24h. Gram-negatives: Ceftriaxone 2g IV q24h OR Cefepime 2g IV q8h. ESBL: Meropenem 2g IV q8h. Pseudomonas: Cefepime 2g IV q8h OR Meropenem 2g IV q8h.",
+            "rifampin_combination": "Add rifampin 600mg PO daily (biofilm penetration) AFTER source control (DAIR or removal). Do NOT use rifampin alone (rapid resistance). Combine with: Fluoroquinolone (ciprofloxacin 500-750mg PO BID) OR TMP-SMX DS 1 tab PO BID OR Minocycline 100mg PO BID. Duration: 3-6 months (chronic suppression).",
+            "duration": "DAIR: 4-6 weeks IV, then 3-6 months PO suppression (rifampin + fluoroquinolone or TMP-SMX). Two-stage revision: 6 weeks IV (between stages), then 3-6 months PO (after reimplantation). One-stage revision: 6 weeks IV, then 3-6 months PO. Resection arthroplasty: 6 weeks IV.",
+            "monitoring": "Weekly: CBC, CMP, ESR, CRP (monitor WBC normalization, CRP decline >50%). Repeat X-ray at 6-12 weeks: Assess loosening, osteolysis. If no improvement: Consider repeat surgery, alternative diagnosis, or resistant organism.",
+            "de_escalation": "De-escalate within 48-72 hours based on intraoperative culture results. Discontinue vancomycin if no MRSA or coagulase-negative Staph. Narrow Gram-negative coverage if ESBL-negative. Switch IV to PO when afebrile >1 week, improving clinically, CRP declining >50%.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >1 week, (2) Improving clinically, (3) CRP declining >50%, (4) After source control (DAIR or removal). PO options: Rifampin 600mg PO daily + Ciprofloxacin 500-750mg PO BID OR Rifampin 600mg PO daily + TMP-SMX DS 1 tab PO BID OR Linezolid 600mg PO BID (MRSA, no rifampin)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "total_duration": "DAIR: 4-6 weeks IV, then 3-6 months PO suppression. Two-stage revision: 6 weeks IV (between stages), then 3-6 months PO (after reimplantation). One-stage revision: 6 weeks IV, then 3-6 months PO. Resection arthroplasty: 6 weeks IV. Chronic suppression (no surgery): Indefinite PO.",
+            "monitoring": "Weekly: CBC, CMP, ESR, CRP (monitor WBC normalization, CRP decline >50%). Repeat X-ray at 6-12 weeks: Assess loosening, osteolysis. Physical therapy: Start early (range of motion, weight-bearing as tolerated). If no improvement: Consider repeat surgery, alternative diagnosis, or resistant organism.",
+            "stop_criteria": "Completed 4-6 weeks IV + 3-6 months PO. Afebrile >4 weeks. Improving clinically (pain, function, weight-bearing). CRP normalized or near baseline. No complications (loosening, recurrence, chronic infection)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "dair_indications": "Early infection (<3 months post-op), stable implant, no sinus tract, no loosening. Timing: Within 3-4 weeks of symptom onset (biofilm not mature). Procedure: Debridement, polyethylene exchange, irrigation. Antibiotics: 4-6 weeks IV, then 3-6 months PO suppression (rifampin + fluoroquinolone or TMP-SMX). Success rate: 50-70% (higher if <3 weeks, S. aureus 40-60%, coagulase-negative Staph 60-80%).",
+            "two_stage_revision_indications": "Late infection (>3 months post-op), loosening, sinus tract, failed DAIR. Gold standard (highest success rate 80-90%). Stage 1: Removal, debridement, antibiotic spacer (gentamicin or vancomycin-impregnated cement). Antibiotics: 6 weeks IV. Stage 2: Reimplantation (after 6 weeks, CRP normalized). Antibiotics: 3-6 months PO suppression.",
+            "one_stage_revision_indications": "Selected cases: Healthy patient, known organism (not MRSA or Pseudomonas), no sinus tract, good soft tissue. Procedure: Removal + reimplantation same surgery. Antibiotics: 6 weeks IV, then 3-6 months PO. Success rate: 70-80%. Less common in US (more common in Europe).",
+            "difficult_organisms": "MRSA, Pseudomonas, fungi, mycobacteria: Higher failure rate (50-70%). Longer antibiotics (6-12 weeks IV, 6-12 months PO). Consider resection arthroplasty if failed two-stage. Fungi: Amphotericin B + fluconazole, often requires permanent removal. Mycobacteria: Rifampin + ethambutol + fluoroquinolone x 6-12 months.",
+            "chronic_suppression": "If surgery not feasible (poor surgical candidate, patient refusal, multiple comorbidities): Chronic oral suppression (indefinite). PO antibiotics: Rifampin 600mg PO daily + Ciprofloxacin 500-750mg PO BID OR Rifampin 600mg PO daily + TMP-SMX DS 1 tab PO BID. Success rate: 30-50% (high failure rate, quality of life impaired). Monitor for resistance, side effects.",
+            "prevention": "Perioperative antibiotics (cefazolin 2g IV within 1 hour of incision). Laminar airflow OR. Minimize operative time. Treat remote infections before arthroplasty. Antibiotic prophylaxis for dental procedures (controversial, consider if prior PJI)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "De-escalate within 48-72 hours based on intraoperative culture results (≥2 positive cultures of same organism)",
+              "Discontinue vancomycin if no MRSA or coagulase-negative Staph",
+              "Narrow Gram-negative coverage if ESBL-negative",
+              "Switch IV to PO when afebrile >1 week, improving clinically, CRP declining >50%",
+              "Fixed duration 4-6 weeks IV + 3-6 months PO (avoid prolonged courses unless chronic suppression)"
+            ],
+            "timeout_checklist": [
+              "Is source control achieved? (DAIR, two-stage revision, one-stage revision, resection arthroplasty)",
+              "Are intraoperative culture results available? (≥2 positive cultures of same organism, narrow antibiotics)",
+              "Is rifampin added? (After source control, biofilm penetration, combine with fluoroquinolone or TMP-SMX)",
+              "Is patient improving clinically? (Pain, function, weight-bearing)",
+              "Is CRP declining? (>50% reduction indicates response)",
+              "Can I de-escalate antibiotics? (Based on culture results)",
+              "Can I switch IV to PO? (If afebrile >1 week, improving clinically, CRP declining)",
+              "Can I stop antibiotics? (If 4-6 weeks IV + 3-6 months PO completed, CRP normalized)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use antibiotics alone without surgery (high failure rate 80-90%). Do NOT use DAIR if late infection, loosening, or sinus tract (high failure rate 70-90%). Do NOT use short antibiotic courses <4-6 weeks IV (high relapse rate). Do NOT use rifampin alone (rapid resistance, combine with fluoroquinolone or TMP-SMX).",
+            "patient_education": "Prosthetic joint infection requires surgery (DAIR or two-stage revision) + prolonged antibiotics (4-6 weeks IV, then 3-6 months PO). Complete full antibiotic course (relapse risk high if incomplete). Physical therapy CRITICAL (range of motion, weight-bearing as tolerated). Watch for complications (loosening, recurrence, chronic infection). Follow-up with orthopedics (assess implant stability, function). Prevention: Treat remote infections before arthroplasty, antibiotic prophylaxis for dental procedures (if prior PJI)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Prosthetic Joint Infection Guidelines (2013)",
+              "url": "https://academic.oup.com/cid/article/56/1/e1/455716"
+            },
+            {
+              "label": "Orthopedic Surgery PJI Guidelines (2018)",
+              "url": "https://journals.lww.com/jbjsjournal/Abstract/2018/12190/The_2018_Definition_of_Periprosthetic_Hip_and_Knee.2.aspx"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "diabetic-foot-osteomyelitis",
+      "name": "Diabetic Foot Osteomyelitis",
+      "synonyms": [
+        "diabetic foot infection with bone involvement",
+        "DFO"
+      ],
+      "icd10": [
+        "E11.621"
+      ],
+      "severity": [
+        "moderate",
+        "severe"
+      ],
+      "shortDescription": "High amputation risk requiring prolonged antibiotics and possible surgery",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Diabetic foot osteomyelitis (DFO) is bone infection in diabetic foot ulcer. Incidence: 15-20% of diabetic foot ulcers. Amputation risk: 10-30% (if inadequate treatment). Mortality: 5-10%. Requires prolonged antibiotics (6-12 weeks) ± surgical debridement or amputation. Most common site: Forefoot (metatarsals, phalanges). Polymicrobial (60-80%).",
+            "clinical_presentation": "Chronic foot ulcer (weeks-months), exposed bone, probe-to-bone positive (90% sensitivity), purulent drainage, erythema, swelling, warmth. Fever uncommon (20-30%, neuropathy masks symptoms). Physical exam: Ulcer >2cm² or >3mm deep, probe-to-bone positive (metal probe touches bone through ulcer), surrounding cellulitis, purulent drainage.",
+            "diagnostic_criteria": "Clinical suspicion (chronic foot ulcer + probe-to-bone positive) + imaging (MRI: bone marrow edema, cortical destruction) + elevated inflammatory markers (ESR, CRP) ± positive bone culture.",
+            "risk_factors": [
+              "Diabetes mellitus (type 1 or 2, poor glycemic control)",
+              "Peripheral neuropathy (loss of protective sensation)",
+              "Peripheral vascular disease (impaired blood supply)",
+              "Chronic foot ulcer (>2 weeks)",
+              "Prior foot ulcer or amputation",
+              "Foot deformity (Charcot foot, hammer toes, bunions)",
+              "Poor footwear or barefoot walking",
+              "Immunosuppression (HIV, corticosteroids, chemotherapy)"
+            ],
+            "red_flags": [
+              "Probe-to-bone positive - 90% sensitivity for osteomyelitis, high amputation risk",
+              "Ulcer >2cm² or >3mm deep - high risk of osteomyelitis (50-70%)",
+              "Peripheral vascular disease - impaired healing, high amputation risk (30-50%)",
+              "Systemic toxicity (fever, hypotension, altered mental status) - limb-threatening or life-threatening infection, urgent surgery",
+              "Gas in soft tissue (X-ray or CT) - necrotizing infection, urgent surgery"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Probe-to-bone test (metal probe through ulcer, touches bone = positive, 90% sensitivity). MRI foot (gold standard, sensitivity 90-95%). Bone biopsy for culture (if blood cultures negative, guides therapy). ESR, CRP (elevated, monitor response). X-ray foot (baseline, assess for gas, foreign body).",
+            "essential_tests": [
+              "Probe-to-bone test: Metal probe through ulcer, touches bone = positive. Sensitivity 90%, specificity 90%. Simple bedside test.",
+              "MRI foot: Bone marrow edema (T1 hypointense, T2 hyperintense), cortical destruction, soft tissue abscess. Sensitivity 90-95%, specificity 80-90%. Gold standard.",
+              "Bone biopsy for culture: Obtain AFTER debridement (avoid superficial contamination). Send for Gram stain, culture (aerobic + anaerobic). Guides antibiotic therapy. Sensitivity 70-80%.",
+              "CBC with differential (leukocytosis 10,000-15,000, often normal)",
+              "CMP (assess renal function, glycemic control)",
+              "ESR, CRP (elevated, ESR >70 mm/hr in 90%, CRP >50 mg/L in 80%). Monitor response (CRP declines within 2-4 weeks).",
+              "X-ray foot: Cortical destruction, periosteal reaction, soft tissue gas (necrotizing infection). Insensitive early (changes appear after 2-4 weeks).",
+              "HbA1c (assess glycemic control, target <7-8%)"
+            ],
+            "conditional_tests": [
+              "Vascular assessment: Ankle-brachial index (ABI), toe pressures, transcutaneous oxygen (TcPO2). If peripheral vascular disease suspected (impaired healing, high amputation risk). Vascular surgery consultation if ABI <0.5 or TcPO2 <30 mmHg.",
+              "CT foot: If MRI contraindicated (pacemaker, metal implants). Less sensitive than MRI (sensitivity 70-80%).",
+              "Nuclear medicine scan (WBC scan): If MRI unavailable or Charcot foot (difficult to distinguish from osteomyelitis). Sensitivity 80-90%, specificity 70-80%.",
+              "Blood cultures x2 sets: If systemic toxicity (fever, hypotension). Positive in 10-20% (low yield)."
+            ],
+            "when_not_to_test": "Do NOT rely on X-ray alone (insensitive early, changes appear after 2-4 weeks). Do NOT perform superficial wound culture (contaminated, does NOT reflect bone pathogens). Do NOT delay antibiotics if systemic toxicity (start empiric antibiotics, obtain cultures later).",
+            "turnaround_time": "Probe-to-bone: <1 minute (bedside). MRI foot: 1-4 hours. Bone culture: 24-72 hours (aerobic/anaerobic). ESR, CRP: 1-2 hours. HbA1c: 1-2 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "polymicrobial": "Diabetic foot osteomyelitis is often polymicrobial (60-80%) with mixed aerobic and anaerobic bacteria.",
+            "staphylococcus_aureus": "Most common (50-70%). MRSA common (30-50%). Source: Contiguous spread from ulcer.",
+            "streptococcus_species": "20-30%: S. pyogenes (Group A Strep), S. agalactiae (Group B Strep), viridans streptococci. Source: Contiguous spread.",
+            "gram_negative_bacilli": "40-60%: E. coli, Pseudomonas, Klebsiella, Proteus, Enterobacter. Source: Contiguous spread (fecal contamination, moist environment). ESBL common (30-50%).",
+            "anaerobes": "40-60%: Bacteroides species, Prevotella species, Peptostreptococcus species. Source: Contiguous spread (necrotic tissue, deep ulcer).",
+            "enterococcus": "20-30%: E. faecalis, E. faecium. Source: Contiguous spread. VRE uncommon (5-10%).",
+            "resistance_patterns": "MRSA 30-50%. ESBL Gram-negatives 30-50%. Multidrug-resistant Pseudomonas 30-40%. VRE 5-10%."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "standard_regimen": "Vancomycin 15-20mg/kg IV q8-12h + Piperacillin-tazobactam 4.5g IV q6h OR Meropenem 2g IV q8h. Covers MRSA, Gram-negatives, anaerobes. Duration: 6-12 weeks (IV 2-4 weeks, then PO 4-8 weeks).",
+            "mild_to_moderate_infection": "Linezolid 600mg PO BID + Ciprofloxacin 500-750mg PO BID. Covers MRSA, Gram-negatives. Duration: 6-12 weeks. Outpatient option if no systemic toxicity.",
+            "severe_infection_or_systemic_toxicity": "Vancomycin 15-20mg/kg IV q8-12h + Meropenem 2g IV q8h. Covers MRSA, Pseudomonas, ESBL, anaerobes. Duration: 6-12 weeks (IV 4-6 weeks, then PO 2-6 weeks). ICU monitoring if septic.",
+            "surgical_debridement": "Indicated if: (1) Necrotic tissue or abscess, (2) Failed medical therapy (no improvement after 2-4 weeks), (3) Systemic toxicity, (4) Peripheral vascular disease (impaired healing). Obtain intraoperative bone cultures (guides antibiotic therapy). Antibiotics: Continue 6-12 weeks after debridement.",
+            "amputation": "Indicated if: (1) Extensive bone destruction, (2) Peripheral vascular disease (non-revascularizable), (3) Failed medical and surgical therapy, (4) Life-threatening infection. Level: Toe, ray, transmetatarsal, below-knee, above-knee (preserve as much length as possible). Antibiotics: 2-4 weeks after amputation (if residual infection).",
+            "alternatives": "Beta-lactam allergy: Vancomycin 15-20mg/kg IV q8-12h + Aztreonam 2g IV q8h + Metronidazole 500mg IV q8h.",
+            "avoid_list": "Avoid inadequate MRSA coverage (vancomycin or linezolid required). Avoid inadequate Gram-negative coverage (piperacillin-tazobactam or meropenem required). Avoid inadequate anaerobic coverage (piperacillin-tazobactam, meropenem, or metronidazole required). Avoid short antibiotic courses <6 weeks (high relapse rate 30-50%)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "targeted_antibiotics": "Narrow based on bone culture results. MRSA: Vancomycin 15-20mg/kg IV q8-12h OR Linezolid 600mg PO BID. MSSA: Nafcillin 2g IV q4h OR Cefazolin 2g IV q8h OR Cephalexin 500mg PO QID. Streptococcus: Penicillin G 4 million units IV q4h OR Amoxicillin 875mg PO BID. Gram-negatives: Ceftriaxone 2g IV q24h OR Ciprofloxacin 500-750mg PO BID (if susceptible). ESBL: Meropenem 2g IV q8h OR Ertapenem 1g IV q24h. Pseudomonas: Cefepime 2g IV q8h OR Ciprofloxacin 500-750mg PO BID (if susceptible). Anaerobes: Metronidazole 500mg PO TID OR Clindamycin 300-450mg PO TID.",
+            "duration": "6-12 weeks total (IV + PO). IV therapy: 2-4 weeks (if severe or systemic toxicity). Switch to PO when: (1) Afebrile >1 week, (2) Improving clinically (ulcer healing, pain, swelling), (3) CRP declining (>50% reduction). PO therapy: 4-8 weeks (after IV). Longer if: Residual bone infection, peripheral vascular disease, poor glycemic control.",
+            "monitoring": "Weekly: CBC, CMP, ESR, CRP (monitor WBC normalization, CRP decline >50%). Repeat MRI at 6-12 weeks: Assess bone marrow edema resolution (should improve). Ulcer assessment: Weekly (size, depth, drainage, granulation tissue). If no improvement: Consider surgical debridement, vascular assessment, or amputation.",
+            "de_escalation": "De-escalate within 48-72 hours based on bone culture results. Discontinue vancomycin if no MRSA. Narrow Gram-negative coverage if ESBL-negative. Discontinue anaerobic coverage if no anaerobes. Switch IV to PO when afebrile >1 week, improving clinically, CRP declining >50%.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >1 week, (2) Improving clinically (ulcer healing, pain, swelling), (3) CRP declining >50%. PO options: Linezolid 600mg PO BID (MRSA) OR Cephalexin 500mg PO QID (MSSA, Streptococcus) OR Ciprofloxacin 500-750mg PO BID (Gram-negatives, if susceptible) OR Amoxicillin-clavulanate 875mg PO BID (polymicrobial) OR Metronidazole 500mg PO TID (anaerobes).",
+            "glycemic_control": "CRITICAL for healing. Target HbA1c <7-8%. Insulin preferred (tight glycemic control). Endocrinology consultation if HbA1c >9%."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "total_duration": "6-12 weeks (IV + PO). IV therapy: 2-4 weeks (if severe or systemic toxicity). PO therapy: 4-8 weeks (after IV). Longer if: Residual bone infection, peripheral vascular disease, poor glycemic control, extensive bone destruction.",
+            "monitoring": "Weekly: CBC, CMP, ESR, CRP (monitor WBC normalization, CRP decline >50%). Ulcer assessment: Weekly (size, depth, drainage, granulation tissue, healing). Repeat MRI at 6-12 weeks: Assess bone marrow edema resolution. Vascular assessment: If impaired healing (ABI, toe pressures, TcPO2). If no improvement: Consider surgical debridement, vascular revascularization, or amputation.",
+            "stop_criteria": "Completed 6-12 weeks. Afebrile >2 weeks. Ulcer healed or significantly improved (>50% reduction in size). CRP normalized or near baseline. No complications (abscess, necrotizing infection, amputation)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "probe_to_bone_test": "Simple bedside test. Metal probe (sterile) through ulcer, touches bone = positive. Sensitivity 90%, specificity 90%. Positive predictive value 90% (if ulcer >2cm² or >3mm deep). Negative predictive value 90% (if ulcer <2cm² and <3mm deep). Perform BEFORE antibiotics (if possible).",
+            "surgical_debridement_indications": "Necrotic tissue or abscess, failed medical therapy (no improvement after 2-4 weeks), systemic toxicity, peripheral vascular disease (impaired healing). Obtain intraoperative bone cultures (guides antibiotic therapy). Debridement: Remove all necrotic bone and soft tissue (until bleeding bone). Antibiotics: Continue 6-12 weeks after debridement.",
+            "amputation_indications": "Extensive bone destruction (>50% of bone), peripheral vascular disease (non-revascularizable, ABI <0.5, TcPO2 <30 mmHg), failed medical and surgical therapy, life-threatening infection (sepsis, necrotizing fasciitis). Level: Toe (phalanx), ray (metatarsal + toe), transmetatarsal (forefoot), below-knee, above-knee (preserve as much length as possible). Antibiotics: 2-4 weeks after amputation (if residual infection).",
+            "vascular_assessment": "CRITICAL for healing. Ankle-brachial index (ABI): Normal 0.9-1.3, peripheral vascular disease <0.9, severe <0.5. Toe pressures: Normal >30 mmHg, impaired healing <30 mmHg. Transcutaneous oxygen (TcPO2): Normal >40 mmHg, impaired healing <30 mmHg. Vascular surgery consultation if ABI <0.5 or TcPO2 <30 mmHg (consider revascularization).",
+            "glycemic_control": "CRITICAL for healing. Target HbA1c <7-8%. Insulin preferred (tight glycemic control, adjust based on blood glucose). Endocrinology consultation if HbA1c >9% or difficult to control. Hyperglycemia impairs wound healing (neutrophil function, collagen synthesis, angiogenesis).",
+            "offloading": "CRITICAL for healing. Total contact cast (gold standard, reduces pressure 30-50%), removable cast walker, healing sandal, crutches, wheelchair. Non-weight-bearing or partial weight-bearing until ulcer healed. Podiatry consultation.",
+            "wound_care": "Debridement (remove necrotic tissue, callus), moist wound healing (hydrogel, foam, alginate), infection control (antibiotics), offloading (total contact cast). Wound care specialist or podiatry consultation. Negative pressure wound therapy (NPWT) if large ulcer (>2cm²)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "De-escalate within 48-72 hours based on bone culture results",
+              "Discontinue vancomycin if no MRSA",
+              "Narrow Gram-negative coverage if ESBL-negative",
+              "Discontinue anaerobic coverage if no anaerobes",
+              "Switch IV to PO when afebrile >1 week, improving clinically, CRP declining >50%",
+              "Fixed duration 6-12 weeks (avoid prolonged courses unless residual infection)"
+            ],
+            "timeout_checklist": [
+              "Are bone culture results available? (Narrow antibiotics based on results)",
+              "Is patient improving clinically? (Ulcer healing, pain, swelling)",
+              "Is CRP declining? (>50% reduction indicates response)",
+              "Is glycemic control optimized? (HbA1c <7-8%, insulin preferred)",
+              "Is vascular assessment performed? (ABI, toe pressures, TcPO2 if impaired healing)",
+              "Is offloading adequate? (Total contact cast, non-weight-bearing)",
+              "Is surgical debridement indicated? (Necrotic tissue, abscess, failed medical therapy)",
+              "Can I de-escalate antibiotics? (Based on culture results)",
+              "Can I switch IV to PO? (If afebrile >1 week, improving clinically, CRP declining)",
+              "Can I stop antibiotics? (If 6-12 weeks completed, ulcer healed, CRP normalized)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use short antibiotic courses <6 weeks (high relapse rate 30-50%). Do NOT use prolonged antibiotics beyond 6-12 weeks (unless residual infection). Do NOT delay surgical debridement if necrotic tissue, abscess, or failed medical therapy. Do NOT delay amputation if extensive bone destruction, non-revascularizable peripheral vascular disease, or life-threatening infection.",
+            "patient_education": "Diabetic foot osteomyelitis requires prolonged antibiotics (6-12 weeks, IV then PO) + wound care + offloading. Complete full antibiotic course (relapse risk 30-50% if incomplete). Glycemic control CRITICAL (HbA1c <7-8%, insulin preferred). Offloading CRITICAL (total contact cast, non-weight-bearing until healed). Watch for complications (abscess, necrotizing infection, amputation). Follow-up with podiatry (wound care, offloading, footwear). Prevention: Daily foot inspection, proper footwear, glycemic control, treat ulcers early."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Diabetic Foot Infection Guidelines (2012)",
+              "url": "https://academic.oup.com/cid/article/54/12/e132/455959"
+            },
+            {
+              "label": "IWGDF Diabetic Foot Osteomyelitis Guidelines (2019)",
+              "url": "https://iwgdfguidelines.org/osteomyelitis/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "vertebral-osteomyelitis",
+      "name": "Vertebral Osteomyelitis (Spondylodiscitis)",
+      "synonyms": [
+        "spinal osteomyelitis",
+        "spondylodiscitis",
+        "discitis"
+      ],
+      "icd10": [
+        "M46.20"
+      ],
+      "severity": [
+        "severe",
+        "critical"
+      ],
+      "shortDescription": "Spinal infection with epidural abscess risk requiring prolonged antibiotics",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Vertebral osteomyelitis (spondylodiscitis) is bacterial infection of vertebral body and intervertebral disc. Incidence: 2-4 cases per 100,000/year (increasing). Mortality: 5-10%. Epidural abscess risk: 10-20% (paralysis risk). Requires prolonged antibiotics (6-12 weeks) ± surgical debridement. Most common site: Lumbar spine (50%), thoracic spine (35%), cervical spine (15%).",
+            "clinical_presentation": "Subacute onset (weeks-months): Back pain (90%, insidious, progressive), fever (50-60%), neurological deficits (10-20%, if epidural abscess or spinal cord compression). Physical exam: Spinal tenderness (70-80%), limited range of motion, fever, neurological deficits (motor weakness, sensory loss, bowel/bladder dysfunction).",
+            "diagnostic_criteria": "Clinical suspicion (back pain + fever + elevated inflammatory markers) + MRI spine with contrast (vertebral body destruction, disc space narrowing, paraspinal abscess, epidural abscess) ± positive blood or bone culture.",
+            "risk_factors": [
+              "Diabetes mellitus (20-30%)",
+              "IV drug use (10-20%, hematogenous spread)",
+              "Bacteremia or endocarditis (hematogenous spread)",
+              "Spinal procedures (epidural injection, spinal surgery, discectomy)",
+              "Immunosuppression (HIV, corticosteroids, transplant, chemotherapy)",
+              "Chronic kidney disease or dialysis",
+              "Liver cirrhosis",
+              "Malignancy"
+            ],
+            "red_flags": [
+              "Neurological deficits (motor weakness, sensory loss, bowel/bladder dysfunction) - epidural abscess or spinal cord compression, urgent MRI + neurosurgery",
+              "Epidural abscess (10-20%) - risk of paralysis, urgent drainage",
+              "Bacteremia or endocarditis - hematogenous spread, higher mortality, rule out endocarditis",
+              "IV drug use - Pseudomonas, MRSA, higher mortality",
+              "Immunocompromised - broader differential (TB, fungi, Brucella)"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "MRI spine with contrast (gold standard, sensitivity 95%). Blood cultures x2 sets BEFORE antibiotics (positive in 50-70%). CT-guided biopsy for culture (if blood cultures negative, guides therapy). ESR, CRP (elevated, monitor response).",
+            "essential_tests": [
+              "MRI spine with contrast: Vertebral body destruction (T1 hypointense, T2 hyperintense), disc space narrowing, endplate erosion, paraspinal abscess, epidural abscess. Sensitivity 95%, specificity 90%. Gold standard.",
+              "Blood cultures x2 sets BEFORE antibiotics (positive in 50-70%)",
+              "CBC with differential (leukocytosis 10,000-15,000, often normal)",
+              "CMP (assess renal function)",
+              "ESR, CRP (elevated, ESR >50 mm/hr in 95%, CRP >50 mg/L in 90%). Monitor response (CRP declines within 2-4 weeks).",
+              "X-ray spine (baseline, assess for fracture, deformity). Insensitive early (changes appear after 2-4 weeks)."
+            ],
+            "conditional_tests": [
+              "CT-guided biopsy for culture: If blood cultures negative (30-50%), guides antibiotic therapy. Obtain BEFORE antibiotics if possible. Send for Gram stain, culture (aerobic + anaerobic + fungal + mycobacterial). Sensitivity 50-70%.",
+              "CT spine with contrast: If MRI contraindicated (pacemaker, metal implants). Less sensitive than MRI (sensitivity 80-85%).",
+              "Echocardiography (TEE): If bacteremia or multiple sites (rule out endocarditis, hematogenous source). Sensitivity 90-95% for endocarditis.",
+              "TB testing: If subacute presentation (months), endemic area, immunocompromised. Interferon-gamma release assay (IGRA), AFB culture, GeneXpert MTB/RIF."
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics for biopsy if septic or unstable (start empiric antibiotics, perform biopsy later if needed). Do NOT perform LP (contraindicated if epidural abscess or spinal cord compression, risk of herniation).",
+            "turnaround_time": "MRI spine: 1-4 hours. Blood cultures: Preliminary 24-48 hours. CT-guided biopsy culture: 24-72 hours (aerobic/anaerobic), 4-6 weeks (mycobacterial). ESR, CRP: 1-2 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "staphylococcus_aureus": "Most common (40-60%). MRSA common (30-50%). Source: Hematogenous (bacteremia, endocarditis), IV drug use, spinal procedures.",
+            "streptococcus_species": "10-15%: Viridans streptococci, S. agalactiae (Group B Strep). Source: Hematogenous (endocarditis, dental).",
+            "gram_negative_bacilli": "20-30%: E. coli (most common Gram-negative, 15-20%), Pseudomonas (IV drug use, 5-10%), Klebsiella, Proteus. Source: Hematogenous (UTI, GI), IV drug use. ESBL common (30-50%).",
+            "mycobacterium_tuberculosis": "5-10% (higher in endemic areas, immunocompromised). Pott's disease: TB vertebral osteomyelitis. Subacute presentation (months). Paraspinal abscess (cold abscess). Requires TB regimen x 9-12 months.",
+            "brucella": "Rare (<5%, endemic areas: Mediterranean, Middle East, Latin America). Subacute presentation (months). Occupational exposure (farmers, veterinarians, abattoir workers). Requires doxycycline + rifampin x 6-12 weeks.",
+            "culture_negative": "20-30%: Prior antibiotics, fastidious organisms (Propionibacterium acnes, fungi, mycobacteria). Consider CT-guided biopsy.",
+            "resistance_patterns": "MRSA 30-50%. ESBL Gram-negatives 30-50%. Multidrug-resistant Pseudomonas 30-40%."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "standard_regimen": "Vancomycin 15-20mg/kg IV q8-12h + Ceftriaxone 2g IV q24h. Covers MRSA, Streptococcus, Gram-negatives. Duration: 6-12 weeks (IV 4-6 weeks, then PO 2-6 weeks).",
+            "iv_drug_use_or_pseudomonas_risk": "Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h. Covers MRSA, Pseudomonas. Duration: 6-12 weeks.",
+            "tb_suspected": "If subacute presentation (months), endemic area, immunocompromised, paraspinal abscess (cold abscess): Add TB regimen (isoniazid + rifampin + pyrazinamide + ethambutol). Consult infectious disease specialist. Duration: 9-12 months.",
+            "surgical_debridement": "Indicated if: (1) Neurological deficits (motor weakness, sensory loss, bowel/bladder dysfunction), (2) Epidural abscess, (3) Spinal instability or deformity, (4) Failed medical therapy (no improvement after 2-4 weeks), (5) Large paraspinal abscess. Timing: Urgent if neurological deficits or epidural abscess. Obtain intraoperative cultures (guides antibiotic therapy).",
+            "alternatives": "Beta-lactam allergy: Vancomycin 15-20mg/kg IV q8-12h + Aztreonam 2g IV q8h (Gram-negatives) OR Fluoroquinolone (levofloxacin 750mg IV daily, if susceptible).",
+            "avoid_list": "Avoid inadequate MRSA coverage (vancomycin required). Avoid inadequate Gram-negative coverage (ceftriaxone or cefepime required). Avoid short antibiotic courses <6 weeks (high relapse rate 30-50%). Avoid delaying surgery if neurological deficits or epidural abscess (irreversible paralysis risk)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "targeted_antibiotics": "Narrow based on blood or bone culture results. MRSA: Vancomycin 15-20mg/kg IV q8-12h OR Daptomycin 8-10mg/kg IV q24h. MSSA: Nafcillin 2g IV q4h OR Cefazolin 2g IV q8h. Streptococcus: Penicillin G 4 million units IV q4h OR Ceftriaxone 2g IV q24h. Gram-negatives: Ceftriaxone 2g IV q24h OR Cefepime 2g IV q8h. ESBL: Meropenem 2g IV q8h OR Ertapenem 1g IV q24h. Pseudomonas: Cefepime 2g IV q8h OR Meropenem 2g IV q8h. TB: Isoniazid + rifampin + pyrazinamide + ethambutol x 9-12 months.",
+            "duration": "6-12 weeks total (IV + PO). IV therapy: 4-6 weeks minimum. Switch to PO when: (1) Afebrile >2 weeks, (2) Improving clinically (pain, neurological status), (3) CRP declining (>50% reduction). PO therapy: 2-6 weeks (after IV). Longer if: Epidural abscess (8-12 weeks), TB (9-12 months), immunocompromised (8-12 weeks).",
+            "monitoring": "Weekly: CBC, CMP, ESR, CRP (monitor WBC normalization, CRP decline >50%). Repeat MRI at 4-6 weeks: Assess vertebral body edema resolution, epidural abscess resolution. If no improvement: Consider surgical debridement, alternative diagnosis, or resistant organism. Neurological exam: Daily (if epidural abscess or neurological deficits).",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Discontinue vancomycin if no MRSA. Narrow Gram-negative coverage if ESBL-negative. Switch IV to PO when afebrile >2 weeks, improving clinically, CRP declining >50%.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >2 weeks, (2) Improving clinically, (3) CRP declining >50%. PO options: Linezolid 600mg PO BID (MRSA) OR Cephalexin 500mg PO QID (MSSA, Streptococcus) OR Ciprofloxacin 500-750mg PO BID + Rifampin 600mg PO daily (if susceptible) OR Levofloxacin 750mg PO daily (Gram-negatives).",
+            "surgical_debridement": "Indicated if: (1) Neurological deficits, (2) Epidural abscess, (3) Spinal instability or deformity, (4) Failed medical therapy (no improvement after 2-4 weeks), (5) Large paraspinal abscess. Timing: Urgent if neurological deficits or epidural abscess (within 24 hours). Procedure: Laminectomy, debridement, drainage, spinal stabilization (if instability). Obtain intraoperative cultures. Antibiotics: Continue 6-12 weeks after debridement."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "total_duration": "6-12 weeks (IV + PO). IV therapy: 4-6 weeks minimum. PO therapy: 2-6 weeks (after IV). Longer if: Epidural abscess (8-12 weeks), TB (9-12 months), immunocompromised (8-12 weeks), extensive bone destruction (8-12 weeks).",
+            "monitoring": "Weekly: CBC, CMP, ESR, CRP (monitor WBC normalization, CRP decline >50%). Repeat MRI at 4-6 weeks: Assess vertebral body edema resolution, epidural abscess resolution. Neurological exam: Daily (if epidural abscess or neurological deficits). Physical therapy: Start early (back strengthening, range of motion). If no improvement: Consider surgical debridement, alternative diagnosis, or resistant organism.",
+            "stop_criteria": "Completed 6-12 weeks. Afebrile >4 weeks. Improving clinically (pain, neurological status, mobility). CRP normalized or near baseline. No complications (epidural abscess, spinal instability, recurrence)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "epidural_abscess": "Occurs in 10-20%. Risk of paralysis (irreversible spinal cord damage within hours). Urgent MRI spine (if neurological deficits). Urgent neurosurgery consultation (laminectomy + drainage within 24 hours). Antibiotics: Same as vertebral osteomyelitis. Duration: 8-12 weeks (longer than vertebral osteomyelitis alone). See separate condition (Spinal Epidural Abscess).",
+            "tb_vertebral_osteomyelitis": "Pott's disease: TB vertebral osteomyelitis. Subacute presentation (months). Paraspinal abscess (cold abscess, no fever). Vertebral body destruction (anterior wedging, gibbus deformity). MRI: Vertebral destruction, paraspinal abscess, epidural abscess. Treatment: TB regimen (isoniazid + rifampin + pyrazinamide + ethambutol) x 9-12 months. Dexamethasone controversial (may reduce neurological complications). Surgery if neurological deficits or spinal instability.",
+            "brucella_spondylodiscitis": "Endemic areas: Mediterranean, Middle East, Latin America. Occupational exposure (farmers, veterinarians, abattoir workers). Subacute presentation (months). Serology: Brucella agglutination test (titer ≥1:160). Treatment: Doxycycline 100mg PO BID + Rifampin 600mg PO daily x 6-12 weeks OR Doxycycline + Gentamicin 5mg/kg IV daily x 2-4 weeks, then doxycycline + rifampin x 4-8 weeks.",
+            "spinal_instability": "Occurs in 10-20%. Risk factors: Extensive bone destruction (>50% of vertebral body), multiple vertebrae involved, kyphotic deformity (gibbus). Requires surgical stabilization (spinal fusion, instrumentation). Neurosurgery or orthopedic spine consultation.",
+            "iv_drug_use": "Pseudomonas common (20-30%, vs. 5-10% in general population). MRSA common (50-70%). Cervical spine involvement more common (30-40%, vs. 15% in general population). Higher mortality (10-20%). Empiric: Vancomycin + cefepime. Duration: 6-12 weeks.",
+            "recurrence": "Occurs in 5-10%. Risk factors: Inadequate antibiotic duration, resistant organism, immunosuppression, IV drug use. Treatment: Repeat MRI, repeat biopsy (if culture-negative), prolonged antibiotics (8-12 weeks), consider surgical debridement."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "De-escalate within 48-72 hours based on blood or bone culture results",
+              "Discontinue vancomycin if no MRSA",
+              "Narrow Gram-negative coverage if ESBL-negative",
+              "Switch IV to PO when afebrile >2 weeks, improving clinically, CRP declining >50%",
+              "Fixed duration 6-12 weeks (avoid prolonged courses unless epidural abscess, TB, or immunocompromised)"
+            ],
+            "timeout_checklist": [
+              "Are blood or bone culture results available? (Narrow antibiotics based on results)",
+              "Is patient improving clinically? (Pain, neurological status, mobility)",
+              "Is CRP declining? (>50% reduction indicates response)",
+              "Is neurological exam normal? (If deficits, urgent MRI + neurosurgery)",
+              "Is surgical debridement indicated? (Neurological deficits, epidural abscess, spinal instability, failed medical therapy)",
+              "Can I de-escalate antibiotics? (Based on culture results)",
+              "Can I switch IV to PO? (If afebrile >2 weeks, improving clinically, CRP declining)",
+              "Can I stop antibiotics? (If 6-12 weeks completed, CRP normalized)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use short antibiotic courses <6 weeks (high relapse rate 30-50%). Do NOT use prolonged antibiotics beyond 6-12 weeks (unless epidural abscess, TB, or immunocompromised). Do NOT delay surgical debridement if neurological deficits, epidural abscess, or spinal instability (irreversible paralysis risk).",
+            "patient_education": "Vertebral osteomyelitis requires prolonged antibiotics (6-12 weeks, IV then PO). Complete full antibiotic course (relapse risk 30-50% if incomplete). Physical therapy CRITICAL (back strengthening, range of motion). Watch for complications (epidural abscess, neurological deficits, spinal instability). Follow-up with spine specialist (assess bone healing, stability). Epidural abscess risk (10-20%, paralysis risk). Seek immediate care if neurological deficits (motor weakness, sensory loss, bowel/bladder dysfunction)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Vertebral Osteomyelitis Guidelines (2015)",
+              "url": "https://academic.oup.com/cid/article/61/9/e26/452579"
+            },
+            {
+              "label": "Spine Surgery Spondylodiscitis Guidelines (2019)",
+              "url": "https://journals.lww.com/spinejournal/Abstract/2019/01010/Diagnosis_and_Management_of_Pyogenic_Vertebral.2.aspx"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "septic-bursitis",
+      "name": "Septic Bursitis",
+      "synonyms": [
+        "infectious bursitis",
+        "bacterial bursitis"
+      ],
+      "icd10": [
+        "M71.10"
+      ],
+      "severity": [
+        "mild",
+        "moderate"
+      ],
+      "shortDescription": "Bursa infection requiring drainage and antibiotics",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Septic bursitis is bacterial infection of bursa (fluid-filled sac between tendon and bone). Incidence: 1-2 cases per 10,000/year. Mortality: <1%. Most common: Olecranon bursa (elbow, 80%), prepatellar bursa (knee, 15%), other (5%). Requires drainage + antibiotics (2-4 weeks). Superficial bursae (olecranon, prepatellar) more prone to infection than deep bursae.",
+            "clinical_presentation": "Acute onset (days): Bursa swelling (95%), warmth (85%), erythema (80%), tenderness (90%), fever (30-40%). Physical exam: Fluctuant swelling over bursa, warmth, erythema, tenderness, limited range of motion (pain with movement).",
+            "diagnostic_criteria": "Clinical suspicion (bursa swelling + warmth + erythema) + bursal fluid analysis (WBC >2,000 cells/mm³, PMN >50%, positive Gram stain or culture). Bursal fluid WBC >2,000 = septic bursitis until proven otherwise.",
+            "risk_factors": [
+              "Trauma or repetitive pressure (kneeling, leaning on elbows)",
+              "Occupational (carpet layers, plumbers, miners, gardeners)",
+              "Diabetes mellitus (2-3x increased risk)",
+              "Immunosuppression (HIV, corticosteroids, biologics)",
+              "Rheumatoid arthritis or gout (pre-existing bursal inflammation)",
+              "Chronic kidney disease or dialysis",
+              "Skin infection or cellulitis (contiguous spread)"
+            ],
+            "red_flags": [
+              "Deep bursa involvement (subacromial, iliopsoas, trochanteric) - difficult to diagnose, may require imaging-guided aspiration",
+              "Systemic toxicity (fever, hypotension, altered mental status) - bacteremia, higher mortality",
+              "Immunocompromised - broader differential (fungi, mycobacteria, atypical bacteria)",
+              "Failed outpatient therapy - consider hospitalization, IV antibiotics, surgical drainage"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Bursal aspiration URGENT (gold standard). Perform BEFORE antibiotics if possible (but do NOT delay antibiotics >1 hour if septic). Send bursal fluid for: Cell count with differential, Gram stain, culture (aerobic + anaerobic), crystal analysis (rule out gout/pseudogout). Blood cultures x2 sets (if fever or systemic toxicity).",
+            "essential_tests": [
+              "Bursal aspiration (bursal fluid analysis): WBC >2,000 cells/mm³ (sensitivity 70-80%, specificity 90-95%), PMN >50% (sensitivity 70-80%). Gram stain positive in 60-80%. Culture positive in 80-90% (gold standard).",
+              "CBC with differential (leukocytosis 10,000-15,000, often normal)",
+              "CMP (assess renal function)",
+              "ESR, CRP (elevated, ESR >20 mm/hr in 80%, CRP >50 mg/L in 70%)",
+              "X-ray of affected area (baseline, rule out fracture, foreign body, osteomyelitis)"
+            ],
+            "conditional_tests": [
+              "Blood cultures x2 sets: If fever or systemic toxicity (positive in 10-20%)",
+              "Ultrasound of affected bursa: If deep bursa (subacromial, iliopsoas, trochanteric), guide aspiration. Sensitivity 90-95% for effusion.",
+              "MRI of affected area: If osteomyelitis suspected (bone marrow edema, periosteal reaction). Sensitivity 90-95%."
+            ],
+            "when_not_to_test": "Do NOT delay bursal aspiration for imaging (perform immediately). Do NOT delay antibiotics >1 hour if unable to perform aspiration or if septic (start empiric antibiotics, attempt aspiration later).",
+            "turnaround_time": "Bursal aspiration: <1 hour (urgent). Bursal fluid Gram stain: 30-60 minutes. Bursal fluid culture: Preliminary 24-48 hours, final 5-7 days."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "staphylococcus_aureus": "Most common (80-90%). MRSA common (30-50%). Source: Contiguous spread (skin), hematogenous. All ages.",
+            "streptococcus_species": "5-10%: S. pyogenes (Group A Strep), viridans streptococci. Source: Contiguous spread (skin).",
+            "gram_negative_bacilli": "Rare (<5%): E. coli, Pseudomonas. Source: Immunocompromised, IV drug use.",
+            "polymicrobial": "Rare (<5%): Mixed aerobic and anaerobic bacteria. Source: Trauma, open wound.",
+            "culture_negative": "10-20%: Prior antibiotics, fastidious organisms.",
+            "resistance_patterns": "MRSA 30-50%."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "standard_regimen": "Cephalexin 500mg PO QID OR TMP-SMX DS 1-2 tabs PO BID. Covers MSSA, Streptococcus. Duration: 2-4 weeks (PO). Outpatient option if no systemic toxicity.",
+            "mrsa_risk_or_failed_outpatient": "Vancomycin 15-20mg/kg IV q8-12h OR Daptomycin 6mg/kg IV q24h. Covers MRSA. Duration: 2-4 weeks (IV 1-2 weeks, then PO 1-2 weeks). Hospitalization if systemic toxicity or failed outpatient therapy.",
+            "drainage": "CRITICAL for cure. Serial aspiration (every 2-3 days until no reaccumulation) OR Incision and drainage (if failed serial aspiration, thick purulent fluid, or loculations). Indications: All cases (septic bursitis requires drainage, antibiotics alone fail 50-70%). Timing: Within 24 hours (urgent).",
+            "alternatives": "Beta-lactam allergy: TMP-SMX DS 1-2 tabs PO BID OR Doxycycline 100mg PO BID OR Clindamycin 300-450mg PO TID.",
+            "avoid_list": "Avoid antibiotics alone without drainage (high failure rate 50-70%). Avoid inadequate MRSA coverage if risk factors (vancomycin, TMP-SMX, or doxycycline required). Avoid delaying drainage >24 hours (higher failure rate)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "drainage": "CRITICAL for cure. Serial aspiration (every 2-3 days until no reaccumulation, typically 3-5 aspirations) OR Incision and drainage (if failed serial aspiration after 3-5 attempts, thick purulent fluid, or loculations). Timing: Within 24 hours (urgent). Antibiotics alone = high failure rate (50-70%).",
+            "targeted_antibiotics": "Narrow based on bursal fluid or blood culture results. MRSA: Vancomycin 15-20mg/kg IV q8-12h OR TMP-SMX DS 1-2 tabs PO BID OR Doxycycline 100mg PO BID. MSSA: Cephalexin 500mg PO QID OR Dicloxacillin 500mg PO QID. Streptococcus: Penicillin VK 500mg PO QID OR Amoxicillin 500mg PO TID.",
+            "duration": "2-4 weeks (PO). IV therapy: 1-2 weeks (if systemic toxicity or failed outpatient therapy). Switch to PO when: (1) Afebrile >48 hours, (2) Improving clinically (swelling, erythema, pain). PO therapy: 1-2 weeks (after IV) or 2-4 weeks (if outpatient from start).",
+            "monitoring": "Every 2-3 days: Bursa exam (swelling, erythema, warmth, tenderness). Repeat aspiration if reaccumulation (every 2-3 days until no reaccumulation). If no improvement in 48-72 hours: Consider incision and drainage, alternative diagnosis, or resistant organism.",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Discontinue vancomycin if no MRSA. Switch IV to PO when afebrile >48 hours, improving clinically.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >48 hours, (2) Improving clinically (swelling, erythema, pain). PO options: TMP-SMX DS 1-2 tabs PO BID (MRSA) OR Cephalexin 500mg PO QID (MSSA, Streptococcus) OR Doxycycline 100mg PO BID (MRSA)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "total_duration": "2-4 weeks (PO). IV therapy: 1-2 weeks (if systemic toxicity or failed outpatient therapy). PO therapy: 1-2 weeks (after IV) or 2-4 weeks (if outpatient from start).",
+            "monitoring": "Every 2-3 days: Bursa exam (swelling, erythema, warmth, tenderness). Repeat aspiration if reaccumulation (every 2-3 days until no reaccumulation). Physical therapy: Start early (range of motion when pain allows). If no improvement in 48-72 hours: Consider incision and drainage, alternative diagnosis, or resistant organism.",
+            "stop_criteria": "Completed 2-4 weeks. Afebrile >1 week. Improving clinically (swelling resolved, no erythema, no tenderness). No reaccumulation of bursal fluid. No complications (osteomyelitis, recurrence)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "serial_aspiration_vs_incision_drainage": "Serial aspiration (preferred, first-line): Every 2-3 days until no reaccumulation (typically 3-5 aspirations). Success rate: 70-80%. Incision and drainage (second-line): If failed serial aspiration after 3-5 attempts, thick purulent fluid, or loculations. Success rate: 90-95%. Risk: Chronic draining sinus (10-20%), delayed wound healing.",
+            "deep_bursa_septic_bursitis": "Subacromial (shoulder), iliopsoas (hip), trochanteric (hip): Difficult to diagnose (deep location). Ultrasound or MRI required (detect effusion). Imaging-guided aspiration (ultrasound or CT). Treatment: Same antibiotics, longer duration (4-6 weeks). May require surgical drainage.",
+            "osteomyelitis_complication": "Occurs in 5-10% (contiguous spread from bursa to bone). MRI: Bone marrow edema, periosteal reaction. Treatment: Longer antibiotics (4-6 weeks), may require surgical debridement. Orthopedic surgery consultation.",
+            "recurrence": "Occurs in 10-20%. Risk factors: Inadequate drainage, inadequate antibiotic duration, continued trauma or pressure. Prevention: Avoid trauma or pressure (elbow pads, knee pads), treat underlying conditions (diabetes, immunosuppression). Treatment: Repeat drainage + prolonged antibiotics (4-6 weeks).",
+            "prevention": "Avoid trauma or repetitive pressure (elbow pads, knee pads for occupational exposure). Treat skin infections early (prevent contiguous spread). Optimize glycemic control (if diabetic)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "De-escalate within 48-72 hours based on bursal fluid or blood culture results",
+              "Discontinue vancomycin if no MRSA",
+              "Switch IV to PO when afebrile >48 hours, improving clinically",
+              "Fixed duration 2-4 weeks (avoid prolonged courses unless osteomyelitis)"
+            ],
+            "timeout_checklist": [
+              "Is drainage performed? (CRITICAL for cure, antibiotics alone fail 50-70%)",
+              "Are bursal fluid or blood culture results available? (Narrow antibiotics based on results)",
+              "Is patient improving clinically? (Swelling, erythema, pain)",
+              "Is bursal fluid reaccumulating? (Repeat aspiration every 2-3 days until no reaccumulation)",
+              "Can I de-escalate antibiotics? (Based on culture results)",
+              "Can I switch IV to PO? (If afebrile >48 hours, improving clinically)",
+              "Can I stop antibiotics? (If 2-4 weeks completed, bursa resolved)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use antibiotics alone without drainage (high failure rate 50-70%). Do NOT use prolonged antibiotics beyond 2-4 weeks (unless osteomyelitis). Do NOT delay drainage >24 hours (higher failure rate).",
+            "patient_education": "Septic bursitis requires drainage (serial aspiration or incision and drainage) + antibiotics (2-4 weeks). Complete full antibiotic course. Avoid trauma or pressure (elbow pads, knee pads). Watch for complications (osteomyelitis, recurrence). Follow-up with primary care (assess bursa resolution). Prevention: Elbow pads, knee pads for occupational exposure."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Septic Bursitis Guidelines (2015)",
+              "url": "https://academic.oup.com/cid/article/61/9/e26/452579"
+            },
+            {
+              "label": "Orthopedic Surgery Septic Bursitis Guidelines (2017)",
+              "url": "https://journals.lww.com/jaaos/Abstract/2017/11010/Septic_Bursitis.5.aspx"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "chronic-osteomyelitis",
+      "name": "Chronic Osteomyelitis",
+      "synonyms": [
+        "chronic bone infection",
+        "recurrent osteomyelitis"
+      ],
+      "icd10": [
+        "M86.60"
+      ],
+      "severity": [
+        "moderate",
+        "severe"
+      ],
+      "shortDescription": "Recurrent bone infection requiring surgical debridement and prolonged antibiotics",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Chronic osteomyelitis is persistent or recurrent bone infection (onset >2 weeks or recurrent after treatment). Incidence: 1-2 cases per 100,000/year. Mortality: <5%. Cure rate: 50-70% (lower than acute osteomyelitis). Requires surgical debridement (antibiotics alone fail 70-90%) + prolonged antibiotics (6-12 weeks). Sequestrum (dead bone), involucrum (new bone formation), sinus tract, fistula.",
+            "clinical_presentation": "Chronic onset (weeks-months): Bone pain (80%), draining sinus tract (50-70%), swelling (60%), erythema (40%), fever uncommon (20-30%). Physical exam: Draining sinus tract (purulent drainage), bone tenderness, swelling, erythema, limited range of motion (adjacent joint).",
+            "diagnostic_criteria": "Clinical suspicion (chronic bone pain + draining sinus tract) + imaging (MRI: sequestrum, involucrum, sinus tract) + positive bone culture (from surgical debridement).",
+            "risk_factors": [
+              "Prior acute osteomyelitis (inadequate treatment, 10-30% progress to chronic)",
+              "Diabetes mellitus (10-20x increased risk, especially foot)",
+              "Peripheral vascular disease (impaired blood supply)",
+              "Open fracture or trauma (contiguous spread)",
+              "Orthopedic hardware (biofilm formation)",
+              "Immunosuppression (HIV, corticosteroids, chemotherapy)",
+              "Smoking (impaired wound healing)",
+              "Malnutrition (impaired immune function)"
+            ],
+            "red_flags": [
+              "Draining sinus tract - definitive chronic osteomyelitis, requires surgical debridement",
+              "Sequestrum (dead bone) - requires surgical removal, antibiotics alone fail",
+              "Orthopedic hardware - requires removal, biofilm formation",
+              "Squamous cell carcinoma - rare complication (1-2%, chronic draining sinus >10 years)",
+              "Amyloidosis - rare complication (<1%, chronic inflammation >10 years)"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "MRI of affected bone (gold standard, sensitivity 90-95%). Bone biopsy or surgical debridement for culture (guides therapy, obtain from deep bone, avoid sinus tract). ESR, CRP (elevated, monitor response). X-ray (sequestrum, involucrum, periosteal reaction).",
+            "essential_tests": [
+              "MRI of affected bone: Sequestrum (dead bone, T1/T2 hypointense), involucrum (new bone formation), sinus tract, bone marrow edema, soft tissue abscess. Sensitivity 90-95%, specificity 80-90%. Gold standard.",
+              "Bone biopsy or surgical debridement for culture: Obtain from deep bone (avoid sinus tract, contaminated). Send for Gram stain, culture (aerobic + anaerobic + fungal + mycobacterial). Guides antibiotic therapy. Sensitivity 70-80%.",
+              "CBC with differential (leukocytosis 10,000-15,000, often normal)",
+              "CMP (assess renal function)",
+              "ESR, CRP (elevated, ESR >30 mm/hr in 80%, CRP >50 mg/L in 70%). Monitor response (CRP declines within 2-4 weeks).",
+              "X-ray of affected bone: Sequestrum (dense bone fragment), involucrum (periosteal new bone formation), sclerosis, periosteal reaction. Sensitive for chronic changes (appears after 4-6 weeks)."
+            ],
+            "conditional_tests": [
+              "CT of affected bone: Better visualization of sequestrum, involucrum, cortical destruction. Useful for surgical planning.",
+              "Nuclear medicine scan (WBC scan): If multifocal osteomyelitis suspected. Sensitivity 80-90%, specificity 70-80%.",
+              "Sinus tract culture: Do NOT use for antibiotic selection (contaminated, does NOT reflect bone pathogens). Only useful to rule out unusual organisms (fungi, mycobacteria).",
+              "Blood cultures x2 sets: If systemic toxicity (fever, hypotension). Positive in 10-20% (low yield in chronic osteomyelitis)."
+            ],
+            "when_not_to_test": "Do NOT rely on sinus tract culture (contaminated, does NOT reflect bone pathogens). Do NOT delay surgical debridement for antibiotics (surgery CRITICAL for cure, antibiotics alone fail 70-90%).",
+            "turnaround_time": "MRI: 1-4 hours. Bone culture: 24-72 hours (aerobic/anaerobic), 4-6 weeks (mycobacterial). ESR, CRP: 1-2 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "staphylococcus_aureus": "Most common (50-70%). MRSA common (30-50%). Source: Hematogenous, contiguous spread, trauma, hardware. Biofilm formation (difficult to eradicate).",
+            "coagulase_negative_staphylococci": "10-20%: S. epidermidis. Source: Hardware, biofilm formation. Often methicillin-resistant.",
+            "streptococcus_species": "5-10%: S. pyogenes (Group A Strep), viridans streptococci. Source: Hematogenous, contiguous spread.",
+            "gram_negative_bacilli": "10-20%: E. coli, Pseudomonas, Klebsiella, Proteus. Source: Hematogenous (UTI, GI), diabetic foot, open fracture. ESBL common (30-50%).",
+            "polymicrobial": "20-30%: Mixed aerobic and anaerobic bacteria. Source: Contiguous spread (diabetic foot, decubitus ulcer, trauma), open fracture.",
+            "anaerobes": "10-20%: Bacteroides, Peptostreptococcus. Source: Contiguous spread (diabetic foot, decubitus ulcer), human/animal bite.",
+            "culture_negative": "20-30%: Prior antibiotics, fastidious organisms (Propionibacterium acnes, fungi, mycobacteria), biofilm.",
+            "resistance_patterns": "MRSA 30-50%. ESBL Gram-negatives 30-50%. Multidrug-resistant Pseudomonas 30-40%. Biofilm formation (all organisms, difficult to eradicate)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "standard_regimen": "Vancomycin 15-20mg/kg IV q8-12h + Ceftriaxone 2g IV q24h. Covers MRSA, Streptococcus, Gram-negatives. Duration: 6-12 weeks (IV 4-6 weeks, then PO 2-6 weeks). Start AFTER surgical debridement (obtain intraoperative cultures first).",
+            "diabetic_foot_or_polymicrobial": "Vancomycin 15-20mg/kg IV q8-12h + Piperacillin-tazobactam 4.5g IV q6h OR Meropenem 2g IV q8h. Covers MRSA, Gram-negatives, anaerobes. Duration: 6-12 weeks.",
+            "hardware_or_biofilm": "Vancomycin 15-20mg/kg IV q8-12h + Rifampin 600mg PO daily (biofilm penetration). Add ceftriaxone or cefepime if Gram-negative risk. Duration: 6-12 weeks. Rifampin ONLY after hardware removal (do NOT use if hardware retained, rapid resistance).",
+            "surgical_debridement": "CRITICAL for cure (antibiotics alone fail 70-90%). Indications: All cases of chronic osteomyelitis (sequestrum, sinus tract, involucrum). Procedure: Remove all dead bone (sequestrum), necrotic soft tissue, hardware (if present). Debride until bleeding bone (viable bone). Obtain intraoperative cultures (guides antibiotic therapy). May require multiple surgeries, bone grafting, flap coverage.",
+            "alternatives": "Beta-lactam allergy: Vancomycin 15-20mg/kg IV q8-12h + Aztreonam 2g IV q8h (Gram-negatives) OR Fluoroquinolone (levofloxacin 750mg IV daily, if susceptible).",
+            "avoid_list": "Avoid antibiotics alone without surgical debridement (high failure rate 70-90%). Avoid inadequate MRSA coverage (vancomycin required). Avoid short antibiotic courses <6 weeks (high relapse rate 50-70%). Avoid rifampin if hardware retained (rapid resistance)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "surgical_debridement": "CRITICAL for cure (antibiotics alone fail 70-90%). Procedure: Remove all dead bone (sequestrum), necrotic soft tissue, hardware (if present). Debride until bleeding bone (viable bone). Obtain intraoperative cultures (guides antibiotic therapy). May require multiple surgeries (staged debridement), bone grafting (fill dead space), flap coverage (soft tissue coverage). Antibiotics: Start AFTER debridement, continue 6-12 weeks.",
+            "targeted_antibiotics": "Narrow based on intraoperative bone culture results. MRSA: Vancomycin 15-20mg/kg IV q8-12h OR Daptomycin 8-10mg/kg IV q24h. MSSA: Nafcillin 2g IV q4h OR Cefazolin 2g IV q8h. Streptococcus: Penicillin G 4 million units IV q4h OR Ceftriaxone 2g IV q24h. Gram-negatives: Ceftriaxone 2g IV q24h OR Cefepime 2g IV q8h. ESBL: Meropenem 2g IV q8h. Pseudomonas: Cefepime 2g IV q8h OR Meropenem 2g IV q8h. Anaerobes: Metronidazole 500mg IV q8h.",
+            "rifampin_combination": "Add rifampin 600mg PO daily (biofilm penetration) AFTER hardware removal. Do NOT use rifampin alone (rapid resistance). Combine with: Fluoroquinolone (ciprofloxacin 500-750mg PO BID) OR TMP-SMX DS 1 tab PO BID. Duration: 6-12 weeks.",
+            "duration": "6-12 weeks total (IV + PO). IV therapy: 4-6 weeks minimum. Switch to PO when: (1) Afebrile >2 weeks, (2) Improving clinically (pain, swelling, sinus tract closed), (3) CRP declining (>50% reduction). PO therapy: 2-6 weeks (after IV). Longer if: Extensive bone destruction, hardware retained (not recommended), immunocompromised.",
+            "monitoring": "Weekly: CBC, CMP, ESR, CRP (monitor WBC normalization, CRP decline >50%). Repeat MRI at 6-12 weeks: Assess bone marrow edema resolution, sequestrum removal. Wound assessment: Weekly (sinus tract closure, granulation tissue, healing). If no improvement: Consider repeat debridement, alternative diagnosis, or resistant organism.",
+            "de_escalation": "De-escalate within 48-72 hours based on intraoperative culture results. Discontinue vancomycin if no MRSA. Narrow Gram-negative coverage if ESBL-negative. Discontinue anaerobic coverage if no anaerobes. Switch IV to PO when afebrile >2 weeks, improving clinically, CRP declining >50%.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >2 weeks, (2) Improving clinically (pain, swelling, sinus tract closed), (3) CRP declining >50%. PO options: Linezolid 600mg PO BID (MRSA) OR Cephalexin 500mg PO QID (MSSA, Streptococcus) OR Ciprofloxacin 500-750mg PO BID + Rifampin 600mg PO daily (if susceptible, after hardware removal) OR Levofloxacin 750mg PO daily (Gram-negatives)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "total_duration": "6-12 weeks (IV + PO). IV therapy: 4-6 weeks minimum. PO therapy: 2-6 weeks (after IV). Longer if: Extensive bone destruction (8-12 weeks), hardware retained (not recommended, 12 weeks), immunocompromised (8-12 weeks).",
+            "monitoring": "Weekly: CBC, CMP, ESR, CRP (monitor WBC normalization, CRP decline >50%). Repeat MRI at 6-12 weeks: Assess bone marrow edema resolution, sequestrum removal. Wound assessment: Weekly (sinus tract closure, granulation tissue, healing). Physical therapy: Start early (weight-bearing as tolerated, range of motion). If no improvement: Consider repeat debridement, alternative diagnosis, or resistant organism.",
+            "stop_criteria": "Completed 6-12 weeks. Afebrile >4 weeks. Improving clinically (pain resolved, sinus tract closed, wound healed). CRP normalized or near baseline. No complications (recurrence, amputation)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "sequestrum_removal": "Sequestrum (dead bone) MUST be removed surgically (antibiotics do NOT penetrate dead bone). Identified on X-ray (dense bone fragment) or CT (better visualization). Surgical debridement: Remove all sequestrum, debride until bleeding bone (viable bone). Antibiotics: Start AFTER debridement, continue 6-12 weeks.",
+            "sinus_tract_management": "Sinus tract (fistula from bone to skin) = definitive chronic osteomyelitis. Do NOT culture sinus tract (contaminated, does NOT reflect bone pathogens). Surgical debridement CRITICAL (remove sequestrum, necrotic tissue). Sinus tract closure: Spontaneous after successful debridement + antibiotics (4-8 weeks). If persistent: Repeat debridement, consider fistulectomy.",
+            "hardware_management": "Hardware (orthopedic implants, plates, screws) = biofilm formation (difficult to eradicate). Antibiotics alone fail 80-90%. Options: (1) Hardware removal (preferred, highest cure rate 80-90%), (2) Hardware retention + chronic suppression (if hardware essential, cure rate 30-50%, indefinite antibiotics). Rifampin: Add ONLY after hardware removal (biofilm penetration). Do NOT use if hardware retained (rapid resistance).",
+            "bone_grafting_and_flap_coverage": "Large bone defects (after extensive debridement): Bone grafting (autograft or allograft) to fill dead space, promote healing. Soft tissue defects: Flap coverage (muscle flap, free flap) to provide vascularized tissue, cover bone. Plastic surgery or orthopedic surgery consultation.",
+            "amputation": "Indicated if: (1) Extensive bone destruction (>50% of bone), (2) Failed multiple debridements, (3) Peripheral vascular disease (non-revascularizable), (4) Life-threatening infection. Level: Preserve as much length as possible. Antibiotics: 2-4 weeks after amputation (if residual infection).",
+            "recurrence": "Occurs in 20-30% (higher than acute osteomyelitis). Risk factors: Inadequate debridement (sequestrum retained), inadequate antibiotic duration, hardware retained, immunosuppression, smoking. Treatment: Repeat debridement + prolonged antibiotics (8-12 weeks)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "De-escalate within 48-72 hours based on intraoperative bone culture results",
+              "Discontinue vancomycin if no MRSA",
+              "Narrow Gram-negative coverage if ESBL-negative",
+              "Discontinue anaerobic coverage if no anaerobes",
+              "Switch IV to PO when afebrile >2 weeks, improving clinically, CRP declining >50%",
+              "Fixed duration 6-12 weeks (avoid prolonged courses unless extensive bone destruction or immunocompromised)"
+            ],
+            "timeout_checklist": [
+              "Is surgical debridement performed? (CRITICAL for cure, antibiotics alone fail 70-90%)",
+              "Are intraoperative bone culture results available? (Narrow antibiotics based on results)",
+              "Is sequestrum removed? (Dead bone MUST be removed, antibiotics do NOT penetrate)",
+              "Is hardware removed? (If present, biofilm formation, antibiotics alone fail 80-90%)",
+              "Is patient improving clinically? (Pain, swelling, sinus tract closed)",
+              "Is CRP declining? (>50% reduction indicates response)",
+              "Can I de-escalate antibiotics? (Based on culture results)",
+              "Can I switch IV to PO? (If afebrile >2 weeks, improving clinically, CRP declining)",
+              "Can I stop antibiotics? (If 6-12 weeks completed, CRP normalized)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use antibiotics alone without surgical debridement (high failure rate 70-90%). Do NOT use short antibiotic courses <6 weeks (high relapse rate 50-70%). Do NOT use prolonged antibiotics beyond 6-12 weeks (unless extensive bone destruction or immunocompromised). Do NOT delay surgical debridement (cure rate decreases with delay).",
+            "patient_education": "Chronic osteomyelitis requires surgical debridement (remove dead bone) + prolonged antibiotics (6-12 weeks, IV then PO). Complete full antibiotic course (relapse risk 50-70% if incomplete). Surgical debridement CRITICAL (antibiotics alone fail 70-90%). May require multiple surgeries, bone grafting, flap coverage. Watch for complications (recurrence, amputation). Follow-up with orthopedics (assess bone healing, function). Smoking cessation CRITICAL (impairs wound healing). Recurrence risk (20-30%)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Chronic Osteomyelitis Guidelines (2015)",
+              "url": "https://academic.oup.com/cid/article/61/9/e26/452579"
+            },
+            {
+              "label": "Orthopedic Surgery Chronic Osteomyelitis Guidelines (2020)",
+              "url": "https://journals.lww.com/jaaos/Abstract/2020/01010/Chronic_Osteomyelitis.3.aspx"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pyomyositis",
+      "name": "Pyomyositis",
+      "synonyms": [
+        "muscle abscess",
+        "tropical pyomyositis"
+      ],
+      "icd10": [
+        "M60.00"
+      ],
+      "severity": [
+        "moderate",
+        "severe"
+      ],
+      "shortDescription": "Muscle abscess requiring drainage and antibiotics",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Pyomyositis is bacterial abscess within skeletal muscle. Incidence: 0.5-1 case per 100,000/year (temperate climates), 1-4 cases per 100,000/year (tropical climates). Mortality: 1-5%. Requires drainage + antibiotics (2-4 weeks). Most common: Thigh (40%), gluteal (20%), calf (15%), upper extremity (15%), trunk (10%). Hematogenous spread (bacteremia) or contiguous spread (trauma).",
+            "clinical_presentation": "Subacute onset (1-3 weeks): Muscle pain (90%), swelling (80%), fever (70%), limited range of motion (60%). Physical exam: Tender muscle mass (fluctuant if abscess formed), warmth, erythema, limited range of motion, fever.",
+            "diagnostic_criteria": "Clinical suspicion (muscle pain + swelling + fever) + imaging (MRI or CT: intramuscular abscess) + positive blood or abscess culture.",
+            "risk_factors": [
+              "Tropical climate (higher incidence, 'tropical pyomyositis')",
+              "HIV/AIDS (10-20x increased risk, CD4 <200)",
+              "Diabetes mellitus (2-3x increased risk)",
+              "Immunosuppression (corticosteroids, chemotherapy, transplant)",
+              "IV drug use (hematogenous spread)",
+              "Trauma or muscle injury (contiguous spread)",
+              "Strenuous exercise (muscle microtrauma)",
+              "Malnutrition or vitamin deficiency"
+            ],
+            "red_flags": [
+              "Systemic toxicity (fever, hypotension, altered mental status) - bacteremia, sepsis, higher mortality",
+              "Multiple muscle groups - disseminated infection, higher mortality",
+              "Immunocompromised (HIV, CD4 <200) - broader differential (fungi, mycobacteria, atypical bacteria)",
+              "Compartment syndrome - muscle swelling, neurovascular compromise, urgent fasciotomy"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "MRI of affected muscle (gold standard, sensitivity 95%). CT with contrast (if MRI unavailable, sensitivity 85%). Ultrasound (bedside, guide aspiration, sensitivity 80%). Abscess aspiration or surgical drainage for culture (guides therapy). Blood cultures x2 sets (positive in 30-50%).",
+            "essential_tests": [
+              "MRI of affected muscle: Intramuscular abscess (T1 hypointense, T2 hyperintense, rim enhancement), muscle edema, surrounding inflammation. Sensitivity 95%, specificity 90%. Gold standard.",
+              "CT with contrast: Intramuscular abscess (hypodense with rim enhancement), muscle swelling. Sensitivity 85%, specificity 85%. Faster than MRI.",
+              "Ultrasound: Intramuscular fluid collection (hypoechoic), guide aspiration. Sensitivity 80%, specificity 80%. Bedside option.",
+              "Abscess aspiration or surgical drainage for culture: Obtain pus for Gram stain, culture (aerobic + anaerobic). Guides antibiotic therapy.",
+              "Blood cultures x2 sets BEFORE antibiotics (positive in 30-50%)",
+              "CBC with differential (leukocytosis 12,000-20,000)",
+              "CMP (assess renal function)",
+              "ESR, CRP (elevated, ESR >50 mm/hr in 90%, CRP >100 mg/L in 80%)",
+              "CPK (creatine phosphokinase): Elevated (muscle injury), but nonspecific"
+            ],
+            "conditional_tests": [
+              "HIV testing: If risk factors or immunocompromised (pyomyositis common in HIV, CD4 <200)",
+              "Echocardiography (TEE): If bacteremia or multiple sites (rule out endocarditis, hematogenous source)"
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics or drainage if septic or unstable (start empiric antibiotics, urgent drainage). Do NOT rely on CPK alone (elevated but nonspecific, does NOT distinguish pyomyositis from other muscle injury).",
+            "turnaround_time": "MRI: 1-4 hours. CT: <1 hour. Ultrasound: <30 minutes (bedside). Abscess culture: 24-72 hours (aerobic/anaerobic). Blood cultures: Preliminary 24-48 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "staphylococcus_aureus": "Most common (70-90%). MRSA common (30-50%). Source: Hematogenous (bacteremia), contiguous spread (trauma).",
+            "streptococcus_species": "5-10%: S. pyogenes (Group A Strep), S. agalactiae (Group B Strep). Source: Hematogenous, contiguous spread.",
+            "gram_negative_bacilli": "5-10%: E. coli, Klebsiella, Pseudomonas. Source: Hematogenous (UTI, GI), immunocompromised. ESBL common (30-50%).",
+            "polymicrobial": "Rare (<5%): Mixed aerobic and anaerobic bacteria. Source: Trauma, open wound.",
+            "mycobacteria": "Rare (<5%): M. tuberculosis, non-tuberculous mycobacteria (NTM). Immunocompromised (HIV, CD4 <200). Subacute presentation (months).",
+            "fungi": "Rare (<5%): Candida, Aspergillus. Immunocompromised (HIV, chemotherapy, transplant).",
+            "culture_negative": "10-20%: Prior antibiotics, fastidious organisms.",
+            "resistance_patterns": "MRSA 30-50%. ESBL Gram-negatives 30-50%."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "standard_regimen": "Vancomycin 15-20mg/kg IV q8-12h + Ceftriaxone 2g IV q24h. Covers MRSA, Streptococcus, Gram-negatives. Duration: 2-4 weeks (IV 1-2 weeks, then PO 1-2 weeks).",
+            "immunocompromised_or_hiv": "Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h. Covers MRSA, Pseudomonas, Gram-negatives. Duration: 2-4 weeks. Consider TB or fungal if CD4 <200.",
+            "drainage": "CRITICAL for cure. Percutaneous aspiration (ultrasound or CT-guided) OR Surgical drainage (if failed aspiration, large abscess >5cm, or multiple abscesses). Indications: All cases (pyomyositis requires drainage, antibiotics alone fail 50-70%). Timing: Within 24 hours (urgent). Obtain pus for culture (guides antibiotic therapy).",
+            "alternatives": "Beta-lactam allergy: Vancomycin 15-20mg/kg IV q8-12h + Aztreonam 2g IV q8h (Gram-negatives) OR Fluoroquinolone (levofloxacin 750mg IV daily, if susceptible).",
+            "avoid_list": "Avoid antibiotics alone without drainage (high failure rate 50-70%). Avoid inadequate MRSA coverage (vancomycin required). Avoid delaying drainage >24 hours (higher failure rate, risk of compartment syndrome)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "drainage": "CRITICAL for cure. Percutaneous aspiration (ultrasound or CT-guided, first-line if abscess <5cm, single abscess). Surgical drainage (if failed aspiration, large abscess >5cm, multiple abscesses, or compartment syndrome). Timing: Within 24 hours (urgent). Obtain pus for culture. Antibiotics alone = high failure rate (50-70%).",
+            "targeted_antibiotics": "Narrow based on abscess or blood culture results. MRSA: Vancomycin 15-20mg/kg IV q8-12h OR Daptomycin 6mg/kg IV q24h. MSSA: Nafcillin 2g IV q4h OR Cefazolin 2g IV q8h. Streptococcus: Penicillin G 4 million units IV q4h OR Ceftriaxone 2g IV q24h. Gram-negatives: Ceftriaxone 2g IV q24h OR Cefepime 2g IV q8h. ESBL: Meropenem 2g IV q8h.",
+            "duration": "2-4 weeks total (IV + PO). IV therapy: 1-2 weeks. Switch to PO when: (1) Afebrile >48 hours, (2) Improving clinically (pain, swelling), (3) CRP declining (>50% reduction). PO therapy: 1-2 weeks (after IV).",
+            "monitoring": "Every 2-3 days: Muscle exam (pain, swelling, range of motion). Repeat imaging (ultrasound or CT) at 1 week: Assess abscess resolution. If no improvement: Consider repeat drainage, alternative diagnosis, or resistant organism.",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Discontinue vancomycin if no MRSA. Narrow Gram-negative coverage if ESBL-negative. Switch IV to PO when afebrile >48 hours, improving clinically, CRP declining >50%.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >48 hours, (2) Improving clinically (pain, swelling, range of motion), (3) CRP declining >50%. PO options: Linezolid 600mg PO BID (MRSA) OR Cephalexin 500mg PO QID (MSSA, Streptococcus) OR Ciprofloxacin 500-750mg PO BID (Gram-negatives, if susceptible)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "total_duration": "2-4 weeks (IV + PO). IV therapy: 1-2 weeks. PO therapy: 1-2 weeks (after IV).",
+            "monitoring": "Every 2-3 days: Muscle exam (pain, swelling, range of motion). Repeat imaging (ultrasound or CT) at 1 week: Assess abscess resolution. Physical therapy: Start early (range of motion, strengthening when pain allows). If no improvement: Consider repeat drainage, alternative diagnosis, or resistant organism.",
+            "stop_criteria": "Completed 2-4 weeks. Afebrile >1 week. Improving clinically (pain resolved, swelling resolved, full range of motion). Abscess resolved on repeat imaging. No complications (compartment syndrome, recurrence)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "compartment_syndrome": "Rare complication (<5%). Muscle swelling within fascial compartment → increased pressure → neurovascular compromise. Presentation: Severe pain (out of proportion), paresthesias, paralysis, pulselessness (late sign). Diagnosis: Compartment pressure >30 mmHg. Treatment: Urgent fasciotomy (within 6 hours, irreversible muscle necrosis). Orthopedic surgery consultation CRITICAL.",
+            "hiv_pyomyositis": "Common in HIV (10-20x increased risk, CD4 <200). Multiple muscle groups more common (30-40%, vs. 10-20% in general population). Broader differential: TB (M. tuberculosis), NTM (non-tuberculous mycobacteria), fungi (Candida, Aspergillus). Treatment: Same antibiotics, longer duration (4-6 weeks). Consider TB or fungal if culture-negative or no improvement.",
+            "tropical_pyomyositis": "Higher incidence in tropical climates (Africa, Asia, Latin America). Risk factors: Malnutrition, vitamin deficiency, parasitic infections (malaria). S. aureus most common (80-90%). Treatment: Same as standard regimen.",
+            "multiple_muscle_groups": "Occurs in 10-20%. Disseminated infection (bacteremia). Higher mortality (5-10%). Requires drainage of all affected muscles. Antibiotics: Same as standard regimen. Duration: 4-6 weeks (longer than single muscle). Echocardiography (rule out endocarditis).",
+            "recurrence": "Occurs in 5-10%. Risk factors: Inadequate drainage, inadequate antibiotic duration, immunosuppression (HIV, diabetes). Treatment: Repeat drainage + prolonged antibiotics (4-6 weeks)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "De-escalate within 48-72 hours based on abscess or blood culture results",
+              "Discontinue vancomycin if no MRSA",
+              "Narrow Gram-negative coverage if ESBL-negative",
+              "Switch IV to PO when afebrile >48 hours, improving clinically, CRP declining >50%",
+              "Fixed duration 2-4 weeks (avoid prolonged courses unless multiple muscle groups or immunocompromised)"
+            ],
+            "timeout_checklist": [
+              "Is drainage performed? (CRITICAL for cure, antibiotics alone fail 50-70%)",
+              "Are abscess or blood culture results available? (Narrow antibiotics based on results)",
+              "Is patient improving clinically? (Pain, swelling, range of motion)",
+              "Is compartment syndrome ruled out? (Severe pain, paresthesias, paralysis)",
+              "Can I de-escalate antibiotics? (Based on culture results)",
+              "Can I switch IV to PO? (If afebrile >48 hours, improving clinically, CRP declining)",
+              "Can I stop antibiotics? (If 2-4 weeks completed, abscess resolved)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use antibiotics alone without drainage (high failure rate 50-70%). Do NOT use prolonged antibiotics beyond 2-4 weeks (unless multiple muscle groups or immunocompromised). Do NOT delay drainage >24 hours (higher failure rate, risk of compartment syndrome).",
+            "patient_education": "Pyomyositis requires drainage (aspiration or surgery) + antibiotics (2-4 weeks, IV then PO). Complete full antibiotic course. Physical therapy CRITICAL (range of motion, strengthening). Watch for complications (compartment syndrome, recurrence). Follow-up with primary care (assess muscle healing, function). Seek immediate care if severe pain, paresthesias, or paralysis (compartment syndrome)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Pyomyositis Guidelines (2015)",
+              "url": "https://academic.oup.com/cid/article/61/9/e26/452579"
+            },
+            {
+              "label": "Infectious Diseases Pyomyositis Review (2019)",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6761894/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
+

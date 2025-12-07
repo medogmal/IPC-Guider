@@ -1,0 +1,349 @@
+{
+  "version": 1,
+  "groupId": "skin_soft_tissue",
+  "groupName": "Skin & Soft Tissue",
+  "type": "bacterial",
+  "updatedAt": "2025-01-11T00:00:00Z",
+  "pathogens": [
+    {
+      "id": "staph_aureus_ssti",
+      "name": "Staphylococcus aureus (including MRSA)",
+      "scientificName": "Staphylococcus aureus (methicillin-sensitive and methicillin-resistant)",
+      "definition": "Gram-positive cocci, common cause of skin and soft tissue infections (SSTI) and healthcare-associated infections; MRSA strains are antibiotic-resistant. S. aureus is the most common cause of purulent skin infections.",
+      "reservoir": {
+        "primary": ["Human skin", "Nares (nose)", "Wounds", "Healthcare environment"],
+        "secondary": ["Contaminated surfaces", "Medical equipment", "Fomites (towels, sports equipment)"],
+        "notes": "Approximately 30% of healthy individuals are colonized with S. aureus in the nares; 1-2% carry MRSA."
+      },
+      "transmission": {
+        "mode": "Contact (direct and indirect)",
+        "routes": [
+          "Direct contact with infected or colonized skin",
+          "Indirect contact via contaminated fomites (towels, razors, sports equipment)",
+          "Healthcare worker hands",
+          "Contaminated surfaces in healthcare settings",
+          "Sharing personal items (towels, razors, clothing)"
+        ],
+        "notes": "Transmission is primarily through direct skin-to-skin contact or contact with contaminated surfaces. Common in contact sports and crowded settings."
+      },
+      "incubationPeriod": {
+        "range": "1-10 days (typically 4-10 days)",
+        "infectiousPeriod": "Infectious while lesions are present or while colonized (can be prolonged)",
+        "seasonality": "Year-round, with possible increase in summer (more skin exposure, sports activities)",
+        "geographic": "Worldwide, with community-associated MRSA (CA-MRSA) increasingly common"
+      },
+      "riskFactors": [
+        "Contact sports (wrestling, football, rugby)",
+        "Skin trauma or wounds",
+        "Immunocompromised individuals",
+        "Recent healthcare exposure or hospitalization",
+        "Crowded living conditions (military barracks, prisons, dormitories)",
+        "Poor hygiene or sharing personal items",
+        "Chronic skin conditions (eczema, psoriasis)",
+        "Injection drug use"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Abscesses and boils (furuncles, carbuncles)",
+          "Cellulitis (spreading skin infection)",
+          "Impetigo (superficial skin infection with honey-crusted lesions)",
+          "Folliculitis (hair follicle infection)",
+          "Surgical site infections",
+          "Wound infections"
+        ],
+        "complications": [
+          "Bacteremia and sepsis",
+          "Endocarditis",
+          "Osteomyelitis (bone infection)",
+          "Septic arthritis",
+          "Necrotizing fasciitis (rare)",
+          "Toxic shock syndrome (rare)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with purulent skin lesion (abscess, boil, cellulitis) + risk factors (contact sports, healthcare exposure, crowded living) + epidemiologic link to other cases",
+          "confirmed": "Culture-positive for S. aureus from wound or abscess; MRSA confirmed by oxacillin resistance (MIC ≥4 μg/mL) or mecA gene detection"
+        }
+      },
+      "diagnosis": [
+        "Culture of wound drainage or abscess",
+        "Gram stain (Gram-positive cocci in clusters)",
+        "Antimicrobial susceptibility testing (oxacillin disk diffusion or MIC)",
+        "PCR for mecA gene (MRSA confirmation)",
+        "Nasal swab for colonization screening (active surveillance)"
+      ],
+      "treatment": "Incision and drainage (I&D) is primary treatment for abscesses. Antibiotics: MSSA - cephalexin, dicloxacillin; MRSA - trimethoprim-sulfamethoxazole (TMP-SMX), doxycycline, clindamycin, or linezolid. Severe infections: vancomycin IV. Decolonization (mupirocin nasal + chlorhexidine baths) for recurrent infections or outbreaks.",
+      "infectionControl": {
+        "precautions": "Contact Precautions (gloves + gown) for draining wounds or MRSA; Standard Precautions for minor infections",
+        "screening": "Active surveillance (nasal swabs) for high-risk settings during outbreaks (sports teams, military units, healthcare facilities)",
+        "cohorting": "Cohort cases during outbreaks; dedicated staff if needed",
+        "sourceControl": "Proper wound care and drainage; cover draining wounds with clean, dry bandages",
+        "environmental": "Enhanced cleaning and disinfection of shared equipment (sports gear, gym equipment), high-touch surfaces, and personal items",
+        "staffEducation": "Hand hygiene, proper wound care, recognition of SSTI, contact precautions, equipment cleaning, decolonization protocols"
+      },
+      "outbreakTriggers": [
+        "≥3 epidemiologically linked SSTI cases in community setting (sports team, school, military unit)",
+        "≥2-3 linked cases in healthcare facility",
+        "Sudden increase in SSTI cases above baseline",
+        "Cluster identified through molecular typing (same strain)"
+      ],
+      "reportingCommunication": [
+        "Prompt notification to infection control and public health (within 24 hours for routine outbreaks)",
+        "Sooner reporting for severe clusters or unusual presentations",
+        "Coordinate with sports teams, schools, or facility leadership",
+        "Implement control measures immediately (screening, decolonization, hygiene education)",
+        "Molecular typing (PFGE, WGS) to confirm outbreak strain",
+        "Update stakeholders as outbreak evolves"
+      ],
+      "prevention": [
+        "Wound care hygiene: keep wounds clean and covered",
+        "Minimize skin trauma (proper sports equipment, protective gear)",
+        "Hand hygiene, especially after touching wounds or bandages",
+        "Avoid sharing personal items (towels, razors, clothing, sports equipment)",
+        "Shower immediately after sports activities",
+        "Decolonization protocols during outbreaks (mupirocin + chlorhexidine)",
+        "Environmental cleaning of shared equipment and surfaces",
+        "Education on recognition and early treatment of SSTI"
+      ],
+      "references": [
+        {
+          "label": "Saudi GDIPC - SSTI Guidelines",
+          "url": "https://gdipc.org"
+        },
+        {
+          "label": "CDC - MRSA",
+          "url": "https://www.cdc.gov/mrsa/index.html"
+        },
+        {
+          "label": "WHO - MRSA Information",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance"
+        }
+      ]
+    },
+    {
+      "id": "group_a_strep",
+      "name": "Group A Streptococcus",
+      "scientificName": "Streptococcus pyogenes (Group A Streptococcus)",
+      "definition": "Beta-hemolytic Gram-positive cocci causing skin and soft tissue infections including necrotizing fasciitis. GAS is a common cause of pharyngitis and SSTI, with potential for severe invasive disease.",
+      "reservoir": {
+        "primary": ["Human throat (pharynx)", "Skin lesions", "Contaminated objects"],
+        "secondary": ["Respiratory droplets", "Fomites", "Healthcare environment"],
+        "notes": "Humans are the only reservoir. Asymptomatic pharyngeal carriage occurs in 5-15% of children and <5% of adults."
+      },
+      "transmission": {
+        "mode": "Contact (direct), Droplet (less common for SSTI)",
+        "routes": [
+          "Direct contact with infected skin or wounds",
+          "Indirect contact via contaminated objects or surfaces",
+          "Respiratory droplets (for pharyngitis, less relevant for SSTI)",
+          "Person-to-person transmission in crowded settings",
+          "Contaminated hands of healthcare workers"
+        ],
+        "notes": "For SSTI, direct contact with infected wounds is the primary route. Droplet transmission is more relevant for pharyngitis."
+      },
+      "incubationPeriod": {
+        "range": "1-3 days (typically 1-2 days for SSTI)",
+        "infectiousPeriod": "Infectious while lesions are present or during pharyngeal carriage (can be weeks without treatment)",
+        "seasonality": "Pharyngitis peaks in winter/spring; SSTI year-round with possible summer increase",
+        "geographic": "Worldwide, with higher incidence in crowded settings and developing countries"
+      },
+      "riskFactors": [
+        "Skin breaks or trauma (cuts, abrasions, insect bites, surgical wounds)",
+        "Immunosuppression (HIV, diabetes, cancer, corticosteroids)",
+        "Crowded living conditions (schools, military barracks, households)",
+        "Varicella (chickenpox) infection - risk for invasive GAS",
+        "Recent surgery or childbirth",
+        "Injection drug use",
+        "Chronic skin conditions"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Cellulitis (spreading, painful, red skin infection)",
+          "Erysipelas (superficial cellulitis with raised, well-demarcated borders)",
+          "Impetigo (superficial skin infection with honey-crusted lesions)",
+          "Necrotizing fasciitis (rapidly progressive, life-threatening deep tissue infection)",
+          "Wound infections",
+          "Lymphangitis (red streaks from infection site)"
+        ],
+        "complications": [
+          "Necrotizing fasciitis (flesh-eating disease) - surgical emergency",
+          "Streptococcal toxic shock syndrome (STSS)",
+          "Bacteremia and sepsis",
+          "Post-streptococcal glomerulonephritis (kidney inflammation)",
+          "Rheumatic fever (after pharyngitis, not SSTI)",
+          "Death (especially with necrotizing fasciitis or STSS)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with compatible SSTI (cellulitis, erysipelas, impetigo, necrotizing fasciitis) + clinical signs + epidemiological linkage to other cases",
+          "confirmed": "Culture-positive for Group A Streptococcus (S. pyogenes) from wound, blood, or tissue; beta-hemolytic on blood agar; positive for Lancefield group A antigen"
+        }
+      },
+      "diagnosis": [
+        "Culture from wound swab, blood, or tissue",
+        "Gram stain (Gram-positive cocci in chains)",
+        "Rapid antigen detection test (RADT) - primarily for pharyngitis",
+        "Beta-hemolysis on blood agar",
+        "Lancefield grouping (Group A)",
+        "Imaging (CT, MRI) for necrotizing fasciitis to assess tissue involvement"
+      ],
+      "treatment": "Penicillins (penicillin G, amoxicillin) are first-line. Clindamycin for severe cases (necrotizing fasciitis, STSS) - inhibits toxin production. Surgical debridement is CRITICAL for necrotizing fasciitis. Supportive care: IV fluids, vasopressors for shock, IVIG for STSS.",
+      "infectionControl": {
+        "precautions": "Contact Precautions for draining wounds; Droplet Precautions for pharyngitis (first 24 hours of antibiotics)",
+        "screening": "Not routinely recommended; test symptomatic individuals",
+        "cohorting": "Cohort cases during outbreaks in schools, households, or care facilities",
+        "sourceControl": "Prompt wound care and treatment; cover draining wounds",
+        "environmental": "Enhanced cleaning and disinfection of shared surfaces and equipment",
+        "staffEducation": "Hand hygiene, proper wound care, recognition of necrotizing fasciitis (severe pain out of proportion, rapid progression), contact precautions"
+      },
+      "outbreakTriggers": [
+        "≥2 epidemiologically linked cases in same setting (school, household, care facility)",
+        "Any case of unusual severity (necrotizing fasciitis, STSS)",
+        "Cluster of SSTI cases above baseline",
+        "Post-varicella invasive GAS cases"
+      ],
+      "reportingCommunication": [
+        "Notify infection control and public health promptly (within 24 hours)",
+        "Follow local guidelines for invasive GAS reporting",
+        "Outbreak investigations start immediately",
+        "Coordinate with schools, households, or facilities for case finding",
+        "Implement control measures (hygiene education, prophylaxis if indicated)",
+        "Update stakeholders on outbreak status"
+      ],
+      "prevention": [
+        "Skin hygiene and prompt wound care",
+        "Early treatment of wounds and skin infections",
+        "Hand hygiene, especially after touching wounds",
+        "Avoid sharing personal items (towels, razors)",
+        "Education on personal hygiene in schools and crowded settings",
+        "Antibiotic prophylaxis for close contacts in certain situations (invasive GAS)",
+        "Varicella vaccination (reduces risk of invasive GAS)"
+      ],
+      "references": [
+        {
+          "label": "Saudi GDIPC - SSTI Guidelines",
+          "url": "https://gdipc.org"
+        },
+        {
+          "label": "CDC - Group A Streptococcal (GAS) Disease",
+          "url": "https://www.cdc.gov/groupastrep/index.html"
+        },
+        {
+          "label": "WHO - Streptococcal Infections",
+          "url": "https://www.who.int"
+        }
+      ]
+    },
+    {
+      "id": "clostridium_perfringens",
+      "name": "Clostridium perfringens",
+      "scientificName": "Clostridium perfringens (formerly Clostridium welchii)",
+      "definition": "Anaerobic, spore-forming Gram-positive rod causing gas gangrene (clostridial myonecrosis) and foodborne illness. C. perfringens produces toxins that cause rapid tissue destruction and systemic toxicity.",
+      "reservoir": {
+        "primary": ["Soil", "Gastrointestinal tract of humans and animals", "Contaminated wounds", "Contaminated food"],
+        "secondary": ["Environmental surfaces", "Dust", "Feces"],
+        "notes": "C. perfringens spores are ubiquitous in the environment and can survive cooking. Spores germinate in anaerobic conditions (deep wounds, improperly stored food)."
+      },
+      "transmission": {
+        "mode": "Contaminated wounds (gas gangrene), Foodborne (food poisoning)",
+        "routes": [
+          "Contaminated traumatic wounds (soil, debris)",
+          "Surgical site infections (contaminated instruments, environment)",
+          "Ingestion of contaminated or underprocessed foods (meat, poultry, gravy)",
+          "Spores germinate in anaerobic conditions (deep wounds, improperly stored food)"
+        ],
+        "notes": "Gas gangrene occurs when spores contaminate deep wounds with devitalized tissue. Foodborne illness occurs when food is held at improper temperatures (10-52°C) allowing spore germination and toxin production."
+      },
+      "incubationPeriod": {
+        "range": "Food poisoning: 6-24 hours (typically 8-12 hours); Gas gangrene: rapid onset within hours to 1-2 days after trauma or surgery",
+        "infectiousPeriod": "Not person-to-person contagious; infection from environmental contamination",
+        "seasonality": "Year-round; foodborne outbreaks often associated with large gatherings (holidays, events)",
+        "geographic": "Worldwide, with gas gangrene more common in areas with traumatic injuries, natural disasters, or war zones"
+      },
+      "riskFactors": [
+        "Traumatic wounds with soil contamination or devitalized tissue",
+        "Surgery (especially GI, biliary, or vascular surgery)",
+        "Poor wound hygiene and delayed treatment",
+        "Diabetes and peripheral vascular disease",
+        "Immunosuppression",
+        "Food contamination and improper food handling (holding at unsafe temperatures)",
+        "Natural disasters or mass casualty events"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Gas gangrene: Rapid onset of severe pain at wound site (out of proportion to exam)",
+          "Swelling, edema, and crepitus (gas in tissues)",
+          "Skin discoloration (bronze, then black necrosis)",
+          "Foul-smelling discharge (serosanguinous, 'dishwater' appearance)",
+          "Systemic toxicity: fever, tachycardia, hypotension, altered mental status",
+          "Foodborne illness: Watery diarrhea, abdominal cramps (usually mild, self-limited)"
+        ],
+        "complications": [
+          "Rapid tissue destruction and necrosis",
+          "Septic shock and multi-organ failure",
+          "Acute kidney injury",
+          "Hemolysis and anemia",
+          "Death (high mortality if untreated; 25-30% even with treatment)",
+          "Amputation (if limb involved)"
+        ],
+        "caseDefinition": {
+          "suspected": "Gas gangrene: Patient with traumatic wound or recent surgery + severe pain + swelling + crepitus + systemic toxicity. Foodborne: ≥2 persons with diarrhea/cramps after shared meal",
+          "confirmed": "Gas gangrene: Culture-positive for C. perfringens from wound/tissue + histology showing myonecrosis. Foodborne: ≥10^5 CFU/g in food or stool"
+        }
+      },
+      "diagnosis": [
+        "Culture from wound, tissue, or blood (anaerobic culture)",
+        "Gram stain (large Gram-positive rods, often without spores in clinical specimens)",
+        "Tissue histology (myonecrosis, gas bubbles, minimal inflammatory response)",
+        "Imaging (X-ray, CT) showing gas in soft tissues",
+        "Nagler test (lecithinase activity on egg yolk agar)",
+        "Stool culture and toxin detection for foodborne illness"
+      ],
+      "treatment": "Gas gangrene: SURGICAL EMERGENCY - immediate aggressive surgical debridement of all necrotic tissue. High-dose penicillin G + clindamycin (inhibits toxin production). Hyperbaric oxygen therapy (adjunct, if available). Supportive care: IV fluids, vasopressors, blood transfusions. Foodborne illness: Supportive care, self-limited (no antibiotics needed).",
+      "infectionControl": {
+        "precautions": "Contact Precautions for draining wounds; Standard Precautions for most cases (not person-to-person contagious)",
+        "screening": "Not applicable",
+        "cohorting": "Not needed (not person-to-person transmission)",
+        "sourceControl": "Proper wound care and debridement; identify and eliminate contaminated food sources",
+        "environmental": "Sterilization of surgical instruments; proper food handling and temperature control; environmental cleaning of surgical areas",
+        "staffEducation": "Wound care, recognition of gas gangrene (severe pain, crepitus, rapid progression), surgical urgency, food safety (proper cooking and storage temperatures)"
+      },
+      "outbreakTriggers": [
+        "Any single case of gas gangrene (triggers investigation of surgical or trauma practices)",
+        "≥2 foodborne cases epidemiologically linked to same food source",
+        "Cluster of surgical site infections with C. perfringens",
+        "Mass casualty event with contaminated wounds"
+      ],
+      "reportingCommunication": [
+        "Report to infection control and public health immediately if suspected gas gangrene",
+        "Report foodborne cluster within 24 hours",
+        "Coordinate with surgical and infection control teams for gas gangrene cases",
+        "Food safety investigation for foodborne outbreaks",
+        "Implement control measures (surgical practice review, food recall)",
+        "Update stakeholders on outbreak status"
+      ],
+      "prevention": [
+        "Proper wound care: immediate cleaning and debridement of contaminated wounds",
+        "Timely surgical intervention for traumatic injuries",
+        "Antibiotic prophylaxis for high-risk wounds (soil contamination, devitalized tissue)",
+        "Food safety education: proper cooking (>75°C), rapid cooling, safe storage temperatures",
+        "Avoid holding cooked foods at unsafe temperatures (10-52°C)",
+        "Sterilization of surgical instruments and equipment",
+        "Trauma management protocols in disaster settings"
+      ],
+      "references": [
+        {
+          "label": "Saudi Healthcare Guidelines - Surgical Infections",
+          "url": "https://gdipc.org"
+        },
+        {
+          "label": "CDC - Clostridium perfringens",
+          "url": "https://www.cdc.gov/foodsafety/diseases/clostridium-perfringens.html"
+        },
+        {
+          "label": "WHO - Infection Control",
+          "url": "https://www.who.int/infection-prevention/en/"
+        }
+      ]
+    }
+  ]
+}
+

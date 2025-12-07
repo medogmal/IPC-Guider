@@ -1,0 +1,1702 @@
+{
+  "version": 3,
+  "updatedAt": "2025-11-25T00:00:00Z",
+  "id": "bloodstream-infections",
+  "name": "Bloodstream Infections",
+  "description": "Bacteremia, fungemia, sepsis, and catheter-related infections",
+  "icon": "bloodtype",
+  "color": "#673AB7",
+  "conditions": [
+    {
+      "id": "sepsis-septic-shock",
+      "name": "Sepsis & Septic Shock",
+      "synonyms": ["severe sepsis", "septic shock", "septicemia"],
+      "icd10": ["A41.9", "R65.20", "R65.21"],
+      "severity": ["severe", "critical"],
+      "shortDescription": "Life-threatening organ dysfunction from dysregulated host response to infection requiring urgent resuscitation and antibiotics",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Sepsis is life-threatening organ dysfunction caused by dysregulated host response to infection (SOFA score ≥2). Septic shock is sepsis with persistent hypotension requiring vasopressors (MAP ≥65 mmHg) and lactate >2 mmol/L despite adequate fluid resuscitation. Mortality: Sepsis 10-20%, Septic shock 40-50%.",
+            "clinical_presentation": "Sepsis: Fever or hypothermia, tachycardia, tachypnea, altered mental status, hypotension. Organ dysfunction: Respiratory (hypoxemia), cardiovascular (hypotension), renal (oliguria, elevated creatinine), hepatic (elevated bilirubin), hematologic (thrombocytopenia, coagulopathy), CNS (altered mental status). Septic shock: Persistent hypotension despite fluids, requiring vasopressors, elevated lactate.",
+            "diagnostic_criteria": "Sepsis-3 criteria: Suspected infection + SOFA score ≥2 (baseline). qSOFA (quick SOFA): ≥2 of: (1) Altered mental status (GCS <15), (2) SBP ≤100 mmHg, (3) RR ≥22/min. Septic shock: Sepsis + vasopressor requirement (MAP ≥65) + lactate >2 mmol/L despite fluids.",
+            "risk_factors": [
+              "Age >65 years or <1 year",
+              "Immunosuppression (HIV, chemotherapy, steroids, transplant)",
+              "Chronic diseases (diabetes, CKD, cirrhosis, COPD, heart failure)",
+              "Recent surgery or invasive procedures",
+              "Indwelling devices (central lines, urinary catheters, drains)",
+              "Recent hospitalization or antibiotic use (MDRO risk)",
+              "Malnutrition or extremes of body weight"
+            ],
+            "red_flags": [
+              "Persistent hypotension despite 30mL/kg fluid resuscitation - septic shock",
+              "Lactate >4 mmol/L - severe tissue hypoperfusion, high mortality",
+              "Altered mental status or GCS <15 - CNS dysfunction",
+              "Oliguria (<0.5 mL/kg/hr) or rising creatinine - acute kidney injury",
+              "Thrombocytopenia or coagulopathy - DIC risk",
+              "Purpura fulminans or skin necrosis - meningococcemia, purpura fulminans"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Obtain blood cultures BEFORE antibiotics (if no delay >45 minutes). Minimum 2 sets (aerobic + anaerobic) from separate sites. Source control imaging (CT, US) if source unclear.",
+            "essential_tests": [
+              "Blood cultures x2 sets (aerobic + anaerobic) from separate sites BEFORE antibiotics",
+              "Lactate (repeat q2-4h if elevated)",
+              "CBC with differential (WBC, platelets)",
+              "CMP (creatinine, bilirubin, glucose)",
+              "Coagulation panel (PT/INR, PTT, fibrinogen if DIC suspected)",
+              "Procalcitonin (if available, helps distinguish bacterial from viral)"
+            ],
+            "conditional_tests": [
+              "Urinalysis and urine culture: If urinary source suspected",
+              "Chest X-ray: If respiratory symptoms or unclear source",
+              "CT abdomen/pelvis: If intra-abdominal source suspected",
+              "Lumbar puncture: If meningitis suspected (after CT if concern for mass effect)",
+              "Echocardiography: If endocarditis suspected or new murmur",
+              "Respiratory cultures (sputum, BAL): If pneumonia",
+              "Wound cultures: If surgical site or skin/soft tissue source"
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics >1 hour for cultures if septic shock. Do NOT obtain single blood culture set (inadequate, cannot distinguish contamination). Do NOT culture through existing IV lines (high contamination rate).",
+            "turnaround_time": "Blood cultures: Preliminary 24-48 hours, final 5 days. Lactate: <1 hour. Procalcitonin: 1-2 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "common_sources": {
+              "respiratory": "Streptococcus pneumoniae, Haemophilus influenzae, Staphylococcus aureus, Legionella",
+              "urinary": "E. coli, Klebsiella, Proteus, Enterococcus, Pseudomonas",
+              "intra_abdominal": "E. coli, Klebsiella, Enterococcus, Bacteroides, Enterobacter",
+              "skin_soft_tissue": "Staphylococcus aureus (MRSA), Streptococcus pyogenes",
+              "catheter_related": "Coagulase-negative staphylococci, Staphylococcus aureus, Candida",
+              "unknown_source": "Broad differential, consider all above"
+            },
+            "gram_positive": [
+              "Staphylococcus aureus (MRSA 30-50% in healthcare-associated)",
+              "Streptococcus pneumoniae",
+              "Streptococcus pyogenes (Group A Strep)",
+              "Enterococcus species (VRE 10-30% in healthcare-associated)"
+            ],
+            "gram_negative": [
+              "E. coli (most common Gram-negative, ESBL 15-30%)",
+              "Klebsiella pneumoniae (ESBL 20-40%, CRE 5-15%)",
+              "Pseudomonas aeruginosa (MDR common)",
+              "Enterobacter species",
+              "Acinetobacter baumannii (XDR common in ICU)"
+            ],
+            "fungal": [
+              "Candida species (albicans, glabrata, parapsilosis, tropicalis, auris)",
+              "Risk factors: TPN, broad-spectrum antibiotics, immunosuppression, ICU >7 days"
+            ],
+            "resistance_patterns": "MRSA 30-50% (healthcare-associated). ESBL Enterobacteriaceae 15-30%. CRE 5-15% (high mortality). VRE 10-30% (healthcare-associated). MDR Pseudomonas and Acinetobacter common in ICU.",
+            "mdro_risk_factors": [
+              "Recent hospitalization (within 90 days)",
+              "Recent antibiotics (within 90 days)",
+              "ICU admission or mechanical ventilation",
+              "Hemodialysis or immunosuppression",
+              "Known MDRO colonization or prior infection",
+              "Endemic region (high local resistance rates)"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "sepsis_1_hour_bundle": "CRITICAL: Administer antibiotics within 1 hour of sepsis recognition. Measure lactate. Obtain blood cultures before antibiotics (if no delay). Begin 30mL/kg IV crystalloid for hypotension or lactate ≥4 mmol/L. Apply vasopressors if hypotensive during or after fluid resuscitation (target MAP ≥65 mmHg).",
+            "community_acquired_no_mdro": "Ceftriaxone 2g IV daily + Azithromycin 500mg IV daily (if respiratory source) OR Piperacillin-tazobactam 3.375g IV q6h (if intra-abdominal or urinary source). Alternative: Cefepime 2g IV q8h OR Meropenem 1g IV q8h (if severe penicillin allergy).",
+            "healthcare_associated_mdro_risk": "Vancomycin 15-20mg/kg IV q8-12h (MRSA, VRE coverage) + Piperacillin-tazobactam 4.5g IV q6h OR Cefepime 2g IV q8h OR Meropenem 1g IV q8h (Gram-negative, Pseudomonas coverage). Add Micafungin 100mg IV daily if high Candida risk (TPN, immunosuppressed, ICU >7 days).",
+            "septic_shock_or_immunocompromised": "Vancomycin 15-20mg/kg IV q8-12h + Meropenem 1g IV q8h + Micafungin 100mg IV daily (triple coverage: MRSA, CRE, Candida). Consider adding Amikacin 15mg/kg IV daily if XDR Gram-negative suspected.",
+            "source_specific_additions": "Meningitis: Add Vancomycin + Ceftriaxone + Dexamethasone. Necrotizing fasciitis: Add Clindamycin 900mg IV q8h (toxin suppression). Toxic shock syndrome: Add Clindamycin 900mg IV q8h + IVIG 2g/kg.",
+            "alternatives": "Vancomycin intolerance: Daptomycin 8-10mg/kg IV daily (not for pneumonia) OR Linezolid 600mg IV BID. Carbapenem allergy: Aztreonam 2g IV q8h + Vancomycin + Metronidazole 500mg IV q8h.",
+            "avoid_list": "Avoid monotherapy in septic shock. Avoid inadequate Pseudomonas coverage if risk factors present. Avoid delaying antibiotics for imaging or procedures."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "gram_positive_cocci": "MSSA: Cefazolin 2g IV q8h OR Nafcillin 2g IV q4h. MRSA: Vancomycin 15-20mg/kg IV q8-12h (trough 15-20 mcg/mL) OR Daptomycin 8-10mg/kg IV daily. Streptococcus: Penicillin G 4 million units IV q4h OR Ceftriaxone 2g IV daily. VRE: Daptomycin 8-10mg/kg IV daily OR Linezolid 600mg IV BID.",
+            "gram_negative_rods": "E. coli/Klebsiella (susceptible): Ceftriaxone 2g IV daily OR Ciprofloxacin 400mg IV q12h. ESBL: Ertapenem 1g IV daily OR Meropenem 1g IV q8h. CRE: Meropenem 2g IV q8h (extended infusion) + Polymyxin B OR Ceftazidime-avibactam 2.5g IV q8h. Pseudomonas: Cefepime 2g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h OR Meropenem 1g IV q8h.",
+            "candida": "Candida albicans: Fluconazole 800mg IV loading, then 400mg IV daily. Candida glabrata/krusei: Micafungin 100mg IV daily OR Caspofungin 70mg IV x1, then 50mg IV daily. Candida auris: Micafungin 100mg IV daily (often resistant to fluconazole and amphotericin).",
+            "anaerobes": "Metronidazole 500mg IV q8h OR Clindamycin 900mg IV q8h (if Bacteroides).",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results and clinical improvement. Discontinue MRSA coverage if MSSA confirmed. Discontinue antifungal if cultures negative at 5 days. Narrow Gram-negative coverage based on susceptibilities.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Hemodynamically stable off vasopressors >24 hours, (3) Improving WBC and lactate, (4) Tolerating PO intake, (5) Good bioavailability oral option available."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "uncomplicated_bacteremia": "7-14 days (depends on source and organism)",
+            "staphylococcus_aureus_bacteremia": "14 days minimum (uncomplicated) OR 4-6 weeks (complicated: endocarditis, osteomyelitis, metastatic infection). Obtain TEE to rule out endocarditis. Repeat blood cultures to document clearance.",
+            "gram_negative_bacteremia": "7-14 days (urinary source: 7 days, other sources: 10-14 days)",
+            "candidemia": "14 days after first negative blood culture and resolution of symptoms. Obtain ophthalmology exam (endophthalmitis). Consider echocardiography (endocarditis).",
+            "catheter_related_bloodstream_infection": "7-14 days after catheter removal (uncomplicated). Longer if retained catheter or complicated infection.",
+            "monitoring": "Daily: Vital signs, mental status, urine output, lactate (until normalized). Every 2-3 days: CBC, CMP, blood cultures (if persistent fever or bacteremia). Procalcitonin-guided therapy: Consider stopping antibiotics if procalcitonin decreased >80% from peak and clinically improved.",
+            "stop_criteria": "Afebrile >48 hours, hemodynamically stable, normalized lactate, improving WBC, source controlled, adequate duration completed, negative repeat cultures (if obtained)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "source_control": "CRITICAL for survival. Remove infected catheters, drain abscesses, debride necrotic tissue, repair perforated viscus. Timing: Within 6-12 hours of diagnosis. Consult surgery early if intra-abdominal source, necrotizing infection, or undrained abscess.",
+            "fluid_resuscitation": "Initial: 30mL/kg IV crystalloid within 3 hours for hypotension or lactate ≥4 mmol/L. Reassess frequently. Avoid over-resuscitation (pulmonary edema, abdominal compartment syndrome). Use dynamic measures (pulse pressure variation, passive leg raise) to guide further fluids.",
+            "vasopressors": "First-line: Norepinephrine (target MAP ≥65 mmHg). Second-line: Vasopressin 0.03-0.04 units/min (add to norepinephrine). Third-line: Epinephrine or phenylephrine. Avoid dopamine (increased arrhythmias).",
+            "corticosteroids": "Hydrocortisone 200mg/day IV (divided or continuous infusion) if refractory shock despite adequate fluids and vasopressors. Duration: Until shock resolved, then taper. Do NOT use if shock easily reversed.",
+            "immunocompromised": "Broader coverage: Vancomycin + Meropenem + Micafungin. Consider atypical pathogens (Legionella, Pneumocystis, CMV, fungi). Consult infectious disease. Longer duration (14-21 days minimum).",
+            "pregnancy": "Preferred: Ceftriaxone, piperacillin-tazobactam, azithromycin, vancomycin. Avoid: Fluoroquinolones, doxycycline, aminoglycosides (if possible). Aggressive resuscitation critical for fetal survival.",
+            "renal_impairment": "Dose adjust all renally cleared antibiotics (beta-lactams, vancomycin, aminoglycosides). Avoid nephrotoxic combinations (vancomycin + piperacillin-tazobactam). Monitor drug levels (vancomycin trough).",
+            "hepatic_impairment": "Avoid hepatotoxic drugs if possible (azoles, linezolid). Dose adjust ceftriaxone if severe hepatic + renal impairment."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "De-escalate within 48-72 hours based on culture results",
+              "Discontinue MRSA coverage if MSSA or Gram-negative confirmed",
+              "Discontinue antifungal if cultures negative at 5 days",
+              "Narrow Gram-negative coverage based on susceptibilities (avoid carbapenems if ESBL-negative)",
+              "Switch IV to PO when stable and improving"
+            ],
+            "timeout_checklist": [
+              "Are blood cultures obtained BEFORE antibiotics?",
+              "Is source control achieved? (Remove catheter, drain abscess, surgery)",
+              "Can I narrow antibiotics based on cultures? (De-escalate within 48-72 hours)",
+              "Is MRSA coverage still needed? (Discontinue if MSSA or Gram-negative)",
+              "Is antifungal still needed? (Discontinue if cultures negative at 5 days)",
+              "Can I switch IV to PO? (If stable, afebrile, tolerating PO)",
+              "Can I stop antibiotics? (If adequate duration and resolved)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT continue broad-spectrum antibiotics beyond 48-72 hours without culture justification. Do NOT treat contaminants (single positive blood culture with coagulase-negative staph, Bacillus, Corynebacterium). Do NOT use prolonged courses without documented infection.",
+            "patient_education": "Sepsis is life-threatening. Early recognition and treatment critical. Watch for worsening symptoms after discharge. Complete full antibiotic course. Follow-up in 1-2 weeks."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "Surviving Sepsis Campaign Guidelines (2021)",
+              "url": "https://www.sccm.org/SurvivingSepsisCampaign/Guidelines"
+            },
+            {
+              "label": "IDSA Sepsis and Septic Shock Guidelines (2024)",
+              "url": "https://www.idsociety.org/practice-guideline/sepsis/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "staphylococcus-aureus-bacteremia",
+      "name": "Staphylococcus aureus Bacteremia (SAB)",
+      "synonyms": ["SAB", "staph bacteremia", "MRSA bacteremia", "MSSA bacteremia"],
+      "icd10": ["A41.01", "A41.02", "B95.61", "B95.62"],
+      "severity": ["severe", "critical"],
+      "shortDescription": "Bloodstream infection with S. aureus requiring prolonged therapy, source control, and evaluation for metastatic complications",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Staphylococcus aureus bacteremia (SAB) is bloodstream infection with S. aureus (MSSA or MRSA). High risk of metastatic complications (endocarditis 10-30%, osteomyelitis, epidural abscess, septic arthritis). Mortality: 15-30% (higher with MRSA, delayed treatment, or complications).",
+            "clinical_presentation": "Fever, chills, rigors, hypotension. Source: IVDU (endocarditis), central line (CLABSI), skin/soft tissue infection, surgical site, pneumonia, osteomyelitis. Metastatic complications: New murmur (endocarditis), back pain (epidural abscess, vertebral osteomyelitis), joint pain (septic arthritis), focal neurologic deficits, embolic phenomena.",
+            "diagnostic_criteria": "≥1 blood culture positive for S. aureus. Distinguish true infection from contamination (S. aureus is rarely a contaminant - treat as real unless compelling evidence otherwise).",
+            "risk_factors": [
+              "IVDU (injection drug use) - high risk of endocarditis",
+              "Central venous catheter or hemodialysis catheter",
+              "Recent surgery or invasive procedure",
+              "Skin and soft tissue infection",
+              "Prosthetic devices (joints, valves, pacemakers)",
+              "Diabetes mellitus or immunosuppression",
+              "Recent hospitalization or healthcare exposure"
+            ],
+            "red_flags": [
+              "IVDU or new murmur - high risk of endocarditis (obtain TEE)",
+              "Back pain or focal neurologic deficits - epidural abscess or vertebral osteomyelitis (obtain MRI spine)",
+              "Persistent bacteremia >72 hours - complicated infection, metastatic foci",
+              "Septic shock or multiorgan failure - high mortality",
+              "Prosthetic device present - may require removal for cure"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "ALL patients with SAB require: (1) Repeat blood cultures to document clearance, (2) Echocardiography (TEE preferred) to rule out endocarditis, (3) Imaging for metastatic foci if persistent fever or bacteremia.",
+            "essential_tests": [
+              "Repeat blood cultures daily until negative (document clearance)",
+              "Echocardiography: TEE preferred (sensitivity 90-100% for endocarditis) OR TTE if TEE contraindicated (sensitivity 60-70%)",
+              "Source identification: Examine all IV sites, wounds, surgical sites"
+            ],
+            "conditional_tests": [
+              "MRI spine: If back pain, focal neurologic deficits, or persistent bacteremia (rule out epidural abscess, vertebral osteomyelitis)",
+              "Joint aspiration: If joint pain or swelling (rule out septic arthritis)",
+              "CT chest/abdomen/pelvis: If unclear source or persistent fever",
+              "Ophthalmology exam: If visual symptoms or endocarditis (rule out endophthalmitis)",
+              "Infectious disease consultation: Recommended for ALL SAB cases"
+            ],
+            "when_not_to_test": "Do NOT assume S. aureus is a contaminant (treat as real unless compelling evidence). Do NOT skip echocardiography (endocarditis common, changes management).",
+            "turnaround_time": "Blood cultures: Preliminary 24-48 hours. TEE: 1-7 days (urgent if unstable). MRI spine: 1-7 days (urgent if neurologic deficits)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "mssa": {
+              "description": "Methicillin-susceptible S. aureus (50-70% of SAB)",
+              "treatment": "Beta-lactams preferred (nafcillin, cefazolin)",
+              "mortality": "15-20%"
+            },
+            "mrsa": {
+              "description": "Methicillin-resistant S. aureus (30-50% of SAB, higher in healthcare-associated)",
+              "treatment": "Vancomycin, daptomycin, or ceftaroline",
+              "mortality": "25-35% (higher than MSSA)"
+            },
+            "resistance_patterns": "MRSA prevalence 30-50% (higher in healthcare-associated, IVDU, prior MRSA). Vancomycin MIC creep (MIC ≥1.5 mcg/mL associated with treatment failure). Daptomycin non-susceptibility rare but increasing.",
+            "mdro_risk_factors": [
+              "Recent hospitalization or healthcare exposure",
+              "IVDU or hemodialysis",
+              "Prior MRSA infection or colonization",
+              "Recent antibiotics (within 90 days)"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "community_acquired_no_mrsa_risk": "Cefazolin 2g IV q8h OR Nafcillin 2g IV q4h (if MSSA likely). If MRSA risk factors: Vancomycin 15-20mg/kg IV q8-12h (trough 15-20 mcg/mL).",
+            "healthcare_associated_or_mrsa_risk": "Vancomycin 15-20mg/kg IV q8-12h (trough 15-20 mcg/mL) OR Daptomycin 8-10mg/kg IV daily (higher dose for bacteremia). Avoid daptomycin if pneumonia source (inactivated by surfactant).",
+            "severe_or_septic_shock": "Vancomycin 15-20mg/kg IV q8-12h + Cefazolin 2g IV q8h (combination therapy for first 3-5 days, then de-escalate based on susceptibilities). Alternative: Daptomycin 10mg/kg IV daily.",
+            "alternatives": "Vancomycin intolerance: Daptomycin 8-10mg/kg IV daily. Vancomycin failure (persistent bacteremia >5 days): Switch to daptomycin 10mg/kg IV daily OR ceftaroline 600mg IV q8h (if MRSA).",
+            "avoid_list": "Avoid linezolid for SAB (inferior outcomes, bacteriostatic). Avoid monotherapy with vancomycin if vancomycin MIC ≥1.5 mcg/mL (consider daptomycin or combination therapy)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "mssa": "Cefazolin 2g IV q8h (preferred, better outcomes than nafcillin) OR Nafcillin 2g IV q4h. Alternative: Oxacillin 2g IV q4h. Duration: 14 days minimum (uncomplicated) OR 4-6 weeks (complicated).",
+            "mrsa": "Vancomycin 15-20mg/kg IV q8-12h (trough 15-20 mcg/mL) OR Daptomycin 8-10mg/kg IV daily (preferred if vancomycin MIC ≥1.5 or persistent bacteremia). Alternative: Ceftaroline 600mg IV q8h. Duration: 14 days minimum (uncomplicated) OR 4-6 weeks (complicated).",
+            "uncomplicated_sab": "Definition: (1) No endocarditis on TEE, (2) No implanted prosthetic devices, (3) Repeat blood cultures negative within 2-4 days, (4) No metastatic foci, (5) Defervescence within 72 hours. Duration: 14 days from first negative blood culture.",
+            "complicated_sab": "Definition: Any of: (1) Endocarditis, (2) Implanted prosthetic device, (3) Persistent bacteremia >72 hours, (4) Metastatic foci (osteomyelitis, epidural abscess, septic arthritis). Duration: 4-6 weeks from first negative blood culture (longer if osteomyelitis or retained device).",
+            "combination_therapy": "Consider adding rifampin 300-450mg PO BID or gentamicin 1mg/kg IV q8h for first 3-5 days if severe infection or prosthetic device. Rifampin only after bacteremia cleared (risk of resistance if used during bacteremia).",
+            "de_escalation": "Switch from vancomycin to cefazolin if MSSA confirmed (better outcomes, lower toxicity). Discontinue combination therapy after 3-5 days if improving.",
+            "iv_to_po_switch": "Generally NOT recommended for SAB (IV therapy preferred for entire course). Consider PO only if: (1) Uncomplicated SAB, (2) Afebrile >5 days, (3) Negative repeat cultures, (4) Good oral bioavailability option (linezolid 600mg PO BID for MRSA - but inferior to IV daptomycin)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "uncomplicated_sab": "14 days from first negative blood culture",
+            "complicated_sab": "4-6 weeks from first negative blood culture",
+            "endocarditis": "6 weeks (native valve) OR 6-8 weeks (prosthetic valve)",
+            "osteomyelitis_or_epidural_abscess": "6-8 weeks (minimum)",
+            "retained_prosthetic_device": "Lifelong suppression if device cannot be removed (e.g., TMP-SMX DS 1 tab PO BID for MRSA)",
+            "monitoring": "Daily blood cultures until negative. Repeat blood cultures at end of therapy to document cure. Weekly: CBC, CMP, vancomycin trough (if used). Repeat TEE at end of therapy if endocarditis. Repeat MRI if osteomyelitis or epidural abscess.",
+            "stop_criteria": "Completed adequate duration (14 days uncomplicated, 4-6 weeks complicated). Afebrile >5 days. Negative repeat blood cultures. No evidence of metastatic foci. Source controlled."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "source_control": "CRITICAL for cure. Remove all removable infected devices (central lines, pacemakers, prosthetic joints if infected). Drain abscesses. Debride infected tissue. Timing: As soon as possible (within 24-72 hours). Retained device = high failure rate, consider lifelong suppression.",
+            "endocarditis": "Obtain TEE in ALL SAB patients (TTE insufficient). Indications for surgery: Heart failure, large vegetations (>10mm), perivalvular abscess, persistent bacteremia despite therapy, recurrent emboli. Consult cardiothoracic surgery early.",
+            "epidural_abscess": "Neurosurgical emergency if neurologic deficits. Obtain MRI spine urgently. Surgical decompression + antibiotics. Antibiotics alone if no neurologic deficits and small abscess.",
+            "ivdu": "High risk of endocarditis (obtain TEE). High risk of recurrence (harm reduction counseling, addiction treatment). Consider longer duration (4-6 weeks even if uncomplicated).",
+            "hemodialysis": "Remove infected catheter. Dose adjust antibiotics (vancomycin, daptomycin). Consider antibiotic lock therapy if catheter retained temporarily.",
+            "pregnancy": "Preferred: Cefazolin (MSSA), vancomycin (MRSA). Avoid: Daptomycin (limited data), fluoroquinolones, aminoglycosides. Aggressive source control critical.",
+            "immunocompromised": "Longer duration (4-6 weeks minimum). Higher risk of metastatic complications. Consider combination therapy."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Switch from vancomycin to cefazolin if MSSA confirmed (better outcomes, lower toxicity)",
+              "Discontinue combination therapy after 3-5 days if improving",
+              "Shorten duration to 14 days if uncomplicated SAB (no endocarditis, no prosthetic device, negative repeat cultures within 2-4 days)"
+            ],
+            "timeout_checklist": [
+              "Is this truly SAB or contaminant? (S. aureus is rarely a contaminant - treat as real)",
+              "Is source controlled? (Remove catheter, drain abscess, surgery)",
+              "Is TEE obtained? (Required for ALL SAB to rule out endocarditis)",
+              "Are repeat blood cultures negative? (Document clearance)",
+              "Is this uncomplicated or complicated SAB? (Determines duration: 14 days vs 4-6 weeks)",
+              "Can I switch vancomycin to cefazolin? (If MSSA confirmed)",
+              "Is infectious disease consulted? (Recommended for ALL SAB)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use linezolid for SAB (inferior outcomes). Do NOT continue vancomycin if MSSA confirmed (switch to cefazolin). Do NOT treat for <14 days (high relapse rate).",
+            "patient_education": "SAB is serious infection requiring prolonged IV antibiotics. Complete full course (14 days minimum, often 4-6 weeks). Follow-up critical to monitor for complications. Watch for new symptoms (back pain, joint pain, visual changes). IVDU: Harm reduction counseling, addiction treatment."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Staphylococcus aureus Bacteremia Guidelines (2011, updated 2024)",
+              "url": "https://www.idsociety.org/practice-guideline/staphylococcus-aureus-bacteremia/"
+            },
+            {
+              "label": "AHA Infective Endocarditis Guidelines (2023)",
+              "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001151"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "candidemia",
+      "name": "Candidemia & Invasive Candidiasis",
+      "synonyms": ["fungemia", "candida bloodstream infection", "invasive candidiasis"],
+      "icd10": ["B37.7", "B37.5", "B37.6"],
+      "severity": ["severe", "critical"],
+      "shortDescription": "Bloodstream infection with Candida species requiring echinocandin therapy and evaluation for metastatic complications",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Candidemia is bloodstream infection with Candida species. Invasive candidiasis includes candidemia plus deep-seated infections (endocarditis, endophthalmitis, osteomyelitis, intra-abdominal abscess). Mortality: 30-40% (higher in ICU, immunocompromised, delayed treatment).",
+            "clinical_presentation": "Fever unresponsive to antibacterial therapy. Often in ICU patients with multiple risk factors. Metastatic complications: Endophthalmitis (10-15%, visual symptoms), endocarditis (rare, new murmur), hepatosplenic candidiasis (immunocompromised, abdominal pain), osteomyelitis, septic arthritis.",
+            "diagnostic_criteria": "≥1 blood culture positive for Candida species. Blood cultures have low sensitivity (50-70%) - negative cultures do NOT rule out invasive candidiasis. Consider empiric therapy if high clinical suspicion.",
+            "risk_factors": [
+              "Broad-spectrum antibiotics (>7 days)",
+              "Central venous catheter (especially TPN)",
+              "ICU admission >7 days or mechanical ventilation",
+              "Recent abdominal surgery or GI perforation",
+              "Immunosuppression (neutropenia, chemotherapy, transplant, steroids)",
+              "Hemodialysis or acute kidney injury",
+              "Candida colonization at multiple sites"
+            ],
+            "red_flags": [
+              "Visual symptoms - endophthalmitis (obtain ophthalmology exam)",
+              "New murmur - endocarditis (obtain echocardiography)",
+              "Persistent candidemia >5 days - metastatic foci or inadequate source control",
+              "Neutropenia or immunosuppression - higher mortality, longer duration",
+              "Candida auris - multidrug-resistant, infection control alert"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "ALL patients with candidemia require: (1) Repeat blood cultures to document clearance, (2) Ophthalmology exam (rule out endophthalmitis), (3) Echocardiography if risk factors for endocarditis (IVDU, prosthetic valve, persistent candidemia).",
+            "essential_tests": [
+              "Blood cultures (repeat daily until negative)",
+              "Ophthalmology exam (dilated fundoscopy) within 1 week (rule out endophthalmitis)",
+              "Candida species identification and susceptibility testing (critical for C. glabrata, C. krusei, C. auris)"
+            ],
+            "conditional_tests": [
+              "Echocardiography (TEE preferred): If IVDU, prosthetic valve, persistent candidemia, or new murmur",
+              "CT abdomen/pelvis: If abdominal source suspected or persistent fever",
+              "Beta-D-glucan: Elevated in invasive candidiasis (but nonspecific, false positives common)",
+              "T2Candida panel: Rapid PCR-based test (results in 3-5 hours, but expensive)"
+            ],
+            "when_not_to_test": "Do NOT assume Candida is a contaminant (treat as real unless compelling evidence). Do NOT skip ophthalmology exam (endophthalmitis common, can cause blindness).",
+            "turnaround_time": "Blood cultures: Preliminary 24-48 hours, species ID 48-72 hours, susceptibilities 72-96 hours. Ophthalmology exam: Within 1 week."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "candida_albicans": {
+              "description": "40-50% of candidemia",
+              "treatment": "Fluconazole-susceptible (MIC ≤2 mcg/mL)",
+              "notes": "Most common species, generally susceptible to all antifungals"
+            },
+            "candida_glabrata": {
+              "description": "20-30% of candidemia",
+              "treatment": "Fluconazole dose-dependent susceptible or resistant (MIC ≥32 mcg/mL). Echinocandin preferred.",
+              "notes": "Increasing prevalence, often fluconazole-resistant"
+            },
+            "candida_parapsilosis": {
+              "description": "10-20% of candidemia",
+              "treatment": "Fluconazole-susceptible. Echinocandin MIC higher (but still effective).",
+              "notes": "Associated with central lines, TPN"
+            },
+            "candida_tropicalis": {
+              "description": "5-10% of candidemia",
+              "treatment": "Usually fluconazole-susceptible",
+              "notes": "Associated with neutropenia, hematologic malignancy"
+            },
+            "candida_krusei": {
+              "description": "2-5% of candidemia",
+              "treatment": "Intrinsically fluconazole-resistant. Echinocandin or amphotericin B.",
+              "notes": "Associated with prior fluconazole exposure"
+            },
+            "candida_auris": {
+              "description": "Emerging multidrug-resistant pathogen",
+              "treatment": "Often resistant to fluconazole and amphotericin B. Echinocandin preferred (but resistance emerging).",
+              "notes": "Infection control alert, contact precautions, environmental decontamination"
+            },
+            "resistance_patterns": "C. glabrata: 15-30% fluconazole-resistant. C. krusei: Intrinsically fluconazole-resistant. C. auris: 90% fluconazole-resistant, 30-50% amphotericin-resistant, 5-10% echinocandin-resistant. Echinocandin resistance increasing (especially C. glabrata).",
+            "mdro_risk_factors": [
+              "Prior azole exposure (fluconazole prophylaxis)",
+              "Prior echinocandin exposure",
+              "Prolonged hospitalization or ICU stay",
+              "Known C. auris colonization or outbreak"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": "Echinocandin (preferred for empiric therapy): Micafungin 100mg IV daily OR Caspofungin 70mg IV x1, then 50mg IV daily OR Anidulafungin 200mg IV x1, then 100mg IV daily. Echinocandins have broad coverage (including C. glabrata, C. krusei) and low toxicity.",
+            "alternative_if_stable_and_no_azole_exposure": "Fluconazole 800mg IV loading dose, then 400mg IV daily (if C. albicans likely, no prior azole exposure, hemodynamically stable). Do NOT use fluconazole empirically if critically ill, prior azole exposure, or C. glabrata/krusei/auris suspected.",
+            "severe_or_neutropenic": "Liposomal amphotericin B 3-5mg/kg IV daily (if echinocandin-resistant suspected or refractory infection). Nephrotoxic, reserve for salvage therapy.",
+            "candida_auris_suspected": "Micafungin 100mg IV daily OR Caspofungin 70mg IV x1, then 50mg IV daily (echinocandin preferred). If echinocandin-resistant: Liposomal amphotericin B 5mg/kg IV daily. Infection control alert.",
+            "alternatives": "Voriconazole 6mg/kg IV q12h x 2 doses, then 4mg/kg IV q12h (if azole-susceptible species and echinocandin contraindicated). Posaconazole 300mg IV BID x 1 day, then 300mg IV daily (alternative azole).",
+            "avoid_list": "Avoid fluconazole for empiric therapy in critically ill patients. Avoid amphotericin B deoxycholate (high nephrotoxicity, use liposomal formulation). Avoid echinocandins if C. parapsilosis and fluconazole-susceptible (fluconazole preferred for C. parapsilosis)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "candida_albicans": "Fluconazole 800mg IV/PO loading, then 400mg IV/PO daily (if susceptible and stable) OR Continue echinocandin if critically ill. Duration: 14 days after first negative blood culture.",
+            "candida_glabrata": "Echinocandin (micafungin 100mg IV daily, caspofungin, or anidulafungin) preferred. Alternative: Fluconazole 800mg IV/PO daily (if susceptible, MIC ≤2 mcg/mL). Duration: 14 days after first negative blood culture.",
+            "candida_parapsilosis": "Fluconazole 800mg IV/PO loading, then 400mg IV/PO daily (preferred over echinocandin for C. parapsilosis). Duration: 14 days after first negative blood culture.",
+            "candida_tropicalis": "Fluconazole 800mg IV/PO loading, then 400mg IV/PO daily (if susceptible) OR Echinocandin. Duration: 14 days after first negative blood culture.",
+            "candida_krusei": "Echinocandin (micafungin, caspofungin, or anidulafungin) OR Liposomal amphotericin B 3-5mg/kg IV daily. Do NOT use fluconazole (intrinsically resistant). Duration: 14 days after first negative blood culture.",
+            "candida_auris": "Echinocandin (micafungin 100mg IV daily preferred) OR Liposomal amphotericin B 5mg/kg IV daily (if echinocandin-resistant). Combination therapy if refractory. Duration: 14 days after first negative blood culture. Infection control measures.",
+            "step_down_therapy": "Switch from echinocandin to fluconazole 400mg PO daily if: (1) C. albicans, parapsilosis, or tropicalis (fluconazole-susceptible), (2) Hemodynamically stable, (3) Repeat blood cultures negative, (4) Tolerating PO intake. Complete 14 days total (IV + PO).",
+            "de_escalation": "Switch from echinocandin to fluconazole if susceptible species and stable. Discontinue antifungal if cultures negative at 5 days and low clinical suspicion (but obtain ophthalmology exam first)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "uncomplicated_candidemia": "14 days after first negative blood culture and resolution of symptoms",
+            "endocarditis": "6 weeks minimum (often requires valve replacement)",
+            "endophthalmitis": "4-6 weeks (intravitreal antifungal + systemic therapy, consult ophthalmology)",
+            "osteomyelitis_or_septic_arthritis": "6-12 weeks",
+            "hepatosplenic_candidiasis": "Months (until lesions resolved on imaging)",
+            "neutropenic_patients": "Continue until neutropenia resolved (ANC >500) + 14 days after first negative culture",
+            "monitoring": "Daily blood cultures until negative (document clearance). Repeat blood cultures at end of therapy. Ophthalmology exam within 1 week. Repeat imaging if metastatic foci. Monitor for drug toxicity (echinocandins: LFTs, amphotericin: creatinine, electrolytes).",
+            "stop_criteria": "Completed 14 days after first negative blood culture. Afebrile >48 hours. Resolution of symptoms. No evidence of metastatic foci (negative ophthalmology exam, imaging). Source controlled (catheter removed)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "source_control": "CRITICAL for cure. Remove ALL central venous catheters within 24-48 hours (retained catheter = high failure rate, prolonged candidemia). Drain abscesses. Debride infected tissue. Do NOT retain catheter unless absolutely necessary (e.g., no other vascular access).",
+            "endophthalmitis": "Obtain ophthalmology exam in ALL candidemia patients within 1 week. Symptoms: Blurred vision, floaters, eye pain. Treatment: Intravitreal antifungal (amphotericin B 5-10 mcg or voriconazole 100 mcg) + systemic therapy. May require vitrectomy. Can cause blindness if untreated.",
+            "endocarditis": "Rare but serious. Obtain TEE if: IVDU, prosthetic valve, persistent candidemia >5 days, new murmur. Treatment: Antifungal + valve replacement (medical therapy alone has high failure rate). Duration: 6 weeks minimum.",
+            "neutropenia": "Higher mortality. Continue antifungal until neutropenia resolved (ANC >500) + 14 days after first negative culture. Consider G-CSF to shorten neutropenia duration.",
+            "candida_auris": "Multidrug-resistant. Infection control alert: Contact precautions, dedicated equipment, environmental decontamination with sporicidal agents (bleach, hydrogen peroxide vapor). Notify public health. Screen contacts.",
+            "pregnancy": "Preferred: Amphotericin B (liposomal formulation). Avoid: Fluconazole (teratogenic in 1st trimester at high doses), echinocandins (limited data). Consult infectious disease and maternal-fetal medicine.",
+            "renal_impairment": "Echinocandins: No dose adjustment needed. Fluconazole: Dose adjust (loading dose 800mg, then 200-400mg daily based on CrCl). Amphotericin B: Nephrotoxic, monitor closely."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Switch from echinocandin to fluconazole if C. albicans/parapsilosis/tropicalis (fluconazole-susceptible) and stable",
+              "Discontinue antifungal if cultures negative at 5 days and low clinical suspicion (but obtain ophthalmology exam first)",
+              "Step down from IV to PO fluconazole when stable and tolerating PO"
+            ],
+            "timeout_checklist": [
+              "Is catheter removed? (CRITICAL for cure, remove within 24-48 hours)",
+              "Is ophthalmology exam obtained? (Required for ALL candidemia, within 1 week)",
+              "Are repeat blood cultures negative? (Document clearance)",
+              "What is the Candida species? (Determines therapy: C. glabrata/krusei/auris need echinocandin)",
+              "Can I switch echinocandin to fluconazole? (If C. albicans/parapsilosis/tropicalis and stable)",
+              "Can I stop antifungal? (If 14 days after first negative culture and resolved)",
+              "Is this C. auris? (Infection control alert, contact precautions)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use fluconazole empirically in critically ill patients (echinocandin preferred). Do NOT retain central catheter (high failure rate). Do NOT skip ophthalmology exam (endophthalmitis can cause blindness).",
+            "patient_education": "Candidemia is serious fungal infection requiring prolonged antifungal therapy. Catheter must be removed. Eye exam required (watch for vision changes). Complete full course (14 days after negative cultures). Follow-up critical."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Candidiasis Guidelines (2016, updated 2024)",
+              "url": "https://www.idsociety.org/practice-guideline/candidiasis/"
+            },
+            {
+              "label": "CDC Candida auris Guidelines (2024)",
+              "url": "https://www.cdc.gov/candida-auris/hcp/index.html"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "catheter-related-bloodstream-infection",
+      "name": "Catheter-Related Bloodstream Infection (CRBSI/CLABSI)",
+      "synonyms": ["CLABSI", "central line-associated bloodstream infection", "catheter-associated bacteremia"],
+      "icd10": ["T80.211A", "T80.218A", "T80.219A"],
+      "severity": ["moderate", "severe"],
+      "shortDescription": "Bloodstream infection from central venous catheter requiring catheter removal and antibiotics",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "CRBSI is bloodstream infection arising from central venous catheter (CVC). CLABSI (CDC definition) is laboratory-confirmed BSI in patient with CVC where no other source is identified. Incidence: 1-5 per 1,000 catheter-days. Mortality: 10-25% (higher with S. aureus, Candida).",
+            "clinical_presentation": "Fever, chills, rigors within hours of catheter use. Erythema, purulence, or tenderness at catheter exit site (but often absent). Sepsis or septic shock if severe. Suppurative thrombophlebitis: Persistent bacteremia despite catheter removal + antibiotics, palpable venous cord.",
+            "diagnostic_criteria": "Definite CRBSI: (1) Positive blood culture from catheter + peripheral blood, (2) Same organism, (3) Catheter tip culture >15 CFU (semiquantitative) or >100 CFU (quantitative), (4) Differential time to positivity ≥2 hours (catheter blood culture positive ≥2 hours before peripheral). Probable CRBSI: Positive blood culture + clinical improvement after catheter removal, no other source.",
+            "risk_factors": [
+              "Prolonged catheter duration (>7 days)",
+              "Femoral catheter site (higher infection risk than subclavian or internal jugular)",
+              "TPN administration",
+              "Immunosuppression or neutropenia",
+              "ICU admission or critical illness",
+              "Poor catheter care or frequent manipulation",
+              "Skin colonization with S. aureus or Candida"
+            ],
+            "red_flags": [
+              "Persistent bacteremia >72 hours after catheter removal - suppurative thrombophlebitis, endocarditis, or metastatic infection",
+              "S. aureus or Candida CRBSI - high risk of metastatic complications (endocarditis, osteomyelitis)",
+              "Septic shock - high mortality, urgent catheter removal + antibiotics",
+              "Tunnel infection or port pocket infection - catheter removal required"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Obtain blood cultures from catheter AND peripheral vein simultaneously (paired cultures). Send catheter tip for culture if removed (semiquantitative or quantitative method).",
+            "essential_tests": [
+              "Paired blood cultures: 1 set from catheter + 1 set from peripheral vein (simultaneously)",
+              "Catheter tip culture (if catheter removed): Semiquantitative (>15 CFU) or quantitative (>100 CFU)",
+              "Differential time to positivity: Catheter culture positive ≥2 hours before peripheral = CRBSI"
+            ],
+            "conditional_tests": [
+              "Echocardiography (TEE): If S. aureus or Candida CRBSI, persistent bacteremia, or IVDU",
+              "Ultrasound or CT venography: If suppurative thrombophlebitis suspected (persistent bacteremia despite catheter removal)",
+              "Repeat blood cultures: Daily until negative (document clearance)"
+            ],
+            "when_not_to_test": "Do NOT culture catheter tip if catheter not removed (contamination risk). Do NOT obtain single blood culture (cannot distinguish CRBSI from other source).",
+            "turnaround_time": "Blood cultures: Preliminary 24-48 hours. Catheter tip culture: 24-48 hours. Differential time to positivity: Real-time monitoring during incubation."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "common_organisms": {
+              "coagulase_negative_staphylococci": "30-40% (most common, often contaminant but can be true CRBSI)",
+              "staphylococcus_aureus": "10-20% (MRSA 30-50%, high risk of metastatic complications)",
+              "enterococcus": "10-15% (VRE 10-30% in healthcare-associated)",
+              "gram_negative_rods": "20-30% (E. coli, Klebsiella, Pseudomonas, Enterobacter, Acinetobacter)",
+              "candida": "5-10% (higher with TPN, immunosuppression, prolonged antibiotics)"
+            },
+            "resistance_patterns": "MRSA 30-50% (healthcare-associated). VRE 10-30%. ESBL Enterobacteriaceae 15-30%. MDR Pseudomonas and Acinetobacter common in ICU. Candida: C. glabrata 20-30% (often fluconazole-resistant).",
+            "mdro_risk_factors": [
+              "Recent hospitalization or ICU admission",
+              "Recent antibiotics (within 90 days)",
+              "Hemodialysis or immunosuppression",
+              "Known MDRO colonization"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "uncomplicated_crbsi_no_mdro": "Vancomycin 15-20mg/kg IV q8-12h (covers MRSA, coagulase-negative staph, Enterococcus). Add Gram-negative coverage if septic or high risk: Cefepime 2g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h.",
+            "septic_or_mdro_risk": "Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h OR Meropenem 1g IV q8h (if CRE risk). Add Micafungin 100mg IV daily if high Candida risk (TPN, immunosuppressed, prolonged antibiotics).",
+            "hemodialysis_catheter": "Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h (dose adjust for renal function). Consider antibiotic lock therapy if catheter retained temporarily (vancomycin 5mg/mL + heparin 5,000 units/mL, dwell 12-24 hours).",
+            "alternatives": "Vancomycin intolerance: Daptomycin 8-10mg/kg IV daily OR Linezolid 600mg IV BID. Cefepime allergy: Aztreonam 2g IV q8h (Gram-negative only, add vancomycin for Gram-positive).",
+            "avoid_list": "Avoid inadequate Gram-negative coverage if septic. Avoid retaining catheter if S. aureus or Candida CRBSI (high failure rate)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "coagulase_negative_staphylococci": "Vancomycin 15-20mg/kg IV q8-12h (if methicillin-resistant) OR Cefazolin 2g IV q8h (if methicillin-susceptible). Duration: 5-7 days if catheter removed, 10-14 days if catheter retained.",
+            "staphylococcus_aureus": "MSSA: Cefazolin 2g IV q8h OR Nafcillin 2g IV q4h. MRSA: Vancomycin 15-20mg/kg IV q8-12h OR Daptomycin 8-10mg/kg IV daily. Duration: 14 days if catheter removed + uncomplicated, 4-6 weeks if complicated (endocarditis, osteomyelitis, retained catheter). Obtain TEE to rule out endocarditis.",
+            "enterococcus": "Ampicillin 2g IV q4h (if susceptible) OR Vancomycin 15-20mg/kg IV q8-12h (if ampicillin-resistant). VRE: Daptomycin 8-10mg/kg IV daily OR Linezolid 600mg IV BID. Duration: 7-14 days.",
+            "gram_negative_rods": "E. coli/Klebsiella (susceptible): Ceftriaxone 2g IV daily OR Ciprofloxacin 400mg IV q12h. ESBL: Ertapenem 1g IV daily OR Meropenem 1g IV q8h. Pseudomonas: Cefepime 2g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h. Duration: 7-14 days.",
+            "candida": "Echinocandin (micafungin 100mg IV daily, caspofungin, or anidulafungin) preferred. Step down to fluconazole 400mg IV/PO daily if C. albicans and stable. Duration: 14 days after first negative blood culture. Remove catheter (CRITICAL).",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Discontinue MRSA coverage if MSSA or Gram-negative confirmed. Discontinue Gram-negative coverage if Gram-positive confirmed. Discontinue antifungal if cultures negative at 5 days.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Hemodynamically stable, (3) Improving WBC, (4) Tolerating PO intake, (5) Good bioavailability oral option available (e.g., fluoroquinolones, linezolid, fluconazole)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "coagulase_negative_staphylococci": "5-7 days if catheter removed, 10-14 days if catheter retained",
+            "staphylococcus_aureus": "14 days if catheter removed + uncomplicated, 4-6 weeks if complicated (endocarditis, osteomyelitis, retained catheter)",
+            "enterococcus": "7-14 days",
+            "gram_negative_rods": "7-14 days",
+            "candida": "14 days after first negative blood culture (catheter must be removed)",
+            "monitoring": "Daily blood cultures until negative (document clearance). Repeat blood cultures at end of therapy. Monitor for metastatic complications (S. aureus, Candida: obtain TEE, repeat imaging if persistent fever).",
+            "stop_criteria": "Completed adequate duration. Afebrile >48 hours. Negative repeat blood cultures. No evidence of metastatic complications. Catheter removed (or retained with clear justification)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "catheter_removal": "REMOVE catheter in: (1) S. aureus or Candida CRBSI (high failure rate if retained), (2) Septic shock or hemodynamic instability, (3) Suppurative thrombophlebitis, (4) Tunnel infection or port pocket infection, (5) Persistent bacteremia >72 hours despite antibiotics. RETAIN catheter only if: (1) Coagulase-negative staph or Enterococcus, (2) No other vascular access, (3) Hemodynamically stable, (4) Improving on antibiotics. Consider antibiotic lock therapy if retained.",
+            "antibiotic_lock_therapy": "Instill high-concentration antibiotic into catheter lumen (vancomycin 5mg/mL + heparin 5,000 units/mL OR gentamicin 5mg/mL + heparin). Dwell 12-24 hours, then flush. Use with systemic antibiotics. Increases salvage rate if catheter retained. Do NOT use if S. aureus or Candida.",
+            "suppurative_thrombophlebitis": "Persistent bacteremia >72 hours after catheter removal + antibiotics. Palpable venous cord, edema, erythema along vein. Diagnosis: Ultrasound or CT venography (thrombus with purulence). Treatment: Prolonged antibiotics (4-6 weeks) + anticoagulation + surgical excision if refractory.",
+            "hemodialysis_catheter": "High infection risk. Remove if possible. If retained: Antibiotic lock therapy + systemic antibiotics. Longer duration (10-14 days minimum). Consider tunneled catheter replacement if long-term access needed.",
+            "immunocompromised": "Broader coverage (vancomycin + meropenem + micafungin). Longer duration (14-21 days minimum). Higher risk of metastatic complications.",
+            "pregnancy": "Preferred: Cefazolin (MSSA), vancomycin (MRSA), ceftriaxone (Gram-negative). Avoid: Fluoroquinolones, doxycycline, aminoglycosides (if possible). Remove catheter if possible."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "De-escalate within 48-72 hours based on culture results",
+              "Discontinue MRSA coverage if MSSA or Gram-negative confirmed",
+              "Discontinue Gram-negative coverage if Gram-positive confirmed",
+              "Discontinue antifungal if cultures negative at 5 days",
+              "Shorten duration to 5-7 days if coagulase-negative staph + catheter removed"
+            ],
+            "timeout_checklist": [
+              "Is catheter removed? (CRITICAL for S. aureus, Candida, septic shock)",
+              "Are repeat blood cultures negative? (Document clearance)",
+              "What is the organism? (Determines duration: CoNS 5-7 days, S. aureus 14 days, Candida 14 days after negative culture)",
+              "Is TEE obtained? (If S. aureus or Candida CRBSI)",
+              "Can I de-escalate antibiotics? (Based on culture results)",
+              "Can I switch IV to PO? (If stable and good oral option)",
+              "Can I stop antibiotics? (If adequate duration and resolved)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT treat coagulase-negative staph as contaminant if catheter-related (often true CRBSI). Do NOT retain catheter if S. aureus or Candida (high failure rate). Do NOT continue broad-spectrum antibiotics beyond 48-72 hours without culture justification.",
+            "prevention": "Chlorhexidine skin prep. Maximal sterile barriers during insertion. Subclavian or internal jugular preferred over femoral. Remove catheter when no longer needed. Daily assessment of catheter necessity. Chlorhexidine-impregnated dressings.",
+            "patient_education": "CRBSI is serious infection from catheter. Catheter may need to be removed. Complete full antibiotic course. Watch for worsening symptoms. Follow-up in 1-2 weeks."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Intravascular Catheter-Related Infection Guidelines (2009, updated 2024)",
+              "url": "https://www.idsociety.org/practice-guideline/intravascular-catheter-infections/"
+            },
+            {
+              "label": "CDC CLABSI Prevention Guidelines (2024)",
+              "url": "https://www.cdc.gov/infectioncontrol/guidelines/bsi/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "gram-negative-bacteremia",
+      "name": "Gram-Negative Bacteremia",
+      "synonyms": ["GNB", "Enterobacteriaceae bacteremia", "Pseudomonas bacteremia"],
+      "icd10": ["A41.50", "A41.51", "A41.52", "A41.53"],
+      "severity": ["moderate", "severe", "critical"],
+      "shortDescription": "Bloodstream infection with Gram-negative bacteria requiring source control and appropriate antibiotics based on resistance patterns",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Gram-negative bacteremia (GNB) is bloodstream infection with Gram-negative bacteria (Enterobacteriaceae, Pseudomonas, Acinetobacter, others). Common sources: Urinary tract (40%), intra-abdominal (25%), respiratory (15%), biliary (10%). Mortality: 15-30% (higher with septic shock, MDRO, inadequate empiric therapy).",
+            "clinical_presentation": "Fever, chills, rigors, hypotension. Septic shock common (30-40%). Source-specific symptoms: Dysuria (UTI), abdominal pain (intra-abdominal), cough (pneumonia), jaundice (biliary). Endotoxin-mediated: Hypotension, tachycardia, warm extremities initially (vasodilation), then cold extremities (vasoconstriction).",
+            "diagnostic_criteria": "≥1 blood culture positive for Gram-negative bacteria. Identify source (urinary, intra-abdominal, respiratory, biliary, catheter-related).",
+            "risk_factors": [
+              "Urinary tract infection or obstruction (most common source)",
+              "Intra-abdominal infection or recent abdominal surgery",
+              "Biliary obstruction or cholangitis",
+              "Pneumonia or mechanical ventilation",
+              "Central venous catheter",
+              "Immunosuppression or neutropenia",
+              "Recent antibiotics (MDRO risk: ESBL, CRE, MDR Pseudomonas)"
+            ],
+            "red_flags": [
+              "Septic shock - high mortality, urgent resuscitation + antibiotics",
+              "MDRO (ESBL, CRE, MDR Pseudomonas) - inadequate empiric therapy increases mortality",
+              "Biliary obstruction - requires urgent ERCP or percutaneous drainage",
+              "Intra-abdominal abscess - requires drainage for source control",
+              "Persistent bacteremia >72 hours - inadequate source control or metastatic infection"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Obtain blood cultures BEFORE antibiotics. Identify source: Urinalysis + urine culture (UTI), CT abdomen/pelvis (intra-abdominal), chest X-ray (pneumonia), RUQ ultrasound or MRCP (biliary).",
+            "essential_tests": [
+              "Blood cultures x2 sets BEFORE antibiotics",
+              "Source identification: Urinalysis + urine culture, imaging (CT, ultrasound, chest X-ray)",
+              "Gram stain and culture from source (urine, abscess fluid, sputum, bile)",
+              "Susceptibility testing (CRITICAL for MDRO detection: ESBL, CRE, MDR Pseudomonas)"
+            ],
+            "conditional_tests": [
+              "CT abdomen/pelvis: If intra-abdominal source suspected",
+              "RUQ ultrasound or MRCP: If biliary obstruction suspected",
+              "Chest X-ray or CT chest: If pneumonia suspected",
+              "Repeat blood cultures: If persistent fever or bacteremia >72 hours"
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics >1 hour for cultures if septic shock. Do NOT skip source imaging (source control critical for cure).",
+            "turnaround_time": "Blood cultures: Preliminary 24-48 hours, susceptibilities 48-72 hours. Imaging: CT/ultrasound within 24 hours (urgent if septic)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "enterobacteriaceae": {
+              "e_coli": "Most common (40-50%). ESBL 15-30%, CRE 5-15%. Source: UTI, intra-abdominal.",
+              "klebsiella_pneumoniae": "15-20%. ESBL 20-40%, CRE 10-20% (KPC, NDM). Source: UTI, pneumonia, intra-abdominal.",
+              "proteus_mirabilis": "5-10%. Usually susceptible. Source: UTI (especially with stones).",
+              "enterobacter": "5-10%. AmpC beta-lactamase (cephalosporin-resistant). Source: UTI, respiratory.",
+              "serratia": "2-5%. Often resistant. Source: UTI, respiratory, catheter-related."
+            },
+            "non_fermenters": {
+              "pseudomonas_aeruginosa": "10-15%. MDR common (30-50% in ICU). Source: Respiratory, UTI, catheter-related.",
+              "acinetobacter_baumannii": "2-5%. XDR common (50-80% in ICU). Source: Respiratory, catheter-related, wound."
+            },
+            "resistance_patterns": "ESBL Enterobacteriaceae 15-30% (E. coli, Klebsiella). CRE 5-15% (high mortality 40-60%). MDR Pseudomonas 30-50% (ICU). XDR Acinetobacter 50-80% (ICU). Fluoroquinolone resistance 30-50% (E. coli).",
+            "mdro_risk_factors": [
+              "Recent hospitalization (within 90 days)",
+              "Recent antibiotics (within 90 days), especially cephalosporins or fluoroquinolones",
+              "ICU admission or mechanical ventilation",
+              "Hemodialysis or immunosuppression",
+              "Known MDRO colonization or prior infection",
+              "Endemic region (high local resistance rates)"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "community_acquired_no_mdro": "Ceftriaxone 2g IV daily OR Cefepime 2g IV q8h (if Pseudomonas risk: ICU, neutropenia, structural lung disease). Alternative: Piperacillin-tazobactam 4.5g IV q6h.",
+            "healthcare_associated_or_mdro_risk": "Cefepime 2g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h (covers ESBL, Pseudomonas). If high CRE risk: Meropenem 1g IV q8h OR Imipenem 500mg IV q6h.",
+            "septic_shock_or_high_cre_risk": "Meropenem 2g IV q8h (extended infusion) OR Imipenem 1g IV q6h. If known CRE: Meropenem 2g IV q8h + Polymyxin B 2.5mg/kg/day IV (divided q12h) OR Ceftazidime-avibactam 2.5g IV q8h OR Meropenem-vaborbactam 4g IV q8h.",
+            "xdr_acinetobacter_or_pseudomonas": "Meropenem 2g IV q8h + Polymyxin B 2.5mg/kg/day IV OR Cefiderocol 2g IV q8h (siderophore cephalosporin, active against XDR). Consult infectious disease.",
+            "alternatives": "Beta-lactam allergy: Aztreonam 2g IV q8h (Gram-negative only) + Metronidazole 500mg IV q8h (if anaerobic coverage needed). Fluoroquinolone: Ciprofloxacin 400mg IV q8h OR Levofloxacin 750mg IV daily (if susceptible, but high resistance rates).",
+            "avoid_list": "Avoid fluoroquinolones for empiric therapy (high resistance rates 30-50%). Avoid inadequate Pseudomonas coverage if risk factors present. Avoid monotherapy with aminoglycosides (inferior outcomes)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "susceptible_enterobacteriaceae": "Ceftriaxone 2g IV daily OR Ciprofloxacin 400mg IV q12h (if susceptible). Duration: 7-14 days (urinary source: 7 days, other sources: 10-14 days).",
+            "esbl_enterobacteriaceae": "Ertapenem 1g IV daily (if no Pseudomonas) OR Meropenem 1g IV q8h OR Imipenem 500mg IV q6h. Alternative: Piperacillin-tazobactam 4.5g IV q6h (if MIC ≤16 mcg/mL). Duration: 10-14 days.",
+            "cre_enterobacteriaceae": "Meropenem 2g IV q8h (extended infusion, if MIC ≤8 mcg/mL) + Polymyxin B OR Ceftazidime-avibactam 2.5g IV q8h OR Meropenem-vaborbactam 4g IV q8h (if KPC). Combination therapy preferred (meropenem + polymyxin or tigecycline). Duration: 14-21 days. Consult infectious disease.",
+            "pseudomonas_aeruginosa": "Cefepime 2g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h OR Meropenem 1g IV q8h (based on susceptibilities). Consider combination therapy (beta-lactam + aminoglycoside or fluoroquinolone) for first 3-5 days if severe. Duration: 10-14 days.",
+            "mdr_pseudomonas": "Ceftolozane-tazobactam 3g IV q8h OR Ceftazidime-avibactam 2.5g IV q8h OR Cefiderocol 2g IV q8h. Combination therapy if XDR. Duration: 14-21 days.",
+            "acinetobacter_baumannii": "Meropenem 2g IV q8h (if susceptible) OR Polymyxin B 2.5mg/kg/day IV + Meropenem 2g IV q8h (combination for XDR) OR Cefiderocol 2g IV q8h. Duration: 14-21 days.",
+            "de_escalation": "De-escalate within 48-72 hours based on susceptibilities. Switch from carbapenem to ceftriaxone if ESBL-negative. Discontinue combination therapy after 3-5 days if improving. Narrow spectrum based on culture results.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Hemodynamically stable, (3) Improving WBC, (4) Tolerating PO intake, (5) Good bioavailability oral option (ciprofloxacin 500-750mg PO BID, levofloxacin 750mg PO daily, TMP-SMX DS 1-2 tabs PO BID if susceptible)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "urinary_source": "7 days (uncomplicated) OR 10-14 days (complicated: obstruction, abscess, male)",
+            "intra_abdominal_source": "4-7 days after source control (drainage, surgery)",
+            "respiratory_source": "7-14 days (depends on severity and organism)",
+            "biliary_source": "7-14 days (after drainage if obstructed)",
+            "catheter_related": "7-14 days (after catheter removal)",
+            "mdro_or_severe_infection": "14-21 days (CRE, XDR Pseudomonas, XDR Acinetobacter)",
+            "monitoring": "Daily blood cultures until negative (if initially positive). Repeat blood cultures at end of therapy if high-risk organism (CRE, XDR). Monitor for source control adequacy (repeat imaging if persistent fever). Monitor drug toxicity (aminoglycosides: creatinine, hearing; polymyxin: creatinine, neurotoxicity).",
+            "stop_criteria": "Completed adequate duration. Afebrile >48 hours. Negative repeat blood cultures. Source controlled (drainage, catheter removal). Improving WBC and clinical status."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "source_control": "CRITICAL for cure. Drain abscesses (percutaneous or surgical). Relieve biliary obstruction (ERCP, percutaneous drainage). Remove infected catheters. Repair perforated viscus. Debride necrotic tissue. Timing: Within 6-12 hours of diagnosis. Antibiotics alone insufficient without source control.",
+            "biliary_obstruction": "Urgent ERCP or percutaneous transhepatic cholangiography (PTC) for drainage. Antibiotics + drainage = cure. Antibiotics alone = high failure rate. Cholangitis triad: Fever, jaundice, RUQ pain. Reynolds pentad: + Hypotension + altered mental status (severe).",
+            "intra_abdominal_abscess": "Percutaneous drainage preferred (if accessible). Surgical drainage if: (1) Not accessible percutaneously, (2) Multiple abscesses, (3) Perforated viscus, (4) Necrotizing infection. Antibiotics + drainage = cure.",
+            "neutropenia": "Broader coverage (cefepime or meropenem + aminoglycoside). Longer duration (until neutropenia resolved, ANC >500). Higher mortality. Consider G-CSF to shorten neutropenia duration.",
+            "immunocompromised": "Broader coverage (meropenem + aminoglycoside). Longer duration (14-21 days minimum). Higher risk of MDRO and metastatic complications.",
+            "pregnancy": "Preferred: Ceftriaxone, cefepime, piperacillin-tazobactam, aztreonam, meropenem (if MDRO). Avoid: Fluoroquinolones, aminoglycosides (if possible, but can use if life-threatening). Aggressive source control critical.",
+            "renal_impairment": "Dose adjust all renally cleared antibiotics (beta-lactams, carbapenems, fluoroquinolones, aminoglycosides). Avoid nephrotoxic combinations (aminoglycoside + polymyxin). Monitor drug levels (aminoglycosides)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "De-escalate within 48-72 hours based on susceptibilities",
+              "Switch from carbapenem to ceftriaxone if ESBL-negative",
+              "Switch from carbapenem to cefepime or piperacillin-tazobactam if ESBL-positive but carbapenem-susceptible",
+              "Discontinue combination therapy after 3-5 days if improving",
+              "Switch IV to PO when stable (ciprofloxacin, levofloxacin, TMP-SMX if susceptible)"
+            ],
+            "timeout_checklist": [
+              "Is source controlled? (Drain abscess, relieve obstruction, remove catheter)",
+              "Are repeat blood cultures negative? (Document clearance)",
+              "What is the organism and susceptibilities? (Determines therapy)",
+              "Is this ESBL, CRE, or MDR Pseudomonas? (Requires carbapenem or novel agent)",
+              "Can I de-escalate from carbapenem? (If ESBL-negative, switch to ceftriaxone)",
+              "Can I discontinue combination therapy? (After 3-5 days if improving)",
+              "Can I switch IV to PO? (If stable and good oral option)",
+              "Can I stop antibiotics? (If adequate duration and source controlled)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use carbapenems for ESBL-negative organisms (carbapenem-sparing). Do NOT use fluoroquinolones empirically (high resistance rates). Do NOT continue combination therapy beyond 3-5 days without justification. Do NOT treat for prolonged duration without documented infection.",
+            "patient_education": "Gram-negative bacteremia is serious infection requiring antibiotics and source control. Complete full antibiotic course. Watch for worsening symptoms. Follow-up in 1-2 weeks. If MDRO: Infection control precautions, hand hygiene."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Complicated Urinary Tract Infections Guidelines (2024)",
+              "url": "https://www.idsociety.org/practice-guideline/urinary-tract-infections/"
+            },
+            {
+              "label": "IDSA Intra-Abdominal Infections Guidelines (2024)",
+              "url": "https://www.idsociety.org/practice-guideline/intra-abdominal-infections/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "enterococcal-bacteremia",
+      "name": "Enterococcal Bacteremia",
+      "synonyms": ["enterococcus bacteremia", "VRE bacteremia", "VSE bacteremia"],
+      "icd10": ["A41.81", "B95.2"],
+      "severity": ["moderate", "severe"],
+      "shortDescription": "Bloodstream infection with Enterococcus species requiring source control and appropriate antibiotics based on resistance patterns",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Enterococcal bacteremia is bloodstream infection with Enterococcus species (E. faecalis 80-90%, E. faecium 10-20%). Common sources: Urinary tract (40%), intra-abdominal (30%), catheter-related (15%), endocarditis (10%). VRE (vancomycin-resistant Enterococcus) 10-30% in healthcare-associated infections. Mortality: 15-30% (higher with VRE, endocarditis, immunosuppression).",
+            "clinical_presentation": "Fever, chills, hypotension. Source-specific symptoms: Dysuria (UTI), abdominal pain (intra-abdominal), catheter site erythema (CLABSI), new murmur (endocarditis). Often polymicrobial (30-40% of cases, especially intra-abdominal source).",
+            "diagnostic_criteria": "≥1 blood culture positive for Enterococcus species. Distinguish true infection from colonization/contamination (Enterococcus can be commensal in GI tract, but rarely a blood culture contaminant).",
+            "risk_factors": [
+              "Recent abdominal surgery or intra-abdominal infection",
+              "Urinary tract infection or instrumentation",
+              "Central venous catheter",
+              "Prolonged hospitalization or ICU stay",
+              "Broad-spectrum antibiotics (especially cephalosporins - Enterococcus intrinsically resistant)",
+              "Immunosuppression or malignancy",
+              "VRE risk: Prior vancomycin use, hemodialysis, transplant, prolonged hospitalization"
+            ],
+            "red_flags": [
+              "New murmur or IVDU - high risk of endocarditis (obtain TEE)",
+              "VRE (vancomycin-resistant) - limited treatment options, higher mortality",
+              "Persistent bacteremia >72 hours - endocarditis, abscess, or inadequate source control",
+              "Polymicrobial bacteremia - intra-abdominal source likely, requires source control",
+              "Immunosuppression or neutropenia - higher mortality"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Obtain blood cultures BEFORE antibiotics. Identify source: Urinalysis + urine culture (UTI), CT abdomen/pelvis (intra-abdominal), echocardiography (endocarditis if risk factors).",
+            "essential_tests": [
+              "Blood cultures x2 sets BEFORE antibiotics",
+              "Source identification: Urinalysis + urine culture, imaging (CT abdomen/pelvis if intra-abdominal source)",
+              "Susceptibility testing (CRITICAL for VRE detection: vancomycin, ampicillin, linezolid, daptomycin)"
+            ],
+            "conditional_tests": [
+              "Echocardiography (TEE preferred): If IVDU, prosthetic valve, persistent bacteremia >72 hours, or new murmur",
+              "CT abdomen/pelvis: If intra-abdominal source suspected (especially if polymicrobial)",
+              "Repeat blood cultures: Daily until negative (document clearance)"
+            ],
+            "when_not_to_test": "Do NOT assume Enterococcus is a contaminant (treat as real unless compelling evidence). Do NOT skip echocardiography if risk factors for endocarditis.",
+            "turnaround_time": "Blood cultures: Preliminary 24-48 hours, susceptibilities 48-72 hours. TEE: 1-7 days (urgent if unstable)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "enterococcus_faecalis": {
+              "description": "80-90% of enterococcal bacteremia",
+              "resistance": "Usually ampicillin-susceptible. VRE rare (<5%).",
+              "treatment": "Ampicillin preferred"
+            },
+            "enterococcus_faecium": {
+              "description": "10-20% of enterococcal bacteremia",
+              "resistance": "Often ampicillin-resistant (80-90%). VRE common (30-50% in healthcare-associated).",
+              "treatment": "Vancomycin (if VSE) OR Daptomycin/linezolid (if VRE)"
+            },
+            "intrinsic_resistance": "Enterococcus is intrinsically resistant to: Cephalosporins (all generations), aztreonam, aminoglycosides (low-level, monotherapy ineffective), TMP-SMX, clindamycin. Do NOT use these agents for Enterococcus.",
+            "acquired_resistance": "VRE (vancomycin-resistant): 10-30% in healthcare-associated infections. Ampicillin-resistant E. faecium: 80-90%. Linezolid-resistant: Rare (<5%). Daptomycin non-susceptibility: Rare but increasing (5-10%).",
+            "mdro_risk_factors": [
+              "Prior vancomycin use",
+              "Prolonged hospitalization or ICU stay",
+              "Hemodialysis or transplant",
+              "Known VRE colonization",
+              "Endemic region (high local VRE rates)"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "community_acquired_no_vre_risk": "Ampicillin 2g IV q4h (covers E. faecalis, most common). If polymicrobial (intra-abdominal source): Ampicillin 2g IV q4h + Metronidazole 500mg IV q8h + Ceftriaxone 2g IV daily (or piperacillin-tazobactam 4.5g IV q6h).",
+            "healthcare_associated_or_vre_risk": "Vancomycin 15-20mg/kg IV q8-12h (covers VSE and E. faecium). If high VRE risk: Daptomycin 8-10mg/kg IV daily OR Linezolid 600mg IV BID.",
+            "severe_or_endocarditis_suspected": "Ampicillin 2g IV q4h + Gentamicin 1mg/kg IV q8h (synergy for endocarditis, first 2 weeks only). If VRE or ampicillin-resistant: Daptomycin 10-12mg/kg IV daily (higher dose for endocarditis).",
+            "alternatives": "Ampicillin allergy: Vancomycin 15-20mg/kg IV q8-12h (if VSE). VRE: Daptomycin 8-10mg/kg IV daily OR Linezolid 600mg IV BID OR Tigecycline 100mg IV x1, then 50mg IV q12h (salvage).",
+            "avoid_list": "Avoid cephalosporins for Enterococcus (intrinsically resistant). Avoid monotherapy with aminoglycosides (intrinsically resistant, low-level). Avoid linezolid for prolonged courses (>14 days) due to toxicity (myelosuppression, neuropathy)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "e_faecalis_ampicillin_susceptible": "Ampicillin 2g IV q4h (preferred). Duration: 7-14 days (urinary source: 7 days, other sources: 10-14 days, endocarditis: 4-6 weeks).",
+            "e_faecalis_ampicillin_resistant": "Vancomycin 15-20mg/kg IV q8-12h (if VSE) OR Daptomycin 8-10mg/kg IV daily (if VRE). Duration: 7-14 days.",
+            "e_faecium_ampicillin_resistant_vse": "Vancomycin 15-20mg/kg IV q8-12h. Duration: 7-14 days.",
+            "e_faecium_vre": "Daptomycin 8-10mg/kg IV daily (preferred) OR Linezolid 600mg IV BID. Alternative: Tigecycline 100mg IV x1, then 50mg IV q12h (salvage, inferior outcomes). Duration: 7-14 days.",
+            "endocarditis": "E. faecalis (ampicillin-susceptible): Ampicillin 2g IV q4h + Gentamicin 1mg/kg IV q8h (first 2 weeks only, synergy). E. faecium (VRE): Daptomycin 10-12mg/kg IV daily (higher dose). Duration: 4-6 weeks (native valve) OR 6 weeks (prosthetic valve). Consult infectious disease and cardiothoracic surgery.",
+            "polymicrobial_intra_abdominal": "Ampicillin 2g IV q4h + Metronidazole 500mg IV q8h + Ceftriaxone 2g IV daily OR Piperacillin-tazobactam 4.5g IV q6h (covers Enterococcus + anaerobes + Gram-negatives). Duration: 4-7 days after source control.",
+            "de_escalation": "De-escalate within 48-72 hours based on susceptibilities. Switch from vancomycin to ampicillin if E. faecalis and ampicillin-susceptible. Discontinue Gram-negative coverage if Enterococcus only (not polymicrobial).",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Hemodynamically stable, (3) Improving WBC, (4) Tolerating PO intake, (5) Good bioavailability oral option (amoxicillin 500mg PO TID if ampicillin-susceptible, linezolid 600mg PO BID if VRE)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "urinary_source": "7 days",
+            "intra_abdominal_source": "4-7 days after source control",
+            "catheter_related": "7-14 days (after catheter removal)",
+            "uncomplicated_bacteremia": "7-14 days (no endocarditis, no metastatic foci)",
+            "endocarditis": "4-6 weeks (native valve) OR 6 weeks (prosthetic valve)",
+            "monitoring": "Daily blood cultures until negative (document clearance). Repeat blood cultures at end of therapy if high-risk (endocarditis, VRE). Monitor for drug toxicity (daptomycin: CPK weekly, linezolid: CBC weekly if >14 days, gentamicin: creatinine, levels).",
+            "stop_criteria": "Completed adequate duration. Afebrile >48 hours. Negative repeat blood cultures. Source controlled (drainage, catheter removal). Improving WBC and clinical status."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "source_control": "CRITICAL for cure. Drain intra-abdominal abscesses. Remove infected catheters. Relieve urinary obstruction. Debride infected tissue. Timing: Within 6-12 hours of diagnosis. Antibiotics alone insufficient without source control.",
+            "endocarditis": "Obtain TEE if: IVDU, prosthetic valve, persistent bacteremia >72 hours, new murmur. Treatment: Ampicillin + gentamicin (E. faecalis) OR Daptomycin high-dose (VRE). Duration: 4-6 weeks. Indications for surgery: Heart failure, large vegetations, perivalvular abscess, persistent bacteremia. Consult cardiothoracic surgery early.",
+            "polymicrobial_bacteremia": "Common (30-40% of enterococcal bacteremia). Suggests intra-abdominal source. Obtain CT abdomen/pelvis. Broad-spectrum coverage (ampicillin + metronidazole + ceftriaxone OR piperacillin-tazobactam). Source control critical.",
+            "vre_infection_control": "Contact precautions. Dedicated equipment. Environmental decontamination. Hand hygiene. Screen contacts if outbreak. Notify infection control.",
+            "immunocompromised": "Broader coverage (vancomycin or daptomycin). Longer duration (14-21 days minimum). Higher risk of VRE and metastatic complications.",
+            "pregnancy": "Preferred: Ampicillin (if susceptible), vancomycin (if VRE). Avoid: Doxycycline, fluoroquinolones. Linezolid: Limited data, use if no alternative. Aggressive source control critical.",
+            "renal_impairment": "Dose adjust ampicillin, vancomycin, daptomycin, linezolid (if severe). Avoid gentamicin if possible (nephrotoxic). Monitor drug levels (vancomycin trough, gentamicin peak/trough)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Switch from vancomycin to ampicillin if E. faecalis and ampicillin-susceptible",
+              "Discontinue Gram-negative coverage if Enterococcus only (not polymicrobial)",
+              "Discontinue gentamicin after 2 weeks if endocarditis (synergy achieved)",
+              "Switch IV to PO when stable (amoxicillin if ampicillin-susceptible, linezolid if VRE)"
+            ],
+            "timeout_checklist": [
+              "Is source controlled? (Drain abscess, remove catheter, relieve obstruction)",
+              "Are repeat blood cultures negative? (Document clearance)",
+              "What is the species and susceptibilities? (E. faecalis vs E. faecium, ampicillin vs vancomycin vs VRE)",
+              "Is this polymicrobial? (Suggests intra-abdominal source, requires broad coverage)",
+              "Is TEE obtained? (If risk factors for endocarditis)",
+              "Can I switch vancomycin to ampicillin? (If E. faecalis and ampicillin-susceptible)",
+              "Can I switch IV to PO? (If stable and good oral option)",
+              "Can I stop antibiotics? (If adequate duration and source controlled)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use cephalosporins for Enterococcus (intrinsically resistant). Do NOT use linezolid for prolonged courses (>14 days) without monitoring (myelosuppression, neuropathy). Do NOT continue vancomycin if E. faecalis and ampicillin-susceptible (switch to ampicillin).",
+            "patient_education": "Enterococcal bacteremia is serious infection requiring antibiotics and source control. Complete full antibiotic course. Watch for worsening symptoms. Follow-up in 1-2 weeks. If VRE: Infection control precautions, hand hygiene."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "AHA Infective Endocarditis Guidelines (2023)",
+              "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001151"
+            },
+            {
+              "label": "IDSA Intra-Abdominal Infections Guidelines (2024)",
+              "url": "https://www.idsociety.org/practice-guideline/intra-abdominal-infections/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "neutropenic-fever-bacteremia",
+      "name": "Neutropenic Fever & Bacteremia",
+      "synonyms": ["febrile neutropenia", "neutropenic sepsis", "chemotherapy-induced neutropenia"],
+      "icd10": ["D70.1", "R50.81", "A41.9"],
+      "severity": ["severe", "critical"],
+      "shortDescription": "Fever in neutropenic patient (ANC <500) requiring urgent empiric broad-spectrum antibiotics due to high mortality risk",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Febrile neutropenia is fever (single oral temp ≥38.3°C or ≥38°C for ≥1 hour) in patient with neutropenia (ANC <500 cells/mm³ or expected to decline <500 within 48 hours). Medical emergency. Mortality: 5-10% (low-risk) to 30-50% (high-risk, septic shock). Most common in chemotherapy patients (nadir 7-14 days post-chemo).",
+            "clinical_presentation": "Fever often the ONLY sign of infection (blunted inflammatory response due to neutropenia). Minimal or absent localizing symptoms. Rapid progression to septic shock possible. Common sources: Mucositis (oral, GI), catheter-related, respiratory, perianal, skin.",
+            "diagnostic_criteria": "Fever: Single oral temp ≥38.3°C OR ≥38°C for ≥1 hour. Neutropenia: ANC <500 cells/mm³ OR expected to decline <500 within 48 hours. High-risk: ANC <100, prolonged neutropenia (>7 days), hemodynamic instability, mucositis, pneumonia, abdominal pain.",
+            "risk_factors": [
+              "Chemotherapy (especially high-dose, myelosuppressive regimens)",
+              "Hematologic malignancy (AML, ALL, lymphoma)",
+              "Hematopoietic stem cell transplant (HSCT)",
+              "Prolonged neutropenia (>7 days)",
+              "Mucositis (oral, GI) - mucosal barrier disruption",
+              "Central venous catheter",
+              "Recent antibiotics or antifungal prophylaxis"
+            ],
+            "red_flags": [
+              "Septic shock or hemodynamic instability - high mortality, urgent resuscitation + antibiotics",
+              "ANC <100 - profound neutropenia, higher mortality",
+              "Prolonged neutropenia (>7 days) - higher risk of fungal infection",
+              "Mucositis or abdominal pain - GI source, risk of typhlitis (neutropenic enterocolitis)",
+              "Respiratory symptoms - pneumonia, high mortality"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Obtain blood cultures BEFORE antibiotics (if no delay >1 hour). Minimum 2 sets (peripheral + catheter if present). Identify source: Chest X-ray, urinalysis, physical exam (oral cavity, perianal area, catheter site).",
+            "essential_tests": [
+              "Blood cultures x2 sets (peripheral + catheter if present) BEFORE antibiotics",
+              "CBC with differential (confirm ANC, monitor for recovery)",
+              "CMP (creatinine, electrolytes)",
+              "Chest X-ray (rule out pneumonia)",
+              "Urinalysis (if urinary symptoms, but avoid catheterization if possible)"
+            ],
+            "conditional_tests": [
+              "CT chest: If respiratory symptoms or abnormal chest X-ray (rule out fungal pneumonia if prolonged neutropenia)",
+              "CT abdomen/pelvis: If abdominal pain (rule out typhlitis, abscess, colitis)",
+              "Galactomannan or beta-D-glucan: If prolonged neutropenia >7 days (fungal biomarkers)",
+              "Respiratory cultures (sputum, BAL): If pneumonia (but often difficult to obtain in neutropenic patients)",
+              "Stool studies: If diarrhea (C. difficile, viral, bacterial)"
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics >1 hour for cultures or imaging. Do NOT perform rectal exam or rectal temperature (risk of bacteremia from mucosal disruption). Do NOT catheterize bladder unless absolutely necessary (infection risk).",
+            "turnaround_time": "Blood cultures: Preliminary 24-48 hours. Chest X-ray: <1 hour. CT: 1-24 hours (urgent if unstable). Galactomannan/beta-D-glucan: 1-2 days."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "gram_negative_bacteria": {
+              "description": "40-50% of documented infections",
+              "organisms": "E. coli, Klebsiella, Pseudomonas aeruginosa, Enterobacter",
+              "notes": "ESBL 15-30%, CRE 5-15%, MDR Pseudomonas common. High mortality if inadequate empiric therapy."
+            },
+            "gram_positive_bacteria": {
+              "description": "30-40% of documented infections",
+              "organisms": "Coagulase-negative staphylococci, S. aureus (MRSA 30-50%), Streptococcus, Enterococcus (VRE 10-30%)",
+              "notes": "Often catheter-related. Viridans streptococci: Associated with mucositis, can cause septic shock."
+            },
+            "fungal": {
+              "description": "10-20% of documented infections (higher if prolonged neutropenia >7 days)",
+              "organisms": "Candida species, Aspergillus (invasive pulmonary aspergillosis)",
+              "notes": "Candida: Early (first 7 days). Aspergillus: Late (>7 days neutropenia). High mortality."
+            },
+            "culture_negative": {
+              "description": "50-60% of febrile neutropenia episodes",
+              "notes": "No organism identified despite fever. May be due to: (1) Antibiotic/antifungal prophylaxis, (2) Non-infectious causes (drug fever, malignancy), (3) Fastidious organisms, (4) Viral infections."
+            },
+            "resistance_patterns": "ESBL Enterobacteriaceae 15-30%. CRE 5-15%. MDR Pseudomonas 30-50%. MRSA 30-50%. VRE 10-30%. Fluconazole-resistant Candida (C. glabrata, C. krusei) 20-30%.",
+            "mdro_risk_factors": [
+              "Recent antibiotics (within 90 days)",
+              "Recent hospitalization or ICU admission",
+              "Known MDRO colonization",
+              "Endemic region (high local resistance rates)"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "low_risk_febrile_neutropenia": "Definition: ANC expected to recover within 7 days, no comorbidities, hemodynamically stable, no mucositis, no pneumonia. Monotherapy: Cefepime 2g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h OR Meropenem 1g IV q8h. Consider outpatient oral therapy (ciprofloxacin 750mg PO BID + amoxicillin-clavulanate 875mg PO BID) if very low-risk.",
+            "high_risk_febrile_neutropenia": "Definition: ANC <100, prolonged neutropenia (>7 days), hemodynamic instability, mucositis, pneumonia, abdominal pain. Monotherapy: Cefepime 2g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h OR Meropenem 1g IV q8h. Add vancomycin 15-20mg/kg IV q8-12h if: (1) Catheter-related infection suspected, (2) Skin/soft tissue infection, (3) Mucositis (viridans strep risk), (4) Hemodynamic instability, (5) Known MRSA colonization.",
+            "septic_shock_or_mdro_risk": "Meropenem 2g IV q8h + Vancomycin 15-20mg/kg IV q8-12h. If known CRE: Meropenem 2g IV q8h + Polymyxin B OR Ceftazidime-avibactam 2.5g IV q8h.",
+            "prolonged_neutropenia_or_fungal_risk": "Add empiric antifungal if: (1) Persistent fever >4-7 days despite antibiotics, (2) Prolonged neutropenia >7 days, (3) Respiratory symptoms (Aspergillus risk). Empiric antifungal: Micafungin 100mg IV daily OR Liposomal amphotericin B 3-5mg/kg IV daily OR Voriconazole 6mg/kg IV q12h x 2, then 4mg/kg IV q12h.",
+            "alternatives": "Beta-lactam allergy: Aztreonam 2g IV q8h + Vancomycin 15-20mg/kg IV q8-12h. Fluoroquinolone: Levofloxacin 750mg IV daily (if not on fluoroquinolone prophylaxis).",
+            "avoid_list": "Avoid inadequate Pseudomonas coverage (cefepime, piperacillin-tazobactam, or meropenem required). Avoid aminoglycoside monotherapy (inferior outcomes). Avoid delaying antibiotics >1 hour."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "documented_gram_negative": "E. coli/Klebsiella (susceptible): Ceftriaxone 2g IV daily OR Ciprofloxacin 400mg IV q12h. ESBL: Meropenem 1g IV q8h. Pseudomonas: Cefepime 2g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h. Duration: Until afebrile + ANC >500 + 7-14 days total.",
+            "documented_gram_positive": "MSSA: Cefazolin 2g IV q8h. MRSA: Vancomycin 15-20mg/kg IV q8-12h OR Daptomycin 8-10mg/kg IV daily. Viridans strep: Penicillin G 4 million units IV q4h OR Ceftriaxone 2g IV daily. Duration: Until afebrile + ANC >500 + 7-14 days total.",
+            "documented_candida": "Echinocandin (micafungin 100mg IV daily, caspofungin, or anidulafungin) preferred. Step down to fluconazole 400mg IV/PO daily if C. albicans and stable. Duration: Until afebrile + ANC >500 + 14 days after first negative culture.",
+            "documented_aspergillus": "Voriconazole 6mg/kg IV q12h x 2, then 4mg/kg IV q12h OR Liposomal amphotericin B 5mg/kg IV daily OR Isavuconazole 372mg IV q8h x 6, then 372mg IV daily. Duration: Until ANC >500 + clinical/radiologic improvement + minimum 6-12 weeks.",
+            "culture_negative_febrile_neutropenia": "Continue empiric antibiotics until afebrile + ANC >500. If persistent fever >4-7 days: Add empiric antifungal. If afebrile and clinically stable: Consider stopping antibiotics once ANC >500.",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Discontinue vancomycin if no Gram-positive infection. Discontinue antifungal if cultures negative and afebrile. Switch from meropenem to ceftriaxone if ESBL-negative.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) ANC >500 and rising, (3) Hemodynamically stable, (4) Tolerating PO intake, (5) Good bioavailability oral option (ciprofloxacin, levofloxacin, fluconazole, voriconazole)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "culture_negative_febrile_neutropenia": "Until afebrile + ANC >500. Minimum 7 days total.",
+            "documented_bacterial_infection": "Until afebrile + ANC >500 + 7-14 days total (depends on organism and source)",
+            "documented_fungal_infection": "Candida: Until afebrile + ANC >500 + 14 days after first negative culture. Aspergillus: Until ANC >500 + clinical/radiologic improvement + minimum 6-12 weeks.",
+            "monitoring": "Daily: CBC (monitor ANC recovery), vital signs, clinical status. Every 2-3 days: Blood cultures (if initially positive, document clearance). Weekly: Galactomannan or beta-D-glucan (if prolonged neutropenia). Monitor drug toxicity (vancomycin trough, aminoglycoside levels if used, amphotericin: creatinine, electrolytes).",
+            "stop_criteria": "Afebrile >48 hours. ANC >500 and rising. Negative repeat cultures (if initially positive). Clinical improvement. Adequate duration completed (7-14 days for bacteria, longer for fungi)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "g_csf_use": "Consider G-CSF (filgrastim 5 mcg/kg SC daily OR pegfilgrastim 6mg SC x1) to shorten neutropenia duration if: (1) High-risk febrile neutropenia, (2) Septic shock, (3) Pneumonia or invasive fungal infection, (4) Prolonged neutropenia expected. Start 24-72 hours after chemotherapy. Monitor ANC recovery.",
+            "mucositis_management": "Oral care: Frequent mouth rinses (saline, sodium bicarbonate). Pain control: Topical anesthetics (lidocaine), systemic analgesics (opioids if severe). Nutrition: Soft diet, avoid acidic/spicy foods. Viridans strep risk: Consider adding vancomycin if severe mucositis + fever.",
+            "typhlitis_neutropenic_enterocolitis": "Inflammation of cecum/ascending colon in neutropenic patients. Symptoms: Fever, abdominal pain (RLQ), diarrhea, distension. Diagnosis: CT abdomen (bowel wall thickening >4mm). Treatment: Bowel rest (NPO), broad-spectrum antibiotics (meropenem + vancomycin + metronidazole), surgical consultation if perforation/necrosis. Mortality 30-50%.",
+            "catheter_management": "Remove catheter if: (1) Tunnel infection, (2) Port pocket infection, (3) S. aureus or Candida bacteremia, (4) Persistent bacteremia >72 hours despite antibiotics. Retain catheter if: (1) Coagulase-negative staph, (2) Improving on antibiotics, (3) No other vascular access.",
+            "antifungal_prophylaxis": "Consider in high-risk patients (AML, allogeneic HSCT, prolonged neutropenia >7 days): Fluconazole 400mg PO daily (Candida prophylaxis) OR Posaconazole 300mg PO BID (Candida + Aspergillus prophylaxis). Breakthrough fungal infections possible.",
+            "pregnancy": "Rare (chemotherapy usually avoided in pregnancy). Preferred: Cefepime, piperacillin-tazobactam, meropenem, vancomycin. Avoid: Fluoroquinolones, aminoglycosides (if possible). Aggressive management critical for maternal survival."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Discontinue vancomycin if no Gram-positive infection documented",
+              "Discontinue antifungal if cultures negative and afebrile",
+              "Switch from meropenem to ceftriaxone if ESBL-negative",
+              "Switch from IV to PO when ANC >500 and stable (ciprofloxacin, levofloxacin, fluconazole, voriconazole)",
+              "Stop antibiotics once afebrile + ANC >500 if culture-negative"
+            ],
+            "timeout_checklist": [
+              "Is ANC <500? (Confirm neutropenia)",
+              "Are blood cultures obtained? (Before antibiotics)",
+              "Is empiric therapy appropriate? (Cefepime, piperacillin-tazobactam, or meropenem for Pseudomonas coverage)",
+              "Is vancomycin needed? (Catheter-related, mucositis, skin infection, MRSA colonization, hemodynamic instability)",
+              "Is antifungal needed? (Persistent fever >4-7 days, prolonged neutropenia >7 days, respiratory symptoms)",
+              "Is ANC recovering? (Monitor daily CBC)",
+              "Can I de-escalate antibiotics? (Based on culture results)",
+              "Can I stop antibiotics? (If afebrile + ANC >500)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use inadequate Pseudomonas coverage (cefepime, piperacillin-tazobactam, or meropenem required). Do NOT continue vancomycin if no Gram-positive infection. Do NOT continue antifungal if cultures negative and afebrile. Do NOT delay antibiotics >1 hour.",
+            "patient_education": "Febrile neutropenia is medical emergency. Seek immediate care if fever develops during chemotherapy. Complete full antibiotic course. Monitor for ANC recovery. Avoid crowds, sick contacts, raw foods. Good hand hygiene. Follow-up with oncology."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Febrile Neutropenia Guidelines (2011, updated 2024)",
+              "url": "https://www.idsociety.org/practice-guideline/febrile-neutropenia/"
+            },
+            {
+              "label": "NCCN Hematopoietic Growth Factors Guidelines (2024)",
+              "url": "https://www.nccn.org/professionals/physician_gls/pdf/growthfactors.pdf"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "polymicrobial-bacteremia",
+      "name": "Polymicrobial Bacteremia",
+      "synonyms": ["mixed bacteremia", "multiple organism bacteremia"],
+      "icd10": ["A41.50", "A41.89"],
+      "severity": ["severe", "critical"],
+      "shortDescription": "Bloodstream infection with multiple organisms suggesting intra-abdominal or complex source requiring source control",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Polymicrobial bacteremia is bloodstream infection with ≥2 different organisms isolated from same blood culture set. Incidence: 5-15% of all bacteremia. Most common source: Intra-abdominal (60-70%), followed by catheter-related, skin/soft tissue, respiratory. Mortality: 25-40% (higher than monomicrobial bacteremia due to severity of underlying source).",
+            "clinical_presentation": "Fever, chills, hypotension, septic shock. Source-specific symptoms: Abdominal pain (intra-abdominal), wound drainage (surgical site), catheter site erythema (CLABSI). Often critically ill with multiple comorbidities.",
+            "diagnostic_criteria": "≥2 different organisms isolated from same blood culture set. Distinguish true polymicrobial infection from contamination (if coagulase-negative staph + another organism, consider contamination unless catheter-related).",
+            "risk_factors": [
+              "Intra-abdominal infection (most common: perforated viscus, abscess, peritonitis)",
+              "Recent abdominal surgery or trauma",
+              "Necrotizing soft tissue infection",
+              "Chronic wounds or pressure ulcers",
+              "Central venous catheter (especially long-term, TPN)",
+              "Immunosuppression or critical illness",
+              "Diabetes mellitus or cirrhosis"
+            ],
+            "red_flags": [
+              "Intra-abdominal source - requires urgent imaging (CT) and source control (surgery, drainage)",
+              "Necrotizing soft tissue infection - surgical emergency, high mortality",
+              "Septic shock - high mortality, urgent resuscitation + antibiotics + source control",
+              "Anaerobes isolated - suggests intra-abdominal or necrotizing infection",
+              "Persistent bacteremia >72 hours - inadequate source control"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Obtain blood cultures BEFORE antibiotics. Identify source: CT abdomen/pelvis (if intra-abdominal suspected), wound cultures, imaging of suspected source.",
+            "essential_tests": [
+              "Blood cultures x2 sets BEFORE antibiotics",
+              "CT abdomen/pelvis (if intra-abdominal source suspected - most common)",
+              "Wound cultures or abscess fluid cultures (if skin/soft tissue source)",
+              "Lactate (assess severity, guide resuscitation)"
+            ],
+            "conditional_tests": [
+              "Chest X-ray or CT chest: If respiratory source suspected",
+              "Ultrasound or CT: If abscess suspected (intra-abdominal, hepatic, splenic, renal)",
+              "Surgical exploration: If peritonitis, perforated viscus, or necrotizing infection",
+              "Repeat blood cultures: Daily until negative (document clearance)"
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics >1 hour for imaging if septic shock. Do NOT skip source imaging (source control critical for cure). Do NOT assume polymicrobial bacteremia is contamination (usually true infection, especially if anaerobes present).",
+            "turnaround_time": "Blood cultures: Preliminary 24-48 hours, final 5 days (anaerobes may take longer). CT abdomen/pelvis: 1-24 hours (urgent if septic)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "common_combinations": {
+              "intra_abdominal": "E. coli + Bacteroides fragilis, Klebsiella + Enterococcus + anaerobes, mixed Gram-negatives + anaerobes",
+              "catheter_related": "Coagulase-negative staph + Candida, S. aureus + Gram-negatives",
+              "necrotizing_soft_tissue": "Streptococcus pyogenes + S. aureus, mixed Gram-positives + Gram-negatives + anaerobes (Clostridium, Bacteroides)",
+              "chronic_wounds": "S. aureus + Pseudomonas + Enterococcus + anaerobes"
+            },
+            "gram_positive": "S. aureus, Streptococcus (including S. anginosus group), Enterococcus, coagulase-negative staphylococci",
+            "gram_negative": "E. coli, Klebsiella, Enterobacter, Pseudomonas, Proteus, Acinetobacter",
+            "anaerobes": "Bacteroides fragilis (most common), Clostridium species, Peptostreptococcus, Fusobacterium. Presence of anaerobes strongly suggests intra-abdominal or necrotizing infection.",
+            "resistance_patterns": "ESBL Enterobacteriaceae 15-30%. MRSA 30-50%. VRE 10-30%. MDR Pseudomonas 30-50%. Resistance common due to prior antibiotics and healthcare exposure.",
+            "mdro_risk_factors": [
+              "Recent hospitalization or surgery",
+              "Recent antibiotics (within 90 days)",
+              "ICU admission or critical illness",
+              "Known MDRO colonization"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "intra_abdominal_source": "Piperacillin-tazobactam 4.5g IV q6h (covers Gram-positives, Gram-negatives, anaerobes) OR Meropenem 1g IV q8h (if MDRO risk or severe) OR Cefepime 2g IV q8h + Metronidazole 500mg IV q8h. Add vancomycin 15-20mg/kg IV q8-12h if MRSA risk or septic shock.",
+            "necrotizing_soft_tissue_infection": "Vancomycin 15-20mg/kg IV q8-12h + Piperacillin-tazobactam 4.5g IV q6h + Clindamycin 900mg IV q8h (toxin suppression). Alternative: Vancomycin + Meropenem 1g IV q8h + Clindamycin 900mg IV q8h. URGENT surgical debridement required.",
+            "catheter_related": "Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h. Add Micafungin 100mg IV daily if Candida suspected (TPN, immunosuppressed).",
+            "septic_shock_or_mdro_risk": "Vancomycin 15-20mg/kg IV q8-12h + Meropenem 2g IV q8h + Micafungin 100mg IV daily (triple coverage: MRSA, CRE, Candida). Consider adding Clindamycin 900mg IV q8h if necrotizing infection suspected.",
+            "alternatives": "Beta-lactam allergy: Aztreonam 2g IV q8h + Vancomycin 15-20mg/kg IV q8-12h + Metronidazole 500mg IV q8h. Carbapenem allergy: Fluoroquinolone (levofloxacin 750mg IV daily) + Metronidazole 500mg IV q8h + Vancomycin (if susceptible organisms).",
+            "avoid_list": "Avoid inadequate anaerobic coverage if intra-abdominal source (metronidazole or beta-lactam/beta-lactamase inhibitor required). Avoid monotherapy (polymicrobial infection requires broad coverage). Avoid delaying source control (antibiotics alone insufficient)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "intra_abdominal_polymicrobial": "Narrow based on susceptibilities. E. coli + Bacteroides: Ceftriaxone 2g IV daily + Metronidazole 500mg IV q8h OR Ertapenem 1g IV daily (if ESBL). Enterococcus + Gram-negatives + anaerobes: Ampicillin 2g IV q4h + Ceftriaxone 2g IV daily + Metronidazole 500mg IV q8h OR Piperacillin-tazobactam 4.5g IV q6h. Duration: 4-7 days after source control.",
+            "necrotizing_soft_tissue_polymicrobial": "Strep + Staph: Penicillin G 4 million units IV q4h + Clindamycin 900mg IV q8h + Vancomycin 15-20mg/kg IV q8-12h (if MRSA). Mixed Gram-positives + Gram-negatives + anaerobes: Vancomycin + Meropenem + Clindamycin. Duration: 7-14 days after surgical debridement.",
+            "catheter_related_polymicrobial": "CoNS + Candida: Vancomycin 15-20mg/kg IV q8-12h + Micafungin 100mg IV daily. S. aureus + Gram-negatives: Cefazolin 2g IV q8h (if MSSA) + Ceftriaxone 2g IV daily. Duration: 7-14 days after catheter removal.",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Narrow Gram-positive coverage (switch vancomycin to cefazolin if MSSA). Narrow Gram-negative coverage (switch meropenem to ceftriaxone if ESBL-negative). Discontinue antifungal if Candida not isolated. Discontinue anaerobic coverage if anaerobes not isolated (but continue if intra-abdominal source).",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Hemodynamically stable, (3) Source controlled, (4) Improving WBC, (5) Tolerating PO intake, (6) Good bioavailability oral options available (amoxicillin-clavulanate 875mg PO TID, ciprofloxacin 500-750mg PO BID + metronidazole 500mg PO TID)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "intra_abdominal_source": "4-7 days after source control (surgery, drainage). Longer if inadequate source control or persistent infection.",
+            "necrotizing_soft_tissue_infection": "7-14 days after surgical debridement. Longer if extensive necrosis or delayed source control.",
+            "catheter_related": "7-14 days after catheter removal",
+            "chronic_wounds": "10-14 days (after debridement and wound care)",
+            "monitoring": "Daily blood cultures until negative (document clearance). Repeat imaging if persistent fever or clinical deterioration (assess source control adequacy). Monitor for complications (abscess, fistula, septic shock). Monitor drug toxicity (vancomycin trough, renal function).",
+            "stop_criteria": "Completed adequate duration (4-14 days depending on source). Afebrile >48 hours. Negative repeat blood cultures. Source controlled (surgery, drainage, catheter removal). Improving WBC and clinical status."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "source_control": "CRITICAL for cure. Polymicrobial bacteremia almost always requires source control. Intra-abdominal: Surgery (repair perforation, resect necrotic bowel) OR percutaneous drainage (abscess). Necrotizing soft tissue: URGENT surgical debridement (within 6-12 hours). Catheter-related: Remove catheter. Chronic wounds: Debridement + wound care. Timing: As soon as possible (within 6-12 hours). Antibiotics alone = high failure rate without source control.",
+            "intra_abdominal_infections": "Common causes: Perforated appendicitis, diverticulitis, cholecystitis, bowel perforation, peritonitis. Diagnosis: CT abdomen/pelvis (free air, abscess, bowel wall thickening). Treatment: Antibiotics + source control (surgery or drainage). Consult surgery early.",
+            "necrotizing_soft_tissue_infections": "SURGICAL EMERGENCY. High mortality (20-40%). Diagnosis: Pain out of proportion, crepitus, skin necrosis, bullae, gas on imaging. Treatment: URGENT surgical debridement + broad-spectrum antibiotics (vancomycin + piperacillin-tazobactam + clindamycin). Repeat debridement often needed. Consult surgery immediately.",
+            "anaerobic_bacteremia": "Presence of anaerobes (Bacteroides, Clostridium) strongly suggests intra-abdominal or necrotizing infection. Requires anaerobic coverage (metronidazole, beta-lactam/beta-lactamase inhibitor, carbapenem). Source control critical.",
+            "immunocompromised": "Broader coverage (vancomycin + meropenem + micafungin). Longer duration (14-21 days minimum). Higher risk of MDRO and metastatic complications. Consider atypical pathogens (fungi, Nocardia).",
+            "pregnancy": "Preferred: Ampicillin, piperacillin-tazobactam, ceftriaxone, metronidazole, vancomycin. Avoid: Fluoroquinolones, aminoglycosides (if possible). Aggressive source control critical for maternal and fetal survival."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "De-escalate within 48-72 hours based on culture results",
+              "Narrow Gram-positive coverage (switch vancomycin to cefazolin if MSSA)",
+              "Narrow Gram-negative coverage (switch meropenem to ceftriaxone if ESBL-negative)",
+              "Discontinue antifungal if Candida not isolated",
+              "Shorten duration to 4-7 days if intra-abdominal source controlled",
+              "Switch IV to PO when stable and source controlled"
+            ],
+            "timeout_checklist": [
+              "Is this true polymicrobial bacteremia or contamination? (Anaerobes present = true infection)",
+              "Is source identified? (CT abdomen/pelvis if intra-abdominal suspected)",
+              "Is source controlled? (Surgery, drainage, catheter removal)",
+              "Are repeat blood cultures negative? (Document clearance)",
+              "Can I de-escalate antibiotics? (Based on culture results)",
+              "Can I discontinue anaerobic coverage? (Only if anaerobes not isolated AND non-intra-abdominal source)",
+              "Can I switch IV to PO? (If stable and source controlled)",
+              "Can I stop antibiotics? (If adequate duration and source controlled)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT assume polymicrobial bacteremia is contamination (usually true infection). Do NOT use inadequate anaerobic coverage if intra-abdominal source. Do NOT continue broad-spectrum antibiotics beyond 48-72 hours without culture justification. Do NOT delay source control (antibiotics alone insufficient).",
+            "patient_education": "Polymicrobial bacteremia is serious infection requiring antibiotics and source control (surgery, drainage). Complete full antibiotic course. Watch for worsening symptoms. Follow-up in 1-2 weeks. Wound care critical if chronic wound source."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Intra-Abdominal Infections Guidelines (2024)",
+              "url": "https://www.idsociety.org/practice-guideline/intra-abdominal-infections/"
+            },
+            {
+              "label": "IDSA Skin and Soft Tissue Infections Guidelines (2014)",
+              "url": "https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "secondary-bacteremia",
+      "name": "Secondary Bacteremia (Organ-Source)",
+      "synonyms": ["bacteremia with identified source", "secondary bloodstream infection"],
+      "icd10": ["A41.9", "R78.81"],
+      "severity": ["moderate", "severe", "critical"],
+      "shortDescription": "Bloodstream infection arising from specific organ source requiring source-directed therapy and source control",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Secondary bacteremia is bloodstream infection arising from identifiable organ source (urinary, respiratory, intra-abdominal, skin/soft tissue, biliary, CNS). Accounts for 70-80% of all bacteremia. Mortality: 10-30% (depends on source, organism, severity). Prognosis better than primary bacteremia if source controlled.",
+            "clinical_presentation": "Fever, chills, hypotension. Source-specific symptoms: Dysuria (UTI), cough (pneumonia), abdominal pain (intra-abdominal), jaundice (biliary), headache (meningitis), wound drainage (surgical site). Septic shock if severe.",
+            "diagnostic_criteria": "Positive blood culture + clinical/microbiologic evidence of infection at specific organ site. Same organism isolated from blood and source site confirms secondary bacteremia.",
+            "common_sources": {
+              "urinary": "40% of secondary bacteremia. E. coli most common. Mortality 10-15%.",
+              "respiratory": "20% of secondary bacteremia. S. pneumoniae, S. aureus, Gram-negatives. Mortality 20-30%.",
+              "intra_abdominal": "15% of secondary bacteremia. E. coli, Bacteroides, Enterococcus. Mortality 25-35%.",
+              "skin_soft_tissue": "10% of secondary bacteremia. S. aureus, Streptococcus. Mortality 15-25%.",
+              "biliary": "5% of secondary bacteremia. E. coli, Klebsiella, Enterococcus. Mortality 15-25%.",
+              "cns": "<5% of secondary bacteremia. S. pneumoniae, N. meningitidis, Listeria. Mortality 30-50%."
+            },
+            "red_flags": [
+              "Septic shock - high mortality, urgent resuscitation + antibiotics + source control",
+              "Inadequate source control - persistent bacteremia, high failure rate",
+              "MDRO (ESBL, CRE, MRSA, VRE) - inadequate empiric therapy increases mortality",
+              "Immunosuppression or neutropenia - higher mortality, broader coverage needed",
+              "Metastatic complications - endocarditis, osteomyelitis, abscess"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Obtain blood cultures BEFORE antibiotics. Identify source: Urinalysis + urine culture (UTI), chest X-ray (pneumonia), CT abdomen/pelvis (intra-abdominal), wound cultures (skin/soft tissue), RUQ ultrasound (biliary), lumbar puncture (meningitis).",
+            "essential_tests": [
+              "Blood cultures x2 sets BEFORE antibiotics",
+              "Source-specific cultures: Urine culture (UTI), sputum or BAL (pneumonia), abscess fluid (intra-abdominal), wound culture (skin/soft tissue), bile culture (biliary), CSF culture (meningitis)",
+              "Source-specific imaging: Chest X-ray (pneumonia), CT abdomen/pelvis (intra-abdominal), RUQ ultrasound (biliary), MRI brain (meningitis if mass effect suspected)"
+            ],
+            "conditional_tests": [
+              "Repeat blood cultures: Daily until negative (document clearance)",
+              "Echocardiography (TEE): If S. aureus bacteremia, persistent bacteremia, or risk factors for endocarditis",
+              "Advanced imaging: CT chest (pneumonia complications), MRCP (biliary obstruction), MRI spine (epidural abscess)"
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics >1 hour for cultures or imaging if septic shock. Do NOT skip source cultures (confirms secondary bacteremia, guides therapy). Do NOT skip source imaging (source control critical).",
+            "turnaround_time": "Blood cultures: Preliminary 24-48 hours. Source cultures: 24-72 hours. Imaging: <1-24 hours (urgent if septic)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "urinary_source": {
+              "organisms": "E. coli (70%), Klebsiella (10%), Proteus (5%), Enterococcus (5%), Pseudomonas (5%)",
+              "resistance": "ESBL 15-30%, fluoroquinolone resistance 30-50%",
+              "notes": "Most common source of secondary bacteremia"
+            },
+            "respiratory_source": {
+              "organisms": "S. pneumoniae (30%), S. aureus (20%, MRSA 30-50%), H. influenzae (10%), Gram-negatives (20%, including Pseudomonas)",
+              "resistance": "MRSA 30-50%, MDR Pseudomonas 30-50%",
+              "notes": "Higher mortality than urinary source"
+            },
+            "intra_abdominal_source": {
+              "organisms": "E. coli (40%), Bacteroides (30%), Enterococcus (20%), Klebsiella (10%)",
+              "resistance": "ESBL 15-30%, VRE 10-30%",
+              "notes": "Often polymicrobial, requires anaerobic coverage"
+            },
+            "skin_soft_tissue_source": {
+              "organisms": "S. aureus (60%, MRSA 30-50%), Streptococcus pyogenes (20%), Gram-negatives (10%)",
+              "resistance": "MRSA 30-50%",
+              "notes": "High risk of metastatic complications with S. aureus"
+            },
+            "biliary_source": {
+              "organisms": "E. coli (50%), Klebsiella (20%), Enterococcus (15%), Enterobacter (10%)",
+              "resistance": "ESBL 20-40%",
+              "notes": "Requires biliary drainage if obstructed"
+            },
+            "cns_source": {
+              "organisms": "S. pneumoniae (50%), N. meningitidis (20%), Listeria (10%, elderly/immunocompromised), H. influenzae (5%)",
+              "resistance": "Penicillin-resistant S. pneumoniae 30-40%",
+              "notes": "Highest mortality, requires urgent antibiotics + dexamethasone"
+            }
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "urinary_source": "Ceftriaxone 2g IV daily OR Cefepime 2g IV q8h (if Pseudomonas risk). If MDRO risk: Meropenem 1g IV q8h. Duration: 7-14 days (uncomplicated: 7 days, complicated: 10-14 days).",
+            "respiratory_source": "Ceftriaxone 2g IV daily + Azithromycin 500mg IV daily (CAP) OR Cefepime 2g IV q8h + Vancomycin 15-20mg/kg IV q8-12h (HAP/VAP, MRSA risk). Duration: 7-14 days.",
+            "intra_abdominal_source": "Piperacillin-tazobactam 4.5g IV q6h OR Meropenem 1g IV q8h (if MDRO risk) OR Cefepime 2g IV q8h + Metronidazole 500mg IV q8h. Duration: 4-7 days after source control.",
+            "skin_soft_tissue_source": "Vancomycin 15-20mg/kg IV q8-12h (MRSA coverage) + Cefepime 2g IV q8h (if Gram-negative risk). Duration: 7-14 days.",
+            "biliary_source": "Piperacillin-tazobactam 4.5g IV q6h OR Ceftriaxone 2g IV daily + Metronidazole 500mg IV q8h. Add vancomycin if MRSA risk. Duration: 7-14 days (after drainage if obstructed).",
+            "cns_source": "Vancomycin 15-20mg/kg IV q8-12h + Ceftriaxone 2g IV q12h + Dexamethasone 10mg IV q6h (before or with first antibiotic dose). Add ampicillin 2g IV q4h if Listeria risk (age >50, immunocompromised). Duration: 10-14 days (S. pneumoniae, N. meningitidis), 21 days (Listeria).",
+            "alternatives": "Beta-lactam allergy: Aztreonam 2g IV q8h (Gram-negative) + Vancomycin 15-20mg/kg IV q8-12h (Gram-positive) + Metronidazole 500mg IV q8h (anaerobes). Fluoroquinolone: Levofloxacin 750mg IV daily (if susceptible).",
+            "avoid_list": "Avoid inadequate source-specific coverage. Avoid delaying source control (antibiotics alone insufficient for intra-abdominal, biliary obstruction). Avoid inadequate Pseudomonas coverage if respiratory or urinary source with risk factors."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "urinary_source": "E. coli (susceptible): Ceftriaxone 2g IV daily OR Ciprofloxacin 400mg IV q12h. ESBL: Ertapenem 1g IV daily OR Meropenem 1g IV q8h. Duration: 7 days (uncomplicated), 10-14 days (complicated: obstruction, abscess, male).",
+            "respiratory_source": "S. pneumoniae: Ceftriaxone 2g IV daily. S. aureus (MSSA): Cefazolin 2g IV q8h. S. aureus (MRSA): Vancomycin 15-20mg/kg IV q8-12h OR Daptomycin 8-10mg/kg IV daily. Duration: 7-14 days.",
+            "intra_abdominal_source": "E. coli + Bacteroides: Ceftriaxone 2g IV daily + Metronidazole 500mg IV q8h OR Ertapenem 1g IV daily. Duration: 4-7 days after source control.",
+            "skin_soft_tissue_source": "S. aureus (MSSA): Cefazolin 2g IV q8h. S. aureus (MRSA): Vancomycin 15-20mg/kg IV q8-12h OR Daptomycin 8-10mg/kg IV daily. Streptococcus: Penicillin G 4 million units IV q4h OR Ceftriaxone 2g IV daily. Duration: 7-14 days.",
+            "biliary_source": "E. coli (susceptible): Ceftriaxone 2g IV daily. ESBL: Ertapenem 1g IV daily OR Meropenem 1g IV q8h. Duration: 7-14 days (after drainage if obstructed).",
+            "cns_source": "S. pneumoniae: Ceftriaxone 2g IV q12h + Vancomycin 15-20mg/kg IV q8-12h (if penicillin-resistant) + Dexamethasone 10mg IV q6h x 4 days. N. meningitidis: Ceftriaxone 2g IV q12h. Listeria: Ampicillin 2g IV q4h. Duration: 10-14 days (S. pneumoniae, N. meningitidis), 21 days (Listeria).",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Switch from vancomycin to cefazolin if MSSA. Switch from meropenem to ceftriaxone if ESBL-negative. Discontinue anaerobic coverage if anaerobes not isolated (except intra-abdominal source).",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Hemodynamically stable, (3) Source controlled, (4) Improving WBC, (5) Tolerating PO intake, (6) Good bioavailability oral option (ciprofloxacin, levofloxacin, amoxicillin-clavulanate, linezolid)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "urinary_source": "7 days (uncomplicated), 10-14 days (complicated)",
+            "respiratory_source": "7-14 days (depends on organism and severity)",
+            "intra_abdominal_source": "4-7 days after source control",
+            "skin_soft_tissue_source": "7-14 days",
+            "biliary_source": "7-14 days (after drainage if obstructed)",
+            "cns_source": "10-14 days (S. pneumoniae, N. meningitidis), 21 days (Listeria)",
+            "monitoring": "Daily blood cultures until negative (document clearance). Repeat blood cultures at end of therapy if high-risk organism (S. aureus, Gram-negatives). Monitor for source control adequacy (repeat imaging if persistent fever). Monitor for metastatic complications (S. aureus: obtain TEE).",
+            "stop_criteria": "Completed adequate duration (7-14 days depending on source). Afebrile >48 hours. Negative repeat blood cultures. Source controlled (drainage, catheter removal, obstruction relieved). Improving WBC and clinical status."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "source_control": "CRITICAL for cure. Urinary: Relieve obstruction (stent, nephrostomy). Respiratory: Supportive care, drainage if empyema. Intra-abdominal: Surgery or percutaneous drainage. Skin/soft tissue: Debridement, drainage. Biliary: ERCP or percutaneous drainage if obstructed. CNS: Supportive care, ICP management. Timing: As soon as possible (within 6-12 hours). Antibiotics alone insufficient without source control.",
+            "urinary_source_bacteremia": "Most common source (40%). Good prognosis if source controlled. Relieve obstruction (stones, stricture, tumor). Remove or replace urinary catheter. Duration: 7 days (uncomplicated), 10-14 days (complicated: obstruction, abscess, male, immunocompromised).",
+            "respiratory_source_bacteremia": "Higher mortality (20-30%). S. aureus bacteremia from pneumonia: Obtain TEE (rule out endocarditis). Duration: 7-14 days. Longer if complicated (empyema, abscess, necrotizing pneumonia).",
+            "intra_abdominal_source_bacteremia": "Requires source control (surgery, drainage). Antibiotics alone = high failure rate. Duration: 4-7 days after source control. Longer if inadequate source control or persistent infection.",
+            "biliary_source_bacteremia": "Cholangitis: Urgent ERCP or percutaneous drainage if obstructed. Antibiotics + drainage = cure. Antibiotics alone = high failure rate. Duration: 7-14 days after drainage.",
+            "cns_source_bacteremia": "Meningitis with bacteremia: High mortality (30-50%). Dexamethasone 10mg IV q6h x 4 days (before or with first antibiotic dose) reduces mortality and neurologic sequelae. Vancomycin + ceftriaxone empirically (penicillin-resistant S. pneumoniae). Add ampicillin if Listeria risk (age >50, immunocompromised).",
+            "immunocompromised": "Broader coverage (vancomycin + meropenem + micafungin). Longer duration (14-21 days minimum). Higher risk of MDRO and metastatic complications. Consider atypical pathogens (fungi, Nocardia, Mycobacteria)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "De-escalate within 48-72 hours based on culture results",
+              "Switch from vancomycin to cefazolin if MSSA",
+              "Switch from meropenem to ceftriaxone if ESBL-negative",
+              "Discontinue anaerobic coverage if anaerobes not isolated (except intra-abdominal source)",
+              "Shorten duration based on source (urinary: 7 days, intra-abdominal: 4-7 days after source control)",
+              "Switch IV to PO when stable and source controlled"
+            ],
+            "timeout_checklist": [
+              "Is source identified? (Urinary, respiratory, intra-abdominal, skin/soft tissue, biliary, CNS)",
+              "Is source controlled? (Drainage, catheter removal, obstruction relieved, debridement)",
+              "Are repeat blood cultures negative? (Document clearance)",
+              "What is the organism and susceptibilities? (Determines therapy)",
+              "Can I de-escalate antibiotics? (Based on culture results)",
+              "Can I shorten duration? (Urinary: 7 days, intra-abdominal: 4-7 days after source control)",
+              "Can I switch IV to PO? (If stable and source controlled)",
+              "Can I stop antibiotics? (If adequate duration and source controlled)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use prolonged courses without documented infection. Do NOT continue broad-spectrum antibiotics beyond 48-72 hours without culture justification. Do NOT delay source control (antibiotics alone insufficient for intra-abdominal, biliary obstruction).",
+            "patient_education": "Secondary bacteremia is serious infection requiring antibiotics and source control. Complete full antibiotic course. Watch for worsening symptoms. Follow-up in 1-2 weeks. Source-specific education (urinary: hydration, avoid catheter; respiratory: smoking cessation; intra-abdominal: wound care)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Complicated Urinary Tract Infections Guidelines (2024)",
+              "url": "https://www.idsociety.org/practice-guideline/urinary-tract-infections/"
+            },
+            {
+              "label": "IDSA Community-Acquired Pneumonia Guidelines (2019)",
+              "url": "https://www.idsociety.org/practice-guideline/community-acquired-pneumonia/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
+

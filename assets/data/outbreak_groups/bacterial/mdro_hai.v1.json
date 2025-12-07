@@ -1,0 +1,786 @@
+{
+  "version": 1,
+  "groupId": "mdro_hai",
+  "groupName": "MDROs / HAI",
+  "type": "bacterial",
+  "updatedAt": "2025-01-11T00:00:00Z",
+  "pathogens": [
+    {
+      "id": "mrsa",
+      "name": "MRSA",
+      "scientificName": "Methicillin-resistant Staphylococcus aureus",
+      "definition": "Beta-lactam-resistant S. aureus; major cause of healthcare-associated infections (HAI) and community outbreaks. MRSA is resistant to methicillin and other beta-lactam antibiotics due to the mecA gene.",
+      "reservoir": {
+        "primary": ["Human skin", "Nares (nose)", "Wounds", "Healthcare environment"],
+        "secondary": ["Contaminated surfaces", "Medical equipment", "Healthcare worker hands"],
+        "notes": "Colonization can persist for months to years without symptoms."
+      },
+      "transmission": {
+        "mode": "Contact (primarily), Droplet (less common)",
+        "routes": [
+          "Direct skin-to-skin contact",
+          "Indirect contact via contaminated surfaces",
+          "Healthcare worker hands",
+          "Contaminated medical equipment",
+          "Respiratory droplets (less common)"
+        ],
+        "notes": "Most transmission occurs through direct contact with colonized or infected individuals or contaminated surfaces."
+      },
+      "incubationPeriod": {
+        "range": "Variable (typically 4-10 days for infection after colonization)",
+        "infectiousPeriod": "Infectious throughout colonization or infection period (can be prolonged)",
+        "seasonality": "Year-round, no specific seasonal pattern",
+        "geographic": "Worldwide distribution, higher prevalence in healthcare settings"
+      },
+      "riskFactors": [
+        "Recent hospitalization or surgery",
+        "Invasive medical devices (catheters, tubes, drains)",
+        "Immunosuppression (HIV, chemotherapy, transplant)",
+        "Prolonged or recent antibiotic use",
+        "ICU admission",
+        "Chronic wounds or skin conditions",
+        "Hemodialysis patients"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Skin and soft tissue infections (SSTI): boils, abscesses, cellulitis",
+          "Surgical site infections",
+          "Pneumonia (especially ventilator-associated)",
+          "Bloodstream infections (sepsis)",
+          "Bone and joint infections (osteomyelitis)"
+        ],
+        "complications": [
+          "Sepsis and septic shock",
+          "Endocarditis",
+          "Osteomyelitis",
+          "Toxic shock syndrome",
+          "Death (in severe cases)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with compatible clinical illness (SSTI, sepsis, pneumonia) + risk factors (recent healthcare exposure, surgery, devices)",
+          "confirmed": "Culture-confirmed S. aureus with methicillin resistance (oxacillin MIC ≥4 μg/mL or mecA gene positive by PCR)"
+        }
+      },
+      "diagnosis": [
+        "Culture from clinical specimen (wound, blood, sputum, urine)",
+        "Antimicrobial susceptibility testing (oxacillin disk diffusion or MIC)",
+        "Molecular tests: PCR for mecA gene",
+        "Nasal swab screening for colonization (active surveillance)"
+      ],
+      "treatment": "Vancomycin (IV) for invasive infections; linezolid, daptomycin, or ceftaroline as alternatives. Topical mupirocin for nasal decolonization. Source control (drainage, debridement) as needed. Consult infectious disease specialist for severe cases.",
+      "infectionControl": {
+        "precautions": "Contact Precautions (gloves + gown) + Droplet Precautions if respiratory involvement",
+        "screening": "Active surveillance cultures (nasal swabs) for high-risk units (ICU, transplant, dialysis) on admission and periodically",
+        "cohorting": "Cohort MRSA-positive patients when possible; dedicated staff if outbreak",
+        "sourceControl": "Wound care, drainage management, decolonization protocols (mupirocin + chlorhexidine baths)",
+        "environmental": "Enhanced cleaning and disinfection of patient rooms, equipment, and high-touch surfaces with EPA-approved disinfectants",
+        "staffEducation": "Hand hygiene compliance, proper PPE use (gloves/gown), contact precautions, decolonization protocols"
+      },
+      "outbreakTriggers": [
+        "≥2-3 epidemiologically linked cases in a unit within one week",
+        "Sudden rise above baseline rate for the facility",
+        "Single case of severe or novel MRSA strain (e.g., community-associated MRSA with PVL toxin)",
+        "Cluster of cases with same molecular type (PFGE, WGS)"
+      ],
+      "reportingCommunication": [
+        "Immediate reporting to infection control team upon identification",
+        "Rapid public health notification within 24 hours of outbreak recognition",
+        "Update all stakeholders: hospital leadership, clinical staff, environmental services",
+        "Follow rapid investigation protocols: case finding, contact tracing, molecular typing",
+        "Periodic updates to public health authorities as outbreak evolves",
+        "Document all cases and interventions for post-outbreak review"
+      ],
+      "prevention": [
+        "Hand hygiene (most critical intervention)",
+        "Contact Precautions for known MRSA cases",
+        "Admission screening in high-risk units (ICU, transplant)",
+        "Decolonization when indicated (mupirocin + chlorhexidine)",
+        "Device care bundles (central line, catheter, ventilator)",
+        "Antimicrobial stewardship to reduce unnecessary antibiotic use",
+        "Environmental cleaning protocols",
+        "Staff and visitor education on transmission prevention"
+      ],
+      "references": [
+        {
+          "label": "WHO - Antimicrobial Resistance",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance"
+        },
+        {
+          "label": "CDC - MRSA in Healthcare Settings",
+          "url": "https://www.cdc.gov/mrsa/healthcare/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - MDRO Guidelines",
+          "url": "https://gdipc.org"
+        },
+        {
+          "label": "NHSN - MRSA Surveillance",
+          "url": "https://www.cdc.gov/nhsn/acute-care-hospital/mrsa/index.html"
+        }
+      ]
+    },
+    {
+      "id": "vre",
+      "name": "VRE",
+      "scientificName": "Vancomycin-resistant Enterococcus faecium/faecalis",
+      "definition": "Vancomycin-resistant Enterococcus; frequent cause of healthcare-associated infection clusters. VRE are enterococci resistant to vancomycin due to van genes, posing significant treatment challenges.",
+      "reservoir": {
+        "primary": ["Human gastrointestinal tract", "Hospital surfaces", "Medical equipment"],
+        "secondary": ["Healthcare worker hands", "Contaminated environmental surfaces"],
+        "notes": "VRE can colonize the GI tract for prolonged periods without causing infection."
+      },
+      "transmission": {
+        "mode": "Contact (direct and indirect)",
+        "routes": [
+          "Direct contact with colonized or infected patients",
+          "Indirect contact via contaminated hands of healthcare workers",
+          "Contaminated surfaces and equipment",
+          "Fecal-oral route"
+        ],
+        "notes": "Transmission primarily occurs through contact with contaminated hands and surfaces in healthcare settings."
+      },
+      "incubationPeriod": {
+        "range": "Variable; carrier state can persist indefinitely",
+        "infectiousPeriod": "Infectious as long as colonized or infected (can be weeks to months)",
+        "seasonality": "Year-round, no seasonal pattern",
+        "geographic": "Worldwide, particularly in healthcare facilities with high antibiotic use"
+      },
+      "riskFactors": [
+        "Prolonged hospitalization (especially ICU)",
+        "Prior antibiotic use (especially vancomycin, cephalosporins)",
+        "Gastrointestinal procedures or surgery",
+        "Immunosuppression",
+        "Invasive devices (catheters, drains)",
+        "Proximity to VRE-colonized patients"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Urinary tract infections (UTI)",
+          "Bloodstream infections (bacteremia)",
+          "Wound infections (surgical sites)",
+          "Intra-abdominal infections",
+          "Endocarditis (rare but serious)"
+        ],
+        "complications": [
+          "Sepsis and septic shock",
+          "Treatment failure due to limited antibiotic options",
+          "Prolonged hospitalization",
+          "Increased mortality in immunocompromised patients"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with compatible clinical illness (UTI, bacteremia, wound infection) + risk factors (prolonged hospitalization, prior antibiotics)",
+          "confirmed": "Culture-positive for Enterococcus with vancomycin resistance (MIC ≥32 μg/mL or van gene detection)"
+        }
+      },
+      "diagnosis": [
+        "Culture from clinical specimen (urine, blood, wound)",
+        "Antimicrobial susceptibility testing (vancomycin MIC)",
+        "Molecular detection: PCR for van genes (vanA, vanB)",
+        "Rectal swab screening for colonization (active surveillance)"
+      ],
+      "treatment": "Linezolid or daptomycin for invasive infections. Tigecycline or quinupristin-dalfopristin as alternatives. Treatment guided by susceptibility testing and infectious disease consultation.",
+      "infectionControl": {
+        "precautions": "Contact Precautions (gloves + gown)",
+        "screening": "Active surveillance (rectal swabs) for high-risk units (ICU, transplant, oncology) on admission and weekly",
+        "cohorting": "Cohort VRE-positive patients when possible; dedicated staff during outbreaks",
+        "sourceControl": "Not applicable (no specific source control for colonization)",
+        "environmental": "Enhanced cleaning and disinfection with EPA-approved agents; focus on high-touch surfaces and shared equipment",
+        "staffEducation": "Hand hygiene, proper PPE use, contact precautions, environmental cleaning protocols"
+      },
+      "outbreakTriggers": [
+        "≥2-3 temporally and spatially linked cases in same unit",
+        "Emergence of unusual resistance pattern or novel van gene",
+        "Sudden spike above baseline rate",
+        "Cluster identified through molecular typing"
+      ],
+      "reportingCommunication": [
+        "Report to infection control immediately upon identification",
+        "Notify public health within 24 hours of outbreak recognition",
+        "Multidisciplinary case review and contact tracing",
+        "Update hospital leadership and clinical teams",
+        "Coordinate with laboratory for molecular typing if needed",
+        "Document interventions and outcomes for review"
+      ],
+      "prevention": [
+        "Antimicrobial stewardship (reduce vancomycin and broad-spectrum antibiotic use)",
+        "Hand hygiene compliance",
+        "Contact Precautions for known VRE cases",
+        "Environmental cleaning with strict protocols",
+        "Active surveillance in high-risk units",
+        "Staff education on transmission and prevention",
+        "Device care bundles"
+      ],
+      "references": [
+        {
+          "label": "WHO - Antimicrobial Resistance",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance"
+        },
+        {
+          "label": "CDC - VRE in Healthcare Settings",
+          "url": "https://www.cdc.gov/hai/organisms/vre/vre.html"
+        },
+        {
+          "label": "Saudi GDIPC - MDRO Guidelines",
+          "url": "https://gdipc.org"
+        },
+        {
+          "label": "NHSN - VRE Surveillance",
+          "url": "https://www.cdc.gov/nhsn/index.html"
+        }
+      ]
+    },
+    {
+      "id": "cre",
+      "name": "CRE",
+      "scientificName": "Carbapenem-resistant Enterobacteriaceae (e.g., E. coli, Klebsiella pneumoniae)",
+      "definition": "Enterobacteriaceae with carbapenem resistance via enzyme production (e.g., KPC, NDM, OXA-48). CRE are highly resistant Gram-negative bacteria that pose a serious public health threat due to limited treatment options.",
+      "reservoir": {
+        "primary": ["Human gastrointestinal tract", "Healthcare settings", "Contaminated medical equipment"],
+        "secondary": ["Water sources", "Environmental surfaces", "Healthcare worker hands"],
+        "notes": "CRE colonization can persist for months; environmental contamination is common in outbreak settings."
+      },
+      "transmission": {
+        "mode": "Contact (direct and indirect)",
+        "routes": [
+          "Direct contact with colonized or infected patients",
+          "Contaminated hands of healthcare workers",
+          "Contaminated surfaces and medical devices",
+          "Water sources (sinks, drains)",
+          "Fecal-oral route"
+        ],
+        "notes": "Transmission is primarily through contact with contaminated hands, equipment, and environmental surfaces."
+      },
+      "incubationPeriod": {
+        "range": "Variable; carrier state can be persistent (weeks to months)",
+        "infectiousPeriod": "Infectious as long as colonized or infected",
+        "seasonality": "Year-round, no seasonal pattern",
+        "geographic": "Worldwide, with regional variations in carbapenemase types (KPC in US, NDM in South Asia/Middle East)"
+      },
+      "riskFactors": [
+        "ICU admission",
+        "Invasive procedures (surgery, endoscopy)",
+        "Prolonged antibiotic use (especially carbapenems, cephalosporins)",
+        "Immunocompromise (transplant, chemotherapy)",
+        "Mechanical ventilation",
+        "Indwelling devices (catheters, drains)",
+        "Recent healthcare exposure or travel to endemic areas"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Urinary tract infections (UTI)",
+          "Pneumonia (especially ventilator-associated)",
+          "Bloodstream infections (sepsis)",
+          "Wound and surgical site infections",
+          "Intra-abdominal infections"
+        ],
+        "complications": [
+          "Septic shock",
+          "Multi-organ failure",
+          "High mortality rate (40-50% for bloodstream infections)",
+          "Treatment failure due to extreme resistance",
+          "Prolonged hospitalization"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with clinical illness (UTI, pneumonia, sepsis) + risk factors (ICU, devices, antibiotics) + known CRE exposure",
+          "confirmed": "Culture-positive for Enterobacteriaceae with carbapenem resistance (meropenem/imipenem MIC ≥4 μg/mL) or carbapenemase gene detection (KPC, NDM, OXA-48, VIM, IMP)"
+        }
+      },
+      "diagnosis": [
+        "Culture from clinical specimen (urine, blood, sputum, wound)",
+        "Antimicrobial susceptibility testing (carbapenem MIC)",
+        "Molecular detection: PCR for carbapenemase genes (KPC, NDM, OXA-48, VIM, IMP)",
+        "Rectal swab screening for colonization (active surveillance)",
+        "Modified Hodge test or Carba NP test (phenotypic detection)"
+      ],
+      "treatment": "Colistin, tigecycline, fosfomycin, or ceftazidime-avibactam (if available). Often requires combination therapy. Treatment guided by susceptibility testing and infectious disease consultation. Source control (drainage, debridement) critical.",
+      "infectionControl": {
+        "precautions": "Strict Contact Precautions (gloves + gown); consider enhanced precautions (dedicated equipment, single room)",
+        "screening": "Active surveillance (rectal swabs) for high-risk patients (ICU, transplant, known CRE contacts) on admission and weekly",
+        "cohorting": "Mandatory patient cohorting; dedicated nursing staff during outbreaks",
+        "sourceControl": "Identify and eliminate environmental reservoirs (sinks, drains, equipment); water source monitoring",
+        "environmental": "Enhanced cleaning and disinfection with sporicidal agents; terminal cleaning after discharge; environmental cultures if outbreak",
+        "staffEducation": "Hand hygiene, strict contact precautions, device care, recognition of high-risk patients"
+      },
+      "outbreakTriggers": [
+        "Single novel or rare carbapenemase-producing isolate (e.g., first NDM in facility)",
+        "≥2 epidemiologically linked cases (same unit, timeframe, molecular type)",
+        "Rapid increase above baseline rate",
+        "Detection of same carbapenemase gene in multiple patients"
+      ],
+      "reportingCommunication": [
+        "Immediate reporting to infection control and public health (ideally within 2-24 hours)",
+        "Coordinate case finding and contact screening",
+        "Notify hospital leadership and clinical teams",
+        "Molecular typing (PFGE, WGS) to confirm outbreak strain",
+        "Regional/national reporting as per public health requirements",
+        "Implement rapid response protocols and enhanced surveillance"
+      ],
+      "prevention": [
+        "Device care bundles (central line, catheter, ventilator)",
+        "Targeted screening for high-risk patients",
+        "Hand hygiene compliance",
+        "Rapid isolation of suspected/confirmed cases",
+        "Antimicrobial stewardship (reduce carbapenem use)",
+        "Environmental surveillance and water safety",
+        "Staff education on CRE transmission and prevention"
+      ],
+      "references": [
+        {
+          "label": "WHO - CRE Priority Pathogens",
+          "url": "https://www.who.int/news/item/27-02-2017-who-publishes-list-of-bacteria-for-which-new-antibiotics-are-urgently-needed"
+        },
+        {
+          "label": "CDC - CRE in Healthcare Settings",
+          "url": "https://www.cdc.gov/hai/organisms/cre/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - MDRO Guidelines",
+          "url": "https://gdipc.org"
+        },
+        {
+          "label": "NHSN - CRE Surveillance",
+          "url": "https://www.cdc.gov/nhsn/index.html"
+        }
+      ]
+    },
+    {
+      "id": "esbl",
+      "name": "ESBL-producing Gram-negatives",
+      "scientificName": "Extended-spectrum beta-lactamase-producing bacteria (e.g., E. coli, Klebsiella)",
+      "definition": "Gram-negative bacilli with extended-spectrum beta-lactamases (ESBLs) conferring broad resistance to penicillins, cephalosporins, and aztreonam. ESBLs are plasmid-mediated enzymes that hydrolyze beta-lactam antibiotics.",
+      "reservoir": {
+        "primary": ["Human gastrointestinal tract", "Healthcare environment", "Contaminated medical devices"],
+        "secondary": ["Food sources (poultry, vegetables)", "Community settings", "Healthcare worker hands"],
+        "notes": "ESBL-producing organisms are increasingly common in both healthcare and community settings."
+      },
+      "transmission": {
+        "mode": "Contact (direct and indirect), Fecal-oral",
+        "routes": [
+          "Direct contact with colonized or infected patients",
+          "Contaminated hands of healthcare workers",
+          "Contaminated surfaces and shared medical equipment",
+          "Fecal-oral route",
+          "Foodborne transmission (community-acquired)"
+        ],
+        "notes": "Transmission occurs primarily through contact with contaminated hands and surfaces in healthcare settings."
+      },
+      "incubationPeriod": {
+        "range": "Variable; carriage may persist for weeks to months",
+        "infectiousPeriod": "Infectious as long as colonized or infected",
+        "seasonality": "Year-round, no specific seasonal pattern",
+        "geographic": "Worldwide, with higher prevalence in regions with high antibiotic use"
+      },
+      "riskFactors": [
+        "Prior antibiotic use (especially cephalosporins, fluoroquinolones)",
+        "Inpatient healthcare exposure",
+        "Invasive devices (catheters, drains)",
+        "ICU admission",
+        "Immunosuppression",
+        "Recent surgery or invasive procedures",
+        "Travel to endemic areas"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Urinary tract infections (UTI) - most common",
+          "Bloodstream infections (sepsis)",
+          "Intra-abdominal infections",
+          "Pneumonia",
+          "Wound and surgical site infections"
+        ],
+        "complications": [
+          "Septic shock",
+          "Treatment failure if inappropriate antibiotics used",
+          "Prolonged hospitalization",
+          "Increased mortality in severe infections"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with compatible clinical illness (UTI, sepsis, intra-abdominal infection) + risk factors (prior antibiotics, healthcare exposure)",
+          "confirmed": "Culture-positive for Gram-negative bacteria with ESBL detection (phenotypic confirmatory testing or genotypic detection of ESBL genes: CTX-M, SHV, TEM)"
+        }
+      },
+      "diagnosis": [
+        "Culture from clinical specimen (urine, blood, wound, sputum)",
+        "ESBL confirmatory testing (double-disk synergy test, combination disk test)",
+        "Molecular detection: PCR for ESBL genes (CTX-M, SHV, TEM)",
+        "Rectal swab screening for colonization (active surveillance)"
+      ],
+      "treatment": "Carbapenems (meropenem, imipenem) if susceptible; non-beta-lactam alternatives (fluoroquinolones, aminoglycosides, tigecycline) based on susceptibility. Avoid cephalosporins even if reported susceptible in vitro.",
+      "infectionControl": {
+        "precautions": "Contact Precautions (gloves + gown)",
+        "screening": "Active surveillance (rectal swabs) for high-risk units (ICU, transplant) during outbreaks",
+        "cohorting": "Patient cohorting during outbreaks; dedicated staff if needed",
+        "sourceControl": "Not applicable (no specific source control for colonization)",
+        "environmental": "Enhanced cleaning and disinfection of patient rooms and shared equipment; focus on high-touch surfaces",
+        "staffEducation": "Hand hygiene, proper device care, contact precautions, antimicrobial stewardship"
+      },
+      "outbreakTriggers": [
+        "≥2-3 epidemiologically linked cases in same unit",
+        "Sudden large increase above baseline rate",
+        "Detection of rare or novel ESBL type",
+        "Cluster identified through molecular typing"
+      ],
+      "reportingCommunication": [
+        "Notify infection control and public health within 24 hours of outbreak recognition",
+        "Update clinical teams and hospital leadership",
+        "Coordinate clinical and environmental surveillance",
+        "Molecular typing if outbreak suspected",
+        "Document interventions and outcomes"
+      ],
+      "prevention": [
+        "Antimicrobial stewardship (reduce unnecessary cephalosporin and fluoroquinolone use)",
+        "Hand hygiene compliance",
+        "Contact Precautions for known ESBL cases",
+        "Device care bundles",
+        "Environmental cleaning protocols",
+        "Staff and patient education"
+      ],
+      "references": [
+        {
+          "label": "WHO - Antimicrobial Resistance",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance"
+        },
+        {
+          "label": "CDC - ESBL-producing Bacteria",
+          "url": "https://www.cdc.gov/hai/organisms/gram-negative-bacteria.html"
+        },
+        {
+          "label": "Saudi GDIPC - MDRO Guidelines",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "acinetobacter",
+      "name": "Acinetobacter baumannii (MDR/XDR)",
+      "scientificName": "Acinetobacter baumannii (multidrug-resistant/extensively drug-resistant)",
+      "definition": "Non-fermenting Gram-negative coccobacillus; highly resistant, often linked to ICU outbreaks. A. baumannii is an opportunistic pathogen with remarkable ability to survive in hospital environments and develop resistance to multiple antibiotics.",
+      "reservoir": {
+        "primary": ["Moist hospital environments", "Contaminated surfaces", "Medical equipment", "Respiratory secretions of colonized patients"],
+        "secondary": ["Ventilator circuits", "Suction equipment", "Healthcare worker hands", "Water sources"],
+        "notes": "A. baumannii can survive for prolonged periods on dry surfaces, making environmental contamination a major concern."
+      },
+      "transmission": {
+        "mode": "Contact (direct and indirect)",
+        "routes": [
+          "Direct contact with colonized or infected patients",
+          "Indirect contact via contaminated surfaces and equipment",
+          "Healthcare worker hands",
+          "Contaminated ventilator circuits and respiratory equipment",
+          "Environmental surfaces (bed rails, monitors, IV poles)"
+        ],
+        "notes": "Transmission is primarily through contact with contaminated equipment and surfaces in ICU settings."
+      },
+      "incubationPeriod": {
+        "range": "Variable (typically days); persistent colonization and infection possible",
+        "infectiousPeriod": "Infectious as long as colonized or infected (can be prolonged)",
+        "seasonality": "Year-round, no seasonal pattern",
+        "geographic": "Worldwide, particularly in ICUs and healthcare facilities with high antibiotic use"
+      },
+      "riskFactors": [
+        "ICU admission (especially prolonged)",
+        "Mechanical ventilation",
+        "Immunosuppression",
+        "Trauma or burn injuries",
+        "Recent surgery",
+        "Invasive devices (catheters, drains)",
+        "Prolonged antibiotic use (especially carbapenems)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Pneumonia (especially ventilator-associated pneumonia - VAP)",
+          "Bloodstream infections (bacteremia, sepsis)",
+          "Wound and surgical site infections",
+          "Urinary tract infections",
+          "Meningitis (post-neurosurgery)"
+        ],
+        "complications": [
+          "Septic shock",
+          "Respiratory failure",
+          "Multi-organ failure",
+          "High mortality rate (30-60% for VAP and bacteremia)",
+          "Treatment failure due to extreme resistance"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient in ICU with compatible clinical illness (VAP, sepsis, wound infection) + risk factors (mechanical ventilation, trauma, devices)",
+          "confirmed": "Culture-positive for A. baumannii with multidrug resistance (resistant to ≥3 antibiotic classes) or extensive drug resistance (XDR: susceptible to ≤2 classes)"
+        }
+      },
+      "diagnosis": [
+        "Culture from clinical specimen (sputum, blood, wound, CSF)",
+        "Antimicrobial susceptibility testing",
+        "Molecular typing during outbreaks (PFGE, MLST, WGS)",
+        "Surveillance cultures from respiratory tract or wounds"
+      ],
+      "treatment": "Colistin (polymyxin E), ampicillin-sulbactam, or combination regimens (colistin + carbapenem, colistin + tigecycline) based on local antibiogram. Treatment guided by susceptibility testing and infectious disease consultation. Source control critical.",
+      "infectionControl": {
+        "precautions": "Contact Precautions (gloves + gown); consider enhanced precautions (dedicated equipment, single room)",
+        "screening": "Surveillance cultures from respiratory tract and wounds for high-risk patients (ICU, trauma, burns)",
+        "cohorting": "Mandatory patient cohorting; dedicated nursing staff during outbreaks",
+        "sourceControl": "Identify and eliminate environmental reservoirs; equipment sterilization and disinfection",
+        "environmental": "Aggressive environmental disinfection with sporicidal agents; terminal cleaning after discharge; environmental cultures during outbreaks; focus on ventilator circuits and respiratory equipment",
+        "staffEducation": "Hand hygiene, strict contact precautions, equipment cleaning, recognition of high-risk patients"
+      },
+      "outbreakTriggers": [
+        "≥2-3 epidemiologically linked cases in high-risk unit (ICU, trauma, burns) within short period",
+        "Detection of novel or extremely resistant isolates (XDR, pandrug-resistant)",
+        "Spike above baseline rate",
+        "Cluster identified through molecular typing"
+      ],
+      "reportingCommunication": [
+        "Report rapidly (within 24 hours) to infection control and public health",
+        "Begin detailed epidemiologic review and unit-wide surveillance",
+        "Notify hospital leadership and clinical teams",
+        "Coordinate environmental assessment and cultures",
+        "Molecular typing to confirm outbreak strain",
+        "Implement enhanced infection control measures immediately"
+      ],
+      "prevention": [
+        "Staff training on transmission and prevention",
+        "Environmental decontamination protocols",
+        "Device care bundles (ventilator, central line, catheter)",
+        "Targeted surveillance in high-risk units",
+        "Antimicrobial stewardship (reduce carbapenem use)",
+        "Hand hygiene compliance",
+        "Equipment cleaning and sterilization protocols"
+      ],
+      "references": [
+        {
+          "label": "WHO - Priority Pathogens List",
+          "url": "https://www.who.int/news/item/27-02-2017-who-publishes-list-of-bacteria-for-which-new-antibiotics-are-urgently-needed"
+        },
+        {
+          "label": "CDC - Acinetobacter in Healthcare Settings",
+          "url": "https://www.cdc.gov/hai/organisms/acinetobacter.html"
+        },
+        {
+          "label": "Saudi GDIPC - MDRO Guidelines",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "pseudomonas",
+      "name": "Pseudomonas aeruginosa (MDRO/XDR)",
+      "scientificName": "Pseudomonas aeruginosa (multidrug-resistant/extensively drug-resistant)",
+      "definition": "Opportunistic Gram-negative bacillus; causes healthcare-associated infections, often multidrug-resistant. P. aeruginosa is an environmental organism with intrinsic and acquired resistance mechanisms, making it a challenging pathogen in healthcare settings.",
+      "reservoir": {
+        "primary": ["Moist hospital environments", "Water sources (sinks, showers, drains)", "Respiratory equipment", "Catheters", "Wounds"],
+        "secondary": ["Healthcare worker hands", "Contaminated solutions", "Medical devices"],
+        "notes": "P. aeruginosa thrives in moist environments and can form biofilms on medical devices and water systems."
+      },
+      "transmission": {
+        "mode": "Contact (direct and indirect), Water-associated",
+        "routes": [
+          "Direct contact with colonized or infected patients",
+          "Contaminated hands of healthcare workers",
+          "Contaminated equipment (ventilators, bronchoscopes, endoscopes)",
+          "Water sources (sinks, showers, ice machines)",
+          "Contaminated surfaces"
+        ],
+        "notes": "Transmission often occurs through contaminated water sources and respiratory equipment in healthcare settings."
+      },
+      "incubationPeriod": {
+        "range": "Variable (often days); infectious as long as colonized or infected",
+        "infectiousPeriod": "Infectious throughout colonization or infection period",
+        "seasonality": "Year-round, no seasonal pattern",
+        "geographic": "Worldwide, ubiquitous in healthcare environments"
+      },
+      "riskFactors": [
+        "ICU admission",
+        "Mechanical ventilation",
+        "Burns or extensive wounds",
+        "Invasive devices (catheters, drains, endotracheal tubes)",
+        "Immunosuppression (neutropenia, HIV, chemotherapy)",
+        "Broad-spectrum antibiotic use (especially carbapenems, fluoroquinolones)",
+        "Cystic fibrosis"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Pneumonia (especially ventilator-associated pneumonia - VAP)",
+          "Urinary tract infections (catheter-associated)",
+          "Bloodstream infections (sepsis)",
+          "Wound and surgical site infections",
+          "Burn wound infections"
+        ],
+        "complications": [
+          "Septic shock",
+          "Respiratory failure",
+          "Chronic lung infection (cystic fibrosis patients)",
+          "High mortality in immunocompromised patients",
+          "Treatment failure due to resistance"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with compatible illness (VAP, UTI, sepsis, wound infection) in high-risk settings (ICU, burns, immunocompromised) + device exposure",
+          "confirmed": "Culture-positive for P. aeruginosa with multidrug resistance (resistant to ≥3 antibiotic classes including antipseudomonal agents) or XDR profile"
+        }
+      },
+      "diagnosis": [
+        "Culture from clinical specimen (sputum, blood, urine, wound)",
+        "Antimicrobial susceptibility testing",
+        "Molecular typing during outbreaks (PFGE, MLST, WGS)",
+        "Environmental cultures (water sources, equipment) during outbreak investigations"
+      ],
+      "treatment": "Antipseudomonal beta-lactams (ceftazidime, cefepime, piperacillin-tazobactam), carbapenems (meropenem, imipenem) if susceptible, aminoglycosides (tobramycin, amikacin), fluoroquinolones (ciprofloxacin), or colistin for XDR strains. Often requires combination therapy. Treatment based on local susceptibility patterns.",
+      "infectionControl": {
+        "precautions": "Contact Precautions (gloves + gown)",
+        "screening": "Surveillance cultures from respiratory tract, wounds, or urine for high-risk patients during outbreaks",
+        "cohorting": "Patient cohorting during outbreaks; dedicated staff if needed",
+        "sourceControl": "Identify and eliminate water source contamination; equipment cleaning and sterilization",
+        "environmental": "Enhanced cleaning and disinfection; water source monitoring and decontamination; focus on sinks, drains, and respiratory equipment; environmental cultures during outbreaks",
+        "staffEducation": "Hand hygiene, device bundle compliance, water safety, proper equipment cleaning"
+      },
+      "outbreakTriggers": [
+        "≥2-3 closely linked cases in unit or ward over short period",
+        "Detection of unusual or extremely resistant strain (XDR, pandrug-resistant)",
+        "Cluster identified through molecular typing",
+        "Common source identified (water, equipment)"
+      ],
+      "reportingCommunication": [
+        "Immediate notification to infection control and public health within 24 hours",
+        "Team investigation and risk assessment",
+        "Communication across clinical and environmental services",
+        "Coordinate environmental assessment and water testing",
+        "Molecular typing to confirm outbreak strain",
+        "Update hospital leadership and clinical teams"
+      ],
+      "prevention": [
+        "Device bundle compliance (ventilator, central line, catheter)",
+        "Water safety plans and monitoring",
+        "Antimicrobial stewardship (reduce unnecessary broad-spectrum antibiotics)",
+        "Frequent environmental surveillance",
+        "Hand hygiene compliance",
+        "Equipment cleaning and sterilization protocols",
+        "Staff education on transmission and prevention"
+      ],
+      "references": [
+        {
+          "label": "WHO - Priority Pathogens List",
+          "url": "https://www.who.int/news/item/27-02-2017-who-publishes-list-of-bacteria-for-which-new-antibiotics-are-urgently-needed"
+        },
+        {
+          "label": "CDC - Pseudomonas aeruginosa in Healthcare Settings",
+          "url": "https://www.cdc.gov/hai/organisms/pseudomonas.html"
+        },
+        {
+          "label": "Saudi GDIPC - MDRO Guidelines",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "c_difficile",
+      "name": "Clostridioides difficile",
+      "scientificName": "Clostridioides difficile (formerly Clostridium difficile)",
+      "definition": "Anaerobic, spore-forming Gram-positive rod; major cause of healthcare-associated diarrhea and colitis, especially after antibiotic use. C. difficile produces toxins (TcdA, TcdB) that cause inflammation and damage to the colon.",
+      "reservoir": {
+        "primary": ["Human gastrointestinal tract (colonized or infected patients)", "Hospital environments (spores persist on surfaces)"],
+        "secondary": ["Healthcare worker hands", "Contaminated equipment", "Environmental surfaces"],
+        "notes": "C. difficile spores can survive for months on surfaces and are resistant to alcohol-based hand sanitizers."
+      },
+      "transmission": {
+        "mode": "Fecal-oral via spores",
+        "routes": [
+          "Contaminated hands of healthcare workers",
+          "Contaminated surfaces (bed rails, commodes, floors)",
+          "Contaminated equipment (thermometers, stethoscopes)",
+          "Person-to-person transmission via spores"
+        ],
+        "notes": "Transmission occurs primarily through contact with spores on contaminated hands and surfaces."
+      },
+      "incubationPeriod": {
+        "range": "Variable (days to weeks after antibiotic exposure)",
+        "infectiousPeriod": "Infectious as long as spores are shed in stool (can persist for weeks after symptom resolution)",
+        "seasonality": "Year-round, no specific seasonal pattern",
+        "geographic": "Worldwide, particularly in healthcare facilities with high antibiotic use"
+      },
+      "riskFactors": [
+        "Recent or prolonged antibiotic use (especially fluoroquinolones, clindamycin, cephalosporins)",
+        "Advanced age (≥65 years)",
+        "Hospitalization or long-term care facility residence",
+        "Immunosuppression",
+        "Gastrointestinal surgery or manipulation",
+        "Proton pump inhibitor (PPI) use",
+        "Previous C. difficile infection"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Profuse, watery diarrhea (≥3 unformed stools per day)",
+          "Abdominal pain and cramping",
+          "Fever",
+          "Nausea",
+          "Loss of appetite"
+        ],
+        "complications": [
+          "Pseudomembranous colitis",
+          "Toxic megacolon",
+          "Bowel perforation",
+          "Sepsis",
+          "Death (especially in elderly or immunocompromised)",
+          "Recurrent infection (20-30% of cases)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with compatible clinical illness (profuse watery diarrhea, abdominal pain, fever) + risk factors (recent antibiotics, hospitalization, advanced age)",
+          "confirmed": "Positive laboratory test: stool toxin assay (EIA for toxins A/B), PCR for toxin genes (tcdA, tcdB), or glutamate dehydrogenase (GDH) + toxin confirmation"
+        }
+      },
+      "diagnosis": [
+        "Stool toxin test: enzyme immunoassay (EIA) for toxins A and B",
+        "PCR for toxin genes (tcdA, tcdB) - highly sensitive",
+        "Glutamate dehydrogenase (GDH) screening test",
+        "Two-step algorithm: GDH screening + toxin confirmation",
+        "Endoscopy (if severe colitis suspected): pseudomembranes visible"
+      ],
+      "treatment": "Oral vancomycin (125 mg four times daily for 10 days) or fidaxomicin (200 mg twice daily for 10 days) for initial or recurrent infection. Stop inciting antibiotics if possible. Fecal microbiota transplantation (FMT) for recurrent infections. Avoid antimotility agents (loperamide).",
+      "infectionControl": {
+        "precautions": "Contact Precautions Plus (gloves + gown); use soap and water for hand hygiene (alcohol does not kill spores)",
+        "screening": "Not routinely recommended; test only symptomatic patients",
+        "cohorting": "Cohort C. difficile-positive patients when possible; dedicated staff during outbreaks",
+        "sourceControl": "Stop inciting antibiotics; treat infection promptly",
+        "environmental": "Enhanced cleaning and disinfection with sporicidal agents (bleach-based: 5,000 ppm sodium hypochlorite); daily and terminal cleaning; focus on high-touch surfaces and bathrooms; dedicated equipment",
+        "staffEducation": "Hand hygiene with soap and water (not alcohol), proper PPE use (gloves/gown), contact precautions, environmental cleaning with sporicidal agents"
+      },
+      "outbreakTriggers": [
+        "≥2-3 epidemiologically linked new cases on same unit or ward within 7-10 days",
+        "Sudden increase above baseline rate for the facility",
+        "Detection of severe or fulminant cluster",
+        "Emergence of hypervirulent strain (e.g., NAP1/BI/027)"
+      ],
+      "reportingCommunication": [
+        "Immediate notification to infection prevention and public health within 24 hours",
+        "Initiate cluster investigation and enhanced surveillance",
+        "Notify hospital leadership and clinical teams",
+        "Coordinate with laboratory for strain typing if needed",
+        "Periodic updates to public health authorities as outbreak evolves",
+        "Implement enhanced infection control measures immediately"
+      ],
+      "prevention": [
+        "Antibiotic stewardship (reduce unnecessary antibiotic use, especially high-risk antibiotics)",
+        "Hand hygiene with soap and water (not alcohol-based sanitizers)",
+        "Contact Precautions for known C. difficile cases",
+        "Environmental cleaning with sporicidal agents (bleach-based)",
+        "Early isolation of suspected cases",
+        "Staff and patient education on transmission and prevention",
+        "Probiotic use is NOT recommended for prevention"
+      ],
+      "references": [
+        {
+          "label": "WHO - Antimicrobial Resistance",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/antimicrobial-resistance"
+        },
+        {
+          "label": "CDC - Clostridioides difficile Infection",
+          "url": "https://www.cdc.gov/cdiff/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - MDRO Guidelines",
+          "url": "https://gdipc.org"
+        },
+        {
+          "label": "NHSN - C. difficile Surveillance",
+          "url": "https://www.cdc.gov/nhsn/index.html"
+        }
+      ]
+    }
+  ]
+}
+

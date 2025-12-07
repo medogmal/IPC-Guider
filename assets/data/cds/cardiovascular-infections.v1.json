@@ -1,0 +1,1089 @@
+{
+  "version": 1,
+  "updatedAt": "2025-11-25T00:00:00Z",
+  "id": "cardiovascular-infections",
+  "name": "Cardiovascular Infections",
+  "description": "Endocarditis, myocarditis, pericarditis, and cardiac device infections",
+  "icon": "favorite",
+  "color": "#E91E63",
+  "conditions": [
+    {
+      "id": "infective-endocarditis-native-valve",
+      "name": "Infective Endocarditis (Native Valve)",
+      "synonyms": ["IE", "NVE", "bacterial endocarditis", "native valve endocarditis"],
+      "icd10": ["I33.0", "I33.9"],
+      "severity": ["severe", "critical"],
+      "shortDescription": "Infection of native heart valves requiring prolonged IV antibiotics and often cardiac surgery",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Native valve endocarditis (NVE) is infection of native heart valves. Most common organisms: S. aureus (30%), Viridans streptococci (20%), Enterococcus (10%). Mortality: 15-30% (higher with S. aureus, heart failure, complications). Left-sided (aortic, mitral) more common than right-sided (tricuspid, pulmonary).",
+            "clinical_presentation": "Fever (90%), new or changing murmur (85%), heart failure (50%), embolic phenomena (20-50%): Stroke, splenic infarct, renal infarct, septic pulmonary emboli (right-sided). Peripheral stigmata: Osler nodes (painful nodules on fingers/toes), Janeway lesions (painless hemorrhagic macules on palms/soles), splinter hemorrhages, Roth spots (retinal hemorrhages with pale centers).",
+            "diagnostic_criteria": "Modified Duke Criteria: Definite IE = 2 major OR 1 major + 3 minor OR 5 minor. Major: (1) Positive blood cultures (typical organism in 2 separate cultures OR persistent bacteremia), (2) Echocardiographic evidence (vegetation, abscess, new valve regurgitation). Minor: Predisposing condition, fever >38°C, vascular phenomena, immunologic phenomena, microbiologic evidence not meeting major.",
+            "risk_factors": [
+              "IVDU (injection drug use) - high risk, often tricuspid valve (right-sided)",
+              "Structural heart disease (bicuspid aortic valve, mitral valve prolapse with regurgitation)",
+              "Congenital heart disease (VSD, PDA, coarctation)",
+              "Prior endocarditis (recurrence risk 2-6%)",
+              "Poor dentition or recent dental procedures (Viridans strep)",
+              "Hemodialysis or central venous catheter",
+              "Immunosuppression or diabetes mellitus"
+            ],
+            "red_flags": [
+              "Heart failure (dyspnea, pulmonary edema) - most common indication for surgery",
+              "Stroke or embolic phenomena - high mortality, consider surgery",
+              "Perivalvular abscess or fistula - requires surgery",
+              "Persistent bacteremia >5-7 days despite therapy - inadequate source control",
+              "Large vegetation (>10mm) - high embolic risk, consider surgery",
+              "S. aureus NVE - high mortality (25-47%), aggressive course"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Obtain blood cultures BEFORE antibiotics (minimum 3 sets from separate sites over 1-24 hours). Obtain TEE (transesophageal echocardiography) if high clinical suspicion (sensitivity 90-100% vs TTE 60-70%).",
+            "essential_tests": [
+              "Blood cultures x3 sets (aerobic + anaerobic) from separate sites over 1-24 hours BEFORE antibiotics",
+              "Echocardiography: TEE preferred (sensitivity 90-100%) OR TTE if TEE contraindicated (sensitivity 60-70%)",
+              "CBC with differential, CRP, ESR (elevated in 90%)",
+              "CMP (creatinine, BUN - assess renal function for emboli)",
+              "Urinalysis (hematuria suggests emboli or glomerulonephritis)"
+            ],
+            "conditional_tests": [
+              "Repeat TEE: If initial TEE negative but high clinical suspicion (repeat in 7-10 days)",
+              "CT chest/abdomen/pelvis: If embolic phenomena suspected (splenic, renal, hepatic infarcts)",
+              "MRI brain: If neurologic symptoms (stroke, mycotic aneurysm, brain abscess)",
+              "Cardiac CT or MRI: If perivalvular abscess suspected",
+              "Rheumatoid factor, complement levels: If immunologic phenomena (glomerulonephritis)"
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics >1 hour if septic shock. Do NOT skip TEE (TTE insufficient, misses 30-40% of cases). Do NOT obtain single blood culture set (inadequate for Duke criteria).",
+            "turnaround_time": "Blood cultures: Preliminary 24-48 hours, final 5 days. TEE: 1-7 days (urgent if unstable). CT/MRI: <24 hours (urgent if neurologic symptoms)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "common_organisms": {
+              "staphylococcus_aureus": "30% of NVE. Most common in IVDU (tricuspid valve). Aggressive course, high mortality (25-47%). MRSA 30-50% in healthcare-associated.",
+              "viridans_streptococci": "20% of NVE. Oral flora, associated with poor dentition or dental procedures. Subacute presentation. Good prognosis with treatment.",
+              "enterococcus": "10% of NVE. E. faecalis (90%), E. faecium (10%). Associated with GU procedures, elderly. VRE 10-30% in healthcare-associated.",
+              "coagulase_negative_staphylococci": "5-10% of NVE. Usually prosthetic valve, but can occur in native valve with intracardiac devices.",
+              "hacek_group": "3% of NVE. Haemophilus, Aggregatibacter, Cardiobacterium, Eikenella, Kingella. Slow-growing, fastidious. Subacute presentation."
+            },
+            "culture_negative_endocarditis": "5-10% of cases. Causes: Prior antibiotics (most common), fastidious organisms (Bartonella, Coxiella burnetii, Brucella, fungi), non-infectious (marantic endocarditis, Libman-Sacks). Obtain serology for Bartonella, Coxiella, Brucella. Consider PCR or 16S rRNA sequencing of valve tissue if surgery.",
+            "resistance_patterns": "MRSA: 30-50% of S. aureus in healthcare-associated. VRE: 10-30% of Enterococcus in healthcare-associated. Penicillin-resistant Viridans strep: 10-20% (MIC >0.12 mcg/mL)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "community_acquired_nve": "Ampicillin-sulbactam 3g IV q6h + Gentamicin 1mg/kg IV q8h (covers Streptococcus, Enterococcus, HACEK). Alternative: Ceftriaxone 2g IV daily + Ampicillin 2g IV q4h + Gentamicin 1mg/kg IV q8h.",
+            "healthcare_associated_or_ivdu": "Vancomycin 15-20mg/kg IV q8-12h + Gentamicin 1mg/kg IV q8h (covers MRSA, Enterococcus). Alternative: Daptomycin 8-10mg/kg IV daily + Gentamicin 1mg/kg IV q8h.",
+            "severe_or_septic_shock": "Vancomycin 15-20mg/kg IV q8-12h + Ceftriaxone 2g IV daily + Gentamicin 1mg/kg IV q8h (broad coverage for S. aureus, Streptococcus, Enterococcus, HACEK).",
+            "alternatives": "Penicillin allergy: Vancomycin 15-20mg/kg IV q8-12h + Gentamicin 1mg/kg IV q8h. Vancomycin allergy: Daptomycin 8-10mg/kg IV daily + Gentamicin 1mg/kg IV q8h.",
+            "avoid_list": "Avoid cephalosporins alone (inadequate Enterococcus coverage). Avoid monotherapy (synergy required for Enterococcus, Streptococcus). Avoid oral antibiotics (IV therapy required for entire course)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "staphylococcus_aureus_nve": "MSSA: Nafcillin 2g IV q4h OR Cefazolin 2g IV q8h (preferred, better outcomes). MRSA: Vancomycin 15-20mg/kg IV q8-12h (trough 15-20 mcg/mL) OR Daptomycin 8-10mg/kg IV daily (preferred if vancomycin MIC ≥1.5). Duration: 6 weeks. Consider adding gentamicin 1mg/kg IV q8h for first 3-5 days (synergy, not proven benefit).",
+            "viridans_streptococci_nve": "Penicillin-susceptible (MIC ≤0.12 mcg/mL): Penicillin G 4 million units IV q4h OR Ceftriaxone 2g IV daily. Duration: 4 weeks. Alternative (shorter course): Penicillin G 4 million units IV q4h + Gentamicin 1mg/kg IV q8h for 2 weeks (synergy). Penicillin-resistant (MIC >0.12 mcg/mL): Penicillin G 4 million units IV q4h + Gentamicin 1mg/kg IV q8h for 4-6 weeks.",
+            "enterococcus_nve": "Ampicillin-susceptible: Ampicillin 2g IV q4h + Gentamicin 1mg/kg IV q8h (synergy). Duration: 4-6 weeks. VRE: Daptomycin 10-12mg/kg IV daily (higher dose for endocarditis) OR Linezolid 600mg IV BID. Duration: 6 weeks.",
+            "hacek_group": "Ceftriaxone 2g IV daily OR Ampicillin-sulbactam 3g IV q6h. Duration: 4 weeks.",
+            "culture_negative_endocarditis": "Ampicillin-sulbactam 3g IV q6h + Gentamicin 1mg/kg IV q8h OR Vancomycin 15-20mg/kg IV q8-12h + Ceftriaxone 2g IV daily + Gentamicin 1mg/kg IV q8h. Duration: 4-6 weeks. Consider adding doxycycline 100mg PO BID if Bartonella or Coxiella suspected.",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Switch from vancomycin to nafcillin/cefazolin if MSSA. Discontinue gentamicin after 2 weeks (synergy achieved, nephrotoxicity risk). Narrow to pathogen-specific therapy.",
+            "iv_to_po_switch": "Generally NOT recommended for NVE (IV therapy preferred for entire course). Consider PO only if: (1) Viridans streptococci (highly susceptible), (2) Completed 2-4 weeks IV, (3) Afebrile >1 week, (4) Negative repeat cultures, (5) Good oral bioavailability option (amoxicillin 1g PO TID)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "staphylococcus_aureus_nve": "6 weeks from first negative blood culture",
+            "viridans_streptococci_nve": "4 weeks (penicillin-susceptible) OR 4-6 weeks (penicillin-resistant)",
+            "enterococcus_nve": "4-6 weeks",
+            "hacek_group": "4 weeks",
+            "culture_negative_endocarditis": "4-6 weeks",
+            "monitoring": "Daily blood cultures until negative (document clearance). Repeat blood cultures at end of therapy. Weekly: CBC, CMP, CRP/ESR, vancomycin trough (if used), gentamicin levels (if used). Repeat TEE at end of therapy to assess valve function and resolution. Cardiology follow-up every 3-6 months.",
+            "stop_criteria": "Completed adequate duration (4-6 weeks). Afebrile >1 week. Negative repeat blood cultures. Improving CRP/ESR. No new complications (heart failure, emboli, abscess). Repeat TEE shows resolution or stable findings."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "surgical_indications": "Indications for surgery (50-60% of NVE): (1) Heart failure (most common, 40-50%), (2) Uncontrolled infection (persistent bacteremia >5-7 days, abscess, fistula), (3) Prevention of embolism (large vegetation >10mm, recurrent emboli despite therapy). Timing: Urgent (within 24-48 hours) if heart failure or uncontrolled infection. Consult cardiothoracic surgery early.",
+            "heart_failure": "Most common indication for surgery (40-50%). Caused by valve destruction, regurgitation, or obstruction. Symptoms: Dyspnea, pulmonary edema, hypotension. Management: Diuretics, afterload reduction, urgent surgery. Medical therapy alone = high mortality (50-90%).",
+            "embolic_phenomena": "Occurs in 20-50% of NVE. Stroke (15-20%), splenic infarct (10%), renal infarct (5%), septic pulmonary emboli (right-sided). Risk factors: Large vegetation (>10mm), mitral valve, S. aureus, mobile vegetation. Management: Anticoagulation NOT recommended (increases bleeding risk). Consider surgery if recurrent emboli despite therapy.",
+            "perivalvular_abscess": "Occurs in 10-40% of NVE (higher with S. aureus, aortic valve). Symptoms: Persistent fever, new conduction abnormalities (AV block, bundle branch block), heart failure. Diagnosis: TEE (sensitivity 90%), cardiac CT/MRI. Management: Surgery required (antibiotics alone = high failure rate). Duration: 6-8 weeks antibiotics.",
+            "ivdu": "High risk of right-sided endocarditis (tricuspid valve, 70%). Organism: S. aureus (70-90%). Presentation: Septic pulmonary emboli (cough, hemoptysis, chest pain). Management: 6 weeks IV antibiotics. Surgery less common (10-20%) unless severe tricuspid regurgitation or persistent infection. High recurrence rate (10-30%) if continued drug use.",
+            "pregnancy": "Rare but high mortality (maternal 30%, fetal 30%). Preferred: Penicillin G, cefazolin, ampicillin, vancomycin. Avoid: Aminoglycosides (ototoxicity, nephrotoxicity), fluoroquinolones (cartilage damage). Surgery if indicated (maternal survival priority). Consult maternal-fetal medicine and cardiothoracic surgery.",
+            "immunocompromised": "Higher mortality (30-50%). Broader coverage (vancomycin + ceftriaxone + gentamicin). Longer duration (6-8 weeks minimum). Higher risk of fungal endocarditis (Candida, Aspergillus) - consider empiric antifungal if persistent fever despite antibiotics."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Switch from vancomycin to nafcillin/cefazolin if MSSA confirmed (better outcomes, lower toxicity)",
+              "Discontinue gentamicin after 2 weeks (synergy achieved, nephrotoxicity risk)",
+              "Narrow to pathogen-specific therapy within 48-72 hours based on culture results",
+              "Consider shorter course (2 weeks) for Viridans strep if penicillin-susceptible + gentamicin synergy"
+            ],
+            "timeout_checklist": [
+              "Is this definite IE by Duke criteria? (2 major OR 1 major + 3 minor OR 5 minor)",
+              "Is TEE obtained? (Required for diagnosis, TTE insufficient)",
+              "Are repeat blood cultures negative? (Document clearance)",
+              "What is the organism and susceptibilities? (Determines therapy and duration)",
+              "Is surgery indicated? (Heart failure, abscess, large vegetation, persistent bacteremia)",
+              "Can I switch vancomycin to nafcillin/cefazolin? (If MSSA confirmed)",
+              "Can I discontinue gentamicin? (After 2 weeks, synergy achieved)",
+              "Is infectious disease and cardiology consulted? (Recommended for ALL IE)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use oral antibiotics for IE (IV therapy required for entire course). Do NOT continue gentamicin >2 weeks (nephrotoxicity risk, synergy achieved). Do NOT delay surgery if indicated (heart failure, abscess, persistent bacteremia).",
+            "diagnostic_stewardship": "Do NOT skip TEE (TTE insufficient, misses 30-40% of cases). Do NOT obtain single blood culture set (inadequate for Duke criteria, minimum 3 sets). Do NOT delay blood cultures for antibiotics if septic shock (but obtain within 1 hour)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "AHA Infective Endocarditis Guidelines (2023)",
+              "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001151"
+            },
+            {
+              "label": "ESC Infective Endocarditis Guidelines (2023)",
+              "url": "https://academic.oup.com/eurheartj/article/44/37/3948/7243107"
+            },
+            {
+              "label": "IDSA Staphylococcus aureus Bacteremia Guidelines (2011, updated 2024)",
+              "url": "https://www.idsociety.org/practice-guideline/staphylococcus-aureus-bacteremia/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "infective-endocarditis-prosthetic-valve",
+      "name": "Infective Endocarditis (Prosthetic Valve)",
+      "synonyms": ["PVE", "prosthetic valve endocarditis", "mechanical valve endocarditis", "bioprosthetic valve endocarditis"],
+      "icd10": ["I38", "T82.6", "T82.7"],
+      "severity": ["severe", "critical"],
+      "shortDescription": "Infection of prosthetic heart valves with higher mortality and surgical rate than native valve endocarditis",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Prosthetic valve endocarditis (PVE) is infection of mechanical or bioprosthetic heart valves. Early PVE (<1 year post-surgery): Healthcare-associated, CoNS (30-40%), S. aureus (20-30%), fungi (10%). Late PVE (>1 year post-surgery): Similar to NVE, Viridans strep (20-30%), S. aureus (20%), Enterococcus (10%). Mortality: 20-40% (higher than NVE).",
+            "clinical_presentation": "Fever (90%), new or changing murmur (50-70%, less common than NVE), heart failure (40%), embolic phenomena (20-40%), perivalvular complications (abscess, dehiscence, fistula) 40-60%. Peripheral stigmata less common than NVE. Conduction abnormalities (AV block, bundle branch block) suggest perivalvular extension.",
+            "diagnostic_criteria": "Modified Duke Criteria (same as NVE). TEE required (TTE inadequate for prosthetic valves). Diagnosis more challenging due to prosthetic material artifacts on imaging.",
+            "risk_factors": [
+              "Early PVE (<1 year): Perioperative contamination, prolonged ICU stay, reoperation, S. aureus bacteremia",
+              "Late PVE (>1 year): Dental procedures, IVDU, hemodialysis, immunosuppression",
+              "Mechanical valves: Higher risk than bioprosthetic (foreign material)",
+              "Prior endocarditis: Recurrence risk 5-10%",
+              "Poor dentition or periodontal disease"
+            ],
+            "red_flags": [
+              "Heart failure or new valve dysfunction - valve dehiscence or obstruction, urgent surgery",
+              "Perivalvular abscess or fistula - requires surgery (antibiotics alone fail 90%)",
+              "Persistent bacteremia >5-7 days - inadequate source control, consider surgery",
+              "Conduction abnormalities (AV block, BBB) - perivalvular extension, high surgical risk",
+              "Fungal PVE - very high mortality (50-80%), requires surgery + prolonged antifungal",
+              "Early PVE with S. aureus or fungi - very high mortality, urgent surgery"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Obtain blood cultures BEFORE antibiotics (minimum 3 sets from separate sites over 1-24 hours). TEE REQUIRED (TTE inadequate for prosthetic valves due to artifacts). Cardiac CT or MRI if perivalvular complications suspected.",
+            "essential_tests": [
+              "Blood cultures x3 sets (aerobic + anaerobic) from separate sites over 1-24 hours BEFORE antibiotics",
+              "TEE (transesophageal echocardiography) REQUIRED (TTE inadequate for prosthetic valves)",
+              "CBC with differential, CRP, ESR (elevated in 90%)",
+              "CMP (creatinine, BUN - assess renal function)",
+              "ECG (conduction abnormalities suggest perivalvular extension)"
+            ],
+            "conditional_tests": [
+              "Cardiac CT or MRI: If perivalvular abscess, fistula, or dehiscence suspected (TEE may miss)",
+              "Repeat TEE: If initial TEE negative but high clinical suspicion (repeat in 7-10 days)",
+              "CT chest/abdomen/pelvis: If embolic phenomena suspected",
+              "MRI brain: If neurologic symptoms (stroke, mycotic aneurysm)",
+              "Fungal blood cultures and serology: If early PVE or persistent fever despite antibiotics"
+            ],
+            "when_not_to_test": "Do NOT use TTE alone for PVE (inadequate, misses 50-70% of cases). Do NOT delay antibiotics >1 hour if septic shock. Do NOT skip TEE (required for diagnosis and surgical planning).",
+            "turnaround_time": "Blood cultures: Preliminary 24-48 hours, final 5 days (fungi: 7-14 days). TEE: 1-7 days (urgent if unstable). Cardiac CT/MRI: <24 hours (urgent if perivalvular complications)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "early_pve_less_than_1_year": {
+              "coagulase_negative_staphylococci": "30-40% of early PVE. S. epidermidis most common. Methicillin-resistant 70-90%. Biofilm formation on prosthetic material. Difficult to eradicate without valve replacement.",
+              "staphylococcus_aureus": "20-30% of early PVE. MRSA 40-60%. Aggressive course, high mortality (40-60%). Often requires surgery.",
+              "gram_negative_rods": "10-15% of early PVE. E. coli, Klebsiella, Pseudomonas, Enterobacter. ESBL/CRE common in healthcare-associated.",
+              "fungi": "10% of early PVE. Candida (albicans, parapsilosis, glabrata), Aspergillus. Very high mortality (50-80%). Requires surgery + prolonged antifungal."
+            },
+            "late_pve_greater_than_1_year": {
+              "viridans_streptococci": "20-30% of late PVE. Similar to NVE. Subacute presentation. Good prognosis with treatment.",
+              "staphylococcus_aureus": "20% of late PVE. MRSA 30-50%. Aggressive course, high mortality.",
+              "enterococcus": "10% of late PVE. E. faecalis (90%), E. faecium (10%). VRE 10-30% in healthcare-associated.",
+              "coagulase_negative_staphylococci": "10-15% of late PVE. Methicillin-resistant 50-70%."
+            },
+            "resistance_patterns": "Methicillin-resistant CoNS: 70-90% (early PVE), 50-70% (late PVE). MRSA: 40-60% (early PVE), 30-50% (late PVE). VRE: 10-30% (healthcare-associated). ESBL/CRE: 20-40% (healthcare-associated Gram-negatives)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "early_pve_less_than_1_year": "Vancomycin 15-20mg/kg IV q8-12h + Gentamicin 1mg/kg IV q8h + Rifampin 300mg PO BID (covers CoNS, MRSA, Gram-negatives). Add cefepime 2g IV q8h or meropenem 1g IV q8h if severe or Gram-negative risk.",
+            "late_pve_greater_than_1_year": "Vancomycin 15-20mg/kg IV q8-12h + Ceftriaxone 2g IV daily + Gentamicin 1mg/kg IV q8h (covers S. aureus, Streptococcus, Enterococcus, HACEK).",
+            "severe_or_septic_shock": "Vancomycin 15-20mg/kg IV q8-12h + Meropenem 1g IV q8h + Gentamicin 1mg/kg IV q8h + Rifampin 300mg PO BID (broad coverage for CoNS, MRSA, Gram-negatives, biofilm).",
+            "fungal_pve_suspected": "Add micafungin 100mg IV daily OR liposomal amphotericin B 5mg/kg IV daily if early PVE, persistent fever despite antibiotics, or high fungal risk (TPN, prolonged ICU, immunosuppression).",
+            "alternatives": "Vancomycin allergy: Daptomycin 8-10mg/kg IV daily + Gentamicin 1mg/kg IV q8h + Rifampin 300mg PO BID. Penicillin allergy: Vancomycin-based regimen (covers most organisms).",
+            "avoid_list": "Avoid monotherapy (synergy and biofilm penetration required). Avoid oral antibiotics (IV therapy required for entire course). Avoid rifampin monotherapy (rapid resistance)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "coagulase_negative_staphylococci_pve": "Vancomycin 15-20mg/kg IV q8-12h + Rifampin 300mg PO BID + Gentamicin 1mg/kg IV q8h (first 2 weeks). Duration: 6 weeks minimum. Rifampin critical for biofilm penetration (do NOT omit). If methicillin-susceptible (rare): Nafcillin 2g IV q4h + Rifampin 300mg PO BID + Gentamicin 1mg/kg IV q8h (first 2 weeks).",
+            "staphylococcus_aureus_pve": "MSSA: Nafcillin 2g IV q4h + Rifampin 300mg PO BID + Gentamicin 1mg/kg IV q8h (first 2 weeks). MRSA: Vancomycin 15-20mg/kg IV q8-12h + Rifampin 300mg PO BID + Gentamicin 1mg/kg IV q8h (first 2 weeks) OR Daptomycin 8-10mg/kg IV daily + Rifampin 300mg PO BID + Gentamicin 1mg/kg IV q8h (first 2 weeks). Duration: 6 weeks minimum (often requires surgery).",
+            "viridans_streptococci_pve": "Penicillin G 4 million units IV q4h + Gentamicin 1mg/kg IV q8h (first 2 weeks). Duration: 6 weeks. Alternative: Ceftriaxone 2g IV daily + Gentamicin 1mg/kg IV q8h (first 2 weeks).",
+            "enterococcus_pve": "Ampicillin 2g IV q4h + Gentamicin 1mg/kg IV q8h. Duration: 6 weeks. VRE: Daptomycin 10-12mg/kg IV daily (higher dose for PVE) OR Linezolid 600mg IV BID. Duration: 6-8 weeks.",
+            "gram_negative_pve": "E. coli/Klebsiella (susceptible): Ceftriaxone 2g IV daily. ESBL: Meropenem 1g IV q8h. Pseudomonas: Cefepime 2g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h + Gentamicin 1mg/kg IV q8h (first 2 weeks). Duration: 6 weeks.",
+            "fungal_pve": "Candida: Liposomal amphotericin B 5mg/kg IV daily OR Micafungin 100mg IV daily. Aspergillus: Voriconazole 6mg/kg IV q12h x2 doses, then 4mg/kg IV q12h. Duration: Months (until valve replaced + 6-12 weeks post-surgery). Surgery REQUIRED (medical therapy alone fails 90%).",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Switch from vancomycin to nafcillin if MSSA. Discontinue gentamicin after 2 weeks (synergy achieved, nephrotoxicity risk). Do NOT discontinue rifampin (biofilm penetration critical).",
+            "iv_to_po_switch": "Generally NOT recommended for PVE (IV therapy preferred for entire course). Rifampin can be given PO throughout."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "coagulase_negative_staphylococci_pve": "6 weeks minimum from first negative blood culture",
+            "staphylococcus_aureus_pve": "6 weeks minimum (often requires surgery, then 6 weeks post-surgery)",
+            "viridans_streptococci_pve": "6 weeks",
+            "enterococcus_pve": "6 weeks (ampicillin-susceptible) OR 6-8 weeks (VRE)",
+            "gram_negative_pve": "6 weeks",
+            "fungal_pve": "Months (until valve replaced + 6-12 weeks post-surgery)",
+            "monitoring": "Daily blood cultures until negative (document clearance). Repeat blood cultures at end of therapy. Weekly: CBC, CMP, CRP/ESR, vancomycin trough (if used), gentamicin levels (if used), CPK (if daptomycin). Repeat TEE at end of therapy and periodically (assess valve function, perivalvular complications). Cardiology follow-up every 3-6 months.",
+            "stop_criteria": "Completed adequate duration (6 weeks minimum). Afebrile >1 week. Negative repeat blood cultures. Improving CRP/ESR. No new complications (heart failure, abscess, dehiscence). Repeat TEE shows resolution or stable findings. Surgery completed if indicated."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "surgical_indications": "Surgery required in 60-80% of PVE (higher than NVE). Indications: (1) Heart failure or valve dysfunction (40-50%), (2) Perivalvular complications (abscess, fistula, dehiscence) 40-60%, (3) Persistent bacteremia >5-7 days despite therapy, (4) Fungal PVE (medical therapy alone fails 90%), (5) Recurrent emboli despite therapy. Timing: Urgent (within 24-48 hours) if heart failure or uncontrolled infection. Consult cardiothoracic surgery early.",
+            "perivalvular_complications": "Occurs in 40-60% of PVE (higher than NVE). Abscess, fistula, valve dehiscence, pseudoaneurysm. Symptoms: Persistent fever, conduction abnormalities (AV block, BBB), new murmur, heart failure. Diagnosis: TEE (sensitivity 80-90%), cardiac CT/MRI (sensitivity 90-100%). Management: Surgery required (antibiotics alone fail 90%). Duration: 6-8 weeks antibiotics.",
+            "biofilm_management": "Prosthetic material allows biofilm formation (bacteria embedded in extracellular matrix). Biofilm protects bacteria from antibiotics and immune system. Rifampin critical for biofilm penetration (do NOT omit). Combination therapy required (synergy + biofilm penetration). Surgery often required to remove infected prosthetic material.",
+            "early_vs_late_pve": "Early PVE (<1 year): Healthcare-associated, CoNS, S. aureus, fungi. Higher mortality (30-50%). Requires broader empiric coverage. Late PVE (>1 year): Similar to NVE, Viridans strep, S. aureus, Enterococcus. Lower mortality (20-30%). Empiric therapy similar to NVE.",
+            "fungal_pve": "Very high mortality (50-80%). Candida (most common), Aspergillus. Risk factors: Early PVE, TPN, prolonged ICU, immunosuppression. Management: Surgery REQUIRED (medical therapy alone fails 90%) + prolonged antifungal (6-12 weeks post-surgery). Lifelong suppression if valve cannot be replaced (fluconazole 400mg PO daily).",
+            "pregnancy": "Rare but very high mortality (maternal 40%, fetal 40%). Preferred: Penicillin G, cefazolin, ampicillin, vancomycin. Avoid: Aminoglycosides (ototoxicity, nephrotoxicity), fluoroquinolones (cartilage damage), rifampin (teratogenic). Surgery if indicated (maternal survival priority). Consult maternal-fetal medicine and cardiothoracic surgery.",
+            "immunocompromised": "Higher mortality (40-60%). Broader coverage (vancomycin + meropenem + micafungin). Longer duration (6-8 weeks minimum). Higher risk of fungal PVE. Consider atypical pathogens (Nocardia, Mycobacteria)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Switch from vancomycin to nafcillin if MSSA confirmed (better outcomes, lower toxicity)",
+              "Discontinue gentamicin after 2 weeks (synergy achieved, nephrotoxicity risk)",
+              "Narrow to pathogen-specific therapy within 48-72 hours based on culture results",
+              "Do NOT discontinue rifampin (biofilm penetration critical for PVE)"
+            ],
+            "timeout_checklist": [
+              "Is this definite PVE by Duke criteria? (2 major OR 1 major + 3 minor OR 5 minor)",
+              "Is TEE obtained? (REQUIRED for PVE, TTE inadequate)",
+              "Are repeat blood cultures negative? (Document clearance)",
+              "What is the organism and susceptibilities? (Determines therapy and duration)",
+              "Is this early (<1 year) or late (>1 year) PVE? (Determines empiric coverage)",
+              "Are perivalvular complications present? (Abscess, fistula, dehiscence - requires surgery)",
+              "Is surgery indicated? (Heart failure, abscess, persistent bacteremia, fungal PVE)",
+              "Is rifampin included? (Critical for biofilm penetration, do NOT omit)",
+              "Is infectious disease and cardiothoracic surgery consulted? (Recommended for ALL PVE)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use oral antibiotics for PVE (IV therapy required for entire course, except rifampin). Do NOT omit rifampin (biofilm penetration critical). Do NOT continue gentamicin >2 weeks (nephrotoxicity risk). Do NOT delay surgery if indicated (heart failure, abscess, fungal PVE).",
+            "diagnostic_stewardship": "Do NOT use TTE alone for PVE (inadequate, misses 50-70% of cases). Do NOT skip TEE (required for diagnosis and surgical planning). Do NOT obtain single blood culture set (inadequate for Duke criteria, minimum 3 sets)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "AHA Infective Endocarditis Guidelines (2023)",
+              "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001151"
+            },
+            {
+              "label": "ESC Infective Endocarditis Guidelines (2023)",
+              "url": "https://academic.oup.com/eurheartj/article/44/37/3948/7243107"
+            },
+            {
+              "label": "IDSA Staphylococcus aureus Bacteremia Guidelines (2011, updated 2024)",
+              "url": "https://www.idsociety.org/practice-guideline/staphylococcus-aureus-bacteremia/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cardiac-device-infection",
+      "name": "Cardiac Device Infections (Pacemaker/ICD)",
+      "synonyms": ["CIED infection", "pacemaker infection", "ICD infection", "cardiac implantable electronic device infection"],
+      "icd10": ["T82.6", "T82.7", "I33.0"],
+      "severity": ["moderate", "severe"],
+      "shortDescription": "Infection of cardiac implantable electronic devices requiring complete device removal and prolonged antibiotics",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Cardiac device infection involves pacemakers, ICDs (implantable cardioverter-defibrillators), or CRT (cardiac resynchronization therapy) devices. Pocket infection (superficial, generator site) vs lead infection (deep, endovascular, endocarditis). Mortality: 5-15% (higher with lead infection, bacteremia, delayed removal). Most common organisms: S. aureus (50-60%), CoNS (20-30%).",
+            "clinical_presentation": "Pocket infection: Erythema, warmth, swelling, tenderness, purulent drainage at generator site. Lead infection: Fever, bacteremia, sepsis, vegetation on leads (TEE), septic pulmonary emboli (right-sided). Erosion: Device or lead visible through skin. Systemic: Fever, chills, malaise, weight loss (subacute presentation).",
+            "diagnostic_criteria": "Definite infection: (1) Pocket infection with purulent drainage or positive culture, (2) Bacteremia with typical organism + vegetation on leads (TEE), (3) Device erosion through skin. Possible infection: Fever + bacteremia without other source + device present.",
+            "risk_factors": [
+              "Recent device implantation or revision (<6 months)",
+              "Reoperation or pocket manipulation",
+              "Hematoma formation post-procedure",
+              "Diabetes mellitus or immunosuppression",
+              "Chronic kidney disease or hemodialysis",
+              "Anticoagulation or dual antiplatelet therapy",
+              "S. aureus bacteremia from any source"
+            ],
+            "red_flags": [
+              "Device erosion through skin - complete removal required, high infection risk",
+              "Bacteremia with S. aureus or Candida - high risk of lead infection, obtain TEE",
+              "Septic pulmonary emboli - lead infection with vegetation, urgent removal",
+              "Persistent bacteremia despite antibiotics - inadequate source control, remove device",
+              "Vegetation on leads (TEE) - endocarditis, complete removal required"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Obtain blood cultures BEFORE antibiotics if systemic symptoms. Obtain pocket fluid culture if purulent drainage. TEE if bacteremia or suspected lead infection (TTE inadequate for leads).",
+            "essential_tests": [
+              "Blood cultures x2 sets if fever or systemic symptoms (BEFORE antibiotics)",
+              "Pocket fluid culture and Gram stain if purulent drainage",
+              "CBC with differential, CRP, ESR (elevated in 80-90%)",
+              "TEE (transesophageal echocardiography) if bacteremia or suspected lead infection"
+            ],
+            "conditional_tests": [
+              "Chest X-ray: Assess lead position, rule out pneumonia or septic emboli",
+              "CT chest: If septic pulmonary emboli suspected (lead infection)",
+              "Device interrogation: Assess lead function, impedance changes suggest infection",
+              "Repeat TEE: If initial TEE negative but high clinical suspicion (repeat in 7-10 days)"
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics >1 hour if septic. Do NOT skip TEE if bacteremia (lead infection common, changes management). Do NOT culture through device pocket without purulent drainage (high contamination rate).",
+            "turnaround_time": "Blood cultures: Preliminary 24-48 hours. Pocket fluid culture: 24-72 hours. TEE: 1-7 days (urgent if unstable)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "common_organisms": {
+              "staphylococcus_aureus": "50-60% of device infections. MRSA 30-50% in healthcare-associated. Aggressive course, high risk of lead infection and bacteremia. Requires complete device removal.",
+              "coagulase_negative_staphylococci": "20-30% of device infections. S. epidermidis most common. Methicillin-resistant 60-80%. Biofilm formation on device and leads. Subacute presentation.",
+              "gram_negative_rods": "5-10% of device infections. E. coli, Klebsiella, Pseudomonas. Often polymicrobial with skin flora.",
+              "enterococcus": "5% of device infections. E. faecalis most common. VRE rare.",
+              "fungi": "<5% of device infections. Candida species. Very high mortality. Requires complete device removal + prolonged antifungal."
+            },
+            "resistance_patterns": "MRSA: 30-50% of S. aureus. Methicillin-resistant CoNS: 60-80%. VRE: <5%. ESBL: 10-20% of Gram-negatives.",
+            "biofilm_formation": "Device and leads allow biofilm formation (bacteria embedded in extracellular matrix). Biofilm protects bacteria from antibiotics and immune system. Antibiotics alone fail 80-90% without device removal. Complete device removal CRITICAL for cure."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "pocket_infection_only": "Vancomycin 15-20mg/kg IV q8-12h (covers MRSA, CoNS). Alternative: Daptomycin 6mg/kg IV daily.",
+            "lead_infection_or_bacteremia": "Vancomycin 15-20mg/kg IV q8-12h + Gentamicin 1mg/kg IV q8h (synergy for endocarditis). Alternative: Daptomycin 8-10mg/kg IV daily + Gentamicin 1mg/kg IV q8h.",
+            "severe_or_septic_shock": "Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h (broad coverage for S. aureus, CoNS, Gram-negatives).",
+            "alternatives": "Vancomycin allergy: Daptomycin 6-10mg/kg IV daily (dose based on severity). Penicillin allergy: Vancomycin-based regimen (covers most organisms).",
+            "avoid_list": "Avoid oral antibiotics (IV therapy required). Avoid monotherapy if lead infection (synergy required). Avoid antibiotics alone without device removal (failure rate 80-90%)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "staphylococcus_aureus": "MSSA: Cefazolin 2g IV q8h OR Nafcillin 2g IV q4h. MRSA: Vancomycin 15-20mg/kg IV q8-12h OR Daptomycin 8-10mg/kg IV daily. Duration: 4-6 weeks after complete device removal (2 weeks if pocket infection only + no bacteremia).",
+            "coagulase_negative_staphylococci": "Vancomycin 15-20mg/kg IV q8-12h (if methicillin-resistant) OR Cefazolin 2g IV q8h (if methicillin-susceptible, rare). Duration: 2-4 weeks after complete device removal (2 weeks if pocket infection only, 4 weeks if lead infection or bacteremia).",
+            "gram_negative_rods": "E. coli/Klebsiella (susceptible): Ceftriaxone 2g IV daily. ESBL: Meropenem 1g IV q8h. Pseudomonas: Cefepime 2g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h. Duration: 2-4 weeks after complete device removal.",
+            "enterococcus": "Ampicillin 2g IV q4h (if susceptible) OR Vancomycin 15-20mg/kg IV q8-12h (if ampicillin-resistant). VRE: Daptomycin 8-10mg/kg IV daily OR Linezolid 600mg IV BID. Duration: 4-6 weeks after complete device removal.",
+            "fungi": "Candida: Micafungin 100mg IV daily OR Liposomal amphotericin B 5mg/kg IV daily. Duration: 4-6 weeks after complete device removal. Step down to fluconazole 400mg PO daily if C. albicans and stable.",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Switch from vancomycin to cefazolin if MSSA or methicillin-susceptible CoNS. Discontinue gentamicin after 2 weeks if used. Narrow to pathogen-specific therapy.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >48 hours, (2) Negative repeat blood cultures, (3) Device completely removed, (4) Pocket infection only (no lead infection), (5) Good oral bioavailability option (linezolid 600mg PO BID for MRSA, fluoroquinolones for Gram-negatives)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "pocket_infection_only_no_bacteremia": "2 weeks after complete device removal",
+            "lead_infection_or_bacteremia": "4-6 weeks after complete device removal (start counting from first negative blood culture)",
+            "retained_device": "NOT recommended (failure rate 80-90%). If device cannot be removed: Lifelong suppression (e.g., TMP-SMX DS 1 tab PO BID for MRSA, amoxicillin 500mg PO TID for MSSA).",
+            "monitoring": "Daily blood cultures until negative (if bacteremia). Repeat blood cultures at end of therapy. Weekly: CBC, CMP, CRP/ESR, vancomycin trough (if used). Device interrogation after reimplantation (if applicable). Follow-up at 1, 3, 6, 12 months.",
+            "stop_criteria": "Completed adequate duration (2-6 weeks after device removal). Afebrile >1 week. Negative repeat blood cultures. Improving CRP/ESR. Pocket healed. No signs of recurrent infection."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "device_removal": "CRITICAL for cure. Complete device removal (generator + ALL leads) required in >95% of cases. Antibiotics alone fail 80-90%. Timing: As soon as possible (within 24-72 hours of diagnosis). Percutaneous lead extraction preferred (success rate 95-98%). Open surgical extraction if percutaneous fails. Do NOT retain device unless absolutely contraindicated (high failure rate, lifelong suppression required).",
+            "pocket_infection_vs_lead_infection": "Pocket infection: Superficial, generator site, erythema, purulent drainage. Treatment: Device removal + 2 weeks antibiotics. Lead infection: Deep, endovascular, bacteremia, vegetation on leads (TEE). Treatment: Complete device removal + 4-6 weeks antibiotics. Lead infection has higher mortality and requires longer therapy.",
+            "device_erosion": "Device or lead visible through skin. High infection risk (80-90%). Complete device removal required. Do NOT attempt to cover with skin flap (infection persists). Antibiotics + removal. Duration: 2-4 weeks after removal.",
+            "reimplantation_timing": "Wait until infection cleared before reimplantation. Pocket infection only: 2-7 days after removal (if afebrile, negative cultures). Lead infection or bacteremia: 7-14 days after removal (if afebrile, negative repeat cultures). Contralateral site preferred (avoid infected pocket). Temporary pacing if device-dependent.",
+            "device_dependent_patients": "Pacemaker-dependent: Temporary transvenous pacing during treatment. ICD-dependent: Temporary external defibrillator vest during treatment. Reimplant after infection cleared (7-14 days). Contralateral site preferred.",
+            "pregnancy": "Rare but high risk. Preferred: Cefazolin (MSSA), vancomycin (MRSA). Avoid: Aminoglycosides (ototoxicity), fluoroquinolones (cartilage damage). Complete device removal required. Temporary pacing if device-dependent. Consult maternal-fetal medicine.",
+            "immunocompromised": "Higher mortality (15-30%). Broader coverage (vancomycin + cefepime). Longer duration (4-6 weeks minimum). Higher risk of fungal infection. Complete device removal critical."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Switch from vancomycin to cefazolin if MSSA or methicillin-susceptible CoNS",
+              "Discontinue gentamicin after 2 weeks if used (synergy achieved, nephrotoxicity risk)",
+              "Narrow to pathogen-specific therapy within 48-72 hours based on culture results",
+              "Switch IV to PO after device removal if pocket infection only and stable"
+            ],
+            "timeout_checklist": [
+              "Is the device completely removed? (Generator + ALL leads - CRITICAL for cure)",
+              "Are repeat blood cultures negative? (Document clearance if bacteremia)",
+              "What is the organism and susceptibilities? (Determines therapy and duration)",
+              "Is this pocket infection only or lead infection? (Determines duration: 2 weeks vs 4-6 weeks)",
+              "Is TEE obtained? (If bacteremia or suspected lead infection)",
+              "Can I switch vancomycin to cefazolin? (If MSSA or methicillin-susceptible CoNS)",
+              "Can I switch IV to PO? (If pocket infection only, device removed, afebrile, stable)",
+              "When can device be reimplanted? (2-7 days if pocket infection, 7-14 days if lead infection)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use antibiotics alone without device removal (failure rate 80-90%). Do NOT retain device unless absolutely contraindicated (high failure rate, lifelong suppression required). Do NOT delay device removal (increases mortality and complications).",
+            "diagnostic_stewardship": "Do NOT skip TEE if bacteremia (lead infection common, changes management). Do NOT culture pocket without purulent drainage (high contamination rate). Do NOT delay blood cultures for antibiotics if septic (but obtain within 1 hour)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "HRS Expert Consensus Statement on CIED Lead Management and Extraction (2017)",
+              "url": "https://www.heartrhythmjournal.com/article/S1547-5271(17)31080-9/fulltext"
+            },
+            {
+              "label": "AHA Infective Endocarditis Guidelines (2023)",
+              "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001151"
+            },
+            {
+              "label": "IDSA Staphylococcus aureus Bacteremia Guidelines (2011, updated 2024)",
+              "url": "https://www.idsociety.org/practice-guideline/staphylococcus-aureus-bacteremia/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "myocarditis-infectious",
+      "name": "Myocarditis (Infectious)",
+      "synonyms": ["viral myocarditis", "bacterial myocarditis", "inflammatory cardiomyopathy"],
+      "icd10": ["I40.0", "I40.1", "I40.8", "I40.9"],
+      "severity": ["moderate", "severe", "critical"],
+      "shortDescription": "Inflammation of the myocardium caused by infection, most commonly viral, with supportive care as primary treatment",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Myocarditis is inflammation of the myocardium (heart muscle). Infectious causes: Viral (90%, Coxsackievirus, adenovirus, parvovirus B19, COVID-19, influenza), bacterial (rare, S. aureus, Streptococcus), fungal (rare, immunocompromised), parasitic (Chagas disease, toxoplasmosis). Mortality: 5-10% (higher with fulminant myocarditis, cardiogenic shock). Most cases self-limited with supportive care.",
+            "clinical_presentation": "Acute: Chest pain (pleuritic or angina-like), dyspnea, palpitations, syncope, fever. Heart failure: Dyspnea, orthopnea, edema, fatigue. Arrhythmias: Palpitations, syncope, sudden cardiac death. Fulminant myocarditis: Cardiogenic shock, severe LV dysfunction, ventricular arrhythmias. Prodrome: Viral illness 1-2 weeks prior (fever, URI, GI symptoms).",
+            "diagnostic_criteria": "Clinical suspicion + elevated troponin + ECG changes + imaging (echo, cardiac MRI) showing LV dysfunction or wall motion abnormalities. Definitive diagnosis: Endomyocardial biopsy (rarely performed, reserved for severe cases or diagnostic uncertainty).",
+            "risk_factors": [
+              "Recent viral illness (URI, GI, flu-like symptoms)",
+              "COVID-19 infection or vaccination (rare, <0.01%)",
+              "Immunosuppression (HIV, chemotherapy, transplant)",
+              "Autoimmune diseases (lupus, sarcoidosis)",
+              "Toxin exposure (alcohol, cocaine, chemotherapy)",
+              "Young age (children, young adults more susceptible to viral myocarditis)"
+            ],
+            "red_flags": [
+              "Cardiogenic shock or severe LV dysfunction (EF <35%) - fulminant myocarditis, high mortality",
+              "Ventricular arrhythmias or high-grade AV block - risk of sudden cardiac death",
+              "Syncope or presyncope - arrhythmia risk, consider ICD",
+              "Elevated troponin >10x ULN - extensive myocardial injury, poor prognosis",
+              "Pericardial effusion with tamponade - requires pericardiocentesis"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Suspect myocarditis if: Chest pain + elevated troponin + ECG changes + recent viral illness. Obtain cardiac MRI (gold standard for diagnosis). Endomyocardial biopsy rarely needed (severe cases, diagnostic uncertainty).",
+            "essential_tests": [
+              "Troponin (elevated in 90%, marker of myocardial injury)",
+              "ECG: ST-segment changes, T-wave inversions, PR depression, arrhythmias, AV block",
+              "Echocardiography: LV dysfunction, wall motion abnormalities, pericardial effusion",
+              "Cardiac MRI: Late gadolinium enhancement (LGE), edema, inflammation (gold standard)",
+              "BNP or NT-proBNP: Elevated in heart failure"
+            ],
+            "conditional_tests": [
+              "Viral PCR (blood, throat swab): Coxsackievirus, adenovirus, parvovirus B19, influenza, COVID-19",
+              "Blood cultures: If bacterial myocarditis suspected (rare, septic, immunocompromised)",
+              "Endomyocardial biopsy: If severe, diagnostic uncertainty, or considering immunosuppression (rarely performed)",
+              "Coronary angiography: Rule out ACS if chest pain + troponin elevation (myocarditis mimics MI)",
+              "Autoimmune workup: ANA, RF, anti-Ro/La if autoimmune myocarditis suspected"
+            ],
+            "when_not_to_test": "Do NOT skip coronary angiography if ACS cannot be ruled out (myocarditis mimics MI). Do NOT perform endomyocardial biopsy routinely (invasive, low yield, reserved for severe cases). Do NOT delay cardiac MRI (gold standard for diagnosis).",
+            "turnaround_time": "Troponin: <1 hour. ECG: Immediate. Echo: <24 hours. Cardiac MRI: 1-7 days (urgent if severe). Viral PCR: 24-72 hours. Biopsy: 3-7 days."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "viral_causes": {
+              "coxsackievirus_b": "Most common viral cause (30-40%). Enterovirus family. Acute myocarditis, usually self-limited. Can progress to dilated cardiomyopathy.",
+              "adenovirus": "10-20% of viral myocarditis. More common in children. Can cause fulminant myocarditis.",
+              "parvovirus_b19": "10-20% of viral myocarditis. Associated with chronic myocarditis and dilated cardiomyopathy.",
+              "covid_19": "5-10% of hospitalized COVID-19 patients. Myocarditis or myocardial injury. Usually mild, supportive care. Rare after vaccination (<0.01%, mostly young males after mRNA vaccines).",
+              "influenza": "5% of viral myocarditis. Seasonal, can cause fulminant myocarditis.",
+              "other_viruses": "EBV, CMV, HHV-6, HIV (rare, immunocompromised)"
+            },
+            "bacterial_causes": "Rare (<5%). S. aureus, Streptococcus, Corynebacterium diphtheriae (diphtheria, rare in vaccinated populations). Usually in setting of bacteremia, endocarditis, or sepsis. Requires antibiotics + supportive care.",
+            "fungal_parasitic_causes": "Very rare. Candida, Aspergillus (immunocompromised). Trypanosoma cruzi (Chagas disease, endemic in Latin America). Toxoplasma gondii (HIV/AIDS)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "viral_myocarditis": "Supportive care ONLY (no specific antiviral therapy for most viruses). Heart failure management: Diuretics, ACE inhibitors/ARBs, beta-blockers (cautious, may worsen acute phase). Arrhythmia management: Antiarrhythmics, temporary pacing if AV block. Avoid NSAIDs (may worsen myocardial inflammation).",
+            "bacterial_myocarditis_suspected": "Vancomycin 15-20mg/kg IV q8-12h + Ceftriaxone 2g IV daily (covers S. aureus, Streptococcus). Obtain blood cultures BEFORE antibiotics. Adjust based on culture results.",
+            "fulminant_myocarditis": "Supportive care: Inotropes (dobutamine, milrinone), vasopressors (norepinephrine), mechanical circulatory support (IABP, ECMO, Impella). Avoid beta-blockers in acute phase (may worsen shock). Consider immunosuppression (steroids, IVIG) in severe cases (controversial, consult cardiology).",
+            "covid_19_myocarditis": "Supportive care. Consider remdesivir if active COVID-19 infection. Consider steroids (dexamethasone 6mg PO/IV daily) if severe inflammation. Avoid NSAIDs.",
+            "alternatives": "No specific antiviral therapy for most viral myocarditis. Supportive care is mainstay.",
+            "avoid_list": "Avoid NSAIDs (may worsen myocardial inflammation and increase mortality). Avoid beta-blockers in acute phase (may worsen heart failure). Avoid immunosuppression unless severe and biopsy-proven (controversial)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "viral_myocarditis": "Supportive care ONLY. No specific antiviral therapy. Heart failure management: ACE inhibitors/ARBs, beta-blockers (after acute phase), diuretics, aldosterone antagonists. Arrhythmia management: Antiarrhythmics, ICD if sustained VT/VF. Most cases self-limited, recovery in 2-4 weeks.",
+            "bacterial_myocarditis": "Antibiotics based on culture results. S. aureus: Cefazolin 2g IV q8h (MSSA) OR Vancomycin 15-20mg/kg IV q8-12h (MRSA). Streptococcus: Penicillin G 4 million units IV q4h OR Ceftriaxone 2g IV daily. Duration: 4-6 weeks (similar to endocarditis).",
+            "chagas_disease": "Benznidazole 5-7mg/kg/day PO divided BID x 60 days OR Nifurtimox 8-10mg/kg/day PO divided TID x 60 days. Effective in acute phase, less effective in chronic phase. Consult infectious disease.",
+            "toxoplasmosis": "Pyrimethamine 200mg PO x1, then 50-75mg PO daily + Sulfadiazine 1-1.5g PO QID + Leucovorin 10-25mg PO daily. Duration: 4-6 weeks. HIV/AIDS patients require lifelong suppression.",
+            "supportive_care": "Heart failure: ACE inhibitors/ARBs, beta-blockers (after acute phase), diuretics, aldosterone antagonists. Arrhythmias: Antiarrhythmics (amiodarone), temporary pacing if AV block, ICD if sustained VT/VF. Mechanical support: IABP, ECMO, Impella if cardiogenic shock.",
+            "immunosuppression": "Controversial. Consider in severe, biopsy-proven myocarditis not responding to supportive care. Steroids (prednisone 1mg/kg/day) + IVIG (2g/kg over 2-5 days). Consult cardiology and infectious disease.",
+            "de_escalation": "Discontinue antibiotics if bacterial myocarditis ruled out (negative cultures, viral etiology confirmed). Wean inotropes and mechanical support as cardiac function improves.",
+            "iv_to_po_switch": "Not applicable for viral myocarditis (supportive care only). For bacterial myocarditis: Switch to PO when stable (similar to endocarditis, rarely done)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "viral_myocarditis": "Supportive care until recovery (2-4 weeks for most cases). Continue heart failure medications long-term if persistent LV dysfunction.",
+            "bacterial_myocarditis": "4-6 weeks IV antibiotics (similar to endocarditis)",
+            "chagas_disease": "60 days (benznidazole or nifurtimox)",
+            "toxoplasmosis": "4-6 weeks acute treatment, lifelong suppression if HIV/AIDS",
+            "monitoring": "Daily: Vital signs, telemetry (arrhythmias), fluid balance. Weekly: Troponin, BNP, ECG, echo (assess LV function). Repeat cardiac MRI at 3-6 months (assess recovery, fibrosis). Cardiology follow-up every 1-3 months.",
+            "stop_criteria": "Viral myocarditis: Afebrile, troponin normalized, LV function improved or stable, no arrhythmias. Bacterial myocarditis: Completed 4-6 weeks antibiotics, afebrile, negative cultures, LV function improved."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "fulminant_myocarditis": "Severe LV dysfunction (EF <35%), cardiogenic shock, ventricular arrhythmias. High mortality (40-50%) but better long-term prognosis if survive acute phase (complete recovery in 50-70%). Management: Mechanical circulatory support (ECMO, Impella), inotropes, vasopressors. Consider heart transplant if refractory.",
+            "covid_19_myocarditis": "Occurs in 5-10% of hospitalized COVID-19 patients. Usually mild, supportive care. Rare after vaccination (<0.01%, mostly young males after mRNA vaccines, mild, self-limited). Management: Supportive care, consider steroids if severe. Avoid NSAIDs. Most recover fully.",
+            "chronic_myocarditis": "Persistent inflammation >3 months. Can progress to dilated cardiomyopathy. Parvovirus B19 and HHV-6 associated. Management: Heart failure medications, consider immunosuppression if biopsy-proven (controversial). Monitor for progression to heart failure.",
+            "arrhythmias": "Common (30-50%). Ventricular arrhythmias (VT, VF), AV block, atrial fibrillation. Management: Antiarrhythmics (amiodarone), temporary pacing if AV block, ICD if sustained VT/VF or EF <35% after 3 months. Sudden cardiac death risk 1-5%.",
+            "pregnancy": "Peripartum cardiomyopathy: Myocarditis-like syndrome in last month of pregnancy or first 5 months postpartum. Management: Supportive care, heart failure medications (avoid ACE inhibitors in pregnancy, use hydralazine + nitrates). Bromocriptine may help (suppresses prolactin). High recurrence risk in subsequent pregnancies.",
+            "immunocompromised": "Higher risk of bacterial, fungal, parasitic myocarditis. Broader coverage (vancomycin + ceftriaxone + antifungal if severe). Consider toxoplasmosis if HIV/AIDS. Longer duration of therapy.",
+            "athletes": "Return to play: Wait 3-6 months after acute myocarditis. Repeat echo and cardiac MRI (assess LV function, fibrosis). No arrhythmias on Holter monitor. Normal exercise stress test. Consult sports cardiology."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Discontinue antibiotics if bacterial myocarditis ruled out (negative cultures, viral etiology confirmed)",
+              "Wean inotropes and mechanical support as cardiac function improves",
+              "Avoid immunosuppression unless severe and biopsy-proven (controversial, low evidence)"
+            ],
+            "timeout_checklist": [
+              "Is this myocarditis or ACS? (Rule out MI with coronary angiography if uncertain)",
+              "Is this viral or bacterial? (Viral = supportive care only, bacterial = antibiotics)",
+              "Are blood cultures negative? (If negative at 48-72 hours, discontinue antibiotics)",
+              "Is cardiac MRI obtained? (Gold standard for diagnosis)",
+              "Is LV function severely reduced (EF <35%)? (Consider mechanical support, ICD)",
+              "Are there arrhythmias? (Telemetry monitoring, consider ICD if sustained VT/VF)",
+              "Is this fulminant myocarditis? (Cardiogenic shock, high mortality, mechanical support)",
+              "Is cardiology consulted? (Recommended for ALL myocarditis cases)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use antibiotics for viral myocarditis (no benefit, supportive care only). Do NOT use NSAIDs (may worsen inflammation and increase mortality). Do NOT use immunosuppression routinely (controversial, low evidence, reserve for severe biopsy-proven cases).",
+            "diagnostic_stewardship": "Do NOT skip coronary angiography if ACS cannot be ruled out (myocarditis mimics MI). Do NOT perform endomyocardial biopsy routinely (invasive, low yield, reserve for severe cases). Do NOT delay cardiac MRI (gold standard for diagnosis)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "AHA Scientific Statement on Myocarditis (2021)",
+              "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001001"
+            },
+            {
+              "label": "ESC Position Statement on Myocarditis (2020)",
+              "url": "https://academic.oup.com/eurheartj/article/41/33/3123/5898731"
+            },
+            {
+              "label": "CDC COVID-19 Myocarditis Guidance (2023)",
+              "url": "https://www.cdc.gov/coronavirus/2019-ncov/vaccines/safety/myocarditis.html"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pericarditis-infectious",
+      "name": "Pericarditis (Infectious)",
+      "synonyms": ["viral pericarditis", "bacterial pericarditis", "purulent pericarditis", "tuberculous pericarditis"],
+      "icd10": ["I30.0", "I30.1", "I30.8", "I30.9", "A18.84"],
+      "severity": ["mild", "moderate", "severe"],
+      "shortDescription": "Inflammation of the pericardium caused by infection, most commonly viral, with NSAIDs and colchicine as primary treatment",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Pericarditis is inflammation of the pericardium (sac surrounding the heart). Infectious causes: Viral (80-90%, Coxsackievirus, echovirus, adenovirus, influenza, COVID-19), bacterial (5-10%, S. aureus, Streptococcus, Gram-negatives), tuberculous (5%, endemic areas), fungal (rare, immunocompromised). Mortality: <1% (viral), 20-40% (bacterial), 10-20% (tuberculous).",
+            "clinical_presentation": "Chest pain (sharp, pleuritic, worse with lying flat, better with sitting forward), pericardial friction rub (pathognomonic, 30-50%), fever, dyspnea. Pericardial effusion: Dyspnea, muffled heart sounds, jugular venous distension. Cardiac tamponade: Hypotension, tachycardia, pulsus paradoxus, Beck's triad (hypotension, JVD, muffled heart sounds).",
+            "diagnostic_criteria": "Definite pericarditis: 2 of 4 criteria: (1) Chest pain (typical), (2) Pericardial friction rub, (3) ECG changes (diffuse ST elevation, PR depression), (4) Pericardial effusion (new or worsening).",
+            "risk_factors": [
+              "Recent viral illness (URI, GI, flu-like symptoms)",
+              "Immunosuppression (HIV, chemotherapy, transplant)",
+              "Tuberculosis exposure or endemic area",
+              "Recent cardiac surgery or MI (Dressler syndrome)",
+              "Autoimmune diseases (lupus, rheumatoid arthritis)",
+              "Chronic kidney disease or uremia"
+            ],
+            "red_flags": [
+              "Cardiac tamponade - hypotension, tachycardia, pulsus paradoxus, requires urgent pericardiocentesis",
+              "Fever + purulent pericardial fluid - bacterial pericarditis, high mortality (20-40%)",
+              "Large pericardial effusion (>20mm) - risk of tamponade, monitor closely",
+              "Immunocompromised - higher risk of bacterial, tuberculous, fungal pericarditis",
+              "Subacute presentation + weight loss + night sweats - tuberculous pericarditis"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Suspect pericarditis if: Chest pain (sharp, pleuritic, positional) + ECG changes + pericardial friction rub. Obtain echocardiography (assess effusion, tamponade). Pericardiocentesis if large effusion, tamponade, or suspected bacterial/tuberculous pericarditis.",
+            "essential_tests": [
+              "ECG: Diffuse ST elevation, PR depression (early), T-wave inversions (late)",
+              "Echocardiography: Pericardial effusion, tamponade physiology (RA/RV collapse)",
+              "CRP or ESR: Elevated in 90%, marker of inflammation",
+              "CBC with differential: Leukocytosis if bacterial",
+              "Troponin: May be elevated if myopericarditis (myocardium involved)"
+            ],
+            "conditional_tests": [
+              "Pericardiocentesis: If large effusion, tamponade, or suspected bacterial/tuberculous pericarditis. Send fluid for: Cell count, Gram stain, culture (aerobic, anaerobic, fungal, AFB), glucose, protein, LDH, cytology, adenosine deaminase (ADA, if TB suspected)",
+              "Blood cultures: If fever or suspected bacterial pericarditis",
+              "Viral PCR (blood, pericardial fluid): Coxsackievirus, echovirus, adenovirus, influenza, COVID-19",
+              "TB testing: TST or IGRA, AFB smear and culture of pericardial fluid, ADA >40 U/L suggests TB",
+              "Cardiac MRI: If myopericarditis suspected (myocardium involved), assess inflammation"
+            ],
+            "when_not_to_test": "Do NOT delay pericardiocentesis if tamponade (life-threatening, urgent procedure). Do NOT skip echocardiography (assess effusion and tamponade). Do NOT perform pericardiocentesis for small effusions without tamponade (risk > benefit).",
+            "turnaround_time": "ECG: Immediate. Echo: <24 hours (urgent if tamponade). CRP/ESR: <1 hour. Pericardial fluid culture: 24-72 hours (AFB: 6-8 weeks). Viral PCR: 24-72 hours. ADA: 24 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "viral_causes": {
+              "coxsackievirus_echovirus": "Most common viral causes (50-70%). Enteroviruses. Acute pericarditis, usually self-limited. Good prognosis.",
+              "adenovirus": "10-20% of viral pericarditis. More common in children.",
+              "influenza": "5-10% of viral pericarditis. Seasonal.",
+              "covid_19": "Rare complication of COVID-19 (<1%). Usually mild, self-limited.",
+              "other_viruses": "EBV, CMV, HHV-6, HIV (rare)"
+            },
+            "bacterial_causes": {
+              "staphylococcus_aureus": "Most common bacterial cause (40-50%). MRSA 30-50%. Purulent pericarditis, high mortality (20-40%). Requires pericardiocentesis + antibiotics.",
+              "streptococcus_pneumoniae": "20-30% of bacterial pericarditis. Post-pneumonia complication.",
+              "gram_negative_rods": "10-20% of bacterial pericarditis. E. coli, Klebsiella, Pseudomonas. Healthcare-associated.",
+              "anaerobes": "5-10% of bacterial pericarditis. Polymicrobial, often with esophageal perforation."
+            },
+            "tuberculous_pericarditis": "5% of pericarditis in endemic areas (up to 50% in HIV-endemic areas). Mycobacterium tuberculosis. Subacute presentation (weeks to months). Pericardial fluid: Lymphocytic, elevated protein, low glucose, ADA >40 U/L. High mortality (10-20%) and risk of constrictive pericarditis (20-30%).",
+            "fungal_parasitic_causes": "Very rare. Candida, Aspergillus, Histoplasma (immunocompromised). Echinococcus (hydatid cyst, endemic areas)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "viral_pericarditis": "NSAIDs + Colchicine. Ibuprofen 600-800mg PO TID OR Aspirin 750-1000mg PO TID + Colchicine 0.6mg PO BID (if >70kg) or 0.6mg PO daily (if <70kg). Duration: 1-2 weeks, taper over 2-4 weeks. PPI (omeprazole 20mg PO daily) for GI protection. Avoid steroids (increase recurrence risk).",
+            "bacterial_pericarditis_suspected": "Vancomycin 15-20mg/kg IV q8-12h + Ceftriaxone 2g IV daily (covers S. aureus, Streptococcus, Gram-negatives). Pericardiocentesis REQUIRED (drainage + culture). Obtain blood cultures BEFORE antibiotics.",
+            "tuberculous_pericarditis_suspected": "Rifampin 600mg PO daily + Isoniazid 300mg PO daily + Pyrazinamide 1500-2000mg PO daily + Ethambutol 1200-1600mg PO daily (RIPE regimen). Duration: 2 months intensive phase, then 4-7 months continuation phase (rifampin + isoniazid). Add prednisone 1mg/kg/day x 4 weeks, taper over 4-8 weeks (reduces mortality and constrictive pericarditis risk).",
+            "cardiac_tamponade": "Urgent pericardiocentesis (life-saving). IV fluids (increase preload). Avoid diuretics and vasodilators (worsen tamponade). Antibiotics if purulent fluid.",
+            "alternatives": "NSAIDs contraindicated: Colchicine 0.6mg PO BID alone. Aspirin preferred if recent MI or coronary disease. Steroids (prednisone 0.25-0.5mg/kg/day) if NSAIDs and colchicine fail or contraindicated (but increase recurrence risk).",
+            "avoid_list": "Avoid steroids for viral pericarditis (increase recurrence risk 2-4x). Avoid diuretics and vasodilators if tamponade (worsen hemodynamics). Avoid NSAIDs if recent MI within 4 weeks (may impair healing)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "viral_pericarditis": "NSAIDs + Colchicine. Ibuprofen 600-800mg PO TID OR Aspirin 750-1000mg PO TID + Colchicine 0.6mg PO BID x 3 months (reduces recurrence from 30% to 10%). Taper NSAIDs over 2-4 weeks. Continue colchicine for 3 months total.",
+            "bacterial_pericarditis": "Antibiotics based on culture results. S. aureus: Cefazolin 2g IV q8h (MSSA) OR Vancomycin 15-20mg/kg IV q8-12h (MRSA). Streptococcus: Penicillin G 4 million units IV q4h OR Ceftriaxone 2g IV daily. Gram-negatives: Ceftriaxone 2g IV daily (susceptible) OR Meropenem 1g IV q8h (ESBL/CRE). Duration: 4-6 weeks IV antibiotics. Pericardiocentesis or surgical drainage REQUIRED.",
+            "tuberculous_pericarditis": "RIPE regimen (Rifampin + Isoniazid + Pyrazinamide + Ethambutol) x 2 months, then Rifampin + Isoniazid x 4-7 months (total 6-9 months). Add prednisone 1mg/kg/day x 4 weeks, taper over 4-8 weeks (reduces mortality 20% → 10% and constrictive pericarditis risk 30% → 10%). Pericardiocentesis if large effusion or tamponade.",
+            "fungal_pericarditis": "Candida: Micafungin 100mg IV daily OR Liposomal amphotericin B 5mg/kg IV daily. Aspergillus: Voriconazole 6mg/kg IV q12h x2, then 4mg/kg IV q12h. Duration: 4-6 weeks, then step down to PO. Pericardiocentesis or surgical drainage REQUIRED.",
+            "recurrent_pericarditis": "NSAIDs + Colchicine 0.6mg PO BID x 6 months (reduces recurrence from 50% to 20%). If fails: Steroids (prednisone 0.25-0.5mg/kg/day), taper slowly over 3-6 months. If refractory: Anakinra (IL-1 inhibitor) 100mg SC daily OR IVIG 2g/kg. Pericardiectomy if constrictive pericarditis develops.",
+            "de_escalation": "Discontinue antibiotics if bacterial pericarditis ruled out (negative cultures, viral etiology confirmed). Taper NSAIDs over 2-4 weeks. Continue colchicine for 3 months total.",
+            "iv_to_po_switch": "Bacterial pericarditis: Generally IV therapy for entire course (4-6 weeks). TB pericarditis: PO therapy throughout (RIPE regimen)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "viral_pericarditis": "NSAIDs: 1-2 weeks, taper over 2-4 weeks. Colchicine: 3 months total (reduces recurrence)",
+            "bacterial_pericarditis": "4-6 weeks IV antibiotics",
+            "tuberculous_pericarditis": "6-9 months (2 months RIPE, then 4-7 months rifampin + isoniazid). Steroids: 4 weeks full dose, taper over 4-8 weeks",
+            "recurrent_pericarditis": "Colchicine: 6 months (reduces recurrence). Steroids: Taper slowly over 3-6 months if needed",
+            "monitoring": "Weekly: CRP/ESR (assess response, guide duration). Repeat echo at 1 week (assess effusion resolution) and 1 month. Cardiology follow-up at 1, 3, 6 months. Monitor for recurrence (30% without colchicine, 10% with colchicine) and constrictive pericarditis (rare, 1-2% viral, 20-30% TB).",
+            "stop_criteria": "Viral pericarditis: Chest pain resolved, CRP/ESR normalized, effusion resolved or stable. Bacterial pericarditis: Completed 4-6 weeks antibiotics, afebrile, negative cultures, effusion resolved. TB pericarditis: Completed 6-9 months therapy, afebrile, effusion resolved."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "cardiac_tamponade": "Life-threatening. Pericardial effusion with hemodynamic compromise. Beck's triad: Hypotension, JVD, muffled heart sounds. Pulsus paradoxus >10mmHg. Echo: RA/RV collapse. Management: Urgent pericardiocentesis (life-saving). IV fluids (increase preload). Avoid diuretics and vasodilators. Mortality 10-20% if delayed.",
+            "purulent_pericarditis": "Bacterial pericarditis with purulent pericardial fluid. High mortality (20-40%). Requires pericardiocentesis or surgical drainage + IV antibiotics 4-6 weeks. Repeat drainage often needed (50%). Consider pericardial window or pericardiectomy if recurrent.",
+            "tuberculous_pericarditis": "Subacute presentation (weeks to months). Fever, night sweats, weight loss. Pericardial fluid: Lymphocytic, elevated protein, low glucose, ADA >40 U/L. AFB smear positive in 20-30%, culture positive in 50-70% (takes 6-8 weeks). Steroids reduce mortality (20% → 10%) and constrictive pericarditis risk (30% → 10%). Duration: 6-9 months.",
+            "constrictive_pericarditis": "Chronic complication (1-2% viral, 20-30% TB, 10-20% bacterial). Pericardium becomes thick and rigid, restricts cardiac filling. Symptoms: Dyspnea, edema, ascites, hepatomegaly. Diagnosis: Echo, cardiac MRI, cardiac catheterization. Management: Pericardiectomy (surgical removal of pericardium). Medical therapy ineffective.",
+            "myopericarditis": "Pericarditis + myocarditis (myocardium involved). Elevated troponin, LV dysfunction on echo. Management: NSAIDs + colchicine + supportive care. Avoid strenuous activity for 3-6 months. Prognosis: Usually good, but higher risk of arrhythmias and heart failure.",
+            "pregnancy": "Rare. Preferred: Aspirin (avoid NSAIDs in 3rd trimester, risk of premature ductus arteriosus closure). Colchicine: Avoid (teratogenic). Steroids: Safe if needed. Pericardiocentesis if tamponade. Consult maternal-fetal medicine.",
+            "immunocompromised": "Higher risk of bacterial, tuberculous, fungal pericarditis. Broader coverage (vancomycin + ceftriaxone + antifungal if severe). Longer duration of therapy. Consider atypical pathogens (Nocardia, Mycobacteria)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Discontinue antibiotics if bacterial pericarditis ruled out (negative cultures, viral etiology confirmed)",
+              "Taper NSAIDs over 2-4 weeks (avoid abrupt discontinuation, increases recurrence risk)",
+              "Avoid steroids for viral pericarditis (increase recurrence risk 2-4x)",
+              "Continue colchicine for 3 months total (reduces recurrence from 30% to 10%)"
+            ],
+            "timeout_checklist": [
+              "Is this pericarditis or ACS? (ECG: Diffuse ST elevation in pericarditis vs localized in ACS)",
+              "Is there pericardial effusion? (Echo required)",
+              "Is there cardiac tamponade? (Hypotension, tachycardia, pulsus paradoxus - urgent pericardiocentesis)",
+              "Is this viral or bacterial? (Viral = NSAIDs + colchicine, bacterial = antibiotics + drainage)",
+              "Is TB suspected? (Subacute, endemic area, ADA >40 U/L - start RIPE + steroids)",
+              "Are blood cultures and pericardial fluid cultures obtained? (If bacterial suspected)",
+              "Is CRP/ESR elevated? (Marker of inflammation, guide duration)",
+              "Is cardiology consulted? (Recommended for moderate-severe pericarditis)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use antibiotics for viral pericarditis (no benefit, NSAIDs + colchicine only). Do NOT use steroids for viral pericarditis (increase recurrence risk 2-4x). Do NOT perform pericardiocentesis for small effusions without tamponade (risk > benefit).",
+            "diagnostic_stewardship": "Do NOT skip echocardiography (assess effusion and tamponade). Do NOT delay pericardiocentesis if tamponade (life-threatening). Do NOT miss TB pericarditis (subacute, endemic area, ADA >40 U/L)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "ESC Guidelines for Pericardial Diseases (2015)",
+              "url": "https://academic.oup.com/eurheartj/article/36/42/2921/2293375"
+            },
+            {
+              "label": "AHA Scientific Statement on Pericarditis (2021)",
+              "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001052"
+            },
+            {
+              "label": "WHO Guidelines for Tuberculous Pericarditis (2021)",
+              "url": "https://www.who.int/publications/i/item/9789240037021"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "suppurative-thrombophlebitis",
+      "name": "Suppurative Thrombophlebitis",
+      "synonyms": ["septic thrombophlebitis", "infected thrombophlebitis", "Lemierre syndrome"],
+      "icd10": ["I80.8", "I80.9", "I76"],
+      "severity": ["moderate", "severe"],
+      "shortDescription": "Infected venous thrombosis requiring catheter removal, antibiotics, and often surgical excision",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Suppurative thrombophlebitis is infection of a vein with associated thrombosis. Peripheral (superficial veins, IV catheter sites) vs central (deep veins, central lines, internal jugular). Lemierre syndrome: Internal jugular vein thrombophlebitis following pharyngitis (Fusobacterium necrophorum). Mortality: 5-10% (peripheral), 20-40% (central, Lemierre syndrome).",
+            "clinical_presentation": "Peripheral: Erythema, warmth, tenderness, palpable cord along vein, purulent drainage at catheter site. Central: Fever, chills, bacteremia, septic emboli (lungs, brain, joints), no visible external signs. Lemierre syndrome: Pharyngitis → neck pain/swelling → septic pulmonary emboli (cough, hemoptysis, chest pain).",
+            "diagnostic_criteria": "Clinical suspicion (catheter-related, IV drug use) + bacteremia + imaging (ultrasound, CT, MRI) showing venous thrombosis + inflammation. Definitive: Positive blood cultures + imaging confirmation.",
+            "risk_factors": [
+              "Peripheral IV catheter (most common, 70-80%)",
+              "Central venous catheter (PICC, CVC, hemodialysis catheter)",
+              "IV drug use (IVDU)",
+              "Prolonged catheter dwell time (>72 hours)",
+              "Hypercoagulable state (cancer, pregnancy, thrombophilia)",
+              "Recent pharyngitis (Lemierre syndrome)"
+            ],
+            "red_flags": [
+              "Septic pulmonary emboli - central thrombophlebitis or Lemierre syndrome, high mortality",
+              "Persistent bacteremia despite catheter removal - inadequate source control, surgical excision needed",
+              "Lemierre syndrome - internal jugular thrombophlebitis, high mortality (20-40%)",
+              "IVDU - high risk of S. aureus, MRSA, polymicrobial, recurrence common",
+              "Fungemia - Candida thrombophlebitis, requires catheter removal + prolonged antifungal"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Suspect suppurative thrombophlebitis if: Catheter-related bacteremia + persistent fever despite catheter removal. Obtain imaging (ultrasound, CT) to confirm venous thrombosis. Blood cultures BEFORE antibiotics.",
+            "essential_tests": [
+              "Blood cultures x2 sets BEFORE antibiotics (positive in 80-90%)",
+              "Ultrasound with Doppler: First-line for peripheral veins (sensitivity 80-90%)",
+              "CT with contrast: For central veins, internal jugular, superior vena cava (sensitivity 90-95%)",
+              "CBC with differential: Leukocytosis (WBC >15,000)",
+              "CRP or ESR: Elevated in 90%"
+            ],
+            "conditional_tests": [
+              "MRI with contrast: If CT inconclusive or better soft tissue detail needed",
+              "Chest X-ray or CT chest: If septic pulmonary emboli suspected (Lemierre, central thrombophlebitis)",
+              "Catheter tip culture: If catheter removed (send tip for culture)",
+              "D-dimer: Elevated (nonspecific, but normal D-dimer makes thrombosis unlikely)"
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics >1 hour if septic. Do NOT skip imaging (confirms diagnosis, guides management). Do NOT delay catheter removal (source control critical).",
+            "turnaround_time": "Blood cultures: Preliminary 24-48 hours. Ultrasound: <24 hours. CT: <24 hours (urgent if unstable). Catheter tip culture: 24-72 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "common_organisms": {
+              "staphylococcus_aureus": "Most common (50-70%). MRSA 30-50% in healthcare-associated. Aggressive course, high risk of septic emboli. Requires catheter removal + antibiotics 4-6 weeks.",
+              "coagulase_negative_staphylococci": "10-20%. S. epidermidis most common. Methicillin-resistant 60-80%. Biofilm formation on catheters. Subacute presentation.",
+              "gram_negative_rods": "10-20%. E. coli, Klebsiella, Pseudomonas, Enterobacter. Healthcare-associated. ESBL/CRE common.",
+              "candida_species": "5-10%. C. albicans, C. parapsilosis, C. glabrata. Risk factors: TPN, prolonged antibiotics, immunosuppression. Requires catheter removal + antifungal 4-6 weeks.",
+              "fusobacterium_necrophorum": "Lemierre syndrome. Anaerobic Gram-negative rod. Pharyngitis → internal jugular thrombophlebitis → septic emboli. High mortality (20-40%)."
+            },
+            "polymicrobial": "10-20% of cases. Often IVDU or contaminated catheters. S. aureus + Streptococcus + Gram-negatives + anaerobes.",
+            "resistance_patterns": "MRSA: 30-50% of S. aureus. Methicillin-resistant CoNS: 60-80%. ESBL: 20-40% of Gram-negatives. CRE: 5-10% in healthcare-associated."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "peripheral_thrombophlebitis": "Vancomycin 15-20mg/kg IV q8-12h (covers MRSA, CoNS). Catheter removal REQUIRED.",
+            "central_thrombophlebitis": "Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h (covers MRSA, CoNS, Gram-negatives). Catheter removal REQUIRED.",
+            "lemierre_syndrome": "Metronidazole 500mg IV q8h + Ceftriaxone 2g IV daily (covers Fusobacterium, anaerobes, Streptococcus). Alternative: Piperacillin-tazobactam 4.5g IV q6h.",
+            "ivdu": "Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h (covers MRSA, Pseudomonas, polymicrobial).",
+            "fungal_suspected": "Add micafungin 100mg IV daily if risk factors (TPN, prolonged antibiotics, immunosuppression, persistent fever despite antibiotics).",
+            "alternatives": "Vancomycin allergy: Daptomycin 6-8mg/kg IV daily. Penicillin allergy (Lemierre): Metronidazole 500mg IV q8h + Levofloxacin 750mg IV daily.",
+            "avoid_list": "Avoid oral antibiotics (IV therapy required). Avoid antibiotics alone without catheter removal (failure rate 70-90%). Avoid monotherapy if central or IVDU (polymicrobial risk)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "staphylococcus_aureus": "MSSA: Cefazolin 2g IV q8h OR Nafcillin 2g IV q4h. MRSA: Vancomycin 15-20mg/kg IV q8-12h OR Daptomycin 8-10mg/kg IV daily. Duration: 4-6 weeks after catheter removal (2 weeks if peripheral + no bacteremia).",
+            "coagulase_negative_staphylococci": "Vancomycin 15-20mg/kg IV q8-12h (if methicillin-resistant) OR Cefazolin 2g IV q8h (if methicillin-susceptible, rare). Duration: 2-4 weeks after catheter removal.",
+            "gram_negative_rods": "E. coli/Klebsiella (susceptible): Ceftriaxone 2g IV daily. ESBL: Meropenem 1g IV q8h. Pseudomonas: Cefepime 2g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h. Duration: 2-4 weeks after catheter removal.",
+            "fusobacterium_lemierre": "Metronidazole 500mg IV q8h + Penicillin G 4 million units IV q4h OR Piperacillin-tazobactam 4.5g IV q6h. Duration: 4-6 weeks. Anticoagulation controversial (consult hematology).",
+            "candida": "Micafungin 100mg IV daily OR Liposomal amphotericin B 5mg/kg IV daily. Duration: 4-6 weeks after catheter removal. Step down to fluconazole 400mg PO daily if C. albicans and stable (after 2 weeks IV therapy).",
+            "surgical_excision": "Indicated if: (1) Peripheral vein thrombophlebitis (excise infected vein segment), (2) Persistent bacteremia despite catheter removal + antibiotics, (3) Extensive thrombosis or abscess formation. Improves cure rate from 60-70% to 90-95%.",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Switch from vancomycin to cefazolin if MSSA. Narrow to pathogen-specific therapy. Discontinue antifungal if Candida ruled out.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >48 hours, (2) Negative repeat blood cultures, (3) Catheter removed, (4) Peripheral thrombophlebitis only (no central), (5) Good oral bioavailability option (linezolid 600mg PO BID for MRSA, fluoroquinolones for Gram-negatives, fluconazole 400mg PO daily for Candida)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "peripheral_thrombophlebitis_no_bacteremia": "2 weeks after catheter removal (or surgical excision)",
+            "central_thrombophlebitis_or_bacteremia": "4-6 weeks after catheter removal (start counting from first negative blood culture)",
+            "lemierre_syndrome": "4-6 weeks",
+            "candida_thrombophlebitis": "4-6 weeks after catheter removal (2 weeks IV, then step down to PO fluconazole if C. albicans)",
+            "monitoring": "Daily blood cultures until negative (if bacteremia). Repeat blood cultures at end of therapy. Weekly: CBC, CMP, CRP/ESR, vancomycin trough (if used). Repeat imaging at 1-2 weeks (assess thrombus resolution). Follow-up at 1, 3, 6 months.",
+            "stop_criteria": "Completed adequate duration (2-6 weeks after catheter removal). Afebrile >1 week. Negative repeat blood cultures. Improving CRP/ESR. Thrombus resolved or stable on imaging. No signs of recurrent infection."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "catheter_removal": "CRITICAL for cure. Remove catheter as soon as possible (within 24 hours of diagnosis). Antibiotics alone fail 70-90%. Send catheter tip for culture. Do NOT retain catheter unless absolutely necessary (high failure rate).",
+            "surgical_excision": "Indicated for peripheral vein thrombophlebitis (excise infected vein segment). Improves cure rate from 60-70% to 90-95%. Also indicated if persistent bacteremia despite catheter removal + antibiotics. Consult vascular surgery.",
+            "lemierre_syndrome": "Internal jugular vein thrombophlebitis following pharyngitis. Fusobacterium necrophorum (anaerobic). Septic pulmonary emboli common (70-80%). High mortality (20-40%). Management: Antibiotics 4-6 weeks (metronidazole + penicillin OR piperacillin-tazobactam). Anticoagulation controversial (consult hematology). Surgical drainage if abscess.",
+            "anticoagulation": "Controversial. NOT routinely recommended for suppurative thrombophlebitis (infection is primary issue, not thrombosis). Consider if: (1) Extensive thrombosis, (2) Propagating thrombus despite antibiotics, (3) Hypercoagulable state. Consult hematology. Avoid if high bleeding risk.",
+            "ivdu": "High risk of S. aureus, MRSA, polymicrobial. Recurrence common (30-50%) if continued drug use. Longer duration (4-6 weeks). Harm reduction counseling. Consider addiction medicine referral.",
+            "pregnancy": "Rare but high risk. Preferred: Cefazolin (MSSA), vancomycin (MRSA). Avoid: Aminoglycosides (ototoxicity), fluoroquinolones (cartilage damage), metronidazole (1st trimester). Catheter removal required. Anticoagulation if indicated (LMWH preferred). Consult maternal-fetal medicine.",
+            "immunocompromised": "Higher mortality (20-30%). Broader coverage (vancomycin + cefepime + micafungin). Longer duration (4-6 weeks minimum). Higher risk of fungal thrombophlebitis. Catheter removal critical."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Switch from vancomycin to cefazolin if MSSA confirmed",
+              "Narrow to pathogen-specific therapy within 48-72 hours based on culture results",
+              "Discontinue antifungal if Candida ruled out (negative cultures at 48-72 hours)",
+              "Switch IV to PO after catheter removal if peripheral thrombophlebitis only and stable"
+            ],
+            "timeout_checklist": [
+              "Is the catheter removed? (CRITICAL for cure, antibiotics alone fail 70-90%)",
+              "Are repeat blood cultures negative? (Document clearance)",
+              "What is the organism and susceptibilities? (Determines therapy and duration)",
+              "Is this peripheral or central thrombophlebitis? (Determines duration: 2 weeks vs 4-6 weeks)",
+              "Is imaging obtained? (Confirms diagnosis, assesses extent of thrombosis)",
+              "Is surgical excision indicated? (Peripheral vein, persistent bacteremia)",
+              "Can I switch vancomycin to cefazolin? (If MSSA confirmed)",
+              "Can I switch IV to PO? (If peripheral, catheter removed, afebrile, stable)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use antibiotics alone without catheter removal (failure rate 70-90%). Do NOT use anticoagulation routinely (controversial, consult hematology). Do NOT delay catheter removal (increases mortality and complications).",
+            "diagnostic_stewardship": "Do NOT skip imaging (confirms diagnosis, guides management). Do NOT delay blood cultures for antibiotics if septic (but obtain within 1 hour). Do NOT miss Lemierre syndrome (pharyngitis → neck pain → septic emboli)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Intravascular Catheter-Related Infection Guidelines (2009, updated 2021)",
+              "url": "https://www.idsociety.org/practice-guideline/intravascular-catheter-related-infection/"
+            },
+            {
+              "label": "IDSA Staphylococcus aureus Bacteremia Guidelines (2011, updated 2024)",
+              "url": "https://www.idsociety.org/practice-guideline/staphylococcus-aureus-bacteremia/"
+            },
+            {
+              "label": "Lemierre Syndrome: Clinical Review (2020)",
+              "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7144538/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
+

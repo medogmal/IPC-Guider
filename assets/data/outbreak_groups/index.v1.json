@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "updatedAt": "2025-01-11T00:00:00Z",
+  "types": [
+    {
+      "id": "bacterial",
+      "name": "Bacterial Pathogens",
+      "icon": "bacteria",
+      "color": "#E53935",
+      "groups": [
+        {
+          "id": "mdro_hai",
+          "name": "MDROs / HAI",
+          "icon": "shield_moon",
+          "pathogenCount": 7,
+          "dataFile": "bacterial/mdro_hai.v1.json"
+        },
+        {
+          "id": "respiratory",
+          "name": "Respiratory",
+          "icon": "air",
+          "pathogenCount": 8,
+          "dataFile": "bacterial/respiratory.v1.json"
+        },
+        {
+          "id": "foodborne_waterborne",
+          "name": "Foodborne & Waterborne",
+          "icon": "restaurant",
+          "pathogenCount": 7,
+          "dataFile": "bacterial/foodborne_waterborne.v1.json"
+        },
+        {
+          "id": "skin_soft_tissue",
+          "name": "Skin & Soft Tissue",
+          "icon": "healing",
+          "pathogenCount": 3,
+          "dataFile": "bacterial/skin_soft_tissue.v1.json"
+        },
+        {
+          "id": "meningitis",
+          "name": "Meningitis",
+          "icon": "psychology",
+          "pathogenCount": 4,
+          "dataFile": "bacterial/meningitis.v1.json"
+        },
+        {
+          "id": "zoonotic_bioterrorism",
+          "name": "Zoonotic & Bioterrorism",
+          "icon": "warning",
+          "pathogenCount": 11,
+          "dataFile": "bacterial/zoonotic_bioterrorism.v1.json"
+        },
+        {
+          "id": "miscellaneous_bacterial",
+          "name": "Miscellaneous",
+          "icon": "more_horiz",
+          "pathogenCount": 5,
+          "dataFile": "bacterial/miscellaneous_bacterial.v1.json"
+        }
+      ]
+    },
+    {
+      "id": "viral",
+      "name": "Viral Pathogens",
+      "icon": "coronavirus",
+      "color": "#8E24AA",
+      "groups": [
+        {
+          "id": "respiratory_viral",
+          "name": "Respiratory Viral Outbreak Pathogens",
+          "icon": "air",
+          "pathogenCount": 8,
+          "dataFile": "viral/respiratory_viral.v1.json"
+        },
+        {
+          "id": "gastroenteric_viral",
+          "name": "Gastroenteric (Enteric/Waterborne)",
+          "icon": "water_drop",
+          "pathogenCount": 7,
+          "dataFile": "viral/gastroenteric_viral.v1.json"
+        },
+        {
+          "id": "skin_rash_viral",
+          "name": "Viral Skin Rash (Exanthematous)",
+          "icon": "healing",
+          "pathogenCount": 6,
+          "dataFile": "viral/skin_rash_viral.v1.json"
+        },
+        {
+          "id": "bloodborne_viral",
+          "name": "Bloodborne Viral",
+          "icon": "bloodtype",
+          "pathogenCount": 5,
+          "dataFile": "viral/bloodborne_viral.v1.json"
+        },
+        {
+          "id": "arboviral_zoonotic_viral",
+          "name": "Arboviral & Zoonotic Viral",
+          "icon": "bug_report",
+          "pathogenCount": 9,
+          "dataFile": "viral/arboviral_zoonotic_viral.v1.json"
+        },
+        {
+          "id": "hemorrhagic_bioterrorism",
+          "name": "Hemorrhagic Fever & Bioterrorism",
+          "icon": "warning",
+          "pathogenCount": 8,
+          "dataFile": "viral/hemorrhagic_bioterrorism.v1.json"
+        }
+      ]
+    },
+    {
+      "id": "fungal",
+      "name": "Fungal Pathogens",
+      "icon": "eco",
+      "color": "#F57C00",
+      "groups": [
+        {
+          "id": "yeast",
+          "name": "Yeast",
+          "icon": "bubble_chart",
+          "pathogenCount": 4,
+          "dataFile": "fungal/yeast_fungal.v1.json"
+        },
+        {
+          "id": "mold",
+          "name": "Mold",
+          "icon": "grain",
+          "pathogenCount": 5,
+          "dataFile": "fungal/mold_fungal.v1.json"
+        },
+        {
+          "id": "dimorphic",
+          "name": "Dimorphic",
+          "icon": "change_circle",
+          "pathogenCount": 3,
+          "dataFile": "fungal/dimorphic_fungal.v1.json"
+        }
+      ]
+    }
+  ]
+}
+

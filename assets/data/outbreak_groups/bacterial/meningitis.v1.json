@@ -1,0 +1,482 @@
+{
+  "version": 1,
+  "groupId": "meningitis",
+  "groupName": "Meningitis",
+  "type": "bacterial",
+  "updatedAt": "2025-01-14T00:00:00Z",
+  "pathogens": [
+    {
+      "id": "neisseria_meningitidis",
+      "name": "Neisseria meningitidis",
+      "scientificName": "Neisseria meningitidis (Meningococcus)",
+      "definition": "Gram-negative diplococcus causing meningococcal meningitis and septicemia (meningococcemia). N. meningitidis is a leading cause of bacterial meningitis worldwide, with potential for rapid progression and high mortality.",
+      "reservoir": {
+        "primary": [
+          "Human nasopharynx (asymptomatic carriage in 5-10% of population)"
+        ],
+        "secondary": [
+          "Respiratory secretions of carriers"
+        ],
+        "notes": "Humans are the only reservoir. Asymptomatic nasopharyngeal carriage is common, especially in adolescents and young adults. Only certain strains (serogroups A, B, C, W, X, Y) cause invasive disease."
+      },
+      "transmission": {
+        "mode": "Respiratory droplets",
+        "routes": [
+          "Respiratory droplets from close contact (coughing, sneezing, kissing)",
+          "Direct contact with respiratory secretions",
+          "Sharing utensils, drinks, or cigarettes",
+          "Close living quarters (dormitories, military barracks, households)"
+        ],
+        "notes": "Requires close contact (within 1 meter for >8 hours). Transmission is more common in crowded settings."
+      },
+      "incubationPeriod": {
+        "range": "2-10 days (average 4 days)",
+        "infectiousPeriod": "Contagious during nasopharyngeal carriage or illness (until 24 hours after effective antibiotic treatment)",
+        "seasonality": "Winter and spring peaks in temperate climates; dry season in sub-Saharan Africa (meningitis belt)",
+        "geographic": "Worldwide, with highest incidence in sub-Saharan Africa (meningitis belt) and among adolescents/young adults"
+      },
+      "riskFactors": [
+        "Crowding and close contact (dormitories, military barracks, pilgrimage)",
+        "Close contacts of cases (household members, kissing contacts)",
+        "Immunodeficiency (complement deficiency, HIV)",
+        "Asplenia or functional splenectomy",
+        "Age (infants, adolescents, young adults)",
+        "Active or passive smoking",
+        "Recent viral upper respiratory infection"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Sudden onset of high fever",
+          "Severe headache",
+          "Stiff neck (nuchal rigidity)",
+          "Altered mental status or confusion",
+          "Photophobia (sensitivity to light)",
+          "Nausea and vomiting",
+          "Petechial or purpuric rash (non-blanching) - hallmark of meningococcemia"
+        ],
+        "complications": [
+          "Septic shock and multi-organ failure",
+          "Disseminated intravascular coagulation (DIC)",
+          "Limb necrosis requiring amputation",
+          "Hearing loss and deafness",
+          "Neurological sequelae (seizures, cognitive impairment)",
+          "Death (10-15% mortality even with treatment; up to 40% without treatment)",
+          "Waterhouse-Friderichsen syndrome (adrenal hemorrhage)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with sudden onset of fever + headache + stiff neck + altered mental status, OR petechial/purpuric rash + epidemiological link to confirmed case",
+          "confirmed": "Clinical illness + laboratory confirmation: positive CSF or blood culture for N. meningitidis, OR positive PCR, OR Gram stain showing Gram-negative diplococci in CSF"
+        }
+      },
+      "diagnosis": [
+        "CSF analysis: elevated WBC (neutrophils), low glucose, high protein",
+        "CSF culture (gold standard) - chocolate agar with CO2",
+        "Blood culture",
+        "PCR for N. meningitidis DNA (CSF, blood)",
+        "Gram stain of CSF (Gram-negative diplococci)",
+        "Latex agglutination or antigen detection"
+      ],
+      "treatment": "IV penicillin G or ampicillin (if susceptible), OR third-generation cephalosporins (ceftriaxone, cefotaxime - first-line empiric). Supportive care: IV fluids, vasopressors for shock, seizure management. Dexamethasone (adjunct, controversial). Duration: 5-7 days.",
+      "infectionControl": {
+        "precautions": "Droplet Precautions (surgical mask, private room if possible) until 24 hours after effective antibiotic treatment",
+        "screening": "Not routinely recommended; identify close contacts for prophylaxis",
+        "cohorting": "Isolate cases; cohort if multiple cases",
+        "sourceControl": "Chemoprophylaxis for close contacts (ciprofloxacin, rifampin, or ceftriaxone) within 24 hours",
+        "environmental": "Standard cleaning; no special environmental measures needed",
+        "staffEducation": "Droplet precautions, recognition of meningococcal disease (petechial rash, rapid progression), contact identification, chemoprophylaxis protocols"
+      },
+      "outbreakTriggers": [
+        "≥2 confirmed cases epidemiologically linked within 3 months in a community or institution",
+        "≥3 cases of same serogroup in population <100,000 over 3 months (attack rate >10 per 100,000)",
+        "Single case in closed setting (school, dormitory, military barracks) may trigger enhanced surveillance",
+        "Cluster above baseline rate"
+      ],
+      "reportingCommunication": [
+        "Immediate notification to public health authorities (within 24 hours or sooner)",
+        "Initiate contact tracing and chemoprophylaxis immediately",
+        "Vaccination campaigns for at-risk populations (serogroup-specific vaccines)",
+        "Public health alerts and media communication",
+        "Coordinate with schools, universities, military, or other institutions",
+        "Follow national/international outbreak response protocols"
+      ],
+      "prevention": [
+        "Vaccination for at-risk groups: adolescents, college students, military recruits, pilgrims, travelers to endemic areas",
+        "Meningococcal vaccines: MenACWY (conjugate), MenB (recombinant)",
+        "Awareness of symptoms and rapid healthcare seeking",
+        "Chemoprophylaxis for close contacts",
+        "Avoid sharing drinks, utensils, or cigarettes",
+        "Respiratory hygiene and cough etiquette",
+        "Reduce crowding when possible"
+      ],
+      "references": [
+        {
+          "label": "WHO - Meningococcal Disease",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/meningococcal-meningitis"
+        },
+        {
+          "label": "CDC - Meningococcal Disease",
+          "url": "https://www.cdc.gov/meningococcal/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Meningitis Guidelines",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "strep_pneumoniae_meningitis",
+      "name": "Streptococcus pneumoniae (meningitis)",
+      "scientificName": "Streptococcus pneumoniae (Pneumococcus)",
+      "definition": "Gram-positive diplococcus causing pneumococcal meningitis, particularly in children and elderly. S. pneumoniae is the most common cause of bacterial meningitis in adults and a leading cause in children, often following respiratory infection or otitis media.",
+      "reservoir": {
+        "primary": [
+          "Human nasopharynx (asymptomatic carriage in 5-10% of adults, 20-40% of children)"
+        ],
+        "secondary": [
+          "Respiratory secretions"
+        ],
+        "notes": "Humans are the only reservoir. Nasopharyngeal carriage is common, especially in young children. Carriage rates vary by age, season, and vaccination status."
+      },
+      "transmission": {
+        "mode": "Respiratory droplets",
+        "routes": [
+          "Respiratory droplets from close contact (coughing, sneezing)",
+          "Direct contact with respiratory secretions",
+          "Autoinoculation from nasopharynx to middle ear or sinuses, then to meninges"
+        ],
+        "notes": "Meningitis often follows respiratory infection, otitis media, or sinusitis. Transmission is person-to-person via respiratory droplets."
+      },
+      "incubationPeriod": {
+        "range": "1-3 days (variable, often follows upper respiratory infection)",
+        "infectiousPeriod": "Contagious during nasopharyngeal carriage or illness",
+        "seasonality": "Winter and spring peaks (respiratory season)",
+        "geographic": "Worldwide, with higher incidence in developing countries and among unvaccinated populations"
+      },
+      "riskFactors": [
+        "Age extremes (young children <2 years, elderly >65 years)",
+        "Immunodeficiency (HIV, complement deficiency, immunosuppressive therapy)",
+        "Chronic diseases (diabetes, heart disease, lung disease, liver disease, kidney disease)",
+        "Asplenia or functional splenectomy",
+        "Cochlear implants or CSF leaks",
+        "Recent head trauma or neurosurgery",
+        "Smoking and alcohol abuse"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Fever and chills",
+          "Severe headache",
+          "Stiff neck (nuchal rigidity)",
+          "Altered mental status, confusion, or lethargy",
+          "Photophobia",
+          "Nausea and vomiting",
+          "Seizures (20-30% of cases)"
+        ],
+        "complications": [
+          "Hearing loss and deafness (30% of survivors)",
+          "Neurological sequelae (cognitive impairment, seizures, focal deficits)",
+          "Brain abscess",
+          "Subdural empyema",
+          "Hydrocephalus",
+          "Death (15-20% mortality in adults; higher in elderly)",
+          "Septic shock"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with fever + headache + stiff neck + altered mental status, often with history of recent respiratory infection, otitis media, or sinusitis",
+          "confirmed": "Clinical illness + laboratory confirmation: positive CSF or blood culture for S. pneumoniae, OR positive PCR, OR Gram stain showing Gram-positive diplococci in CSF"
+        }
+      },
+      "diagnosis": [
+        "CSF analysis: elevated WBC (neutrophils), low glucose, high protein",
+        "CSF culture (gold standard) - blood agar",
+        "Blood culture",
+        "Gram stain of CSF (Gram-positive diplococci, lancet-shaped)",
+        "Pneumococcal antigen detection (urine, CSF)",
+        "PCR for S. pneumoniae",
+        "CT or MRI brain (to assess complications)"
+      ],
+      "treatment": "High-dose IV penicillin G or ampicillin (if susceptible), OR third-generation cephalosporins (ceftriaxone, cefotaxime) + vancomycin (empiric for penicillin-resistant strains). Dexamethasone (adjunct, given before or with first antibiotic dose - reduces mortality and hearing loss). Duration: 10-14 days.",
+      "infectionControl": {
+        "precautions": "Droplet Precautions (surgical mask) for first 24 hours of effective antibiotic treatment; then Standard Precautions",
+        "screening": "Not routinely recommended",
+        "cohorting": "Isolate cases during first 24 hours of treatment",
+        "sourceControl": "Not applicable (no chemoprophylaxis for contacts)",
+        "environmental": "Standard cleaning",
+        "staffEducation": "Droplet precautions, recognition of meningitis symptoms, vaccination importance, dexamethasone administration timing"
+      },
+      "outbreakTriggers": [
+        "Single confirmed case in closed setting (daycare, nursing home, school)",
+        "≥2 epidemiologically linked cases",
+        "Cluster above baseline rate",
+        "Emergence of vaccine-escape serotypes"
+      ],
+      "reportingCommunication": [
+        "Prompt notification to public health authorities (within 24 hours)",
+        "Initiate contact investigation in closed settings",
+        "Assess vaccination coverage in affected population",
+        "Consider vaccination campaigns if outbreak involves vaccine-preventable serotypes",
+        "Update stakeholders and healthcare providers"
+      ],
+      "prevention": [
+        "Vaccination: PCV13 (pneumococcal conjugate vaccine) for children and high-risk adults; PPSV23 (pneumococcal polysaccharide vaccine) for adults ≥65 years and high-risk groups",
+        "Awareness of symptoms and rapid healthcare seeking",
+        "Respiratory hygiene and cough etiquette",
+        "Smoking cessation",
+        "Management of chronic diseases",
+        "Prompt treatment of respiratory infections, otitis media, and sinusitis"
+      ],
+      "references": [
+        {
+          "label": "WHO - Pneumococcal Meningitis",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/pneumonia"
+        },
+        {
+          "label": "CDC - Pneumococcal Disease",
+          "url": "https://www.cdc.gov/pneumococcal/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Meningitis Guidelines",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "haemophilus_influenzae_b",
+      "name": "Haemophilus influenzae type b (Hib)",
+      "scientificName": "Haemophilus influenzae type b",
+      "definition": "Gram-negative coccobacillus; major cause of childhood meningitis before Hib vaccine. H. influenzae type b was the leading cause of bacterial meningitis in children <5 years before widespread vaccination.",
+      "reservoir": {
+        "primary": [
+          "Human nasopharynx (asymptomatic carriage in 2-5% of children, <1% of adults)"
+        ],
+        "secondary": [
+          "Respiratory secretions"
+        ],
+        "notes": "Humans are the only reservoir. Carriage rates have dramatically decreased since introduction of Hib vaccine. Non-typeable H. influenzae (NTHi) can also cause invasive disease but is less common."
+      },
+      "transmission": {
+        "mode": "Respiratory droplets",
+        "routes": [
+          "Respiratory droplets from close contact (coughing, sneezing)",
+          "Direct contact with respiratory secretions",
+          "Close contact with carriers or cases (household, daycare)"
+        ],
+        "notes": "Transmission requires close contact. Invasive disease is rare in vaccinated populations."
+      },
+      "incubationPeriod": {
+        "range": "2-4 days (variable)",
+        "infectiousPeriod": "Contagious during nasopharyngeal carriage or illness (until 24-48 hours after effective antibiotic treatment)",
+        "seasonality": "Fall and winter peaks (respiratory season)",
+        "geographic": "Worldwide, with highest incidence in unvaccinated populations and developing countries"
+      },
+      "riskFactors": [
+        "Unvaccinated children <5 years (especially <2 years)",
+        "Close contacts of cases (household members, daycare)",
+        "Immunodeficiency (HIV, complement deficiency, asplenia)",
+        "Crowded living conditions",
+        "Lack of breastfeeding",
+        "Exposure to tobacco smoke",
+        "Cochlear implants or CSF leaks"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Fever and irritability (especially in infants)",
+          "Stiff neck (nuchal rigidity) - may be absent in infants",
+          "Lethargy or altered mental status",
+          "Poor feeding and vomiting (infants)",
+          "Bulging fontanelle (infants)",
+          "Seizures",
+          "High-pitched cry (infants)"
+        ],
+        "complications": [
+          "Hearing loss and deafness (15-30% of survivors)",
+          "Neurological sequelae (developmental delay, cognitive impairment, seizures)",
+          "Subdural effusions",
+          "Hydrocephalus",
+          "Brain abscess",
+          "Death (3-6% mortality with treatment; higher without treatment)",
+          "Other invasive Hib diseases (epiglottitis, pneumonia, septic arthritis)"
+        ],
+        "caseDefinition": {
+          "suspected": "Child with fever + irritability + stiff neck + lethargy, OR bulging fontanelle (infants) + history of incomplete Hib vaccination or exposure to case",
+          "confirmed": "Clinical illness + laboratory confirmation: positive CSF or blood culture for H. influenzae type b, OR positive PCR with serotyping confirming type b"
+        }
+      },
+      "diagnosis": [
+        "CSF analysis: elevated WBC (neutrophils), low glucose, high protein",
+        "CSF culture (gold standard) - chocolate agar with CO2",
+        "Blood culture",
+        "Gram stain of CSF (Gram-negative coccobacilli)",
+        "PCR for H. influenzae",
+        "Serotyping to confirm type b (capsular antigen detection)",
+        "Latex agglutination for capsular antigen"
+      ],
+      "treatment": "Third-generation cephalosporins (ceftriaxone or cefotaxime) - first-line empiric (due to ampicillin resistance). Dexamethasone (adjunct, given before or with first antibiotic dose - reduces hearing loss). Duration: 7-10 days.",
+      "infectionControl": {
+        "precautions": "Droplet Precautions (surgical mask) until 24 hours after effective antibiotic treatment",
+        "screening": "Not routinely recommended; identify close contacts for prophylaxis",
+        "cohorting": "Isolate cases during first 24 hours of treatment",
+        "sourceControl": "Chemoprophylaxis for close contacts (rifampin) if household includes unvaccinated or incompletely vaccinated children <4 years",
+        "environmental": "Standard cleaning",
+        "staffEducation": "Droplet precautions, recognition of invasive Hib disease, vaccination importance, contact prophylaxis protocols"
+      },
+      "outbreakTriggers": [
+        "Any confirmed invasive Hib case triggers outbreak investigation (especially in vaccinated populations)",
+        "≥2 cases in same community or institution within 60 days",
+        "Single case in daycare or household with unvaccinated children",
+        "Cluster suggesting vaccine failure or waning immunity"
+      ],
+      "reportingCommunication": [
+        "Urgent notification to public health authorities (within 24 hours)",
+        "Implement outbreak control measures immediately",
+        "Chemoprophylaxis for household and daycare contacts",
+        "Assess vaccination coverage and vaccine failure",
+        "Public health alerts and vaccination campaigns if needed",
+        "Coordinate with pediatric and infectious disease specialists"
+      ],
+      "prevention": [
+        "Hib vaccination: primary series at 2, 4, 6 months + booster at 12-15 months (part of routine childhood immunization)",
+        "Catch-up vaccination for unvaccinated or incompletely vaccinated children",
+        "Chemoprophylaxis for close contacts (rifampin)",
+        "Respiratory hygiene and cough etiquette",
+        "Awareness of symptoms and rapid healthcare seeking",
+        "Breastfeeding (protective effect)",
+        "Avoid exposure to tobacco smoke"
+      ],
+      "references": [
+        {
+          "label": "WHO - Haemophilus influenzae type b (Hib)",
+          "url": "https://www.who.int/teams/immunization-vaccines-and-biologicals/diseases/haemophilus-influenzae-type-b"
+        },
+        {
+          "label": "CDC - Hib Disease",
+          "url": "https://www.cdc.gov/hi-disease/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Meningitis Guidelines",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "listeria_meningitis",
+      "name": "Listeria monocytogenes (meningitis)",
+      "scientificName": "Listeria monocytogenes",
+      "definition": "Gram-positive rod causing neurolisteriosis (meningitis, meningoencephalitis) particularly in neonates, elderly, and immunocompromised. Listeria is a foodborne pathogen with tropism for the central nervous system in vulnerable populations.",
+      "reservoir": {
+        "primary": [
+          "Soil",
+          "Water",
+          "Contaminated food (ready-to-eat foods, unpasteurized dairy, deli meats)"
+        ],
+        "secondary": [
+          "Food processing environments",
+          "Refrigerated foods"
+        ],
+        "notes": "Listeria is ubiquitous in the environment and can grow at refrigeration temperatures (4°C). Foodborne transmission is the primary route for meningitis."
+      },
+      "transmission": {
+        "mode": "Foodborne ingestion",
+        "routes": [
+          "Ingestion of contaminated food (ready-to-eat foods, deli meats, soft cheeses, unpasteurized dairy)",
+          "Vertical transmission (mother to fetus during pregnancy - neonatal meningitis)",
+          "Rarely: direct contact with infected animals or contaminated materials"
+        ],
+        "notes": "Meningitis occurs after foodborne ingestion with bacteremia and CNS invasion. Neonatal meningitis can occur via vertical transmission or early postnatal exposure."
+      },
+      "incubationPeriod": {
+        "range": "Days to weeks (typically 1-4 weeks for invasive disease; can be up to 70 days)",
+        "infectiousPeriod": "Not person-to-person contagious (except vertical transmission during pregnancy)",
+        "seasonality": "Year-round, no specific seasonal pattern",
+        "geographic": "Worldwide, with higher incidence in developed countries due to consumption of ready-to-eat foods"
+      },
+      "riskFactors": [
+        "Immunocompromised (HIV, cancer, transplant, corticosteroids, biologics)",
+        "Age ≥65 years",
+        "Pregnancy (risk of vertical transmission to fetus/neonate)",
+        "Neonates (early-onset <7 days or late-onset 7-28 days)",
+        "Chronic diseases (diabetes, liver disease, kidney disease)",
+        "Consumption of high-risk foods (deli meats, soft cheeses, unpasteurized dairy)",
+        "Alcoholism"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Fever and headache",
+          "Stiff neck (nuchal rigidity)",
+          "Altered mental status, confusion, or lethargy",
+          "Seizures",
+          "Focal neurological deficits",
+          "Ataxia and tremor (rhombencephalitis - brainstem involvement)",
+          "Neonates: irritability, poor feeding, lethargy, respiratory distress"
+        ],
+        "complications": [
+          "Meningoencephalitis (combined meningitis and encephalitis)",
+          "Rhombencephalitis (brainstem infection) - characteristic of Listeria",
+          "Brain abscess",
+          "Hydrocephalus",
+          "Neurological sequelae (cognitive impairment, seizures, focal deficits)",
+          "Death (20-30% mortality in CNS listeriosis)",
+          "Neonatal sepsis and death"
+        ],
+        "caseDefinition": {
+          "suspected": "High-risk patient (immunocompromised, elderly, neonate, pregnant) with fever + meningitis/encephalitis symptoms + compatible food exposure history",
+          "confirmed": "Clinical illness + laboratory confirmation: positive CSF or blood culture for L. monocytogenes, OR positive PCR from CSF"
+        }
+      },
+      "diagnosis": [
+        "CSF analysis: elevated WBC (lymphocytes or neutrophils), low glucose, high protein",
+        "CSF culture (gold standard) - may take 48-72 hours",
+        "Blood culture",
+        "Gram stain of CSF (Gram-positive rods, may be sparse)",
+        "PCR for Listeria species",
+        "MRI brain (may show rhombencephalitis - brainstem lesions)",
+        "Serotyping and molecular subtyping (PFGE, WGS) for outbreak investigation"
+      ],
+      "treatment": "Ampicillin or penicillin G + gentamicin (synergistic combination) for 3-6 weeks (longer than other bacterial meningitis). Trimethoprim-sulfamethoxazole for penicillin-allergic patients. Supportive care: seizure management, ICP monitoring. Dexamethasone NOT recommended (may reduce ampicillin penetration into CSF).",
+      "infectionControl": {
+        "precautions": "Standard Precautions (not person-to-person contagious, except vertical transmission)",
+        "screening": "Not routinely recommended; test high-risk patients with compatible illness",
+        "cohorting": "Not needed (not person-to-person transmission)",
+        "sourceControl": "Identify and eliminate contaminated food sources; product recall if outbreak",
+        "environmental": "Safe food handling and storage; environmental monitoring in food processing facilities",
+        "staffEducation": "Food safety education for high-risk populations, recognition of neurolisteriosis (rhombencephalitis), prolonged treatment duration"
+      },
+      "outbreakTriggers": [
+        "Even a single invasive case (including meningitis) demands public health action",
+        "≥2 cases with same molecular subtype (PFGE, WGS)",
+        "Cluster of cases with common food exposure",
+        "Detection of Listeria in food products or processing environment"
+      ],
+      "reportingCommunication": [
+        "Rapid notification to public health authorities (within 24 hours)",
+        "Engage food safety authorities immediately",
+        "Coordinate product recall if contaminated food identified",
+        "Molecular subtyping (PFGE, WGS) to link cases",
+        "Trace-back investigation to identify contaminated products",
+        "Public health alerts to high-risk populations"
+      ],
+      "prevention": [
+        "Food hygiene and safety education for vulnerable populations (avoid deli meats, soft cheeses, unpasteurized dairy unless heated)",
+        "Proper food handling and storage (refrigeration <4°C slows but does not stop growth)",
+        "Pasteurization of milk and dairy products",
+        "Reheat ready-to-eat foods to steaming hot (165°F/74°C) before consumption",
+        "Environmental monitoring in food processing facilities",
+        "Pregnant women should avoid high-risk foods",
+        "Cold chain monitoring"
+      ],
+      "references": [
+        {
+          "label": "WHO - Listeriosis",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/listeriosis"
+        },
+        {
+          "label": "CDC - Listeria Infection",
+          "url": "https://www.cdc.gov/listeria/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Foodborne Illness Guidelines",
+          "url": "https://gdipc.org"
+        }
+      ]
+    }
+  ]
+}

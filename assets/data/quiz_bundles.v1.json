@@ -1,0 +1,618 @@
+{
+  "title": "Bundle Care Quiz",
+  "description": "Comprehensive quiz covering evidence-based care bundles for HAI prevention including CLABSI, CAUTI, VAE, SSI, Sepsis, and C. difficile prevention",
+  "version": "1.0",
+  "module": "bundles",
+  "totalStages": 5,
+  "questionsPerStage": 10,
+  "questions": [
+    {
+      "id": "bundle_s1_q1",
+      "module": "bundles",
+      "stage": 1,
+      "question": "A care bundle is defined as:",
+      "options": ["A single intervention to prevent infection", "A group of 3-5 evidence-based practices performed together", "A checklist of all hospital policies", "A medication protocol"],
+      "answerIndex": 1,
+      "explanation": "A care bundle is a small set of evidence-based practices (generally 3-5) that, when performed collectively and reliably, have been proven to improve patient outcomes.",
+      "references": [
+        { "label": "IHI Bundle Approach", "url": "https://www.ihi.org/Topics/Bundles/Pages/default.aspx" }
+      ]
+    },
+    {
+      "id": "bundle_s1_q2",
+      "module": "bundles",
+      "stage": 1,
+      "question": "The CLABSI prevention bundle includes:",
+      "options": ["Hand hygiene, maximal barrier precautions, chlorhexidine skin antisepsis, optimal catheter site selection, daily review of line necessity", "Only hand hygiene and gloves", "Antibiotic prophylaxis only", "Weekly dressing changes"],
+      "answerIndex": 0,
+      "explanation": "The CLABSI prevention bundle includes 5 key evidence-based practices: hand hygiene, maximal barrier precautions during insertion, chlorhexidine skin antisepsis, optimal catheter site selection (avoiding femoral site), and daily review of line necessity with prompt removal.",
+      "references": [
+        { "label": "CDC CLABSI Prevention", "url": "https://www.cdc.gov/hai/prevent/clabsi.html" },
+        { "label": "SHEA/IDSA CLABSI Compendium", "url": "https://www.jstor.org/stable/10.1086/676533" }
+      ]
+    },
+    {
+      "id": "bundle_s1_q3",
+      "module": "bundles",
+      "stage": 1,
+      "question": "Maximal barrier precautions during central line insertion include:",
+      "options": ["Gloves only", "Gloves and gown", "Cap, mask, sterile gown, sterile gloves, and large sterile drape", "Surgical mask only"],
+      "answerIndex": 2,
+      "explanation": "Maximal barrier precautions require the operator to wear a cap, mask, sterile gown, and sterile gloves, and to use a large sterile drape covering the patient from head to toe.",
+      "references": [
+        { "label": "CDC CLABSI Guidelines", "url": "https://www.cdc.gov/infectioncontrol/guidelines/bsi/index.html" }
+      ]
+    },
+    {
+      "id": "bundle_s1_q4",
+      "module": "bundles",
+      "stage": 1,
+      "question": "The CAUTI prevention bundle emphasizes:",
+      "options": ["Inserting catheters in all patients", "Appropriate indications, aseptic insertion, proper maintenance, and prompt removal", "Routine catheter changes every 3 days", "Prophylactic antibiotics for all catheterized patients"],
+      "answerIndex": 1,
+      "explanation": "The CAUTI prevention bundle focuses on appropriate indications for catheter use, aseptic insertion technique, evidence-based maintenance practices (hand hygiene, proper positioning, maintaining closed drainage system), and prompt removal when no longer necessary.",
+      "references": [
+        { "label": "CDC CAUTI Prevention", "url": "https://www.cdc.gov/hai/prevent/cauti.html" },
+        { "label": "SHEA/IDSA CAUTI Compendium", "url": "https://www.jstor.org/stable/10.1086/672270" }
+      ]
+    },
+    {
+      "id": "bundle_s1_q5",
+      "module": "bundles",
+      "stage": 1,
+      "question": "Appropriate indications for urinary catheter use include:",
+      "options": ["Convenience for nursing staff", "Acute urinary retention or bladder outlet obstruction, perioperative use for selected surgeries, accurate measurement of urine output in critically ill patients", "All incontinent patients", "All elderly patients"],
+      "answerIndex": 1,
+      "explanation": "Appropriate indications include acute urinary retention or bladder outlet obstruction, perioperative use for selected surgeries (e.g., urologic, prolonged surgery, large-volume infusions), accurate measurement of urine output in critically ill patients, and assistance with healing of open sacral or perineal wounds in incontinent patients. Convenience and incontinence alone are NOT appropriate indications.",
+      "references": [
+        { "label": "CDC CAUTI Guidelines", "url": "https://www.cdc.gov/infectioncontrol/guidelines/cauti/index.html" }
+      ]
+    },
+    {
+      "id": "bundle_s1_q6",
+      "module": "bundles",
+      "stage": 1,
+      "question": "The VAE prevention bundle includes:",
+      "options": ["Head of bed elevation, daily sedation vacation and assessment of readiness to extubate, peptic ulcer disease prophylaxis, DVT prophylaxis, daily oral care with chlorhexidine", "Prolonged mechanical ventilation for all patients", "Routine ventilator circuit changes", "Prophylactic antibiotics for all ventilated patients"],
+      "answerIndex": 0,
+      "explanation": "The VAE prevention bundle (also known as the ventilator bundle) includes: head of bed elevation 30-45 degrees, daily sedation vacation and assessment of readiness to extubate, peptic ulcer disease prophylaxis, DVT prophylaxis, and daily oral care with chlorhexidine.",
+      "references": [
+        { "label": "CDC VAE Prevention", "url": "https://www.cdc.gov/nhsn/acute-care-hospital/vae/index.html" },
+        { "label": "IHI Ventilator Bundle", "url": "https://www.ihi.org/Topics/VentilatorBundle/Pages/default.aspx" }
+      ]
+    },
+    {
+      "id": "bundle_s1_q7",
+      "module": "bundles",
+      "stage": 1,
+      "question": "SSI prevention bundle components include:",
+      "options": ["Prophylactic antibiotics only", "Appropriate antibiotic prophylaxis, appropriate hair removal, normothermia, glycemic control", "Shaving the surgical site", "Prolonged antibiotic use postoperatively"],
+      "answerIndex": 1,
+      "explanation": "SSI prevention bundle includes: appropriate antibiotic prophylaxis (within 1 hour before incision, appropriate agent and dose), appropriate hair removal (clipping, not shaving), maintenance of normothermia, and glycemic control (blood glucose <200 mg/dL in cardiac surgery patients).",
+      "references": [
+        { "label": "CDC SSI Prevention", "url": "https://www.cdc.gov/hai/ssi/ssi.html" },
+        { "label": "WHO SSI Guidelines", "url": "https://www.who.int/publications/i/item/9789241550475" }
+      ]
+    },
+    {
+      "id": "bundle_s1_q8",
+      "module": "bundles",
+      "stage": 1,
+      "question": "The Sepsis Bundle (SEP-1) requires completion within:",
+      "options": ["24 hours", "12 hours", "6 hours", "3 hours for initial bundle elements"],
+      "answerIndex": 3,
+      "explanation": "The SEP-1 bundle requires completion of initial elements within 3 hours: measure lactate, obtain blood cultures before antibiotics, administer broad-spectrum antibiotics, and administer 30 mL/kg crystalloid for hypotension or lactate ≥4 mmol/L.",
+      "references": [
+        { "label": "CMS SEP-1 Core Measure", "url": "https://www.cms.gov/medicare/quality/initiatives/hospital-quality-initiative/severe-sepsis-and-septic-shock-management-bundle" },
+        { "label": "Surviving Sepsis Campaign", "url": "https://www.sccm.org/SurvivingSepsisCampaign/Home" }
+      ]
+    },
+    {
+      "id": "bundle_s1_q9",
+      "module": "bundles",
+      "stage": 1,
+      "question": "C. difficile prevention bundle includes:",
+      "options": ["Antibiotic stewardship, contact precautions, environmental cleaning with sporicidal agents, hand hygiene with soap and water", "Alcohol-based hand rub only", "Isolation is not necessary", "Prophylactic antibiotics"],
+      "answerIndex": 0,
+      "explanation": "C. difficile prevention bundle includes: antibiotic stewardship (minimize unnecessary antibiotic use, especially fluoroquinolones, clindamycin, and cephalosporins), contact precautions with gown and gloves, environmental cleaning with EPA-registered sporicidal agents (bleach-based), and hand hygiene with soap and water (alcohol does not kill spores).",
+      "references": [
+        { "label": "CDC C. difficile Prevention", "url": "https://www.cdc.gov/cdiff/clinicians/index.html" },
+        { "label": "SHEA/IDSA C. difficile Guidelines", "url": "https://academic.oup.com/cid/article/66/7/e1/4855916" }
+      ]
+    },
+    {
+      "id": "bundle_s1_q10",
+      "module": "bundles",
+      "stage": 1,
+      "question": "Bundle compliance is measured as:",
+      "options": ["Completing some bundle elements", "All-or-nothing compliance (all elements performed)", "Completing at least 50% of elements", "Completing elements in any order"],
+      "answerIndex": 1,
+      "explanation": "Bundle compliance is measured using an all-or-nothing approach: all bundle elements must be performed together to count as compliant. Partial compliance does not count, as the synergistic effect of all elements together is what improves outcomes.",
+      "references": [
+        { "label": "IHI Bundle Measurement", "url": "https://www.ihi.org/Topics/Bundles/Pages/default.aspx" }
+      ]
+    },
+    {
+      "id": "bundle_s2_q1",
+      "module": "bundles",
+      "stage": 2,
+      "question": "Chlorhexidine skin antisepsis for CLABSI prevention should be applied:",
+      "options": ["With a back-and-forth scrubbing motion for 30 seconds", "With a back-and-forth scrubbing motion for at least 30 seconds and allowed to dry completely", "Without allowing it to dry", "Only once before insertion"],
+      "answerIndex": 1,
+      "explanation": "Chlorhexidine (>0.5% concentration) should be applied with a back-and-forth scrubbing motion for at least 30 seconds and must be allowed to dry completely before catheter insertion to achieve maximum antimicrobial effect.",
+      "references": [
+        { "label": "CDC CLABSI Guidelines", "url": "https://www.cdc.gov/infectioncontrol/guidelines/bsi/index.html" }
+      ]
+    },
+    {
+      "id": "bundle_s2_q2",
+      "module": "bundles",
+      "stage": 2,
+      "question": "The preferred site for central line insertion in adults is:",
+      "options": ["Femoral vein", "Subclavian vein", "Internal jugular vein", "Any site is equally preferred"],
+      "answerIndex": 1,
+      "explanation": "The subclavian vein is the preferred site for central line insertion in adults due to lower infection risk compared to femoral and internal jugular sites. Femoral site should be avoided when possible due to highest infection risk.",
+      "references": [
+        { "label": "CDC CLABSI Prevention", "url": "https://www.cdc.gov/hai/prevent/clabsi.html" }
+      ]
+    },
+    {
+      "id": "bundle_s2_q3",
+      "module": "bundles",
+      "stage": 2,
+      "question": "Central line dressing changes should be performed:",
+      "options": ["Every 7 days for transparent dressings, every 2 days for gauze dressings, or when soiled/loose", "Only when visibly soiled", "Daily for all dressings", "Monthly"],
+      "answerIndex": 0,
+      "explanation": "Transparent semi-permeable dressings should be changed every 7 days, gauze dressings every 2 days, or immediately if the dressing becomes damp, loosened, or visibly soiled. The catheter site should be assessed during each dressing change.",
+      "references": [
+        { "label": "CDC CLABSI Guidelines", "url": "https://www.cdc.gov/infectioncontrol/guidelines/bsi/index.html" }
+      ]
+    },
+    {
+      "id": "bundle_s2_q4",
+      "module": "bundles",
+      "stage": 2,
+      "question": "For CAUTI prevention, the urinary drainage bag should be:",
+      "options": ["Positioned above the level of the bladder", "Positioned below the level of the bladder without touching the floor", "Emptied weekly", "Disconnected for patient mobility"],
+      "answerIndex": 1,
+      "explanation": "The urinary drainage bag must be kept below the level of the bladder to prevent reflux of urine, but should not touch the floor. The closed drainage system should be maintained at all times, and the bag should be emptied regularly using a separate collection container for each patient.",
+      "references": [
+        { "label": "CDC CAUTI Guidelines", "url": "https://www.cdc.gov/infectioncontrol/guidelines/cauti/index.html" }
+      ]
+    },
+    {
+      "id": "bundle_s2_q5",
+      "module": "bundles",
+      "stage": 2,
+      "question": "Routine catheter changes for CAUTI prevention should be performed:",
+      "options": ["Every 3 days", "Every week", "Every 2 weeks", "Only when clinically indicated (obstruction, malfunction, infection)"],
+      "answerIndex": 3,
+      "explanation": "Routine catheter changes are NOT recommended. Catheters should only be changed when clinically indicated due to obstruction, malfunction, or infection. Routine changes do not reduce CAUTI risk and may increase patient discomfort and cost.",
+      "references": [
+        { "label": "CDC CAUTI Prevention", "url": "https://www.cdc.gov/hai/prevent/cauti.html" }
+      ]
+    },
+    {
+      "id": "bundle_s2_q6",
+      "module": "bundles",
+      "stage": 2,
+      "question": "Daily oral care with chlorhexidine for VAE prevention should be performed:",
+      "options": ["Once daily", "Twice daily (0.12% chlorhexidine oral rinse)", "Only when patient requests", "Weekly"],
+      "answerIndex": 1,
+      "explanation": "Daily oral care with 0.12% chlorhexidine oral rinse should be performed twice daily for mechanically ventilated patients to reduce VAP risk by decreasing oral bacterial colonization.",
+      "references": [
+        { "label": "CDC VAE Prevention", "url": "https://www.cdc.gov/nhsn/acute-care-hospital/vae/index.html" }
+      ]
+    },
+    {
+      "id": "bundle_s2_q7",
+      "module": "bundles",
+      "stage": 2,
+      "question": "Head of bed elevation for VAE prevention should be maintained at:",
+      "options": ["0-15 degrees", "30-45 degrees unless contraindicated", "60-90 degrees", "Flat position"],
+      "answerIndex": 1,
+      "explanation": "Head of bed should be elevated 30-45 degrees unless medically contraindicated (e.g., hemodynamic instability, certain spinal injuries) to reduce aspiration risk and ventilator-associated pneumonia.",
+      "references": [
+        { "label": "IHI Ventilator Bundle", "url": "https://www.ihi.org/Topics/VentilatorBundle/Pages/default.aspx" }
+      ]
+    },
+    {
+      "id": "bundle_s2_q8",
+      "module": "bundles",
+      "stage": 2,
+      "question": "Surgical antibiotic prophylaxis should be administered:",
+      "options": ["Within 1 hour before surgical incision (within 2 hours for vancomycin and fluoroquinolones)", "Immediately after surgery", "24 hours before surgery", "Only if infection is suspected"],
+      "answerIndex": 0,
+      "explanation": "Prophylactic antibiotics should be administered within 60 minutes before surgical incision to ensure adequate tissue levels during surgery. For vancomycin and fluoroquinolones, administration should begin within 120 minutes before incision due to longer infusion times.",
+      "references": [
+        { "label": "CDC SSI Prevention", "url": "https://www.cdc.gov/hai/ssi/ssi.html" }
+      ]
+    },
+    {
+      "id": "bundle_s2_q9",
+      "module": "bundles",
+      "stage": 2,
+      "question": "Hair removal before surgery should be performed:",
+      "options": ["By shaving with a razor", "By clipping with electric clippers if necessary", "24 hours before surgery", "Hair removal is always required"],
+      "answerIndex": 1,
+      "explanation": "If hair removal is necessary, it should be performed using electric clippers immediately before surgery. Shaving with razors causes microscopic skin abrasions that increase SSI risk. Hair removal should only be done if it will interfere with the surgical procedure.",
+      "references": [
+        { "label": "WHO SSI Guidelines", "url": "https://www.who.int/publications/i/item/9789241550475" }
+      ]
+    },
+    {
+      "id": "bundle_s2_q10",
+      "module": "bundles",
+      "stage": 2,
+      "question": "For sepsis management, initial fluid resuscitation should be:",
+      "options": ["10 mL/kg crystalloid", "30 mL/kg crystalloid for hypotension or lactate ≥4 mmol/L", "Colloids only", "No fluids needed"],
+      "answerIndex": 1,
+      "explanation": "The SEP-1 bundle requires administration of 30 mL/kg crystalloid for hypotension or lactate ≥4 mmol/L within 3 hours of sepsis recognition. This aggressive early fluid resuscitation improves outcomes in septic patients.",
+      "references": [
+        { "label": "Surviving Sepsis Campaign", "url": "https://www.sccm.org/SurvivingSepsisCampaign/Home" }
+      ]
+    },
+    {
+      "id": "bundle_s3_q1",
+      "module": "bundles",
+      "stage": 3,
+      "question": "Your ICU has 85% CLABSI bundle compliance but CLABSI rates remain above benchmark. The most appropriate next step is:",
+      "options": ["Accept the current rate", "Audit individual bundle elements to identify gaps and implement targeted interventions", "Discontinue bundle use", "Add more bundle elements"],
+      "answerIndex": 1,
+      "explanation": "When bundle compliance is high but outcomes don't improve, audit individual elements to identify which specific practices have gaps. Common issues include improper chlorhexidine application technique, inadequate drying time, or inconsistent daily necessity reviews. Targeted education and process improvements for specific gaps are more effective than adding elements.",
+      "references": [
+        { "label": "SHEA/IDSA CLABSI Compendium", "url": "https://www.jstor.org/stable/10.1086/676533" }
+      ]
+    },
+    {
+      "id": "bundle_s3_q2",
+      "module": "bundles",
+      "stage": 3,
+      "question": "A patient has a central line inserted emergently in the femoral site. According to CLABSI prevention best practices, you should:",
+      "options": ["Leave the line in place indefinitely", "Replace the line to a preferred site (subclavian or internal jugular) within 48 hours if the patient is not coagulopathic", "Remove the line immediately", "Change the dressing daily"],
+      "answerIndex": 1,
+      "explanation": "Lines inserted emergently, especially in the femoral site, should be replaced to a preferred site (subclavian or internal jugular) within 48 hours if the patient is not coagulopathic and the line is still needed. Femoral lines have higher infection risk and should be avoided when possible.",
+      "references": [
+        { "label": "CDC CLABSI Guidelines", "url": "https://www.cdc.gov/infectioncontrol/guidelines/bsi/index.html" }
+      ]
+    },
+    {
+      "id": "bundle_s3_q3",
+      "module": "bundles",
+      "stage": 3,
+      "question": "Your unit's CAUTI rate increased despite 90% bundle compliance. Investigation reveals catheters are being inserted for appropriate indications but not removed promptly. The best intervention is:",
+      "options": ["Stop using the bundle", "Implement nurse-driven catheter removal protocols and daily necessity reminders", "Increase catheter changes", "Use prophylactic antibiotics"],
+      "answerIndex": 1,
+      "explanation": "Nurse-driven catheter removal protocols with daily necessity assessments and automatic stop orders significantly reduce catheter days and CAUTI rates. Many CAUTIs occur because catheters remain in place longer than necessary. Empowering nurses to remove catheters when indications no longer exist improves outcomes.",
+      "references": [
+        { "label": "SHEA/IDSA CAUTI Compendium", "url": "https://www.jstor.org/stable/10.1086/672270" }
+      ]
+    },
+    {
+      "id": "bundle_s3_q4",
+      "module": "bundles",
+      "stage": 3,
+      "question": "A mechanically ventilated patient develops hypotension during daily sedation vacation. The appropriate action is:",
+      "options": ["Continue sedation vacation regardless", "Resume sedation and reassess readiness to extubate when hemodynamically stable", "Extubate immediately", "Increase sedation permanently"],
+      "answerIndex": 1,
+      "explanation": "Daily sedation vacation should be interrupted if the patient develops hemodynamic instability, respiratory distress, or increased intracranial pressure. Resume sedation, stabilize the patient, and reassess readiness to extubate when clinically appropriate. Patient safety takes precedence over bundle compliance.",
+      "references": [
+        { "label": "IHI Ventilator Bundle", "url": "https://www.ihi.org/Topics/VentilatorBundle/Pages/default.aspx" }
+      ]
+    },
+    {
+      "id": "bundle_s3_q5",
+      "module": "bundles",
+      "stage": 3,
+      "question": "Your hospital's SSI rate for colorectal surgery is 12% despite antibiotic prophylaxis compliance of 95%. Additional interventions to consider include:",
+      "options": ["Discontinue prophylaxis", "Implement oral antibiotic bowel preparation, mechanical bowel preparation, and normothermia protocols", "Use prophylactic antibiotics for 7 days postoperatively", "Shave all patients"],
+      "answerIndex": 1,
+      "explanation": "For colorectal surgery, additional evidence-based interventions include oral antibiotic bowel preparation combined with mechanical bowel preparation, maintaining normothermia (core temperature >36°C), and glycemic control. Extended prophylactic antibiotics beyond 24 hours do not reduce SSI and increase antibiotic resistance risk.",
+      "references": [
+        { "label": "WHO SSI Guidelines", "url": "https://www.who.int/publications/i/item/9789241550475" }
+      ]
+    },
+    {
+      "id": "bundle_s3_q6",
+      "module": "bundles",
+      "stage": 3,
+      "question": "A septic patient received 30 mL/kg crystalloid but remains hypotensive (MAP <65 mmHg). According to SEP-1, the next step is:",
+      "options": ["No further intervention needed", "Administer vasopressors to maintain MAP ≥65 mmHg and reassess volume status", "Give another 30 mL/kg bolus immediately", "Stop all fluids"],
+      "answerIndex": 1,
+      "explanation": "After initial fluid resuscitation, if hypotension persists (MAP <65 mmHg), vasopressors should be initiated to maintain MAP ≥65 mmHg. Volume status and tissue perfusion should be reassessed. Additional fluids may be needed based on dynamic assessment, but vasopressors are indicated for persistent hypotension after initial resuscitation.",
+      "references": [
+        { "label": "Surviving Sepsis Campaign", "url": "https://www.sccm.org/SurvivingSepsisCampaign/Home" }
+      ]
+    },
+    {
+      "id": "bundle_s3_q7",
+      "module": "bundles",
+      "stage": 3,
+      "question": "Your facility has a C. difficile outbreak. Environmental cleaning audits show 80% compliance with bleach-based disinfection. The most effective additional intervention is:",
+      "options": ["Switch to alcohol-based disinfectants", "Implement daily environmental cleaning audits with feedback, increase contact time to 5 minutes, and ensure proper bleach concentration (5,000 ppm)", "Reduce cleaning frequency", "Use only quaternary ammonium compounds"],
+      "answerIndex": 1,
+      "explanation": "For C. difficile, EPA-registered sporicidal agents (bleach-based, 5,000 ppm sodium hypochlorite) with adequate contact time (at least 5 minutes) are essential. Daily audits with real-time feedback improve compliance. Alcohol and quaternary ammonium compounds do NOT kill C. difficile spores and should not be used.",
+      "references": [
+        { "label": "CDC C. difficile Prevention", "url": "https://www.cdc.gov/cdiff/clinicians/index.html" }
+      ]
+    },
+    {
+      "id": "bundle_s3_q8",
+      "module": "bundles",
+      "stage": 3,
+      "question": "Bundle compliance measurement should include:",
+      "options": ["Only documentation review", "Direct observation, documentation review, and outcome monitoring", "Outcome monitoring only", "Staff self-reporting only"],
+      "answerIndex": 1,
+      "explanation": "Comprehensive bundle compliance measurement includes direct observation (gold standard for process adherence), documentation review (for elements not easily observed), and outcome monitoring (infection rates). Multiple methods provide the most accurate assessment and identify gaps between documented and actual practice.",
+      "references": [
+        { "label": "IHI Bundle Measurement", "url": "https://www.ihi.org/Topics/Bundles/Pages/default.aspx" }
+      ]
+    },
+    {
+      "id": "bundle_s3_q9",
+      "module": "bundles",
+      "stage": 3,
+      "question": "Your unit achieves 100% CLABSI bundle compliance for 6 months but CLABSI rate remains unchanged. Possible explanations include:",
+      "options": ["The bundle is ineffective", "Measurement error, contaminated blood cultures being counted as CLABSI, or external factors (patient acuity, line days)", "Bundle compliance doesn't matter", "Infection is inevitable"],
+      "answerIndex": 1,
+      "explanation": "When compliance is high but rates don't improve, investigate: measurement accuracy (are all elements truly performed correctly?), blood culture contamination (false-positive CLABSIs), changes in patient population (higher acuity), increased line days (denominator effect), or external factors. Validate that compliance measurement reflects actual practice, not just documentation.",
+      "references": [
+        { "label": "SHEA/IDSA CLABSI Compendium", "url": "https://www.jstor.org/stable/10.1086/676533" }
+      ]
+    },
+    {
+      "id": "bundle_s3_q10",
+      "module": "bundles",
+      "stage": 3,
+      "question": "A nurse reports difficulty maintaining VAE bundle compliance due to patient agitation during sedation vacation. The best approach is:",
+      "options": ["Abandon sedation vacations", "Collaborate with the team to develop individualized sedation protocols, use validated sedation scales, and provide staff education on managing agitation", "Sedate all patients continuously", "Ignore the concern"],
+      "answerIndex": 1,
+      "explanation": "Bundle implementation requires interprofessional collaboration and individualized patient care. Work with the team to develop protocols for managing agitation (e.g., non-pharmacologic interventions, appropriate sedation titration), use validated sedation scales (RASS, SAS), and provide education. Bundles should be adapted to patient needs while maintaining evidence-based principles.",
+      "references": [
+        { "label": "IHI Ventilator Bundle", "url": "https://www.ihi.org/Topics/VentilatorBundle/Pages/default.aspx" }
+      ]
+    },
+    {
+      "id": "bundle_s4_q1",
+      "module": "bundles",
+      "stage": 4,
+      "question": "Your hospital implements a multi-modal CLABSI prevention program including bundles, education, and feedback. After 12 months, CLABSI rate decreased from 3.2 to 0.8 per 1,000 line-days. To sustain this improvement, you should:",
+      "options": ["Discontinue all interventions", "Implement ongoing surveillance, periodic audits, continuous education, and celebrate successes to maintain culture change", "Only monitor rates quarterly", "Reduce bundle compliance monitoring"],
+      "answerIndex": 1,
+      "explanation": "Sustaining improvement requires ongoing surveillance, periodic compliance audits with feedback, continuous education for new staff, leadership engagement, and celebrating successes to maintain culture change. Improvement is not permanent without sustained effort and monitoring.",
+      "references": [
+        { "label": "SHEA/IDSA CLABSI Compendium", "url": "https://www.jstor.org/stable/10.1086/676533" }
+      ]
+    },
+    {
+      "id": "bundle_s4_q2",
+      "module": "bundles",
+      "stage": 4,
+      "question": "A patient requires both a central line and urinary catheter. To minimize HAI risk, you should:",
+      "options": ["Insert both devices without precautions", "Apply CLABSI and CAUTI bundles simultaneously, coordinate care to minimize device days, and implement daily necessity reviews for both devices", "Only use one bundle", "Delay necessary interventions"],
+      "answerIndex": 1,
+      "explanation": "Patients with multiple devices require coordinated bundle implementation. Apply both CLABSI and CAUTI bundles, coordinate care to minimize device days, implement daily necessity reviews for both devices, and ensure staff are trained in both bundles. Multi-device patients are at highest risk and require vigilant prevention efforts.",
+      "references": [
+        { "label": "CDC HAI Prevention", "url": "https://www.cdc.gov/hai/prevent/prevent_pubs.html" }
+      ]
+    },
+    {
+      "id": "bundle_s4_q3",
+      "module": "bundles",
+      "stage": 4,
+      "question": "Your ICU data shows CLABSI rate of 1.2 per 1,000 line-days with 95% bundle compliance, but blood culture contamination rate is 5% (benchmark <3%). The priority intervention is:",
+      "options": ["Ignore contamination rates", "Implement blood culture collection bundle (skin antisepsis, sterile technique, adequate volume, aerobic bottle first) and provide phlebotomy training", "Increase central line insertions", "Stop collecting blood cultures"],
+      "answerIndex": 1,
+      "explanation": "High blood culture contamination rates lead to false-positive CLABSIs, unnecessary antibiotics, and increased costs. Implement a blood culture collection bundle including proper skin antisepsis (chlorhexidine), sterile technique, adequate blood volume (8-10 mL per bottle), and collecting aerobic bottle first. Contamination rates should be <3%.",
+      "references": [
+        { "label": "CDC Blood Culture Collection", "url": "https://www.cdc.gov/hai/prevent/prevention_tools.html" }
+      ]
+    },
+    {
+      "id": "bundle_s4_q4",
+      "module": "bundles",
+      "stage": 4,
+      "question": "Your hospital's CAUTI SIR (Standardized Infection Ratio) is 0.6 (better than national benchmark). Leadership wants to discontinue CAUTI prevention efforts to focus resources elsewhere. Your response should be:",
+      "options": ["Agree and discontinue all efforts", "Explain that sustained prevention requires ongoing effort, propose reduced but continued monitoring, and emphasize risk of regression if efforts cease", "Stop all CAUTI surveillance", "Eliminate the infection prevention team"],
+      "answerIndex": 1,
+      "explanation": "Achieving low infection rates requires sustained effort. Discontinuing prevention efforts typically leads to regression. Propose continued but potentially reduced monitoring (e.g., quarterly audits instead of monthly), maintain education for new staff, and emphasize that prevention is more cost-effective than treating infections. Use data to demonstrate ROI of prevention efforts.",
+      "references": [
+        { "label": "SHEA/IDSA CAUTI Compendium", "url": "https://www.jstor.org/stable/10.1086/672270" }
+      ]
+    },
+    {
+      "id": "bundle_s4_q5",
+      "module": "bundles",
+      "stage": 4,
+      "question": "Your facility implements a VAE prevention bundle but VAE rate increases from 2.0 to 3.5 per 1,000 ventilator-days. Possible explanations and next steps include:",
+      "options": ["The bundle caused the increase", "Investigate surveillance methodology changes, patient acuity changes, ventilator day changes, and validate VAE definitions (VAC, IVAC, VAP) are applied correctly", "Abandon the bundle", "Blame staff"],
+      "answerIndex": 1,
+      "explanation": "When rates increase despite bundle implementation, investigate: surveillance methodology changes (new definitions, reporting changes), patient population changes (higher acuity), denominator changes (ventilator days), and ensure VAE definitions (VAC, IVAC, VAP) are applied correctly. VAE surveillance is complex and requires validation. Also assess if bundle elements are performed correctly, not just documented.",
+      "references": [
+        { "label": "CDC VAE Surveillance", "url": "https://www.cdc.gov/nhsn/acute-care-hospital/vae/index.html" }
+      ]
+    },
+    {
+      "id": "bundle_s4_q6",
+      "module": "bundles",
+      "stage": 4,
+      "question": "Your hospital performs 500 colorectal surgeries annually with SSI rate of 8%. Implementing a comprehensive SSI bundle could potentially prevent approximately how many SSIs per year?",
+      "options": ["5 SSIs (assuming 25% reduction)", "10 SSIs (assuming 25% reduction)", "20 SSIs (assuming 50% reduction)", "40 SSIs (assuming 100% elimination)"],
+      "answerIndex": 2,
+      "explanation": "Current SSIs: 500 × 0.08 = 40 SSIs/year. Evidence-based SSI bundles can reduce SSI rates by 40-60%. Assuming 50% reduction: 40 × 0.50 = 20 SSIs prevented. This translates to significant cost savings (average SSI costs $20,000-30,000) and improved patient outcomes. Use data to demonstrate ROI and gain leadership support.",
+      "references": [
+        { "label": "WHO SSI Guidelines", "url": "https://www.who.int/publications/i/item/9789241550475" }
+      ]
+    },
+    {
+      "id": "bundle_s4_q7",
+      "module": "bundles",
+      "stage": 4,
+      "question": "Your ED identifies 100 sepsis patients monthly. Current door-to-antibiotic time is 180 minutes (3 hours). Implementing a sepsis bundle with door-to-antibiotic time of 60 minutes could:",
+      "options": ["Have no impact", "Reduce mortality by approximately 10-20% based on evidence that each hour delay increases mortality", "Increase mortality", "Only affect documentation"],
+      "answerIndex": 1,
+      "explanation": "Evidence shows each hour delay in antibiotic administration for sepsis increases mortality by approximately 7-10%. Reducing door-to-antibiotic time from 180 to 60 minutes (2-hour improvement) could reduce mortality by 14-20%. For 100 sepsis patients/month with baseline mortality of 20%, this could save 3-4 lives monthly. Early recognition and rapid treatment are critical.",
+      "references": [
+        { "label": "Surviving Sepsis Campaign", "url": "https://www.sccm.org/SurvivingSepsisCampaign/Home" }
+      ]
+    },
+    {
+      "id": "bundle_s4_q8",
+      "module": "bundles",
+      "stage": 4,
+      "question": "Your hospital has 50 C. difficile infections annually. Implementing a comprehensive prevention bundle (antibiotic stewardship, contact precautions, environmental cleaning, hand hygiene) could reduce CDI by:",
+      "options": ["5% (minimal impact)", "20-30% (moderate impact)", "40-60% (significant impact with multi-modal approach)", "100% (complete elimination)"],
+      "answerIndex": 2,
+      "explanation": "Multi-modal C. difficile prevention programs including antibiotic stewardship (most important), contact precautions, environmental cleaning with sporicidal agents, and hand hygiene with soap and water can reduce CDI by 40-60%. Antibiotic stewardship alone can reduce CDI by 30-50%. Complete elimination is unrealistic, but significant reduction is achievable.",
+      "references": [
+        { "label": "SHEA/IDSA C. difficile Guidelines", "url": "https://academic.oup.com/cid/article/66/7/e1/4855916" }
+      ]
+    },
+    {
+      "id": "bundle_s4_q9",
+      "module": "bundles",
+      "stage": 4,
+      "question": "Your hospital implements bundles for CLABSI, CAUTI, VAE, and SSI simultaneously. To ensure successful implementation, you should:",
+      "options": ["Implement all at once without planning", "Develop a phased implementation plan, prioritize based on data, engage frontline staff, provide education, establish measurement systems, and ensure leadership support", "Only focus on one bundle", "Delegate to one person"],
+      "answerIndex": 1,
+      "explanation": "Successful multi-bundle implementation requires: phased approach (prioritize based on infection rates and impact), frontline staff engagement (nurses, physicians, leadership), comprehensive education, robust measurement systems (process and outcome), leadership support and resources, and celebration of successes. Attempting simultaneous implementation without planning leads to failure.",
+      "references": [
+        { "label": "IHI Bundle Implementation", "url": "https://www.ihi.org/Topics/Bundles/Pages/default.aspx" }
+      ]
+    },
+    {
+      "id": "bundle_s4_q10",
+      "module": "bundles",
+      "stage": 4,
+      "question": "Your facility's CLABSI rate is 0.5 per 1,000 line-days (excellent). A new intensivist questions the value of continued bundle compliance monitoring. You should:",
+      "options": ["Agree and stop monitoring", "Present data showing correlation between sustained compliance and low rates, explain risk of regression, and propose efficient monitoring methods", "Ignore the concern", "Increase monitoring frequency"],
+      "answerIndex": 1,
+      "explanation": "Use data to demonstrate that current low rates are the result of sustained bundle compliance, not chance. Show examples of facilities that discontinued efforts and experienced rate increases. Propose efficient monitoring methods (e.g., quarterly audits, automated surveillance) to maintain vigilance without excessive burden. Emphasize that prevention is more cost-effective than treatment.",
+      "references": [
+        { "label": "SHEA/IDSA CLABSI Compendium", "url": "https://www.jstor.org/stable/10.1086/676533" }
+      ]
+    },
+    {
+      "id": "bundle_s5_q1",
+      "module": "bundles",
+      "stage": 5,
+      "question": "As an IPC leader, you are developing a hospital-wide bundle implementation strategy. The most critical success factor is:",
+      "options": ["Purchasing expensive equipment", "Engaging frontline staff, securing executive leadership support, establishing data-driven feedback systems, and creating a culture of safety", "Hiring more staff", "Focusing only on documentation"],
+      "answerIndex": 1,
+      "explanation": "Successful bundle implementation requires: frontline staff engagement (nurses, physicians who perform the work), executive leadership support (resources, accountability), data-driven feedback systems (timely, actionable data), and culture of safety (psychological safety, learning from errors). Technology and staffing are secondary to culture and engagement.",
+      "references": [
+        { "label": "IHI Bundle Implementation", "url": "https://www.ihi.org/Topics/Bundles/Pages/default.aspx" }
+      ]
+    },
+    {
+      "id": "bundle_s5_q2",
+      "module": "bundles",
+      "stage": 5,
+      "question": "Your hospital's CLABSI SIR is 1.5 (worse than national benchmark). You have limited resources. The most cost-effective intervention is:",
+      "options": ["Purchase antimicrobial-impregnated catheters for all patients", "Implement basic CLABSI bundle with education, audits, and feedback (low-cost, high-impact)", "Hire additional staff", "Build new ICU"],
+      "answerIndex": 1,
+      "explanation": "Evidence shows basic bundle implementation (hand hygiene, maximal barriers, chlorhexidine, optimal site, daily review) with education, audits, and feedback is most cost-effective. Antimicrobial catheters are expensive and should be considered only after basic bundle is optimized. Focus on high-impact, low-cost interventions first (education, process improvement, culture change).",
+      "references": [
+        { "label": "SHEA/IDSA CLABSI Compendium", "url": "https://www.jstor.org/stable/10.1086/676533" }
+      ]
+    },
+    {
+      "id": "bundle_s5_q3",
+      "module": "bundles",
+      "stage": 5,
+      "question": "Your facility implements a CAUTI bundle but physicians resist removing catheters, citing patient comfort and nursing workload. The most effective strategy is:",
+      "options": ["Mandate compliance without discussion", "Present evidence on CAUTI risks and costs, implement nurse-driven removal protocols, provide alternatives (external catheters, bladder scanners), and engage physician champions", "Give up on the initiative", "Blame physicians"],
+      "answerIndex": 1,
+      "explanation": "Overcoming resistance requires: evidence-based education (CAUTI risks, costs, patient harm), empowering nurses with removal protocols, providing alternatives (external catheters for men, bladder scanners for retention assessment), engaging physician champions, and addressing legitimate concerns (incontinence management, accurate output monitoring). Collaborative, data-driven approach is most effective.",
+      "references": [
+        { "label": "SHEA/IDSA CAUTI Compendium", "url": "https://www.jstor.org/stable/10.1086/672270" }
+      ]
+    },
+    {
+      "id": "bundle_s5_q4",
+      "module": "bundles",
+      "stage": 5,
+      "question": "Your hospital's VAE rate is 2.0 per 1,000 ventilator-days (at benchmark), but ventilator days are increasing. The most appropriate strategy is:",
+      "options": ["Accept increasing ventilator days", "Implement ventilator liberation protocols (spontaneous awakening trials, spontaneous breathing trials), early mobility, and minimize sedation to reduce ventilator days", "Increase sedation", "Discourage extubation"],
+      "answerIndex": 1,
+      "explanation": "Reducing ventilator days through liberation protocols (SAT/SBT), early mobility, and minimizing sedation reduces VAE risk and improves outcomes. Even with stable VAE rates, reducing unnecessary ventilator days decreases overall VAE burden, reduces costs, and improves patient outcomes. Focus on both rate reduction and denominator reduction.",
+      "references": [
+        { "label": "IHI Ventilator Bundle", "url": "https://www.ihi.org/Topics/VentilatorBundle/Pages/default.aspx" }
+      ]
+    },
+    {
+      "id": "bundle_s5_q5",
+      "module": "bundles",
+      "stage": 5,
+      "question": "Your hospital performs 1,000 surgeries annually across multiple specialties with varying SSI rates (orthopedic 2%, colorectal 10%, cardiac 4%). The most effective approach is:",
+      "options": ["Use the same bundle for all surgeries", "Develop procedure-specific bundles based on evidence, prioritize high-risk/high-volume procedures, and tailor interventions to specific risks", "Focus only on lowest-risk procedures", "Ignore specialty differences"],
+      "answerIndex": 1,
+      "explanation": "Effective SSI prevention requires procedure-specific approaches. Colorectal surgery needs oral/mechanical bowel prep; cardiac surgery needs glycemic control; orthopedic surgery needs appropriate prophylaxis timing. Prioritize high-risk and high-volume procedures for maximum impact. Tailor bundles to specific risks while maintaining core elements (appropriate prophylaxis, hair removal, normothermia).",
+      "references": [
+        { "label": "WHO SSI Guidelines", "url": "https://www.who.int/publications/i/item/9789241550475" }
+      ]
+    },
+    {
+      "id": "bundle_s5_q6",
+      "module": "bundles",
+      "stage": 5,
+      "question": "Your ED sepsis bundle compliance is 60% with door-to-antibiotic time of 180 minutes. Root cause analysis reveals delays in recognition, blood culture collection, and antibiotic availability. The most comprehensive solution is:",
+      "options": ["Blame ED staff", "Implement sepsis screening tools, establish rapid response protocols, pre-position antibiotics in ED, provide education, and create multidisciplinary sepsis team", "Only focus on antibiotics", "Ignore the problem"],
+      "answerIndex": 1,
+      "explanation": "Comprehensive sepsis improvement requires: screening tools (triage, nursing, physician), rapid response protocols (sepsis alerts, order sets), pre-positioned antibiotics in ED, education (recognition, urgency), multidisciplinary team (ED, pharmacy, lab, ICU), and data feedback. Address all barriers simultaneously for maximum impact. Sepsis is a systems problem requiring systems solutions.",
+      "references": [
+        { "label": "Surviving Sepsis Campaign", "url": "https://www.sccm.org/SurvivingSepsisCampaign/Home" }
+      ]
+    },
+    {
+      "id": "bundle_s5_q7",
+      "module": "bundles",
+      "stage": 5,
+      "question": "Your hospital's C. difficile rate is 8 per 10,000 patient-days (above benchmark of 5). Antibiotic stewardship data shows high fluoroquinolone and clindamycin use. The most effective intervention is:",
+      "options": ["Continue current practices", "Implement antibiotic stewardship program with fluoroquinolone and clindamycin restrictions, prospective audit and feedback, and formulary modifications", "Only focus on environmental cleaning", "Increase antibiotic use"],
+      "answerIndex": 1,
+      "explanation": "Antibiotic stewardship is the most effective C. difficile prevention strategy. Restricting high-risk antibiotics (fluoroquinolones, clindamycin, cephalosporins), implementing prospective audit and feedback, and formulary modifications can reduce CDI by 30-50%. Combine with environmental cleaning and contact precautions for maximum impact. Address the root cause (antibiotic overuse) rather than only downstream interventions.",
+      "references": [
+        { "label": "SHEA/IDSA C. difficile Guidelines", "url": "https://academic.oup.com/cid/article/66/7/e1/4855916" }
+      ]
+    },
+    {
+      "id": "bundle_s5_q8",
+      "module": "bundles",
+      "stage": 5,
+      "question": "As IPC director, you must present bundle ROI to the CFO. Your hospital prevented 20 CLABSIs this year through bundle implementation. The estimated cost savings is:",
+      "options": ["$50,000 (minimal savings)", "$200,000 (moderate savings)", "$400,000-600,000 (significant savings, assuming $20,000-30,000 per CLABSI)", "$1,000,000 (overestimated)"],
+      "answerIndex": 2,
+      "explanation": "Average CLABSI costs $20,000-30,000 per infection (increased length of stay, antibiotics, complications, mortality). Preventing 20 CLABSIs saves $400,000-600,000 annually. Bundle implementation costs (education, supplies, monitoring) are typically <$50,000. ROI is 8-12:1. Use data to demonstrate value: cost per infection, infections prevented, cost savings, mortality reduction, and quality improvement.",
+      "references": [
+        { "label": "CDC HAI Cost Estimates", "url": "https://www.cdc.gov/hai/data/index.html" }
+      ]
+    },
+    {
+      "id": "bundle_s5_q9",
+      "module": "bundles",
+      "stage": 5,
+      "question": "Your hospital implements bundles for all device-associated HAIs. After 2 years, CLABSI and CAUTI rates decreased significantly, but VAE rate remains unchanged. The most likely explanation is:",
+      "options": ["VAE bundle is ineffective", "VAE surveillance is complex, definitions changed, or patient population changed (higher acuity, longer ventilation)", "Staff are not trying", "VAE is inevitable"],
+      "answerIndex": 1,
+      "explanation": "VAE surveillance is more complex than CLABSI/CAUTI. VAE definitions (VAC, IVAC, VAP) changed in 2013 and require objective criteria (oxygenation, ventilator settings). Many VAEs are not preventable (e.g., ARDS, pulmonary edema). Patient population changes (higher acuity, longer ventilation) affect rates. Validate surveillance methodology, ensure correct definition application, and focus on preventable VAEs (VAP). Consider process measures (sedation vacation compliance, HOB elevation) in addition to outcome measures.",
+      "references": [
+        { "label": "CDC VAE Surveillance", "url": "https://www.cdc.gov/nhsn/acute-care-hospital/vae/index.html" }
+      ]
+    },
+    {
+      "id": "bundle_s5_q10",
+      "module": "bundles",
+      "stage": 5,
+      "question": "You are developing a hospital-wide HAI prevention strategic plan. The most effective approach is:",
+      "options": ["Focus on one infection type only", "Develop comprehensive plan addressing all HAIs with prioritization based on data, engage stakeholders, establish metrics, ensure sustainability, and align with organizational goals", "Copy another hospital's plan", "Focus only on compliance"],
+      "answerIndex": 1,
+      "explanation": "Effective strategic planning requires: comprehensive assessment (all HAI types, baseline data), prioritization (impact, feasibility, resources), stakeholder engagement (frontline to executive), SMART goals and metrics (process and outcome), sustainability plan (ongoing monitoring, education, culture), and alignment with organizational goals (quality, safety, financial). Use data to drive decisions, engage stakeholders for buy-in, and plan for long-term sustainability. HAI prevention is a continuous journey, not a destination.",
+      "references": [
+        { "label": "CDC HAI Prevention", "url": "https://www.cdc.gov/hai/prevent/prevent_pubs.html" },
+        { "label": "APIC Implementation Guide", "url": "https://apic.org/professional-practice/practice-resources/" }
+      ]
+    }
+  ]
+}
+

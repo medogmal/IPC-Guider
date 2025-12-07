@@ -1,0 +1,481 @@
+{
+  "version": 4,
+  "organisms": [
+    {
+      "id": "mdros",
+      "organism": "MDROs (MRSA, VRE, CRE/ESBL, Others)",
+      "synonyms": ["MRSA", "VRE", "CRE", "ESBL", "MDRO"],
+      "isolationTypes": ["Contact", "Standard"],
+      "ppe": ["Gloves", "Gown", "Hand Hygiene"],
+      "durationText": "Duration of colonization/infection per local policy.",
+      "discontinueNotes": "Clinical improvement + negative culture Per institutional policy and MDRO program criteria.",
+      "references": [
+        { "label": "CDC – Appendix A (Isolation Precautions)", "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/appendix-a.html" },
+        { "label": "WHO – Infection Prevention & Control (IPC)", "url": "https://www.who.int/teams/integrated-health-services/infection-prevention-control" },
+        { "label": "MOH GDPIC – Best Practices (PDF)", "url": "https://www.moh.gov.sa/Ministry/Rules/Documents/Infection-Prevention.pdf" }
+      ],
+      "specialConsiderations": "Dedicated equipment advised; enhanced environmental cleaning; consider cohorting if single rooms are unavailable."
+    },
+    {
+      "id": "c_difficile",
+      "organism": "Clostridioides difficile (CDI)",
+      "synonyms": ["C. diff", "CDI"],
+      "isolationTypes": ["Contact-Enteric", "Standard"],
+      "ppe": ["Gloves", "Gown", "Hand Hygiene (soap & water)"],
+      "durationText": "Duration of diarrhea per policy.",
+      "discontinueNotes": "Diarrhea resolved ≥48h per local criteria.",
+      "references": [
+        { "label": "CDC – Appendix A", "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/appendix-a.html" },
+        { "label": "CDC – Environmental Infection Control (PDF)", "url": "https://www.cdc.gov/infection-control/media/pdfs/guideline-environmental-h.pdf" },
+        { "label": "WHO – Infection Prevention & Control (IPC)", "url": "https://www.who.int/teams/integrated-health-services/infection-prevention-control" }
+      ],
+      "specialConsiderations": "Soap & water mandatory; alcohol-based hand rubs are not effective. Use sporicidal environmental cleaning."
+    },
+    {
+      "id": "viral_gastro",
+      "organism": "Norovirus / Rotavirus / Viral Gastroenteritis",
+      "synonyms": ["Norovirus", "Rotavirus", "Viral gastroenteritis"],
+      "isolationTypes": ["Contact", "Standard"],
+      "ppe": ["Gloves", "Gown", "Hand Hygiene"],
+      "durationText": "Duration of diarrhea per policy.",
+      "discontinueNotes": "Diarrhea resolved ≥48h per policy.",
+      "references": [
+        { "label": "CDC – Appendix A", "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/appendix-a.html" },
+        { "label": "WHO – Infection Prevention & Control (IPC)", "url": "https://www.who.int/teams/integrated-health-services/infection-prevention-control" }
+      ],
+      "specialConsiderations": "Environmental persistence is high; enhanced cleaning and cohorting during outbreaks are recommended."
+    },
+    {
+      "id": "rsv_adeno_parainfluenza_hmpv",
+      "organism": "RSV, Adenovirus, Parainfluenza, hMPV",
+      "synonyms": ["RSV", "Adenovirus", "Parainfluenza", "hMPV"],
+      "isolationTypes": ["Contact", "Droplet", "Standard"],
+      "ppe": ["Gloves", "Gown", "Surgical Mask"],
+      "durationText": "Duration of symptoms.",
+      "discontinueNotes": "Symptoms resolved per policy.",
+      "references": [
+        { "label": "CDC – Appendix A (Respiratory viruses)", "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/appendix-a.html" }
+      ],
+      "specialConsiderations": "Eye protection advised in high-risk settings for RSV. Consider airborne precautions during aerosol-generating procedures."
+    },
+    {
+      "id": "influenza",
+      "organism": "Influenza (seasonal/H1N1)",
+      "synonyms": ["Flu", "Influenza A", "Influenza B"],
+      "isolationTypes": ["Droplet", "Standard"],
+      "ppe": ["Surgical Mask", "Hand Hygiene"],
+      "durationText": "5 days after onset or until symptom-free per policy.",
+      "discontinueNotes": "Afebrile ≥24h with clinical improvement.",
+      "references": [
+        { "label": "CDC – Appendix A (Influenza)", "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/appendix-a.html" }
+      ],
+      "specialConsiderations": "Upgrade to airborne (N95/FFP2) during aerosol generating procedures."
+    },
+    {
+      "id": "covid19",
+      "organism": "COVID-19 (SARS-CoV-2)",
+      "synonyms": ["COVID-19", "SARS-CoV-2"],
+      "isolationTypes": ["Droplet", "Airborne", "Contact", "Standard"],
+      "ppe": ["N95/FFP2", "Gloves", "Gown", "Eye Protection", "Hand Hygiene"],
+      "durationText": "Duration of illness; often +10 days after fever per local policy.",
+      "discontinueNotes": "Follow evolving time-based/test-based guidelines.",
+      "references": [
+        { "label": "CDC – Infection Control: COVID-19", "url": "https://www.cdc.gov/covid/hcp/infection-control/index.html" },
+        { "label": "WHO – Coronavirus (COVID-19)", "url": "https://www.who.int/health-topics/coronavirus" },
+        { "label": "Saudi PHA (Weqaya) – COVID-19 Guidelines (PDF)", "url": "https://www.pha.gov.sa/en-us/EvidenceAndProcedures/Documents/V3.2%20COVID-19%20Coronavirus-Disease-Guidelines%20Final%20Version%20March%202024.pdf" }
+      ],
+      "specialConsiderations": "Airborne precautions mandatory for aerosol generating procedures (intubation, suction, bronchoscopy). Use negative pressure if available."
+    },
+    {
+      "id": "tb_pulmonary",
+      "organism": "Tuberculosis (Active Pulmonary TB)",
+      "synonyms": ["TB", "Pulmonary TB"],
+      "isolationTypes": ["Airborne", "Standard"],
+      "ppe": ["N95/FFP2", "negative pressure room", "Hand Hygiene"],
+      "durationText": "Until clinical response and smear/culture criteria met.",
+      "discontinueNotes": "Often 3 negative smears/cultures + clinical improvement and effective anti-TB therapy; per policy.",
+      "references": [
+        { "label": "CDC – TB Infection Control (Healthcare Settings)", "url": "https://www.cdc.gov/tb-healthcare-settings/hcp/infection-control/index.html" },
+        { "label": "WHO – IPC (general)", "url": "https://www.who.int/teams/integrated-health-services/infection-prevention-control" }
+      ],
+      "specialConsiderations": "Minimize aerosol generating procedures; respirators must be fit-tested."
+    },
+    {
+      "id": "measles",
+      "organism": "Measles (Rubeola)",
+      "synonyms": ["Rubeola"],
+      "isolationTypes": ["Airborne", "Standard"],
+      "ppe": ["N95/FFP2", "negative pressure room", "Hand Hygiene"],
+      "durationText": "4 days after rash onset; immunocompromised for duration of illness.",
+      "discontinueNotes": "After defined period or full illness if immunocompromised.",
+      "references": [
+        { "label": "CDC – Measles (HCP)", "url": "https://www.cdc.gov/infection-control/hcp/healthcare-personnel-epidemiology-control/measles.html" },
+        { "label": "CDC – Appendix A", "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/appendix-a.html" },
+        { "label": "WHO – Measles (Fact Sheet)", "url": "https://www.who.int/news-room/fact-sheets/detail/measles" }
+      ],
+      "specialConsiderations": "Use negative pressure room if available; manage susceptible contacts."
+    },
+    {
+      "id": "varicella_zoster",
+      "organism": "Varicella (Chickenpox) & Disseminated Herpes Zoster",
+      "synonyms": ["Varicella", "VZV", "Chickenpox", "Zoster disseminated"],
+      "isolationTypes": ["Airborne", "Contact", "Standard"],
+      "ppe": ["N95/FFP2", "negative pressure room", "Gloves", "Gown", "Hand Hygiene"],
+      "durationText": "Until all lesions have crusted.",
+      "discontinueNotes": "Per policy; lesions crusted.",
+      "references": [
+        { "label": "CDC – Chickenpox (HCP) Clinical Overview", "url": "https://www.cdc.gov/chickenpox/hcp/clinical-overview/index.html" },
+        { "label": "CDC – Preventing VZV Transmission (HCP)", "url": "https://www.cdc.gov/shingles/hcp/infection-control/index.html" },
+        { "label": "CDC – Appendix A", "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/appendix-a.html" }
+      ],
+      "specialConsiderations": "Localized zoster in immunocompetent: contact/standard if lesions are covered."
+    },
+    {
+      "id": "pertussis",
+      "organism": "Pertussis (Whooping cough)",
+      "synonyms": ["Bordetella pertussis"],
+      "isolationTypes": ["Droplet", "Standard"],
+      "ppe": ["Surgical Mask", "Hand Hygiene"],
+      "durationText": "5 days after effective antibiotics.",
+      "discontinueNotes": "After antibiotics per policy.",
+      "references": [
+        { "label": "CDC – Pertussis (Infection Control)", "url": "https://www.cdc.gov/infection-control/hcp/healthcare-personnel-epidemiology-control/pertussis.html" },
+        { "label": "CDC – Clinical Overview", "url": "https://www.cdc.gov/pertussis/hcp/clinical-overview/index.html" },
+        { "label": "WHO – Pertussis", "url": "https://www.who.int/health-topics/pertussis" }
+      ],
+      "specialConsiderations": "Consider extended precautions during outbreaks."
+    },
+    {
+      "id": "meningococcal",
+      "organism": "Neisseria meningitidis (Meningococcal disease)",
+      "synonyms": ["Meningococcus"],
+      "isolationTypes": ["Droplet", "Standard"],
+      "ppe": ["Surgical Mask", "Hand Hygiene"],
+      "durationText": "24 hours after effective antibiotics.",
+      "discontinueNotes": "After antibiotics per policy.",
+      "references": [
+        { "label": "CDC – Meningococcal Disease (Infection Control)", "url": "https://www.cdc.gov/infection-control/hcp/healthcare-personnel-epidemiology-control/meningococcal-disease.html" },
+        { "label": "WHO – Meningitis (Fact Sheet)", "url": "https://www.who.int/news-room/fact-sheets/detail/meningitis" }
+      ],
+      "specialConsiderations": "For invasive disease (meningitis, sepsis). Not routinely required for pneumonia alone."
+    },
+    {
+      "id": "gas_invasive",
+      "organism": "Group A Streptococcus (Invasive)",
+      "synonyms": ["GAS invasive"],
+      "isolationTypes": ["Droplet", "Contact", "Standard"],
+      "ppe": ["Gloves", "Gown", "Surgical Mask"],
+      "durationText": "24 hours after effective antibiotics.",
+      "discontinueNotes": "After antibiotics per policy.",
+      "references": [
+        { "label": "CDC – Group A Streptococcus (Infection Control)", "url": "https://www.cdc.gov/infection-control/hcp/healthcare-personnel-epidemiology-control/group-a-streptococcus.html" },
+        { "label": "CDC – Clinical Guidance (GAS)", "url": "https://www.cdc.gov/group-a-strep/hcp/clinical-guidance/index.html" }
+      ],
+      "specialConsiderations": "Airborne-level precautions may be considered during wound irrigation/surgery for necrotizing fasciitis (AGP-like risk)."
+    },
+    {
+      "id": "cmv",
+      "organism": "Cytomegalovirus (CMV)",
+      "synonyms": ["CMV"],
+      "isolationTypes": ["Standard"],
+      "ppe": ["Hand Hygiene", "Gloves if body fluid exposure"],
+      "durationText": "N/A",
+      "discontinueNotes": "N/A",
+      "references": [
+        { "label": "CDC – CMV (Infection Control in HCP)", "url": "https://www.cdc.gov/infection-control/hcp/healthcare-personnel-epidemiology-control/cytomegalovirus.html" },
+        { "label": "CDC – Standard Precautions", "url": "https://www.cdc.gov/infection-control/hcp/basics/standard-precautions.html" }
+      ],
+      "specialConsiderations": "For neonates, contact precautions may be applied in some NICU settings per local policy."
+    },
+    {
+      "id": "bloodborne",
+      "organism": "Hepatitis B/C, HIV (Bloodborne viruses)",
+      "synonyms": ["HBV", "HCV", "HIV"],
+      "isolationTypes": ["Standard"],
+      "ppe": ["Gloves (blood/body fluids)", "Eye protection if splash risk"],
+      "durationText": "N/A",
+      "discontinueNotes": "N/A",
+      "references": [
+        { "label": "CDC – Standard Precautions", "url": "https://www.cdc.gov/infection-control/hcp/basics/standard-precautions.html" }
+      ],
+      "specialConsiderations": "Use mask/goggles if splash risk during procedures; handle sharps safely."
+    },
+    {
+      "id": "vhf",
+      "organism": "Viral Hemorrhagic Fevers (Ebola, Lassa, Marburg)",
+      "synonyms": ["Ebola", "Lassa", "Marburg"],
+      "isolationTypes": ["Contact", "Droplet", "Airborne", "Standard"],
+      "ppe": ["N95/FFP2", "Gloves", "Gown", "Eye Protection", "Boot Covers", "Double Gloves"],
+      "durationText": "Duration of illness; often extended; follow guidance.",
+      "discontinueNotes": "Per guideline and public health authority.",
+      "references": [
+        { "label": "CDC – Appendix A (Table for VHF)", "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/appendix-a.html" },
+        { "label": "CDC – Ebola Guidance (HCP) PDF", "url": "https://www.cdc.gov/vhf/ebola/clinicians/index.html" }
+      ],
+      "specialConsiderations": "Full PPE for AGPs; strict waste protocol; dedicated equipment; immediate public health notification."
+    },
+    {
+      "id": "scabies_lice",
+      "organism": "Scabies, Lice (Pediculosis)",
+      "synonyms": ["Scabies", "Pediculosis"],
+      "isolationTypes": ["Contact", "Standard"],
+      "ppe": ["Gloves", "Gown"],
+      "durationText": "24 hours after effective treatment.",
+      "discontinueNotes": "After treatment per policy.",
+      "references": [
+        { "label": "CDC – Scabies (Public Health Strategy)", "url": "https://www.cdc.gov/scabies/php/public-health-strategy/index.html" }
+      ],
+      "specialConsiderations": "Extended precautions for crusted scabies; treat close contacts per policy."
+    },
+    {
+      "id": "aspergillosis_invasive",
+      "organism": "Aspergillosis (Invasive, at-risk patients)",
+      "synonyms": ["Invasive aspergillosis"],
+      "isolationTypes": ["Airborne", "Standard"],
+      "ppe": ["N95/FFP2"],
+      "durationText": "Until clinical improvement or therapy completion.",
+      "discontinueNotes": "Clinical resolution per treating team.",
+      "references": [
+        { "label": "CDC – Clinical Overview (Aspergillosis)", "url": "https://www.cdc.gov/aspergillosis/hcp/clinical-overview/index.html" }
+      ],
+      "specialConsiderations": "Immunocompromised patients: avoid exposure to airborne spores; consider protective environments per policy."
+    },
+    {
+      "id": "candida_auris",
+      "organism": "Candida auris",
+      "synonyms": ["C. auris"],
+      "isolationTypes": ["Contact", "Standard"],
+      "ppe": ["Gloves", "Gown"],
+      "durationText": "Duration of colonization/infection; often for entire admission.",
+      "discontinueNotes": "Prolonged colonization requires Extended Contact precautions including strict environmental cleaning and disinfection due to prolonged survival and multidrug resistance.",
+      "references": [
+        { "label": "CDC – Infection Control: Candida auris", "url": "https://www.cdc.gov/candida-auris/hcp/infection-control/index.html" },
+        { "label": "MOH – Healthcare-Associated Outbreak Manual (includes C. auris) PDF", "url": "https://www.moh.gov.sa/Ministry/Rules/Documents/Healthcare-Associated-Outbreak-Management-Manual.pdf" },
+        { "label": "WHO – IPC (general)", "url": "https://www.who.int/teams/integrated-health-services/infection-prevention-control" }
+      ],
+      "specialConsiderations": "Single room preferred; strict contact precautions; consider cohorting if necessary."
+    },
+    {
+      "id": "hib",
+      "organism": "Haemophilus influenzae type b (Hib)",
+      "synonyms": ["Hib"],
+      "isolationTypes": ["Droplet", "Standard"],
+      "ppe": ["Surgical Mask"],
+      "durationText": "24 hours after effective antibiotics.",
+      "discontinueNotes": "After antibiotics per policy.",
+      "references": [
+        { "label": "CDC – Hib (Clinicians)", "url": "https://www.cdc.gov/hi-disease/clinicians.html" },
+        { "label": "CDC – Appendix A", "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/appendix-a.html" }
+      ],
+      "specialConsiderations": "Applies to epiglottitis and meningitis."
+    },
+    {
+      "id": "hepatitis_a",
+      "organism": "Hepatitis A",
+      "synonyms": ["HAV"],
+      "isolationTypes": ["Standard", "Contact"],
+      "ppe": ["Gloves", "Gown (if poor hygiene/diaper changes)"],
+      "durationText": "Duration of infectious period per guidance.",
+      "discontinueNotes": "Clinical recovery & public health guidance.",
+      "references": [
+        { "label": "CDC – Clinical Care (Hepatitis A)", "url": "https://www.cdc.gov/hepatitis-a/hcp/clinical-care/index.html" },
+        { "label": "CDC – Clinical Overview (Hepatitis A)", "url": "https://www.cdc.gov/hepatitis-a/hcp/clinical-overview/index.html" }
+      ],
+      "specialConsiderations": "Contact precautions commonly used in childcare and institutional settings."
+    },
+    {
+      "id": "hsv_severe_neonatal",
+      "organism": "Herpes simplex (Severe/Disseminated/Neonatal)",
+      "synonyms": ["HSV severe", "Neonatal HSV"],
+      "isolationTypes": ["Contact", "Standard"],
+      "ppe": ["Gloves", "Gown"],
+      "durationText": "Until lesions crusted and/or clinical stabilization.",
+      "discontinueNotes": "Resolution or per local policy.",
+      "references": [
+        { "label": "CDC – STI Treatment Guidelines: Herpes", "url": "https://www.cdc.gov/std/treatment-guidelines/herpes.htm" }
+      ],
+      "specialConsiderations": "Neonates require strict precautions; airborne may be considered if extensive respiratory procedures are performed."
+    },
+    {
+  "id": "salmonella",
+  "organism": "Salmonella (non-typhoidal, enteric infection)",
+  "synonyms": ["Salmonella spp.", "Enteric Salmonella"],
+  "isolationTypes": ["Contact", "Standard"],
+  "ppe": ["Gloves", "Gown", "Hand Hygiene"],
+  "durationText": "Duration of illness; may extend in incontinent or diapered patients.",
+  "discontinueNotes": "Resolution of diarrhea + per local protocol.",
+  "specialConsiderations": "Foodborne outbreaks require strict contact precautions and cohorting if institutional.",
+  "references": [
+    { "label": "CDC – Appendix A (Salmonella)", "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/appendix-a.html" },
+    { "label": "WHO – Salmonella IPC", "url": "https://www.who.int/news-room/fact-sheets/detail/salmonella-(non-typhoidal)" }
+  ]
+},
+{
+  "id": "shigella",
+  "organism": "Shigella spp.",
+  "synonyms": ["Bacillary dysentery"],
+  "isolationTypes": ["Contact", "Standard"],
+  "ppe": ["Gloves", "Gown"],
+  "durationText": "Duration of illness; longer in children and incontinent patients.",
+  "discontinueNotes": "Resolution of diarrhea and per policy.",
+  "specialConsiderations": "Highly infectious; low infectious dose; strict hygiene.",
+  "references": [
+    { "label": "CDC – Appendix A (Shigella)", "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/appendix-a.html" }
+  ]
+},
+{
+  "id": "campylobacter",
+  "organism": "Campylobacter spp.",
+  "synonyms": ["Campylobacter enteritis"],
+  "isolationTypes": ["Contact", "Standard"],
+  "ppe": ["Gloves", "Gown"],
+  "durationText": "Duration of illness in incontinent/diapered patients.",
+  "discontinueNotes": "Resolution of symptoms.",
+  "specialConsiderations": "Common foodborne pathogen; meticulous hand hygiene required.",
+  "references": [
+    { "label": "CDC – Appendix A (Campylobacter)", "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/appendix-a.html" }
+  ]
+},
+{
+  "id": "cholera",
+  "organism": "Vibrio cholerae (Cholera)",
+  "synonyms": ["Cholera"],
+  "isolationTypes": ["Contact", "Standard"],
+  "ppe": ["Gloves", "Gown"],
+  "durationText": "Duration of illness.",
+  "discontinueNotes": "Resolution of diarrhea.",
+  "specialConsiderations": "Strict fluid/electrolyte replacement; IPC important during outbreaks; Notify public health.",
+  "references": [
+    { "label": "CDC – Appendix A (Cholera)", "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/appendix-a.html" },
+    { "label": "WHO – Cholera", "url": "https://www.who.int/news-room/fact-sheets/detail/cholera" }
+  ]
+},
+{
+  "id": "smallpox",
+  "organism": "Variola virus (Smallpox)",
+  "synonyms": ["Smallpox", "Variola"],
+  "isolationTypes": ["Airborne", "Contact", "Standard"],
+  "ppe": ["N95 respirator", "Gloves", "Gown", "Eye Protection"],
+  "durationText": "Until all scabs have separated.",
+  "discontinueNotes": "Scabs separated, patient clinically recovered.",
+  "specialConsiderations": "Notify public health immediately; high bioterrorism concern.",
+  "references": [
+    { "label": "CDC – Smallpox", "url": "https://www.cdc.gov/smallpox/index.html" },
+    { "label": "WHO – Smallpox Factsheet", "url": "https://www.who.int/health-topics/smallpox" }
+  ]
+},
+{
+  "id": "mumps",
+  "organism": "Mumps virus",
+  "synonyms": ["Parotitis virus"],
+  "isolationTypes": ["Droplet", "Standard"],
+  "ppe": ["Surgical Mask"],
+  "durationText": "5 days after onset of parotid swelling.",
+  "discontinueNotes": "After 5 days of illness.",
+  "specialConsiderations": "For complications like (encephalitis): isolation till neurologic improvement..",
+  "references": [
+    { "label": "CDC – Appendix A (Mumps)", "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/appendix-a.html" }
+  ]
+},
+{
+  "id": "rubella",
+  "organism": "Rubella (German measles)",
+  "synonyms": ["German measles"],
+  "isolationTypes": ["Droplet", "Standard"],
+  "ppe": ["Surgical Mask"],
+  "durationText": "7 days after rash onset.",
+  "discontinueNotes": "After 7 days; longer in immunocompromised.",
+  "specialConsiderations": "Pregnant healthcare workers should avoid exposure.",
+  "references": [
+    { "label": "CDC – Appendix A (Rubella)", "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/appendix-a.html" }
+  ]
+},
+{
+  "id": "parvovirus_b19",
+  "organism": "Parvovirus B19",
+  "synonyms": ["Fifth disease", "Erythema infectiosum"],
+  "isolationTypes": ["Droplet", "Standard"],
+  "ppe": ["Surgical Mask"],
+  "durationText": "7 days after onset of symptoms.",
+  "discontinueNotes": "Resolution of illness.",
+  "specialConsiderations": "In pregnant or immunocompromised, extend isolation.",
+  "references": [
+    { "label": "CDC – Appendix A (Parvovirus B19)", "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/appendix-a.html" }
+  ]
+},
+{
+  "id": "plague",
+  "organism": "Yersinia pestis (Pneumonic plague)",
+  "synonyms": ["Plague", "Y. pestis"],
+  "isolationTypes": ["Droplet", "Standard"],
+  "ppe": ["Surgical Mask"],
+  "durationText": "Until 48 hours after effective antibiotics.",
+  "discontinueNotes": "After 48h of therapy.",
+  "specialConsiderations": "Public health notification required; droplet for pneumonic plague.",
+  "references": [
+    { "label": "CDC – Plague", "url": "https://www.cdc.gov/plague/clinicians/index.html" },
+    { "label": "WHO – Plague", "url": "https://www.who.int/news-room/fact-sheets/detail/plague" }
+  ]
+},
+{
+  "id": "strep_pneumoniae",
+  "organism": "Streptococcus pneumoniae (invasive)",
+  "synonyms": ["Pneumococcus"],
+  "isolationTypes": ["Droplet", "Standard"],
+  "ppe": ["Surgical Mask"],
+  "durationText": "Until 24 hours after effective antibiotics.",
+  "discontinueNotes": "After 24h antibiotics.",
+  "specialConsiderations": "Invasive pneumococcal disease (e.g., meningitis).",
+  "references": [
+    { "label": "CDC – Appendix A (S. pneumoniae)", "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/appendix-a.html" }
+  ]
+},
+{
+  "id": "diphtheria",
+  "organism": "Corynebacterium diphtheriae",
+  "synonyms": ["Diphtheria"],
+  "isolationTypes": ["Droplet", "Contact", "Standard"],
+  "ppe": ["Surgical Mask", "Gloves", "Gown"],
+  "durationText": "Until 2 negative cultures.",
+  "discontinueNotes": "After 2 consecutive negative cultures.",
+  "specialConsiderations": "Respiratory diphtheria requires droplet; cutaneous requires contact precautions.",
+  "references": [
+    { "label": "CDC – Appendix A (Diphtheria)", "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/appendix-a.html" }
+  ]
+},
+    {
+      "id": "mycoplasma_pneumoniae",
+      "organism": "Mycoplasma pneumoniae",
+      "synonyms": ["M. pneumoniae"],
+      "isolationTypes": ["Droplet", "Standard"],
+      "ppe": ["Surgical Mask"],
+      "durationText": "Until clinical improvement.",
+      "discontinueNotes": "Clinical improvement per treating team.",
+      "references": [
+        { "label": "CDC – Appendix A (Mycoplasma)", "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/appendix-a.html" }
+      ],
+      "specialConsiderations": "Consider airborne precautions during AGPs."
+    },
+    {
+      "id": "mpox",
+      "organism": "Monkeypox (Mpox)",
+      "synonyms": ["Mpox", "Monkeypox", "Orthopoxvirus"],
+      "isolationTypes": ["Contact", "Droplet", "Standard"],
+      "ppe": ["Gloves", "Gown", "Surgical Mask", "Eye Protection", "Hand Hygiene"],
+      "durationText": "Until all lesions have crusted, scabs have fallen off, and new skin has formed.",
+      "discontinueNotes": "Per policy; ensure complete lesion healing and no new lesions.",
+      "references": [
+        { "label": "CDC – Mpox (Clinicians)", "url": "https://www.cdc.gov/poxvirus/mpox/clinicians/index.html" },
+        { "label": "WHO – Mpox (Health Topic)", "url": "https://www.who.int/health-topics/mpox" }
+      ],
+      "specialConsiderations": "Airborne precautions during AGPs or when extensive oral/respiratory lesions are present; cover lesions; dedicated equipment; enhanced environmental cleaning."
+    }
+  ],
+  "notes": [
+    "Upgrade to Airborne (N95/FFP2; closed door; negative pressure if available) for AGPs performed on droplet-spread pathogens.",
+    "Environmental cleaning must be reinforced for pathogens with environmental persistence (C. difficile, norovirus, MDROs).",
+    "Use eye protection where splashes/sprays are possible.",
+    "Pregnant/immunocompromised patients may require stricter/longer precautions (measles, rubella, varicella, Parvovirus B19).",
+    "Follow MOH GDPIC / local facility policy where it supersedes general guidance."
+  ]
+}

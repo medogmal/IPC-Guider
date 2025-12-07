@@ -1,0 +1,801 @@
+{
+  "version": 1,
+  "groupId": "foodborne_waterborne",
+  "groupName": "Foodborne & Waterborne",
+  "type": "bacterial",
+  "updatedAt": "2025-01-11T00:00:00Z",
+  "pathogens": [
+    {
+      "id": "salmonella",
+      "name": "Salmonella",
+      "scientificName": "Salmonella enterica",
+      "definition": "Gram-negative rods causing acute foodborne gastroenteritis and invasive infection. Non-typhoidal Salmonella is a leading cause of foodborne illness worldwide.",
+      "reservoir": {
+        "primary": ["GI tracts of animals", "Undercooked poultry", "Eggs", "Contaminated produce", "Contaminated water"],
+        "secondary": ["Reptiles", "Amphibians", "Pet food", "Environmental surfaces"],
+        "notes": "Widely distributed in animals and environment. Can survive in dry conditions for extended periods."
+      },
+      "transmission": {
+        "mode": "Fecal-oral",
+        "routes": [
+          "Contaminated food (especially undercooked poultry and eggs)",
+          "Contaminated water",
+          "Person-to-person (rare, mainly in healthcare settings)",
+          "Direct animal contact (reptiles, farm animals)"
+        ],
+        "notes": "Most common via undercooked poultry and eggs. Cross-contamination during food preparation is a major risk."
+      },
+      "incubationPeriod": {
+        "range": "6-72 hours (typically 12-36 hours)",
+        "infectiousPeriod": "Duration of illness + several weeks in stool (can be months in infants)",
+        "seasonality": "Summer peak (warmer months favor bacterial growth)",
+        "geographic": "Worldwide, higher incidence in developing countries with poor sanitation"
+      },
+      "riskFactors": [
+        "Age <5 years or >65 years",
+        "Immunocompromised (HIV, chemotherapy, transplant)",
+        "Achlorhydria (low stomach acid, PPI use)",
+        "Recent antibiotic use (disrupts gut flora)",
+        "Inflammatory bowel disease",
+        "Sickle cell disease (risk of invasive infection)",
+        "Healthcare workers and food handlers"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Diarrhea (often bloody or mucoid)",
+          "Fever (38-39°C)",
+          "Abdominal cramps and pain",
+          "Nausea and vomiting",
+          "Headache and myalgia"
+        ],
+        "complications": [
+          "Bacteremia and sepsis (especially in immunocompromised)",
+          "Reactive arthritis (Reiter syndrome)",
+          "Osteomyelitis (particularly in sickle cell disease)",
+          "Severe dehydration",
+          "Death (rare, <1% in developed countries)"
+        ],
+        "caseDefinition": {
+          "suspected": "Acute diarrhea (≥3 loose stools/24h) + fever + abdominal pain + food exposure history within 72 hours",
+          "confirmed": "Isolation of Salmonella from stool, blood, or other clinical specimen by culture or PCR"
+        }
+      },
+      "diagnosis": [
+        "Stool culture (gold standard, 24-48 hours)",
+        "Blood culture (if systemic infection suspected)",
+        "PCR/molecular testing (rapid, 2-4 hours)",
+        "Serotyping for outbreak investigation (PFGE, WGS)"
+      ],
+      "treatment": "Supportive care (oral or IV hydration) is primary treatment. Antibiotics for severe cases or high-risk patients: ciprofloxacin, azithromycin, ceftriaxone. Avoid antibiotics in uncomplicated cases (prolongs carriage and increases resistance). Antimotility agents (loperamide) are contraindicated.",
+      "infectionControl": {
+        "precautions": "Standard + Contact Precautions (for incontinent or diapered patients)",
+        "screening": "Not routinely recommended. Consider for outbreak investigation.",
+        "cohorting": "Cohort cases during outbreak. Separate from immunocompromised patients.",
+        "sourceControl": "Identify and remove contaminated food source. Trace back to supplier.",
+        "environmental": "Enhanced cleaning of bathrooms, food prep areas, and patient rooms. Use EPA-approved disinfectants.",
+        "staffEducation": "Hand hygiene (most important), food safety, proper PPE use, avoid work when symptomatic"
+      },
+      "outbreakTriggers": [
+        "≥2 epidemiologically linked cases within 4 weeks",
+        "Common food source or event identified",
+        "Increase above baseline rate for the facility/community",
+        "Same serotype identified in multiple cases (molecular typing)"
+      ],
+      "reportingCommunication": [
+        "Notify local health department immediately (reportable disease)",
+        "Report to CDC via NORS (National Outbreak Reporting System)",
+        "Alert food safety authorities (FDA, USDA) if foodborne source",
+        "Communicate with affected facilities, restaurants, or communities",
+        "Public health alert if widespread or ongoing outbreak",
+        "Coordinate with infection control and hospital leadership"
+      ],
+      "prevention": [
+        "Proper food handling and storage (refrigerate <4°C)",
+        "Cook poultry to internal temperature 165°F (74°C)",
+        "Avoid raw or undercooked eggs and unpasteurized milk",
+        "Hand hygiene after handling animals, raw food, or using bathroom",
+        "Separate raw and cooked foods (prevent cross-contamination)",
+        "Food handler education and health screening",
+        "Exclude symptomatic food handlers from work"
+      ],
+      "references": [
+        {
+          "label": "CDC - Salmonella",
+          "url": "https://www.cdc.gov/salmonella/index.html"
+        },
+        {
+          "label": "WHO - Salmonella (non-typhoidal)",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/salmonella-(non-typhoidal)"
+        },
+        {
+          "label": "NHSN - Foodborne Illness Surveillance",
+          "url": "https://www.cdc.gov/nhsn/index.html"
+        },
+        {
+          "label": "GDIPC - Foodborne Outbreak Guidelines",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "shigella",
+      "name": "Shigella",
+      "scientificName": "Shigella species",
+      "definition": "Gram-negative rod, highly infectious, causes dysentery; both food- and waterborne. Shigella is one of the most contagious bacterial pathogens, requiring as few as 10-100 organisms to cause infection.",
+      "reservoir": {
+        "primary": [
+          "Human gastrointestinal tract",
+          "Contaminated food",
+          "Contaminated water"
+        ],
+        "secondary": [
+          "Contaminated surfaces",
+          "Fecal matter",
+          "Flies (mechanical vectors)"
+        ],
+        "notes": "Humans are the primary reservoir. No animal reservoir. Highly infectious with low infectious dose."
+      },
+      "transmission": {
+        "mode": "Fecal-oral",
+        "routes": [
+          "Contaminated food (especially salads, raw vegetables)",
+          "Contaminated water",
+          "Direct person-to-person contact (most common)",
+          "Contaminated surfaces and fomites",
+          "Flies (mechanical transmission)"
+        ],
+        "notes": "Highly contagious with person-to-person transmission being most common, especially in daycare centers and institutions."
+      },
+      "incubationPeriod": {
+        "range": "1-3 days (typically 1-2 days)",
+        "infectiousPeriod": "During illness and up to 1 week after diarrhea resolves (can be longer in children)",
+        "seasonality": "Year-round, with peaks in summer and early fall",
+        "geographic": "Worldwide, higher incidence in areas with poor sanitation and crowded conditions"
+      },
+      "riskFactors": [
+        "Daycare centers and institutional settings",
+        "Poor sanitation and hygiene",
+        "Crowded living conditions",
+        "Young children (especially <5 years)",
+        "Immunocompromised individuals",
+        "Men who have sex with men (MSM)",
+        "Travel to endemic areas"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Bloody diarrhea (dysentery) - hallmark symptom",
+          "Severe abdominal cramps and tenesmus",
+          "Fever (often high)",
+          "Nausea and vomiting",
+          "Dehydration"
+        ],
+        "complications": [
+          "Severe dehydration",
+          "Seizures (especially in young children)",
+          "Hemolytic uremic syndrome (HUS) - rare",
+          "Reactive arthritis",
+          "Bacteremia (rare)",
+          "Toxic megacolon (rare)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with acute diarrhea (especially bloody) + abdominal cramps + fever + epidemiologic link (daycare, institution, outbreak)",
+          "confirmed": "Laboratory confirmation: positive stool culture or PCR for Shigella species"
+        }
+      },
+      "diagnosis": [
+        "Stool culture (gold standard)",
+        "PCR for Shigella species",
+        "Fecal leukocytes (often present)",
+        "Antimicrobial susceptibility testing (increasing resistance)"
+      ],
+      "treatment": "Supportive care with oral or IV rehydration. Antibiotics for severe cases or high-risk patients: azithromycin (first-line), ciprofloxacin (if susceptible), or ceftriaxone. Avoid antimotility agents (loperamide).",
+      "infectionControl": {
+        "precautions": "Contact Precautions (gloves + gown) until diarrhea resolves",
+        "screening": "Not routinely recommended; test symptomatic individuals",
+        "cohorting": "Cohort cases during outbreaks, especially in daycare and institutional settings",
+        "sourceControl": "Exclude sick food handlers and daycare workers until symptom-free for 24-48 hours and negative stool cultures (if required)",
+        "environmental": "Enhanced cleaning and disinfection of bathrooms, high-touch surfaces, and shared equipment with EPA-approved disinfectants",
+        "staffEducation": "Hand hygiene with soap and water (alcohol less effective), proper diaper changing procedures, contact precautions, exclusion policies"
+      },
+      "outbreakTriggers": [
+        "≥2 epidemiologically linked cases in same setting (daycare, institution, household)",
+        "Any single case in high-risk group (daycare, food handler, healthcare worker)",
+        "Cluster above baseline rate in community or facility",
+        "Detection of unusual antimicrobial resistance pattern"
+      ],
+      "reportingCommunication": [
+        "Notify public health within 24 hours of suspected outbreak",
+        "Start outbreak investigation and contact tracing immediately",
+        "Coordinate with daycare/institutional leadership for case finding",
+        "Implement control measures promptly (exclusion, hygiene education)",
+        "Update stakeholders as outbreak evolves",
+        "Document all cases and interventions"
+      ],
+      "prevention": [
+        "Hand hygiene with soap and water (most critical)",
+        "Safe water and sanitation infrastructure",
+        "Proper food handling and preparation",
+        "Exclusion of ill food handlers and daycare workers",
+        "Sanitation training in high-risk settings",
+        "Fly control measures",
+        "Travel health education for endemic areas"
+      ],
+      "references": [
+        {
+          "label": "WHO - Shigellosis",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/shigellosis"
+        },
+        {
+          "label": "CDC - Shigella Infection",
+          "url": "https://www.cdc.gov/shigella/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Foodborne Illness Guidelines",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "campylobacter",
+      "name": "Campylobacter jejuni",
+      "scientificName": "Campylobacter jejuni",
+      "definition": "Curved Gram-negative rod, most common cause of bacterial gastroenteritis globally. Campylobacter is a leading cause of foodborne diarrheal illness worldwide, often associated with poultry consumption.",
+      "reservoir": {
+        "primary": ["Poultry (chickens, turkeys)", "Livestock (cattle, pigs)", "Untreated water", "Raw milk"],
+        "secondary": ["Pets (dogs, cats)", "Wild birds", "Environmental water sources"],
+        "notes": "Poultry is the most common source. Campylobacter colonizes the intestinal tract of birds without causing illness."
+      },
+      "transmission": {
+        "mode": "Fecal-oral (food and waterborne)",
+        "routes": [
+          "Undercooked poultry (most common)",
+          "Unpasteurized milk and dairy products",
+          "Contaminated water (drinking or recreational)",
+          "Cross-contamination during food preparation",
+          "Direct contact with infected animals"
+        ],
+        "notes": "Most infections are sporadic rather than outbreak-associated. Cross-contamination during poultry preparation is a major risk."
+      },
+      "incubationPeriod": {
+        "range": "2-5 days (typically 2-3 days)",
+        "infectiousPeriod": "Contagious while excreting bacteria (several days to weeks, typically 2-3 weeks without treatment)",
+        "seasonality": "Peak in late spring and summer months",
+        "geographic": "Worldwide, with higher incidence in developed countries due to better surveillance"
+      },
+      "riskFactors": [
+        "Consumption of undercooked poultry",
+        "Drinking unpasteurized milk or untreated water",
+        "Inadequate cooking and food handling practices",
+        "Young children (<5 years) and elderly",
+        "Immunocompromised individuals",
+        "Travel to developing countries",
+        "Contact with farm animals or pets with diarrhea"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Diarrhea (often bloody)",
+          "Severe abdominal cramps and pain",
+          "Fever (often high, 38-40°C)",
+          "Nausea and vomiting",
+          "Malaise and headache"
+        ],
+        "complications": [
+          "Guillain-Barré syndrome (GBS) - 1 in 1,000 cases",
+          "Reactive arthritis",
+          "Bacteremia (rare, in immunocompromised)",
+          "Irritable bowel syndrome (post-infection)",
+          "Hemolytic uremic syndrome (very rare)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with acute diarrhea (often bloody) + abdominal cramps + fever + exposure to undercooked poultry or untreated water",
+          "confirmed": "Laboratory confirmation: positive stool culture (requires microaerophilic conditions) or PCR for Campylobacter species"
+        }
+      },
+      "diagnosis": [
+        "Stool culture (requires special microaerophilic conditions: 5% O2, 10% CO2, 85% N2)",
+        "PCR for Campylobacter species (increasingly used)",
+        "Gram stain (characteristic curved or S-shaped rods)",
+        "Antimicrobial susceptibility testing (increasing fluoroquinolone resistance)"
+      ],
+      "treatment": "Supportive care with oral or IV rehydration (most cases self-limited). Antibiotics for severe cases or high-risk patients: azithromycin (first-line) or erythromycin. Fluoroquinolones (ciprofloxacin) if susceptible, but resistance is increasing.",
+      "infectionControl": {
+        "precautions": "Contact Precautions for hospitalized patients with diarrhea",
+        "screening": "Not routinely recommended; test symptomatic individuals",
+        "cohorting": "Cohort cases during outbreaks if needed",
+        "sourceControl": "Exclude sick food handlers until symptom-free for 24 hours; identify and eliminate contaminated food or water sources",
+        "environmental": "Enhanced cleaning and disinfection of food preparation areas, bathrooms, and high-touch surfaces",
+        "staffEducation": "Hand hygiene, proper poultry handling and cooking (internal temp 165°F/74°C), cross-contamination prevention, water safety"
+      },
+      "outbreakTriggers": [
+        "≥2-3 epidemiologically linked cases in same exposure group (e.g., restaurant, event)",
+        "Sudden outbreak or cluster above baseline",
+        "Common source identified (contaminated food or water)",
+        "Unusual increase in cases in community"
+      ],
+      "reportingCommunication": [
+        "Prompt public health notification within 24 hours of suspected outbreak",
+        "Investigation and risk communication to affected populations",
+        "Coordinate with food safety authorities if foodborne source suspected",
+        "Trace back to identify contaminated products or water sources",
+        "Update stakeholders and implement control measures",
+        "Public education on safe food handling"
+      ],
+      "prevention": [
+        "Safe poultry preparation: cook to 165°F (74°C), avoid cross-contamination",
+        "Water quality monitoring and treatment",
+        "Pasteurization of milk and dairy products",
+        "Hand hygiene after handling raw poultry or animals",
+        "Food handler education and training",
+        "Public health outreach on food safety",
+        "Biosecurity measures on poultry farms"
+      ],
+      "references": [
+        {
+          "label": "WHO - Campylobacter",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/campylobacter"
+        },
+        {
+          "label": "CDC - Campylobacter Infection",
+          "url": "https://www.cdc.gov/campylobacter/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Foodborne Illness Guidelines",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "e_coli_stec",
+      "name": "E. coli (O157:H7 & STEC)",
+      "scientificName": "Escherichia coli O157:H7 and other Shiga toxin-producing E. coli (STEC)",
+      "definition": "Shiga toxin-producing E. coli causing bloody diarrhea and hemolytic uremic syndrome (HUS); both food- and waterborne. STEC produces Shiga toxins (Stx1, Stx2) that cause severe intestinal and systemic complications.",
+      "reservoir": {
+        "primary": ["Cattle (intestinal tract)", "Undercooked ground beef", "Raw produce (lettuce, spinach)", "Contaminated water"],
+        "secondary": ["Sheep", "Goats", "Deer", "Unpasteurized milk and juice"],
+        "notes": "Cattle are the primary reservoir. E. coli O157:H7 is the most common STEC serotype, but non-O157 STEC are increasingly recognized."
+      },
+      "transmission": {
+        "mode": "Fecal-oral (food and waterborne)",
+        "routes": [
+          "Undercooked ground beef (especially hamburgers)",
+          "Raw or undercooked produce (lettuce, spinach, sprouts)",
+          "Contaminated water (drinking or recreational)",
+          "Unpasteurized milk, juice, or cider",
+          "Direct contact with infected animals (petting zoos, farms)",
+          "Person-to-person transmission (especially in daycare)"
+        ],
+        "notes": "Very low infectious dose (10-100 organisms). Cross-contamination during food preparation is a major risk."
+      },
+      "incubationPeriod": {
+        "range": "1-10 days (average 3-4 days)",
+        "infectiousPeriod": "Infectious during illness and for days to weeks after diarrhea resolves (especially in children)",
+        "seasonality": "Peak in summer months (June-September)",
+        "geographic": "Worldwide, with higher incidence in developed countries with better surveillance"
+      },
+      "riskFactors": [
+        "Young children (<5 years) - highest risk for HUS",
+        "Elderly (>65 years)",
+        "Consumption of undercooked ground beef",
+        "Eating raw produce or unpasteurized products",
+        "Daycare attendance",
+        "Improper food handling and cross-contamination",
+        "Contact with farm animals or petting zoos",
+        "Swimming in contaminated water"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Severe bloody diarrhea (hemorrhagic colitis)",
+          "Severe abdominal cramps",
+          "Vomiting",
+          "Low-grade fever or no fever",
+          "Fatigue and weakness"
+        ],
+        "complications": [
+          "Hemolytic uremic syndrome (HUS) - 5-10% of cases, especially children",
+          "Thrombotic thrombocytopenic purpura (TTP)",
+          "Acute kidney injury and renal failure",
+          "Seizures and neurological complications",
+          "Death (especially in HUS cases)",
+          "Chronic kidney disease (post-HUS)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with bloody diarrhea + severe abdominal cramps + exposure to undercooked beef, raw produce, or contaminated water; any case of HUS in a child",
+          "confirmed": "Laboratory confirmation: stool culture positive for E. coli O157:H7 or other STEC, or detection of Shiga toxins (Stx1, Stx2) by PCR or immunoassay"
+        }
+      },
+      "diagnosis": [
+        "Stool culture for E. coli O157:H7 (sorbitol-MacConkey agar)",
+        "PCR for Shiga toxin genes (stx1, stx2) - detects all STEC",
+        "Enzyme immunoassay (EIA) for Shiga toxins",
+        "Serotyping and molecular subtyping (PFGE, WGS) for outbreak investigation",
+        "Complete blood count and renal function tests if HUS suspected"
+      ],
+      "treatment": "Supportive care with careful fluid and electrolyte management. AVOID antibiotics (may increase risk of HUS by releasing more toxins). ICU care for HUS: dialysis, blood transfusions, plasma exchange. Avoid antimotility agents (loperamide).",
+      "infectionControl": {
+        "precautions": "Contact Precautions for hospitalized patients with diarrhea",
+        "screening": "Not routinely recommended; test all patients with bloody diarrhea",
+        "cohorting": "Cohort cases during outbreaks, especially in daycare settings",
+        "sourceControl": "Immediate identification and removal of contaminated food or water source; exclude sick food handlers and daycare workers",
+        "environmental": "Enhanced cleaning and disinfection of bathrooms, high-touch surfaces, and food preparation areas",
+        "staffEducation": "Hand hygiene, proper cooking of ground beef (160°F/71°C), produce washing, cross-contamination prevention, recognition of HUS"
+      },
+      "outbreakTriggers": [
+        "≥2-3 epidemiologically linked cases with same exposure",
+        "Any case of HUS in a child (triggers immediate investigation)",
+        "Unusual cluster or increase above baseline",
+        "Common source identified (contaminated food or water)"
+      ],
+      "reportingCommunication": [
+        "Rapid reporting within 24 hours of suspected case or outbreak",
+        "Escalate immediately if HUS or death occurs",
+        "Coordinate with food safety and environmental health authorities",
+        "Product recall if contaminated food identified",
+        "Public health alerts and media communication",
+        "Contact tracing and case finding"
+      ],
+      "prevention": [
+        "Cook ground beef to 160°F (71°C) - use meat thermometer",
+        "Wash produce thoroughly under running water",
+        "Avoid unpasteurized milk, juice, and cider",
+        "Prevent cross-contamination (separate cutting boards for meat and produce)",
+        "Hand hygiene after handling raw meat or animals",
+        "Supervise children at petting zoos (hand washing)",
+        "Water quality monitoring and treatment",
+        "Public education on food safety"
+      ],
+      "references": [
+        {
+          "label": "WHO - E. coli",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/e-coli"
+        },
+        {
+          "label": "CDC - E. coli (STEC)",
+          "url": "https://www.cdc.gov/ecoli/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Foodborne Illness Guidelines",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "listeria",
+      "name": "Listeria monocytogenes",
+      "scientificName": "Listeria monocytogenes",
+      "definition": "Gram-positive rod causing outbreaks via ready-to-eat foods, with very high risk in pregnancy, elderly, and immunocompromised. Listeria is unique among foodborne pathogens in its ability to grow at refrigeration temperatures.",
+      "reservoir": {
+        "primary": ["Soil", "Water", "Unpasteurized dairy products", "Deli meats and hot dogs", "Soft cheeses"],
+        "secondary": ["Smoked seafood", "Raw vegetables", "Refrigerated ready-to-eat foods", "Food processing environments"],
+        "notes": "Listeria is ubiquitous in the environment and can persist in food processing facilities for years. Can grow at refrigeration temperatures (4°C)."
+      },
+      "transmission": {
+        "mode": "Foodborne and waterborne",
+        "routes": [
+          "Contaminated ready-to-eat foods (deli meats, hot dogs, soft cheeses)",
+          "Unpasteurized milk and dairy products",
+          "Smoked seafood",
+          "Raw or contaminated vegetables",
+          "Refrigerated foods stored for extended periods",
+          "Vertical transmission (mother to fetus during pregnancy)"
+        ],
+        "notes": "Most infections are foodborne. Listeria can grow at refrigeration temperatures, making refrigerated ready-to-eat foods a major risk."
+      },
+      "incubationPeriod": {
+        "range": "Days to 70 days (average 3 weeks for invasive disease; 24 hours for gastroenteritis)",
+        "infectiousPeriod": "Infectious while colonized (can be prolonged); vertical transmission during pregnancy",
+        "seasonality": "Year-round, no specific seasonal pattern",
+        "geographic": "Worldwide, with higher incidence in developed countries due to consumption of ready-to-eat foods"
+      },
+      "riskFactors": [
+        "Pregnancy (20 times higher risk; can cause miscarriage, stillbirth, neonatal infection)",
+        "Age ≥65 years",
+        "Immunocompromised (HIV, cancer, transplant, corticosteroids)",
+        "Chronic liver or kidney disease",
+        "Diabetes",
+        "Consumption of high-risk foods (deli meats, soft cheeses, smoked seafood)",
+        "Neonates (infected during birth)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Febrile gastroenteritis (mild form in healthy adults)",
+          "Fever and muscle aches",
+          "Headache and stiff neck (meningitis)",
+          "Confusion and loss of balance (encephalitis)",
+          "Sepsis (in immunocompromised)",
+          "Pregnancy complications (miscarriage, stillbirth, premature delivery)"
+        ],
+        "complications": [
+          "Meningitis and encephalitis",
+          "Sepsis and septic shock",
+          "Pregnancy loss (miscarriage, stillbirth)",
+          "Neonatal sepsis and meningitis",
+          "Death (20-30% mortality in invasive disease)",
+          "Long-term neurological sequelae"
+        ],
+        "caseDefinition": {
+          "suspected": "High-risk patient (pregnant, elderly, immunocompromised) with fever + compatible illness (meningitis, sepsis, gastroenteritis) + consumption of high-risk foods",
+          "confirmed": "Laboratory confirmation: culture-positive for L. monocytogenes from normally sterile site (blood, CSF) or stool, or PCR detection"
+        }
+      },
+      "diagnosis": [
+        "Culture from blood, CSF, or other sterile sites (gold standard)",
+        "Stool culture (for gastroenteritis)",
+        "PCR for Listeria species",
+        "Gram stain (small Gram-positive rods)",
+        "Serotyping and molecular subtyping (PFGE, WGS) for outbreak investigation"
+      ],
+      "treatment": "Ampicillin or penicillin G ± gentamicin (synergistic combination) for invasive disease. Trimethoprim-sulfamethoxazole for penicillin-allergic patients. Duration: 2-6 weeks depending on site of infection. Supportive care for gastroenteritis.",
+      "infectionControl": {
+        "precautions": "Standard Precautions (no special isolation needed for most cases); Contact Precautions for neonates with invasive disease",
+        "screening": "Not routinely recommended; test high-risk patients with compatible illness",
+        "cohorting": "Not typically needed; isolate neonates with invasive disease",
+        "sourceControl": "Product recall and removal from market; exclude at-risk individuals from consuming high-risk foods during outbreaks",
+        "environmental": "Enhanced cleaning and sanitation of food processing facilities; environmental sampling to identify contamination sources",
+        "staffEducation": "Food safety education for high-risk populations (pregnant women, elderly, immunocompromised), proper food storage and handling, recognition of high-risk foods"
+      },
+      "outbreakTriggers": [
+        "Any single confirmed case in high-risk group (pregnant woman, neonate) triggers investigation",
+        "≥2 cases with same molecular subtype (PFGE, WGS)",
+        "Cluster of cases with common food exposure",
+        "Detection of Listeria in food products or processing environment"
+      ],
+      "reportingCommunication": [
+        "Urgent notification to public health within 2-24 hours of confirmed case",
+        "Alert food safety authorities immediately",
+        "Coordinate product recall if contaminated food identified",
+        "Public health alerts to high-risk populations",
+        "Molecular subtyping (PFGE, WGS) to link cases",
+        "Trace-back investigation to identify contaminated products"
+      ],
+      "prevention": [
+        "Food safety education for high-risk populations (avoid deli meats, soft cheeses, smoked seafood unless heated)",
+        "Cold chain monitoring (refrigeration <4°C slows but does not stop growth)",
+        "Pasteurization of milk and dairy products",
+        "Proper food handling and storage",
+        "Environmental monitoring in food processing facilities",
+        "Pregnant women should avoid high-risk foods",
+        "Reheat ready-to-eat foods to steaming hot (165°F/74°C) before consumption"
+      ],
+      "references": [
+        {
+          "label": "WHO - Listeriosis",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/listeriosis"
+        },
+        {
+          "label": "CDC - Listeria Infection",
+          "url": "https://www.cdc.gov/listeria/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Foodborne Illness Guidelines",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "vibrio_cholerae",
+      "name": "Vibrio cholerae",
+      "scientificName": "Vibrio cholerae (O1 and O139 serotypes)",
+      "definition": "Curved Gram-negative rod causing cholera—profuse watery diarrhea and severe dehydration. Cholera is a life-threatening diarrheal disease caused by toxigenic V. cholerae O1 or O139, primarily transmitted through contaminated water.",
+      "reservoir": {
+        "primary": ["Contaminated water (rivers, ponds, coastal waters)", "Brackish water", "Seafood (shellfish, crustaceans)"],
+        "secondary": ["Human carriers (asymptomatic or convalescent)", "Aquatic environments", "Plankton"],
+        "notes": "V. cholerae is endemic in many developing countries with poor water and sanitation infrastructure. Can survive in aquatic environments."
+      },
+      "transmission": {
+        "mode": "Fecal-oral (primarily waterborne)",
+        "routes": [
+          "Drinking contaminated water (most common)",
+          "Eating contaminated food (especially raw or undercooked seafood)",
+          "Eating food washed or prepared with contaminated water",
+          "Ice made from contaminated water",
+          "Person-to-person transmission (rare, requires close contact)"
+        ],
+        "notes": "Waterborne transmission is the primary route. Outbreaks often occur after natural disasters or in areas with poor sanitation."
+      },
+      "incubationPeriod": {
+        "range": "2 hours to 5 days (typically 2-3 days)",
+        "infectiousPeriod": "Infectious while diarrhea persists (typically 1-10 days; can be longer in carriers)",
+        "seasonality": "Seasonal peaks in endemic areas (monsoon season, warm months)",
+        "geographic": "Endemic in parts of Africa, South Asia, and Latin America; outbreaks in areas with poor sanitation or after disasters"
+      },
+      "riskFactors": [
+        "Living in or traveling to cholera-endemic areas",
+        "Poor sanitation and lack of clean water",
+        "Consumption of raw or undercooked seafood",
+        "Drinking untreated water or ice",
+        "Crowded living conditions (refugee camps, slums)",
+        "Natural disasters (floods, earthquakes) disrupting water systems",
+        "Achlorhydria (low stomach acid, PPI use) - increases susceptibility"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Acute watery diarrhea (profuse, 'rice-water stools')",
+          "Severe dehydration (can lose >1 liter/hour)",
+          "Vomiting",
+          "Muscle cramps (due to electrolyte loss)",
+          "Rapid heart rate and low blood pressure",
+          "Dry mucous membranes and decreased skin turgor"
+        ],
+        "complications": [
+          "Severe dehydration and hypovolemic shock",
+          "Acute kidney injury (pre-renal)",
+          "Electrolyte imbalances (hypokalemia, metabolic acidosis)",
+          "Seizures (especially in children)",
+          "Death (within hours if untreated; mortality <1% with proper treatment)",
+          "Hypoglycemia (in children)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient ≥5 years with acute watery diarrhea + severe dehydration or death, in cholera-endemic area or during outbreak; OR patient ≥2 years with acute watery diarrhea in area with cholera outbreak",
+          "confirmed": "Laboratory detection required: stool culture positive for toxigenic V. cholerae O1 or O139, or rapid diagnostic test (RDT) positive"
+        }
+      },
+      "diagnosis": [
+        "Stool culture on selective media (TCBS agar - thiosulfate-citrate-bile salts-sucrose)",
+        "Rapid diagnostic tests (RDTs) - Crystal VC, cholera dipstick",
+        "Dark-field microscopy (characteristic darting motility)",
+        "Serotyping (O1 or O139) and biotyping (classical or El Tor)",
+        "PCR for cholera toxin genes (ctxA, ctxB)"
+      ],
+      "treatment": "Oral rehydration solution (ORS) for mild-moderate dehydration. IV rehydration (Ringer's lactate) for severe dehydration. Antibiotics shorten duration and reduce transmission: doxycycline (first-line), azithromycin, or ciprofloxacin. Zinc supplementation for children.",
+      "infectionControl": {
+        "precautions": "Contact Precautions (gloves + gown) for hospitalized patients; Standard Precautions with good hand hygiene in community settings",
+        "screening": "Not routinely recommended; test symptomatic individuals in endemic areas or during outbreaks",
+        "cohorting": "Cohort cases during outbreaks; establish cholera treatment centers (CTCs) for large outbreaks",
+        "sourceControl": "Water chlorination and treatment; identify and eliminate contaminated water sources; safe disposal of fecal waste",
+        "environmental": "Enhanced sanitation and hygiene; chlorination of water supplies; safe food preparation; fly control",
+        "staffEducation": "Hand hygiene with soap and water, safe water handling, proper use of ORS, recognition of severe dehydration, contact precautions"
+      },
+      "outbreakTriggers": [
+        "Any single confirmed case of toxigenic V. cholerae O1 or O139 in non-endemic area",
+        "≥2 linked cases in community or facility",
+        "Sudden increase in acute watery diarrhea cases",
+        "Detection of V. cholerae in water sources"
+      ],
+      "reportingCommunication": [
+        "Immediate health authority alert (within 24 hours or sooner)",
+        "Implement outbreak response and water testing protocols",
+        "Coordinate with WASH (water, sanitation, hygiene) teams",
+        "Establish cholera treatment centers if needed",
+        "Public health alerts and community education",
+        "International notification if required (IHR - International Health Regulations)"
+      ],
+      "prevention": [
+        "Clean water supply and treatment (chlorination, boiling)",
+        "Improved sanitation infrastructure (latrines, sewage systems)",
+        "Hand hygiene campaigns (soap and water)",
+        "Safe food preparation (cook food thoroughly, avoid raw seafood)",
+        "Oral cholera vaccine (OCV) for high-risk populations and outbreak response",
+        "Health education in endemic areas",
+        "WASH interventions in refugee camps and disaster settings"
+      ],
+      "references": [
+        {
+          "label": "WHO - Cholera",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/cholera"
+        },
+        {
+          "label": "CDC - Cholera",
+          "url": "https://www.cdc.gov/cholera/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Waterborne Disease Guidelines",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "legionella",
+      "name": "Legionella pneumophila",
+      "scientificName": "Legionella pneumophila",
+      "definition": "Gram-negative bacillus causing Legionnaires' disease (severe pneumonia) via contaminated water aerosols. Legionella is an environmental bacterium that thrives in warm water systems and causes outbreaks through inhalation of contaminated aerosols.",
+      "reservoir": {
+        "primary": ["Water systems (cooling towers, hot water tanks, plumbing)", "Aerosol-generating devices (showers, fountains, misters)", "Air conditioning systems"],
+        "secondary": ["Natural water sources (rivers, lakes)", "Potting soil and compost", "Hot tubs and spas"],
+        "notes": "Legionella thrives in warm water (25-45°C) and biofilms. Cooling towers are the most common source of community outbreaks."
+      },
+      "transmission": {
+        "mode": "Inhalation of contaminated water aerosols",
+        "routes": [
+          "Inhalation of aerosols from cooling towers",
+          "Inhalation of aerosols from showers, faucets, or misters",
+          "Inhalation of aerosols from hot tubs, spas, or fountains",
+          "Aspiration of contaminated water (rare)",
+          "Person-to-person transmission does NOT occur"
+        ],
+        "notes": "Transmission is exclusively through inhalation of contaminated aerosols. Person-to-person transmission is extremely rare (only 2 documented cases)."
+      },
+      "incubationPeriod": {
+        "range": "2-10 days (typically 5-6 days for Legionnaires' disease; 1-2 days for Pontiac fever)",
+        "infectiousPeriod": "Person-to-person transmission is extremely rare; not considered contagious",
+        "seasonality": "Peak in summer and early fall (warmer water temperatures favor growth)",
+        "geographic": "Worldwide, with higher incidence in developed countries due to complex water systems and better surveillance"
+      },
+      "riskFactors": [
+        "Age ≥50 years",
+        "Current or former smokers",
+        "Chronic lung disease (COPD, emphysema)",
+        "Immunosuppression (HIV, cancer, transplant, corticosteroids)",
+        "Diabetes",
+        "Chronic kidney or liver disease",
+        "Recent travel or hospitalization (exposure to contaminated water systems)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Severe pneumonia with high fever (40°C)",
+          "Cough (initially dry, then productive)",
+          "Shortness of breath and chest pain",
+          "Gastrointestinal symptoms (diarrhea, nausea, vomiting) - 50% of cases",
+          "Confusion and altered mental status",
+          "Headache and myalgia"
+        ],
+        "complications": [
+          "Respiratory failure requiring mechanical ventilation",
+          "Septic shock",
+          "Acute kidney injury",
+          "Multi-organ failure",
+          "Death (10-15% mortality; up to 40% in nosocomial cases)",
+          "Pontiac fever (mild, self-limited flu-like illness without pneumonia)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with pneumonia + fever + risk factors (age >50, smoking, chronic lung disease) + exposure to potential water source (cooling tower, hotel, hospital)",
+          "confirmed": "Laboratory confirmation: positive urinary antigen test (detects L. pneumophila serogroup 1 only), culture from respiratory specimen, or PCR"
+        }
+      },
+      "diagnosis": [
+        "Urinary antigen test (rapid, detects L. pneumophila serogroup 1 - most common)",
+        "Culture from respiratory specimen (sputum, BAL) on selective media (BCYE agar)",
+        "PCR for Legionella species (detects all species and serogroups)",
+        "Serology (antibody testing) - requires paired sera, retrospective diagnosis",
+        "Chest X-ray or CT (patchy infiltrates, often multilobar)"
+      ],
+      "treatment": "Fluoroquinolones (levofloxacin, moxifloxacin - first-line) or macrolides (azithromycin). Duration: 7-10 days for immunocompetent, 14-21 days for immunocompromised. Supportive care: oxygen, mechanical ventilation if needed. Do NOT use beta-lactams (ineffective).",
+      "infectionControl": {
+        "precautions": "Standard Precautions (no isolation needed; person-to-person transmission extremely rare)",
+        "screening": "Not applicable (environmental, not person-to-person)",
+        "cohorting": "Not needed",
+        "sourceControl": "Identify and remediate contaminated water sources; water system disinfection (thermal shock, hyperchlorination, copper-silver ionization)",
+        "environmental": "Water system monitoring and disinfection; cooling tower maintenance and cleaning; hot water temperature >60°C, cold water <20°C; regular water testing for Legionella",
+        "staffEducation": "Recognition of Legionnaires' disease, water safety plans, building maintenance, environmental sampling, respiratory protection during remediation"
+      },
+      "outbreakTriggers": [
+        "≥2 cases linked to same water source (building, hotel, hospital, cooling tower)",
+        "Clustering of cases in time or place",
+        "Detection of Legionella in environmental water samples",
+        "Single case in healthcare facility (triggers investigation)"
+      ],
+      "reportingCommunication": [
+        "Rapid reporting to public health and environmental health authorities",
+        "Environmental assessment and water testing immediately",
+        "Multi-disciplinary outbreak response (clinical, environmental, engineering)",
+        "Notify building management and occupants",
+        "Coordinate remediation efforts",
+        "Public health alerts if community outbreak"
+      ],
+      "prevention": [
+        "Water safety plans and management programs",
+        "Regular cooling tower maintenance, cleaning, and disinfection",
+        "Building water system maintenance (temperature control, flushing)",
+        "Environmental monitoring (water testing for Legionella)",
+        "Hot water temperature >60°C at point of use",
+        "Cold water temperature <20°C",
+        "Staff and building manager education",
+        "Awareness campaigns for high-risk populations"
+      ],
+      "references": [
+        {
+          "label": "WHO - Legionellosis",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/legionellosis"
+        },
+        {
+          "label": "CDC - Legionnaires' Disease",
+          "url": "https://www.cdc.gov/legionella/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Waterborne Disease Guidelines",
+          "url": "https://gdipc.org"
+        }
+      ]
+    }
+  ]
+}
+

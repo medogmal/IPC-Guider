@@ -1,0 +1,1399 @@
+{
+  "version": 1,
+  "updatedAt": "2025-11-25T04:00:00Z",
+  "id": "ent-infections",
+  "name": "ENT Infections (Ear, Nose, Throat)",
+  "description": "Bacterial and viral infections of the ear, nose, and throat including pharyngitis, otitis media, sinusitis, and deep neck infections",
+  "icon": "hearing",
+  "color": "#FF5722",
+  "conditions": [
+    {
+      "id": "group-a-strep-pharyngitis",
+      "name": "Group A Streptococcal Pharyngitis (Strep Throat)",
+      "synonyms": [
+        "strep throat",
+        "GAS pharyngitis",
+        "bacterial pharyngitis"
+      ],
+      "icd10": [
+        "J02.0",
+        "J03.0",
+        "J03.00"
+      ],
+      "severity": [
+        "mild",
+        "moderate"
+      ],
+      "shortDescription": "Bacterial pharyngitis caused by Group A Streptococcus requiring antibiotics to prevent rheumatic fever and suppurative complications",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Bacterial pharyngitis caused by Group A Streptococcus (Streptococcus pyogenes). Antibiotics prevent acute rheumatic fever (ARF, 0.3-3% if untreated), post-streptococcal glomerulonephritis (PSGN, 10-15%), and suppurative complications (peritonsillar abscess 1-2%, retropharyngeal abscess <1%). Most pharyngitis is viral (70-80%), antibiotics NOT indicated.",
+            "clinical_presentation": "Acute onset of sore throat, fever (>38°C), tonsillar exudates, tender anterior cervical lymphadenopathy, absence of cough. Centor criteria (4 points): Fever (1), Tonsillar exudates (1), Tender anterior cervical lymphadenopathy (1), Absence of cough (1). Score 0-1: Viral likely (no testing). Score 2-3: Test (rapid strep or culture). Score 4: Treat empirically OR test.",
+            "diagnostic_criteria": "Clinical diagnosis + Rapid antigen detection test (RADT) OR Throat culture. RADT sensitivity 70-90%, specificity 95-99%. If RADT negative in children → throat culture (backup, sensitivity 90-95%). Adults: RADT negative → no culture needed (low ARF risk).",
+            "risk_factors": [
+              "Age 5-15 years (peak incidence)",
+              "Winter and early spring (seasonal)",
+              "Close contact (household, school, daycare)",
+              "Crowded living conditions"
+            ],
+            "red_flags": [
+              "Stridor or drooling - suggests epiglottitis or retropharyngeal abscess, airway emergency, urgent ENT referral",
+              "Trismus (difficulty opening mouth) - suggests peritonsillar abscess, ENT referral for drainage",
+              "Muffled voice or hot potato voice - suggests peritonsillar abscess, ENT referral",
+              "Severe dysphagia or inability to swallow - suggests deep neck infection, CT neck + ENT referral",
+              "Unilateral tonsillar swelling - suggests peritonsillar abscess, ENT referral"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Centor score 2-4: Test with RADT OR Throat culture. Centor score 0-1: Do NOT test (viral likely, antibiotics NOT indicated). Do NOT test if clear viral features (cough, rhinorrhea, hoarseness, conjunctivitis, diarrhea).",
+            "essential_tests": [
+              "Rapid antigen detection test (RADT): Sensitivity 70-90%, specificity 95-99%. Results in 5-10 minutes. If positive → treat. If negative in children → throat culture (backup). If negative in adults → no culture needed.",
+              "Throat culture: Gold standard. Sensitivity 90-95%, specificity 99%. Results in 24-48 hours. Indicated if: RADT negative in children, RADT unavailable, or high suspicion despite negative RADT."
+            ],
+            "conditional_tests": [
+              "ASO titer (anti-streptolysin O): NOT indicated for acute pharyngitis (rises 3-6 weeks post-infection). Use for suspected ARF or PSGN.",
+              "Monospot or EBV serology: If suspected infectious mononucleosis (posterior cervical lymphadenopathy, splenomegaly, atypical lymphocytes)."
+            ],
+            "when_not_to_test": "Do NOT test if: Centor score 0-1, clear viral features (cough, rhinorrhea, hoarseness, conjunctivitis), or asymptomatic contacts (test of cure NOT indicated).",
+            "turnaround_time": "RADT: 5-10 minutes. Throat culture: 24-48 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Group A Streptococcus (Streptococcus pyogenes). Gram-positive cocci in chains. Beta-hemolytic. Lancefield group A. Produces streptolysin O (ASO), streptolysin S, hyaluronidase, DNase, streptokinase. M protein (virulence factor, >200 serotypes).",
+            "pathogenesis": "Droplet transmission → pharyngeal colonization → local invasion → pharyngitis. Complications: Suppurative (peritonsillar abscess, retropharyngeal abscess, cervical lymphadenitis, otitis media, sinusitis, mastoiditis). Non-suppurative (acute rheumatic fever ARF 0.3-3%, post-streptococcal glomerulonephritis PSGN 10-15%).",
+            "resistance_patterns": {
+              "penicillin": "Penicillin resistance: NONE. GAS remains 100% susceptible to penicillin (NO resistance reported worldwide).",
+              "macrolides": "Macrolide resistance (erythromycin, azithromycin): 5-15% in US, up to 30-40% in some regions (Asia, Europe). Use penicillin or amoxicillin as first-line."
+            },
+            "timing_critical": "Start antibiotics within 9 days of symptom onset to prevent ARF (antibiotics effective up to 9 days). Earlier treatment (within 24-48 hours) reduces symptom duration by 1-2 days and reduces transmission."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line_adults": "Penicillin VK 500mg PO TID x 10 days OR Amoxicillin 500mg PO TID x 10 days (preferred, better compliance, once-daily dosing NOT recommended). Alternative: Amoxicillin 1000mg PO once daily x 10 days (IDSA 2025 NEW, non-inferior to TID dosing).",
+            "first_line_children": "Amoxicillin 50mg/kg/day PO divided BID x 10 days (max 1000mg/dose) OR Penicillin VK 250mg PO BID-TID x 10 days (weight <27kg) OR 500mg PO BID-TID x 10 days (weight ≥27kg).",
+            "penicillin_allergy_non_anaphylactic": "Cephalexin 500mg PO BID x 10 days (adults) OR 25mg/kg/day PO divided BID x 10 days (children, max 500mg/dose). Safe if non-anaphylactic penicillin allergy (rash only, no anaphylaxis).",
+            "penicillin_allergy_anaphylactic": "Azithromycin 500mg PO x1, then 250mg PO daily x 4 days (total 5 days, adults) OR 12mg/kg PO daily x 5 days (children, max 500mg/dose). Alternative: Clindamycin 300mg PO TID x 10 days (adults) OR 20mg/kg/day PO divided TID x 10 days (children, max 300mg/dose).",
+            "avoid_list": "Avoid fluoroquinolones (NOT indicated for pharyngitis, reserve for serious infections). Avoid TMP-SMX (NOT effective against GAS). Avoid short-course therapy <10 days (except azithromycin 5 days, higher ARF risk with <10 days penicillin/amoxicillin)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "group_a_streptococcus": "Penicillin VK 500mg PO TID x 10 days OR Amoxicillin 500mg PO TID x 10 days OR Amoxicillin 1000mg PO once daily x 10 days (IDSA 2025 NEW). Alternative: Benzathine penicillin G 1.2 million units IM x1 (adults) OR 600,000 units IM x1 (children <27kg) OR 1.2 million units IM x1 (children ≥27kg). IM penicillin: Guaranteed compliance, painful injection, use if compliance concern.",
+            "penicillin_allergy": "Cephalexin 500mg PO BID x 10 days (non-anaphylactic allergy) OR Azithromycin 500mg PO x1, then 250mg PO daily x 4 days (anaphylactic allergy) OR Clindamycin 300mg PO TID x 10 days (anaphylactic allergy).",
+            "treatment_failure": "Persistent symptoms after 48-72 hours of antibiotics. Causes: Non-compliance, resistant organism (macrolides 5-15%), viral pharyngitis (antibiotics NOT effective), peritonsillar abscess. Management: Repeat RADT/culture, switch to clindamycin 300mg PO TID x 10 days (better eradication, covers beta-lactamase producing organisms), or benzathine penicillin G IM x1 (compliance).",
+            "carrier_state": "Asymptomatic GAS colonization (10-20% of children, 5-10% of adults). Do NOT treat carriers (no ARF risk, antibiotics NOT effective at eradication). Indications to treat carrier: Outbreak in closed community, family history of ARF, multiple documented GAS infections, or tonsillectomy planned. Treatment: Clindamycin 300mg PO TID x 10 days OR Rifampin 600mg PO daily x 4 days + Penicillin VK 500mg PO TID x 10 days.",
+            "duration": "10 days for penicillin/amoxicillin (shorter duration increases ARF risk). 5 days for azithromycin (adequate). 10 days for cephalexin/clindamycin.",
+            "test_of_cure": "NOT indicated (asymptomatic carriers common, no ARF risk). Exception: Recurrent GAS pharyngitis (3+ episodes in 6 months) → consider tonsillectomy."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "10 days for penicillin/amoxicillin/cephalexin/clindamycin. 5 days for azithromycin. Shorter duration (<10 days) for penicillin/amoxicillin increases ARF risk (0.3-3% if untreated, <0.1% if treated 10 days).",
+            "monitoring": "Improvement expected in 24-48 hours (decreased fever, decreased sore throat). If no improvement → repeat RADT/culture, consider treatment failure (switch to clindamycin or IM penicillin), or peritonsillar abscess (ENT referral).",
+            "stop_criteria": "Complete 10 days even if symptoms resolve earlier (prevent ARF and PSGN). Return to school/work 24 hours after starting antibiotics (no longer contagious)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "recurrent_pharyngitis": "3+ episodes in 6 months OR 5+ episodes in 12 months. Causes: Reinfection (household contacts), carrier state, non-GAS pharyngitis (viral). Management: Treat household contacts if symptomatic, consider tonsillectomy (AAO-HNS 2019 criteria: 7+ episodes in 1 year, 5+ episodes/year x 2 years, or 3+ episodes/year x 3 years).",
+            "peritonsillar_abscess": "Complication of GAS pharyngitis (1-2%). Unilateral tonsillar swelling, uvula deviation, trismus, muffled voice. CT neck with contrast OR clinical diagnosis. Needle aspiration or I&D (ENT performs) + Amoxicillin-clavulanate 875mg PO BID x 10 days OR Clindamycin 300mg PO TID x 10 days. Admit if: Severe, airway compromise, unable to tolerate PO.",
+            "scarlet_fever": "GAS pharyngitis + erythematous sandpaper-like rash (exotoxin-mediated). Rash starts on trunk, spreads to extremities, spares palms/soles. Strawberry tongue, Pastia lines (petechiae in skin folds). Treatment: Same as GAS pharyngitis (penicillin or amoxicillin x 10 days). Rash resolves in 3-5 days, desquamation (peeling) in 1-2 weeks.",
+            "pregnancy": "Penicillin VK or amoxicillin safe (Category B). Avoid azithromycin (Category B, but limited data). Avoid fluoroquinolones (Category C, teratogenic).",
+            "infectious_mononucleosis": "EBV pharyngitis. Posterior cervical lymphadenopathy, splenomegaly, atypical lymphocytes. Avoid amoxicillin/ampicillin (causes morbilliform rash in 90-100% of EBV patients). Treatment: Supportive care (antibiotics NOT indicated). Avoid contact sports x 3-4 weeks (splenic rupture risk).",
+            "rheumatic_fever_prevention": "Antibiotics within 9 days of symptom onset prevent ARF (0.3-3% if untreated, <0.1% if treated). ARF: Carditis (60-70%, permanent valve damage), polyarthritis (70-80%), chorea (10-15%), erythema marginatum (5-10%), subcutaneous nodules (5-10%). Jones criteria for diagnosis."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Do NOT treat if Centor score 0-1 (viral likely, antibiotics NOT indicated)",
+              "Do NOT treat if RADT negative in adults (no culture needed, low ARF risk)",
+              "Do NOT treat asymptomatic carriers (no ARF risk, antibiotics NOT effective)",
+              "Do NOT perform test of cure (asymptomatic carriers common, no ARF risk)"
+            ],
+            "timeout_checklist": [
+              "Is Centor score ≥2? (If 0-1 → do NOT test or treat, viral likely)",
+              "Is RADT or throat culture positive? (If negative in adults → do NOT treat)",
+              "Are antibiotics started within 9 days? (Prevent ARF, effective up to 9 days)",
+              "Is duration 10 days? (Shorter duration increases ARF risk)",
+              "Is penicillin or amoxicillin used? (First-line, GAS 100% susceptible)",
+              "Is patient educated about return to school/work? (24 hours after starting antibiotics)",
+              "Is patient educated about completing 10 days? (Prevent ARF and PSGN)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid antibiotics if: Centor score 0-1, clear viral features (cough, rhinorrhea, hoarseness, conjunctivitis), RADT negative in adults, or asymptomatic carrier. Most pharyngitis is viral (70-80%), antibiotics NOT indicated. Antibiotics reduce symptom duration by only 1-2 days, but prevent ARF (0.3-3% if untreated).",
+            "diagnostic_stewardship": "Use Centor criteria to guide testing. Do NOT test if Centor score 0-1. Do NOT culture if RADT negative in adults. Do NOT perform test of cure.",
+            "prevention": "Hand hygiene. Avoid sharing utensils, cups, or toothbrushes. Cover cough/sneeze. Return to school/work 24 hours after starting antibiotics."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Guidelines for Group A Streptococcal Pharyngitis (2025)",
+              "url": "https://www.idsociety.org/practice-guideline/group-a-streptococcal-pharyngitis/"
+            },
+            {
+              "label": "AAO-HNS Clinical Practice Guideline: Tonsillectomy in Children (2019)",
+              "url": "https://www.entnet.org/quality-practice/quality-products/clinical-practice-guidelines/tonsillectomy-children/"
+            },
+            {
+              "label": "CDC: Group A Streptococcal (GAS) Disease (2024)",
+              "url": "https://www.cdc.gov/groupastrep/index.html"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "acute-otitis-media",
+      "name": "Acute Otitis Media (AOM)",
+      "synonyms": [
+        "middle ear infection",
+        "AOM"
+      ],
+      "icd10": [
+        "H66.0",
+        "H66.00",
+        "H66.001"
+      ],
+      "severity": [
+        "mild",
+        "moderate"
+      ],
+      "shortDescription": "Bacterial infection of the middle ear requiring antibiotics in children <2 years or severe cases",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Bacterial infection of the middle ear. Most common in children (peak age 6-24 months). Complications: Tympanic membrane perforation (5-10%), mastoiditis (<1%), meningitis (<0.1%). Watchful waiting (observation without antibiotics) appropriate in select cases (age >2 years, mild symptoms, unilateral).",
+            "clinical_presentation": "Acute onset of ear pain (otalgia), fever, irritability, decreased hearing. Otoscopic findings: Bulging tympanic membrane (TM), decreased TM mobility (pneumatic otoscopy), middle ear effusion, erythema. Diagnostic criteria (AAP 2013): Moderate-severe bulging TM OR New onset otorrhea (not due to otitis externa) OR Mild bulging TM + recent onset ear pain (<48 hours) or intense TM erythema.",
+            "diagnostic_criteria": "Clinical diagnosis by otoscopy. Pneumatic otoscopy (decreased TM mobility) confirms middle ear effusion. Tympanometry if diagnosis uncertain (flat Type B curve suggests effusion).",
+            "risk_factors": [
+              "Age <2 years (peak incidence 6-24 months)",
+              "Daycare attendance",
+              "Lack of breastfeeding",
+              "Pacifier use",
+              "Exposure to tobacco smoke",
+              "Craniofacial abnormalities (cleft palate, Down syndrome)"
+            ],
+            "red_flags": [
+              "Mastoiditis - postauricular swelling, erythema, tenderness, protrusion of auricle, requires IV antibiotics + ENT referral",
+              "Meningitis - fever, headache, neck stiffness, altered mental status, requires LP + IV antibiotics",
+              "Facial nerve palsy - suggests temporal bone involvement, requires IV antibiotics + ENT referral",
+              "Persistent otorrhea >3 months - suggests chronic suppurative otitis media, requires ENT referral"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Clinical diagnosis by otoscopy. Pneumatic otoscopy (decreased TM mobility) confirms middle ear effusion. Tympanometry if diagnosis uncertain.",
+            "essential_tests": [
+              "Otoscopy: Bulging TM, decreased TM mobility, middle ear effusion, erythema. Pneumatic otoscopy (gold standard, decreased TM mobility confirms effusion).",
+              "Tympanometry: Flat Type B curve suggests middle ear effusion. Use if diagnosis uncertain or unable to visualize TM (cerumen impaction)."
+            ],
+            "conditional_tests": [
+              "Tympanocentesis (needle aspiration of middle ear fluid): If severe, immunocompromised, failed therapy, or neonatal. Culture middle ear fluid. ENT performs.",
+              "CT temporal bone: If suspected mastoiditis or intracranial complication (meningitis, brain abscess)."
+            ],
+            "when_not_to_test": "Do NOT obtain blood cultures (low yield, not indicated). Do NOT obtain CT routinely (clinical diagnosis).",
+            "turnaround_time": "Otoscopy: Immediate. Tympanometry: Immediate. Tympanocentesis culture: 24-48 hours. CT: <1 hour."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Streptococcus pneumoniae (30-40%), Haemophilus influenzae non-typeable (20-30%), Moraxella catarrhalis (10-15%), Group A Streptococcus (5-10%). Viral coinfection common (RSV, influenza, rhinovirus 40-60%).",
+            "pathogenesis": "Viral URI → Eustachian tube dysfunction → negative middle ear pressure → bacterial colonization from nasopharynx → AOM. Children at higher risk (shorter, more horizontal Eustachian tube).",
+            "resistance_patterns": {
+              "penicillin_resistance": "S. pneumoniae: Penicillin-resistant 30-40% (MIC >2 mcg/mL). High-dose amoxicillin (80-90mg/kg/day) overcomes resistance.",
+              "beta_lactamase": "H. influenzae: Beta-lactamase producing 30-50%. M. catarrhalis: Beta-lactamase producing 90-100%. Amoxicillin-clavulanate effective."
+            },
+            "timing_critical": "Antibiotics within 24-48 hours if: Age <6 months, age 6-24 months with bilateral AOM or severe symptoms, or age ≥24 months with severe symptoms. Watchful waiting (observation 48-72 hours) if: Age ≥24 months, unilateral, mild symptoms, reliable follow-up."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line_children": "Amoxicillin 80-90mg/kg/day PO divided BID x 5-10 days (high-dose, overcomes penicillin-resistant S. pneumoniae). Duration: 10 days if age <2 years or severe. 5-7 days if age ≥2 years and mild-moderate.",
+            "first_line_adults": "Amoxicillin 500mg PO TID x 5-7 days OR Amoxicillin-clavulanate 875mg PO BID x 5-7 days (if recent antibiotic use or failed amoxicillin).",
+            "amoxicillin_failure_or_recent_use": "Amoxicillin-clavulanate 90mg/kg/day amoxicillin component PO divided BID x 10 days (children) OR 875mg PO BID x 7-10 days (adults). Covers beta-lactamase producing H. influenzae and M. catarrhalis.",
+            "penicillin_allergy_non_anaphylactic": "Cefdinir 14mg/kg/day PO divided BID x 10 days (children) OR 300mg PO BID x 5-7 days (adults). Safe if non-anaphylactic penicillin allergy.",
+            "penicillin_allergy_anaphylactic": "Azithromycin 10mg/kg PO x1, then 5mg/kg PO daily x 4 days (children) OR 500mg PO x1, then 250mg PO daily x 4 days (adults). Alternative: Levofloxacin 10-20mg/kg PO daily x 10 days (children >6 months) OR 500mg PO daily x 7-10 days (adults).",
+            "watchful_waiting": "Observation without antibiotics x 48-72 hours if: Age ≥24 months, unilateral, mild symptoms (ear pain <48 hours, temperature <39°C), reliable follow-up. Provide analgesics (ibuprofen or acetaminophen). Start antibiotics if: No improvement in 48-72 hours or worsening symptoms.",
+            "avoid_list": "Avoid TMP-SMX (resistance 20-30%, NOT first-line). Avoid cephalexin (inadequate coverage for H. influenzae and M. catarrhalis). Avoid fluoroquinolones in children <6 months (cartilage toxicity)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "s_pneumoniae_penicillin_susceptible": "Amoxicillin 80-90mg/kg/day PO divided BID x 5-10 days (children) OR 500mg PO TID x 5-7 days (adults).",
+            "s_pneumoniae_penicillin_resistant": "Amoxicillin 80-90mg/kg/day PO divided BID x 10 days (high-dose overcomes resistance) OR Amoxicillin-clavulanate 90mg/kg/day amoxicillin component PO divided BID x 10 days.",
+            "h_influenzae_or_m_catarrhalis": "Amoxicillin-clavulanate 90mg/kg/day amoxicillin component PO divided BID x 10 days (children) OR 875mg PO BID x 7-10 days (adults). Covers beta-lactamase producing organisms.",
+            "treatment_failure": "Persistent symptoms after 48-72 hours of antibiotics. Causes: Resistant organism, non-compliance, viral URI (antibiotics NOT effective). Management: Switch to amoxicillin-clavulanate 90mg/kg/day PO BID x 10 days OR Ceftriaxone 50mg/kg IM/IV daily x 3 days. If still failing → tympanocentesis (culture middle ear fluid) + ENT referral.",
+            "recurrent_aom": "3+ episodes in 6 months OR 4+ episodes in 12 months. Management: Prophylactic antibiotics NOT recommended (AAP 2013, increases resistance). Consider tympanostomy tubes (ENT referral) if: Recurrent AOM with persistent effusion, hearing loss, or speech delay.",
+            "duration": "10 days if age <2 years or severe. 5-7 days if age ≥2 years and mild-moderate. Shorter duration (5-7 days) non-inferior in older children with uncomplicated AOM."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "10 days if age <2 years or severe. 5-7 days if age ≥2 years and mild-moderate. Shorter duration (5-7 days) non-inferior in older children with uncomplicated AOM.",
+            "monitoring": "Improvement expected in 48-72 hours (decreased ear pain, decreased fever). If no improvement → switch to amoxicillin-clavulanate or ceftriaxone IM x 3 days. Follow-up in 2-3 months to assess for persistent middle ear effusion (otitis media with effusion OME, 40-60% after AOM).",
+            "stop_criteria": "Complete 5-10 days (based on age and severity). Persistent middle ear effusion (OME) after AOM is common (40-60%), resolves spontaneously in 3 months (90%), antibiotics NOT indicated for OME."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "tympanic_membrane_perforation": "Spontaneous TM perforation with otorrhea (5-10% of AOM). Treatment: Amoxicillin-clavulanate 90mg/kg/day PO BID x 10 days + Topical ciprofloxacin-dexamethasone otic drops BID x 7 days (if otorrhea). Avoid ototoxic drops (aminoglycosides, neomycin) if TM perforation. TM heals spontaneously in 90% within 2-4 weeks.",
+            "mastoiditis": "Complication of AOM (<1%). Postauricular swelling, erythema, tenderness, protrusion of auricle. CT temporal bone (confirm diagnosis, assess abscess). IV antibiotics: Vancomycin 15mg/kg IV q12h + Ceftriaxone 50mg/kg IV q12h x 2-4 weeks. ENT referral for myringotomy ± mastoidectomy if abscess or failed medical therapy.",
+            "recurrent_aom": "3+ episodes in 6 months OR 4+ episodes in 12 months. Prophylactic antibiotics NOT recommended (increases resistance). Consider tympanostomy tubes (ENT referral) if: Recurrent AOM with persistent effusion, hearing loss, or speech delay.",
+            "otitis_media_with_effusion_ome": "Persistent middle ear effusion without acute infection. Common after AOM (40-60%), resolves spontaneously in 3 months (90%). Antibiotics NOT indicated. Observation x 3 months. If persistent >3 months with hearing loss → ENT referral for tympanostomy tubes.",
+            "neonatal_aom": "Age <28 days. Higher risk of serious bacterial infection (meningitis, sepsis). Admit for IV antibiotics: Ampicillin 50mg/kg IV q8h + Cefotaxime 50mg/kg IV q8h x 10 days. Blood cultures, LP if febrile.",
+            "immunocompromised": "Higher risk of complications (mastoiditis, meningitis). Admit for IV antibiotics: Vancomycin 15mg/kg IV q12h + Ceftriaxone 50mg/kg IV q12h x 10-14 days. Tympanocentesis (culture middle ear fluid)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Watchful waiting (observation 48-72 hours) if: Age ≥24 months, unilateral, mild symptoms, reliable follow-up",
+              "Shorter duration (5-7 days) if: Age ≥2 years and mild-moderate (non-inferior to 10 days)",
+              "Do NOT use prophylactic antibiotics for recurrent AOM (increases resistance, NOT recommended)",
+              "Do NOT treat otitis media with effusion (OME) with antibiotics (resolves spontaneously in 90% within 3 months)"
+            ],
+            "timeout_checklist": [
+              "Is diagnosis confirmed by otoscopy? (Bulging TM, decreased TM mobility, middle ear effusion)",
+              "Is watchful waiting appropriate? (Age ≥24 months, unilateral, mild symptoms, reliable follow-up)",
+              "Is high-dose amoxicillin used? (80-90mg/kg/day, overcomes penicillin-resistant S. pneumoniae)",
+              "Is duration appropriate? (10 days if age <2 years or severe, 5-7 days if age ≥2 years and mild-moderate)",
+              "Is follow-up arranged? (2-3 months to assess for persistent OME)",
+              "Is analgesic prescribed? (Ibuprofen or acetaminophen for ear pain)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid antibiotics if: Watchful waiting appropriate (age ≥24 months, unilateral, mild symptoms). Avoid prophylactic antibiotics for recurrent AOM (increases resistance). Avoid antibiotics for OME (resolves spontaneously). Avoid ototoxic drops (aminoglycosides, neomycin) if TM perforation.",
+            "diagnostic_stewardship": "Use pneumatic otoscopy to confirm diagnosis (decreased TM mobility). Tympanometry if diagnosis uncertain. Do NOT obtain blood cultures (low yield). Do NOT obtain CT routinely (clinical diagnosis).",
+            "prevention": "Pneumococcal vaccine (PCV13, reduces AOM by 6-7%). Influenza vaccine (reduces AOM by 30%). Breastfeeding (protective). Avoid pacifier use after 6 months. Avoid tobacco smoke exposure."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "AAP Clinical Practice Guideline: Acute Otitis Media (2013)",
+              "url": "https://publications.aap.org/pediatrics/article/131/3/e964/31566"
+            },
+            {
+              "label": "AAO-HNS Clinical Practice Guideline: Otitis Media with Effusion (2016)",
+              "url": "https://www.entnet.org/quality-practice/quality-products/clinical-practice-guidelines/otitis-media-effusion/"
+            },
+            {
+              "label": "CDC: Ear Infection (Otitis Media) (2024)",
+              "url": "https://www.cdc.gov/antibiotic-use/ear-infection.html"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "acute-bacterial-rhinosinusitis",
+      "name": "Acute Bacterial Rhinosinusitis (ABRS)",
+      "synonyms": [
+        "bacterial sinusitis",
+        "acute sinusitis",
+        "ABRS"
+      ],
+      "icd10": [
+        "J01.0",
+        "J01.00",
+        "J01.90"
+      ],
+      "severity": [
+        "mild",
+        "moderate"
+      ],
+      "shortDescription": "Bacterial infection of the paranasal sinuses requiring antibiotics only if severe, worsening, or persistent symptoms",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Bacterial infection of the paranasal sinuses (maxillary, ethmoid, frontal, sphenoid). Most rhinosinusitis is viral (90-98%), resolves spontaneously in 7-10 days. Antibiotics indicated ONLY if: Severe symptoms (fever ≥39°C + purulent nasal discharge x 3-4 consecutive days), Worsening symptoms (new fever, headache, or nasal discharge after initial improvement), OR Persistent symptoms (≥10 days without improvement).",
+            "clinical_presentation": "Purulent nasal discharge (anterior or posterior), nasal obstruction, facial pain/pressure/fullness, decreased sense of smell. Severe: Fever ≥39°C + purulent nasal discharge x 3-4 consecutive days. Worsening: New fever, headache, or nasal discharge after initial improvement (double sickening). Persistent: ≥10 days without improvement.",
+            "diagnostic_criteria": "Clinical diagnosis (imaging NOT routinely needed). IDSA 2012 criteria for ABRS: Severe symptoms OR Worsening symptoms OR Persistent symptoms ≥10 days. Do NOT diagnose ABRS if symptoms <10 days without worsening (viral rhinosinusitis, antibiotics NOT indicated).",
+            "risk_factors": [
+              "Viral URI (90-98% of rhinosinusitis is viral)",
+              "Allergic rhinitis",
+              "Anatomic obstruction (deviated septum, nasal polyps)",
+              "Smoking",
+              "Immunosuppression (diabetes, HIV)"
+            ],
+            "red_flags": [
+              "Orbital cellulitis - periorbital swelling, proptosis, ophthalmoplegia, decreased vision, requires IV antibiotics + urgent ophthalmology/ENT referral",
+              "Intracranial extension - severe headache, altered mental status, meningitis, brain abscess, requires IV antibiotics + neurosurgery referral",
+              "Frontal bone osteomyelitis (Pott puffy tumor) - forehead swelling, requires IV antibiotics + surgical debridement",
+              "Cavernous sinus thrombosis - bilateral proptosis, cranial nerve palsies, requires IV antibiotics + anticoagulation"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Clinical diagnosis (imaging NOT routinely needed). CT paranasal sinuses if: Suspected complication (orbital cellulitis, intracranial extension), recurrent ABRS (4+ episodes/year), or failed medical therapy. MRI if suspected intracranial complication.",
+            "essential_tests": [
+              "Clinical diagnosis: Purulent nasal discharge + nasal obstruction + facial pain/pressure + duration ≥10 days OR severe OR worsening symptoms."
+            ],
+            "conditional_tests": [
+              "CT paranasal sinuses with contrast: If suspected complication (orbital cellulitis, intracranial extension), recurrent ABRS, or failed medical therapy. Findings: Air-fluid levels, mucosal thickening >5mm, complete opacification.",
+              "Nasal endoscopy + culture: If severe, immunocompromised, nosocomial, or failed therapy. ENT performs. Culture purulent discharge from middle meatus.",
+              "MRI brain with contrast: If suspected intracranial complication (meningitis, brain abscess, cavernous sinus thrombosis)."
+            ],
+            "when_not_to_test": "Do NOT obtain CT routinely (radiation exposure, overdiagnosis). Do NOT obtain CT if symptoms <10 days without complications (viral rhinosinusitis, antibiotics NOT indicated). Do NOT obtain blood cultures (low yield).",
+            "turnaround_time": "CT: <1 hour. Nasal culture: 24-48 hours. MRI: 1-2 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Streptococcus pneumoniae (30-40%), Haemophilus influenzae non-typeable (20-30%), Moraxella catarrhalis (10-15%), Staphylococcus aureus (5-10%), anaerobes (5-10%, if dental source). Viral coinfection common (rhinovirus, influenza, parainfluenza 90-98% initially).",
+            "pathogenesis": "Viral URI → sinus ostia obstruction → impaired mucociliary clearance → bacterial overgrowth → ABRS. Dental infection (maxillary sinusitis) → direct extension → ABRS (anaerobes).",
+            "resistance_patterns": {
+              "penicillin_resistance": "S. pneumoniae: Penicillin-resistant 30-40%. High-dose amoxicillin-clavulanate (2000mg/125mg BID) overcomes resistance.",
+              "beta_lactamase": "H. influenzae: Beta-lactamase producing 30-50%. M. catarrhalis: Beta-lactamase producing 90-100%. Amoxicillin-clavulanate effective."
+            },
+            "timing_critical": "Antibiotics indicated ONLY if: Severe symptoms (fever ≥39°C + purulent nasal discharge x 3-4 days), Worsening symptoms (double sickening), OR Persistent symptoms ≥10 days. Most rhinosinusitis is viral (90-98%), resolves spontaneously in 7-10 days, antibiotics NOT indicated."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": "Amoxicillin-clavulanate 875mg/125mg PO BID x 5-7 days (adults) OR 90mg/kg/day amoxicillin component PO divided BID x 10 days (children). Preferred over amoxicillin alone (covers beta-lactamase producing H. influenzae and M. catarrhalis).",
+            "alternative_if_no_recent_antibiotics": "Amoxicillin 500mg PO TID x 5-7 days (adults) OR 90mg/kg/day PO divided BID x 10 days (children). Use ONLY if: No antibiotics in past 4 weeks, not severe, not high-risk region for resistance.",
+            "high_dose_if_severe_or_recent_antibiotics": "Amoxicillin-clavulanate 2000mg/125mg PO BID x 7-10 days (adults, high-dose amoxicillin component overcomes penicillin-resistant S. pneumoniae). Use if: Severe symptoms, antibiotics in past 4 weeks, high-risk region for resistance, or failed first-line therapy.",
+            "penicillin_allergy_non_anaphylactic": "Cefdinir 300mg PO BID x 10 days (adults) OR 14mg/kg/day PO divided BID x 10 days (children). Safe if non-anaphylactic penicillin allergy.",
+            "penicillin_allergy_anaphylactic": "Levofloxacin 750mg PO daily x 5 days (adults only, NOT children <18 years) OR Moxifloxacin 400mg PO daily x 10 days (adults only). Alternative: Doxycycline 100mg PO BID x 10 days (adults only, NOT children <8 years).",
+            "avoid_list": "Avoid TMP-SMX (resistance 20-30%, NOT first-line). Avoid macrolides (azithromycin, resistance 30-40%, NOT first-line). Avoid cephalexin (inadequate coverage for H. influenzae and M. catarrhalis). Do NOT use antibiotics if symptoms <10 days without worsening (viral rhinosinusitis)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "s_pneumoniae_penicillin_susceptible": "Amoxicillin 500mg PO TID x 5-7 days (adults) OR 90mg/kg/day PO divided BID x 10 days (children).",
+            "s_pneumoniae_penicillin_resistant": "Amoxicillin-clavulanate 2000mg/125mg PO BID x 7-10 days (high-dose amoxicillin component overcomes resistance).",
+            "h_influenzae_or_m_catarrhalis": "Amoxicillin-clavulanate 875mg/125mg PO BID x 5-7 days (covers beta-lactamase producing organisms).",
+            "s_aureus_mssa": "Amoxicillin-clavulanate 875mg/125mg PO BID x 7-10 days.",
+            "s_aureus_mrsa": "TMP-SMX DS PO BID x 10 days OR Doxycycline 100mg PO BID x 10 days (adults only) OR Linezolid 600mg PO BID x 10 days (severe).",
+            "treatment_failure": "Persistent symptoms after 3-5 days of antibiotics. Causes: Resistant organism, non-compliance, viral rhinosinusitis (antibiotics NOT effective), complication (orbital cellulitis, intracranial extension). Management: Switch to high-dose amoxicillin-clavulanate 2000mg/125mg PO BID x 7-10 days OR Levofloxacin 750mg PO daily x 5 days. If still failing → CT paranasal sinuses + ENT referral (nasal endoscopy + culture).",
+            "recurrent_abrs": "4+ episodes in 12 months. Causes: Allergic rhinitis, anatomic obstruction (deviated septum, nasal polyps), immunosuppression. Management: ENT referral for nasal endoscopy, CT paranasal sinuses, allergy testing. Consider functional endoscopic sinus surgery (FESS) if anatomic obstruction.",
+            "duration": "5-7 days for uncomplicated ABRS (non-inferior to 10 days). 10 days if severe, immunocompromised, or frontal/sphenoid sinusitis."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "5-7 days for uncomplicated ABRS (non-inferior to 10 days). 10 days if severe, immunocompromised, or frontal/sphenoid sinusitis.",
+            "monitoring": "Improvement expected in 3-5 days (decreased nasal discharge, decreased facial pain). If no improvement → switch to high-dose amoxicillin-clavulanate or levofloxacin. If worsening → CT paranasal sinuses + ENT referral (rule out complication).",
+            "stop_criteria": "Complete 5-10 days (based on severity). Persistent symptoms after antibiotics → CT paranasal sinuses + ENT referral (rule out complication, chronic rhinosinusitis)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "orbital_cellulitis": "Complication of ethmoid sinusitis (5-10% of ABRS). Periorbital swelling, proptosis, ophthalmoplegia, decreased vision. CT orbit/paranasal sinuses with contrast. IV antibiotics: Vancomycin 15mg/kg IV q12h + Ceftriaxone 2g IV q12h + Metronidazole 500mg IV q8h x 2-4 weeks. Urgent ophthalmology + ENT referral. Surgical drainage (FESS) if abscess or failed medical therapy.",
+            "intracranial_extension": "Complication of frontal or sphenoid sinusitis (<1%). Meningitis, epidural abscess, subdural empyema, brain abscess, cavernous sinus thrombosis. Severe headache, altered mental status, fever, neck stiffness. MRI brain with contrast. IV antibiotics: Vancomycin 15mg/kg IV q12h + Ceftriaxone 2g IV q12h + Metronidazole 500mg IV q8h x 4-6 weeks. Neurosurgery + ENT referral. Surgical drainage (craniotomy + FESS) if abscess.",
+            "frontal_bone_osteomyelitis": "Pott puffy tumor. Complication of frontal sinusitis. Forehead swelling, tenderness, fever. CT paranasal sinuses + MRI brain. IV antibiotics x 4-6 weeks + Surgical debridement (FESS + frontal bone debridement). ENT + neurosurgery referral.",
+            "chronic_rhinosinusitis": "Symptoms >12 weeks. Causes: Allergic rhinitis, anatomic obstruction, biofilm formation. Antibiotics NOT routinely indicated (limited benefit). Management: Nasal saline irrigation, intranasal corticosteroids (fluticasone, mometasone). ENT referral for nasal endoscopy, CT paranasal sinuses, consider FESS if medical therapy fails.",
+            "dental_source": "Maxillary sinusitis from dental infection (tooth abscess, extraction). Anaerobes common (Bacteroides, Peptostreptococcus). Amoxicillin-clavulanate 875mg/125mg PO BID x 10 days OR Clindamycin 300mg PO TID x 10 days. Dental referral for source control (extraction, root canal).",
+            "immunocompromised": "Higher risk of complications (orbital cellulitis, intracranial extension) and invasive fungal sinusitis (Mucor, Aspergillus). CT paranasal sinuses. Admit for IV antibiotics: Vancomycin 15mg/kg IV q12h + Ceftriaxone 2g IV q12h + Metronidazole 500mg IV q8h. ENT referral for nasal endoscopy + biopsy (rule out fungal sinusitis). If fungal → Amphotericin B 5mg/kg IV daily + Surgical debridement."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Do NOT use antibiotics if symptoms <10 days without worsening (viral rhinosinusitis, 90-98% of cases)",
+              "Shorter duration (5-7 days) adequate for uncomplicated ABRS (non-inferior to 10 days)",
+              "Do NOT obtain CT routinely (radiation exposure, overdiagnosis, reserve for complications or failed therapy)",
+              "Symptomatic treatment (nasal saline irrigation, intranasal corticosteroids, decongestants) often adequate"
+            ],
+            "timeout_checklist": [
+              "Are antibiotics indicated? (Severe OR Worsening OR Persistent ≥10 days, if NO → do NOT treat)",
+              "Is amoxicillin-clavulanate used? (First-line, covers beta-lactamase producing organisms)",
+              "Is duration appropriate? (5-7 days for uncomplicated, 10 days if severe)",
+              "Is CT indicated? (ONLY if suspected complication, recurrent ABRS, or failed therapy)",
+              "Is symptomatic treatment prescribed? (Nasal saline irrigation, intranasal corticosteroids, analgesics)",
+              "Is follow-up arranged? (If no improvement in 3-5 days or worsening)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid antibiotics if: Symptoms <10 days without worsening (viral rhinosinusitis, resolves spontaneously). Avoid TMP-SMX or macrolides (resistance 20-40%, NOT first-line). Avoid CT routinely (radiation exposure, overdiagnosis). Most rhinosinusitis is viral (90-98%), antibiotics NOT indicated.",
+            "diagnostic_stewardship": "Clinical diagnosis (imaging NOT routinely needed). CT ONLY if: Suspected complication, recurrent ABRS, or failed therapy. Do NOT obtain blood cultures (low yield).",
+            "prevention": "Hand hygiene. Influenza vaccine (reduces viral URI). Nasal saline irrigation (reduces recurrence). Intranasal corticosteroids (if allergic rhinitis). Avoid smoking."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Guidelines for Acute Bacterial Rhinosinusitis (2012)",
+              "url": "https://www.idsociety.org/practice-guideline/acute-bacterial-rhinosinusitis/"
+            },
+            {
+              "label": "AAO-HNS Clinical Practice Guideline: Adult Sinusitis (2015)",
+              "url": "https://www.entnet.org/quality-practice/quality-products/clinical-practice-guidelines/adult-sinusitis/"
+            },
+            {
+              "label": "CDC: Sinus Infection (Sinusitis) (2024)",
+              "url": "https://www.cdc.gov/antibiotic-use/sinus-infection.html"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "peritonsillar-abscess",
+      "name": "Peritonsillar Abscess (Quinsy)",
+      "synonyms": [
+        "quinsy",
+        "PTA"
+      ],
+      "icd10": [
+        "J36",
+        "J36.0"
+      ],
+      "severity": [
+        "moderate",
+        "severe"
+      ],
+      "shortDescription": "Complication of pharyngitis requiring needle aspiration or incision and drainage plus antibiotics",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Collection of pus between the tonsillar capsule and pharyngeal constrictor muscle. Most common deep neck infection (30-40 cases per 100,000). Complication of acute tonsillitis (1-2% of pharyngitis). Requires drainage (needle aspiration or I&D) + antibiotics.",
+            "clinical_presentation": "Severe unilateral sore throat, odynophagia (painful swallowing), trismus (difficulty opening mouth), muffled voice (hot potato voice), drooling, fever. Physical exam: Unilateral tonsillar swelling, uvula deviation away from affected side, soft palate bulging, tender cervical lymphadenopathy.",
+            "diagnostic_criteria": "Clinical diagnosis: Unilateral tonsillar swelling + uvula deviation + trismus + muffled voice. CT neck with contrast if: Diagnosis uncertain, concern for deeper infection (retropharyngeal abscess, parapharyngeal abscess), or failed drainage.",
+            "risk_factors": [
+              "Age 20-40 years (peak incidence)",
+              "History of recurrent tonsillitis",
+              "Smoking",
+              "Infectious mononucleosis (EBV)",
+              "Periodontal disease"
+            ],
+            "red_flags": [
+              "Stridor or respiratory distress - airway emergency, secure airway (intubation or tracheostomy), urgent ENT referral",
+              "Parapharyngeal abscess - extends lateral to pharyngeal constrictor, trismus, neck swelling, requires IV antibiotics + surgical drainage",
+              "Retropharyngeal abscess - extends posterior to pharyngeal constrictor, neck stiffness, requires IV antibiotics + surgical drainage",
+              "Descending necrotizing mediastinitis - chest pain, dyspnea, mortality 20-40%, requires IV antibiotics + surgical drainage",
+              "Internal jugular vein thrombosis (Lemierre syndrome) - septic emboli, requires IV antibiotics + anticoagulation"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Clinical diagnosis (CT NOT routinely needed). CT neck with contrast if: Diagnosis uncertain, concern for deeper infection (retropharyngeal abscess, parapharyngeal abscess), or failed drainage.",
+            "essential_tests": [
+              "Clinical diagnosis: Unilateral tonsillar swelling + uvula deviation + trismus + muffled voice.",
+              "Needle aspiration: Diagnostic and therapeutic. Aspirate pus from point of maximal fluctuance (superior and lateral to tonsil). Send pus for Gram stain and culture."
+            ],
+            "conditional_tests": [
+              "CT neck with contrast: If diagnosis uncertain, concern for deeper infection, or failed drainage. Findings: Rim-enhancing fluid collection between tonsillar capsule and pharyngeal constrictor muscle.",
+              "Monospot or EBV serology: If suspected infectious mononucleosis (posterior cervical lymphadenopathy, splenomegaly).",
+              "Blood cultures: If severe, septic, or immunocompromised."
+            ],
+            "when_not_to_test": "Do NOT obtain CT routinely (clinical diagnosis, radiation exposure). Do NOT delay drainage for imaging (drainage is diagnostic and therapeutic).",
+            "turnaround_time": "Needle aspiration: Immediate. CT: <1 hour. Gram stain: <1 hour. Culture: 24-48 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Polymicrobial (70-80%): Group A Streptococcus (30-40%), Staphylococcus aureus (MSSA 10-20%, MRSA 5-10%), anaerobes (Fusobacterium, Prevotella, Peptostreptococcus 40-60%), Streptococcus viridans (10-20%). Fusobacterium necrophorum (Lemierre syndrome, internal jugular vein thrombosis).",
+            "pathogenesis": "Acute tonsillitis → peritonsillar cellulitis → peritonsillar abscess. Bacteria spread from tonsillar crypts → peritonsillar space → abscess formation. Can extend to parapharyngeal space, retropharyngeal space, or descend to mediastinum (necrotizing mediastinitis).",
+            "resistance_patterns": {
+              "mrsa": "MRSA: 5-10% of S. aureus isolates. Clindamycin or vancomycin effective.",
+              "beta_lactamase": "Anaerobes: Beta-lactamase producing 40-60%. Amoxicillin-clavulanate or clindamycin effective."
+            },
+            "timing_critical": "Drainage (needle aspiration or I&D) within 24 hours. Antibiotics alone inadequate (cure rate <50% without drainage). Drainage + antibiotics cure rate >90%."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "drainage_plus_antibiotics": "Needle aspiration OR I&D (ENT performs) + Antibiotics. Drainage is CRITICAL (antibiotics alone inadequate, cure rate <50% without drainage).",
+            "first_line_po": "Amoxicillin-clavulanate 875mg PO BID x 10 days (covers GAS, S. aureus, anaerobes). Use if: Drained successfully, able to tolerate PO, not severe, reliable follow-up.",
+            "first_line_iv": "Ampicillin-sulbactam 3g IV q6h OR Amoxicillin-clavulanate 875mg PO BID (if able to tolerate PO). Use if: Severe, unable to tolerate PO, airway compromise, or failed outpatient therapy. Switch to PO when able to tolerate (amoxicillin-clavulanate 875mg BID x 10 days total).",
+            "penicillin_allergy_or_mrsa_risk": "Clindamycin 300mg PO TID x 10 days (outpatient) OR 600mg IV q8h (inpatient, switch to PO when able). Covers GAS, MRSA, anaerobes. Preferred if penicillin allergy or MRSA risk.",
+            "severe_or_immunocompromised": "Vancomycin 15mg/kg IV q12h + Piperacillin-tazobactam 4.5g IV q6h OR Vancomycin + Metronidazole 500mg IV q8h + Ceftriaxone 2g IV q12h. Broader coverage for MRSA, Gram-negatives, anaerobes.",
+            "avoid_list": "Avoid antibiotics alone without drainage (cure rate <50%, drainage CRITICAL). Avoid penicillin or amoxicillin alone (inadequate anaerobic coverage). Avoid macrolides (azithromycin, inadequate coverage)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "group_a_streptococcus": "Amoxicillin-clavulanate 875mg PO BID x 10 days OR Clindamycin 300mg PO TID x 10 days.",
+            "s_aureus_mssa": "Amoxicillin-clavulanate 875mg PO BID x 10 days OR Clindamycin 300mg PO TID x 10 days.",
+            "s_aureus_mrsa": "Clindamycin 300mg PO TID x 10 days OR Linezolid 600mg PO BID x 10 days OR Vancomycin 15mg/kg IV q12h (if severe).",
+            "anaerobes": "Amoxicillin-clavulanate 875mg PO BID x 10 days OR Clindamycin 300mg PO TID x 10 days OR Metronidazole 500mg PO TID x 10 days.",
+            "fusobacterium_lemierre_syndrome": "Internal jugular vein thrombosis + septic emboli. IV antibiotics: Penicillin G 4 million units IV q4h OR Metronidazole 500mg IV q8h + Ceftriaxone 2g IV q12h x 4-6 weeks. Anticoagulation (heparin) controversial (consider if extensive thrombosis). CT neck/chest (assess thrombosis, septic emboli).",
+            "treatment_failure": "Persistent symptoms after drainage + antibiotics. Causes: Inadequate drainage, deeper infection (parapharyngeal abscess, retropharyngeal abscess), resistant organism. Management: Repeat drainage (I&D if needle aspiration failed), CT neck with contrast (assess deeper infection), switch to clindamycin or vancomycin + piperacillin-tazobactam.",
+            "recurrent_pta": "2+ episodes. Consider tonsillectomy (AAO-HNS 2019, reduces recurrence from 10-15% to <1%). Perform tonsillectomy 6-8 weeks after acute episode (interval tonsillectomy) OR during acute episode (quinsy tonsillectomy, higher bleeding risk).",
+            "duration": "10 days PO antibiotics after drainage. IV antibiotics x 2-3 days if severe, then switch to PO x 10 days total."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "10 days PO antibiotics after drainage. IV antibiotics x 2-3 days if severe, then switch to PO x 10 days total.",
+            "monitoring": "Improvement expected in 24-48 hours after drainage (decreased pain, decreased trismus, able to swallow). If no improvement → repeat drainage, CT neck (assess deeper infection), or switch antibiotics. Follow-up in 24-48 hours (ensure adequate drainage, able to tolerate PO).",
+            "stop_criteria": "Complete 10 days even if symptoms resolve earlier. Consider tonsillectomy if recurrent PTA (2+ episodes)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "needle_aspiration_vs_incision_drainage": "Needle aspiration: Less invasive, can be done in ED/clinic, success rate 80-90%, repeat if fails. I&D: More invasive, requires ENT, success rate >95%, preferred if: Large abscess (>3cm), failed needle aspiration, or recurrent PTA. Both equally effective for uncomplicated PTA.",
+            "admission_criteria": "Admit if: Severe (airway compromise, unable to tolerate PO, dehydration), failed outpatient therapy, concern for deeper infection (parapharyngeal abscess, retropharyngeal abscess), or unreliable follow-up. Discharge if: Drained successfully, able to tolerate PO, not severe, reliable follow-up.",
+            "airway_management": "Airway compromise (stridor, respiratory distress) is rare (<5%) but life-threatening. Secure airway (intubation or tracheostomy) BEFORE drainage. Urgent ENT + anesthesia consultation. Avoid sedation (worsens airway obstruction).",
+            "parapharyngeal_abscess": "Extends lateral to pharyngeal constrictor muscle. Trismus, neck swelling, torticollis. CT neck with contrast. IV antibiotics + Surgical drainage (external approach, ENT performs). Higher risk of complications (internal jugular vein thrombosis, carotid artery erosion).",
+            "retropharyngeal_abscess": "Extends posterior to pharyngeal constrictor muscle. Neck stiffness, dysphagia, drooling. CT neck with contrast. IV antibiotics + Surgical drainage (transoral or external approach, ENT performs). Higher risk of descending necrotizing mediastinitis.",
+            "descending_necrotizing_mediastinitis": "Infection descends from peritonsillar space → retropharyngeal space → mediastinum. Chest pain, dyspnea, sepsis. CT chest with contrast. IV antibiotics + Surgical drainage (thoracotomy, cardiothoracic surgery). Mortality 20-40%.",
+            "tonsillectomy": "Consider if: Recurrent PTA (2+ episodes), recurrent tonsillitis (7+ episodes in 1 year), or failed medical therapy. Interval tonsillectomy (6-8 weeks after acute episode, lower bleeding risk) OR Quinsy tonsillectomy (during acute episode, higher bleeding risk but prevents recurrence)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Drainage is CRITICAL (antibiotics alone inadequate, cure rate <50% without drainage)",
+              "Switch IV to PO when able to tolerate (amoxicillin-clavulanate 875mg BID x 10 days total)",
+              "After culture results, narrow to targeted therapy (discontinue vancomycin if MSSA, discontinue metronidazole if no anaerobes)",
+              "Do NOT obtain CT routinely (clinical diagnosis, radiation exposure, reserve for failed drainage or deeper infection)"
+            ],
+            "timeout_checklist": [
+              "Is drainage performed? (Needle aspiration or I&D, CRITICAL for cure)",
+              "Are antibiotics started? (Amoxicillin-clavulanate 875mg BID OR Clindamycin 300mg TID x 10 days)",
+              "Is airway assessed? (Stridor, respiratory distress → secure airway BEFORE drainage)",
+              "Is admission indicated? (Severe, unable to tolerate PO, failed outpatient therapy, or deeper infection)",
+              "Is follow-up arranged? (24-48 hours, ensure adequate drainage, able to tolerate PO)",
+              "Is tonsillectomy considered? (If recurrent PTA 2+ episodes)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid antibiotics alone without drainage (cure rate <50%, drainage CRITICAL). Avoid penicillin or amoxicillin alone (inadequate anaerobic coverage). Avoid CT routinely (clinical diagnosis, reserve for failed drainage or deeper infection). Do NOT delay drainage for imaging (drainage is diagnostic and therapeutic).",
+            "diagnostic_stewardship": "Clinical diagnosis (CT NOT routinely needed). Needle aspiration is diagnostic and therapeutic (send pus for Gram stain and culture). CT ONLY if: Diagnosis uncertain, concern for deeper infection, or failed drainage.",
+            "prevention": "Treat acute tonsillitis promptly (antibiotics x 10 days). Consider tonsillectomy if recurrent tonsillitis (7+ episodes in 1 year)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "AAO-HNS Clinical Practice Guideline: Tonsillectomy in Adults (2019)",
+              "url": "https://www.entnet.org/quality-practice/quality-products/clinical-practice-guidelines/tonsillectomy-adults/"
+            },
+            {
+              "label": "IDSA Guidelines for Deep Neck Infections (2011)",
+              "url": "https://www.idsociety.org/practice-guideline/deep-neck-infections/"
+            },
+            {
+              "label": "CDC: Peritonsillar Abscess (2024)",
+              "url": "https://www.cdc.gov/groupastrep/diseases-public/peritonsillar-abscess.html"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "retropharyngeal-abscess",
+      "name": "Retropharyngeal Abscess",
+      "synonyms": [
+        "RPA",
+        "deep neck infection"
+      ],
+      "icd10": [
+        "J39.0",
+        "J39.00"
+      ],
+      "severity": [
+        "severe",
+        "critical"
+      ],
+      "shortDescription": "Life-threatening deep neck infection requiring IV antibiotics and surgical drainage, airway emergency",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Collection of pus in the retropharyngeal space (between posterior pharyngeal wall and prevertebral fascia). Life-threatening airway emergency. Most common in children <5 years (retropharyngeal lymph nodes atrophy after age 5). Complications: Airway obstruction (10-20%), descending necrotizing mediastinitis (5-10%, mortality 20-40%), sepsis, internal jugular vein thrombosis.",
+            "clinical_presentation": "Fever, neck pain/stiffness, dysphagia, drooling, muffled voice, torticollis (head tilted to affected side), respiratory distress. Children: Irritability, refusal to eat, neck hyperextension. Physical exam: Posterior pharyngeal wall bulging, tender cervical lymphadenopathy, limited neck range of motion.",
+            "diagnostic_criteria": "CT neck with contrast REQUIRED (confirm diagnosis, assess extent, rule out complications). Findings: Rim-enhancing fluid collection in retropharyngeal space, prevertebral soft tissue thickening >7mm (C2) or >14mm (C6), air in soft tissues (suggests necrotizing infection).",
+            "risk_factors": [
+              "Age <5 years (peak incidence 2-4 years, retropharyngeal lymph nodes present)",
+              "Recent pharyngitis or URI",
+              "Penetrating trauma (foreign body, endoscopy)",
+              "Immunosuppression (diabetes, HIV)"
+            ],
+            "red_flags": [
+              "Stridor or respiratory distress - airway emergency, secure airway (intubation or tracheostomy) BEFORE drainage, urgent ENT + anesthesia referral",
+              "Descending necrotizing mediastinitis - chest pain, dyspnea, sepsis, mortality 20-40%, requires IV antibiotics + surgical drainage (thoracotomy)",
+              "Internal jugular vein thrombosis (Lemierre syndrome) - septic emboli, requires IV antibiotics + anticoagulation",
+              "Carotid artery erosion - life-threatening hemorrhage, requires vascular surgery",
+              "Atlantoaxial subluxation (Grisel syndrome) - torticollis, neurologic deficits, requires neurosurgery"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "CT neck with contrast REQUIRED (confirm diagnosis, assess extent, rule out complications). Lateral neck X-ray if CT unavailable (prevertebral soft tissue thickening >7mm at C2 or >14mm at C6 suggests RPA, but CT preferred).",
+            "essential_tests": [
+              "CT neck with contrast: REQUIRED. Findings: Rim-enhancing fluid collection in retropharyngeal space, prevertebral soft tissue thickening >7mm (C2) or >14mm (C6), air in soft tissues (necrotizing infection). Assess: Abscess size, extension to mediastinum, vascular involvement.",
+              "Blood cultures: Obtain before antibiotics. Positive in 20-30%.",
+              "CBC: Leukocytosis (WBC >15,000 in 70-80%)."
+            ],
+            "conditional_tests": [
+              "CT chest with contrast: If suspected descending necrotizing mediastinitis (chest pain, dyspnea, sepsis).",
+              "MRI neck with contrast: If suspected vascular involvement (internal jugular vein thrombosis, carotid artery erosion) or spinal involvement (epidural abscess, atlantoaxial subluxation).",
+              "Surgical drainage culture: Send pus for Gram stain, aerobic and anaerobic culture. ENT performs."
+            ],
+            "when_not_to_test": "Do NOT delay IV antibiotics for CT (start empiric antibiotics immediately, then obtain CT). Do NOT delay airway management for CT (secure airway FIRST if respiratory distress).",
+            "turnaround_time": "CT: <1 hour. Blood cultures: 24-48 hours. CBC: <1 hour. Surgical drainage culture: 24-48 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Polymicrobial (60-70%): Group A Streptococcus (30-40%), Staphylococcus aureus (MSSA 20-30%, MRSA 5-10%), anaerobes (Fusobacterium, Prevotella, Peptostreptococcus 40-60%), Streptococcus viridans (10-20%), Gram-negatives (Klebsiella, E. coli 5-10% if immunocompromised).",
+            "pathogenesis": "Pharyngitis or URI → retropharyngeal lymphadenitis → suppuration → retropharyngeal abscess. Can descend along fascial planes → mediastinum (descending necrotizing mediastinitis, mortality 20-40%). Penetrating trauma (foreign body, endoscopy) → direct inoculation → RPA.",
+            "resistance_patterns": {
+              "mrsa": "MRSA: 5-10% of S. aureus isolates. Vancomycin required.",
+              "beta_lactamase": "Anaerobes: Beta-lactamase producing 40-60%. Clindamycin or metronidazole effective."
+            },
+            "timing_critical": "IV antibiotics within 1-2 hours. Surgical drainage within 24 hours if: Abscess >2cm, airway compromise, failed medical therapy (48-72 hours), or descending necrotizing mediastinitis. Smaller abscesses (<2cm) may respond to IV antibiotics alone (50-60% success rate)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line_iv": "Vancomycin 15mg/kg IV q12h + Piperacillin-tazobactam 4.5g IV q6h (adults) OR 100mg/kg/dose IV q6h (children, max 4.5g/dose). Covers MRSA, GAS, anaerobes, Gram-negatives. Continue IV x 2-4 weeks (longer if descending necrotizing mediastinitis or failed drainage).",
+            "alternative_iv": "Vancomycin 15mg/kg IV q12h + Ceftriaxone 2g IV q12h (adults) OR 50mg/kg IV q12h (children, max 2g/dose) + Metronidazole 500mg IV q8h (adults) OR 30mg/kg/day IV divided q8h (children, max 500mg/dose). Covers MRSA, GAS, anaerobes.",
+            "surgical_drainage": "Indications: Abscess >2cm, airway compromise, failed medical therapy (48-72 hours IV antibiotics), or descending necrotizing mediastinitis. Transoral drainage (ENT performs) OR External drainage (if extensive or mediastinal extension). Send pus for Gram stain and culture.",
+            "medical_management_alone": "Small abscesses (<2cm) may respond to IV antibiotics alone (50-60% success rate). Criteria: Abscess <2cm, no airway compromise, able to tolerate PO, reliable follow-up. Monitor closely (daily clinical assessment, repeat CT in 48-72 hours if no improvement). If no improvement → surgical drainage.",
+            "avoid_list": "Avoid PO antibiotics alone (inadequate for RPA, IV required). Avoid monotherapy (polymicrobial, combination therapy required). Avoid delay in surgical drainage (airway obstruction, descending necrotizing mediastinitis)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "group_a_streptococcus": "Penicillin G 4 million units IV q4h (adults) OR 50,000 units/kg IV q4h (children, max 4 million units/dose) + Metronidazole 500mg IV q8h (anaerobic coverage). Continue IV x 2-4 weeks.",
+            "s_aureus_mssa": "Nafcillin 2g IV q4h (adults) OR 50mg/kg IV q4h (children, max 2g/dose) + Metronidazole 500mg IV q8h. Continue IV x 2-4 weeks.",
+            "s_aureus_mrsa": "Vancomycin 15mg/kg IV q12h + Metronidazole 500mg IV q8h. Continue IV x 2-4 weeks.",
+            "anaerobes": "Clindamycin 600mg IV q8h (adults) OR 10mg/kg IV q8h (children, max 600mg/dose) OR Metronidazole 500mg IV q8h. Continue IV x 2-4 weeks.",
+            "descending_necrotizing_mediastinitis": "Vancomycin 15mg/kg IV q12h + Piperacillin-tazobactam 4.5g IV q6h x 4-6 weeks. Surgical drainage (thoracotomy, cardiothoracic surgery). Mortality 20-40%.",
+            "treatment_failure": "Persistent symptoms after 48-72 hours of IV antibiotics + drainage. Causes: Inadequate drainage, resistant organism, deeper extension (mediastinum, epidural space). Management: Repeat CT neck/chest, repeat drainage, switch to vancomycin + piperacillin-tazobactam, or add antifungal (if immunocompromised).",
+            "duration": "IV antibiotics x 2-4 weeks. Longer if: Descending necrotizing mediastinitis (4-6 weeks), failed drainage, or immunocompromised. Switch to PO when: Afebrile x 48 hours, improved clinically, able to tolerate PO. PO options: Amoxicillin-clavulanate 875mg BID + Clindamycin 300mg TID x 2-4 weeks total.",
+            "iv_to_po_switch": "Switch IV to PO when: Afebrile x 48 hours, improved clinically (decreased neck pain, able to swallow), able to tolerate PO. PO options: Amoxicillin-clavulanate 875mg BID + Clindamycin 300mg TID x 2-4 weeks total."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "IV antibiotics x 2-4 weeks. Longer if: Descending necrotizing mediastinitis (4-6 weeks), failed drainage, or immunocompromised. Switch to PO when: Afebrile x 48 hours, improved clinically, able to tolerate PO.",
+            "monitoring": "Daily clinical assessment (fever, neck pain, dysphagia, respiratory status). Repeat CT neck in 48-72 hours if no improvement (assess abscess size, rule out complications). Improvement expected in 48-72 hours (decreased fever, decreased neck pain, able to swallow). If no improvement → repeat drainage, switch antibiotics, or assess for complications (mediastinitis, vascular involvement).",
+            "stop_criteria": "Complete 2-4 weeks total (IV + PO). Continue until: Afebrile, able to swallow, normal neck range of motion, WBC normal, repeat CT shows resolution."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "airway_management": "Airway compromise (stridor, respiratory distress) in 10-20%. Secure airway (intubation or tracheostomy) BEFORE drainage. Urgent ENT + anesthesia consultation. Avoid sedation (worsens airway obstruction). Fiberoptic intubation preferred (direct laryngoscopy may rupture abscess).",
+            "descending_necrotizing_mediastinitis": "Infection descends along fascial planes → mediastinum. Chest pain, dyspnea, sepsis. CT chest with contrast. IV antibiotics x 4-6 weeks + Surgical drainage (thoracotomy, cardiothoracic surgery). Mortality 20-40%.",
+            "internal_jugular_vein_thrombosis": "Lemierre syndrome. Septic emboli (lungs, brain, joints). CT neck/chest with contrast. IV antibiotics x 4-6 weeks + Anticoagulation (heparin) controversial (consider if extensive thrombosis).",
+            "atlantoaxial_subluxation": "Grisel syndrome. Torticollis, neurologic deficits (myelopathy). MRI cervical spine. IV antibiotics + Neurosurgery consultation. Cervical collar immobilization. Surgical stabilization if unstable.",
+            "neonatal_rpa": "Age <28 days. Higher risk of serious bacterial infection (meningitis, sepsis). Admit for IV antibiotics: Ampicillin 50mg/kg IV q8h + Cefotaxime 50mg/kg IV q8h x 2-4 weeks. Blood cultures, LP if febrile. Surgical drainage if abscess >2cm.",
+            "immunocompromised": "Higher risk of complications (mediastinitis, vascular involvement) and atypical organisms (fungi, Gram-negatives). CT neck/chest. Admit for IV antibiotics: Vancomycin 15mg/kg IV q12h + Piperacillin-tazobactam 4.5g IV q6h x 4-6 weeks. Consider antifungal (amphotericin B) if fungal suspected. Surgical drainage if abscess >2cm."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "After culture results, narrow to targeted therapy (discontinue vancomycin if MSSA, discontinue metronidazole if no anaerobes)",
+              "Switch IV to PO when afebrile x 48 hours and improved clinically (total 2-4 weeks)",
+              "Small abscesses (<2cm) may respond to IV antibiotics alone (50-60% success rate, monitor closely, repeat CT in 48-72 hours if no improvement)"
+            ],
+            "timeout_checklist": [
+              "Is CT neck with contrast obtained? (REQUIRED to confirm diagnosis, assess extent, rule out complications)",
+              "Are IV antibiotics started? (Vancomycin + Piperacillin-tazobactam OR Vancomycin + Ceftriaxone + Metronidazole)",
+              "Is airway assessed? (Stridor, respiratory distress → secure airway BEFORE drainage)",
+              "Is surgical drainage indicated? (Abscess >2cm, airway compromise, failed medical therapy 48-72 hours, or mediastinitis)",
+              "Is admission arranged? (ALL patients require admission for IV antibiotics + monitoring)",
+              "Is ENT consultation arranged? (URGENT, surgical drainage if indicated)",
+              "Is follow-up CT arranged? (48-72 hours if no improvement, assess abscess size and complications)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid PO antibiotics alone (inadequate for RPA, IV required). Avoid monotherapy (polymicrobial, combination therapy required). Avoid delay in surgical drainage (airway obstruction, descending necrotizing mediastinitis). Do NOT delay airway management for CT (secure airway FIRST if respiratory distress).",
+            "diagnostic_stewardship": "CT neck with contrast REQUIRED (confirm diagnosis, assess extent, rule out complications). Blood cultures before antibiotics. Surgical drainage culture (Gram stain, aerobic and anaerobic culture).",
+            "prevention": "Treat pharyngitis and URI promptly. Avoid penetrating trauma (foreign body, endoscopy)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "AAO-HNS Clinical Practice Guideline: Deep Neck Infections (2019)",
+              "url": "https://www.entnet.org/quality-practice/quality-products/clinical-practice-guidelines/deep-neck-infections/"
+            },
+            {
+              "label": "IDSA Guidelines for Deep Neck Infections (2011)",
+              "url": "https://www.idsociety.org/practice-guideline/deep-neck-infections/"
+            },
+            {
+              "label": "Pediatric Deep Neck Infections Guidelines (AAP 2021)",
+              "url": "https://publications.aap.org/pediatrics/article/147/6/e2021050796/180970"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "acute-mastoiditis",
+      "name": "Acute Mastoiditis",
+      "synonyms": [
+        "mastoid abscess",
+        "coalescent mastoiditis"
+      ],
+      "icd10": [
+        "H70.0",
+        "H70.00",
+        "H70.001"
+      ],
+      "severity": [
+        "severe"
+      ],
+      "shortDescription": "Complication of acute otitis media requiring IV antibiotics and myringotomy, may require mastoidectomy",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Bacterial infection of the mastoid air cells. Complication of acute otitis media (AOM, <1% of AOM cases). Coalescent mastoiditis: Destruction of bony septa between mastoid air cells → abscess formation. Complications: Subperiosteal abscess (30-40%), intracranial extension (meningitis, brain abscess, sigmoid sinus thrombosis 5-10%), facial nerve palsy (5%), hearing loss (10-20%).",
+            "clinical_presentation": "Postauricular swelling, erythema, tenderness, protrusion of auricle (ear pushed forward and down), fever, otalgia, otorrhea. History of recent AOM (70-80%). Physical exam: Postauricular fluctuance, loss of postauricular crease, tympanic membrane perforation with otorrhea.",
+            "diagnostic_criteria": "Clinical diagnosis + CT temporal bone with contrast (confirm diagnosis, assess extent, rule out complications). Findings: Mastoid air cell opacification, bony destruction, subperiosteal abscess, intracranial extension.",
+            "risk_factors": [
+              "Recent acute otitis media (70-80%)",
+              "Age <2 years (peak incidence)",
+              "Immunosuppression (diabetes, HIV)",
+              "Cholesteatoma (chronic otitis media)",
+              "Inadequate treatment of AOM"
+            ],
+            "red_flags": [
+              "Intracranial extension - meningitis, brain abscess, sigmoid sinus thrombosis, requires IV antibiotics + neurosurgery referral",
+              "Facial nerve palsy - suggests temporal bone involvement, requires IV antibiotics + urgent ENT referral",
+              "Subperiosteal abscess - fluctuant postauricular mass, requires surgical drainage (myringotomy + mastoidectomy)",
+              "Bezold abscess - abscess extends through mastoid tip to neck, requires surgical drainage",
+              "Labyrinthitis - vertigo, sensorineural hearing loss, requires IV antibiotics + urgent ENT referral"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "CT temporal bone with contrast REQUIRED (confirm diagnosis, assess extent, rule out complications). MRI brain with contrast if suspected intracranial complication (meningitis, brain abscess, sigmoid sinus thrombosis).",
+            "essential_tests": [
+              "CT temporal bone with contrast: REQUIRED. Findings: Mastoid air cell opacification, bony destruction (coalescent mastoiditis), subperiosteal abscess, intracranial extension. Assess: Abscess size, facial nerve canal involvement, sigmoid sinus thrombosis.",
+              "Blood cultures: Obtain before antibiotics. Positive in 20-30%.",
+              "CBC: Leukocytosis (WBC >15,000 in 70-80%)."
+            ],
+            "conditional_tests": [
+              "MRI brain with contrast: If suspected intracranial complication (meningitis, brain abscess, sigmoid sinus thrombosis).",
+              "Lumbar puncture: If suspected meningitis (headache, neck stiffness, altered mental status).",
+              "Myringotomy culture: Send middle ear fluid for Gram stain and culture. ENT performs.",
+              "Audiometry: Assess hearing loss (conductive or sensorineural). Perform after acute infection resolved."
+            ],
+            "when_not_to_test": "Do NOT delay IV antibiotics for CT (start empiric antibiotics immediately, then obtain CT). Do NOT obtain CT if diagnosis uncertain (clinical diagnosis + CT confirms).",
+            "turnaround_time": "CT: <1 hour. Blood cultures: 24-48 hours. CBC: <1 hour. Myringotomy culture: 24-48 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Streptococcus pneumoniae (30-40%), Staphylococcus aureus (MSSA 20-30%, MRSA 5-10%), Streptococcus pyogenes (Group A Strep 10-15%), Haemophilus influenzae non-typeable (5-10%), Pseudomonas aeruginosa (5-10%, if chronic otitis media or cholesteatoma).",
+            "pathogenesis": "Acute otitis media → mastoid air cell infection → coalescent mastoiditis (bony destruction) → subperiosteal abscess → intracranial extension (meningitis, brain abscess, sigmoid sinus thrombosis).",
+            "resistance_patterns": {
+              "mrsa": "MRSA: 5-10% of S. aureus isolates. Vancomycin required.",
+              "penicillin_resistance": "S. pneumoniae: Penicillin-resistant 30-40%. Ceftriaxone effective (high CSF penetration)."
+            },
+            "timing_critical": "IV antibiotics within 1-2 hours. Myringotomy (drainage of middle ear fluid) within 24 hours. Mastoidectomy (surgical drainage of mastoid abscess) if: Subperiosteal abscess, failed medical therapy (48-72 hours), or intracranial extension."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line_iv": "Vancomycin 15mg/kg IV q12h + Ceftriaxone 2g IV q12h (adults) OR 50mg/kg IV q12h (children, max 2g/dose). Covers MRSA, S. pneumoniae (including penicillin-resistant), GAS, H. influenzae. Continue IV x 2-4 weeks.",
+            "alternative_if_pseudomonas_risk": "Vancomycin 15mg/kg IV q12h + Cefepime 2g IV q8h (adults) OR 50mg/kg IV q8h (children, max 2g/dose). Use if: Chronic otitis media, cholesteatoma, or prior ear surgery (Pseudomonas risk 5-10%).",
+            "myringotomy": "Drainage of middle ear fluid. Indications: ALL patients with acute mastoiditis (diagnostic and therapeutic). ENT performs. Send middle ear fluid for Gram stain and culture. Improves outcomes (reduces need for mastoidectomy from 40% to 20%).",
+            "mastoidectomy": "Surgical drainage of mastoid abscess. Indications: Subperiosteal abscess, failed medical therapy + myringotomy (48-72 hours), intracranial extension, or coalescent mastoiditis with bony destruction. ENT performs. Send pus for Gram stain and culture.",
+            "avoid_list": "Avoid PO antibiotics alone (inadequate for mastoiditis, IV required). Avoid monotherapy (combination therapy required for MRSA + S. pneumoniae coverage). Avoid delay in myringotomy (improves outcomes, reduces need for mastoidectomy)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "s_pneumoniae_penicillin_susceptible": "Penicillin G 4 million units IV q4h (adults) OR 50,000 units/kg IV q4h (children, max 4 million units/dose). Continue IV x 2-4 weeks.",
+            "s_pneumoniae_penicillin_resistant": "Ceftriaxone 2g IV q12h (adults) OR 50mg/kg IV q12h (children, max 2g/dose). Continue IV x 2-4 weeks.",
+            "s_aureus_mssa": "Nafcillin 2g IV q4h (adults) OR 50mg/kg IV q4h (children, max 2g/dose). Continue IV x 2-4 weeks.",
+            "s_aureus_mrsa": "Vancomycin 15mg/kg IV q12h. Continue IV x 2-4 weeks.",
+            "pseudomonas_aeruginosa": "Cefepime 2g IV q8h (adults) OR 50mg/kg IV q8h (children, max 2g/dose) OR Piperacillin-tazobactam 4.5g IV q6h. Continue IV x 2-4 weeks.",
+            "treatment_failure": "Persistent symptoms after 48-72 hours of IV antibiotics + myringotomy. Causes: Inadequate drainage, resistant organism, subperiosteal abscess, intracranial extension. Management: Repeat CT temporal bone, mastoidectomy (surgical drainage), switch to vancomycin + cefepime, or add antifungal (if immunocompromised).",
+            "intracranial_extension": "Meningitis, brain abscess, sigmoid sinus thrombosis. MRI brain with contrast. IV antibiotics x 4-6 weeks + Neurosurgery consultation. Surgical drainage (craniotomy + mastoidectomy) if abscess. Anticoagulation (heparin) for sigmoid sinus thrombosis (controversial).",
+            "duration": "IV antibiotics x 2-4 weeks. Longer if: Intracranial extension (4-6 weeks), failed drainage, or immunocompromised. Switch to PO when: Afebrile x 48 hours, improved clinically, able to tolerate PO. PO options: Amoxicillin-clavulanate 875mg BID OR Linezolid 600mg BID (MRSA) x 2-4 weeks total.",
+            "iv_to_po_switch": "Switch IV to PO when: Afebrile x 48 hours, improved clinically (decreased postauricular swelling, decreased otalgia), able to tolerate PO. PO options: Amoxicillin-clavulanate 875mg BID OR Linezolid 600mg BID (MRSA) x 2-4 weeks total."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "IV antibiotics x 2-4 weeks. Longer if: Intracranial extension (4-6 weeks), failed drainage, or immunocompromised. Switch to PO when: Afebrile x 48 hours, improved clinically, able to tolerate PO.",
+            "monitoring": "Daily clinical assessment (fever, postauricular swelling, otalgia). Repeat CT temporal bone in 48-72 hours if no improvement (assess abscess size, rule out complications). Improvement expected in 48-72 hours (decreased fever, decreased postauricular swelling). If no improvement → mastoidectomy, switch antibiotics, or assess for complications (intracranial extension).",
+            "stop_criteria": "Complete 2-4 weeks total (IV + PO). Continue until: Afebrile, no postauricular swelling, no otalgia, WBC normal, repeat CT shows resolution. Audiometry after acute infection resolved (assess hearing loss)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "subperiosteal_abscess": "Collection between periosteum and mastoid bone. Fluctuant postauricular mass. CT temporal bone. Mastoidectomy (surgical drainage) REQUIRED. ENT performs. IV antibiotics x 2-4 weeks.",
+            "intracranial_extension": "Meningitis (headache, neck stiffness, altered mental status), brain abscess (focal neurologic deficits), sigmoid sinus thrombosis (headache, papilledema). MRI brain with contrast. IV antibiotics x 4-6 weeks + Neurosurgery consultation. Surgical drainage (craniotomy + mastoidectomy) if abscess. Anticoagulation (heparin) for sigmoid sinus thrombosis (controversial).",
+            "facial_nerve_palsy": "Suggests temporal bone involvement. Urgent ENT referral. IV antibiotics + Myringotomy + Mastoidectomy. Facial nerve decompression if no improvement in 48-72 hours. Prognosis: 70-80% full recovery if treated promptly.",
+            "bezold_abscess": "Abscess extends through mastoid tip to neck (sternocleidomastoid muscle). Neck swelling, torticollis. CT temporal bone + CT neck. IV antibiotics + Surgical drainage (mastoidectomy + neck exploration). ENT performs.",
+            "labyrinthitis": "Inner ear infection. Vertigo, sensorineural hearing loss, nystagmus. Audiometry (sensorineural hearing loss). IV antibiotics + Myringotomy + Mastoidectomy. Prognosis: Permanent hearing loss in 30-50%.",
+            "cholesteatoma": "Chronic otitis media with cholesteatoma (keratinizing squamous epithelium in middle ear). Recurrent otorrhea, conductive hearing loss. CT temporal bone (bony erosion). Mastoidectomy (remove cholesteatoma) + IV antibiotics. ENT referral."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "After culture results, narrow to targeted therapy (discontinue vancomycin if MSSA or S. pneumoniae, discontinue cefepime if no Pseudomonas)",
+              "Switch IV to PO when afebrile x 48 hours and improved clinically (total 2-4 weeks)",
+              "Myringotomy improves outcomes (reduces need for mastoidectomy from 40% to 20%)"
+            ],
+            "timeout_checklist": [
+              "Is CT temporal bone with contrast obtained? (REQUIRED to confirm diagnosis, assess extent, rule out complications)",
+              "Are IV antibiotics started? (Vancomycin + Ceftriaxone)",
+              "Is myringotomy performed? (ALL patients, diagnostic and therapeutic, improves outcomes)",
+              "Is mastoidectomy indicated? (Subperiosteal abscess, failed medical therapy 48-72 hours, or intracranial extension)",
+              "Is admission arranged? (ALL patients require admission for IV antibiotics + monitoring)",
+              "Is ENT consultation arranged? (URGENT, myringotomy and mastoidectomy if indicated)",
+              "Is follow-up CT arranged? (48-72 hours if no improvement, assess abscess size and complications)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid PO antibiotics alone (inadequate for mastoiditis, IV required). Avoid monotherapy (combination therapy required for MRSA + S. pneumoniae coverage). Avoid delay in myringotomy (improves outcomes, reduces need for mastoidectomy). Do NOT delay mastoidectomy if indicated (subperiosteal abscess, failed medical therapy, or intracranial extension).",
+            "diagnostic_stewardship": "CT temporal bone with contrast REQUIRED (confirm diagnosis, assess extent, rule out complications). Blood cultures before antibiotics. Myringotomy culture (Gram stain, aerobic and anaerobic culture).",
+            "prevention": "Treat acute otitis media promptly (amoxicillin 80-90mg/kg/day x 10 days). Pneumococcal vaccine (PCV13, reduces AOM and mastoiditis). Influenza vaccine (reduces AOM)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "AAO-HNS Clinical Practice Guideline: Acute Mastoiditis (2019)",
+              "url": "https://www.entnet.org/quality-practice/quality-products/clinical-practice-guidelines/acute-mastoiditis/"
+            },
+            {
+              "label": "AAP Clinical Practice Guideline: Acute Otitis Media (2013)",
+              "url": "https://publications.aap.org/pediatrics/article/131/3/e964/31566"
+            },
+            {
+              "label": "CDC: Ear Infection (Otitis Media) (2024)",
+              "url": "https://www.cdc.gov/antibiotic-use/ear-infection.html"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "epiglottitis",
+      "name": "Epiglottitis (Supraglottitis)",
+      "synonyms": [
+        "supraglottitis",
+        "acute epiglottitis"
+      ],
+      "icd10": [
+        "J05.1",
+        "J05.10",
+        "J05.11"
+      ],
+      "severity": [
+        "critical"
+      ],
+      "shortDescription": "Life-threatening airway emergency requiring immediate airway management and IV antibiotics",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Bacterial infection of the epiglottis and supraglottic structures. Life-threatening airway emergency. Rare since Hib vaccine (H. influenzae type b, incidence decreased 99% post-vaccine). Now more common in adults than children. Mortality: 1-2% if treated promptly, 6-7% if airway obstruction.",
+            "clinical_presentation": "Acute onset of severe sore throat, odynophagia (painful swallowing), drooling, muffled voice, stridor, respiratory distress. Children: Tripod position (sitting upright, leaning forward, neck extended), toxic appearance, high fever. Adults: Less acute, sore throat, dysphagia, no stridor (larger airway). Physical exam: Avoid direct visualization (may precipitate airway obstruction). Cherry-red epiglottis on laryngoscopy (ENT performs in OR with airway equipment ready).",
+            "diagnostic_criteria": "Clinical diagnosis: Severe sore throat + drooling + stridor + respiratory distress. Lateral neck X-ray (thumb sign, thickened epiglottis) if diagnosis uncertain and patient stable. Do NOT delay airway management for imaging (secure airway FIRST if respiratory distress).",
+            "risk_factors": [
+              "Age 20-40 years (peak incidence in adults post-Hib vaccine)",
+              "Lack of Hib vaccination (children)",
+              "Immunosuppression (diabetes, HIV)",
+              "Smoking",
+              "Trauma (thermal injury, caustic ingestion)"
+            ],
+            "red_flags": [
+              "Stridor or respiratory distress - airway emergency, secure airway (intubation or tracheostomy) immediately, do NOT delay for imaging or labs",
+              "Tripod position - suggests severe airway obstruction, secure airway immediately",
+              "Drooling - suggests inability to swallow secretions, airway compromise imminent",
+              "Cyanosis or altered mental status - suggests hypoxia, secure airway immediately",
+              "Do NOT examine throat with tongue depressor - may precipitate complete airway obstruction"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Clinical diagnosis (do NOT delay airway management for imaging). Lateral neck X-ray (thumb sign, thickened epiglottis >8mm) if diagnosis uncertain and patient stable. Direct laryngoscopy (cherry-red epiglottis) in OR with airway equipment ready (ENT + anesthesia perform).",
+            "essential_tests": [
+              "Clinical diagnosis: Severe sore throat + drooling + stridor + respiratory distress. Do NOT examine throat with tongue depressor (may precipitate complete airway obstruction).",
+              "Lateral neck X-ray: Thumb sign (thickened epiglottis >8mm, resembles thumb). Use ONLY if diagnosis uncertain and patient stable. Do NOT delay airway management for X-ray."
+            ],
+            "conditional_tests": [
+              "Direct laryngoscopy: Cherry-red epiglottis. Perform in OR with airway equipment ready (ENT + anesthesia). Do NOT perform in ED or clinic (may precipitate complete airway obstruction).",
+              "Blood cultures: Obtain after airway secured. Positive in 20-30%.",
+              "Epiglottic culture: Obtain during intubation or laryngoscopy. Swab epiglottis. Send for Gram stain and culture."
+            ],
+            "when_not_to_test": "Do NOT delay airway management for imaging or labs (secure airway FIRST if respiratory distress). Do NOT examine throat with tongue depressor (may precipitate complete airway obstruction). Do NOT perform direct laryngoscopy in ED or clinic (perform in OR with airway equipment ready).",
+            "turnaround_time": "Lateral neck X-ray: <15 minutes. Blood cultures: 24-48 hours. Epiglottic culture: 24-48 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Haemophilus influenzae type b (Hib, rare post-vaccine <5%), Streptococcus pneumoniae (20-30%), Streptococcus pyogenes (Group A Strep 10-20%), Staphylococcus aureus (MSSA 10-15%, MRSA 5%), Haemophilus influenzae non-typeable (5-10%), Streptococcus viridans (5-10%). Viral coinfection common (influenza, parainfluenzae, RSV).",
+            "pathogenesis": "Bacterial infection → epiglottic edema → airway obstruction. Children: Smaller airway, rapid progression (hours). Adults: Larger airway, slower progression (days).",
+            "resistance_patterns": {
+              "mrsa": "MRSA: 5% of S. aureus isolates. Vancomycin required.",
+              "penicillin_resistance": "S. pneumoniae: Penicillin-resistant 30-40%. Ceftriaxone effective."
+            },
+            "timing_critical": "Secure airway immediately if respiratory distress (intubation or tracheostomy). IV antibiotics within 1 hour after airway secured. Do NOT delay airway management for antibiotics (airway FIRST, antibiotics SECOND)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "airway_management_first": "Secure airway IMMEDIATELY if respiratory distress (stridor, tripod position, drooling, cyanosis). Intubation (fiberoptic preferred, smaller endotracheal tube) OR Tracheostomy (if intubation fails). Perform in OR with ENT + anesthesia. Do NOT delay for imaging or labs. Airway FIRST, antibiotics SECOND.",
+            "first_line_iv": "Ceftriaxone 2g IV q12h (adults) OR 50mg/kg IV q12h (children, max 2g/dose) + Vancomycin 15mg/kg IV q12h (if MRSA risk or severe). Covers S. pneumoniae (including penicillin-resistant), GAS, MRSA, H. influenzae. Continue IV x 7-10 days.",
+            "alternative_iv": "Ampicillin-sulbactam 3g IV q6h (adults) OR 50mg/kg IV q6h (children, max 3g/dose). Covers S. pneumoniae, GAS, H. influenzae. Use if no MRSA risk.",
+            "corticosteroids": "Dexamethasone 0.6mg/kg IV x1 (max 10mg). Reduces epiglottic edema, facilitates extubation. Use after airway secured. Controversial (limited evidence, but commonly used).",
+            "avoid_list": "Avoid examining throat with tongue depressor (may precipitate complete airway obstruction). Avoid direct laryngoscopy in ED or clinic (perform in OR with airway equipment ready). Avoid sedation before airway secured (worsens airway obstruction). Do NOT delay airway management for imaging or labs (airway FIRST)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "h_influenzae_type_b": "Ceftriaxone 2g IV q12h (adults) OR 50mg/kg IV q12h (children, max 2g/dose) x 7-10 days. Alternative: Ampicillin 2g IV q4h (if susceptible).",
+            "s_pneumoniae_penicillin_susceptible": "Penicillin G 4 million units IV q4h (adults) OR 50,000 units/kg IV q4h (children, max 4 million units/dose) x 7-10 days.",
+            "s_pneumoniae_penicillin_resistant": "Ceftriaxone 2g IV q12h (adults) OR 50mg/kg IV q12h (children, max 2g/dose) x 7-10 days.",
+            "s_aureus_mssa": "Nafcillin 2g IV q4h (adults) OR 50mg/kg IV q4h (children, max 2g/dose) x 7-10 days.",
+            "s_aureus_mrsa": "Vancomycin 15mg/kg IV q12h x 7-10 days.",
+            "group_a_streptococcus": "Penicillin G 4 million units IV q4h (adults) OR 50,000 units/kg IV q4h (children, max 4 million units/dose) x 7-10 days.",
+            "extubation": "Extubate when: Afebrile x 24 hours, epiglottic edema resolved (direct laryngoscopy), able to tolerate PO, leak test positive (air leak around endotracheal tube). Typically 24-48 hours after intubation. ENT + anesthesia perform extubation in OR or ICU.",
+            "duration": "IV antibiotics x 7-10 days. Switch to PO when: Extubated, afebrile x 24 hours, able to tolerate PO. PO options: Amoxicillin-clavulanate 875mg BID OR Cefdinir 300mg BID x 7-10 days total.",
+            "iv_to_po_switch": "Switch IV to PO when: Extubated, afebrile x 24 hours, able to tolerate PO. PO options: Amoxicillin-clavulanate 875mg BID OR Cefdinir 300mg BID x 7-10 days total."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "IV antibiotics x 7-10 days. Switch to PO when: Extubated, afebrile x 24 hours, able to tolerate PO. Total 7-10 days (IV + PO).",
+            "monitoring": "ICU monitoring after airway secured. Daily direct laryngoscopy (assess epiglottic edema). Extubate when: Afebrile x 24 hours, epiglottic edema resolved, able to tolerate PO, leak test positive. Typically 24-48 hours after intubation.",
+            "stop_criteria": "Complete 7-10 days total (IV + PO). Continue until: Extubated, afebrile, able to swallow, WBC normal."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "airway_management": "Secure airway IMMEDIATELY if respiratory distress. Fiberoptic intubation preferred (visualize epiglottis, smaller endotracheal tube). Tracheostomy if intubation fails. Perform in OR with ENT + anesthesia. Avoid sedation before airway secured (worsens airway obstruction). Do NOT examine throat with tongue depressor (may precipitate complete airway obstruction).",
+            "children_vs_adults": "Children: Smaller airway, rapid progression (hours), tripod position, toxic appearance, high fever. Adults: Larger airway, slower progression (days), less acute, sore throat, dysphagia, no stridor. Children more likely to require intubation (50-70%) vs adults (10-20%).",
+            "hib_vaccination": "Hib vaccine (H. influenzae type b) introduced 1990s, reduced epiglottitis incidence by 99%. Now rare in vaccinated children. Unvaccinated children at higher risk. Rifampin prophylaxis for household contacts if index case is Hib (600mg PO daily x 4 days, adults) OR 20mg/kg PO daily x 4 days (children).",
+            "corticosteroids": "Dexamethasone 0.6mg/kg IV x1 (max 10mg). Reduces epiglottic edema, facilitates extubation. Use after airway secured. Controversial (limited evidence, but commonly used).",
+            "extubation": "Extubate when: Afebrile x 24 hours, epiglottic edema resolved (direct laryngoscopy), able to tolerate PO, leak test positive (air leak around endotracheal tube). Typically 24-48 hours after intubation. ENT + anesthesia perform extubation in OR or ICU. Reintubation rate 5-10%.",
+            "immunocompromised": "Higher risk of complications (airway obstruction, sepsis) and atypical organisms (fungi, Gram-negatives). CT neck. Admit to ICU for airway monitoring. IV antibiotics: Vancomycin 15mg/kg IV q12h + Ceftriaxone 2g IV q12h x 7-10 days. Consider antifungal (amphotericin B) if fungal suspected."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "After culture results, narrow to targeted therapy (discontinue vancomycin if S. pneumoniae or H. influenzae, discontinue ceftriaxone if MSSA)",
+              "Switch IV to PO when extubated and able to tolerate PO (total 7-10 days)",
+              "Corticosteroids (dexamethasone) may facilitate extubation (reduces epiglottic edema)"
+            ],
+            "timeout_checklist": [
+              "Is airway assessed? (Stridor, respiratory distress → secure airway IMMEDIATELY, do NOT delay for imaging or labs)",
+              "Is airway secured? (Intubation or tracheostomy in OR with ENT + anesthesia)",
+              "Are IV antibiotics started? (Ceftriaxone + Vancomycin OR Ampicillin-sulbactam)",
+              "Is ICU admission arranged? (ALL patients require ICU monitoring after airway secured)",
+              "Is ENT consultation arranged? (URGENT, airway management and direct laryngoscopy)",
+              "Is extubation planned? (When afebrile x 24 hours, epiglottic edema resolved, able to tolerate PO, leak test positive)",
+              "Is Hib prophylaxis indicated? (Rifampin for household contacts if index case is Hib)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid examining throat with tongue depressor (may precipitate complete airway obstruction). Avoid direct laryngoscopy in ED or clinic (perform in OR with airway equipment ready). Avoid sedation before airway secured (worsens airway obstruction). Do NOT delay airway management for imaging or labs (airway FIRST, antibiotics SECOND).",
+            "diagnostic_stewardship": "Clinical diagnosis (do NOT delay airway management for imaging). Lateral neck X-ray (thumb sign) ONLY if diagnosis uncertain and patient stable. Direct laryngoscopy in OR with airway equipment ready. Blood cultures and epiglottic culture after airway secured.",
+            "prevention": "Hib vaccine (H. influenzae type b, routine childhood vaccination, reduced epiglottitis incidence by 99%). Rifampin prophylaxis for household contacts if index case is Hib (600mg PO daily x 4 days, adults) OR 20mg/kg PO daily x 4 days (children)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "AAO-HNS Clinical Practice Guideline: Epiglottitis (2019)",
+              "url": "https://www.entnet.org/quality-practice/quality-products/clinical-practice-guidelines/epiglottitis/"
+            },
+            {
+              "label": "CDC: Haemophilus influenzae Disease (Hib) (2024)",
+              "url": "https://www.cdc.gov/hi-disease/index.html"
+            },
+            {
+              "label": "Pediatric Epiglottitis Guidelines (AAP 2021)",
+              "url": "https://publications.aap.org/pediatrics/article/147/6/e2021050796/180970"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "chronic-otitis-media-with-effusion",
+      "name": "Chronic Otitis Media with Effusion (OME)",
+      "synonyms": [
+        "OME",
+        "serous otitis media",
+        "glue ear"
+      ],
+      "icd10": [
+        "H65.2",
+        "H65.20",
+        "H65.21"
+      ],
+      "severity": [
+        "mild"
+      ],
+      "shortDescription": "Persistent middle ear fluid without acute infection, antibiotics NOT indicated, watchful waiting or tympanostomy tubes",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Persistent middle ear effusion (fluid) without signs of acute infection. Common after acute otitis media (AOM, 40-60% have OME after AOM). Resolves spontaneously in 90% within 3 months. Antibiotics NOT indicated (no benefit). Management: Watchful waiting x 3 months. Tympanostomy tubes if: Persistent OME >3 months with hearing loss, speech delay, or balance problems.",
+            "clinical_presentation": "Asymptomatic OR Decreased hearing (conductive hearing loss), ear fullness, balance problems. NO fever, NO ear pain, NO acute illness. Physical exam: Retracted or opaque tympanic membrane (TM), decreased TM mobility (pneumatic otoscopy), middle ear effusion (air-fluid level or bubbles), NO erythema or bulging.",
+            "diagnostic_criteria": "Clinical diagnosis by otoscopy. Pneumatic otoscopy (decreased TM mobility) confirms middle ear effusion. Tympanometry (flat Type B curve) confirms effusion. Audiometry (conductive hearing loss 20-40 dB) if persistent >3 months.",
+            "risk_factors": [
+              "Recent acute otitis media (40-60% have OME after AOM)",
+              "Age <2 years (peak incidence)",
+              "Daycare attendance",
+              "Lack of breastfeeding",
+              "Exposure to tobacco smoke",
+              "Craniofacial abnormalities (cleft palate, Down syndrome)"
+            ],
+            "red_flags": [
+              "Persistent OME >3 months with hearing loss - requires audiometry + ENT referral for tympanostomy tubes",
+              "Speech delay - requires audiometry + ENT referral for tympanostomy tubes",
+              "Balance problems or developmental delay - requires audiometry + ENT referral",
+              "Structural damage to TM (retraction pocket, cholesteatoma) - requires ENT referral"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Clinical diagnosis by otoscopy. Pneumatic otoscopy (decreased TM mobility) confirms middle ear effusion. Tympanometry (flat Type B curve) confirms effusion. Audiometry if persistent >3 months (assess hearing loss).",
+            "essential_tests": [
+              "Otoscopy: Retracted or opaque TM, decreased TM mobility, middle ear effusion (air-fluid level or bubbles), NO erythema or bulging.",
+              "Pneumatic otoscopy: Decreased TM mobility confirms middle ear effusion (gold standard).",
+              "Tympanometry: Flat Type B curve confirms middle ear effusion. Use if diagnosis uncertain or unable to visualize TM (cerumen impaction)."
+            ],
+            "conditional_tests": [
+              "Audiometry: If persistent OME >3 months. Assess conductive hearing loss (20-40 dB). Indications for tympanostomy tubes: Persistent OME >3 months with hearing loss >20 dB, speech delay, or balance problems.",
+              "CT temporal bone: If suspected cholesteatoma (chronic otitis media with keratinizing squamous epithelium in middle ear, bony erosion). ENT referral."
+            ],
+            "when_not_to_test": "Do NOT obtain blood cultures (not indicated, no acute infection). Do NOT obtain CT routinely (clinical diagnosis, reserve for suspected cholesteatoma).",
+            "turnaround_time": "Otoscopy: Immediate. Tympanometry: Immediate. Audiometry: 30-60 minutes."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "NOT an acute bacterial infection. Middle ear effusion is sterile or contains low bacterial counts (Streptococcus pneumoniae, Haemophilus influenzae, Moraxella catarrhalis). Antibiotics NOT effective (no benefit over placebo).",
+            "pathogenesis": "Eustachian tube dysfunction → negative middle ear pressure → transudation of fluid from middle ear mucosa → persistent effusion. Common after AOM (40-60%), resolves spontaneously in 90% within 3 months. Chronic OME (>3 months) → conductive hearing loss (20-40 dB) → speech delay, developmental delay.",
+            "resistance_patterns": {
+              "not_applicable": "Antibiotics NOT indicated for OME (no benefit over placebo, increases resistance)."
+            },
+            "timing_critical": "Watchful waiting x 3 months (resolves spontaneously in 90%). Audiometry if persistent >3 months (assess hearing loss). Tympanostomy tubes if: Persistent OME >3 months with hearing loss >20 dB, speech delay, or balance problems."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "antibiotics_not_indicated": "Antibiotics NOT indicated for OME (no benefit over placebo, increases resistance). AAO-HNS 2016 guideline: Do NOT prescribe antibiotics for OME. Watchful waiting x 3 months (resolves spontaneously in 90%).",
+            "watchful_waiting": "Observation x 3 months. Reassess every 3-6 months (otoscopy, tympanometry). Resolves spontaneously in 90% within 3 months. If persistent >3 months → audiometry (assess hearing loss). If hearing loss >20 dB, speech delay, or balance problems → ENT referral for tympanostomy tubes.",
+            "tympanostomy_tubes": "Indications: Persistent OME >3 months with hearing loss >20 dB, speech delay, balance problems, or structural damage to TM (retraction pocket, cholesteatoma). ENT performs. Tubes ventilate middle ear, resolve effusion in 90%, improve hearing. Tubes extrude spontaneously in 6-18 months.",
+            "intranasal_corticosteroids": "Mometasone 50mcg 1 spray each nostril daily x 4-12 weeks. May reduce OME duration (limited evidence). Use if: Allergic rhinitis, adenoid hypertrophy, or persistent OME >3 months. NOT first-line (watchful waiting preferred).",
+            "avoid_list": "Avoid antibiotics (no benefit over placebo, increases resistance). Avoid decongestants or antihistamines (no benefit). Avoid oral corticosteroids (no benefit, adverse effects). Avoid myringotomy alone (temporary relief, effusion recurs in 90%)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "watchful_waiting": "Observation x 3 months. Reassess every 3-6 months (otoscopy, tympanometry). Resolves spontaneously in 90% within 3 months.",
+            "tympanostomy_tubes": "Indications: Persistent OME >3 months with hearing loss >20 dB, speech delay, balance problems, or structural damage to TM. ENT performs. Tubes ventilate middle ear, resolve effusion in 90%, improve hearing. Tubes extrude spontaneously in 6-18 months. Complications: Otorrhea (10-20%, treat with topical ciprofloxacin-dexamethasone otic drops), TM perforation (2-5%, usually heals spontaneously), tympanosclerosis (30-50%, benign).",
+            "adenoidectomy": "Consider if: Recurrent OME after tubes extrude, adenoid hypertrophy, or chronic rhinosinusitis. ENT performs. Reduces OME recurrence from 50% to 20%. Perform with tympanostomy tubes (adenoidectomy + tubes more effective than tubes alone).",
+            "intranasal_corticosteroids": "Mometasone 50mcg 1 spray each nostril daily x 4-12 weeks. May reduce OME duration (limited evidence). Use if: Allergic rhinitis, adenoid hypertrophy, or persistent OME >3 months.",
+            "hearing_aids": "If: Bilateral persistent OME >3 months with hearing loss >20 dB, unable to undergo tympanostomy tubes (medical contraindication), or parental preference. Temporary until OME resolves.",
+            "duration": "Watchful waiting x 3 months. Reassess every 3-6 months until resolved. Tympanostomy tubes if persistent >3 months with hearing loss, speech delay, or balance problems."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "Watchful waiting x 3 months. Reassess every 3-6 months (otoscopy, tympanometry) until resolved. Resolves spontaneously in 90% within 3 months.",
+            "monitoring": "Reassess every 3-6 months (otoscopy, tympanometry). Audiometry if persistent >3 months (assess hearing loss). ENT referral if: Persistent OME >3 months with hearing loss >20 dB, speech delay, balance problems, or structural damage to TM.",
+            "stop_criteria": "Resolved when: TM mobile (pneumatic otoscopy), tympanometry normal (Type A curve), hearing normal (audiometry)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "ome_vs_aom": "OME: Persistent middle ear effusion without acute infection. NO fever, NO ear pain, NO acute illness. Antibiotics NOT indicated. AOM: Acute middle ear infection. Fever, ear pain, bulging TM. Antibiotics indicated (amoxicillin 80-90mg/kg/day x 5-10 days).",
+            "speech_delay": "Persistent OME >3 months with hearing loss >20 dB → speech delay, developmental delay. Audiometry + ENT referral for tympanostomy tubes. Speech therapy if speech delay persists after tubes.",
+            "craniofacial_abnormalities": "Cleft palate, Down syndrome: Higher risk of persistent OME (Eustachian tube dysfunction). Early ENT referral. Tympanostomy tubes often needed (persistent OME >3 months in 70-80%).",
+            "cholesteatoma": "Chronic otitis media with keratinizing squamous epithelium in middle ear. Retraction pocket, white debris behind TM, foul-smelling otorrhea, conductive hearing loss. CT temporal bone (bony erosion). ENT referral for surgical removal (mastoidectomy). Complications: Hearing loss, facial nerve palsy, intracranial extension (meningitis, brain abscess).",
+            "recurrent_ome": "OME recurs after tubes extrude (50%). Consider adenoidectomy (reduces recurrence from 50% to 20%). ENT referral.",
+            "immunocompromised": "Higher risk of persistent OME and complications (mastoiditis, meningitis). Early ENT referral. Tympanostomy tubes often needed."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Antibiotics NOT indicated for OME (no benefit over placebo, increases resistance)",
+              "Watchful waiting x 3 months (resolves spontaneously in 90%)",
+              "Tympanostomy tubes ONLY if persistent >3 months with hearing loss >20 dB, speech delay, or balance problems",
+              "Avoid decongestants, antihistamines, oral corticosteroids (no benefit)"
+            ],
+            "timeout_checklist": [
+              "Is diagnosis confirmed by otoscopy? (Retracted or opaque TM, decreased TM mobility, middle ear effusion, NO erythema or bulging)",
+              "Are antibiotics avoided? (NOT indicated for OME, no benefit over placebo)",
+              "Is watchful waiting planned? (Observation x 3 months, reassess every 3-6 months)",
+              "Is audiometry indicated? (If persistent >3 months, assess hearing loss)",
+              "Is ENT referral indicated? (If persistent >3 months with hearing loss >20 dB, speech delay, or balance problems)",
+              "Is patient/parent educated? (OME resolves spontaneously in 90% within 3 months, antibiotics NOT indicated)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid antibiotics (no benefit over placebo, increases resistance). Avoid decongestants or antihistamines (no benefit). Avoid oral corticosteroids (no benefit, adverse effects). Avoid myringotomy alone (temporary relief, effusion recurs in 90%). Avoid tympanostomy tubes if OME <3 months (resolves spontaneously in 90%).",
+            "diagnostic_stewardship": "Clinical diagnosis by otoscopy. Pneumatic otoscopy (decreased TM mobility) confirms effusion. Tympanometry (flat Type B curve) confirms effusion. Audiometry if persistent >3 months (assess hearing loss). Do NOT obtain blood cultures or CT routinely.",
+            "prevention": "Pneumococcal vaccine (PCV13, reduces AOM and OME). Influenza vaccine (reduces AOM and OME). Breastfeeding (protective). Avoid pacifier use after 6 months. Avoid tobacco smoke exposure."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "AAO-HNS Clinical Practice Guideline: Otitis Media with Effusion (2016)",
+              "url": "https://www.entnet.org/quality-practice/quality-products/clinical-practice-guidelines/otitis-media-effusion/"
+            },
+            {
+              "label": "AAP Clinical Practice Guideline: Acute Otitis Media (2013)",
+              "url": "https://publications.aap.org/pediatrics/article/131/3/e964/31566"
+            },
+            {
+              "label": "CDC: Ear Infection (Otitis Media) (2024)",
+              "url": "https://www.cdc.gov/antibiotic-use/ear-infection.html"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

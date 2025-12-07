@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "visual": {
+    "images": [
+      {
+        "path": "assets/images/donning_sequence.png",
+        "title": "Donning Sequence",
+        "description": "CDC sequence for putting on personal protective equipment (PPE)",
+        "type": "donning"
+      },
+      {
+        "path": "assets/images/doffing_example1.png",
+        "title": "Doffing Example 1",
+        "description": "CDC method 1 for safely removing PPE",
+        "type": "doffing"
+      },
+      {
+        "path": "assets/images/doffing_example2.png",
+        "title": "Doffing Example 2",
+        "description": "CDC method 2 for safely removing PPE",
+        "type": "doffing"
+      }
+    ],
+    "description": "WHO & CDC evidence-based visual guides for donning and doffing personal protective equipment (PPE)",
+    "note": "⚠️ Critical: Doffing is higher risk than donning due to contamination. Must be done slowly, carefully, and with supervision in high-risk settings."
+  },
+  "donning": [
+    { 
+      "icon": "wash", 
+      "title": "1. Hand hygiene", 
+      "note": "Wash hands with soap and water for 40-60 seconds or use alcohol-based hand sanitizer for 20+ seconds."
+    },
+    { 
+      "icon": "gown", 
+      "title": "2. Put on gown", 
+      "note": "Tie securely at neck and waist. Ensure it fully covers torso from neck to knees and arms to end of wrists."
+    },
+    { 
+      "icon": "mask", 
+      "title": "3. Put on mask or respirator", 
+      "note": "Secure ties or elastic bands at back of head and neck. For N95: perform seal check by inhaling and exhaling sharply."
+    },
+    { 
+      "icon": "faceshield", 
+      "title": "4. Put on eye protection", 
+      "note": "Use goggles or face shield. Ensure no gaps and covers front and sides of eyes completely."
+    },
+    { 
+      "icon": "gloves", 
+      "title": "5. Put on gloves", 
+      "note": "Extend gloves over the cuffs of gown. Select appropriate size for comfort and dexterity."
+    }
+  ],
+  "doffing": [
+    { 
+      "icon": "gloves", 
+      "title": "1. Remove gloves", 
+      "note": "Peel off first glove from wrist, inside out. Hold removed glove in gloved hand. Slide fingers of bare hand under second glove and peel off. Discard properly.",
+      "warning": "Most contaminated item - highest risk step"
+    },
+    { 
+      "icon": "hand", 
+      "title": "2. Hand hygiene", 
+      "note": "Perform hand hygiene immediately after glove removal using ABHR or soap and water."
+    },
+    { 
+      "icon": "gown", 
+      "title": "3. Remove gown", 
+      "note": "Untie waist and neck ties. Peel gown away from neck and shoulders, turning inside out. Roll contaminated side inward.",
+      "warning": "Avoid shaking or contact with clothing"
+    },
+    { 
+      "icon": "hand", 
+      "title": "4. Hand hygiene", 
+      "note": "Perform hand hygiene again after gown removal before touching face or mask."
+    },
+    { 
+      "icon": "faceshield", 
+      "title": "5. Remove eye protection", 
+      "note": "Handle by earpieces or headband only. Avoid touching the front. Place in designated reprocessing or disposal container."
+    },
+    { 
+      "icon": "mask", 
+      "title": "6. Remove mask/respirator", 
+      "note": "Do not touch front of mask. Untie ties or remove elastic bands from ears/head. Remove OUTSIDE patient care area.",
+      "warning": "Remove outside patient room - final step"
+    },
+    { 
+      "icon": "wash", 
+      "title": "7. Final hand hygiene", 
+      "note": "Perform thorough hand hygiene after all PPE removal. Use ABHR or soap and water for complete decontamination."
+    }
+  ],
+  "components": [
+    {
+      "type": "Standard",
+      "color": "#6B7280",
+      "items": [
+        "Hand hygiene for all patient care",
+        "Gloves for blood/body fluids",
+        "Mask/eye protection if splash risk",
+        "Safe injection & sharps handling"
+      ]
+    },
+    {
+      "type": "Contact",
+      "color": "#DC2626",
+      "items": [
+        "Gloves + gown on room entry",
+        "Dedicated equipment",
+        "Environmental cleaning focus"
+      ]
+    },
+    {
+      "type": "Droplet",
+      "color": "#10B981",
+      "items": [
+        "Surgical mask within 1–2 m",
+        "Eye protection if sprays expected",
+        "Patient mask during transport"
+      ]
+    },
+    {
+      "type": "Airborne",
+      "color": "#2563EB",
+      "items": [
+        "N95/FFP2 (fit-tested)",
+        "AIIR (negative pressure) preferred",
+        "Door closed; minimize AGPs",
+        "≥12 ACH if available"
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "mistake": "Incorrect doffing sequence - removing mask before leaving patient area",
+      "fix": "WHO & CDC: Remove respirator/mask LAST, outside patient care area, after all other PPE removal."
+    },
+    {
+      "mistake": "Not performing hand hygiene between PPE removal steps",
+      "fix": "Perform hand hygiene after glove removal and after gown removal as minimum requirement."
+    },
+    {
+      "mistake": "Touching contaminated surfaces during doffing",
+      "fix": "Use glove-to-glove, skin-to-skin technique. Avoid touching outer surfaces of removed PPE."
+    },
+    {
+      "mistake": "Inadequate seal check for N95 respirators",
+      "fix": "Always perform positive and negative pressure seal check. Inhale sharply - mask should collapse slightly."
+    },
+    {
+      "mistake": "Reusing single-use PPE inappropriately",
+      "fix": "Follow facility guidelines for PPE reuse. Most PPE is single-use and should be discarded after patient contact."
+    },
+    {
+      "mistake": "No supervision during high-risk doffing procedures",
+      "fix": "WHO recommends trained observer during doffing in aerosol-generating procedure settings."
+    }
+  ],
+  "references": [
+    { "label": "CDC – Standard Precautions", "url": "https://www.cdc.gov/infection-control/hcp/basics/standard-precautions.html" },
+    { "label": "CDC – Transmission-Based Precautions (Appendix A)", "url": "https://www.cdc.gov/infection-control/hcp/isolation-precautions/appendix-a.html" },
+    { "label": "WHO – Core IPC Components", "url": "https://www.who.int/publications/i/item/9789241516945" },
+    { "label": "MOH GDPIC – Best Practices (PDF)", "url": "https://www.moh.gov.sa/Ministry/Rules/Documents/Infection-Prevention.pdf" },
+    { "label": "Weqaya – National Guidelines (COVID-19) (PDF)", "url": "https://www.pha.gov.sa/en-us/EvidenceAndProcedures/Documents/V3.2%20COVID-19%20Coronavirus-Disease-Guidelines%20Final%20Version%20March%202024.pdf" }
+  ]
+}

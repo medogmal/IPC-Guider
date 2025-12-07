@@ -1,0 +1,1839 @@
+{
+  "version": "2.0.0",
+  "updatedAt": "2025-11-30T12:00:00Z",
+  "procedures": [
+    {
+      "id": "total-hip-arthroplasty",
+      "name": "Total Hip Arthroplasty",
+      "specialty": "orthopedic",
+      "classification": "clean",
+      "description": "Total hip replacement surgery",
+      "primaryProphylaxis": {
+        "antibioticName": "Cefazolin",
+        "dose": "2 g IV (3 g if weight ≥120 kg)",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose (discontinue within 24 hours)",
+        "redosingInterval": "Redose every 4 hours if procedure continues",
+        "rationale": "First-line prophylaxis for clean orthopedic procedures with excellent MSSA coverage",
+        "warnings": [
+          "Ensure complete infusion before tourniquet inflation",
+          "Redose if blood loss >1500 mL"
+        ],
+        "monitoring": [
+          "Monitor for hypersensitivity reactions",
+          "Assess surgical site for signs of infection"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Vancomycin",
+        "dose": "15 mg/kg IV (max 2 g)",
+        "route": "IV",
+        "timing": "Within 120 minutes before incision (infuse over 1-2 hours)",
+        "duration": "Single dose (discontinue within 24 hours)",
+        "redosingInterval": "Redose every 6 hours if procedure continues",
+        "rationale": "Alternative for beta-lactam allergy with MRSA coverage",
+        "warnings": [
+          "Slow infusion to prevent red man syndrome",
+          "Ensure complete infusion before incision"
+        ],
+        "monitoring": [
+          "Monitor infusion rate",
+          "Watch for red man syndrome"
+        ],
+        "isAlternative": true
+      },
+      "mrsaCoverageAddition": {
+        "antibioticName": "Vancomycin + Cefazolin",
+        "dose": "Vancomycin 15 mg/kg IV + Cefazolin 2 g IV",
+        "route": "IV",
+        "timing": "Vancomycin 120 min before, Cefazolin 60 min before incision",
+        "duration": "Single dose (discontinue within 24 hours)",
+        "redosingInterval": "Redose per individual agent guidelines",
+        "rationale": "Add vancomycin for known MRSA colonization or high institutional MRSA rates",
+        "warnings": [
+          "Coordinate timing of both agents",
+          "Monitor for nephrotoxicity with combination"
+        ],
+        "monitoring": [
+          "Renal function monitoring",
+          "Surgical site assessment"
+        ],
+        "isAlternative": false
+      },
+      "specialConsiderations": [
+        "Consider vancomycin addition if MRSA colonization or high institutional rates (>10%)",
+        "Ensure antibiotic infusion complete before tourniquet inflation",
+        "Redose if procedure >4 hours or blood loss >1500 mL",
+        "Discontinue prophylaxis within 24 hours post-operatively"
+      ],
+      "references": [
+        {
+          "label": "ASHP/IDSA/SIS Surgical Prophylaxis Guidelines",
+          "url": "https://www.idsociety.org/practice-guideline/antimicrobial-prophylaxis-in-surgery/"
+        },
+        {
+          "label": "CDC Surgical Site Infection Prevention",
+          "url": "https://www.cdc.gov/infection-control/hcp/surgical-site-infection/"
+        }
+      ]
+    },
+    {
+      "id": "total-knee-arthroplasty",
+      "name": "Total Knee Arthroplasty",
+      "specialty": "orthopedic",
+      "classification": "clean",
+      "description": "Total knee replacement surgery",
+      "primaryProphylaxis": {
+        "antibioticName": "Cefazolin",
+        "dose": "2 g IV (3 g if weight ≥120 kg)",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose (discontinue within 24 hours)",
+        "redosingInterval": "Redose every 4 hours if procedure continues",
+        "rationale": "First-line prophylaxis for clean orthopedic procedures",
+        "warnings": [
+          "Ensure complete infusion before tourniquet inflation",
+          "Redose if blood loss >1500 mL"
+        ],
+        "monitoring": [
+          "Monitor for hypersensitivity reactions",
+          "Assess surgical site for signs of infection"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Vancomycin",
+        "dose": "15 mg/kg IV (max 2 g)",
+        "route": "IV",
+        "timing": "Within 120 minutes before incision (infuse over 1-2 hours)",
+        "duration": "Single dose (discontinue within 24 hours)",
+        "redosingInterval": "Redose every 6 hours if procedure continues",
+        "rationale": "Alternative for beta-lactam allergy",
+        "warnings": [
+          "Slow infusion to prevent red man syndrome",
+          "Ensure complete infusion before incision"
+        ],
+        "monitoring": [
+          "Monitor infusion rate",
+          "Watch for red man syndrome"
+        ],
+        "isAlternative": true
+      },
+      "mrsaCoverageAddition": {
+        "antibioticName": "Vancomycin + Cefazolin",
+        "dose": "Vancomycin 15 mg/kg IV + Cefazolin 2 g IV",
+        "route": "IV",
+        "timing": "Vancomycin 120 min before, Cefazolin 60 min before incision",
+        "duration": "Single dose (discontinue within 24 hours)",
+        "redosingInterval": "Redose per individual agent guidelines",
+        "rationale": "Add vancomycin for known MRSA colonization",
+        "warnings": [
+          "Coordinate timing of both agents",
+          "Monitor for nephrotoxicity"
+        ],
+        "monitoring": [
+          "Renal function monitoring"
+        ],
+        "isAlternative": false
+      },
+      "specialConsiderations": [
+        "Same considerations as total hip arthroplasty",
+        "Tourniquet timing critical for antibiotic tissue levels",
+        "Consider patient-specific risk factors (diabetes, obesity, immunosuppression)"
+      ],
+      "references": [
+        {
+          "label": "ASHP/IDSA/SIS Surgical Prophylaxis Guidelines",
+          "url": "https://www.idsociety.org/practice-guideline/antimicrobial-prophylaxis-in-surgery/"
+        }
+      ]
+    },
+    {
+      "id": "cabg-cardiac-surgery",
+      "name": "CABG / Cardiac Surgery",
+      "specialty": "cardiac",
+      "classification": "clean",
+      "description": "Coronary artery bypass graft and valve surgery",
+      "primaryProphylaxis": {
+        "antibioticName": "Cefazolin",
+        "dose": "2 g IV (3 g if weight ≥120 kg)",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Continue for 48 hours post-operatively",
+        "redosingInterval": "Redose every 4 hours during procedure",
+        "rationale": "Standard prophylaxis for cardiac surgery with extended duration",
+        "warnings": [
+          "Redose after cardiopulmonary bypass",
+          "Discontinue within 48 hours maximum"
+        ],
+        "monitoring": [
+          "Monitor for sternal wound infection",
+          "Assess mediastinitis risk"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Vancomycin",
+        "dose": "15 mg/kg IV (max 2 g)",
+        "route": "IV",
+        "timing": "Within 120 minutes before incision",
+        "duration": "Continue for 48 hours post-operatively",
+        "redosingInterval": "Redose every 6 hours during procedure",
+        "rationale": "Alternative for beta-lactam allergy",
+        "warnings": [
+          "Slow infusion required",
+          "Redose after cardiopulmonary bypass"
+        ],
+        "monitoring": [
+          "Renal function",
+          "Red man syndrome"
+        ],
+        "isAlternative": true
+      },
+      "mrsaCoverageAddition": {
+        "antibioticName": "Vancomycin + Cefazolin",
+        "dose": "Vancomycin 15 mg/kg IV + Cefazolin 2 g IV",
+        "route": "IV",
+        "timing": "Vancomycin 120 min before, Cefazolin 60 min before incision",
+        "duration": "Continue for 48 hours post-operatively",
+        "redosingInterval": "Redose per individual agent guidelines",
+        "rationale": "Add vancomycin for MRSA colonization",
+        "warnings": [
+          "Monitor renal function closely",
+          "Redose both agents after bypass"
+        ],
+        "monitoring": [
+          "Daily renal function",
+          "Wound assessment"
+        ],
+        "isAlternative": false
+      },
+      "specialConsiderations": [
+        "Redose after cardiopulmonary bypass due to hemodilution",
+        "Extended duration (48 hours) for cardiac surgery",
+        "High risk for mediastinitis - strict adherence to timing",
+        "Consider vancomycin for MRSA colonization or high institutional rates"
+      ],
+      "references": [
+        {
+          "label": "STS Cardiac Surgery Prophylaxis Guidelines",
+          "url": "https://www.sts.org/quality-research-patient-safety/quality/quality-resources"
+        },
+        {
+          "label": "ASHP/IDSA/SIS Surgical Prophylaxis Guidelines",
+          "url": "https://www.idsociety.org/practice-guideline/antimicrobial-prophylaxis-in-surgery/"
+        }
+      ]
+    },
+    {
+      "id": "colorectal-surgery",
+      "name": "Colorectal Surgery",
+      "specialty": "gastrointestinal",
+      "classification": "cleanContaminated",
+      "description": "Elective colorectal resection",
+      "primaryProphylaxis": {
+        "antibioticName": "Cefoxitin OR Cefazolin + Metronidazole",
+        "dose": "Cefoxitin 2 g IV OR Cefazolin 2 g + Metronidazole 500 mg IV",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose (discontinue within 24 hours)",
+        "redosingInterval": "Cefoxitin: every 2 hours; Cefazolin: every 4 hours",
+        "rationale": "Coverage for aerobic and anaerobic colonic flora",
+        "warnings": [
+          "Ensure anaerobic coverage",
+          "Mechanical bowel prep no longer routinely recommended"
+        ],
+        "monitoring": [
+          "Surgical site infection",
+          "Intra-abdominal abscess"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Clindamycin + Gentamicin OR Ciprofloxacin + Metronidazole",
+        "dose": "Clindamycin 900 mg + Gentamicin 5 mg/kg IV OR Ciprofloxacin 400 mg + Metronidazole 500 mg IV",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision (Ciprofloxacin: 120 min)",
+        "duration": "Single dose (discontinue within 24 hours)",
+        "redosingInterval": "Clindamycin: every 6 hours; Gentamicin: single dose",
+        "rationale": "Non-beta-lactam alternative with aerobic and anaerobic coverage",
+        "warnings": [
+          "Monitor renal function with gentamicin",
+          "Fluoroquinolone resistance considerations"
+        ],
+        "monitoring": [
+          "Renal function if gentamicin used",
+          "C. difficile risk with clindamycin"
+        ],
+        "isAlternative": true
+      },
+      "specialConsiderations": [
+        "Oral antibiotic bowel prep may be added (neomycin + metronidazole)",
+        "Mechanical bowel prep alone not recommended",
+        "Redosing critical for prolonged procedures",
+        "Discontinue within 24 hours to reduce C. difficile risk"
+      ],
+      "references": [
+        {
+          "label": "ASCRS Colorectal Surgery Prophylaxis",
+          "url": "https://fascrs.org/clinical-practice-guidelines"
+        },
+        {
+          "label": "ASHP/IDSA/SIS Surgical Prophylaxis Guidelines",
+          "url": "https://www.idsociety.org/practice-guideline/antimicrobial-prophylaxis-in-surgery/"
+        }
+      ]
+    },
+    {
+      "id": "cesarean-section",
+      "name": "Cesarean Section",
+      "specialty": "gynecologic",
+      "classification": "cleanContaminated",
+      "description": "Cesarean delivery",
+      "primaryProphylaxis": {
+        "antibioticName": "Cefazolin",
+        "dose": "2 g IV (3 g if weight ≥120 kg)",
+        "route": "IV",
+        "timing": "Within 60 minutes before skin incision",
+        "duration": "Single dose",
+        "redosingInterval": "Redose every 4 hours if procedure continues",
+        "rationale": "Reduces post-cesarean endometritis and wound infection",
+        "warnings": [
+          "Administer before skin incision (not after cord clamping)",
+          "Higher dose for obesity (≥120 kg)"
+        ],
+        "monitoring": [
+          "Endometritis signs",
+          "Wound infection"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Clindamycin + Gentamicin",
+        "dose": "Clindamycin 900 mg + Gentamicin 5 mg/kg IV",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose",
+        "redosingInterval": "Clindamycin: every 6 hours if needed",
+        "rationale": "Alternative for beta-lactam allergy",
+        "warnings": [
+          "Monitor renal function",
+          "Single dose gentamicin usually sufficient"
+        ],
+        "monitoring": [
+          "Renal function",
+          "Endometritis"
+        ],
+        "isAlternative": true
+      },
+      "specialConsiderations": [
+        "Administer before skin incision (updated from after cord clamping)",
+        "Higher dose (3 g) for patients ≥120 kg",
+        "Single dose sufficient for most cases",
+        "Extended spectrum not needed for routine cesarean"
+      ],
+      "references": [
+        {
+          "label": "ACOG Cesarean Delivery Guidelines",
+          "url": "https://www.acog.org/clinical/clinical-guidance"
+        },
+        {
+          "label": "WHO Recommendations for Prevention of Maternal Peripartum Infections",
+          "url": "https://www.who.int/publications/i/item/9789241549363"
+        }
+      ]
+    },
+    {
+      "id": "hysterectomy",
+      "name": "Hysterectomy (Abdominal/Vaginal)",
+      "specialty": "gynecologic",
+      "classification": "cleanContaminated",
+      "description": "Abdominal or vaginal hysterectomy",
+      "primaryProphylaxis": {
+        "antibioticName": "Cefazolin OR Cefoxitin",
+        "dose": "Cefazolin 2 g IV OR Cefoxitin 2 g IV",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose (discontinue within 24 hours)",
+        "redosingInterval": "Cefazolin: every 4 hours; Cefoxitin: every 2 hours",
+        "rationale": "Prophylaxis against vaginal flora",
+        "warnings": [
+          "Cefoxitin provides better anaerobic coverage",
+          "Single dose usually sufficient"
+        ],
+        "monitoring": [
+          "Pelvic infection",
+          "Wound infection"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Clindamycin + Gentamicin OR Metronidazole + Gentamicin",
+        "dose": "Clindamycin 900 mg + Gentamicin 5 mg/kg IV",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose",
+        "redosingInterval": "Clindamycin: every 6 hours if needed",
+        "rationale": "Non-beta-lactam alternative",
+        "warnings": [
+          "Monitor renal function with gentamicin"
+        ],
+        "monitoring": [
+          "Renal function"
+        ],
+        "isAlternative": true
+      },
+      "specialConsiderations": [
+        "Vaginal approach has higher infection risk than abdominal",
+        "Single dose adequate for most cases",
+        "Extended prophylaxis not recommended"
+      ],
+      "references": [
+        {
+          "label": "ACOG Gynecologic Surgery Guidelines",
+          "url": "https://www.acog.org/clinical/clinical-guidance"
+        }
+      ]
+    },
+    {
+      "id": "appendectomy",
+      "name": "Appendectomy",
+      "specialty": "gastrointestinal",
+      "classification": "cleanContaminated",
+      "description": "Appendectomy for non-perforated appendicitis",
+      "primaryProphylaxis": {
+        "antibioticName": "Cefoxitin OR Cefazolin + Metronidazole",
+        "dose": "Cefoxitin 2 g IV OR Cefazolin 2 g + Metronidazole 500 mg IV",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose for non-perforated; therapeutic for perforated",
+        "redosingInterval": "Cefoxitin: every 2 hours if procedure continues",
+        "rationale": "Coverage for enteric aerobic and anaerobic organisms",
+        "warnings": [
+          "If perforated, convert to therapeutic antibiotics (4-7 days)",
+          "Single dose only for non-perforated appendicitis"
+        ],
+        "monitoring": [
+          "Intra-abdominal abscess",
+          "Wound infection"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Ciprofloxacin + Metronidazole",
+        "dose": "Ciprofloxacin 400 mg + Metronidazole 500 mg IV",
+        "route": "IV",
+        "timing": "Within 120 minutes before incision",
+        "duration": "Single dose for non-perforated",
+        "redosingInterval": "Every 12 hours if therapeutic course needed",
+        "rationale": "Non-beta-lactam alternative",
+        "warnings": [
+          "Fluoroquinolone resistance considerations"
+        ],
+        "monitoring": [
+          "Clinical response"
+        ],
+        "isAlternative": true
+      },
+      "specialConsiderations": [
+        "Distinguish prophylaxis (non-perforated) from treatment (perforated)",
+        "If perforated: 4-7 days therapeutic antibiotics",
+        "Laparoscopic vs open approach - same prophylaxis"
+      ],
+      "references": [
+        {
+          "label": "WSES Appendicitis Guidelines",
+          "url": "https://wses.org.uk/guidelines/"
+        }
+      ]
+    },
+    {
+      "id": "hernia-repair",
+      "name": "Inguinal/Ventral Hernia Repair (Clean)",
+      "specialty": "general",
+      "classification": "clean",
+      "description": "Elective hernia repair with mesh placement",
+      "primaryProphylaxis": {
+        "antibioticName": "Cefazolin",
+        "dose": "2 g IV (3 g if weight ≥120 kg)",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose (discontinue within 24 hours)",
+        "redosingInterval": "Redose every 4 hours if procedure continues",
+        "rationale": "Prophylaxis recommended for mesh placement to prevent surgical site infection",
+        "warnings": [
+          "Single dose sufficient for clean hernia repair",
+          "Mesh placement increases infection risk"
+        ],
+        "monitoring": [
+          "Monitor surgical site for signs of infection",
+          "Assess mesh integration"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Clindamycin",
+        "dose": "900 mg IV",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose",
+        "redosingInterval": "Redose every 6 hours if procedure continues",
+        "rationale": "Alternative for beta-lactam allergy with gram-positive coverage",
+        "warnings": [
+          "No gram-negative coverage"
+        ],
+        "monitoring": [
+          "Monitor for hypersensitivity"
+        ],
+        "isAlternative": true
+      },
+      "mrsaCoverageAddition": {
+        "antibioticName": "Vancomycin",
+        "dose": "15 mg/kg IV (max 2 g)",
+        "route": "IV",
+        "timing": "Within 120 minutes before incision",
+        "duration": "Single dose",
+        "redosingInterval": "Redose every 6 hours if procedure continues",
+        "rationale": "MRSA coverage for colonized patients",
+        "warnings": [
+          "Slow infusion required"
+        ],
+        "monitoring": [
+          "Monitor infusion rate"
+        ],
+        "isAlternative": false
+      },
+      "specialConsiderations": [
+        "Mesh placement increases infection risk - prophylaxis recommended",
+        "Clean hernia repair without mesh: prophylaxis optional",
+        "Recurrent hernia or previous infection: consider extended prophylaxis",
+        "Laparoscopic vs open: same prophylaxis regimen"
+      ],
+      "references": [
+        {
+          "label": "ASHP Surgical Prophylaxis Guidelines 2024",
+          "url": "https://www.ashp.org/pharmacy-practice/resource-centers/antimicrobial-stewardship"
+        },
+        {
+          "label": "CDC Surgical Site Infection Prevention 2024",
+          "url": "https://www.cdc.gov/surgical-site-infection/"
+        }
+      ]
+    },
+    {
+      "id": "breast-surgery",
+      "name": "Breast Surgery (Lumpectomy/Mastectomy)",
+      "specialty": "general",
+      "classification": "clean",
+      "description": "Breast cancer surgery including lumpectomy, mastectomy, and reconstruction",
+      "primaryProphylaxis": {
+        "antibioticName": "Cefazolin",
+        "dose": "2 g IV (3 g if weight ≥120 kg)",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose (24 hours maximum)",
+        "redosingInterval": "Redose every 4 hours if procedure continues",
+        "rationale": "Reduces surgical site infection risk, especially with reconstruction or implant placement",
+        "warnings": [
+          "Implant placement increases infection risk",
+          "Consider extended prophylaxis for immediate reconstruction"
+        ],
+        "monitoring": [
+          "Monitor surgical site and drain sites",
+          "Assess for signs of cellulitis or abscess"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Clindamycin",
+        "dose": "900 mg IV",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose (24 hours maximum)",
+        "redosingInterval": "Redose every 6 hours if procedure continues",
+        "rationale": "Alternative for beta-lactam allergy",
+        "warnings": [
+          "Limited gram-negative coverage"
+        ],
+        "monitoring": [
+          "Monitor for hypersensitivity"
+        ],
+        "isAlternative": true
+      },
+      "mrsaCoverageAddition": {
+        "antibioticName": "Vancomycin",
+        "dose": "15 mg/kg IV (max 2 g)",
+        "route": "IV",
+        "timing": "Within 120 minutes before incision",
+        "duration": "Single dose (24 hours maximum)",
+        "redosingInterval": "Redose every 6 hours if procedure continues",
+        "rationale": "MRSA coverage for colonized patients or high-risk settings",
+        "warnings": [
+          "Slow infusion to prevent red man syndrome"
+        ],
+        "monitoring": [
+          "Monitor infusion rate"
+        ],
+        "isAlternative": false
+      },
+      "specialConsiderations": [
+        "Implant/expander placement: prophylaxis strongly recommended",
+        "Simple lumpectomy without reconstruction: prophylaxis optional",
+        "Immediate reconstruction: consider 24-hour prophylaxis",
+        "Neoadjuvant chemotherapy: may increase infection risk"
+      ],
+      "references": [
+        {
+          "label": "ASCO Breast Cancer Surgery Guidelines 2024",
+          "url": "https://www.asco.org/practice-patients/guidelines"
+        },
+        {
+          "label": "ASHP Surgical Prophylaxis Guidelines 2024",
+          "url": "https://www.ashp.org/pharmacy-practice/resource-centers/antimicrobial-stewardship"
+        }
+      ]
+    },
+    {
+      "id": "craniotomy",
+      "name": "Craniotomy (Clean Neurosurgery)",
+      "specialty": "neurosurgery",
+      "classification": "clean",
+      "description": "Cranial surgery including tumor resection, aneurysm clipping, and other clean neurosurgical procedures",
+      "primaryProphylaxis": {
+        "antibioticName": "Cefazolin",
+        "dose": "2 g IV (3 g if weight ≥120 kg)",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose (discontinue within 24 hours)",
+        "redosingInterval": "Redose every 4 hours if procedure continues",
+        "rationale": "Reduces risk of surgical site infection and meningitis in clean neurosurgical procedures",
+        "warnings": [
+          "Ensure adequate CNS penetration",
+          "Redose for prolonged procedures (>4 hours)",
+          "Consider vancomycin addition for shunt procedures"
+        ],
+        "monitoring": [
+          "Monitor for signs of meningitis",
+          "Assess surgical site for CSF leak or infection"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Vancomycin",
+        "dose": "15 mg/kg IV (max 2 g)",
+        "route": "IV",
+        "timing": "Within 120 minutes before incision (infuse over 1-2 hours)",
+        "duration": "Single dose (discontinue within 24 hours)",
+        "redosingInterval": "Redose every 6 hours if procedure continues",
+        "rationale": "Alternative for beta-lactam allergy with good CNS penetration",
+        "warnings": [
+          "Slow infusion required",
+          "Ensure complete infusion before incision"
+        ],
+        "monitoring": [
+          "Monitor infusion rate",
+          "Watch for red man syndrome"
+        ],
+        "isAlternative": true
+      },
+      "mrsaCoverageAddition": {
+        "antibioticName": "Vancomycin + Cefazolin",
+        "dose": "Vancomycin 15 mg/kg IV + Cefazolin 2 g IV",
+        "route": "IV",
+        "timing": "Vancomycin within 120 minutes, Cefazolin within 60 minutes before incision",
+        "duration": "Single dose (discontinue within 24 hours)",
+        "redosingInterval": "Vancomycin every 6 hours, Cefazolin every 4 hours",
+        "rationale": "Dual coverage for MRSA colonization or high-risk patients",
+        "warnings": [
+          "Coordinate timing of both antibiotics"
+        ],
+        "monitoring": [
+          "Monitor for adverse reactions to both agents"
+        ],
+        "isAlternative": false
+      },
+      "specialConsiderations": [
+        "CSF shunt procedures: consider vancomycin addition",
+        "Prolonged procedures (>4 hours): ensure redosing",
+        "Previous neurosurgical infection: consider extended prophylaxis",
+        "Implanted devices (plates, mesh): increases infection risk"
+      ],
+      "references": [
+        {
+          "label": "AANS/CNS Neurosurgical Infection Prevention Guidelines 2024",
+          "url": "https://www.aans.org/Guidelines"
+        },
+        {
+          "label": "IDSA CNS Infection Guidelines 2024",
+          "url": "https://www.idsociety.org/practice-guideline/"
+        }
+      ]
+    },
+    {
+      "id": "spinal-surgery",
+      "name": "Spinal Surgery (Laminectomy/Fusion)",
+      "specialty": "neurosurgery",
+      "classification": "clean",
+      "description": "Spinal procedures including laminectomy, discectomy, and spinal fusion with or without instrumentation",
+      "primaryProphylaxis": {
+        "antibioticName": "Cefazolin",
+        "dose": "2 g IV (3 g if weight ≥120 kg)",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose (24 hours maximum for instrumented fusion)",
+        "redosingInterval": "Redose every 4 hours if procedure continues",
+        "rationale": "Prevents surgical site infection, especially important for instrumented procedures",
+        "warnings": [
+          "Instrumented fusion: consider 24-hour prophylaxis",
+          "Redose for prolonged procedures",
+          "Higher infection risk with instrumentation"
+        ],
+        "monitoring": [
+          "Monitor surgical site",
+          "Assess for signs of discitis or osteomyelitis"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Vancomycin",
+        "dose": "15 mg/kg IV (max 2 g)",
+        "route": "IV",
+        "timing": "Within 120 minutes before incision",
+        "duration": "Single dose (24 hours maximum for instrumented fusion)",
+        "redosingInterval": "Redose every 6 hours if procedure continues",
+        "rationale": "Alternative for beta-lactam allergy",
+        "warnings": [
+          "Slow infusion required"
+        ],
+        "monitoring": [
+          "Monitor infusion rate"
+        ],
+        "isAlternative": true
+      },
+      "mrsaCoverageAddition": {
+        "antibioticName": "Vancomycin + Cefazolin",
+        "dose": "Vancomycin 15 mg/kg IV + Cefazolin 2 g IV",
+        "route": "IV",
+        "timing": "Vancomycin within 120 minutes, Cefazolin within 60 minutes before incision",
+        "duration": "Single dose (24 hours maximum for instrumented fusion)",
+        "redosingInterval": "Vancomycin every 6 hours, Cefazolin every 4 hours",
+        "rationale": "Dual coverage for MRSA colonization",
+        "warnings": [
+          "Coordinate timing"
+        ],
+        "monitoring": [
+          "Monitor both agents"
+        ],
+        "isAlternative": false
+      },
+      "specialConsiderations": [
+        "Instrumented fusion: consider 24-hour prophylaxis",
+        "Simple discectomy: single dose sufficient",
+        "Revision surgery: higher infection risk",
+        "Obesity: ensure adequate dosing (3 g cefazolin if ≥120 kg)"
+      ],
+      "references": [
+        {
+          "label": "North American Spine Society Guidelines 2024",
+          "url": "https://www.spine.org/Guidelines"
+        },
+        {
+          "label": "ASHP Surgical Prophylaxis Guidelines 2024",
+          "url": "https://www.ashp.org/pharmacy-practice/resource-centers/antimicrobial-stewardship"
+        }
+      ]
+    },
+    {
+      "id": "vascular-surgery",
+      "name": "Vascular Surgery (Arterial Reconstruction)",
+      "specialty": "vascular",
+      "classification": "clean",
+      "description": "Arterial reconstruction including aortic aneurysm repair, peripheral bypass, and carotid endarterectomy",
+      "primaryProphylaxis": {
+        "antibioticName": "Cefazolin",
+        "dose": "2 g IV (3 g if weight ≥120 kg)",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose (24 hours maximum)",
+        "redosingInterval": "Redose every 4 hours if procedure continues",
+        "rationale": "Prevents graft infection and surgical site infection in vascular procedures",
+        "warnings": [
+          "Graft infection is catastrophic - ensure adequate prophylaxis",
+          "Redose for prolonged procedures or significant blood loss",
+          "Consider 24-hour prophylaxis for prosthetic graft"
+        ],
+        "monitoring": [
+          "Monitor graft site for signs of infection",
+          "Assess for graft thrombosis or pseudoaneurysm"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Vancomycin",
+        "dose": "15 mg/kg IV (max 2 g)",
+        "route": "IV",
+        "timing": "Within 120 minutes before incision",
+        "duration": "Single dose (24 hours maximum)",
+        "redosingInterval": "Redose every 6 hours if procedure continues",
+        "rationale": "Alternative for beta-lactam allergy with gram-positive coverage",
+        "warnings": [
+          "Slow infusion required",
+          "No gram-negative coverage - consider adding aztreonam for groin incisions"
+        ],
+        "monitoring": [
+          "Monitor infusion rate"
+        ],
+        "isAlternative": true
+      },
+      "mrsaCoverageAddition": {
+        "antibioticName": "Vancomycin + Cefazolin",
+        "dose": "Vancomycin 15 mg/kg IV + Cefazolin 2 g IV",
+        "route": "IV",
+        "timing": "Vancomycin within 120 minutes, Cefazolin within 60 minutes before incision",
+        "duration": "Single dose (24 hours maximum)",
+        "redosingInterval": "Vancomycin every 6 hours, Cefazolin every 4 hours",
+        "rationale": "Dual coverage for MRSA colonization or high-risk patients",
+        "warnings": [
+          "Coordinate timing of both antibiotics"
+        ],
+        "monitoring": [
+          "Monitor for adverse reactions"
+        ],
+        "isAlternative": false
+      },
+      "specialConsiderations": [
+        "Prosthetic graft: consider 24-hour prophylaxis",
+        "Groin incision: higher infection risk",
+        "Lower extremity bypass: consider gram-negative coverage",
+        "Carotid endarterectomy: single dose sufficient"
+      ],
+      "references": [
+        {
+          "label": "Society for Vascular Surgery Guidelines 2024",
+          "url": "https://vascular.org/guidelines"
+        },
+        {
+          "label": "IDSA Vascular Graft Infection Guidelines 2024",
+          "url": "https://www.idsociety.org/practice-guideline/"
+        }
+      ]
+    },
+    {
+      "id": "prostatectomy",
+      "name": "Prostatectomy (Radical/Simple)",
+      "specialty": "urologic",
+      "classification": "clean-contaminated",
+      "description": "Radical or simple prostatectomy for cancer or benign prostatic hyperplasia",
+      "primaryProphylaxis": {
+        "antibioticName": "Cefazolin",
+        "dose": "2 g IV (3 g if weight ≥120 kg)",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose (discontinue within 24 hours)",
+        "redosingInterval": "Redose every 4 hours if procedure continues",
+        "rationale": "Prevents urinary tract infection and surgical site infection",
+        "warnings": [
+          "Ensure negative preoperative urine culture",
+          "Treat active UTI before elective surgery"
+        ],
+        "monitoring": [
+          "Monitor for UTI symptoms",
+          "Assess surgical site"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Ciprofloxacin or Levofloxacin",
+        "dose": "Ciprofloxacin 400 mg IV or Levofloxacin 500 mg IV",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose",
+        "redosingInterval": "Ciprofloxacin every 12 hours, Levofloxacin every 24 hours",
+        "rationale": "Alternative with excellent urinary tract penetration",
+        "warnings": [
+          "Consider local fluoroquinolone resistance patterns",
+          "Avoid if recent fluoroquinolone use"
+        ],
+        "monitoring": [
+          "Monitor for adverse effects"
+        ],
+        "isAlternative": true
+      },
+      "mrsaCoverageAddition": {
+        "antibioticName": "Vancomycin + Cefazolin",
+        "dose": "Vancomycin 15 mg/kg IV + Cefazolin 2 g IV",
+        "route": "IV",
+        "timing": "Vancomycin within 120 minutes, Cefazolin within 60 minutes before incision",
+        "duration": "Single dose",
+        "redosingInterval": "Vancomycin every 6 hours, Cefazolin every 4 hours",
+        "rationale": "MRSA coverage for colonized patients",
+        "warnings": [
+          "Coordinate timing"
+        ],
+        "monitoring": [
+          "Monitor both agents"
+        ],
+        "isAlternative": false
+      },
+      "specialConsiderations": [
+        "Preoperative urine culture mandatory",
+        "Treat active UTI before elective surgery",
+        "Catheter removal as soon as possible postoperatively",
+        "Robotic vs open: same prophylaxis regimen"
+      ],
+      "references": [
+        {
+          "label": "AUA Urologic Surgery Prophylaxis Guidelines 2024",
+          "url": "https://www.auanet.org/guidelines"
+        },
+        {
+          "label": "EAU Urological Infections Guidelines 2024",
+          "url": "https://uroweb.org/guidelines"
+        }
+      ]
+    },
+    {
+      "id": "cholecystectomy",
+      "name": "Cholecystectomy (Laparoscopic/Open)",
+      "specialty": "gastrointestinal",
+      "classification": "clean-contaminated",
+      "description": "Gallbladder removal for cholecystitis, cholelithiasis, or biliary dyskinesia",
+      "primaryProphylaxis": {
+        "antibioticName": "Cefazolin",
+        "dose": "2 g IV (3 g if weight ≥120 kg)",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose (no postoperative doses for uncomplicated cases)",
+        "redosingInterval": "Redose every 4 hours if procedure continues",
+        "rationale": "Prophylaxis recommended for high-risk patients (age >60, acute cholecystitis, diabetes, immunosuppression)",
+        "warnings": [
+          "Low-risk elective cholecystectomy: prophylaxis optional",
+          "Acute cholecystitis: prophylaxis strongly recommended",
+          "If bile spillage: consider therapeutic antibiotics"
+        ],
+        "monitoring": [
+          "Monitor surgical site",
+          "Assess for bile leak or abscess"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Ciprofloxacin + Metronidazole",
+        "dose": "Ciprofloxacin 400 mg IV + Metronidazole 500 mg IV",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose",
+        "redosingInterval": "Ciprofloxacin every 12 hours, Metronidazole every 8 hours",
+        "rationale": "Alternative with gram-negative and anaerobic coverage",
+        "warnings": [
+          "Consider local resistance patterns"
+        ],
+        "monitoring": [
+          "Monitor for adverse effects"
+        ],
+        "isAlternative": true
+      },
+      "mrsaCoverageAddition": {
+        "antibioticName": "Vancomycin + Cefazolin",
+        "dose": "Vancomycin 15 mg/kg IV + Cefazolin 2 g IV",
+        "route": "IV",
+        "timing": "Vancomycin within 120 minutes, Cefazolin within 60 minutes before incision",
+        "duration": "Single dose",
+        "redosingInterval": "Vancomycin every 6 hours, Cefazolin every 4 hours",
+        "rationale": "MRSA coverage for colonized patients",
+        "warnings": [
+          "Coordinate timing"
+        ],
+        "monitoring": [
+          "Monitor both agents"
+        ],
+        "isAlternative": false
+      },
+      "specialConsiderations": [
+        "High-risk factors: age >60, acute cholecystitis, diabetes, immunosuppression, jaundice",
+        "Low-risk elective: prophylaxis optional",
+        "Conversion to open: no additional antibiotics needed",
+        "Bile spillage: consider therapeutic course if contamination significant"
+      ],
+      "references": [
+        {
+          "label": "WSES Acute Cholecystitis Guidelines 2024",
+          "url": "https://wses.org.uk/guidelines/"
+        },
+        {
+          "label": "Tokyo Guidelines for Acute Cholangitis and Cholecystitis 2024",
+          "url": "https://www.jshbps.jp/en/guidelines/"
+        }
+      ]
+    },
+    {
+      "id": "thyroidectomy",
+      "name": "Thyroidectomy (Total/Partial)",
+      "specialty": "general",
+      "classification": "clean",
+      "description": "Thyroid gland removal for cancer, goiter, or hyperthyroidism",
+      "primaryProphylaxis": {
+        "antibioticName": "No routine prophylaxis recommended",
+        "dose": "N/A",
+        "route": "N/A",
+        "timing": "N/A",
+        "duration": "N/A",
+        "redosingInterval": null,
+        "rationale": "Clean procedure with low infection risk - routine prophylaxis not recommended per 2024 guidelines",
+        "warnings": [
+          "Prophylaxis only for high-risk patients (immunosuppression, diabetes, previous neck surgery)",
+          "If prophylaxis indicated: Cefazolin 2 g IV single dose"
+        ],
+        "monitoring": [
+          "Monitor surgical site",
+          "Assess for hematoma or seroma"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Clindamycin (if prophylaxis indicated)",
+        "dose": "900 mg IV",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose",
+        "redosingInterval": null,
+        "rationale": "Alternative for high-risk patients with beta-lactam allergy",
+        "warnings": [
+          "Only for high-risk patients"
+        ],
+        "monitoring": [
+          "Monitor for hypersensitivity"
+        ],
+        "isAlternative": true
+      },
+      "mrsaCoverageAddition": {
+        "antibioticName": "Vancomycin (if prophylaxis indicated)",
+        "dose": "15 mg/kg IV (max 2 g)",
+        "route": "IV",
+        "timing": "Within 120 minutes before incision",
+        "duration": "Single dose",
+        "redosingInterval": null,
+        "rationale": "MRSA coverage for colonized high-risk patients",
+        "warnings": [
+          "Only for high-risk patients"
+        ],
+        "monitoring": [
+          "Monitor infusion rate"
+        ],
+        "isAlternative": false
+      },
+      "specialConsiderations": [
+        "Routine prophylaxis NOT recommended for standard thyroidectomy",
+        "High-risk patients: immunosuppression, diabetes, previous neck surgery, radiation",
+        "Sternotomy or mediastinal dissection: consider prophylaxis",
+        "Low infection rate (<1%) in clean thyroid surgery"
+      ],
+      "references": [
+        {
+          "label": "ATA Thyroid Surgery Guidelines 2024",
+          "url": "https://www.thyroid.org/professionals/guidelines/"
+        },
+        {
+          "label": "ASHP Surgical Prophylaxis Guidelines 2024",
+          "url": "https://www.ashp.org/pharmacy-practice/resource-centers/antimicrobial-stewardship"
+        }
+      ]
+    },
+    {
+      "id": "gastric-surgery",
+      "name": "Gastric Surgery (Gastrectomy/Bariatric)",
+      "specialty": "gastrointestinal",
+      "classification": "clean-contaminated",
+      "description": "Gastric procedures including gastrectomy for cancer, gastric bypass, and sleeve gastrectomy",
+      "primaryProphylaxis": {
+        "antibioticName": "Cefazolin",
+        "dose": "2 g IV (3 g if weight ≥120 kg)",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose (discontinue within 24 hours)",
+        "redosingInterval": "Redose every 4 hours if procedure continues",
+        "rationale": "Prevents surgical site infection in gastric procedures with high bacterial load",
+        "warnings": [
+          "Bariatric surgery: ensure adequate dosing for obesity (3 g if ≥120 kg)",
+          "Redose for prolonged procedures or blood loss >1500 mL",
+          "Consider PPI discontinuation preoperatively to reduce infection risk"
+        ],
+        "monitoring": [
+          "Monitor surgical site and anastomosis",
+          "Assess for leak or abscess"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Ciprofloxacin + Metronidazole",
+        "dose": "Ciprofloxacin 400 mg IV + Metronidazole 500 mg IV",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose (discontinue within 24 hours)",
+        "redosingInterval": "Ciprofloxacin every 12 hours, Metronidazole every 8 hours",
+        "rationale": "Alternative with broad-spectrum coverage",
+        "warnings": [
+          "Consider local resistance patterns"
+        ],
+        "monitoring": [
+          "Monitor for adverse effects"
+        ],
+        "isAlternative": true
+      },
+      "mrsaCoverageAddition": {
+        "antibioticName": "Vancomycin + Cefazolin",
+        "dose": "Vancomycin 15 mg/kg IV + Cefazolin 2-3 g IV",
+        "route": "IV",
+        "timing": "Vancomycin within 120 minutes, Cefazolin within 60 minutes before incision",
+        "duration": "Single dose (discontinue within 24 hours)",
+        "redosingInterval": "Vancomycin every 6 hours, Cefazolin every 4 hours",
+        "rationale": "MRSA coverage for colonized patients",
+        "warnings": [
+          "Coordinate timing of both antibiotics"
+        ],
+        "monitoring": [
+          "Monitor both agents"
+        ],
+        "isAlternative": false
+      },
+      "specialConsiderations": [
+        "Bariatric surgery: weight-based dosing critical (3 g cefazolin if ≥120 kg)",
+        "Gastric cancer surgery: consider extended prophylaxis for complex resections",
+        "PPI use: may increase infection risk - consider discontinuation preoperatively",
+        "Anastomotic leak: most serious complication - ensure adequate prophylaxis"
+      ],
+      "references": [
+        {
+          "label": "ASMBS Bariatric Surgery Guidelines 2024",
+          "url": "https://asmbs.org/resources/guidelines"
+        },
+        {
+          "label": "NCCN Gastric Cancer Guidelines 2024",
+          "url": "https://www.nccn.org/guidelines"
+        }
+      ]
+    },
+    {
+      "id": "nephrectomy",
+      "name": "Nephrectomy (Partial/Radical)",
+      "specialty": "urologic",
+      "classification": "clean-contaminated",
+      "description": "Kidney removal for cancer, donation, or non-functioning kidney",
+      "primaryProphylaxis": {
+        "antibioticName": "Cefazolin",
+        "dose": "2 g IV (3 g if weight ≥120 kg)",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose (discontinue within 24 hours)",
+        "redosingInterval": "Redose every 4 hours if procedure continues",
+        "rationale": "Prevents urinary tract infection and surgical site infection",
+        "warnings": [
+          "Ensure negative preoperative urine culture",
+          "Treat active UTI before elective surgery",
+          "Collecting system entry: increases infection risk"
+        ],
+        "monitoring": [
+          "Monitor for UTI symptoms",
+          "Assess surgical site"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Ciprofloxacin or Levofloxacin",
+        "dose": "Ciprofloxacin 400 mg IV or Levofloxacin 500 mg IV",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose",
+        "redosingInterval": "Ciprofloxacin every 12 hours, Levofloxacin every 24 hours",
+        "rationale": "Alternative with excellent urinary tract penetration",
+        "warnings": [
+          "Consider local fluoroquinolone resistance patterns"
+        ],
+        "monitoring": [
+          "Monitor for adverse effects"
+        ],
+        "isAlternative": true
+      },
+      "mrsaCoverageAddition": {
+        "antibioticName": "Vancomycin + Cefazolin",
+        "dose": "Vancomycin 15 mg/kg IV + Cefazolin 2 g IV",
+        "route": "IV",
+        "timing": "Vancomycin within 120 minutes, Cefazolin within 60 minutes before incision",
+        "duration": "Single dose",
+        "redosingInterval": "Vancomycin every 6 hours, Cefazolin every 4 hours",
+        "rationale": "MRSA coverage for colonized patients",
+        "warnings": [
+          "Coordinate timing"
+        ],
+        "monitoring": [
+          "Monitor both agents"
+        ],
+        "isAlternative": false
+      },
+      "specialConsiderations": [
+        "Preoperative urine culture mandatory",
+        "Treat active UTI before elective surgery",
+        "Collecting system entry: higher infection risk",
+        "Robotic vs open vs laparoscopic: same prophylaxis regimen",
+        "Living donor nephrectomy: single dose sufficient"
+      ],
+      "references": [
+        {
+          "label": "AUA Urologic Surgery Prophylaxis Guidelines 2024",
+          "url": "https://www.auanet.org/guidelines"
+        },
+        {
+          "label": "NCCN Kidney Cancer Guidelines 2024",
+          "url": "https://www.nccn.org/guidelines"
+        }
+      ]
+    },
+    {
+      "id": "cystectomy",
+      "name": "Cystectomy (Radical with Urinary Diversion)",
+      "specialty": "urologic",
+      "classification": "clean-contaminated",
+      "description": "Bladder removal with urinary diversion for bladder cancer",
+      "primaryProphylaxis": {
+        "antibioticName": "Cefazolin + Metronidazole",
+        "dose": "Cefazolin 2 g IV (3 g if ≥120 kg) + Metronidazole 500 mg IV",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose (discontinue within 24 hours)",
+        "redosingInterval": "Cefazolin every 4 hours, Metronidazole every 8 hours",
+        "rationale": "Broad-spectrum coverage for complex procedure involving bowel manipulation",
+        "warnings": [
+          "Bowel preparation: mechanical prep + oral antibiotics recommended",
+          "Prolonged procedure: ensure redosing",
+          "High infection risk due to bowel manipulation"
+        ],
+        "monitoring": [
+          "Monitor surgical site and stoma",
+          "Assess for intra-abdominal abscess or anastomotic leak"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Ciprofloxacin + Metronidazole",
+        "dose": "Ciprofloxacin 400 mg IV + Metronidazole 500 mg IV",
+        "route": "IV",
+        "timing": "Within 60 minutes before incision",
+        "duration": "Single dose (discontinue within 24 hours)",
+        "redosingInterval": "Ciprofloxacin every 12 hours, Metronidazole every 8 hours",
+        "rationale": "Alternative with broad-spectrum coverage",
+        "warnings": [
+          "Consider local resistance patterns"
+        ],
+        "monitoring": [
+          "Monitor for adverse effects"
+        ],
+        "isAlternative": true
+      },
+      "mrsaCoverageAddition": {
+        "antibioticName": "Vancomycin + Cefazolin + Metronidazole",
+        "dose": "Vancomycin 15 mg/kg IV + Cefazolin 2 g IV + Metronidazole 500 mg IV",
+        "route": "IV",
+        "timing": "Vancomycin within 120 minutes, others within 60 minutes before incision",
+        "duration": "Single dose (discontinue within 24 hours)",
+        "redosingInterval": "Vancomycin every 6 hours, Cefazolin every 4 hours, Metronidazole every 8 hours",
+        "rationale": "Triple coverage for MRSA colonization",
+        "warnings": [
+          "Coordinate timing of all three antibiotics"
+        ],
+        "monitoring": [
+          "Monitor all agents"
+        ],
+        "isAlternative": false
+      },
+      "specialConsiderations": [
+        "Bowel preparation: mechanical prep + oral antibiotics (neomycin + metronidazole)",
+        "Prolonged procedure (4-8 hours): ensure redosing",
+        "Urinary diversion type: ileal conduit vs neobladder - same prophylaxis",
+        "High infection risk: meticulous surgical technique critical"
+      ],
+      "references": [
+        {
+          "label": "AUA Bladder Cancer Guidelines 2024",
+          "url": "https://www.auanet.org/guidelines"
+        },
+        {
+          "label": "NCCN Bladder Cancer Guidelines 2024",
+          "url": "https://www.nccn.org/guidelines"
+        }
+      ]
+    },
+    {
+      "id": "perforated-appendicitis",
+      "name": "Perforated Appendicitis (Contaminated)",
+      "specialty": "gastrointestinal",
+      "classification": "contaminated",
+      "description": "Appendectomy with perforation and peritoneal contamination",
+      "primaryProphylaxis": {
+        "antibioticName": "Piperacillin-Tazobactam or Cefepime + Metronidazole",
+        "dose": "Piperacillin-Tazobactam 3.375 g IV or Cefepime 2 g IV + Metronidazole 500 mg IV",
+        "route": "IV",
+        "timing": "Immediate initiation (therapeutic, not prophylactic)",
+        "duration": "4-7 days therapeutic course",
+        "redosingInterval": "Piperacillin-Tazobactam every 6 hours, Cefepime every 8 hours, Metronidazole every 8 hours",
+        "rationale": "Therapeutic antibiotics required for established intra-abdominal infection with peritoneal contamination",
+        "warnings": [
+          "This is therapeutic treatment, not prophylaxis",
+          "Source control (appendectomy) is critical",
+          "Adjust duration based on clinical response",
+          "Consider imaging if no improvement by day 3-4"
+        ],
+        "monitoring": [
+          "Monitor for clinical improvement (fever, WBC, abdominal exam)",
+          "Assess for abscess formation",
+          "Consider CT if persistent fever or leukocytosis"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Ciprofloxacin + Metronidazole or Aztreonam + Metronidazole",
+        "dose": "Ciprofloxacin 400 mg IV every 12 hours + Metronidazole 500 mg IV every 8 hours",
+        "route": "IV",
+        "timing": "Immediate initiation",
+        "duration": "4-7 days therapeutic course",
+        "redosingInterval": "Ciprofloxacin every 12 hours, Metronidazole every 8 hours",
+        "rationale": "Alternative for beta-lactam allergy with broad-spectrum coverage",
+        "warnings": [
+          "Consider local fluoroquinolone resistance patterns",
+          "Aztreonam + Metronidazole if fluoroquinolone resistance"
+        ],
+        "monitoring": [
+          "Monitor clinical response",
+          "Assess for adverse effects"
+        ],
+        "isAlternative": true
+      },
+      "mrsaCoverageAddition": {
+        "antibioticName": "Vancomycin + Piperacillin-Tazobactam",
+        "dose": "Vancomycin 15-20 mg/kg IV every 8-12 hours + Piperacillin-Tazobactam 3.375 g IV every 6 hours",
+        "route": "IV",
+        "timing": "Immediate initiation",
+        "duration": "4-7 days therapeutic course",
+        "redosingInterval": "Vancomycin every 8-12 hours (based on levels), Piperacillin-Tazobactam every 6 hours",
+        "rationale": "MRSA coverage for high-risk patients or healthcare-associated infection",
+        "warnings": [
+          "Monitor vancomycin trough levels (target 15-20 mcg/mL)",
+          "Adjust based on renal function"
+        ],
+        "monitoring": [
+          "Vancomycin trough levels",
+          "Renal function",
+          "Clinical response"
+        ],
+        "isAlternative": false
+      },
+      "specialConsiderations": [
+        "Therapeutic antibiotics, not prophylaxis - this is treatment of established infection",
+        "Source control (appendectomy) is mandatory",
+        "Duration: 4 days if adequate source control, up to 7 days if complex",
+        "Transition to oral antibiotics when tolerating diet and afebrile",
+        "Abscess formation: may require percutaneous drainage",
+        "Imaging (CT) if no improvement by day 3-4"
+      ],
+      "references": [
+        {
+          "label": "WSES Intra-Abdominal Infections Guidelines 2024",
+          "url": "https://wses.org.uk/guidelines/"
+        },
+        {
+          "label": "IDSA Intra-Abdominal Infections Guidelines 2024",
+          "url": "https://www.idsociety.org/practice-guideline/"
+        }
+      ]
+    },
+    {
+      "id": "perforated-peptic-ulcer",
+      "name": "Perforated Peptic Ulcer (Contaminated)",
+      "specialty": "gastrointestinal",
+      "classification": "contaminated",
+      "description": "Emergency surgery for perforated gastric or duodenal ulcer with peritoneal contamination",
+      "primaryProphylaxis": {
+        "antibioticName": "Piperacillin-Tazobactam or Cefepime + Metronidazole",
+        "dose": "Piperacillin-Tazobactam 3.375 g IV or Cefepime 2 g IV + Metronidazole 500 mg IV",
+        "route": "IV",
+        "timing": "Immediate initiation (therapeutic, not prophylactic)",
+        "duration": "4-7 days therapeutic course",
+        "redosingInterval": "Piperacillin-Tazobactam every 6 hours, Cefepime every 8 hours, Metronidazole every 8 hours",
+        "rationale": "Therapeutic antibiotics for established intra-abdominal infection from gastric/duodenal perforation",
+        "warnings": [
+          "This is therapeutic treatment, not prophylaxis",
+          "Source control (repair/omental patch) is critical",
+          "Consider H. pylori eradication after recovery",
+          "PPI therapy essential postoperatively"
+        ],
+        "monitoring": [
+          "Monitor for clinical improvement",
+          "Assess for leak or abscess",
+          "Monitor for sepsis"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Ciprofloxacin + Metronidazole",
+        "dose": "Ciprofloxacin 400 mg IV every 12 hours + Metronidazole 500 mg IV every 8 hours",
+        "route": "IV",
+        "timing": "Immediate initiation",
+        "duration": "4-7 days therapeutic course",
+        "redosingInterval": "Ciprofloxacin every 12 hours, Metronidazole every 8 hours",
+        "rationale": "Alternative for beta-lactam allergy",
+        "warnings": [
+          "Consider local resistance patterns"
+        ],
+        "monitoring": [
+          "Monitor clinical response"
+        ],
+        "isAlternative": true
+      },
+      "mrsaCoverageAddition": {
+        "antibioticName": "Vancomycin + Piperacillin-Tazobactam",
+        "dose": "Vancomycin 15-20 mg/kg IV + Piperacillin-Tazobactam 3.375 g IV",
+        "route": "IV",
+        "timing": "Immediate initiation",
+        "duration": "4-7 days therapeutic course",
+        "redosingInterval": "Vancomycin every 8-12 hours, Piperacillin-Tazobactam every 6 hours",
+        "rationale": "MRSA coverage for high-risk patients",
+        "warnings": [
+          "Monitor vancomycin levels"
+        ],
+        "monitoring": [
+          "Vancomycin trough levels",
+          "Clinical response"
+        ],
+        "isAlternative": false
+      },
+      "specialConsiderations": [
+        "Therapeutic antibiotics for established infection",
+        "Source control: repair with omental patch or resection",
+        "Duration: 4-7 days based on clinical response",
+        "H. pylori testing and eradication after recovery",
+        "PPI therapy essential (IV initially, then oral)",
+        "High mortality if delayed treatment"
+      ],
+      "references": [
+        {
+          "label": "WSES Perforated Peptic Ulcer Guidelines 2024",
+          "url": "https://wses.org.uk/guidelines/"
+        },
+        {
+          "label": "IDSA Intra-Abdominal Infections Guidelines 2024",
+          "url": "https://www.idsociety.org/practice-guideline/"
+        }
+      ]
+    },
+    {
+      "id": "traumatic-bowel-injury",
+      "name": "Traumatic Bowel Injury (Contaminated)",
+      "specialty": "general",
+      "classification": "contaminated",
+      "description": "Emergency surgery for traumatic bowel perforation with peritoneal contamination",
+      "primaryProphylaxis": {
+        "antibioticName": "Cefoxitin or Cefazolin + Metronidazole",
+        "dose": "Cefoxitin 2 g IV or Cefazolin 2 g IV + Metronidazole 500 mg IV",
+        "route": "IV",
+        "timing": "Immediate initiation in trauma bay",
+        "duration": "24 hours if repair within 12 hours; 4-7 days if delayed repair or significant contamination",
+        "redosingInterval": "Cefoxitin every 6 hours, Cefazolin every 8 hours, Metronidazole every 8 hours",
+        "rationale": "Early antibiotics reduce infection risk in traumatic bowel injury; duration depends on timing of repair",
+        "warnings": [
+          "If repair within 12 hours: 24-hour prophylaxis sufficient",
+          "If delayed >12 hours: therapeutic course (4-7 days)",
+          "Significant contamination: therapeutic course",
+          "Assess for other injuries (solid organ, vascular)"
+        ],
+        "monitoring": [
+          "Monitor for intra-abdominal abscess",
+          "Assess for anastomotic leak",
+          "Monitor for sepsis"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Ciprofloxacin + Metronidazole",
+        "dose": "Ciprofloxacin 400 mg IV every 12 hours + Metronidazole 500 mg IV every 8 hours",
+        "route": "IV",
+        "timing": "Immediate initiation",
+        "duration": "24 hours if early repair; 4-7 days if delayed or significant contamination",
+        "redosingInterval": "Ciprofloxacin every 12 hours, Metronidazole every 8 hours",
+        "rationale": "Alternative for beta-lactam allergy",
+        "warnings": [
+          "Consider local resistance patterns"
+        ],
+        "monitoring": [
+          "Monitor clinical response"
+        ],
+        "isAlternative": true
+      },
+      "mrsaCoverageAddition": {
+        "antibioticName": "Vancomycin + Cefazolin + Metronidazole",
+        "dose": "Vancomycin 15 mg/kg IV + Cefazolin 2 g IV + Metronidazole 500 mg IV",
+        "route": "IV",
+        "timing": "Immediate initiation",
+        "duration": "Based on repair timing and contamination",
+        "redosingInterval": "Vancomycin every 8-12 hours, Cefazolin every 8 hours, Metronidazole every 8 hours",
+        "rationale": "MRSA coverage for high-risk trauma patients",
+        "warnings": [
+          "Coordinate timing"
+        ],
+        "monitoring": [
+          "Monitor all agents"
+        ],
+        "isAlternative": false
+      },
+      "specialConsiderations": [
+        "Timing is critical: repair within 12 hours → 24-hour prophylaxis",
+        "Delayed repair (>12 hours) → therapeutic course (4-7 days)",
+        "Significant contamination → therapeutic course regardless of timing",
+        "Damage control surgery: may require staged repair",
+        "High risk of intra-abdominal abscess",
+        "Consider antifungal if ICU stay >7 days or recurrent perforation"
+      ],
+      "references": [
+        {
+          "label": "EAST Trauma Guidelines 2024",
+          "url": "https://www.east.org/education/practice-management-guidelines"
+        },
+        {
+          "label": "WSES Trauma Guidelines 2024",
+          "url": "https://wses.org.uk/guidelines/"
+        }
+      ]
+    },
+    {
+      "id": "necrotizing-soft-tissue-infection",
+      "name": "Necrotizing Soft Tissue Infection (Dirty/Infected)",
+      "specialty": "general",
+      "classification": "dirty",
+      "description": "Emergency surgical debridement for necrotizing fasciitis or gas gangrene",
+      "primaryProphylaxis": {
+        "antibioticName": "Vancomycin + Piperacillin-Tazobactam + Clindamycin",
+        "dose": "Vancomycin 15-20 mg/kg IV + Piperacillin-Tazobactam 3.375 g IV + Clindamycin 900 mg IV",
+        "route": "IV",
+        "timing": "Immediate initiation (life-threatening emergency)",
+        "duration": "Continue until no further debridement needed, patient improved, and afebrile for 48-72 hours",
+        "redosingInterval": "Vancomycin every 8-12 hours, Piperacillin-Tazobactam every 6 hours, Clindamycin every 8 hours",
+        "rationale": "Broad-spectrum empiric coverage for polymicrobial infection including MRSA, gram-negatives, and anaerobes; clindamycin inhibits toxin production",
+        "warnings": [
+          "SURGICAL EMERGENCY - immediate debridement is life-saving",
+          "Antibiotics are adjunctive - surgery is primary treatment",
+          "Repeat debridement often necessary (every 24-48 hours)",
+          "High mortality (20-40%) despite treatment",
+          "Consider IVIG for streptococcal toxic shock syndrome"
+        ],
+        "monitoring": [
+          "Monitor for septic shock and organ failure",
+          "Assess wound daily for extent of necrosis",
+          "Monitor lactate, CRP, procalcitonin",
+          "Vancomycin trough levels"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Vancomycin + Aztreonam + Metronidazole + Clindamycin",
+        "dose": "Vancomycin 15-20 mg/kg IV + Aztreonam 2 g IV + Metronidazole 500 mg IV + Clindamycin 900 mg IV",
+        "route": "IV",
+        "timing": "Immediate initiation",
+        "duration": "Continue until no further debridement needed and patient improved",
+        "redosingInterval": "Vancomycin every 8-12 hours, Aztreonam every 8 hours, Metronidazole every 8 hours, Clindamycin every 8 hours",
+        "rationale": "Alternative for beta-lactam allergy with broad coverage",
+        "warnings": [
+          "Complex regimen - ensure all components given"
+        ],
+        "monitoring": [
+          "Monitor clinical response and organ function"
+        ],
+        "isAlternative": true
+      },
+      "mrsaCoverageAddition": {
+        "antibioticName": "Already included in primary regimen (Vancomycin)",
+        "dose": "Vancomycin 15-20 mg/kg IV",
+        "route": "IV",
+        "timing": "Immediate",
+        "duration": "As per primary regimen",
+        "redosingInterval": "Every 8-12 hours based on levels",
+        "rationale": "MRSA coverage already included",
+        "warnings": [
+          "Monitor vancomycin levels closely"
+        ],
+        "monitoring": [
+          "Vancomycin trough levels (target 15-20 mcg/mL)"
+        ],
+        "isAlternative": false
+      },
+      "specialConsiderations": [
+        "SURGICAL EMERGENCY - immediate wide debridement is life-saving",
+        "Antibiotics are adjunctive only - surgery is primary treatment",
+        "Clindamycin essential: inhibits toxin production in streptococcal/clostridial infections",
+        "Repeat debridement often necessary every 24-48 hours until no further necrosis",
+        "Type I (polymicrobial): diabetes, immunosuppression, post-surgical",
+        "Type II (monomicrobial): Group A Streptococcus, S. aureus - consider IVIG",
+        "Hyperbaric oxygen: controversial, may be adjunctive for clostridial infections",
+        "High mortality (20-40%) despite aggressive treatment"
+      ],
+      "references": [
+        {
+          "label": "IDSA Skin and Soft Tissue Infections Guidelines 2024",
+          "url": "https://www.idsociety.org/practice-guideline/"
+        },
+        {
+          "label": "WSES Necrotizing Soft Tissue Infections Guidelines 2024",
+          "url": "https://wses.org.uk/guidelines/"
+        }
+      ]
+    },
+    {
+      "id": "perforated-diverticulitis",
+      "name": "Perforated Diverticulitis (Dirty/Infected)",
+      "specialty": "gastrointestinal",
+      "classification": "dirty",
+      "description": "Emergency surgery for perforated diverticulitis with purulent or fecal peritonitis",
+      "primaryProphylaxis": {
+        "antibioticName": "Piperacillin-Tazobactam or Meropenem",
+        "dose": "Piperacillin-Tazobactam 3.375 g IV or Meropenem 1 g IV",
+        "route": "IV",
+        "timing": "Immediate initiation (therapeutic, not prophylactic)",
+        "duration": "4-7 days therapeutic course, may extend based on clinical response",
+        "redosingInterval": "Piperacillin-Tazobactam every 6 hours, Meropenem every 8 hours",
+        "rationale": "Therapeutic antibiotics for established intra-abdominal infection with fecal peritonitis",
+        "warnings": [
+          "This is therapeutic treatment for established infection",
+          "Source control (resection ± colostomy) is critical",
+          "Hinchey III (purulent) vs IV (fecal): both require surgery",
+          "Consider antifungal if ICU stay >7 days or recurrent perforation"
+        ],
+        "monitoring": [
+          "Monitor for clinical improvement",
+          "Assess for abscess or anastomotic leak",
+          "Monitor for sepsis and organ dysfunction"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Ciprofloxacin + Metronidazole or Aztreonam + Metronidazole",
+        "dose": "Ciprofloxacin 400 mg IV every 12 hours + Metronidazole 500 mg IV every 8 hours",
+        "route": "IV",
+        "timing": "Immediate initiation",
+        "duration": "4-7 days therapeutic course",
+        "redosingInterval": "Ciprofloxacin every 12 hours, Metronidazole every 8 hours",
+        "rationale": "Alternative for beta-lactam allergy",
+        "warnings": [
+          "Consider local resistance patterns",
+          "Aztreonam + Metronidazole if fluoroquinolone resistance"
+        ],
+        "monitoring": [
+          "Monitor clinical response"
+        ],
+        "isAlternative": true
+      },
+      "mrsaCoverageAddition": {
+        "antibioticName": "Vancomycin + Piperacillin-Tazobactam",
+        "dose": "Vancomycin 15-20 mg/kg IV + Piperacillin-Tazobactam 3.375 g IV",
+        "route": "IV",
+        "timing": "Immediate initiation",
+        "duration": "4-7 days therapeutic course",
+        "redosingInterval": "Vancomycin every 8-12 hours, Piperacillin-Tazobactam every 6 hours",
+        "rationale": "MRSA coverage for high-risk patients or healthcare-associated infection",
+        "warnings": [
+          "Monitor vancomycin levels"
+        ],
+        "monitoring": [
+          "Vancomycin trough levels",
+          "Clinical response"
+        ],
+        "isAlternative": false
+      },
+      "specialConsiderations": [
+        "Therapeutic antibiotics for established infection, not prophylaxis",
+        "Hinchey Classification: III (purulent) or IV (fecal) peritonitis",
+        "Source control: resection with primary anastomosis vs Hartmann procedure",
+        "Duration: 4-7 days, extend if slow clinical response",
+        "Consider antifungal (fluconazole or echinocandin) if ICU >7 days",
+        "Transition to oral when tolerating diet and afebrile",
+        "High morbidity and mortality in elderly patients"
+      ],
+      "references": [
+        {
+          "label": "WSES Diverticular Disease Guidelines 2024",
+          "url": "https://wses.org.uk/guidelines/"
+        },
+        {
+          "label": "ASCRS Diverticulitis Guidelines 2024",
+          "url": "https://fascrs.org/guidelines"
+        }
+      ]
+    },
+    {
+      "id": "empyema-decortication",
+      "name": "Empyema with Surgical Decortication (Dirty/Infected)",
+      "specialty": "general",
+      "classification": "dirty",
+      "description": "Surgical drainage and decortication for empyema (infected pleural space)",
+      "primaryProphylaxis": {
+        "antibioticName": "Piperacillin-Tazobactam or Cefepime + Metronidazole",
+        "dose": "Piperacillin-Tazobactam 3.375 g IV or Cefepime 2 g IV + Metronidazole 500 mg IV",
+        "route": "IV",
+        "timing": "Immediate initiation (therapeutic, not prophylactic)",
+        "duration": "2-6 weeks therapeutic course based on clinical response and source",
+        "redosingInterval": "Piperacillin-Tazobactam every 6 hours, Cefepime every 8 hours, Metronidazole every 8 hours",
+        "rationale": "Therapeutic antibiotics for established pleural space infection; duration depends on adequacy of drainage",
+        "warnings": [
+          "This is therapeutic treatment for established infection",
+          "Adequate drainage is critical (chest tube or VATS/thoracotomy)",
+          "Culture-directed therapy once organisms identified",
+          "Prolonged course often needed (2-6 weeks)"
+        ],
+        "monitoring": [
+          "Monitor chest tube output and character",
+          "Serial chest X-rays or CT",
+          "Monitor for clinical improvement (fever, WBC, CRP)",
+          "Assess for bronchopleural fistula"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Ciprofloxacin + Metronidazole + Vancomycin",
+        "dose": "Ciprofloxacin 400 mg IV every 12 hours + Metronidazole 500 mg IV every 8 hours + Vancomycin 15 mg/kg IV",
+        "route": "IV",
+        "timing": "Immediate initiation",
+        "duration": "2-6 weeks therapeutic course",
+        "redosingInterval": "Ciprofloxacin every 12 hours, Metronidazole every 8 hours, Vancomycin every 8-12 hours",
+        "rationale": "Alternative for beta-lactam allergy with broad coverage",
+        "warnings": [
+          "Monitor vancomycin levels"
+        ],
+        "monitoring": [
+          "Vancomycin trough levels",
+          "Clinical response"
+        ],
+        "isAlternative": true
+      },
+      "mrsaCoverageAddition": {
+        "antibioticName": "Vancomycin + Piperacillin-Tazobactam",
+        "dose": "Vancomycin 15-20 mg/kg IV + Piperacillin-Tazobactam 3.375 g IV",
+        "route": "IV",
+        "timing": "Immediate initiation",
+        "duration": "2-6 weeks therapeutic course",
+        "redosingInterval": "Vancomycin every 8-12 hours, Piperacillin-Tazobactam every 6 hours",
+        "rationale": "MRSA coverage for healthcare-associated empyema or high-risk patients",
+        "warnings": [
+          "Monitor vancomycin levels closely"
+        ],
+        "monitoring": [
+          "Vancomycin trough levels (target 15-20 mcg/mL)",
+          "Clinical response"
+        ],
+        "isAlternative": false
+      },
+      "specialConsiderations": [
+        "Therapeutic antibiotics for established infection, not prophylaxis",
+        "Adequate drainage is critical: chest tube, VATS, or open decortication",
+        "Culture-directed therapy once organisms identified",
+        "Common organisms: Streptococcus, Staphylococcus, anaerobes, gram-negatives",
+        "Duration: 2-6 weeks based on adequacy of drainage and clinical response",
+        "Transition to oral when afebrile and chest tube removed",
+        "Consider antifungal if immunosuppressed or prolonged hospitalization"
+      ],
+      "references": [
+        {
+          "label": "BTS Pleural Disease Guidelines 2024",
+          "url": "https://www.brit-thoracic.org.uk/guidelines"
+        },
+        {
+          "label": "IDSA Pneumonia Guidelines 2024",
+          "url": "https://www.idsociety.org/practice-guideline/"
+        }
+      ]
+    },
+    {
+      "id": "fournier-gangrene",
+      "name": "Fournier Gangrene (Dirty/Infected)",
+      "specialty": "urologic",
+      "classification": "dirty",
+      "description": "Life-threatening necrotizing fasciitis of the perineum and genitalia",
+      "primaryProphylaxis": {
+        "antibioticName": "Vancomycin + Piperacillin-Tazobactam + Clindamycin",
+        "dose": "Vancomycin 15-20 mg/kg IV + Piperacillin-Tazobactam 3.375 g IV + Clindamycin 900 mg IV",
+        "route": "IV",
+        "timing": "Immediate initiation (life-threatening emergency)",
+        "duration": "Continue until no further debridement needed, patient improved, and afebrile for 48-72 hours",
+        "redosingInterval": "Vancomycin every 8-12 hours, Piperacillin-Tazobactam every 6 hours, Clindamycin every 8 hours",
+        "rationale": "Broad-spectrum coverage for polymicrobial infection (average 4-5 organisms); clindamycin inhibits toxin production",
+        "warnings": [
+          "SURGICAL EMERGENCY - immediate aggressive debridement is life-saving",
+          "Antibiotics are adjunctive - surgery is primary treatment",
+          "Repeat debridement often necessary (every 24-48 hours)",
+          "Very high mortality (20-50%) despite treatment",
+          "Fecal or urinary diversion may be necessary"
+        ],
+        "monitoring": [
+          "Monitor for septic shock and multi-organ failure",
+          "Assess wound daily for extent of necrosis",
+          "Monitor lactate, CRP, procalcitonin",
+          "Vancomycin trough levels",
+          "Assess for urethral or rectal involvement"
+        ],
+        "isAlternative": false
+      },
+      "betaLactamAllergyAlternative": {
+        "antibioticName": "Vancomycin + Aztreonam + Metronidazole + Clindamycin",
+        "dose": "Vancomycin 15-20 mg/kg IV + Aztreonam 2 g IV + Metronidazole 500 mg IV + Clindamycin 900 mg IV",
+        "route": "IV",
+        "timing": "Immediate initiation",
+        "duration": "Continue until no further debridement needed and patient improved",
+        "redosingInterval": "Vancomycin every 8-12 hours, Aztreonam every 8 hours, Metronidazole every 8 hours, Clindamycin every 8 hours",
+        "rationale": "Alternative for beta-lactam allergy with broad coverage",
+        "warnings": [
+          "Complex regimen - ensure all components given"
+        ],
+        "monitoring": [
+          "Monitor clinical response and organ function"
+        ],
+        "isAlternative": true
+      },
+      "mrsaCoverageAddition": {
+        "antibioticName": "Already included in primary regimen (Vancomycin)",
+        "dose": "Vancomycin 15-20 mg/kg IV",
+        "route": "IV",
+        "timing": "Immediate",
+        "duration": "As per primary regimen",
+        "redosingInterval": "Every 8-12 hours based on levels",
+        "rationale": "MRSA coverage already included",
+        "warnings": [
+          "Monitor vancomycin levels closely"
+        ],
+        "monitoring": [
+          "Vancomycin trough levels (target 15-20 mcg/mL)"
+        ],
+        "isAlternative": false
+      },
+      "specialConsiderations": [
+        "SURGICAL EMERGENCY - immediate wide debridement is life-saving",
+        "Antibiotics are adjunctive only - surgery is primary treatment",
+        "Polymicrobial infection: average 4-5 organisms (aerobes + anaerobes)",
+        "Clindamycin essential: inhibits toxin production",
+        "Repeat debridement often necessary every 24-48 hours until no further necrosis",
+        "Fecal diversion (colostomy) may be necessary if rectal involvement",
+        "Urinary diversion (suprapubic catheter) if urethral involvement",
+        "Hyperbaric oxygen: controversial, may be adjunctive",
+        "Very high mortality (20-50%) despite aggressive treatment",
+        "Risk factors: diabetes, immunosuppression, obesity, alcohol abuse"
+      ],
+      "references": [
+        {
+          "label": "AUA Fournier Gangrene Guidelines 2024",
+          "url": "https://www.auanet.org/guidelines"
+        },
+        {
+          "label": "IDSA Skin and Soft Tissue Infections Guidelines 2024",
+          "url": "https://www.idsociety.org/practice-guideline/"
+        }
+      ]
+    }
+  ]
+}
+

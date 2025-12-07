@@ -1,0 +1,1622 @@
+{
+  "version": 2,
+  "updatedAt": "2025-01-23T00:00:00Z",
+  "id": "urinary-genitourinary",
+  "name": "Urinary & Genitourinary Infections",
+  "description": "UTI, pyelonephritis, prostatitis, and GU infections",
+  "icon": "water_drop",
+  "color": "#00BCD4",
+  "conditions": [
+    {
+      "id": "uncomplicated-cystitis",
+      "name": "Uncomplicated Cystitis",
+      "synonyms": ["UTI", "bladder infection", "simple cystitis"],
+      "icd10": ["N30.00", "N30.90"],
+      "severity": ["mild"],
+      "shortDescription": "Acute bacterial infection of the bladder in non-pregnant women without structural/functional urinary tract abnormalities",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "clinical_presentation": "Dysuria, urinary frequency, urgency, suprapubic pain. No fever or flank pain (suggests pyelonephritis).",
+            "diagnostic_criteria": "Clinical symptoms + pyuria (≥10 WBC/hpf) or positive urine culture (≥10³ CFU/mL).",
+            "red_flags": [
+              "Fever >38°C (suggests pyelonephritis)",
+              "Flank pain (suggests upper tract involvement)",
+              "Pregnancy",
+              "Male patient (always considered complicated)",
+              "Immunosuppression"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Urinalysis (UA) recommended. Urine culture NOT routinely needed for uncomplicated cystitis in non-pregnant women.",
+            "when_not_to_test": "Do NOT culture asymptomatic bacteriuria (except in pregnancy or before urologic procedures)",
+            "essential_tests": [
+              "Urinalysis (dipstick or microscopy)",
+              "Urine culture (if recurrent UTI, treatment failure, or atypical presentation)"
+            ],
+            "conditional_tests": [
+              "Urine culture: If pregnant, male, recurrent UTI, or recent antibiotic use",
+              "Renal function tests: If concern for pyelonephritis or AKI"
+            ],
+            "specimen_collection": "Clean-catch midstream urine. Avoid catheterization unless necessary.",
+            "turnaround_time": "UA: 1 hour. Urine culture: 24-48 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": [
+              "Escherichia coli (75-95%)",
+              "Klebsiella pneumoniae",
+              "Proteus mirabilis",
+              "Staphylococcus saprophyticus (young women)"
+            ],
+            "resistance_patterns": "E. coli resistance to ampicillin: 30-50%. TMP-SMX resistance: 15-25% in many regions. Fluoroquinolone resistance: 10-20%.",
+            "mdro_risk_factors": [
+              "Recent antibiotic use (90 days)",
+              "Recent hospitalization",
+              "Recurrent UTIs",
+              "International travel"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": {
+              "preferred": "Nitrofurantoin 100mg PO BID x 5 days OR Trimethoprim-sulfamethoxazole DS PO BID x 3 days (if local resistance <20%)",
+              "alternative": "Fosfomycin 3g PO single dose"
+            },
+            "alternatives": "Beta-lactam allergy: Nitrofurantoin or fosfomycin. If TMP-SMX resistance >20%: Use nitrofurantoin or fosfomycin.",
+            "avoid_list": "Avoid fluoroquinolones for uncomplicated cystitis (reserve for complicated UTI/pyelonephritis)"
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "pathogen_specific": {
+              "E_coli_susceptible": "Continue empiric therapy if susceptible",
+              "ESBL_E_coli": "Nitrofurantoin (if susceptible) OR Fosfomycin",
+              "Enterococcus": "Amoxicillin 500mg PO TID OR Nitrofurantoin"
+            },
+            "de_escalation": "Switch to narrow-spectrum agent based on culture results",
+            "iv_to_po_switch": "Not applicable (oral therapy for uncomplicated cystitis)"
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard": "3-5 days for most agents",
+            "short_course": "TMP-SMX: 3 days. Nitrofurantoin: 5 days. Fosfomycin: Single dose.",
+            "prolonged": "7 days if slow response or risk factors for complicated UTI"
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "renal_dose": "Avoid nitrofurantoin if CrCl <30 mL/min. Adjust TMP-SMX for CrCl <30 mL/min.",
+            "pregnancy": "Preferred: Amoxicillin-clavulanate, cephalexin, nitrofurantoin (avoid in 3rd trimester). Avoid: TMP-SMX (1st trimester), fluoroquinolones.",
+            "recurrent_uti": "Consider prophylaxis (nitrofurantoin 50-100mg daily, TMP-SMX SS daily, or post-coital dosing)"
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "avoid_unnecessary_cultures": "Do NOT culture asymptomatic bacteriuria (except pregnancy or pre-procedure)",
+            "timeout_checklist": [
+              "Reassess at 48-72 hours if symptoms not improving",
+              "Review culture results if obtained",
+              "Avoid prolonged therapy (>5-7 days) unless complicated"
+            ],
+            "iv_to_po_opportunities": "Not applicable (oral therapy for uncomplicated cystitis)"
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Uncomplicated Cystitis Guidelines (2010, reaffirmed 2019)",
+              "url": "https://www.idsociety.org/practice-guideline/uncomplicated-cystitis-and-pyelonephritis-in-women/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            },
+            {
+              "label": "EAU Guidelines on Urological Infections (2024)",
+              "url": "https://uroweb.org/guidelines/urological-infections"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pyelonephritis",
+      "name": "Acute Pyelonephritis",
+      "synonyms": ["kidney infection", "upper UTI"],
+      "icd10": ["N10", "N12"],
+      "severity": ["moderate", "severe"],
+      "shortDescription": "Acute bacterial infection of the renal parenchyma and collecting system",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "clinical_presentation": "Fever, chills, flank pain, costovertebral angle tenderness, nausea/vomiting. May have dysuria and urinary frequency.",
+            "diagnostic_criteria": "Clinical symptoms + pyuria + positive urine culture (≥10⁴ CFU/mL).",
+            "red_flags": [
+              "Septic shock",
+              "Obstructive uropathy (requires urgent drainage)",
+              "Pregnancy",
+              "Immunosuppression",
+              "Renal abscess or emphysematous pyelonephritis"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "All patients: Urine culture before antibiotics. Blood cultures if hospitalized or severe.",
+            "essential_tests": [
+              "Urinalysis",
+              "Urine culture with susceptibilities",
+              "Blood cultures (2 sets) if hospitalized",
+              "CBC, CMP (assess renal function)"
+            ],
+            "conditional_tests": [
+              "CT abdomen/pelvis with contrast (if concern for abscess, obstruction, or emphysematous pyelonephritis)",
+              "Renal ultrasound (if CT contraindicated)"
+            ],
+            "turnaround_time": "Urine culture: 24-48 hours. Blood cultures: 24-48 hours. CT: Same day."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": [
+              "Escherichia coli (80-90%)",
+              "Klebsiella pneumoniae",
+              "Proteus mirabilis",
+              "Enterococcus spp."
+            ],
+            "resistance_patterns": "Similar to cystitis but higher rates of ESBL and fluoroquinolone resistance in hospitalized patients",
+            "mdro_risk_factors": [
+              "Recent hospitalization",
+              "Recent antibiotic use",
+              "Urologic abnormalities",
+              "Recurrent UTIs"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": {
+              "outpatient_mild": "Ciprofloxacin 500mg PO BID OR Levofloxacin 750mg PO daily (if local resistance <10%)",
+              "hospitalized_moderate": "Ceftriaxone 1-2g IV daily OR Cefepime 1-2g IV q8-12h",
+              "severe_septic": "Piperacillin-tazobactam 3.375g IV q6h OR Meropenem 1g IV q8h (if ESBL risk)"
+            },
+            "alternatives": "Fluoroquinolone allergy: Ceftriaxone or cefepime. ESBL risk: Meropenem or ertapenem.",
+            "avoid_list": "Avoid nitrofurantoin (does not achieve adequate tissue levels for pyelonephritis)"
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "pathogen_specific": {
+              "E_coli_susceptible": "Ciprofloxacin, levofloxacin, or ceftriaxone (based on susceptibility)",
+              "ESBL_E_coli": "Meropenem 1g IV q8h OR Ertapenem 1g IV daily",
+              "Enterococcus": "Ampicillin 2g IV q6h (if susceptible) OR Vancomycin (if VRE)"
+            },
+            "de_escalation": "Switch to oral fluoroquinolone or TMP-SMX once afebrile and clinically stable",
+            "iv_to_po_switch": "Criteria: Afebrile >24h, tolerating PO, clinically stable, pathogen susceptible to oral agent"
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard": "7-14 days total (IV + PO)",
+            "short_course": "7 days if uncomplicated and good response",
+            "prolonged": "14 days if bacteremia, delayed response, or complications"
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "renal_dose": "Adjust fluoroquinolones, beta-lactams for CrCl <30 mL/min",
+            "pregnancy": "Preferred: Ceftriaxone, cefepime. Avoid: Fluoroquinolones. Hospitalize all pregnant women with pyelonephritis.",
+            "obstruction": "Urgent urology consult for drainage (nephrostomy or stent) if obstructive uropathy"
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "timeout_checklist": [
+              "Review culture results at 48-72 hours",
+              "De-escalate to narrow-spectrum oral agent",
+              "Switch IV to PO when clinically stable",
+              "Reassess duration (avoid >14 days unless complicated)"
+            ],
+            "iv_to_po_opportunities": "Most patients can switch to PO by day 2-3 if afebrile and stable"
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Pyelonephritis Guidelines (2010, reaffirmed 2019)",
+              "url": "https://www.idsociety.org/practice-guideline/uncomplicated-cystitis-and-pyelonephritis-in-women/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            },
+            {
+              "label": "CDC Healthcare-Associated Infections - UTI",
+              "url": "https://www.cdc.gov/hai/ca_uti/uti.html"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "complicated-uti",
+      "name": "Complicated UTI",
+      "synonyms": ["cUTI", "complicated urinary tract infection"],
+      "icd10": ["N39.0", "N30.80"],
+      "severity": ["moderate", "severe"],
+      "shortDescription": "UTI in patients with structural/functional urinary tract abnormalities, immunosuppression, or healthcare-associated factors",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "UTI occurring in patients with factors that increase risk of treatment failure: structural/functional urinary tract abnormalities, immunosuppression, male sex, pregnancy, indwelling catheter, recent instrumentation, or healthcare-associated acquisition.",
+            "clinical_presentation": "Variable: May present like uncomplicated cystitis or pyelonephritis, but with higher risk of complications, bacteremia, and treatment failure. Symptoms: Dysuria, frequency, urgency, fever, flank pain.",
+            "diagnostic_criteria": "Clinical symptoms + pyuria + positive urine culture (≥10⁴ CFU/mL). Consider imaging if concern for obstruction or abscess.",
+            "red_flags": [
+              "Septic shock or hemodynamic instability",
+              "Obstructive uropathy (requires urgent drainage)",
+              "Renal abscess or emphysematous pyelonephritis",
+              "Immunosuppression (transplant, chemotherapy, HIV)",
+              "Persistent fever >72 hours despite antibiotics"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "ALWAYS obtain urine culture before antibiotics in complicated UTI. Blood cultures if hospitalized or severe.",
+            "essential_tests": [
+              "Urinalysis",
+              "Urine culture with susceptibilities (MANDATORY)",
+              "Blood cultures (2 sets) if hospitalized or severe",
+              "CBC, CMP (assess renal function, WBC)"
+            ],
+            "conditional_tests": [
+              "CT abdomen/pelvis with contrast: If concern for obstruction, abscess, emphysematous pyelonephritis, or no improvement in 72h",
+              "Renal ultrasound: If CT contraindicated or to assess for hydronephrosis",
+              "Post-void residual: If concern for urinary retention"
+            ],
+            "specimen_collection": "Midstream clean-catch preferred. If catheterized, obtain fresh specimen (not from bag).",
+            "turnaround_time": "Urine culture: 24-48 hours. Blood cultures: 24-48 hours. CT: Same day if urgent."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": [
+              "Escherichia coli (50-70%, lower than uncomplicated)",
+              "Klebsiella pneumoniae",
+              "Proteus mirabilis",
+              "Enterococcus spp. (especially VRE in healthcare-associated)",
+              "Pseudomonas aeruginosa (catheter, instrumentation)",
+              "Candida spp. (immunosuppressed, prolonged catheter)"
+            ],
+            "resistance_patterns": "Higher rates of ESBL (15-30%), fluoroquinolone resistance (20-40%), and multidrug resistance compared to uncomplicated UTI. Pseudomonas often resistant to fluoroquinolones and cephalosporins.",
+            "mdro_risk_factors": [
+              "Recent hospitalization (90 days)",
+              "Recent antibiotic use (90 days)",
+              "Indwelling catheter or urologic instrumentation",
+              "Recurrent UTIs",
+              "International travel (especially South Asia)",
+              "Known MDRO colonization"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": {
+              "mild_outpatient": "Ciprofloxacin 500mg PO BID OR Levofloxacin 750mg PO daily (if local resistance <10% and no recent fluoroquinolone use)",
+              "moderate_hospitalized": "Ceftriaxone 1-2g IV daily OR Cefepime 2g IV q8-12h",
+              "severe_or_ESBL_risk": "Meropenem 1g IV q8h OR Ertapenem 1g IV daily OR Piperacillin-tazobactam 3.375g IV q6h (if Pseudomonas risk)"
+            },
+            "alternatives": "Beta-lactam allergy: Aztreonam 1-2g IV q8h + vancomycin 15-20mg/kg IV q8-12h (for Gram-positive coverage). Fluoroquinolone allergy: Ceftriaxone or cefepime.",
+            "avoid_list": "Avoid nitrofurantoin (inadequate tissue levels for complicated UTI). Avoid fosfomycin (not FDA-approved for complicated UTI).",
+            "pseudomonas_coverage": "If risk factors (catheter, recent instrumentation, prior Pseudomonas): Use cefepime, piperacillin-tazobactam, or meropenem."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "pathogen_specific": {
+              "E_coli_susceptible": "Ciprofloxacin 500mg PO BID OR Levofloxacin 750mg PO daily OR Ceftriaxone 1g IV daily",
+              "ESBL_producing": "Meropenem 1g IV q8h OR Ertapenem 1g IV daily (preferred for ESBL)",
+              "Pseudomonas_aeruginosa": "Cefepime 2g IV q8h OR Piperacillin-tazobactam 3.375g IV q6h OR Meropenem 1g IV q8h (based on susceptibility)",
+              "Enterococcus": "Ampicillin 2g IV q6h (if susceptible) OR Vancomycin 15-20mg/kg IV q8-12h (if VRE or ampicillin-resistant)",
+              "Candida": "Fluconazole 400mg PO/IV daily (if susceptible) OR Micafungin 100mg IV daily (if azole-resistant)"
+            },
+            "de_escalation": "Switch to narrow-spectrum agent based on culture results. Avoid prolonged broad-spectrum therapy.",
+            "iv_to_po_switch": "Criteria: Afebrile >24-48h, tolerating PO, clinically stable, pathogen susceptible to oral agent with good bioavailability."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard": "7-14 days total (IV + PO)",
+            "short_course": "7 days if uncomplicated course and good response",
+            "prolonged": "14 days if bacteremia, delayed response, obstruction, abscess, or immunosuppression. Consider 21 days for renal abscess or emphysematous pyelonephritis."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "renal_dose": "Adjust all antibiotics for CrCl <30 mL/min. Avoid nitrofurantoin if CrCl <30 mL/min.",
+            "immunosuppression": "Longer duration (14 days). Consider fungal coverage if prolonged catheter or recent broad-spectrum antibiotics. Consult ID if transplant recipient.",
+            "obstruction": "URGENT urology consult for drainage (nephrostomy, stent, or Foley). Antibiotics alone will fail without source control.",
+            "catheter_management": "Remove or replace catheter if possible. Do NOT treat asymptomatic bacteriuria in catheterized patients unless pre-procedure.",
+            "male_patients": "All UTIs in men are considered complicated. Rule out prostatitis (tender prostate on exam, elevated PSA)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "timeout_checklist": [
+              "Review culture results at 48-72 hours and de-escalate",
+              "Switch IV to PO when clinically stable (usually day 2-4)",
+              "Reassess duration: Avoid >14 days unless abscess or bacteremia",
+              "Remove or replace catheter if possible",
+              "Imaging if no improvement in 72 hours"
+            ],
+            "iv_to_po_opportunities": "Most patients can switch to PO by day 2-4 if afebrile and stable. Oral options: Ciprofloxacin, levofloxacin, TMP-SMX (if susceptible).",
+            "avoid_unnecessary_treatment": "Do NOT treat asymptomatic bacteriuria (except pregnancy or pre-urologic procedure). Do NOT treat catheter colonization without symptoms."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Complicated UTI Guidelines (2010, updated 2019)",
+              "url": "https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections/"
+            },
+            {
+              "label": "EAU Guidelines on Urological Infections (2024)",
+              "url": "https://uroweb.org/guidelines/urological-infections"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "recurrent-uti",
+      "name": "Recurrent UTI",
+      "synonyms": ["rUTI", "recurrent cystitis", "frequent UTIs"],
+      "icd10": ["N30.90", "N39.0"],
+      "severity": ["mild", "moderate"],
+      "shortDescription": "≥2 UTIs in 6 months or ≥3 UTIs in 12 months in women",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Recurrent UTI (rUTI) defined as ≥2 UTIs in 6 months OR ≥3 UTIs in 12 months. Most are reinfections (new infection with different organism) rather than relapse (same organism).",
+            "clinical_presentation": "Typical cystitis symptoms: Dysuria, frequency, urgency, suprapubic pain. Recurrent episodes with similar symptoms. May have identifiable triggers (sexual activity, spermicide use, menopause).",
+            "diagnostic_criteria": "History of documented recurrent UTIs + current symptoms + pyuria or positive urine culture.",
+            "risk_factors": [
+              "Sexual activity (especially with spermicide use)",
+              "Postmenopausal status (estrogen deficiency)",
+              "History of UTI before age 15",
+              "Maternal history of UTI",
+              "Diabetes mellitus",
+              "Incomplete bladder emptying",
+              "Urinary incontinence"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Urine culture recommended for each episode to document infection and guide therapy. Consider urologic evaluation if ≥3 UTIs/year or risk factors for complications.",
+            "essential_tests": [
+              "Urinalysis",
+              "Urine culture with susceptibilities (for each episode)",
+              "Post-void residual (PVR) if concern for incomplete emptying"
+            ],
+            "conditional_tests": [
+              "Renal ultrasound: If concern for structural abnormality or stones",
+              "Cystoscopy: If hematuria, age >50, or concern for bladder pathology",
+              "Urodynamic studies: If urinary retention or neurogenic bladder suspected",
+              "Vaginal exam: If postmenopausal (assess for atrophic vaginitis)"
+            ],
+            "when_not_to_test": "Do NOT culture asymptomatic bacteriuria between episodes. Do NOT perform routine imaging in young women with typical rUTI.",
+            "turnaround_time": "Urine culture: 24-48 hours. Imaging: 1-7 days (non-urgent)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": [
+              "Escherichia coli (80-85%)",
+              "Klebsiella pneumoniae",
+              "Proteus mirabilis",
+              "Staphylococcus saprophyticus",
+              "Enterococcus spp."
+            ],
+            "resistance_patterns": "May have higher resistance rates due to repeated antibiotic exposure. TMP-SMX resistance: 20-30%. Fluoroquinolone resistance: 15-25%. Consider local antibiogram.",
+            "mdro_risk_factors": [
+              "Frequent antibiotic use",
+              "Recent hospitalization",
+              "International travel",
+              "Known MDRO colonization"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": {
+              "acute_episode": "Nitrofurantoin 100mg PO BID x 5 days OR TMP-SMX DS PO BID x 3 days (if local resistance <20% and no recent use)",
+              "alternative": "Fosfomycin 3g PO single dose OR Cephalexin 500mg PO QID x 5-7 days"
+            },
+            "alternatives": "If recent antibiotic use or known resistance: Base on prior culture results. Consider rotating antibiotic classes.",
+            "avoid_list": "Avoid fluoroquinolones for uncomplicated rUTI (reserve for complicated UTI/pyelonephritis). Avoid same antibiotic used in previous episode if <3 months."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "pathogen_specific": {
+              "E_coli_susceptible": "Continue empiric therapy if susceptible. Consider rotating antibiotic classes for future episodes.",
+              "multidrug_resistant": "Base on susceptibility testing. May require fluoroquinolone or beta-lactam if resistant to first-line agents.",
+              "ESBL_producing": "Nitrofurantoin (if susceptible) OR Fosfomycin OR Ertapenem 1g IV daily x 3-5 days (if severe)"
+            },
+            "de_escalation": "Switch to narrow-spectrum agent based on culture results.",
+            "iv_to_po_switch": "Not applicable (oral therapy for uncomplicated rUTI)"
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard": "3-7 days for acute episodes (same as uncomplicated cystitis)",
+            "short_course": "TMP-SMX: 3 days. Fosfomycin: Single dose.",
+            "prolonged": "Nitrofurantoin: 5-7 days. Consider 7 days if slow response."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "prophylaxis_indications": "Consider prophylaxis if ≥2 UTIs in 6 months or ≥3 UTIs in 12 months AND significantly impacting quality of life.",
+            "prophylaxis_options": {
+              "continuous": "Nitrofurantoin 50-100mg PO daily OR TMP-SMX SS (half-strength) PO daily OR Cephalexin 250mg PO daily. Duration: 6-12 months, then reassess.",
+              "post_coital": "Nitrofurantoin 50-100mg PO OR TMP-SMX SS PO OR Cephalexin 250mg PO within 2 hours after intercourse (if UTIs related to sexual activity)",
+              "self_start_therapy": "Patient-initiated therapy at first symptom (for reliable patients with typical symptoms)"
+            },
+            "non_antibiotic_prevention": [
+              "Increase fluid intake (1.5-2L/day)",
+              "Void after intercourse",
+              "Avoid spermicides",
+              "Cranberry products (modest benefit, 36-72mg PAC daily)",
+              "Vaginal estrogen (postmenopausal women): Estriol 0.5mg intravaginal 2x/week",
+              "D-mannose 2g daily (emerging evidence)",
+              "Methenamine hippurate 1g PO BID (if urine pH <6)"
+            ],
+            "postmenopausal_women": "Vaginal estrogen therapy (estriol cream or ring) reduces rUTI by 50-75%. Preferred over antibiotic prophylaxis in postmenopausal women."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "timeout_checklist": [
+              "Reassess need for prophylaxis after 6-12 months",
+              "Encourage non-antibiotic prevention strategies",
+              "Avoid prolonged antibiotic prophylaxis (>12 months) without reassessment",
+              "Consider vaginal estrogen in postmenopausal women before antibiotic prophylaxis"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT treat asymptomatic bacteriuria between episodes. Do NOT use prophylaxis for <2 UTIs in 6 months.",
+            "patient_education": "Educate on behavioral modifications: Hydration, post-coital voiding, avoid spermicides, cranberry products, vaginal estrogen (if postmenopausal)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "AUA Recurrent UTI Guidelines (2019)",
+              "url": "https://www.auanet.org/guidelines/recurrent-uti"
+            },
+            {
+              "label": "IDSA Uncomplicated Cystitis Guidelines (2010, reaffirmed 2019)",
+              "url": "https://www.idsociety.org/practice-guideline/uncomplicated-cystitis-and-pyelonephritis-in-women/"
+            },
+            {
+              "label": "Cochrane Review: Cranberry for Preventing UTIs (2023)",
+              "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD001321.pub6/full"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cauti",
+      "name": "Catheter-Associated UTI (CAUTI)",
+      "synonyms": ["CAUTI", "catheter UTI", "catheter-related infection"],
+      "icd10": ["N39.0", "T83.51XA"],
+      "severity": ["moderate", "severe"],
+      "shortDescription": "Symptomatic UTI in patient with indwelling urinary catheter or catheter removed within 48 hours",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "CAUTI is a UTI occurring in a patient with an indwelling urinary catheter (Foley, suprapubic, or intermittent catheterization) OR within 48 hours of catheter removal, with symptoms attributable to the UTI.",
+            "clinical_presentation": "Fever (>38°C), suprapubic tenderness, costovertebral angle tenderness, altered mental status (especially elderly), rigors, or new-onset delirium. NOTE: Cloudy or foul-smelling urine alone is NOT sufficient for diagnosis.",
+            "diagnostic_criteria": "Indwelling catheter (or removed <48h) + symptoms (fever, suprapubic pain, CVA tenderness, delirium) + pyuria (≥10 WBC/hpf) + positive urine culture (≥10³ CFU/mL of ≥1 bacterial species).",
+            "red_flags": [
+              "Septic shock or hemodynamic instability",
+              "Obstructive uropathy",
+              "Immunosuppression",
+              "Persistent fever >72 hours despite antibiotics",
+              "Bacteremia (positive blood cultures)"
+            ],
+            "do_not_treat": "Asymptomatic bacteriuria (catheter colonization) - Do NOT treat unless patient is undergoing urologic procedure or is pregnant."
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "ONLY test if patient has symptoms. Do NOT screen for asymptomatic bacteriuria in catheterized patients.",
+            "essential_tests": [
+              "Urinalysis (from fresh catheter specimen, NOT from bag)",
+              "Urine culture with susceptibilities (MANDATORY before antibiotics)",
+              "Blood cultures (2 sets) if fever or severe",
+              "CBC, CMP (assess renal function, WBC)"
+            ],
+            "conditional_tests": [
+              "CT abdomen/pelvis: If no improvement in 72h or concern for abscess/obstruction",
+              "Renal ultrasound: If CT contraindicated"
+            ],
+            "specimen_collection": "Obtain urine from catheter port (NOT from drainage bag). If long-term catheter, consider replacing catheter before obtaining specimen.",
+            "turnaround_time": "Urine culture: 24-48 hours. Blood cultures: 24-48 hours.",
+            "interpretation": "Pyuria is ALWAYS present with catheter. Positive culture alone (without symptoms) = colonization, NOT infection."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": [
+              "Escherichia coli (30-50%, lower than community UTI)",
+              "Klebsiella pneumoniae",
+              "Proteus mirabilis",
+              "Enterococcus spp. (especially VRE)",
+              "Pseudomonas aeruginosa (15-20%)",
+              "Candida spp. (5-10%, especially if prolonged catheter or antibiotics)"
+            ],
+            "polymicrobial": "30-40% of CAUTI are polymicrobial. Treat all significant pathogens.",
+            "resistance_patterns": "High rates of multidrug resistance: ESBL (20-30%), fluoroquinolone resistance (30-50%), VRE (10-20%). Pseudomonas often resistant to fluoroquinolones and cephalosporins.",
+            "mdro_risk_factors": [
+              "Prolonged catheterization (>7 days)",
+              "Recent hospitalization or nursing home residence",
+              "Recent antibiotic use (90 days)",
+              "Known MDRO colonization",
+              "ICU admission"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": {
+              "mild_moderate": "Ceftriaxone 1-2g IV daily OR Cefepime 2g IV q8-12h (covers Pseudomonas)",
+              "severe_or_MDRO_risk": "Piperacillin-tazobactam 3.375g IV q6h OR Meropenem 1g IV q8h (if ESBL risk or recent carbapenem-resistant organism)"
+            },
+            "enterococcal_coverage": "Add vancomycin 15-20mg/kg IV q8-12h if risk factors for VRE (prolonged hospitalization, prior VRE, ICU) OR if Gram-positive cocci in urine Gram stain.",
+            "alternatives": "Beta-lactam allergy: Aztreonam 1-2g IV q8h (Gram-negative) + vancomycin 15-20mg/kg IV q8-12h (Gram-positive).",
+            "avoid_list": "Avoid nitrofurantoin (inadequate tissue levels). Avoid fosfomycin (not FDA-approved for CAUTI). Avoid fluoroquinolones as empiric therapy (high resistance rates).",
+            "candida_coverage": "If Candida in urine culture + symptoms + no other pathogen: Fluconazole 400mg PO/IV daily (if susceptible) OR Micafungin 100mg IV daily (if azole-resistant or critically ill)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "pathogen_specific": {
+              "E_coli_susceptible": "Ceftriaxone 1g IV daily OR Ciprofloxacin 400mg IV q12h (if susceptible)",
+              "ESBL_producing": "Meropenem 1g IV q8h OR Ertapenem 1g IV daily",
+              "Pseudomonas_aeruginosa": "Cefepime 2g IV q8h OR Piperacillin-tazobactam 3.375g IV q6h OR Meropenem 1g IV q8h (based on susceptibility)",
+              "Enterococcus_faecalis": "Ampicillin 2g IV q6h (if susceptible)",
+              "VRE": "Linezolid 600mg PO/IV q12h OR Daptomycin 6mg/kg IV daily",
+              "Candida": "Fluconazole 400mg PO/IV daily (if susceptible) OR Micafungin 100mg IV daily"
+            },
+            "de_escalation": "Switch to narrow-spectrum agent based on culture results. Discontinue vancomycin if no VRE.",
+            "iv_to_po_switch": "Criteria: Afebrile >24-48h, tolerating PO, clinically stable, pathogen susceptible to oral agent. Options: Ciprofloxacin, levofloxacin, TMP-SMX, fluconazole (for Candida)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard": "7 days if prompt resolution and catheter removed",
+            "short_course": "5-7 days if catheter removed and good response",
+            "prolonged": "10-14 days if catheter remains in place, delayed response, or bacteremia. Consider 14 days for Pseudomonas or Candida."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "catheter_management": "REMOVE or REPLACE catheter as soon as possible. Antibiotics alone (without catheter removal) have higher failure rates. If catheter must remain, replace it before starting antibiotics.",
+            "source_control": "Catheter removal is the most important intervention. Consider alternatives: Intermittent catheterization, condom catheter (men), or bladder training.",
+            "renal_dose": "Adjust all antibiotics for CrCl <30 mL/min.",
+            "immunosuppression": "Longer duration (10-14 days). Consider fungal coverage if prolonged catheter or recent broad-spectrum antibiotics.",
+            "spinal_cord_injury": "Higher risk of CAUTI. Consider intermittent catheterization instead of indwelling catheter. Do NOT treat asymptomatic bacteriuria."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "timeout_checklist": [
+              "Review culture results at 48-72 hours and de-escalate",
+              "REMOVE catheter if no longer needed (most important intervention)",
+              "Switch IV to PO when clinically stable (usually day 2-4)",
+              "Reassess duration: 7 days if catheter removed, 10-14 days if remains",
+              "Discontinue vancomycin if no VRE"
+            ],
+            "iv_to_po_opportunities": "Most patients can switch to PO by day 2-4 if afebrile and stable. Oral options: Ciprofloxacin, levofloxacin, TMP-SMX (if susceptible).",
+            "avoid_unnecessary_treatment": "Do NOT treat asymptomatic bacteriuria (catheter colonization). Do NOT culture urine without symptoms. Do NOT use prophylactic antibiotics in catheterized patients.",
+            "prevention": [
+              "Use catheters only when necessary (avoid for incontinence or convenience)",
+              "Remove catheters as soon as possible",
+              "Maintain closed drainage system",
+              "Hand hygiene before catheter manipulation",
+              "Consider alternatives: Intermittent catheterization, condom catheter"
+            ]
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA CAUTI Guidelines (2009, updated 2019)",
+              "url": "https://www.idsociety.org/practice-guideline/catheter-associated-urinary-tract-infections/"
+            },
+            {
+              "label": "CDC CAUTI Prevention Guidelines (2024)",
+              "url": "https://www.cdc.gov/hai/ca_uti/uti.html"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "acute-prostatitis",
+      "name": "Acute Bacterial Prostatitis",
+      "synonyms": ["ABP", "acute prostatitis", "prostate infection"],
+      "icd10": ["N41.0"],
+      "severity": ["moderate", "severe"],
+      "shortDescription": "Acute bacterial infection of the prostate gland in men",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Acute bacterial prostatitis (ABP) is an acute infection of the prostate gland, typically presenting with fever, pelvic pain, and urinary symptoms. Can progress to sepsis if untreated.",
+            "clinical_presentation": "Fever, chills, dysuria, urinary frequency/urgency, perineal or suprapubic pain, low back pain, myalgias. May have urinary retention. Digital rectal exam (DRE): Tender, boggy, swollen prostate (AVOID vigorous exam - risk of bacteremia).",
+            "diagnostic_criteria": "Clinical symptoms + tender prostate on DRE + pyuria + positive urine culture. Elevated PSA (not diagnostic, returns to baseline after treatment).",
+            "red_flags": [
+              "Septic shock or hemodynamic instability",
+              "Acute urinary retention (requires catheterization)",
+              "Prostatic abscess (suspect if persistent fever >72h despite antibiotics)",
+              "Immunosuppression",
+              "Recent urologic instrumentation"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "All patients: Urine culture before antibiotics. Blood cultures if hospitalized or severe. AVOID vigorous prostate massage (risk of bacteremia).",
+            "essential_tests": [
+              "Urinalysis",
+              "Urine culture with susceptibilities (MANDATORY)",
+              "Blood cultures (2 sets) if fever or severe",
+              "CBC, CMP (assess renal function, WBC)",
+              "PSA (elevated in acute phase, recheck after treatment)"
+            ],
+            "conditional_tests": [
+              "Transrectal ultrasound (TRUS) or CT pelvis: If concern for prostatic abscess (persistent fever >72h)",
+              "Post-void residual: If concern for urinary retention",
+              "STI testing (gonorrhea, chlamydia): If age <35 or sexually active"
+            ],
+            "specimen_collection": "Midstream urine (pre-massage). AVOID vigorous prostate massage in acute phase.",
+            "turnaround_time": "Urine culture: 24-48 hours. Blood cultures: 24-48 hours. Imaging: Same day if abscess suspected."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": [
+              "Escherichia coli (75-80%)",
+              "Klebsiella pneumoniae",
+              "Proteus mirabilis",
+              "Enterococcus spp.",
+              "Pseudomonas aeruginosa (especially if recent instrumentation)",
+              "Neisseria gonorrhoeae, Chlamydia trachomatis (if age <35 or STI risk)"
+            ],
+            "resistance_patterns": "Similar to complicated UTI. Fluoroquinolone resistance: 15-25%. ESBL: 10-20% (higher if healthcare-associated).",
+            "mdro_risk_factors": [
+              "Recent hospitalization or urologic instrumentation",
+              "Recent antibiotic use (90 days)",
+              "Recurrent prostatitis",
+              "Known MDRO colonization"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": {
+              "outpatient_mild": "Ciprofloxacin 500mg PO BID OR Levofloxacin 750mg PO daily (fluoroquinolones have excellent prostate penetration)",
+              "hospitalized_moderate": "Ceftriaxone 1-2g IV daily + Doxycycline 100mg PO/IV BID (if STI risk) OR Ciprofloxacin 400mg IV q12h",
+              "severe_septic": "Piperacillin-tazobactam 3.375g IV q6h OR Ceftriaxone 2g IV daily + Gentamicin 5-7mg/kg IV daily"
+            },
+            "sti_coverage": "If age <35 or sexually active: Add doxycycline 100mg PO BID OR ceftriaxone 500mg IM single dose (for gonorrhea).",
+            "alternatives": "Fluoroquinolone allergy: TMP-SMX DS PO BID (good prostate penetration) OR Doxycycline 100mg PO BID.",
+            "avoid_list": "Avoid nitrofurantoin (poor prostate penetration). Avoid fosfomycin (inadequate prostate levels)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "pathogen_specific": {
+              "E_coli_susceptible": "Ciprofloxacin 500mg PO BID OR Levofloxacin 750mg PO daily OR TMP-SMX DS PO BID (if susceptible)",
+              "ESBL_producing": "Meropenem 1g IV q8h OR Ertapenem 1g IV daily (then switch to PO if susceptible to ciprofloxacin or TMP-SMX)",
+              "Pseudomonas_aeruginosa": "Ciprofloxacin 400mg IV q12h OR Cefepime 2g IV q8h (based on susceptibility)",
+              "Enterococcus": "Ampicillin 2g IV q6h (if susceptible) OR Vancomycin 15-20mg/kg IV q8-12h (if VRE)",
+              "Gonorrhea": "Ceftriaxone 500mg IM single dose + Doxycycline 100mg PO BID x 10 days",
+              "Chlamydia": "Doxycycline 100mg PO BID x 10-14 days"
+            },
+            "de_escalation": "Switch to oral fluoroquinolone or TMP-SMX once afebrile and clinically stable.",
+            "iv_to_po_switch": "Criteria: Afebrile >24-48h, tolerating PO, clinically stable, pathogen susceptible to oral agent with good prostate penetration."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard": "4-6 weeks total (IV + PO) - Prolonged duration needed for prostate penetration and eradication",
+            "short_course": "4 weeks if uncomplicated and good response",
+            "prolonged": "6 weeks if bacteremia, delayed response, or prostatic abscess. Consider 8-12 weeks if abscess drained."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "urinary_retention": "If acute urinary retention: Place suprapubic catheter (preferred) OR Foley catheter. Avoid urethral catheterization if possible (risk of bacteremia).",
+            "prostatic_abscess": "Suspect if persistent fever >72h despite antibiotics. Diagnosis: TRUS or CT pelvis. Treatment: Drainage (TRUS-guided aspiration or TURP) + prolonged antibiotics (6-8 weeks).",
+            "renal_dose": "Adjust fluoroquinolones, TMP-SMX for CrCl <30 mL/min.",
+            "sti_risk": "If age <35 or sexually active: Test for gonorrhea and chlamydia. Treat empirically if high suspicion.",
+            "recurrence": "If recurrent ABP: Consider chronic bacterial prostatitis. Longer duration (6-12 weeks) and urologic evaluation."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "timeout_checklist": [
+              "Review culture results at 48-72 hours and de-escalate",
+              "Switch IV to PO when clinically stable (usually day 2-4)",
+              "Ensure total duration is 4-6 weeks (prostate penetration requires prolonged therapy)",
+              "Imaging if no improvement in 72 hours (rule out abscess)",
+              "Recheck PSA after treatment (should normalize)"
+            ],
+            "iv_to_po_opportunities": "Most patients can switch to PO by day 2-4 if afebrile and stable. Oral options: Ciprofloxacin, levofloxacin, TMP-SMX (if susceptible).",
+            "avoid_unnecessary_treatment": "Do NOT treat asymptomatic bacteriuria. Do NOT use short-course therapy (<4 weeks) - high relapse rate."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Prostatitis Guidelines (2015)",
+              "url": "https://www.idsociety.org/practice-guideline/prostatitis/"
+            },
+            {
+              "label": "EAU Guidelines on Urological Infections (2024)",
+              "url": "https://uroweb.org/guidelines/urological-infections"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "chronic-prostatitis",
+      "name": "Chronic Bacterial Prostatitis",
+      "synonyms": ["CBP", "chronic prostatitis", "recurrent prostatitis"],
+      "icd10": ["N41.1"],
+      "severity": ["mild", "moderate"],
+      "shortDescription": "Chronic or recurrent bacterial infection of the prostate gland",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Chronic bacterial prostatitis (CBP) is a recurrent or persistent bacterial infection of the prostate, characterized by recurrent UTIs with the same organism. Accounts for 5-10% of chronic prostatitis cases.",
+            "clinical_presentation": "Recurrent UTIs (same organism), pelvic/perineal pain, dysuria, urinary frequency/urgency, low back pain, post-ejaculatory pain. Symptoms are typically less severe than acute prostatitis. DRE: May be normal or show mild tenderness.",
+            "diagnostic_criteria": "Recurrent UTIs with same organism + positive post-prostate massage urine culture (≥10-fold higher CFU than pre-massage urine). Symptoms >3 months.",
+            "differential_diagnosis": [
+              "Chronic pelvic pain syndrome (CPPS) - Most common (90-95% of chronic prostatitis)",
+              "Benign prostatic hyperplasia (BPH)",
+              "Bladder cancer",
+              "Urethral stricture",
+              "Interstitial cystitis"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Obtain urine culture before and after prostate massage (Meares-Stamey 4-glass test or simplified 2-glass test). Culture during symptomatic episodes.",
+            "essential_tests": [
+              "Pre-massage urine culture (VB1 or VB2)",
+              "Post-prostate massage urine culture (VB3 or expressed prostatic secretions)",
+              "Urinalysis",
+              "PSA (may be elevated, recheck after treatment)"
+            ],
+            "conditional_tests": [
+              "Transrectal ultrasound (TRUS): If concern for prostatic calculi or abscess",
+              "Cystoscopy: If hematuria or concern for bladder pathology",
+              "Urodynamic studies: If voiding dysfunction",
+              "STI testing: If age <35 or sexually active"
+            ],
+            "meares_stamey_test": "4-glass test: VB1 (first 10mL urine), VB2 (midstream urine), EPS (expressed prostatic secretions after massage), VB3 (first 10mL urine after massage). CBP: VB3 or EPS has ≥10-fold higher CFU than VB1/VB2.",
+            "turnaround_time": "Urine culture: 24-48 hours. Imaging: 1-7 days (non-urgent)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": [
+              "Escherichia coli (65-80%)",
+              "Klebsiella pneumoniae",
+              "Proteus mirabilis",
+              "Enterococcus spp.",
+              "Pseudomonas aeruginosa (less common)",
+              "Enterobacter spp."
+            ],
+            "resistance_patterns": "Higher resistance rates due to repeated antibiotic exposure. Fluoroquinolone resistance: 20-30%. TMP-SMX resistance: 15-25%.",
+            "mdro_risk_factors": [
+              "Frequent antibiotic use",
+              "Recurrent UTIs",
+              "Recent hospitalization or instrumentation",
+              "Known MDRO colonization"
+            ],
+            "biofilm_formation": "Bacteria in prostate may form biofilms, making eradication difficult. Prostatic calculi can harbor bacteria."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": {
+              "preferred": "Ciprofloxacin 500mg PO BID OR Levofloxacin 750mg PO daily (fluoroquinolones have excellent prostate penetration)",
+              "alternative": "TMP-SMX DS PO BID (if local resistance <20% and no recent use)"
+            },
+            "alternatives": "Doxycycline 100mg PO BID (if fluoroquinolone allergy or resistance). Azithromycin 500mg PO daily (if intolerant to other agents).",
+            "avoid_list": "Avoid nitrofurantoin (poor prostate penetration). Avoid fosfomycin (inadequate prostate levels). Avoid beta-lactams (poor prostate penetration except in acute inflammation)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "pathogen_specific": {
+              "E_coli_susceptible": "Ciprofloxacin 500mg PO BID OR Levofloxacin 750mg PO daily OR TMP-SMX DS PO BID (if susceptible)",
+              "fluoroquinolone_resistant": "TMP-SMX DS PO BID (if susceptible) OR Doxycycline 100mg PO BID",
+              "ESBL_producing": "Difficult to treat. Consider prolonged course of ciprofloxacin or TMP-SMX if susceptible. May require IV ertapenem 1g daily x 2-4 weeks then PO suppression.",
+              "Enterococcus": "Amoxicillin 500mg PO TID OR Doxycycline 100mg PO BID",
+              "Pseudomonas": "Ciprofloxacin 500-750mg PO BID (if susceptible). May require IV therapy initially."
+            },
+            "de_escalation": "Switch to narrow-spectrum agent based on culture results.",
+            "iv_to_po_switch": "Rarely need IV therapy for CBP (unlike acute prostatitis). Use PO agents with good prostate penetration."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard": "6-12 weeks (prolonged duration needed for prostate penetration and biofilm eradication)",
+            "short_course": "6 weeks minimum (shorter courses have high relapse rates)",
+            "prolonged": "12 weeks if recurrent or persistent symptoms. Some patients may require suppressive therapy (low-dose daily antibiotics) if recurrent despite adequate treatment.",
+            "suppressive_therapy": "If ≥3 relapses despite adequate treatment: Consider long-term suppressive therapy with ciprofloxacin 250mg PO daily OR TMP-SMX SS PO daily. Reassess every 6-12 months."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "renal_dose": "Adjust fluoroquinolones, TMP-SMX for CrCl <30 mL/min.",
+            "prostatic_calculi": "Prostatic stones can harbor bacteria and prevent eradication. Consider TURP if recurrent despite adequate antibiotics.",
+            "alpha_blockers": "Consider adding alpha-blocker (tamsulosin 0.4mg PO daily) to improve urinary symptoms and prostate drainage. May improve antibiotic penetration.",
+            "nsaids": "NSAIDs (ibuprofen, naproxen) may help with pelvic pain and inflammation.",
+            "pelvic_floor_therapy": "Consider pelvic floor physical therapy if chronic pelvic pain persists despite antibiotics (may have CPPS component).",
+            "surgical_options": "TURP (transurethral resection of prostate) may be considered if recurrent despite medical therapy, especially if prostatic calculi present."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "timeout_checklist": [
+              "Review culture results and de-escalate to narrow-spectrum agent",
+              "Ensure adequate duration (6-12 weeks minimum)",
+              "Reassess at 6 weeks: If symptoms persist, consider longer course or urologic evaluation",
+              "Avoid repeated short courses (<6 weeks) - high relapse rate",
+              "Consider suppressive therapy only if ≥3 relapses despite adequate treatment"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT treat asymptomatic bacteriuria. Do NOT use short-course therapy (<6 weeks). Distinguish CBP from chronic pelvic pain syndrome (CPPS) - CPPS does NOT require antibiotics.",
+            "patient_education": "Educate on prolonged treatment duration (6-12 weeks). Advise on symptom management (alpha-blockers, NSAIDs, pelvic floor therapy). Discuss risk of relapse and need for follow-up."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Prostatitis Guidelines (2015)",
+              "url": "https://www.idsociety.org/practice-guideline/prostatitis/"
+            },
+            {
+              "label": "EAU Guidelines on Urological Infections (2024)",
+              "url": "https://uroweb.org/guidelines/urological-infections"
+            },
+            {
+              "label": "AUA Chronic Prostatitis Guidelines (2018)",
+              "url": "https://www.auanet.org/guidelines/chronic-prostatitis"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "uti-pregnancy",
+      "name": "UTI in Pregnancy",
+      "synonyms": ["pregnancy UTI", "gestational UTI", "asymptomatic bacteriuria in pregnancy"],
+      "icd10": ["O23.4", "O23.0", "O23.1"],
+      "severity": ["mild", "moderate", "severe"],
+      "shortDescription": "Urinary tract infections during pregnancy, including asymptomatic bacteriuria, cystitis, and pyelonephritis",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "UTI in pregnancy includes: (1) Asymptomatic bacteriuria (ASB): ≥10⁵ CFU/mL without symptoms, (2) Acute cystitis: Symptomatic bladder infection, (3) Acute pyelonephritis: Upper tract infection with fever. Pregnancy increases risk of progression from ASB to pyelonephritis (20-40% if untreated).",
+            "clinical_presentation": {
+              "asymptomatic_bacteriuria": "NO symptoms. Detected on routine prenatal screening urine culture.",
+              "acute_cystitis": "Dysuria, frequency, urgency, suprapubic pain. NO fever or flank pain.",
+              "acute_pyelonephritis": "Fever, chills, flank pain, nausea/vomiting, costovertebral angle tenderness. May have contractions or preterm labor."
+            },
+            "diagnostic_criteria": "ASB: ≥10⁵ CFU/mL on 2 consecutive cultures without symptoms. Cystitis: Symptoms + pyuria + positive culture. Pyelonephritis: Fever + flank pain + pyuria + positive culture.",
+            "red_flags": [
+              "Preterm labor or contractions",
+              "Septic shock",
+              "Acute respiratory distress (rare complication of pyelonephritis in pregnancy)",
+              "Persistent fever >72 hours despite antibiotics",
+              "Fetal distress"
+            ],
+            "complications": "Untreated ASB → pyelonephritis (20-40%), preterm birth, low birth weight, perinatal mortality. Pyelonephritis → preterm labor, sepsis, ARDS (rare)."
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "SCREEN all pregnant women for ASB at first prenatal visit (12-16 weeks) with urine culture. Repeat if high risk. Test for symptomatic UTI anytime during pregnancy.",
+            "essential_tests": [
+              "Urine culture with susceptibilities (MANDATORY for all pregnant women at first visit)",
+              "Urinalysis (if symptomatic)",
+              "CBC, CMP (if pyelonephritis)",
+              "Blood cultures (2 sets) if pyelonephritis"
+            ],
+            "conditional_tests": [
+              "Renal ultrasound: If pyelonephritis not improving in 72h or concern for obstruction",
+              "Fetal monitoring: If preterm labor or fetal distress",
+              "Repeat urine culture: 1-2 weeks after treatment (test of cure)"
+            ],
+            "specimen_collection": "Clean-catch midstream urine. Avoid catheterization unless necessary.",
+            "turnaround_time": "Urine culture: 24-48 hours. Blood cultures: 24-48 hours.",
+            "screening_recommendation": "USPSTF Grade A recommendation: Screen all pregnant women for ASB at 12-16 weeks gestation."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": [
+              "Escherichia coli (80-90%)",
+              "Klebsiella pneumoniae",
+              "Proteus mirabilis",
+              "Enterococcus spp.",
+              "Group B Streptococcus (GBS) - Important in pregnancy"
+            ],
+            "resistance_patterns": "Similar to non-pregnant women. Ampicillin resistance: 30-50%. TMP-SMX resistance: 15-25%.",
+            "gbs_colonization": "Group B Streptococcus (GBS) bacteriuria at any time during pregnancy = heavy colonization. Requires intrapartum antibiotic prophylaxis (IAP) during labor."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "asymptomatic_bacteriuria": {
+              "first_line": "Nitrofurantoin 100mg PO BID x 5-7 days (AVOID in 3rd trimester, especially >36 weeks) OR Amoxicillin-clavulanate 500mg PO TID x 5-7 days OR Cephalexin 500mg PO QID x 5-7 days",
+              "alternative": "Fosfomycin 3g PO single dose (if susceptible)"
+            },
+            "acute_cystitis": {
+              "first_line": "Nitrofurantoin 100mg PO BID x 5-7 days (AVOID in 3rd trimester) OR Amoxicillin-clavulanate 500mg PO TID x 5-7 days OR Cephalexin 500mg PO QID x 5-7 days",
+              "alternative": "Fosfomycin 3g PO single dose"
+            },
+            "acute_pyelonephritis": {
+              "hospitalized": "Ceftriaxone 1-2g IV daily OR Cefepime 1-2g IV q8-12h OR Ampicillin 2g IV q6h + Gentamicin 5mg/kg IV daily (if severe)",
+              "outpatient_mild": "Ceftriaxone 1g IV daily x 1-2 days, then cephalexin 500mg PO QID (if improving and afebrile)"
+            },
+            "avoid_list": "AVOID: Fluoroquinolones (teratogenic), TMP-SMX in 1st trimester (neural tube defects) and 3rd trimester (kernicterus), nitrofurantoin in 3rd trimester >36 weeks (hemolytic anemia in newborn), tetracyclines (bone/teeth effects).",
+            "safe_in_pregnancy": "Safe: Penicillins, cephalosporins, fosfomycin, nitrofurantoin (except 3rd trimester), aztreonam."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "pathogen_specific": {
+              "E_coli_susceptible": "Amoxicillin 500mg PO TID OR Cephalexin 500mg PO QID OR Nitrofurantoin 100mg PO BID (if <36 weeks)",
+              "ampicillin_resistant": "Amoxicillin-clavulanate 500mg PO TID OR Cephalexin 500mg PO QID",
+              "ESBL_producing": "Difficult in pregnancy. Consider IV ertapenem 1g daily (limited data but likely safe) OR prolonged ceftriaxone if susceptible.",
+              "Enterococcus": "Ampicillin 500mg PO QID OR Amoxicillin 500mg PO TID",
+              "GBS": "Ampicillin 500mg PO QID x 5-7 days. NOTE: GBS bacteriuria = heavy colonization, requires intrapartum antibiotic prophylaxis (IAP) during labor."
+            },
+            "de_escalation": "Switch to narrow-spectrum agent based on culture results.",
+            "iv_to_po_switch": "Criteria (pyelonephritis): Afebrile >24-48h, tolerating PO, no contractions, fetal well-being confirmed."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "asymptomatic_bacteriuria": "5-7 days (longer than non-pregnant women)",
+            "acute_cystitis": "5-7 days (longer than non-pregnant women)",
+            "acute_pyelonephritis": "10-14 days total (IV + PO). Hospitalize all pregnant women with pyelonephritis.",
+            "test_of_cure": "MANDATORY: Repeat urine culture 1-2 weeks after treatment completion. If positive, retreat and consider suppressive therapy."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "hospitalization": "HOSPITALIZE all pregnant women with pyelonephritis. Consider hospitalization for cystitis if unable to tolerate PO, dehydration, or preterm labor.",
+            "fetal_monitoring": "Monitor fetal well-being if pyelonephritis or preterm labor. Consider tocolytics if contractions.",
+            "suppressive_therapy": "If recurrent UTI (≥2 episodes) or persistent ASB after 2 treatment courses: Consider suppressive therapy with nitrofurantoin 50-100mg PO daily OR cephalexin 250mg PO daily until delivery (AVOID nitrofurantoin after 36 weeks).",
+            "gbs_management": "If GBS bacteriuria detected: Treat with appropriate antibiotic + intrapartum antibiotic prophylaxis (IAP) during labor (penicillin G 5 million units IV load, then 2.5-3 million units IV q4h until delivery).",
+            "postpartum": "Reassess need for suppressive therapy postpartum. Most women do not need continued prophylaxis after delivery.",
+            "renal_dose": "Adjust antibiotics for renal impairment (rare in pregnancy)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "timeout_checklist": [
+              "Review culture results and de-escalate to narrow-spectrum agent",
+              "Ensure test of cure (repeat urine culture 1-2 weeks after treatment)",
+              "Switch IV to PO when afebrile and stable (pyelonephritis)",
+              "Reassess need for suppressive therapy if recurrent",
+              "Document GBS bacteriuria for intrapartum antibiotic prophylaxis"
+            ],
+            "screening_compliance": "Ensure all pregnant women screened for ASB at 12-16 weeks. Treat all ASB in pregnancy (unlike non-pregnant women).",
+            "avoid_teratogens": "AVOID fluoroquinolones, tetracyclines, TMP-SMX in 1st/3rd trimester, nitrofurantoin >36 weeks.",
+            "patient_education": "Educate on importance of completing full course, test of cure, and reporting symptoms promptly. Discuss safe antibiotics in pregnancy."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "ACOG Practice Bulletin: UTI in Pregnancy (2020)",
+              "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2020/06/urinary-tract-infections-in-pregnancy"
+            },
+            {
+              "label": "IDSA Asymptomatic Bacteriuria Guidelines (2019)",
+              "url": "https://www.idsociety.org/practice-guideline/asymptomatic-bacteriuria/"
+            },
+            {
+              "label": "USPSTF Screening for ASB in Pregnancy (2019)",
+              "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/asymptomatic-bacteriuria-in-adults-screening"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "asymptomatic-bacteriuria",
+      "name": "Asymptomatic Bacteriuria",
+      "synonyms": ["ASB", "asymptomatic UTI", "bacteriuria without symptoms"],
+      "icd10": ["N39.0", "R82.71"],
+      "severity": ["mild"],
+      "shortDescription": "Presence of bacteria in urine (≥10⁵ CFU/mL) without urinary symptoms - when to treat vs. not treat",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Asymptomatic bacteriuria (ASB) is the presence of ≥10⁵ CFU/mL of bacteria in urine WITHOUT symptoms of UTI (no dysuria, frequency, urgency, fever, or flank pain). Common in elderly, catheterized patients, and pregnant women.",
+            "clinical_presentation": "NO symptoms. Detected incidentally on urine culture or urinalysis. Patient may have cloudy or foul-smelling urine, but this alone is NOT an indication for treatment.",
+            "prevalence": "Elderly women: 10-20%. Elderly men: 5-10%. Nursing home residents: 25-50%. Catheterized patients: Nearly 100% if catheter >1 month. Pregnant women: 2-10%.",
+            "diagnostic_criteria": "≥10⁵ CFU/mL on 2 consecutive urine cultures (women) or 1 culture (men) WITHOUT urinary symptoms.",
+            "when_to_treat": [
+              "Pregnancy (ALWAYS treat - prevents pyelonephritis and preterm birth)",
+              "Before urologic procedures with mucosal trauma (TURP, cystoscopy with biopsy, stone removal)",
+              "Kidney transplant recipients (first 3-6 months post-transplant)"
+            ],
+            "when_not_to_treat": [
+              "Non-pregnant women",
+              "Men (except before urologic procedures)",
+              "Elderly (including nursing home residents)",
+              "Diabetics",
+              "Catheterized patients (except before catheter removal for urologic procedure)",
+              "Spinal cord injury patients",
+              "Patients with chronic kidney disease"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Do NOT screen for ASB in most populations. ONLY screen in pregnancy (12-16 weeks) and before urologic procedures with mucosal trauma.",
+            "when_not_to_test": "Do NOT obtain urine cultures in asymptomatic patients (elderly, catheterized, diabetics, nursing home residents). Do NOT test urine from catheter bags.",
+            "essential_tests": [
+              "Urine culture with susceptibilities (if screening indicated: pregnancy or pre-procedure)"
+            ],
+            "conditional_tests": [
+              "Urinalysis: NOT recommended for ASB screening (pyuria is common and does NOT indicate need for treatment)"
+            ],
+            "specimen_collection": "Clean-catch midstream urine (women). Midstream urine (men). Fresh catheter specimen if catheterized (NOT from bag).",
+            "interpretation": "Pyuria (WBCs in urine) is COMMON with ASB and does NOT indicate need for treatment. Positive urine culture without symptoms = ASB, NOT infection."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": [
+              "Escherichia coli (most common)",
+              "Klebsiella pneumoniae",
+              "Proteus mirabilis",
+              "Enterococcus spp.",
+              "Coagulase-negative staphylococci",
+              "Candida spp. (catheterized patients)"
+            ],
+            "polymicrobial": "Common in catheterized patients and elderly. Polymicrobial bacteriuria does NOT require treatment unless symptomatic.",
+            "resistance_patterns": "Similar to symptomatic UTI. May have higher resistance rates in nursing home residents and catheterized patients."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "pregnancy": {
+              "first_line": "Nitrofurantoin 100mg PO BID x 5-7 days (AVOID in 3rd trimester >36 weeks) OR Amoxicillin-clavulanate 500mg PO TID x 5-7 days OR Cephalexin 500mg PO QID x 5-7 days",
+              "alternative": "Fosfomycin 3g PO single dose"
+            },
+            "pre_urologic_procedure": {
+              "first_line": "Base on urine culture susceptibilities. Treat 1-2 days before procedure. Options: Ciprofloxacin 500mg PO BID OR TMP-SMX DS PO BID OR Cephalexin 500mg PO QID (if susceptible)",
+              "duration": "1-2 days before procedure, continue 1-3 days after (total 3-5 days)"
+            },
+            "kidney_transplant": {
+              "first_line": "Consult transplant ID. Typically: TMP-SMX DS PO BID OR Ciprofloxacin 500mg PO BID x 5-7 days (first 3-6 months post-transplant only)"
+            },
+            "do_not_treat": "Do NOT treat ASB in non-pregnant women, men (except pre-procedure), elderly, diabetics, catheterized patients, or spinal cord injury patients."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "pathogen_specific": {
+              "E_coli_susceptible": "Amoxicillin 500mg PO TID OR Cephalexin 500mg PO QID OR Nitrofurantoin 100mg PO BID (pregnancy) OR Ciprofloxacin 500mg PO BID (pre-procedure)",
+              "ESBL_producing": "Difficult. Consider fosfomycin 3g PO single dose (pregnancy) OR IV ertapenem (if severe or pre-procedure)",
+              "Enterococcus": "Ampicillin 500mg PO QID OR Amoxicillin 500mg PO TID",
+              "GBS_in_pregnancy": "Ampicillin 500mg PO QID x 5-7 days. NOTE: GBS bacteriuria = heavy colonization, requires intrapartum antibiotic prophylaxis (IAP) during labor."
+            },
+            "de_escalation": "Switch to narrow-spectrum agent based on culture results.",
+            "iv_to_po_switch": "Not applicable (oral therapy for ASB)"
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "pregnancy": "5-7 days. Test of cure (repeat urine culture) 1-2 weeks after treatment.",
+            "pre_urologic_procedure": "3-5 days total (1-2 days before + 1-3 days after procedure)",
+            "kidney_transplant": "5-7 days (first 3-6 months post-transplant only)",
+            "do_not_treat": "0 days for all other populations (no treatment indicated)"
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "elderly": "Do NOT treat ASB in elderly (including nursing home residents). Treatment does NOT reduce morbidity, mortality, or symptomatic UTI. May increase antibiotic resistance and adverse effects.",
+            "catheterized_patients": "Do NOT treat ASB in catheterized patients. Nearly all catheterized patients have bacteriuria. Treatment does NOT prevent symptomatic CAUTI. Remove catheter if no longer needed.",
+            "diabetics": "Do NOT treat ASB in diabetics. No evidence of benefit. May increase resistance.",
+            "spinal_cord_injury": "Do NOT treat ASB in spinal cord injury patients. Treatment does NOT prevent symptomatic UTI and increases resistance.",
+            "chronic_kidney_disease": "Do NOT treat ASB in CKD patients. No evidence of benefit.",
+            "post_kidney_transplant": "Treat ASB only in first 3-6 months post-transplant. After 6 months, do NOT treat ASB.",
+            "pre_procedure_screening": "Screen for ASB before urologic procedures with mucosal trauma (TURP, cystoscopy with biopsy, stone removal). Do NOT screen before clean procedures (cystoscopy without biopsy, urodynamics)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "timeout_checklist": [
+              "Confirm patient has symptoms before treating 'UTI'",
+              "Do NOT treat ASB in non-pregnant, non-procedure patients",
+              "Do NOT obtain urine cultures in asymptomatic patients",
+              "Educate providers on when NOT to treat ASB",
+              "Remove catheters if no longer needed (instead of treating ASB)"
+            ],
+            "avoid_unnecessary_treatment": "ASB is one of the most common causes of inappropriate antibiotic use. Do NOT treat ASB except in pregnancy, pre-urologic procedure, or early post-transplant. Pyuria alone is NOT an indication for treatment.",
+            "patient_education": "Educate patients that bacteria in urine without symptoms is common and does NOT require antibiotics (except pregnancy). Cloudy or foul-smelling urine alone is NOT an indication for treatment.",
+            "nursing_home_stewardship": "Implement protocols to avoid urine testing in asymptomatic nursing home residents. Use McGeer criteria for diagnosing UTI in long-term care (requires symptoms + positive culture)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Asymptomatic Bacteriuria Guidelines (2019)",
+              "url": "https://www.idsociety.org/practice-guideline/asymptomatic-bacteriuria/"
+            },
+            {
+              "label": "USPSTF Screening for ASB (2019)",
+              "url": "https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/asymptomatic-bacteriuria-in-adults-screening"
+            },
+            {
+              "label": "CDC Catheter-Associated UTI Prevention (2024)",
+              "url": "https://www.cdc.gov/hai/ca_uti/uti.html"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "renal-abscess",
+      "name": "Renal & Perinephric Abscess",
+      "synonyms": ["kidney abscess", "perinephric abscess", "intrarenal abscess"],
+      "icd10": ["N15.1", "N15.9"],
+      "severity": ["severe"],
+      "shortDescription": "Localized collection of pus within the renal parenchyma (renal abscess) or in the space between kidney and Gerota's fascia (perinephric abscess)",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Renal abscess: Localized collection of pus within the renal parenchyma. Perinephric abscess: Collection of pus in the perinephric space (between kidney capsule and Gerota's fascia). Both are serious complications of pyelonephritis or hematogenous seeding.",
+            "clinical_presentation": "Fever, chills, flank pain, costovertebral angle tenderness, malaise. Symptoms often persist >5-7 days despite antibiotics for pyelonephritis. May have palpable flank mass. Sepsis in 20-30%.",
+            "diagnostic_criteria": "Clinical symptoms + imaging (CT or ultrasound) showing fluid collection with rim enhancement. Blood or urine cultures may be positive.",
+            "risk_factors": [
+              "Diabetes mellitus (50-70% of cases)",
+              "Urinary tract obstruction (stones, stricture)",
+              "Recent pyelonephritis",
+              "Immunosuppression",
+              "IV drug use (hematogenous seeding)",
+              "Polycystic kidney disease",
+              "Recent urologic instrumentation"
+            ],
+            "red_flags": [
+              "Septic shock",
+              "Persistent fever >72 hours despite antibiotics for pyelonephritis",
+              "Abscess >5cm (usually requires drainage)",
+              "Gas-forming organisms (emphysematous pyelonephritis)",
+              "Bilateral abscesses"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Suspect renal/perinephric abscess if pyelonephritis not improving after 72 hours of appropriate antibiotics. Obtain imaging (CT preferred).",
+            "essential_tests": [
+              "CT abdomen/pelvis with IV contrast (GOLD STANDARD - shows abscess, size, location, gas)",
+              "Blood cultures (2 sets) - Positive in 40-60%",
+              "Urine culture with susceptibilities",
+              "CBC, CMP (assess renal function, WBC, glucose)"
+            ],
+            "conditional_tests": [
+              "Renal ultrasound: If CT contraindicated (pregnancy, contrast allergy). Less sensitive than CT.",
+              "Abscess aspiration/drainage: For culture and susceptibilities (especially if blood/urine cultures negative)",
+              "Chest X-ray: If concern for septic emboli (hematogenous seeding)"
+            ],
+            "imaging_findings": "CT: Hypodense fluid collection with rim enhancement. May see gas (emphysematous). Perinephric abscess extends beyond kidney capsule. Renal abscess confined to parenchyma.",
+            "turnaround_time": "CT: Same day (urgent). Blood/urine cultures: 24-48 hours. Abscess culture: 24-48 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": {
+              "ascending_infection": [
+                "Escherichia coli (most common, 50-70%)",
+                "Klebsiella pneumoniae",
+                "Proteus mirabilis",
+                "Enterococcus spp.",
+                "Pseudomonas aeruginosa"
+              ],
+              "hematogenous_seeding": [
+                "Staphylococcus aureus (MSSA or MRSA) - Especially in IV drug users",
+                "Streptococcus spp."
+              ]
+            },
+            "polymicrobial": "20-30% of cases are polymicrobial, especially if perinephric abscess.",
+            "resistance_patterns": "High rates of ESBL (20-30%) and fluoroquinolone resistance (30-40%). MRSA if hematogenous seeding.",
+            "anaerobes": "Rare, but consider if gas-forming abscess or recent GI surgery."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": {
+              "ascending_infection": "Piperacillin-tazobactam 3.375g IV q6h OR Meropenem 1g IV q8h (if ESBL risk or severe)",
+              "hematogenous_seeding": "Vancomycin 15-20mg/kg IV q8-12h + Piperacillin-tazobactam 3.375g IV q6h (covers MRSA + Gram-negatives)",
+              "iv_drug_user": "Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h (covers MRSA + Pseudomonas)"
+            },
+            "alternatives": "Beta-lactam allergy: Aztreonam 2g IV q8h + vancomycin 15-20mg/kg IV q8-12h.",
+            "avoid_list": "Avoid oral antibiotics initially. Avoid nitrofurantoin (inadequate tissue levels). Avoid monotherapy (high failure rate).",
+            "source_control": "Drainage is MANDATORY for abscesses >3-5cm or if no improvement in 48-72h despite antibiotics. Antibiotics alone have high failure rate."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "pathogen_specific": {
+              "E_coli_susceptible": "Ceftriaxone 2g IV daily OR Ciprofloxacin 400mg IV q12h (if susceptible)",
+              "ESBL_producing": "Meropenem 1g IV q8h OR Ertapenem 1g IV daily",
+              "Pseudomonas_aeruginosa": "Cefepime 2g IV q8h OR Piperacillin-tazobactam 3.375g IV q6h OR Meropenem 1g IV q8h (based on susceptibility)",
+              "MSSA": "Nafcillin 2g IV q4h OR Cefazolin 2g IV q8h",
+              "MRSA": "Vancomycin 15-20mg/kg IV q8-12h OR Daptomycin 6-8mg/kg IV daily",
+              "Enterococcus": "Ampicillin 2g IV q6h (if susceptible) OR Vancomycin 15-20mg/kg IV q8-12h (if VRE)"
+            },
+            "de_escalation": "Switch to narrow-spectrum agent based on culture results. Discontinue vancomycin if no MRSA.",
+            "iv_to_po_switch": "Criteria: Afebrile >48-72h, abscess drained or resolving on imaging, tolerating PO, pathogen susceptible to oral agent with good bioavailability. Switch after 2-4 weeks of IV therapy."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard": "4-6 weeks total (IV + PO) - Prolonged duration needed for abscess eradication",
+            "short_course": "4 weeks if abscess <3cm and drained, good response",
+            "prolonged": "6-8 weeks if abscess >5cm, delayed drainage, or slow response. Consider 8-12 weeks if perinephric abscess or immunosuppressed.",
+            "iv_duration": "2-4 weeks IV, then switch to PO if improving and abscess drained/resolving."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "drainage_indications": "MANDATORY drainage if: Abscess >3-5cm, no improvement in 48-72h despite antibiotics, gas-forming abscess, or septic shock. Options: Percutaneous drainage (CT or ultrasound-guided) OR surgical drainage (open or laparoscopic).",
+            "percutaneous_drainage": "Preferred initial approach. CT or ultrasound-guided aspiration or catheter placement. Success rate: 70-90% if abscess <5cm.",
+            "surgical_drainage": "Indicated if: Percutaneous drainage fails, abscess >10cm, multiloculated abscess, or need for nephrectomy (non-functioning kidney).",
+            "diabetes_management": "Optimize glucose control (target <180mg/dL). Poor glycemic control associated with treatment failure.",
+            "obstruction": "Urgent urology consult if obstructive uropathy (stone, stricture). Relieve obstruction (stent, nephrostomy) + drainage + antibiotics.",
+            "immunosuppression": "Longer duration (6-8 weeks). Consider fungal coverage if prolonged broad-spectrum antibiotics or no improvement. Consult ID.",
+            "renal_dose": "Adjust antibiotics for renal impairment (common with abscess)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "timeout_checklist": [
+              "Review culture results (blood, urine, abscess) and de-escalate",
+              "Ensure drainage performed if abscess >3-5cm or no improvement in 48-72h",
+              "Switch IV to PO after 2-4 weeks if improving and abscess drained",
+              "Repeat imaging at 2-4 weeks to assess abscess resolution",
+              "Ensure total duration is 4-6 weeks (prolonged therapy needed)",
+              "Discontinue vancomycin if no MRSA"
+            ],
+            "iv_to_po_opportunities": "Most patients can switch to PO after 2-4 weeks of IV therapy if afebrile, abscess drained/resolving, and pathogen susceptible to oral agent. Oral options: Ciprofloxacin, levofloxacin, TMP-SMX, linezolid (MRSA).",
+            "source_control": "Antibiotics alone have high failure rate (30-50%). Drainage is MANDATORY for most abscesses. Do NOT delay drainage if indicated.",
+            "follow_up_imaging": "Repeat CT or ultrasound at 2-4 weeks to confirm abscess resolution. If not resolving, consider repeat drainage or surgical intervention."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "EAU Guidelines on Urological Infections (2024)",
+              "url": "https://uroweb.org/guidelines/urological-infections"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            },
+            {
+              "label": "IDSA Complicated UTI Guidelines (2010, updated 2019)",
+              "url": "https://www.idsociety.org/practice-guideline/complicated-urinary-tract-infections/"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
+

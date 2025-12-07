@@ -1,0 +1,417 @@
+{
+  "version": 2,
+  "updatedAt": "2025-01-15T12:00:00Z",
+  "bundles": [
+    {
+      "id": "vap-prevention-bundle",
+      "name": "VAP Prevention Bundle",
+      "category": "VAP",
+      "description": "Evidence-based interventions to prevent ventilator-associated pneumonia in mechanically ventilated patients.",
+      "components": [
+        "Elevate head of bed 30-45 degrees unless contraindicated",
+        "Daily sedation vacation and assessment of readiness to extubate",
+        "Oral care with toothbrushing and oral moisturizers at least twice daily",
+        "Perform daily spontaneous breathing trials to assess readiness for extubation",
+        "Subglottic secretion drainage (use ETT with subglottic suction port for patients expected to be intubated >48-72 hours)",
+        "Peptic ulcer disease prophylaxis",
+        "Deep vein thrombosis prophylaxis"
+      ],
+      "rationale": "Ventilator-associated pneumonia (VAP) is a serious complication affecting 10-20% of mechanically ventilated patients, with mortality rates of 20-50%. Implementing evidence-based bundles reduces VAP rates by 30-50% and improves patient outcomes.",
+      "implementation": "Ensure all bundle elements are ordered as a set. Use daily checklists to verify compliance. Conduct multidisciplinary rounds to review each element. Document compliance and reasons for any deviations. Provide staff education on bundle rationale and techniques. Monitor VAP rates and bundle compliance regularly.",
+      "keyPoints": [
+        "All elements should be implemented together for maximum benefit",
+        "Head elevation is one of the simplest yet most effective interventions",
+        "Daily sedation breaks reduce ventilator days and VAP risk",
+        "Oral care with toothbrushing reduces bacterial colonization (chlorhexidine is not recommended based on 2024 evidence)",
+        "Spontaneous breathing trials should be performed daily to assess extubation readiness",
+        "Subglottic secretion drainage is recommended for patients expected to require prolonged intubation"
+      ],
+      "references": [
+        {
+          "label": "CDC Guidelines for Prevention of VAP (2017)",
+          "url": "https://www.cdc.gov/pneumonia/prevention.html"
+        },
+        {
+          "label": "ISID Position Paper: Preventing VAP (2024) - De-adoption of Chlorhexidine",
+          "url": "https://www.sciencedirect.com/science/article/pii/S1201971224003813"
+        },
+        {
+          "label": "APIC Implementation Guide for VAP Prevention",
+          "url": "https://apic.org/Resource_/TinyMceFileManager/Practice_Guidance/VAP_toolkit.pdf"
+        },
+        {
+          "label": "WHO Guidelines on Core Components of IPC Programmes",
+          "url": "https://www.who.int/publications/i/item/9789241549929"
+        }
+      ]
+    },
+    {
+      "id": "clabsi-prevention-bundle",
+      "name": "CLABSI Prevention Bundle",
+      "category": "CLABSI",
+      "description": "Evidence-based practices to prevent central line-associated bloodstream infections during insertion and maintenance.",
+      "components": [
+        "Hand hygiene before catheter insertion or manipulation",
+        "Maximal sterile barrier precautions during insertion",
+        "Chlorhexidine (>0.5%) skin antisepsis with alcohol",
+        "Optimal catheter site selection (subclavian preferred for non-tunneled catheters)",
+        "Daily review of line necessity with prompt removal",
+        "Use of antiseptic/antibiotic-impregnated catheters when indicated",
+        "Proper catheter site dressing management"
+      ],
+      "rationale": "Central line-associated bloodstream infections (CLABSI) affect 3-7% of patients with central venous catheters, leading to increased mortality (12-25%), prolonged hospital stays (7-20 days), and significant costs ($25,000-$56,000 per infection). Bundle implementation reduces CLABSI rates by 50-70%.",
+      "implementation": "Use insertion checklist and empower nurses to stop procedure if breaks in sterile technique. Establish central line insertion teams or trained personnel. Implement daily assessment protocols for line necessity. Use transparent, semi-permeable dressings changed every 7 days or when soiled. Disinfect catheter hubs and needleless connectors before access. Conduct regular audits of insertion and maintenance practices. Provide feedback to staff on CLABSI rates and compliance.",
+      "keyPoints": [
+        "Maximal barrier precautions include cap, mask, sterile gown, sterile gloves, and large sterile drape",
+        "Chlorhexidine is superior to povidone-iodine for skin antisepsis",
+        "Subclavian site has lower infection risk than femoral or jugular",
+        "Daily assessment for line removal is the most important maintenance practice",
+        "Staff education and empowerment are critical for success"
+      ],
+      "references": [
+        {
+          "label": "CDC Guidelines for Prevention of Intravascular Catheter-Related Infections (2011, updated 2017)",
+          "url": "https://www.cdc.gov/infectioncontrol/guidelines/bsi/index.html"
+        },
+        {
+          "label": "SHEA/IDSA Practice Recommendation for CLABSI Prevention (2014)",
+          "url": "https://www.jstor.org/stable/10.1086/676533"
+        },
+        {
+          "label": "APIC Implementation Guide for CLABSI Prevention",
+          "url": "https://apic.org/Resource_/TinyMceFileManager/Practice_Guidance/CLABSI_toolkit.pdf"
+        }
+      ]
+    },
+    {
+      "id": "cauti-prevention-bundle",
+      "name": "CAUTI Prevention Bundle",
+      "category": "CAUTI",
+      "description": "Evidence-based strategies to prevent catheter-associated urinary tract infections through appropriate use and maintenance.",
+      "components": [
+        "Insert urinary catheters only when necessary using appropriate indications",
+        "Use aseptic technique and sterile equipment for insertion",
+        "Maintain a closed, unobstructed drainage system",
+        "Secure catheter properly to prevent movement and urethral traction",
+        "Maintain urine flow (keep collection bag below bladder level)",
+        "Perform daily assessment of continued catheter necessity",
+        "Remove catheter promptly when no longer needed",
+        "Practice hand hygiene before and after catheter manipulation"
+      ],
+      "rationale": "Catheter-associated urinary tract infections (CAUTI) account for 30-40% of all healthcare-associated infections. Up to 70% of CAUTI cases are preventable through evidence-based practices. Each day of catheterization increases infection risk by 3-7%.",
+      "implementation": "Establish clear indications for catheter insertion (acute urinary retention, perioperative use for specific surgeries, critical illness requiring accurate urine output monitoring). Use nurse-driven protocols for catheter removal. Implement daily reminders or stop orders for catheter assessment. Avoid routine catheter changes (change only when clinically indicated). Use smallest catheter size appropriate for patient. Educate staff on proper insertion technique and maintenance. Monitor CAUTI rates and catheter utilization ratios.",
+      "keyPoints": [
+        "Avoiding unnecessary catheterization is the most effective prevention strategy",
+        "Aseptic insertion technique is critical (hand hygiene, sterile gloves, antiseptic cleansing)",
+        "Never disconnect the catheter-drainage tube junction",
+        "Empty collection bag regularly using separate container for each patient",
+        "Do not irrigate catheters routinely",
+        "Nurse-driven removal protocols significantly reduce catheter days"
+      ],
+      "references": [
+        {
+          "label": "CDC Guidelines for Prevention of CAUTI (2009, updated 2017)",
+          "url": "https://www.cdc.gov/infectioncontrol/guidelines/cauti/index.html"
+        },
+        {
+          "label": "SHEA/IDSA Compendium of Strategies to Prevent CAUTI (2014)",
+          "url": "https://www.jstor.org/stable/10.1086/675718"
+        },
+        {
+          "label": "WHO Guidelines on Core Components of IPC Programmes",
+          "url": "https://www.who.int/publications/i/item/9789241549929"
+        }
+      ]
+    },
+    {
+      "id": "ssi-prevention-bundle",
+      "name": "SSI Prevention Bundle",
+      "category": "SSI",
+      "description": "Comprehensive interventions to prevent surgical site infections in the perioperative period.",
+      "components": [
+        "Administer appropriate prophylactic antibiotics within 1 hour before incision (within 2 hours for vancomycin and fluoroquinolones)",
+        "Use clippers (not razors) for hair removal only if necessary",
+        "Maintain perioperative normothermia (≥36°C, per CDC guideline >35.5°C)",
+        "Optimize glycemic control (blood glucose <200 mg/dL)",
+        "Prepare surgical site with alcohol-based antiseptic (chlorhexidine preferred)",
+        "Maintain sterile technique throughout procedure",
+        "Use appropriate wound dressings and care postoperatively",
+        "Discontinue prophylactic antibiotics within 24 hours (48 hours for cardiac surgery)"
+      ],
+      "rationale": "Surgical site infections (SSI) occur in 2-5% of patients undergoing surgery, accounting for 20% of all healthcare-associated infections. SSI increases hospital stay by 7-10 days, doubles readmission rates, and costs $3,000-$29,000 per infection. Bundle implementation reduces SSI by 30-50%.",
+      "implementation": "Use preoperative checklists to verify all bundle elements. Establish protocols for antibiotic timing and selection. Monitor and maintain operating room temperature. Implement perioperative glucose monitoring protocols. Standardize skin preparation techniques. Conduct surveillance for SSI (30 days for most surgeries, 90 days for implants). Provide feedback to surgical teams on SSI rates. Engage surgeons in quality improvement initiatives.",
+      "keyPoints": [
+        "Antibiotic timing is critical: within 1 hour for most antibiotics, within 2 hours for vancomycin/fluoroquinolones due to longer infusion times",
+        "Razors cause micro-abrasions that increase infection risk",
+        "Hypothermia impairs immune function and wound healing; maintain temperature ≥36°C (CDC threshold >35.5°C)",
+        "Hyperglycemia (>200 mg/dL) significantly increases SSI risk",
+        "Chlorhexidine-alcohol is superior to povidone-iodine for skin prep",
+        "Prolonged antibiotic prophylaxis does not reduce SSI and increases resistance"
+      ],
+      "references": [
+        {
+          "label": "CDC Guideline for Prevention of SSI (2017)",
+          "url": "https://www.cdc.gov/infectioncontrol/guidelines/ssi/index.html"
+        },
+        {
+          "label": "WHO Global Guidelines for Prevention of SSI (2018)",
+          "url": "https://www.who.int/publications/i/item/9789241550475"
+        },
+        {
+          "label": "SHEA/IDSA/APIC Compendium of Strategies to Prevent SSI (2014)",
+          "url": "https://www.jstor.org/stable/10.1086/676022"
+        }
+      ]
+    },
+    {
+      "id": "sepsis-hour1-bundle",
+      "name": "Sepsis Hour-1 Bundle",
+      "category": "Sepsis",
+      "description": "Time-critical interventions from the Surviving Sepsis Campaign to reduce sepsis mortality through rapid recognition and treatment.",
+      "components": [
+        "Measure lactate level within 1 hour of sepsis recognition",
+        "Obtain blood cultures before administering antibiotics",
+        "Administer broad-spectrum antibiotics within 1 hour",
+        "Begin rapid fluid resuscitation (30 mL/kg crystalloid for hypotension or lactate ≥4 mmol/L)",
+        "Apply vasopressors if hypotensive during or after fluid resuscitation to maintain MAP ≥65 mmHg"
+      ],
+      "rationale": "Sepsis and septic shock are life-threatening conditions affecting 1.7 million adults annually in the US, with mortality rates of 15-30%. The Hour-1 Bundle represents time-critical interventions that, when completed within 1 hour of sepsis recognition, reduce mortality by 20-40%. Early recognition and rapid treatment are the cornerstones of sepsis survival.",
+      "implementation": "Establish sepsis screening protocols for early recognition. Implement electronic alerts or rapid response teams for sepsis identification. Use standardized order sets for bundle implementation. Ensure lactate testing is available 24/7 with rapid turnaround (<60 minutes). Stock broad-spectrum antibiotics in emergency departments and ICUs. Train staff on sepsis recognition using qSOFA or SIRS criteria. Document time of sepsis recognition as 'time zero' for bundle compliance. Monitor bundle compliance and provide real-time feedback to clinical teams. Conduct regular case reviews for missed sepsis cases or bundle delays.",
+      "keyPoints": [
+        "Time zero is the time of sepsis recognition, not time of presentation",
+        "All five elements should ideally be completed within 1 hour",
+        "Blood cultures must be obtained BEFORE antibiotics (but don't delay antibiotics >45 minutes)",
+        "30 mL/kg fluid bolus is substantial (e.g., 2-3 liters for 70kg patient) and should be given rapidly",
+        "Lactate should be remeasured within 2-4 hours if initially elevated (≥2 mmol/L)",
+        "Vasopressors should target MAP ≥65 mmHg (norepinephrine is first-line)",
+        "Early antibiotic administration (within 1 hour) is associated with significant mortality reduction"
+      ],
+      "references": [
+        {
+          "label": "Surviving Sepsis Campaign Guidelines 2021",
+          "url": "https://www.sccm.org/clinical-resources/guidelines/guidelines/surviving-sepsis-guidelines-2021"
+        },
+        {
+          "label": "Surviving Sepsis Campaign Hour-1 Bundle",
+          "url": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines"
+        },
+        {
+          "label": "CDC Sepsis Information for Healthcare Professionals",
+          "url": "https://www.cdc.gov/sepsis/what-is-sepsis.html"
+        }
+      ]
+    },
+    {
+      "id": "hand-hygiene-bundle",
+      "name": "Hand Hygiene Bundle (WHO 5 Moments)",
+      "category": "General",
+      "description": "WHO's evidence-based approach to hand hygiene in healthcare settings to prevent pathogen transmission.",
+      "components": [
+        "Before touching a patient",
+        "Before clean/aseptic procedures",
+        "After body fluid exposure risk",
+        "After touching a patient",
+        "After touching patient surroundings"
+      ],
+      "rationale": "Hand hygiene is the single most important measure to prevent healthcare-associated infections. Proper hand hygiene reduces infection transmission by 30-50%. The WHO 5 Moments framework provides a clear, evidence-based approach that is easy to understand and implement globally.",
+      "implementation": "Display WHO 5 Moments posters at point of care. Ensure alcohol-based hand rub (ABHR) is available at every point of care. Provide sinks with soap and water for visible soiling. Use ABHR for routine hand hygiene (20-30 seconds). Use soap and water when hands are visibly soiled or after caring for patients with C. difficile (40-60 seconds). Conduct regular observations and provide feedback. Engage leadership in hand hygiene promotion. Celebrate successes and recognize high performers.",
+      "keyPoints": [
+        "Alcohol-based hand rub is more effective than soap and water for most situations",
+        "Hand hygiene should take 20-30 seconds with ABHR, 40-60 seconds with soap and water",
+        "Jewelry, artificial nails, and nail polish interfere with hand hygiene",
+        "Gloves do not replace hand hygiene",
+        "Perform hand hygiene before putting on gloves and after removing them",
+        "Patient surroundings are often contaminated and require hand hygiene after contact"
+      ],
+      "references": [
+        {
+          "label": "WHO Guidelines on Hand Hygiene in Health Care (2009)",
+          "url": "https://www.who.int/publications/i/item/9789241597906"
+        },
+        {
+          "label": "CDC Guideline for Hand Hygiene in Healthcare Settings (2002)",
+          "url": "https://www.cdc.gov/hand-hygiene/index.html"
+        },
+        {
+          "label": "WHO 5 Moments for Hand Hygiene Implementation Toolkit",
+          "url": "https://www.who.int/teams/integrated-health-services/infection-prevention-control/hand-hygiene"
+        }
+      ]
+    },
+    {
+      "id": "contact-precautions-bundle",
+      "name": "Contact Precautions Bundle",
+      "category": "General",
+      "description": "Standard practices for preventing transmission of infections spread by direct or indirect contact.",
+      "components": [
+        "Place patient in single room or cohort with same pathogen",
+        "Use gloves for all patient contact and contact with patient environment",
+        "Use gown for all patient contact if substantial contact anticipated",
+        "Remove PPE before leaving patient room",
+        "Perform hand hygiene after PPE removal",
+        "Use dedicated or disposable patient care equipment",
+        "Clean and disinfect high-touch surfaces daily and when visibly soiled",
+        "Limit patient transport and ensure patient wears appropriate barriers"
+      ],
+      "rationale": "Contact transmission is the most common mode of healthcare-associated infection spread. Organisms like MRSA, VRE, C. difficile, and multidrug-resistant Gram-negative bacteria require contact precautions. Proper implementation reduces transmission by 50-70%.",
+      "implementation": "Post contact precautions signage on patient door. Ensure adequate PPE supplies outside patient room. Dedicate equipment (stethoscope, blood pressure cuff, thermometer) to patient. Clean equipment with EPA-registered disinfectant between patients if shared. Use disposable items when possible. Educate staff, patients, and visitors on precautions. Monitor compliance through direct observation. Continue precautions until patient meets discontinuation criteria.",
+      "keyPoints": [
+        "Gloves and gowns must be worn for all patient contact",
+        "Hand hygiene is required even when gloves are used",
+        "Environmental contamination is common with contact precautions organisms",
+        "Dedicated equipment reduces cross-transmission risk",
+        "Visitors should be educated on proper PPE use",
+        "Duration of precautions varies by organism and clinical criteria"
+      ],
+      "references": [
+        {
+          "label": "CDC Guideline for Isolation Precautions (2007, updated 2019)",
+          "url": "https://www.cdc.gov/infectioncontrol/guidelines/isolation/index.html"
+        },
+        {
+          "label": "WHO Guidelines on Core Components of IPC Programmes",
+          "url": "https://www.who.int/publications/i/item/9789241549929"
+        },
+        {
+          "label": "APIC Implementation Guide for Contact Precautions",
+          "url": "https://apic.org/Resource_/TinyMceFileManager/Practice_Guidance/Contact_Precautions_toolkit.pdf"
+        }
+      ]
+    },
+    {
+      "id": "droplet-precautions-bundle",
+      "name": "Droplet Precautions Bundle",
+      "category": "General",
+      "description": "Practices to prevent transmission of infections spread through large respiratory droplets.",
+      "components": [
+        "Place patient in single room or cohort with same pathogen",
+        "Wear surgical/procedure mask when within 6 feet of patient",
+        "Patient wears surgical mask during transport",
+        "Perform hand hygiene before and after patient contact",
+        "Use eye protection if splash/spray risk exists",
+        "Limit patient transport to essential purposes only",
+        "Clean and disinfect high-touch surfaces regularly"
+      ],
+      "rationale": "Droplet transmission occurs through large respiratory particles (>5 microns) generated during coughing, sneezing, or talking. These droplets travel short distances (typically <6 feet) before falling. Infections requiring droplet precautions include influenza, pertussis, meningococcal disease, and mumps.",
+      "implementation": "Post droplet precautions signage on patient door. Ensure surgical masks available outside patient room. Educate staff on proper mask use (cover nose and mouth, secure ties/elastic). Maintain spatial separation (>3 feet) when possible. Ensure patient wears mask during transport. Notify receiving area of precautions before transport. Continue precautions for duration specified by pathogen-specific guidelines. Monitor compliance through observation.",
+      "keyPoints": [
+        "Surgical masks are sufficient (N95 not required unless aerosol-generating procedure)",
+        "Droplets do not remain suspended in air, so special air handling not required",
+        "Spatial separation is important when mask cannot be worn",
+        "Eye protection needed if close contact with coughing patient",
+        "Hand hygiene critical as droplets can contaminate surfaces",
+        "Duration varies: influenza (7 days or until symptoms resolve), pertussis (5 days after antibiotic start)"
+      ],
+      "references": [
+        {
+          "label": "CDC Guideline for Isolation Precautions (2007, updated 2019)",
+          "url": "https://www.cdc.gov/infectioncontrol/guidelines/isolation/index.html"
+        },
+        {
+          "label": "WHO Infection Prevention and Control of Epidemic- and Pandemic-Prone Acute Respiratory Infections",
+          "url": "https://www.who.int/publications/i/item/9789241511131"
+        },
+        {
+          "label": "APIC Implementation Guide for Droplet Precautions",
+          "url": "https://apic.org/Resource_/TinyMceFileManager/Practice_Guidance/Droplet_Precautions_toolkit.pdf"
+        }
+      ]
+    },
+    {
+      "id": "airborne-precautions-bundle",
+      "name": "Airborne Precautions Bundle",
+      "category": "General",
+      "description": "Comprehensive measures to prevent transmission of infections spread through small airborne particles.",
+      "components": [
+        "Place patient in airborne infection isolation room (AIIR) with negative pressure",
+        "Ensure room has ≥12 air changes per hour (existing facilities) or ≥6 ACH (existing facilities built before 2001)",
+        "Wear N95 respirator or higher-level protection before entering room",
+        "Ensure respirator fit-testing and seal check performed",
+        "Keep door closed except when entering/exiting",
+        "Limit patient transport; patient wears surgical mask if transport necessary",
+        "Perform hand hygiene before and after patient contact",
+        "Use dedicated equipment when possible"
+      ],
+      "rationale": "Airborne transmission occurs through small particles (<5 microns) that remain suspended in air and can travel long distances. Diseases requiring airborne precautions include tuberculosis, measles, varicella (chickenpox), and disseminated zoster. Without proper precautions, secondary transmission rates can exceed 50%.",
+      "implementation": "Verify AIIR functionality (negative pressure, air changes, exhaust). Post airborne precautions signage on door. Ensure N95 respirators available in multiple sizes. Implement respiratory protection program (fit-testing, training, medical evaluation). Perform seal check each time respirator is donned. Minimize room entries by clustering care activities. Coordinate with engineering for room maintenance. Continue precautions until patient meets discontinuation criteria (varies by disease).",
+      "keyPoints": [
+        "N95 respirator required (surgical mask insufficient)",
+        "Fit-testing must be performed annually and with new respirator model",
+        "Seal check required every time respirator is worn",
+        "AIIR door must remain closed to maintain negative pressure",
+        "Susceptible healthcare workers should not enter rooms of patients with measles or varicella",
+        "Immune healthcare workers preferred for care of measles/varicella patients",
+        "TB patients can discontinue precautions after 3 negative sputum smears on consecutive days"
+      ],
+      "references": [
+        {
+          "label": "CDC Guidelines for Preventing Transmission of Mycobacterium tuberculosis (2005)",
+          "url": "https://www.cdc.gov/tb/publications/guidelines/infectioncontrol.htm"
+        },
+        {
+          "label": "CDC Guideline for Isolation Precautions (2007, updated 2019)",
+          "url": "https://www.cdc.gov/infectioncontrol/guidelines/isolation/index.html"
+        },
+        {
+          "label": "WHO Guidelines on Tuberculosis Infection Prevention and Control",
+          "url": "https://www.who.int/publications/i/item/9789241598323"
+        },
+        {
+          "label": "OSHA Respiratory Protection Standard (29 CFR 1910.134)",
+          "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134"
+        }
+      ]
+    },
+    {
+      "id": "mdro-prevention-bundle",
+      "name": "MDRO Prevention Bundle",
+      "category": "MDRO",
+      "description": "Comprehensive strategies to prevent transmission of multidrug-resistant organisms in healthcare settings.",
+      "components": [
+        "Implement active surveillance testing for high-risk patients",
+        "Place colonized/infected patients on contact precautions",
+        "Ensure strict hand hygiene compliance before and after patient contact",
+        "Use dedicated or disposable patient care equipment",
+        "Implement environmental cleaning and disinfection protocols",
+        "Promote antimicrobial stewardship to reduce selective pressure",
+        "Educate healthcare workers on MDRO transmission and prevention",
+        "Conduct regular audits of infection prevention practices"
+      ],
+      "rationale": "Multidrug-resistant organisms (MDROs) including MRSA, VRE, ESBL-producing organisms, and carbapenem-resistant Enterobacteriaceae (CRE) pose significant threats to patient safety. MDROs increase mortality by 2-3 fold, prolong hospital stays by 6-30 days, and increase healthcare costs by $18,000-$29,000 per infection. Comprehensive prevention bundles reduce MDRO transmission by 40-70%.",
+      "implementation": "Establish MDRO surveillance protocols with clear definitions and testing criteria. Implement contact precautions immediately upon identification. Ensure adequate PPE supplies and hand hygiene products at point of care. Use EPA-registered disinfectants effective against MDROs for environmental cleaning. Implement daily chlorhexidine bathing for ICU patients when appropriate. Establish antimicrobial stewardship program with prospective audit and feedback. Provide regular education and competency assessment for staff. Monitor MDRO rates and compliance with prevention measures. Conduct root cause analysis for MDRO outbreaks.",
+      "keyPoints": [
+        "Hand hygiene is the single most important measure to prevent MDRO transmission",
+        "Contact precautions must include gloves and gowns for all patient contact",
+        "Environmental contamination is common with MDROs and requires enhanced cleaning",
+        "Antimicrobial stewardship reduces selective pressure for resistance",
+        "Active surveillance helps identify colonized patients early",
+        "Chlorhexidine bathing reduces MDRO colonization in ICU patients",
+        "Decolonization strategies (e.g., mupirocin for MRSA) may be appropriate in specific settings",
+        "Cohorting patients and staff can reduce transmission during outbreaks"
+      ],
+      "references": [
+        {
+          "label": "CDC Management of Multidrug-Resistant Organisms in Healthcare Settings (2006, updated 2019)",
+          "url": "https://www.cdc.gov/infectioncontrol/guidelines/mdro/index.html"
+        },
+        {
+          "label": "WHO Guidelines on Core Components of IPC Programmes at the National and Acute Health Care Facility Level",
+          "url": "https://www.who.int/publications/i/item/9789241549929"
+        },
+        {
+          "label": "SHEA/IDSA Practice Recommendation for MDRO Prevention (2014)",
+          "url": "https://www.jstor.org/stable/10.1086/676534"
+        },
+        {
+          "label": "APIC Implementation Guide for MDRO Prevention",
+          "url": "https://apic.org/Resource_/TinyMceFileManager/Practice_Guidance/MDRO_toolkit.pdf"
+        },
+        {
+          "label": "CDC Antibiotic Resistance Threats Report (2019)",
+          "url": "https://www.cdc.gov/drugresistance/biggest-threats.html"
+        }
+      ]
+    }
+  ]
+}
+

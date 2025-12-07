@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "bundles": [
+    {
+      "id": "clabsi",
+      "name": "CLABSI Bundle",
+      "scope": "Central line insertion & maintenance",
+      "phases": [
+        {
+          "phaseName": "Insertion",
+          "elements": [
+            {"id": "full_barrier", "text": "Maximal sterile barrier precautions"},
+            {"id": "chlorhexidine", "text": "Chlorhexidine skin prep"}
+          ]
+        },
+        {
+          "phaseName": "Daily Review",
+          "elements": [
+            {"id": "necessity", "text": "Review line necessity"}
+          ]
+        }
+      ],
+      "references": ["CDC", "NHSN"]
+    }
+  ]
+}

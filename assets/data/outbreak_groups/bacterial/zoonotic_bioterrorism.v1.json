@@ -1,0 +1,1242 @@
+{
+  "version": 1,
+  "groupId": "zoonotic_bioterrorism",
+  "groupName": "Zoonotic & Bioterrorism",
+  "type": "bacterial",
+  "updatedAt": "2025-01-11T00:00:00Z",
+  "pathogens": [
+    {
+      "id": "bacillus_anthracis",
+      "name": "Bacillus anthracis (Anthrax)",
+      "scientificName": "Bacillus anthracis",
+      "definition": "Gram-positive, spore-forming rod causing cutaneous, inhalational, and gastrointestinal anthrax. B. anthracis is a Category A bioterrorism agent with potential for mass casualties.",
+      "reservoir": {
+        "primary": ["Soil (spores can survive for decades)", "Infected herbivorous animals (cattle, sheep, goats, horses)"],
+        "secondary": ["Animal products (hides, wool, bone meal)", "Contaminated meat"],
+        "notes": "Spores are highly resistant to environmental conditions and can persist in soil for decades. Anthrax is endemic in agricultural regions worldwide. Bioterrorism potential due to ease of weaponization."
+      },
+      "transmission": {
+        "mode": "Spore exposure via cutaneous contact, inhalation, or ingestion",
+        "routes": [
+          "Cutaneous: direct contact with spores through broken skin (most common, 95% of natural cases)",
+          "Inhalational: inhalation of aerosolized spores (most lethal, bioterrorism concern)",
+          "Gastrointestinal: ingestion of contaminated meat",
+          "Injection: contaminated heroin (rare, seen in injection drug users)"
+        ],
+        "notes": "Person-to-person transmission is extremely rare (only cutaneous form, through direct contact with lesion discharge). Inhalational anthrax is the primary bioterrorism concern."
+      },
+      "incubationPeriod": {
+        "range": "1-7 days (cutaneous: 1-7 days; inhalational: 1-7 days, up to 60 days; GI: 1-7 days)",
+        "infectiousPeriod": "Non-contagious person-to-person (except rare cutaneous transmission through direct lesion contact)",
+        "seasonality": "Year-round, no specific seasonal pattern",
+        "geographic": "Endemic in agricultural regions of Africa, Asia, Middle East, Central/South America; sporadic cases worldwide"
+      },
+      "riskFactors": [
+        "Occupational exposure (veterinarians, livestock handlers, abattoir workers, wool/hide processors)",
+        "Bioterrorism risk (intentional release of spores)",
+        "Handling infected animal carcasses or products",
+        "Injection drug use (contaminated heroin)",
+        "Laboratory workers handling B. anthracis",
+        "Military personnel (biowarfare threat)",
+        "Travel to endemic areas"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Cutaneous (95%): painless papule → vesicle → black eschar with surrounding edema, lymphadenopathy",
+          "Inhalational: biphasic illness - initial flu-like symptoms (fever, malaise, cough) → sudden deterioration with severe respiratory distress, shock, mediastinal widening",
+          "Gastrointestinal: severe abdominal pain, bloody diarrhea, ascites, sepsis",
+          "Injection: severe soft tissue infection at injection site, systemic toxicity",
+          "Meningitis: can complicate any form (hemorrhagic meningitis)"
+        ],
+        "complications": [
+          "Septic shock and multi-organ failure",
+          "Hemorrhagic meningitis (50% of inhalational cases)",
+          "Mediastinitis and pleural effusions (inhalational)",
+          "Intestinal perforation and peritonitis (GI)",
+          "Death (cutaneous: <1% with treatment, 10-20% without; inhalational: 45-80% even with treatment; GI: 25-75%)",
+          "Massive edema (cutaneous and injection forms)"
+        ],
+        "caseDefinition": {
+          "suspected": "Clinical: painless ulcer with black eschar (cutaneous), OR severe respiratory illness with mediastinal widening (inhalational), OR severe GI illness with bloody diarrhea + epidemiologic link (animal/bioterrorism exposure)",
+          "confirmed": "Clinical illness + laboratory confirmation: positive culture, PCR, or immunohistochemistry for B. anthracis from blood, lesion, CSF, or other sterile site, OR positive toxin assay"
+        }
+      },
+      "diagnosis": [
+        "Culture from blood, lesion, CSF, pleural fluid (Gram-positive rods in chains)",
+        "PCR for B. anthracis DNA",
+        "Immunohistochemistry on tissue specimens",
+        "Toxin detection (protective antigen, lethal factor, edema factor)",
+        "Chest X-ray or CT (inhalational: mediastinal widening, pleural effusions)",
+        "Nasal swabs (environmental screening, not diagnostic for individual cases)"
+      ],
+      "treatment": "Ciprofloxacin or doxycycline (first-line) + 1-2 additional antibiotics (e.g., clindamycin, rifampin, vancomycin) for systemic disease. Anthrax antitoxin (raxibacumab, obiltoxaximab) for systemic disease. Duration: 60 days (inhalational/GI/injection); 7-10 days (cutaneous). Supportive care: aggressive fluid resuscitation, vasopressors, mechanical ventilation.",
+      "infectionControl": {
+        "precautions": "Standard Precautions (person-to-person transmission extremely rare); Contact Precautions for draining cutaneous lesions until lesions are dry and crusted",
+        "screening": "Not routinely recommended; screen exposed individuals in bioterrorism event",
+        "cohorting": "Not needed (not contagious)",
+        "sourceControl": "Identify and eliminate contaminated sources (animal products, environmental spores); post-exposure prophylaxis for exposed individuals",
+        "environmental": "Decontamination of contaminated areas (bleach, formaldehyde, autoclaving); proper disposal of contaminated materials; biosafety level 3 (BSL-3) for laboratory work",
+        "staffEducation": "Recognition of anthrax forms (eschar, mediastinal widening), bioterrorism awareness, PPE for handling specimens, post-exposure prophylaxis protocols"
+      },
+      "outbreakTriggers": [
+        "Any suspected or confirmed case (especially inhalational or GI)",
+        "≥2 epidemiologically linked cases",
+        "Cluster of cases with no clear animal exposure (suggests bioterrorism)",
+        "Single case in non-endemic area or unusual presentation"
+      ],
+      "reportingCommunication": [
+        "Immediate notification to public health authorities and emergency services (within hours)",
+        "Activate bioterrorism response protocols if intentional release suspected",
+        "Coordinate with law enforcement, FBI, CDC if bioterrorism",
+        "Post-exposure prophylaxis for exposed individuals (ciprofloxacin or doxycycline for 60 days + anthrax vaccine if available)",
+        "Environmental investigation and decontamination",
+        "Public health alerts and media communication"
+      ],
+      "prevention": [
+        "Vaccination for high-risk groups (military, laboratory workers, veterinarians in endemic areas) - BioThrax (AVA)",
+        "PPE for occupational exposure (veterinarians, livestock handlers, wool/hide processors)",
+        "Animal vaccination in endemic areas",
+        "Safe handling and disposal of animal carcasses",
+        "Avoid contact with sick or dead animals in endemic areas",
+        "Post-exposure prophylaxis (ciprofloxacin or doxycycline for 60 days)",
+        "Bioterrorism preparedness and surveillance"
+      ],
+      "references": [
+        {
+          "label": "WHO - Anthrax",
+          "url": "https://www.who.int/health-topics/anthrax"
+        },
+        {
+          "label": "CDC - Anthrax",
+          "url": "https://www.cdc.gov/anthrax/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Bioterrorism Agents",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "yersinia_pestis",
+      "name": "Yersinia pestis (Plague)",
+      "scientificName": "Yersinia pestis",
+      "definition": "Gram-negative rod causing bubonic, septicemic, and pneumonic plague. Y. pestis is a Category A bioterrorism agent and one of the most virulent bacterial pathogens known.",
+      "reservoir": {
+        "primary": ["Wild rodents (rats, prairie dogs, ground squirrels, chipmunks)", "Fleas (Xenopsylla cheopis - rat flea)"],
+        "secondary": ["Domestic cats and dogs (can carry infected fleas)", "Infected animal carcasses"],
+        "notes": "Plague is maintained in wild rodent populations (sylvatic plague). Fleas transmit bacteria between animals and to humans. Pneumonic plague can spread person-to-person."
+      },
+      "transmission": {
+        "mode": "Flea bites (bubonic/septicemic); respiratory droplets (pneumonic)",
+        "routes": [
+          "Flea bites from infected fleas (bubonic and septicemic plague)",
+          "Respiratory droplets from pneumonic plague patients (highly contagious)",
+          "Direct contact with infected animal tissues or fluids (skinning, handling carcasses)",
+          "Rarely: ingestion of contaminated meat",
+          "Bioterrorism: aerosolized Y. pestis (would cause pneumonic plague)"
+        ],
+        "notes": "Bubonic plague is not contagious person-to-person. Pneumonic plague is highly contagious via respiratory droplets. Septicemic plague can occur as primary infection or secondary to bubonic plague."
+      },
+      "incubationPeriod": {
+        "range": "2-6 days (bubonic: 2-8 days; pneumonic: 1-4 days; septicemic: variable)",
+        "infectiousPeriod": "Infectious during active disease (pneumonic plague is contagious until 48 hours of effective antibiotic treatment)",
+        "seasonality": "Spring and summer peaks (flea activity); year-round in tropical areas",
+        "geographic": "Endemic in Africa, Asia, Americas (western US, Madagascar, Democratic Republic of Congo, Peru)"
+      },
+      "riskFactors": [
+        "Exposure in endemic regions (camping, hiking, rural areas)",
+        "Wildlife contact (rodents, rabbits, carnivores)",
+        "Flea bites",
+        "Occupational exposure (veterinarians, wildlife biologists, hunters)",
+        "Close contact with pneumonic plague patient",
+        "Bioterrorism event",
+        "Domestic cats (can develop plague and transmit to humans)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Bubonic (80-85%): sudden fever, chills, headache, painful swollen lymph nodes (buboes - usually inguinal, axillary, cervical)",
+          "Septicemic (10-15%): fever, chills, abdominal pain, shock, DIC, gangrene of extremities (black death)",
+          "Pneumonic (primary or secondary): fever, cough, dyspnea, hemoptysis, chest pain, rapid progression to respiratory failure",
+          "Pharyngeal: sore throat, cervical lymphadenopathy (rare)",
+          "Meningitis: headache, stiff neck, altered mental status (rare complication)"
+        ],
+        "complications": [
+          "Septic shock and multi-organ failure",
+          "Disseminated intravascular coagulation (DIC)",
+          "Gangrene of extremities (acral necrosis)",
+          "Acute respiratory distress syndrome (ARDS) - pneumonic plague",
+          "Meningitis",
+          "Death (bubonic: 10-15% with treatment, 40-60% without; pneumonic: nearly 100% without treatment, 50% with treatment; septicemic: 30-50% with treatment)",
+          "Secondary pneumonic plague from bubonic/septicemic"
+        ],
+        "caseDefinition": {
+          "suspected": "Clinical: sudden fever + painful buboes (bubonic), OR severe pneumonia with hemoptysis (pneumonic), OR septic shock with DIC (septicemic) + epidemiologic link (endemic area, flea bites, animal exposure, or bioterrorism event)",
+          "confirmed": "Clinical illness + laboratory confirmation: positive culture, PCR, or immunofluorescence for Y. pestis from blood, bubo aspirate, sputum, or CSF"
+        }
+      },
+      "diagnosis": [
+        "Culture from blood, bubo aspirate, sputum, CSF (Gram-negative rods with bipolar staining - safety pin appearance)",
+        "PCR for Y. pestis DNA (rapid, specific)",
+        "Immunofluorescence or immunohistochemistry",
+        "Serology (4-fold rise in antibody titer)",
+        "Chest X-ray (pneumonic: bilateral infiltrates, consolidation)",
+        "Rapid diagnostic test (RDT) - F1 antigen detection (field use)"
+      ],
+      "treatment": "Streptomycin or gentamicin (first-line). Alternatives: doxycycline, ciprofloxacin, levofloxacin, chloramphenicol (for meningitis). Duration: 10-14 days. Supportive care: aggressive fluid resuscitation, vasopressors, mechanical ventilation. Post-exposure prophylaxis: doxycycline or ciprofloxacin for 7 days.",
+      "infectionControl": {
+        "precautions": "Droplet Precautions for pneumonic plague (surgical mask, private room) until 48 hours of effective antibiotic treatment; Standard Precautions for bubonic/septicemic plague",
+        "screening": "Screen close contacts of pneumonic plague patients; post-exposure prophylaxis",
+        "cohorting": "Strict isolation of pneumonic plague cases; cohort if multiple cases",
+        "sourceControl": "Vector control (flea control, rodent control); avoid contact with sick or dead animals; post-exposure prophylaxis for exposed individuals",
+        "environmental": "Flea and rodent control in affected areas; proper disposal of animal carcasses; biosafety level 3 (BSL-3) for laboratory work",
+        "staffEducation": "Droplet precautions for pneumonic plague, recognition of plague forms (buboes, hemoptysis), post-exposure prophylaxis protocols, vector control"
+      },
+      "outbreakTriggers": [
+        "Single pneumonic plague case (public health emergency)",
+        "Cluster of bubonic/septicemic cases in endemic or non-endemic areas",
+        "≥2 epidemiologically linked cases",
+        "Unusual presentation or location (suggests bioterrorism)"
+      ],
+      "reportingCommunication": [
+        "Immediate health authority notification (within hours)",
+        "Activate bioterrorism response if intentional release suspected",
+        "Coordinate with veterinary and wildlife authorities",
+        "Contact tracing and post-exposure prophylaxis for pneumonic plague contacts",
+        "Vector control measures (flea and rodent control)",
+        "Public health alerts and media communication",
+        "International notification if required (IHR)"
+      ],
+      "prevention": [
+        "Vector control (flea and rodent control in endemic areas)",
+        "Avoid wildlife contact (rodents, rabbits, carnivores) in endemic areas",
+        "Use insect repellent and protective clothing",
+        "Keep pets flea-free and away from rodents",
+        "Do not handle sick or dead animals",
+        "Post-exposure prophylaxis (doxycycline or ciprofloxacin for 7 days)",
+        "No vaccine currently available (discontinued in US)",
+        "Public education in endemic areas"
+      ],
+      "references": [
+        {
+          "label": "WHO - Plague",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/plague"
+        },
+        {
+          "label": "CDC - Plague",
+          "url": "https://www.cdc.gov/plague/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Zoonotic Diseases",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "francisella_tularensis",
+      "name": "Francisella tularensis (Tularemia)",
+      "scientificName": "Francisella tularensis",
+      "definition": "Gram-negative coccobacillus causing tularemia (rabbit fever), a zoonotic disease with multiple clinical forms. F. tularensis is a Category A bioterrorism agent due to high infectivity and potential for aerosol dissemination.",
+      "reservoir": {
+        "primary": ["Wild mammals (rabbits, hares, rodents, squirrels)", "Ticks (Dermacentor, Amblyomma species)", "Contaminated water and soil"],
+        "secondary": ["Deer flies and other biting insects", "Domestic animals (cats, dogs, sheep)"],
+        "notes": "F. tularensis is highly infectious (10-50 organisms can cause disease). Two main subspecies: Type A (more virulent, North America) and Type B (less virulent, Europe/Asia)."
+      },
+      "transmission": {
+        "mode": "Vector bites, inhalation, direct contact, ingestion",
+        "routes": [
+          "Tick and deer fly bites (ulceroglandular form)",
+          "Handling infected animals (skinning rabbits, hares) - direct contact with tissues/fluids",
+          "Inhalation of contaminated aerosols (pneumonic form - bioterrorism concern)",
+          "Ingestion of contaminated water or undercooked meat (oropharyngeal, GI forms)",
+          "Laboratory exposure (highly infectious, BSL-3 required)"
+        ],
+        "notes": "Person-to-person transmission does not occur. Inhalational tularemia is the primary bioterrorism concern due to high mortality."
+      },
+      "incubationPeriod": {
+        "range": "3-5 days (range 1-14 days)",
+        "infectiousPeriod": "Not contagious person-to-person",
+        "seasonality": "Spring and summer peaks (tick and deer fly activity); winter peaks for rabbit-associated cases (hunting season)",
+        "geographic": "Northern hemisphere (North America, Europe, Asia); endemic in rural areas"
+      },
+      "riskFactors": [
+        "Hunters, trappers, and wildlife handlers",
+        "Farmers and veterinarians",
+        "Laboratory workers (highly infectious)",
+        "Tick or deer fly bites in endemic areas",
+        "Outdoor activities (camping, hiking, gardening)",
+        "Landscaping and lawn mowing (aerosolization of contaminated materials)",
+        "Bioterrorism event"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Ulceroglandular (75-85%): painful ulcer at inoculation site + regional lymphadenopathy (tender, may suppurate)",
+          "Glandular: lymphadenopathy without ulcer",
+          "Oculoglandular: conjunctivitis + preauricular lymphadenopathy",
+          "Oropharyngeal: pharyngitis, tonsillitis, cervical lymphadenopathy",
+          "Pneumonic: fever, dry cough, dyspnea, chest pain (most severe form, bioterrorism concern)",
+          "Typhoidal: fever, systemic illness without localizing signs",
+          "All forms: sudden fever, chills, headache, myalgia, malaise"
+        ],
+        "complications": [
+          "Pneumonia and respiratory failure (pneumonic form)",
+          "Septic shock and multi-organ failure",
+          "Meningitis and encephalitis",
+          "Rhabdomyolysis",
+          "Hepatitis and hepatomegaly",
+          "Death (1-3% with treatment; up to 30-60% for pneumonic/typhoidal forms without treatment)",
+          "Chronic lymphadenopathy"
+        ],
+        "caseDefinition": {
+          "suspected": "Clinical: fever + ulcer with lymphadenopathy (ulceroglandular), OR pneumonia (pneumonic), OR systemic illness (typhoidal) + epidemiologic link (animal exposure, tick bite, laboratory work, or bioterrorism event)",
+          "confirmed": "Clinical illness + laboratory confirmation: positive culture, PCR, or serology (4-fold rise in antibody titer) for F. tularensis"
+        }
+      },
+      "diagnosis": [
+        "Serology (4-fold rise in antibody titer or single high titer) - most common diagnostic method",
+        "PCR from ulcer, lymph node aspirate, sputum, blood (rapid, specific)",
+        "Culture (requires specialized media and BSL-3 lab - notify lab before sending specimens)",
+        "Immunohistochemistry on tissue specimens",
+        "Chest X-ray (pneumonic: infiltrates, hilar lymphadenopathy, pleural effusions)"
+      ],
+      "treatment": "Streptomycin or gentamicin (first-line, 10-14 days). Alternatives: doxycycline, ciprofloxacin (14-21 days). Post-exposure prophylaxis: doxycycline or ciprofloxacin for 14 days. Supportive care for severe cases.",
+      "infectionControl": {
+        "precautions": "Standard Precautions (not contagious person-to-person); Respiratory Precautions for pneumonic cases during aerosol-generating procedures",
+        "screening": "Not routinely recommended; screen exposed individuals in bioterrorism event",
+        "cohorting": "Not needed (not contagious)",
+        "sourceControl": "Avoid contact with sick or dead animals; vector control (tick prevention); post-exposure prophylaxis for laboratory exposures",
+        "environmental": "Biosafety level 3 (BSL-3) for laboratory work; notify lab before sending specimens; proper disposal of contaminated materials",
+        "staffEducation": "Recognition of tularemia forms (ulcer + lymphadenopathy), biosafety for laboratory workers, post-exposure prophylaxis protocols, bioterrorism awareness"
+      },
+      "outbreakTriggers": [
+        "Any confirmed case (especially pneumonic or typhoidal)",
+        "Cluster of cases with common exposure (animal, water, aerosol)",
+        "Laboratory-acquired infection",
+        "Unusual presentation or location (suggests bioterrorism)"
+      ],
+      "reportingCommunication": [
+        "Prompt reporting to public health authorities (within 24 hours)",
+        "Coordinated investigation with environmental and veterinary agencies",
+        "Activate bioterrorism response if intentional release suspected",
+        "Post-exposure prophylaxis for exposed individuals",
+        "Public health alerts and education",
+        "Update stakeholders (hunters, outdoor enthusiasts, laboratory workers)"
+      ],
+      "prevention": [
+        "PPE use for hunters and animal handlers (gloves when skinning animals)",
+        "Avoid wildlife contact (sick or dead animals)",
+        "Tick and insect bite prevention (repellent, protective clothing, tick checks)",
+        "Avoid mowing over animal carcasses",
+        "Cook meat thoroughly",
+        "Avoid drinking untreated water in endemic areas",
+        "Laboratory biosafety (BSL-3 for culture work)",
+        "Post-exposure prophylaxis (doxycycline or ciprofloxacin for 14 days)",
+        "No vaccine currently available (discontinued in US)"
+      ],
+      "references": [
+        {
+          "label": "WHO - Tularemia",
+          "url": "https://www.who.int/health-topics/tularaemia"
+        },
+        {
+          "label": "CDC - Tularemia",
+          "url": "https://www.cdc.gov/tularemia/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Zoonotic Diseases",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "clostridium_botulinum",
+      "name": "Clostridium botulinum (Botulism)",
+      "scientificName": "Clostridium botulinum",
+      "definition": "Anaerobic, spore-forming Gram-positive rod producing botulinum toxin, causing botulism - a neuroparalytic disease. Botulinum toxin is the most potent biological toxin known and a Category A bioterrorism agent.",
+      "reservoir": {
+        "primary": ["Soil and sediments (spores ubiquitous in environment)", "Improperly canned or preserved foods", "Wounds contaminated with soil"],
+        "secondary": ["Honey (infant botulism)", "Contaminated heroin (wound botulism)"],
+        "notes": "Spores are heat-resistant and can survive boiling. Toxin is heat-labile (destroyed by boiling for 10 minutes). Seven toxin types (A-G); types A, B, E, F cause human disease."
+      },
+      "transmission": {
+        "mode": "Ingestion of preformed toxin, wound contamination, intestinal colonization",
+        "routes": [
+          "Foodborne: ingestion of preformed toxin in improperly canned/preserved foods (most common in adults)",
+          "Wound botulism: toxin production in contaminated wounds (injection drug users)",
+          "Infant botulism: ingestion of spores (honey) → intestinal colonization and toxin production",
+          "Inhalational: aerosolized toxin (bioterrorism concern)",
+          "Iatrogenic: cosmetic or therapeutic botulinum toxin overdose"
+        ],
+        "notes": "Person-to-person transmission does not occur. Foodborne botulism is not contagious. Bioterrorism potential through aerosolization of toxin or contamination of food/water supply."
+      },
+      "incubationPeriod": {
+        "range": "12-36 hours (foodborne, range 6 hours to 10 days); wound: 4-14 days; infant: variable",
+        "infectiousPeriod": "Not contagious person-to-person",
+        "seasonality": "Year-round; foodborne outbreaks often associated with home-canned foods",
+        "geographic": "Worldwide; infant botulism more common in certain regions (California, Pennsylvania, Utah)"
+      },
+      "riskFactors": [
+        "Consumption of improperly canned or preserved foods (especially home-canned vegetables, fermented fish)",
+        "Injection drug use (wound botulism)",
+        "Infants <12 months (honey ingestion)",
+        "Immunocompromised individuals",
+        "Bioterrorism event",
+        "Cosmetic botulinum toxin procedures (rare)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Descending flaccid paralysis (hallmark): starts with cranial nerves → descends to trunk and extremities",
+          "Cranial nerve palsies: diplopia (double vision), ptosis (drooping eyelids), dysarthria (slurred speech), dysphagia (difficulty swallowing), dysphonia (hoarse voice)",
+          "Dry mouth and dilated pupils",
+          "Symmetric muscle weakness",
+          "Respiratory failure (diaphragm and intercostal muscle paralysis)",
+          "Alert and afebrile (unless secondary infection)",
+          "Infant botulism: constipation, weak cry, poor feeding, hypotonia (floppy baby)"
+        ],
+        "complications": [
+          "Respiratory failure requiring mechanical ventilation (weeks to months)",
+          "Aspiration pneumonia",
+          "Autonomic dysfunction",
+          "Death (5-10% with treatment; higher without treatment)",
+          "Prolonged recovery (months)",
+          "Nosocomial infections"
+        ],
+        "caseDefinition": {
+          "suspected": "Clinical: acute onset of descending flaccid paralysis with cranial nerve palsies (diplopia, dysarthria, dysphagia) + alert mental status + afebrile + epidemiologic link (food exposure, wound, infant with honey exposure, or bioterrorism event)",
+          "confirmed": "Clinical illness + laboratory confirmation: detection of botulinum toxin in serum, stool, or food, OR isolation of C. botulinum from stool or wound"
+        }
+      },
+      "diagnosis": [
+        "Toxin detection in serum, stool, or food (mouse bioassay - gold standard, takes 1-2 days)",
+        "Culture of C. botulinum from stool or wound",
+        "Electromyography (EMG): brief, small-amplitude motor potentials (BSAP) with facilitation at high-frequency stimulation",
+        "Clinical diagnosis (do not wait for laboratory confirmation to treat)"
+      ],
+      "treatment": "Botulism antitoxin (heptavalent equine antitoxin for adults; BabyBIG for infant botulism) - CRITICAL, must be given as soon as possible (does not reverse existing paralysis but stops progression). Supportive care: mechanical ventilation (may be needed for weeks to months), nutritional support, prevention of complications. Antibiotics: penicillin or metronidazole for wound botulism (after antitoxin). Do NOT use aminoglycosides (can worsen paralysis).",
+      "infectionControl": {
+        "precautions": "Standard Precautions (not contagious person-to-person)",
+        "screening": "Not routinely recommended; identify food exposure sources",
+        "cohorting": "Not needed (not contagious)",
+        "sourceControl": "Identify and eliminate contaminated food sources; proper wound care for wound botulism; avoid honey in infants <12 months",
+        "environmental": "Food safety education; proper canning and preservation techniques; biosafety for laboratory work",
+        "staffEducation": "Recognition of botulism (descending flaccid paralysis, cranial nerve palsies), antitoxin administration urgency, respiratory support, food safety"
+      },
+      "outbreakTriggers": [
+        "Single confirmed case (especially foodborne or wound botulism)",
+        "≥2 cases with common food exposure",
+        "Cluster of cases with no clear food source (suggests bioterrorism)",
+        "Unusual presentation or location"
+      ],
+      "reportingCommunication": [
+        "Immediate notification to public health authorities (within hours) - botulism is a public health emergency",
+        "Activate bioterrorism response if intentional release suspected",
+        "Coordinate antitoxin procurement (CDC Emergency Operations Center: 770-488-7100)",
+        "Food source investigation and recall if foodborne",
+        "Public health alerts and media communication",
+        "Update stakeholders (food safety authorities, healthcare providers)"
+      ],
+      "prevention": [
+        "Safe food practices: proper canning and preservation techniques (pressure canning for low-acid foods)",
+        "Boil home-canned foods for 10 minutes before eating (destroys toxin)",
+        "Avoid honey in infants <12 months",
+        "Proper wound hygiene and care",
+        "Avoid injection drug use",
+        "Public awareness campaigns on food safety",
+        "No vaccine available for general population (pentavalent toxoid for laboratory workers)",
+        "Bioterrorism preparedness"
+      ],
+      "references": [
+        {
+          "label": "WHO - Botulism",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/botulism"
+        },
+        {
+          "label": "CDC - Botulism",
+          "url": "https://www.cdc.gov/botulism/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Foodborne Illness",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "brucella_spp",
+      "name": "Brucella spp. (Brucellosis)",
+      "scientificName": "Brucella species (B. melitensis, B. abortus, B. suis, B. canis)",
+      "definition": "Facultative intracellular Gram-negative coccobacilli causing brucellosis (undulant fever, Malta fever). Brucellosis is a zoonotic disease with chronic, debilitating course if untreated.",
+      "reservoir": {
+        "primary": ["Infected livestock: cattle (B. abortus), goats/sheep (B. melitensis), pigs (B. suis), dogs (B. canis)"],
+        "secondary": ["Unpasteurized dairy products", "Contaminated meat", "Aborted fetuses and birth products"],
+        "notes": "B. melitensis is the most virulent species. Brucellosis is endemic in Mediterranean, Middle East, Latin America, Asia, Africa. Occupational disease for farmers, veterinarians, abattoir workers."
+      },
+      "transmission": {
+        "mode": "Direct contact, ingestion, inhalation",
+        "routes": [
+          "Ingestion of unpasteurized dairy products (milk, cheese) - most common",
+          "Direct contact with infected animals or tissues (birth products, aborted fetuses, blood)",
+          "Inhalation of contaminated aerosols (abattoirs, laboratories)",
+          "Rarely: person-to-person (vertical transmission, breastfeeding, sexual transmission, tissue transplantation)"
+        ],
+        "notes": "Person-to-person transmission is extremely rare. Occupational exposure is common in endemic areas."
+      },
+      "incubationPeriod": {
+        "range": "1-4 weeks (range 5 days to 5 months)",
+        "infectiousPeriod": "Prolonged infectious period (bacteria can persist in tissues for months to years); person-to-person transmission extremely rare",
+        "seasonality": "Spring peaks (animal birthing season); year-round in endemic areas",
+        "geographic": "Endemic in Mediterranean, Middle East, Latin America, Asia, Africa; rare in US, Canada, Northern Europe"
+      },
+      "riskFactors": [
+        "Farmers, veterinarians, and abattoir workers",
+        "Consumption of unpasteurized dairy products",
+        "Travel to endemic areas",
+        "Laboratory workers (highly infectious, BSL-3 required)",
+        "Hunters (exposure to wild boar, reindeer)",
+        "Immunocompromised individuals (higher risk of complications)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Undulant fever (intermittent, remitting fever pattern - hallmark)",
+          "Profuse sweats (especially night sweats)",
+          "Arthralgia and myalgia (joint and muscle pain)",
+          "Fatigue and malaise",
+          "Headache",
+          "Hepatosplenomegaly (enlarged liver and spleen)",
+          "Lymphadenopathy",
+          "Weight loss and anorexia"
+        ],
+        "complications": [
+          "Osteoarticular complications (40-60%): sacroiliitis, spondylitis, arthritis",
+          "Neurobrucellosis (5-10%): meningitis, encephalitis, radiculopathy",
+          "Endocarditis (1-2%): most common cause of death",
+          "Hepatitis and liver abscess",
+          "Orchitis and epididymitis (males)",
+          "Spontaneous abortion (pregnant women)",
+          "Chronic brucellosis (symptoms >1 year)",
+          "Death (rare, <2% with treatment; higher with endocarditis)"
+        ],
+        "caseDefinition": {
+          "suspected": "Clinical: undulant fever + sweats + arthralgia + hepatosplenomegaly + epidemiologic link (unpasteurized dairy, animal exposure, travel to endemic area, or occupational exposure)",
+          "confirmed": "Clinical illness + laboratory confirmation: positive blood or bone marrow culture for Brucella, OR positive serology (standard tube agglutination test ≥1:160 or 4-fold rise), OR positive PCR"
+        }
+      },
+      "diagnosis": [
+        "Blood culture or bone marrow culture (gold standard, but slow - may take 3-6 weeks; notify lab - BSL-3 required)",
+        "Serology: standard tube agglutination test (SAT), ELISA, Coombs test",
+        "PCR from blood or tissue (rapid, specific)",
+        "Imaging: MRI for spondylitis, echocardiography for endocarditis"
+      ],
+      "treatment": "Combination therapy (to prevent relapse): Doxycycline + rifampin for 6 weeks (first-line), OR doxycycline + streptomycin/gentamicin for 6 weeks. Longer duration for complications: neurobrucellosis (3-6 months), endocarditis (4-6 months + surgery). TMP-SMX + rifampin for children <8 years.",
+      "infectionControl": {
+        "precautions": "Standard Precautions (person-to-person transmission extremely rare)",
+        "screening": "Not routinely recommended; screen occupational exposures",
+        "cohorting": "Not needed (not contagious)",
+        "sourceControl": "Identify and eliminate contaminated food sources; PPE for animal handlers; animal vaccination programs",
+        "environmental": "Food safety (pasteurization); biosafety level 3 (BSL-3) for laboratory work; proper disposal of animal birth products",
+        "staffEducation": "Recognition of brucellosis (undulant fever, sweats, arthralgia), food safety, occupational safety for animal handlers, laboratory biosafety"
+      },
+      "outbreakTriggers": [
+        "≥2 epidemiologically linked cases (common food source, occupational exposure)",
+        "Severe single case with complications",
+        "Laboratory-acquired infection",
+        "Cluster in non-endemic area"
+      ],
+      "reportingCommunication": [
+        "Report human and animal cases to public health authorities (within 24 hours)",
+        "Initiate joint human-animal health investigation (One Health approach)",
+        "Identify and recall contaminated food products",
+        "Coordinate with veterinary and agricultural authorities",
+        "Public health alerts to at-risk populations",
+        "Update stakeholders (food safety, occupational health)"
+      ],
+      "prevention": [
+        "Pasteurization of milk and dairy products",
+        "PPE use for farmers, veterinarians, abattoir workers (gloves, masks, protective clothing)",
+        "Animal vaccination programs (B. abortus RB51 vaccine for cattle)",
+        "Avoid unpasteurized dairy products in endemic areas",
+        "Proper disposal of animal birth products and aborted fetuses",
+        "Laboratory biosafety (BSL-3 for culture work)",
+        "Public education on food safety and occupational risks",
+        "No human vaccine available"
+      ],
+      "references": [
+        {
+          "label": "WHO - Brucellosis",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/brucellosis"
+        },
+        {
+          "label": "CDC - Brucellosis",
+          "url": "https://www.cdc.gov/brucellosis/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Zoonotic Diseases",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "burkholderia_mallei",
+      "name": "Burkholderia mallei (Glanders)",
+      "scientificName": "Burkholderia mallei",
+      "definition": "Gram-negative bacillus causing glanders, a zoonotic disease primarily affecting equine animals. B. mallei is a potential bioterrorism agent due to high mortality and aerosol transmission potential.",
+      "reservoir": {
+        "primary": ["Equine animals (horses, mules, donkeys)"],
+        "secondary": ["Contaminated environment (soil, water, fomites)"],
+        "notes": "Glanders is rare in humans but highly fatal. Disease has been eradicated in most developed countries but persists in parts of Asia, Middle East, Africa, South America. B. mallei is an obligate mammalian pathogen (does not survive long in environment)."
+      },
+      "transmission": {
+        "mode": "Direct contact, inhalation",
+        "routes": [
+          "Direct contact with infected animals or contaminated materials (mucous membranes, broken skin)",
+          "Inhalation of contaminated aerosols",
+          "Laboratory exposure (highly infectious, BSL-3 required)",
+          "Rarely: ingestion of contaminated food/water"
+        ],
+        "notes": "Person-to-person transmission is extremely rare. Occupational disease for veterinarians, stable workers, laboratory personnel."
+      },
+      "incubationPeriod": {
+        "range": "1-5 days (range 1-14 days)",
+        "infectiousPeriod": "Not contagious person-to-person (extremely rare)",
+        "seasonality": "Year-round, no specific seasonal pattern",
+        "geographic": "Endemic in parts of Asia, Middle East, Africa, South America; eradicated in North America, Western Europe, Australia"
+      },
+      "riskFactors": [
+        "Veterinary occupations (equine veterinarians, stable workers)",
+        "Laboratory exposure (highly infectious)",
+        "Military personnel (biowarfare threat)",
+        "Travel to endemic areas with equine contact",
+        "Immunocompromised individuals (higher risk of severe disease)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Localized infection: ulcerations, nodules, abscesses at inoculation site",
+          "Pulmonary glanders: pneumonia, lung abscesses, pleural effusions",
+          "Septicemic glanders: fever, chills, myalgia, hepatosplenomegaly, pustular skin lesions",
+          "Chronic glanders: multiple abscesses in skin, muscles, liver, spleen",
+          "Nasal discharge and ulcerations (characteristic in horses)"
+        ],
+        "complications": [
+          "Septic shock and multi-organ failure",
+          "Pneumonia and respiratory failure",
+          "Liver and spleen abscesses",
+          "Osteomyelitis",
+          "Meningitis",
+          "Death (50-95% mortality without treatment; 40-50% with treatment)",
+          "Chronic infection with relapse"
+        ],
+        "caseDefinition": {
+          "suspected": "Clinical: ulcerations/nodules + pneumonia or sepsis + epidemiologic link (equine contact, laboratory work, travel to endemic area, or bioterrorism event)",
+          "confirmed": "Clinical illness + laboratory confirmation: positive culture, PCR, or serology for B. mallei"
+        }
+      },
+      "diagnosis": [
+        "Culture from blood, sputum, skin lesions (requires BSL-3 lab - notify lab before sending)",
+        "PCR for B. mallei DNA",
+        "Serology (complement fixation, ELISA)",
+        "Chest X-ray (pneumonia, lung abscesses, pleural effusions)",
+        "Histopathology (granulomas, abscesses)"
+      ],
+      "treatment": "Prolonged antibiotics (months): Intensive phase (2-4 weeks): ceftazidime or meropenem + doxycycline or TMP-SMX. Eradication phase (3-6 months): doxycycline + TMP-SMX, OR azithromycin + TMP-SMX. Supportive care for severe cases.",
+      "infectionControl": {
+        "precautions": "Standard Precautions (person-to-person transmission extremely rare); Contact Precautions for draining lesions",
+        "screening": "Screen occupational exposures; test equine animals in endemic areas",
+        "cohorting": "Isolation of cases; strict lab biosafety",
+        "sourceControl": "Identify and cull infected animals; environmental decontamination",
+        "environmental": "Biosafety level 3 (BSL-3) for laboratory work; proper disposal of contaminated materials; disinfection of stables and equipment",
+        "staffEducation": "Recognition of glanders (ulcerations, pneumonia), biosafety for laboratory workers, occupational safety for veterinarians, bioterrorism awareness"
+      },
+      "outbreakTriggers": [
+        "Any confirmed case triggers investigation due to rarity",
+        "Laboratory-acquired infection",
+        "Cluster of cases in equine-exposed population",
+        "Unusual presentation or location (suggests bioterrorism)"
+      ],
+      "reportingCommunication": [
+        "Immediate public health and laboratory notification (within hours)",
+        "Veterinary notification and animal testing",
+        "Activate bioterrorism response if intentional release suspected",
+        "Coordinate with animal health authorities",
+        "Public health alerts to at-risk populations (veterinarians, stable workers)",
+        "Update stakeholders"
+      ],
+      "prevention": [
+        "Animal control: testing and culling of infected equine animals",
+        "PPE use for veterinarians and stable workers (gloves, masks, protective clothing)",
+        "Awareness for at-risk workers",
+        "Laboratory biosafety (BSL-3 for culture work)",
+        "Avoid contact with sick equine animals in endemic areas",
+        "No human vaccine available",
+        "Bioterrorism preparedness"
+      ],
+      "references": [
+        {
+          "label": "WHO - Glanders",
+          "url": "https://www.who.int/health-topics/glanders"
+        },
+        {
+          "label": "CDC - Burkholderia mallei (Glanders)",
+          "url": "https://www.cdc.gov/glanders/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Zoonotic Diseases",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "burkholderia_pseudomallei",
+      "name": "Burkholderia pseudomallei (Melioidosis)",
+      "scientificName": "Burkholderia pseudomallei",
+      "definition": "Gram-negative bacillus causing melioidosis (Whitmore's disease), a tropical infectious disease with diverse clinical manifestations. B. pseudomallei is endemic in Southeast Asia and northern Australia.",
+      "reservoir": {
+        "primary": ["Soil and stagnant water in tropical regions"],
+        "secondary": ["Contaminated mud, rice paddies, surface water"],
+        "notes": "B. pseudomallei is a saprophyte that thrives in tropical soil and water. Melioidosis is endemic in Southeast Asia (Thailand, Vietnam, Malaysia) and northern Australia. Climate change may expand geographic range."
+      },
+      "transmission": {
+        "mode": "Percutaneous inoculation, inhalation, ingestion",
+        "routes": [
+          "Percutaneous inoculation through broken skin (most common)",
+          "Inhalation of contaminated dust or water droplets (especially during storms, monsoons)",
+          "Ingestion of contaminated water",
+          "Aspiration of contaminated water (near-drowning)",
+          "Laboratory exposure"
+        ],
+        "notes": "Person-to-person transmission is extremely rare (only a few documented cases). Occupational and environmental exposure in endemic areas."
+      },
+      "incubationPeriod": {
+        "range": "1-21 days (median 9 days); can be months to years (latent infection with reactivation)",
+        "infectiousPeriod": "Not contagious person-to-person (extremely rare)",
+        "seasonality": "Rainy season peaks (monsoons); year-round in endemic areas",
+        "geographic": "Endemic in Southeast Asia (Thailand, Vietnam, Malaysia, Singapore) and northern Australia; sporadic cases in South Asia, Africa, Americas"
+      },
+      "riskFactors": [
+        "Environmental exposure in endemic areas (farmers, rice paddy workers, military personnel)",
+        "Diabetes mellitus (most important risk factor - 50% of cases)",
+        "Chronic kidney disease",
+        "Chronic lung disease",
+        "Immunosuppression (HIV, cancer, corticosteroids)",
+        "Excessive alcohol use",
+        "Thalassemia",
+        "Travel to endemic areas"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Acute localized infection: skin abscess, lymphadenitis",
+          "Acute pulmonary infection: pneumonia, lung abscesses, cavitation (mimics tuberculosis)",
+          "Acute septicemia: fever, shock, multi-organ abscesses (high mortality)",
+          "Chronic infection: chronic pneumonia, skin/soft tissue abscesses, osteomyelitis (mimics TB)",
+          "Neurological melioidosis: brain abscesses, encephalomyelitis",
+          "Prostatic abscesses (males)"
+        ],
+        "complications": [
+          "Septic shock and multi-organ failure (40-50% mortality)",
+          "Lung abscesses and empyema",
+          "Liver and spleen abscesses",
+          "Brain abscesses and neurological sequelae",
+          "Osteomyelitis and septic arthritis",
+          "Prostatic abscesses",
+          "Death (10-50% mortality depending on presentation; higher in septicemic form)",
+          "Relapse (10-20% even with treatment)"
+        ],
+        "caseDefinition": {
+          "suspected": "Clinical: pneumonia, abscesses, or sepsis + risk factors (diabetes, travel/residence in endemic area) + epidemiologic link",
+          "confirmed": "Clinical illness + laboratory confirmation: positive culture or PCR for B. pseudomallei from blood, sputum, abscess, or other sterile site"
+        }
+      },
+      "diagnosis": [
+        "Culture from blood, sputum, abscess, urine (Ashdown's medium - selective media)",
+        "PCR for B. pseudomallei DNA",
+        "Serology (indirect hemagglutination assay - IHA)",
+        "Chest X-ray or CT (pneumonia, lung abscesses, cavitation)",
+        "Imaging (CT, MRI) for abscesses (liver, spleen, brain, prostate)"
+      ],
+      "treatment": "Intensive phase (10-14 days): ceftazidime or meropenem IV. Eradication phase (3-6 months): TMP-SMX (first-line), OR doxycycline + TMP-SMX, OR amoxicillin-clavulanate. Longer duration for CNS or prostatic involvement (6-12 months). Supportive care: drainage of abscesses, management of septic shock.",
+      "infectionControl": {
+        "precautions": "Standard Precautions (person-to-person transmission extremely rare)",
+        "screening": "Not routinely recommended; screen high-risk patients in endemic areas",
+        "cohorting": "Not needed (not contagious)",
+        "sourceControl": "Avoid environmental exposure in endemic areas (especially during rainy season)",
+        "environmental": "PPE for environmental exposure (boots, gloves); environmental hygiene; biosafety level 3 (BSL-3) for laboratory work",
+        "staffEducation": "Recognition of melioidosis (pneumonia + abscesses in diabetic patient from endemic area), prolonged treatment duration, relapse risk"
+      },
+      "outbreakTriggers": [
+        "Cluster of cases in endemic area (especially after storms, floods, tsunamis)",
+        "Travel-related cases with common exposure",
+        "Unusual increase above baseline"
+      ],
+      "reportingCommunication": [
+        "Notify public health authorities (within 24 hours)",
+        "Environmental and clinical surveillance in endemic areas",
+        "Public health alerts after natural disasters (storms, floods)",
+        "Update stakeholders (travelers, military, healthcare providers)"
+      ],
+      "prevention": [
+        "Protective clothing and footwear in endemic areas (boots, gloves)",
+        "Avoidance of exposure to soil and water in endemic areas (especially during rainy season)",
+        "Awareness campaigns for travelers and at-risk populations",
+        "Diabetes control (reduces risk)",
+        "No vaccine available",
+        "Post-exposure prophylaxis not routinely recommended"
+      ],
+      "references": [
+        {
+          "label": "WHO - Melioidosis",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/melioidosis"
+        },
+        {
+          "label": "CDC - Melioidosis",
+          "url": "https://www.cdc.gov/melioidosis/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Tropical Infections",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "coxiella_burnetii",
+      "name": "Coxiella burnetii (Q fever)",
+      "scientificName": "Coxiella burnetii",
+      "definition": "Obligate intracellular Gram-negative bacterium causing Q fever, a zoonotic disease with acute and chronic forms. C. burnetii is highly infectious and a potential bioterrorism agent.",
+      "reservoir": {
+        "primary": ["Domestic animals: sheep, goats, cattle (asymptomatic carriers)"],
+        "secondary": ["Ticks (not important for human transmission)", "Contaminated environment (dust, soil, bedding)"],
+        "notes": "C. burnetii is highly resistant to environmental conditions (spore-like forms can survive for months). Highly infectious (1-10 organisms can cause disease). Bacteria are shed in high concentrations in birth products (placenta, amniotic fluid), milk, urine, feces."
+      },
+      "transmission": {
+        "mode": "Inhalation of contaminated aerosols",
+        "routes": [
+          "Inhalation of aerosolized birth products (placenta, amniotic fluid) - most common",
+          "Inhalation of contaminated dust from animal pens, barns, pastures",
+          "Direct contact with infected animals or contaminated materials",
+          "Ingestion of unpasteurized milk (rare)",
+          "Tick bites (rare, not important for human transmission)",
+          "Rarely: person-to-person (vertical transmission, blood transfusion, sexual transmission)"
+        ],
+        "notes": "Airborne transmission is highly efficient. Outbreaks often associated with animal birthing season. Wind can carry contaminated aerosols over long distances."
+      },
+      "incubationPeriod": {
+        "range": "2-3 weeks (range 9-40 days)",
+        "infectiousPeriod": "Not contagious person-to-person (extremely rare)",
+        "seasonality": "Spring peaks (animal birthing season); year-round",
+        "geographic": "Worldwide except New Zealand and Antarctica; endemic in Mediterranean, Middle East, Australia"
+      },
+      "riskFactors": [
+        "Farmers, veterinarians, and abattoir workers",
+        "Exposure to sheep, goats, cattle (especially during birthing)",
+        "Living near farms or animal facilities",
+        "Laboratory workers",
+        "Military personnel (biowarfare threat)",
+        "Pregnancy (risk of complications)",
+        "Valvular heart disease or vascular grafts (risk of chronic Q fever endocarditis)",
+        "Immunocompromised individuals"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Acute Q fever (50-60% symptomatic): sudden fever, severe headache, myalgia, malaise, pneumonia, hepatitis",
+          "Atypical pneumonia (30-50% of acute cases)",
+          "Hepatitis (elevated liver enzymes, hepatomegaly)",
+          "Chronic Q fever (1-5% of acute cases): endocarditis (most common), vascular infections, osteomyelitis, chronic hepatitis",
+          "Q fever fatigue syndrome (post-Q fever chronic fatigue)",
+          "Pregnancy complications: miscarriage, stillbirth, preterm delivery"
+        ],
+        "complications": [
+          "Chronic Q fever endocarditis (most serious complication - high mortality)",
+          "Vascular graft infections",
+          "Osteomyelitis",
+          "Chronic hepatitis",
+          "Neurological complications (meningitis, encephalitis)",
+          "Myocarditis and pericarditis",
+          "Death (1-2% for acute Q fever; 25-60% for chronic endocarditis without treatment)",
+          "Q fever fatigue syndrome (prolonged fatigue lasting months to years)"
+        ],
+        "caseDefinition": {
+          "suspected": "Clinical: febrile illness + pneumonia or hepatitis + epidemiologic link (animal exposure, especially sheep/goats during birthing, or occupational exposure)",
+          "confirmed": "Clinical illness + laboratory confirmation: positive serology (IgG phase II ≥1:200 for acute; IgG phase I ≥1:800 for chronic), OR positive PCR from blood or tissue"
+        }
+      },
+      "diagnosis": [
+        "Serology (indirect immunofluorescence assay - IFA): IgG phase II (acute Q fever), IgG phase I (chronic Q fever)",
+        "PCR from blood, tissue, or heart valve",
+        "Culture (rarely performed - requires BSL-3 lab)",
+        "Chest X-ray (atypical pneumonia - patchy infiltrates)",
+        "Echocardiography (for endocarditis)",
+        "Liver function tests (elevated transaminases)"
+      ],
+      "treatment": "Acute Q fever: doxycycline for 14 days (first-line). Chronic Q fever endocarditis: doxycycline + hydroxychloroquine for ≥18 months (monitor serology). Pregnancy: TMP-SMX throughout pregnancy (doxycycline contraindicated). Post-exposure prophylaxis: doxycycline for 5-7 days if high-risk exposure.",
+      "infectionControl": {
+        "precautions": "Standard Precautions (person-to-person transmission extremely rare); Airborne Precautions during high-risk procedures (autopsy, obstetric procedures)",
+        "screening": "Screen high-risk patients (valvular heart disease, vascular grafts, pregnancy) after exposure",
+        "cohorting": "Not needed (not contagious)",
+        "sourceControl": "Avoid exposure to animal birthing; proper disposal of birth products; environmental decontamination",
+        "environmental": "Biosafety level 3 (BSL-3) for laboratory work; disinfection of contaminated areas (bleach, formaldehyde); proper ventilation in animal facilities",
+        "staffEducation": "Recognition of Q fever (febrile illness + pneumonia/hepatitis + animal exposure), chronic Q fever risk factors, occupational safety"
+      },
+      "outbreakTriggers": [
+        "≥2 linked cases with common exposure (farm, abattoir, veterinary clinic)",
+        "Cluster of atypical pneumonia cases with animal exposure",
+        "Single case in high-risk setting (laboratory, bioterrorism event)"
+      ],
+      "reportingCommunication": [
+        "Report promptly to health and veterinary authorities (within 24 hours)",
+        "Coordinate investigation with animal health authorities",
+        "Environmental investigation and decontamination",
+        "Public health alerts to at-risk populations",
+        "Update stakeholders (farmers, veterinarians, abattoir workers)"
+      ],
+      "prevention": [
+        "Occupational safety: PPE for animal handlers (masks, gloves, protective clothing)",
+        "Proper handling of animal birthing products (incineration or deep burial)",
+        "Pasteurization of milk",
+        "Avoid exposure to animal birthing (especially sheep, goats)",
+        "Vaccination for high-risk occupations (available in Australia; not in US)",
+        "Environmental hygiene and ventilation in animal facilities",
+        "Post-exposure prophylaxis (doxycycline) for high-risk exposures"
+      ],
+      "references": [
+        {
+          "label": "WHO - Q Fever",
+          "url": "https://www.who.int/health-topics/q-fever"
+        },
+        {
+          "label": "CDC - Q Fever",
+          "url": "https://www.cdc.gov/qfever/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Zoonotic Diseases",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "rickettsia_prowazekii",
+      "name": "Rickettsia prowazekii (Epidemic Typhus)",
+      "scientificName": "Rickettsia prowazekii",
+      "definition": "Obligate intracellular Gram-negative bacterium causing epidemic typhus (louse-borne typhus). R. prowazekii is a potential bioterrorism agent and causes severe systemic disease.",
+      "reservoir": {
+        "primary": ["Human body lice (Pediculus humanus corporis)"],
+        "secondary": ["Flying squirrels and their lice/fleas (sylvatic typhus in US)"],
+        "notes": "Humans are the primary reservoir. Lice become infected by feeding on bacteremic humans. Bacteria multiply in lice gut and are excreted in feces. Lice die from infection within 2 weeks. Epidemic typhus occurs in conditions of poor hygiene, crowding, and lice infestation (war, famine, refugee camps, prisons)."
+      },
+      "transmission": {
+        "mode": "Lice feces inoculated into skin",
+        "routes": [
+          "Lice feces rubbed into skin (scratching bite sites)",
+          "Inhalation of aerosolized lice feces (rare)",
+          "Contact with crushed lice",
+          "Rarely: blood transfusion, vertical transmission"
+        ],
+        "notes": "Person-to-person transmission requires lice vector. Lice abandon febrile or dead hosts, facilitating spread. Sylvatic typhus (flying squirrels) is rare and milder."
+      },
+      "incubationPeriod": {
+        "range": "1-2 weeks (range 6-15 days)",
+        "infectiousPeriod": "Contagious while lice-infested and bacteremic",
+        "seasonality": "Winter peaks (crowding, poor hygiene); year-round in endemic areas",
+        "geographic": "Endemic in mountainous regions of Africa, Asia, Central/South America; rare in developed countries; outbreaks in refugee camps, prisons, war zones"
+      },
+      "riskFactors": [
+        "Poor hygiene and crowded living conditions",
+        "Body lice infestation",
+        "Homelessness",
+        "Refugee camps, prisons, war zones",
+        "Travel to endemic areas",
+        "Contact with flying squirrels (sylvatic typhus in US)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Sudden fever and chills",
+          "Severe headache",
+          "Myalgia and malaise",
+          "Maculopapular rash (appears day 4-6, starts on trunk, spreads to extremities, spares face/palms/soles)",
+          "Altered mental status, confusion, stupor (typhus = stupor in Greek)",
+          "Conjunctival injection",
+          "Hepatosplenomegaly"
+        ],
+        "complications": [
+          "Severe systemic disease with multi-organ involvement",
+          "Encephalitis and meningitis",
+          "Myocarditis",
+          "Pneumonia",
+          "Renal failure",
+          "Gangrene of extremities",
+          "Death (10-60% mortality without treatment; <4% with treatment)",
+          "Brill-Zinsser disease (recrudescent typhus years after initial infection)"
+        ],
+        "caseDefinition": {
+          "suspected": "Clinical: fever + severe headache + rash + altered mental status + epidemiologic link (lice infestation, crowded conditions, travel to endemic area, or flying squirrel contact)",
+          "confirmed": "Clinical illness + laboratory confirmation: positive serology (IgG, IgM), OR positive PCR from blood or tissue, OR immunohistochemistry"
+        }
+      },
+      "diagnosis": [
+        "Serology (indirect immunofluorescence assay - IFA, ELISA): IgG, IgM antibodies",
+        "PCR from blood or tissue (specialized labs)",
+        "Immunohistochemistry on skin biopsy",
+        "Culture (rarely performed - requires BSL-3 lab)",
+        "Weil-Felix test (non-specific, historical)"
+      ],
+      "treatment": "Doxycycline (100 mg twice daily for 7-10 days) - first-line. Chloramphenicol - alternative. Single-dose doxycycline (200 mg) may be effective for early treatment. Supportive care for severe cases.",
+      "infectionControl": {
+        "precautions": "Standard Precautions + Contact Precautions for lice-infested patients; delousing required",
+        "screening": "Screen for lice infestation; treat contacts",
+        "cohorting": "Isolate lice-infested patients until deloused",
+        "sourceControl": "Body lice control: delousing (permethrin, malathion), laundering clothes/bedding (hot water, drying), environmental hygiene",
+        "environmental": "Disinfection of contaminated clothing and bedding; improve hygiene and living conditions",
+        "staffEducation": "Recognition of epidemic typhus (fever + rash + altered mental status + lice), lice control measures, contact precautions"
+      },
+      "outbreakTriggers": [
+        "Any case in non-endemic areas",
+        "Cluster of cases in settings with lice infestation (refugee camps, prisons, homeless shelters)",
+        "≥2 linked cases with common exposure"
+      ],
+      "reportingCommunication": [
+        "Immediate notification to public health authorities (within 24 hours)",
+        "Vector control measures (lice eradication programs)",
+        "Public education on hygiene and lice prevention",
+        "Coordinate with social services for at-risk populations",
+        "Update stakeholders (homeless shelters, prisons, refugee services)"
+      ],
+      "prevention": [
+        "Hygiene and lice prevention programs",
+        "Regular bathing and laundering of clothes/bedding",
+        "Delousing of infested individuals and contacts",
+        "Improve living conditions (reduce crowding, improve sanitation)",
+        "Avoid contact with flying squirrels and their nests (sylvatic typhus)",
+        "No vaccine currently available",
+        "Post-exposure prophylaxis: doxycycline for high-risk exposures"
+      ],
+      "references": [
+        {
+          "label": "WHO - Epidemic Typhus",
+          "url": "https://www.who.int/health-topics/typhus"
+        },
+        {
+          "label": "CDC - Epidemic Typhus",
+          "url": "https://www.cdc.gov/typhus/epidemic/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Vector-Borne Diseases",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "leptospira_interrogans",
+      "name": "Leptospira interrogans (Leptospirosis)",
+      "scientificName": "Leptospira interrogans",
+      "definition": "Spiral-shaped bacteria causing leptospirosis (Weil's disease), a zoonotic disease with diverse clinical manifestations. Leptospirosis is the most widespread zoonotic disease worldwide.",
+      "reservoir": {
+        "primary": ["Infected animals: rodents (rats, mice), livestock (cattle, pigs, horses, sheep, goats), dogs"],
+        "secondary": ["Contaminated water, soil, mud"],
+        "notes": "Leptospires are excreted in animal urine and can survive in water and moist soil for weeks to months. Rodents are chronic carriers (asymptomatic renal colonization). Outbreaks often follow floods, heavy rains, hurricanes."
+      },
+      "transmission": {
+        "mode": "Contact with contaminated water or soil",
+        "routes": [
+          "Direct contact with infected animal urine or tissues",
+          "Indirect contact with contaminated water, soil, or mud (through mucous membranes or broken skin)",
+          "Ingestion of contaminated water or food",
+          "Inhalation of contaminated aerosols (rare)",
+          "Occupational exposure (farmers, veterinarians, sewer workers, military personnel)"
+        ],
+        "notes": "Person-to-person transmission is extremely rare. Outbreaks associated with flooding, water sports, occupational exposure."
+      },
+      "incubationPeriod": {
+        "range": "2-30 days (average 7-12 days)",
+        "infectiousPeriod": "Not contagious person-to-person (extremely rare)",
+        "seasonality": "Rainy season and post-flood peaks; year-round in tropical areas",
+        "geographic": "Worldwide, especially tropical and subtropical regions; endemic in Southeast Asia, Latin America, Caribbean, Pacific Islands"
+      },
+      "riskFactors": [
+        "Flood exposure and water sports (swimming, kayaking, rafting)",
+        "Outdoor workers (farmers, sewer workers, military personnel, veterinarians)",
+        "Poor sanitation and rodent infestation",
+        "Occupational animal contact",
+        "Travel to endemic areas",
+        "Immunocompromised individuals (higher risk of severe disease)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Biphasic illness: Leptospiremic phase (4-7 days): sudden fever, chills, headache, myalgia (especially calves), conjunctival suffusion (red eyes without discharge - hallmark)",
+          "Immune phase (after brief improvement): recurrence of fever, meningitis, uveitis",
+          "Weil's disease (severe form, 5-10%): jaundice, renal failure, hemorrhage, myocarditis, pulmonary hemorrhage",
+          "Pulmonary hemorrhage syndrome (most severe, high mortality)"
+        ],
+        "complications": [
+          "Acute renal failure (most common serious complication)",
+          "Hepatitis and jaundice (Weil's disease)",
+          "Pulmonary hemorrhage and ARDS (high mortality)",
+          "Myocarditis and arrhythmias",
+          "Meningitis and encephalitis",
+          "Uveitis (can occur weeks to months after acute illness)",
+          "Hemorrhage (thrombocytopenia, DIC)",
+          "Death (5-15% for Weil's disease; up to 50-70% for pulmonary hemorrhage syndrome)"
+        ],
+        "caseDefinition": {
+          "suspected": "Clinical: fever + myalgia + conjunctival suffusion + jaundice/renal failure + epidemiologic link (flood exposure, water sports, occupational exposure, travel to endemic area)",
+          "confirmed": "Clinical illness + laboratory confirmation: positive culture, PCR, or serology (microscopic agglutination test - MAT with 4-fold rise or single high titer)"
+        }
+      },
+      "diagnosis": [
+        "Serology: microscopic agglutination test (MAT) - gold standard (4-fold rise or titer ≥1:800)",
+        "PCR from blood (first week) or urine (after first week)",
+        "Culture from blood or CSF (first week) - slow, requires specialized media",
+        "Dark-field microscopy (rarely used)",
+        "Urinalysis (proteinuria, hematuria, casts)",
+        "Liver and kidney function tests (elevated bilirubin, creatinine)"
+      ],
+      "treatment": "Mild disease: doxycycline or azithromycin (oral, 7 days). Severe disease (Weil's disease): penicillin G or ceftriaxone (IV, 7 days). Supportive care: dialysis for renal failure, mechanical ventilation for pulmonary hemorrhage. Post-exposure prophylaxis: doxycycline 200 mg weekly during exposure period.",
+      "infectionControl": {
+        "precautions": "Standard Precautions (person-to-person transmission extremely rare)",
+        "screening": "Not routinely recommended; screen high-risk exposures",
+        "cohorting": "Not needed (not contagious)",
+        "sourceControl": "Avoid contaminated water; rodent control; protective equipment for occupational exposure",
+        "environmental": "Water safety measures; rodent control; environmental hygiene; proper drainage to prevent flooding",
+        "staffEducation": "Recognition of leptospirosis (fever + myalgia + conjunctival suffusion + jaundice/renal failure + water exposure), occupational safety"
+      },
+      "outbreakTriggers": [
+        "≥2 cases linked to common water source or environmental outbreak (flood, hurricane, water sports event)",
+        "Cluster of cases after natural disaster",
+        "Occupational cluster"
+      ],
+      "reportingCommunication": [
+        "Notify public health and environmental health authorities (within 24 hours)",
+        "Environmental investigation and water testing",
+        "Public health alerts after floods or natural disasters",
+        "Coordinate with veterinary authorities for animal control",
+        "Update stakeholders (outdoor workers, water sports organizers, travelers)"
+      ],
+      "prevention": [
+        "Protective clothing and footwear for outdoor workers (boots, gloves)",
+        "Water safety: avoid swimming or wading in potentially contaminated water (especially after floods)",
+        "Rodent control and improved sanitation",
+        "Chemoprophylaxis: doxycycline 200 mg weekly for high-risk exposures (military, disaster responders)",
+        "Animal vaccination (livestock, dogs)",
+        "Public education on risks after floods",
+        "No human vaccine available (veterinary vaccines exist)"
+      ],
+      "references": [
+        {
+          "label": "WHO - Leptospirosis",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/leptospirosis"
+        },
+        {
+          "label": "CDC - Leptospirosis",
+          "url": "https://www.cdc.gov/leptospirosis/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Zoonotic Diseases",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "pasteurella_multocida",
+      "name": "Pasteurella multocida",
+      "scientificName": "Pasteurella multocida",
+      "definition": "Gram-negative coccobacillus causing zoonotic infections from animal bites and scratches. P. multocida is part of normal oral flora of many animals and causes rapid-onset wound infections.",
+      "reservoir": {
+        "primary": ["Oral flora of cats, dogs, and other animals (pigs, rabbits, rodents, birds)"],
+        "secondary": ["Respiratory tract of animals"],
+        "notes": "P. multocida is found in 50-90% of cats and 50-70% of dogs. Cat bites have higher infection rates than dog bites due to deep puncture wounds."
+      },
+      "transmission": {
+        "mode": "Animal bites, scratches, contact with saliva",
+        "routes": [
+          "Animal bites (cats, dogs, pigs, rabbits, rodents)",
+          "Animal scratches (especially cats)",
+          "Direct contact with animal saliva (licking wounds or mucous membranes)",
+          "Rarely: inhalation (respiratory infections in patients with chronic lung disease)",
+          "Rarely: ingestion (contaminated food/water)"
+        ],
+        "notes": "Person-to-person transmission does not occur. Cat bites are more likely to become infected than dog bites."
+      },
+      "incubationPeriod": {
+        "range": "Hours to days post-injury (typically <24 hours for wound infections)",
+        "infectiousPeriod": "Not contagious person-to-person",
+        "seasonality": "Year-round, no specific seasonal pattern",
+        "geographic": "Worldwide, wherever domestic animals are present"
+      },
+      "riskFactors": [
+        "Animal exposure (pet ownership, animal handling)",
+        "Animal bites and scratches",
+        "Immunosuppression (HIV, cancer, corticosteroids, cirrhosis)",
+        "Chronic lung disease (COPD, bronchiectasis) - risk of respiratory infections",
+        "Occupational exposure (veterinarians, animal handlers, farmers)",
+        "Age extremes (young children, elderly)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Wound infection: rapid-onset cellulitis, erythema, swelling, purulent drainage (within 24 hours of bite/scratch)",
+          "Lymphangitis and lymphadenopathy",
+          "Abscess formation",
+          "Osteomyelitis (if bite penetrates bone)",
+          "Septic arthritis (if bite involves joint)",
+          "Respiratory infections: pneumonia, bronchitis, exacerbations of COPD (in patients with chronic lung disease)",
+          "Bacteremia and sepsis (immunocompromised patients)",
+          "Meningitis (rare)"
+        ],
+        "complications": [
+          "Osteomyelitis and septic arthritis",
+          "Tenosynovitis",
+          "Endocarditis (rare)",
+          "Meningitis (rare)",
+          "Septic shock (immunocompromised patients)",
+          "Chronic wound infection",
+          "Death (rare, <1%; higher in immunocompromised)"
+        ],
+        "caseDefinition": {
+          "suspected": "Clinical: rapid-onset wound infection (cellulitis, abscess) within 24 hours of animal bite or scratch + epidemiologic link",
+          "confirmed": "Clinical illness + laboratory confirmation: positive culture from wound, blood, or other sterile site for P. multocida"
+        }
+      },
+      "diagnosis": [
+        "Culture from wound, blood, or other sterile sites (Gram-negative coccobacilli)",
+        "Gram stain (Gram-negative coccobacilli with bipolar staining)",
+        "Imaging (X-ray, MRI) for osteomyelitis or septic arthritis",
+        "Chest X-ray for respiratory infections"
+      ],
+      "treatment": "Penicillin or amoxicillin-clavulanate (first-line, 7-14 days). Alternatives: doxycycline, fluoroquinolones (levofloxacin, moxifloxacin), ceftriaxone. Avoid: first-generation cephalosporins, clindamycin, erythromycin (resistance common). Prophylactic antibiotics for high-risk bites (cat bites, hand bites, immunocompromised patients). Wound care: irrigation, debridement.",
+      "infectionControl": {
+        "precautions": "Standard Precautions (not contagious person-to-person)",
+        "screening": "Not routinely recommended",
+        "cohorting": "Not needed (not contagious)",
+        "sourceControl": "Wound care; prophylactic antibiotics for high-risk bites; animal handling precautions",
+        "environmental": "Standard cleaning",
+        "staffEducation": "Recognition of P. multocida infection (rapid-onset cellulitis after animal bite), wound care, prophylactic antibiotics for high-risk bites, animal bite prevention"
+      },
+      "outbreakTriggers": [
+        "≥2 wound infections linked to animal exposure cluster (pet shop, animal shelter, farm)",
+        "Unusual increase in animal bite infections"
+      ],
+      "reportingCommunication": [
+        "Animal bite injury reporting to public health (as per local regulations)",
+        "Public education on animal bite prevention and wound care",
+        "Coordinate with animal control if dangerous animal involved",
+        "Update stakeholders (veterinarians, pet owners, animal handlers)"
+      ],
+      "prevention": [
+        "Animal bite prevention: avoid provoking animals, supervise children around pets, proper pet training",
+        "Immediate wound care: wash bite/scratch wounds thoroughly with soap and water",
+        "Prophylactic antibiotics for high-risk bites (cat bites, hand bites, deep puncture wounds, immunocompromised patients)",
+        "Proper wound management and hygiene",
+        "Education on animal handling and bite prevention",
+        "Rabies prophylaxis if indicated (separate consideration)"
+      ],
+      "references": [
+        {
+          "label": "WHO - Animal Bite Injuries",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/animal-bites"
+        },
+        {
+          "label": "CDC - Pasteurella Infections",
+          "url": "https://www.cdc.gov/pasteurella/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Zoonotic Diseases",
+          "url": "https://gdipc.org"
+        }
+      ]
+    }
+  ]
+}
+

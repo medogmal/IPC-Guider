@@ -1,0 +1,611 @@
+{
+  "title": "Outbreak & Epidemiology Quiz",
+  "description": "Comprehensive quiz covering outbreak investigation, epidemiologic analysis, MDRO management, and infection control in outbreak settings",
+  "version": "1.0",
+  "module": "outbreak",
+  "totalStages": 5,
+  "questionsPerStage": 10,
+  "questions": [
+    {
+      "id": "outbreak_s1_q1",
+      "module": "outbreak",
+      "stage": 1,
+      "question": "An outbreak is defined as:",
+      "options": ["Any infection in a healthcare facility", "Two or more cases of the same infection", "An increase in cases above the expected baseline", "A single case of a rare disease"],
+      "answerIndex": 2,
+      "explanation": "An outbreak is an increase in the number of cases above what is normally expected in a defined population and time period. The baseline must be established through surveillance.",
+      "references": [
+        { "label": "CDC Outbreak Investigation", "url": "https://www.cdc.gov/eis/field-epi-manual/chapters/Outbreak-Investigation.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s1_q2",
+      "module": "outbreak",
+      "stage": 1,
+      "question": "The chain of infection consists of:",
+      "options": ["3 links", "4 links", "6 links", "8 links"],
+      "answerIndex": 2,
+      "explanation": "The chain of infection has 6 links: pathogen, reservoir, portal of exit, mode of transmission, portal of entry, and susceptible host. Breaking any link can prevent infection transmission.",
+      "references": [
+        { "label": "CDC Infection Control Basics", "url": "https://www.cdc.gov/infectioncontrol/basics/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s1_q3",
+      "module": "outbreak",
+      "stage": 1,
+      "question": "Standard precautions in outbreak settings should be applied to:",
+      "options": ["Only confirmed outbreak cases", "Only suspected outbreak cases", "All patients in all healthcare settings", "Only immunocompromised patients"],
+      "answerIndex": 2,
+      "explanation": "Standard precautions are the foundation of infection prevention and must be applied to all patients in all healthcare settings, regardless of outbreak status.",
+      "references": [
+        { "label": "CDC Standard Precautions", "url": "https://www.cdc.gov/infectioncontrol/basics/standard-precautions.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s1_q4",
+      "module": "outbreak",
+      "stage": 1,
+      "question": "The index case is:",
+      "options": ["The first case identified in an outbreak", "The case that introduced the pathogen", "The most severe case", "The last case in an outbreak"],
+      "answerIndex": 0,
+      "explanation": "The index case is the first case identified in an outbreak investigation. It may or may not be the primary case (the case that introduced the pathogen into the population).",
+      "references": [
+        { "label": "CDC Field Epidemiology Manual", "url": "https://www.cdc.gov/eis/field-epi-manual/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s1_q5",
+      "module": "outbreak",
+      "stage": 1,
+      "question": "Contact tracing is performed to:",
+      "options": ["Calculate attack rates", "Identify exposed individuals who may develop disease", "Determine the pathogen type", "Measure hand hygiene compliance"],
+      "answerIndex": 1,
+      "explanation": "Contact tracing identifies individuals who had contact with confirmed cases to monitor for symptoms, provide prophylaxis if indicated, and prevent further transmission.",
+      "references": [
+        { "label": "CDC Contact Tracing", "url": "https://www.cdc.gov/coronavirus/2019-ncov/php/contact-tracing/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s1_q6",
+      "module": "outbreak",
+      "stage": 1,
+      "question": "The difference between isolation and quarantine is:",
+      "options": ["Isolation is for confirmed cases, quarantine is for exposed individuals", "Quarantine is for confirmed cases, isolation is for exposed individuals", "They are the same thing", "Isolation is voluntary, quarantine is mandatory"],
+      "answerIndex": 0,
+      "explanation": "Isolation separates sick people with a contagious disease from those who are not sick. Quarantine separates and restricts movement of people who were exposed but are not yet sick.",
+      "references": [
+        { "label": "CDC Isolation vs Quarantine", "url": "https://www.cdc.gov/quarantine/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s1_q7",
+      "module": "outbreak",
+      "stage": 1,
+      "question": "Hand hygiene during an outbreak should be performed:",
+      "options": ["Only when hands are visibly soiled", "Before and after patient contact", "Only after removing gloves", "Only when entering outbreak areas"],
+      "answerIndex": 1,
+      "explanation": "Hand hygiene should be performed before and after patient contact following WHO 5 Moments, regardless of outbreak status. It is the single most important measure to prevent transmission.",
+      "references": [
+        { "label": "WHO 5 Moments", "url": "https://www.who.int/publications/i/item/WHO-HIS-SDS-2014.1" }
+      ]
+    },
+    {
+      "id": "outbreak_s1_q8",
+      "module": "outbreak",
+      "stage": 1,
+      "question": "A case definition includes:",
+      "options": ["Only laboratory criteria", "Only clinical criteria", "Clinical, laboratory, and epidemiologic criteria", "Only demographic information"],
+      "answerIndex": 2,
+      "explanation": "A case definition includes clinical criteria (signs/symptoms), laboratory criteria (test results), and epidemiologic criteria (time, place, person) to standardize case identification.",
+      "references": [
+        { "label": "CDC Case Definitions", "url": "https://www.cdc.gov/eis/field-epi-manual/chapters/Defining-Case.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s1_q9",
+      "module": "outbreak",
+      "stage": 1,
+      "question": "Incidence measures:",
+      "options": ["Total existing cases at a point in time", "New cases occurring over a time period", "Deaths from a disease", "Severity of disease"],
+      "answerIndex": 1,
+      "explanation": "Incidence measures new cases occurring during a specific time period, while prevalence measures all existing cases at a point in time.",
+      "references": [
+        { "label": "CDC Epidemiology Principles", "url": "https://www.cdc.gov/csels/dsepd/ss1978/lesson3/section2.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s1_q10",
+      "module": "outbreak",
+      "stage": 1,
+      "question": "Environmental cleaning during an outbreak should:",
+      "options": ["Be performed only once daily", "Focus on high-touch surfaces with appropriate disinfectants", "Use only water and soap", "Be delayed until outbreak ends"],
+      "answerIndex": 1,
+      "explanation": "Environmental cleaning should focus on high-touch surfaces using EPA-registered disinfectants appropriate for the pathogen, with increased frequency during outbreaks.",
+      "references": [
+        { "label": "CDC Environmental Cleaning", "url": "https://www.cdc.gov/infectioncontrol/guidelines/environmental/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s2_q1",
+      "module": "outbreak",
+      "stage": 2,
+      "question": "The first step in outbreak investigation is:",
+      "options": ["Implement control measures immediately", "Establish case definition", "Verify the outbreak exists", "Conduct environmental sampling"],
+      "answerIndex": 2,
+      "explanation": "Before launching a full investigation, you must verify that an outbreak truly exists by confirming diagnoses, checking for reporting artifacts, and comparing current rates to baseline.",
+      "references": [
+        { "label": "CDC 10 Steps", "url": "https://www.cdc.gov/eis/field-epi-manual/chapters/Outbreak-Investigation.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s2_q2",
+      "module": "outbreak",
+      "stage": 2,
+      "question": "A point-source epidemic curve shows:",
+      "options": ["Gradual increase over weeks", "Sharp peak followed by gradual decline", "Multiple peaks of similar size", "Continuous plateau"],
+      "answerIndex": 1,
+      "explanation": "A point-source outbreak (single exposure) shows a sharp peak as cases develop after one incubation period, followed by gradual decline as the epidemic exhausts susceptible individuals.",
+      "references": [
+        { "label": "CDC Epidemic Curves", "url": "https://www.cdc.gov/eis/field-epi-manual/chapters/Epidemic-Curves.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s2_q3",
+      "module": "outbreak",
+      "stage": 2,
+      "question": "Attack rate is calculated as:",
+      "options": ["(Cases / Population at risk) × 100", "(Cases / Total population) × 1,000", "(Deaths / Cases) × 100", "(New cases / Existing cases) × 100"],
+      "answerIndex": 0,
+      "explanation": "Attack rate = (Number of cases / Population at risk) × 100. It measures the proportion of the at-risk population that develops disease during an outbreak.",
+      "references": [
+        { "label": "CDC Attack Rate", "url": "https://www.cdc.gov/csels/dsepd/ss1978/lesson3/section3.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s2_q4",
+      "module": "outbreak",
+      "stage": 2,
+      "question": "Secondary attack rate measures:",
+      "options": ["All cases in an outbreak", "Cases among contacts of primary cases", "Cases in healthcare workers", "Cases requiring hospitalization"],
+      "answerIndex": 1,
+      "explanation": "Secondary attack rate measures the proportion of susceptible contacts of primary cases who develop disease within one incubation period, indicating person-to-person transmission efficiency.",
+      "references": [
+        { "label": "CDC Secondary Attack Rate", "url": "https://www.cdc.gov/csels/dsepd/ss1978/lesson3/section3.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s2_q5",
+      "module": "outbreak",
+      "stage": 2,
+      "question": "A line list should include:",
+      "options": ["Only patient names", "Only laboratory results", "Demographic, clinical, and epidemiologic data for each case", "Only dates of illness onset"],
+      "answerIndex": 2,
+      "explanation": "A line list is a table with one row per case, including demographic data (age, sex), clinical data (symptoms, outcomes), and epidemiologic data (exposure, onset date, location).",
+      "references": [
+        { "label": "CDC Line Listing", "url": "https://www.cdc.gov/eis/field-epi-manual/chapters/Line-Listing.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s2_q6",
+      "module": "outbreak",
+      "stage": 2,
+      "question": "Cohorting during an outbreak means:",
+      "options": ["Isolating each patient in a private room", "Grouping patients with the same infection together", "Separating healthcare workers by shift", "Closing the affected unit"],
+      "answerIndex": 1,
+      "explanation": "Cohorting groups patients infected with the same organism together (and assigns dedicated staff) when private rooms are unavailable, preventing cross-transmission to uninfected patients.",
+      "references": [
+        { "label": "CDC Cohorting", "url": "https://www.cdc.gov/infectioncontrol/guidelines/isolation/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s2_q7",
+      "module": "outbreak",
+      "stage": 2,
+      "question": "The incubation period is useful in outbreak investigation to:",
+      "options": ["Calculate mortality rate", "Estimate time of exposure", "Determine antibiotic choice", "Measure outbreak severity"],
+      "answerIndex": 1,
+      "explanation": "The incubation period (time from exposure to symptom onset) helps estimate when exposure occurred by working backward from illness onset dates, narrowing the investigation timeframe.",
+      "references": [
+        { "label": "CDC Incubation Period", "url": "https://www.cdc.gov/eis/field-epi-manual/chapters/Descriptive-Epi.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s2_q8",
+      "module": "outbreak",
+      "stage": 2,
+      "question": "A spot map in outbreak investigation shows:",
+      "options": ["Cases over time", "Geographic distribution of cases", "Age distribution of cases", "Laboratory results"],
+      "answerIndex": 1,
+      "explanation": "A spot map plots cases by geographic location (e.g., hospital floor plan, city map) to identify spatial clustering and potential environmental sources.",
+      "references": [
+        { "label": "CDC Spot Maps", "url": "https://www.cdc.gov/eis/field-epi-manual/chapters/Descriptive-Epi.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s2_q9",
+      "module": "outbreak",
+      "stage": 2,
+      "question": "Environmental sampling during an outbreak should be performed:",
+      "options": ["Routinely for all outbreaks", "When an environmental source is suspected", "Only after outbreak ends", "Never, as it's not useful"],
+      "answerIndex": 1,
+      "explanation": "Environmental sampling should be targeted when epidemiologic evidence suggests an environmental source (e.g., water, equipment, surfaces) and can guide control measures.",
+      "references": [
+        { "label": "CDC Environmental Sampling", "url": "https://www.cdc.gov/infectioncontrol/guidelines/environmental/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s2_q10",
+      "module": "outbreak",
+      "stage": 2,
+      "question": "Case fatality rate is calculated as:",
+      "options": ["(Deaths / Cases) × 100", "(Deaths / Population) × 100,000", "(Cases / Deaths) × 100", "(Deaths / Admissions) × 1,000"],
+      "answerIndex": 0,
+      "explanation": "Case fatality rate = (Deaths from disease / Cases of disease) × 100. It measures the severity of disease by showing the proportion of cases that result in death.",
+      "references": [
+        { "label": "CDC Case Fatality Rate", "url": "https://www.cdc.gov/csels/dsepd/ss1978/lesson3/section3.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s3_q1",
+      "module": "outbreak",
+      "stage": 3,
+      "question": "A relative risk (RR) of 3.5 with 95% CI [2.1-5.8] means:",
+      "options": ["The exposure is protective", "The association is not statistically significant", "Exposed individuals are 3.5 times more likely to develop disease", "35% of cases are due to the exposure"],
+      "answerIndex": 2,
+      "explanation": "RR = 3.5 means exposed individuals have 3.5 times the risk of disease compared to unexposed. The 95% CI excludes 1.0, indicating the association is statistically significant.",
+      "references": [
+        { "label": "CDC Relative Risk", "url": "https://www.cdc.gov/csels/dsepd/ss1978/lesson3/section5.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s3_q2",
+      "module": "outbreak",
+      "stage": 3,
+      "question": "An odds ratio (OR) of 0.4 with 95% CI [0.2-0.8] suggests:",
+      "options": ["The exposure increases disease risk", "The exposure is protective against disease", "No association between exposure and disease", "The study is underpowered"],
+      "answerIndex": 1,
+      "explanation": "OR < 1.0 indicates the exposure is protective (reduces disease risk). The 95% CI excludes 1.0, confirming statistical significance. OR = 0.4 means 60% risk reduction.",
+      "references": [
+        { "label": "CDC Odds Ratio", "url": "https://www.cdc.gov/csels/dsepd/ss1978/lesson3/section5.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s3_q3",
+      "module": "outbreak",
+      "stage": 3,
+      "question": "A p-value of 0.03 means:",
+      "options": ["3% of cases are due to chance", "There is a 3% probability the observed association is due to chance", "The study has 97% power", "3% of the population is affected"],
+      "answerIndex": 1,
+      "explanation": "A p-value of 0.03 means there is a 3% probability that the observed association occurred by chance alone. Since p < 0.05, the result is statistically significant.",
+      "references": [
+        { "label": "CDC Statistical Significance", "url": "https://www.cdc.gov/csels/dsepd/ss1978/lesson3/section6.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s3_q4",
+      "module": "outbreak",
+      "stage": 3,
+      "question": "Sensitivity of a diagnostic test measures:",
+      "options": ["Proportion of true positives correctly identified", "Proportion of true negatives correctly identified", "Proportion of positive tests that are true positives", "Proportion of negative tests that are true negatives"],
+      "answerIndex": 0,
+      "explanation": "Sensitivity = True Positives / (True Positives + False Negatives). A highly sensitive test correctly identifies most people with the disease (few false negatives).",
+      "references": [
+        { "label": "CDC Sensitivity and Specificity", "url": "https://www.cdc.gov/csels/dsepd/ss1978/lesson3/section3.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s3_q5",
+      "module": "outbreak",
+      "stage": 3,
+      "question": "Specificity of a diagnostic test measures:",
+      "options": ["Proportion of true positives correctly identified", "Proportion of true negatives correctly identified", "Proportion of positive tests that are true positives", "Proportion of negative tests that are true negatives"],
+      "answerIndex": 1,
+      "explanation": "Specificity = True Negatives / (True Negatives + False Positives). A highly specific test correctly identifies most people without the disease (few false positives).",
+      "references": [
+        { "label": "CDC Sensitivity and Specificity", "url": "https://www.cdc.gov/csels/dsepd/ss1978/lesson3/section3.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s3_q6",
+      "module": "outbreak",
+      "stage": 3,
+      "question": "Positive predictive value (PPV) is:",
+      "options": ["Probability that a person with disease tests positive", "Probability that a person without disease tests negative", "Probability that a positive test indicates true disease", "Probability that a negative test indicates no disease"],
+      "answerIndex": 2,
+      "explanation": "PPV = True Positives / (True Positives + False Positives). It answers: 'If the test is positive, what is the probability the person truly has the disease?' PPV depends on disease prevalence.",
+      "references": [
+        { "label": "CDC Predictive Values", "url": "https://www.cdc.gov/csels/dsepd/ss1978/lesson3/section3.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s3_q7",
+      "module": "outbreak",
+      "stage": 3,
+      "question": "A propagated epidemic curve shows:",
+      "options": ["Single sharp peak", "Multiple peaks with progressively increasing intervals", "Flat plateau", "Immediate decline after peak"],
+      "answerIndex": 1,
+      "explanation": "A propagated (person-to-person) outbreak shows multiple peaks separated by approximately one incubation period, as each generation of cases infects the next generation.",
+      "references": [
+        { "label": "CDC Epidemic Curves", "url": "https://www.cdc.gov/eis/field-epi-manual/chapters/Epidemic-Curves.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s3_q8",
+      "module": "outbreak",
+      "stage": 3,
+      "question": "Colonization pressure in an ICU is calculated as:",
+      "options": ["(Colonized patients / Total patients) × 100", "(Colonized patient-days / Total patient-days) × 100", "(New colonizations / Admissions) × 100", "(Colonized patients / Staff) × 100"],
+      "answerIndex": 1,
+      "explanation": "Colonization pressure = (Colonized patient-days / Total patient-days) × 100. It measures the proportion of time patients are exposed to colonized patients, predicting transmission risk.",
+      "references": [
+        { "label": "CDC MDRO Management", "url": "https://www.cdc.gov/infectioncontrol/guidelines/mdro/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s3_q9",
+      "module": "outbreak",
+      "stage": 3,
+      "question": "In a case-control study during an outbreak, you should:",
+      "options": ["Compare exposed vs unexposed individuals", "Compare cases vs controls for exposure history", "Follow a cohort over time", "Randomize interventions"],
+      "answerIndex": 1,
+      "explanation": "Case-control studies compare cases (people with disease) to controls (people without disease) to determine if exposure rates differ, helping identify risk factors retrospectively.",
+      "references": [
+        { "label": "CDC Case-Control Studies", "url": "https://www.cdc.gov/eis/field-epi-manual/chapters/Case-Control-Studies.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s3_q10",
+      "module": "outbreak",
+      "stage": 3,
+      "question": "Transmission-based precautions for MRSA outbreak include:",
+      "options": ["Airborne precautions", "Droplet precautions", "Contact precautions", "Standard precautions only"],
+      "answerIndex": 2,
+      "explanation": "MRSA requires contact precautions (gloves and gown) in addition to standard precautions, as transmission occurs through direct contact or contact with contaminated surfaces.",
+      "references": [
+        { "label": "CDC MRSA Guidelines", "url": "https://www.cdc.gov/mrsa/healthcare/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s4_q1",
+      "module": "outbreak",
+      "stage": 4,
+      "question": "During a CRE outbreak, active surveillance cultures should target:",
+      "options": ["All admitted patients", "Only symptomatic patients", "High-risk patients and contacts of cases", "Only ICU patients"],
+      "answerIndex": 2,
+      "explanation": "Active surveillance for CRE should target high-risk patients (ICU, transplant, ventilated) and contacts of known cases to identify colonized patients early and prevent transmission.",
+      "references": [
+        { "label": "CDC CRE Toolkit", "url": "https://www.cdc.gov/hai/organisms/cre/cre-toolkit/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s4_q2",
+      "module": "outbreak",
+      "stage": 4,
+      "question": "Whole genome sequencing (WGS) shows 2 isolates differ by 5 SNPs. This suggests:",
+      "options": ["The isolates are unrelated", "The isolates are likely from the same transmission chain", "Contamination occurred during sampling", "The outbreak is over"],
+      "answerIndex": 1,
+      "explanation": "Isolates differing by <10-20 SNPs are typically considered part of the same transmission chain, as bacteria accumulate mutations during person-to-person spread. WGS provides high-resolution outbreak tracking.",
+      "references": [
+        { "label": "CDC WGS in Outbreak Investigation", "url": "https://www.cdc.gov/pulsenet/pathogens/wgs.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s4_q3",
+      "module": "outbreak",
+      "stage": 4,
+      "question": "A waterborne outbreak investigation should include:",
+      "options": ["Only clinical case finding", "Water testing, distribution system review, and case-control study", "Only environmental sampling", "Only laboratory confirmation"],
+      "answerIndex": 1,
+      "explanation": "Waterborne outbreak investigation requires water microbiologic testing, water distribution system review (pressure, cross-connections), epidemiologic studies, and clinical case finding.",
+      "references": [
+        { "label": "CDC Waterborne Disease", "url": "https://www.cdc.gov/healthywater/surveillance/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s4_q4",
+      "module": "outbreak",
+      "stage": 4,
+      "question": "Healthcare-associated outbreaks differ from community outbreaks in that they:",
+      "options": ["Are always more severe", "Involve vulnerable populations with multiple comorbidities", "Never require public health notification", "Are easier to control"],
+      "answerIndex": 1,
+      "explanation": "Healthcare-associated outbreaks involve vulnerable populations (immunocompromised, elderly, critically ill) with higher risk of severe outcomes, requiring aggressive infection control and often involving MDROs.",
+      "references": [
+        { "label": "CDC Healthcare-Associated Infections", "url": "https://www.cdc.gov/hai/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s4_q5",
+      "module": "outbreak",
+      "stage": 4,
+      "question": "An outbreak should be declared over when:",
+      "options": ["The last case is identified", "Two incubation periods pass with no new cases", "Environmental cultures are negative", "All patients are discharged"],
+      "answerIndex": 1,
+      "explanation": "An outbreak is declared over after two maximum incubation periods pass without new cases, ensuring sufficient time for any incubating infections to manifest.",
+      "references": [
+        { "label": "CDC Outbreak Termination", "url": "https://www.cdc.gov/eis/field-epi-manual/chapters/Outbreak-Investigation.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s4_q6",
+      "module": "outbreak",
+      "stage": 4,
+      "question": "Post-outbreak surveillance should continue for:",
+      "options": ["1 week after last case", "At least 2-3 incubation periods after outbreak ends", "Until all cultures are negative", "Indefinitely"],
+      "answerIndex": 1,
+      "explanation": "Post-outbreak surveillance should continue for at least 2-3 incubation periods after the outbreak ends to detect any late cases or recurrence, ensuring true outbreak termination.",
+      "references": [
+        { "label": "CDC Surveillance", "url": "https://www.cdc.gov/infectioncontrol/guidelines/surveillance/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s4_q7",
+      "module": "outbreak",
+      "stage": 4,
+      "question": "Root cause analysis after an outbreak should identify:",
+      "options": ["Only the pathogen involved", "Only the index case", "System failures and contributing factors", "Only staff responsible"],
+      "answerIndex": 2,
+      "explanation": "Root cause analysis identifies system failures, process breakdowns, and contributing factors (not individual blame) to implement sustainable improvements and prevent recurrence.",
+      "references": [
+        { "label": "CDC Root Cause Analysis", "url": "https://www.cdc.gov/infectioncontrol/guidelines/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s4_q8",
+      "module": "outbreak",
+      "stage": 4,
+      "question": "During a C. difficile outbreak, environmental cleaning should use:",
+      "options": ["Alcohol-based disinfectants", "Quaternary ammonium compounds", "Bleach (sodium hypochlorite) solution", "Soap and water only"],
+      "answerIndex": 2,
+      "explanation": "C. difficile spores are resistant to alcohol and many disinfectants. EPA-registered sporicidal disinfectants (e.g., bleach at 1:10 dilution) are required for environmental cleaning.",
+      "references": [
+        { "label": "CDC C. difficile Guidelines", "url": "https://www.cdc.gov/cdiff/clinicians/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s4_q9",
+      "module": "outbreak",
+      "stage": 4,
+      "question": "Foodborne outbreak investigation requires:",
+      "options": ["Only clinical case finding", "Food history, leftover food testing, and case-control study", "Only environmental inspection", "Only laboratory confirmation"],
+      "answerIndex": 1,
+      "explanation": "Foodborne outbreak investigation requires detailed food histories, leftover food microbiologic testing, kitchen inspection, case-control studies to identify implicated food items, and traceback.",
+      "references": [
+        { "label": "CDC Foodborne Outbreaks", "url": "https://www.cdc.gov/foodsafety/outbreaks/investigating-outbreaks/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s4_q10",
+      "module": "outbreak",
+      "stage": 4,
+      "question": "Legal reporting of outbreaks to public health authorities is:",
+      "options": ["Optional", "Required only for bacterial outbreaks", "Required for notifiable diseases and unusual events", "Never required for healthcare facilities"],
+      "answerIndex": 2,
+      "explanation": "Healthcare facilities must report outbreaks of notifiable diseases, unusual events, and potential public health threats to local/state health departments per legal requirements and CDC guidelines.",
+      "references": [
+        { "label": "CDC Notifiable Diseases", "url": "https://www.cdc.gov/nndss/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s5_q1",
+      "module": "outbreak",
+      "stage": 5,
+      "question": "You identify 8 cases of Burkholderia cepacia in ICU patients over 2 weeks. All isolates are genetically identical. Blood cultures were drawn using a new brand of antiseptic. What is the MOST likely explanation?",
+      "options": ["True outbreak from contaminated ventilators", "Pseudo-outbreak from contaminated antiseptic", "Coincidental clustering of unrelated cases", "Healthcare worker transmission"],
+      "answerIndex": 1,
+      "explanation": "Burkholderia can survive in antiseptics and disinfectants. Sudden cluster + new product + identical isolates + no clinical illness suggests pseudo-outbreak from contaminated antiseptic rather than true patient-to-patient transmission.",
+      "references": [
+        { "label": "CDC Pseudo-outbreak Investigation", "url": "https://www.cdc.gov/infectioncontrol/guidelines/environmental/background/pseudooutbreaks.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s5_q2",
+      "module": "outbreak",
+      "stage": 5,
+      "question": "During an outbreak in a neonatal ICU with extremely premature infants, the MOST ethical approach to cohorting is:",
+      "options": ["Cohort all infants regardless of infection status", "Cohort infected infants together with dedicated staff", "Refuse cohorting due to ethical concerns", "Discharge infected infants immediately"],
+      "answerIndex": 1,
+      "explanation": "Cohorting infected infants with dedicated staff protects uninfected vulnerable infants while providing appropriate care to infected infants. This balances individual patient needs with population protection.",
+      "references": [
+        { "label": "CDC Neonatal Infection Control", "url": "https://www.cdc.gov/infectioncontrol/guidelines/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s5_q3",
+      "module": "outbreak",
+      "stage": 5,
+      "question": "A novel respiratory pathogen causes an outbreak with 30% mortality. Media requests information. Your BEST response is:",
+      "options": ["Refuse all media contact", "Provide transparent, accurate information through designated spokesperson", "Minimize severity to avoid panic", "Blame specific individuals publicly"],
+      "answerIndex": 1,
+      "explanation": "Transparent, accurate, timely communication through a designated trained spokesperson builds trust, prevents misinformation, and guides public protective actions while respecting patient privacy.",
+      "references": [
+        { "label": "CDC Crisis Communication", "url": "https://www.cdc.gov/healthcommunication/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s5_q4",
+      "module": "outbreak",
+      "stage": 5,
+      "question": "Outbreak modeling predicts 50 additional cases in 2 weeks without intervention. Resources are limited. Priority should be given to:",
+      "options": ["Treating existing cases only", "Implementing control measures to prevent new cases", "Waiting for more data", "Discharging patients to free beds"],
+      "answerIndex": 1,
+      "explanation": "Prevention of new cases through control measures (isolation, cohorting, enhanced cleaning, staff education) is more effective and resource-efficient than treating preventable cases.",
+      "references": [
+        { "label": "CDC Outbreak Control", "url": "https://www.cdc.gov/eis/field-epi-manual/chapters/Outbreak-Investigation.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s5_q5",
+      "module": "outbreak",
+      "stage": 5,
+      "question": "An outbreak investigation reveals a healthcare worker as the likely source. The MOST appropriate action is:",
+      "options": ["Immediately terminate the worker publicly", "Conduct confidential investigation, provide treatment/education, and reassign if needed", "Ignore findings to protect the worker", "Report to media immediately"],
+      "answerIndex": 1,
+      "explanation": "Healthcare workers deserve confidential investigation, appropriate medical care, education, and work restrictions if needed. Focus on system improvements, not blame. Protect patient safety while respecting worker rights.",
+      "references": [
+        { "label": "CDC Healthcare Personnel", "url": "https://www.cdc.gov/infectioncontrol/guidelines/healthcare-personnel/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s5_q6",
+      "module": "outbreak",
+      "stage": 5,
+      "question": "International Health Regulations (IHR) require reporting of outbreaks that may constitute:",
+      "options": ["Any healthcare-associated infection", "Only bacterial outbreaks", "Public health emergencies of international concern", "Only outbreaks with >100 cases"],
+      "answerIndex": 2,
+      "explanation": "IHR (2005) requires countries to report events that may constitute a Public Health Emergency of International Concern (PHEIC) to WHO, including unusual/unexpected events with international spread potential.",
+      "references": [
+        { "label": "WHO IHR", "url": "https://www.who.int/health-topics/international-health-regulations" }
+      ]
+    },
+    {
+      "id": "outbreak_s5_q7",
+      "module": "outbreak",
+      "stage": 5,
+      "question": "After-action review following an outbreak should focus on:",
+      "options": ["Identifying individuals to blame", "Documenting lessons learned and system improvements", "Minimizing documentation to avoid liability", "Only celebrating successes"],
+      "answerIndex": 1,
+      "explanation": "After-action review should be a blameless, structured process documenting what worked, what didn't, lessons learned, and actionable system improvements to enhance future outbreak preparedness and response.",
+      "references": [
+        { "label": "CDC After-Action Review", "url": "https://www.cdc.gov/cpr/readiness/healthcare/index.htm" }
+      ]
+    },
+    {
+      "id": "outbreak_s5_q8",
+      "module": "outbreak",
+      "stage": 5,
+      "question": "A new pathogen emerges with unknown transmission mode. Initial infection control should include:",
+      "options": ["Standard precautions only", "Contact and droplet precautions plus airborne if aerosol-generating procedures", "No precautions until mode confirmed", "Airborne precautions only"],
+      "answerIndex": 1,
+      "explanation": "For emerging pathogens with unknown transmission, use a precautionary approach with contact + droplet precautions, plus airborne precautions for aerosol-generating procedures, until transmission mode is clarified.",
+      "references": [
+        { "label": "CDC Emerging Infectious Diseases", "url": "https://www.cdc.gov/eid/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s5_q9",
+      "module": "outbreak",
+      "stage": 5,
+      "question": "Outbreak investigation reveals systemic failures in multiple departments. The BEST approach to policy development is:",
+      "options": ["Develop policies for each department separately", "Create multidisciplinary team to develop integrated policies with leadership support", "Wait for another outbreak to confirm findings", "Copy policies from other facilities"],
+      "answerIndex": 1,
+      "explanation": "Systemic failures require multidisciplinary collaboration (IPC, clinical, environmental services, administration) to develop integrated, evidence-based policies with leadership support and accountability.",
+      "references": [
+        { "label": "CDC Infection Control Programs", "url": "https://www.cdc.gov/infectioncontrol/guidelines/index.html" }
+      ]
+    },
+    {
+      "id": "outbreak_s5_q10",
+      "module": "outbreak",
+      "stage": 5,
+      "question": "During an outbreak, you must balance individual patient rights with population protection. The ethical principle that BEST guides this decision is:",
+      "options": ["Autonomy always takes precedence", "Beneficence and non-maleficence balanced with justice", "Justice always takes precedence", "Ignore ethics during emergencies"],
+      "answerIndex": 1,
+      "explanation": "Outbreak response requires balancing beneficence (doing good), non-maleficence (avoiding harm) for individuals and populations, with justice (fair resource allocation). Ethical frameworks guide proportionate, necessary restrictions.",
+      "references": [
+        { "label": "CDC Ethics in Public Health", "url": "https://www.cdc.gov/os/integrity/index.htm" }
+      ]
+    }
+  ]
+}
+

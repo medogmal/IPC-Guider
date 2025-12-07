@@ -1,0 +1,1027 @@
+{
+  "version": 1,
+  "groupId": "arboviral_zoonotic_viral",
+  "groupName": "Arboviral & Zoonotic Viral Outbreak Pathogens",
+  "type": "viral",
+  "updatedAt": "2025-01-14T00:00:00Z",
+  "pathogens": [
+    {
+      "id": "dengue",
+      "name": "Dengue virus",
+      "scientificName": "Dengue virus (DENV-1, DENV-2, DENV-3, DENV-4), genus Flavivirus, family Flaviviridae",
+      "definition": "Enveloped positive-sense single-stranded RNA virus causing dengue fever and severe dengue (dengue hemorrhagic fever/dengue shock syndrome). Four serotypes (DENV-1 to DENV-4) exist; infection with one serotype provides lifelong immunity to that serotype but only temporary cross-protection to others. Secondary infection with different serotype increases risk of severe dengue. Transmitted by Aedes mosquitoes (primarily Aedes aegypti). Most common arboviral disease globally, affecting ~400 million people annually.",
+      "reservoir": {
+        "primary": [
+          "Humans (primary reservoir during outbreaks)",
+          "Aedes mosquitoes (Aedes aegypti, Aedes albopictus)"
+        ],
+        "secondary": [
+          "Non-human primates (sylvatic cycle in some regions)"
+        ],
+        "notes": "Humans are the main amplifying host during urban outbreaks. Aedes aegypti is the primary vector (day-biting mosquito, breeds in artificial containers). Aedes albopictus (Asian tiger mosquito) is secondary vector. Sylvatic (jungle) cycle exists in some regions with non-human primates as reservoir."
+      },
+      "transmission": {
+        "mode": "Mosquito bite (Aedes aegypti, Aedes albopictus)",
+        "routes": [
+          "Mosquito bite: bite of infected Aedes mosquito - primary route",
+          "Vertical transmission: mother to fetus during pregnancy or childbirth (rare)",
+          "Blood transfusion and organ transplantation (rare)",
+          "Needlestick injury in laboratory or healthcare settings (rare)"
+        ],
+        "notes": "Aedes aegypti is highly anthropophilic (prefers human blood) and breeds in artificial water containers near human habitations. Mosquitoes become infectious 8-12 days after feeding on viremic person and remain infectious for life. Peak biting times: early morning and late afternoon."
+      },
+      "incubationPeriod": {
+        "range": "4-10 days (average 5-7 days) from mosquito bite to symptom onset",
+        "infectiousPeriod": "Viremic (infectious to mosquitoes) from 1 day before fever onset to 5-7 days after fever onset. Mosquitoes become infectious 8-12 days after feeding on viremic person",
+        "seasonality": "Year-round in tropical regions; seasonal peaks during rainy season. In temperate regions, transmission occurs during warm months",
+        "geographic": "Endemic in tropical and subtropical regions: Southeast Asia, Western Pacific, Americas, Africa, Eastern Mediterranean. Expanding to new areas due to climate change and urbanization"
+      },
+      "riskFactors": [
+        "Living in or traveling to dengue-endemic areas (tropical and subtropical regions)",
+        "Previous dengue infection (increases risk of severe dengue with secondary infection of different serotype)",
+        "Infants and young children (higher risk of severe dengue)",
+        "Elderly and people with chronic diseases (diabetes, asthma, heart disease)",
+        "Pregnant women (risk of maternal and fetal complications)",
+        "Immunocompromised individuals",
+        "Urban areas with high Aedes mosquito density",
+        "Poor water storage practices (open containers breeding mosquitoes)",
+        "Lack of vector control measures"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Dengue fever (classic): sudden onset of high fever (39-40°C), severe headache (retro-orbital pain), myalgia ('breakbone fever'), arthralgia, rash (maculopapular, appears 3-4 days after fever), nausea, vomiting",
+          "Warning signs of severe dengue: severe abdominal pain, persistent vomiting, bleeding (gums, nose, vomit, stool), lethargy, restlessness, liver enlargement, rapid drop in platelet count, rising hematocrit",
+          "Severe dengue (dengue hemorrhagic fever/dengue shock syndrome): plasma leakage (pleural effusion, ascites), severe bleeding, organ impairment (liver, heart, CNS), shock",
+          "Symptoms typically last 2-7 days"
+        ],
+        "complications": [
+          "Severe dengue (dengue hemorrhagic fever/dengue shock syndrome) - 1-5% of cases, higher in secondary infections",
+          "Plasma leakage leading to shock (dengue shock syndrome)",
+          "Severe bleeding (gastrointestinal, intracranial)",
+          "Organ impairment: liver failure, myocarditis, encephalitis",
+          "Death (case fatality rate <1% with proper treatment, up to 20% without treatment for severe dengue)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with acute febrile illness (2-7 days) + two or more of: headache, retro-orbital pain, myalgia, arthralgia, rash, hemorrhagic manifestations, leukopenia, AND residence in or travel to dengue-endemic area",
+          "confirmed": "Suspected case + laboratory confirmation: positive NS1 antigen (first 5 days), OR positive RT-PCR for dengue RNA, OR positive IgM antibody (after day 5), OR 4-fold rise in IgG titer"
+        }
+      },
+      "diagnosis": [
+        "NS1 antigen test (ELISA or rapid test) - detects viral antigen in first 1-5 days of illness; high sensitivity and specificity",
+        "RT-PCR for dengue RNA - gold standard for early diagnosis (first 5 days); can identify serotype",
+        "IgM antibody (ELISA) - detectable from day 5 onwards; indicates recent infection",
+        "IgG antibody (ELISA) - indicates past infection; 4-fold rise in paired sera confirms acute infection",
+        "Complete blood count: thrombocytopenia (platelet count <100,000/μL), rising hematocrit (plasma leakage)",
+        "Liver function tests: elevated transaminases"
+      ],
+      "treatment": "Supportive care: oral or IV fluid replacement (critical for preventing shock), antipyretics (paracetamol/acetaminophen only - avoid NSAIDs and aspirin due to bleeding risk), close monitoring for warning signs of severe dengue. Severe dengue: intensive care, IV fluid resuscitation, blood transfusion if severe bleeding, platelet transfusion if indicated. No specific antiviral therapy available. Dengue vaccine (Dengvaxia) available in some countries but only for individuals with prior dengue infection.",
+      "infectionControl": {
+        "precautions": "Standard Precautions. Dengue is not transmitted person-to-person (except rare vertical transmission). Main focus is vector control",
+        "screening": "Screen for dengue symptoms in febrile patients from endemic areas; isolate viremic patients from mosquitoes",
+        "cohorting": "Not necessary; focus on preventing mosquito bites in hospitalized patients",
+        "sourceControl": "Protect viremic patients from mosquito bites (mosquito nets, screened rooms, insect repellent) to prevent transmission to mosquitoes",
+        "environmental": "Vector control: eliminate mosquito breeding sites (empty water containers, cover water storage), indoor residual spraying, larvicides, community mobilization",
+        "staffEducation": "Educate on dengue recognition, warning signs of severe dengue, fluid management, vector control"
+      },
+      "outbreakTriggers": [
+        "≥2 laboratory-confirmed dengue cases in same area or facility within 2 weeks",
+        "Sudden spike in acute febrile illness with dengue-like symptoms above baseline",
+        "Increase in severe dengue cases or deaths",
+        "Detection of dengue in previously non-endemic area"
+      ],
+      "reportingCommunication": [
+        "Immediate notification (within 24 hours) of laboratory-confirmed dengue cases to local/national public health authorities",
+        "Report clusters and outbreaks for rapid response",
+        "Implement outbreak control measures: vector control (source reduction, larvicides, adulticiding), community mobilization, public health messaging",
+        "Enhanced surveillance: active case finding, entomological surveillance (mosquito density, larval indices)",
+        "Coordinate with vector control, environmental health, and community leaders",
+        "International notification if outbreak affects travelers or spreads to new areas"
+      ],
+      "prevention": [
+        "Vector control (most important): eliminate mosquito breeding sites (empty, cover, or treat water containers), indoor residual spraying, larvicides (temephos, Bti), biological control (larvivorous fish)",
+        "Personal protection: insect repellent (DEET, picaridin), long-sleeves and pants, mosquito nets, window screens",
+        "Community mobilization: engage communities in source reduction campaigns",
+        "Environmental management: improve water storage, waste management, urban planning",
+        "Dengue vaccine (Dengvaxia): available in some countries, only for individuals aged 9-45 years with prior dengue infection (increases risk of severe dengue in seronegative individuals)",
+        "Early detection and case management: recognize warning signs, seek medical care early",
+        "Public education: symptoms, warning signs, vector control, when to seek care",
+        "Integrated vector management: combination of chemical, biological, and environmental methods"
+      ],
+      "references": [
+        {
+          "label": "WHO - Dengue and Severe Dengue",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue"
+        },
+        {
+          "label": "CDC - Dengue",
+          "url": "https://www.cdc.gov/dengue/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "zika",
+      "name": "Zika virus",
+      "scientificName": "Zika virus (ZIKV), genus Flavivirus, family Flaviviridae",
+      "definition": "Enveloped positive-sense single-stranded RNA virus causing Zika virus disease, typically a mild febrile illness but with serious congenital and neurological complications. Zika gained global attention during 2015-2016 outbreak in Americas due to association with congenital Zika syndrome (microcephaly and other birth defects) and Guillain-Barré syndrome. Transmitted primarily by Aedes mosquitoes but also sexually and vertically. Major public health concern for pregnant women.",
+      "reservoir": {
+        "primary": [
+          "Humans (primary reservoir during outbreaks)",
+          "Aedes mosquitoes (Aedes aegypti, Aedes albopictus)",
+          "Non-human primates (sylvatic cycle in Africa and Asia)"
+        ],
+        "secondary": [],
+        "notes": "Humans and non-human primates serve as reservoir. Aedes aegypti is primary vector (same as dengue). Sylvatic (jungle) cycle exists in Africa and Asia with non-human primates."
+      },
+      "transmission": {
+        "mode": "Mosquito bite (Aedes aegypti, Aedes albopictus), sexual transmission, vertical transmission (mother to fetus)",
+        "routes": [
+          "Mosquito bite: bite of infected Aedes mosquito - primary route",
+          "Sexual transmission: unprotected sex with infected partner (male-to-female, female-to-male, male-to-male) - virus can persist in semen for months",
+          "Vertical transmission: mother to fetus during pregnancy (can occur at any trimester) - causes congenital Zika syndrome",
+          "Blood transfusion and organ transplantation (rare)",
+          "Laboratory exposure (rare)"
+        ],
+        "notes": "Sexual transmission is unique among arboviruses. Zika virus can persist in semen for up to 6 months, in vaginal fluids for up to 2 weeks. Vertical transmission is major concern due to congenital Zika syndrome."
+      },
+      "incubationPeriod": {
+        "range": "3-14 days (average 5-7 days) from mosquito bite to symptom onset",
+        "infectiousPeriod": "Viremic (infectious to mosquitoes) during acute illness (typically 1 week). Virus persists in semen for up to 6 months, in vaginal fluids for up to 2 weeks (sexual transmission risk)",
+        "seasonality": "Year-round in tropical regions; seasonal in temperate regions during warm months",
+        "geographic": "Endemic in Africa, Asia, Pacific Islands, Americas (introduced 2015). Outbreaks have occurred in >80 countries"
+      },
+      "riskFactors": [
+        "Pregnant women (highest risk group due to congenital Zika syndrome)",
+        "Living in or traveling to Zika-endemic areas",
+        "Sexual partners of individuals with Zika infection or travel to endemic areas",
+        "Urban areas with high Aedes mosquito density",
+        "Lack of vector control measures",
+        "Outdoor activities during peak mosquito biting times"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Mild illness: fever (usually low-grade), rash (maculopapular, pruritic), arthralgia (especially small joints of hands and feet), conjunctivitis (non-purulent), headache, myalgia",
+          "Asymptomatic: 80% of infections are asymptomatic",
+          "Symptoms typically last 2-7 days (milder and shorter than dengue)"
+        ],
+        "complications": [
+          "Congenital Zika syndrome: microcephaly, brain abnormalities, eye defects, hearing loss, impaired growth, seizures - occurs when pregnant woman infected at any trimester",
+          "Guillain-Barré syndrome: acute flaccid paralysis following Zika infection (rare, ~1 in 4,000 cases)",
+          "Other neurological complications: meningoencephalitis, myelitis, acute disseminated encephalomyelitis (rare)",
+          "Fetal loss and stillbirth"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with acute onset of rash AND/OR fever + one or more of: arthralgia, arthritis, conjunctivitis, AND residence in or travel to Zika-endemic area OR sexual contact with person with Zika or travel to endemic area",
+          "confirmed": "Suspected case + laboratory confirmation: positive RT-PCR for Zika RNA from serum or urine (first 14 days), OR positive Zika IgM antibody with PRNT (plaque reduction neutralization test) to rule out cross-reactivity with dengue"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR for Zika RNA from serum (first 7 days) or urine (first 14 days) - gold standard for acute diagnosis",
+        "Zika IgM antibody (ELISA) - detectable from day 4 onwards; cross-reacts with dengue and other flaviviruses",
+        "Plaque reduction neutralization test (PRNT) - confirmatory test to differentiate Zika from dengue and other flaviviruses",
+        "Prenatal testing: RT-PCR from amniotic fluid, fetal ultrasound for microcephaly and brain abnormalities",
+        "Newborn testing: RT-PCR from cord blood, placenta, or infant serum/urine; head circumference measurement"
+      ],
+      "treatment": "Supportive care: rest, fluids, antipyretics (paracetamol/acetaminophen). Avoid aspirin and NSAIDs until dengue is ruled out (bleeding risk). No specific antiviral therapy available. Pregnant women with Zika: serial ultrasounds to monitor fetal development. Infants with congenital Zika syndrome: multidisciplinary care (neurology, ophthalmology, audiology, physical therapy).",
+      "infectionControl": {
+        "precautions": "Standard Precautions. Zika is not transmitted person-to-person through casual contact. Main focus is vector control and prevention of sexual transmission",
+        "screening": "Screen pregnant women for Zika exposure (travel, sexual contact); test if symptomatic or exposed",
+        "cohorting": "Not necessary",
+        "sourceControl": "Protect viremic patients from mosquito bites to prevent transmission to mosquitoes. Counsel on safe sex practices (condom use or abstinence) for 6 months after infection",
+        "environmental": "Vector control: eliminate mosquito breeding sites, indoor residual spraying, larvicides",
+        "staffEducation": "Educate on Zika recognition, pregnancy risks, sexual transmission, vector control, travel advisories"
+      },
+      "outbreakTriggers": [
+        "Cluster of ≥2 confirmed Zika cases (especially travel-related) in same area within 2 weeks",
+        "Spike in congenital microcephaly or birth defects",
+        "Detection of Zika in previously non-endemic area",
+        "Increase in Guillain-Barré syndrome cases"
+      ],
+      "reportingCommunication": [
+        "Report clusters of Zika cases to public health authorities (within 24 hours)",
+        "Enhanced surveillance for congenital Zika syndrome: birth defect registries, pregnancy outcomes",
+        "Implement outbreak control measures: vector control, pregnancy advisories, travel warnings, blood donor screening",
+        "International alerts for travel-related cases",
+        "Public health messaging: pregnancy guidance, sexual transmission prevention, vector control",
+        "Coordinate with obstetrics, pediatrics, neurology, vector control, and public health"
+      ],
+      "prevention": [
+        "Pregnancy guidance (most important): pregnant women should avoid travel to Zika-endemic areas; if travel unavoidable, use strict mosquito bite prevention; partners of pregnant women should use condoms or abstain for duration of pregnancy if exposed to Zika",
+        "Vector control: eliminate mosquito breeding sites, indoor residual spraying, larvicides",
+        "Personal protection: insect repellent (DEET safe in pregnancy), long-sleeves and pants, mosquito nets, window screens",
+        "Safe sex practices: condom use or abstinence for 6 months after Zika infection or travel to endemic area (3 months for women, 6 months for men)",
+        "Blood donor screening in endemic areas",
+        "Public information campaigns: pregnancy risks, sexual transmission, vector control",
+        "Preconception counseling: delay pregnancy for 2-3 months after Zika infection or travel to endemic area",
+        "No vaccine available (under development)"
+      ],
+      "references": [
+        {
+          "label": "WHO - Zika Virus",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/zika-virus"
+        },
+        {
+          "label": "CDC - Zika Virus",
+          "url": "https://www.cdc.gov/zika/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "chikungunya",
+      "name": "Chikungunya virus",
+      "scientificName": "Chikungunya virus (CHIKV), genus Alphavirus, family Togaviridae",
+      "definition": "Enveloped positive-sense single-stranded RNA virus causing chikungunya fever, characterized by sudden onset of fever and severe, often debilitating arthralgia. Name derives from Kimakonde language meaning 'to become contorted' due to stooped posture from joint pain. Transmitted by Aedes mosquitoes. Chronic arthralgia can persist for months to years. Outbreaks have occurred in Africa, Asia, Europe, and Americas.",
+      "reservoir": {
+        "primary": [
+          "Humans (primary reservoir during outbreaks)",
+          "Aedes mosquitoes (Aedes aegypti, Aedes albopictus)",
+          "Non-human primates (sylvatic cycle in Africa)"
+        ],
+        "secondary": [],
+        "notes": "Humans are main amplifying host during urban outbreaks. Aedes aegypti and Aedes albopictus are both competent vectors. Sylvatic cycle exists in Africa with non-human primates and forest-dwelling Aedes mosquitoes."
+      },
+      "transmission": {
+        "mode": "Mosquito bite (Aedes aegypti, Aedes albopictus)",
+        "routes": [
+          "Mosquito bite: bite of infected Aedes mosquito - primary route",
+          "Vertical transmission: mother to fetus during childbirth (intrapartum transmission) - can cause severe neonatal disease",
+          "Blood transfusion (rare)",
+          "Laboratory exposure (rare)"
+        ],
+        "notes": "Aedes albopictus (Asian tiger mosquito) is important vector for chikungunya, allowing spread to temperate regions. High viral loads in humans facilitate efficient transmission to mosquitoes."
+      },
+      "incubationPeriod": {
+        "range": "3-7 days (range 1-12 days) from mosquito bite to symptom onset",
+        "infectiousPeriod": "Viremic (infectious to mosquitoes) during first week of illness, typically days 2-6 after symptom onset. High viral loads facilitate transmission",
+        "seasonality": "Year-round in tropical regions; seasonal in temperate regions during warm months",
+        "geographic": "Endemic in Africa, Asia, Indian subcontinent. Large outbreaks in Indian Ocean islands (2005-2006), India (2006), Europe (Italy 2007, France 2010), Americas (2013-2015)"
+      },
+      "riskFactors": [
+        "Living in or traveling to chikungunya-endemic areas",
+        "Elderly (higher risk of severe disease and chronic arthralgia)",
+        "People with underlying joint disease (arthritis, rheumatism)",
+        "Newborns (risk of severe neonatal disease if mother infected during childbirth)",
+        "People with chronic diseases (diabetes, cardiovascular disease)",
+        "Urban areas with high Aedes mosquito density",
+        "Lack of vector control measures"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Sudden onset of high fever (39-40°C) and severe arthralgia (joint pain) - hallmark symptoms",
+          "Polyarthralgia: bilateral, symmetric, affecting multiple joints (wrists, ankles, fingers, knees, shoulders) - often debilitating",
+          "Rash: maculopapular rash on trunk and extremities (appears 2-5 days after fever)",
+          "Headache, myalgia, back pain, nausea, vomiting",
+          "Acute symptoms typically last 7-10 days"
+        ],
+        "complications": [
+          "Chronic arthralgia: persistent or relapsing joint pain lasting months to years (30-40% of patients) - can be severely debilitating",
+          "Severe neonatal disease: encephalopathy, seizures, hemorrhage (if mother infected during childbirth)",
+          "Neurological complications: encephalitis, meningoencephalitis, Guillain-Barré syndrome (rare)",
+          "Hemorrhagic manifestations (rare, more common in children)",
+          "Myocarditis, hepatitis (rare)",
+          "Death (rare, <1%, mainly in elderly and newborns)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with acute onset of fever >38.5°C AND severe arthralgia not explained by other medical conditions, AND residence in or travel to chikungunya-endemic area",
+          "confirmed": "Suspected case + laboratory confirmation: positive RT-PCR for chikungunya RNA (first 8 days), OR positive IgM antibody (after day 5), OR 4-fold rise in IgG titer"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR for chikungunya RNA from serum - gold standard for early diagnosis (first 8 days of illness)",
+        "IgM antibody (ELISA) - detectable from day 5 onwards; indicates recent infection",
+        "IgG antibody (ELISA) - indicates past infection; 4-fold rise in paired sera confirms acute infection",
+        "Complete blood count: lymphopenia, thrombocytopenia (mild)",
+        "Inflammatory markers: elevated ESR, CRP"
+      ],
+      "treatment": "Supportive care: rest, fluids, antipyretics (paracetamol/acetaminophen). Pain relief: NSAIDs (ibuprofen, naproxen) for arthralgia after acute phase. Avoid aspirin during acute phase. Chronic arthralgia: NSAIDs, corticosteroids (short-term), physical therapy, disease-modifying antirheumatic drugs (DMARDs) in severe cases. No specific antiviral therapy available.",
+      "infectionControl": {
+        "precautions": "Standard Precautions. Chikungunya is not transmitted person-to-person (except rare vertical transmission). Main focus is vector control",
+        "screening": "Screen for chikungunya symptoms in febrile patients from endemic areas",
+        "cohorting": "Not necessary",
+        "sourceControl": "Protect viremic patients from mosquito bites (mosquito nets, screened rooms, insect repellent) to prevent transmission to mosquitoes",
+        "environmental": "Vector control: eliminate mosquito breeding sites, indoor residual spraying, larvicides",
+        "staffEducation": "Educate on chikungunya recognition, chronic arthralgia management, vector control"
+      },
+      "outbreakTriggers": [
+        "≥2 confirmed chikungunya cases in same area within 2 weeks",
+        "Rapid increase in acute febrile illness with severe arthralgia above baseline",
+        "Detection of chikungunya in previously non-endemic area"
+      ],
+      "reportingCommunication": [
+        "Rapid notification (within 24 hours) of confirmed chikungunya cases to local/national public health authorities",
+        "Implement outbreak control measures: vector control, public health messaging, enhanced surveillance",
+        "Local and international alerts for travel-related cases",
+        "Coordinate with vector control, rheumatology, and public health"
+      ],
+      "prevention": [
+        "Vector control: eliminate mosquito breeding sites, indoor residual spraying, larvicides",
+        "Personal protection: insect repellent (DEET, picaridin), long-sleeves and pants, mosquito nets, window screens",
+        "Community mobilization: engage communities in source reduction campaigns",
+        "Travel advisories for endemic areas",
+        "No vaccine available (under development)",
+        "Early detection and case management"
+      ],
+      "references": [
+        {
+          "label": "WHO - Chikungunya",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/chikungunya"
+        },
+        {
+          "label": "CDC - Chikungunya Virus",
+          "url": "https://www.cdc.gov/chikungunya/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "yellow_fever",
+      "name": "Yellow fever virus",
+      "scientificName": "Yellow fever virus (YFV), genus Flavivirus, family Flaviviridae",
+      "definition": "Enveloped positive-sense single-stranded RNA virus causing yellow fever, an acute viral hemorrhagic disease with high mortality rate (20-50% in severe cases). Transmitted by mosquitoes (Aedes and Haemagogus species). Three transmission cycles: sylvatic (jungle), intermediate (savannah), and urban. Vaccine-preventable disease. Endemic in tropical Africa and South America. International Health Regulations require yellow fever vaccination for travelers to endemic areas.",
+      "reservoir": {
+        "primary": [
+          "Non-human primates (monkeys) - primary reservoir in sylvatic cycle",
+          "Aedes and Haemagogus mosquitoes"
+        ],
+        "secondary": [
+          "Humans (amplifying host in urban outbreaks)"
+        ],
+        "notes": "Sylvatic (jungle) cycle: monkeys and forest mosquitoes (Haemagogus in Americas, Aedes in Africa). Intermediate cycle: monkeys and peri-domestic mosquitoes in savannah. Urban cycle: humans and Aedes aegypti mosquitoes."
+      },
+      "transmission": {
+        "mode": "Mosquito bite (Aedes aegypti in urban cycle, Haemagogus and Aedes in sylvatic cycle)",
+        "routes": [
+          "Mosquito bite: bite of infected mosquito - only route of transmission",
+          "Sylvatic cycle: forest mosquitoes (Haemagogus in Americas, Aedes in Africa) transmit between monkeys and to humans entering forests",
+          "Urban cycle: Aedes aegypti transmits between humans in urban areas - can cause large explosive outbreaks"
+        ],
+        "notes": "No person-to-person transmission. Urban outbreaks occur when Aedes aegypti mosquitoes are present and unvaccinated humans are infected. Sylvatic yellow fever occurs in forest workers, hunters, travelers."
+      },
+      "incubationPeriod": {
+        "range": "3-6 days (range 3-7 days) from mosquito bite to symptom onset",
+        "infectiousPeriod": "Viremic (infectious to mosquitoes) from 1 day before symptom onset to 5 days after symptom onset",
+        "seasonality": "Year-round in tropical regions; seasonal peaks during rainy season",
+        "geographic": "Endemic in tropical Africa (47 countries) and South America (13 countries). Not found in Asia despite presence of competent vectors. Estimated 200,000 cases and 30,000 deaths annually"
+      },
+      "riskFactors": [
+        "Unvaccinated individuals (most important risk factor)",
+        "Travelers to yellow fever-endemic areas without vaccination",
+        "Forest workers, hunters, and people entering jungle areas (sylvatic yellow fever)",
+        "Urban residents in endemic areas during outbreaks (urban yellow fever)",
+        "Elderly (higher mortality)",
+        "Infants (higher mortality)",
+        "Immunocompromised individuals"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Acute phase (3-4 days): sudden onset of fever, chills, severe headache, back pain, myalgia, nausea, vomiting, fatigue. Faget sign: bradycardia despite high fever",
+          "Period of remission (24-48 hours): symptoms improve, many patients recover at this stage",
+          "Toxic phase (15% of cases): fever returns, jaundice (yellowing - gives disease its name), abdominal pain, vomiting (may contain blood - 'black vomit'), bleeding (gums, nose, eyes, stomach), oliguria, liver and kidney failure, delirium, seizures, coma"
+        ],
+        "complications": [
+          "Severe yellow fever (toxic phase): jaundice, hemorrhage, multi-organ failure (liver, kidney, heart)",
+          "Hepatorenal syndrome",
+          "Myocarditis and arrhythmias",
+          "Encephalitis",
+          "Secondary bacterial infections",
+          "Death (case fatality rate: 20-50% in severe cases, up to 80% in some outbreaks)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with acute onset of fever + jaundice within 14 days of symptom onset, AND residence in or travel to yellow fever-endemic area",
+          "confirmed": "Suspected case + laboratory confirmation: positive RT-PCR for yellow fever RNA, OR positive IgM antibody (with negative dengue IgM), OR 4-fold rise in IgG titer, OR viral isolation"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR for yellow fever RNA from serum - gold standard for early diagnosis (first 5 days)",
+        "IgM antibody (ELISA) - detectable from day 5 onwards; cross-reacts with other flaviviruses (dengue, Zika, West Nile)",
+        "Plaque reduction neutralization test (PRNT) - confirmatory test to differentiate from other flaviviruses",
+        "Liver function tests: elevated bilirubin, transaminases (ALT, AST), prolonged PT/PTT",
+        "Complete blood count: leukopenia, thrombocytopenia",
+        "Kidney function tests: elevated creatinine, BUN (renal failure)",
+        "Histopathology (post-mortem): mid-zonal hepatic necrosis with sparing of periportal hepatocytes (Councilman bodies)"
+      ],
+      "treatment": "Supportive care: hospitalization for severe cases, fluid and electrolyte management, blood transfusions for hemorrhage, dialysis for renal failure, intensive care for multi-organ failure. No specific antiviral therapy available. Avoid aspirin and NSAIDs (bleeding risk). Yellow fever vaccine for prevention (not treatment).",
+      "infectionControl": {
+        "precautions": "Standard Precautions. Yellow fever is not transmitted person-to-person. Main focus is vector control and vaccination",
+        "screening": "Screen for yellow fever symptoms in febrile patients from endemic areas; check vaccination status",
+        "cohorting": "Not necessary",
+        "sourceControl": "Protect viremic patients from mosquito bites to prevent transmission to mosquitoes. Isolate in screened rooms or use mosquito nets",
+        "environmental": "Vector control: eliminate mosquito breeding sites, indoor residual spraying, larvicides, urban mosquito control (Aedes aegypti)",
+        "staffEducation": "Educate on yellow fever recognition, vaccination requirements, vector control"
+      },
+      "outbreakTriggers": [
+        "Any confirmed non-imported yellow fever case (especially in urban area)",
+        "Death from suspected yellow fever",
+        "Sudden increase in acute jaundice cases in endemic area",
+        "Epizootic (outbreak in monkeys) in endemic area"
+      ],
+      "reportingCommunication": [
+        "Immediate reporting (within hours) of any suspected or confirmed yellow fever case to national public health authorities and WHO - yellow fever is internationally notifiable under International Health Regulations (IHR)",
+        "Implement outbreak control measures: mass vaccination campaigns, vector control (urban Aedes aegypti elimination), public health messaging",
+        "Enhanced surveillance: active case finding, entomological surveillance, epizootic surveillance (monkey deaths)",
+        "Travel advisories and vaccination requirements",
+        "Coordinate with vector control, immunization programs, wildlife/veterinary services, and international health authorities"
+      ],
+      "prevention": [
+        "Yellow fever vaccination (most effective prevention): live attenuated vaccine (17D strain), single dose provides lifelong immunity (>95% protection). Recommended for: all residents of endemic areas, travelers to endemic areas (required for entry to some countries)",
+        "Vector control: eliminate Aedes aegypti breeding sites in urban areas, indoor residual spraying, larvicides",
+        "Personal protection: insect repellent, long-sleeves and pants, mosquito nets",
+        "Travel advisories: vaccination required for travelers to endemic areas; some countries require proof of vaccination (International Certificate of Vaccination)",
+        "Mass vaccination campaigns during outbreaks",
+        "Epizootic surveillance: monitor monkey populations for yellow fever deaths (early warning)",
+        "Contraindications to vaccine: infants <9 months, pregnant women, severe immunosuppression, severe egg allergy, history of thymus disorder"
+      ],
+      "references": [
+        {
+          "label": "WHO - Yellow Fever",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/yellow-fever"
+        },
+        {
+          "label": "CDC - Yellow Fever",
+          "url": "https://www.cdc.gov/yellowfever/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "west_nile",
+      "name": "West Nile virus",
+      "scientificName": "West Nile virus (WNV), genus Flavivirus, family Flaviviridae",
+      "definition": "Enveloped positive-sense single-stranded RNA virus causing West Nile fever and neuroinvasive disease (meningitis, encephalitis, acute flaccid paralysis). Transmitted by Culex mosquitoes. Birds are primary reservoir. Most infections (80%) are asymptomatic. Neuroinvasive disease occurs in <1% but has high mortality, especially in elderly. Endemic in Africa, Europe, Middle East, North America, and parts of Asia.",
+      "reservoir": {
+        "primary": [
+          "Birds (especially corvids - crows, jays, magpies) - primary amplifying hosts",
+          "Culex mosquitoes"
+        ],
+        "secondary": [
+          "Horses (dead-end hosts, do not transmit)",
+          "Humans (dead-end hosts, do not transmit)"
+        ],
+        "notes": "Birds are primary reservoir with high viremia levels. Culex mosquitoes (primarily Culex pipiens, Culex quinquefasciatus) transmit between birds and to humans/horses. Humans and horses are dead-end hosts (low viremia, do not transmit back to mosquitoes)."
+      },
+      "transmission": {
+        "mode": "Mosquito bite (Culex species)",
+        "routes": [
+          "Mosquito bite: bite of infected Culex mosquito - primary route",
+          "Blood transfusion and organ transplantation (rare, screening implemented in many countries)",
+          "Vertical transmission: mother to fetus during pregnancy or through breastfeeding (rare)",
+          "Occupational exposure: laboratory workers, healthcare workers (needlestick) - very rare"
+        ],
+        "notes": "Culex mosquitoes are primary vectors (feed on birds and humans). Peak biting time: dusk to dawn. No person-to-person transmission through casual contact."
+      },
+      "incubationPeriod": {
+        "range": "2-14 days (average 3-6 days) from mosquito bite to symptom onset",
+        "infectiousPeriod": "Viremic during acute illness (typically first week). Low viremia in humans (dead-end host)",
+        "seasonality": "Summer and fall (June-November in Northern Hemisphere) corresponding to mosquito activity",
+        "geographic": "Endemic in Africa, Europe, Middle East, North America (introduced 1999, now endemic), parts of Asia, Australia. Outbreaks occur annually in temperate regions during summer/fall"
+      },
+      "riskFactors": [
+        "Elderly (age >60 years) - highest risk of neuroinvasive disease and death",
+        "Immunocompromised individuals (organ transplant recipients, HIV/AIDS, cancer, immunosuppressive therapy)",
+        "People with chronic diseases (diabetes, hypertension, kidney disease)",
+        "Outdoor workers and activities (agriculture, construction, outdoor recreation)",
+        "Living in areas with high mosquito density",
+        "Lack of mosquito control measures"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Asymptomatic: 80% of infections are asymptomatic",
+          "West Nile fever (20% of infections): sudden onset of fever, headache, body aches, joint pain, fatigue, rash (trunk and extremities), swollen lymph nodes. Symptoms last 3-6 days",
+          "Neuroinvasive disease (<1% of infections): meningitis (fever, headache, stiff neck), encephalitis (altered mental status, seizures, focal neurological deficits), acute flaccid paralysis (polio-like syndrome)"
+        ],
+        "complications": [
+          "Neuroinvasive disease: meningitis, encephalitis, acute flaccid paralysis (AFP) - occurs in <1% but has high morbidity and mortality",
+          "Long-term neurological sequelae: cognitive impairment, movement disorders, persistent weakness (in survivors of neuroinvasive disease)",
+          "Death (case fatality rate: ~10% for neuroinvasive disease, higher in elderly)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with fever + neurological symptoms (meningitis, encephalitis, acute flaccid paralysis) during mosquito season, OR acute febrile illness with headache and myalgia",
+          "confirmed": "Suspected case + laboratory confirmation: positive IgM antibody in serum or CSF (with PRNT confirmation), OR 4-fold rise in IgG titer, OR positive RT-PCR from serum or CSF, OR viral isolation"
+        }
+      },
+      "diagnosis": [
+        "IgM antibody (ELISA) in serum or CSF - primary diagnostic test; detectable from day 8 onwards; can persist for months",
+        "Plaque reduction neutralization test (PRNT) - confirmatory test to rule out cross-reactivity with other flaviviruses",
+        "RT-PCR for West Nile RNA from serum or CSF - low sensitivity due to low viremia in humans",
+        "CSF analysis (for neuroinvasive disease): pleocytosis (lymphocytic), elevated protein, normal glucose",
+        "MRI brain: T2/FLAIR hyperintensities in basal ganglia, thalamus, brainstem (in encephalitis)",
+        "EMG/nerve conduction studies: for acute flaccid paralysis"
+      ],
+      "treatment": "Supportive care: hospitalization for neuroinvasive disease, IV fluids, pain management, seizure control, respiratory support if needed. No specific antiviral therapy available. Intensive care and rehabilitation for neuroinvasive disease. Long-term follow-up for neurological sequelae.",
+      "infectionControl": {
+        "precautions": "Standard Precautions. West Nile virus is not transmitted person-to-person (except rare vertical transmission or blood transfusion). Main focus is vector control",
+        "screening": "Screen blood and organ donors in endemic areas during transmission season",
+        "cohorting": "Not necessary",
+        "sourceControl": "Protect patients from mosquito bites during acute illness",
+        "environmental": "Vector control: eliminate mosquito breeding sites (standing water), larvicides, adulticiding (spraying), mosquito surveillance (trap monitoring)",
+        "staffEducation": "Educate on West Nile recognition, neuroinvasive disease, vector control, outdoor precautions"
+      },
+      "outbreakTriggers": [
+        "≥2 human neuroinvasive cases in non-endemic area or above baseline in endemic area",
+        "Sudden cluster of West Nile cases in defined geographic area",
+        "Increase in dead birds (especially crows, jays) - sentinel surveillance",
+        "Detection of West Nile virus in mosquito pools above threshold"
+      ],
+      "reportingCommunication": [
+        "Routine notification of West Nile cases to public health authorities (within 1 week for non-neuroinvasive, within 24 hours for neuroinvasive)",
+        "Urgent notification for clusters or outbreaks",
+        "Implement outbreak control measures: mosquito surveillance and control (larviciding, adulticiding), dead bird surveillance, public health messaging",
+        "Coordinate with vector control, veterinary services (equine cases), wildlife services (bird surveillance), and public health"
+      ],
+      "prevention": [
+        "Vector control: eliminate standing water (mosquito breeding sites), larvicides, adulticiding (community spraying during outbreaks)",
+        "Personal protection: insect repellent (DEET, picaridin), long-sleeves and pants, avoid outdoor activities at dusk/dawn (peak mosquito biting times), window screens",
+        "Mosquito surveillance: trap monitoring, mosquito pool testing (early warning)",
+        "Dead bird surveillance: report dead crows, jays, magpies (sentinel species)",
+        "Blood donor screening in endemic areas during transmission season",
+        "Public education: outdoor precautions, mosquito bite prevention, report dead birds",
+        "Equine vaccine available (for horses, not humans)",
+        "No human vaccine available"
+      ],
+      "references": [
+        {
+          "label": "WHO - West Nile Virus",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/west-nile-virus"
+        },
+        {
+          "label": "CDC - West Nile Virus",
+          "url": "https://www.cdc.gov/westnile/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "cchf_arboviral",
+      "name": "Crimean-Congo Hemorrhagic Fever (CCHF)",
+      "scientificName": "Crimean-Congo hemorrhagic fever virus (CCHFV), genus Orthonairovirus, family Nairoviridae (enveloped negative-sense single-stranded RNA virus)",
+      "definition": "Enveloped negative-sense single-stranded RNA virus causing severe hemorrhagic fever with high mortality rate (10-40%). CCHF is a zoonotic disease transmitted by ticks (Hyalomma genus) and through contact with blood or tissues of infected livestock or humans. Endemic in Africa, Asia, Middle East, and Eastern Europe. Nosocomial transmission is common and poses high risk to healthcare workers. High-consequence pathogen requiring strict infection control and biosafety measures.",
+      "reservoir": {
+        "primary": [
+          "Ticks (Hyalomma genus) - primary reservoir and vector",
+          "Wild and domestic animals (cattle, sheep, goats) - amplifying hosts"
+        ],
+        "secondary": [
+          "Infected humans (during acute illness)"
+        ],
+        "notes": "Ticks are the primary reservoir and vector. Hyalomma ticks maintain the virus through transstadial and transovarial transmission. Wild and domestic animals (especially cattle, sheep, goats) serve as amplifying hosts but do not develop clinical disease. Humans are dead-end hosts but can transmit to other humans through blood and body fluids."
+      },
+      "transmission": {
+        "mode": "Tick bite (primary), contact with blood or tissues of infected animals or humans",
+        "routes": [
+          "Tick bite: bite of infected Hyalomma tick - primary route in endemic areas",
+          "Contact with blood or tissues of infected livestock: slaughtering, butchering, veterinary procedures - major occupational risk",
+          "Nosocomial transmission: contact with blood or body fluids of infected patients - major risk to healthcare workers; accounts for significant proportion of cases",
+          "Crushing ticks with bare hands (while removing from animals or humans)",
+          "Percutaneous exposure: needlestick injuries, sharps injuries in healthcare settings",
+          "Mucous membrane exposure: splash of blood or body fluids to eyes, nose, mouth"
+        ],
+        "notes": "CCHF is highly infectious through blood and body fluid contact. Nosocomial transmission is common and poses extreme risk to healthcare workers. Virus is present in high concentrations in blood and body fluids during acute illness. No person-to-person transmission through respiratory route (not airborne)."
+      },
+      "incubationPeriod": {
+        "range": "1-14 days (mean 3-7 days) from tick bite or exposure to symptom onset. Shorter incubation (1-3 days) after contact with infected blood or tissues",
+        "infectiousPeriod": "Infectious during acute illness (typically 7-10 days from symptom onset). Virus is present in blood and body fluids during febrile and hemorrhagic phases. Patients are most infectious during hemorrhagic phase",
+        "seasonality": "Spring and summer peaks (April-September) corresponding to tick activity in endemic areas",
+        "geographic": "Endemic in Africa (especially sub-Saharan Africa), Asia (Middle East, Central Asia, South Asia), Eastern Europe (Balkans, Turkey, Russia). Not found in Americas, Western Europe, or Australia"
+      },
+      "riskFactors": [
+        "Livestock workers (farmers, herders, veterinarians, abattoir workers) - occupational exposure to infected animals and ticks",
+        "Healthcare workers caring for CCHF patients - high risk of nosocomial transmission",
+        "People living in or traveling to CCHF-endemic regions",
+        "Outdoor activities in endemic areas during tick season (hiking, camping, hunting)",
+        "Contact with infected patients or their blood/body fluids",
+        "Inadequate infection control practices in healthcare settings",
+        "Lack of personal protective equipment (PPE)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Sudden onset of high fever (39-41°C), severe headache, myalgia, back pain, joint pain",
+          "Nausea, vomiting, diarrhea, abdominal pain",
+          "Flushed face, conjunctival injection, petechiae on palate and skin",
+          "Hemorrhagic phase (days 3-6): petechiae, ecchymoses, epistaxis, hematemesis, melena, hematuria, vaginal bleeding, bleeding from venipuncture sites",
+          "Hepatomegaly, jaundice, liver dysfunction",
+          "Neurological symptoms: confusion, agitation, mood changes",
+          "Symptoms typically last 2-3 weeks in survivors"
+        ],
+        "complications": [
+          "Severe hemorrhagic manifestations: gastrointestinal bleeding, pulmonary hemorrhage, intracranial hemorrhage",
+          "Disseminated intravascular coagulation (DIC)",
+          "Multi-organ failure: liver failure, kidney failure, respiratory failure",
+          "Shock and cardiovascular collapse",
+          "Neurological complications: encephalitis, seizures",
+          "Secondary bacterial infections",
+          "Death (case fatality rate 10-40%, higher in nosocomial cases)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with sudden onset of high fever + hemorrhagic manifestations (petechiae, bleeding) + epidemiological link (tick bite, contact with livestock, travel to endemic area, contact with CCHF patient)",
+          "confirmed": "Clinical illness + laboratory confirmation: positive RT-PCR for CCHFV RNA from blood, OR positive CCHFV IgM antibody, OR viral isolation (BSL-4 required)"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR for CCHFV RNA from blood - gold standard for early diagnosis (first 7-10 days of illness); highly sensitive and specific",
+        "CCHFV IgM antibody (ELISA) - detectable from day 5-7 of illness; indicates acute infection",
+        "CCHFV IgG antibody - indicates past infection or convalescence",
+        "Viral isolation - requires BSL-4 laboratory; rarely performed",
+        "Complete blood count: thrombocytopenia, leukopenia",
+        "Coagulation studies: prolonged PT/PTT, elevated D-dimer (DIC)",
+        "Liver function tests: elevated ALT, AST, bilirubin",
+        "All laboratory work must be performed under BSL-3 or BSL-4 conditions"
+      ],
+      "treatment": "Supportive care: fluid and electrolyte management, blood product transfusions (platelets, fresh frozen plasma, packed red cells), management of hemorrhage and shock. Ribavirin (antiviral): oral or IV ribavirin may reduce mortality if started early (within first 5 days of illness); evidence is limited but WHO recommends consideration. Strict isolation and infection control. Intensive care support for severe cases. No vaccine available.",
+      "infectionControl": {
+        "precautions": "Contact Precautions + Droplet Precautions (some guidelines recommend Airborne Precautions for aerosol-generating procedures). Strict isolation in single room (negative pressure preferred). Full PPE: double gloves, impermeable gown, N95 respirator or PAPR, face shield, boot covers. Minimize invasive procedures. Dedicated equipment. Limit number of healthcare workers. No visitors except essential family with full PPE",
+        "screening": "Screen for CCHF symptoms (fever, hemorrhage) and epidemiological risk factors (tick bite, livestock contact, travel to endemic area) at healthcare entry points in endemic regions. Immediate isolation of suspected cases",
+        "cohorting": "Isolate each CCHF patient in separate single room; avoid cohorting due to high risk",
+        "sourceControl": "Avoid aerosol-generating procedures if possible; use closed systems for blood collection; proper sharps disposal; safe handling of laboratory specimens (BSL-3/4)",
+        "environmental": "Enhanced cleaning and disinfection with EPA-registered disinfectants effective against enveloped viruses (bleach-based, accelerated hydrogen peroxide). Careful handling and disposal of contaminated materials as Category A infectious waste",
+        "staffEducation": "Rigorous training on PPE donning/doffing; avoid direct contact with blood and body fluids; immediate reporting of exposures; post-exposure monitoring and ribavirin prophylaxis if indicated"
+      },
+      "outbreakTriggers": [
+        "Any single confirmed or suspected case of CCHF (high-consequence pathogen)",
+        "Cluster of hemorrhagic fever cases in endemic area",
+        "Nosocomial transmission (healthcare-associated case)",
+        "Outbreak in livestock with human cases"
+      ],
+      "reportingCommunication": [
+        "Urgent immediate reporting (within hours) of any suspected or confirmed CCHF case to infection control, hospital administration, and public health authorities - CCHF is a notifiable disease and internationally reportable to WHO under International Health Regulations (IHR)",
+        "Activate rapid outbreak response team",
+        "Implement strict isolation and infection control measures immediately",
+        "Contact tracing: identify all contacts (healthcare workers, family members, community contacts); monitor for 14 days; consider ribavirin prophylaxis for high-risk exposures",
+        "Coordinate with public health, veterinary services, and vector control for outbreak investigation and control",
+        "Public health alerts and health messaging to healthcare facilities and communities in endemic areas",
+        "International notification if case involves international travel"
+      ],
+      "prevention": [
+        "Personal protective equipment (PPE): full PPE for healthcare workers caring for CCHF patients; protective clothing for livestock workers and abattoir workers",
+        "Tick control and avoidance: use insect repellents (DEET, permethrin), wear protective clothing (long sleeves, pants, boots), perform tick checks, avoid tick-infested areas during peak season",
+        "Safe slaughter and butchering practices: use gloves and protective clothing when handling livestock; avoid contact with blood and tissues",
+        "Infection control in healthcare: strict isolation, full PPE, safe injection practices, proper waste disposal",
+        "Livestock vaccination: vaccine available for animals in some countries (reduces viral load in animals)",
+        "Vector control: acaricides for tick control on livestock and in environment",
+        "Public education: awareness campaigns for livestock workers, healthcare workers, and communities in endemic areas",
+        "Early detection and isolation of cases",
+        "Post-exposure prophylaxis: ribavirin may be considered for high-risk exposures (limited evidence)",
+        "No human vaccine available (under development)"
+      ],
+      "references": [
+        {
+          "label": "WHO - Crimean-Congo Hemorrhagic Fever",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/crimean-congo-haemorrhagic-fever"
+        },
+        {
+          "label": "CDC - Crimean-Congo Hemorrhagic Fever",
+          "url": "https://www.cdc.gov/vhf/crimean-congo/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "rift_valley_fever",
+      "name": "Rift Valley fever virus (RVFV)",
+      "scientificName": "Rift Valley fever virus (RVFV), genus Phlebovirus, family Phenyiviridae (formerly Bunyaviridae)",
+      "definition": "Enveloped negative-sense single-stranded RNA virus causing Rift Valley fever, a zoonotic disease affecting livestock and humans. Transmitted by mosquitoes and through direct contact with infected animal tissues/fluids. Causes fever, hemorrhagic disease, and abortion storms in livestock. In humans, causes febrile illness with potential for severe complications (hemorrhagic fever, encephalitis, retinitis). Endemic in Africa and Arabian Peninsula. Outbreaks associated with heavy rainfall and flooding.",
+      "reservoir": {
+        "primary": [
+          "Mosquitoes (Aedes and Culex species) - primary reservoir",
+          "Livestock (cattle, sheep, goats, camels) - amplifying hosts"
+        ],
+        "secondary": [
+          "Wild ruminants"
+        ],
+        "notes": "Mosquitoes are primary reservoir; virus maintained through transovarial transmission in Aedes eggs (can survive years in dry conditions). Livestock develop high viremia and serve as amplifying hosts. Outbreaks triggered by heavy rainfall/flooding that leads to massive mosquito emergence."
+      },
+      "transmission": {
+        "mode": "Mosquito bite (Aedes, Culex), direct contact with infected animal blood/tissues/fluids",
+        "routes": [
+          "Mosquito bite: bite of infected Aedes or Culex mosquito",
+          "Direct contact with infected animal blood, tissues, or body fluids: slaughtering, butchering, assisting with animal births, veterinary procedures - major route for human infection",
+          "Aerosol inhalation: during slaughter or handling of infected animals",
+          "Consumption of unpasteurized milk from infected animals (possible but rare)",
+          "Laboratory exposure (rare)"
+        ],
+        "notes": "Most human infections occur through direct contact with infected livestock during outbreaks. Farmers, herders, abattoir workers, and veterinarians at highest risk. No documented person-to-person transmission."
+      },
+      "incubationPeriod": {
+        "range": "2-6 days (range 2-7 days) from exposure to symptom onset",
+        "infectiousPeriod": "Viremic during acute febrile phase (first week). Can transmit to mosquitoes during viremia",
+        "seasonality": "Outbreaks associated with heavy rainfall and flooding (creates ideal mosquito breeding conditions). Seasonal patterns vary by region",
+        "geographic": "Endemic in sub-Saharan Africa, Egypt, Madagascar, Arabian Peninsula (Saudi Arabia, Yemen). Potential for spread to other regions with competent vectors"
+      },
+      "riskFactors": [
+        "Farmers, herders, and livestock workers - occupational exposure to infected animals",
+        "Abattoir workers and butchers - exposure to infected animal blood and tissues",
+        "Veterinarians - exposure during animal care and procedures",
+        "People living in flood-prone areas in endemic regions",
+        "Consumption of unpasteurized milk",
+        "Laboratory workers handling RVFV"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Mild illness (most common): sudden onset of fever, headache, myalgia, back pain, nausea, vomiting, photophobia. Symptoms last 4-7 days",
+          "Ocular disease (0.5-2%): retinitis, macular edema, retinal hemorrhages - can cause permanent vision loss",
+          "Meningoencephalitis (1%): severe headache, confusion, seizures, focal neurological deficits, coma",
+          "Hemorrhagic fever (<1%): jaundice, hemorrhagic manifestations (hematemesis, melena, petechiae, bleeding gums), liver failure, shock"
+        ],
+        "complications": [
+          "Permanent vision loss (from retinitis) - occurs in 0.5-2% of cases",
+          "Meningoencephalitis - case fatality rate ~50%",
+          "Hemorrhagic fever - case fatality rate ~50%",
+          "Liver failure, kidney failure",
+          "Death (overall case fatality rate <1%, but up to 50% in severe cases)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with acute febrile illness + epidemiological link (contact with livestock, animal birth/slaughter, mosquito exposure in endemic area during outbreak, especially after heavy rainfall/flooding)",
+          "confirmed": "Suspected case + laboratory confirmation: positive RT-PCR for RVFV RNA, OR positive IgM antibody, OR 4-fold rise in IgG titer, OR viral isolation"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR for RVFV RNA from serum - gold standard for early diagnosis (first 7 days)",
+        "IgM antibody (ELISA) - detectable from day 2-3 onwards; indicates acute infection",
+        "IgG antibody (ELISA) - indicates past infection; 4-fold rise confirms acute infection",
+        "Liver function tests: elevated transaminases, bilirubin (in severe cases)",
+        "Complete blood count: leukopenia, thrombocytopenia (in severe cases)",
+        "Ophthalmologic examination: for retinitis (fundoscopy shows retinal lesions)",
+        "All laboratory work should be performed under BSL-3 conditions"
+      ],
+      "treatment": "Supportive care: fluids, antipyretics, pain management. Severe cases: intensive care, management of hemorrhage, liver failure, shock. Ribavirin: may be beneficial if started early (limited evidence). Ocular disease: ophthalmology consultation, corticosteroids may be considered. No specific antiviral therapy with proven efficacy. Livestock vaccine available (for animals, not humans).",
+      "infectionControl": {
+        "precautions": "Standard Precautions. No documented person-to-person transmission. Main focus is preventing exposure to infected animals and mosquitoes",
+        "screening": "Screen for RVF symptoms in people with animal contact or mosquito exposure in endemic areas during outbreaks",
+        "cohorting": "Not necessary",
+        "sourceControl": "Protect patients from mosquito bites during viremic phase",
+        "environmental": "Vector control: mosquito surveillance and control (larvicides, adulticiding). Animal control: restrict movement of livestock during outbreaks, safe disposal of animal carcasses",
+        "staffEducation": "Educate on RVF recognition, occupational risks (livestock workers), vector control, safe animal handling practices"
+      },
+      "outbreakTriggers": [
+        "≥2 linked human or animal cases in same area",
+        "Sudden increase in livestock abortions or deaths (abortion storms in sheep/goats)",
+        "Heavy rainfall or flooding in endemic areas (environmental trigger)",
+        "Detection of RVFV in mosquito pools or livestock"
+      ],
+      "reportingCommunication": [
+        "Immediate notification (within 24 hours) of suspected or confirmed RVF cases to animal and human health authorities - RVF is a notifiable disease",
+        "Implement One Health outbreak response: coordinate human health, animal health, and environmental agencies",
+        "Outbreak control measures: livestock movement restrictions, animal vaccination, vector control, public health messaging, safe slaughter practices",
+        "Enhanced surveillance: active case finding in humans and animals, mosquito surveillance, environmental monitoring (rainfall, flooding)",
+        "International notification if outbreak threatens other countries"
+      ],
+      "prevention": [
+        "Livestock vaccination: live attenuated and inactivated vaccines available for animals (most effective prevention)",
+        "Vector control: mosquito surveillance and control, eliminate breeding sites, larvicides",
+        "Personal protection for high-risk occupations: gloves, protective clothing, face shields when handling animals, assisting births, or slaughtering",
+        "Safe animal handling practices: avoid contact with blood and tissues of sick animals, proper disposal of aborted fetuses and placentas",
+        "Avoid consumption of unpasteurized milk during outbreaks",
+        "Restrict livestock movement during outbreaks",
+        "Public education: occupational risks, safe animal handling, mosquito bite prevention",
+        "Early warning systems: monitor rainfall, flooding, mosquito populations",
+        "No human vaccine widely available (experimental vaccines exist)"
+      ],
+      "references": [
+        {
+          "label": "WHO - Rift Valley Fever",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/rift-valley-fever"
+        },
+        {
+          "label": "CDC - Rift Valley Fever",
+          "url": "https://www.cdc.gov/vhf/rvf/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "hantavirus",
+      "name": "Hantavirus",
+      "scientificName": "Hantavirus (multiple species), genus Orthohantavirus, family Hantaviridae (formerly Bunyaviridae)",
+      "definition": "Family of enveloped negative-sense single-stranded RNA viruses causing two distinct clinical syndromes: hemorrhagic fever with renal syndrome (HFRS) in Asia and Europe, and hantavirus pulmonary syndrome (HPS) in Americas. Transmitted by rodents through aerosol inhalation of virus in rodent excreta. No person-to-person transmission for most species (exception: Andes virus in South America). High mortality rate for HPS (30-40%).",
+      "reservoir": {
+        "primary": [
+          "Rodents (species-specific) - primary reservoir"
+        ],
+        "secondary": [],
+        "notes": "Each hantavirus species is associated with specific rodent host. Old World hantaviruses (HFRS): Hantaan virus (striped field mouse), Seoul virus (rats), Puumala virus (bank vole), Dobrava virus (yellow-necked mouse). New World hantaviruses (HPS): Sin Nombre virus (deer mouse), Andes virus (long-tailed pygmy rice rat). Infected rodents shed virus in urine, feces, and saliva without becoming ill."
+      },
+      "transmission": {
+        "mode": "Aerosol inhalation of virus in rodent excreta (urine, feces, saliva)",
+        "routes": [
+          "Aerosol inhalation: breathing in aerosolized virus from rodent urine, feces, or saliva - primary route (e.g., sweeping, cleaning rodent-infested areas)",
+          "Direct contact: touching contaminated surfaces then touching mouth, nose, or eyes",
+          "Rodent bite (rare)",
+          "Person-to-person transmission: documented only for Andes virus in South America (close contact with infected person during acute illness)"
+        ],
+        "notes": "Most infections occur when people disturb rodent-infested areas (cleaning barns, sheds, cabins). Activities that generate aerosols (sweeping, vacuuming) increase risk. No transmission through mosquitoes or ticks despite being in Bunyaviridae family."
+      },
+      "incubationPeriod": {
+        "range": "1-8 weeks (average 2-4 weeks) from exposure to symptom onset. HPS: typically 2-3 weeks. HFRS: typically 2-4 weeks",
+        "infectiousPeriod": "Not transmitted person-to-person for most species (exception: Andes virus can transmit during acute illness)",
+        "seasonality": "Year-round, but increased risk in spring/summer when rodent populations peak and people engage in outdoor activities",
+        "geographic": "HFRS: Asia (China, Korea, Russia), Europe (Scandinavia, Balkans). HPS: Americas (North, Central, South America). Estimated 150,000-200,000 cases annually worldwide"
+      },
+      "riskFactors": [
+        "Rural workers (farmers, foresters, construction workers) - occupational exposure to rodents",
+        "Cleaning or entering rodent-infested buildings (barns, sheds, cabins, vacant buildings)",
+        "Camping, hiking, or outdoor activities in endemic areas",
+        "Living in or near rodent-infested areas",
+        "Occupations with rodent exposure (pest control, animal care, laboratory workers)",
+        "Poor housing conditions with rodent infestation"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Hantavirus Pulmonary Syndrome (HPS - Americas): Prodrome (3-5 days): fever, myalgia (especially thighs, hips, back), headache, nausea, vomiting, diarrhea, abdominal pain. Cardiopulmonary phase: sudden onset of cough, dyspnea, tachypnea, tachycardia, hypotension, pulmonary edema, shock. Rapid progression to respiratory failure within hours",
+          "Hemorrhagic Fever with Renal Syndrome (HFRS - Asia/Europe): Febrile phase (3-7 days): fever, headache, back pain, abdominal pain, nausea, vomiting. Hypotensive phase: shock, hemorrhagic manifestations. Oliguric phase: acute kidney injury, oliguria. Polyuric phase: diuresis. Convalescent phase: gradual recovery over weeks to months"
+        ],
+        "complications": [
+          "HPS: acute respiratory distress syndrome (ARDS), cardiogenic shock, multi-organ failure, death (case fatality rate 30-40%)",
+          "HFRS: acute kidney injury requiring dialysis, hemorrhagic complications, shock, death (case fatality rate 1-15% depending on virus species)",
+          "Long-term sequelae: chronic kidney disease (HFRS), pulmonary function impairment (HPS)"
+        ],
+        "caseDefinition": {
+          "suspected": "HPS: person with acute febrile illness + bilateral pulmonary infiltrates + respiratory distress + epidemiological link (rodent exposure, rural/endemic area). HFRS: person with acute febrile illness + renal dysfunction + hemorrhagic manifestations + epidemiological link",
+          "confirmed": "Suspected case + laboratory confirmation: positive IgM antibody, OR 4-fold rise in IgG titer, OR positive RT-PCR for hantavirus RNA, OR immunohistochemistry on tissue"
+        }
+      },
+      "diagnosis": [
+        "IgM antibody (ELISA) - primary diagnostic test; detectable at symptom onset; indicates acute infection",
+        "IgG antibody (ELISA) - 4-fold rise in paired sera confirms acute infection",
+        "RT-PCR for hantavirus RNA from blood or tissue - can identify specific virus species",
+        "Immunohistochemistry on tissue (lung, kidney) - post-mortem diagnosis",
+        "HPS: Chest X-ray/CT: bilateral interstitial infiltrates, pleural effusions. CBC: thrombocytopenia, hemoconcentration, left shift. ABG: hypoxemia",
+        "HFRS: Kidney function tests: elevated creatinine, BUN, proteinuria. CBC: thrombocytopenia, leukocytosis"
+      ],
+      "treatment": "Supportive care: HPS: early recognition and transfer to ICU, mechanical ventilation, extracorporeal membrane oxygenation (ECMO) for severe cases, hemodynamic support. HFRS: fluid and electrolyte management, dialysis for acute kidney injury, management of hemorrhage and shock. Ribavirin: may reduce mortality in HFRS if started early (within first 4 days); not proven effective for HPS. No specific antiviral therapy with proven efficacy for HPS.",
+      "infectionControl": {
+        "precautions": "Standard Precautions for most hantaviruses. For Andes virus (South America): Contact and Droplet Precautions due to person-to-person transmission risk",
+        "screening": "Screen for hantavirus symptoms in patients with rodent exposure or from endemic areas",
+        "cohorting": "Not necessary for most hantaviruses; isolate Andes virus cases",
+        "sourceControl": "For Andes virus: isolate patients, limit visitors, use masks",
+        "environmental": "Rodent control: eliminate rodent infestations, seal entry points, remove food sources. Safe cleaning of rodent-contaminated areas: wet cleaning (avoid sweeping/vacuuming), use disinfectants (bleach solution), wear gloves and N95 respirator",
+        "staffEducation": "Educate on hantavirus recognition, rodent control, safe cleaning practices, PPE use"
+      },
+      "outbreakTriggers": [
+        "Cluster of ≥2 linked hantavirus cases (same geographic area, similar exposure)",
+        "Detection of hantavirus in new geographic area",
+        "Severe outbreak with multiple cases",
+        "Increase in rodent populations (environmental trigger)"
+      ],
+      "reportingCommunication": [
+        "Notify public health and zoonosis authorities of confirmed hantavirus cases",
+        "Implement outbreak control measures: rodent surveillance and control, public health messaging, environmental assessment",
+        "Enhanced surveillance: active case finding, rodent trapping and testing",
+        "Coordinate with environmental health, vector control, and public health"
+      ],
+      "prevention": [
+        "Rodent control (most important): eliminate rodent infestations in and around homes, seal entry points (gaps, holes), remove food sources and nesting materials, use traps",
+        "Safe cleaning of rodent-contaminated areas: wet cleaning method (spray area with disinfectant before cleaning), avoid sweeping or vacuuming (creates aerosols), wear gloves and N95 respirator, ventilate area",
+        "Personal protection: wear gloves and N95 respirator when cleaning rodent-infested areas, avoid touching face",
+        "Avoid disturbing rodent nests or burrows",
+        "Store food in rodent-proof containers",
+        "Public education: rodent control, safe cleaning practices, recognition of symptoms",
+        "Occupational safety: training for workers with rodent exposure (pest control, laboratory workers)",
+        "No vaccine available"
+      ],
+      "references": [
+        {
+          "label": "WHO - Hantavirus",
+          "url": "https://www.who.int/health-topics/hantavirus"
+        },
+        {
+          "label": "CDC - Hantavirus",
+          "url": "https://www.cdc.gov/hantavirus/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "nipah_hendra",
+      "name": "Nipah & Hendra viruses",
+      "scientificName": "Nipah virus (NiV) and Hendra virus (HeV), genus Henipavirus, family Paramyxoviridae",
+      "definition": "Enveloped negative-sense single-stranded RNA viruses causing severe encephalitis and respiratory disease in humans with high mortality rate (40-75%). Nipah virus: transmitted from fruit bats to humans (directly or through pigs); person-to-person transmission documented. Hendra virus: transmitted from fruit bats to horses to humans; no person-to-person transmission. Both are high-consequence pathogens requiring BSL-4 containment. Endemic in Asia (Nipah) and Australia (Hendra).",
+      "reservoir": {
+        "primary": [
+          "Fruit bats (Pteropus species - flying foxes) - natural reservoir for both viruses"
+        ],
+        "secondary": [
+          "Pigs (amplifying host for Nipah virus)",
+          "Horses (amplifying host for Hendra virus)"
+        ],
+        "notes": "Fruit bats are asymptomatic carriers. Nipah virus: bats shed virus in urine, feces, saliva; transmission to pigs (Malaysia 1998-1999) or humans (Bangladesh, India - through date palm sap contaminated by bat urine/saliva). Hendra virus: bats shed virus; transmission to horses, then to humans (Australia). No documented bat-to-human transmission for Hendra."
+      },
+      "transmission": {
+        "mode": "Zoonotic transmission from bats or intermediate hosts (pigs, horses); person-to-person transmission (Nipah only)",
+        "routes": [
+          "Nipah virus: Direct contact with infected pigs (Malaysia outbreak), consumption of date palm sap contaminated by bat urine/saliva (Bangladesh, India), person-to-person transmission through close contact with infected patients (respiratory secretions, body fluids) - documented in Bangladesh and India",
+          "Hendra virus: Direct contact with infected horses (body fluids, tissues) - veterinarians, horse owners at risk. No person-to-person transmission documented",
+          "Droplet and aerosol transmission during close contact with infected patients or animals"
+        ],
+        "notes": "Nipah virus: person-to-person transmission is major concern, especially in healthcare settings. Hendra virus: limited to horse-to-human transmission. Both viruses are highly pathogenic and require strict biosafety measures."
+      },
+      "incubationPeriod": {
+        "range": "4-14 days (range 4-21 days) from exposure to symptom onset. Nipah: typically 5-14 days. Hendra: typically 5-21 days",
+        "infectiousPeriod": "Nipah virus: infectious during acute illness; person-to-person transmission documented. Hendra virus: not transmitted person-to-person",
+        "seasonality": "Nipah: seasonal outbreaks in Bangladesh (December-May) associated with date palm sap harvesting. Hendra: sporadic cases year-round in Australia",
+        "geographic": "Nipah virus: Bangladesh, India, Malaysia, Singapore, Philippines. Hendra virus: Australia (Queensland, New South Wales). Fruit bat reservoir present across Asia, Australia, Africa - potential for spread"
+      },
+      "riskFactors": [
+        "Nipah virus: Pig farmers and abattoir workers (Malaysia outbreak), consumption of raw date palm sap (Bangladesh, India), close contact with Nipah patients (family members, healthcare workers), living near fruit bat habitats",
+        "Hendra virus: Veterinarians, horse owners, stable workers - occupational exposure to infected horses",
+        "Healthcare workers caring for Nipah patients without adequate PPE",
+        "Laboratory workers handling Nipah or Hendra viruses"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Nipah virus: Acute encephalitis: fever, headache, drowsiness, disorientation, confusion, seizures, coma. Respiratory symptoms: cough, dyspnea, acute respiratory distress. Atypical pneumonia. Symptoms progress rapidly over days",
+          "Hendra virus: Influenza-like illness: fever, myalgia, headache. Respiratory symptoms: cough, dyspnea, pneumonia. Encephalitis (in some cases): confusion, seizures",
+          "Relapsing or late-onset encephalitis: documented months to years after initial infection (rare)"
+        ],
+        "complications": [
+          "Severe encephalitis: seizures, coma, brainstem dysfunction",
+          "Acute respiratory distress syndrome (ARDS)",
+          "Multi-organ failure",
+          "Relapsing encephalitis (months to years after recovery)",
+          "Death (Nipah: case fatality rate 40-75% depending on outbreak; Hendra: case fatality rate ~60%)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with acute encephalitis OR severe respiratory illness + epidemiological link (contact with pigs/horses, consumption of date palm sap, contact with Nipah/Hendra patient, travel to endemic area)",
+          "confirmed": "Suspected case + laboratory confirmation: positive RT-PCR for Nipah/Hendra RNA from throat swab, CSF, urine, OR positive IgM antibody, OR viral isolation (BSL-4 required)"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR for Nipah/Hendra RNA from throat swab, CSF, urine, blood - gold standard for early diagnosis",
+        "IgM and IgG antibodies (ELISA) - IgM detectable from day 7-10 onwards",
+        "Viral isolation - requires BSL-4 laboratory; rarely performed",
+        "CSF analysis: pleocytosis (lymphocytic), elevated protein, normal glucose",
+        "MRI brain: T2/FLAIR hyperintensities in cortex, subcortical white matter, brainstem (in encephalitis)",
+        "Chest X-ray/CT: bilateral infiltrates, consolidation (in respiratory disease)",
+        "All laboratory work must be performed under BSL-4 conditions"
+      ],
+      "treatment": "Supportive care: intensive care, mechanical ventilation for respiratory failure, seizure control, management of encephalitis. Ribavirin: used in some Nipah outbreaks (limited evidence of efficacy). Monoclonal antibody (m102.4): experimental treatment for Nipah virus (compassionate use). No specific antiviral therapy with proven efficacy. No vaccine available for humans (equine Hendra vaccine available for horses in Australia).",
+      "infectionControl": {
+        "precautions": "Contact and Droplet Precautions (some guidelines recommend Airborne Precautions). Strict isolation in single room (negative pressure preferred). Full PPE: double gloves, impermeable gown, N95 respirator or PAPR, face shield. Minimize invasive procedures. Dedicated equipment. Limit number of healthcare workers. No visitors except essential family with full PPE",
+        "screening": "Screen for Nipah/Hendra symptoms and epidemiological risk factors (animal contact, date palm sap consumption, contact with patients) at healthcare entry points. Immediate isolation of suspected cases",
+        "cohorting": "Isolate each patient in separate single room; avoid cohorting due to high risk",
+        "sourceControl": "Avoid aerosol-generating procedures if possible; use closed systems; proper sharps disposal; safe handling of laboratory specimens (BSL-4)",
+        "environmental": "Enhanced cleaning and disinfection with EPA-registered disinfectants. Careful handling and disposal of contaminated materials as Category A infectious waste",
+        "staffEducation": "Rigorous training on PPE donning/doffing; avoid direct contact with patients' respiratory secretions and body fluids; immediate reporting of exposures; post-exposure monitoring"
+      },
+      "outbreakTriggers": [
+        "Any known confirmed case of Nipah or Hendra virus (high-consequence pathogens)",
+        "Cluster of unexplained encephalitis cases in endemic area",
+        "Outbreak in animals (pigs, horses) with human cases"
+      ],
+      "reportingCommunication": [
+        "Immediate reporting (within hours) of any suspected or confirmed Nipah/Hendra case to infection control, hospital administration, and public health authorities - both are notifiable diseases and internationally reportable to WHO under International Health Regulations (IHR)",
+        "Activate rapid outbreak response team",
+        "Implement strict isolation and infection control measures immediately",
+        "Contact tracing: identify all contacts (healthcare workers, family members, community contacts); monitor for 21 days; consider post-exposure prophylaxis if available",
+        "Coordinate with public health, veterinary services, wildlife services, and environmental health for One Health outbreak investigation and control",
+        "Public health alerts and health messaging to healthcare facilities and communities",
+        "International notification"
+      ],
+      "prevention": [
+        "Nipah virus: Avoid consumption of raw date palm sap or fruits potentially contaminated by bats; cover sap collection pots; boil date palm sap before consumption. Avoid contact with sick pigs. Strict infection control in healthcare settings. Hand hygiene",
+        "Hendra virus: Equine Hendra vaccine (for horses) - reduces risk of horse infection and subsequent human exposure. PPE for veterinarians and horse workers when handling sick horses. Avoid contact with bat urine/feces",
+        "General: Reduce bat-human interface (avoid areas under fruit bat roosts, cover water tanks). Animal surveillance (pigs, horses). Early detection and isolation of human cases",
+        "Healthcare: strict isolation, full PPE, minimize aerosol-generating procedures",
+        "Post-exposure prophylaxis: ribavirin may be considered (limited evidence)",
+        "No human vaccine available (under development)"
+      ],
+      "references": [
+        {
+          "label": "WHO - Nipah Virus",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/nipah-virus"
+        },
+        {
+          "label": "CDC - Nipah Virus",
+          "url": "https://www.cdc.gov/vhf/nipah/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    }
+  ]
+}

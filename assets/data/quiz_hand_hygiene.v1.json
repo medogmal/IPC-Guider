@@ -1,0 +1,611 @@
+{
+  "title": "Hand Hygiene Quiz",
+  "description": "Comprehensive quiz covering WHO 5 Moments, hand hygiene techniques, compliance monitoring, and evidence-based practices for healthcare-associated infection prevention",
+  "version": "1.0",
+  "module": "hand_hygiene",
+  "totalStages": 5,
+  "questionsPerStage": 10,
+  "questions": [
+    {
+      "id": "hand_hygiene_s1_q1",
+      "module": "hand_hygiene",
+      "stage": 1,
+      "question": "The WHO 5 Moments of Hand Hygiene framework was developed to:",
+      "options": ["Replace all other hand hygiene guidelines", "Provide a standardized approach to when hand hygiene should be performed in healthcare", "Eliminate the need for gloves", "Reduce soap consumption"],
+      "answerIndex": 1,
+      "explanation": "The WHO 5 Moments framework provides a standardized, evidence-based approach to identify critical moments when hand hygiene should be performed during patient care to prevent healthcare-associated infections.",
+      "references": [
+        {"label": "WHO Guidelines on Hand Hygiene in Health Care (2009)", "url": "https://www.who.int/publications/i/item/9789241597906"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s1_q2",
+      "module": "hand_hygiene",
+      "stage": 1,
+      "question": "Moment 1 (Before touching a patient) is performed to protect:",
+      "options": ["The healthcare worker from the patient", "The patient from harmful germs on the healthcare worker's hands", "The environment from contamination", "Medical equipment from damage"],
+      "answerIndex": 1,
+      "explanation": "Moment 1 protects the patient from harmful germs carried on the healthcare worker's hands, preventing colonization and infection with healthcare-associated pathogens.",
+      "references": [
+        {"label": "WHO 5 Moments for Hand Hygiene", "url": "https://www.who.int/gpsc/5may/background/5moments/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s1_q3",
+      "module": "hand_hygiene",
+      "stage": 1,
+      "question": "Alcohol-based hand rub (ABHR) should contain at least what percentage of alcohol to be effective?",
+      "options": ["40-50%", "60-80%", "85-95%", "100%"],
+      "answerIndex": 1,
+      "explanation": "WHO and CDC recommend ABHR contain 60-80% alcohol (ethanol or isopropanol) for optimal antimicrobial efficacy. Concentrations below 60% are less effective, while concentrations above 95% evaporate too quickly.",
+      "references": [
+        {"label": "CDC Hand Hygiene in Healthcare Settings", "url": "https://www.cdc.gov/hand-hygiene/index.html"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s1_q4",
+      "module": "hand_hygiene",
+      "stage": 1,
+      "question": "The minimum duration for effective hand hygiene with alcohol-based hand rub is:",
+      "options": ["5-10 seconds", "20-30 seconds", "40-60 seconds", "2 minutes"],
+      "answerIndex": 1,
+      "explanation": "WHO recommends rubbing hands with ABHR for 20-30 seconds until hands are completely dry. This duration ensures adequate coverage and contact time for antimicrobial action.",
+      "references": [
+        {"label": "WHO Hand Hygiene Technical Reference Manual", "url": "https://www.who.int/publications/i/item/9789241597906"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s1_q5",
+      "module": "hand_hygiene",
+      "stage": 1,
+      "question": "Hand hygiene with soap and water is MANDATORY (not optional) when:",
+      "options": ["Hands are visibly soiled or contaminated with blood/body fluids", "Entering a patient room", "After touching a patient", "Before a clean/aseptic procedure"],
+      "answerIndex": 0,
+      "explanation": "Soap and water hand hygiene is mandatory when hands are visibly soiled, contaminated with blood/body fluids, or after caring for patients with C. difficile or norovirus (spore-forming organisms). ABHR is ineffective against spores and cannot clean visibly soiled hands.",
+      "references": [
+        {"label": "CDC Guideline for Hand Hygiene", "url": "https://www.cdc.gov/hand-hygiene/about/index.html"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s1_q6",
+      "module": "hand_hygiene",
+      "stage": 1,
+      "question": "Moment 2 (Before clean/aseptic procedure) is performed:",
+      "options": ["After the procedure is complete", "Immediately before accessing a critical site with infectious risk", "Only when inserting central lines", "Once per shift"],
+      "answerIndex": 1,
+      "explanation": "Moment 2 is performed immediately before any clean/aseptic procedure or when accessing a critical site with infectious risk (e.g., before inserting IV, before wound care, before preparing medications) to protect the patient from harmful germs entering their body.",
+      "references": [
+        {"label": "WHO 5 Moments for Hand Hygiene", "url": "https://www.who.int/gpsc/5may/background/5moments/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s1_q7",
+      "module": "hand_hygiene",
+      "stage": 1,
+      "question": "The correct sequence for handwashing with soap and water is:",
+      "options": ["Wet, soap, rinse, dry, rub for 20 seconds", "Wet, soap, rub for 40-60 seconds, rinse, dry", "Soap, wet, rub, rinse, dry", "Wet, rinse, soap, dry"],
+      "answerIndex": 1,
+      "explanation": "WHO recommends: wet hands with water, apply soap, rub hands together for 40-60 seconds covering all surfaces, rinse thoroughly with water, and dry completely with single-use towel.",
+      "references": [
+        {"label": "WHO Hand Hygiene Technique with Soap and Water", "url": "https://www.who.int/gpsc/5may/How_To_HandWash_Poster.pdf"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s1_q8",
+      "module": "hand_hygiene",
+      "stage": 1,
+      "question": "Moment 3 (After body fluid exposure risk) protects:",
+      "options": ["The patient from the healthcare worker", "The healthcare worker from the patient's germs", "The environment from contamination", "Medical equipment from damage"],
+      "answerIndex": 1,
+      "explanation": "Moment 3 protects the healthcare worker from the patient's germs after exposure to body fluids, reducing the risk of healthcare worker colonization and transmission to other patients.",
+      "references": [
+        {"label": "WHO 5 Moments for Hand Hygiene", "url": "https://www.who.int/gpsc/5may/background/5moments/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s1_q9",
+      "module": "hand_hygiene",
+      "stage": 1,
+      "question": "Hand hygiene compliance is typically calculated as:",
+      "options": ["(Hand hygiene actions performed / Hand hygiene opportunities observed) × 100", "(Number of healthcare workers / Number of patients) × 100", "(Bottles of ABHR used / Number of beds) × 100", "(Number of sinks / Number of rooms) × 100"],
+      "answerIndex": 0,
+      "explanation": "Hand hygiene compliance rate = (Number of hand hygiene actions performed / Number of hand hygiene opportunities observed) × 100. This is the standard WHO methodology for measuring compliance.",
+      "references": [
+        {"label": "WHO Hand Hygiene Observation Tool", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s1_q10",
+      "module": "hand_hygiene",
+      "stage": 1,
+      "question": "The primary reason healthcare workers should avoid wearing artificial nails is:",
+      "options": ["They look unprofessional", "They harbor more bacteria and fungi than natural nails and cannot be adequately cleaned", "They are expensive", "They interfere with glove use"],
+      "answerIndex": 1,
+      "explanation": "Artificial nails harbor significantly more bacteria and fungi (especially gram-negative bacilli and Candida) than natural nails and cannot be adequately cleaned or disinfected, increasing the risk of pathogen transmission to patients.",
+      "references": [
+        {"label": "CDC Guideline for Hand Hygiene - Fingernail Care", "url": "https://www.cdc.gov/hand-hygiene/about/index.html"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s2_q1",
+      "module": "hand_hygiene",
+      "stage": 2,
+      "question": "Moment 4 (After touching a patient) should be performed:",
+      "options": ["Only if the patient has an infection", "Immediately after any direct patient contact, even if gloves were worn", "Only when hands are visibly soiled", "Once per hour"],
+      "answerIndex": 1,
+      "explanation": "Moment 4 is performed immediately after any direct patient contact (even if gloves were worn) to protect the healthcare worker and the healthcare environment from harmful patient germs.",
+      "references": [
+        {"label": "WHO 5 Moments for Hand Hygiene", "url": "https://www.who.int/gpsc/5may/background/5moments/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s2_q2",
+      "module": "hand_hygiene",
+      "stage": 2,
+      "question": "The WHO-recommended technique for applying alcohol-based hand rub includes:",
+      "options": ["Applying to wet hands", "Rubbing only palms together", "Covering all hand surfaces including fingertips, thumbs, and between fingers until dry", "Rinsing with water after application"],
+      "answerIndex": 2,
+      "explanation": "WHO recommends applying ABHR to dry hands, covering all surfaces (palms, backs of hands, between fingers, fingertips, thumbs) using the 6-step technique, and rubbing until completely dry (20-30 seconds). Never rinse with water.",
+      "references": [
+        {"label": "WHO Hand Rub Technique", "url": "https://www.who.int/gpsc/5may/How_To_HandRub_Poster.pdf"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s2_q3",
+      "module": "hand_hygiene",
+      "stage": 2,
+      "question": "Moment 5 (After touching patient surroundings) is performed to protect:",
+      "options": ["The patient from the healthcare worker", "The healthcare worker and healthcare environment from patient germs", "Medical equipment from damage", "The patient from environmental germs"],
+      "answerIndex": 1,
+      "explanation": "Moment 5 protects the healthcare worker and healthcare environment from harmful patient germs after touching any object or furniture in the patient's immediate surroundings (bed rails, monitors, IV pump, bedside table).",
+      "references": [
+        {"label": "WHO 5 Moments for Hand Hygiene", "url": "https://www.who.int/gpsc/5may/background/5moments/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s2_q4",
+      "module": "hand_hygiene",
+      "stage": 2,
+      "question": "The WHO multimodal hand hygiene improvement strategy includes:",
+      "options": ["System change, training/education, observation/feedback, reminders, institutional safety climate", "Only providing more sinks", "Only training healthcare workers", "Only posting signs"],
+      "answerIndex": 0,
+      "explanation": "WHO's multimodal strategy includes 5 components: (1) System change (ABHR availability), (2) Training and education, (3) Observation and feedback, (4) Reminders in the workplace, and (5) Institutional safety climate. All components must be implemented together for sustained improvement.",
+      "references": [
+        {"label": "WHO Multimodal Hand Hygiene Improvement Strategy", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s2_q5",
+      "module": "hand_hygiene",
+      "stage": 2,
+      "question": "When caring for a patient with Clostridioides difficile infection, the preferred hand hygiene method is:",
+      "options": ["Alcohol-based hand rub only", "Soap and water only", "Either ABHR or soap and water", "No hand hygiene needed if gloves are worn"],
+      "answerIndex": 1,
+      "explanation": "Soap and water is preferred for C. difficile because alcohol does not kill spores. Mechanical action of handwashing with soap and water physically removes spores from hands. ABHR is ineffective against spore-forming organisms.",
+      "references": [
+        {"label": "CDC C. difficile Infection Prevention", "url": "https://www.cdc.gov/cdiff/clinicians/index.html"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s2_q6",
+      "module": "hand_hygiene",
+      "stage": 2,
+      "question": "The recommended placement for ABHR dispensers is:",
+      "options": ["Only at nursing stations", "At the point of care (bedside or door entrance) within 5 steps of patient", "Only in hallways", "Only in medication rooms"],
+      "answerIndex": 1,
+      "explanation": "WHO and CDC recommend placing ABHR dispensers at the point of care, ideally at bedside or room entrance, within 5 steps of the patient to facilitate compliance. Dispensers should be visible, accessible, and at eye level (120-150 cm from floor).",
+      "references": [
+        {"label": "WHO Hand Hygiene Infrastructure Requirements", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s2_q7",
+      "module": "hand_hygiene",
+      "stage": 2,
+      "question": "Hand hygiene should be performed BEFORE and AFTER which of the following?",
+      "options": ["Glove use", "Eating lunch", "Entering the hospital", "Parking your car"],
+      "answerIndex": 0,
+      "explanation": "Hand hygiene must be performed before putting on gloves (to prevent contamination of gloves) and after removing gloves (because gloves may have micro-perforations and hands can become contaminated during removal). Gloves are not a substitute for hand hygiene.",
+      "references": [
+        {"label": "CDC Guideline for Hand Hygiene - Glove Use", "url": "https://www.cdc.gov/hand-hygiene/about/index.html"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s2_q8",
+      "module": "hand_hygiene",
+      "stage": 2,
+      "question": "The most commonly missed areas during hand hygiene are:",
+      "options": ["Palms", "Fingertips, thumbs, and areas between fingers", "Wrists", "Forearms"],
+      "answerIndex": 1,
+      "explanation": "Studies using fluorescent markers show that fingertips, thumbs, and areas between fingers are the most commonly missed areas during hand hygiene. The WHO 6-step technique specifically addresses these areas to ensure complete coverage.",
+      "references": [
+        {"label": "WHO Hand Hygiene Technical Reference Manual", "url": "https://www.who.int/publications/i/item/9789241597906"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s2_q9",
+      "module": "hand_hygiene",
+      "stage": 2,
+      "question": "Direct observation of hand hygiene compliance should be performed:",
+      "options": ["Only during outbreaks", "Regularly as part of ongoing surveillance (e.g., monthly or quarterly)", "Only when compliance is suspected to be low", "Never, because it changes behavior"],
+      "answerIndex": 1,
+      "explanation": "WHO recommends regular, ongoing direct observation of hand hygiene compliance (e.g., monthly or quarterly) as part of a comprehensive monitoring program. Feedback should be provided to healthcare workers and leadership to drive improvement.",
+      "references": [
+        {"label": "WHO Hand Hygiene Monitoring and Feedback", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s2_q10",
+      "module": "hand_hygiene",
+      "stage": 2,
+      "question": "The WHO benchmark for hand hygiene compliance in healthcare facilities is:",
+      "options": ["≥50%", "≥70%", "≥80%", "100%"],
+      "answerIndex": 2,
+      "explanation": "WHO recommends a minimum hand hygiene compliance rate of ≥80% as a benchmark for healthcare facilities. However, facilities should strive for continuous improvement beyond this threshold.",
+      "references": [
+        {"label": "WHO Hand Hygiene Improvement Strategy", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s3_q1",
+      "module": "hand_hygiene",
+      "stage": 3,
+      "question": "A nurse enters a patient room, touches the patient's arm to assess pulse, then touches the IV pump to adjust the infusion rate, then exits the room. How many hand hygiene opportunities occurred?",
+      "options": ["1 opportunity", "2 opportunities", "3 opportunities", "4 opportunities"],
+      "answerIndex": 3,
+      "explanation": "4 opportunities: (1) Moment 1 before touching patient, (2) Moment 4 after touching patient, (3) Moment 5 after touching patient surroundings (IV pump), (4) Moment 5 when exiting room. Each transition between patient zone and healthcare zone requires hand hygiene.",
+      "references": [
+        {"label": "WHO 5 Moments Application Guide", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s3_q2",
+      "module": "hand_hygiene",
+      "stage": 3,
+      "question": "Your ICU has 80% hand hygiene compliance but CLABSI rates remain above benchmark. The MOST appropriate next step is:",
+      "options": ["Accept the current rate", "Audit compliance specifically for Moment 2 (before aseptic procedures) and provide targeted training", "Discontinue hand hygiene monitoring", "Blame healthcare workers"],
+      "answerIndex": 1,
+      "explanation": "While overall compliance is 80%, CLABSI prevention requires high compliance with Moment 2 (before aseptic procedures). Auditing moment-specific compliance and providing targeted training addresses the specific gap contributing to CLABSIs.",
+      "references": [
+        {"label": "WHO Hand Hygiene Monitoring Tools", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s3_q3",
+      "module": "hand_hygiene",
+      "stage": 3,
+      "question": "A 20-bed ICU uses 15 liters of ABHR per month with 600 patient-days. The ABHR usage per patient-day is:",
+      "options": ["15 mL/patient-day", "25 mL/patient-day", "40 mL/patient-day", "50 mL/patient-day"],
+      "answerIndex": 1,
+      "explanation": "Usage per patient-day = (15 liters × 1000 mL/liter) / 600 patient-days = 15,000 / 600 = 25 mL/patient-day. WHO benchmark for ICU is 20-30 mL/patient-day, so this facility is within target range.",
+      "references": [
+        {"label": "WHO Hand Hygiene Product Consumption", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s3_q4",
+      "module": "hand_hygiene",
+      "stage": 3,
+      "question": "During a hand hygiene observation session, you observe 50 opportunities and 35 hand hygiene actions. The compliance rate is:",
+      "options": ["35%", "50%", "70%", "85%"],
+      "answerIndex": 2,
+      "explanation": "Compliance rate = (35 actions / 50 opportunities) × 100 = 70%. This is below the WHO benchmark of ≥80% and requires improvement interventions.",
+      "references": [
+        {"label": "WHO Hand Hygiene Observation Method", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s3_q5",
+      "module": "hand_hygiene",
+      "stage": 3,
+      "question": "A healthcare worker performs hand hygiene before touching a patient (Moment 1), then performs multiple tasks on the same patient without leaving the patient zone. When is the NEXT mandatory hand hygiene moment?",
+      "options": ["After each task on the patient", "Before any clean/aseptic procedure (Moment 2) or after body fluid exposure (Moment 3)", "Every 5 minutes", "Only when leaving the room"],
+      "answerIndex": 1,
+      "explanation": "Within the patient zone, hand hygiene is mandatory before clean/aseptic procedures (Moment 2) and after body fluid exposure risk (Moment 3). Continuous care activities on the same patient without these triggers do not require repeated hand hygiene.",
+      "references": [
+        {"label": "WHO 5 Moments - Patient Zone Concept", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s3_q6",
+      "module": "hand_hygiene",
+      "stage": 3,
+      "question": "The Hawthorne effect in hand hygiene observation refers to:",
+      "options": ["Increased compliance when healthcare workers know they are being observed", "Decreased compliance over time", "Allergic reactions to ABHR", "Skin irritation from frequent handwashing"],
+      "answerIndex": 0,
+      "explanation": "The Hawthorne effect describes the phenomenon where healthcare workers improve their hand hygiene compliance when they know they are being observed. To minimize this bias, observers should be discreet and conduct observations over multiple sessions.",
+      "references": [
+        {"label": "WHO Hand Hygiene Observation Methodology", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s3_q7",
+      "module": "hand_hygiene",
+      "stage": 3,
+      "question": "Your facility wants to implement electronic hand hygiene monitoring. The PRIMARY advantage is:",
+      "options": ["Eliminates the need for direct observation", "Provides real-time data and can monitor 100% of opportunities", "Is less expensive than direct observation", "Improves hand hygiene technique"],
+      "answerIndex": 1,
+      "explanation": "Electronic monitoring systems provide real-time data, can monitor 100% of opportunities (vs. sampling with direct observation), and enable immediate feedback. However, they complement rather than replace direct observation, which assesses technique quality.",
+      "references": [
+        {"label": "WHO Hand Hygiene Monitoring Technologies", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s3_q8",
+      "module": "hand_hygiene",
+      "stage": 3,
+      "question": "A nurse reports hand dermatitis from frequent hand hygiene. The BEST initial intervention is:",
+      "options": ["Stop performing hand hygiene", "Switch to soap and water only", "Assess for proper technique, ensure use of hand lotion, and consider ABHR with emollients", "Wear gloves at all times"],
+      "answerIndex": 2,
+      "explanation": "Hand dermatitis can be prevented/managed by: proper technique (avoiding excessive amounts), regular use of hand lotion, using ABHR with emollients, and ensuring soap/ABHR products are skin-friendly. Occupational health evaluation may be needed for persistent cases.",
+      "references": [
+        {"label": "WHO Hand Hygiene and Skin Health", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s3_q9",
+      "module": "hand_hygiene",
+      "stage": 3,
+      "question": "When implementing a hand hygiene improvement program, the MOST important leadership action is:",
+      "options": ["Purchasing more ABHR dispensers", "Visible commitment and role modeling by senior leaders", "Punishing non-compliant staff", "Posting more signs"],
+      "answerIndex": 1,
+      "explanation": "WHO's multimodal strategy emphasizes institutional safety climate, which requires visible commitment and role modeling by senior leaders. Leadership support is the strongest predictor of sustained hand hygiene improvement.",
+      "references": [
+        {"label": "WHO Multimodal Hand Hygiene Improvement Strategy", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s3_q10",
+      "module": "hand_hygiene",
+      "stage": 3,
+      "question": "The patient zone is defined as:",
+      "options": ["The entire hospital room", "The patient and their immediate surroundings (bed, bedside table, equipment)", "Only the patient's body", "The entire hospital floor"],
+      "answerIndex": 1,
+      "explanation": "The patient zone includes the patient and their immediate surroundings: bed, bedside table, bed rails, monitors, IV pumps, and other equipment used exclusively for that patient. This concept is central to understanding when hand hygiene is required.",
+      "references": [
+        {"label": "WHO 5 Moments - Patient Zone Concept", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s4_q1",
+      "module": "hand_hygiene",
+      "stage": 4,
+      "question": "Your unit has 85% overall hand hygiene compliance, but moment-specific analysis shows: Moment 1 (90%), Moment 2 (65%), Moment 3 (95%), Moment 4 (88%), Moment 5 (82%). The PRIORITY intervention should target:",
+      "options": ["Moment 1", "Moment 2", "Moment 3", "Moment 5"],
+      "answerIndex": 1,
+      "explanation": "Moment 2 (before clean/aseptic procedures) has the lowest compliance (65%) and is critical for preventing device-associated infections (CLABSI, CAUTI, VAE). Targeted training and reminders at the point of care for Moment 2 should be the priority.",
+      "references": [
+        {"label": "WHO Moment-Specific Compliance Analysis", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s4_q2",
+      "module": "hand_hygiene",
+      "stage": 4,
+      "question": "A physician enters a patient room, reviews the chart at the bedside computer, examines the patient's abdomen, then leaves without performing hand hygiene. Which moments were missed?",
+      "options": ["Moment 1 only", "Moment 4 only", "Moments 1, 4, and 5", "Moments 1 and 4 only"],
+      "answerIndex": 2,
+      "explanation": "Three moments were missed: (1) Moment 1 before touching patient, (2) Moment 4 after touching patient, (3) Moment 5 after touching patient surroundings (bedside computer). The physician should have performed hand hygiene before entering patient zone, after patient contact, and when leaving.",
+      "references": [
+        {"label": "WHO 5 Moments Application Scenarios", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s4_q3",
+      "module": "hand_hygiene",
+      "stage": 4,
+      "question": "Your facility's ABHR consumption data shows 12 mL/patient-day in the ICU (benchmark: 20-30 mL/patient-day). This suggests:",
+      "options": ["Excellent compliance", "Possible under-use of ABHR and low hand hygiene compliance", "Over-use of ABHR", "No action needed"],
+      "answerIndex": 1,
+      "explanation": "ABHR consumption below benchmark (12 vs. 20-30 mL/patient-day) suggests under-use and likely low hand hygiene compliance. This should trigger direct observation audits to confirm compliance rates and identify barriers to ABHR use.",
+      "references": [
+        {"label": "WHO Product Consumption as Compliance Indicator", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s4_q4",
+      "module": "hand_hygiene",
+      "stage": 4,
+      "question": "During an outbreak of multidrug-resistant Acinetobacter baumannii, hand hygiene compliance increased from 70% to 95%. However, transmission continued. The MOST likely explanation is:",
+      "options": ["Hand hygiene is ineffective against Acinetobacter", "Environmental contamination and inadequate environmental cleaning", "All patients are colonized", "Airborne transmission"],
+      "answerIndex": 1,
+      "explanation": "Acinetobacter can survive on environmental surfaces for weeks. Even with excellent hand hygiene, ongoing transmission can occur if environmental cleaning is inadequate. A comprehensive approach including enhanced environmental cleaning, contact precautions, and cohorting is needed.",
+      "references": [
+        {"label": "CDC MDRO Management Guidelines", "url": "https://www.cdc.gov/hai/organisms/organisms.html"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s4_q5",
+      "module": "hand_hygiene",
+      "stage": 4,
+      "question": "A study shows that nurses have 75% hand hygiene compliance while physicians have 55% compliance. The BEST approach to improve physician compliance is:",
+      "options": ["Public shaming of non-compliant physicians", "Physician-led improvement initiatives with peer champions and leadership engagement", "Mandatory hand hygiene training only for physicians", "Ignoring the difference"],
+      "answerIndex": 1,
+      "explanation": "Physician-led initiatives with peer champions, visible leadership engagement, and culture change are most effective for improving physician compliance. Punitive approaches are counterproductive. Engaging physician leaders and demonstrating the link between hand hygiene and patient outcomes drives sustainable improvement.",
+      "references": [
+        {"label": "WHO Hand Hygiene Improvement - Professional Groups", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s4_q6",
+      "module": "hand_hygiene",
+      "stage": 4,
+      "question": "Your facility implements a hand hygiene improvement program and compliance increases from 60% to 85% over 6 months. However, HAI rates do not decrease. Possible explanations include:",
+      "options": ["Hand hygiene is not effective", "Other infection control practices (environmental cleaning, device care, isolation precautions) may be inadequate", "The data is wrong", "Patients are bringing infections from home"],
+      "answerIndex": 1,
+      "explanation": "Hand hygiene is necessary but not sufficient for HAI prevention. If compliance improves but HAI rates remain unchanged, investigate other infection control practices: environmental cleaning, device insertion/maintenance bundles, isolation precautions, antibiotic stewardship, and surveillance methodology.",
+      "references": [
+        {"label": "WHO Multimodal HAI Prevention Strategy", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s4_q7",
+      "module": "hand_hygiene",
+      "stage": 4,
+      "question": "The WHO Hand Hygiene Self-Assessment Framework (HHSAF) is used to:",
+      "options": ["Assess individual healthcare worker technique", "Evaluate the facility's hand hygiene promotion and infrastructure across 5 components", "Calculate compliance rates", "Measure ABHR consumption"],
+      "answerIndex": 1,
+      "explanation": "The HHSAF is a systematic tool to assess a facility's hand hygiene promotion and infrastructure across 5 components: system change, training/education, evaluation/feedback, reminders, and institutional safety climate. It provides a score (0-500) and identifies improvement priorities.",
+      "references": [
+        {"label": "WHO Hand Hygiene Self-Assessment Framework", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s4_q8",
+      "module": "hand_hygiene",
+      "stage": 4,
+      "question": "A healthcare worker wears gloves to perform wound care, then removes gloves and immediately touches the patient's arm without hand hygiene. This violates:",
+      "options": ["No violation occurred", "Moment 4 (after touching patient)", "Moment 2 (before clean procedure)", "Glove removal protocol only"],
+      "answerIndex": 1,
+      "explanation": "Hand hygiene must be performed after glove removal (Moment 4) before any subsequent patient contact. Gloves may have micro-perforations and hands can become contaminated during removal. This is a critical compliance gap that increases transmission risk.",
+      "references": [
+        {"label": "WHO Hand Hygiene and Glove Use", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s4_q9",
+      "module": "hand_hygiene",
+      "stage": 4,
+      "question": "Your facility wants to implement a hand hygiene improvement program. According to WHO, the FIRST step should be:",
+      "options": ["Purchase more ABHR dispensers", "Conduct baseline hand hygiene compliance observation and assess current infrastructure using HHSAF", "Train all staff", "Post reminder signs"],
+      "answerIndex": 1,
+      "explanation": "WHO recommends starting with baseline assessment: measure current compliance through direct observation and assess infrastructure/promotion using the Hand Hygiene Self-Assessment Framework (HHSAF). This identifies gaps and establishes a baseline for measuring improvement.",
+      "references": [
+        {"label": "WHO Hand Hygiene Improvement Implementation Guide", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s4_q10",
+      "module": "hand_hygiene",
+      "stage": 4,
+      "question": "Sustained hand hygiene improvement (maintaining >80% compliance for >1 year) is MOST likely when:",
+      "options": ["Compliance is monitored only during audits", "All 5 components of WHO's multimodal strategy are implemented with ongoing leadership support and feedback", "Only ABHR dispensers are installed", "Staff are punished for non-compliance"],
+      "answerIndex": 1,
+      "explanation": "Sustained improvement requires implementing all 5 components of WHO's multimodal strategy: system change, training, observation/feedback, reminders, and institutional safety climate. Ongoing leadership support, regular feedback, and culture change are essential for sustainability.",
+      "references": [
+        {"label": "WHO Multimodal Hand Hygiene Improvement Strategy", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s5_q1",
+      "module": "hand_hygiene",
+      "stage": 5,
+      "question": "A 30-bed ICU has 900 patient-days/month, 60 healthcare workers, and uses 25 liters of ABHR/month. Calculate: (A) ABHR usage per patient-day, (B) ABHR usage per HCW/day. Are these within WHO benchmarks?",
+      "options": ["(A) 27.8 mL/patient-day (within benchmark), (B) 13.9 mL/HCW/day (below benchmark)", "(A) 20 mL/patient-day (within benchmark), (B) 10 mL/HCW/day (within benchmark)", "(A) 30 mL/patient-day (above benchmark), (B) 15 mL/HCW/day (within benchmark)", "(A) 25 mL/patient-day (within benchmark), (B) 12.5 mL/HCW/day (below benchmark)"],
+      "answerIndex": 0,
+      "explanation": "(A) Usage per patient-day = (25L × 1000) / 900 = 27.8 mL/patient-day (WHO ICU benchmark: 20-30, ✓). (B) Usage per HCW/day = (25L × 1000) / (60 HCWs × 30 days) = 13.9 mL/HCW/day (WHO benchmark: 15-20, below target). This suggests adequate patient-focused use but possible gaps in HCW self-protection moments.",
+      "references": [
+        {"label": "WHO Product Consumption Benchmarks", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s5_q2",
+      "module": "hand_hygiene",
+      "stage": 5,
+      "question": "During a norovirus outbreak in a long-term care facility, hand hygiene compliance is 90% with ABHR, but transmission continues. The MOST appropriate intervention is:",
+      "options": ["Increase ABHR concentration to 95%", "Switch to mandatory soap and water hand hygiene for all staff (ABHR ineffective against norovirus)", "Discontinue hand hygiene monitoring", "Isolate all residents"],
+      "answerIndex": 1,
+      "explanation": "Norovirus is a non-enveloped virus with reduced susceptibility to alcohol. Soap and water hand hygiene is more effective than ABHR for norovirus because mechanical action removes viral particles. During norovirus outbreaks, facilities should mandate soap and water hand hygiene, implement contact precautions, and enhance environmental cleaning with bleach.",
+      "references": [
+        {"label": "CDC Norovirus Infection Control", "url": "https://www.cdc.gov/norovirus/hcp/index.html"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s5_q3",
+      "module": "hand_hygiene",
+      "stage": 5,
+      "question": "A research study uses fluorescent markers to assess hand hygiene technique quality. Results show 85% compliance rate but only 60% of hand surfaces are adequately covered. This demonstrates:",
+      "options": ["Compliance rate alone is insufficient; technique quality must also be assessed", "The study is flawed", "Hand hygiene is ineffective", "Healthcare workers are deliberately non-compliant"],
+      "answerIndex": 0,
+      "explanation": "This highlights a critical gap: compliance rate (performing hand hygiene) does not equal effectiveness (adequate technique). Facilities must assess both compliance AND technique quality. Poor technique (inadequate coverage, insufficient duration) reduces effectiveness even when compliance is high.",
+      "references": [
+        {"label": "WHO Hand Hygiene Technique Assessment", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s5_q4",
+      "module": "hand_hygiene",
+      "stage": 5,
+      "question": "Your facility implements a multimodal hand hygiene improvement program. After 12 months, compliance increases from 55% to 88%, and CLABSI rate decreases from 2.5 to 0.8 per 1,000 line-days. Leadership wants to discontinue the program to save costs. Your BEST response is:",
+      "options": ["Agree to discontinue the program", "Recommend continuing all program components to sustain gains, as compliance typically declines without ongoing support", "Reduce the program to observation only", "Eliminate all program components except ABHR dispensers"],
+      "answerIndex": 1,
+      "explanation": "Sustained improvement requires ongoing implementation of all multimodal strategy components. Studies show that compliance declines when programs are discontinued. Recommend continuing observation/feedback, training for new staff, leadership engagement, and reminders to sustain the 88% compliance and prevent CLABSI rate rebound.",
+      "references": [
+        {"label": "WHO Sustainability of Hand Hygiene Improvement", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s5_q5",
+      "module": "hand_hygiene",
+      "stage": 5,
+      "question": "A meta-analysis shows that multimodal hand hygiene interventions increase compliance by 30-40% and reduce HAI rates by 15-30%. However, your facility implements a multimodal program and sees no improvement after 3 months. The MOST likely explanation is:",
+      "options": ["Hand hygiene interventions don't work in your facility", "Insufficient implementation fidelity (not all components implemented correctly), inadequate leadership support, or insufficient time for culture change", "Healthcare workers are resistant to change", "The meta-analysis is wrong"],
+      "answerIndex": 1,
+      "explanation": "Common reasons for program failure: incomplete implementation (not all 5 components), inadequate leadership support, insufficient ABHR availability, lack of feedback, or insufficient time (culture change takes 6-12 months). Conduct a process evaluation using WHO's HHSAF to identify implementation gaps.",
+      "references": [
+        {"label": "WHO Hand Hygiene Implementation Troubleshooting", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s5_q6",
+      "module": "hand_hygiene",
+      "stage": 5,
+      "question": "Your facility uses electronic hand hygiene monitoring that shows 92% compliance. However, direct observation shows only 75% compliance. This discrepancy is MOST likely due to:",
+      "options": ["Electronic monitoring is always wrong", "Electronic systems may count dispenser activations without verifying adequate technique or appropriate timing (false positives)", "Direct observation is always wrong", "Healthcare workers are lying"],
+      "answerIndex": 1,
+      "explanation": "Electronic monitoring systems may overestimate compliance by counting all dispenser activations without verifying: (1) appropriate timing (correct moment), (2) adequate technique (coverage, duration), or (3) the right person (patient vs. visitor). Direct observation remains the gold standard for assessing both compliance and technique quality.",
+      "references": [
+        {"label": "WHO Electronic Monitoring Systems - Limitations", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s5_q7",
+      "module": "hand_hygiene",
+      "stage": 5,
+      "question": "A surgical ICU has excellent hand hygiene compliance (90%) but high SSI rates. Investigation reveals that surgeons perform hand hygiene before entering the OR but not before skin incision (after positioning patient, draping, etc.). This represents a failure of:",
+      "options": ["Moment 1", "Moment 2 (before clean/aseptic procedure - surgical incision)", "Moment 4", "No failure occurred"],
+      "answerIndex": 1,
+      "explanation": "Moment 2 (before clean/aseptic procedure) applies to surgical incision. Even after surgical hand antisepsis and gloving, hands can become contaminated during patient positioning and draping. Re-gloving or hand antisepsis immediately before incision is critical for SSI prevention. This highlights the importance of moment-specific compliance analysis.",
+      "references": [
+        {"label": "WHO Hand Hygiene in Surgery", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s5_q8",
+      "module": "hand_hygiene",
+      "stage": 5,
+      "question": "Your facility's hand hygiene compliance varies by unit: ICU (88%), Medical Ward (72%), Emergency Department (65%). The BEST strategy to address this variation is:",
+      "options": ["Focus only on the lowest-performing unit", "Implement unit-specific interventions addressing unique barriers (workflow, staffing, patient acuity) while sharing best practices from high-performing units", "Ignore the variation", "Punish low-performing units"],
+      "answerIndex": 1,
+      "explanation": "Unit-specific barriers require tailored interventions: ED may need more point-of-care dispensers due to high patient turnover; medical wards may need workflow redesign. Conduct unit-level barrier assessments, implement targeted interventions, and facilitate peer learning from high-performing units (ICU) to spread best practices.",
+      "references": [
+        {"label": "WHO Unit-Specific Hand Hygiene Improvement", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s5_q9",
+      "module": "hand_hygiene",
+      "stage": 5,
+      "question": "A novel pathogen emerges with unknown transmission route. While investigating, the MOST appropriate hand hygiene recommendation is:",
+      "options": ["No hand hygiene needed until transmission route is confirmed", "Standard hand hygiene (WHO 5 Moments) plus contact precautions until more information is available", "Only soap and water", "Only ABHR"],
+      "answerIndex": 1,
+      "explanation": "When transmission route is unknown, apply standard precautions (including WHO 5 Moments hand hygiene) PLUS contact precautions as a precautionary approach. This provides protection against contact and droplet transmission (most common routes) while epidemiologic investigation determines the actual transmission mode.",
+      "references": [
+        {"label": "CDC Interim Infection Control for Novel Pathogens", "url": "https://www.cdc.gov/infectioncontrol/guidelines/index.html"}
+      ]
+    },
+    {
+      "id": "hand_hygiene_s5_q10",
+      "module": "hand_hygiene",
+      "stage": 5,
+      "question": "Your facility achieves 90% hand hygiene compliance and sustains it for 2 years. HAI rates decrease by 25%. Leadership asks: 'Can we achieve 100% compliance?' Your BEST response is:",
+      "options": ["Yes, 100% is easily achievable", "100% compliance is unrealistic; focus on sustaining 90% and addressing other HAI risk factors (device bundles, environmental cleaning, antibiotic stewardship)", "Demand 100% compliance immediately", "Compliance doesn't matter"],
+      "answerIndex": 1,
+      "explanation": "While striving for excellence, 100% compliance is unrealistic in real-world practice due to human factors, workflow complexity, and observation limitations. Sustaining 90% compliance is an outstanding achievement. Further HAI reduction requires a comprehensive approach addressing all risk factors: device care bundles, environmental cleaning, isolation precautions, and antibiotic stewardship.",
+      "references": [
+        {"label": "WHO Realistic Hand Hygiene Goals", "url": "https://www.who.int/gpsc/5may/tools/en/"}
+      ]
+    }
+  ]
+}
+

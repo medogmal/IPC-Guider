@@ -1,0 +1,628 @@
+{
+  "version": 1,
+  "groupId": "bloodborne_viral",
+  "groupName": "Bloodborne Viral Outbreak Pathogens",
+  "type": "viral",
+  "updatedAt": "2025-01-14T00:00:00Z",
+  "pathogens": [
+    {
+      "id": "hepatitis_b",
+      "name": "Hepatitis B virus (HBV)",
+      "scientificName": "Hepatitis B virus (HBV), family Hepadnaviridae (enveloped partially double-stranded DNA virus)",
+      "definition": "Enveloped partially double-stranded DNA virus causing acute and chronic hepatitis with significant risk of liver cirrhosis and hepatocellular carcinoma. Hepatitis B is highly infectious (50-100 times more infectious than HIV) and transmitted through blood and body fluids. Chronic infection occurs in 90% of infants, 30% of children <5 years, and 5% of adults. Vaccine-preventable disease. Major cause of healthcare-associated outbreaks due to unsafe injection practices and inadequate infection control.",
+      "reservoir": {
+        "primary": [
+          "Human blood and body fluids (blood, semen, vaginal fluids, saliva, wound exudates)"
+        ],
+        "secondary": [
+          "Environmental contamination (virus can survive on surfaces for ≥7 days)"
+        ],
+        "notes": "Humans are the sole reservoir. HBV is highly stable in the environment and can remain infectious on surfaces for at least 7 days at room temperature. Chronic carriers (estimated 296 million globally) are the main reservoir for transmission."
+      },
+      "transmission": {
+        "mode": "Percutaneous (needlestick, sharps), sexual contact, perinatal (mother to child), mucous membrane exposure",
+        "routes": [
+          "Percutaneous exposure: needlestick injuries, sharps injuries, contaminated medical equipment, unsafe injections, sharing needles (IVDU)",
+          "Sexual transmission: unprotected sexual contact with infected partner",
+          "Perinatal transmission: mother to child during childbirth (vertical transmission) - major route in endemic areas",
+          "Mucous membrane exposure: splash of blood or body fluids to eyes, nose, mouth",
+          "Household transmission: sharing razors, toothbrushes, or other items contaminated with blood",
+          "Healthcare-associated transmission: contaminated multi-dose vials, fingerstick devices, inadequate sterilization of equipment"
+        ],
+        "notes": "HBV is 50-100 times more infectious than HIV. Very low viral load can cause infection. Healthcare-associated outbreaks are common due to breaches in infection control (reuse of syringes, contaminated glucose meters, inadequate sterilization)."
+      },
+      "incubationPeriod": {
+        "range": "45-180 days (mean 60-90 days, range 1-6 months) from exposure to symptom onset",
+        "infectiousPeriod": "Infectious several weeks before symptom onset and throughout acute illness. Chronic carriers remain infectious for life unless successfully treated. HBsAg-positive individuals are infectious",
+        "seasonality": "No seasonal pattern; year-round transmission",
+        "geographic": "Worldwide distribution. High endemicity (≥8% HBsAg prevalence) in sub-Saharan Africa, East Asia, Pacific Islands. Intermediate endemicity (2-7%) in South Asia, Middle East, Eastern Europe. Low endemicity (<2%) in Western Europe, North America, Australia"
+      },
+      "riskFactors": [
+        "Unvaccinated individuals (most important risk factor)",
+        "Healthcare workers (occupational exposure to blood and sharps)",
+        "People who inject drugs (IVDU) - sharing needles and equipment",
+        "Infants born to HBsAg-positive mothers (high risk of chronic infection)",
+        "People with multiple sexual partners or unprotected sex",
+        "Men who have sex with men (MSM)",
+        "Household contacts of HBV-infected individuals",
+        "Hemodialysis patients",
+        "Recipients of blood transfusions or organ transplants (in areas without screening)",
+        "People with occupational exposure to blood (laboratory workers, emergency responders)",
+        "Travelers to HBV-endemic areas",
+        "People with HIV or hepatitis C co-infection"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Acute hepatitis B: asymptomatic in 50-70% of adults, 90% of infants and young children",
+          "Symptomatic acute infection: fever, fatigue, anorexia, nausea, vomiting, abdominal pain (right upper quadrant)",
+          "Jaundice (yellowing of skin and eyes), dark urine, pale stools",
+          "Hepatomegaly (enlarged liver) and right upper quadrant tenderness",
+          "Arthralgia and rash (serum sickness-like syndrome)",
+          "Acute symptoms typically last 1-3 months"
+        ],
+        "complications": [
+          "Chronic hepatitis B (90% of infants, 30% of children <5 years, 5% of adults) - lifelong infection",
+          "Liver cirrhosis (15-40% of chronic carriers over 20-30 years)",
+          "Hepatocellular carcinoma (liver cancer) - 15-25% of chronic carriers",
+          "Fulminant hepatitis (acute liver failure) - rare (<1%) but often fatal",
+          "Extrahepatic manifestations: polyarteritis nodosa, glomerulonephritis, cryoglobulinemia",
+          "Death from cirrhosis or liver cancer (estimated 820,000 deaths annually worldwide)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with acute onset of jaundice, elevated liver enzymes (ALT/AST), and risk factors for HBV exposure (unvaccinated, healthcare exposure, IVDU, sexual contact)",
+          "confirmed": "Clinical illness + laboratory confirmation: positive HBsAg (hepatitis B surface antigen) AND positive IgM anti-HBc (IgM antibody to hepatitis B core antigen) for acute infection, OR positive HBsAg for ≥6 months for chronic infection"
+        }
+      },
+      "diagnosis": [
+        "HBsAg (hepatitis B surface antigen) - indicates current infection (acute or chronic); first marker to appear",
+        "IgM anti-HBc (IgM antibody to hepatitis B core antigen) - indicates acute or recent infection",
+        "IgG anti-HBc (IgG antibody to hepatitis B core antigen) - indicates past or current infection",
+        "Anti-HBs (antibody to hepatitis B surface antigen) - indicates immunity from vaccination or recovery from infection",
+        "HBV DNA (PCR) - quantifies viral load, monitors treatment response",
+        "HBeAg (hepatitis B e antigen) - indicates high viral replication and infectivity",
+        "Liver function tests: elevated ALT and AST, elevated bilirubin"
+      ],
+      "treatment": "Acute hepatitis B: supportive care (rest, hydration, avoid alcohol and hepatotoxic drugs). Most adults recover spontaneously. Chronic hepatitis B: antiviral therapy with nucleos(t)ide analogues (tenofovir, entecavir - first-line) or pegylated interferon-alpha. Treatment suppresses viral replication, reduces liver damage, and decreases risk of cirrhosis and liver cancer. Liver transplantation for end-stage liver disease. Post-exposure prophylaxis: hepatitis B vaccine + hepatitis B immune globulin (HBIG) within 24 hours of exposure for unvaccinated individuals.",
+      "infectionControl": {
+        "precautions": "Standard Precautions (treat all blood and body fluids as potentially infectious). Use gloves, gown, mask, and eye protection when exposure to blood or body fluids is anticipated. Safe injection practices: one needle, one syringe, one patient, one time. Single-use devices only. Proper sharps disposal in puncture-resistant containers",
+        "screening": "Screen all pregnant women for HBsAg; screen high-risk individuals (healthcare workers, IVDU, dialysis patients, HIV-positive)",
+        "cohorting": "Not usually necessary; standard precautions sufficient",
+        "sourceControl": "Safe injection practices; avoid reuse of needles, syringes, or multi-dose vials; proper sterilization of reusable medical equipment; use of safety-engineered sharps devices",
+        "environmental": "Clean and disinfect blood spills with EPA-registered disinfectants (bleach-based at 1:10 dilution). HBV can survive on surfaces for ≥7 days",
+        "staffEducation": "Hepatitis B vaccination for all healthcare workers (mandatory in many countries); safe sharps handling; post-exposure prophylaxis protocols; proper use of PPE"
+      },
+      "outbreakTriggers": [
+        "≥2 epidemiologically linked cases of acute hepatitis B in healthcare facility, dialysis unit, or community setting",
+        "Cluster of HBV infections with common source exposure (contaminated equipment, unsafe injections, needle sharing)",
+        "Nosocomial transmission (healthcare-associated case)",
+        "Sudden spike in HBV cases above baseline"
+      ],
+      "reportingCommunication": [
+        "Immediate reporting (within 24 hours or as soon as possible) of all suspected and confirmed acute hepatitis B cases to local/national public health authorities - hepatitis B is a notifiable disease",
+        "Report healthcare-associated clusters immediately to infection control and public health",
+        "Initiate outbreak investigation: identify source (contaminated equipment, unsafe injections, breaches in infection control), conduct contact tracing",
+        "Implement outbreak control measures: review and reinforce infection control practices, post-exposure prophylaxis for exposed individuals, vaccination of susceptible contacts",
+        "Facility review: audit injection practices, equipment sterilization, sharps disposal, staff vaccination status",
+        "Communicate with staff, patients, and public health authorities"
+      ],
+      "prevention": [
+        "Hepatitis B vaccination (most effective prevention): 3-dose series (0, 1, 6 months) - highly effective (>95% protection). Recommended for: all infants (birth dose within 24 hours), all children and adolescents, healthcare workers, IVDU, people with multiple sexual partners, MSM, dialysis patients, HIV-positive individuals, household contacts of HBV-infected persons, travelers to endemic areas",
+        "Birth dose vaccination within 24 hours for all newborns (prevents perinatal transmission)",
+        "Post-exposure prophylaxis: hepatitis B vaccine + HBIG within 24 hours of exposure for unvaccinated individuals",
+        "Safe injection practices: one needle, one syringe, one patient, one time; single-use devices only",
+        "Blood and organ donor screening",
+        "Safe sex practices: condom use, limit number of sexual partners",
+        "Avoid sharing needles, razors, toothbrushes, or other items that may be contaminated with blood",
+        "Proper sterilization of reusable medical equipment",
+        "Use of safety-engineered sharps devices to prevent needlestick injuries",
+        "Universal precautions in healthcare settings",
+        "Educate on transmission prevention and early recognition of symptoms"
+      ],
+      "references": [
+        {
+          "label": "WHO - Hepatitis B",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/hepatitis-b"
+        },
+        {
+          "label": "CDC - Hepatitis B",
+          "url": "https://www.cdc.gov/hepatitis/hbv/index.htm"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "hepatitis_c",
+      "name": "Hepatitis C virus (HCV)",
+      "scientificName": "Hepatitis C virus (HCV), genus Hepacivirus, family Flaviviridae (enveloped positive-sense single-stranded RNA virus)",
+      "definition": "Enveloped positive-sense single-stranded RNA virus causing acute and chronic hepatitis with high risk of liver cirrhosis and hepatocellular carcinoma. Hepatitis C is primarily transmitted through blood exposure and is the leading cause of chronic viral hepatitis worldwide. Chronic infection occurs in 55-85% of infected individuals. Unlike hepatitis B, there is no vaccine for hepatitis C, but direct-acting antivirals (DAAs) can cure >95% of infections. Major cause of healthcare-associated outbreaks due to unsafe injection practices and contaminated equipment.",
+      "reservoir": {
+        "primary": [
+          "Human blood (primary reservoir)"
+        ],
+        "secondary": [
+          "Contaminated medical equipment, injection drug use equipment"
+        ],
+        "notes": "Humans are the sole reservoir. HCV is less stable in the environment than HBV but can survive on surfaces for up to 3 weeks at room temperature. Chronic carriers (estimated 58 million globally) are the main reservoir for transmission."
+      },
+      "transmission": {
+        "mode": "Percutaneous (needlestick, sharps), contaminated equipment, rarely sexual or perinatal",
+        "routes": [
+          "Percutaneous exposure: needlestick injuries, sharps injuries, sharing needles and equipment (IVDU) - most common route",
+          "Healthcare-associated transmission: contaminated multi-dose vials, fingerstick devices, inadequate sterilization of equipment, reuse of syringes - major cause of outbreaks",
+          "Hemodialysis-associated transmission: contaminated dialysis equipment, breaches in infection control",
+          "Blood transfusion and organ transplantation (rare in countries with screening)",
+          "Sexual transmission: rare (<5% risk), higher in HIV-positive MSM",
+          "Perinatal transmission: mother to child (rare, ~5% risk, higher if mother is HIV co-infected)",
+          "Household transmission: sharing razors, toothbrushes, or other items contaminated with blood (rare)"
+        ],
+        "notes": "HCV is less infectious than HBV but more infectious than HIV. Healthcare-associated outbreaks are common due to breaches in infection control, particularly in hemodialysis units, pain clinics, and endoscopy centers. Injection drug use is the leading risk factor in developed countries."
+      },
+      "incubationPeriod": {
+        "range": "14-180 days (mean 45-60 days, range 2 weeks to 6 months) from exposure to symptom onset",
+        "infectiousPeriod": "Infectious 1-2 weeks before symptom onset and throughout acute and chronic infection. HCV RNA-positive individuals are infectious",
+        "seasonality": "No seasonal pattern; year-round transmission",
+        "geographic": "Worldwide distribution. Highest prevalence in Central and East Asia, North Africa, Middle East. Estimated 58 million people with chronic HCV infection globally"
+      },
+      "riskFactors": [
+        "People who inject drugs (IVDU) - highest risk group in developed countries (sharing needles and equipment)",
+        "Recipients of unscreened blood transfusions or organ transplants (before screening programs)",
+        "Hemodialysis patients (nosocomial transmission)",
+        "Healthcare workers (occupational exposure to blood and sharps)",
+        "People with unsafe medical or dental procedures (contaminated equipment, reuse of syringes)",
+        "People with tattoos or body piercings (if non-sterile equipment used)",
+        "HIV-positive individuals (especially MSM)",
+        "Infants born to HCV-infected mothers (~5% risk)",
+        "People with multiple sexual partners (low risk)",
+        "Incarcerated individuals (high prevalence due to IVDU)",
+        "People who received clotting factor concentrates before 1987"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Acute hepatitis C: asymptomatic in 70-80% of cases",
+          "Symptomatic acute infection (20-30%): fever, fatigue, anorexia, nausea, vomiting, abdominal pain",
+          "Jaundice (rare in acute infection, <25%)",
+          "Dark urine and pale stools",
+          "Hepatomegaly and right upper quadrant tenderness",
+          "Acute symptoms typically last 2-12 weeks",
+          "Chronic hepatitis C: often asymptomatic for decades until cirrhosis or liver cancer develops"
+        ],
+        "complications": [
+          "Chronic hepatitis C (55-85% of infected individuals) - lifelong infection if untreated",
+          "Liver cirrhosis (15-30% of chronic carriers over 20-30 years)",
+          "Hepatocellular carcinoma (liver cancer) - 1-5% per year in patients with cirrhosis",
+          "Decompensated cirrhosis: ascites, variceal bleeding, hepatic encephalopathy",
+          "Extrahepatic manifestations: cryoglobulinemia, glomerulonephritis, porphyria cutanea tarda, lymphoma",
+          "Death from cirrhosis or liver cancer (estimated 290,000 deaths annually worldwide)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with elevated liver enzymes (ALT/AST) and risk factors for HCV exposure (IVDU, hemodialysis, healthcare exposure, unscreened blood transfusion)",
+          "confirmed": "Laboratory confirmation: positive anti-HCV antibody (indicates current or past infection) AND positive HCV RNA by PCR (indicates current active infection)"
+        }
+      },
+      "diagnosis": [
+        "Anti-HCV antibody (enzyme immunoassay) - indicates current or past infection; may be negative in early acute infection (window period 4-10 weeks)",
+        "HCV RNA (PCR/NAAT) - gold standard for diagnosis of active infection; detects virus 1-2 weeks after exposure; quantifies viral load",
+        "HCV genotype - determines treatment regimen (genotypes 1-6)",
+        "Liver function tests: elevated ALT and AST (may be normal in chronic infection)",
+        "Liver biopsy or non-invasive fibrosis assessment (FibroScan, FibroTest) - assesses degree of liver damage"
+      ],
+      "treatment": "Acute hepatitis C: supportive care; some patients clear virus spontaneously (15-45%). Chronic hepatitis C: direct-acting antivirals (DAAs) - highly effective (>95% cure rate), short duration (8-12 weeks), minimal side effects. First-line regimens: sofosbuvir/velpatasvir, glecaprevir/pibrentasvir, sofosbuvir/ledipasvir (genotype-specific). Treatment cures infection, prevents cirrhosis and liver cancer. Liver transplantation for end-stage liver disease. No post-exposure prophylaxis available (no vaccine, no effective PEP).",
+      "infectionControl": {
+        "precautions": "Standard Precautions (treat all blood and body fluids as potentially infectious). Use gloves, gown, mask, and eye protection when exposure to blood is anticipated. Safe injection practices: one needle, one syringe, one patient, one time. Single-use devices only. Proper sharps disposal",
+        "screening": "Screen high-risk individuals: IVDU (current or past), hemodialysis patients, HIV-positive individuals, recipients of blood transfusions before 1992, people with elevated liver enzymes, infants born to HCV-positive mothers",
+        "cohorting": "Not usually necessary; standard precautions sufficient. In hemodialysis units: dedicated machines for HCV-positive patients may be considered",
+        "sourceControl": "Safe injection practices; avoid reuse of needles, syringes, or multi-dose vials; proper sterilization of reusable medical equipment; dedicated equipment for hemodialysis patients",
+        "environmental": "Clean and disinfect blood spills with EPA-registered disinfectants (bleach-based at 1:10 dilution). HCV can survive on surfaces for up to 3 weeks",
+        "staffEducation": "Safe sharps handling; post-exposure protocols (no effective PEP, but monitor for seroconversion); proper use of PPE; infection control audits in high-risk settings (hemodialysis, endoscopy)"
+      },
+      "outbreakTriggers": [
+        "≥2 new HCV infections with shared exposure in healthcare facility, hemodialysis unit, or community setting",
+        "Cluster of HCV infections in hemodialysis unit, pain clinic, endoscopy center, or other healthcare setting",
+        "Nosocomial transmission (healthcare-associated case)",
+        "Sudden spike in HCV cases above baseline"
+      ],
+      "reportingCommunication": [
+        "Report clusters of HCV infections (within 24 hours) to infection control and public health authorities",
+        "Initiate outbreak investigation: identify source (contaminated equipment, unsafe injections, breaches in infection control), conduct contact tracing",
+        "Implement outbreak control measures: review and reinforce infection control practices, audit injection practices and equipment sterilization, test exposed individuals",
+        "Facility review: audit hemodialysis practices, endoscopy reprocessing, medication preparation, sharps disposal",
+        "Internal review and root cause analysis",
+        "Communicate with staff, patients, and public health authorities"
+      ],
+      "prevention": [
+        "No vaccine available (major challenge for prevention)",
+        "Blood and organ donor screening (universal in developed countries)",
+        "Safe injection practices: one needle, one syringe, one patient, one time; single-use devices only",
+        "Harm reduction for IVDU: needle and syringe programs, opioid substitution therapy, education",
+        "Proper sterilization of reusable medical equipment (endoscopes, surgical instruments)",
+        "Infection control in hemodialysis units: dedicated machines or strict cleaning protocols, avoid sharing equipment",
+        "Safe sex practices: condom use (low risk but recommended for HIV-positive MSM)",
+        "Avoid sharing razors, toothbrushes, or other items that may be contaminated with blood",
+        "Use of safety-engineered sharps devices to prevent needlestick injuries",
+        "Universal precautions in healthcare settings",
+        "Screen and treat infected individuals (treatment as prevention)",
+        "Educate on transmission prevention and availability of curative treatment"
+      ],
+      "references": [
+        {
+          "label": "WHO - Hepatitis C",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/hepatitis-c"
+        },
+        {
+          "label": "CDC - Hepatitis C",
+          "url": "https://www.cdc.gov/hepatitis/hcv/index.htm"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "hiv",
+      "name": "Human immunodeficiency virus (HIV-1/2)",
+      "scientificName": "Human immunodeficiency virus type 1 and 2 (HIV-1, HIV-2), genus Lentivirus, family Retroviridae (enveloped RNA retrovirus)",
+      "definition": "Enveloped RNA retrovirus causing progressive immunodeficiency (AIDS - acquired immunodeficiency syndrome) by targeting and destroying CD4+ T lymphocytes. HIV-1 is responsible for the global pandemic; HIV-2 is less common and primarily found in West Africa. Without treatment, HIV progresses to AIDS in 8-10 years, leading to opportunistic infections and death. Antiretroviral therapy (ART) suppresses viral replication, restores immune function, and prevents transmission. HIV is transmitted through blood, sexual contact, and perinatal exposure.",
+      "reservoir": {
+        "primary": [
+          "Human blood, semen, vaginal fluids, breast milk"
+        ],
+        "secondary": [
+          "Other body fluids with visible blood"
+        ],
+        "notes": "Humans are the sole reservoir. HIV is present in blood, semen, vaginal fluids, breast milk, and other body fluids containing blood. HIV is fragile and does not survive long outside the body. Estimated 39 million people living with HIV globally (2022)."
+      },
+      "transmission": {
+        "mode": "Sexual contact (primary), percutaneous (needlestick), perinatal (mother to child)",
+        "routes": [
+          "Sexual transmission: unprotected vaginal, anal, or oral sex with infected partner - most common route globally (accounts for ~80% of new infections)",
+          "Percutaneous exposure: needlestick injuries, sharps injuries, sharing needles and equipment (IVDU)",
+          "Perinatal transmission: mother to child during pregnancy, childbirth, or breastfeeding (vertical transmission) - 15-45% risk without intervention, <1% with ART and interventions",
+          "Blood transfusion and organ transplantation (rare in countries with screening)",
+          "Mucous membrane exposure: splash of blood or body fluids to eyes, nose, mouth (rare)",
+          "Occupational exposure: healthcare workers (needlestick injuries)"
+        ],
+        "notes": "HIV is less infectious than HBV or HCV. Risk of transmission per exposure: receptive anal sex 1.4%, insertive anal sex 0.11%, receptive vaginal sex 0.08%, insertive vaginal sex 0.04%, needlestick injury 0.3%, mucous membrane exposure 0.09%. Viral load is the strongest predictor of transmission risk. Undetectable = Untransmittable (U=U): people with HIV on effective ART with undetectable viral load cannot sexually transmit HIV."
+      },
+      "incubationPeriod": {
+        "range": "2-6 weeks for acute HIV infection (seroconversion illness); long-term asymptomatic period of 8-10 years before progression to AIDS without treatment",
+        "infectiousPeriod": "Infectious from initial infection throughout life. Highest infectivity during acute infection (first 2-6 weeks) and advanced AIDS due to high viral load. People on effective ART with undetectable viral load cannot transmit HIV sexually (U=U)",
+        "seasonality": "No seasonal pattern; year-round transmission",
+        "geographic": "Worldwide distribution. Highest burden in sub-Saharan Africa (accounts for ~70% of global HIV infections). HIV-2 primarily in West Africa"
+      },
+      "riskFactors": [
+        "Unprotected sexual contact with HIV-positive partner (especially receptive anal sex)",
+        "Multiple sexual partners or sex with high-risk partners",
+        "Men who have sex with men (MSM) - disproportionately affected",
+        "People who inject drugs (IVDU) - sharing needles and equipment",
+        "Sex workers and their clients",
+        "People with sexually transmitted infections (STIs) - increase HIV transmission risk",
+        "Infants born to HIV-positive mothers (without prevention interventions)",
+        "Recipients of unscreened blood transfusions or organ transplants",
+        "Healthcare workers (occupational exposure to blood and sharps)",
+        "People in HIV-endemic areas (sub-Saharan Africa)",
+        "Uncircumcised men (higher risk of HIV acquisition)",
+        "Lack of access to HIV prevention services (condoms, PrEP, ART)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Acute HIV infection (2-6 weeks after exposure): acute retroviral syndrome - fever, lymphadenopathy, pharyngitis, rash, myalgia, headache, oral/genital ulcers (resembles mononucleosis). Lasts 1-2 weeks",
+          "Asymptomatic chronic HIV infection: no symptoms for 8-10 years (without treatment). Gradual decline in CD4+ T cell count",
+          "Symptomatic HIV infection: persistent generalized lymphadenopathy, oral thrush, recurrent infections, weight loss, diarrhea, night sweats",
+          "AIDS (CD4 count <200 cells/μL or AIDS-defining illness): opportunistic infections (Pneumocystis pneumonia, tuberculosis, cryptococcal meningitis, toxoplasmosis, CMV, Kaposi sarcoma, lymphoma, wasting syndrome)"
+        ],
+        "complications": [
+          "Opportunistic infections: Pneumocystis jirovecii pneumonia (PCP), tuberculosis, cryptococcal meningitis, toxoplasmosis, CMV retinitis, candidiasis, cryptosporidiosis",
+          "AIDS-related malignancies: Kaposi sarcoma, non-Hodgkin lymphoma, cervical cancer",
+          "HIV-associated wasting syndrome",
+          "HIV-associated dementia and neurological complications",
+          "Cardiovascular disease, kidney disease, liver disease (especially with HBV/HCV co-infection)",
+          "Death from opportunistic infections or AIDS-related complications (without treatment)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with acute febrile illness + lymphadenopathy + rash + risk factors for HIV exposure, OR person with opportunistic infections or AIDS-defining illness",
+          "confirmed": "Laboratory confirmation: positive HIV antigen/antibody (Ag/Ab) combination test (4th generation) OR positive HIV-1/2 antibody test, confirmed by HIV-1/HIV-2 differentiation assay or HIV RNA (PCR)"
+        }
+      },
+      "diagnosis": [
+        "HIV antigen/antibody (Ag/Ab) combination test (4th generation) - detects HIV p24 antigen and HIV-1/2 antibodies; can detect infection 2-6 weeks after exposure (window period)",
+        "HIV-1/2 antibody test (3rd generation) - detects antibodies; window period 3-12 weeks",
+        "HIV-1/HIV-2 differentiation assay - differentiates HIV-1 from HIV-2",
+        "HIV RNA (PCR/NAAT) - detects virus 10-14 days after exposure; used for early diagnosis, viral load monitoring, and infant diagnosis",
+        "CD4+ T cell count - assesses immune function; AIDS defined as CD4 <200 cells/μL",
+        "Rapid HIV tests - point-of-care tests using blood or oral fluid; results in 20 minutes"
+      ],
+      "treatment": "Antiretroviral therapy (ART): combination of ≥3 antiretroviral drugs from ≥2 drug classes. First-line regimens: integrase strand transfer inhibitor (INSTI) + 2 nucleoside reverse transcriptase inhibitors (NRTIs). Examples: bictegravir/tenofovir/emtricitabine, dolutegravir/abacavir/lamivudine. ART suppresses viral replication, restores immune function, prevents progression to AIDS, and prevents transmission (U=U). Lifelong treatment required. Post-exposure prophylaxis (PEP): 28-day course of ART started within 72 hours (ideally within 2 hours) of exposure. Pre-exposure prophylaxis (PrEP): daily or on-demand ART for HIV-negative individuals at high risk (>90% effective).",
+      "infectionControl": {
+        "precautions": "Standard Precautions (treat all blood and body fluids as potentially infectious). Use gloves, gown, mask, and eye protection when exposure to blood or body fluids is anticipated. Safe injection practices. Proper sharps disposal in puncture-resistant containers",
+        "screening": "Routine HIV testing recommended for all individuals aged 13-64 years at least once; annual or more frequent testing for high-risk individuals (MSM, IVDU, sex workers, people with STIs)",
+        "cohorting": "Not necessary; standard precautions sufficient",
+        "sourceControl": "Safe injection practices; avoid reuse of needles or syringes; use of safety-engineered sharps devices; proper sterilization of reusable medical equipment",
+        "environmental": "Clean and disinfect blood spills with EPA-registered disinfectants (bleach-based at 1:10 dilution). HIV is fragile and easily inactivated by disinfectants",
+        "staffEducation": "Safe sharps handling; post-exposure prophylaxis protocols (PEP within 72 hours); proper use of PPE; counseling and testing services"
+      },
+      "outbreakTriggers": [
+        "≥2 linked cases of HIV infection with nosocomial transmission (healthcare-associated)",
+        "Cluster of HIV infections with common source exposure (contaminated equipment, needle sharing, breakdown in infection control protocols)",
+        "Sudden spike in HIV cases in specific population or geographic area"
+      ],
+      "reportingCommunication": [
+        "Immediate reporting (within 24 hours or as soon as possible) of healthcare-associated HIV transmission to infection control and public health authorities",
+        "Report clusters of HIV infections to public health for investigation",
+        "Initiate outbreak investigation: identify source, conduct contact tracing, review infection control practices",
+        "Implement outbreak control measures: post-exposure prophylaxis for exposed individuals, reinforce infection control practices, facility review",
+        "Confidential partner notification and counseling",
+        "Communicate with staff, patients, and public health authorities while maintaining patient confidentiality"
+      ],
+      "prevention": [
+        "Antiretroviral therapy (ART) for all people living with HIV - treatment as prevention (U=U: undetectable = untransmittable)",
+        "Pre-exposure prophylaxis (PrEP): daily or on-demand ART for HIV-negative individuals at high risk (MSM, IVDU, serodiscordant couples) - >90% effective",
+        "Post-exposure prophylaxis (PEP): 28-day course of ART started within 72 hours (ideally within 2 hours) of exposure - highly effective if started early",
+        "Safe sex practices: consistent and correct condom use, limit number of sexual partners, avoid sex during acute STIs",
+        "Harm reduction for IVDU: needle and syringe programs, opioid substitution therapy, education",
+        "Prevention of mother-to-child transmission (PMTCT): ART during pregnancy, childbirth, and breastfeeding; infant prophylaxis - reduces transmission to <1%",
+        "Blood and organ donor screening (universal in developed countries)",
+        "Voluntary medical male circumcision (reduces HIV acquisition risk by ~60%)",
+        "STI screening and treatment (STIs increase HIV transmission risk)",
+        "Use of safety-engineered sharps devices to prevent needlestick injuries",
+        "Universal precautions in healthcare settings",
+        "Routine HIV testing and linkage to care",
+        "Educate on transmission prevention, testing, and treatment availability",
+        "No vaccine available (under development)"
+      ],
+      "references": [
+        {
+          "label": "WHO - HIV/AIDS",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/hiv-aids"
+        },
+        {
+          "label": "CDC - HIV/AIDS",
+          "url": "https://www.cdc.gov/hiv/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "htlv",
+      "name": "HTLV-I/II",
+      "scientificName": "Human T-lymphotropic virus type I and II (HTLV-I, HTLV-II), genus Deltaretrovirus, family Retroviridae (enveloped RNA retrovirus)",
+      "definition": "Enveloped RNA retroviruses related to HIV but causing different diseases. HTLV-I causes adult T-cell leukemia/lymphoma (ATLL) and HTLV-I-associated myelopathy/tropical spastic paraparesis (HAM/TSP) in a small percentage of infected individuals (3-5%). HTLV-II is less pathogenic. Transmission occurs through blood transfusion, sexual contact, and vertical transmission (mother to child). Rarely causes clusters, but transfusion-related outbreaks have been documented. No cure or vaccine available.",
+      "reservoir": {
+        "primary": [
+          "Human blood, semen, vaginal fluids, breast milk"
+        ],
+        "secondary": [],
+        "notes": "Humans are the sole reservoir. HTLV is endemic in Japan, Caribbean, Central and South America, sub-Saharan Africa, and parts of Middle East. Estimated 5-10 million people infected worldwide."
+      },
+      "transmission": {
+        "mode": "Blood transfusion, sexual contact, vertical transmission (mother to child)",
+        "routes": [
+          "Blood transfusion and organ transplantation - major route before screening programs",
+          "Sexual transmission: unprotected sexual contact with infected partner (less efficient than HIV)",
+          "Vertical transmission: mother to child primarily through prolonged breastfeeding (15-20% risk); transmission during pregnancy or childbirth is rare",
+          "Sharing needles and equipment (IVDU)",
+          "Occupational exposure (rare)"
+        ],
+        "notes": "HTLV requires cell-to-cell contact for transmission (cell-associated virus). Blood transfusion of cellular blood products (red cells, platelets) is highly efficient route. Plasma and clotting factors are low risk. Sexual transmission is less efficient than HIV and requires prolonged exposure."
+      },
+      "incubationPeriod": {
+        "range": "6 weeks to several years for seroconversion; decades for development of ATLL or HAM/TSP",
+        "infectiousPeriod": "Chronic lifelong infection; infectious throughout life",
+        "seasonality": "No seasonal pattern",
+        "geographic": "Endemic in Japan (especially southwestern regions), Caribbean, Central and South America, sub-Saharan Africa, parts of Middle East"
+      },
+      "riskFactors": [
+        "Blood transfusion recipients (in areas without HTLV screening)",
+        "Infants breastfed by HTLV-positive mothers (15-20% risk)",
+        "Sexual partners of HTLV-infected individuals",
+        "People who inject drugs (IVDU) - sharing needles",
+        "Men who have sex with men (MSM)",
+        "People from or with sexual partners from HTLV-endemic areas",
+        "Recipients of organ transplants from HTLV-positive donors"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Asymptomatic chronic infection: 95-97% of infected individuals remain asymptomatic for life",
+          "Adult T-cell leukemia/lymphoma (ATLL): develops in 3-5% of HTLV-I-infected individuals after 20-60 years. Aggressive lymphoma with lymphadenopathy, hepatosplenomegaly, skin lesions, hypercalcemia, lytic bone lesions. Poor prognosis",
+          "HTLV-I-associated myelopathy/tropical spastic paraparesis (HAM/TSP): develops in 0.25-3% of HTLV-I-infected individuals. Chronic progressive myelopathy with spastic paraparesis, bladder dysfunction, sensory disturbances",
+          "Other HTLV-I-associated conditions: uveitis, infective dermatitis, polymyositis, arthropathy"
+        ],
+        "complications": [
+          "Adult T-cell leukemia/lymphoma (ATLL) - aggressive malignancy with poor prognosis; median survival <1 year for acute type",
+          "HTLV-I-associated myelopathy/tropical spastic paraparesis (HAM/TSP) - chronic progressive disability",
+          "Opportunistic infections (in ATLL patients due to immunosuppression)",
+          "Death from ATLL or complications"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with adult T-cell leukemia/lymphoma OR chronic progressive myelopathy (HAM/TSP) OR person with risk factors for HTLV exposure (blood transfusion in endemic area, breastfed by HTLV-positive mother)",
+          "confirmed": "Laboratory confirmation: positive HTLV-I/II antibody by enzyme immunoassay, confirmed by Western blot or PCR"
+        }
+      },
+      "diagnosis": [
+        "HTLV-I/II antibody (enzyme immunoassay) - screening test",
+        "Western blot - confirmatory test; differentiates HTLV-I from HTLV-II",
+        "PCR for HTLV proviral DNA - confirms infection and differentiates HTLV-I from HTLV-II",
+        "Peripheral blood smear: flower cells (multilobulated lymphocytes) in ATLL",
+        "Serum calcium: hypercalcemia in ATLL",
+        "MRI spine: spinal cord atrophy in HAM/TSP"
+      ],
+      "treatment": "No cure or effective antiviral therapy for HTLV infection. ATLL: chemotherapy (CHOP regimen), monoclonal antibodies (mogamulizumab), allogeneic stem cell transplantation (only curative option but high mortality). HAM/TSP: corticosteroids, interferon-alpha (limited efficacy); supportive care for spasticity and bladder dysfunction. Asymptomatic carriers: no treatment; lifelong monitoring for development of ATLL or HAM/TSP.",
+      "infectionControl": {
+        "precautions": "Standard Precautions. Use gloves, gown, mask, and eye protection when exposure to blood is anticipated. Safe injection practices. Proper sharps disposal",
+        "screening": "Blood and organ donor screening for HTLV-I/II antibody (mandatory in many countries including US, Japan, France). Screen pregnant women in endemic areas; counsel HTLV-positive mothers to avoid breastfeeding or limit to <6 months",
+        "cohorting": "Not necessary; standard precautions sufficient",
+        "sourceControl": "Blood and organ donor screening; safe injection practices; avoid reuse of needles or syringes",
+        "environmental": "Clean and disinfect blood spills with EPA-registered disinfectants",
+        "staffEducation": "Safe sharps handling; proper use of PPE; counseling for HTLV-positive individuals (avoid breastfeeding, blood donation, organ donation)"
+      },
+      "outbreakTriggers": [
+        "≥2 transfusion-related or vertical transmission cases linked in time and place",
+        "Cluster of HTLV infections with common source exposure (contaminated blood products)"
+      ],
+      "reportingCommunication": [
+        "Report outbreak to public health authorities",
+        "Alert blood centers and transfusion services",
+        "Trace recipients of blood products from HTLV-positive donors",
+        "Implement lookback investigations for prior donations",
+        "Communicate with affected individuals and healthcare providers"
+      ],
+      "prevention": [
+        "Blood and organ donor screening for HTLV-I/II antibody (mandatory in many countries)",
+        "Counsel HTLV-positive mothers to avoid breastfeeding or limit to <6 months (reduces transmission from 20% to 3%)",
+        "Safe sex practices: condom use (especially for individuals from endemic areas)",
+        "Harm reduction for IVDU: needle and syringe programs",
+        "Avoid sharing needles, razors, toothbrushes",
+        "Use of safety-engineered sharps devices",
+        "Universal precautions in healthcare settings",
+        "No vaccine available"
+      ],
+      "references": [
+        {
+          "label": "CDC - HTLV",
+          "url": "https://www.cdc.gov/htlv/index.html"
+        },
+        {
+          "label": "WHO - Bloodborne Pathogens",
+          "url": "https://www.who.int/health-topics/bloodborne-diseases"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "cchf",
+      "name": "Crimean-Congo Hemorrhagic Fever (CCHF)",
+      "scientificName": "Crimean-Congo hemorrhagic fever virus (CCHFV), genus Orthonairovirus, family Nairoviridae (enveloped negative-sense single-stranded RNA virus)",
+      "definition": "Enveloped negative-sense single-stranded RNA virus causing severe hemorrhagic fever with high mortality rate (10-40%). CCHF is a zoonotic disease transmitted by ticks (Hyalomma genus) and through contact with blood or tissues of infected livestock or humans. Endemic in Africa, Asia, Middle East, and Eastern Europe. Nosocomial transmission is common and poses high risk to healthcare workers. High-consequence pathogen requiring strict infection control and biosafety measures.",
+      "reservoir": {
+        "primary": [
+          "Ticks (Hyalomma genus) - primary reservoir and vector",
+          "Wild and domestic animals (cattle, sheep, goats) - amplifying hosts"
+        ],
+        "secondary": [
+          "Infected humans (during acute illness)"
+        ],
+        "notes": "Ticks are the primary reservoir and vector. Hyalomma ticks maintain the virus through transstadial and transovarial transmission. Wild and domestic animals (especially cattle, sheep, goats) serve as amplifying hosts but do not develop clinical disease. Humans are dead-end hosts but can transmit to other humans through blood and body fluids."
+      },
+      "transmission": {
+        "mode": "Tick bite (primary), contact with blood or tissues of infected animals or humans",
+        "routes": [
+          "Tick bite: bite of infected Hyalomma tick - primary route in endemic areas",
+          "Contact with blood or tissues of infected livestock: slaughtering, butchering, veterinary procedures - major occupational risk",
+          "Nosocomial transmission: contact with blood or body fluids of infected patients - major risk to healthcare workers; accounts for significant proportion of cases",
+          "Crushing ticks with bare hands (while removing from animals or humans)",
+          "Percutaneous exposure: needlestick injuries, sharps injuries in healthcare settings",
+          "Mucous membrane exposure: splash of blood or body fluids to eyes, nose, mouth"
+        ],
+        "notes": "CCHF is highly infectious through blood and body fluid contact. Nosocomial transmission is common and poses extreme risk to healthcare workers. Virus is present in high concentrations in blood and body fluids during acute illness. No person-to-person transmission through respiratory route (not airborne)."
+      },
+      "incubationPeriod": {
+        "range": "1-14 days (mean 3-7 days) from tick bite or exposure to symptom onset. Shorter incubation (1-3 days) after contact with infected blood or tissues",
+        "infectiousPeriod": "Infectious during acute illness (typically 7-10 days from symptom onset). Virus is present in blood and body fluids during febrile and hemorrhagic phases. Patients are most infectious during hemorrhagic phase",
+        "seasonality": "Spring and summer peaks (April-September) corresponding to tick activity in endemic areas",
+        "geographic": "Endemic in Africa (especially sub-Saharan Africa), Asia (Middle East, Central Asia, South Asia), Eastern Europe (Balkans, Turkey, Russia). Not found in Americas, Western Europe, or Australia"
+      },
+      "riskFactors": [
+        "Livestock workers (farmers, herders, veterinarians, abattoir workers) - occupational exposure to infected animals and ticks",
+        "Healthcare workers caring for CCHF patients - high risk of nosocomial transmission",
+        "People living in or traveling to CCHF-endemic regions",
+        "Outdoor activities in endemic areas during tick season (hiking, camping, hunting)",
+        "Contact with infected patients or their blood/body fluids",
+        "Inadequate infection control practices in healthcare settings",
+        "Lack of personal protective equipment (PPE)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Sudden onset of high fever (39-41°C), severe headache, myalgia, back pain, joint pain",
+          "Nausea, vomiting, diarrhea, abdominal pain",
+          "Flushed face, conjunctival injection, petechiae on palate and skin",
+          "Hemorrhagic phase (days 3-6): petechiae, ecchymoses, epistaxis, hematemesis, melena, hematuria, vaginal bleeding, bleeding from venipuncture sites",
+          "Hepatomegaly, jaundice, liver dysfunction",
+          "Neurological symptoms: confusion, agitation, mood changes",
+          "Symptoms typically last 2-3 weeks in survivors"
+        ],
+        "complications": [
+          "Severe hemorrhagic manifestations: gastrointestinal bleeding, pulmonary hemorrhage, intracranial hemorrhage",
+          "Disseminated intravascular coagulation (DIC)",
+          "Multi-organ failure: liver failure, kidney failure, respiratory failure",
+          "Shock and cardiovascular collapse",
+          "Neurological complications: encephalitis, seizures",
+          "Secondary bacterial infections",
+          "Death (case fatality rate 10-40%, higher in nosocomial cases)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with sudden onset of high fever + hemorrhagic manifestations (petechiae, bleeding) + epidemiological link (tick bite, contact with livestock, travel to endemic area, contact with CCHF patient)",
+          "confirmed": "Clinical illness + laboratory confirmation: positive RT-PCR for CCHFV RNA from blood, OR positive CCHFV IgM antibody, OR viral isolation (BSL-4 required)"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR for CCHFV RNA from blood - gold standard for early diagnosis (first 7-10 days of illness); highly sensitive and specific",
+        "CCHFV IgM antibody (ELISA) - detectable from day 5-7 of illness; indicates acute infection",
+        "CCHFV IgG antibody - indicates past infection or convalescence",
+        "Viral isolation - requires BSL-4 laboratory; rarely performed",
+        "Complete blood count: thrombocytopenia, leukopenia",
+        "Coagulation studies: prolonged PT/PTT, elevated D-dimer (DIC)",
+        "Liver function tests: elevated ALT, AST, bilirubin",
+        "All laboratory work must be performed under BSL-3 or BSL-4 conditions"
+      ],
+      "treatment": "Supportive care: fluid and electrolyte management, blood product transfusions (platelets, fresh frozen plasma, packed red cells), management of hemorrhage and shock. Ribavirin (antiviral): oral or IV ribavirin may reduce mortality if started early (within first 5 days of illness); evidence is limited but WHO recommends consideration. Strict isolation and infection control. Intensive care support for severe cases. No vaccine available.",
+      "infectionControl": {
+        "precautions": "Contact Precautions + Droplet Precautions (some guidelines recommend Airborne Precautions for aerosol-generating procedures). Strict isolation in single room (negative pressure preferred). Full PPE: double gloves, impermeable gown, N95 respirator or PAPR, face shield, boot covers. Minimize invasive procedures. Dedicated equipment. Limit number of healthcare workers. No visitors except essential family with full PPE",
+        "screening": "Screen for CCHF symptoms (fever, hemorrhage) and epidemiological risk factors (tick bite, livestock contact, travel to endemic area) at healthcare entry points in endemic regions. Immediate isolation of suspected cases",
+        "cohorting": "Isolate each CCHF patient in separate single room; avoid cohorting due to high risk",
+        "sourceControl": "Avoid aerosol-generating procedures if possible; use closed systems for blood collection; proper sharps disposal; safe handling of laboratory specimens (BSL-3/4)",
+        "environmental": "Enhanced cleaning and disinfection with EPA-registered disinfectants effective against enveloped viruses (bleach-based, accelerated hydrogen peroxide). Careful handling and disposal of contaminated materials as Category A infectious waste",
+        "staffEducation": "Rigorous training on PPE donning/doffing; avoid direct contact with blood and body fluids; immediate reporting of exposures; post-exposure monitoring and ribavirin prophylaxis if indicated"
+      },
+      "outbreakTriggers": [
+        "Any single confirmed or suspected case of CCHF (high-consequence pathogen)",
+        "Cluster of hemorrhagic fever cases in endemic area",
+        "Nosocomial transmission (healthcare-associated case)",
+        "Outbreak in livestock with human cases"
+      ],
+      "reportingCommunication": [
+        "Urgent immediate reporting (within hours) of any suspected or confirmed CCHF case to infection control, hospital administration, and public health authorities - CCHF is a notifiable disease and internationally reportable to WHO under International Health Regulations (IHR)",
+        "Activate rapid outbreak response team",
+        "Implement strict isolation and infection control measures immediately",
+        "Contact tracing: identify all contacts (healthcare workers, family members, community contacts); monitor for 14 days; consider ribavirin prophylaxis for high-risk exposures",
+        "Coordinate with public health, veterinary services, and vector control for outbreak investigation and control",
+        "Public health alerts and health messaging to healthcare facilities and communities in endemic areas",
+        "International notification if case involves international travel"
+      ],
+      "prevention": [
+        "Personal protective equipment (PPE): full PPE for healthcare workers caring for CCHF patients; protective clothing for livestock workers and abattoir workers",
+        "Tick control and avoidance: use insect repellents (DEET, permethrin), wear protective clothing (long sleeves, pants, boots), perform tick checks, avoid tick-infested areas during peak season",
+        "Safe slaughter and butchering practices: use gloves and protective clothing when handling livestock; avoid contact with blood and tissues",
+        "Infection control in healthcare: strict isolation, full PPE, safe injection practices, proper waste disposal",
+        "Livestock vaccination: vaccine available for animals in some countries (reduces viral load in animals)",
+        "Vector control: acaricides for tick control on livestock and in environment",
+        "Public education: awareness campaigns for livestock workers, healthcare workers, and communities in endemic areas",
+        "Early detection and isolation of cases",
+        "Post-exposure prophylaxis: ribavirin may be considered for high-risk exposures (limited evidence)",
+        "No human vaccine available (under development)"
+      ],
+      "references": [
+        {
+          "label": "WHO - Crimean-Congo Hemorrhagic Fever",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/crimean-congo-haemorrhagic-fever"
+        },
+        {
+          "label": "CDC - Crimean-Congo Hemorrhagic Fever",
+          "url": "https://www.cdc.gov/vhf/crimean-congo/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    }
+  ]
+}

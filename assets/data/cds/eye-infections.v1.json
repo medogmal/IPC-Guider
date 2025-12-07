@@ -1,0 +1,1058 @@
+{
+  "version": 1,
+  "updatedAt": "2025-11-25T03:00:00Z",
+  "id": "eye-infections",
+  "name": "Eye Infections (Ophthalmologic & Orbital)",
+  "description": "Bacterial, viral, and fungal eye infections including conjunctivitis, keratitis, endophthalmitis, and orbital cellulitis",
+  "icon": "visibility",
+  "color": "#009688",
+  "conditions": [
+    {
+      "id": "bacterial-conjunctivitis",
+      "name": "Bacterial Conjunctivitis",
+      "synonyms": [
+        "pink eye",
+        "bacterial pink eye",
+        "purulent conjunctivitis"
+      ],
+      "icd10": [
+        "H10.0",
+        "H10.01",
+        "H10.02"
+      ],
+      "severity": [
+        "mild"
+      ],
+      "shortDescription": "Bacterial infection of the conjunctiva with purulent discharge, self-limited in most cases",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Bacterial infection of the conjunctiva (thin membrane covering the white part of the eye and inner eyelid). Self-limited in most cases (resolves in 7-10 days without treatment). Topical antibiotics shorten duration to 2-5 days. Highly contagious.",
+            "clinical_presentation": "Acute onset of red eye with purulent (yellow-green) discharge, matting of eyelashes (especially upon waking), gritty sensation, normal vision, no photophobia, no pain. Bilateral in 50-70% (starts unilateral, spreads to other eye in 1-2 days).",
+            "diagnostic_criteria": "Clinical diagnosis: Purulent discharge + conjunctival injection + normal vision + no photophobia. Culture NOT routinely needed (reserve for severe, recurrent, or contact lens wearers).",
+            "risk_factors": [
+              "Contact lens wear (Pseudomonas risk)",
+              "Close contact with infected person (daycare, school)",
+              "Poor hand hygiene",
+              "Ocular surface disease (dry eye, blepharitis)",
+              "Immunosuppression"
+            ],
+            "red_flags": [
+              "Vision loss - suggests keratitis (corneal involvement), NOT simple conjunctivitis, requires urgent ophthalmology referral",
+              "Severe pain - suggests keratitis or scleritis, NOT simple conjunctivitis",
+              "Photophobia - suggests keratitis or uveitis, NOT simple conjunctivitis",
+              "Contact lens wearer - Pseudomonas keratitis risk, requires urgent ophthalmology referral + fortified antibiotics",
+              "Neonatal conjunctivitis (<28 days) - Neisseria gonorrhoeae or Chlamydia trachomatis, requires systemic antibiotics + ophthalmology referral"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Culture NOT routinely needed (clinical diagnosis). Culture if: Severe, recurrent, contact lens wearer, neonatal (<28 days), immunocompromised, or failed initial therapy.",
+            "essential_tests": [
+              "Clinical diagnosis: Purulent discharge + conjunctival injection + normal vision + no photophobia.",
+              "Visual acuity: Must be NORMAL. If decreased → keratitis, refer to ophthalmology."
+            ],
+            "conditional_tests": [
+              "Conjunctival culture (bacterial): If severe, recurrent, contact lens wearer, neonatal, or failed therapy. Swab lower fornix.",
+              "Gram stain: If hyperacute (N. gonorrhoeae suspected). Gram-negative diplococci → gonorrhea.",
+              "Chlamydia PCR: If neonatal (<28 days) or suspected trachoma."
+            ],
+            "when_not_to_test": "Do NOT culture routine bacterial conjunctivitis (self-limited, empiric therapy adequate).",
+            "turnaround_time": "Culture: 24-48 hours. Gram stain: <1 hour. Chlamydia PCR: 24-48 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Most common: Staphylococcus aureus (30-40%), Streptococcus pneumoniae (20-30%), Haemophilus influenzae (10-20%, children). Contact lens wearers: Pseudomonas aeruginosa (30-50%, keratitis risk). Neonatal: Neisseria gonorrhoeae, Chlamydia trachomatis.",
+            "pathogenesis": "Direct contact: Contaminated hands/fomites → conjunctiva → bacterial proliferation → purulent discharge. Highly contagious (spreads via hands, towels, pillowcases). Incubation: 1-3 days.",
+            "resistance_patterns": {
+              "mrsa": "MRSA: 10-30% of S. aureus isolates. Fluoroquinolones effective (moxifloxacin, gatifloxacin). Avoid erythromycin (resistance 30-50%).",
+              "pseudomonas": "Pseudomonas: Fluoroquinolone-resistant 10-20%. Use fortified tobramycin or ceftazidime if contact lens wearer."
+            },
+            "timing_critical": "Start topical antibiotics within 24 hours if diagnosis clear. If vision loss, pain, or photophobia → urgent ophthalmology referral same day."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "standard_therapy": "Topical fluoroquinolone: Moxifloxacin 0.5% 1 drop TID x 5-7 days OR Gatifloxacin 0.3% 1 drop TID x 5-7 days (preferred, broad-spectrum, covers MRSA and Pseudomonas). Alternative: Polymyxin B-trimethoprim 1 drop QID x 5-7 days (narrower spectrum, less expensive).",
+            "contact_lens_wearer": "Pseudomonas coverage CRITICAL. Topical fluoroquinolone: Moxifloxacin 0.5% 1 drop q2h while awake x 2 days, then QID x 5 days OR Ciprofloxacin 0.3% 1 drop q2h while awake x 2 days, then QID x 5 days. Remove contact lenses immediately. Ophthalmology referral if no improvement in 24-48 hours.",
+            "neonatal_conjunctivitis": "Neisseria gonorrhoeae: Ceftriaxone 25-50mg/kg IV/IM x1 (max 125mg) + Topical erythromycin 0.5% ointment QID x 14 days. Chlamydia trachomatis: Azithromycin 20mg/kg PO daily x 3 days OR Erythromycin 50mg/kg/day PO divided QID x 14 days. Ophthalmology referral URGENT.",
+            "alternatives": "Topical aminoglycoside: Tobramycin 0.3% 1 drop QID x 5-7 days OR Gentamicin 0.3% 1 drop QID x 5-7 days. Topical macrolide: Azithromycin 1% 1 drop BID x 2 days, then daily x 5 days (expensive, no advantage over fluoroquinolones).",
+            "avoid_list": "Avoid topical erythromycin (resistance 30-50%, inadequate coverage). Avoid topical neomycin (allergic reactions 10-15%). Avoid topical steroids (contraindicated, worsens infection, risk of corneal perforation)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "s_aureus_mssa": "Topical fluoroquinolone: Moxifloxacin 0.5% 1 drop TID x 5-7 days OR Polymyxin B-trimethoprim 1 drop QID x 5-7 days.",
+            "s_aureus_mrsa": "Topical fluoroquinolone: Moxifloxacin 0.5% 1 drop TID x 5-7 days (effective against MRSA). Avoid erythromycin (resistance 30-50%).",
+            "s_pneumoniae": "Topical fluoroquinolone: Moxifloxacin 0.5% 1 drop TID x 5-7 days OR Polymyxin B-trimethoprim 1 drop QID x 5-7 days.",
+            "h_influenzae": "Topical fluoroquinolone: Moxifloxacin 0.5% 1 drop TID x 5-7 days OR Polymyxin B-trimethoprim 1 drop QID x 5-7 days.",
+            "pseudomonas_aeruginosa": "Topical fluoroquinolone: Ciprofloxacin 0.3% 1 drop q2h while awake x 2 days, then QID x 5 days OR Tobramycin 0.3% 1 drop q2h while awake x 2 days, then QID x 5 days. If keratitis (vision loss, pain) → fortified tobramycin 14mg/mL + fortified ceftazidime 50mg/mL q1h + urgent ophthalmology referral.",
+            "n_gonorrhoeae": "Ceftriaxone 1g IM x1 + Azithromycin 1g PO x1 (treat for concurrent Chlamydia) + Topical erythromycin 0.5% ointment QID x 14 days. Ophthalmology referral URGENT (corneal perforation risk).",
+            "c_trachomatis": "Azithromycin 1g PO x1 OR Doxycycline 100mg PO BID x 7 days + Topical erythromycin 0.5% ointment QID x 14 days.",
+            "duration": "5-7 days topical antibiotics. Neonatal: 14 days. Improvement expected in 24-48 hours. If no improvement → culture + ophthalmology referral.",
+            "de_escalation": "If culture shows susceptible organism, can narrow to polymyxin B-trimethoprim (less expensive than fluoroquinolones).",
+            "iv_to_po_switch": "Not applicable (topical therapy only, except neonatal gonorrhea/chlamydia)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "5-7 days topical antibiotics. Self-limited (resolves in 7-10 days without treatment). Antibiotics shorten duration to 2-5 days.",
+            "neonatal": "14 days (gonorrhea or chlamydia). Systemic antibiotics required.",
+            "monitoring": "Improvement expected in 24-48 hours (decreased discharge, less redness). If no improvement → culture + ophthalmology referral. If worsening (vision loss, pain, photophobia) → urgent ophthalmology referral same day.",
+            "stop_criteria": "Complete 5-7 days even if symptoms resolve earlier (prevent recurrence)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "contact_lens_wearer": "Pseudomonas keratitis risk (30-50%). Remove contact lenses immediately. Do NOT resume contact lens wear until infection resolved + 24 hours after completing antibiotics. Discard contact lenses and case. Topical fluoroquinolone q2h x 2 days, then QID x 5 days. Ophthalmology referral if no improvement in 24-48 hours.",
+            "neonatal_conjunctivitis": "Age <28 days. Neisseria gonorrhoeae (hyperacute, copious purulent discharge, corneal perforation risk) OR Chlamydia trachomatis (onset 5-14 days, watery discharge). Systemic antibiotics required (topical alone inadequate). Ophthalmology referral URGENT. Report to public health (STI).",
+            "hyperacute_conjunctivitis": "Neisseria gonorrhoeae. Onset <24 hours, copious purulent discharge, severe chemosis, corneal perforation risk. Gram stain: Gram-negative diplococci. Ceftriaxone 1g IM x1 + Azithromycin 1g PO x1 + Topical erythromycin QID x 14 days. Ophthalmology referral URGENT.",
+            "viral_vs_bacterial": "Viral (adenovirus): Watery discharge, preauricular lymphadenopathy, bilateral, highly contagious. Bacterial: Purulent discharge, no lymphadenopathy. If unclear → treat as bacterial (antibiotics safe, prevent secondary bacterial infection).",
+            "infection_control": "Highly contagious. Hand hygiene CRITICAL. Avoid touching eyes. Do NOT share towels, pillowcases, eye makeup. Exclude from daycare/school until 24 hours after starting antibiotics OR discharge resolved.",
+            "allergic_conjunctivitis": "Itching (NOT pain), watery discharge (NOT purulent), bilateral, seasonal. Topical antihistamine (olopatadine) or mast cell stabilizer (cromolyn). Do NOT use antibiotics."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Self-limited (resolves in 7-10 days without treatment). Antibiotics shorten duration to 2-5 days but NOT required.",
+              "If culture shows susceptible organism, narrow to polymyxin B-trimethoprim (less expensive than fluoroquinolones)",
+              "Do NOT use topical steroids (contraindicated, worsens infection)"
+            ],
+            "timeout_checklist": [
+              "Is vision NORMAL? (If decreased → keratitis, refer to ophthalmology)",
+              "Is there pain or photophobia? (If yes → keratitis or uveitis, refer to ophthalmology)",
+              "Is patient a contact lens wearer? (If yes → Pseudomonas risk, fluoroquinolone q2h + ophthalmology referral)",
+              "Is patient neonatal (<28 days)? (If yes → gonorrhea/chlamydia, systemic antibiotics + ophthalmology referral)",
+              "Is discharge purulent? (If watery → viral, supportive care only)",
+              "Is infection control counseling provided? (Hand hygiene, avoid sharing towels, exclude from daycare/school)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use topical steroids (contraindicated, worsens infection, risk of corneal perforation). Do NOT use topical erythromycin (resistance 30-50%). Do NOT culture routine cases (self-limited, empiric therapy adequate). Do NOT use systemic antibiotics (topical adequate, except neonatal gonorrhea/chlamydia).",
+            "diagnostic_stewardship": "Culture NOT routinely needed (clinical diagnosis). Culture if: Severe, recurrent, contact lens wearer, neonatal, or failed therapy.",
+            "prevention": "Hand hygiene. Avoid touching eyes. Do NOT share towels, pillowcases, eye makeup. Exclude from daycare/school until 24 hours after starting antibiotics OR discharge resolved."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "AAO Preferred Practice Pattern: Conjunctivitis (2019)",
+              "url": "https://www.aao.org/preferred-practice-pattern/conjunctivitis-ppp"
+            },
+            {
+              "label": "CDC Guidelines for Conjunctivitis (2024)",
+              "url": "https://www.cdc.gov/conjunctivitis/index.html"
+            },
+            {
+              "label": "IDSA Guidelines for Ocular Infections (2018)",
+              "url": "https://www.idsociety.org/practice-guideline/ocular-infections/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "bacterial-keratitis",
+      "name": "Bacterial Keratitis (Corneal Ulcer)",
+      "synonyms": [
+        "corneal ulcer",
+        "microbial keratitis",
+        "infectious keratitis"
+      ],
+      "icd10": [
+        "H16.0",
+        "H16.00",
+        "H16.01"
+      ],
+      "severity": [
+        "severe"
+      ],
+      "shortDescription": "Vision-threatening bacterial infection of the cornea requiring urgent ophthalmology referral and fortified topical antibiotics",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Bacterial infection of the cornea (clear front surface of the eye). Vision-threatening emergency. Requires urgent ophthalmology referral within 24 hours. Untreated → corneal perforation, endophthalmitis, blindness. Mortality: <1%. Vision loss: 10-30%.",
+            "clinical_presentation": "Acute onset of severe eye pain, photophobia, blurred vision, purulent discharge, foreign body sensation, conjunctival injection. Slit-lamp exam: Corneal infiltrate (white/yellow opacity), epithelial defect, anterior chamber reaction. Contact lens wear in 30-50%.",
+            "diagnostic_criteria": "Clinical diagnosis (slit-lamp exam): Corneal infiltrate + epithelial defect + anterior chamber reaction. Culture REQUIRED (corneal scraping) before starting antibiotics. Ophthalmology consultation URGENT.",
+            "risk_factors": [
+              "Contact lens wear (30-50%, Pseudomonas risk)",
+              "Ocular trauma (corneal abrasion, foreign body)",
+              "Ocular surface disease (dry eye, blepharitis, exposure keratopathy)",
+              "Immunosuppression (diabetes, steroids, HIV)",
+              "Prior corneal surgery (LASIK, cataract surgery)"
+            ],
+            "red_flags": [
+              "Vision loss - permanent if untreated, urgent ophthalmology referral within 24 hours",
+              "Corneal perforation - aqueous humor leak, flat anterior chamber, requires emergency surgery",
+              "Endophthalmitis - intraocular infection, severe vision loss, requires intravitreal antibiotics + vitrectomy",
+              "Contact lens wearer - Pseudomonas aeruginosa (30-50%), aggressive, rapid progression, corneal perforation in 24-48 hours",
+              "Hypopyon - layered white blood cells in anterior chamber, severe infection, requires fortified antibiotics q1h"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Culture REQUIRED (corneal scraping) before starting antibiotics. Ophthalmology performs corneal scraping (NOT primary care). Do NOT delay antibiotics if ophthalmology unavailable (start empiric fortified antibiotics, arrange urgent ophthalmology referral).",
+            "essential_tests": [
+              "Corneal scraping for culture (bacterial, fungal): Ophthalmology performs. Scrape base and edge of ulcer. Plate on blood agar, chocolate agar, Sabouraud agar. Gram stain.",
+              "Slit-lamp exam: Corneal infiltrate size, depth, location. Epithelial defect (fluorescein staining). Anterior chamber reaction (cells, flare, hypopyon).",
+              "Visual acuity: Baseline and monitor."
+            ],
+            "conditional_tests": [
+              "Fungal culture: If history of vegetable matter trauma, chronic ulcer, or failed bacterial therapy.",
+              "Acanthamoeba culture: If contact lens wearer + severe pain out of proportion to exam + ring infiltrate.",
+              "HSV PCR: If dendritic epithelial defect (branching pattern) on fluorescein staining."
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics for culture if ophthalmology unavailable. Start empiric fortified antibiotics, arrange urgent ophthalmology referral.",
+            "turnaround_time": "Culture: 24-48 hours (bacterial), 5-7 days (fungal). Gram stain: <1 hour."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Contact lens wearers: Pseudomonas aeruginosa (30-50%), Staphylococcus aureus (20-30%). Non-contact lens wearers: S. aureus (30-40%), Streptococcus pneumoniae (20-30%), Streptococcus viridans (10-15%). Gram-negatives: Pseudomonas (30-50% contact lens), Serratia, Proteus. Fungi: Fusarium, Aspergillus (vegetable matter trauma).",
+            "pathogenesis": "Corneal epithelial defect (trauma, contact lens, dry eye) → bacterial invasion → corneal stromal infiltration → collagenase production → corneal thinning → perforation. Pseudomonas: Aggressive, rapid progression (24-48 hours), corneal perforation risk 30-50%.",
+            "resistance_patterns": {
+              "mrsa": "MRSA: 10-30% of S. aureus isolates. Vancomycin effective (fortified 25-50mg/mL).",
+              "pseudomonas": "Pseudomonas: Fluoroquinolone-resistant 10-20%. Use fortified tobramycin 14mg/mL OR fortified ceftazidime 50mg/mL."
+            },
+            "timing_critical": "Start fortified topical antibiotics within 1-2 hours of diagnosis. Ophthalmology referral URGENT within 24 hours. Delay → corneal perforation, endophthalmitis, blindness."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "fortified_antibiotics_preferred": "Fortified tobramycin 14mg/mL 1 drop q1h while awake + Fortified cefazolin 50mg/mL 1 drop q1h while awake (alternating every 30 minutes). Continue q1h x 48 hours, then taper to q2h x 48 hours, then QID until healed (7-14 days total). Ophthalmology referral URGENT.",
+            "monotherapy_alternative": "Topical fluoroquinolone: Moxifloxacin 0.5% 1 drop q1h while awake OR Gatifloxacin 0.3% 1 drop q1h while awake. Less effective than fortified antibiotics (cure rate 70-80% vs 85-95%). Reserve for mild cases or if fortified antibiotics unavailable.",
+            "contact_lens_wearer": "Pseudomonas coverage CRITICAL. Fortified tobramycin 14mg/mL + Fortified ceftazidime 50mg/mL (NOT cefazolin, ceftazidime has better Pseudomonas coverage). Alternating q30min while awake x 48 hours. Remove contact lenses immediately. Discard lenses and case.",
+            "severe_or_central_ulcer": "Fortified tobramycin 14mg/mL + Fortified vancomycin 25-50mg/mL (NOT cefazolin, vancomycin covers MRSA). Alternating q30min while awake x 48 hours. Consider admission for q1h around-the-clock dosing if central ulcer (threatens visual axis).",
+            "avoid_list": "Avoid topical steroids (contraindicated until infection controlled, worsens infection, risk of corneal perforation). Avoid monotherapy with non-fortified antibiotics (inadequate for severe keratitis). Avoid oral antibiotics alone (inadequate corneal penetration, topical required)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "s_aureus_mssa": "Fortified cefazolin 50mg/mL 1 drop q1h x 48 hours, then taper. Can switch to topical moxifloxacin 0.5% QID after 48 hours if improving.",
+            "s_aureus_mrsa": "Fortified vancomycin 25-50mg/mL 1 drop q1h x 48 hours, then taper. Continue until healed (7-14 days).",
+            "pseudomonas_aeruginosa": "Fortified tobramycin 14mg/mL + Fortified ceftazidime 50mg/mL alternating q30min x 48 hours, then taper. If fluoroquinolone-susceptible: Can switch to topical ciprofloxacin 0.3% q1h after 48 hours if improving. Continue until healed (10-14 days).",
+            "streptococcus": "Fortified cefazolin 50mg/mL 1 drop q1h x 48 hours, then taper. Can switch to topical moxifloxacin 0.5% QID after 48 hours if improving.",
+            "gram_negative_other": "Fortified tobramycin 14mg/mL + Fortified ceftazidime 50mg/mL alternating q30min x 48 hours, then taper.",
+            "duration": "7-14 days until healed (epithelial defect closed, infiltrate resolved). Severe cases: 14-21 days. Monitor with ophthalmology every 1-2 days initially, then weekly.",
+            "de_escalation": "After 48 hours, if improving and culture results available, can taper frequency (q1h → q2h → QID) and switch to topical fluoroquinolone (moxifloxacin 0.5% QID) if organism susceptible. Do NOT stop early (risk of recurrence).",
+            "iv_to_po_switch": "Not applicable (topical therapy only). Systemic antibiotics NOT routinely needed (inadequate corneal penetration). Exception: Scleral extension or endophthalmitis (vancomycin 1g IV q12h + ceftazidime 2g IV q8h)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "7-14 days until healed (epithelial defect closed, infiltrate resolved). Severe cases: 14-21 days. Pseudomonas: 10-14 days minimum.",
+            "monitoring": "Ophthalmology follow-up: Daily x 3 days, then every 2-3 days until healed. Monitor: Visual acuity, infiltrate size, epithelial defect, anterior chamber reaction. Improvement expected in 48-72 hours (decreased pain, smaller infiltrate). If worsening → adjust antibiotics based on culture, consider fungal or Acanthamoeba.",
+            "stop_criteria": "Continue until epithelial defect closed AND infiltrate resolved. Do NOT stop early (risk of recurrence, corneal scarring)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "contact_lens_wearer": "Pseudomonas aeruginosa (30-50%). Aggressive, rapid progression (24-48 hours), corneal perforation risk 30-50%. Remove contact lenses immediately. Discard lenses and case. Fortified tobramycin + ceftazidime q30min x 48 hours. Do NOT resume contact lens wear until healed + ophthalmology clearance.",
+            "central_ulcer": "Threatens visual axis. Higher risk of permanent vision loss. Consider admission for q1h around-the-clock dosing. Ophthalmology follow-up daily.",
+            "corneal_perforation": "Aqueous humor leak, flat anterior chamber, positive Seidel test (fluorescein streaming). Emergency surgery (corneal glue, patch graft, or penetrating keratoplasty). Systemic antibiotics (vancomycin 1g IV q12h + ceftazidime 2g IV q8h). Ophthalmology consultation STAT.",
+            "hypopyon": "Layered white blood cells in anterior chamber. Severe infection. Fortified antibiotics q1h around-the-clock. Consider admission. Ophthalmology follow-up daily.",
+            "topical_steroids": "Contraindicated until infection controlled (48-72 hours of antibiotics + culture results + improving). Steroids worsen infection, risk of corneal perforation. After infection controlled, can add topical prednisolone 1% QID to reduce scarring (ophthalmology decision).",
+            "fungal_keratitis": "If failed bacterial therapy, vegetable matter trauma, or chronic ulcer → suspect fungal. Culture on Sabouraud agar. Topical natamycin 5% q1h (filamentous fungi: Fusarium, Aspergillus) OR Topical amphotericin B 0.15% q1h (yeast: Candida). Ophthalmology referral URGENT."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "After 48 hours, if improving and culture results available, taper frequency (q1h → q2h → QID)",
+              "Switch to topical fluoroquinolone (moxifloxacin 0.5% QID) if organism susceptible and improving",
+              "Do NOT use topical steroids until infection controlled (48-72 hours + culture results + improving)"
+            ],
+            "timeout_checklist": [
+              "Is ophthalmology referral arranged? (URGENT within 24 hours)",
+              "Is corneal scraping for culture performed? (Before starting antibiotics if possible)",
+              "Are fortified antibiotics started? (Tobramycin 14mg/mL + Cefazolin 50mg/mL q1h)",
+              "Is patient a contact lens wearer? (If yes → Pseudomonas risk, use ceftazidime instead of cefazolin)",
+              "Is ulcer central? (If yes → threatens visual axis, consider admission for q1h around-the-clock dosing)",
+              "Are topical steroids avoided? (Contraindicated until infection controlled)",
+              "Is follow-up arranged? (Ophthalmology daily x 3 days, then every 2-3 days)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use topical steroids until infection controlled (worsens infection, risk of corneal perforation). Do NOT use monotherapy with non-fortified antibiotics (inadequate for severe keratitis). Do NOT use oral antibiotics alone (inadequate corneal penetration). Do NOT delay ophthalmology referral (vision-threatening emergency).",
+            "diagnostic_stewardship": "Culture REQUIRED (corneal scraping) before starting antibiotics. Ophthalmology performs corneal scraping. Do NOT delay antibiotics if ophthalmology unavailable (start empiric fortified antibiotics, arrange urgent referral).",
+            "prevention": "Contact lens hygiene: Daily disposable lenses preferred. Do NOT sleep in contact lenses. Do NOT use tap water to clean lenses. Replace lens case every 3 months. Discard lenses if eye red or painful."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "AAO Preferred Practice Pattern: Bacterial Keratitis (2018)",
+              "url": "https://www.aao.org/preferred-practice-pattern/bacterial-keratitis-ppp"
+            },
+            {
+              "label": "IDSA Guidelines for Ocular Infections (2018)",
+              "url": "https://www.idsociety.org/practice-guideline/ocular-infections/"
+            },
+            {
+              "label": "Cochrane Review: Antibiotics for Bacterial Keratitis (2020)",
+              "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD004098.pub4/full"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "endophthalmitis",
+      "name": "Endophthalmitis (Post-Operative)",
+      "synonyms": [
+        "intraocular infection",
+        "post-cataract endophthalmitis"
+      ],
+      "icd10": [
+        "H44.0",
+        "H44.00",
+        "H44.01"
+      ],
+      "severity": [
+        "critical"
+      ],
+      "shortDescription": "Vision-threatening intraocular infection requiring emergency intravitreal antibiotics and vitrectomy",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Bacterial or fungal infection of the vitreous and/or aqueous humor. Vision-threatening emergency. Requires emergency ophthalmology referral within 6 hours. Untreated → blindness in 90%. Post-operative (cataract surgery 0.05-0.3%, intravitreal injection 0.02-0.05%). Endogenous (hematogenous spread) rare (<5%).",
+            "clinical_presentation": "Acute onset (24-72 hours post-op) of severe eye pain, decreased vision (light perception to hand motion), hypopyon (layered WBC in anterior chamber), vitritis (vitreous haze), red eye, lid swelling. Chronic (>6 weeks): Fungal or Propionibacterium acnes (low-grade inflammation, white plaque on IOL).",
+            "diagnostic_criteria": "Clinical diagnosis: Decreased vision + hypopyon + vitritis within days to weeks of ocular surgery or intravitreal injection. Vitreous tap/biopsy REQUIRED for culture. Ophthalmology consultation EMERGENCY (within 6 hours).",
+            "risk_factors": [
+              "Recent ocular surgery (cataract surgery 0.05-0.3%, glaucoma surgery 0.2-1%)",
+              "Intravitreal injection (0.02-0.05%)",
+              "Open globe trauma (10-30% endophthalmitis risk)",
+              "Endogenous (bacteremia, fungemia, endocarditis, IV drug use)",
+              "Immunosuppression (diabetes, steroids, HIV)"
+            ],
+            "red_flags": [
+              "Vision loss - light perception or worse, poor prognosis (final vision <20/200 in 50-70%)",
+              "Hypopyon - layered WBC in anterior chamber, severe infection",
+              "Vitritis - vitreous haze, diagnostic of endophthalmitis",
+              "Pain out of proportion - suggests severe infection, poor prognosis",
+              "Delay >24 hours - poor prognosis, increased risk of blindness"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Vitreous tap/biopsy REQUIRED for culture. Ophthalmology performs (NOT primary care). Do NOT delay intravitreal antibiotics for culture (inject antibiotics immediately after obtaining vitreous sample).",
+            "essential_tests": [
+              "Vitreous tap/biopsy for culture (bacterial, fungal): Ophthalmology performs. 0.1-0.3mL vitreous aspirate. Plate on blood agar, chocolate agar, Sabouraud agar. Gram stain, KOH prep.",
+              "Aqueous tap for culture: If vitreous tap not possible. Less sensitive than vitreous (50-70% vs 70-90%).",
+              "Slit-lamp exam: Hypopyon, anterior chamber reaction, corneal edema.",
+              "B-scan ultrasound: Vitreous opacities, retinal detachment, choroidal thickening."
+            ],
+            "conditional_tests": [
+              "Blood cultures: If endogenous endophthalmitis suspected (no recent surgery/injection, systemic signs).",
+              "Echocardiography (TEE): If endogenous endophthalmitis + bacteremia (rule out endocarditis)."
+            ],
+            "when_not_to_test": "Do NOT delay intravitreal antibiotics for culture. Inject antibiotics immediately after obtaining vitreous sample.",
+            "turnaround_time": "Culture: 24-48 hours (bacterial), 5-7 days (fungal). Gram stain: <1 hour."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Post-operative: Coagulase-negative staphylococci (CoNS 70%, S. epidermidis), S. aureus (10-15%), Streptococcus (10-15%), Gram-negatives (5-10%, Pseudomonas, Enterobacter). Chronic (>6 weeks): Propionibacterium acnes (30-50%, low-grade inflammation, white plaque on IOL), fungi (Candida, Aspergillus). Endogenous: S. aureus (30-40%), Streptococcus (20-30%), Candida (10-20%), Gram-negatives (10-15%).",
+            "pathogenesis": "Post-operative: Intraoperative contamination (skin flora) → vitreous → bacterial proliferation → vitritis → retinal damage → blindness. Endogenous: Bacteremia/fungemia → hematogenous spread → choroid → retina → vitreous. Delay >24 hours → poor prognosis (final vision <20/200 in 50-70%).",
+            "resistance_patterns": {
+              "cons_resistance": "CoNS: 70-80% methicillin-resistant. Vancomycin effective (intravitreal 1mg/0.1mL).",
+              "mrsa": "MRSA: 10-30% of S. aureus isolates. Vancomycin effective (intravitreal 1mg/0.1mL)."
+            },
+            "timing_critical": "Intravitreal antibiotics within 6 hours of diagnosis. Delay >24 hours → poor prognosis, increased risk of blindness. Ophthalmology consultation EMERGENCY."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "intravitreal_antibiotics_required": "Intravitreal vancomycin 1mg/0.1mL + Intravitreal ceftazidime 2.25mg/0.1mL (OR amikacin 0.4mg/0.1mL). Inject immediately after vitreous tap. Single dose adequate (NOT repeated unless worsening). Ophthalmology performs injection (NOT primary care).",
+            "vitrectomy": "Immediate vitrectomy if: Vision light perception or worse, severe vitritis on B-scan, or no improvement in 24-48 hours. Vitrectomy improves outcomes (final vision ≥20/40 in 50% vs 30% with tap/inject alone).",
+            "topical_antibiotics": "Topical moxifloxacin 0.5% q1h + Topical vancomycin 25mg/mL q1h (if available). Adjunct to intravitreal antibiotics (NOT substitute).",
+            "systemic_antibiotics": "Systemic antibiotics NOT routinely needed (inadequate intraocular penetration). Exception: Endogenous endophthalmitis (vancomycin 1g IV q12h + ceftazidime 2g IV q8h x 2-6 weeks).",
+            "avoid_list": "Avoid intravitreal gentamicin (retinal toxicity, macular infarction). Avoid systemic antibiotics alone (inadequate intraocular penetration, intravitreal required). Avoid topical steroids initially (contraindicated until infection controlled)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "cons_s_epidermidis": "Intravitreal vancomycin 1mg/0.1mL. Single dose adequate. If worsening at 48 hours → repeat intravitreal vancomycin + vitrectomy.",
+            "s_aureus_mssa": "Intravitreal ceftazidime 2.25mg/0.1mL OR Intravitreal vancomycin 1mg/0.1mL. Single dose adequate. If worsening → repeat + vitrectomy.",
+            "s_aureus_mrsa": "Intravitreal vancomycin 1mg/0.1mL. Single dose adequate. If worsening → repeat + vitrectomy.",
+            "streptococcus": "Intravitreal ceftazidime 2.25mg/0.1mL OR Intravitreal vancomycin 1mg/0.1mL. Single dose adequate. If worsening → repeat + vitrectomy.",
+            "pseudomonas_aeruginosa": "Intravitreal ceftazidime 2.25mg/0.1mL OR Intravitreal amikacin 0.4mg/0.1mL. Aggressive, poor prognosis. Immediate vitrectomy recommended. Repeat intravitreal antibiotics if worsening.",
+            "propionibacterium_acnes": "Chronic endophthalmitis (>6 weeks post-op). White plaque on IOL. Intravitreal vancomycin 1mg/0.1mL + Vitrectomy + IOL removal/exchange. Oral clarithromycin 500mg BID x 4-6 weeks (adjunct).",
+            "fungal_candida": "Intravitreal amphotericin B 5-10mcg/0.1mL OR Intravitreal voriconazole 100mcg/0.1mL + Systemic voriconazole 6mg/kg IV q12h x2, then 4mg/kg IV q12h x 4-6 weeks + Vitrectomy.",
+            "duration": "Single intravitreal injection adequate if improving. Repeat if worsening at 48 hours. Topical antibiotics x 7-14 days. Systemic antibiotics (endogenous) x 2-6 weeks.",
+            "de_escalation": "After culture results, can narrow intravitreal antibiotics if organism susceptible. Topical steroids (prednisolone 1% QID) after 48-72 hours if improving (reduce inflammation, prevent scarring).",
+            "iv_to_po_switch": "Not applicable (intravitreal therapy). Endogenous endophthalmitis: IV x 2-4 weeks, then PO x 2-4 weeks (total 4-6 weeks)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "intravitreal_duration": "Single intravitreal injection adequate if improving. Repeat if worsening at 48 hours. Maximum 2-3 injections (risk of retinal toxicity).",
+            "topical_duration": "7-14 days (moxifloxacin q1h x 48 hours, then QID x 7-14 days).",
+            "systemic_duration": "Endogenous endophthalmitis: 2-6 weeks (vancomycin + ceftazidime IV x 2-4 weeks, then PO x 2-4 weeks).",
+            "monitoring": "Ophthalmology follow-up: Daily x 7 days, then every 2-3 days until resolved. Monitor: Visual acuity, anterior chamber reaction, vitritis (B-scan). Improvement expected in 48-72 hours (decreased pain, improved vision). If worsening → repeat intravitreal antibiotics + vitrectomy.",
+            "stop_criteria": "Continue topical antibiotics until anterior chamber reaction resolved (7-14 days). Systemic antibiotics (endogenous) until blood cultures negative x 2 weeks (total 4-6 weeks)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "evs_study": "Endophthalmitis Vitrectomy Study (EVS): Immediate vitrectomy improves outcomes if vision light perception or worse. If vision hand motion or better → tap/inject adequate, vitrectomy if no improvement in 24-48 hours.",
+            "chronic_endophthalmitis": "Onset >6 weeks post-op. Propionibacterium acnes (30-50%), fungi. Low-grade inflammation, white plaque on IOL. Intravitreal vancomycin + Vitrectomy + IOL removal/exchange. Oral clarithromycin 500mg BID x 4-6 weeks.",
+            "endogenous_endophthalmitis": "No recent surgery/injection. Bacteremia/fungemia → hematogenous spread. S. aureus (30-40%), Streptococcus (20-30%), Candida (10-20%). Systemic antibiotics required (vancomycin + ceftazidime IV x 2-6 weeks). Blood cultures, echocardiography (TEE) to rule out endocarditis.",
+            "prognosis": "Poor. Final vision <20/200 in 50-70%. Worse if: Vision light perception or worse at presentation, delay >24 hours, Gram-negative or fungal, diabetes, immunosuppression. Better if: Vision hand motion or better, CoNS, immediate treatment.",
+            "topical_steroids": "Contraindicated initially (worsens infection). After 48-72 hours if improving → add topical prednisolone 1% QID (reduce inflammation, prevent scarring). Ophthalmology decision.",
+            "prevention": "Cataract surgery: Povidone-iodine 5% to conjunctival sac preoperatively (reduces endophthalmitis 3-fold). Intravitreal injection: Povidone-iodine 5%, topical antibiotics NOT needed (no benefit, increases resistance)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Single intravitreal injection adequate if improving (do NOT repeat routinely)",
+              "Systemic antibiotics NOT routinely needed (inadequate intraocular penetration, intravitreal required)",
+              "After culture results, can narrow intravitreal antibiotics if organism susceptible"
+            ],
+            "timeout_checklist": [
+              "Is ophthalmology referral arranged? (EMERGENCY within 6 hours)",
+              "Is vitreous tap/biopsy for culture performed? (Before intravitreal antibiotics if possible)",
+              "Are intravitreal antibiotics injected? (Vancomycin 1mg + Ceftazidime 2.25mg)",
+              "Is vitrectomy indicated? (If vision light perception or worse, severe vitritis, or no improvement in 24-48 hours)",
+              "Are topical antibiotics started? (Moxifloxacin 0.5% q1h, adjunct to intravitreal)",
+              "Are systemic antibiotics needed? (Only if endogenous endophthalmitis)",
+              "Is follow-up arranged? (Ophthalmology daily x 7 days)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid intravitreal gentamicin (retinal toxicity). Avoid systemic antibiotics alone (inadequate intraocular penetration). Avoid topical steroids initially (contraindicated until infection controlled). Do NOT repeat intravitreal antibiotics routinely (single dose adequate if improving).",
+            "diagnostic_stewardship": "Vitreous tap/biopsy REQUIRED for culture. Ophthalmology performs. Do NOT delay intravitreal antibiotics for culture (inject immediately after obtaining vitreous sample).",
+            "prevention": "Povidone-iodine 5% to conjunctival sac preoperatively (reduces endophthalmitis 3-fold). Intravitreal injection: Povidone-iodine 5%, topical antibiotics NOT needed."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "AAO Preferred Practice Pattern: Endophthalmitis (2017)",
+              "url": "https://www.aao.org/preferred-practice-pattern/endophthalmitis-ppp"
+            },
+            {
+              "label": "Endophthalmitis Vitrectomy Study (EVS) (1995)",
+              "url": "https://pubmed.ncbi.nlm.nih.gov/7490862/"
+            },
+            {
+              "label": "IDSA Guidelines for Ocular Infections (2018)",
+              "url": "https://www.idsociety.org/practice-guideline/ocular-infections/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "orbital-cellulitis",
+      "name": "Orbital Cellulitis",
+      "synonyms": [
+        "post-septal cellulitis",
+        "orbital abscess"
+      ],
+      "icd10": [
+        "H05.01",
+        "H05.011",
+        "H05.012"
+      ],
+      "severity": [
+        "severe"
+      ],
+      "shortDescription": "Vision-threatening and life-threatening infection of the orbit requiring IV antibiotics and urgent ophthalmology/ENT consultation",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Bacterial infection of the orbital tissues posterior to the orbital septum. Vision-threatening and life-threatening emergency. Complications: Blindness (10-20%), intracranial extension (cavernous sinus thrombosis, meningitis, brain abscess 5-10%), mortality 1-2%. Requires urgent ophthalmology + ENT consultation within 6-12 hours.",
+            "clinical_presentation": "Acute onset of periorbital swelling, erythema, pain, proptosis (eye bulging), ophthalmoplegia (restricted eye movements), decreased vision, fever. Differentiate from preseptal cellulitis: Proptosis, ophthalmoplegia, decreased vision, pain with eye movements → orbital cellulitis (posterior to septum). No proptosis, normal eye movements, normal vision → preseptal cellulitis (anterior to septum).",
+            "diagnostic_criteria": "Clinical diagnosis: Periorbital swelling + proptosis + ophthalmoplegia + pain with eye movements. CT orbit/brain with contrast REQUIRED (confirm diagnosis, assess abscess, rule out intracranial extension). Ophthalmology + ENT consultation URGENT.",
+            "risk_factors": [
+              "Acute bacterial rhinosinusitis (70-90%, ethmoid sinusitis most common)",
+              "Dental infection (5-10%)",
+              "Facial trauma or surgery",
+              "Preseptal cellulitis (can progress to orbital cellulitis)",
+              "Immunosuppression (diabetes, HIV, steroids)"
+            ],
+            "red_flags": [
+              "Vision loss - optic nerve compression, requires urgent surgical decompression within 6-12 hours",
+              "Proptosis - eye bulging, diagnostic of orbital cellulitis (NOT preseptal)",
+              "Ophthalmoplegia - restricted eye movements, diagnostic of orbital cellulitis",
+              "Intracranial extension - cavernous sinus thrombosis (bilateral proptosis, cranial nerve palsies), meningitis, brain abscess, mortality 10-20%",
+              "Subperiosteal abscess - requires surgical drainage within 24 hours"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "CT orbit/brain with contrast REQUIRED. Assess: Orbital cellulitis vs preseptal cellulitis, subperiosteal abscess, orbital abscess, intracranial extension (cavernous sinus thrombosis, meningitis, brain abscess).",
+            "essential_tests": [
+              "CT orbit/brain with contrast: REQUIRED. Assess orbital cellulitis, abscess, intracranial extension. MRI if cavernous sinus thrombosis suspected.",
+              "Blood cultures: Obtain before antibiotics. Positive in 20-30%.",
+              "CBC: Leukocytosis (WBC >15,000 in 70-80%).",
+              "Visual acuity: Baseline and monitor. Decreased vision → optic nerve compression, urgent surgical decompression."
+            ],
+            "conditional_tests": [
+              "Sinus cultures: If surgical drainage performed (FESS, abscess drainage).",
+              "Lumbar puncture: If meningitis suspected (headache, neck stiffness, altered mental status)."
+            ],
+            "when_not_to_test": "Do NOT delay IV antibiotics for CT or cultures. Start empiric IV antibiotics immediately, then obtain CT.",
+            "turnaround_time": "CT: <1 hour. Blood cultures: 24-48 hours. CBC: <1 hour."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Polymicrobial (50-60%): Streptococcus (S. pneumoniae, S. pyogenes, S. milleri group 30-40%), Staphylococcus aureus (MSSA 20-30%, MRSA 5-10%), anaerobes (Bacteroides, Peptostreptococcus 20-30%, if dental source), Haemophilus influenzae (5-10%, children). Fungi: Mucormycosis (immunocompromised, diabetes, black eschar, rapidly progressive).",
+            "pathogenesis": "Acute bacterial rhinosinusitis (ethmoid sinusitis 70-90%) → direct extension through thin lamina papyracea → orbital cellulitis → subperiosteal abscess → orbital abscess → intracranial extension (cavernous sinus thrombosis, meningitis, brain abscess). Dental infection → maxillary sinus → orbital cellulitis.",
+            "resistance_patterns": {
+              "mrsa": "MRSA: 5-10% of S. aureus isolates. Vancomycin required.",
+              "esbl": "ESBL: 10-20% of Gram-negatives (if nosocomial or immunocompromised). Consider meropenem."
+            },
+            "timing_critical": "Start IV antibiotics within 1-2 hours of diagnosis. Ophthalmology + ENT consultation URGENT within 6-12 hours. Surgical drainage if: Subperiosteal abscess >10mm, orbital abscess, vision loss, no improvement in 24-48 hours."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "standard_therapy": "Vancomycin 15mg/kg IV q12h + Ceftriaxone 2g IV q12h + Metronidazole 500mg IV q8h (covers MRSA, Streptococcus, anaerobes). Continue IV x 7-14 days, then switch to PO x 7-14 days (total 2-4 weeks).",
+            "alternative": "Vancomycin 15mg/kg IV q12h + Piperacillin-tazobactam 4.5g IV q6h (covers MRSA, Streptococcus, Gram-negatives, anaerobes). Broader spectrum, reserve for severe or immunocompromised.",
+            "immunocompromised_or_diabetes": "Suspect mucormycosis (fungi). Amphotericin B 5mg/kg IV daily + Vancomycin + Ceftriaxone + Metronidazole. Urgent ENT consultation for surgical debridement (mucormycosis requires aggressive surgical debridement + antifungals).",
+            "surgical_drainage": "Indications: Subperiosteal abscess >10mm, orbital abscess, vision loss, no improvement in 24-48 hours IV antibiotics. FESS (functional endoscopic sinus surgery) + abscess drainage. ENT performs.",
+            "avoid_list": "Avoid PO antibiotics alone (inadequate for orbital cellulitis, IV required). Avoid monotherapy (polymicrobial, combination therapy required). Avoid delay in surgical drainage (vision loss, intracranial extension)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "s_aureus_mssa": "Cefazolin 2g IV q8h OR Nafcillin 2g IV q4h + Metronidazole 500mg IV q8h (if anaerobes). Continue IV x 7-14 days, then PO (cephalexin 500mg QID) x 7-14 days.",
+            "s_aureus_mrsa": "Vancomycin 15mg/kg IV q12h + Metronidazole 500mg IV q8h. Continue IV x 7-14 days, then PO (linezolid 600mg BID OR TMP-SMX DS BID) x 7-14 days.",
+            "streptococcus": "Ceftriaxone 2g IV q12h + Metronidazole 500mg IV q8h. Continue IV x 7-14 days, then PO (amoxicillin-clavulanate 875mg BID) x 7-14 days.",
+            "anaerobes": "Metronidazole 500mg IV q8h OR Clindamycin 600mg IV q8h. Continue IV x 7-14 days, then PO (metronidazole 500mg TID OR clindamycin 300mg QID) x 7-14 days.",
+            "mucormycosis": "Amphotericin B 5mg/kg IV daily x 4-6 weeks OR Isavuconazole 372mg IV q8h x6, then 372mg IV daily. Aggressive surgical debridement CRITICAL (mortality 50-80% without surgery). Control diabetes (glucose <180mg/dL). Discontinue immunosuppression if possible.",
+            "duration": "IV antibiotics x 7-14 days, then PO x 7-14 days (total 2-4 weeks). Longer if abscess, intracranial extension, or immunocompromised (4-6 weeks).",
+            "de_escalation": "After culture results, narrow to targeted therapy. Switch IV to PO when: Afebrile x 24-48 hours, improved clinically, tolerating PO.",
+            "iv_to_po_switch": "Switch IV to PO when: Afebrile x 24-48 hours, improved clinically (decreased swelling, improved eye movements), tolerating PO. PO options: Amoxicillin-clavulanate 875mg BID, Cephalexin 500mg QID, Clindamycin 300mg QID, Linezolid 600mg BID (MRSA), TMP-SMX DS BID (MRSA)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "IV antibiotics x 7-14 days, then PO x 7-14 days (total 2-4 weeks). Longer if abscess, intracranial extension, or immunocompromised (4-6 weeks).",
+            "monitoring": "Ophthalmology + ENT follow-up: Daily x 3-5 days, then every 2-3 days until resolved. Monitor: Visual acuity, proptosis, eye movements, fever, WBC. Improvement expected in 24-48 hours (decreased fever, decreased swelling). If no improvement → repeat CT, consider surgical drainage.",
+            "stop_criteria": "Complete 2-4 weeks total (IV + PO). Continue until: Afebrile, normal eye movements, no proptosis, normal vision, WBC normal."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "subperiosteal_abscess": "Collection between periosteum and orbital bone. CT: Hypodense collection, medial wall (ethmoid sinusitis). Surgical drainage if: >10mm, vision loss, no improvement in 24-48 hours. FESS + abscess drainage. ENT performs.",
+            "orbital_abscess": "Collection within orbital soft tissues. CT: Hypodense collection, proptosis, ophthalmoplegia. Surgical drainage REQUIRED. FESS + abscess drainage. ENT performs.",
+            "vision_loss": "Optic nerve compression. Urgent surgical decompression within 6-12 hours. FESS + abscess drainage + optic nerve decompression. Delay → permanent blindness.",
+            "intracranial_extension": "Cavernous sinus thrombosis (bilateral proptosis, cranial nerve palsies III/IV/V/VI, altered mental status), meningitis, brain abscess. MRI brain with contrast. Neurosurgery consultation. IV antibiotics x 4-6 weeks. Anticoagulation (heparin) for cavernous sinus thrombosis (controversial).",
+            "mucormycosis": "Immunocompromised, diabetes (DKA), black eschar, rapidly progressive (hours to days), high mortality (50-80%). Amphotericin B 5mg/kg IV daily + Aggressive surgical debridement (remove all necrotic tissue) + Control diabetes (glucose <180mg/dL) + Discontinue immunosuppression. ENT + ophthalmology + infectious disease consultation.",
+            "preseptal_vs_orbital": "Preseptal cellulitis: Anterior to orbital septum. No proptosis, normal eye movements, normal vision. PO antibiotics adequate (amoxicillin-clavulanate 875mg BID x 7-10 days). Orbital cellulitis: Posterior to orbital septum. Proptosis, ophthalmoplegia, decreased vision. IV antibiotics required."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "After culture results, narrow to targeted therapy (discontinue vancomycin if MSSA, discontinue metronidazole if no anaerobes)",
+              "Switch IV to PO when afebrile x 24-48 hours and improved clinically (total 2-4 weeks)",
+              "Do NOT continue IV antibiotics beyond 7-14 days if improving (switch to PO)"
+            ],
+            "timeout_checklist": [
+              "Is CT orbit/brain with contrast obtained? (REQUIRED to confirm diagnosis, assess abscess, rule out intracranial extension)",
+              "Are IV antibiotics started? (Vancomycin + Ceftriaxone + Metronidazole)",
+              "Is ophthalmology + ENT consultation arranged? (URGENT within 6-12 hours)",
+              "Is surgical drainage indicated? (Subperiosteal abscess >10mm, orbital abscess, vision loss, no improvement in 24-48 hours)",
+              "Is vision monitored? (Baseline and daily, decreased vision → urgent surgical decompression)",
+              "Is mucormycosis suspected? (Immunocompromised, diabetes, black eschar → amphotericin B + aggressive surgical debridement)",
+              "Is follow-up arranged? (Ophthalmology + ENT daily x 3-5 days)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid PO antibiotics alone (inadequate for orbital cellulitis, IV required). Avoid monotherapy (polymicrobial, combination therapy required). Avoid delay in surgical drainage (vision loss, intracranial extension). Do NOT continue IV antibiotics beyond 7-14 days if improving (switch to PO).",
+            "diagnostic_stewardship": "CT orbit/brain with contrast REQUIRED. Blood cultures before antibiotics. Sinus cultures if surgical drainage performed.",
+            "prevention": "Treat acute bacterial rhinosinusitis promptly (amoxicillin-clavulanate x 5-7 days). Treat dental infections promptly."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "AAO Preferred Practice Pattern: Orbital Cellulitis (2018)",
+              "url": "https://www.aao.org/preferred-practice-pattern/orbital-cellulitis-ppp"
+            },
+            {
+              "label": "IDSA Guidelines for Acute Bacterial Rhinosinusitis (2012)",
+              "url": "https://www.idsociety.org/practice-guideline/acute-bacterial-rhinosinusitis/"
+            },
+            {
+              "label": "Pediatric Orbital Cellulitis Guidelines (AAP 2021)",
+              "url": "https://publications.aap.org/pediatrics/article/147/6/e2021050796/180970"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "preseptal-cellulitis",
+      "name": "Preseptal Cellulitis (Periorbital Cellulitis)",
+      "synonyms": [
+        "periorbital cellulitis",
+        "pre-septal cellulitis"
+      ],
+      "icd10": [
+        "H01.01",
+        "H01.011",
+        "H01.012"
+      ],
+      "severity": [
+        "moderate"
+      ],
+      "shortDescription": "Bacterial infection of the eyelid and periorbital tissues anterior to the orbital septum, less severe than orbital cellulitis",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Bacterial infection of the eyelid and periorbital tissues anterior to the orbital septum. Less severe than orbital cellulitis. Can progress to orbital cellulitis (5-10%) if untreated. Mortality: <1%. Vision loss: <1%.",
+            "clinical_presentation": "Acute onset of periorbital swelling, erythema, warmth, tenderness. NO proptosis, NO ophthalmoplegia, NO decreased vision, NO pain with eye movements. Differentiate from orbital cellulitis: Preseptal → no proptosis, normal eye movements, normal vision. Orbital → proptosis, ophthalmoplegia, decreased vision.",
+            "diagnostic_criteria": "Clinical diagnosis: Periorbital swelling + erythema + NO proptosis + NO ophthalmoplegia + NO decreased vision. CT orbit NOT routinely needed (clinical diagnosis). CT if: Severe, immunocompromised, no improvement in 24-48 hours, or concern for orbital cellulitis.",
+            "risk_factors": [
+              "Eyelid trauma or insect bite",
+              "Hordeolum (stye) or chalazion",
+              "Acute bacterial rhinosinusitis (10-20%)",
+              "Dacryocystitis",
+              "Impetigo or facial cellulitis"
+            ],
+            "red_flags": [
+              "Proptosis - suggests orbital cellulitis (NOT preseptal), requires IV antibiotics + urgent ophthalmology/ENT referral",
+              "Ophthalmoplegia - suggests orbital cellulitis, requires IV antibiotics + urgent referral",
+              "Decreased vision - suggests orbital cellulitis, requires IV antibiotics + urgent referral",
+              "Pain with eye movements - suggests orbital cellulitis, requires IV antibiotics + urgent referral",
+              "Age <1 year - higher risk of bacteremia and orbital cellulitis, requires IV antibiotics + admission"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Clinical diagnosis (CT NOT routinely needed). CT orbit with contrast if: Severe, immunocompromised, no improvement in 24-48 hours, or concern for orbital cellulitis (proptosis, ophthalmoplegia, decreased vision).",
+            "essential_tests": [
+              "Visual acuity: Must be NORMAL. If decreased → orbital cellulitis, CT + IV antibiotics + urgent ophthalmology/ENT referral.",
+              "Eye movements: Must be NORMAL. If restricted → orbital cellulitis, CT + IV antibiotics + urgent referral."
+            ],
+            "conditional_tests": [
+              "CT orbit with contrast: If severe, immunocompromised, no improvement in 24-48 hours, or concern for orbital cellulitis.",
+              "Blood cultures: If age <1 year, severe, or immunocompromised (bacteremia risk 5-10%).",
+              "CBC: If severe or immunocompromised."
+            ],
+            "when_not_to_test": "Do NOT obtain CT routinely (clinical diagnosis, radiation exposure). Reserve CT for severe cases or concern for orbital cellulitis.",
+            "turnaround_time": "CT: <1 hour. Blood cultures: 24-48 hours. CBC: <1 hour."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Staphylococcus aureus (MSSA 40-50%, MRSA 5-10%), Streptococcus pyogenes (Group A Strep 20-30%), Streptococcus pneumoniae (10-15%, children), Haemophilus influenzae (5-10%, children, rare post-vaccine). Polymicrobial (10-20%).",
+            "pathogenesis": "Eyelid trauma or insect bite → bacterial inoculation → preseptal cellulitis. Acute bacterial rhinosinusitis (10-20%) → direct extension → preseptal cellulitis. Can progress to orbital cellulitis (5-10%) if untreated (bacteria cross orbital septum).",
+            "resistance_patterns": {
+              "mrsa": "MRSA: 5-10% of S. aureus isolates. TMP-SMX or clindamycin effective (PO). Vancomycin if IV required.",
+              "penicillin_resistance": "S. pneumoniae: Penicillin-resistant 30-40%. Amoxicillin-clavulanate effective (high-dose amoxicillin component)."
+            },
+            "timing_critical": "Start PO antibiotics within 24 hours. If no improvement in 24-48 hours → CT orbit + consider IV antibiotics + ophthalmology referral."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "standard_therapy_po": "Amoxicillin-clavulanate 875mg PO BID x 7-10 days (preferred, covers S. aureus, Streptococcus, H. influenzae). Alternative: Cephalexin 500mg PO QID x 7-10 days (narrower spectrum, less expensive).",
+            "mrsa_risk_or_failed_therapy": "TMP-SMX DS PO BID + Amoxicillin-clavulanate 875mg PO BID x 7-10 days (covers MRSA + Streptococcus) OR Clindamycin 300mg PO QID x 7-10 days (covers MRSA + Streptococcus, monotherapy adequate).",
+            "severe_or_age_less_than_1_year": "Admit for IV antibiotics. Vancomycin 15mg/kg IV q12h + Ceftriaxone 50mg/kg IV q12h x 2-3 days, then switch to PO (amoxicillin-clavulanate) x 7-10 days total. Higher risk of bacteremia and orbital cellulitis.",
+            "alternatives": "Cefdinir 300mg PO BID x 7-10 days. Levofloxacin 750mg PO daily x 7-10 days (adults only, reserve for beta-lactam allergy).",
+            "avoid_list": "Avoid PO antibiotics alone if: Proptosis, ophthalmoplegia, decreased vision, pain with eye movements (orbital cellulitis, IV antibiotics required). Avoid topical antibiotics alone (inadequate for preseptal cellulitis, systemic antibiotics required)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "s_aureus_mssa": "Cephalexin 500mg PO QID x 7-10 days OR Dicloxacillin 500mg PO QID x 7-10 days.",
+            "s_aureus_mrsa": "TMP-SMX DS PO BID x 7-10 days OR Clindamycin 300mg PO QID x 7-10 days OR Doxycycline 100mg PO BID x 7-10 days (adults only).",
+            "streptococcus_pyogenes": "Amoxicillin 500mg PO TID x 7-10 days OR Cephalexin 500mg PO QID x 7-10 days.",
+            "s_pneumoniae": "Amoxicillin-clavulanate 875mg PO BID x 7-10 days (high-dose amoxicillin component covers penicillin-resistant S. pneumoniae).",
+            "h_influenzae": "Amoxicillin-clavulanate 875mg PO BID x 7-10 days.",
+            "duration": "7-10 days PO antibiotics. Improvement expected in 24-48 hours (decreased swelling, decreased erythema). If no improvement → CT orbit + consider IV antibiotics + ophthalmology referral.",
+            "de_escalation": "After culture results (if obtained), narrow to targeted therapy. Switch IV to PO when: Afebrile x 24 hours, improved clinically, tolerating PO.",
+            "iv_to_po_switch": "Switch IV to PO when: Afebrile x 24 hours, improved clinically (decreased swelling), tolerating PO. PO options: Amoxicillin-clavulanate 875mg BID, Cephalexin 500mg QID, Clindamycin 300mg QID, TMP-SMX DS BID."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "7-10 days PO antibiotics. Improvement expected in 24-48 hours (decreased swelling, decreased erythema).",
+            "monitoring": "Follow-up in 24-48 hours (phone or in-person). Monitor: Swelling, erythema, vision, eye movements. If no improvement → CT orbit + consider IV antibiotics + ophthalmology referral. If worsening (proptosis, ophthalmoplegia, decreased vision) → CT + IV antibiotics + urgent ophthalmology/ENT referral.",
+            "stop_criteria": "Complete 7-10 days even if symptoms resolve earlier (prevent recurrence and progression to orbital cellulitis)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "preseptal_vs_orbital": "Preseptal cellulitis: Anterior to orbital septum. No proptosis, normal eye movements, normal vision. PO antibiotics adequate. Orbital cellulitis: Posterior to orbital septum. Proptosis, ophthalmoplegia, decreased vision. IV antibiotics + urgent ophthalmology/ENT referral required.",
+            "age_less_than_1_year": "Higher risk of bacteremia (5-10%) and orbital cellulitis (10-20%). Admit for IV antibiotics (vancomycin + ceftriaxone x 2-3 days, then PO x 7-10 days total). Blood cultures before antibiotics.",
+            "progression_to_orbital_cellulitis": "5-10% if untreated or inadequate treatment. Monitor closely: If proptosis, ophthalmoplegia, decreased vision, pain with eye movements → CT + IV antibiotics + urgent ophthalmology/ENT referral.",
+            "hordeolum_or_chalazion": "Hordeolum (stye): Acute infection of eyelid gland. Warm compresses + topical erythromycin ointment BID x 5-7 days. Systemic antibiotics if preseptal cellulitis develops. Chalazion: Chronic granulomatous inflammation. Warm compresses. Systemic antibiotics NOT needed unless infected.",
+            "dacryocystitis": "Lacrimal sac infection. Swelling and tenderness at medial canthus (inner corner of eye). Warm compresses + PO antibiotics (amoxicillin-clavulanate 875mg BID x 7-10 days). Ophthalmology referral for surgical drainage (dacryocystorhinostomy) if recurrent.",
+            "infection_control": "If impetigo or facial cellulitis → highly contagious. Hand hygiene. Avoid touching eyes. Do NOT share towels or pillowcases."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "PO antibiotics adequate (IV NOT routinely needed, except age <1 year or severe)",
+              "After culture results (if obtained), narrow to targeted therapy",
+              "Do NOT obtain CT routinely (clinical diagnosis, radiation exposure)"
+            ],
+            "timeout_checklist": [
+              "Is vision NORMAL? (If decreased → orbital cellulitis, CT + IV antibiotics + urgent referral)",
+              "Are eye movements NORMAL? (If restricted → orbital cellulitis, CT + IV antibiotics + urgent referral)",
+              "Is there proptosis? (If yes → orbital cellulitis, CT + IV antibiotics + urgent referral)",
+              "Is patient age <1 year? (If yes → admit for IV antibiotics, higher risk of bacteremia and orbital cellulitis)",
+              "Are PO antibiotics started? (Amoxicillin-clavulanate 875mg BID x 7-10 days)",
+              "Is follow-up arranged? (24-48 hours, monitor for progression to orbital cellulitis)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid IV antibiotics routinely (PO adequate, except age <1 year or severe). Avoid CT routinely (clinical diagnosis, radiation exposure). Avoid topical antibiotics alone (inadequate, systemic antibiotics required). Do NOT delay treatment if concern for orbital cellulitis (CT + IV antibiotics + urgent referral).",
+            "diagnostic_stewardship": "Clinical diagnosis (CT NOT routinely needed). CT if: Severe, immunocompromised, no improvement in 24-48 hours, or concern for orbital cellulitis.",
+            "prevention": "Treat hordeolum (stye) promptly (warm compresses + topical erythromycin). Treat acute bacterial rhinosinusitis promptly (amoxicillin-clavulanate x 5-7 days)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "AAO Preferred Practice Pattern: Preseptal Cellulitis (2018)",
+              "url": "https://www.aao.org/preferred-practice-pattern/preseptal-cellulitis-ppp"
+            },
+            {
+              "label": "Pediatric Preseptal Cellulitis Guidelines (AAP 2021)",
+              "url": "https://publications.aap.org/pediatrics/article/147/6/e2021050796/180970"
+            },
+            {
+              "label": "IDSA Guidelines for Skin and Soft Tissue Infections (2014)",
+              "url": "https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "dacryocystitis",
+      "name": "Dacryocystitis",
+      "synonyms": [
+        "lacrimal sac infection",
+        "nasolacrimal duct obstruction with infection"
+      ],
+      "icd10": [
+        "H04.3",
+        "H04.30",
+        "H04.31"
+      ],
+      "severity": [
+        "moderate"
+      ],
+      "shortDescription": "Bacterial infection of the lacrimal sac with swelling and tenderness at medial canthus",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Bacterial infection of the lacrimal sac (tear drainage system). Caused by nasolacrimal duct obstruction → stagnant tears → bacterial overgrowth → dacryocystitis. Can progress to preseptal cellulitis (10-20%) or orbital cellulitis (rare, <5%). Mortality: <1%.",
+            "clinical_presentation": "Acute onset of swelling, erythema, warmth, tenderness at medial canthus (inner corner of eye, below medial canthal tendon). Epiphora (excessive tearing), purulent discharge from punctum (with pressure on lacrimal sac), fever (if severe). Chronic dacryocystitis: Recurrent episodes, mucocele (painless swelling at medial canthus).",
+            "diagnostic_criteria": "Clinical diagnosis: Swelling + tenderness at medial canthus + purulent discharge from punctum (with pressure on lacrimal sac). CT orbit NOT routinely needed (clinical diagnosis). CT if: Severe, concern for orbital cellulitis, or abscess.",
+            "risk_factors": [
+              "Nasolacrimal duct obstruction (congenital or acquired)",
+              "Chronic dacryocystitis (recurrent episodes)",
+              "Nasal trauma or surgery",
+              "Chronic rhinosinusitis",
+              "Lacrimal sac stones (dacryoliths)"
+            ],
+            "red_flags": [
+              "Preseptal cellulitis - periorbital swelling extending beyond medial canthus, requires systemic antibiotics",
+              "Orbital cellulitis - proptosis, ophthalmoplegia, decreased vision, requires IV antibiotics + urgent ophthalmology/ENT referral",
+              "Lacrimal sac abscess - fluctuant mass at medial canthus, requires surgical drainage (I&D)",
+              "Fistula formation - chronic dacryocystitis complication, requires surgical repair (dacryocystorhinostomy)"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Clinical diagnosis (CT NOT routinely needed). CT orbit with contrast if: Severe, concern for orbital cellulitis, or abscess.",
+            "essential_tests": [
+              "Clinical diagnosis: Swelling + tenderness at medial canthus + purulent discharge from punctum (with pressure on lacrimal sac).",
+              "Visual acuity: Must be NORMAL. If decreased → orbital cellulitis, CT + IV antibiotics + urgent ophthalmology/ENT referral."
+            ],
+            "conditional_tests": [
+              "CT orbit with contrast: If severe, concern for orbital cellulitis, or abscess.",
+              "Culture of purulent discharge: If severe, recurrent, or failed therapy. Swab punctum discharge.",
+              "CBC: If severe or immunocompromised."
+            ],
+            "when_not_to_test": "Do NOT obtain CT routinely (clinical diagnosis, radiation exposure). Reserve CT for severe cases or concern for orbital cellulitis/abscess.",
+            "turnaround_time": "CT: <1 hour. Culture: 24-48 hours. CBC: <1 hour."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Staphylococcus aureus (MSSA 30-40%, MRSA 5-10%), Streptococcus pneumoniae (20-30%), Streptococcus pyogenes (10-15%), Haemophilus influenzae (5-10%), Pseudomonas aeruginosa (5-10%, chronic cases). Polymicrobial (10-20%). Anaerobes (Peptostreptococcus, Bacteroides) if abscess.",
+            "pathogenesis": "Nasolacrimal duct obstruction → stagnant tears → bacterial overgrowth → dacryocystitis. Acute: S. aureus, Streptococcus. Chronic: Pseudomonas, anaerobes. Can progress to preseptal cellulitis (10-20%) or lacrimal sac abscess (5-10%).",
+            "resistance_patterns": {
+              "mrsa": "MRSA: 5-10% of S. aureus isolates. TMP-SMX or clindamycin effective (PO). Vancomycin if IV required.",
+              "pseudomonas": "Pseudomonas: Fluoroquinolone-resistant 10-20%. Use ciprofloxacin or levofloxacin (PO) if susceptible."
+            },
+            "timing_critical": "Start PO antibiotics within 24 hours. Warm compresses QID. If abscess → surgical drainage (I&D) within 24-48 hours. If no improvement in 48-72 hours → ophthalmology referral for surgical drainage (dacryocystorhinostomy)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "standard_therapy_po": "Amoxicillin-clavulanate 875mg PO BID x 7-10 days (preferred, covers S. aureus, Streptococcus, H. influenzae) + Warm compresses to medial canthus QID x 10-15 minutes.",
+            "mrsa_risk_or_failed_therapy": "TMP-SMX DS PO BID + Amoxicillin-clavulanate 875mg PO BID x 7-10 days (covers MRSA + Streptococcus) OR Clindamycin 300mg PO QID x 7-10 days (covers MRSA + Streptococcus, monotherapy adequate).",
+            "chronic_or_pseudomonas_risk": "Ciprofloxacin 500mg PO BID x 7-10 days OR Levofloxacin 750mg PO daily x 7-10 days (covers Pseudomonas). Reserve for chronic dacryocystitis or failed therapy.",
+            "severe_or_abscess": "Admit for IV antibiotics + surgical drainage (I&D). Vancomycin 15mg/kg IV q12h + Ceftriaxone 2g IV q12h x 2-3 days, then switch to PO (amoxicillin-clavulanate) x 7-10 days total. Ophthalmology performs I&D.",
+            "avoid_list": "Avoid topical antibiotics alone (inadequate for dacryocystitis, systemic antibiotics required). Avoid delay in surgical drainage if abscess (I&D within 24-48 hours)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "s_aureus_mssa": "Cephalexin 500mg PO QID x 7-10 days OR Dicloxacillin 500mg PO QID x 7-10 days.",
+            "s_aureus_mrsa": "TMP-SMX DS PO BID x 7-10 days OR Clindamycin 300mg PO QID x 7-10 days.",
+            "streptococcus": "Amoxicillin 500mg PO TID x 7-10 days OR Cephalexin 500mg PO QID x 7-10 days.",
+            "pseudomonas_aeruginosa": "Ciprofloxacin 500mg PO BID x 7-10 days OR Levofloxacin 750mg PO daily x 7-10 days.",
+            "duration": "7-10 days PO antibiotics + Warm compresses QID. Improvement expected in 48-72 hours (decreased swelling, decreased tenderness). If no improvement → ophthalmology referral for surgical drainage (dacryocystorhinostomy).",
+            "de_escalation": "After culture results (if obtained), narrow to targeted therapy.",
+            "iv_to_po_switch": "Switch IV to PO when: Afebrile x 24 hours, improved clinically (decreased swelling), tolerating PO. PO options: Amoxicillin-clavulanate 875mg BID, Cephalexin 500mg QID, Clindamycin 300mg QID, TMP-SMX DS BID, Ciprofloxacin 500mg BID."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "7-10 days PO antibiotics + Warm compresses QID x 10-15 minutes. Improvement expected in 48-72 hours (decreased swelling, decreased tenderness).",
+            "monitoring": "Follow-up in 48-72 hours (phone or in-person). Monitor: Swelling, tenderness, discharge. If no improvement → ophthalmology referral for surgical drainage (dacryocystorhinostomy). If worsening (preseptal cellulitis, orbital cellulitis) → CT + IV antibiotics + urgent ophthalmology referral.",
+            "stop_criteria": "Complete 7-10 days even if symptoms resolve earlier (prevent recurrence)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "warm_compresses": "Warm compresses to medial canthus QID x 10-15 minutes. Promotes drainage, reduces swelling. CRITICAL adjunct to antibiotics.",
+            "lacrimal_sac_abscess": "Fluctuant mass at medial canthus. Surgical drainage (I&D) within 24-48 hours. Ophthalmology performs. IV antibiotics (vancomycin + ceftriaxone) + I&D, then switch to PO x 7-10 days total.",
+            "chronic_dacryocystitis": "Recurrent episodes. Nasolacrimal duct obstruction. Definitive treatment: Dacryocystorhinostomy (DCR, surgical creation of new drainage pathway from lacrimal sac to nasal cavity). Ophthalmology referral for DCR after acute infection resolved.",
+            "congenital_nasolacrimal_duct_obstruction": "Infants. Epiphora (excessive tearing), mucopurulent discharge. Conservative management: Lacrimal sac massage BID + topical erythromycin ointment BID x 7-10 days (if infected). Resolves spontaneously in 90% by age 12 months. If persistent → ophthalmology referral for probing (age 6-12 months).",
+            "fistula_formation": "Chronic dacryocystitis complication. Fistula from lacrimal sac to skin. Surgical repair (DCR + fistula excision). Ophthalmology referral.",
+            "preseptal_cellulitis": "Periorbital swelling extending beyond medial canthus. Systemic antibiotics required (amoxicillin-clavulanate 875mg BID x 7-10 days). If severe → IV antibiotics + admission."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "PO antibiotics adequate (IV NOT routinely needed, except severe or abscess)",
+              "After culture results (if obtained), narrow to targeted therapy",
+              "Warm compresses CRITICAL adjunct (promotes drainage, reduces need for prolonged antibiotics)"
+            ],
+            "timeout_checklist": [
+              "Are PO antibiotics started? (Amoxicillin-clavulanate 875mg BID x 7-10 days)",
+              "Are warm compresses prescribed? (QID x 10-15 minutes, CRITICAL adjunct)",
+              "Is there an abscess? (Fluctuant mass → surgical drainage I&D within 24-48 hours)",
+              "Is there preseptal cellulitis? (Periorbital swelling beyond medial canthus → systemic antibiotics)",
+              "Is there orbital cellulitis? (Proptosis, ophthalmoplegia, decreased vision → CT + IV antibiotics + urgent referral)",
+              "Is follow-up arranged? (48-72 hours, monitor for improvement)",
+              "Is ophthalmology referral needed? (Chronic/recurrent → DCR after acute infection resolved)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid topical antibiotics alone (inadequate, systemic antibiotics required). Avoid IV antibiotics routinely (PO adequate, except severe or abscess). Avoid delay in surgical drainage if abscess (I&D within 24-48 hours). Do NOT delay ophthalmology referral if chronic/recurrent (DCR needed).",
+            "diagnostic_stewardship": "Clinical diagnosis (CT NOT routinely needed). Culture if severe, recurrent, or failed therapy. CT if severe, concern for orbital cellulitis, or abscess.",
+            "prevention": "Treat chronic rhinosinusitis. Lacrimal sac massage (congenital nasolacrimal duct obstruction). DCR for chronic/recurrent dacryocystitis."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "AAO Preferred Practice Pattern: Dacryocystitis (2018)",
+              "url": "https://www.aao.org/preferred-practice-pattern/dacryocystitis-ppp"
+            },
+            {
+              "label": "IDSA Guidelines for Skin and Soft Tissue Infections (2014)",
+              "url": "https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/"
+            },
+            {
+              "label": "Pediatric Nasolacrimal Duct Obstruction Guidelines (AAO 2019)",
+              "url": "https://www.aao.org/education/preferred-practice-pattern/pediatric-eye-evaluations-ppp"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
+

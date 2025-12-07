@@ -1,0 +1,611 @@
+{
+  "title": "IPC Calculators Quiz",
+  "description": "Comprehensive quiz covering IPC calculator formulas, benchmarks, interpretation, and application in infection control practice",
+  "version": "1.0",
+  "module": "calculators",
+  "totalStages": 5,
+  "questionsPerStage": 10,
+  "questions": [
+    {
+      "id": "calc_s1_q1",
+      "module": "calculators",
+      "stage": 1,
+      "question": "CLABSI rate is calculated as:",
+      "options": ["(CLABSI / Admissions) × 100", "(CLABSI / Central line-days) × 1,000", "(CLABSI / Patient-days) × 100", "(CLABSI / Procedures) × 1,000"],
+      "answerIndex": 1,
+      "explanation": "CLABSI rate uses central line-days as denominator with multiplication factor of 1,000 per NHSN methodology.",
+      "references": [
+        { "label": "CDC NHSN Manual", "url": "https://www.cdc.gov/nhsn/pdfs/pscmanual/pcsmanual_current.pdf" }
+      ]
+    },
+    {
+      "id": "calc_s1_q2",
+      "module": "calculators",
+      "stage": 1,
+      "question": "The primary purpose of tracking CLABSI rate is to:",
+      "options": ["Measure nursing workload", "Monitor central line-associated bloodstream infections", "Calculate hospital revenue", "Determine staffing ratios"],
+      "answerIndex": 1,
+      "explanation": "CLABSI rate is a key HAI surveillance metric to monitor device-associated infections and guide prevention efforts through bundle compliance and line necessity reviews.",
+      "references": [
+        { "label": "CDC NHSN HAI", "url": "https://www.cdc.gov/nhsn/acute-care-hospital/clabsi/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s1_q3",
+      "module": "calculators",
+      "stage": 1,
+      "question": "Which denominator is correct for CAUTI rate calculation?",
+      "options": ["Patient-days", "Urinary catheter-days", "Admissions", "Procedures"],
+      "answerIndex": 1,
+      "explanation": "CAUTI rate uses urinary catheter-days as the device-specific denominator to measure infections per device exposure time.",
+      "references": [
+        { "label": "CDC NHSN CAUTI", "url": "https://www.cdc.gov/nhsn/acute-care-hospital/cauti/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s1_q4",
+      "module": "calculators",
+      "stage": 1,
+      "question": "Hand hygiene compliance is calculated as:",
+      "options": ["(Performed / Staff) × 100", "(Performed / Opportunities) × 100", "(Observed / Days) × 100", "(Compliant / Patients) × 100"],
+      "answerIndex": 1,
+      "explanation": "Hand hygiene compliance uses opportunities observed as denominator per WHO 5 Moments methodology (before patient contact, before aseptic procedure, after body fluid exposure, after patient contact, after contact with patient surroundings).",
+      "references": [
+        { "label": "WHO 5 Moments", "url": "https://www.who.int/publications/i/item/WHO-HIS-SDS-2014.1" }
+      ]
+    },
+    {
+      "id": "calc_s1_q5",
+      "module": "calculators",
+      "stage": 1,
+      "question": "What multiplication factor is used for HAI device-associated rates?",
+      "options": ["× 10", "× 100", "× 1,000", "× 10,000"],
+      "answerIndex": 2,
+      "explanation": "HAI device-associated rates (CLABSI, CAUTI, VAE) use multiplication factor of 1,000 per NHSN standards to express rates per 1,000 device-days.",
+      "references": [
+        { "label": "CDC NHSN Manual", "url": "https://www.cdc.gov/nhsn/pdfs/pscmanual/pcsmanual_current.pdf" }
+      ]
+    },
+    {
+      "id": "calc_s1_q6",
+      "module": "calculators",
+      "stage": 1,
+      "question": "Device Utilization Ratio (DUR) is most useful for:",
+      "options": ["Calculating infection rates", "Assessing device exposure and practice patterns", "Determining antibiotic usage", "Measuring hand hygiene compliance"],
+      "answerIndex": 1,
+      "explanation": "DUR measures proportion of patient-days with device exposure (device-days ÷ patient-days), helping identify overuse and guide device minimization strategies.",
+      "references": [
+        { "label": "CDC NHSN DUR", "url": "https://www.cdc.gov/nhsn/pdfs/pscmanual/pcsmanual_current.pdf" }
+      ]
+    },
+    {
+      "id": "calc_s1_q7",
+      "module": "calculators",
+      "stage": 1,
+      "question": "Your ICU's CLABSI rate is 3.5 per 1,000 CL-days. NHSN benchmark is 1.0. This means:",
+      "options": ["Your rate is excellent", "Your rate is at target", "Your rate is above target and needs improvement", "Your rate is too low"],
+      "answerIndex": 2,
+      "explanation": "A rate of 3.5 is 3.5× higher than the 1.0 benchmark, indicating need for intervention such as bundle compliance audits, line necessity reviews, and staff education.",
+      "references": [
+        { "label": "CDC NHSN Benchmarks", "url": "https://www.cdc.gov/nhsn/data-stat/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s1_q8",
+      "module": "calculators",
+      "stage": 1,
+      "question": "SSI rate is calculated per:",
+      "options": ["100 procedures", "1,000 procedures", "100 patient-days", "1,000 patient-days"],
+      "answerIndex": 0,
+      "explanation": "SSI rate is calculated per 100 procedures, expressed as a percentage (e.g., 2.5% means 2.5 infections per 100 procedures).",
+      "references": [
+        { "label": "CDC NHSN SSI", "url": "https://www.cdc.gov/nhsn/psc/ssi/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s1_q9",
+      "module": "calculators",
+      "stage": 1,
+      "question": "You want to measure effectiveness of a new CLABSI prevention bundle. Which metric should you track?",
+      "options": ["Patient satisfaction scores", "CLABSI rate per 1,000 central line-days", "Number of central lines inserted", "Nursing overtime hours"],
+      "answerIndex": 1,
+      "explanation": "CLABSI rate is the direct outcome metric for bundle effectiveness. Track monthly and compare pre/post intervention using statistical process control charts.",
+      "references": [
+        { "label": "CDC Prevention Strategies", "url": "https://www.cdc.gov/hai/prevent/prevention.html" }
+      ]
+    },
+    {
+      "id": "calc_s1_q10",
+      "module": "calculators",
+      "stage": 1,
+      "question": "Blood culture contamination rate target is:",
+      "options": ["<1%", "<3%", "<5%", "<10%"],
+      "answerIndex": 1,
+      "explanation": "Blood culture contamination rate should be <3% to ensure quality specimen collection. Rates >3% indicate need for technique review and staff education.",
+      "references": [
+        { "label": "CDC Blood Culture Guidance", "url": "https://www.cdc.gov/antibiotic-use/lab/blood-culture.html" }
+      ]
+    },
+    {
+      "id": "calc_s2_q1",
+      "module": "calculators",
+      "stage": 2,
+      "question": "Central line utilization ratio is calculated as:",
+      "options": ["Central line-days / Patient-days", "Patient-days / Central line-days", "CLABSI / Central line-days", "Central lines / Patients"],
+      "answerIndex": 0,
+      "explanation": "Utilization ratios show proportion of patient-days with device exposure: device-days divided by patient-days. A ratio >0.5-0.6 may indicate overuse.",
+      "references": [
+        { "label": "CDC NHSN Manual", "url": "https://www.cdc.gov/nhsn/pdfs/pscmanual/pcsmanual_current.pdf" }
+      ]
+    },
+    {
+      "id": "calc_s2_q2",
+      "module": "calculators",
+      "stage": 2,
+      "question": "Your ICU has high central line utilization ratio (0.85). What should you do FIRST?",
+      "options": ["Celebrate high device usage", "Review line necessity daily and implement prompt removal", "Insert more central lines", "Ignore it and focus only on infection rates"],
+      "answerIndex": 1,
+      "explanation": "High DUR (>0.5-0.6) suggests possible overuse. Implement daily line necessity reviews, prompt removal protocols, and consider alternative access when appropriate.",
+      "references": [
+        { "label": "CDC CLABSI Prevention", "url": "https://www.cdc.gov/hai/prevent/prevention.html" }
+      ]
+    },
+    {
+      "id": "calc_s2_q3",
+      "module": "calculators",
+      "stage": 2,
+      "question": "DOT per 1,000 patient-days measures:",
+      "options": ["Device utilization", "Antimicrobial consumption intensity", "Hand hygiene compliance", "Infection rates"],
+      "answerIndex": 1,
+      "explanation": "Days of therapy (DOT) per 1,000 patient-days is a core antimicrobial stewardship consumption metric that accounts for all antimicrobials administered regardless of dose or duration.",
+      "references": [
+        { "label": "CDC NHSN AU Option", "url": "https://www.cdc.gov/nhsn/pdfs/pscmanual/11pscaurcurrent.pdf" }
+      ]
+    },
+    {
+      "id": "calc_s2_q4",
+      "module": "calculators",
+      "stage": 2,
+      "question": "Attack rate is used primarily for:",
+      "options": ["Routine monthly surveillance", "Outbreak investigations", "Device utilization monitoring", "Antimicrobial stewardship"],
+      "answerIndex": 1,
+      "explanation": "Attack rate measures proportion of exposed population that develops illness during a defined outbreak period. It quantifies outbreak magnitude and helps identify high-risk groups.",
+      "references": [
+        { "label": "WHO Outbreak Guidance", "url": "https://apps.who.int/iris/handle/10665/96326" }
+      ]
+    },
+    {
+      "id": "calc_s2_q5",
+      "module": "calculators",
+      "stage": 2,
+      "question": "Case Fatality Ratio (CFR) measures:",
+      "options": ["Attack rate", "Disease severity and outcome", "Transmission rate", "Exposure risk"],
+      "answerIndex": 1,
+      "explanation": "CFR (Deaths/Cases × 100) measures disease severity and outcome among cases. High CFR indicates severe disease or inadequate treatment response.",
+      "references": [
+        { "label": "WHO CFR Methods", "url": "https://www.who.int/data/gho/indicator-metadata-registry/imr-details/4849" }
+      ]
+    },
+    {
+      "id": "calc_s2_q6",
+      "module": "calculators",
+      "stage": 2,
+      "question": "Blood culture contamination rate is 4.5%. Target is <3%. What is the FIRST action?",
+      "options": ["Ignore it, it's close enough", "Review specimen collection technique and provide education", "Change laboratory methods", "Stop collecting blood cultures"],
+      "answerIndex": 1,
+      "explanation": "Contamination >3% indicates collection technique issues. Review skin preparation, aseptic technique, and provide targeted staff education. Consider using blood culture collection kits.",
+      "references": [
+        { "label": "CDC Blood Culture Quality", "url": "https://www.cdc.gov/antibiotic-use/lab/blood-culture.html" }
+      ]
+    },
+    {
+      "id": "calc_s2_q7",
+      "module": "calculators",
+      "stage": 2,
+      "question": "If ICU has 5 CLABSI cases and 2,500 central line-days, the CLABSI rate is:",
+      "options": ["0.2 per 1,000 CL-days", "2.0 per 1,000 CL-days", "20.0 per 1,000 CL-days", "200.0 per 1,000 CL-days"],
+      "answerIndex": 1,
+      "explanation": "CLABSI rate = (5 / 2,500) × 1,000 = 2.0 per 1,000 central line-days. This calculation standardizes the rate for comparison across facilities and time periods.",
+      "references": [
+        { "label": "CDC NHSN Manual", "url": "https://www.cdc.gov/nhsn/pdfs/pscmanual/pcsmanual_current.pdf" }
+      ]
+    },
+    {
+      "id": "calc_s2_q8",
+      "module": "calculators",
+      "stage": 2,
+      "question": "When should you use Attack Rate instead of CLABSI rate?",
+      "options": ["For routine monthly surveillance", "During an outbreak investigation", "For annual reporting to NHSN", "When calculating device utilization"],
+      "answerIndex": 1,
+      "explanation": "Attack rate measures proportion of exposed population that develops illness during a defined outbreak period, not for routine surveillance. CLABSI rate is for ongoing monitoring.",
+      "references": [
+        { "label": "CDC Outbreak Response", "url": "https://www.cdc.gov/hai/outbreaks/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s2_q9",
+      "module": "calculators",
+      "stage": 2,
+      "question": "Your unit's hand hygiene compliance dropped from 85% to 78%. What does this suggest?",
+      "options": ["Normal variation, no action needed", "Possible workflow changes, new staff, or observation bias", "Staff are intentionally non-compliant", "Compliance is still excellent, ignore it"],
+      "answerIndex": 1,
+      "explanation": "A 7% drop warrants investigation: new staff orientation needs, workflow changes, observer effect, or resource issues (e.g., dispenser placement, product availability). Conduct root cause analysis.",
+      "references": [
+        { "label": "WHO Hand Hygiene", "url": "https://www.who.int/publications/i/item/9789241597906" }
+      ]
+    },
+    {
+      "id": "calc_s2_q10",
+      "module": "calculators",
+      "stage": 2,
+      "question": "Colonization Pressure is most valuable for predicting:",
+      "options": ["Hand hygiene compliance", "Risk of MDRO transmission in a unit", "Antibiotic consumption", "Surgical site infection rates"],
+      "answerIndex": 1,
+      "explanation": "Colonization pressure (% of patients colonized/infected with MDRO) is a key predictor of transmission risk. Higher pressure increases likelihood of cross-transmission and guides screening/isolation strategies.",
+      "references": [
+        { "label": "CDC MDRO Management", "url": "https://www.cdc.gov/hai/organisms/organisms.html" }
+      ]
+    },
+    {
+      "id": "calc_s3_q1",
+      "module": "calculators",
+      "stage": 3,
+      "question": "During a suspected C. difficile outbreak, which calculator helps determine if cases exceed baseline?",
+      "options": ["CLABSI rate", "Attack rate and epidemic curve", "Hand hygiene compliance", "Antibiotic utilization"],
+      "answerIndex": 1,
+      "explanation": "Attack rate quantifies outbreak magnitude; epidemic curve visualizes case distribution over time to confirm outbreak, identify peak, and guide control measures.",
+      "references": [
+        { "label": "CDC C. diff Outbreak", "url": "https://www.cdc.gov/cdiff/clinicians/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s3_q2",
+      "module": "calculators",
+      "stage": 3,
+      "question": "Your hospital's SSI rate for COLO procedures is 8% (NHSN SIR = 1.6). This means:",
+      "options": ["Your rate is 60% higher than predicted", "Your rate is 60% lower than predicted", "Your rate is at the 60th percentile", "Your rate is 1.6 per 100 procedures"],
+      "answerIndex": 0,
+      "explanation": "SIR (Standardized Infection Ratio) = 1.6 means observed infections are 60% higher than predicted based on risk adjustment. Requires root cause analysis and intervention.",
+      "references": [
+        { "label": "CDC NHSN SIR", "url": "https://www.cdc.gov/nhsn/data-stat/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s3_q3",
+      "module": "calculators",
+      "stage": 3,
+      "question": "Sensitivity of a diagnostic test is calculated as:",
+      "options": ["TP / (TP + FN)", "TN / (TN + FP)", "TP / (TP + FP)", "TN / (TN + FN)"],
+      "answerIndex": 0,
+      "explanation": "Sensitivity = True Positives / (True Positives + False Negatives). It measures the test's ability to correctly identify positive cases (true positive rate).",
+      "references": [
+        { "label": "WHO Diagnostic Test Accuracy", "url": "https://www.who.int/publications/i/item/9789241548908" }
+      ]
+    },
+    {
+      "id": "calc_s3_q4",
+      "module": "calculators",
+      "stage": 3,
+      "question": "When interpreting Relative Risk (RR) = 2.5 in an outbreak investigation, this means:",
+      "options": ["Exposed group has 2.5 times higher risk than unexposed", "Exposed group has 25% higher risk", "Unexposed group has higher risk", "No association between exposure and outcome"],
+      "answerIndex": 0,
+      "explanation": "RR = 2.5 means exposed group has 2.5 times (or 150% higher) risk of developing disease compared to unexposed group. RR >1 indicates positive association.",
+      "references": [
+        { "label": "CDC Outbreak Investigation", "url": "https://www.cdc.gov/eis/field-epi-manual/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s3_q5",
+      "module": "calculators",
+      "stage": 3,
+      "question": "Your antimicrobial stewardship team wants to reduce broad-spectrum antibiotic use. Which TWO metrics are most appropriate?",
+      "options": ["DOT per 1,000 patient-days + De-escalation rate", "CLABSI rate + SSI rate", "Hand hygiene + isolation compliance", "Attack rate + case fatality ratio"],
+      "answerIndex": 0,
+      "explanation": "DOT measures consumption intensity; de-escalation rate measures appropriate narrowing of therapy based on culture results. Both directly assess stewardship program effectiveness.",
+      "references": [
+        { "label": "CDC Antimicrobial Stewardship", "url": "https://www.cdc.gov/antibiotic-use/stewardship-report/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s3_q6",
+      "module": "calculators",
+      "stage": 3,
+      "question": "Bundle compliance is 85% for full compliance and 95% for partial compliance. What action is needed?",
+      "options": ["No action, both rates are excellent", "Focus on improving full compliance to match partial compliance", "Reduce monitoring frequency", "Eliminate the bundle"],
+      "answerIndex": 1,
+      "explanation": "Gap between partial (95%) and full (85%) compliance indicates specific bundle elements are consistently missed. Identify barriers to full compliance through direct observation and staff feedback.",
+      "references": [
+        { "label": "CDC HAI Prevention", "url": "https://www.cdc.gov/hai/prevent/prevention.html" }
+      ]
+    },
+    {
+      "id": "calc_s3_q7",
+      "module": "calculators",
+      "stage": 3,
+      "question": "Environmental positivity rate increased from 5% to 15% in ICU. What does this indicate?",
+      "options": ["Normal seasonal variation", "Possible environmental cleaning breakdown or outbreak", "Laboratory error only", "No clinical significance"],
+      "answerIndex": 1,
+      "explanation": "Threefold increase in environmental contamination suggests cleaning protocol breakdown, product failure, or active transmission. Investigate cleaning practices, product efficacy, and correlate with clinical cases.",
+      "references": [
+        { "label": "CDC Environmental Cleaning", "url": "https://www.cdc.gov/hai/prevent/environment/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s3_q8",
+      "module": "calculators",
+      "stage": 3,
+      "question": "When should you use Odds Ratio instead of Relative Risk in outbreak analysis?",
+      "options": ["Always use OR, never RR", "In case-control studies or when disease is rare", "In cohort studies only", "When you want a smaller number"],
+      "answerIndex": 1,
+      "explanation": "Odds Ratio is appropriate for case-control studies and rare diseases. Relative Risk is preferred for cohort studies and common outcomes. OR approximates RR when disease is rare (<10%).",
+      "references": [
+        { "label": "CDC Field Epidemiology", "url": "https://www.cdc.gov/eis/field-epi-manual/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s3_q9",
+      "module": "calculators",
+      "stage": 3,
+      "question": "Your facility's CAUTI rate decreased from 3.5 to 2.0 per 1,000 catheter-days after bundle implementation. How do you determine if this is statistically significant?",
+      "options": ["Any decrease is significant", "Calculate confidence intervals and p-value", "Compare to last month only", "Wait for NHSN to tell you"],
+      "answerIndex": 1,
+      "explanation": "Use statistical process control (SPC) charts or calculate 95% confidence intervals and p-value to determine if change exceeds random variation. Consider run charts and control limits.",
+      "references": [
+        { "label": "CDC SPC for Healthcare", "url": "https://www.cdc.gov/hai/prevent/prevention.html" }
+      ]
+    },
+    {
+      "id": "calc_s3_q10",
+      "module": "calculators",
+      "stage": 3,
+      "question": "Sterilization failure rate is 2% (target <1%). What is the immediate priority?",
+      "options": ["Continue monitoring", "Quarantine all processed items and investigate sterilizer function", "Reduce monitoring frequency", "Blame the CSSD staff"],
+      "answerIndex": 1,
+      "explanation": "Sterilization failure >1% is a critical patient safety issue. Immediately quarantine potentially affected items, investigate sterilizer function (biological indicators, maintenance), review load configuration, and notify risk management.",
+      "references": [
+        { "label": "CDC Sterilization Guidelines", "url": "https://www.cdc.gov/infectioncontrol/guidelines/disinfection/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s4_q1",
+      "module": "calculators",
+      "stage": 4,
+      "question": "Your hospital's MDRO colonization pressure is rising (15% → 25%) despite stable infection rates. What does this indicate?",
+      "options": ["No concern, infection rates are stable", "Increased transmission risk; enhance screening and isolation", "Laboratory error", "Decrease isolation precautions to save costs"],
+      "answerIndex": 1,
+      "explanation": "Rising colonization pressure precedes infection rate increases. Proactive response: enhance contact precautions, environmental cleaning, active surveillance screening, and cohorting strategies.",
+      "references": [
+        { "label": "CDC MDRO Management", "url": "https://www.cdc.gov/hai/organisms/organisms.html" }
+      ]
+    },
+    {
+      "id": "calc_s4_q2",
+      "module": "calculators",
+      "stage": 4,
+      "question": "In a multi-drug resistant outbreak, you calculate OR = 4.2 (95% CI: 1.8-9.5, p=0.001) for exposure to contaminated equipment. This means:",
+      "options": ["No significant association", "Strong significant association; exposed patients 4.2× higher odds of infection", "Weak association, ignore it", "Equipment is not the source"],
+      "answerIndex": 1,
+      "explanation": "OR = 4.2 with CI not crossing 1.0 and p<0.05 indicates statistically significant strong association. Exposed patients have 4.2 times higher odds of infection. Immediate equipment investigation and removal required.",
+      "references": [
+        { "label": "CDC Outbreak Investigation", "url": "https://www.cdc.gov/eis/field-epi-manual/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s4_q3",
+      "module": "calculators",
+      "stage": 4,
+      "question": "Your facility wants to implement active MRSA surveillance. Which metric helps justify the program?",
+      "options": ["Hand hygiene compliance only", "Colonization pressure + screening yield + infection reduction %", "Patient satisfaction scores", "Staff overtime hours"],
+      "answerIndex": 1,
+      "explanation": "Combine colonization pressure (baseline risk), screening yield (detection rate), and infection reduction % (program effectiveness) to demonstrate value. Include cost-effectiveness analysis.",
+      "references": [
+        { "label": "CDC MRSA Surveillance", "url": "https://www.cdc.gov/mrsa/healthcare/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s4_q4",
+      "module": "calculators",
+      "stage": 4,
+      "question": "Specificity of a diagnostic test is 95%. This means:",
+      "options": ["95% of positive results are true positives", "95% of negative results are true negatives", "95% of infected patients test positive", "95% of non-infected patients test negative"],
+      "answerIndex": 3,
+      "explanation": "Specificity = TN / (TN + FP). It measures the test's ability to correctly identify negative cases (true negative rate). 95% specificity means 5% false positive rate.",
+      "references": [
+        { "label": "WHO Diagnostic Accuracy", "url": "https://www.who.int/publications/i/item/9789241548908" }
+      ]
+    },
+    {
+      "id": "calc_s4_q5",
+      "module": "calculators",
+      "stage": 4,
+      "question": "Your ICU implemented a CLABSI bundle. Pre-intervention rate: 3.5, post-intervention: 1.8 per 1,000 CL-days. How do you calculate infection reduction %?",
+      "options": ["(1.8 / 3.5) × 100 = 51%", "((3.5 - 1.8) / 3.5) × 100 = 49%", "(3.5 - 1.8) = 1.7", "Cannot calculate without more data"],
+      "answerIndex": 1,
+      "explanation": "Infection reduction % = ((Baseline - Current) / Baseline) × 100 = ((3.5 - 1.8) / 3.5) × 100 = 48.6% reduction. This demonstrates intervention effectiveness.",
+      "references": [
+        { "label": "CDC HAI Prevention", "url": "https://www.cdc.gov/hai/prevent/prevention.html" }
+      ]
+    },
+    {
+      "id": "calc_s4_q6",
+      "module": "calculators",
+      "stage": 4,
+      "question": "Secondary Attack Rate is most useful for determining:",
+      "options": ["Routine surveillance rates", "Household or close contact transmission risk", "Device utilization", "Antibiotic consumption"],
+      "answerIndex": 1,
+      "explanation": "Secondary Attack Rate measures transmission among close contacts (household, roommates) after exposure to primary case. Critical for assessing contagiousness and guiding contact management.",
+      "references": [
+        { "label": "CDC Contact Investigation", "url": "https://www.cdc.gov/eis/field-epi-manual/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s4_q7",
+      "module": "calculators",
+      "stage": 4,
+      "question": "Your hospital's DDD (Defined Daily Dose) for carbapenems is 150 per 1,000 patient-days. Benchmark is 50. What is the priority action?",
+      "options": ["Continue current practice", "Implement carbapenem restriction and stewardship interventions", "Increase carbapenem use", "Ignore benchmarks"],
+      "answerIndex": 1,
+      "explanation": "DDD 3× higher than benchmark indicates excessive broad-spectrum use. Implement prospective audit and feedback, formulary restrictions, and diagnostic stewardship to reduce inappropriate use.",
+      "references": [
+        { "label": "CDC Antimicrobial Stewardship", "url": "https://www.cdc.gov/antibiotic-use/stewardship-report/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s4_q8",
+      "module": "calculators",
+      "stage": 4,
+      "question": "In an outbreak, you need to determine sample size for a case-control study. Which factors are essential?",
+      "options": ["Only total population size", "Expected OR, power (80-90%), alpha (0.05), and exposure prevalence", "Just guess a number", "Use all available cases"],
+      "answerIndex": 1,
+      "explanation": "Sample size calculation requires: expected effect size (OR/RR), desired power (typically 80-90%), significance level (alpha, typically 0.05), and estimated exposure prevalence in controls.",
+      "references": [
+        { "label": "CDC Field Epidemiology", "url": "https://www.cdc.gov/eis/field-epi-manual/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s4_q9",
+      "module": "calculators",
+      "stage": 4,
+      "question": "Your facility's culture-guided therapy rate is 45% (target >70%). What does this indicate?",
+      "options": ["Excellent performance", "Excessive empiric therapy without culture-based de-escalation", "Laboratory is too slow", "Target is unrealistic"],
+      "answerIndex": 1,
+      "explanation": "Low culture-guided therapy rate (<70%) indicates missed opportunities for de-escalation. Barriers may include: delayed cultures, inadequate follow-up, or provider reluctance to narrow therapy.",
+      "references": [
+        { "label": "CDC Antibiotic Stewardship", "url": "https://www.cdc.gov/antibiotic-use/stewardship-report/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s4_q10",
+      "module": "calculators",
+      "stage": 4,
+      "question": "Needlestick injury (NSI) rate is 8.5 per 1,000 HCWs (target <5). What is the most effective intervention?",
+      "options": ["Blame the staff", "Implement safety-engineered devices and provide training", "Reduce reporting to lower the rate", "Accept it as unavoidable"],
+      "answerIndex": 1,
+      "explanation": "NSI rate >5 per 1,000 HCWs requires intervention: safety-engineered devices (retractable needles, needleless systems), sharps disposal optimization, and hands-on training on safe practices.",
+      "references": [
+        { "label": "CDC Sharps Safety", "url": "https://www.cdc.gov/niosh/topics/bbp/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s5_q1",
+      "module": "calculators",
+      "stage": 5,
+      "question": "Your facility's CLABSI rate decreased from 2.5 to 1.8 per 1,000 CL-days. Using SPC charts, you observe 8 consecutive points below the centerline. This indicates:",
+      "options": ["Random variation", "Special cause variation; sustained improvement", "Data collection error", "Worsening performance"],
+      "answerIndex": 1,
+      "explanation": "Eight consecutive points on one side of centerline is a special cause variation rule, indicating non-random sustained improvement. Recalculate control limits to reflect new baseline performance.",
+      "references": [
+        { "label": "CDC SPC for Healthcare", "url": "https://www.cdc.gov/hai/prevent/prevention.html" }
+      ]
+    },
+    {
+      "id": "calc_s5_q2",
+      "module": "calculators",
+      "stage": 5,
+      "question": "In a multi-facility system, Hospital A (SIR=0.8) and Hospital B (SIR=1.5) have different CLABSI rates. What is the most appropriate interpretation?",
+      "options": ["Hospital A has lower raw rate", "Hospital A performs better than predicted; Hospital B performs worse than predicted", "Both hospitals are the same", "SIR is meaningless"],
+      "answerIndex": 1,
+      "explanation": "SIR (Standardized Infection Ratio) adjusts for patient risk factors. SIR <1.0 indicates better-than-predicted performance; SIR >1.0 indicates worse-than-predicted. Hospital A outperforms despite potentially sicker patients.",
+      "references": [
+        { "label": "CDC NHSN SIR", "url": "https://www.cdc.gov/nhsn/data-stat/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s5_q3",
+      "module": "calculators",
+      "stage": 5,
+      "question": "Your antimicrobial stewardship program reduced DOT from 800 to 600 per 1,000 patient-days, but C. difficile rates increased 30%. What is the most likely explanation?",
+      "options": ["Stewardship program is working perfectly", "Possible reduction in protective antibiotics or unrelated outbreak", "Increase DOT back to 800", "Ignore C. diff rates"],
+      "answerIndex": 1,
+      "explanation": "While reducing broad-spectrum antibiotics generally decreases C. diff, paradoxical increase may indicate: reduction in protective antibiotics (e.g., beta-lactams), unrelated outbreak, or environmental contamination. Requires detailed analysis of antibiotic classes and molecular typing.",
+      "references": [
+        { "label": "CDC C. diff and Stewardship", "url": "https://www.cdc.gov/cdiff/clinicians/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s5_q4",
+      "module": "calculators",
+      "stage": 5,
+      "question": "You're investigating a suspected pseudo-outbreak. Which combination of findings supports this diagnosis?",
+      "options": ["Increasing clinical cases with positive cultures", "Increasing positive cultures without clinical illness + single clone + environmental source", "Decreasing surveillance rates", "Random sporadic cases"],
+      "answerIndex": 1,
+      "explanation": "Pseudo-outbreak characteristics: increased positive cultures without corresponding clinical illness, single clonal strain (molecular typing), environmental or procedural source (contaminated equipment, reagents). Requires laboratory and epidemiologic investigation.",
+      "references": [
+        { "label": "CDC Pseudo-outbreak Investigation", "url": "https://www.cdc.gov/hai/outbreaks/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s5_q5",
+      "module": "calculators",
+      "stage": 5,
+      "question": "Your hospital implements horizontal infection prevention strategies. Which metrics best measure overall program effectiveness?",
+      "options": ["CLABSI rate only", "Composite HAI rate (CLABSI + CAUTI + SSI + VAE) + hand hygiene + environmental cleaning", "Patient satisfaction only", "Staff overtime hours"],
+      "answerIndex": 1,
+      "explanation": "Horizontal strategies (hand hygiene, environmental cleaning, PPE) affect multiple HAI types. Use composite outcome measures plus process measures to assess overall program impact and identify gaps.",
+      "references": [
+        { "label": "CDC HAI Prevention", "url": "https://www.cdc.gov/hai/prevent/prevention.html" }
+      ]
+    },
+    {
+      "id": "calc_s5_q6",
+      "module": "calculators",
+      "stage": 5,
+      "question": "In cost-effectiveness analysis of MRSA screening program, you calculate cost per infection prevented is $15,000. Hospital's average MRSA infection cost is $30,000. What is the interpretation?",
+      "options": ["Program is not cost-effective", "Program is cost-effective with 2:1 benefit-cost ratio", "Cannot determine without more data", "Abandon the program"],
+      "answerIndex": 1,
+      "explanation": "Cost per infection prevented ($15,000) < Cost per infection ($30,000) indicates cost-effectiveness. Benefit-cost ratio = $30,000 / $15,000 = 2:1. Program saves $15,000 per infection prevented, plus intangible benefits (mortality reduction, patient safety).",
+      "references": [
+        { "label": "CDC Prevention Economics", "url": "https://www.cdc.gov/hai/prevent/prevention.html" }
+      ]
+    },
+    {
+      "id": "calc_s5_q7",
+      "module": "calculators",
+      "stage": 5,
+      "question": "Your facility's VAE rate is stable, but ventilator utilization ratio increased from 0.35 to 0.55. What is the clinical significance?",
+      "options": ["No concern, VAE rate is stable", "Increased device exposure increases absolute number of VAEs and patient risk", "Celebrate high ventilator use", "Ignore utilization ratios"],
+      "answerIndex": 1,
+      "explanation": "Even with stable VAE rate, increased utilization ratio means more patients exposed to ventilators, increasing absolute VAE numbers and overall patient harm. Implement ventilator liberation protocols and daily spontaneous breathing trials.",
+      "references": [
+        { "label": "CDC VAE Prevention", "url": "https://www.cdc.gov/nhsn/acute-care-hospital/vae/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s5_q8",
+      "module": "calculators",
+      "stage": 5,
+      "question": "In a CRE outbreak, whole genome sequencing shows 2 distinct clones. Epidemiologic investigation shows common exposure to duodenoscopes. What is the most likely scenario?",
+      "options": ["Two separate outbreaks from same source", "Laboratory contamination", "Community acquisition", "No outbreak exists"],
+      "answerIndex": 0,
+      "explanation": "Multiple clones from single source (duodenoscope) indicates persistent environmental reservoir with multiple introductions. Requires scope removal, enhanced reprocessing validation, and consideration of disposable equipment.",
+      "references": [
+        { "label": "CDC CRE and Duodenoscopes", "url": "https://www.cdc.gov/hai/organisms/cre/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s5_q9",
+      "module": "calculators",
+      "stage": 5,
+      "question": "Your facility wants to implement predictive modeling for HAI risk. Which variables are most important for CLABSI prediction model?",
+      "options": ["Patient age only", "Central line days + ICU location + colonization pressure + bundle compliance", "Hospital size only", "Day of the week"],
+      "answerIndex": 1,
+      "explanation": "Effective CLABSI prediction models include: device exposure (CL days), patient factors (ICU, severity), environmental factors (colonization pressure), and process measures (bundle compliance). Machine learning can identify complex interactions.",
+      "references": [
+        { "label": "CDC HAI Surveillance", "url": "https://www.cdc.gov/nhsn/acute-care-hospital/index.html" }
+      ]
+    },
+    {
+      "id": "calc_s5_q10",
+      "module": "calculators",
+      "stage": 5,
+      "question": "As IPC Director, you must allocate limited resources between three interventions: CLABSI bundle (projected 40% reduction), environmental cleaning enhancement (20% reduction across all HAIs), and MRSA screening (30% MRSA reduction). Which approach is most evidence-based?",
+      "options": ["Choose highest single reduction (CLABSI)", "Prioritize horizontal intervention (environmental cleaning) for broad impact", "Implement all three simultaneously", "Choose based on personal preference"],
+      "answerIndex": 1,
+      "explanation": "With limited resources, horizontal interventions (environmental cleaning, hand hygiene) provide broad impact across multiple HAI types and pathogens. Consider: baseline rates, cost-effectiveness, sustainability, and organizational culture. Use decision analysis matrix weighing impact, feasibility, and cost.",
+      "references": [
+        { "label": "CDC HAI Prevention Strategies", "url": "https://www.cdc.gov/hai/prevent/prevention.html" }
+      ]
+    }
+  ]
+}
+

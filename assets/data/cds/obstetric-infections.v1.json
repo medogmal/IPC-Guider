@@ -1,0 +1,1427 @@
+{
+  "version": 1,
+  "updatedAt": "2025-11-26T00:00:00Z",
+  "id": "obstetric-infections",
+  "name": "Obstetric Infections",
+  "description": "Pregnancy-specific infections including chorioamnionitis, postpartum endometritis, GBS prophylaxis, mastitis, and pregnancy-related complications",
+  "icon": "pregnant_woman",
+  "color": "#E91E63",
+  "conditions": [
+    {
+      "id": "chorioamnionitis",
+      "name": "Chorioamnionitis (Intrapartum)",
+      "synonyms": [
+        "intra-amniotic infection",
+        "intrauterine infection",
+        "triple I"
+      ],
+      "icd10": [
+        "O41.1",
+        "O75.3"
+      ],
+      "severity": [
+        "moderate",
+        "severe"
+      ],
+      "shortDescription": "Polymicrobial intrapartum infection requiring immediate delivery and empiric antibiotics (ampicillin + gentamicin, add clindamycin if cesarean)",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Polymicrobial infection of amniotic fluid, membranes, placenta, or uterus during labor. Organisms: Group B Streptococcus (GBS, 20-30%), E. coli (20-30%), anaerobes (Bacteroides, Prevotella, 30-40%), Enterococcus (10-20%), Ureaplasma urealyticum (10-20%). Incidence: 1-5% of term deliveries, 5-10% of preterm deliveries. Complications: Maternal sepsis (5-10%), postpartum hemorrhage (10-15%), neonatal sepsis (5-10%), neonatal pneumonia (5-10%), cerebral palsy (increased risk if preterm).",
+            "clinical_presentation": "Maternal fever >38°C (100.4°F) during labor + one or more: Maternal tachycardia (>100 bpm), fetal tachycardia (>160 bpm), uterine tenderness, purulent or foul-smelling amniotic fluid. Fever is REQUIRED for diagnosis. Leukocytosis (WBC >15,000) common but non-specific.",
+            "diagnostic_criteria": "Clinical diagnosis (ACOG 2017): Maternal fever >38°C during labor + one or more: Maternal tachycardia (>100 bpm), fetal tachycardia (>160 bpm), uterine tenderness, purulent or foul-smelling amniotic fluid. Laboratory: Leukocytosis (WBC >15,000, 70-80%), elevated CRP (>2 mg/dL, 60-70%). Amniotic fluid culture (if amniocentesis performed, rarely done). Blood cultures (positive in 5-10%).",
+            "risk_factors": [
+              "Prolonged rupture of membranes (>18 hours, most important risk factor)",
+              "Prolonged labor (>12 hours)",
+              "Multiple vaginal exams (>5 exams)",
+              "Internal fetal monitoring (intrauterine pressure catheter, fetal scalp electrode)",
+              "Nulliparity",
+              "GBS colonization",
+              "Bacterial vaginosis",
+              "Meconium-stained amniotic fluid"
+            ],
+            "red_flags": [
+              "Maternal sepsis - hypotension, tachycardia >120 bpm, altered mental status, requires IV antibiotics + ICU + immediate delivery",
+              "Fetal distress - non-reassuring fetal heart rate tracing, requires immediate delivery",
+              "Postpartum hemorrhage - uterine atony (10-15% of chorioamnionitis), requires uterotonics + possible transfusion",
+              "Neonatal sepsis - fever, respiratory distress, hypotension (5-10%), requires neonatal ICU + IV antibiotics",
+              "Retained placenta - increased risk with chorioamnionitis, requires manual removal"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Test if: Maternal fever >38°C during labor. Clinical diagnosis (do NOT delay antibiotics or delivery while awaiting test results). Blood cultures before antibiotics (positive in 5-10%). Amniotic fluid culture rarely performed (requires amniocentesis, invasive).",
+            "essential_tests": [
+              "Maternal temperature: Fever >38°C (100.4°F) REQUIRED for diagnosis. Measure every 1-2 hours during labor.",
+              "Maternal heart rate: Tachycardia >100 bpm (70-80% of chorioamnionitis).",
+              "Fetal heart rate: Tachycardia >160 bpm (70-80% of chorioamnionitis). Non-reassuring tracing indicates fetal distress.",
+              "CBC: Leukocytosis (WBC >15,000, 70-80%). Baseline WBC 10,000-15,000 normal in labor.",
+              "Blood cultures x2: Before antibiotics. Positive in 5-10% (GBS, E. coli, anaerobes)."
+            ],
+            "conditional_tests": [
+              "CRP: Elevated (>2 mg/dL) in 60-70% of chorioamnionitis. Non-specific.",
+              "Amniotic fluid culture: Rarely performed (requires amniocentesis, invasive). Use if diagnosis uncertain or research purposes.",
+              "Placental pathology: After delivery. Confirms diagnosis (acute inflammation, neutrophils in membranes). Use if neonatal complications or medico-legal concerns.",
+              "Neonatal blood culture: If neonatal sepsis suspected (fever, respiratory distress, hypotension)."
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics or delivery while awaiting test results (clinical diagnosis sufficient). Do NOT routinely perform amniocentesis for amniotic fluid culture (invasive, not needed for diagnosis). Do NOT require positive blood cultures for diagnosis (positive in only 5-10%).",
+            "turnaround_time": "Blood cultures: 24-48 hours (preliminary), 5 days (final). CBC: 1-2 hours. CRP: 1-2 hours. Placental pathology: 3-5 days."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Polymicrobial (2-3 organisms). Group B Streptococcus (GBS, 20-30%), E. coli (20-30%), anaerobes (Bacteroides, Prevotella, Peptostreptococcus, 30-40%), Enterococcus (10-20%), Ureaplasma urealyticum (10-20%), Mycoplasma hominis (5-10%). Often mixed aerobic + anaerobic infection.",
+            "pathogenesis": "Ascending infection from vagina/cervix → amniotic cavity → membranes → placenta → fetus. Risk factors: Prolonged rupture of membranes (>18 hours, most important), prolonged labor (>12 hours), multiple vaginal exams (>5 exams), internal fetal monitoring. Maternal complications: Sepsis (5-10%), postpartum hemorrhage (10-15%), postpartum endometritis (10-20%). Neonatal complications: Sepsis (5-10%), pneumonia (5-10%), meningitis (1-2%), cerebral palsy (increased risk if preterm).",
+            "resistance_patterns": {
+              "gbs_resistance": "GBS: NO resistance to penicillin or ampicillin (100% susceptible). Clindamycin resistance 15-25% (do NOT use clindamycin alone for GBS).",
+              "e_coli_resistance": "E. coli: Ampicillin resistance 30-50% (increasing). Gentamicin resistance <5%. Ceftriaxone resistance <5%.",
+              "anaerobe_resistance": "Anaerobes: Clindamycin resistance 10-20%. Metronidazole resistance <5%."
+            },
+            "timing_critical": "Start antibiotics immediately upon diagnosis (do NOT delay for test results). Immediate delivery (vaginal or cesarean) REQUIRED (antibiotics alone insufficient). Ampicillin 2g IV q6h + Gentamicin 5mg/kg IV daily (covers GBS, E. coli, Enterococcus). Add clindamycin 900mg IV q8h if cesarean delivery (covers anaerobes)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "vaginal_delivery": "Ampicillin 2g IV q6h + Gentamicin 5mg/kg IV daily (ACOG 2017 preferred, covers GBS, E. coli, Enterococcus). Continue until delivery, then discontinue (postpartum antibiotics NOT routinely needed if vaginal delivery). Alternative: Ampicillin-sulbactam 3g IV q6h (single agent, covers GBS, E. coli, anaerobes).",
+            "cesarean_delivery": "Ampicillin 2g IV q6h + Gentamicin 5mg/kg IV daily + Clindamycin 900mg IV q8h (ACOG 2017 preferred, adds anaerobic coverage). Continue until 24 hours after delivery OR until afebrile x 24 hours (whichever is longer). Alternative: Piperacillin-tazobactam 3.375g IV q6h (single agent, broad-spectrum).",
+            "penicillin_allergy": "Clindamycin 900mg IV q8h + Gentamicin 5mg/kg IV daily (covers GBS, E. coli, anaerobes). Alternative: Vancomycin 15-20mg/kg IV q8-12h + Gentamicin 5mg/kg IV daily + Metronidazole 500mg IV q8h (if severe penicillin allergy).",
+            "immediate_delivery_required": "Antibiotics alone are insufficient. Immediate delivery (vaginal or cesarean) REQUIRED. Antibiotics reduce maternal and neonatal complications but do NOT cure infection without delivery. Continue antibiotics during labor and delivery.",
+            "avoid_list": "Avoid fluoroquinolones (ciprofloxacin, levofloxacin, contraindicated in pregnancy). Avoid tetracyclines (doxycycline, contraindicated in pregnancy). Do NOT delay antibiotics or delivery while awaiting test results."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "gbs_chorioamnionitis": "Ampicillin 2g IV q6h (covers GBS, 100% susceptible). Continue until delivery. Postpartum antibiotics NOT routinely needed if vaginal delivery. If cesarean delivery: Continue ampicillin + clindamycin x 24 hours after delivery OR until afebrile x 24 hours.",
+            "e_coli_chorioamnionitis": "Ampicillin 2g IV q6h + Gentamicin 5mg/kg IV daily (covers E. coli, ampicillin resistance 30-50%). Continue until delivery. If cesarean delivery: Continue x 24 hours after delivery OR until afebrile x 24 hours.",
+            "anaerobic_chorioamnionitis": "Ampicillin 2g IV q6h + Clindamycin 900mg IV q8h (covers anaerobes). Continue until delivery. If cesarean delivery: Continue x 24 hours after delivery OR until afebrile x 24 hours.",
+            "polymicrobial": "Ampicillin 2g IV q6h + Gentamicin 5mg/kg IV daily + Clindamycin 900mg IV q8h (covers GBS, E. coli, Enterococcus, anaerobes). Continue until delivery. If cesarean delivery: Continue x 24 hours after delivery OR until afebrile x 24 hours.",
+            "postpartum_antibiotics": "Vaginal delivery: Postpartum antibiotics NOT routinely needed (discontinue after delivery). Cesarean delivery: Continue antibiotics x 24 hours after delivery OR until afebrile x 24 hours (whichever is longer). If persistent fever >24 hours postpartum: Evaluate for postpartum endometritis, wound infection, or other complications.",
+            "duration": "Intrapartum: Continue antibiotics until delivery. Postpartum (vaginal delivery): Discontinue after delivery. Postpartum (cesarean delivery): Continue x 24 hours after delivery OR until afebrile x 24 hours (whichever is longer)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "Intrapartum: Continue antibiotics until delivery. Postpartum (vaginal delivery): Discontinue after delivery (postpartum antibiotics NOT routinely needed). Postpartum (cesarean delivery): Continue x 24 hours after delivery OR until afebrile x 24 hours (whichever is longer).",
+            "monitoring": "Intrapartum: Monitor maternal temperature every 1-2 hours, maternal heart rate, fetal heart rate (continuous electronic fetal monitoring). Postpartum: Monitor temperature every 4 hours x 24 hours, then every 8 hours. Monitor for postpartum hemorrhage (uterine atony 10-15% of chorioamnionitis). Neonatal monitoring: Blood culture, CBC, CRP, chest X-ray if respiratory distress. Empiric neonatal antibiotics (ampicillin + gentamicin) if sepsis suspected.",
+            "stop_criteria": "Vaginal delivery: Discontinue antibiotics after delivery. Cesarean delivery: Discontinue antibiotics when afebrile x 24 hours AND 24 hours after delivery (whichever is longer). If persistent fever >24 hours postpartum: Evaluate for postpartum endometritis, wound infection, pelvic abscess, or other complications. Do NOT continue antibiotics beyond 24 hours postpartum if afebrile (no benefit, increases resistance)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "preterm_delivery": "Chorioamnionitis is leading cause of preterm birth (20-40% of preterm births). Increased risk of neonatal complications: Sepsis (10-20%), pneumonia (10-20%), meningitis (2-5%), cerebral palsy (2-3 fold increased risk), intraventricular hemorrhage (increased risk). Neonatal antibiotics (ampicillin + gentamicin) REQUIRED for all preterm infants born to mothers with chorioamnionitis. Prolonged neonatal antibiotics (7-10 days) if positive blood culture or clinical sepsis.",
+            "gbs_prophylaxis_failure": "Chorioamnionitis can occur despite adequate GBS prophylaxis (penicillin or ampicillin during labor). GBS prophylaxis reduces neonatal GBS sepsis but does NOT prevent chorioamnionitis (polymicrobial infection). Continue ampicillin + gentamicin (broader coverage than GBS prophylaxis alone).",
+            "maternal_sepsis": "Hypotension (SBP <90 mmHg), tachycardia (>120 bpm), altered mental status, oliguria (<0.5 mL/kg/h). Requires ICU admission, aggressive fluid resuscitation (2-3 L crystalloid), vasopressors (norepinephrine), broad-spectrum antibiotics (ampicillin + gentamicin + clindamycin OR piperacillin-tazobactam), immediate delivery. Mortality 1-2% if treated promptly.",
+            "postpartum_hemorrhage": "Uterine atony (10-15% of chorioamnionitis, infection impairs uterine contractility). Management: Uterine massage, uterotonics (oxytocin 10-40 units IV infusion, methylergonovine 0.2mg IM, carboprost 250mcg IM, misoprostol 800-1000mcg PR), tranexamic acid 1g IV, possible transfusion, possible surgical intervention (B-Lynch suture, hysterectomy).",
+            "neonatal_management": "All neonates born to mothers with chorioamnionitis require evaluation: Blood culture, CBC, CRP, chest X-ray if respiratory distress. Empiric neonatal antibiotics (ampicillin 50mg/kg IV q12h + gentamicin 4mg/kg IV daily) if: Preterm (<37 weeks), positive blood culture, clinical sepsis (fever, respiratory distress, hypotension), or maternal sepsis. Continue antibiotics x 7-10 days if positive blood culture or clinical sepsis. Discontinue antibiotics at 48 hours if blood culture negative and clinically well.",
+            "counseling": "Chorioamnionitis increases risk of: Maternal sepsis (5-10%), postpartum hemorrhage (10-15%), postpartum endometritis (10-20%), neonatal sepsis (5-10%), neonatal pneumonia (5-10%), cerebral palsy (increased risk if preterm). Immediate delivery REQUIRED (antibiotics alone insufficient). Postpartum antibiotics NOT routinely needed if vaginal delivery. Future pregnancies: No increased risk of recurrence (not a chronic condition)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Start antibiotics immediately upon diagnosis (do NOT delay for test results, clinical diagnosis sufficient)",
+              "Immediate delivery REQUIRED (antibiotics alone insufficient)",
+              "Vaginal delivery: Discontinue antibiotics after delivery (postpartum antibiotics NOT routinely needed)",
+              "Cesarean delivery: Discontinue antibiotics when afebrile x 24 hours AND 24 hours after delivery (do NOT continue beyond 24 hours if afebrile)"
+            ],
+            "timeout_checklist": [
+              "Is diagnosis confirmed by clinical criteria? (Maternal fever >38°C during labor + one or more: maternal tachycardia, fetal tachycardia, uterine tenderness, purulent amniotic fluid)",
+              "Are antibiotics started immediately? (Ampicillin 2g IV q6h + Gentamicin 5mg/kg IV daily, add clindamycin if cesarean)",
+              "Is immediate delivery planned? (Antibiotics alone insufficient, delivery REQUIRED)",
+              "Are blood cultures obtained before antibiotics? (Positive in 5-10%)",
+              "Is neonatal evaluation planned? (Blood culture, CBC, CRP, empiric antibiotics if preterm or sepsis suspected)",
+              "Are postpartum antibiotics discontinued appropriately? (Vaginal delivery: discontinue after delivery, Cesarean delivery: discontinue when afebrile x 24 hours AND 24 hours after delivery)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid fluoroquinolones (contraindicated in pregnancy). Avoid tetracyclines (contraindicated in pregnancy). Do NOT delay antibiotics or delivery while awaiting test results. Do NOT continue postpartum antibiotics beyond 24 hours if afebrile (no benefit, increases resistance). Do NOT routinely give postpartum antibiotics after vaginal delivery (not needed).",
+            "diagnostic_stewardship": "Clinical diagnosis (maternal fever >38°C during labor + one or more: maternal tachycardia, fetal tachycardia, uterine tenderness, purulent amniotic fluid). Blood cultures before antibiotics (positive in 5-10%). Do NOT routinely perform amniocentesis for amniotic fluid culture (invasive, not needed). Do NOT require positive blood cultures for diagnosis.",
+            "prevention": "GBS prophylaxis (penicillin or ampicillin during labor) reduces neonatal GBS sepsis but does NOT prevent chorioamnionitis. Minimize vaginal exams during labor (<5 exams). Avoid prolonged rupture of membranes (deliver within 18-24 hours of membrane rupture). Avoid internal fetal monitoring if possible (intrauterine pressure catheter, fetal scalp electrode increase infection risk)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "ACOG Committee Opinion: Intrapartum Management of Intraamniotic Infection (2017)",
+              "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/08/intrapartum-management-of-intraamniotic-infection"
+            },
+            {
+              "label": "CDC Prevention of Perinatal Group B Streptococcal Disease (2020)",
+              "url": "https://www.cdc.gov/groupbstrep/clinicians/prevention.html"
+            },
+            {
+              "label": "ACOG Practice Bulletin: Premature Rupture of Membranes (2020)",
+              "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2020/03/premature-rupture-of-membranes"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "postpartum-endometritis",
+      "name": "Postpartum Endometritis",
+      "synonyms": [
+        "puerperal endometritis",
+        "postpartum uterine infection"
+      ],
+      "icd10": [
+        "O85",
+        "O86.1"
+      ],
+      "severity": [
+        "moderate",
+        "severe"
+      ],
+      "shortDescription": "Polymicrobial postpartum uterine infection requiring IV antibiotics (clindamycin + gentamicin OR ampicillin-sulbactam) until afebrile x 24-48 hours",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Polymicrobial infection of endometrium after delivery. Organisms: Group B Streptococcus (GBS, 20-30%), E. coli (20-30%), anaerobes (Bacteroides, Prevotella, Peptostreptococcus, 30-40%), Enterococcus (10-20%), Staphylococcus aureus (5-10%). Incidence: 1-3% after vaginal delivery, 5-15% after cesarean delivery (5-10 fold increased risk). Complications: Pelvic abscess (5-10%), septic pelvic thrombophlebitis (1-2%), sepsis (5-10%), hysterectomy (rare, <1%).",
+            "clinical_presentation": "Fever >38°C (100.4°F) within 10 days postpartum (usually 2-5 days) + uterine tenderness + purulent or foul-smelling lochia. Physical exam: Uterine tenderness (fundal tenderness), purulent or foul-smelling lochia, tachycardia (>100 bpm). Fever is REQUIRED for diagnosis. Leukocytosis (WBC >15,000) common but non-specific.",
+            "diagnostic_criteria": "Clinical diagnosis (ACOG 2018): Fever >38°C within 10 days postpartum + uterine tenderness + purulent or foul-smelling lochia. Laboratory: Leukocytosis (WBC >15,000, 70-80%), elevated CRP (>2 mg/dL, 60-70%). Blood cultures (positive in 10-20%). Endometrial culture (rarely performed, requires transcervical sampling, contaminated by vaginal flora).",
+            "risk_factors": [
+              "Cesarean delivery (most important risk factor, 5-10 fold increased risk)",
+              "Prolonged rupture of membranes (>18 hours)",
+              "Prolonged labor (>12 hours)",
+              "Multiple vaginal exams (>5 exams)",
+              "Internal fetal monitoring",
+              "Chorioamnionitis",
+              "Manual removal of placenta",
+              "Retained placental fragments",
+              "Bacterial vaginosis"
+            ],
+            "red_flags": [
+              "Sepsis - hypotension, tachycardia >120 bpm, altered mental status, requires IV antibiotics + ICU + possible hysterectomy",
+              "Pelvic abscess - persistent fever despite antibiotics, pelvic mass on imaging, requires drainage (percutaneous or surgical)",
+              "Septic pelvic thrombophlebitis - persistent fever despite antibiotics, pelvic vein thrombosis on CT/MRI, requires anticoagulation",
+              "Necrotizing fasciitis - rare, rapidly progressive, crepitus, skin necrosis, requires urgent surgical debridement",
+              "Retained placental fragments - persistent bleeding, requires ultrasound + dilation and curettage (D&C)"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Test if: Fever >38°C within 10 days postpartum + uterine tenderness. Clinical diagnosis (do NOT delay antibiotics while awaiting test results). Blood cultures before antibiotics (positive in 10-20%). Endometrial culture rarely performed (contaminated by vaginal flora).",
+            "essential_tests": [
+              "Temperature: Fever >38°C (100.4°F) REQUIRED for diagnosis. Measure every 4 hours.",
+              "Physical exam: Uterine tenderness (fundal tenderness), purulent or foul-smelling lochia.",
+              "CBC: Leukocytosis (WBC >15,000, 70-80%). Baseline WBC 10,000-15,000 normal postpartum.",
+              "Blood cultures x2: Before antibiotics. Positive in 10-20% (GBS, E. coli, anaerobes, Enterococcus)."
+            ],
+            "conditional_tests": [
+              "CRP: Elevated (>2 mg/dL) in 60-70% of endometritis. Non-specific.",
+              "Pelvic ultrasound: If persistent fever despite antibiotics (rule out pelvic abscess, retained placental fragments). Thickened endometrium (>10 mm), fluid collection, retained products of conception.",
+              "CT abdomen/pelvis with contrast: If persistent fever despite antibiotics (rule out pelvic abscess, septic pelvic thrombophlebitis). Pelvic abscess, pelvic vein thrombosis, necrotizing fasciitis.",
+              "Endometrial culture: Rarely performed (contaminated by vaginal flora, not useful). Use only if diagnosis uncertain or research purposes."
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics while awaiting test results (clinical diagnosis sufficient). Do NOT routinely perform endometrial culture (contaminated by vaginal flora). Do NOT require positive blood cultures for diagnosis (positive in only 10-20%).",
+            "turnaround_time": "Blood cultures: 24-48 hours (preliminary), 5 days (final). CBC: 1-2 hours. CRP: 1-2 hours. Pelvic ultrasound: Same day. CT abdomen/pelvis: Same day."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Polymicrobial (2-3 organisms). Group B Streptococcus (GBS, 20-30%), E. coli (20-30%), anaerobes (Bacteroides, Prevotella, Peptostreptococcus, 30-40%), Enterococcus (10-20%), Staphylococcus aureus (5-10%, including MRSA 1-2%). Often mixed aerobic + anaerobic infection.",
+            "pathogenesis": "Ascending infection from vagina/cervix → endometrium → myometrium → parametrium. Risk factors: Cesarean delivery (most important, 5-10 fold increased risk), prolonged rupture of membranes, prolonged labor, multiple vaginal exams, chorioamnionitis, manual removal of placenta, retained placental fragments. Complications: Pelvic abscess (5-10%), septic pelvic thrombophlebitis (1-2%), sepsis (5-10%), hysterectomy (rare, <1%).",
+            "resistance_patterns": {
+              "gbs_resistance": "GBS: NO resistance to penicillin or ampicillin (100% susceptible). Clindamycin resistance 15-25%.",
+              "e_coli_resistance": "E. coli: Ampicillin resistance 30-50% (increasing). Gentamicin resistance <5%. Ceftriaxone resistance <5%.",
+              "anaerobe_resistance": "Anaerobes: Clindamycin resistance 10-20%. Metronidazole resistance <5%.",
+              "mrsa_resistance": "MRSA: Rare (1-2% of postpartum endometritis). Vancomycin 100% susceptible."
+            },
+            "timing_critical": "Start antibiotics immediately upon diagnosis (do NOT delay for test results). Clindamycin 900mg IV q8h + Gentamicin 5mg/kg IV daily (ACOG 2018 preferred, covers GBS, E. coli, Enterococcus, anaerobes). Alternative: Ampicillin-sulbactam 3g IV q6h (single agent). Continue until afebrile x 24-48 hours, then switch to PO OR discontinue (no PO antibiotics needed if afebrile x 48 hours)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": "Clindamycin 900mg IV q8h + Gentamicin 5mg/kg IV daily (ACOG 2018 preferred, covers GBS, E. coli, Enterococcus, anaerobes). Continue until afebrile x 24-48 hours, then switch to PO OR discontinue (no PO antibiotics needed if afebrile x 48 hours). Alternative: Ampicillin-sulbactam 3g IV q6h (single agent, covers GBS, E. coli, anaerobes).",
+            "alternative": "Piperacillin-tazobactam 3.375g IV q6h (single agent, broad-spectrum, covers GBS, E. coli, Enterococcus, anaerobes, Pseudomonas). Alternative: Cefotetan 2g IV q12h + Doxycycline 100mg IV/PO BID (similar to PID regimen).",
+            "penicillin_allergy": "Clindamycin 900mg IV q8h + Gentamicin 5mg/kg IV daily (covers GBS, E. coli, anaerobes). Alternative: Vancomycin 15-20mg/kg IV q8-12h + Gentamicin 5mg/kg IV daily + Metronidazole 500mg IV q8h (if severe penicillin allergy).",
+            "mrsa_coverage": "Add vancomycin 15-20mg/kg IV q8-12h if: MRSA risk factors (prior MRSA infection, nasal colonization, ICU admission), severe sepsis, or failed initial therapy. MRSA rare (1-2% of postpartum endometritis).",
+            "avoid_list": "Avoid fluoroquinolones if breastfeeding (excreted in breast milk, may affect infant). Avoid tetracyclines if breastfeeding (excreted in breast milk, may affect infant bone/teeth). Do NOT delay antibiotics while awaiting test results."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "gbs_endometritis": "Ampicillin 2g IV q6h OR Penicillin G 5 million units IV q6h (covers GBS, 100% susceptible). Continue until afebrile x 24-48 hours, then discontinue (no PO antibiotics needed).",
+            "e_coli_endometritis": "Ampicillin-sulbactam 3g IV q6h OR Ceftriaxone 2g IV daily (covers E. coli, ampicillin resistance 30-50%). Continue until afebrile x 24-48 hours, then discontinue.",
+            "anaerobic_endometritis": "Clindamycin 900mg IV q8h OR Metronidazole 500mg IV q8h (covers anaerobes). Continue until afebrile x 24-48 hours, then discontinue.",
+            "polymicrobial": "Clindamycin 900mg IV q8h + Gentamicin 5mg/kg IV daily (covers GBS, E. coli, Enterococcus, anaerobes). Continue until afebrile x 24-48 hours, then discontinue.",
+            "treatment_failure": "Persistent fever >72 hours despite antibiotics. Causes: Pelvic abscess (5-10%), septic pelvic thrombophlebitis (1-2%), retained placental fragments, resistant organism, wound infection. Management: Pelvic ultrasound or CT abdomen/pelvis. Drainage if abscess. Anticoagulation if septic pelvic thrombophlebitis. D&C if retained placental fragments. Broaden antibiotics (add vancomycin if MRSA suspected).",
+            "duration": "IV antibiotics until afebrile x 24-48 hours, then switch to PO OR discontinue (no PO antibiotics needed if afebrile x 48 hours). Total duration: 3-5 days IV (most cases). PO antibiotics: Amoxicillin-clavulanate 875mg PO BID x 3-5 days OR Doxycycline 100mg PO BID x 3-5 days (if not breastfeeding) OR Discontinue (no PO antibiotics needed if afebrile x 48 hours)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "IV antibiotics until afebrile x 24-48 hours, then switch to PO OR discontinue (no PO antibiotics needed if afebrile x 48 hours). Total duration: 3-5 days IV (most cases). PO antibiotics: Amoxicillin-clavulanate 875mg PO BID x 3-5 days OR Doxycycline 100mg PO BID x 3-5 days (if not breastfeeding) OR Discontinue (no PO antibiotics needed if afebrile x 48 hours).",
+            "monitoring": "Monitor temperature every 4 hours. Monitor for clinical improvement (decreased uterine tenderness, improved lochia). Monitor for complications (pelvic abscess, septic pelvic thrombophlebitis, retained placental fragments). Pelvic ultrasound or CT if persistent fever >72 hours despite antibiotics.",
+            "stop_criteria": "Discontinue IV antibiotics when afebrile x 24-48 hours. Switch to PO antibiotics OR discontinue (no PO antibiotics needed if afebrile x 48 hours). If persistent fever >72 hours: Evaluate for pelvic abscess, septic pelvic thrombophlebitis, retained placental fragments, resistant organism, wound infection."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "breastfeeding": "Most antibiotics safe in breastfeeding: Ampicillin, amoxicillin-clavulanate, cephalosporins, clindamycin, metronidazole, gentamicin (minimal excretion in breast milk). Avoid fluoroquinolones (excreted in breast milk, may affect infant). Avoid tetracyclines (excreted in breast milk, may affect infant bone/teeth). Continue breastfeeding during treatment (no need to pump and dump).",
+            "pelvic_abscess": "Persistent fever >72 hours despite antibiotics. Pelvic ultrasound or CT abdomen/pelvis: Fluid collection, abscess. Management: Percutaneous drainage (CT-guided or ultrasound-guided) OR Surgical drainage (laparoscopy or laparotomy). Continue IV antibiotics x 7-14 days total. Gynecology consult.",
+            "septic_pelvic_thrombophlebitis": "Persistent fever >72 hours despite antibiotics. CT abdomen/pelvis with contrast: Pelvic vein thrombosis (ovarian vein, internal iliac vein). Management: Anticoagulation (heparin 80 units/kg IV bolus, then 18 units/kg/h infusion OR enoxaparin 1mg/kg SC BID) x 6-12 weeks. Continue IV antibiotics until afebrile x 48 hours. Hematology consult.",
+            "retained_placental_fragments": "Persistent bleeding, persistent fever despite antibiotics. Pelvic ultrasound: Thickened endometrium (>10 mm), retained products of conception. Management: Dilation and curettage (D&C). Continue IV antibiotics until afebrile x 24-48 hours after D&C.",
+            "necrotizing_fasciitis": "Rare, rapidly progressive, high mortality (20-30%). Crepitus, skin necrosis, severe pain, sepsis. CT abdomen/pelvis: Gas in soft tissues. Management: Urgent surgical debridement, broad-spectrum antibiotics (vancomycin + piperacillin-tazobactam + clindamycin), ICU admission. Gynecology + general surgery consult.",
+            "counseling": "Postpartum endometritis is common after cesarean delivery (5-15%). Most cases respond to IV antibiotics within 48-72 hours. Persistent fever >72 hours requires imaging (ultrasound or CT) to rule out pelvic abscess, septic pelvic thrombophlebitis, or retained placental fragments. Breastfeeding safe during treatment. Future pregnancies: No increased risk of recurrence (not a chronic condition)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Start antibiotics immediately upon diagnosis (do NOT delay for test results, clinical diagnosis sufficient)",
+              "Clindamycin 900mg IV q8h + Gentamicin 5mg/kg IV daily (ACOG 2018 preferred) OR Ampicillin-sulbactam 3g IV q6h (single agent)",
+              "Discontinue IV antibiotics when afebrile x 24-48 hours",
+              "Switch to PO antibiotics OR discontinue (no PO antibiotics needed if afebrile x 48 hours)",
+              "Do NOT routinely add vancomycin (MRSA rare, 1-2% of postpartum endometritis)"
+            ],
+            "timeout_checklist": [
+              "Is diagnosis confirmed by clinical criteria? (Fever >38°C within 10 days postpartum + uterine tenderness + purulent lochia)",
+              "Are antibiotics started immediately? (Clindamycin 900mg IV q8h + Gentamicin 5mg/kg IV daily OR Ampicillin-sulbactam 3g IV q6h)",
+              "Are blood cultures obtained before antibiotics? (Positive in 10-20%)",
+              "Is patient afebrile x 24-48 hours? (If yes, discontinue IV antibiotics)",
+              "Is persistent fever >72 hours? (If yes, imaging to rule out pelvic abscess, septic pelvic thrombophlebitis, retained placental fragments)",
+              "Are PO antibiotics needed? (No PO antibiotics needed if afebrile x 48 hours)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid fluoroquinolones if breastfeeding. Avoid tetracyclines if breastfeeding. Do NOT delay antibiotics while awaiting test results. Do NOT routinely add vancomycin (MRSA rare). Do NOT continue IV antibiotics beyond 48 hours if afebrile (no benefit, increases resistance). Do NOT routinely give PO antibiotics after IV antibiotics (no benefit if afebrile x 48 hours).",
+            "diagnostic_stewardship": "Clinical diagnosis (fever >38°C within 10 days postpartum + uterine tenderness + purulent lochia). Blood cultures before antibiotics (positive in 10-20%). Do NOT routinely perform endometrial culture (contaminated by vaginal flora). Imaging (ultrasound or CT) if persistent fever >72 hours despite antibiotics.",
+            "prevention": "Prophylactic antibiotics before cesarean delivery (cefazolin 2g IV x1 OR cefazolin 3g IV x1 if weight >120 kg) reduce postpartum endometritis by 50-70%. Minimize vaginal exams during labor. Avoid prolonged rupture of membranes. Treat chorioamnionitis promptly."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "ACOG Practice Bulletin: Postpartum Infections (2018)",
+              "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/06/postpartum-infections"
+            },
+            {
+              "label": "CDC Prevention of Perinatal Group B Streptococcal Disease (2020)",
+              "url": "https://www.cdc.gov/groupbstrep/clinicians/prevention.html"
+            },
+            {
+              "label": "ACOG Practice Bulletin: Prophylactic Antibiotics in Labor and Delivery (2018)",
+              "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/05/prophylactic-antibiotics-in-labor-and-delivery"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "gbs-prophylaxis",
+      "name": "Group B Streptococcus (GBS) Prophylaxis",
+      "synonyms": [
+        "GBS prevention",
+        "intrapartum antibiotic prophylaxis",
+        "IAP"
+      ],
+      "icd10": [
+        "O98.8",
+        "Z22.3"
+      ],
+      "severity": [
+        "mild"
+      ],
+      "shortDescription": "Intrapartum antibiotic prophylaxis to prevent neonatal GBS sepsis (penicillin G 5 million units IV x1, then 2.5-3 million units IV q4h until delivery)",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Intrapartum antibiotic prophylaxis (IAP) to prevent early-onset neonatal GBS sepsis (onset <7 days of life). GBS (Streptococcus agalactiae) colonizes vagina/rectum in 10-30% of pregnant women. Without IAP: Neonatal GBS sepsis rate 1-2 per 1,000 live births. With IAP: Neonatal GBS sepsis rate 0.2-0.3 per 1,000 live births (80-90% reduction). Early-onset neonatal GBS sepsis: Pneumonia (40-50%), sepsis (30-40%), meningitis (5-10%). Mortality 2-3% (higher if preterm).",
+            "clinical_presentation": "Maternal GBS colonization is asymptomatic (no symptoms). Screening: Vaginal-rectal swab at 36-37 weeks gestation (universal screening, CDC 2020). Positive GBS screen: 10-30% of pregnant women. Neonatal GBS sepsis (if no IAP): Fever, respiratory distress, hypotension, lethargy, poor feeding within 7 days of birth.",
+            "diagnostic_criteria": "GBS screening: Vaginal-rectal swab at 36-37 weeks gestation (universal screening, CDC 2020). Culture-based method (gold standard, 24-48 hours turnaround). Rapid PCR test (if available, 1-2 hours turnaround, use if labor onset before culture results available). Positive GBS screen: Requires IAP during labor. Negative GBS screen: No IAP needed (unless risk factors present).",
+            "risk_factors": [
+              "Positive GBS screen at 36-37 weeks (most common indication for IAP)",
+              "GBS bacteriuria during current pregnancy (any trimester, requires IAP regardless of screening result)",
+              "Previous infant with GBS sepsis (requires IAP regardless of screening result)",
+              "Unknown GBS status at labor onset + risk factors (preterm labor <37 weeks, prolonged rupture of membranes >18 hours, fever >38°C during labor)"
+            ],
+            "red_flags": [
+              "Neonatal GBS sepsis - fever, respiratory distress, hypotension, lethargy, poor feeding within 7 days of birth, requires neonatal ICU + IV antibiotics (ampicillin + gentamicin)",
+              "Inadequate IAP - <4 hours of antibiotics before delivery, requires enhanced neonatal observation",
+              "Penicillin allergy - requires alternative antibiotics (cefazolin if low-risk allergy, vancomycin if high-risk allergy)",
+              "GBS bacteriuria - requires treatment during pregnancy + IAP during labor (high inoculum, increased risk of pyelonephritis and neonatal sepsis)"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Universal GBS screening: Vaginal-rectal swab at 36-37 weeks gestation (CDC 2020). Culture-based method (gold standard, 24-48 hours turnaround). Rapid PCR test (if available, 1-2 hours turnaround, use if labor onset before culture results available). Urine culture: If GBS bacteriuria detected during pregnancy (any trimester), requires treatment + IAP during labor.",
+            "essential_tests": [
+              "GBS screening: Vaginal-rectal swab at 36-37 weeks gestation. Culture-based method (gold standard, 24-48 hours). Positive in 10-30% of pregnant women.",
+              "Rapid PCR test: If labor onset before culture results available. 1-2 hours turnaround. Sensitivity 90-95%, specificity 95-98%.",
+              "Urine culture: If GBS bacteriuria detected during pregnancy (any trimester). Requires treatment + IAP during labor regardless of screening result."
+            ],
+            "conditional_tests": [
+              "Repeat GBS screening: If preterm labor <37 weeks and previous negative screen at 36-37 weeks (GBS status may change). Use rapid PCR if available.",
+              "Neonatal blood culture: If inadequate IAP (<4 hours before delivery) or neonatal signs of sepsis (fever, respiratory distress, hypotension)."
+            ],
+            "when_not_to_test": "Do NOT screen before 36 weeks (GBS status may change). Do NOT screen if planned cesarean delivery without labor or rupture of membranes (no IAP needed, no vertical transmission). Do NOT screen if GBS bacteriuria during current pregnancy (IAP required regardless of screening result). Do NOT screen if previous infant with GBS sepsis (IAP required regardless of screening result).",
+            "turnaround_time": "GBS culture: 24-48 hours. Rapid PCR: 1-2 hours. Urine culture: 24-48 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Group B Streptococcus (Streptococcus agalactiae). Gram-positive cocci in chains. Colonizes vagina/rectum in 10-30% of pregnant women. Vertical transmission during labor/delivery → neonatal colonization → early-onset neonatal GBS sepsis (onset <7 days of life). Neonatal GBS sepsis: Pneumonia (40-50%), sepsis (30-40%), meningitis (5-10%). Mortality 2-3% (higher if preterm).",
+            "pathogenesis": "Maternal GBS colonization (vagina/rectum) → vertical transmission during labor/delivery → neonatal colonization (skin, mucous membranes, respiratory tract) → invasive infection (bloodstream, lungs, meninges). Risk factors for neonatal GBS sepsis: Preterm birth (<37 weeks), prolonged rupture of membranes (>18 hours), maternal fever during labor (>38°C), inadequate IAP (<4 hours before delivery), high maternal GBS inoculum (GBS bacteriuria).",
+            "resistance_patterns": {
+              "penicillin_resistance": "GBS: NO resistance to penicillin or ampicillin (100% susceptible). Penicillin G remains first-line for IAP.",
+              "cefazolin_resistance": "GBS: NO resistance to cefazolin (100% susceptible). Cefazolin alternative for penicillin allergy (low-risk).",
+              "clindamycin_resistance": "GBS: Clindamycin resistance 15-25% (increasing). Do NOT use clindamycin for IAP unless susceptibility confirmed.",
+              "vancomycin_resistance": "GBS: NO resistance to vancomycin (100% susceptible). Vancomycin alternative for penicillin allergy (high-risk)."
+            },
+            "timing_critical": "Start IAP at onset of labor OR rupture of membranes (whichever comes first). Adequate IAP: ≥4 hours of antibiotics before delivery (80-90% reduction in neonatal GBS sepsis). Inadequate IAP: <4 hours of antibiotics before delivery (requires enhanced neonatal observation). Penicillin G 5 million units IV x1, then 2.5-3 million units IV q4h until delivery (CDC 2020 preferred)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": "Penicillin G 5 million units IV x1, then 2.5-3 million units IV q4h until delivery (CDC 2020 preferred, narrow spectrum, reduces neonatal GBS sepsis by 80-90%). Alternative: Ampicillin 2g IV x1, then 1g IV q4h until delivery (broader spectrum than penicillin G, may increase neonatal antibiotic resistance).",
+            "penicillin_allergy_low_risk": "Cefazolin 2g IV x1, then 1g IV q8h until delivery (if low-risk penicillin allergy: rash, pruritus, no anaphylaxis). GBS 100% susceptible to cefazolin. Do NOT use if high-risk penicillin allergy (anaphylaxis, angioedema, respiratory distress, urticaria).",
+            "penicillin_allergy_high_risk": "Vancomycin 20mg/kg IV q8h (max 2g per dose) until delivery (if high-risk penicillin allergy: anaphylaxis, angioedema, respiratory distress, urticaria). GBS 100% susceptible to vancomycin. Alternative: Clindamycin 900mg IV q8h until delivery (ONLY if GBS susceptibility to clindamycin confirmed, resistance 15-25%).",
+            "adequate_iap": "Adequate IAP: ≥4 hours of antibiotics before delivery (80-90% reduction in neonatal GBS sepsis). Inadequate IAP: <4 hours of antibiotics before delivery (requires enhanced neonatal observation, blood culture, CBC, CRP at 0 and 24 hours).",
+            "avoid_list": "Avoid clindamycin unless GBS susceptibility confirmed (resistance 15-25%). Avoid erythromycin (resistance 25-35%, no longer recommended by CDC 2020). Do NOT use cefazolin if high-risk penicillin allergy (cross-reactivity 1-3%)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "gbs_positive": "Penicillin G 5 million units IV x1, then 2.5-3 million units IV q4h until delivery (CDC 2020 preferred). Continue until delivery. Discontinue after delivery (postpartum antibiotics NOT needed).",
+            "gbs_bacteriuria": "Treatment during pregnancy: Penicillin VK 500mg PO QID x 7 days OR Amoxicillin 500mg PO TID x 7 days. IAP during labor: Penicillin G 5 million units IV x1, then 2.5-3 million units IV q4h until delivery (regardless of screening result at 36-37 weeks).",
+            "previous_infant_gbs_sepsis": "IAP during labor: Penicillin G 5 million units IV x1, then 2.5-3 million units IV q4h until delivery (regardless of screening result at 36-37 weeks).",
+            "unknown_gbs_status_with_risk_factors": "IAP if: Preterm labor <37 weeks OR Prolonged rupture of membranes >18 hours OR Maternal fever >38°C during labor. Penicillin G 5 million units IV x1, then 2.5-3 million units IV q4h until delivery.",
+            "planned_cesarean_without_labor": "No IAP needed if planned cesarean delivery without labor or rupture of membranes (no vertical transmission). IAP needed if labor onset or rupture of membranes before cesarean delivery.",
+            "duration": "Continue IAP until delivery. Discontinue after delivery (postpartum antibiotics NOT needed). Adequate IAP: ≥4 hours of antibiotics before delivery."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "Continue IAP until delivery. Discontinue after delivery (postpartum antibiotics NOT needed). Adequate IAP: ≥4 hours of antibiotics before delivery (80-90% reduction in neonatal GBS sepsis). Inadequate IAP: <4 hours of antibiotics before delivery (requires enhanced neonatal observation).",
+            "monitoring": "Maternal: Monitor for allergic reaction (anaphylaxis, rash, pruritus). Neonatal: If adequate IAP (≥4 hours before delivery) + no neonatal signs of sepsis → routine newborn care. If inadequate IAP (<4 hours before delivery) → enhanced neonatal observation (blood culture, CBC, CRP at 0 and 24 hours, observe x 48 hours). If neonatal signs of sepsis (fever, respiratory distress, hypotension) → neonatal ICU + IV antibiotics (ampicillin + gentamicin).",
+            "stop_criteria": "Discontinue IAP after delivery (postpartum antibiotics NOT needed). Do NOT continue antibiotics postpartum unless chorioamnionitis or postpartum endometritis."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "preterm_labor": "If preterm labor <37 weeks + unknown GBS status → Start IAP immediately (do NOT wait for GBS screening results). Use rapid PCR if available (1-2 hours turnaround). If rapid PCR negative → Discontinue IAP. If rapid PCR positive or unavailable → Continue IAP until delivery.",
+            "prolonged_rupture_of_membranes": "If prolonged rupture of membranes >18 hours + unknown GBS status → Start IAP immediately. Continue until delivery.",
+            "maternal_fever_during_labor": "If maternal fever >38°C during labor → Start broad-spectrum antibiotics for chorioamnionitis (ampicillin + gentamicin, add clindamycin if cesarean). Broader coverage than IAP alone (covers GBS, E. coli, anaerobes).",
+            "gbs_bacteriuria": "If GBS bacteriuria during current pregnancy (any trimester) → Treatment during pregnancy (penicillin VK 500mg PO QID x 7 days OR amoxicillin 500mg PO TID x 7 days) + IAP during labor (regardless of screening result at 36-37 weeks). High inoculum, increased risk of pyelonephritis and neonatal sepsis.",
+            "previous_infant_gbs_sepsis": "If previous infant with GBS sepsis → IAP during labor (regardless of screening result at 36-37 weeks). High risk of recurrence (1-2% vs 0.2-0.3% in general population).",
+            "planned_cesarean_without_labor": "If planned cesarean delivery without labor or rupture of membranes → No IAP needed (no vertical transmission). If labor onset or rupture of membranes before cesarean delivery → IAP needed.",
+            "neonatal_management": "Adequate IAP (≥4 hours before delivery) + no neonatal signs of sepsis → Routine newborn care. Inadequate IAP (<4 hours before delivery) → Enhanced neonatal observation (blood culture, CBC, CRP at 0 and 24 hours, observe x 48 hours). Neonatal signs of sepsis (fever, respiratory distress, hypotension) → Neonatal ICU + IV antibiotics (ampicillin 50mg/kg IV q12h + gentamicin 4mg/kg IV daily) x 7-10 days if positive blood culture.",
+            "counseling": "GBS colonization is common (10-30% of pregnant women) and asymptomatic. IAP reduces neonatal GBS sepsis by 80-90% (from 1-2 per 1,000 to 0.2-0.3 per 1,000 live births). Adequate IAP requires ≥4 hours of antibiotics before delivery. Postpartum antibiotics NOT needed. Future pregnancies: Repeat GBS screening at 36-37 weeks (GBS status may change between pregnancies)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Use penicillin G (narrow spectrum) instead of ampicillin (broader spectrum) for IAP",
+              "Discontinue IAP after delivery (postpartum antibiotics NOT needed)",
+              "Do NOT give IAP if planned cesarean delivery without labor or rupture of membranes (no vertical transmission)",
+              "Do NOT give IAP if negative GBS screen at 36-37 weeks and no risk factors"
+            ],
+            "timeout_checklist": [
+              "Is GBS screening performed at 36-37 weeks? (Universal screening, CDC 2020)",
+              "Is IAP indicated? (Positive GBS screen, GBS bacteriuria, previous infant with GBS sepsis, unknown GBS status + risk factors)",
+              "Is IAP started at onset of labor or rupture of membranes? (Whichever comes first)",
+              "Is adequate IAP achieved? (≥4 hours of antibiotics before delivery)",
+              "Is penicillin G used? (Preferred, narrow spectrum, GBS 100% susceptible)",
+              "Is IAP discontinued after delivery? (Postpartum antibiotics NOT needed)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid ampicillin (use penicillin G, narrow spectrum). Avoid clindamycin unless GBS susceptibility confirmed (resistance 15-25%). Avoid erythromycin (resistance 25-35%, no longer recommended). Do NOT give IAP if planned cesarean delivery without labor or rupture of membranes. Do NOT continue antibiotics postpartum (no benefit, increases resistance).",
+            "diagnostic_stewardship": "Universal GBS screening at 36-37 weeks (CDC 2020). Culture-based method (gold standard, 24-48 hours). Rapid PCR if labor onset before culture results available (1-2 hours). Do NOT screen before 36 weeks (GBS status may change). Do NOT screen if GBS bacteriuria or previous infant with GBS sepsis (IAP required regardless).",
+            "prevention": "Universal GBS screening at 36-37 weeks reduces neonatal GBS sepsis by 80-90%. IAP (penicillin G) reduces neonatal GBS sepsis by 80-90%. Adequate IAP requires ≥4 hours of antibiotics before delivery. Future: GBS vaccine in development (may eliminate need for IAP)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "CDC Prevention of Perinatal Group B Streptococcal Disease (2020)",
+              "url": "https://www.cdc.gov/groupbstrep/clinicians/prevention.html"
+            },
+            {
+              "label": "ACOG Committee Opinion: Prevention of Group B Streptococcal Early-Onset Disease in Newborns (2020)",
+              "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/02/prevention-of-group-b-streptococcal-early-onset-disease-in-newborns"
+            },
+            {
+              "label": "AAP Clinical Report: Management of Neonates Born at ≥35 Weeks' Gestation With Suspected or Proven Early-Onset Bacterial Sepsis (2018)",
+              "url": "https://publications.aap.org/pediatrics/article/142/6/e20182894/38569/Management-of-Neonates-Born-at-35-0-Weeks"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "mastitis-lactational",
+      "name": "Mastitis (Lactational)",
+      "synonyms": [
+        "puerperal mastitis",
+        "breast infection"
+      ],
+      "icd10": [
+        "O91.2",
+        "N61.0"
+      ],
+      "severity": [
+        "mild",
+        "moderate"
+      ],
+      "shortDescription": "Breast infection in breastfeeding women requiring antibiotics (dicloxacillin OR TMP-SMX if MRSA) + continued breastfeeding",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Infection of breast tissue in breastfeeding women. Organisms: Staphylococcus aureus (50-60%, including MRSA 10-30%), Streptococcus (10-20%), E. coli (5-10%). Incidence: 10-20% of breastfeeding women. Complications: Breast abscess (5-10% if untreated, requires drainage), recurrence (5-10%).",
+            "clinical_presentation": "Unilateral breast pain, erythema, warmth, swelling, fever (>38°C), flu-like symptoms (myalgia, chills). Physical exam: Tender, erythematous, warm breast (usually one quadrant), palpable mass if abscess. Fever is common (70-80%). Leukocytosis (WBC >10,000) common but non-specific.",
+            "diagnostic_criteria": "Clinical diagnosis: Unilateral breast pain + erythema + warmth + fever in breastfeeding woman. Laboratory: Leukocytosis (WBC >10,000, 60-70%). Breast milk culture (if available, positive in 50-60%, S. aureus most common). Ultrasound (if abscess suspected, palpable mass, no improvement after 48-72 hours of antibiotics).",
+            "risk_factors": [
+              "Nipple trauma or fissures (most important risk factor)",
+              "Milk stasis (engorgement, infrequent feeding, poor latch)",
+              "Previous mastitis",
+              "Maternal stress or fatigue",
+              "Tight-fitting bra",
+              "Primiparity (first-time breastfeeding)"
+            ],
+            "red_flags": [
+              "Breast abscess - palpable mass, fluctuance, no improvement after 48-72 hours of antibiotics, requires ultrasound + drainage (needle aspiration or surgical)",
+              "Sepsis - hypotension, tachycardia >120 bpm, altered mental status, requires IV antibiotics + hospitalization",
+              "Inflammatory breast cancer - rare, mimics mastitis, no fever, skin changes (peau d'orange), requires biopsy if no improvement after antibiotics",
+              "MRSA mastitis - community-acquired MRSA (CA-MRSA) 10-30%, requires TMP-SMX or doxycycline (if not breastfeeding)"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Clinical diagnosis (do NOT delay antibiotics while awaiting test results). Breast milk culture (if available, positive in 50-60%, S. aureus most common). Ultrasound (if abscess suspected, palpable mass, no improvement after 48-72 hours of antibiotics).",
+            "essential_tests": [
+              "Clinical diagnosis: Unilateral breast pain + erythema + warmth + fever in breastfeeding woman. No tests required to start treatment.",
+              "Breast milk culture: If available (positive in 50-60%, S. aureus most common, MRSA 10-30%). Collect mid-stream sample after cleaning nipple. Use if recurrent mastitis or failed initial therapy."
+            ],
+            "conditional_tests": [
+              "Breast ultrasound: If abscess suspected (palpable mass, fluctuance, no improvement after 48-72 hours of antibiotics). Fluid collection >3 cm requires drainage.",
+              "CBC: Leukocytosis (WBC >10,000, 60-70%). Non-specific, not required for diagnosis.",
+              "Blood cultures: If sepsis suspected (hypotension, tachycardia >120 bpm, altered mental status).",
+              "Biopsy: If inflammatory breast cancer suspected (no fever, skin changes, no improvement after antibiotics). Rare."
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics while awaiting test results (clinical diagnosis sufficient). Do NOT routinely ultrasound if no palpable mass (not needed). Do NOT routinely perform breast milk culture (not widely available, not needed for initial treatment).",
+            "turnaround_time": "Breast milk culture: 24-48 hours. Breast ultrasound: Same day. CBC: 1-2 hours. Blood cultures: 24-48 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Staphylococcus aureus (50-60%, including MRSA 10-30%), Streptococcus (Group A, Group B, 10-20%), E. coli (5-10%), Coagulase-negative staphylococci (CoNS, 5-10%, usually contaminant). MRSA: Community-acquired MRSA (CA-MRSA) 10-30% (increasing), associated with recurrent mastitis and abscess formation.",
+            "pathogenesis": "Nipple trauma or fissures → bacterial entry → milk stasis (engorgement, infrequent feeding) → bacterial overgrowth → inflammation → mastitis. Complications: Breast abscess (5-10% if untreated, requires drainage), recurrence (5-10%), sepsis (rare, <1%).",
+            "resistance_patterns": {
+              "mrsa_resistance": "MRSA: Community-acquired MRSA (CA-MRSA) 10-30% (increasing). Resistant to beta-lactams (penicillin, dicloxacillin, cephalexin). Susceptible to TMP-SMX (95-98%), doxycycline (95-98%), clindamycin (80-85%).",
+              "mssa_resistance": "MSSA: Susceptible to dicloxacillin (100%), cephalexin (100%), clindamycin (90-95%)."
+            },
+            "timing_critical": "Start antibiotics immediately upon diagnosis (do NOT delay for test results). Dicloxacillin 500mg PO QID x 10-14 days (covers MSSA, first-line). If MRSA suspected (recurrent mastitis, abscess, failed initial therapy): TMP-SMX DS 1-2 tabs PO BID x 10-14 days. Continue breastfeeding (do NOT stop, milk stasis worsens infection)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": "Dicloxacillin 500mg PO QID x 10-14 days (covers MSSA, first-line, narrow spectrum). Alternative: Cephalexin 500mg PO QID x 10-14 days (covers MSSA, broader spectrum). Continue breastfeeding (do NOT stop, milk stasis worsens infection). Symptomatic relief: NSAIDs (ibuprofen 400-600mg PO TID), warm compresses, frequent breastfeeding or pumping.",
+            "mrsa_coverage": "TMP-SMX DS (160/800mg) 1-2 tabs PO BID x 10-14 days (if MRSA suspected: recurrent mastitis, abscess, failed initial therapy, known MRSA colonization). Alternative: Doxycycline 100mg PO BID x 10-14 days (if not breastfeeding, excreted in breast milk). Alternative: Clindamycin 300mg PO TID x 10-14 days (if TMP-SMX contraindicated).",
+            "penicillin_allergy": "Cephalexin 500mg PO QID x 10-14 days (if low-risk penicillin allergy: rash, pruritus). TMP-SMX DS 1-2 tabs PO BID x 10-14 days (if high-risk penicillin allergy: anaphylaxis). Clindamycin 300mg PO TID x 10-14 days (alternative).",
+            "continue_breastfeeding": "Continue breastfeeding or pumping (do NOT stop, milk stasis worsens infection). Breastfeeding safe during antibiotic treatment (dicloxacillin, cephalexin, TMP-SMX, clindamycin excreted in breast milk but safe for infant). Empty affected breast frequently (every 2-3 hours). Correct latch and positioning.",
+            "avoid_list": "Avoid stopping breastfeeding (milk stasis worsens infection). Avoid doxycycline if breastfeeding (excreted in breast milk, may affect infant bone/teeth). Do NOT delay antibiotics while awaiting test results."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "mssa_mastitis": "Dicloxacillin 500mg PO QID x 10-14 days (covers MSSA, 100% susceptible). Alternative: Cephalexin 500mg PO QID x 10-14 days. Continue breastfeeding.",
+            "mrsa_mastitis": "TMP-SMX DS (160/800mg) 1-2 tabs PO BID x 10-14 days (covers MRSA, 95-98% susceptible). Alternative: Doxycycline 100mg PO BID x 10-14 days (if not breastfeeding). Alternative: Clindamycin 300mg PO TID x 10-14 days (if susceptible, resistance 15-20%).",
+            "streptococcal_mastitis": "Penicillin VK 500mg PO QID x 10-14 days OR Amoxicillin 500mg PO TID x 10-14 days (covers Streptococcus, 100% susceptible). Continue breastfeeding.",
+            "breast_abscess": "Drainage REQUIRED (needle aspiration or surgical incision and drainage). Continue antibiotics x 10-14 days after drainage. Ultrasound-guided needle aspiration (if abscess <3 cm, single loculation). Surgical incision and drainage (if abscess >3 cm, multiple loculations, failed needle aspiration). Continue breastfeeding from unaffected breast, pump affected breast.",
+            "treatment_failure": "No improvement after 48-72 hours of antibiotics. Causes: MRSA (10-30%), breast abscess (5-10%), inflammatory breast cancer (rare). Management: Breast ultrasound (rule out abscess). Switch to TMP-SMX (if MRSA suspected). Drainage if abscess. Biopsy if inflammatory breast cancer suspected.",
+            "duration": "10-14 days total. Continue antibiotics even if symptoms improve (prevent recurrence and abscess formation). Continue breastfeeding throughout treatment."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "10-14 days total. Continue antibiotics even if symptoms improve (prevent recurrence and abscess formation). Most patients improve within 48-72 hours. Continue breastfeeding throughout treatment.",
+            "monitoring": "Follow-up in 48-72 hours (assess clinical improvement). Breast ultrasound if no improvement (rule out abscess). Switch to TMP-SMX if MRSA suspected. Drainage if abscess. Monitor for recurrence (5-10%).",
+            "stop_criteria": "Complete 10-14 days of antibiotics even if symptoms resolve. Do NOT stop antibiotics early (increases risk of recurrence and abscess). Continue breastfeeding throughout treatment and after antibiotics completed."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "breastfeeding_management": "Continue breastfeeding or pumping (do NOT stop, milk stasis worsens infection). Empty affected breast frequently (every 2-3 hours). Correct latch and positioning (prevent nipple trauma). Warm compresses before feeding (improve milk flow). Cold compresses after feeding (reduce inflammation). NSAIDs (ibuprofen 400-600mg PO TID) for pain and inflammation.",
+            "breast_abscess": "Drainage REQUIRED (antibiotics alone insufficient). Ultrasound-guided needle aspiration (if abscess <3 cm, single loculation, success rate 80-90%). Surgical incision and drainage (if abscess >3 cm, multiple loculations, failed needle aspiration). Continue antibiotics x 10-14 days after drainage. Continue breastfeeding from unaffected breast, pump affected breast (discard milk from affected breast until abscess resolved).",
+            "recurrent_mastitis": "Recurrence rate 5-10%. Causes: MRSA (10-30%), inadequate antibiotic duration (<10 days), continued nipple trauma, milk stasis. Prevention: Correct latch and positioning, frequent breastfeeding, avoid tight-fitting bra, treat nipple trauma promptly. If recurrent: Breast milk culture (identify MRSA), longer antibiotic course (14-21 days), consider prophylactic antibiotics (dicloxacillin 500mg PO daily) during breastfeeding.",
+            "mrsa_mastitis": "Community-acquired MRSA (CA-MRSA) 10-30% (increasing). Risk factors: Recurrent mastitis, abscess, failed initial therapy, known MRSA colonization. Treatment: TMP-SMX DS 1-2 tabs PO BID x 10-14 days. Decolonization (if recurrent): Mupirocin nasal ointment BID x 5 days + chlorhexidine body wash daily x 5 days.",
+            "inflammatory_breast_cancer": "Rare, mimics mastitis. Red flags: No fever, skin changes (peau d'orange, dimpling), no improvement after antibiotics, palpable mass. Requires biopsy (punch biopsy or core needle biopsy). Oncology referral if confirmed.",
+            "counseling": "Mastitis is common (10-20% of breastfeeding women). Continue breastfeeding (do NOT stop, milk stasis worsens infection). Most patients improve within 48-72 hours of antibiotics. Complete 10-14 days of antibiotics (prevent recurrence and abscess). Recurrence rate 5-10%. Prevent recurrence: Correct latch and positioning, frequent breastfeeding, avoid tight-fitting bra, treat nipple trauma promptly."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Start antibiotics immediately upon diagnosis (do NOT delay for test results, clinical diagnosis sufficient)",
+              "Use dicloxacillin (narrow spectrum) instead of cephalexin (broader spectrum) for MSSA",
+              "Do NOT routinely cover MRSA (use TMP-SMX only if MRSA suspected: recurrent mastitis, abscess, failed initial therapy)",
+              "Complete 10-14 days of antibiotics (prevent recurrence and abscess)"
+            ],
+            "timeout_checklist": [
+              "Is diagnosis confirmed by clinical criteria? (Unilateral breast pain + erythema + warmth + fever in breastfeeding woman)",
+              "Are antibiotics started immediately? (Dicloxacillin 500mg PO QID x 10-14 days)",
+              "Is patient continuing breastfeeding? (Do NOT stop, milk stasis worsens infection)",
+              "Is MRSA suspected? (Recurrent mastitis, abscess, failed initial therapy → TMP-SMX)",
+              "Is abscess ruled out? (Ultrasound if palpable mass or no improvement after 48-72 hours)",
+              "Is antibiotic duration adequate? (10-14 days, do NOT stop early)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid cephalexin (use dicloxacillin, narrow spectrum). Avoid TMP-SMX unless MRSA suspected (10-30%). Avoid doxycycline if breastfeeding. Do NOT delay antibiotics while awaiting test results. Do NOT stop antibiotics early (increases risk of recurrence and abscess). Do NOT stop breastfeeding (milk stasis worsens infection).",
+            "diagnostic_stewardship": "Clinical diagnosis (unilateral breast pain + erythema + warmth + fever in breastfeeding woman). Breast milk culture if available (positive in 50-60%, S. aureus most common). Ultrasound if abscess suspected (palpable mass, no improvement after 48-72 hours). Do NOT routinely ultrasound if no palpable mass.",
+            "prevention": "Correct latch and positioning (prevent nipple trauma). Frequent breastfeeding (prevent milk stasis). Avoid tight-fitting bra. Treat nipple trauma promptly (lanolin cream, hydrogel pads). Hand hygiene before breastfeeding."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "WHO Mastitis: Causes and Management (2000)",
+              "url": "https://www.who.int/publications/i/item/WHO-FCH-CAH-00.13"
+            },
+            {
+              "label": "ABM Clinical Protocol #4: Mastitis (2022)",
+              "url": "https://abm.memberclicks.net/assets/DOCUMENTS/PROTOCOLS/4-mastitis-protocol-english.pdf"
+            },
+            {
+              "label": "ACOG Committee Opinion: Optimizing Support for Breastfeeding (2018)",
+              "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/10/optimizing-support-for-breastfeeding-as-part-of-obstetric-practice"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "septic-abortion",
+      "name": "Septic Abortion",
+      "synonyms": [
+        "septic miscarriage",
+        "infected abortion"
+      ],
+      "icd10": [
+        "O03.5",
+        "O08.0"
+      ],
+      "severity": [
+        "severe",
+        "critical"
+      ],
+      "shortDescription": "Life-threatening polymicrobial uterine infection after abortion requiring urgent uterine evacuation + IV antibiotics (ampicillin-sulbactam + doxycycline OR clindamycin + gentamicin)",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Life-threatening polymicrobial infection of uterus and surrounding tissues after spontaneous or induced abortion. Organisms: E. coli (30-40%), Bacteroides (20-30%), Streptococcus (GBS, GAS, 15-20%), Enterococcus (10-15%), Clostridium (5-10%, gas-forming, high mortality). Incidence: Rare (<1% of abortions, higher with unsafe abortion). Complications: Septic shock (20-30%), DIC (10-15%), acute kidney injury (10-15%), ARDS (5-10%), death (5-10% if untreated, <1% if treated promptly).",
+            "clinical_presentation": "Fever >38°C, pelvic pain, purulent or foul-smelling vaginal discharge, uterine tenderness, cervical motion tenderness, vaginal bleeding. Physical exam: Fever, tachycardia (>100 bpm), hypotension (if septic shock), uterine tenderness, cervical motion tenderness, purulent or foul-smelling discharge, open cervical os (retained products of conception). Septic shock: Hypotension (SBP <90 mmHg), tachycardia (>120 bpm), altered mental status, oliguria (<0.5 mL/kg/h).",
+            "diagnostic_criteria": "Clinical diagnosis: Fever >38°C + pelvic pain + purulent vaginal discharge + history of recent abortion (spontaneous or induced). Laboratory: Leukocytosis (WBC >15,000, 80-90%), elevated CRP (>5 mg/dL, 70-80%), positive blood cultures (30-40%). Imaging: Pelvic ultrasound (retained products of conception, thickened endometrium, fluid collection, gas in uterus if Clostridium).",
+            "risk_factors": [
+              "Unsafe abortion (most important risk factor, accounts for 90% of septic abortions)",
+              "Retained products of conception",
+              "Prolonged rupture of membranes",
+              "Instrumentation (dilation and curettage, manual vacuum aspiration)",
+              "Immunocompromised (HIV, diabetes, immunosuppressive therapy)"
+            ],
+            "red_flags": [
+              "Septic shock - hypotension, tachycardia >120 bpm, altered mental status, oliguria, requires ICU + vasopressors + urgent uterine evacuation",
+              "DIC - bleeding, petechiae, ecchymoses, requires transfusion (FFP, platelets, cryoprecipitate)",
+              "Clostridium perfringens - gas-forming, rapidly progressive, high mortality (20-30%), requires urgent hysterectomy",
+              "Acute kidney injury - oliguria, elevated creatinine, requires dialysis if severe",
+              "ARDS - respiratory distress, hypoxemia, requires mechanical ventilation"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Test if: Fever >38°C + pelvic pain + purulent vaginal discharge + history of recent abortion. Do NOT delay antibiotics or uterine evacuation while awaiting test results (life-threatening emergency). Blood cultures before antibiotics (positive in 30-40%). Pelvic ultrasound (retained products of conception, fluid collection, gas in uterus).",
+            "essential_tests": [
+              "Temperature: Fever >38°C (100.4°F) REQUIRED for diagnosis. Measure every 1-2 hours.",
+              "Physical exam: Uterine tenderness, cervical motion tenderness, purulent or foul-smelling vaginal discharge, open cervical os.",
+              "CBC: Leukocytosis (WBC >15,000, 80-90%). Thrombocytopenia (platelets <100,000) if DIC.",
+              "Blood cultures x2: Before antibiotics. Positive in 30-40% (E. coli, Bacteroides, Streptococcus, Enterococcus, Clostridium).",
+              "Pelvic ultrasound: Retained products of conception (thickened endometrium >10 mm, echogenic material in uterus), fluid collection, gas in uterus (if Clostridium)."
+            ],
+            "conditional_tests": [
+              "CRP: Elevated (>5 mg/dL) in 70-80% of septic abortion. Non-specific.",
+              "Coagulation panel (PT, PTT, fibrinogen, D-dimer): If DIC suspected (bleeding, petechiae, ecchymoses). Prolonged PT/PTT, low fibrinogen (<100 mg/dL), elevated D-dimer (>500 ng/mL).",
+              "Creatinine, BUN: If acute kidney injury suspected (oliguria, elevated creatinine). Creatinine >1.5 mg/dL.",
+              "Lactate: If septic shock suspected (hypotension, altered mental status). Lactate >2 mmol/L.",
+              "Endometrial culture: Rarely performed (contaminated by vaginal flora, not useful). Use only if diagnosis uncertain."
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics or uterine evacuation while awaiting test results (life-threatening emergency). Do NOT routinely perform endometrial culture (contaminated by vaginal flora). Do NOT require positive blood cultures for diagnosis (positive in only 30-40%).",
+            "turnaround_time": "Blood cultures: 24-48 hours (preliminary), 5 days (final). CBC: 1-2 hours. CRP: 1-2 hours. Pelvic ultrasound: Same day (urgent). Coagulation panel: 1-2 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Polymicrobial (2-4 organisms). E. coli (30-40%), Bacteroides (20-30%), Streptococcus (GBS, GAS, 15-20%), Enterococcus (10-15%), Clostridium perfringens (5-10%, gas-forming, high mortality 20-30%), Staphylococcus aureus (5-10%). Often mixed aerobic + anaerobic infection.",
+            "pathogenesis": "Ascending infection from vagina/cervix → endometrium → myometrium → parametrium → peritoneum. Risk factors: Unsafe abortion (most important, 90% of septic abortions), retained products of conception, prolonged rupture of membranes, instrumentation. Complications: Septic shock (20-30%), DIC (10-15%), acute kidney injury (10-15%), ARDS (5-10%), death (5-10% if untreated, <1% if treated promptly).",
+            "resistance_patterns": {
+              "e_coli_resistance": "E. coli: Ampicillin resistance 30-50% (increasing). Gentamicin resistance <5%. Ceftriaxone resistance <5%.",
+              "anaerobe_resistance": "Anaerobes (Bacteroides): Clindamycin resistance 10-20%. Metronidazole resistance <5%.",
+              "clostridium_resistance": "Clostridium perfringens: Penicillin 100% susceptible. Clindamycin 100% susceptible (inhibits toxin production)."
+            },
+            "timing_critical": "Start antibiotics immediately upon diagnosis (do NOT delay for test results). Urgent uterine evacuation REQUIRED (antibiotics alone insufficient). Ampicillin-sulbactam 3g IV q6h + Doxycycline 100mg IV/PO BID OR Clindamycin 900mg IV q8h + Gentamicin 5mg/kg IV daily. If Clostridium suspected (gas in uterus, rapidly progressive): Add clindamycin (inhibits toxin production) + urgent hysterectomy."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": "Ampicillin-sulbactam 3g IV q6h + Doxycycline 100mg IV/PO BID (covers E. coli, Bacteroides, Streptococcus, Enterococcus, anaerobes). Alternative: Clindamycin 900mg IV q8h + Gentamicin 5mg/kg IV daily (similar to PID regimen). Urgent uterine evacuation REQUIRED (antibiotics alone insufficient). Continue antibiotics until afebrile x 24-48 hours after evacuation.",
+            "alternative": "Piperacillin-tazobactam 3.375g IV q6h + Doxycycline 100mg IV/PO BID (broad-spectrum, covers E. coli, Bacteroides, Enterococcus, Pseudomonas, anaerobes). Alternative: Cefoxitin 2g IV q6h + Doxycycline 100mg IV/PO BID.",
+            "clostridium_suspected": "If Clostridium suspected (gas in uterus on ultrasound, rapidly progressive, crepitus): Clindamycin 900mg IV q8h + Penicillin G 4 million units IV q4h + Gentamicin 5mg/kg IV daily (clindamycin inhibits toxin production). Urgent hysterectomy REQUIRED (antibiotics alone insufficient, mortality 20-30% if delayed). ICU admission, aggressive fluid resuscitation, vasopressors, transfusion.",
+            "septic_shock": "If septic shock (hypotension, tachycardia >120 bpm, altered mental status): ICU admission, aggressive fluid resuscitation (2-3 L crystalloid), vasopressors (norepinephrine), broad-spectrum antibiotics (piperacillin-tazobactam + doxycycline OR clindamycin + gentamicin), urgent uterine evacuation. Mortality 5-10% if treated promptly.",
+            "avoid_list": "Do NOT delay antibiotics or uterine evacuation while awaiting test results (life-threatening emergency). Do NOT use antibiotics alone without uterine evacuation (insufficient, retained products of conception must be removed)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "e_coli_septic_abortion": "Ampicillin-sulbactam 3g IV q6h OR Ceftriaxone 2g IV daily (covers E. coli, ampicillin resistance 30-50%). Continue until afebrile x 24-48 hours after uterine evacuation.",
+            "bacteroides_septic_abortion": "Clindamycin 900mg IV q8h OR Metronidazole 500mg IV q8h (covers Bacteroides). Continue until afebrile x 24-48 hours after uterine evacuation.",
+            "clostridium_septic_abortion": "Clindamycin 900mg IV q8h + Penicillin G 4 million units IV q4h (clindamycin inhibits toxin production, penicillin bactericidal). Urgent hysterectomy REQUIRED (antibiotics alone insufficient). ICU admission. Mortality 20-30% even with treatment.",
+            "polymicrobial": "Ampicillin-sulbactam 3g IV q6h + Doxycycline 100mg IV/PO BID OR Clindamycin 900mg IV q8h + Gentamicin 5mg/kg IV daily (covers E. coli, Bacteroides, Streptococcus, Enterococcus, anaerobes). Continue until afebrile x 24-48 hours after uterine evacuation.",
+            "uterine_evacuation_required": "Urgent uterine evacuation REQUIRED (antibiotics alone insufficient). Dilation and curettage (D&C) OR Manual vacuum aspiration (MVA). Remove all retained products of conception. If Clostridium suspected: Urgent hysterectomy REQUIRED (D&C insufficient, high mortality if delayed).",
+            "duration": "IV antibiotics until afebrile x 24-48 hours after uterine evacuation, then switch to PO OR discontinue. Total duration: 5-7 days IV (most cases). PO antibiotics: Amoxicillin-clavulanate 875mg PO BID + Doxycycline 100mg PO BID x 7-10 days OR Discontinue (no PO antibiotics needed if afebrile x 48 hours)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "IV antibiotics until afebrile x 24-48 hours after uterine evacuation, then switch to PO OR discontinue. Total duration: 5-7 days IV (most cases). PO antibiotics: Amoxicillin-clavulanate 875mg PO BID + Doxycycline 100mg PO BID x 7-10 days OR Discontinue (no PO antibiotics needed if afebrile x 48 hours).",
+            "monitoring": "Monitor temperature every 1-2 hours. Monitor for clinical improvement (decreased pelvic pain, improved discharge). Monitor for complications (septic shock, DIC, acute kidney injury, ARDS). ICU admission if septic shock. Repeat pelvic ultrasound if persistent fever >72 hours (rule out pelvic abscess, retained products of conception).",
+            "stop_criteria": "Discontinue IV antibiotics when afebrile x 24-48 hours after uterine evacuation. Switch to PO antibiotics OR discontinue (no PO antibiotics needed if afebrile x 48 hours). If persistent fever >72 hours: Evaluate for pelvic abscess, retained products of conception, resistant organism."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "unsafe_abortion": "Unsafe abortion accounts for 90% of septic abortions. Risk factors: Lack of access to safe abortion services, poverty, restrictive abortion laws. Prevention: Access to safe abortion services, contraception, comprehensive reproductive health care. WHO: Unsafe abortion causes 13% of maternal deaths worldwide (47,000 deaths per year).",
+            "clostridium_perfringens": "Gas-forming, rapidly progressive, high mortality (20-30%). Clinical: Crepitus, gas in uterus on ultrasound, hemolysis (hemoglobin drop, jaundice), acute kidney injury. Treatment: Clindamycin 900mg IV q8h + Penicillin G 4 million units IV q4h (clindamycin inhibits toxin production). Urgent hysterectomy REQUIRED (antibiotics alone insufficient). ICU admission, aggressive fluid resuscitation, vasopressors, transfusion (packed RBCs, FFP, platelets).",
+            "septic_shock": "Hypotension (SBP <90 mmHg), tachycardia (>120 bpm), altered mental status, oliguria (<0.5 mL/kg/h). Management: ICU admission, aggressive fluid resuscitation (2-3 L crystalloid), vasopressors (norepinephrine 0.05-0.5 mcg/kg/min), broad-spectrum antibiotics (piperacillin-tazobactam + doxycycline OR clindamycin + gentamicin), urgent uterine evacuation. Mortality 5-10% if treated promptly.",
+            "dic": "Bleeding, petechiae, ecchymoses, prolonged PT/PTT, low fibrinogen (<100 mg/dL), elevated D-dimer (>500 ng/mL). Management: Transfusion (FFP 15 mL/kg, platelets if <50,000, cryoprecipitate 1 unit per 10 kg if fibrinogen <100 mg/dL), treat underlying infection (antibiotics + uterine evacuation). Hematology consult.",
+            "hysterectomy": "Indications: Clostridium perfringens (urgent hysterectomy REQUIRED), uterine perforation, uncontrolled bleeding, failed uterine evacuation (retained products despite D&C). Gynecology + general surgery consult. Preserve ovaries if possible (maintain hormonal function).",
+            "counseling": "Septic abortion is life-threatening (mortality 5-10% if untreated, <1% if treated promptly). Urgent uterine evacuation REQUIRED (antibiotics alone insufficient). Most patients improve within 48-72 hours after evacuation + antibiotics. Future fertility: Usually preserved if hysterectomy not required. Prevention: Access to safe abortion services, contraception, comprehensive reproductive health care."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Start antibiotics immediately upon diagnosis (do NOT delay for test results, life-threatening emergency)",
+              "Urgent uterine evacuation REQUIRED (antibiotics alone insufficient)",
+              "Ampicillin-sulbactam 3g IV q6h + Doxycycline 100mg IV/PO BID OR Clindamycin 900mg IV q8h + Gentamicin 5mg/kg IV daily",
+              "Discontinue IV antibiotics when afebrile x 24-48 hours after uterine evacuation",
+              "Switch to PO antibiotics OR discontinue (no PO antibiotics needed if afebrile x 48 hours)"
+            ],
+            "timeout_checklist": [
+              "Is diagnosis confirmed by clinical criteria? (Fever >38°C + pelvic pain + purulent discharge + history of recent abortion)",
+              "Are antibiotics started immediately? (Ampicillin-sulbactam + doxycycline OR clindamycin + gentamicin)",
+              "Is urgent uterine evacuation planned? (D&C or MVA, REQUIRED)",
+              "Are blood cultures obtained before antibiotics? (Positive in 30-40%)",
+              "Is Clostridium suspected? (Gas in uterus, rapidly progressive → urgent hysterectomy)",
+              "Is septic shock present? (Hypotension, tachycardia >120 bpm → ICU + vasopressors)",
+              "Is patient afebrile x 24-48 hours after evacuation? (If yes, discontinue IV antibiotics)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT delay antibiotics or uterine evacuation while awaiting test results (life-threatening emergency). Do NOT use antibiotics alone without uterine evacuation (insufficient). Do NOT continue IV antibiotics beyond 48 hours if afebrile after evacuation (no benefit, increases resistance).",
+            "diagnostic_stewardship": "Clinical diagnosis (fever >38°C + pelvic pain + purulent discharge + history of recent abortion). Blood cultures before antibiotics (positive in 30-40%). Pelvic ultrasound (retained products of conception, gas in uterus). Do NOT routinely perform endometrial culture (contaminated by vaginal flora).",
+            "prevention": "Access to safe abortion services (reduces unsafe abortion by 90%). Contraception (reduces unintended pregnancy). Comprehensive reproductive health care. WHO: Unsafe abortion causes 13% of maternal deaths worldwide (47,000 deaths per year)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "WHO Safe Abortion: Technical and Policy Guidance (2022)",
+              "url": "https://www.who.int/publications/i/item/9789240039483"
+            },
+            {
+              "label": "ACOG Practice Bulletin: Medical Management of First-Trimester Abortion (2020)",
+              "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2020/10/medical-management-of-first-trimester-abortion"
+            },
+            {
+              "label": "CDC Abortion Surveillance (2021)",
+              "url": "https://www.cdc.gov/mmwr/volumes/70/ss/ss7009a1.htm"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cesarean-wound-infection",
+      "name": "Cesarean Section Wound Infection",
+      "synonyms": [
+        "surgical site infection after cesarean",
+        "post-cesarean wound infection"
+      ],
+      "icd10": [
+        "O86.0",
+        "T81.4"
+      ],
+      "severity": [
+        "moderate",
+        "severe"
+      ],
+      "shortDescription": "Surgical site infection after cesarean delivery requiring antibiotics (cefazolin + metronidazole OR ampicillin-sulbactam) + wound care",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Surgical site infection (SSI) after cesarean delivery. Organisms: Staphylococcus aureus (30-40%, including MRSA 10-20%), Streptococcus (GBS, GAS, 15-20%), E. coli (15-20%), anaerobes (Bacteroides, 10-15%), Enterococcus (5-10%). Incidence: 3-15% of cesarean deliveries (higher if emergency cesarean, prolonged rupture of membranes, chorioamnionitis, obesity). Complications: Wound dehiscence (5-10%), necrotizing fasciitis (rare, <1%, high mortality), sepsis (5-10%).",
+            "clinical_presentation": "Fever >38°C, wound erythema, warmth, swelling, purulent drainage, wound dehiscence (separation of incision). Physical exam: Erythema extending >2 cm from incision, warmth, induration, purulent drainage, fluctuance (if abscess), wound dehiscence. Fever is common (60-70%). Leukocytosis (WBC >10,000) common but non-specific. Onset: 4-7 days postpartum (superficial SSI), 7-30 days postpartum (deep SSI or organ/space SSI).",
+            "diagnostic_criteria": "Clinical diagnosis (CDC 2024 SSI criteria): Superficial SSI (within 30 days, involves skin/subcutaneous tissue, purulent drainage OR positive culture + signs of infection). Deep SSI (within 30 days, involves fascia/muscle, purulent drainage OR abscess OR dehiscence). Organ/space SSI (within 30 days, involves organs/spaces other than incision, abscess OR positive culture).",
+            "risk_factors": [
+              "Emergency cesarean delivery (most important risk factor, 2-3 fold increased risk)",
+              "Prolonged rupture of membranes (>18 hours)",
+              "Prolonged labor (>12 hours)",
+              "Chorioamnionitis",
+              "Obesity (BMI >30, 2-3 fold increased risk)",
+              "Diabetes",
+              "Immunosuppression",
+              "Lack of prophylactic antibiotics (cefazolin 2g IV before skin incision reduces SSI by 50-70%)"
+            ],
+            "red_flags": [
+              "Necrotizing fasciitis - rare, rapidly progressive, crepitus, skin necrosis, severe pain, requires urgent surgical debridement + ICU + broad-spectrum antibiotics, mortality 20-30%",
+              "Wound dehiscence - separation of incision, requires surgical repair if fascia involved",
+              "Sepsis - hypotension, tachycardia >120 bpm, altered mental status, requires IV antibiotics + ICU",
+              "MRSA - community-acquired MRSA (CA-MRSA) 10-20%, requires vancomycin or linezolid"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Clinical diagnosis (do NOT delay antibiotics while awaiting test results). Wound culture (if purulent drainage, positive in 60-70%, S. aureus most common). Blood cultures (if fever >38.5°C or sepsis suspected, positive in 10-20%). Imaging (CT or ultrasound) if deep SSI or abscess suspected.",
+            "essential_tests": [
+              "Clinical diagnosis: Fever >38°C + wound erythema + warmth + purulent drainage. No tests required to start treatment.",
+              "Wound culture: If purulent drainage (positive in 60-70%, S. aureus most common, MRSA 10-20%). Collect before antibiotics. Use if recurrent SSI or failed initial therapy."
+            ],
+            "conditional_tests": [
+              "Blood cultures x2: If fever >38.5°C or sepsis suspected (positive in 10-20%). Before antibiotics.",
+              "CBC: Leukocytosis (WBC >10,000, 60-70%). Non-specific, not required for diagnosis.",
+              "CT abdomen/pelvis with contrast: If deep SSI or abscess suspected (persistent fever despite antibiotics, palpable mass, wound dehiscence). Fluid collection, abscess, fascial dehiscence.",
+              "Ultrasound: If superficial abscess suspected (palpable mass, fluctuance). Fluid collection <3 cm (needle aspiration) or >3 cm (incision and drainage)."
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics while awaiting test results (clinical diagnosis sufficient). Do NOT routinely culture if no purulent drainage (not needed). Do NOT routinely image if no signs of deep SSI or abscess (not needed).",
+            "turnaround_time": "Wound culture: 24-48 hours. Blood cultures: 24-48 hours. CBC: 1-2 hours. CT abdomen/pelvis: Same day. Ultrasound: Same day."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Staphylococcus aureus (30-40%, including MRSA 10-20%), Streptococcus (GBS, GAS, 15-20%), E. coli (15-20%), anaerobes (Bacteroides, 10-15%), Enterococcus (5-10%), Coagulase-negative staphylococci (CoNS, 5-10%, usually contaminant). MRSA: Community-acquired MRSA (CA-MRSA) 10-20% (increasing), associated with recurrent SSI and abscess formation.",
+            "pathogenesis": "Skin flora (S. aureus, Streptococcus) OR vaginal flora (E. coli, anaerobes, Enterococcus) → contamination during surgery → bacterial overgrowth → inflammation → SSI. Risk factors: Emergency cesarean, prolonged rupture of membranes, prolonged labor, chorioamnionitis, obesity, diabetes, lack of prophylactic antibiotics. Complications: Wound dehiscence (5-10%), necrotizing fasciitis (rare, <1%), sepsis (5-10%).",
+            "resistance_patterns": {
+              "mrsa_resistance": "MRSA: Community-acquired MRSA (CA-MRSA) 10-20% (increasing). Resistant to beta-lactams (cefazolin, cephalexin). Susceptible to vancomycin (100%), linezolid (100%), TMP-SMX (95-98%), doxycycline (95-98%).",
+              "mssa_resistance": "MSSA: Susceptible to cefazolin (100%), cephalexin (100%), dicloxacillin (100%)."
+            },
+            "timing_critical": "Start antibiotics immediately upon diagnosis (do NOT delay for test results). Cefazolin 2g IV q8h + Metronidazole 500mg IV q8h (covers S. aureus, Streptococcus, E. coli, anaerobes) OR Ampicillin-sulbactam 3g IV q6h (single agent). Wound care: Open wound, debride necrotic tissue, pack with saline-soaked gauze, change dressing daily. Continue antibiotics until afebrile x 24-48 hours."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": "Cefazolin 2g IV q8h + Metronidazole 500mg IV q8h (covers S. aureus, Streptococcus, E. coli, anaerobes). Alternative: Ampicillin-sulbactam 3g IV q6h (single agent, covers S. aureus, Streptococcus, E. coli, anaerobes). Wound care: Open wound, debride necrotic tissue, pack with saline-soaked gauze, change dressing daily. Continue antibiotics until afebrile x 24-48 hours, then switch to PO.",
+            "mrsa_coverage": "Add vancomycin 15-20mg/kg IV q8-12h if: MRSA risk factors (prior MRSA infection, nasal colonization, recurrent SSI), severe sepsis, or failed initial therapy. Alternative: Linezolid 600mg IV/PO BID (if vancomycin contraindicated or resistant). MRSA 10-20% of cesarean SSI.",
+            "penicillin_allergy": "Clindamycin 900mg IV q8h + Gentamicin 5mg/kg IV daily (covers S. aureus, Streptococcus, E. coli, anaerobes). Alternative: Vancomycin 15-20mg/kg IV q8-12h + Metronidazole 500mg IV q8h + Gentamicin 5mg/kg IV daily (if severe penicillin allergy).",
+            "wound_care": "Open wound (remove staples or sutures, allow drainage). Debride necrotic tissue (sharp debridement if needed). Pack wound with saline-soaked gauze (change dressing daily or BID). Negative pressure wound therapy (wound VAC) if large wound (>5 cm) or deep SSI. Delayed primary closure or secondary intention healing after infection resolved.",
+            "avoid_list": "Do NOT delay antibiotics while awaiting test results. Do NOT close infected wound (increases abscess formation). Do NOT use antibiotics alone without wound care (insufficient)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "mssa_ssi": "Cefazolin 2g IV q8h OR Cephalexin 500mg PO QID (covers MSSA, 100% susceptible). Continue until afebrile x 24-48 hours, then switch to PO x 5-7 days total.",
+            "mrsa_ssi": "Vancomycin 15-20mg/kg IV q8-12h (covers MRSA, 100% susceptible). Alternative: Linezolid 600mg IV/PO BID. Continue until afebrile x 24-48 hours, then switch to PO (TMP-SMX DS 1-2 tabs PO BID OR Doxycycline 100mg PO BID OR Linezolid 600mg PO BID) x 5-7 days total.",
+            "streptococcal_ssi": "Penicillin VK 500mg PO QID OR Amoxicillin 500mg PO TID (covers Streptococcus, 100% susceptible). Continue x 5-7 days total.",
+            "polymicrobial_ssi": "Ampicillin-sulbactam 3g IV q6h OR Amoxicillin-clavulanate 875mg PO BID (covers S. aureus, Streptococcus, E. coli, anaerobes). Continue until afebrile x 24-48 hours, then switch to PO x 5-7 days total.",
+            "wound_care": "Open wound, debride necrotic tissue, pack with saline-soaked gauze, change dressing daily. Negative pressure wound therapy (wound VAC) if large wound (>5 cm) or deep SSI. Delayed primary closure (after infection resolved, 7-14 days) OR Secondary intention healing (allow wound to heal from bottom up, 4-8 weeks).",
+            "duration": "IV antibiotics until afebrile x 24-48 hours, then switch to PO x 5-7 days total. Wound care: Continue until wound healed (4-8 weeks for secondary intention healing)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "IV antibiotics until afebrile x 24-48 hours, then switch to PO x 5-7 days total. Wound care: Continue until wound healed (4-8 weeks for secondary intention healing). Most patients improve within 48-72 hours of antibiotics + wound care.",
+            "monitoring": "Follow-up in 48-72 hours (assess clinical improvement). Wound care: Change dressing daily or BID, assess for healing. Imaging (CT or ultrasound) if no improvement (rule out deep SSI or abscess). Monitor for complications (wound dehiscence, necrotizing fasciitis, sepsis).",
+            "stop_criteria": "Discontinue antibiotics when afebrile x 24-48 hours AND wound improving (decreased erythema, decreased drainage). Total duration: 5-7 days. Continue wound care until wound healed (4-8 weeks for secondary intention healing)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "wound_dehiscence": "Separation of incision. Superficial dehiscence (skin/subcutaneous tissue only): Continue wound care (open wound, pack with gauze, delayed primary closure or secondary intention healing). Deep dehiscence (fascia involved): Requires surgical repair (return to OR, re-suture fascia). Gynecology consult.",
+            "necrotizing_fasciitis": "Rare (<1%), rapidly progressive, high mortality (20-30%). Clinical: Crepitus, skin necrosis, severe pain out of proportion to exam, sepsis. CT abdomen/pelvis: Gas in soft tissues. Management: Urgent surgical debridement (return to OR, wide excision of necrotic tissue), broad-spectrum antibiotics (vancomycin + piperacillin-tazobactam + clindamycin), ICU admission. Gynecology + general surgery consult.",
+            "abscess": "Palpable mass, fluctuance. Ultrasound: Fluid collection. Management: Incision and drainage (I&D) if abscess >3 cm OR Needle aspiration if abscess <3 cm. Continue antibiotics x 5-7 days after drainage. Continue wound care until healed.",
+            "mrsa_ssi": "Community-acquired MRSA (CA-MRSA) 10-20% (increasing). Risk factors: Prior MRSA infection, nasal colonization, recurrent SSI. Treatment: Vancomycin 15-20mg/kg IV q8-12h OR Linezolid 600mg IV/PO BID. Decolonization (if recurrent): Mupirocin nasal ointment BID x 5 days + chlorhexidine body wash daily x 5 days.",
+            "breastfeeding": "Most antibiotics safe in breastfeeding: Cefazolin, cephalexin, ampicillin-sulbactam, amoxicillin-clavulanate, clindamycin, vancomycin, TMP-SMX (minimal excretion in breast milk). Avoid doxycycline (excreted in breast milk, may affect infant bone/teeth). Continue breastfeeding during treatment.",
+            "counseling": "Cesarean SSI is common (3-15% of cesarean deliveries). Most cases respond to antibiotics + wound care within 48-72 hours. Wound healing: 4-8 weeks for secondary intention healing. Delayed primary closure (after infection resolved, 7-14 days) may shorten healing time. Future pregnancies: No increased risk of SSI (not a chronic condition). Prevention: Prophylactic antibiotics before cesarean (cefazolin 2g IV before skin incision) reduce SSI by 50-70%."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Start antibiotics immediately upon diagnosis (do NOT delay for test results, clinical diagnosis sufficient)",
+              "Cefazolin 2g IV q8h + Metronidazole 500mg IV q8h OR Ampicillin-sulbactam 3g IV q6h (covers S. aureus, Streptococcus, E. coli, anaerobes)",
+              "Do NOT routinely add vancomycin (MRSA 10-20%, use only if MRSA risk factors or failed initial therapy)",
+              "Discontinue IV antibiotics when afebrile x 24-48 hours, then switch to PO x 5-7 days total",
+              "Wound care REQUIRED (antibiotics alone insufficient)"
+            ],
+            "timeout_checklist": [
+              "Is diagnosis confirmed by clinical criteria? (Fever >38°C + wound erythema + warmth + purulent drainage)",
+              "Are antibiotics started immediately? (Cefazolin + metronidazole OR ampicillin-sulbactam)",
+              "Is wound care initiated? (Open wound, debride necrotic tissue, pack with gauze, change dressing daily)",
+              "Is MRSA suspected? (Prior MRSA infection, recurrent SSI, failed initial therapy → vancomycin)",
+              "Is deep SSI or abscess ruled out? (Imaging if persistent fever or palpable mass)",
+              "Is patient afebrile x 24-48 hours? (If yes, switch to PO antibiotics x 5-7 days total)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid vancomycin unless MRSA suspected (10-20%). Do NOT delay antibiotics while awaiting test results. Do NOT close infected wound (increases abscess formation). Do NOT use antibiotics alone without wound care (insufficient). Do NOT continue IV antibiotics beyond 48 hours if afebrile (no benefit, increases resistance).",
+            "diagnostic_stewardship": "Clinical diagnosis (fever >38°C + wound erythema + warmth + purulent drainage). Wound culture if purulent drainage (positive in 60-70%, S. aureus most common). Blood cultures if fever >38.5°C or sepsis suspected. Imaging (CT or ultrasound) if deep SSI or abscess suspected. Do NOT routinely culture if no purulent drainage.",
+            "prevention": "Prophylactic antibiotics before cesarean delivery (cefazolin 2g IV before skin incision OR cefazolin 3g IV if weight >120 kg) reduce SSI by 50-70%. Chlorhexidine-alcohol skin prep (reduces SSI by 40-50% vs povidone-iodine). Maintain normothermia during surgery. Minimize operative time. Avoid subcutaneous drain (no benefit, may increase SSI)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "CDC Guideline for Prevention of Surgical Site Infection (2024)",
+              "url": "https://www.cdc.gov/surgical-site-infection/hcp/prevention-strategies/index.html"
+            },
+            {
+              "label": "ACOG Practice Bulletin: Prophylactic Antibiotics in Labor and Delivery (2018)",
+              "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/05/prophylactic-antibiotics-in-labor-and-delivery"
+            },
+            {
+              "label": "WHO Global Guidelines for the Prevention of Surgical Site Infection (2018)",
+              "url": "https://www.who.int/publications/i/item/9789241550475"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pyelonephritis-pregnancy",
+      "name": "Pyelonephritis (Pregnancy)",
+      "synonyms": [
+        "acute pyelonephritis in pregnancy",
+        "upper UTI in pregnancy"
+      ],
+      "icd10": [
+        "O23.0",
+        "N10"
+      ],
+      "severity": [
+        "moderate",
+        "severe"
+      ],
+      "shortDescription": "Upper urinary tract infection in pregnancy requiring hospitalization + IV antibiotics (ceftriaxone OR cefazolin + gentamicin) until afebrile x 24-48 hours",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Upper urinary tract infection (kidney infection) in pregnancy. Organisms: E. coli (70-80%), Klebsiella (10-15%), Proteus (5-10%), Enterococcus (5-10%). Incidence: 1-2% of pregnancies (higher if untreated asymptomatic bacteriuria). Complications: Preterm labor (10-20%), sepsis (5-10%), acute kidney injury (5-10%), ARDS (1-2%), maternal mortality (rare, <0.1%).",
+            "clinical_presentation": "Fever >38°C, flank pain (unilateral or bilateral), costovertebral angle (CVA) tenderness, nausea, vomiting, dysuria, frequency, urgency. Physical exam: Fever, tachycardia (>100 bpm), CVA tenderness (positive Murphy's punch sign), uterine contractions (if preterm labor). Fever is REQUIRED for diagnosis. Leukocytosis (WBC >10,000) common but non-specific.",
+            "diagnostic_criteria": "Clinical diagnosis: Fever >38°C + flank pain + CVA tenderness in pregnant woman. Laboratory: Pyuria (WBC >10 per HPF, 90-95%), bacteriuria (>100,000 CFU/mL, 80-90%), positive urine culture (E. coli most common). Blood cultures (positive in 15-20%). Urinalysis: Pyuria, bacteriuria, WBC casts (pathognomonic for pyelonephritis).",
+            "risk_factors": [
+              "Untreated asymptomatic bacteriuria (most important risk factor, 20-40% progress to pyelonephritis if untreated)",
+              "Previous UTI or pyelonephritis",
+              "Diabetes",
+              "Urinary tract abnormalities (vesicoureteral reflux, kidney stones)",
+              "Immunosuppression",
+              "Multiparity"
+            ],
+            "red_flags": [
+              "Sepsis - hypotension, tachycardia >120 bpm, altered mental status, requires ICU + vasopressors",
+              "Preterm labor - uterine contractions, cervical dilation, requires tocolytics + corticosteroids if <34 weeks",
+              "Acute kidney injury - oliguria, elevated creatinine, requires dialysis if severe",
+              "ARDS - respiratory distress, hypoxemia, requires mechanical ventilation",
+              "Urosepsis - high mortality (1-2%), requires aggressive fluid resuscitation + broad-spectrum antibiotics"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Test if: Fever >38°C + flank pain + CVA tenderness in pregnant woman. Do NOT delay antibiotics while awaiting test results (clinical diagnosis sufficient). Urinalysis and urine culture before antibiotics (positive in 80-90%). Blood cultures before antibiotics (positive in 15-20%).",
+            "essential_tests": [
+              "Temperature: Fever >38°C (100.4°F) REQUIRED for diagnosis. Measure every 4 hours.",
+              "Physical exam: CVA tenderness (positive Murphy's punch sign), flank pain.",
+              "Urinalysis: Pyuria (WBC >10 per HPF, 90-95%), bacteriuria (>100,000 CFU/mL, 80-90%), WBC casts (pathognomonic for pyelonephritis, 50-60%), nitrites (positive in 50-60% if E. coli).",
+              "Urine culture: Before antibiotics. Positive in 80-90% (E. coli most common, 70-80%). Turnaround: 24-48 hours.",
+              "Blood cultures x2: Before antibiotics. Positive in 15-20% (E. coli most common). Turnaround: 24-48 hours."
+            ],
+            "conditional_tests": [
+              "CBC: Leukocytosis (WBC >10,000, 70-80%). Non-specific, not required for diagnosis.",
+              "Creatinine, BUN: If acute kidney injury suspected (oliguria, elevated creatinine). Creatinine >1.2 mg/dL abnormal in pregnancy (normal 0.4-0.8 mg/dL).",
+              "Renal ultrasound: If no improvement after 48-72 hours of antibiotics (rule out kidney stone, abscess, obstruction). Hydronephrosis common in pregnancy (physiologic, not pathologic).",
+              "Fetal monitoring: If preterm (<37 weeks) or uterine contractions. Continuous fetal heart rate monitoring, tocodynamometry (assess for preterm labor)."
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics while awaiting test results (clinical diagnosis sufficient). Do NOT routinely image if clinical improvement after 48-72 hours (not needed). Do NOT require positive blood cultures for diagnosis (positive in only 15-20%).",
+            "turnaround_time": "Urinalysis: 1-2 hours. Urine culture: 24-48 hours. Blood cultures: 24-48 hours. CBC: 1-2 hours. Creatinine: 1-2 hours. Renal ultrasound: Same day."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "E. coli (70-80%), Klebsiella (10-15%), Proteus (5-10%), Enterococcus (5-10%), Staphylococcus saprophyticus (1-2%, rare in pregnancy). E. coli: Most common cause of pyelonephritis in pregnancy. Ampicillin resistance 30-50% (increasing). Ceftriaxone resistance <5%. Gentamicin resistance <5%.",
+            "pathogenesis": "Ascending infection from bladder → ureters → kidneys. Pregnancy-related factors: Progesterone-induced ureteral dilation and decreased peristalsis → urinary stasis → bacterial overgrowth. Untreated asymptomatic bacteriuria (20-40% progress to pyelonephritis if untreated). Complications: Preterm labor (10-20%, endotoxin-induced uterine contractions), sepsis (5-10%), acute kidney injury (5-10%), ARDS (1-2%).",
+            "resistance_patterns": {
+              "e_coli_resistance": "E. coli: Ampicillin resistance 30-50% (increasing). Ceftriaxone resistance <5%. Gentamicin resistance <5%. Nitrofurantoin resistance <5% (but avoid in third trimester, risk of hemolytic anemia in newborn).",
+              "klebsiella_resistance": "Klebsiella: Ampicillin resistance 100% (intrinsic). Ceftriaxone resistance <5%. Gentamicin resistance <5%.",
+              "enterococcus_resistance": "Enterococcus: Ceftriaxone resistance 100% (intrinsic). Ampicillin 100% susceptible. Vancomycin 100% susceptible."
+            },
+            "timing_critical": "Start antibiotics immediately upon diagnosis (do NOT delay for test results). Hospitalization REQUIRED (IV antibiotics, IV fluids, fetal monitoring). Ceftriaxone 2g IV daily (covers E. coli, Klebsiella, Proteus) OR Cefazolin 2g IV q8h + Gentamicin 5mg/kg IV daily (broader coverage). Continue until afebrile x 24-48 hours, then switch to PO x 10-14 days total."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": "Ceftriaxone 2g IV daily (covers E. coli, Klebsiella, Proteus, preferred for once-daily dosing). Alternative: Cefazolin 2g IV q8h + Gentamicin 5mg/kg IV daily (broader coverage, covers Enterococcus). Hospitalization REQUIRED. IV fluids (2-3 L crystalloid over 24 hours, maintain urine output >0.5 mL/kg/h). Continue until afebrile x 24-48 hours, then switch to PO x 10-14 days total.",
+            "alternative": "Ampicillin-sulbactam 3g IV q6h (covers E. coli, Klebsiella, Enterococcus, but E. coli ampicillin resistance 30-50%). Piperacillin-tazobactam 3.375g IV q6h (broad-spectrum, covers E. coli, Klebsiella, Proteus, Enterococcus, Pseudomonas).",
+            "penicillin_allergy": "Gentamicin 5mg/kg IV daily + Aztreonam 2g IV q8h (covers E. coli, Klebsiella, Proteus). Alternative: Gentamicin 5mg/kg IV daily + Vancomycin 15-20mg/kg IV q8-12h (if Enterococcus suspected).",
+            "preterm_labor": "If uterine contractions (preterm labor): Tocolytics (nifedipine 10-20mg PO q4-6h OR indomethacin 50mg PR x1, then 25mg PO q6h if <32 weeks). Corticosteroids (betamethasone 12mg IM x2 doses 24 hours apart OR dexamethasone 6mg IM q12h x4 doses) if <34 weeks (fetal lung maturity). Continue antibiotics.",
+            "avoid_list": "Avoid fluoroquinolones (ciprofloxacin, levofloxacin, contraindicated in pregnancy). Avoid tetracyclines (doxycycline, contraindicated in pregnancy). Avoid nitrofurantoin in third trimester (risk of hemolytic anemia in newborn). Avoid aminoglycosides (gentamicin) for prolonged duration (>5-7 days, ototoxicity, nephrotoxicity)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "e_coli_pyelonephritis": "Ceftriaxone 2g IV daily (covers E. coli, ampicillin resistance 30-50%). Continue until afebrile x 24-48 hours, then switch to PO (cephalexin 500mg PO QID OR amoxicillin-clavulanate 875mg PO BID) x 10-14 days total.",
+            "klebsiella_pyelonephritis": "Ceftriaxone 2g IV daily (covers Klebsiella, ampicillin resistance 100%). Continue until afebrile x 24-48 hours, then switch to PO (cephalexin 500mg PO QID OR amoxicillin-clavulanate 875mg PO BID) x 10-14 days total.",
+            "enterococcus_pyelonephritis": "Ampicillin 2g IV q6h (covers Enterococcus, 100% susceptible). Continue until afebrile x 24-48 hours, then switch to PO (amoxicillin 500mg PO TID) x 10-14 days total.",
+            "treatment_failure": "No improvement after 48-72 hours of antibiotics. Causes: Resistant organism (ESBL, AmpC), kidney stone, abscess, obstruction. Management: Renal ultrasound (rule out kidney stone, abscess, obstruction). Broaden antibiotics (piperacillin-tazobactam OR meropenem if ESBL suspected). Urology consult if kidney stone or obstruction.",
+            "duration": "IV antibiotics until afebrile x 24-48 hours, then switch to PO x 10-14 days total. Total duration: 10-14 days. PO antibiotics: Cephalexin 500mg PO QID OR Amoxicillin-clavulanate 875mg PO BID OR Nitrofurantoin 100mg PO BID (avoid in third trimester)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "IV antibiotics until afebrile x 24-48 hours, then switch to PO x 10-14 days total. Total duration: 10-14 days. Most patients improve within 48-72 hours of IV antibiotics. Hospitalization: 2-4 days (until afebrile x 24-48 hours).",
+            "monitoring": "Monitor temperature every 4 hours. Monitor urine output (maintain >0.5 mL/kg/h). Monitor for clinical improvement (decreased flank pain, decreased CVA tenderness). Monitor for complications (preterm labor, sepsis, acute kidney injury). Fetal monitoring if preterm (<37 weeks) or uterine contractions. Repeat urine culture 1-2 weeks after completion of antibiotics (test of cure, ensure eradication).",
+            "stop_criteria": "Discontinue IV antibiotics when afebrile x 24-48 hours, then switch to PO x 10-14 days total. Complete 10-14 days of antibiotics (prevent recurrence and chronic pyelonephritis). Repeat urine culture 1-2 weeks after completion of antibiotics (test of cure)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "preterm_labor": "Pyelonephritis increases risk of preterm labor (10-20%, endotoxin-induced uterine contractions). Management: Tocolytics (nifedipine 10-20mg PO q4-6h OR indomethacin 50mg PR x1, then 25mg PO q6h if <32 weeks). Corticosteroids (betamethasone 12mg IM x2 doses 24 hours apart OR dexamethasone 6mg IM q12h x4 doses) if <34 weeks (fetal lung maturity). Continue antibiotics. Obstetrics consult.",
+            "sepsis": "Hypotension (SBP <90 mmHg), tachycardia (>120 bpm), altered mental status, oliguria (<0.5 mL/kg/h). Management: ICU admission, aggressive fluid resuscitation (2-3 L crystalloid), vasopressors (norepinephrine 0.05-0.5 mcg/kg/min), broad-spectrum antibiotics (piperacillin-tazobactam 3.375g IV q6h OR meropenem 1g IV q8h). Mortality 1-2% if treated promptly.",
+            "acute_kidney_injury": "Oliguria (<0.5 mL/kg/h), elevated creatinine (>1.2 mg/dL abnormal in pregnancy). Management: IV fluids (maintain urine output >0.5 mL/kg/h), avoid nephrotoxic drugs (NSAIDs, aminoglycosides), monitor creatinine daily. Dialysis if severe (creatinine >5 mg/dL, oliguria despite fluids). Nephrology consult.",
+            "recurrent_pyelonephritis": "Recurrence rate 5-10% during same pregnancy. Causes: Resistant organism, kidney stone, urinary tract abnormality, inadequate antibiotic duration. Prevention: Suppressive antibiotics (nitrofurantoin 100mg PO daily OR cephalexin 250mg PO daily) for remainder of pregnancy. Renal ultrasound (rule out kidney stone, urinary tract abnormality). Urology consult if recurrent.",
+            "asymptomatic_bacteriuria_screening": "Universal screening at first prenatal visit (12-16 weeks gestation). Urine culture (positive if >100,000 CFU/mL). Treatment: Nitrofurantoin 100mg PO BID x 5-7 days OR Cephalexin 500mg PO QID x 5-7 days OR Amoxicillin-clavulanate 875mg PO BID x 5-7 days. Reduces pyelonephritis by 70-80%. Repeat urine culture 1-2 weeks after treatment (test of cure).",
+            "counseling": "Pyelonephritis in pregnancy requires hospitalization (IV antibiotics, IV fluids, fetal monitoring). Most patients improve within 48-72 hours. Complete 10-14 days of antibiotics (prevent recurrence). Repeat urine culture 1-2 weeks after completion (test of cure). Future pregnancies: Increased risk of recurrence (5-10%), requires suppressive antibiotics. Prevention: Treat asymptomatic bacteriuria (reduces pyelonephritis by 70-80%)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Start antibiotics immediately upon diagnosis (do NOT delay for test results, clinical diagnosis sufficient)",
+              "Hospitalization REQUIRED (IV antibiotics, IV fluids, fetal monitoring)",
+              "Ceftriaxone 2g IV daily (preferred, once-daily dosing) OR Cefazolin 2g IV q8h + Gentamicin 5mg/kg IV daily",
+              "Discontinue IV antibiotics when afebrile x 24-48 hours, then switch to PO x 10-14 days total",
+              "Repeat urine culture 1-2 weeks after completion (test of cure)"
+            ],
+            "timeout_checklist": [
+              "Is diagnosis confirmed by clinical criteria? (Fever >38°C + flank pain + CVA tenderness in pregnant woman)",
+              "Are antibiotics started immediately? (Ceftriaxone 2g IV daily OR cefazolin + gentamicin)",
+              "Is patient hospitalized? (IV antibiotics, IV fluids, fetal monitoring REQUIRED)",
+              "Are urine culture and blood cultures obtained before antibiotics? (Positive in 80-90% and 15-20% respectively)",
+              "Is patient afebrile x 24-48 hours? (If yes, switch to PO antibiotics x 10-14 days total)",
+              "Is preterm labor ruled out? (Fetal monitoring if preterm or uterine contractions)",
+              "Is repeat urine culture planned? (1-2 weeks after completion, test of cure)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid fluoroquinolones (contraindicated in pregnancy). Avoid tetracyclines (contraindicated in pregnancy). Avoid nitrofurantoin in third trimester (risk of hemolytic anemia in newborn). Avoid aminoglycosides for prolonged duration (>5-7 days, ototoxicity, nephrotoxicity). Do NOT delay antibiotics while awaiting test results. Do NOT treat as outpatient (hospitalization REQUIRED).",
+            "diagnostic_stewardship": "Clinical diagnosis (fever >38°C + flank pain + CVA tenderness in pregnant woman). Urinalysis and urine culture before antibiotics (positive in 80-90%). Blood cultures before antibiotics (positive in 15-20%). Renal ultrasound if no improvement after 48-72 hours (rule out kidney stone, abscess, obstruction). Do NOT routinely image if clinical improvement.",
+            "prevention": "Universal screening for asymptomatic bacteriuria at first prenatal visit (12-16 weeks gestation). Treatment of asymptomatic bacteriuria reduces pyelonephritis by 70-80%. Suppressive antibiotics (nitrofurantoin 100mg PO daily OR cephalexin 250mg PO daily) for remainder of pregnancy if recurrent pyelonephritis."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "ACOG Practice Bulletin: Urinary Tract Infections in Pregnancy (2019)",
+              "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2019/12/urinary-tract-infections-in-pregnancy"
+            },
+            {
+              "label": "IDSA Clinical Practice Guideline for the Management of Asymptomatic Bacteriuria (2019)",
+              "url": "https://academic.oup.com/cid/article/68/10/e83/5407357"
+            },
+            {
+              "label": "CDC Urinary Tract Infection (UTI) Prevention (2024)",
+              "url": "https://www.cdc.gov/uti/index.html"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "listeriosis-pregnancy",
+      "name": "Listeriosis (Pregnancy)",
+      "synonyms": [
+        "Listeria monocytogenes infection",
+        "pregnancy-associated listeriosis"
+      ],
+      "icd10": [
+        "O98.8",
+        "A32.7"
+      ],
+      "severity": [
+        "severe",
+        "critical"
+      ],
+      "shortDescription": "Life-threatening foodborne infection in pregnancy requiring IV ampicillin + gentamicin x 14-21 days (high risk of fetal loss, neonatal sepsis, meningitis)",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Life-threatening foodborne infection caused by Listeria monocytogenes. Pregnant women are 10-20 times more likely to develop listeriosis than general population (cell-mediated immunity suppressed in pregnancy). Incidence: 12 cases per 100,000 pregnancies (rare but serious). Complications: Fetal loss (20-30%, miscarriage or stillbirth), preterm labor (30-40%), neonatal sepsis (50-60%), neonatal meningitis (10-20%), maternal death (rare, <1%).",
+            "clinical_presentation": "Maternal: Fever >38°C, flu-like symptoms (myalgia, chills, headache, nausea, vomiting, diarrhea), bacteremia (positive blood cultures 70-80%). Often mild or asymptomatic in mother but severe in fetus/neonate. Neonatal: Early-onset (onset <7 days, transplacental transmission): Sepsis, pneumonia, disseminated granulomatosis. Late-onset (onset 7-28 days, nosocomial transmission): Meningitis (most common).",
+            "diagnostic_criteria": "Clinical diagnosis: Fever >38°C + flu-like symptoms + history of high-risk food exposure (deli meats, soft cheeses, unpasteurized dairy) in pregnant woman. Laboratory: Positive blood cultures (70-80%, Listeria monocytogenes). Positive amniotic fluid culture (if amniocentesis performed). Positive neonatal blood/CSF culture (if neonatal infection). Listeria: Gram-positive rod, beta-hemolytic, tumbling motility.",
+            "risk_factors": [
+              "Pregnancy (most important risk factor, 10-20 times increased risk vs general population)",
+              "High-risk food exposure (deli meats, hot dogs, soft cheeses, unpasteurized dairy, smoked seafood, raw sprouts)",
+              "Immunosuppression (HIV, diabetes, immunosuppressive therapy)",
+              "Advanced maternal age (>35 years)",
+              "Hispanic ethnicity (higher incidence, possibly related to dietary habits)"
+            ],
+            "red_flags": [
+              "Fetal loss - miscarriage (20-30% if first/second trimester) or stillbirth (20-30% if third trimester), requires delivery + IV antibiotics",
+              "Preterm labor - uterine contractions, cervical dilation (30-40%), requires tocolytics + corticosteroids if <34 weeks",
+              "Neonatal sepsis - fever, respiratory distress, hypotension (50-60%), requires neonatal ICU + IV antibiotics (ampicillin + gentamicin)",
+              "Neonatal meningitis - lethargy, poor feeding, seizures (10-20%), requires neonatal ICU + IV antibiotics x 21 days, mortality 20-30%",
+              "Maternal sepsis - hypotension, altered mental status (rare, <5%), requires ICU + vasopressors"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Test if: Fever >38°C + flu-like symptoms + history of high-risk food exposure in pregnant woman. Do NOT delay antibiotics while awaiting test results (life-threatening to fetus). Blood cultures before antibiotics (positive in 70-80%). Amniocentesis (if fetal distress, consider amniotic fluid culture). Neonatal blood/CSF culture (if neonatal infection suspected).",
+            "essential_tests": [
+              "Temperature: Fever >38°C (100.4°F) common (70-80%). Measure every 4 hours.",
+              "Blood cultures x2: Before antibiotics. Positive in 70-80% (Listeria monocytogenes). Turnaround: 24-48 hours. Listeria: Gram-positive rod, beta-hemolytic, tumbling motility.",
+              "Fetal monitoring: Continuous fetal heart rate monitoring (assess for fetal distress). Non-reassuring fetal heart rate tracing (late decelerations, decreased variability) suggests fetal infection."
+            ],
+            "conditional_tests": [
+              "CBC: Leukocytosis (WBC >10,000, 60-70%). Non-specific, not required for diagnosis.",
+              "Amniocentesis: If fetal distress (non-reassuring fetal heart rate tracing). Amniotic fluid culture (positive in 50-60% if fetal infection). Amniotic fluid Gram stain (Gram-positive rods). Obstetrics consult before amniocentesis.",
+              "Neonatal blood culture: If neonatal infection suspected (fever, respiratory distress, hypotension). Positive in 50-60% (Listeria monocytogenes).",
+              "Neonatal CSF culture: If neonatal meningitis suspected (lethargy, poor feeding, seizures). Positive in 10-20% (Listeria monocytogenes). CSF: Elevated WBC (>100 cells/μL), elevated protein (>100 mg/dL), low glucose (<40 mg/dL).",
+              "Placental pathology: If fetal loss or preterm delivery. Microabscesses, chorioamnionitis, funisitis."
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics while awaiting test results (life-threatening to fetus). Do NOT routinely perform amniocentesis if no fetal distress (invasive, risk of preterm labor). Do NOT require positive blood cultures for diagnosis (positive in only 70-80%).",
+            "turnaround_time": "Blood cultures: 24-48 hours (preliminary), 5 days (final). Amniotic fluid culture: 24-48 hours. Neonatal blood/CSF culture: 24-48 hours. CBC: 1-2 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Listeria monocytogenes. Gram-positive rod (coccobacillus), facultative intracellular pathogen, beta-hemolytic, tumbling motility (characteristic). Foodborne transmission: Deli meats, hot dogs, soft cheeses (queso fresco, brie, camembert), unpasteurized dairy, smoked seafood, raw sprouts. Can grow at refrigerator temperatures (4°C, cold-enrichment). Pregnant women 10-20 times more likely to develop listeriosis (cell-mediated immunity suppressed in pregnancy).",
+            "pathogenesis": "Foodborne transmission → maternal bacteremia → transplacental transmission → fetal infection → fetal loss (20-30%), preterm labor (30-40%), neonatal sepsis (50-60%), neonatal meningitis (10-20%). Maternal symptoms often mild (fever, flu-like symptoms) but severe in fetus/neonate. Early-onset neonatal listeriosis (onset <7 days, transplacental transmission): Sepsis, pneumonia, disseminated granulomatosis. Late-onset neonatal listeriosis (onset 7-28 days, nosocomial transmission): Meningitis (most common).",
+            "resistance_patterns": {
+              "ampicillin_resistance": "Listeria: Ampicillin 100% susceptible (first-line). Penicillin G 100% susceptible (alternative).",
+              "gentamicin_resistance": "Listeria: Gentamicin synergistic with ampicillin (combination therapy preferred). Gentamicin alone insufficient (poor intracellular penetration).",
+              "cephalosporin_resistance": "Listeria: Cephalosporin resistance 100% (intrinsic). Do NOT use ceftriaxone or cefazolin (ineffective).",
+              "tmp_smx_resistance": "Listeria: TMP-SMX 100% susceptible (alternative if penicillin allergy)."
+            },
+            "timing_critical": "Start antibiotics immediately upon diagnosis (do NOT delay for test results, life-threatening to fetus). Hospitalization REQUIRED. Ampicillin 2g IV q4h + Gentamicin 5mg/kg IV daily x 14-21 days (combination therapy preferred, synergistic). Fetal monitoring (continuous fetal heart rate monitoring). Delivery if fetal distress (non-reassuring fetal heart rate tracing). Neonatal antibiotics (ampicillin + gentamicin) if neonatal infection suspected."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": "Ampicillin 2g IV q4h + Gentamicin 5mg/kg IV daily x 14-21 days (combination therapy preferred, synergistic, covers Listeria 100%). Hospitalization REQUIRED. Fetal monitoring (continuous fetal heart rate monitoring). Delivery if fetal distress (non-reassuring fetal heart rate tracing). Neonatal antibiotics (ampicillin 50mg/kg IV q12h + gentamicin 4mg/kg IV daily) if neonatal infection suspected.",
+            "alternative": "Penicillin G 4 million units IV q4h + Gentamicin 5mg/kg IV daily x 14-21 days (alternative to ampicillin, Listeria 100% susceptible). TMP-SMX DS (160/800mg) 1-2 tabs IV q12h x 14-21 days (if penicillin allergy, Listeria 100% susceptible).",
+            "penicillin_allergy": "TMP-SMX DS (160/800mg) 1-2 tabs IV q12h x 14-21 days (Listeria 100% susceptible). Alternative: Meropenem 2g IV q8h x 14-21 days (if severe penicillin allergy, Listeria susceptible). Do NOT use cephalosporins (ceftriaxone, cefazolin, Listeria resistance 100%).",
+            "neonatal_treatment": "Ampicillin 50mg/kg IV q12h (if <7 days old) OR 50mg/kg IV q8h (if >7 days old) + Gentamicin 4mg/kg IV daily x 14-21 days (if sepsis) OR x 21 days (if meningitis). Neonatal ICU admission. Repeat neonatal CSF culture at 48 hours (ensure sterilization). Mortality 20-30% if neonatal meningitis.",
+            "avoid_list": "Avoid cephalosporins (ceftriaxone, cefazolin, Listeria resistance 100%, ineffective). Do NOT delay antibiotics while awaiting test results (life-threatening to fetus). Do NOT use gentamicin alone (poor intracellular penetration, insufficient)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "maternal_listeriosis": "Ampicillin 2g IV q4h + Gentamicin 5mg/kg IV daily x 14-21 days (combination therapy preferred, synergistic). Continue until blood cultures negative x 48 hours AND afebrile x 48 hours. Total duration: 14-21 days (longer if fetal/neonatal infection).",
+            "neonatal_sepsis": "Ampicillin 50mg/kg IV q12h (if <7 days old) OR 50mg/kg IV q8h (if >7 days old) + Gentamicin 4mg/kg IV daily x 14-21 days. Neonatal ICU admission. Repeat neonatal blood culture at 48 hours (ensure sterilization). Discontinue antibiotics when blood cultures negative x 48 hours AND clinically improved.",
+            "neonatal_meningitis": "Ampicillin 50mg/kg IV q6h (higher dose for meningitis, better CSF penetration) + Gentamicin 4mg/kg IV daily x 21 days (minimum). Neonatal ICU admission. Repeat neonatal CSF culture at 48 hours (ensure sterilization). Continue antibiotics x 21 days total (longer duration for meningitis). Mortality 20-30%.",
+            "fetal_loss": "If fetal loss (miscarriage or stillbirth): Delivery REQUIRED (remove infected tissue). Continue maternal antibiotics (ampicillin + gentamicin) x 14 days after delivery. Placental pathology (microabscesses, chorioamnionitis, funisitis). Counseling: Future pregnancies not contraindicated (not a chronic infection).",
+            "duration": "Maternal: 14-21 days total (longer if fetal/neonatal infection). Neonatal sepsis: 14-21 days. Neonatal meningitis: 21 days (minimum). Continue until blood/CSF cultures negative x 48 hours AND clinically improved."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "Maternal: 14-21 days total (longer if fetal/neonatal infection). Neonatal sepsis: 14-21 days. Neonatal meningitis: 21 days (minimum). Continue until blood/CSF cultures negative x 48 hours AND clinically improved. Hospitalization: 7-14 days (maternal), 14-21 days (neonatal sepsis), 21-28 days (neonatal meningitis).",
+            "monitoring": "Maternal: Monitor temperature every 4 hours. Monitor for clinical improvement (decreased fever, improved symptoms). Fetal monitoring (continuous fetal heart rate monitoring, assess for fetal distress). Repeat blood cultures at 48 hours (ensure sterilization). Neonatal: Monitor for signs of infection (fever, respiratory distress, hypotension, lethargy, poor feeding, seizures). Repeat neonatal blood/CSF culture at 48 hours (ensure sterilization). Neonatal ICU admission.",
+            "stop_criteria": "Maternal: Discontinue antibiotics when blood cultures negative x 48 hours AND afebrile x 48 hours AND 14-21 days completed. Neonatal: Discontinue antibiotics when blood/CSF cultures negative x 48 hours AND clinically improved AND 14-21 days completed (sepsis) OR 21 days completed (meningitis)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "fetal_loss": "Fetal loss (miscarriage or stillbirth) occurs in 20-30% of pregnancy-associated listeriosis. Higher risk if first/second trimester (20-30% miscarriage) or third trimester (20-30% stillbirth). Management: Delivery REQUIRED (remove infected tissue). Continue maternal antibiotics (ampicillin + gentamicin) x 14 days after delivery. Placental pathology (microabscesses, chorioamnionitis, funisitis). Counseling: Future pregnancies not contraindicated (not a chronic infection).",
+            "preterm_labor": "Preterm labor occurs in 30-40% of pregnancy-associated listeriosis (endotoxin-induced uterine contractions). Management: Tocolytics (nifedipine 10-20mg PO q4-6h OR indomethacin 50mg PR x1, then 25mg PO q6h if <32 weeks). Corticosteroids (betamethasone 12mg IM x2 doses 24 hours apart OR dexamethasone 6mg IM q12h x4 doses) if <34 weeks (fetal lung maturity). Continue antibiotics. Obstetrics consult.",
+            "neonatal_sepsis": "Neonatal sepsis occurs in 50-60% of pregnancy-associated listeriosis. Early-onset (onset <7 days, transplacental transmission): Sepsis, pneumonia, disseminated granulomatosis. Late-onset (onset 7-28 days, nosocomial transmission): Meningitis (most common). Management: Neonatal ICU admission, ampicillin 50mg/kg IV q12h + gentamicin 4mg/kg IV daily x 14-21 days. Mortality 20-30% if meningitis.",
+            "neonatal_meningitis": "Neonatal meningitis occurs in 10-20% of pregnancy-associated listeriosis. Late-onset (onset 7-28 days, nosocomial transmission). Clinical: Lethargy, poor feeding, seizures, bulging fontanelle. CSF: Elevated WBC (>100 cells/μL), elevated protein (>100 mg/dL), low glucose (<40 mg/dL). Management: Neonatal ICU admission, ampicillin 50mg/kg IV q6h + gentamicin 4mg/kg IV daily x 21 days (minimum). Repeat CSF culture at 48 hours (ensure sterilization). Mortality 20-30%.",
+            "food_safety_counseling": "Pregnant women should avoid high-risk foods: Deli meats and hot dogs (unless heated to steaming), soft cheeses (queso fresco, brie, camembert, blue cheese, feta, unless labeled pasteurized), unpasteurized dairy (raw milk, raw milk cheese), smoked seafood (lox, nova, kippered, unless canned or shelf-stable), raw sprouts (alfalfa, bean, clover). Safe alternatives: Hard cheeses (cheddar, Swiss, parmesan), pasteurized dairy, canned seafood, cooked sprouts. Listeria can grow at refrigerator temperatures (4°C), so refrigeration does NOT prevent growth.",
+            "counseling": "Listeriosis in pregnancy is life-threatening to fetus (fetal loss 20-30%, neonatal sepsis 50-60%, neonatal meningitis 10-20%). Requires hospitalization + IV antibiotics x 14-21 days. Fetal monitoring REQUIRED (continuous fetal heart rate monitoring). Delivery if fetal distress. Neonatal antibiotics if neonatal infection suspected. Future pregnancies: Not contraindicated (not a chronic infection). Prevention: Avoid high-risk foods (deli meats, soft cheeses, unpasteurized dairy, smoked seafood, raw sprouts)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Start antibiotics immediately upon diagnosis (do NOT delay for test results, life-threatening to fetus)",
+              "Hospitalization REQUIRED (IV antibiotics, fetal monitoring)",
+              "Ampicillin 2g IV q4h + Gentamicin 5mg/kg IV daily x 14-21 days (combination therapy preferred, synergistic)",
+              "Fetal monitoring (continuous fetal heart rate monitoring, assess for fetal distress)",
+              "Neonatal antibiotics (ampicillin + gentamicin) if neonatal infection suspected"
+            ],
+            "timeout_checklist": [
+              "Is diagnosis confirmed by clinical criteria? (Fever >38°C + flu-like symptoms + history of high-risk food exposure in pregnant woman)",
+              "Are antibiotics started immediately? (Ampicillin 2g IV q4h + Gentamicin 5mg/kg IV daily)",
+              "Is patient hospitalized? (IV antibiotics, fetal monitoring REQUIRED)",
+              "Are blood cultures obtained before antibiotics? (Positive in 70-80%)",
+              "Is fetal monitoring initiated? (Continuous fetal heart rate monitoring, assess for fetal distress)",
+              "Is delivery planned if fetal distress? (Non-reassuring fetal heart rate tracing)",
+              "Are neonatal antibiotics planned if neonatal infection suspected? (Ampicillin + gentamicin x 14-21 days)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid cephalosporins (ceftriaxone, cefazolin, Listeria resistance 100%, ineffective). Do NOT delay antibiotics while awaiting test results (life-threatening to fetus). Do NOT use gentamicin alone (poor intracellular penetration, insufficient). Do NOT treat as outpatient (hospitalization REQUIRED).",
+            "diagnostic_stewardship": "Clinical diagnosis (fever >38°C + flu-like symptoms + history of high-risk food exposure in pregnant woman). Blood cultures before antibiotics (positive in 70-80%). Fetal monitoring (continuous fetal heart rate monitoring). Amniocentesis if fetal distress (amniotic fluid culture). Neonatal blood/CSF culture if neonatal infection suspected. Do NOT routinely perform amniocentesis if no fetal distress (invasive, risk of preterm labor).",
+            "prevention": "Food safety counseling for pregnant women: Avoid high-risk foods (deli meats, hot dogs, soft cheeses, unpasteurized dairy, smoked seafood, raw sprouts). Listeria can grow at refrigerator temperatures (4°C), so refrigeration does NOT prevent growth. CDC: Listeriosis causes 260 deaths per year in US (third leading cause of death from foodborne illness)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "CDC Listeria (Listeriosis) Prevention (2024)",
+              "url": "https://www.cdc.gov/listeria/prevention.html"
+            },
+            {
+              "label": "ACOG Committee Opinion: Management of Pregnant Women With Presumptive Exposure to Listeria monocytogenes (2014)",
+              "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2014/09/management-of-pregnant-women-with-presumptive-exposure-to-listeria-monocytogenes"
+            },
+            {
+              "label": "WHO Listeriosis Fact Sheet (2024)",
+              "url": "https://www.who.int/news-room/fact-sheets/detail/listeriosis"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
+

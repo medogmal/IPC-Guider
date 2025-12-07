@@ -1,0 +1,579 @@
+{
+  "version": 1,
+  "groupId": "miscellaneous_bacterial",
+  "groupName": "Miscellaneous Bacterial Outbreak Pathogens",
+  "type": "bacterial",
+  "updatedAt": "2025-01-14T00:00:00Z",
+  "pathogens": [
+    {
+      "id": "burkholderia_cepacia",
+      "name": "Burkholderia cepacia complex",
+      "scientificName": "Burkholderia cepacia complex (Bcc), Gram-negative bacilli. Complex includes at least 20 species (genomovars), most common: B. cenocepacia, B. multivorans, B. cepacia",
+      "definition": "Group of Gram-negative opportunistic bacteria with notable multidrug resistance profile. Major pathogen in cystic fibrosis (CF) patients causing 'cepacia syndrome' (rapid respiratory decline, sepsis, death). Healthcare-associated outbreaks linked to contaminated medical products, respiratory equipment, and water systems. Intrinsically resistant to many antibiotics including aminoglycosides and polymyxins. Can survive in disinfectants and antiseptics. Person-to-person transmission documented in CF patients.",
+      "reservoir": {
+        "primary": [
+          "Moist environments: soil, water, plants",
+          "Hospital water systems and plumbing",
+          "Contaminated respiratory equipment and medical devices"
+        ],
+        "secondary": [
+          "Contaminated medications and solutions",
+          "Disinfectants and antiseptics (can survive in some)"
+        ],
+        "notes": "Bcc is ubiquitous in environment. Can survive in nutrient-poor conditions and resist many disinfectants. Healthcare outbreaks linked to contaminated medical products (mouthwash, nasal spray, ultrasound gel), respiratory equipment, water systems. CF patients can become chronically colonized."
+      },
+      "transmission": {
+        "mode": "Contact transmission via contaminated devices, solutions, water, and person-to-person in CF patients",
+        "routes": [
+          "Direct contact with contaminated medical devices: respiratory equipment (nebulizers, ventilators), catheters",
+          "Contaminated medications and solutions: mouthwash, nasal spray, ultrasound gel, disinfectants",
+          "Contaminated water systems: sinks, faucets, showers",
+          "Person-to-person transmission: documented in CF patients (respiratory secretions, direct contact)",
+          "Hands of healthcare workers"
+        ],
+        "notes": "Bcc can survive in disinfectants and antiseptics, making outbreaks challenging to control. Person-to-person transmission is concern in CF patients - many CF centers implement segregation policies. Healthcare-associated transmission primarily via contaminated products and equipment."
+      },
+      "incubationPeriod": {
+        "range": "Variable; days to weeks from exposure to infection. Colonization of respiratory tract may be persistent (especially in CF patients)",
+        "infectiousPeriod": "Transmissible as long as colonized or infected. CF patients may remain colonized for life",
+        "seasonality": "No seasonal pattern; healthcare-associated",
+        "geographic": "Worldwide distribution"
+      },
+      "riskFactors": [
+        "Cystic fibrosis (CF) - highest risk; 'cepacia syndrome' can be fatal",
+        "Chronic granulomatous disease",
+        "Immunocompromised patients",
+        "ICU admission with mechanical ventilation",
+        "Central venous catheters and invasive devices",
+        "Broad-spectrum antibiotic use",
+        "Exposure to contaminated medical products or equipment",
+        "Contact with CF patient colonized with Bcc"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Respiratory infections in CF patients: pneumonia, chronic bronchitis, rapid respiratory decline. 'Cepacia syndrome': necrotizing pneumonia, bacteremia, rapid clinical deterioration, high mortality (50-80%)",
+          "Ventilator-associated pneumonia in ICU patients",
+          "Bloodstream infections: catheter-related bacteremia, sepsis",
+          "Urinary tract infections (catheter-associated)",
+          "Wound infections",
+          "Rarely: endocarditis, meningitis, osteomyelitis"
+        ],
+        "complications": [
+          "'Cepacia syndrome' in CF patients: rapid respiratory failure, sepsis, death (50-80% mortality)",
+          "Chronic respiratory colonization in CF (difficult to eradicate)",
+          "Septic shock",
+          "Multi-organ failure",
+          "Death (high mortality in CF patients with cepacia syndrome)"
+        ],
+        "caseDefinition": {
+          "suspected": "CF patient with rapid respiratory decline, OR ICU patient with pneumonia/bacteremia + exposure to contaminated equipment/products, OR cluster of infections in same unit",
+          "confirmed": "Clinical infection + laboratory identification of Burkholderia cepacia complex from clinical specimen (respiratory, blood, urine, wound)"
+        }
+      },
+      "diagnosis": [
+        "Culture: respiratory specimens, blood, urine, wound - grows on routine media but may be slow (2-7 days). Selective media (BCSA - Burkholderia cepacia selective agar) for CF patients",
+        "Species identification: biochemical tests, MALDI-TOF mass spectrometry, molecular methods (recA gene sequencing) - important for epidemiology and prognosis (B. cenocepacia associated with worse outcomes)",
+        "Molecular typing for outbreak investigation: pulsed-field gel electrophoresis (PFGE), multilocus sequence typing (MLST), whole genome sequencing",
+        "Antifungal susceptibility testing: essential due to multidrug resistance"
+      ],
+      "treatment": "Combination antibiotic therapy guided by susceptibility testing. Intrinsically resistant to aminoglycosides and polymyxins. Often susceptible to: trimethoprim-sulfamethoxazole (TMP-SMX), ceftazidime, meropenem, minocycline. Combination therapy recommended (e.g., TMP-SMX + ceftazidime, or meropenem + TMP-SMX) due to high resistance rates. Treatment duration: 14-21 days for pneumonia/bacteremia, longer for complicated infections. Eradication difficult in CF patients - chronic suppressive therapy may be needed. Source control: remove catheters and devices if possible.",
+      "infectionControl": {
+        "precautions": "Contact Precautions for CF patients colonized/infected with Bcc. Standard Precautions for non-CF patients (unless outbreak)",
+        "screening": "Routine respiratory surveillance cultures for CF patients. Screen contacts during outbreaks",
+        "cohorting": "Segregate CF patients colonized with Bcc from other CF patients (prevent person-to-person transmission). Cohort affected patients during outbreaks",
+        "sourceControl": "Remove contaminated products and equipment. Disinfect or replace respiratory equipment",
+        "environmental": "Water system disinfection: chlorination, point-of-use filters. Strict device sterilization: respiratory equipment, catheters. Environmental cleaning: use appropriate disinfectants (Bcc can survive in some disinfectants - use EPA-registered products with label claims). Discard contaminated medications and solutions. Audit infection control practices",
+        "staffEducation": "Strict hand hygiene, proper device sterilization, recognition of Bcc infections, CF patient segregation policies, environmental control"
+      },
+      "outbreakTriggers": [
+        "≥2 linked Bcc infections in CF patients or ICU within defined time period",
+        "Unexpected cluster of Bcc infections in specific unit or patient population",
+        "Detection of same Bcc strain (by molecular typing) in multiple patients"
+      ],
+      "reportingCommunication": [
+        "Immediate outbreak notification to infection prevention and control team",
+        "Notify public health authorities",
+        "Implement outbreak investigation: case finding, environmental sampling (water systems, equipment, products), molecular typing of isolates",
+        "Identify and remove contaminated source: recall contaminated products, disinfect water systems, replace equipment",
+        "Implement enhanced infection control: Contact Precautions, cohorting, CF patient segregation",
+        "Communication with staff, patients, families",
+        "Product recall and FDA notification if contaminated commercial product identified"
+      ],
+      "prevention": [
+        "Strict hand hygiene: before and after all patient contact",
+        "CF patient segregation: separate CF patients colonized with Bcc from other CF patients, avoid shared equipment and waiting areas",
+        "Water system surveillance: routine monitoring and disinfection",
+        "Device sterilization: proper sterilization of respiratory equipment, single-use devices when possible",
+        "Product quality control: inspect medications and solutions for contamination, proper storage",
+        "Environmental cleaning: use appropriate disinfectants effective against Bcc",
+        "Surveillance: routine respiratory cultures for CF patients, monitor for outbreaks",
+        "Antimicrobial stewardship: judicious antibiotic use to reduce selection pressure"
+      ],
+      "references": [
+        {
+          "label": "CDC - Burkholderia cepacia complex",
+          "url": "https://www.cdc.gov/hai/organisms/bcc.html"
+        },
+        {
+          "label": "WHO - Guidelines on Hand Hygiene",
+          "url": "https://www.who.int/publications/i/item/9789241597906"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "eikenella_corrodens",
+      "name": "Eikenella corrodens",
+      "scientificName": "Eikenella corrodens, Gram-negative facultative anaerobic rod, family Neisseriaceae",
+      "definition": "Facultative anaerobic Gram-negative rod that is part of normal oral flora. Causes infections following human bites, dental procedures, head and neck surgery, and device-associated infections. Characteristic 'pitting' or 'corroding' colonies on agar (hence name 'corrodens'). Produces bleach-like odor. Member of HACEK group (causes of culture-negative endocarditis). Healthcare-associated outbreaks rare but reported with contaminated medical devices and procedures.",
+      "reservoir": {
+        "primary": [
+          "Human oral cavity",
+          "Upper respiratory tract"
+        ],
+        "secondary": [
+          "Gastrointestinal tract"
+        ],
+        "notes": "E. corrodens is part of normal oral flora in humans. Not found in environment. Infections are usually endogenous (from patient's own flora) but can be transmitted via contaminated devices or procedures."
+      },
+      "transmission": {
+        "mode": "Direct contact with oral secretions, medical device contamination",
+        "routes": [
+          "Endogenous transmission: from patient's own oral flora during dental procedures, head/neck surgery, or trauma",
+          "Human bites: clenched-fist injuries (fight bites)",
+          "Contaminated medical devices: endoscopes, dental equipment",
+          "Aspiration of oral secretions",
+          "Rarely: healthcare worker transmission via contaminated hands or equipment"
+        ],
+        "notes": "Most infections are endogenous. Healthcare-associated transmission rare but can occur via contaminated devices. Human bite infections often polymicrobial (E. corrodens + oral anaerobes + Streptococcus)."
+      },
+      "incubationPeriod": {
+        "range": "Days to weeks from exposure to infection; usually endogenous infections",
+        "infectiousPeriod": "Not typically transmissible person-to-person (except via bites)",
+        "seasonality": "No seasonal pattern",
+        "geographic": "Worldwide distribution"
+      },
+      "riskFactors": [
+        "Dental procedures and poor oral hygiene",
+        "Head and neck surgery",
+        "Human bites (clenched-fist injuries)",
+        "Intravenous drug use (licking needles)",
+        "Immunosuppression",
+        "Device-associated infections: endoscopy, dental procedures",
+        "Aspiration risk"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Soft tissue infections: cellulitis, abscess (especially after human bites or dental procedures)",
+          "Head and neck infections: sinusitis, thyroiditis, parotitis, deep neck abscess",
+          "Endocarditis: subacute bacterial endocarditis (HACEK group), often culture-negative initially",
+          "Osteomyelitis and septic arthritis (especially after human bites)",
+          "Pneumonia and empyema (aspiration)",
+          "Intra-abdominal infections (rare)",
+          "Bacteremia (rare)"
+        ],
+        "complications": [
+          "Endocarditis with valve destruction",
+          "Osteomyelitis with bone destruction",
+          "Septic arthritis",
+          "Abscess formation",
+          "Sepsis"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with soft tissue infection after human bite or dental procedure, OR subacute endocarditis with negative routine cultures, OR ≥2 healthcare-associated soft tissue/device infections linked to common source",
+          "confirmed": "Clinical infection + laboratory identification of E. corrodens from clinical specimen (wound, blood, tissue)"
+        }
+      },
+      "diagnosis": [
+        "Culture: requires anaerobic or CO2-enriched atmosphere (facultative anaerobe). Grows slowly (2-7 days) on blood agar. Characteristic 'pitting' or 'corroding' colonies. Produces bleach-like odor",
+        "Gram stain: Gram-negative rod",
+        "Biochemical tests: oxidase positive, catalase negative, nitrate reduction positive",
+        "MALDI-TOF mass spectrometry or molecular identification",
+        "Blood cultures: may require prolonged incubation (up to 3 weeks) for endocarditis - HACEK group",
+        "Molecular typing for outbreak investigation: PFGE, MLST"
+      ],
+      "treatment": "Beta-lactams: ampicillin-sulbactam, amoxicillin-clavulanate - first-line for most infections. Ceftriaxone or cefotaxime - alternative. Fluoroquinolones (ciprofloxacin, levofloxacin) - alternative. Resistant to clindamycin and metronidazole (despite being anaerobe). Endocarditis: ceftriaxone or ampicillin-sulbactam for 4-6 weeks. Osteomyelitis: prolonged therapy (6-12 weeks). Human bite wounds: amoxicillin-clavulanate (covers E. corrodens + oral anaerobes + Streptococcus). Source control: drainage of abscesses, debridement of necrotic tissue.",
+      "infectionControl": {
+        "precautions": "Standard Precautions. Contact Precautions during outbreaks",
+        "screening": "Not routinely recommended. Consider during outbreak investigation",
+        "cohorting": "Not necessary unless outbreak",
+        "sourceControl": "Identify and sterilize/discard contaminated devices",
+        "environmental": "Sterile technique in dental and surgical procedures. Proper sterilization of endoscopes and dental equipment. Hand hygiene before and after procedures",
+        "staffEducation": "Proper procedural asepsis, recognition of E. corrodens infections (human bites, dental procedures), device sterilization"
+      },
+      "outbreakTriggers": [
+        "≥2 healthcare-associated soft tissue or device-associated E. corrodens infections linked to common source (procedure, device, healthcare worker) within defined time period"
+      ],
+      "reportingCommunication": [
+        "Notify infection prevention and control team if cluster identified",
+        "Implement outbreak investigation: case finding, review of procedures and device sterilization practices, molecular typing",
+        "Identify and address source: improve procedural asepsis, sterilize or discard contaminated devices",
+        "Communication with staff and affected patients"
+      ],
+      "prevention": [
+        "Improved dental and oral hygiene",
+        "Procedural asepsis: sterile technique in dental procedures, head/neck surgery, endoscopy",
+        "Proper device sterilization: endoscopes, dental equipment",
+        "Hand hygiene: before and after procedures",
+        "Wound care: proper cleaning and treatment of human bite wounds",
+        "Antibiotic prophylaxis for human bites: amoxicillin-clavulanate",
+        "Staff education: recognition of E. corrodens infections, proper procedural technique"
+      ],
+      "references": [
+        {
+          "label": "CDC - Eikenella corrodens",
+          "url": "https://www.cdc.gov/hai/organisms/gram-negative-bacteria.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "elizabethkingia_spp",
+      "name": "Elizabethkingia spp.",
+      "scientificName": "Elizabethkingia species, Gram-negative rods, family Flavobacteriaceae. Main species: E. meningoseptica, E. anophelis, E. miricola",
+      "definition": "Environmental Gram-negative rods emerging as multidrug-resistant healthcare-associated pathogens. Found in water sources and hospital environment. Cause pneumonia, bloodstream infections, and meningitis, especially in ICU and neonatal patients. Intrinsically resistant to many antibiotics including carbapenems, aminoglycosides, and colistin. Healthcare-associated outbreaks linked to contaminated water systems, sinks, and respiratory equipment. High mortality rate (20-40%).",
+      "reservoir": {
+        "primary": [
+          "Water sources: hospital sinks, faucets, water systems",
+          "Hospital environment: respiratory equipment, incubators"
+        ],
+        "secondary": [
+          "Soil",
+          "Plants"
+        ],
+        "notes": "Elizabethkingia is environmental organism found in water and moist environments. Can colonize hospital water systems and plumbing. Outbreaks linked to contaminated sinks, faucets, respiratory equipment, and incubators."
+      },
+      "transmission": {
+        "mode": "Contact with contaminated water, equipment, and fomites",
+        "routes": [
+          "Contaminated water: sinks, faucets, showers, water systems",
+          "Contaminated respiratory equipment: ventilators, nebulizers",
+          "Contaminated medical devices: catheters, incubators (neonates)",
+          "Hands of healthcare workers",
+          "Environmental surfaces (fomites)"
+        ],
+        "notes": "Elizabethkingia can form biofilms in water systems and on medical devices, making eradication difficult. No person-to-person transmission documented."
+      },
+      "incubationPeriod": {
+        "range": "Variable; days to weeks from exposure to infection. Colonization can persist",
+        "infectiousPeriod": "Not transmissible person-to-person",
+        "seasonality": "No seasonal pattern; healthcare-associated",
+        "geographic": "Worldwide distribution; outbreaks reported globally"
+      },
+      "riskFactors": [
+        "ICU admission",
+        "Mechanical ventilation",
+        "Central venous catheters and invasive devices",
+        "Neonates (especially premature infants)",
+        "Immunosuppression",
+        "Broad-spectrum antibiotic use (especially carbapenems)",
+        "Prolonged hospitalization",
+        "Exposure to contaminated water or equipment"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Pneumonia: ventilator-associated pneumonia in ICU patients, fever, dyspnea, purulent secretions",
+          "Bloodstream infections: catheter-related bacteremia, sepsis, septic shock",
+          "Meningitis: especially in neonates (E. meningoseptica), fever, lethargy, seizures",
+          "Wound infections",
+          "Rarely: endocarditis, osteomyelitis, peritonitis"
+        ],
+        "complications": [
+          "Septic shock",
+          "Respiratory failure",
+          "Meningitis with neurological sequelae (neonates)",
+          "Death (mortality rate 20-40% for bacteremia)"
+        ],
+        "caseDefinition": {
+          "suspected": "ICU or neonatal patient with pneumonia/bacteremia + mechanical ventilation or invasive devices + exposure to water/equipment, OR cluster of infections in same unit",
+          "confirmed": "Clinical infection + laboratory identification of Elizabethkingia from clinical specimen (respiratory, blood, CSF)"
+        }
+      },
+      "diagnosis": [
+        "Culture: grows on routine media (blood agar, MacConkey agar). Yellow-pigmented colonies. Oxidase positive",
+        "MALDI-TOF mass spectrometry: accurate species identification",
+        "PCR and molecular methods: species identification and outbreak investigation",
+        "Antifungal susceptibility testing: essential due to multidrug resistance. Intrinsically resistant to carbapenems, aminoglycosides, colistin",
+        "Molecular typing for outbreak investigation: PFGE, whole genome sequencing"
+      ],
+      "treatment": "Combination antibiotic therapy often required due to multidrug resistance. Intrinsically resistant to: carbapenems (meropenem, imipenem), aminoglycosides, colistin. Often susceptible to: fluoroquinolones (ciprofloxacin, levofloxacin), minocycline, trimethoprim-sulfamethoxazole, rifampin, piperacillin-tazobactam. Combination therapy recommended: fluoroquinolone + rifampin, or minocycline + TMP-SMX. Treatment duration: 14-21 days for pneumonia/bacteremia, longer for meningitis. Source control: remove catheters and devices if possible.",
+      "infectionControl": {
+        "precautions": "Contact Precautions during outbreaks. Standard Precautions for sporadic cases",
+        "screening": "Environmental surveillance during outbreaks: water sampling, equipment sampling",
+        "cohorting": "Cohort affected patients during outbreaks",
+        "sourceControl": "Identify and remediate contaminated water sources and equipment",
+        "environmental": "Water system control: disinfection, point-of-use filters, replace contaminated plumbing. Strict environmental cleaning: disinfect sinks, faucets, respiratory equipment. Device sterilization: proper sterilization of respiratory equipment and medical devices. Remove or replace contaminated equipment",
+        "staffEducation": "Recognition of Elizabethkingia infections, water system risks, proper device sterilization, environmental control, antimicrobial resistance patterns"
+      },
+      "outbreakTriggers": [
+        "≥2 linked Elizabethkingia infections in ICU or neonatal unit within defined time period",
+        "Sudden rise in Elizabethkingia infections above baseline",
+        "Detection of same strain (by molecular typing) in multiple patients"
+      ],
+      "reportingCommunication": [
+        "Prompt outbreak notification to infection prevention and control team",
+        "Notify public health authorities",
+        "Implement outbreak investigation: case finding, environmental sampling (water systems, sinks, equipment), molecular typing",
+        "Identify and remediate source: water system disinfection, replace contaminated equipment",
+        "Implement enhanced infection control: Contact Precautions, cohorting, environmental cleaning",
+        "Communication with staff, patients, families"
+      ],
+      "prevention": [
+        "Water safety management: routine water system maintenance and disinfection, point-of-use filters for high-risk units",
+        "Environmental cleaning: regular disinfection of sinks, faucets, respiratory equipment",
+        "Device sterilization: proper sterilization of respiratory equipment and medical devices",
+        "Hand hygiene: before and after all patient contact",
+        "Surveillance: monitor for Elizabethkingia infections, investigate clusters",
+        "Antimicrobial stewardship: judicious use of broad-spectrum antibiotics (especially carbapenems)",
+        "Staff education: recognition of infections, water system risks, environmental control"
+      ],
+      "references": [
+        {
+          "label": "CDC - Elizabethkingia",
+          "url": "https://www.cdc.gov/elizabethkingia/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "elizabethkingia_meningoseptica",
+      "name": "Elizabethkingia meningoseptica",
+      "scientificName": "Elizabethkingia meningoseptica (formerly Chryseobacterium meningosepticum, Flavobacterium meningosepticum), Gram-negative rod, family Flavobacteriaceae",
+      "definition": "Species within Elizabethkingia genus, historically recognized as cause of neonatal meningitis and sepsis outbreaks. Found in hospital water sources and respiratory equipment. Causes meningitis, sepsis, and pneumonia, especially in neonates and immunocompromised patients. Intrinsically multidrug-resistant (carbapenems, aminoglycosides, colistin). High mortality rate in neonates (50-60% for meningitis). Healthcare-associated outbreaks linked to contaminated water, sinks, incubators, and respiratory equipment in NICUs.",
+      "reservoir": {
+        "primary": [
+          "Hospital water sources: sinks, faucets, water systems",
+          "Respiratory equipment",
+          "Incubators (neonatal units)"
+        ],
+        "secondary": [
+          "Soil",
+          "Water"
+        ],
+        "notes": "E. meningoseptica colonizes hospital water systems and equipment. Outbreaks in NICUs linked to contaminated sinks, water systems, incubators, and respiratory equipment. Can form biofilms."
+      },
+      "transmission": {
+        "mode": "Contact with contaminated fluids and equipment",
+        "routes": [
+          "Contaminated water: sinks, faucets, water used for formula preparation or bathing neonates",
+          "Contaminated respiratory equipment: ventilators, nebulizers, humidifiers",
+          "Contaminated incubators and warming devices",
+          "Hands of healthcare workers",
+          "Contaminated medical devices: catheters, feeding tubes"
+        ],
+        "notes": "Neonates are particularly vulnerable due to immature immune systems and frequent exposure to water and equipment. No person-to-person transmission documented."
+      },
+      "incubationPeriod": {
+        "range": "Variable; days to weeks from exposure to infection. Outbreaks in NICUs can affect multiple neonates over weeks to months",
+        "infectiousPeriod": "Not transmissible person-to-person",
+        "seasonality": "No seasonal pattern; healthcare-associated",
+        "geographic": "Worldwide distribution; outbreaks reported in NICUs globally"
+      },
+      "riskFactors": [
+        "Neonates (especially premature infants and very low birth weight)",
+        "Immunocompromised patients",
+        "ICU admission",
+        "Mechanical ventilation",
+        "Central venous catheters and invasive devices",
+        "Broad-spectrum antibiotic use (especially carbapenems)",
+        "Prolonged hospitalization",
+        "Exposure to contaminated water or equipment in NICU"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Neonatal meningitis: fever or hypothermia, lethargy, poor feeding, irritability, bulging fontanelle, seizures. High mortality (50-60%) and neurological sequelae in survivors",
+          "Neonatal sepsis: fever or hypothermia, respiratory distress, hypotension, poor perfusion",
+          "Pneumonia: ventilator-associated pneumonia, respiratory distress",
+          "Bloodstream infections: catheter-related bacteremia",
+          "Rarely: endocarditis, osteomyelitis, wound infections"
+        ],
+        "complications": [
+          "Neonatal meningitis with high mortality (50-60%)",
+          "Neurological sequelae in survivors: developmental delay, seizures, hydrocephalus",
+          "Septic shock",
+          "Respiratory failure",
+          "Death"
+        ],
+        "caseDefinition": {
+          "suspected": "Neonate with meningitis or sepsis + exposure to NICU environment, OR immunocompromised patient with pneumonia/bacteremia + exposure to water/equipment, OR cluster of infections in NICU or ICU",
+          "confirmed": "Clinical infection + laboratory identification of E. meningoseptica from clinical specimen (CSF, blood, respiratory)"
+        }
+      },
+      "diagnosis": [
+        "Culture: grows on routine media. Yellow-pigmented colonies. Oxidase positive",
+        "CSF analysis (for meningitis): pleocytosis, elevated protein, low glucose, positive culture",
+        "MALDI-TOF mass spectrometry: species identification",
+        "PCR and molecular methods",
+        "Antifungal susceptibility testing: essential due to multidrug resistance",
+        "Molecular typing for outbreak investigation: PFGE, whole genome sequencing"
+      ],
+      "treatment": "Combination antibiotic therapy required due to multidrug resistance. Intrinsically resistant to: carbapenems, aminoglycosides, colistin. Often susceptible to: fluoroquinolones (ciprofloxacin - but avoid in neonates), minocycline, trimethoprim-sulfamethoxazole, rifampin, piperacillin-tazobactam, vancomycin (variable). Neonatal meningitis: combination therapy with TMP-SMX + rifampin, or vancomycin + rifampin. Treatment duration: meningitis (21 days minimum), bacteremia (14-21 days). Source control: remove catheters if possible.",
+      "infectionControl": {
+        "precautions": "Contact Precautions during outbreaks. Standard Precautions for sporadic cases",
+        "screening": "Environmental surveillance during outbreaks: water sampling, equipment sampling in NICU",
+        "cohorting": "Cohort affected neonates during outbreaks",
+        "sourceControl": "Identify and remediate contaminated water sources and equipment in NICU",
+        "environmental": "Water system control in NICU: disinfection, point-of-use filters, use sterile water for formula preparation and bathing. Strict environmental cleaning: disinfect sinks, faucets, incubators, respiratory equipment. Device sterilization: proper sterilization of respiratory equipment and medical devices. Strict asepsis in NICU: hand hygiene, sterile technique for procedures",
+        "staffEducation": "Recognition of E. meningoseptica infections in neonates, water system risks in NICU, proper device sterilization, strict neonatal care protocols, environmental control"
+      },
+      "outbreakTriggers": [
+        "Single or multiple neonatal sepsis/meningitis cases with E. meningoseptica",
+        "Cluster of E. meningoseptica infections in NICU or adult ICU",
+        "Detection of same strain in multiple patients"
+      ],
+      "reportingCommunication": [
+        "Urgent notification to infection prevention and control team upon single neonatal case",
+        "Notify public health authorities",
+        "Implement outbreak investigation: case finding, environmental sampling (water systems, sinks, incubators, equipment in NICU), molecular typing",
+        "Identify and remediate source: water system disinfection, replace contaminated equipment",
+        "Implement enhanced infection control: Contact Precautions, cohorting, strict asepsis in NICU",
+        "Communication with staff and families"
+      ],
+      "prevention": [
+        "Routine environmental sampling in NICU: water systems, sinks, equipment",
+        "Water safety in NICU: use sterile water for formula preparation and bathing neonates, point-of-use filters",
+        "Strict neonatal care protocols: hand hygiene, sterile technique, proper device sterilization",
+        "Environmental cleaning: regular disinfection of sinks, faucets, incubators, respiratory equipment",
+        "Surveillance: monitor for E. meningoseptica infections in NICU, investigate all cases",
+        "Antimicrobial stewardship: judicious use of broad-spectrum antibiotics",
+        "Staff education: recognition of neonatal infections, water system risks, strict asepsis"
+      ],
+      "references": [
+        {
+          "label": "CDC - Elizabethkingia",
+          "url": "https://www.cdc.gov/elizabethkingia/index.html"
+        },
+        {
+          "label": "CDC - Neonatal Infections",
+          "url": "https://www.cdc.gov/hai/organisms/gram-negative-bacteria.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "stenotrophomonas_maltophilia",
+      "name": "Stenotrophomonas maltophilia",
+      "scientificName": "Stenotrophomonas maltophilia (formerly Xanthomonas maltophilia, Pseudomonas maltophilia), Gram-negative rod",
+      "definition": "Environmental Gram-negative bacillus emerging as important multidrug-resistant healthcare-associated pathogen. Found in water, soil, and hospital environment. Causes pneumonia, bloodstream infections, and other healthcare-associated infections, especially in ICU patients with mechanical ventilation and broad-spectrum antibiotic exposure. Intrinsically resistant to carbapenems, aminoglycosides, and many beta-lactams. Increasing incidence and mortality (20-40% for bacteremia). Healthcare-associated outbreaks linked to contaminated water systems, respiratory equipment, and medical devices.",
+      "reservoir": {
+        "primary": [
+          "Water: hospital water systems, sinks, faucets",
+          "Soil",
+          "Hospital equipment: respiratory equipment, dialysis machines"
+        ],
+        "secondary": [
+          "Plants",
+          "Animals"
+        ],
+        "notes": "S. maltophilia is ubiquitous in environment, especially water and moist environments. Can colonize hospital water systems and form biofilms on medical devices. Outbreaks linked to contaminated water, respiratory equipment, and dialysis machines."
+      },
+      "transmission": {
+        "mode": "Contact with contaminated devices and fluids",
+        "routes": [
+          "Contaminated water: sinks, faucets, water systems",
+          "Contaminated respiratory equipment: ventilators, nebulizers, humidifiers",
+          "Contaminated medical devices: catheters, dialysis machines",
+          "Hands of healthcare workers",
+          "Environmental surfaces (fomites)"
+        ],
+        "notes": "S. maltophilia can form biofilms on medical devices and in water systems. No person-to-person transmission documented. Colonization can precede infection."
+      },
+      "incubationPeriod": {
+        "range": "Days from exposure to infection. Chronic colonization possible (especially respiratory tract)",
+        "infectiousPeriod": "Not transmissible person-to-person",
+        "seasonality": "No seasonal pattern; healthcare-associated",
+        "geographic": "Worldwide distribution"
+      },
+      "riskFactors": [
+        "ICU admission",
+        "Mechanical ventilation (major risk factor)",
+        "Broad-spectrum antibiotic therapy (especially carbapenems) - major risk factor",
+        "Central venous catheters and invasive devices",
+        "Immunosuppression: malignancy, transplant, corticosteroids",
+        "Cystic fibrosis (chronic colonization)",
+        "Prolonged hospitalization",
+        "Hemodialysis",
+        "Exposure to contaminated water or equipment"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Pneumonia: ventilator-associated pneumonia (most common), fever, dyspnea, purulent secretions",
+          "Bloodstream infections: catheter-related bacteremia, sepsis, septic shock",
+          "Urinary tract infections: catheter-associated UTI",
+          "Wound infections",
+          "Rarely: endocarditis, meningitis, osteomyelitis, peritonitis"
+        ],
+        "complications": [
+          "Septic shock",
+          "Respiratory failure",
+          "Multi-organ failure",
+          "Death (mortality rate 20-40% for bacteremia, higher for pneumonia)"
+        ],
+        "caseDefinition": {
+          "suspected": "ICU patient with pneumonia/bacteremia + mechanical ventilation + broad-spectrum antibiotic exposure (especially carbapenems), OR cluster of infections in ICU or immunocompromised patients",
+          "confirmed": "Clinical infection + laboratory identification of S. maltophilia from clinical specimen (respiratory, blood, urine)"
+        }
+      },
+      "diagnosis": [
+        "Culture: grows on routine media (blood agar, MacConkey agar). Lavender-green pigment on blood agar. Oxidase negative",
+        "Gram stain: Gram-negative rod",
+        "Biochemical tests: DNase positive, lysine decarboxylase positive",
+        "MALDI-TOF mass spectrometry",
+        "Antifungal susceptibility testing: essential due to multidrug resistance. Intrinsically resistant to carbapenems, aminoglycosides, many beta-lactams",
+        "Molecular typing for outbreak investigation: PFGE, MLST, whole genome sequencing"
+      ],
+      "treatment": "Trimethoprim-sulfamethoxazole (TMP-SMX) - first-line treatment for most S. maltophilia infections. Combination therapy for severe infections: TMP-SMX + ticarcillin-clavulanate, or TMP-SMX + levofloxacin, or TMP-SMX + minocycline. Alternatives: fluoroquinolones (levofloxacin, moxifloxacin), minocycline, ticarcillin-clavulanate, ceftazidime (variable susceptibility). Intrinsically resistant to: carbapenems (meropenem, imipenem), aminoglycosides, most beta-lactams. Treatment duration: 14-21 days for pneumonia/bacteremia. Source control: remove catheters and devices if possible. Discontinue unnecessary broad-spectrum antibiotics (especially carbapenems).",
+      "infectionControl": {
+        "precautions": "Contact Precautions during outbreaks. Standard Precautions for sporadic cases",
+        "screening": "Environmental surveillance during outbreaks: water sampling, equipment sampling",
+        "cohorting": "Cohort affected patients during outbreaks",
+        "sourceControl": "Identify and remediate contaminated water sources and equipment",
+        "environmental": "Water system control: disinfection, point-of-use filters. Strict environmental cleaning: disinfect sinks, faucets, respiratory equipment, dialysis machines. Device sterilization: proper sterilization of respiratory equipment and medical devices. Remove or replace contaminated equipment",
+        "staffEducation": "Recognition of S. maltophilia infections, water system risks, proper device sterilization, environmental control, antimicrobial resistance patterns, antimicrobial stewardship"
+      },
+      "outbreakTriggers": [
+        "≥2 localized or severe respiratory/bloodstream S. maltophilia infections in ICU or immunocompromised patients within defined time period",
+        "Sudden increase in S. maltophilia infections above baseline",
+        "Detection of same strain in multiple patients"
+      ],
+      "reportingCommunication": [
+        "Facility outbreak notification to infection prevention and control team",
+        "Implement outbreak investigation: case finding, environmental sampling (water systems, equipment), molecular typing, review of antibiotic use",
+        "Identify and remediate source: water system disinfection, replace contaminated equipment",
+        "Implement enhanced infection control: Contact Precautions, cohorting, environmental cleaning",
+        "Antimicrobial stewardship intervention: review and optimize antibiotic use (reduce carbapenem use)",
+        "Communication with staff, patients, families"
+      ],
+      "prevention": [
+        "Environmental control: water system maintenance and disinfection, point-of-use filters for high-risk units",
+        "Device sterilization: proper sterilization of respiratory equipment and medical devices",
+        "Hand hygiene: before and after all patient contact",
+        "Antimicrobial stewardship: judicious use of broad-spectrum antibiotics (especially carbapenems) - major prevention strategy",
+        "Surveillance: monitor for S. maltophilia infections, investigate clusters",
+        "Staff education: recognition of infections, water system risks, environmental control, antimicrobial stewardship"
+      ],
+      "references": [
+        {
+          "label": "CDC - Stenotrophomonas maltophilia",
+          "url": "https://www.cdc.gov/hai/organisms/gram-negative-bacteria.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,971 @@
+{
+  "version": 1,
+  "groupId": "respiratory_viral",
+  "groupName": "Respiratory Viral Outbreak Pathogens",
+  "type": "viral",
+  "updatedAt": "2025-01-14T00:00:00Z",
+  "pathogens": [
+    {
+      "id": "influenza_ab",
+      "name": "Influenza viruses (A/B)",
+      "scientificName": "Influenza virus types A and B",
+      "definition": "Enveloped RNA viruses belonging to the Orthomyxoviridae family; major cause of acute respiratory illness, seasonal epidemics, and pandemics. Influenza A viruses are classified by surface proteins (hemagglutinin H and neuraminidase N subtypes), while Influenza B has two lineages (Victoria and Yamagata).",
+      "reservoir": {
+        "primary": [
+          "Humans (seasonal influenza)",
+          "Aquatic birds (avian influenza - zoonotic reservoir for novel strains)"
+        ],
+        "secondary": [
+          "Pigs (intermediate hosts for reassortment)",
+          "Other mammals (horses, dogs, seals)"
+        ],
+        "notes": "Humans are the primary reservoir for seasonal influenza A and B. Avian influenza viruses circulate in wild waterfowl and can occasionally infect humans (e.g., H5N1, H7N9). Pigs can serve as mixing vessels for avian and human strains, leading to pandemic strains."
+      },
+      "transmission": {
+        "mode": "Respiratory droplets, contact, fomites, rare airborne transmission",
+        "routes": [
+          "Respiratory droplets from coughing, sneezing, or talking (primary route)",
+          "Direct contact with infected persons",
+          "Indirect contact via contaminated surfaces and fomites (doorknobs, shared items)",
+          "Rare airborne transmission in enclosed spaces with poor ventilation"
+        ],
+        "notes": "Transmission is most efficient in crowded indoor settings during winter months. Virus can survive on surfaces for hours to days depending on environmental conditions."
+      },
+      "incubationPeriod": {
+        "range": "1-4 days (average 2 days)",
+        "infectiousPeriod": "Infectious from 1 day before symptom onset to approximately 5-7 days after (longer in children and immunocompromised - up to several weeks)",
+        "seasonality": "Winter peaks in temperate climates (November-March in Northern Hemisphere); year-round in tropical regions",
+        "geographic": "Worldwide distribution; seasonal epidemics occur annually"
+      },
+      "riskFactors": [
+        "Age extremes (children <5 years, especially <2 years; adults ≥65 years)",
+        "Chronic medical conditions (asthma, COPD, heart disease, diabetes, kidney disease, liver disease)",
+        "Pregnancy and postpartum period (up to 2 weeks after delivery)",
+        "Immunocompromised states (HIV, cancer, transplant recipients, immunosuppressive therapy)",
+        "Obesity (BMI ≥40)",
+        "Residents of long-term care facilities and nursing homes",
+        "Healthcare workers and caregivers",
+        "Unvaccinated individuals"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Sudden onset of high fever (38-40°C)",
+          "Dry cough",
+          "Myalgia (muscle aches) and arthralgia (joint pain)",
+          "Sore throat and pharyngitis",
+          "Severe headache",
+          "Fatigue and malaise",
+          "Chills and rigors",
+          "Nasal congestion and rhinorrhea (less prominent than in common cold)"
+        ],
+        "complications": [
+          "Primary viral pneumonia",
+          "Secondary bacterial pneumonia (Streptococcus pneumoniae, Staphylococcus aureus, Haemophilus influenzae)",
+          "Acute respiratory distress syndrome (ARDS)",
+          "Exacerbation of chronic conditions (asthma, COPD, heart failure)",
+          "Myocarditis and pericarditis",
+          "Encephalitis and encephalopathy",
+          "Rhabdomyolysis",
+          "Multi-organ failure",
+          "Death (especially in high-risk groups)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with sudden onset of fever (≥38°C) + cough or sore throat + myalgia, occurring during influenza season or in context of known outbreak/cluster",
+          "confirmed": "Clinical illness + laboratory confirmation: positive RT-PCR for influenza A or B, OR positive rapid influenza diagnostic test (RIDT), OR viral culture, OR significant rise in influenza-specific antibodies"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR (reverse transcription polymerase chain reaction) - gold standard, detects and types influenza A/B",
+        "Rapid influenza diagnostic tests (RIDTs) - point-of-care antigen detection (lower sensitivity than PCR)",
+        "Viral culture - time-consuming, used for surveillance and antiviral resistance testing",
+        "Immunofluorescence assays",
+        "Serology (paired acute and convalescent sera) - retrospective diagnosis",
+        "Chest X-ray or CT - to assess pneumonia and complications"
+      ],
+      "treatment": "Neuraminidase inhibitors (oseltamivir, zanamivir, peramivir) - most effective if started within 48 hours of symptom onset; recommended for severe illness, hospitalized patients, and high-risk groups regardless of timing. Supportive care: antipyretics, hydration, rest. Antibiotics only if secondary bacterial infection suspected. Avoid aspirin in children (Reye syndrome risk).",
+      "infectionControl": {
+        "precautions": "Droplet Precautions (surgical mask, eye protection if risk of splashes) + Standard Precautions. Airborne Precautions for aerosol-generating procedures (AGPs). Isolate until 24 hours after fever resolution without antipyretics (or 5-7 days from symptom onset, whichever is longer)",
+        "screening": "Screen all patients for influenza-like illness (ILI) during influenza season; triage and isolate suspected cases immediately",
+        "cohorting": "Cohort confirmed influenza cases together; separate influenza A from B if possible",
+        "sourceControl": "Surgical mask on patient during transport; limit movement outside isolation room",
+        "environmental": "Frequent cleaning and disinfection of high-touch surfaces; ensure adequate ventilation",
+        "staffEducation": "Annual vaccination for all healthcare workers; proper use of PPE; respiratory hygiene and cough etiquette; early recognition of ILI"
+      },
+      "outbreakTriggers": [
+        "≥2-3 epidemiologically linked cases within 72 hours in a facility, ward, classroom, or household",
+        "Sudden increase in influenza-like illness (ILI) above seasonal baseline",
+        "Change in severity pattern (increased hospitalizations, ICU admissions, or deaths)",
+        "Detection of novel influenza A subtype (e.g., avian H5N1, H7N9) or antiviral-resistant strain",
+        "Nosocomial transmission (healthcare-associated cases)"
+      ],
+      "reportingCommunication": [
+        "Report suspected outbreaks to infection control and public health authorities within 24 hours",
+        "Initiate enhanced surveillance and contact tracing immediately",
+        "Implement outbreak control measures (isolation, cohorting, vaccination campaigns)",
+        "Communicate with staff, patients, families, and media as per protocol",
+        "Submit specimens for viral typing and antiviral resistance testing",
+        "Coordinate with local/national health authorities for pandemic preparedness if novel strain"
+      ],
+      "prevention": [
+        "Annual influenza vaccination for all persons ≥6 months (inactivated or live attenuated vaccine)",
+        "Prioritize vaccination for high-risk groups and healthcare workers",
+        "Respiratory hygiene and cough etiquette (cover coughs, dispose of tissues, hand hygiene)",
+        "Hand hygiene with soap and water or alcohol-based hand sanitizer",
+        "Avoid close contact with sick individuals; stay home when ill",
+        "Environmental cleaning and disinfection of shared surfaces",
+        "Antiviral chemoprophylaxis for high-risk exposed individuals (post-exposure prophylaxis)",
+        "Early diagnosis and treatment to reduce transmission"
+      ],
+      "references": [
+        {
+          "label": "WHO - Influenza (Seasonal)",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/influenza-(seasonal)"
+        },
+        {
+          "label": "CDC - Influenza",
+          "url": "https://www.cdc.gov/flu/index.htm"
+        },
+        {
+          "label": "Saudi GDIPC - Influenza Guidelines",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "coronavirus_outbreak",
+      "name": "SARS-CoV-2 (COVID-19), SARS, MERS-CoV",
+      "scientificName": "Severe Acute Respiratory Syndrome Coronavirus 2 (SARS-CoV-2), SARS-CoV, Middle East Respiratory Syndrome Coronavirus (MERS-CoV)",
+      "definition": "Enveloped positive-sense single-stranded RNA viruses of the Coronaviridae family. SARS-CoV-2 caused the COVID-19 pandemic (2019-present); SARS-CoV caused the 2003 SARS outbreak; MERS-CoV causes sporadic outbreaks in the Middle East. All three cause severe acute respiratory syndrome with potential for rapid spread and high mortality.",
+      "reservoir": {
+        "primary": [
+          "Humans (respiratory tract, skin contact)",
+          "Dromedary camels (MERS-CoV)",
+          "Bats (likely ancestral reservoir for SARS-CoV-2 and SARS-CoV)"
+        ],
+        "secondary": [
+          "Intermediate hosts (e.g., civets for SARS-CoV, pangolins possibly for SARS-CoV-2)"
+        ],
+        "notes": "Humans are the primary reservoir for sustained transmission. MERS-CoV is zoonotic with camel-to-human transmission. SARS-CoV-2 likely originated from bats with possible intermediate host."
+      },
+      "transmission": {
+        "mode": "Respiratory droplets, aerosols, contact, contaminated surfaces; airborne transmission especially with aerosol-generating procedures",
+        "routes": [
+          "Respiratory droplets from coughing, sneezing, talking, breathing (primary route)",
+          "Aerosol transmission in enclosed, poorly ventilated spaces (airborne)",
+          "Direct contact with infected persons",
+          "Indirect contact via contaminated surfaces and fomites (though less common for SARS-CoV-2)",
+          "Aerosol-generating procedures (intubation, bronchoscopy, nebulization) increase airborne risk"
+        ],
+        "notes": "SARS-CoV-2 is highly transmissible, including pre-symptomatic and asymptomatic transmission. MERS-CoV is less transmissible but has higher case fatality rate. Superspreading events documented for all three."
+      },
+      "incubationPeriod": {
+        "range": "2-14 days (median 5-6 days for SARS-CoV-2; 5 days for SARS; 5-6 days for MERS)",
+        "infectiousPeriod": "Infectious as early as 2 days before symptom onset; peak viral shedding around symptom onset; can remain infectious for >10 days (longer in immunocompromised). Isolation typically 10 days from symptom onset + 24 hours fever-free",
+        "seasonality": "Year-round transmission; some seasonal variation with increased transmission in winter months",
+        "geographic": "SARS-CoV-2: Worldwide pandemic. MERS-CoV: Middle East (Saudi Arabia, UAE, Jordan, etc.). SARS-CoV: Eliminated since 2004"
+      },
+      "riskFactors": [
+        "Advanced age (≥65 years) - exponentially increased risk of severe disease and death",
+        "Chronic medical conditions (diabetes, hypertension, cardiovascular disease, chronic kidney disease, chronic lung disease, obesity)",
+        "Immunocompromised states (cancer, transplant, HIV, immunosuppressive therapy)",
+        "Pregnancy (increased risk of severe COVID-19)",
+        "Congregate settings (long-term care facilities, prisons, dormitories, healthcare facilities)",
+        "Healthcare workers and caregivers (occupational exposure)",
+        "Unvaccinated individuals (for SARS-CoV-2)",
+        "Close contact with confirmed cases or exposure to camels (MERS-CoV)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Fever or chills",
+          "Cough (dry or productive)",
+          "Shortness of breath and dyspnea",
+          "Fatigue and malaise",
+          "Myalgia and body aches",
+          "Sore throat",
+          "Loss of taste (ageusia) or smell (anosmia) - characteristic of COVID-19",
+          "Headache",
+          "Nasal congestion or rhinorrhea",
+          "Nausea, vomiting, diarrhea (gastrointestinal symptoms)"
+        ],
+        "complications": [
+          "Severe pneumonia and acute respiratory distress syndrome (ARDS)",
+          "Hypoxemia and respiratory failure requiring mechanical ventilation",
+          "Acute kidney injury",
+          "Cardiac complications (myocarditis, arrhythmias, acute coronary syndrome)",
+          "Thromboembolic events (pulmonary embolism, stroke, deep vein thrombosis)",
+          "Multi-organ failure",
+          "Cytokine storm and hyperinflammatory syndrome",
+          "Post-acute sequelae (Long COVID) - persistent symptoms for weeks to months",
+          "Death (case fatality rate: SARS ~10%, MERS ~35%, COVID-19 varies by variant and vaccination status)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with acute respiratory illness (fever + cough or dyspnea) + epidemiological link (contact with confirmed case, travel to affected area, healthcare exposure) OR severe pneumonia requiring hospitalization",
+          "confirmed": "Clinical illness + laboratory confirmation: positive RT-PCR for SARS-CoV-2, SARS-CoV, or MERS-CoV from respiratory specimen"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR (reverse transcription polymerase chain reaction) - gold standard; detects viral RNA from nasopharyngeal swab, oropharyngeal swab, sputum, or bronchoalveolar lavage",
+        "Rapid antigen tests - point-of-care detection (lower sensitivity than PCR, especially in asymptomatic individuals)",
+        "Serology (IgM, IgG antibodies) - auxiliary for epidemiological studies, not for acute diagnosis",
+        "Chest imaging (X-ray or CT) - bilateral ground-glass opacities, consolidation, interstitial infiltrates",
+        "Laboratory findings: lymphopenia, elevated inflammatory markers (CRP, ferritin, D-dimer, IL-6)"
+      ],
+      "treatment": "Supportive care (oxygen therapy, mechanical ventilation if needed, fluid management). Antivirals: remdesivir for severe COVID-19; nirmatrelvir/ritonavir (Paxlovid) for early mild-moderate COVID-19 in high-risk patients. Immunomodulators: dexamethasone for severe COVID-19 requiring oxygen; tocilizumab or baricitinib for severe cases. Monoclonal antibodies (variant-dependent). No specific antiviral for MERS; supportive care. Isolation until non-infectious (typically 10 days from symptom onset + 24 hours fever-free without antipyretics).",
+      "infectionControl": {
+        "precautions": "Airborne Precautions (N95 respirator or equivalent) + Contact Precautions + Eye Protection for all patient interactions. Use Airborne Infection Isolation Room (AIIR) with negative pressure if available. Droplet Precautions acceptable in some settings for SARS-CoV-2 if airborne precautions not feasible, but airborne preferred",
+        "screening": "Universal screening for respiratory symptoms and COVID-19 exposure at all healthcare entry points; rapid testing for suspected cases",
+        "cohorting": "Cohort confirmed cases together; separate by pathogen type if multiple coronaviruses present",
+        "sourceControl": "Surgical mask on patient at all times when outside isolation room; limit patient movement",
+        "environmental": "Enhanced cleaning and disinfection of all surfaces; ensure adequate ventilation (≥6 air changes per hour); HEPA filtration if available",
+        "staffEducation": "Vaccination for SARS-CoV-2; proper donning/doffing of PPE; fit-testing for N95 respirators; early recognition and isolation of suspected cases"
+      },
+      "outbreakTriggers": [
+        "≥2 epidemiologically linked cases within 14 days in a facility, household, or community cluster",
+        "Any single case of novel coronavirus (e.g., new SARS-like virus) or MERS-CoV in non-endemic area",
+        "Nosocomial transmission (healthcare-associated cases)",
+        "Severe outbreak with increased hospitalizations, ICU admissions, or deaths",
+        "Detection of new variant of concern with increased transmissibility or immune escape"
+      ],
+      "reportingCommunication": [
+        "Immediate notification (within 24 hours or sooner) to infection control and public health authorities for all suspected cases",
+        "Real-time reporting of confirmed cases and clusters",
+        "Genomic surveillance for SARS-CoV-2 variants; submit specimens for sequencing",
+        "Implement contact tracing and quarantine of exposed individuals",
+        "Communicate with staff, patients, families, and media as per protocol",
+        "Coordinate with local, national, and international health authorities (WHO) for pandemic response"
+      ],
+      "prevention": [
+        "Vaccination for SARS-CoV-2 (mRNA, viral vector, or inactivated vaccines) - primary prevention strategy",
+        "Masking (surgical or N95) in healthcare settings and crowded indoor spaces",
+        "Respiratory hygiene and cough etiquette",
+        "Hand hygiene with soap and water or alcohol-based hand sanitizer",
+        "Physical distancing (maintain ≥1-2 meters distance)",
+        "Ventilation and air filtration in indoor spaces",
+        "Prompt isolation of suspected and confirmed cases",
+        "Avoid contact with camels and camel products in MERS-endemic areas",
+        "Early diagnosis and treatment to reduce transmission"
+      ],
+      "references": [
+        {
+          "label": "WHO - COVID-19",
+          "url": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019"
+        },
+        {
+          "label": "CDC - SARS-CoV-2",
+          "url": "https://www.cdc.gov/coronavirus/2019-ncov/index.html"
+        },
+        {
+          "label": "WHO - MERS-CoV",
+          "url": "https://www.who.int/health-topics/middle-east-respiratory-syndrome-coronavirus-mers"
+        },
+        {
+          "label": "Saudi GDIPC - MERS Guidelines",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "rsv",
+      "name": "Respiratory syncytial virus (RSV)",
+      "scientificName": "Respiratory syncytial virus (RSV), genus Orthopneumovirus",
+      "definition": "Enveloped negative-sense single-stranded RNA virus of the Pneumoviridae family. RSV is the leading cause of bronchiolitis and pneumonia in infants and young children worldwide, and a major cause of respiratory illness in elderly and immunocompromised adults. Outbreaks are common in healthcare facilities, daycare centers, and long-term care facilities.",
+      "reservoir": {
+        "primary": [
+          "Human respiratory tract (only known reservoir)"
+        ],
+        "secondary": [],
+        "notes": "Humans are the sole reservoir. RSV is highly contagious and spreads rapidly in closed populations. Two major subtypes (A and B) co-circulate, with subtype A generally causing more severe disease."
+      },
+      "transmission": {
+        "mode": "Respiratory droplets, direct and indirect contact, contaminated surfaces",
+        "routes": [
+          "Respiratory droplets from coughing, sneezing, or talking",
+          "Direct contact with infected persons (e.g., kissing, touching)",
+          "Indirect contact via contaminated surfaces and fomites (toys, doorknobs, medical equipment)",
+          "Hand-to-nose or hand-to-eye inoculation after touching contaminated surfaces"
+        ],
+        "notes": "RSV can survive on hard surfaces for several hours and on hands for up to 30 minutes. Transmission is most efficient in crowded settings. Healthcare workers' hands are a major vector for nosocomial spread."
+      },
+      "incubationPeriod": {
+        "range": "2-8 days (average 4-6 days)",
+        "infectiousPeriod": "Infectious for 3-8 days; can be longer in infants (up to 3-4 weeks) and immunocompromised individuals (weeks to months). Viral shedding begins before symptom onset",
+        "seasonality": "Winter peaks in temperate climates (November-March in Northern Hemisphere); year-round in tropical regions with rainy season peaks",
+        "geographic": "Worldwide distribution; annual epidemics occur in all regions"
+      },
+      "riskFactors": [
+        "Infants <6 months of age (highest risk for severe disease)",
+        "Premature infants (born <35 weeks gestation)",
+        "Elderly adults (≥65 years)",
+        "Chronic lung disease (bronchopulmonary dysplasia, asthma, COPD)",
+        "Congenital heart disease",
+        "Immunocompromised states (cancer, transplant, HIV, immunosuppressive therapy)",
+        "Neuromuscular disorders affecting ability to clear secretions",
+        "Residents of long-term care facilities and nursing homes",
+        "Crowded living conditions (daycare, hospitals, institutions)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Fever (may be low-grade or absent in infants)",
+          "Cough (initially dry, then productive)",
+          "Wheezing and respiratory distress",
+          "Tachypnea (rapid breathing) and increased work of breathing",
+          "Nasal congestion and rhinorrhea",
+          "Poor feeding and decreased oral intake (infants)",
+          "Irritability and lethargy",
+          "Apnea (especially in young infants <6 months)"
+        ],
+        "complications": [
+          "Bronchiolitis (inflammation of small airways) - most common",
+          "Pneumonia",
+          "Respiratory failure requiring mechanical ventilation",
+          "Apnea and bradycardia (infants)",
+          "Dehydration",
+          "Secondary bacterial infections (otitis media, sinusitis, pneumonia)",
+          "Exacerbation of asthma or COPD",
+          "Death (rare, but higher in high-risk groups)"
+        ],
+        "caseDefinition": {
+          "suspected": "Infant or elderly patient with acute respiratory illness (cough, wheezing, respiratory distress) + fever or rhinorrhea, especially during RSV season or in context of known outbreak/cluster in facility or unit",
+          "confirmed": "Clinical illness + laboratory confirmation: positive RT-PCR or rapid antigen test for RSV from nasopharyngeal swab or aspirate"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR (reverse transcription polymerase chain reaction) - gold standard, high sensitivity and specificity",
+        "Rapid antigen detection tests - point-of-care testing (lower sensitivity than PCR, but acceptable for outbreak management)",
+        "Direct fluorescent antibody (DFA) or immunofluorescence assays",
+        "Viral culture - time-consuming, used for research and surveillance",
+        "Chest X-ray - hyperinflation, peribronchial thickening, atelectasis, infiltrates"
+      ],
+      "treatment": "Supportive care is the mainstay: oxygen therapy (nasal cannula, high-flow nasal cannula, or mechanical ventilation if needed), hydration (IV fluids if poor oral intake), suctioning of nasal secretions, antipyretics. Bronchodilators and corticosteroids are NOT routinely recommended. Ribavirin (antiviral) is reserved for severe cases in immunocompromised patients. Palivizumab (monoclonal antibody) for prophylaxis in high-risk infants during RSV season. Nirsevimab (long-acting monoclonal antibody) for prevention in all infants.",
+      "infectionControl": {
+        "precautions": "Contact Precautions + Droplet Precautions. Wear gown and gloves for all patient contact; surgical mask for close contact (<1 meter). Eye protection if risk of splashes. Isolate in single room or cohort with other RSV-positive patients",
+        "screening": "Screen all infants and elderly patients for respiratory symptoms during RSV season; rapid testing for suspected cases",
+        "cohorting": "Cohort confirmed RSV cases together; separate from other respiratory infections if possible. Assign dedicated staff to RSV cohort",
+        "sourceControl": "Limit patient movement outside isolation room; mask patient during transport if tolerated",
+        "environmental": "Frequent cleaning and disinfection of high-touch surfaces, toys, and medical equipment. RSV is susceptible to standard disinfectants. Hand hygiene is critical - alcohol-based hand rub or soap and water",
+        "staffEducation": "Strict hand hygiene before and after patient contact; proper use of PPE; avoid touching face; exclude sick staff from work; educate caregivers on transmission prevention"
+      },
+      "outbreakTriggers": [
+        "≥2-3 epidemiologically linked cases in a facility, unit, or ward within 7-10 days",
+        "Sudden increase in bronchiolitis or pneumonia cases above seasonal baseline",
+        "Nosocomial transmission (healthcare-associated cases)",
+        "Cluster in high-risk unit (NICU, pediatric ICU, long-term care facility)"
+      ],
+      "reportingCommunication": [
+        "Report suspected outbreaks to infection control and public health authorities within 24 hours",
+        "Implement enhanced surveillance and contact tracing",
+        "Implement outbreak control measures (cohorting, visitor restrictions, staff cohorting)",
+        "Communicate with staff, families, and administration",
+        "Consider prophylaxis (palivizumab or nirsevimab) for high-risk exposed infants",
+        "Restrict admissions or transfers if outbreak is severe"
+      ],
+      "prevention": [
+        "Hand hygiene with soap and water or alcohol-based hand sanitizer (most important measure)",
+        "Respiratory hygiene and cough etiquette",
+        "Avoid close contact with sick individuals; keep sick children home from daycare",
+        "Environmental cleaning and disinfection of toys, surfaces, and shared items",
+        "Palivizumab (monthly injections during RSV season) for high-risk infants (premature, chronic lung disease, congenital heart disease)",
+        "Nirsevimab (single dose) for all infants before or during RSV season",
+        "Educate caregivers on transmission prevention and early recognition of respiratory distress",
+        "Visitor restrictions during RSV season in healthcare facilities"
+      ],
+      "references": [
+        {
+          "label": "WHO - Respiratory Syncytial Virus",
+          "url": "https://www.who.int/teams/health-product-policy-and-standards/standards-and-specifications/vaccine-standardization/respiratory-syncytial-virus"
+        },
+        {
+          "label": "CDC - RSV",
+          "url": "https://www.cdc.gov/rsv/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "adenovirus",
+      "name": "Adenoviruses",
+      "scientificName": "Human adenoviruses (HAdV), family Adenoviridae",
+      "definition": "Non-enveloped double-stranded DNA viruses with over 100 serotypes classified into seven species (A-G). Adenoviruses cause a wide range of illnesses including acute respiratory infections, conjunctivitis, gastroenteritis, and severe outbreaks in closed communities (military barracks, schools, long-term care facilities). Certain serotypes (e.g., 3, 4, 7, 14, 21) are associated with severe respiratory disease and outbreaks.",
+      "reservoir": {
+        "primary": [
+          "Humans (respiratory tract, gastrointestinal tract, eyes)"
+        ],
+        "secondary": [
+          "Environmental contamination (water, surfaces, medical equipment)"
+        ],
+        "notes": "Humans are the primary reservoir. Adenoviruses are highly stable in the environment and can survive for weeks on surfaces and in water. Fecal-oral transmission can occur even after respiratory symptoms resolve."
+      },
+      "transmission": {
+        "mode": "Respiratory droplets, direct contact, contaminated surfaces, fecal-oral, waterborne",
+        "routes": [
+          "Respiratory droplets from coughing, sneezing, or talking",
+          "Direct contact with infected persons (e.g., touching, kissing)",
+          "Indirect contact via contaminated surfaces, fomites, and medical equipment",
+          "Fecal-oral route (especially for gastroenteritis)",
+          "Waterborne transmission (contaminated swimming pools, lakes, inadequately chlorinated water)",
+          "Ocular transmission (contaminated eye examination equipment, towels)"
+        ],
+        "notes": "Adenoviruses are highly contagious and resistant to many disinfectants. Prolonged viral shedding (weeks to months) can occur, especially in immunocompromised individuals."
+      },
+      "incubationPeriod": {
+        "range": "2-14 days (average 5-7 days for respiratory infections)",
+        "infectiousPeriod": "Can shed virus for weeks to months after symptom onset, especially in stool. Prolonged shedding in immunocompromised individuals",
+        "seasonality": "Year-round transmission; some increase in winter and spring for respiratory infections; summer peaks for conjunctivitis and waterborne outbreaks",
+        "geographic": "Worldwide distribution"
+      },
+      "riskFactors": [
+        "Young children (especially <5 years) in daycare or schools",
+        "Military recruits and personnel in barracks (crowded living conditions)",
+        "Immunocompromised individuals (transplant recipients, HIV, cancer patients) - risk of severe disseminated disease",
+        "Residents of long-term care facilities and institutions",
+        "Healthcare workers (occupational exposure)",
+        "Swimmers in contaminated water",
+        "Crowded living conditions with poor hygiene"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Fever (often high-grade)",
+          "Sore throat and pharyngitis (often severe)",
+          "Cough and rhinorrhea",
+          "Conjunctivitis (red, watery eyes) - pharyngoconjunctival fever",
+          "Cervical lymphadenopathy",
+          "Headache and malaise",
+          "Gastrointestinal symptoms (nausea, vomiting, diarrhea)",
+          "Rash (rare)"
+        ],
+        "complications": [
+          "Pneumonia (can be severe, especially with serotypes 3, 7, 14, 21)",
+          "Acute respiratory distress syndrome (ARDS)",
+          "Bronchiolitis obliterans",
+          "Epidemic keratoconjunctivitis (severe eye infection)",
+          "Hemorrhagic cystitis",
+          "Gastroenteritis",
+          "Meningoencephalitis (rare)",
+          "Disseminated disease in immunocompromised (hepatitis, pneumonia, multi-organ failure)",
+          "Death (rare, but higher in immunocompromised and with severe respiratory disease)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with acute respiratory illness (fever + pharyngitis + cough) ± conjunctivitis, especially in context of outbreak in closed community (military, school, institution) or severe/rare serotype detected",
+          "confirmed": "Clinical illness + laboratory confirmation: positive PCR for adenovirus from respiratory specimen, conjunctival swab, stool, or blood"
+        }
+      },
+      "diagnosis": [
+        "PCR (polymerase chain reaction) - gold standard, can identify serotype",
+        "Rapid antigen detection tests - point-of-care testing (lower sensitivity)",
+        "Viral culture - time-consuming, used for serotyping and surveillance",
+        "Direct fluorescent antibody (DFA) or immunofluorescence",
+        "Serology (paired sera) - retrospective diagnosis",
+        "Chest X-ray or CT - bilateral infiltrates, consolidation"
+      ],
+      "treatment": "Supportive care is the mainstay: hydration, antipyretics, rest. No specific antiviral for immunocompetent patients. Cidofovir (antiviral) is used for severe or disseminated adenovirus infection in immunocompromised patients (off-label use). Brincidofovir (investigational) for severe cases. Reduce immunosuppression if possible in transplant recipients. Isolation until symptoms resolve and viral shedding decreases.",
+      "infectionControl": {
+        "precautions": "Contact Precautions + Droplet Precautions. Wear gown and gloves for all patient contact; surgical mask for close contact. Eye protection if conjunctivitis present. Isolate in single room or cohort with other adenovirus-positive patients",
+        "screening": "Screen for respiratory and gastrointestinal symptoms; test suspected cases",
+        "cohorting": "Cohort confirmed cases together; assign dedicated staff",
+        "sourceControl": "Limit patient movement; mask patient during transport",
+        "environmental": "Enhanced cleaning and disinfection with EPA-registered disinfectants effective against non-enveloped viruses (e.g., bleach-based, accelerated hydrogen peroxide). Adenoviruses are resistant to alcohol and many common disinfectants. Ensure adequate chlorination of swimming pools",
+        "staffEducation": "Strict hand hygiene; proper use of PPE; avoid touching face; exclude sick staff; educate on environmental cleaning"
+      },
+      "outbreakTriggers": [
+        "≥2-3 epidemiologically linked cases within 14 days in a facility, unit, school, or military barracks",
+        "Detection of severe or rare adenovirus serotypes (e.g., 7, 14, 21)",
+        "Nosocomial transmission or cluster in immunocompromised unit",
+        "Waterborne outbreak (swimming pool, lake)"
+      ],
+      "reportingCommunication": [
+        "Notify infection control and public health authorities within 24 hours of suspected outbreak",
+        "Investigate potential source (water, environmental contamination, index case)",
+        "Implement outbreak control measures (isolation, cohorting, enhanced cleaning, water testing)",
+        "Communicate with staff, patients, families, and administration",
+        "Submit specimens for serotyping and molecular characterization",
+        "Consider facility closure or restrictions if outbreak is severe"
+      ],
+      "prevention": [
+        "Hand hygiene with soap and water (alcohol-based hand rub less effective against adenovirus)",
+        "Respiratory hygiene and cough etiquette",
+        "Environmental cleaning and disinfection with appropriate disinfectants (bleach-based)",
+        "Avoid sharing towels, utensils, and personal items",
+        "Proper chlorination of swimming pools and water sources",
+        "Exclude ill individuals from group activities, schools, and work",
+        "Adenovirus vaccine (types 4 and 7) available for military recruits in some countries",
+        "Limit large gatherings during outbreaks"
+      ],
+      "references": [
+        {
+          "label": "WHO - Adenovirus",
+          "url": "https://www.who.int/health-topics/adenovirus"
+        },
+        {
+          "label": "CDC - Adenoviruses",
+          "url": "https://www.cdc.gov/adenovirus/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "parainfluenza",
+      "name": "Parainfluenza viruses (PIV 1-4)",
+      "scientificName": "Human parainfluenza viruses types 1, 2, 3, and 4 (HPIV-1, HPIV-2, HPIV-3, HPIV-4), family Paramyxoviridae",
+      "definition": "Enveloped negative-sense single-stranded RNA viruses that cause acute respiratory infections, particularly croup (laryngotracheobronchitis) in children. HPIV-1 and HPIV-2 are the leading causes of croup; HPIV-3 causes bronchiolitis and pneumonia in infants; HPIV-4 causes milder illness. Outbreaks occur in healthcare facilities, daycare centers, and long-term care facilities.",
+      "reservoir": {
+        "primary": [
+          "Human respiratory tract (only known reservoir)"
+        ],
+        "secondary": [],
+        "notes": "Humans are the sole reservoir. PIV-1 and PIV-2 cause biennial fall outbreaks; PIV-3 circulates year-round with spring-summer peaks; PIV-4 is less common and less well characterized."
+      },
+      "transmission": {
+        "mode": "Respiratory droplets, direct contact, contaminated surfaces (fomites)",
+        "routes": [
+          "Respiratory droplets from coughing, sneezing, or talking",
+          "Direct contact with infected persons",
+          "Indirect contact via contaminated surfaces and fomites (toys, doorknobs, medical equipment)",
+          "Hand-to-nose or hand-to-mouth inoculation after touching contaminated surfaces"
+        ],
+        "notes": "PIV can survive on surfaces for several hours. Transmission is most efficient in crowded indoor settings. Healthcare workers' hands are a major vector for nosocomial spread."
+      },
+      "incubationPeriod": {
+        "range": "2-6 days (average 3-4 days)",
+        "infectiousPeriod": "Infectious for 1-2 weeks; can be longer in immunocompromised individuals (weeks to months). Viral shedding begins before symptom onset",
+        "seasonality": "PIV-1 and PIV-2: biennial fall outbreaks (odd-numbered years for PIV-1, even-numbered years for PIV-2). PIV-3: year-round with spring-summer peaks. PIV-4: sporadic",
+        "geographic": "Worldwide distribution"
+      },
+      "riskFactors": [
+        "Infants and young children (especially 6 months to 3 years for croup)",
+        "Elderly adults (≥65 years)",
+        "Immunocompromised individuals (transplant recipients, HIV, cancer patients)",
+        "Chronic lung disease (asthma, COPD, bronchopulmonary dysplasia)",
+        "Residents of long-term care facilities and nursing homes",
+        "Crowded living conditions (daycare, hospitals, institutions)",
+        "Healthcare workers (occupational exposure)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Croup (laryngotracheobronchitis): barky cough, stridor, hoarseness, respiratory distress - characteristic of PIV-1 and PIV-2",
+          "Fever (may be high-grade)",
+          "Rhinorrhea and nasal congestion",
+          "Sore throat and pharyngitis",
+          "Cough (initially dry, then productive)",
+          "Wheezing and bronchiolitis (PIV-3)",
+          "Dyspnea and tachypnea",
+          "Poor feeding and irritability (infants)"
+        ],
+        "complications": [
+          "Severe croup requiring hospitalization and intubation",
+          "Bronchiolitis and pneumonia",
+          "Respiratory failure",
+          "Apnea (infants)",
+          "Secondary bacterial infections (otitis media, sinusitis, pneumonia)",
+          "Exacerbation of asthma or COPD",
+          "Severe disseminated disease in immunocompromised (pneumonia, respiratory failure)",
+          "Death (rare, but higher in immunocompromised)"
+        ],
+        "caseDefinition": {
+          "suspected": "Child with acute onset of barky cough + stridor ± fever (croup), OR infant with bronchiolitis or pneumonia, especially during PIV season or in context of outbreak/cluster in facility or ward",
+          "confirmed": "Clinical illness + laboratory confirmation: positive RT-PCR for parainfluenza virus from nasopharyngeal swab or aspirate"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR (reverse transcription polymerase chain reaction) - gold standard, can identify PIV type (1, 2, 3, or 4)",
+        "Rapid antigen detection tests - point-of-care testing (lower sensitivity)",
+        "Direct fluorescent antibody (DFA) or immunofluorescence assays",
+        "Viral culture - time-consuming, used for research and surveillance",
+        "Chest X-ray - subglottic narrowing (steeple sign) in croup; infiltrates in pneumonia"
+      ],
+      "treatment": "Supportive care is the mainstay. For croup: nebulized epinephrine for moderate to severe stridor; dexamethasone (single dose, oral or IM) to reduce airway inflammation and duration of symptoms. For bronchiolitis/pneumonia: oxygen therapy, hydration, suctioning. No specific antiviral therapy available. Ribavirin has been used in severe cases in immunocompromised patients (off-label, limited evidence).",
+      "infectionControl": {
+        "precautions": "Droplet Precautions + Contact Precautions. Wear surgical mask for close contact (<1 meter); gown and gloves for all patient contact. Isolate in single room or cohort with other PIV-positive patients",
+        "screening": "Screen for respiratory symptoms, especially croup; test suspected cases",
+        "cohorting": "Cohort confirmed PIV cases together; assign dedicated staff to cohort",
+        "sourceControl": "Limit patient movement outside isolation room; mask patient during transport if tolerated",
+        "environmental": "Frequent cleaning and disinfection of high-touch surfaces, toys, and medical equipment. Hand hygiene is critical",
+        "staffEducation": "Strict hand hygiene before and after patient contact; proper use of PPE; avoid touching face; exclude sick staff"
+      },
+      "outbreakTriggers": [
+        "≥2 epidemiologically linked cases in a group, ward, or facility",
+        "Rise in croup, bronchiolitis, or pneumonia cases above expected baseline",
+        "Nosocomial transmission (healthcare-associated cases)",
+        "Cluster in high-risk unit (pediatric ward, long-term care facility)"
+      ],
+      "reportingCommunication": [
+        "Notify infection control and public health authorities within 24 hours of suspected outbreak",
+        "Implement enhanced surveillance and contact tracing",
+        "Implement outbreak control measures (cohorting, visitor restrictions, enhanced cleaning)",
+        "Communicate with staff, families, and administration"
+      ],
+      "prevention": [
+        "Hand hygiene with soap and water or alcohol-based hand sanitizer",
+        "Respiratory hygiene and cough etiquette",
+        "Avoid close contact with sick individuals; keep sick children home from daycare",
+        "Environmental cleaning and disinfection of toys, surfaces, and shared items",
+        "Avoid sharing utensils, cups, and personal items",
+        "Educate caregivers on transmission prevention and early recognition of croup (barky cough, stridor)",
+        "Staff training on proper infection control practices"
+      ],
+      "references": [
+        {
+          "label": "CDC - Parainfluenza Viruses",
+          "url": "https://www.cdc.gov/parainfluenza/index.html"
+        },
+        {
+          "label": "WHO - Respiratory Viruses",
+          "url": "https://www.who.int/health-topics/respiratory-infections"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "hmpv",
+      "name": "Human metapneumovirus (hMPV)",
+      "scientificName": "Human metapneumovirus (hMPV), family Pneumoviridae",
+      "definition": "Enveloped negative-sense single-stranded RNA virus closely related to RSV. Discovered in 2001, hMPV is now recognized as a major cause of acute respiratory infections in children and adults, particularly bronchiolitis and pneumonia in infants and elderly. Outbreaks occur in healthcare facilities, daycare centers, and long-term care facilities, often overlapping with RSV season.",
+      "reservoir": {
+        "primary": [
+          "Human respiratory tract (only known reservoir)"
+        ],
+        "secondary": [],
+        "notes": "Humans are the sole reservoir. Two major genetic lineages (A and B) with multiple subgroups co-circulate. hMPV is less well-studied than RSV but causes similar clinical syndromes."
+      },
+      "transmission": {
+        "mode": "Respiratory droplets, direct contact, contaminated surfaces",
+        "routes": [
+          "Respiratory droplets from coughing, sneezing, or talking",
+          "Direct contact with infected persons",
+          "Indirect contact via contaminated surfaces and fomites",
+          "Hand-to-nose or hand-to-eye inoculation after touching contaminated surfaces"
+        ],
+        "notes": "Transmission patterns are similar to RSV. hMPV can survive on surfaces for several hours. Healthcare workers' hands are a major vector for nosocomial spread."
+      },
+      "incubationPeriod": {
+        "range": "3-6 days (average 4-5 days)",
+        "infectiousPeriod": "Infectious during acute illness (typically 5-10 days); can be longer in immunocompromised individuals",
+        "seasonality": "Winter and spring peaks in temperate climates (overlaps with RSV season); year-round in tropical regions",
+        "geographic": "Worldwide distribution"
+      },
+      "riskFactors": [
+        "Infants and young children (especially <2 years)",
+        "Elderly adults (≥65 years)",
+        "Immunocompromised individuals (transplant recipients, HIV, cancer patients)",
+        "Chronic lung disease (asthma, COPD, bronchopulmonary dysplasia)",
+        "Chronic heart disease",
+        "Residents of long-term care facilities and nursing homes",
+        "Crowded living conditions (daycare, hospitals, institutions)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Fever (may be low-grade or absent)",
+          "Cough (initially dry, then productive)",
+          "Wheezing and respiratory distress",
+          "Tachypnea and increased work of breathing",
+          "Nasal congestion and rhinorrhea",
+          "Sore throat",
+          "Dyspnea",
+          "Poor feeding and irritability (infants)"
+        ],
+        "complications": [
+          "Bronchiolitis (inflammation of small airways)",
+          "Pneumonia",
+          "Respiratory failure",
+          "Exacerbation of asthma or COPD",
+          "Secondary bacterial infections",
+          "Death (rare, but higher in high-risk groups)"
+        ],
+        "caseDefinition": {
+          "suspected": "Infant, child, or elderly patient with acute respiratory illness (cough, wheezing, respiratory distress) ± fever, especially during hMPV season or in context of outbreak/cluster in facility or unit",
+          "confirmed": "Clinical illness + laboratory confirmation: positive RT-PCR for hMPV from nasopharyngeal swab or aspirate"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR (reverse transcription polymerase chain reaction) - gold standard, high sensitivity and specificity",
+        "Multiplex respiratory PCR panels - can detect hMPV along with other respiratory viruses",
+        "Direct fluorescent antibody (DFA) or immunofluorescence (less commonly used)",
+        "Viral culture - difficult and time-consuming, rarely used clinically",
+        "Chest X-ray - infiltrates, hyperinflation, atelectasis"
+      ],
+      "treatment": "Supportive care is the mainstay: oxygen therapy (nasal cannula, high-flow nasal cannula, or mechanical ventilation if needed), hydration (IV fluids if poor oral intake), suctioning of nasal secretions, antipyretics. No specific antiviral therapy available. Bronchodilators and corticosteroids are NOT routinely recommended. Ribavirin has been used in severe cases in immunocompromised patients (off-label, limited evidence).",
+      "infectionControl": {
+        "precautions": "Droplet Precautions + Contact Precautions. Wear surgical mask for close contact; gown and gloves for all patient contact. Isolate in single room or cohort with other hMPV-positive patients",
+        "screening": "Screen for respiratory symptoms during hMPV season; test suspected cases",
+        "cohorting": "Cohort confirmed hMPV cases together; assign dedicated staff",
+        "sourceControl": "Limit patient movement; mask patient during transport if tolerated",
+        "environmental": "Frequent cleaning and disinfection of high-touch surfaces and medical equipment. Hand hygiene is critical",
+        "staffEducation": "Strict hand hygiene; proper use of PPE; avoid touching face; exclude sick staff"
+      },
+      "outbreakTriggers": [
+        "≥2-3 epidemiologically linked cases in a single unit, facility, or ward",
+        "Sudden increase in bronchiolitis or pneumonia cases",
+        "Nosocomial transmission (healthcare-associated cases)",
+        "Cluster in high-risk unit (pediatric ward, NICU, long-term care facility)"
+      ],
+      "reportingCommunication": [
+        "Report suspected outbreaks to infection control and public health authorities",
+        "Implement enhanced surveillance and outbreak control measures (cohorting, visitor restrictions, enhanced cleaning)",
+        "Communicate with staff, families, and administration",
+        "Enhanced infection control measures in high-risk units"
+      ],
+      "prevention": [
+        "Hand hygiene with soap and water or alcohol-based hand sanitizer",
+        "Respiratory hygiene and cough etiquette",
+        "Avoid close contact with sick individuals; keep sick children home from daycare",
+        "Environmental cleaning and disinfection of surfaces and shared items",
+        "Educate caregivers on transmission prevention and early recognition of respiratory distress",
+        "Staff training on proper infection control practices"
+      ],
+      "references": [
+        {
+          "label": "CDC - Human Metapneumovirus",
+          "url": "https://www.cdc.gov/hmpv/index.html"
+        },
+        {
+          "label": "WHO - Respiratory Viruses",
+          "url": "https://www.who.int/health-topics/respiratory-infections"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "rhinovirus_enterovirus",
+      "name": "Rhinoviruses/Enteroviruses",
+      "scientificName": "Rhinoviruses (RV) and Enteroviruses (EV), family Picornaviridae",
+      "definition": "Non-enveloped positive-sense single-stranded RNA viruses. Rhinoviruses (>160 serotypes) are the most common cause of the common cold. Enteroviruses (including coxsackieviruses, echoviruses, EV-D68, EV-A71, polioviruses) cause a wide range of illnesses from mild upper respiratory infections to severe acute respiratory infections, aseptic meningitis, myocarditis, and paralysis. Outbreaks occur in schools, daycare centers, healthcare facilities, and institutions.",
+      "reservoir": {
+        "primary": [
+          "Humans (respiratory tract for rhinoviruses; gastrointestinal tract for enteroviruses)"
+        ],
+        "secondary": [
+          "Environmental contamination (surfaces, water)"
+        ],
+        "notes": "Humans are the primary reservoir. Rhinoviruses are transmitted primarily via respiratory route; enteroviruses via fecal-oral route (but can also spread via respiratory droplets)."
+      },
+      "transmission": {
+        "mode": "Respiratory droplets, direct contact, contaminated surfaces, fecal-oral (enteroviruses)",
+        "routes": [
+          "Respiratory droplets from coughing, sneezing, or talking",
+          "Direct contact with infected persons",
+          "Indirect contact via contaminated surfaces and fomites",
+          "Fecal-oral route (especially for enteroviruses)",
+          "Hand-to-nose or hand-to-mouth inoculation after touching contaminated surfaces"
+        ],
+        "notes": "Rhinoviruses can survive on surfaces for hours. Enteroviruses can survive for days to weeks in the environment and are resistant to many disinfectants. Prolonged fecal shedding of enteroviruses (weeks to months) can occur."
+      },
+      "incubationPeriod": {
+        "range": "1-3 days for rhinoviruses; 3-7 days for enteroviruses",
+        "infectiousPeriod": "Infectious during acute symptoms (typically 3-7 days for rhinoviruses); enteroviruses can be shed in stool for weeks to months after symptom resolution",
+        "seasonality": "Rhinoviruses: year-round with fall and spring peaks. Enteroviruses: summer and fall peaks in temperate climates; year-round in tropical regions",
+        "geographic": "Worldwide distribution"
+      },
+      "riskFactors": [
+        "Children (especially in daycare and schools)",
+        "Chronic lung disease (asthma, COPD) - risk of exacerbation",
+        "Immunocompromised individuals (risk of severe enterovirus disease)",
+        "Crowded living conditions and institutions",
+        "Poor hygiene and sanitation"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Upper respiratory infection (URI): rhinorrhea, nasal congestion, sore throat, sneezing, cough",
+          "Fever (usually low-grade for rhinoviruses; can be high for enteroviruses)",
+          "Headache and malaise",
+          "Bronchitis and wheezing (especially in children with asthma)",
+          "Enterovirus-specific syndromes: hand-foot-mouth disease (coxsackievirus A16, EV-A71), herpangina, aseptic meningitis, myocarditis, acute flaccid myelitis (EV-D68)"
+        ],
+        "complications": [
+          "Exacerbation of asthma or COPD",
+          "Bronchiolitis and pneumonia (rare for rhinoviruses; more common with EV-D68)",
+          "Severe acute respiratory infections (EV-D68)",
+          "Aseptic meningitis and encephalitis (enteroviruses)",
+          "Myocarditis and pericarditis (coxsackievirus B)",
+          "Acute flaccid myelitis (EV-D68, EV-A71) - polio-like paralysis",
+          "Neonatal sepsis-like syndrome (enteroviruses)",
+          "Death (rare, but can occur with severe enterovirus disease)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with acute respiratory illness (rhinorrhea, cough, sore throat) ± fever, OR cluster of URI/ARI cases in a ward, school, or institution, OR severe respiratory illness with enterovirus-like syndrome (e.g., acute flaccid myelitis)",
+          "confirmed": "Clinical illness + laboratory confirmation: positive RT-PCR for rhinovirus or enterovirus from respiratory specimen, stool, or CSF"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR (reverse transcription polymerase chain reaction) - gold standard, can differentiate rhinovirus from enterovirus and identify enterovirus types",
+        "Multiplex respiratory PCR panels - detect rhinovirus/enterovirus along with other respiratory viruses",
+        "Viral culture - time-consuming, used for enterovirus typing and surveillance",
+        "Serology (paired sera) - retrospective diagnosis for enteroviruses",
+        "Chest X-ray - infiltrates in severe cases"
+      ],
+      "treatment": "Supportive care is the mainstay: rest, hydration, antipyretics, decongestants (for rhinovirus). No specific antiviral therapy available for rhinoviruses or most enteroviruses. Pleconaril (investigational antiviral) has been studied for severe enterovirus infections. Intravenous immunoglobulin (IVIG) may be used for severe enterovirus infections in immunocompromised patients. Supportive care for acute flaccid myelitis (physical therapy, respiratory support).",
+      "infectionControl": {
+        "precautions": "Droplet Precautions + Contact Precautions (especially for enteroviruses due to fecal-oral transmission). Wear surgical mask for close contact; gown and gloves for all patient contact. Isolate in single room or cohort",
+        "screening": "Screen for respiratory and gastrointestinal symptoms; test suspected cases",
+        "cohorting": "Cohort confirmed cases together if possible",
+        "sourceControl": "Limit patient movement; mask patient during transport",
+        "environmental": "Frequent cleaning and disinfection with EPA-registered disinfectants effective against non-enveloped viruses (e.g., bleach-based). Enteroviruses are resistant to alcohol-based disinfectants",
+        "staffEducation": "Strict hand hygiene with soap and water (alcohol less effective against enteroviruses); proper use of PPE; exclude sick staff"
+      },
+      "outbreakTriggers": [
+        "≥2-3 epidemiologically linked acute respiratory illness or severe cases in a cluster, ward, school, or institution",
+        "Sudden increase in URI or ARI cases above baseline",
+        "Cluster of severe enterovirus disease (e.g., acute flaccid myelitis, aseptic meningitis, myocarditis)",
+        "Nosocomial transmission"
+      ],
+      "reportingCommunication": [
+        "Report suspected outbreaks to infection control and public health authorities within 24 hours (standard reporting for clusters)",
+        "Enhanced surveillance for severe enterovirus disease (e.g., acute flaccid myelitis) - immediate reporting",
+        "Implement outbreak control measures (isolation, cohorting, enhanced cleaning)",
+        "Communicate with staff, families, and administration"
+      ],
+      "prevention": [
+        "Hand hygiene with soap and water (most important measure; alcohol-based hand rub less effective against enteroviruses)",
+        "Respiratory hygiene and cough etiquette",
+        "Avoid close contact with sick individuals; keep sick children home from daycare and school",
+        "Environmental cleaning and disinfection with appropriate disinfectants (bleach-based for enteroviruses)",
+        "Avoid sharing utensils, cups, towels, and personal items",
+        "Restrict ill visitors from healthcare facilities",
+        "Educate on proper hygiene and early recognition of severe symptoms"
+      ],
+      "references": [
+        {
+          "label": "CDC - Rhinoviruses",
+          "url": "https://www.cdc.gov/non-polio-enterovirus/about/overview.html"
+        },
+        {
+          "label": "CDC - Enteroviruses",
+          "url": "https://www.cdc.gov/non-polio-enterovirus/index.html"
+        },
+        {
+          "label": "WHO - Respiratory Viruses",
+          "url": "https://www.who.int/health-topics/respiratory-infections"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "measles",
+      "name": "Measles virus",
+      "scientificName": "Measles morbillivirus, family Paramyxoviridae",
+      "definition": "Highly contagious enveloped negative-sense single-stranded RNA virus causing measles, an acute febrile illness with characteristic rash. Measles is one of the most contagious infectious diseases (basic reproduction number R0 = 12-18). Outbreaks occur in under-vaccinated populations and can spread rapidly in healthcare facilities, schools, and communities. Measles was declared eliminated in many countries but has resurged due to vaccine hesitancy.",
+      "reservoir": {
+        "primary": [
+          "Humans only (no animal reservoir)"
+        ],
+        "secondary": [],
+        "notes": "Humans are the sole reservoir. Measles virus does not persist in the environment or in animal hosts. Elimination is theoretically possible with high vaccination coverage (≥95%)."
+      },
+      "transmission": {
+        "mode": "Airborne, respiratory droplets, direct contact",
+        "routes": [
+          "Airborne transmission via aerosolized droplet nuclei (primary route) - virus can remain infectious in the air for up to 2 hours",
+          "Respiratory droplets from coughing, sneezing, or talking",
+          "Direct contact with infected respiratory secretions"
+        ],
+        "notes": "Measles is one of the most contagious diseases known. A susceptible person has a 90% chance of infection after exposure. Virus can spread to others in the same room or even adjacent rooms via airborne route. Healthcare settings are high-risk for measles transmission."
+      },
+      "incubationPeriod": {
+        "range": "10-14 days from exposure to onset of fever (average 10-12 days); rash appears 2-4 days after fever onset (total 14 days from exposure to rash)",
+        "infectiousPeriod": "Infectious from 4 days before rash onset to 4 days after rash onset (total 8-9 days). Peak infectiousness is just before rash appears. Immunocompromised individuals can shed virus for weeks to months",
+        "seasonality": "Year-round transmission possible; historically winter-spring peaks in temperate climates before widespread vaccination",
+        "geographic": "Worldwide; endemic in many low-income countries; sporadic outbreaks in high-income countries with pockets of under-vaccination"
+      },
+      "riskFactors": [
+        "Unvaccinated individuals (highest risk)",
+        "Infants <12 months (too young for routine vaccination)",
+        "Immunocompromised individuals (HIV, cancer, transplant, immunosuppressive therapy) - risk of severe and atypical measles",
+        "Vitamin A deficiency",
+        "Pregnant women (risk of complications and fetal loss)",
+        "International travelers to measles-endemic areas",
+        "Healthcare workers without immunity",
+        "Communities with low vaccination coverage (<95%)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Prodrome (2-4 days before rash): high fever (≥40°C), cough, coryza (runny nose), conjunctivitis (red, watery eyes) - the 3 C's",
+          "Koplik spots (pathognomonic): small white spots with red halo on buccal mucosa, appear 2-3 days before rash",
+          "Maculopapular rash: starts on face and hairline, spreads downward to trunk and extremities over 3-4 days; becomes confluent; fades in same order after 3-4 days, leaving brownish discoloration and desquamation",
+          "Photophobia",
+          "Malaise and irritability"
+        ],
+        "complications": [
+          "Otitis media (most common complication, 7-9% of cases)",
+          "Pneumonia (primary viral or secondary bacterial) - leading cause of measles-related death",
+          "Diarrhea and dehydration",
+          "Encephalitis (acute, 1 in 1,000 cases) - can cause permanent brain damage or death",
+          "Subacute sclerosing panencephalitis (SSPE) - rare, fatal degenerative CNS disease occurring 7-10 years after measles infection",
+          "Immune suppression for weeks to months after infection - increased risk of other infections",
+          "Complications in pregnancy: miscarriage, preterm labor, low birth weight",
+          "Death (1-2 per 1,000 cases in high-income countries; up to 10% in low-income countries, especially in malnourished children)"
+        ],
+        "caseDefinition": {
+          "suspected": "Any person with fever (≥38°C) + maculopapular rash + at least one of: cough, coryza, or conjunctivitis, AND no recent measles vaccination, OR epidemiological link to confirmed case",
+          "confirmed": "Suspected case + laboratory confirmation: positive measles IgM antibody, OR significant rise in measles IgG antibody, OR positive RT-PCR for measles virus, OR virus isolation"
+        }
+      },
+      "diagnosis": [
+        "Serology: measles-specific IgM antibody (appears 3-4 days after rash onset, peaks at 7-10 days, detectable for 4-8 weeks) - most common method",
+        "RT-PCR for measles virus RNA from throat swab, nasopharyngeal swab, or urine - preferred for outbreak investigation and genotyping",
+        "Virus isolation from clinical specimens - rarely done, requires specialized lab",
+        "Measles-specific IgG antibody (paired acute and convalescent sera) - 4-fold rise confirms acute infection",
+        "Clinical diagnosis based on characteristic rash and Koplik spots (but laboratory confirmation required for public health reporting)"
+      ],
+      "treatment": "Supportive care: antipyretics, hydration, rest. Vitamin A supplementation (WHO recommendation): 200,000 IU for children ≥12 months (100,000 IU for infants 6-11 months) given on 2 consecutive days - reduces mortality and complications, especially in malnourished children and those with vitamin A deficiency. No specific antiviral therapy. Antibiotics only if secondary bacterial infection (pneumonia, otitis media). Airborne isolation for hospitalized patients from time of diagnosis until 4 days after rash onset (longer for immunocompromised).",
+      "infectionControl": {
+        "precautions": "Airborne Precautions + Contact Precautions. Use N95 respirator or equivalent for all healthcare workers entering room. Place patient in Airborne Infection Isolation Room (AIIR) with negative pressure and ≥12 air changes per hour. Keep door closed. Isolate from time of diagnosis until 4 days after rash onset (longer for immunocompromised - duration of illness)",
+        "screening": "Immediate identification and isolation of suspected measles cases at all healthcare entry points. Do NOT place in waiting room with other patients",
+        "cohorting": "Avoid cohorting measles patients with other patients due to extreme contagiousness. If necessary, cohort only confirmed measles cases together",
+        "sourceControl": "Surgical mask on patient at all times; limit patient movement outside isolation room",
+        "environmental": "Enhanced cleaning and disinfection. Ensure adequate ventilation. Wait at least 2 hours after patient leaves room before allowing susceptible individuals to enter (time for airborne particles to clear)",
+        "staffEducation": "All healthcare workers must have documented immunity (2 doses of MMR vaccine, or laboratory evidence of immunity, or born before 1957 in some countries). Non-immune staff should not enter room. Fit-testing for N95 respirators"
+      },
+      "outbreakTriggers": [
+        "Single confirmed or suspected case in a non-immune group, healthcare facility, school, or community (measles is so contagious that even one case triggers outbreak response)",
+        "≥2 epidemiologically linked cases",
+        "Any nosocomial (healthcare-associated) measles case"
+      ],
+      "reportingCommunication": [
+        "Immediate reporting (within 24 hours or sooner) of all suspected measles cases to public health authorities - measles is a notifiable disease in most countries",
+        "Urgent public health action: contact tracing, identification of exposed individuals, assessment of immunity status",
+        "Post-exposure prophylaxis for susceptible contacts: MMR vaccine within 72 hours of exposure (most effective), OR immunoglobulin (IG) within 6 days of exposure for high-risk individuals (infants, pregnant women, immunocompromised)",
+        "Mass vaccination campaigns in outbreak settings (outbreak response immunization)",
+        "Communicate with staff, patients, families, media, and community",
+        "Coordinate with local, national, and international health authorities"
+      ],
+      "prevention": [
+        "Vaccination with MMR (measles-mumps-rubella) vaccine: 2 doses (first dose at 12-15 months, second dose at 4-6 years) - provides >97% protection after 2 doses",
+        "Catch-up vaccination for unvaccinated or under-vaccinated individuals",
+        "Maintain high vaccination coverage (≥95%) in community to achieve herd immunity",
+        "Post-exposure prophylaxis: MMR vaccine within 72 hours of exposure for susceptible individuals ≥12 months; immunoglobulin (IG) within 6 days for high-risk individuals",
+        "Case-finding and contact tracing during outbreaks",
+        "Outbreak response immunization (mass vaccination campaigns)",
+        "Airborne isolation of suspected and confirmed cases",
+        "Ensure all healthcare workers have documented immunity",
+        "Educate public on importance of vaccination and early recognition of measles symptoms"
+      ],
+      "references": [
+        {
+          "label": "WHO - Measles",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/measles"
+        },
+        {
+          "label": "CDC - Measles",
+          "url": "https://www.cdc.gov/measles/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    }
+  ]
+}

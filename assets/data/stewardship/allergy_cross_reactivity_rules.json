@@ -1,0 +1,358 @@
+{
+  "version": 1,
+  "updatedAt": "2025-01-15T00:00:00Z",
+  "drugClasses": [
+    {
+      "id": "penicillins",
+      "name": "Penicillins",
+      "drugs": [
+        "Penicillin G",
+        "Penicillin V",
+        "Ampicillin",
+        "Amoxicillin",
+        "Amoxicillin-Clavulanate",
+        "Piperacillin-Tazobactam",
+        "Ticarcillin-Clavulanate",
+        "Nafcillin",
+        "Oxacillin",
+        "Dicloxacillin"
+      ],
+      "crossReactivity": {
+        "cephalosporins_1st_gen": {
+          "riskLevel": "moderate",
+          "riskPercentage": 2.0,
+          "condition": "severe_reaction",
+          "explanation": "1st generation cephalosporins share similar R1 side chains with penicillins, increasing cross-reactivity risk to 2-5% in severe reactions."
+        },
+        "cephalosporins_2nd_gen": {
+          "riskLevel": "low",
+          "riskPercentage": 1.0,
+          "condition": "any_reaction",
+          "explanation": "2nd generation cephalosporins have lower cross-reactivity (1-2%) due to different side chain structures."
+        },
+        "cephalosporins_3rd_4th_gen": {
+          "riskLevel": "low",
+          "riskPercentage": 0.5,
+          "condition": "any_reaction",
+          "explanation": "3rd and 4th generation cephalosporins have minimal cross-reactivity (<1%) due to distinct R1 side chains."
+        },
+        "carbapenems": {
+          "riskLevel": "low",
+          "riskPercentage": 1.0,
+          "condition": "anaphylaxis",
+          "explanation": "Carbapenems have ~1% cross-reactivity with penicillins in anaphylaxis cases. Safe in non-anaphylactic reactions."
+        },
+        "aztreonam": {
+          "riskLevel": "negligible",
+          "riskPercentage": 0.1,
+          "condition": "any_reaction",
+          "explanation": "Aztreonam (monobactam) has no cross-reactivity with penicillins. Safe even in anaphylaxis."
+        }
+      },
+      "safeAlternatives": [
+        {
+          "drugName": "Ceftriaxone",
+          "drugClass": "Cephalosporins (3rd gen)",
+          "crossReactivityRisk": 0.5,
+          "clinicalUse": "Broad-spectrum coverage for respiratory, urinary, and CNS infections",
+          "dosingConsiderations": "1-2 g IV/IM once daily; adjust for severe renal impairment"
+        },
+        {
+          "drugName": "Cefepime",
+          "drugClass": "Cephalosporins (4th gen)",
+          "crossReactivityRisk": 0.5,
+          "clinicalUse": "Broad-spectrum including Pseudomonas; febrile neutropenia, HAP/VAP",
+          "dosingConsiderations": "1-2 g IV q8-12h; adjust for renal impairment"
+        },
+        {
+          "drugName": "Aztreonam",
+          "drugClass": "Monobactams",
+          "crossReactivityRisk": 0.1,
+          "clinicalUse": "Gram-negative coverage including Pseudomonas; safe in beta-lactam allergy",
+          "dosingConsiderations": "1-2 g IV q6-8h; adjust for renal impairment"
+        },
+        {
+          "drugName": "Levofloxacin",
+          "drugClass": "Fluoroquinolones",
+          "crossReactivityRisk": 0.0,
+          "clinicalUse": "Respiratory, urinary, skin infections; no cross-reactivity with beta-lactams",
+          "dosingConsiderations": "500-750 mg IV/PO once daily; adjust for renal impairment"
+        },
+        {
+          "drugName": "Vancomycin",
+          "drugClass": "Glycopeptides",
+          "crossReactivityRisk": 0.0,
+          "clinicalUse": "Gram-positive coverage including MRSA; no cross-reactivity with beta-lactams",
+          "dosingConsiderations": "15-20 mg/kg IV q8-12h; monitor trough levels"
+        }
+      ]
+    },
+    {
+      "id": "cephalosporins_1st_gen",
+      "name": "Cephalosporins (1st Generation)",
+      "drugs": [
+        "Cefazolin",
+        "Cephalexin",
+        "Cefadroxil"
+      ],
+      "crossReactivity": {
+        "penicillins": {
+          "riskLevel": "moderate",
+          "riskPercentage": 2.5,
+          "condition": "severe_reaction",
+          "explanation": "1st generation cephalosporins have 2-5% cross-reactivity with penicillins due to similar R1 side chains."
+        },
+        "cephalosporins_2nd_gen": {
+          "riskLevel": "moderate",
+          "riskPercentage": 10.0,
+          "condition": "any_reaction",
+          "explanation": "Cross-reactivity between cephalosporin generations is 10-15% due to shared core structure."
+        },
+        "cephalosporins_3rd_4th_gen": {
+          "riskLevel": "moderate",
+          "riskPercentage": 10.0,
+          "condition": "any_reaction",
+          "explanation": "Cross-reactivity between cephalosporin generations is 10-15% due to shared core structure."
+        }
+      },
+      "safeAlternatives": [
+        {
+          "drugName": "Aztreonam",
+          "drugClass": "Monobactams",
+          "crossReactivityRisk": 0.1,
+          "clinicalUse": "Gram-negative coverage; safe in beta-lactam allergy",
+          "dosingConsiderations": "1-2 g IV q6-8h; adjust for renal impairment"
+        },
+        {
+          "drugName": "Vancomycin",
+          "drugClass": "Glycopeptides",
+          "crossReactivityRisk": 0.0,
+          "clinicalUse": "Gram-positive coverage including MRSA",
+          "dosingConsiderations": "15-20 mg/kg IV q8-12h; monitor trough levels"
+        },
+        {
+          "drugName": "Ciprofloxacin",
+          "drugClass": "Fluoroquinolones",
+          "crossReactivityRisk": 0.0,
+          "clinicalUse": "Gram-negative coverage including Pseudomonas",
+          "dosingConsiderations": "400 mg IV q8-12h or 500-750 mg PO q12h"
+        }
+      ]
+    },
+    {
+      "id": "cephalosporins_3rd_4th_gen",
+      "name": "Cephalosporins (3rd/4th Generation)",
+      "drugs": [
+        "Ceftriaxone",
+        "Ceftazidime",
+        "Cefotaxime",
+        "Cefepime",
+        "Ceftaroline"
+      ],
+      "crossReactivity": {
+        "penicillins": {
+          "riskLevel": "low",
+          "riskPercentage": 0.5,
+          "condition": "anaphylaxis",
+          "explanation": "3rd/4th generation cephalosporins have <1% cross-reactivity with penicillins due to distinct R1 side chains."
+        },
+        "cephalosporins_1st_gen": {
+          "riskLevel": "moderate",
+          "riskPercentage": 10.0,
+          "condition": "any_reaction",
+          "explanation": "Cross-reactivity between cephalosporin generations is 10-15%."
+        }
+      },
+      "safeAlternatives": [
+        {
+          "drugName": "Aztreonam",
+          "drugClass": "Monobactams",
+          "crossReactivityRisk": 0.1,
+          "clinicalUse": "Gram-negative coverage; safe in beta-lactam allergy",
+          "dosingConsiderations": "1-2 g IV q6-8h"
+        },
+        {
+          "drugName": "Levofloxacin",
+          "drugClass": "Fluoroquinolones",
+          "crossReactivityRisk": 0.0,
+          "clinicalUse": "Broad-spectrum coverage",
+          "dosingConsiderations": "500-750 mg IV/PO once daily"
+        }
+      ]
+    },
+    {
+      "id": "carbapenems",
+      "name": "Carbapenems",
+      "drugs": [
+        "Imipenem-Cilastatin",
+        "Meropenem",
+        "Ertapenem",
+        "Doripenem"
+      ],
+      "crossReactivity": {
+        "penicillins": {
+          "riskLevel": "low",
+          "riskPercentage": 1.0,
+          "condition": "anaphylaxis",
+          "explanation": "Carbapenems have ~1% cross-reactivity with penicillins in anaphylaxis cases."
+        },
+        "cephalosporins_1st_gen": {
+          "riskLevel": "low",
+          "riskPercentage": 0.5,
+          "condition": "any_reaction",
+          "explanation": "Minimal cross-reactivity with cephalosporins."
+        }
+      },
+      "safeAlternatives": [
+        {
+          "drugName": "Aztreonam",
+          "drugClass": "Monobactams",
+          "crossReactivityRisk": 0.1,
+          "clinicalUse": "Gram-negative coverage",
+          "dosingConsiderations": "1-2 g IV q6-8h"
+        },
+        {
+          "drugName": "Ciprofloxacin",
+          "drugClass": "Fluoroquinolones",
+          "crossReactivityRisk": 0.0,
+          "clinicalUse": "Gram-negative coverage",
+          "dosingConsiderations": "400 mg IV q8-12h"
+        }
+      ]
+    },
+    {
+      "id": "fluoroquinolones",
+      "name": "Fluoroquinolones",
+      "drugs": [
+        "Ciprofloxacin",
+        "Levofloxacin",
+        "Moxifloxacin",
+        "Ofloxacin"
+      ],
+      "crossReactivity": {
+        "fluoroquinolones": {
+          "riskLevel": "high",
+          "riskPercentage": 20.0,
+          "condition": "any_reaction",
+          "explanation": "Class effect: 10-30% cross-reactivity between fluoroquinolones due to shared quinolone core structure."
+        }
+      },
+      "safeAlternatives": [
+        {
+          "drugName": "Ceftriaxone",
+          "drugClass": "Cephalosporins (3rd gen)",
+          "crossReactivityRisk": 0.0,
+          "clinicalUse": "Broad-spectrum coverage",
+          "dosingConsiderations": "1-2 g IV once daily"
+        },
+        {
+          "drugName": "Azithromycin",
+          "drugClass": "Macrolides",
+          "crossReactivityRisk": 0.0,
+          "clinicalUse": "Respiratory and atypical coverage",
+          "dosingConsiderations": "500 mg IV/PO once daily"
+        },
+        {
+          "drugName": "Doxycycline",
+          "drugClass": "Tetracyclines",
+          "crossReactivityRisk": 0.0,
+          "clinicalUse": "Broad-spectrum including atypicals",
+          "dosingConsiderations": "100 mg IV/PO q12h"
+        }
+      ]
+    },
+    {
+      "id": "macrolides",
+      "name": "Macrolides",
+      "drugs": [
+        "Azithromycin",
+        "Clarithromycin",
+        "Erythromycin"
+      ],
+      "crossReactivity": {
+        "macrolides": {
+          "riskLevel": "high",
+          "riskPercentage": 30.0,
+          "condition": "any_reaction",
+          "explanation": "Class effect: 20-40% cross-reactivity between macrolides due to shared macrolide ring structure."
+        }
+      },
+      "safeAlternatives": [
+        {
+          "drugName": "Doxycycline",
+          "drugClass": "Tetracyclines",
+          "crossReactivityRisk": 0.0,
+          "clinicalUse": "Respiratory and atypical coverage",
+          "dosingConsiderations": "100 mg IV/PO q12h"
+        },
+        {
+          "drugName": "Levofloxacin",
+          "drugClass": "Fluoroquinolones",
+          "crossReactivityRisk": 0.0,
+          "clinicalUse": "Respiratory coverage",
+          "dosingConsiderations": "500-750 mg IV/PO once daily"
+        }
+      ]
+    },
+    {
+      "id": "sulfonamides",
+      "name": "Sulfonamides",
+      "drugs": [
+        "Trimethoprim-Sulfamethoxazole",
+        "Sulfadiazine",
+        "Sulfasalazine"
+      ],
+      "crossReactivity": {
+        "sulfonamides": {
+          "riskLevel": "moderate",
+          "riskPercentage": 15.0,
+          "condition": "any_reaction",
+          "explanation": "Class effect: 10-20% cross-reactivity between sulfonamides."
+        }
+      },
+      "safeAlternatives": [
+        {
+          "drugName": "Doxycycline",
+          "drugClass": "Tetracyclines",
+          "crossReactivityRisk": 0.0,
+          "clinicalUse": "Broad-spectrum coverage",
+          "dosingConsiderations": "100 mg IV/PO q12h"
+        },
+        {
+          "drugName": "Ciprofloxacin",
+          "drugClass": "Fluoroquinolones",
+          "crossReactivityRisk": 0.0,
+          "clinicalUse": "Urinary and GI coverage",
+          "dosingConsiderations": "400 mg IV q8-12h"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "IDSA Penicillin Allergy Guidelines",
+      "url": "https://www.idsociety.org/practice-guideline/"
+    },
+    {
+      "title": "CDC Antibiotic Allergy Assessment",
+      "url": "https://www.cdc.gov/antibiotic-use/"
+    },
+    {
+      "title": "WHO Essential Medicines List",
+      "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"
+    },
+    {
+      "title": "AAAAI Drug Allergy Practice Parameters",
+      "url": "https://www.aaaai.org/"
+    },
+    {
+      "title": "BSACI Beta-Lactam Allergy Guidelines",
+      "url": "https://www.bsaci.org/"
+    },
+    {
+      "title": "APIC Antimicrobial Stewardship Guide",
+      "url": "https://apic.org/"
+    }
+  ]
+}
+

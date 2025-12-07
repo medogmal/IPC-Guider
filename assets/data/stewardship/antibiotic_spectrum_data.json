@@ -1,0 +1,1083 @@
+{
+  "version": "2.0.0",
+  "updatedAt": "2025-11-30T00:00:00Z",
+  "organisms": [
+    {
+      "id": "mssa",
+      "name": "Staphylococcus aureus (MSSA)",
+      "commonName": "Methicillin-Sensitive Staph",
+      "category": "gramPositiveCocci"
+    },
+    {
+      "id": "mrsa",
+      "name": "Staphylococcus aureus (MRSA)",
+      "commonName": "Methicillin-Resistant Staph",
+      "category": "gramPositiveCocci"
+    },
+    {
+      "id": "strep-pneumo",
+      "name": "Streptococcus pneumoniae",
+      "commonName": "Pneumococcus",
+      "category": "gramPositiveCocci"
+    },
+    {
+      "id": "strep-pyogenes",
+      "name": "Streptococcus pyogenes",
+      "commonName": "Group A Strep",
+      "category": "gramPositiveCocci"
+    },
+    {
+      "id": "enterococcus-faecalis",
+      "name": "Enterococcus faecalis",
+      "commonName": "Enterococcus (VRE-sensitive)",
+      "category": "gramPositiveCocci"
+    },
+    {
+      "id": "enterococcus-faecium",
+      "name": "Enterococcus faecium (VRE)",
+      "commonName": "Vancomycin-Resistant Enterococcus",
+      "category": "gramPositiveCocci"
+    },
+    {
+      "id": "e-coli",
+      "name": "Escherichia coli",
+      "commonName": "E. coli (non-ESBL)",
+      "category": "gramNegativeBacilli"
+    },
+    {
+      "id": "e-coli-esbl",
+      "name": "Escherichia coli (ESBL)",
+      "commonName": "E. coli (Extended-Spectrum Beta-Lactamase)",
+      "category": "gramNegativeBacilli"
+    },
+    {
+      "id": "klebsiella",
+      "name": "Klebsiella pneumoniae",
+      "commonName": "Klebsiella (non-ESBL)",
+      "category": "gramNegativeBacilli"
+    },
+    {
+      "id": "klebsiella-esbl",
+      "name": "Klebsiella pneumoniae (ESBL)",
+      "commonName": "Klebsiella (Extended-Spectrum Beta-Lactamase)",
+      "category": "gramNegativeBacilli"
+    },
+    {
+      "id": "pseudomonas",
+      "name": "Pseudomonas aeruginosa",
+      "commonName": "Pseudomonas",
+      "category": "gramNegativeBacilli"
+    },
+    {
+      "id": "acinetobacter",
+      "name": "Acinetobacter baumannii",
+      "commonName": "Acinetobacter",
+      "category": "gramNegativeBacilli"
+    },
+    {
+      "id": "bacteroides",
+      "name": "Bacteroides fragilis",
+      "commonName": "Bacteroides",
+      "category": "anaerobes"
+    },
+    {
+      "id": "clostridium",
+      "name": "Clostridium difficile",
+      "commonName": "C. difficile",
+      "category": "anaerobes"
+    },
+    {
+      "id": "mycoplasma",
+      "name": "Mycoplasma pneumoniae",
+      "commonName": "Mycoplasma",
+      "category": "atypical"
+    },
+    {
+      "id": "chlamydia",
+      "name": "Chlamydia pneumoniae",
+      "commonName": "Chlamydia",
+      "category": "atypical"
+    },
+    {
+      "id": "legionella",
+      "name": "Legionella pneumophila",
+      "commonName": "Legionella",
+      "category": "atypical"
+    }
+  ],
+  "antibiotics": [
+    {
+      "id": "penicillin-g",
+      "name": "Penicillin G",
+      "genericName": "Benzylpenicillin",
+      "class": "Penicillins",
+      "spectrumBreadth": "narrow",
+      "clinicalUse": "First-line for streptococcal infections, syphilis, and penicillin-sensitive organisms",
+      "keyPoints": [
+        "Narrow spectrum, highly effective against susceptible organisms",
+        "No MRSA or Gram-negative coverage",
+        "Preferred for Group A Strep pharyngitis"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "good"},
+        {"organismId": "mrsa", "level": "none"},
+        {"organismId": "strep-pneumo", "level": "excellent"},
+        {"organismId": "strep-pyogenes", "level": "excellent"},
+        {"organismId": "enterococcus-faecalis", "level": "poor"},
+        {"organismId": "enterococcus-faecium", "level": "none"},
+        {"organismId": "e-coli", "level": "none"},
+        {"organismId": "e-coli-esbl", "level": "none"},
+        {"organismId": "klebsiella", "level": "none"},
+        {"organismId": "klebsiella-esbl", "level": "none"},
+        {"organismId": "pseudomonas", "level": "none"},
+        {"organismId": "acinetobacter", "level": "none"},
+        {"organismId": "bacteroides", "level": "none"},
+        {"organismId": "clostridium", "level": "none"},
+        {"organismId": "mycoplasma", "level": "none"},
+        {"organismId": "chlamydia", "level": "none"},
+        {"organismId": "legionella", "level": "none"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA Practice Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "amoxicillin-clavulanate",
+      "name": "Amoxicillin-Clavulanate",
+      "genericName": "Amoxicillin-Clavulanic Acid",
+      "class": "Penicillins + Beta-Lactamase Inhibitor",
+      "spectrumBreadth": "extended",
+      "clinicalUse": "Community-acquired infections, respiratory tract infections, skin and soft tissue infections",
+      "keyPoints": [
+        "Extended spectrum with beta-lactamase inhibitor",
+        "Good oral bioavailability",
+        "No MRSA or Pseudomonas coverage"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "excellent"},
+        {"organismId": "mrsa", "level": "none"},
+        {"organismId": "strep-pneumo", "level": "excellent"},
+        {"organismId": "strep-pyogenes", "level": "excellent"},
+        {"organismId": "enterococcus-faecalis", "level": "good"},
+        {"organismId": "enterococcus-faecium", "level": "none"},
+        {"organismId": "e-coli", "level": "good"},
+        {"organismId": "e-coli-esbl", "level": "none"},
+        {"organismId": "klebsiella", "level": "good"},
+        {"organismId": "klebsiella-esbl", "level": "none"},
+        {"organismId": "pseudomonas", "level": "none"},
+        {"organismId": "acinetobacter", "level": "none"},
+        {"organismId": "bacteroides", "level": "good"},
+        {"organismId": "clostridium", "level": "none"},
+        {"organismId": "mycoplasma", "level": "none"},
+        {"organismId": "chlamydia", "level": "none"},
+        {"organismId": "legionella", "level": "none"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA Practice Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "cefazolin",
+      "name": "Cefazolin",
+      "genericName": "Cefazolin",
+      "class": "Cephalosporins (1st Generation)",
+      "spectrumBreadth": "narrow",
+      "clinicalUse": "Surgical prophylaxis, skin and soft tissue infections, MSSA bacteremia",
+      "keyPoints": [
+        "Excellent MSSA coverage",
+        "Preferred for surgical prophylaxis",
+        "No MRSA or Gram-negative coverage"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "excellent"},
+        {"organismId": "mrsa", "level": "none"},
+        {"organismId": "strep-pneumo", "level": "excellent"},
+        {"organismId": "strep-pyogenes", "level": "excellent"},
+        {"organismId": "enterococcus-faecalis", "level": "none"},
+        {"organismId": "enterococcus-faecium", "level": "none"},
+        {"organismId": "e-coli", "level": "good"},
+        {"organismId": "e-coli-esbl", "level": "none"},
+        {"organismId": "klebsiella", "level": "good"},
+        {"organismId": "klebsiella-esbl", "level": "none"},
+        {"organismId": "pseudomonas", "level": "none"},
+        {"organismId": "acinetobacter", "level": "none"},
+        {"organismId": "bacteroides", "level": "none"},
+        {"organismId": "clostridium", "level": "none"},
+        {"organismId": "mycoplasma", "level": "none"},
+        {"organismId": "chlamydia", "level": "none"},
+        {"organismId": "legionella", "level": "none"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA Practice Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "ceftriaxone",
+      "name": "Ceftriaxone",
+      "genericName": "Ceftriaxone",
+      "class": "Cephalosporins (3rd Generation)",
+      "spectrumBreadth": "extended",
+      "clinicalUse": "Community-acquired pneumonia, meningitis, gonorrhea, Gram-negative infections",
+      "keyPoints": [
+        "Excellent CNS penetration",
+        "Once-daily dosing",
+        "No MRSA or Pseudomonas coverage"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "good"},
+        {"organismId": "mrsa", "level": "none"},
+        {"organismId": "strep-pneumo", "level": "excellent"},
+        {"organismId": "strep-pyogenes", "level": "excellent"},
+        {"organismId": "enterococcus-faecalis", "level": "none"},
+        {"organismId": "enterococcus-faecium", "level": "none"},
+        {"organismId": "e-coli", "level": "excellent"},
+        {"organismId": "e-coli-esbl", "level": "none"},
+        {"organismId": "klebsiella", "level": "excellent"},
+        {"organismId": "klebsiella-esbl", "level": "none"},
+        {"organismId": "pseudomonas", "level": "none"},
+        {"organismId": "acinetobacter", "level": "none"},
+        {"organismId": "bacteroides", "level": "none"},
+        {"organismId": "clostridium", "level": "none"},
+        {"organismId": "mycoplasma", "level": "none"},
+        {"organismId": "chlamydia", "level": "none"},
+        {"organismId": "legionella", "level": "none"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA Practice Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "cefepime",
+      "name": "Cefepime",
+      "genericName": "Cefepime",
+      "class": "Cephalosporins (4th Generation)",
+      "spectrumBreadth": "broad",
+      "clinicalUse": "Hospital-acquired infections, febrile neutropenia, Pseudomonas infections",
+      "keyPoints": [
+        "Broad spectrum with Pseudomonas coverage",
+        "Stable against many beta-lactamases",
+        "No MRSA or anaerobic coverage"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "good"},
+        {"organismId": "mrsa", "level": "none"},
+        {"organismId": "strep-pneumo", "level": "excellent"},
+        {"organismId": "strep-pyogenes", "level": "excellent"},
+        {"organismId": "enterococcus-faecalis", "level": "none"},
+        {"organismId": "enterococcus-faecium", "level": "none"},
+        {"organismId": "e-coli", "level": "excellent"},
+        {"organismId": "e-coli-esbl", "level": "variable"},
+        {"organismId": "klebsiella", "level": "excellent"},
+        {"organismId": "klebsiella-esbl", "level": "variable"},
+        {"organismId": "pseudomonas", "level": "excellent"},
+        {"organismId": "acinetobacter", "level": "poor"},
+        {"organismId": "bacteroides", "level": "none"},
+        {"organismId": "clostridium", "level": "none"},
+        {"organismId": "mycoplasma", "level": "none"},
+        {"organismId": "chlamydia", "level": "none"},
+        {"organismId": "legionella", "level": "none"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA Practice Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "piperacillin-tazobactam",
+      "name": "Piperacillin-Tazobactam",
+      "genericName": "Piperacillin-Tazobactam",
+      "class": "Penicillins + Beta-Lactamase Inhibitor",
+      "spectrumBreadth": "broad",
+      "clinicalUse": "Hospital-acquired infections, intra-abdominal infections, febrile neutropenia",
+      "keyPoints": [
+        "Broad spectrum including Pseudomonas and anaerobes",
+        "Preferred for polymicrobial infections",
+        "No MRSA coverage"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "excellent"},
+        {"organismId": "mrsa", "level": "none"},
+        {"organismId": "strep-pneumo", "level": "excellent"},
+        {"organismId": "strep-pyogenes", "level": "excellent"},
+        {"organismId": "enterococcus-faecalis", "level": "good"},
+        {"organismId": "enterococcus-faecium", "level": "none"},
+        {"organismId": "e-coli", "level": "excellent"},
+        {"organismId": "e-coli-esbl", "level": "variable"},
+        {"organismId": "klebsiella", "level": "excellent"},
+        {"organismId": "klebsiella-esbl", "level": "variable"},
+        {"organismId": "pseudomonas", "level": "excellent"},
+        {"organismId": "acinetobacter", "level": "poor"},
+        {"organismId": "bacteroides", "level": "excellent"},
+        {"organismId": "clostridium", "level": "none"},
+        {"organismId": "mycoplasma", "level": "none"},
+        {"organismId": "chlamydia", "level": "none"},
+        {"organismId": "legionella", "level": "none"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA Practice Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "meropenem",
+      "name": "Meropenem",
+      "genericName": "Meropenem",
+      "class": "Carbapenems",
+      "spectrumBreadth": "broad",
+      "clinicalUse": "Severe hospital-acquired infections, ESBL-producing organisms, carbapenem-sensitive MDROs",
+      "keyPoints": [
+        "Broadest spectrum beta-lactam",
+        "Reserved for severe infections and ESBL organisms",
+        "No MRSA coverage"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "excellent"},
+        {"organismId": "mrsa", "level": "none"},
+        {"organismId": "strep-pneumo", "level": "excellent"},
+        {"organismId": "strep-pyogenes", "level": "excellent"},
+        {"organismId": "enterococcus-faecalis", "level": "good"},
+        {"organismId": "enterococcus-faecium", "level": "none"},
+        {"organismId": "e-coli", "level": "excellent"},
+        {"organismId": "e-coli-esbl", "level": "excellent"},
+        {"organismId": "klebsiella", "level": "excellent"},
+        {"organismId": "klebsiella-esbl", "level": "excellent"},
+        {"organismId": "pseudomonas", "level": "excellent"},
+        {"organismId": "acinetobacter", "level": "variable"},
+        {"organismId": "bacteroides", "level": "excellent"},
+        {"organismId": "clostridium", "level": "none"},
+        {"organismId": "mycoplasma", "level": "none"},
+        {"organismId": "chlamydia", "level": "none"},
+        {"organismId": "legionella", "level": "none"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA Practice Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "vancomycin",
+      "name": "Vancomycin",
+      "genericName": "Vancomycin",
+      "class": "Glycopeptides",
+      "spectrumBreadth": "narrow",
+      "clinicalUse": "MRSA infections, C. difficile (oral), Gram-positive infections in penicillin-allergic patients",
+      "keyPoints": [
+        "Gold standard for MRSA",
+        "No Gram-negative coverage",
+        "Requires therapeutic drug monitoring"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "excellent"},
+        {"organismId": "mrsa", "level": "excellent"},
+        {"organismId": "strep-pneumo", "level": "excellent"},
+        {"organismId": "strep-pyogenes", "level": "excellent"},
+        {"organismId": "enterococcus-faecalis", "level": "excellent"},
+        {"organismId": "enterococcus-faecium", "level": "variable", "notes": "VRE strains are resistant"},
+        {"organismId": "e-coli", "level": "none"},
+        {"organismId": "e-coli-esbl", "level": "none"},
+        {"organismId": "klebsiella", "level": "none"},
+        {"organismId": "klebsiella-esbl", "level": "none"},
+        {"organismId": "pseudomonas", "level": "none"},
+        {"organismId": "acinetobacter", "level": "none"},
+        {"organismId": "bacteroides", "level": "none"},
+        {"organismId": "clostridium", "level": "excellent", "notes": "Oral vancomycin for C. difficile colitis"},
+        {"organismId": "mycoplasma", "level": "none"},
+        {"organismId": "chlamydia", "level": "none"},
+        {"organismId": "legionella", "level": "none"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA MRSA Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "azithromycin",
+      "name": "Azithromycin",
+      "genericName": "Azithromycin",
+      "class": "Macrolides",
+      "spectrumBreadth": "extended",
+      "clinicalUse": "Community-acquired pneumonia, atypical infections, sexually transmitted infections",
+      "keyPoints": [
+        "Excellent atypical coverage",
+        "Good oral bioavailability",
+        "Long half-life allows once-daily dosing"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "good"},
+        {"organismId": "mrsa", "level": "none"},
+        {"organismId": "strep-pneumo", "level": "good"},
+        {"organismId": "strep-pyogenes", "level": "good"},
+        {"organismId": "enterococcus-faecalis", "level": "none"},
+        {"organismId": "enterococcus-faecium", "level": "none"},
+        {"organismId": "e-coli", "level": "none"},
+        {"organismId": "e-coli-esbl", "level": "none"},
+        {"organismId": "klebsiella", "level": "none"},
+        {"organismId": "klebsiella-esbl", "level": "none"},
+        {"organismId": "pseudomonas", "level": "none"},
+        {"organismId": "acinetobacter", "level": "none"},
+        {"organismId": "bacteroides", "level": "none"},
+        {"organismId": "clostridium", "level": "none"},
+        {"organismId": "mycoplasma", "level": "excellent"},
+        {"organismId": "chlamydia", "level": "excellent"},
+        {"organismId": "legionella", "level": "excellent"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA CAP Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "ciprofloxacin",
+      "name": "Ciprofloxacin",
+      "genericName": "Ciprofloxacin",
+      "class": "Fluoroquinolones",
+      "spectrumBreadth": "broad",
+      "clinicalUse": "Urinary tract infections, Gram-negative infections, Pseudomonas infections",
+      "keyPoints": [
+        "Excellent Gram-negative coverage including Pseudomonas",
+        "Good oral bioavailability",
+        "Limited Gram-positive coverage"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "good"},
+        {"organismId": "mrsa", "level": "none"},
+        {"organismId": "strep-pneumo", "level": "poor"},
+        {"organismId": "strep-pyogenes", "level": "poor"},
+        {"organismId": "enterococcus-faecalis", "level": "poor"},
+        {"organismId": "enterococcus-faecium", "level": "none"},
+        {"organismId": "e-coli", "level": "excellent"},
+        {"organismId": "e-coli-esbl", "level": "variable"},
+        {"organismId": "klebsiella", "level": "excellent"},
+        {"organismId": "klebsiella-esbl", "level": "variable"},
+        {"organismId": "pseudomonas", "level": "excellent"},
+        {"organismId": "acinetobacter", "level": "variable"},
+        {"organismId": "bacteroides", "level": "none"},
+        {"organismId": "clostridium", "level": "none"},
+        {"organismId": "mycoplasma", "level": "good"},
+        {"organismId": "chlamydia", "level": "good"},
+        {"organismId": "legionella", "level": "good"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA Practice Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "metronidazole",
+      "name": "Metronidazole",
+      "genericName": "Metronidazole",
+      "class": "Nitroimidazoles",
+      "spectrumBreadth": "narrow",
+      "clinicalUse": "Anaerobic infections, C. difficile, intra-abdominal infections, bacterial vaginosis",
+      "keyPoints": [
+        "Excellent anaerobic coverage",
+        "First-line for C. difficile (mild-moderate)",
+        "No aerobic coverage"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "none"},
+        {"organismId": "mrsa", "level": "none"},
+        {"organismId": "strep-pneumo", "level": "none"},
+        {"organismId": "strep-pyogenes", "level": "none"},
+        {"organismId": "enterococcus-faecalis", "level": "none"},
+        {"organismId": "enterococcus-faecium", "level": "none"},
+        {"organismId": "e-coli", "level": "none"},
+        {"organismId": "e-coli-esbl", "level": "none"},
+        {"organismId": "klebsiella", "level": "none"},
+        {"organismId": "klebsiella-esbl", "level": "none"},
+        {"organismId": "pseudomonas", "level": "none"},
+        {"organismId": "acinetobacter", "level": "none"},
+        {"organismId": "bacteroides", "level": "excellent"},
+        {"organismId": "clostridium", "level": "excellent"},
+        {"organismId": "mycoplasma", "level": "none"},
+        {"organismId": "chlamydia", "level": "none"},
+        {"organismId": "legionella", "level": "none"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA C. difficile Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "ampicillin",
+      "name": "Ampicillin",
+      "genericName": "Ampicillin",
+      "class": "Penicillins",
+      "spectrumBreadth": "extended",
+      "clinicalUse": "Meningitis, endocarditis, urinary tract infections, listeriosis",
+      "keyPoints": [
+        "Good for Enterococcus and Listeria",
+        "IV formulation for serious infections",
+        "No MRSA or ESBL coverage"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "good"},
+        {"organismId": "mrsa", "level": "none"},
+        {"organismId": "strep-pneumo", "level": "excellent"},
+        {"organismId": "strep-pyogenes", "level": "excellent"},
+        {"organismId": "enterococcus-faecalis", "level": "excellent"},
+        {"organismId": "enterococcus-faecium", "level": "variable"},
+        {"organismId": "e-coli", "level": "variable"},
+        {"organismId": "e-coli-esbl", "level": "none"},
+        {"organismId": "klebsiella", "level": "poor"},
+        {"organismId": "klebsiella-esbl", "level": "none"},
+        {"organismId": "pseudomonas", "level": "none"},
+        {"organismId": "acinetobacter", "level": "none"},
+        {"organismId": "bacteroides", "level": "poor"},
+        {"organismId": "clostridium", "level": "none"},
+        {"organismId": "mycoplasma", "level": "none"},
+        {"organismId": "chlamydia", "level": "none"},
+        {"organismId": "legionella", "level": "none"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA Practice Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "ceftazidime",
+      "name": "Ceftazidime",
+      "genericName": "Ceftazidime",
+      "class": "Cephalosporins (3rd Generation)",
+      "spectrumBreadth": "broad",
+      "clinicalUse": "Pseudomonas infections, hospital-acquired pneumonia, febrile neutropenia",
+      "keyPoints": [
+        "Excellent Pseudomonas coverage",
+        "Weaker Gram-positive coverage than other 3rd gen",
+        "Often combined with aminoglycosides"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "poor"},
+        {"organismId": "mrsa", "level": "none"},
+        {"organismId": "strep-pneumo", "level": "good"},
+        {"organismId": "strep-pyogenes", "level": "good"},
+        {"organismId": "enterococcus-faecalis", "level": "none"},
+        {"organismId": "enterococcus-faecium", "level": "none"},
+        {"organismId": "e-coli", "level": "excellent"},
+        {"organismId": "e-coli-esbl", "level": "none"},
+        {"organismId": "klebsiella", "level": "excellent"},
+        {"organismId": "klebsiella-esbl", "level": "none"},
+        {"organismId": "pseudomonas", "level": "excellent"},
+        {"organismId": "acinetobacter", "level": "variable"},
+        {"organismId": "bacteroides", "level": "none"},
+        {"organismId": "clostridium", "level": "none"},
+        {"organismId": "mycoplasma", "level": "none"},
+        {"organismId": "chlamydia", "level": "none"},
+        {"organismId": "legionella", "level": "none"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA HAP/VAP Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "imipenem",
+      "name": "Imipenem-Cilastatin",
+      "genericName": "Imipenem-Cilastatin",
+      "class": "Carbapenems",
+      "spectrumBreadth": "broad",
+      "clinicalUse": "Severe hospital-acquired infections, polymicrobial infections, ESBL producers",
+      "keyPoints": [
+        "Broadest spectrum beta-lactam",
+        "Reserved for severe infections",
+        "Risk of seizures at high doses"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "excellent"},
+        {"organismId": "mrsa", "level": "none"},
+        {"organismId": "strep-pneumo", "level": "excellent"},
+        {"organismId": "strep-pyogenes", "level": "excellent"},
+        {"organismId": "enterococcus-faecalis", "level": "good"},
+        {"organismId": "enterococcus-faecium", "level": "none"},
+        {"organismId": "e-coli", "level": "excellent"},
+        {"organismId": "e-coli-esbl", "level": "excellent"},
+        {"organismId": "klebsiella", "level": "excellent"},
+        {"organismId": "klebsiella-esbl", "level": "excellent"},
+        {"organismId": "pseudomonas", "level": "good"},
+        {"organismId": "acinetobacter", "level": "variable"},
+        {"organismId": "bacteroides", "level": "excellent"},
+        {"organismId": "clostridium", "level": "good"},
+        {"organismId": "mycoplasma", "level": "none"},
+        {"organismId": "chlamydia", "level": "none"},
+        {"organismId": "legionella", "level": "none"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA Practice Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "ertapenem",
+      "name": "Ertapenem",
+      "genericName": "Ertapenem",
+      "class": "Carbapenems",
+      "spectrumBreadth": "broad",
+      "clinicalUse": "Community-acquired infections, ESBL producers, once-daily carbapenem",
+      "keyPoints": [
+        "Once-daily dosing",
+        "No Pseudomonas or Acinetobacter coverage",
+        "Good for ESBL producers"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "excellent"},
+        {"organismId": "mrsa", "level": "none"},
+        {"organismId": "strep-pneumo", "level": "excellent"},
+        {"organismId": "strep-pyogenes", "level": "excellent"},
+        {"organismId": "enterococcus-faecalis", "level": "poor"},
+        {"organismId": "enterococcus-faecium", "level": "none"},
+        {"organismId": "e-coli", "level": "excellent"},
+        {"organismId": "e-coli-esbl", "level": "excellent"},
+        {"organismId": "klebsiella", "level": "excellent"},
+        {"organismId": "klebsiella-esbl", "level": "excellent"},
+        {"organismId": "pseudomonas", "level": "none"},
+        {"organismId": "acinetobacter", "level": "none"},
+        {"organismId": "bacteroides", "level": "excellent"},
+        {"organismId": "clostridium", "level": "good"},
+        {"organismId": "mycoplasma", "level": "none"},
+        {"organismId": "chlamydia", "level": "none"},
+        {"organismId": "legionella", "level": "none"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA Practice Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "gentamicin",
+      "name": "Gentamicin",
+      "genericName": "Gentamicin",
+      "class": "Aminoglycosides",
+      "spectrumBreadth": "broad",
+      "clinicalUse": "Gram-negative infections, endocarditis (synergy), sepsis",
+      "keyPoints": [
+        "Excellent Gram-negative coverage",
+        "Synergistic with beta-lactams",
+        "Nephrotoxic and ototoxic - monitor levels"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "good"},
+        {"organismId": "mrsa", "level": "variable"},
+        {"organismId": "strep-pneumo", "level": "poor"},
+        {"organismId": "strep-pyogenes", "level": "poor"},
+        {"organismId": "enterococcus-faecalis", "level": "variable"},
+        {"organismId": "enterococcus-faecium", "level": "variable"},
+        {"organismId": "e-coli", "level": "excellent"},
+        {"organismId": "e-coli-esbl", "level": "good"},
+        {"organismId": "klebsiella", "level": "excellent"},
+        {"organismId": "klebsiella-esbl", "level": "good"},
+        {"organismId": "pseudomonas", "level": "excellent"},
+        {"organismId": "acinetobacter", "level": "good"},
+        {"organismId": "bacteroides", "level": "none"},
+        {"organismId": "clostridium", "level": "none"},
+        {"organismId": "mycoplasma", "level": "none"},
+        {"organismId": "chlamydia", "level": "none"},
+        {"organismId": "legionella", "level": "none"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA Endocarditis Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "amikacin",
+      "name": "Amikacin",
+      "genericName": "Amikacin",
+      "class": "Aminoglycosides",
+      "spectrumBreadth": "broad",
+      "clinicalUse": "Multidrug-resistant Gram-negatives, mycobacterial infections",
+      "keyPoints": [
+        "More resistant to aminoglycoside-modifying enzymes",
+        "Reserved for resistant organisms",
+        "Nephrotoxic and ototoxic"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "good"},
+        {"organismId": "mrsa", "level": "variable"},
+        {"organismId": "strep-pneumo", "level": "poor"},
+        {"organismId": "strep-pyogenes", "level": "poor"},
+        {"organismId": "enterococcus-faecalis", "level": "variable"},
+        {"organismId": "enterococcus-faecium", "level": "variable"},
+        {"organismId": "e-coli", "level": "excellent"},
+        {"organismId": "e-coli-esbl", "level": "excellent"},
+        {"organismId": "klebsiella", "level": "excellent"},
+        {"organismId": "klebsiella-esbl", "level": "excellent"},
+        {"organismId": "pseudomonas", "level": "excellent"},
+        {"organismId": "acinetobacter", "level": "excellent"},
+        {"organismId": "bacteroides", "level": "none"},
+        {"organismId": "clostridium", "level": "none"},
+        {"organismId": "mycoplasma", "level": "none"},
+        {"organismId": "chlamydia", "level": "none"},
+        {"organismId": "legionella", "level": "none"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA Practice Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "doxycycline",
+      "name": "Doxycycline",
+      "genericName": "Doxycycline",
+      "class": "Tetracyclines",
+      "spectrumBreadth": "broad",
+      "clinicalUse": "Atypical pneumonia, tick-borne diseases, acne, MRSA (community)",
+      "keyPoints": [
+        "Excellent oral bioavailability",
+        "Good for atypical organisms",
+        "Avoid in pregnancy and children <8 years"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "good"},
+        {"organismId": "mrsa", "level": "good"},
+        {"organismId": "strep-pneumo", "level": "variable"},
+        {"organismId": "strep-pyogenes", "level": "variable"},
+        {"organismId": "enterococcus-faecalis", "level": "poor"},
+        {"organismId": "enterococcus-faecium", "level": "poor"},
+        {"organismId": "e-coli", "level": "variable"},
+        {"organismId": "e-coli-esbl", "level": "poor"},
+        {"organismId": "klebsiella", "level": "variable"},
+        {"organismId": "klebsiella-esbl", "level": "poor"},
+        {"organismId": "pseudomonas", "level": "none"},
+        {"organismId": "acinetobacter", "level": "variable"},
+        {"organismId": "bacteroides", "level": "poor"},
+        {"organismId": "clostridium", "level": "none"},
+        {"organismId": "mycoplasma", "level": "excellent"},
+        {"organismId": "chlamydia", "level": "excellent"},
+        {"organismId": "legionella", "level": "good"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA CAP Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "levofloxacin",
+      "name": "Levofloxacin",
+      "genericName": "Levofloxacin",
+      "class": "Fluoroquinolones",
+      "spectrumBreadth": "broad",
+      "clinicalUse": "Community-acquired pneumonia, urinary tract infections, prostatitis",
+      "keyPoints": [
+        "Excellent oral bioavailability",
+        "Good respiratory penetration",
+        "Risk of tendon rupture and C. difficile"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "excellent"},
+        {"organismId": "mrsa", "level": "variable"},
+        {"organismId": "strep-pneumo", "level": "excellent"},
+        {"organismId": "strep-pyogenes", "level": "excellent"},
+        {"organismId": "enterococcus-faecalis", "level": "variable"},
+        {"organismId": "enterococcus-faecium", "level": "poor"},
+        {"organismId": "e-coli", "level": "excellent"},
+        {"organismId": "e-coli-esbl", "level": "variable"},
+        {"organismId": "klebsiella", "level": "excellent"},
+        {"organismId": "klebsiella-esbl", "level": "variable"},
+        {"organismId": "pseudomonas", "level": "good"},
+        {"organismId": "acinetobacter", "level": "variable"},
+        {"organismId": "bacteroides", "level": "poor"},
+        {"organismId": "clostridium", "level": "none"},
+        {"organismId": "mycoplasma", "level": "excellent"},
+        {"organismId": "chlamydia", "level": "excellent"},
+        {"organismId": "legionella", "level": "excellent"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA CAP Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "moxifloxacin",
+      "name": "Moxifloxacin",
+      "genericName": "Moxifloxacin",
+      "class": "Fluoroquinolones",
+      "spectrumBreadth": "broad",
+      "clinicalUse": "Community-acquired pneumonia, intra-abdominal infections, skin infections",
+      "keyPoints": [
+        "Enhanced anaerobic coverage vs other fluoroquinolones",
+        "No Pseudomonas coverage",
+        "QT prolongation risk"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "excellent"},
+        {"organismId": "mrsa", "level": "variable"},
+        {"organismId": "strep-pneumo", "level": "excellent"},
+        {"organismId": "strep-pyogenes", "level": "excellent"},
+        {"organismId": "enterococcus-faecalis", "level": "variable"},
+        {"organismId": "enterococcus-faecium", "level": "poor"},
+        {"organismId": "e-coli", "level": "excellent"},
+        {"organismId": "e-coli-esbl", "level": "variable"},
+        {"organismId": "klebsiella", "level": "excellent"},
+        {"organismId": "klebsiella-esbl", "level": "variable"},
+        {"organismId": "pseudomonas", "level": "none"},
+        {"organismId": "acinetobacter", "level": "variable"},
+        {"organismId": "bacteroides", "level": "good"},
+        {"organismId": "clostridium", "level": "good"},
+        {"organismId": "mycoplasma", "level": "excellent"},
+        {"organismId": "chlamydia", "level": "excellent"},
+        {"organismId": "legionella", "level": "excellent"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA CAP Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "linezolid",
+      "name": "Linezolid",
+      "genericName": "Linezolid",
+      "class": "Oxazolidinones",
+      "spectrumBreadth": "narrow",
+      "clinicalUse": "MRSA infections, VRE infections, nosocomial pneumonia",
+      "keyPoints": [
+        "Excellent MRSA and VRE coverage",
+        "100% oral bioavailability",
+        "Risk of myelosuppression with prolonged use"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "excellent"},
+        {"organismId": "mrsa", "level": "excellent"},
+        {"organismId": "strep-pneumo", "level": "excellent"},
+        {"organismId": "strep-pyogenes", "level": "excellent"},
+        {"organismId": "enterococcus-faecalis", "level": "excellent"},
+        {"organismId": "enterococcus-faecium", "level": "excellent"},
+        {"organismId": "e-coli", "level": "none"},
+        {"organismId": "e-coli-esbl", "level": "none"},
+        {"organismId": "klebsiella", "level": "none"},
+        {"organismId": "klebsiella-esbl", "level": "none"},
+        {"organismId": "pseudomonas", "level": "none"},
+        {"organismId": "acinetobacter", "level": "none"},
+        {"organismId": "bacteroides", "level": "none"},
+        {"organismId": "clostridium", "level": "good"},
+        {"organismId": "mycoplasma", "level": "none"},
+        {"organismId": "chlamydia", "level": "none"},
+        {"organismId": "legionella", "level": "none"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA MRSA Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "daptomycin",
+      "name": "Daptomycin",
+      "genericName": "Daptomycin",
+      "class": "Lipopeptides",
+      "spectrumBreadth": "narrow",
+      "clinicalUse": "MRSA bacteremia, endocarditis, complicated skin infections",
+      "keyPoints": [
+        "Rapid bactericidal activity",
+        "Not for pneumonia (inactivated by surfactant)",
+        "Monitor CPK levels"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "excellent"},
+        {"organismId": "mrsa", "level": "excellent"},
+        {"organismId": "strep-pneumo", "level": "excellent"},
+        {"organismId": "strep-pyogenes", "level": "excellent"},
+        {"organismId": "enterococcus-faecalis", "level": "excellent"},
+        {"organismId": "enterococcus-faecium", "level": "excellent"},
+        {"organismId": "e-coli", "level": "none"},
+        {"organismId": "e-coli-esbl", "level": "none"},
+        {"organismId": "klebsiella", "level": "none"},
+        {"organismId": "klebsiella-esbl", "level": "none"},
+        {"organismId": "pseudomonas", "level": "none"},
+        {"organismId": "acinetobacter", "level": "none"},
+        {"organismId": "bacteroides", "level": "none"},
+        {"organismId": "clostridium", "level": "good"},
+        {"organismId": "mycoplasma", "level": "none"},
+        {"organismId": "chlamydia", "level": "none"},
+        {"organismId": "legionella", "level": "none"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA Endocarditis Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "clindamycin",
+      "name": "Clindamycin",
+      "genericName": "Clindamycin",
+      "class": "Lincosamides",
+      "spectrumBreadth": "extended",
+      "clinicalUse": "Skin and soft tissue infections, anaerobic infections, dental infections",
+      "keyPoints": [
+        "Good anaerobic and MSSA coverage",
+        "Excellent tissue penetration",
+        "Risk of C. difficile infection"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "excellent"},
+        {"organismId": "mrsa", "level": "variable"},
+        {"organismId": "strep-pneumo", "level": "good"},
+        {"organismId": "strep-pyogenes", "level": "excellent"},
+        {"organismId": "enterococcus-faecalis", "level": "none"},
+        {"organismId": "enterococcus-faecium", "level": "none"},
+        {"organismId": "e-coli", "level": "none"},
+        {"organismId": "e-coli-esbl", "level": "none"},
+        {"organismId": "klebsiella", "level": "none"},
+        {"organismId": "klebsiella-esbl", "level": "none"},
+        {"organismId": "pseudomonas", "level": "none"},
+        {"organismId": "acinetobacter", "level": "none"},
+        {"organismId": "bacteroides", "level": "excellent"},
+        {"organismId": "clostridium", "level": "variable"},
+        {"organismId": "mycoplasma", "level": "none"},
+        {"organismId": "chlamydia", "level": "none"},
+        {"organismId": "legionella", "level": "none"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA SSTI Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "trimethoprim-sulfamethoxazole",
+      "name": "Trimethoprim-Sulfamethoxazole",
+      "genericName": "TMP-SMX (Co-trimoxazole)",
+      "class": "Folate Antagonists",
+      "spectrumBreadth": "broad",
+      "clinicalUse": "UTIs, MRSA (community), Pneumocystis pneumonia, toxoplasmosis",
+      "keyPoints": [
+        "Excellent oral bioavailability",
+        "Good for community MRSA",
+        "Avoid in pregnancy (1st trimester)"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "excellent"},
+        {"organismId": "mrsa", "level": "excellent"},
+        {"organismId": "strep-pneumo", "level": "variable"},
+        {"organismId": "strep-pyogenes", "level": "variable"},
+        {"organismId": "enterococcus-faecalis", "level": "none"},
+        {"organismId": "enterococcus-faecium", "level": "none"},
+        {"organismId": "e-coli", "level": "good"},
+        {"organismId": "e-coli-esbl", "level": "variable"},
+        {"organismId": "klebsiella", "level": "good"},
+        {"organismId": "klebsiella-esbl", "level": "variable"},
+        {"organismId": "pseudomonas", "level": "none"},
+        {"organismId": "acinetobacter", "level": "variable"},
+        {"organismId": "bacteroides", "level": "none"},
+        {"organismId": "clostridium", "level": "none"},
+        {"organismId": "mycoplasma", "level": "none"},
+        {"organismId": "chlamydia", "level": "none"},
+        {"organismId": "legionella", "level": "none"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA MRSA Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "colistin",
+      "name": "Colistin (Polymyxin E)",
+      "genericName": "Colistimethate Sodium",
+      "class": "Polymyxins",
+      "spectrumBreadth": "narrow",
+      "clinicalUse": "Multidrug-resistant Gram-negatives (last resort), carbapenem-resistant organisms",
+      "keyPoints": [
+        "Reserved for MDR Gram-negatives",
+        "Nephrotoxic and neurotoxic",
+        "Often used in combination therapy"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "none"},
+        {"organismId": "mrsa", "level": "none"},
+        {"organismId": "strep-pneumo", "level": "none"},
+        {"organismId": "strep-pyogenes", "level": "none"},
+        {"organismId": "enterococcus-faecalis", "level": "none"},
+        {"organismId": "enterococcus-faecium", "level": "none"},
+        {"organismId": "e-coli", "level": "excellent"},
+        {"organismId": "e-coli-esbl", "level": "excellent"},
+        {"organismId": "klebsiella", "level": "excellent"},
+        {"organismId": "klebsiella-esbl", "level": "excellent"},
+        {"organismId": "pseudomonas", "level": "excellent"},
+        {"organismId": "acinetobacter", "level": "excellent"},
+        {"organismId": "bacteroides", "level": "none"},
+        {"organismId": "clostridium", "level": "none"},
+        {"organismId": "mycoplasma", "level": "none"},
+        {"organismId": "chlamydia", "level": "none"},
+        {"organismId": "legionella", "level": "none"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA MDR Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "tigecycline",
+      "name": "Tigecycline",
+      "genericName": "Tigecycline",
+      "class": "Glycylcyclines",
+      "spectrumBreadth": "broad",
+      "clinicalUse": "Complicated intra-abdominal infections, skin infections, MDR organisms",
+      "keyPoints": [
+        "Broad spectrum including MRSA and VRE",
+        "No Pseudomonas coverage",
+        "Black box warning for increased mortality"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "excellent"},
+        {"organismId": "mrsa", "level": "excellent"},
+        {"organismId": "strep-pneumo", "level": "good"},
+        {"organismId": "strep-pyogenes", "level": "good"},
+        {"organismId": "enterococcus-faecalis", "level": "excellent"},
+        {"organismId": "enterococcus-faecium", "level": "excellent"},
+        {"organismId": "e-coli", "level": "excellent"},
+        {"organismId": "e-coli-esbl", "level": "excellent"},
+        {"organismId": "klebsiella", "level": "excellent"},
+        {"organismId": "klebsiella-esbl", "level": "excellent"},
+        {"organismId": "pseudomonas", "level": "none"},
+        {"organismId": "acinetobacter", "level": "good"},
+        {"organismId": "bacteroides", "level": "excellent"},
+        {"organismId": "clostridium", "level": "good"},
+        {"organismId": "mycoplasma", "level": "good"},
+        {"organismId": "chlamydia", "level": "good"},
+        {"organismId": "legionella", "level": "good"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA Practice Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    },
+    {
+      "id": "clarithromycin",
+      "name": "Clarithromycin",
+      "genericName": "Clarithromycin",
+      "class": "Macrolides",
+      "spectrumBreadth": "extended",
+      "clinicalUse": "Community-acquired pneumonia, H. pylori eradication, MAC prophylaxis",
+      "keyPoints": [
+        "Better oral absorption than erythromycin",
+        "Good for atypical organisms",
+        "Drug interactions via CYP3A4"
+      ],
+      "coverage": [
+        {"organismId": "mssa", "level": "good"},
+        {"organismId": "mrsa", "level": "none"},
+        {"organismId": "strep-pneumo", "level": "excellent"},
+        {"organismId": "strep-pyogenes", "level": "excellent"},
+        {"organismId": "enterococcus-faecalis", "level": "none"},
+        {"organismId": "enterococcus-faecium", "level": "none"},
+        {"organismId": "e-coli", "level": "none"},
+        {"organismId": "e-coli-esbl", "level": "none"},
+        {"organismId": "klebsiella", "level": "none"},
+        {"organismId": "klebsiella-esbl", "level": "none"},
+        {"organismId": "pseudomonas", "level": "none"},
+        {"organismId": "acinetobacter", "level": "none"},
+        {"organismId": "bacteroides", "level": "none"},
+        {"organismId": "clostridium", "level": "none"},
+        {"organismId": "mycoplasma", "level": "excellent"},
+        {"organismId": "chlamydia", "level": "excellent"},
+        {"organismId": "legionella", "level": "excellent"}
+      ],
+      "references": [
+        {"label": "WHO Model List of Essential Medicines", "url": "https://www.who.int/publications/i/item/WHO-MHP-HPS-EML-2023.02"},
+        {"label": "IDSA CAP Guidelines", "url": "https://www.idsociety.org/practice-guideline/"}
+      ]
+    }
+  ]
+}
+

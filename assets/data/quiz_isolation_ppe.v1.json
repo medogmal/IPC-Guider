@@ -1,0 +1,610 @@
+{
+  "title": "Isolation Precautions & PPE Quiz",
+  "description": "Comprehensive quiz covering isolation precautions, personal protective equipment, and infection prevention practices",
+  "version": "1.0",
+  "module": "isolation",
+  "totalStages": 5,
+  "questionsPerStage": 10,
+  "questions": [
+    {
+      "id": "iso_s1_q1",
+      "module": "isolation",
+      "stage": 1,
+      "question": "Standard precautions should be applied to:",
+      "options": ["Only confirmed infectious patients", "All patients in all healthcare settings", "Only patients in isolation", "Only immunocompromised patients"],
+      "answerIndex": 1,
+      "explanation": "Standard precautions are the foundation of infection prevention and should be applied to all patients in all healthcare settings.",
+      "references": [
+        { "label": "CDC Isolation Guidelines", "url": "https://www.cdc.gov/infectioncontrol/guidelines/isolation/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s1_q2",
+      "module": "isolation",
+      "stage": 1,
+      "question": "Contact precautions require:",
+      "options": ["Gloves only", "Gown only", "Gloves and gown", "N95 respirator"],
+      "answerIndex": 2,
+      "explanation": "Contact precautions require both gloves and gown to prevent transmission of organisms through direct contact or contact with contaminated surfaces.",
+      "references": [
+        { "label": "CDC Contact Precautions", "url": "https://www.cdc.gov/infectioncontrol/basics/precautions.html" }
+      ]
+    },
+    {
+      "id": "iso_s1_q3",
+      "module": "isolation",
+      "stage": 1,
+      "question": "Droplet precautions are used for organisms transmitted by:",
+      "options": ["Large respiratory droplets >5 microns", "Small airborne particles <5 microns", "Direct contact only", "Bloodborne transmission"],
+      "answerIndex": 0,
+      "explanation": "Droplet precautions are for organisms transmitted by large respiratory droplets (>5 microns) that travel short distances.",
+      "references": [
+        { "label": "CDC Droplet Precautions", "url": "https://www.cdc.gov/infectioncontrol/basics/precautions.html" }
+      ]
+    },
+    {
+      "id": "iso_s1_q4",
+      "module": "isolation",
+      "stage": 1,
+      "question": "Airborne precautions require:",
+      "options": ["Surgical mask", "N95 respirator or higher", "Face shield only", "Gloves and gown only"],
+      "answerIndex": 1,
+      "explanation": "Airborne precautions require N95 respirator or higher level respiratory protection to filter small airborne particles.",
+      "references": [
+        { "label": "CDC Airborne Precautions", "url": "https://www.cdc.gov/infectioncontrol/basics/precautions.html" }
+      ]
+    },
+    {
+      "id": "iso_s1_q5",
+      "module": "isolation",
+      "stage": 1,
+      "question": "Hand hygiene should be performed:",
+      "options": ["Only when hands are visibly soiled", "Before and after patient contact", "Only after removing gloves", "Only when entering patient rooms"],
+      "answerIndex": 1,
+      "explanation": "Hand hygiene should be performed before and after patient contact as part of the WHO 5 Moments for Hand Hygiene.",
+      "references": [
+        { "label": "WHO 5 Moments", "url": "https://www.who.int/publications/i/item/WHO-HIS-SDS-2014.1" }
+      ]
+    },
+    {
+      "id": "iso_s1_q6",
+      "module": "isolation",
+      "stage": 1,
+      "question": "PPE should be removed in which order:",
+      "options": ["Gloves, gown, mask, eye protection", "Gown, gloves, eye protection, mask", "Gloves, eye protection, gown, mask", "Eye protection, gown, gloves, mask"],
+      "answerIndex": 0,
+      "explanation": "PPE removal order: gloves first (most contaminated), then gown, eye protection, and mask/respirator last.",
+      "references": [
+        { "label": "CDC PPE Sequence", "url": "https://www.cdc.gov/hai/prevent/ppe.html" }
+      ]
+    },
+    {
+      "id": "iso_s1_q7",
+      "module": "isolation",
+      "stage": 1,
+      "question": "A private room is required for:",
+      "options": ["Standard precautions only", "Contact precautions only", "Airborne precautions", "All isolation precautions"],
+      "answerIndex": 2,
+      "explanation": "Private rooms are required for airborne precautions. Contact and droplet precautions prefer private rooms but allow cohorting.",
+      "references": [
+        { "label": "CDC Isolation Guidelines", "url": "https://www.cdc.gov/infectioncontrol/guidelines/isolation/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s1_q8",
+      "module": "isolation",
+      "stage": 1,
+      "question": "Negative pressure rooms are required for:",
+      "options": ["Contact precautions", "Droplet precautions", "Airborne precautions", "Standard precautions"],
+      "answerIndex": 2,
+      "explanation": "Negative pressure rooms (AIIRs) are required for airborne precautions to prevent airborne organisms from escaping the room.",
+      "references": [
+        { "label": "CDC AIIR Guidelines", "url": "https://www.cdc.gov/infectioncontrol/guidelines/environmental/background/air.html" }
+      ]
+    },
+    {
+      "id": "iso_s1_q9",
+      "module": "isolation",
+      "stage": 1,
+      "question": "Eye protection is required for:",
+      "options": ["All patient contact", "When splashing is anticipated", "Only during surgery", "Contact precautions only"],
+      "answerIndex": 1,
+      "explanation": "Eye protection is required when splashing of blood, body fluids, secretions, or excretions is anticipated.",
+      "references": [
+        { "label": "CDC Standard Precautions", "url": "https://www.cdc.gov/infectioncontrol/basics/standard-precautions.html" }
+      ]
+    },
+    {
+      "id": "iso_s1_q10",
+      "module": "isolation",
+      "stage": 1,
+      "question": "Alcohol-based hand rub is NOT effective against:",
+      "options": ["MRSA", "Influenza virus", "C. difficile spores", "E. coli"],
+      "answerIndex": 2,
+      "explanation": "Alcohol-based hand rub is not effective against C. difficile spores; soap and water handwashing is required.",
+      "references": [
+        { "label": "CDC C. difficile Guidelines", "url": "https://www.cdc.gov/cdiff/clinicians/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s2_q1",
+      "module": "isolation",
+      "stage": 2,
+      "question": "MRSA requires which type of precautions?",
+      "options": ["Standard precautions only", "Contact precautions", "Droplet precautions", "Airborne precautions"],
+      "answerIndex": 1,
+      "explanation": "MRSA requires contact precautions (gloves and gown) in addition to standard precautions due to transmission through direct contact or contaminated surfaces.",
+      "references": [
+        { "label": "CDC MRSA Guidelines", "url": "https://www.cdc.gov/mrsa/healthcare/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s2_q2",
+      "module": "isolation",
+      "stage": 2,
+      "question": "Tuberculosis (TB) requires:",
+      "options": ["Contact precautions", "Droplet precautions", "Airborne precautions with N95 respirator", "Standard precautions only"],
+      "answerIndex": 2,
+      "explanation": "Active pulmonary TB requires airborne precautions with N95 respirator or PAPR in an airborne infection isolation room (AIIR) with negative pressure.",
+      "references": [
+        { "label": "CDC TB Guidelines", "url": "https://www.cdc.gov/tb/topic/infectioncontrol/default.htm" }
+      ]
+    },
+    {
+      "id": "iso_s2_q3",
+      "module": "isolation",
+      "stage": 2,
+      "question": "VRE (Vancomycin-Resistant Enterococcus) requires:",
+      "options": ["Airborne precautions", "Droplet precautions", "Contact precautions", "Standard precautions only"],
+      "answerIndex": 2,
+      "explanation": "VRE requires contact precautions due to transmission through direct contact with patients or contaminated environmental surfaces.",
+      "references": [
+        { "label": "CDC VRE Guidelines", "url": "https://www.cdc.gov/hai/organisms/vre/vre.html" }
+      ]
+    },
+    {
+      "id": "iso_s2_q4",
+      "module": "isolation",
+      "stage": 2,
+      "question": "Influenza requires which precautions?",
+      "options": ["Contact precautions only", "Droplet precautions", "Airborne precautions", "Standard precautions only"],
+      "answerIndex": 1,
+      "explanation": "Seasonal influenza requires droplet precautions (surgical mask within 6 feet) due to transmission through large respiratory droplets.",
+      "references": [
+        { "label": "CDC Influenza Guidelines", "url": "https://www.cdc.gov/flu/professionals/infectioncontrol/index.htm" }
+      ]
+    },
+    {
+      "id": "iso_s2_q5",
+      "module": "isolation",
+      "stage": 2,
+      "question": "CRE (Carbapenem-Resistant Enterobacteriaceae) requires:",
+      "options": ["Standard precautions only", "Contact precautions", "Droplet precautions", "Airborne precautions"],
+      "answerIndex": 1,
+      "explanation": "CRE requires contact precautions due to transmission through direct contact and contaminated equipment. Enhanced barrier precautions may be needed during outbreaks.",
+      "references": [
+        { "label": "CDC CRE Toolkit", "url": "https://www.cdc.gov/hai/organisms/cre/cre-toolkit/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s2_q6",
+      "module": "isolation",
+      "stage": 2,
+      "question": "Measles requires which precautions?",
+      "options": ["Contact precautions", "Droplet precautions", "Airborne precautions", "Standard precautions only"],
+      "answerIndex": 2,
+      "explanation": "Measles is highly contagious and requires airborne precautions with N95 respirator due to transmission through small airborne particles that remain suspended in air.",
+      "references": [
+        { "label": "CDC Measles Guidelines", "url": "https://www.cdc.gov/measles/hcp/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s2_q7",
+      "module": "isolation",
+      "stage": 2,
+      "question": "Scabies requires:",
+      "options": ["Airborne precautions", "Droplet precautions", "Contact precautions", "Standard precautions only"],
+      "answerIndex": 2,
+      "explanation": "Scabies requires contact precautions due to transmission through direct skin-to-skin contact. Crusted (Norwegian) scabies requires enhanced contact precautions.",
+      "references": [
+        { "label": "CDC Scabies Guidelines", "url": "https://www.cdc.gov/parasites/scabies/health-professionals/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s2_q8",
+      "module": "isolation",
+      "stage": 2,
+      "question": "COVID-19 requires which precautions in healthcare settings?",
+      "options": ["Standard precautions only", "Contact and droplet precautions with eye protection", "Airborne precautions only", "Droplet precautions only"],
+      "answerIndex": 1,
+      "explanation": "COVID-19 requires contact and droplet precautions with eye protection. N95 respirator is required for aerosol-generating procedures.",
+      "references": [
+        { "label": "CDC COVID-19 Infection Control", "url": "https://www.cdc.gov/coronavirus/2019-ncov/hcp/infection-control.html" }
+      ]
+    },
+    {
+      "id": "iso_s2_q9",
+      "module": "isolation",
+      "stage": 2,
+      "question": "Norovirus requires:",
+      "options": ["Airborne precautions", "Droplet precautions", "Contact precautions", "Standard precautions only"],
+      "answerIndex": 2,
+      "explanation": "Norovirus requires contact precautions due to transmission through fecal-oral route and contaminated surfaces. Environmental cleaning with bleach is essential.",
+      "references": [
+        { "label": "CDC Norovirus Guidelines", "url": "https://www.cdc.gov/norovirus/hcp/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s2_q10",
+      "module": "isolation",
+      "stage": 2,
+      "question": "Pertussis (whooping cough) requires:",
+      "options": ["Contact precautions", "Droplet precautions", "Airborne precautions", "Standard precautions only"],
+      "answerIndex": 1,
+      "explanation": "Pertussis requires droplet precautions due to transmission through large respiratory droplets during coughing. Precautions continue until 5 days of appropriate antibiotic therapy.",
+      "references": [
+        { "label": "CDC Pertussis Guidelines", "url": "https://www.cdc.gov/pertussis/clinical/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s3_q1",
+      "module": "isolation",
+      "stage": 3,
+      "question": "A patient with MRSA pneumonia and C. difficile diarrhea requires:",
+      "options": ["Contact precautions only", "Droplet precautions only", "Contact precautions with soap and water hand hygiene", "Airborne precautions"],
+      "answerIndex": 2,
+      "explanation": "Both MRSA and C. difficile require contact precautions. C. difficile spores require soap and water handwashing instead of alcohol-based hand rub.",
+      "references": [
+        { "label": "CDC Isolation Guidelines", "url": "https://www.cdc.gov/infectioncontrol/guidelines/isolation/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s3_q2",
+      "module": "isolation",
+      "stage": 3,
+      "question": "During aerosol-generating procedures on a COVID-19 patient, you should wear:",
+      "options": ["Surgical mask only", "N95 respirator, gown, gloves, eye protection", "Gloves and gown only", "Droplet precautions PPE"],
+      "answerIndex": 1,
+      "explanation": "Aerosol-generating procedures (intubation, bronchoscopy, suctioning) require N95 respirator or PAPR, gown, gloves, and eye protection due to increased aerosol generation.",
+      "references": [
+        { "label": "CDC COVID-19 AGP Guidelines", "url": "https://www.cdc.gov/coronavirus/2019-ncov/hcp/infection-control.html" }
+      ]
+    },
+    {
+      "id": "iso_s3_q3",
+      "module": "isolation",
+      "stage": 3,
+      "question": "A patient with suspected TB has a negative pressure room unavailable. What is the BEST alternative?",
+      "options": ["Place in any private room", "Delay admission until AIIR available", "Place in private room with door closed and N95 for all entering", "Place in semi-private room"],
+      "answerIndex": 2,
+      "explanation": "If AIIR unavailable, place patient in private room with door closed, use N95 respirators for all entering, and transfer to facility with AIIR as soon as possible.",
+      "references": [
+        { "label": "CDC TB Infection Control", "url": "https://www.cdc.gov/tb/topic/infectioncontrol/default.htm" }
+      ]
+    },
+    {
+      "id": "iso_s3_q4",
+      "module": "isolation",
+      "stage": 3,
+      "question": "When can contact precautions be discontinued for MRSA colonization?",
+      "options": ["After 24 hours of antibiotics", "After 3 negative surveillance cultures", "Never, once colonized always colonized", "After discharge from hospital"],
+      "answerIndex": 1,
+      "explanation": "Contact precautions for MRSA can be discontinued after 3 negative surveillance cultures from previously positive sites, taken at least 1 week apart, per facility policy.",
+      "references": [
+        { "label": "CDC MRSA Management", "url": "https://www.cdc.gov/mrsa/healthcare/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s3_q5",
+      "module": "isolation",
+      "stage": 3,
+      "question": "A patient with varicella (chickenpox) requires:",
+      "options": ["Contact precautions only", "Droplet precautions only", "Airborne and contact precautions", "Standard precautions only"],
+      "answerIndex": 2,
+      "explanation": "Varicella requires both airborne precautions (respiratory transmission) and contact precautions (direct contact with lesions). Immune healthcare workers may provide care.",
+      "references": [
+        { "label": "CDC Varicella Guidelines", "url": "https://www.cdc.gov/chickenpox/hcp/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s3_q6",
+      "module": "isolation",
+      "stage": 3,
+      "question": "PPE donning sequence should be:",
+      "options": ["Gloves, gown, mask, eye protection", "Gown, mask, eye protection, gloves", "Mask, gown, gloves, eye protection", "Eye protection, mask, gown, gloves"],
+      "answerIndex": 1,
+      "explanation": "Correct donning sequence: gown first, then mask/respirator, then eye protection, then gloves last (to cover gown cuffs).",
+      "references": [
+        { "label": "CDC PPE Sequence", "url": "https://www.cdc.gov/hai/prevent/ppe.html" }
+      ]
+    },
+    {
+      "id": "iso_s3_q7",
+      "module": "isolation",
+      "stage": 3,
+      "question": "A patient with disseminated herpes zoster requires:",
+      "options": ["Contact precautions only", "Droplet precautions only", "Airborne and contact precautions", "Standard precautions only"],
+      "answerIndex": 2,
+      "explanation": "Disseminated (or localized in immunocompromised) herpes zoster requires airborne and contact precautions until lesions are crusted. Localized zoster in immunocompetent patients requires contact precautions only.",
+      "references": [
+        { "label": "CDC Herpes Zoster Guidelines", "url": "https://www.cdc.gov/shingles/hcp/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s3_q8",
+      "module": "isolation",
+      "stage": 3,
+      "question": "N95 respirator fit testing should be performed:",
+      "options": ["Once at hire only", "Annually and when changing respirator model", "Every 6 months", "Only if the user requests it"],
+      "answerIndex": 1,
+      "explanation": "N95 fit testing is required annually, when changing respirator model/size, and after significant facial changes (weight loss/gain, dental work, facial surgery).",
+      "references": [
+        { "label": "CDC Respiratory Protection", "url": "https://www.cdc.gov/niosh/topics/respirators/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s3_q9",
+      "module": "isolation",
+      "stage": 3,
+      "question": "A patient with MDRO (multi-drug resistant organism) in a wound requires:",
+      "options": ["Airborne precautions", "Droplet precautions", "Contact precautions", "Standard precautions only"],
+      "answerIndex": 2,
+      "explanation": "MDROs (MRSA, VRE, CRE, MDRO Acinetobacter, MDRO Pseudomonas) require contact precautions to prevent transmission through direct contact or contaminated surfaces.",
+      "references": [
+        { "label": "CDC MDRO Management", "url": "https://www.cdc.gov/infectioncontrol/guidelines/mdro/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s3_q10",
+      "module": "isolation",
+      "stage": 3,
+      "question": "When caring for a patient on contact precautions, dedicated equipment should:",
+      "options": ["Never be used", "Be used and left in the room or cleaned/disinfected before use on another patient", "Be shared freely between patients", "Only be used for airborne precautions"],
+      "answerIndex": 1,
+      "explanation": "Dedicated equipment (stethoscope, BP cuff, thermometer) should remain in the room or be cleaned and disinfected with EPA-registered disinfectant before use on another patient.",
+      "references": [
+        { "label": "CDC Contact Precautions", "url": "https://www.cdc.gov/infectioncontrol/basics/precautions.html" }
+      ]
+    },
+    {
+      "id": "iso_s4_q1",
+      "module": "isolation",
+      "stage": 4,
+      "question": "During a CRE outbreak, enhanced barrier precautions include:",
+      "options": ["Standard precautions only", "Contact precautions with dedicated staff and equipment", "Droplet precautions", "Airborne precautions"],
+      "answerIndex": 1,
+      "explanation": "CRE outbreaks require enhanced barrier precautions: contact precautions, dedicated staff/equipment, active surveillance cultures, cohorting, and enhanced environmental cleaning.",
+      "references": [
+        { "label": "CDC CRE Toolkit", "url": "https://www.cdc.gov/hai/organisms/cre/cre-toolkit/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s4_q2",
+      "module": "isolation",
+      "stage": 4,
+      "question": "A patient with suspected viral hemorrhagic fever (Ebola) requires:",
+      "options": ["Standard precautions only", "Contact and droplet precautions with eye protection", "Contact, droplet, and airborne precautions with PAPR", "Droplet precautions only"],
+      "answerIndex": 2,
+      "explanation": "Viral hemorrhagic fevers require strict isolation with contact, droplet, and airborne precautions using PAPR, impermeable gown, double gloves, and dedicated trained staff.",
+      "references": [
+        { "label": "CDC VHF Guidelines", "url": "https://www.cdc.gov/vhf/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s4_q3",
+      "module": "isolation",
+      "stage": 4,
+      "question": "Cohorting patients during an outbreak means:",
+      "options": ["Isolating each patient separately", "Grouping patients with same organism together with dedicated staff", "Mixing all patients regardless of infection", "Discharging all infected patients"],
+      "answerIndex": 1,
+      "explanation": "Cohorting groups patients infected with the same organism together (geographic or by dedicated staff) when private rooms are limited, preventing cross-transmission to uninfected patients.",
+      "references": [
+        { "label": "CDC Cohorting Guidelines", "url": "https://www.cdc.gov/infectioncontrol/guidelines/isolation/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s4_q4",
+      "module": "isolation",
+      "stage": 4,
+      "question": "A healthcare worker with active TB should:",
+      "options": ["Continue working with surgical mask", "Be placed on medical leave until non-infectious", "Work only in non-patient care areas", "Continue normal duties"],
+      "answerIndex": 1,
+      "explanation": "Healthcare workers with active TB must be placed on medical leave until they are non-infectious (3 negative sputum smears, clinical improvement, at least 2 weeks of appropriate therapy).",
+      "references": [
+        { "label": "CDC TB HCW Guidelines", "url": "https://www.cdc.gov/tb/topic/infectioncontrol/default.htm" }
+      ]
+    },
+    {
+      "id": "iso_s4_q5",
+      "module": "isolation",
+      "stage": 4,
+      "question": "During a norovirus outbreak, environmental cleaning should use:",
+      "options": ["Alcohol-based disinfectants", "Quaternary ammonium compounds", "Bleach (sodium hypochlorite) at 1,000-5,000 ppm", "Soap and water only"],
+      "answerIndex": 2,
+      "explanation": "Norovirus requires EPA-registered disinfectants with norovirus claims or bleach at 1,000-5,000 ppm (1:50 to 1:10 dilution). Alcohol and quats are not effective against norovirus.",
+      "references": [
+        { "label": "CDC Norovirus Cleaning", "url": "https://www.cdc.gov/norovirus/hcp/cleaning-disinfecting.html" }
+      ]
+    },
+    {
+      "id": "iso_s4_q6",
+      "module": "isolation",
+      "stage": 4,
+      "question": "A patient with suspected novel respiratory pathogen requires:",
+      "options": ["Standard precautions only", "Contact and droplet precautions", "Contact, droplet, and airborne precautions until transmission mode clarified", "Wait for CDC guidance before implementing precautions"],
+      "answerIndex": 2,
+      "explanation": "For novel pathogens with unknown transmission, use precautionary approach with contact + droplet + airborne precautions until transmission mode is clarified through epidemiologic investigation.",
+      "references": [
+        { "label": "CDC Emerging Pathogens", "url": "https://www.cdc.gov/eid/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s4_q7",
+      "module": "isolation",
+      "stage": 4,
+      "question": "PAPR (Powered Air-Purifying Respirator) is preferred over N95 for:",
+      "options": ["All patients on airborne precautions", "Prolonged care of airborne precaution patients or when N95 fit test fails", "Contact precautions only", "Standard precautions"],
+      "answerIndex": 1,
+      "explanation": "PAPR is preferred for prolonged care of airborne precaution patients, when N95 fit test fails, for healthcare workers with facial hair, or during high-risk aerosol-generating procedures.",
+      "references": [
+        { "label": "CDC Respiratory Protection", "url": "https://www.cdc.gov/niosh/topics/respirators/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s4_q8",
+      "module": "isolation",
+      "stage": 4,
+      "question": "Active surveillance cultures for MDRO should be performed on:",
+      "options": ["All admitted patients", "Only symptomatic patients", "High-risk patients (ICU, prior MDRO, transfers from high-prevalence facilities)", "No patients, surveillance cultures are not useful"],
+      "answerIndex": 2,
+      "explanation": "Active surveillance cultures target high-risk patients: ICU admissions, prior MDRO history, transfers from high-prevalence facilities, or during outbreaks to identify colonized patients early.",
+      "references": [
+        { "label": "CDC MDRO Surveillance", "url": "https://www.cdc.gov/infectioncontrol/guidelines/mdro/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s4_q9",
+      "module": "isolation",
+      "stage": 4,
+      "question": "A patient with C. difficile infection should remain on contact precautions until:",
+      "options": ["24 hours after last diarrhea", "48 hours after symptom resolution", "Discharge or 48 hours after diarrhea resolution, whichever is longer", "Negative stool test"],
+      "answerIndex": 2,
+      "explanation": "Contact precautions for C. difficile continue until discharge or at least 48 hours after diarrhea resolution, whichever is longer. Do not test for cure as patients may remain colonized.",
+      "references": [
+        { "label": "CDC C. difficile Guidelines", "url": "https://www.cdc.gov/cdiff/clinicians/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s4_q10",
+      "module": "isolation",
+      "stage": 4,
+      "question": "During an influenza pandemic with limited N95 respirators, extended use means:",
+      "options": ["Reusing respirators between patients", "Wearing same respirator for multiple patient encounters without removal", "Sharing respirators between staff", "Using surgical masks instead"],
+      "answerIndex": 1,
+      "explanation": "Extended use means wearing the same N95 respirator for multiple patient encounters without removing it between patients (but removing for breaks). Reuse means doffing and re-donning the same respirator.",
+      "references": [
+        { "label": "CDC N95 Extended Use", "url": "https://www.cdc.gov/niosh/topics/hcwcontrols/recommendedguidanceextuse.html" }
+      ]
+    },
+    {
+      "id": "iso_s5_q1",
+      "module": "isolation",
+      "stage": 5,
+      "question": "Your ICU has 3 AIIR rooms and 5 patients requiring airborne precautions (2 TB, 2 measles, 1 varicella). How should you prioritize room assignment?",
+      "options": ["First come, first served", "TB patients get AIIRs; cohort measles patients; varicella in private room with N95 for all entering", "All patients in regular rooms with N95", "Discharge patients to free rooms"],
+      "answerIndex": 1,
+      "explanation": "Prioritize TB for AIIRs (highest transmission risk, longest duration). Cohort measles patients together (same pathogen, immune staff can care). Varicella in private room with N95 until AIIR available.",
+      "references": [
+        { "label": "CDC Airborne Precautions", "url": "https://www.cdc.gov/infectioncontrol/guidelines/isolation/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s5_q2",
+      "module": "isolation",
+      "stage": 5,
+      "question": "A pregnant healthcare worker asks to be excused from caring for a patient with varicella. The MOST appropriate response is:",
+      "options": ["Refuse, all staff must provide care", "Check immunity status; if non-immune, reassign to avoid exposure", "Require N95 use regardless of immunity", "Terminate employment"],
+      "answerIndex": 1,
+      "explanation": "Check varicella immunity (history of disease or vaccination). Non-immune pregnant workers should be reassigned to avoid exposure due to risk of congenital varicella syndrome. Immune workers can safely provide care.",
+      "references": [
+        { "label": "CDC Varicella HCW Guidelines", "url": "https://www.cdc.gov/chickenpox/hcp/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s5_q3",
+      "module": "isolation",
+      "stage": 5,
+      "question": "Your facility is considering discontinuing contact precautions for endemic MRSA. What evidence should guide this decision?",
+      "options": ["Cost savings alone", "Horizontal infection prevention measures (hand hygiene, environmental cleaning, stewardship) + surveillance data + risk assessment", "Personal preference of physicians", "Eliminate all isolation precautions"],
+      "answerIndex": 1,
+      "explanation": "Decision requires: strong horizontal measures, sustained low MRSA rates, active surveillance, risk assessment by population, and multidisciplinary consensus. Some facilities successfully transitioned with robust programs.",
+      "references": [
+        { "label": "CDC MRSA Management", "url": "https://www.cdc.gov/mrsa/healthcare/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s5_q4",
+      "module": "isolation",
+      "stage": 5,
+      "question": "A patient with XDR-TB (extensively drug-resistant TB) requires transfer to another facility. What is the MOST critical step?",
+      "options": ["Transfer immediately without notification", "Notify receiving facility, arrange specialized transport with airborne precautions, and coordinate with public health", "Refuse transfer", "Use standard ambulance transport"],
+      "answerIndex": 1,
+      "explanation": "XDR-TB transfer requires: advance notification to receiving facility, specialized transport with airborne precautions (negative pressure ambulance if available), N95 for patient and staff, and public health coordination.",
+      "references": [
+        { "label": "CDC XDR-TB Guidelines", "url": "https://www.cdc.gov/tb/topic/drtb/default.htm" }
+      ]
+    },
+    {
+      "id": "iso_s5_q5",
+      "module": "isolation",
+      "stage": 5,
+      "question": "During a pandemic with PPE shortages, crisis capacity strategies include:",
+      "options": ["Abandon all infection control", "Extended use and limited reuse of N95s, prioritize PPE for high-risk procedures, consider alternatives (PAPRs, reusable elastomerics)", "Use no PPE to conserve supplies", "Close the hospital"],
+      "answerIndex": 1,
+      "explanation": "Crisis capacity: extended use/limited reuse of N95s per CDC guidance, prioritize PPE for aerosol-generating procedures, consider alternatives (PAPRs, elastomeric respirators), and implement conservation strategies.",
+      "references": [
+        { "label": "CDC PPE Crisis Strategies", "url": "https://www.cdc.gov/coronavirus/2019-ncov/hcp/ppe-strategy/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s5_q6",
+      "module": "isolation",
+      "stage": 5,
+      "question": "A patient refuses to wear a mask despite having active TB. The MOST appropriate action is:",
+      "options": ["Discharge the patient immediately", "Educate patient, involve ethics committee, consider involuntary isolation if public health risk, and notify public health authorities", "Ignore the refusal", "Physically restrain the patient"],
+      "answerIndex": 1,
+      "explanation": "Balance patient autonomy with public health protection: educate on risks, involve ethics committee, consider involuntary isolation as last resort per public health laws, and coordinate with health department.",
+      "references": [
+        { "label": "CDC TB Infection Control", "url": "https://www.cdc.gov/tb/topic/infectioncontrol/default.htm" }
+      ]
+    },
+    {
+      "id": "iso_s5_q7",
+      "module": "isolation",
+      "stage": 5,
+      "question": "Your facility wants to implement universal gloving (gloves for all patient contact). What is the BEST approach?",
+      "options": ["Implement immediately without evaluation", "Evaluate impact on hand hygiene compliance, cost, waste, and patient perception before implementation", "Never use gloves", "Use gloves only for isolation patients"],
+      "answerIndex": 1,
+      "explanation": "Universal gloving may reduce hand hygiene compliance (false sense of security). Evaluate: hand hygiene rates, cost-effectiveness, environmental impact, patient perception, and ensure gloves don't replace hand hygiene.",
+      "references": [
+        { "label": "CDC Hand Hygiene Guidelines", "url": "https://www.cdc.gov/handhygiene/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s5_q8",
+      "module": "isolation",
+      "stage": 5,
+      "question": "A novel pathogen emerges with 40% mortality and unknown transmission. Initial precautions should be:",
+      "options": ["Standard precautions only", "Wait for WHO guidance", "Implement highest level precautions (contact + droplet + airborne) until transmission clarified", "Droplet precautions only"],
+      "answerIndex": 2,
+      "explanation": "Precautionary principle: implement highest level precautions (contact + droplet + airborne with PAPR) for novel high-mortality pathogens until transmission mode is clarified through epidemiologic investigation.",
+      "references": [
+        { "label": "CDC Emerging Pathogens", "url": "https://www.cdc.gov/eid/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s5_q9",
+      "module": "isolation",
+      "stage": 5,
+      "question": "Your hospital's MDRO rates are rising despite contact precautions. What is the MOST comprehensive approach?",
+      "options": ["Add more isolation rooms", "Implement horizontal strategies: hand hygiene improvement, environmental cleaning enhancement, antimicrobial stewardship, active surveillance, and decolonization protocols", "Eliminate contact precautions", "Blame the staff"],
+      "answerIndex": 1,
+      "explanation": "Comprehensive MDRO prevention requires horizontal strategies: hand hygiene bundles, enhanced environmental cleaning, antimicrobial stewardship, active surveillance, decolonization (if appropriate), and contact precautions.",
+      "references": [
+        { "label": "CDC MDRO Management", "url": "https://www.cdc.gov/infectioncontrol/guidelines/mdro/index.html" }
+      ]
+    },
+    {
+      "id": "iso_s5_q10",
+      "module": "isolation",
+      "stage": 5,
+      "question": "As IPC Director, you must allocate limited isolation rooms during a multi-pathogen outbreak (CRE, C. difficile, influenza). What is the MOST evidence-based prioritization?",
+      "options": ["First come, first served", "Prioritize based on transmission risk, severity, and availability of alternatives: CRE (highest priority), C. difficile (high priority), influenza (cohort if possible)", "Isolate only influenza patients", "Discharge all infected patients"],
+      "answerIndex": 1,
+      "explanation": "Prioritize by transmission risk and consequences: CRE (highest - limited treatment, high mortality), C. difficile (high - environmental contamination), influenza (cohort immune-vaccinated staff). Use cohorting and enhanced cleaning.",
+      "references": [
+        { "label": "CDC Isolation Guidelines", "url": "https://www.cdc.gov/infectioncontrol/guidelines/isolation/index.html" }
+      ]
+    }
+  ]
+}

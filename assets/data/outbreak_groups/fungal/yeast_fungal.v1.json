@@ -1,0 +1,501 @@
+{
+  "version": 1,
+  "groupId": "yeast_fungal",
+  "groupName": "Yeast Outbreak Pathogens",
+  "type": "fungal",
+  "updatedAt": "2025-01-14T00:00:00Z",
+  "pathogens": [
+    {
+      "id": "candida_auris",
+      "name": "Candida auris",
+      "scientificName": "Candida auris, phylum Ascomycota, class Saccharomycetes",
+      "definition": "Emerging multidrug-resistant yeast causing invasive infections with high mortality (30-60%). First identified in 2009 in Japan. Highly transmissible in healthcare settings with ability to persist on surfaces for weeks. Often resistant to multiple antifungal classes (azoles, amphotericin B, echinocandins). Difficult to identify with standard laboratory methods. Major global health threat. Outbreaks reported in >40 countries. WHO Fungal Priority Pathogens List (Critical Priority Group).",
+      "reservoir": {
+        "primary": [
+          "Colonized or infected humans (skin, wounds, urine, blood, respiratory tract)",
+          "Contaminated healthcare surfaces and equipment"
+        ],
+        "secondary": [],
+        "notes": "Humans are primary reservoir. C. auris colonizes skin and mucous membranes and can persist for months. Environmental contamination is extensive - virus can survive on surfaces for weeks to months. No known environmental or animal reservoir outside healthcare settings."
+      },
+      "transmission": {
+        "mode": "Direct and indirect contact transmission",
+        "routes": [
+          "Direct contact: hands of healthcare workers (primary route)",
+          "Indirect contact: contaminated surfaces (bed rails, monitors, blood pressure cuffs, thermometers, ventilators, infusion pumps)",
+          "Contaminated shared medical equipment",
+          "Patient-to-patient transmission through healthcare worker hands or equipment"
+        ],
+        "notes": "C. auris is highly transmissible in healthcare settings. Can persist on surfaces for weeks to months despite routine cleaning. Spreads rapidly through healthcare facilities. NOT transmitted through air or casual contact outside healthcare settings."
+      },
+      "incubationPeriod": {
+        "range": "Days to weeks for colonization after exposure. Variable time from colonization to infection (days to months)",
+        "infectiousPeriod": "Infectious (transmissible) as long as colonized or infected. Colonization can persist for months even after treatment. Patients remain colonized indefinitely in many cases",
+        "seasonality": "No seasonal pattern; healthcare-associated",
+        "geographic": "Global distribution. Outbreaks reported in >40 countries across all continents. Endemic in many healthcare facilities worldwide"
+      },
+      "riskFactors": [
+        "ICU admission (especially prolonged ICU stay)",
+        "NICU admission (neonates at high risk)",
+        "Chronic/complex medical conditions (diabetes, chronic kidney disease, respiratory disease)",
+        "Central venous catheters and other invasive devices",
+        "Broad-spectrum antibiotic use (especially prolonged courses)",
+        "Antifungal exposure (especially fluconazole)",
+        "Mechanical ventilation",
+        "Recent surgery",
+        "Immunosuppression",
+        "Prolonged hospitalization",
+        "Transfer from facility with known C. auris",
+        "Contact with C. auris patient"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Invasive candidiasis: candidemia (bloodstream infection) - most common presentation. Fever, chills, hypotension, septic shock",
+          "Wound infections: surgical site infections, chronic wounds",
+          "Urinary tract infections: catheter-associated UTI",
+          "Ear infections: otitis externa, otitis media (especially in neonates)",
+          "Respiratory tract colonization/infection (ventilator-associated)",
+          "Intra-abdominal infections",
+          "Meningitis and ventriculitis (rare)",
+          "Endocarditis (rare)",
+          "Colonization: asymptomatic carriage on skin, in wounds, urine, respiratory tract"
+        ],
+        "complications": [
+          "Septic shock and multi-organ failure",
+          "Persistent candidemia despite treatment (due to antifungal resistance)",
+          "Metastatic complications: endophthalmitis, osteomyelitis, endocarditis",
+          "Death (mortality rate 30-60% for invasive infections)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with invasive fungal infection + risk factors (ICU, central lines, broad-spectrum antibiotics) + epidemiological link (contact with C. auris patient, transfer from facility with C. auris)",
+          "confirmed": "Clinical infection + laboratory identification of C. auris from clinical specimen (blood, wound, urine, CSF, etc.) by specialized methods (MALDI-TOF, PCR, sequencing)"
+        }
+      },
+      "diagnosis": [
+        "Culture: C. auris grows on routine fungal culture media but is often misidentified as other Candida species (C. haemulonii, C. famata) by conventional methods",
+        "MALDI-TOF mass spectrometry: accurate species identification (requires updated database)",
+        "Molecular methods: PCR, DNA sequencing (ITS region, D1/D2 region) - gold standard for identification",
+        "Antifungal susceptibility testing: essential due to multidrug resistance. Broth microdilution method",
+        "Screening: surveillance cultures from skin (axilla, groin), wounds, urine, respiratory tract for colonization detection",
+        "Specialized laboratory required for accurate identification - send to reference laboratory if C. auris suspected"
+      ],
+      "treatment": "Echinocandins (micafungin, caspofungin, anidulafungin) - first-line treatment for invasive infections. High-dose amphotericin B or combination therapy for echinocandin-resistant isolates. Azoles (fluconazole, voriconazole) only if susceptible (many isolates resistant). Treatment guided by antifungal susceptibility testing. Source control: remove central lines and other devices if possible. Prolonged treatment often required (14-21 days minimum for candidemia). Decolonization: not routinely recommended (limited evidence of efficacy).",
+      "infectionControl": {
+        "precautions": "Contact Precautions (in addition to Standard Precautions). Single room preferred; cohort if single rooms unavailable. Dedicated equipment (blood pressure cuffs, thermometers, stethoscopes, etc.). Gloves and gown for all patient contact. Hand hygiene with soap and water or alcohol-based hand rub before and after patient contact",
+        "screening": "Active surveillance screening for colonization: screen contacts of C. auris patients, patients transferred from facilities with C. auris, patients with epidemiological risk factors. Screen multiple body sites (axilla, groin, wounds, urine, respiratory tract)",
+        "cohorting": "Cohort C. auris patients in dedicated unit or area if multiple cases. Dedicated nursing staff for cohort (avoid caring for other patients). Restrict patient movement and transport",
+        "sourceControl": "Remove or replace invasive devices (central lines, urinary catheters) if possible",
+        "environmental": "Enhanced environmental cleaning and disinfection: daily cleaning with EPA-registered disinfectant effective against C. auris (chlorine-based products, hydrogen peroxide, quaternary ammonium compounds with label claims). Terminal cleaning after patient discharge or transfer. Consider UV-C disinfection. Clean high-touch surfaces multiple times daily. Audit cleaning practices",
+        "staffEducation": "Rigorous training on C. auris transmission, infection control measures, hand hygiene, environmental cleaning, screening protocols. Avoid sharing equipment between patients. Immediate notification of suspected or confirmed cases"
+      },
+      "outbreakTriggers": [
+        "Any single confirmed case of C. auris (especially in facility without prior cases)",
+        "≥2 linked cases in same unit or facility",
+        "Unexpected detection in low-prevalence area",
+        "Identification in screening cultures (indicates transmission)"
+      ],
+      "reportingCommunication": [
+        "Immediate notification to infection prevention and control team",
+        "Immediate notification to public health authorities (C. auris is reportable in many jurisdictions)",
+        "Activate multidisciplinary outbreak response team: infection control, microbiology, infectious diseases, hospital administration, public health",
+        "Enhanced surveillance: active screening of contacts and at-risk patients, environmental sampling",
+        "Contact tracing: identify all patient contacts, healthcare worker exposures, shared equipment",
+        "Implement outbreak control measures: enhanced infection control, cohorting, dedicated staff, environmental cleaning, restrict admissions/transfers if necessary",
+        "Communication: notify receiving facilities of C. auris status when transferring patients, alert referring facilities",
+        "Regional/national reporting: report to CDC (USA), PHE (UK), or equivalent national authority",
+        "Global surveillance: report to WHO if indicated"
+      ],
+      "prevention": [
+        "Strict hand hygiene: soap and water or alcohol-based hand rub before and after all patient contact",
+        "Contact Precautions for all C. auris patients (colonized or infected)",
+        "Enhanced environmental cleaning: daily and terminal cleaning with appropriate disinfectants (chlorine-based products preferred)",
+        "Dedicated equipment: avoid sharing equipment between patients; if sharing necessary, clean and disinfect thoroughly between patients",
+        "Active surveillance screening: screen high-risk patients (ICU, NICU, transfers from facilities with C. auris, contacts of C. auris patients)",
+        "Antifungal stewardship: judicious use of antifungals (especially fluconazole) to reduce selection pressure",
+        "Device management: remove invasive devices as soon as clinically appropriate, strict adherence to insertion and maintenance bundles",
+        "Staff education: ongoing training on C. auris recognition, transmission, infection control",
+        "Admission screening: screen patients transferred from facilities with known C. auris",
+        "Point prevalence surveys: periodic screening of ICU/NICU patients to detect unrecognized transmission",
+        "Visitor education: hand hygiene, avoid contact with patient environment",
+        "Early detection and isolation: rapid identification and implementation of infection control measures"
+      ],
+      "references": [
+        {
+          "label": "CDC - Candida auris",
+          "url": "https://www.cdc.gov/candida-auris/index.html"
+        },
+        {
+          "label": "WHO - Fungal Priority Pathogens List",
+          "url": "https://www.who.int/publications/i/item/9789240060241"
+        },
+        {
+          "label": "Saudi GDIPC - Candida auris",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "candida_parapsilosis",
+      "name": "Candida parapsilosis",
+      "scientificName": "Candida parapsilosis, phylum Ascomycota, class Saccharomycetes",
+      "definition": "Yeast commonly found on human skin and in healthcare environment. Major cause of device-related and catheter-associated infections, especially in neonates and ICU patients. Frequently associated with outbreaks related to contaminated medical devices, parenteral nutrition, and healthcare worker hands. Forms biofilms on catheters and prosthetic devices. Generally susceptible to azoles but resistance emerging. Third most common cause of candidemia globally.",
+      "reservoir": {
+        "primary": [
+          "Human skin (especially hands) of patients and healthcare workers",
+          "Gastrointestinal tract"
+        ],
+        "secondary": [
+          "Hospital surfaces and equipment",
+          "Parenteral nutrition solutions",
+          "Medical devices (catheters, prosthetic devices)"
+        ],
+        "notes": "C. parapsilosis is part of normal skin flora, especially on hands. Healthcare workers' hands are major reservoir and transmission vehicle. Can survive and multiply in glucose-containing solutions (parenteral nutrition). Environmental contamination common in healthcare settings."
+      },
+      "transmission": {
+        "mode": "Direct contact (hands), contaminated medical devices and fluids",
+        "routes": [
+          "Direct contact: hands of healthcare workers (primary route) - C. parapsilosis colonizes hands more readily than other Candida species",
+          "Contaminated medical devices: central venous catheters, peripheral IV catheters, prosthetic devices",
+          "Contaminated parenteral nutrition (TPN) solutions - C. parapsilosis can grow in glucose-rich solutions",
+          "Contaminated infusates and IV fluids",
+          "Shared equipment between patients"
+        ],
+        "notes": "C. parapsilosis is unique among Candida species in its ability to colonize healthcare workers' hands and be transmitted exogenously. Outbreaks often traced to contaminated TPN, IV fluids, or hands of healthcare workers. Biofilm formation on catheters facilitates persistence."
+      },
+      "incubationPeriod": {
+        "range": "Days from exposure to colonization. Variable time from colonization to infection (days to weeks)",
+        "infectiousPeriod": "Can colonize for prolonged periods. Transmissible as long as colonized",
+        "seasonality": "No seasonal pattern; healthcare-associated",
+        "geographic": "Worldwide distribution. Common in healthcare facilities globally"
+      },
+      "riskFactors": [
+        "Neonates (especially very low birth weight infants in NICU) - highest risk group",
+        "Central venous catheters (especially long-term catheters)",
+        "Parenteral nutrition (TPN) - major risk factor",
+        "Prolonged ICU stay",
+        "Broad-spectrum antibiotic use",
+        "Immunosuppression",
+        "Abdominal surgery",
+        "Prosthetic devices (heart valves, joints)",
+        "Hemodialysis",
+        "Shared medical equipment"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Central line-associated bloodstream infection (CLABSI) - most common presentation. Fever, chills, hypotension",
+          "Catheter-associated urinary tract infection",
+          "Surgical site infections",
+          "Endocarditis (especially prosthetic valve endocarditis)",
+          "Peritonitis (especially in peritoneal dialysis patients)",
+          "Arthritis and osteomyelitis (prosthetic joint infections)",
+          "Endophthalmitis",
+          "Outbreaks in NICU: clusters of candidemia in neonates"
+        ],
+        "complications": [
+          "Persistent candidemia despite catheter removal",
+          "Metastatic complications: endophthalmitis, endocarditis, osteomyelitis",
+          "Septic shock",
+          "Death (mortality rate 20-40% for candidemia, lower than other Candida species)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with catheter-related infection + risk factors (central line, TPN, NICU) + epidemiological link (cluster of cases in same unit)",
+          "confirmed": "Clinical infection + laboratory identification of C. parapsilosis from blood, catheter tip, or other sterile site"
+        }
+      },
+      "diagnosis": [
+        "Blood culture: C. parapsilosis grows readily on routine blood culture media",
+        "Catheter tip culture: semi-quantitative or quantitative culture",
+        "Species identification: biochemical tests, MALDI-TOF mass spectrometry, molecular methods",
+        "Antifungal susceptibility testing: generally susceptible to azoles and echinocandins, but resistance emerging",
+        "Molecular typing for outbreak investigation: pulsed-field gel electrophoresis (PFGE), multilocus sequence typing (MLST), whole genome sequencing"
+      ],
+      "treatment": "Azoles (fluconazole, voriconazole) - first-line for susceptible isolates. Echinocandins (micafungin, caspofungin, anidulafungin) - alternative, especially for azole-resistant isolates or critically ill patients. Source control: remove central venous catheter (essential for cure). Treatment duration: 14 days after first negative blood culture and resolution of symptoms. Longer treatment for complicated infections (endocarditis, osteomyelitis).",
+      "infectionControl": {
+        "precautions": "Contact Precautions during outbreaks. Standard Precautions for sporadic cases. Gloves and gown for patient contact during outbreaks",
+        "screening": "Not routinely recommended. Consider screening during outbreaks: surveillance cultures from hands of healthcare workers, environmental sampling",
+        "cohorting": "Cohort affected patients during outbreaks. Restrict staff cohorting - avoid healthcare workers caring for affected patients also caring for other high-risk patients (neonates, ICU)",
+        "sourceControl": "Remove central venous catheters and other devices. Discontinue parenteral nutrition if contaminated",
+        "environmental": "Enhanced cleaning and disinfection of equipment and surfaces. Disinfect shared equipment between patients. Audit cleaning practices",
+        "staffEducation": "Strict hand hygiene (soap and water or alcohol-based hand rub) before and after all patient contact. Proper catheter insertion and maintenance techniques. Aseptic preparation of parenteral nutrition and IV fluids"
+      },
+      "outbreakTriggers": [
+        "≥2-3 CLABSI cases with C. parapsilosis in same unit (especially NICU or ICU) within defined time period",
+        "Cluster of cases in time or location",
+        "Sudden spike in C. parapsilosis candidemia rate above baseline"
+      ],
+      "reportingCommunication": [
+        "Notify infection prevention and control team",
+        "Notify public health authorities if outbreak",
+        "Implement outbreak investigation: case finding, environmental sampling, hand cultures of healthcare workers, review of TPN preparation and catheter care practices",
+        "Molecular typing to confirm outbreak (compare isolates from patients, environment, healthcare workers)",
+        "Implement control measures: enhanced hand hygiene, catheter care bundles, review TPN preparation, cohort patients, restrict staff",
+        "Communication with staff, patients, families"
+      ],
+      "prevention": [
+        "Strict hand hygiene: soap and water or alcohol-based hand rub before and after all patient contact (most important prevention measure)",
+        "Central line insertion and maintenance bundles: maximal sterile barrier precautions during insertion, daily review of line necessity, proper dressing changes, hub disinfection",
+        "Parenteral nutrition (TPN) protocols: aseptic preparation in pharmacy, minimize manipulation, proper storage, discard if contamination suspected",
+        "Device management: remove catheters as soon as clinically appropriate, avoid unnecessary catheterization",
+        "Avoid sharing equipment between patients; if sharing necessary, clean and disinfect thoroughly",
+        "Environmental cleaning: routine cleaning and disinfection of patient care areas and equipment",
+        "Staff education: hand hygiene, catheter care, TPN handling, recognition of outbreaks",
+        "Surveillance: monitor CLABSI rates, investigate clusters",
+        "Antifungal stewardship: judicious use of antifungals"
+      ],
+      "references": [
+        {
+          "label": "CDC - Healthcare-associated Fungal Outbreaks",
+          "url": "https://www.cdc.gov/fungal/outbreaks/index.html"
+        },
+        {
+          "label": "WHO - Fungal Priority Pathogens List",
+          "url": "https://www.who.int/publications/i/item/9789240060241"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "candida_albicans",
+      "name": "Candida albicans",
+      "scientificName": "Candida albicans, phylum Ascomycota, class Saccharomycetes",
+      "definition": "Most common Candida species causing human infections. Commensal organism found in gastrointestinal tract, mouth, and vagina of healthy individuals. Leading cause of candidemia and invasive candidiasis worldwide. Can cause superficial infections (oral thrush, esophagitis, vulvovaginal candidiasis) and invasive infections (candidemia, deep-seated candidiasis). Occasionally causes healthcare-associated outbreaks, though less common than C. auris or C. parapsilosis. Forms biofilms on medical devices.",
+      "reservoir": {
+        "primary": [
+          "Human gastrointestinal tract",
+          "Oral cavity",
+          "Vagina",
+          "Skin"
+        ],
+        "secondary": [
+          "Healthcare environment",
+          "Healthcare workers' hands"
+        ],
+        "notes": "C. albicans is part of normal human microbiota in 30-60% of healthy individuals. Most infections are endogenous (from patient's own flora). Exogenous transmission can occur via healthcare workers' hands or contaminated devices."
+      },
+      "transmission": {
+        "mode": "Primarily endogenous; occasionally exogenous via hands or devices",
+        "routes": [
+          "Endogenous transmission: translocation from patient's own GI tract, mouth, or skin to bloodstream (most common route)",
+          "Exogenous transmission: hands of healthcare workers",
+          "Contaminated medical devices: catheters, endoscopes, other equipment",
+          "Rarely: direct patient-to-patient transmission"
+        ],
+        "notes": "Most C. albicans infections arise from patient's own flora (endogenous). Outbreaks are less common than with C. auris or C. parapsilosis but can occur, especially related to contaminated devices or healthcare worker transmission."
+      },
+      "incubationPeriod": {
+        "range": "Not fixed; colonization is rapid and can persist indefinitely. Variable time from colonization to infection (depends on host factors and disruption of mucosal barriers)",
+        "infectiousPeriod": "Colonization is persistent. Transmissible as long as colonized, but transmission less efficient than C. auris",
+        "seasonality": "No seasonal pattern",
+        "geographic": "Worldwide distribution"
+      },
+      "riskFactors": [
+        "Immunosuppression: HIV/AIDS, chemotherapy, corticosteroids, transplant recipients",
+        "Broad-spectrum antibiotic use (disrupts normal bacterial flora)",
+        "Central venous catheters and other invasive devices",
+        "Mucosal disruption: mucositis, gastrointestinal surgery, burns",
+        "Prolonged ICU stay",
+        "Mechanical ventilation",
+        "Total parenteral nutrition",
+        "Diabetes mellitus",
+        "Prematurity (neonates)",
+        "Hemodialysis",
+        "Recent abdominal surgery"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Candidemia (bloodstream infection): fever, chills, hypotension, septic shock - most serious presentation",
+          "Oral candidiasis (thrush): white plaques on tongue, palate, buccal mucosa; painful",
+          "Esophageal candidiasis: odynophagia (painful swallowing), dysphagia, retrosternal chest pain",
+          "Vulvovaginal candidiasis: vaginal itching, discharge, dysuria",
+          "Invasive candidiasis: deep-seated infections - intra-abdominal abscess, peritonitis, endocarditis, meningitis, osteomyelitis, endophthalmitis",
+          "Catheter-related infections: CLABSI, catheter-associated UTI",
+          "Chronic disseminated candidiasis (hepatosplenic candidiasis): fever, abdominal pain, elevated alkaline phosphatase in neutropenic patients recovering from chemotherapy"
+        ],
+        "complications": [
+          "Persistent candidemia despite treatment",
+          "Metastatic complications: endophthalmitis (5-10% of candidemia), endocarditis, osteomyelitis, brain abscess",
+          "Septic shock and multi-organ failure",
+          "Death (mortality rate 20-40% for candidemia)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with invasive fungal infection + risk factors (immunosuppression, central line, broad-spectrum antibiotics, ICU)",
+          "confirmed": "Clinical infection + laboratory identification of C. albicans from blood, CSF, or other normally sterile site"
+        }
+      },
+      "diagnosis": [
+        "Blood culture: C. albicans grows readily on routine blood culture media (usually positive within 2-3 days)",
+        "Culture from sterile sites: CSF, peritoneal fluid, tissue biopsy",
+        "Species identification: germ tube test (C. albicans forms germ tubes in serum), biochemical tests, MALDI-TOF mass spectrometry",
+        "Antifungal susceptibility testing: generally susceptible to azoles and echinocandins, but resistance can occur",
+        "Beta-D-glucan assay: serum biomarker for invasive candidiasis (not species-specific)",
+        "Imaging: CT or MRI for deep-seated infections (hepatosplenic candidiasis, brain abscess)",
+        "Molecular typing for outbreak investigation: multilocus sequence typing (MLST), whole genome sequencing"
+      ],
+      "treatment": "Echinocandins (micafungin, caspofungin, anidulafungin) - first-line for invasive candidiasis and candidemia in non-neutropenic patients. Fluconazole - alternative for less critically ill patients with susceptible isolates; first-line for oral/esophageal candidiasis. Amphotericin B - alternative for azole- or echinocandin-resistant isolates. Source control: remove central venous catheters (improves outcomes). Treatment duration: 14 days after first negative blood culture and resolution of symptoms. Longer treatment for complicated infections (endocarditis, osteomyelitis, CNS infections).",
+      "infectionControl": {
+        "precautions": "Standard Precautions for sporadic cases. Contact Precautions during outbreaks",
+        "screening": "Not routinely recommended. Consider during outbreak investigation",
+        "cohorting": "Not routinely necessary. Consider during outbreaks",
+        "sourceControl": "Remove central venous catheters and other devices",
+        "environmental": "Routine environmental cleaning and disinfection. Enhanced cleaning during outbreaks. Disinfect shared equipment (endoscopes, etc.)",
+        "staffEducation": "Hand hygiene before and after patient contact. Proper device insertion and maintenance. Recognition of invasive candidiasis"
+      },
+      "outbreakTriggers": [
+        "≥2-3 cases with direct epidemiological or temporal link (same unit, same time period)",
+        "Molecular typing showing clonal relationship between isolates",
+        "Sudden increase in C. albicans candidemia rate above baseline"
+      ],
+      "reportingCommunication": [
+        "Notify infection prevention and control team",
+        "Institutional event reporting for clusters",
+        "Implement cluster investigation: case finding, environmental sampling, review of device care practices, molecular typing",
+        "Implement control measures if outbreak confirmed: enhanced hand hygiene, device care bundles, environmental cleaning",
+        "Communication with staff and affected patients"
+      ],
+      "prevention": [
+        "Antifungal stewardship: judicious use of broad-spectrum antibiotics and antifungals",
+        "Device management: remove catheters as soon as clinically appropriate, strict adherence to insertion and maintenance bundles",
+        "Hand hygiene: before and after all patient contact",
+        "Mucosal protection: oral care protocols, minimize mucosal disruption",
+        "Prophylaxis in high-risk patients: fluconazole prophylaxis in selected high-risk populations (hematopoietic stem cell transplant, high-risk ICU patients) - per institutional protocols",
+        "Environmental cleaning: routine cleaning and disinfection",
+        "Surveillance: monitor candidemia rates, investigate clusters",
+        "Staff education: recognition of risk factors, early diagnosis, proper device care"
+      ],
+      "references": [
+        {
+          "label": "CDC - Candidiasis",
+          "url": "https://www.cdc.gov/fungal/diseases/candidiasis/index.html"
+        },
+        {
+          "label": "WHO - Fungal Priority Pathogens List",
+          "url": "https://www.who.int/publications/i/item/9789240060241"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "saccharomyces_cerevisiae",
+      "name": "Saccharomyces cerevisiae",
+      "scientificName": "Saccharomyces cerevisiae (baker's yeast, brewer's yeast), phylum Ascomycota, class Saccharomycetes",
+      "definition": "Yeast commonly used in baking, brewing, and as probiotic supplement (Saccharomyces boulardii is closely related subspecies). Generally considered non-pathogenic but can cause opportunistic infections (fungemia, sepsis) in immunocompromised and critically ill patients. Rare cause of healthcare-associated outbreaks, typically linked to probiotic use in ICU, oncology, or neonatal units. Infections often associated with central venous catheters. Can be difficult to distinguish from Candida species in routine laboratory tests.",
+      "reservoir": {
+        "primary": [
+          "Dietary supplements and probiotics (Saccharomyces boulardii)",
+          "Food products (bread, beer, wine)",
+          "Environment"
+        ],
+        "secondary": [
+          "Human colonization (transient after probiotic ingestion)",
+          "Healthcare environment"
+        ],
+        "notes": "S. cerevisiae is not part of normal human flora but can transiently colonize GI tract after ingestion of probiotics or contaminated food. Probiotic preparations containing Saccharomyces boulardii (closely related to S. cerevisiae) are major source in healthcare-associated infections."
+      },
+      "transmission": {
+        "mode": "Ingestion, rarely direct mucosal transfer or catheter contamination",
+        "routes": [
+          "Ingestion of probiotic supplements (Saccharomyces boulardii) - primary route in healthcare-associated cases",
+          "Translocation from GI tract to bloodstream (especially in patients with mucosal disruption or central lines)",
+          "Contamination of central venous catheters during probiotic administration or handling",
+          "Airborne transmission: aerosolization of probiotic powder during preparation (documented in outbreaks)",
+          "Hand transmission: healthcare workers' hands contaminated with probiotic powder",
+          "Rarely: contaminated food or beverages"
+        ],
+        "notes": "Most healthcare-associated infections linked to probiotic use in ICU, oncology, or neonatal units. Aerosolization of probiotic powder can contaminate environment and central line hubs. Outbreaks often involve multiple patients receiving probiotics in same unit."
+      },
+      "incubationPeriod": {
+        "range": "2-10 days from probiotic exposure to fungemia; variable in immunocompromised patients",
+        "infectiousPeriod": "Not typically transmitted person-to-person. Colonization transient after probiotic discontinuation",
+        "seasonality": "No seasonal pattern; healthcare-associated",
+        "geographic": "Worldwide; associated with probiotic use"
+      },
+      "riskFactors": [
+        "Probiotic use (Saccharomyces boulardii) - strongest risk factor",
+        "ICU admission",
+        "Hematology-oncology patients (neutropenia, chemotherapy)",
+        "Central venous catheters",
+        "Immunosuppression: HIV/AIDS, transplant recipients, corticosteroids",
+        "Gastrointestinal disease or surgery",
+        "Broad-spectrum antibiotic use",
+        "Prematurity (neonates in NICU)",
+        "Proximity to patients receiving probiotics (airborne transmission)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Fungemia (bloodstream infection): fever, chills, hypotension, septic shock - most common presentation",
+          "Central line-associated bloodstream infection (CLABSI)",
+          "Endocarditis (rare): fever, heart murmur, embolic phenomena",
+          "Peritonitis (in peritoneal dialysis patients)",
+          "Pneumonia (rare)",
+          "Vaginitis (rare)",
+          "Usually presents as catheter-related bloodstream infection in patient receiving probiotics"
+        ],
+        "complications": [
+          "Persistent fungemia despite catheter removal",
+          "Endocarditis (especially prosthetic valve)",
+          "Septic shock",
+          "Death (mortality rate 10-30% for fungemia)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with fungemia + probiotic use (Saccharomyces boulardii) + risk factors (ICU, central line, immunosuppression)",
+          "confirmed": "Clinical infection + laboratory identification of S. cerevisiae from blood or other sterile site"
+        }
+      },
+      "diagnosis": [
+        "Blood culture: S. cerevisiae grows on routine blood culture media and fungal culture media",
+        "Species identification: can be misidentified as Candida species by routine biochemical tests. MALDI-TOF mass spectrometry or molecular methods (ITS sequencing) required for accurate identification",
+        "Antifungal susceptibility testing: generally susceptible to amphotericin B and azoles; intrinsically resistant to echinocandins (important difference from Candida)",
+        "Molecular typing for outbreak investigation: pulsed-field gel electrophoresis (PFGE), multilocus sequence typing (MLST), whole genome sequencing - can link patient isolates to probiotic products"
+      ],
+      "treatment": "Discontinue probiotic exposure immediately (essential first step). Amphotericin B - first-line treatment (S. cerevisiae is intrinsically resistant to echinocandins). Fluconazole or voriconazole - alternative for less severe infections with susceptible isolates. Source control: remove central venous catheter. Treatment duration: 14 days after first negative blood culture and resolution of symptoms. Longer treatment for complicated infections (endocarditis).",
+      "infectionControl": {
+        "precautions": "Standard Precautions. Contact Precautions during outbreaks. Respiratory precautions if aerosolization of probiotic powder suspected",
+        "screening": "Not routinely recommended. Consider environmental sampling during outbreaks (air sampling, surface sampling)",
+        "cohorting": "Not routinely necessary. During outbreaks: separate patients receiving probiotics from other high-risk patients",
+        "sourceControl": "Discontinue probiotics. Remove central venous catheters",
+        "environmental": "Control probiotic use in ICU, oncology, and neonatal units. If probiotics used: prepare in separate area away from patient care, avoid aerosolization, clean surfaces after preparation, closed system administration preferred",
+        "staffEducation": "Risks of probiotic use in immunocompromised and critically ill patients. Proper probiotic preparation and administration techniques. Hand hygiene after handling probiotics"
+      },
+      "outbreakTriggers": [
+        "≥2 linked ICU, oncology, or neonatal unit fungemia cases with S. cerevisiae",
+        "Detection of S. cerevisiae fungemia after probiotic exposure",
+        "Cluster of cases in time or location"
+      ],
+      "reportingCommunication": [
+        "Notify infection prevention and control team",
+        "Cluster investigation: case finding, review of probiotic use, environmental sampling, molecular typing to link patient isolates to probiotic products",
+        "Implement control measures: restrict or discontinue probiotic use in high-risk units (ICU, oncology, neonatal), enhanced infection control if probiotics continued",
+        "Notify public health authorities if outbreak",
+        "Communication with staff, patients, families regarding probiotic risks"
+      ],
+      "prevention": [
+        "Limit probiotic administration in at-risk groups: avoid probiotics in immunocompromised patients, ICU patients with central lines, neutropenic patients, neonates",
+        "If probiotics used: closed system administration, prepare away from patient care areas, avoid aerosolization of powder, hand hygiene after handling",
+        "Staff education: risks of probiotics in high-risk patients, proper preparation and administration",
+        "Device management: remove central lines as soon as clinically appropriate, strict catheter care",
+        "Surveillance: monitor for S. cerevisiae fungemia, investigate cases with probiotic exposure",
+        "Institutional policies: guidelines on appropriate probiotic use, restrictions in high-risk units"
+      ],
+      "references": [
+        {
+          "label": "CDC - Healthcare-associated Fungal Outbreaks",
+          "url": "https://www.cdc.gov/fungal/outbreaks/index.html"
+        },
+        {
+          "label": "WHO - Fungal Priority Pathogens List",
+          "url": "https://www.who.int/publications/i/item/9789240060241"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    }
+  ]
+}

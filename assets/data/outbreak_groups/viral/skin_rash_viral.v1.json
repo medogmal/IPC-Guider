@@ -1,0 +1,706 @@
+{
+  "version": 1,
+  "groupId": "skin_rash_viral",
+  "groupName": "Viral Skin Rash (Exanthematous) Outbreak Pathogens",
+  "type": "viral",
+  "updatedAt": "2025-01-14T00:00:00Z",
+  "pathogens": [
+    {
+      "id": "measles_exanthem",
+      "name": "Measles virus",
+      "scientificName": "Measles morbillivirus, family Paramyxoviridae",
+      "definition": "Highly contagious enveloped negative-sense single-stranded RNA virus causing measles, an acute febrile illness with characteristic maculopapular rash. Measles is one of the most contagious infectious diseases (basic reproduction number R0 = 12-18) and a leading cause of vaccine-preventable childhood mortality worldwide. Outbreaks occur in under-vaccinated populations with risk of severe complications including pneumonia, encephalitis, and death.",
+      "reservoir": {
+        "primary": [
+          "Humans only (no animal reservoir)"
+        ],
+        "secondary": [],
+        "notes": "Humans are the sole reservoir. Measles virus does not persist in the environment or in animal hosts. Elimination is theoretically possible with high vaccination coverage (≥95%). Measles was declared eliminated in many countries but has resurged due to vaccine hesitancy and gaps in immunization coverage."
+      },
+      "transmission": {
+        "mode": "Airborne, respiratory droplets, direct contact with respiratory secretions",
+        "routes": [
+          "Airborne transmission via aerosolized droplet nuclei (primary route) - virus can remain infectious in the air for up to 2 hours after an infected person leaves the room",
+          "Respiratory droplets from coughing, sneezing, or talking",
+          "Direct contact with infected respiratory secretions or nasal/throat discharges"
+        ],
+        "notes": "Measles is one of the most contagious diseases known. A susceptible person has a 90% chance of infection after exposure. Virus can spread to others in the same room or even adjacent rooms via airborne route. Healthcare settings are high-risk for measles transmission. Infected individuals can transmit the virus before they know they are sick."
+      },
+      "incubationPeriod": {
+        "range": "10-14 days from exposure to onset of fever (average 10-12 days); rash appears 2-4 days after fever onset (total 14 days from exposure to rash)",
+        "infectiousPeriod": "Infectious from 4 days before rash onset to 4 days after rash onset (total 8-9 days). Peak infectiousness is just before rash appears. Immunocompromised individuals can shed virus for weeks to months",
+        "seasonality": "Year-round transmission possible; historically winter-spring peaks in temperate climates before widespread vaccination",
+        "geographic": "Worldwide; endemic in many low- and middle-income countries; sporadic outbreaks in high-income countries with pockets of under-vaccination"
+      },
+      "riskFactors": [
+        "Unvaccinated individuals (highest risk)",
+        "Infants <12 months (too young for routine vaccination)",
+        "Immunocompromised individuals (HIV, cancer, transplant, immunosuppressive therapy) - risk of severe and atypical measles",
+        "Vitamin A deficiency (increases severity and mortality)",
+        "Pregnant women (risk of complications, preterm labor, and fetal loss)",
+        "International travelers to measles-endemic areas",
+        "Healthcare workers without documented immunity",
+        "Communities with low vaccination coverage (<95%)",
+        "Crowded living conditions (refugee camps, dormitories, institutions)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Prodrome (2-4 days before rash): high fever (≥40°C), cough, coryza (runny nose), conjunctivitis (red, watery eyes) - the 3 C's",
+          "Koplik spots (pathognomonic): small white spots with red halo on buccal mucosa opposite molars, appear 2-3 days before rash and fade as rash appears",
+          "Maculopapular rash: erythematous, blanching rash that starts on face and behind ears, spreads downward (cephalocaudal) to trunk and extremities over 3-4 days; becomes confluent on face and upper body; fades in same order after 3-4 days, leaving brownish discoloration and fine desquamation",
+          "Photophobia and eye pain",
+          "Malaise, irritability, and anorexia"
+        ],
+        "complications": [
+          "Otitis media (most common complication, 7-9% of cases)",
+          "Pneumonia (primary viral or secondary bacterial) - leading cause of measles-related death (1-6% of cases)",
+          "Diarrhea and dehydration (8% of cases)",
+          "Acute encephalitis (1 in 1,000 cases) - can cause permanent brain damage, seizures, deafness, or death",
+          "Subacute sclerosing panencephalitis (SSPE) - rare (1 in 10,000 cases), fatal degenerative CNS disease occurring 7-10 years after measles infection",
+          "Immune suppression for weeks to months after infection - increased susceptibility to other infections",
+          "Complications in pregnancy: miscarriage, preterm labor, low birth weight, maternal death",
+          "Death (case fatality rate: 1-2 per 1,000 cases in high-income countries; up to 10% in low-income countries, especially in malnourished children)"
+        ],
+        "caseDefinition": {
+          "suspected": "Any person with fever (≥38°C) + generalized maculopapular rash + at least one of: cough, coryza, or conjunctivitis, AND no recent measles vaccination (within 6-45 days), OR epidemiological link to confirmed case",
+          "confirmed": "Suspected case + laboratory confirmation: positive measles-specific IgM antibody, OR significant rise in measles-specific IgG antibody (4-fold or greater), OR positive RT-PCR for measles virus RNA, OR virus isolation from clinical specimen"
+        }
+      },
+      "diagnosis": [
+        "Serology: measles-specific IgM antibody (appears 3-4 days after rash onset, peaks at 7-10 days, detectable for 4-8 weeks) - most common diagnostic method",
+        "RT-PCR for measles virus RNA from throat swab, nasopharyngeal swab, or urine - preferred for outbreak investigation, genotyping, and confirmation",
+        "Virus isolation from clinical specimens (throat swab, nasopharyngeal aspirate, urine, blood) - rarely done, requires specialized laboratory",
+        "Measles-specific IgG antibody (paired acute and convalescent sera collected 10-14 days apart) - 4-fold rise confirms acute infection",
+        "Clinical diagnosis based on characteristic rash, Koplik spots, and epidemiological link (but laboratory confirmation required for public health reporting)"
+      ],
+      "treatment": "Supportive care: antipyretics (acetaminophen or ibuprofen, avoid aspirin in children), hydration, rest, nutritional support. Vitamin A supplementation (WHO recommendation): 200,000 IU for children ≥12 months (100,000 IU for infants 6-11 months; 50,000 IU for infants <6 months) given on 2 consecutive days - reduces mortality and complications by 50%, especially in malnourished children, those with vitamin A deficiency, and severe measles. No specific antiviral therapy available. Antibiotics only if secondary bacterial infection (pneumonia, otitis media). Airborne isolation for hospitalized patients from time of diagnosis until 4 days after rash onset (longer for immunocompromised - duration of illness).",
+      "infectionControl": {
+        "precautions": "Airborne Precautions + Contact Precautions. Use N95 respirator or equivalent (or PAPR) for all healthcare workers entering room. Place patient in Airborne Infection Isolation Room (AIIR) with negative pressure and ≥12 air changes per hour. Keep door closed at all times. Isolate from time of diagnosis until 4 days after rash onset (longer for immunocompromised - duration of illness)",
+        "screening": "Immediate identification and isolation of suspected measles cases at all healthcare entry points (triage, emergency department, clinics). Do NOT place in waiting room with other patients. Provide surgical mask immediately",
+        "cohorting": "Avoid cohorting measles patients with other patients due to extreme contagiousness. If absolutely necessary, cohort only confirmed measles cases together in separate area with dedicated staff",
+        "sourceControl": "Surgical mask on patient at all times when outside isolation room (if transport necessary); limit patient movement outside isolation room to essential procedures only",
+        "environmental": "Enhanced cleaning and disinfection of all surfaces with EPA-registered disinfectant. Ensure adequate ventilation. Wait at least 2 hours after patient leaves room before allowing susceptible individuals to enter (time for airborne particles to clear with ≥6 air changes per hour)",
+        "staffEducation": "All healthcare workers must have documented immunity to measles: 2 doses of MMR vaccine (separated by ≥28 days), OR laboratory evidence of immunity (positive IgG), OR born before 1957 (in some countries). Non-immune staff should NOT enter room or care for patient. Fit-testing for N95 respirators mandatory"
+      },
+      "outbreakTriggers": [
+        "Any single confirmed or suspected measles case in a non-immune group, healthcare facility, school, or community (measles is so contagious that even one case triggers immediate outbreak response)",
+        "≥2 epidemiologically linked cases (same household, classroom, facility, or community)",
+        "Any nosocomial (healthcare-associated) measles case",
+        "Routinely unlinked cases in same geographic area within incubation period"
+      ],
+      "reportingCommunication": [
+        "Immediate reporting (within 24 hours or sooner, preferably same day) of all suspected and confirmed measles cases to local/national public health authorities - measles is a notifiable disease in most countries and internationally reportable to WHO",
+        "Urgent public health action: comprehensive contact tracing, identification of all exposed individuals, assessment of immunity status (vaccination history, serology)",
+        "Post-exposure prophylaxis for susceptible contacts: MMR vaccine within 72 hours of exposure (most effective, provides long-term protection), OR immunoglobulin (IG) within 6 days of exposure for high-risk individuals who cannot receive vaccine (infants <12 months, pregnant women, severely immunocompromised)",
+        "Mass vaccination campaigns in outbreak settings (outbreak response immunization - ORI)",
+        "Enhanced surveillance and case-finding in affected area",
+        "Communicate with staff, patients, families, media, and community with clear messaging",
+        "Coordinate with local, national, and international health authorities (WHO)",
+        "Epidemiological investigation to identify source, transmission chains, and gaps in immunity"
+      ],
+      "prevention": [
+        "Vaccination with MMR (measles-mumps-rubella) vaccine: 2 doses (first dose at 12-15 months, second dose at 4-6 years) - provides >97% protection after 2 doses; single dose provides ~93% protection",
+        "Catch-up vaccination for unvaccinated or under-vaccinated individuals of all ages",
+        "Maintain high vaccination coverage (≥95%) in community to achieve and maintain herd immunity",
+        "Post-exposure prophylaxis: MMR vaccine within 72 hours of exposure for susceptible individuals ≥12 months (can be given as early as 6 months in outbreak); immunoglobulin (IG) 0.5 mL/kg IM (max 15 mL) within 6 days for high-risk individuals",
+        "Active case-finding and contact tracing during outbreaks",
+        "Outbreak response immunization (mass vaccination campaigns in affected communities)",
+        "Airborne isolation of suspected and confirmed cases",
+        "Ensure all healthcare workers, teachers, and childcare workers have documented immunity",
+        "Educate public on importance of vaccination, early recognition of measles symptoms, and seeking immediate medical care",
+        "Community outreach to address vaccine hesitancy and misinformation"
+      ],
+      "references": [
+        {
+          "label": "WHO - Measles",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/measles"
+        },
+        {
+          "label": "CDC - Measles",
+          "url": "https://www.cdc.gov/measles/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "rubella",
+      "name": "Rubella virus",
+      "scientificName": "Rubella virus, genus Rubivirus, family Togaviridae",
+      "definition": "Enveloped positive-sense single-stranded RNA virus causing rubella (German measles), a mild febrile illness with rash in children and adults. The primary public health concern is congenital rubella syndrome (CRS) when infection occurs during pregnancy, causing severe fetal anomalies including deafness, cataracts, heart defects, and intellectual disability. Rubella is vaccine-preventable and has been eliminated in many countries through MMR vaccination programs.",
+      "reservoir": {
+        "primary": [
+          "Humans only (no animal reservoir)"
+        ],
+        "secondary": [],
+        "notes": "Humans are the sole reservoir. Rubella virus does not persist in the environment or in animal hosts. Elimination is achievable with high vaccination coverage (≥95%). Congenitally infected infants can shed virus for months after birth."
+      },
+      "transmission": {
+        "mode": "Respiratory droplets, airborne transmission, direct contact with nasopharyngeal secretions",
+        "routes": [
+          "Respiratory droplets from coughing, sneezing, or talking (primary route)",
+          "Airborne transmission in enclosed spaces",
+          "Direct contact with infected nasopharyngeal secretions",
+          "Vertical transmission (mother to fetus) during pregnancy - causes congenital rubella syndrome"
+        ],
+        "notes": "Rubella is less contagious than measles but still highly transmissible. Infected individuals can transmit virus before they know they are sick. Congenitally infected infants shed large amounts of virus in respiratory secretions and urine for months, posing risk to susceptible pregnant women."
+      },
+      "incubationPeriod": {
+        "range": "14-21 days (average 16-18 days) from exposure to rash onset",
+        "infectiousPeriod": "Infectious from 7 days before rash onset to 7 days after rash onset (total 14 days). Peak infectiousness is just before and during early rash. Congenitally infected infants can shed virus for up to 1 year",
+        "seasonality": "Year-round transmission; historically late winter-spring peaks in temperate climates before widespread vaccination",
+        "geographic": "Worldwide; endemic in many low- and middle-income countries; eliminated in Americas, Europe, and Western Pacific regions through vaccination"
+      },
+      "riskFactors": [
+        "Unvaccinated individuals (highest risk)",
+        "Pregnant women without immunity (risk of congenital rubella syndrome in fetus)",
+        "Infants and young children in areas with low vaccination coverage",
+        "Healthcare workers without documented immunity",
+        "International travelers to rubella-endemic areas",
+        "Communities with low vaccination coverage (<95%)",
+        "Crowded living conditions (schools, dormitories, institutions)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Mild fever (usually <39°C) or no fever",
+          "Maculopapular rash: fine, pink, discrete rash that starts on face and spreads downward to trunk and extremities over 24 hours; fades in same order after 2-3 days (shorter duration than measles)",
+          "Lymphadenopathy: tender, enlarged postauricular, posterior cervical, and suboccipital lymph nodes (appears 5-10 days before rash, characteristic of rubella)",
+          "Mild conjunctivitis (less prominent than measles)",
+          "Coryza and sore throat",
+          "Arthralgia and arthritis (common in adult women, especially fingers, wrists, knees)",
+          "Headache and malaise"
+        ],
+        "complications": [
+          "Congenital rubella syndrome (CRS) - if infection occurs during pregnancy, especially first trimester: deafness (most common), cataracts, congenital heart defects (PDA, pulmonary stenosis), intellectual disability, microcephaly, growth retardation, hepatosplenomegaly, thrombocytopenia, 'blueberry muffin' rash. Risk of CRS: >90% if infection in first 11 weeks, 10-20% at 11-16 weeks, rare after 20 weeks",
+          "Arthritis and arthralgia (up to 70% of adult women)",
+          "Thrombocytopenia (1 in 3,000 cases)",
+          "Encephalitis (1 in 6,000 cases) - rare but serious",
+          "Hemorrhagic manifestations (rare)",
+          "Fetal loss, miscarriage, stillbirth (if infection during pregnancy)"
+        ],
+        "caseDefinition": {
+          "suspected": "Any person with acute onset of generalized maculopapular rash + fever + at least one of: lymphadenopathy (postauricular, posterior cervical, or suboccipital), arthralgia, or arthritis, OR any infant with suspected congenital rubella syndrome",
+          "confirmed": "Suspected case + laboratory confirmation: positive rubella-specific IgM antibody, OR significant rise in rubella-specific IgG antibody (4-fold or greater), OR positive RT-PCR for rubella virus RNA, OR virus isolation"
+        }
+      },
+      "diagnosis": [
+        "Serology: rubella-specific IgM antibody (appears within 4-5 days of rash onset, peaks at 7-10 days, detectable for 4-8 weeks) - most common diagnostic method",
+        "RT-PCR for rubella virus RNA from throat swab, nasopharyngeal swab, or urine - preferred for outbreak investigation, genotyping, and confirmation",
+        "Rubella-specific IgG antibody (paired acute and convalescent sera collected 10-14 days apart) - 4-fold rise confirms acute infection",
+        "Virus isolation from clinical specimens (throat swab, nasopharyngeal aspirate, urine) - rarely done, requires specialized laboratory",
+        "Antenatal screening: rubella IgG antibody to assess immunity status in pregnant women (routine in many countries)",
+        "Congenital rubella syndrome diagnosis: rubella-specific IgM in infant, persistent rubella IgG beyond expected decline from maternal antibodies, virus isolation or PCR from infant specimens"
+      ],
+      "treatment": "Supportive care: antipyretics (acetaminophen or ibuprofen), rest, hydration. No specific antiviral therapy available. Analgesics for arthralgia/arthritis. Pregnant women exposed to rubella should be counseled about risks of congenital rubella syndrome; immunoglobulin (IG) is NOT effective for post-exposure prophylaxis and does NOT prevent CRS. Isolation of cases to prevent transmission to susceptible pregnant women.",
+      "infectionControl": {
+        "precautions": "Droplet Precautions + Airborne Precautions (in some guidelines). Wear surgical mask for close contact; N95 respirator recommended by some authorities. Place patient in single room (negative pressure preferred but not required). Isolate from 7 days before rash onset to 7 days after rash onset. Congenitally infected infants: Contact Precautions until 1 year of age unless nasopharyngeal and urine cultures are negative for rubella virus after 3 months of age",
+        "screening": "Immediate identification and isolation of suspected rubella cases. Screen all pregnant women for rubella immunity (IgG) at first antenatal visit. Identify and track all pregnant contacts of confirmed cases",
+        "cohorting": "Cohort confirmed rubella cases together if necessary; keep separate from pregnant women and immunocompromised individuals",
+        "sourceControl": "Surgical mask on patient; limit patient movement outside isolation room",
+        "environmental": "Standard cleaning and disinfection. Ensure adequate ventilation",
+        "staffEducation": "All healthcare workers, especially those of childbearing age, must have documented immunity to rubella: 2 doses of MMR vaccine, OR laboratory evidence of immunity (positive IgG), OR born before 1957 (in some countries). Non-immune pregnant staff should NOT care for rubella patients"
+      },
+      "outbreakTriggers": [
+        "Any confirmed rubella case (especially in pregnant woman or healthcare setting)",
+        "≥2 epidemiologically linked cases in same household, school, healthcare facility, or community",
+        "Any case of congenital rubella syndrome",
+        "Cluster of cases in group setting (school, workplace, institution)"
+      ],
+      "reportingCommunication": [
+        "Immediate reporting (within 24 hours) of all suspected and confirmed rubella cases to local/national public health authorities - rubella is a notifiable disease in most countries",
+        "Urgent identification and tracking of all pregnant contacts - assess immunity status (vaccination history, serology)",
+        "Post-exposure management: MMR vaccine for susceptible non-pregnant contacts as soon as possible (preferably within 72 hours, but can be given up to 28 days post-exposure for outbreak control). Immunoglobulin is NOT effective for post-exposure prophylaxis",
+        "Enhanced surveillance for congenital rubella syndrome in infants born to women infected during pregnancy",
+        "Mass vaccination campaigns in outbreak settings, especially targeting women of childbearing age",
+        "Communicate with staff, patients, families, and community",
+        "Coordinate with public health authorities for epidemiological investigation"
+      ],
+      "prevention": [
+        "Vaccination with MMR (measles-mumps-rubella) vaccine: 2 doses (first dose at 12-15 months, second dose at 4-6 years) - provides >97% protection after 2 doses",
+        "Universal MMR vaccination to achieve and maintain herd immunity (≥95% coverage)",
+        "Antenatal screening: assess rubella immunity (IgG) in all pregnant women at first antenatal visit; vaccinate non-immune women postpartum (MMR is contraindicated during pregnancy)",
+        "Catch-up vaccination for unvaccinated or under-vaccinated individuals, especially women of childbearing age",
+        "Ensure all healthcare workers, teachers, and childcare workers have documented immunity",
+        "Isolation of confirmed cases to prevent transmission to susceptible pregnant women",
+        "Educate public on importance of vaccination, especially for women planning pregnancy",
+        "Community outreach to address vaccine hesitancy"
+      ],
+      "references": [
+        {
+          "label": "WHO - Rubella",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/rubella"
+        },
+        {
+          "label": "CDC - Rubella",
+          "url": "https://www.cdc.gov/rubella/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "varicella_zoster",
+      "name": "Varicella-zoster virus (VZV)",
+      "scientificName": "Varicella-zoster virus (VZV), Human herpesvirus 3 (HHV-3), family Herpesviridae",
+      "definition": "Enveloped double-stranded DNA virus causing two distinct clinical syndromes: varicella (chickenpox) as primary infection, and herpes zoster (shingles) as reactivation of latent virus in dorsal root ganglia. Varicella is highly contagious and causes characteristic pruritic vesicular rash. Herpes zoster occurs in older adults and immunocompromised individuals, causing painful dermatomal vesicular rash. Both can cause outbreaks in healthcare facilities, schools, and institutions.",
+      "reservoir": {
+        "primary": [
+          "Humans only",
+          "Latent virus in dorsal root ganglia and cranial nerve ganglia after primary infection"
+        ],
+        "secondary": [],
+        "notes": "Humans are the sole reservoir. After primary varicella infection, VZV remains latent in sensory ganglia for life and can reactivate as herpes zoster, typically decades later. No animal reservoir."
+      },
+      "transmission": {
+        "mode": "Airborne, respiratory droplets, direct contact with vesicular lesions",
+        "routes": [
+          "Airborne transmission via aerosolized droplet nuclei from respiratory tract (primary route for varicella)",
+          "Respiratory droplets from coughing or sneezing",
+          "Direct contact with fluid from vesicular lesions (varicella or zoster)",
+          "Indirect contact via contaminated fomites (less common)",
+          "Vertical transmission (mother to fetus) - congenital varicella syndrome (rare)"
+        ],
+        "notes": "Varicella is highly contagious (secondary attack rate 90% in susceptible household contacts). Herpes zoster is less contagious than varicella but can transmit VZV to susceptible individuals, causing varicella (not zoster). Transmission occurs via direct contact with zoster lesions or airborne route if disseminated zoster."
+      },
+      "incubationPeriod": {
+        "range": "10-21 days (average 14-16 days) from exposure to rash onset",
+        "infectiousPeriod": "Varicella: contagious from 1-2 days before rash onset until all lesions have crusted (typically 5-7 days after rash onset). Herpes zoster: contagious from onset of rash until all lesions have crusted. Immunocompromised individuals may have prolonged viral shedding",
+        "seasonality": "Year-round transmission; historically late winter-spring peaks in temperate climates before widespread vaccination",
+        "geographic": "Worldwide distribution"
+      },
+      "riskFactors": [
+        "Unvaccinated individuals (highest risk for varicella)",
+        "Infants and young children",
+        "Immunocompromised individuals (HIV, cancer, transplant, immunosuppressive therapy) - risk of severe disseminated varicella or zoster",
+        "Pregnant women without immunity (risk of severe varicella, pneumonia, and congenital varicella syndrome)",
+        "Neonates born to mothers with varicella 5 days before to 2 days after delivery (risk of severe neonatal varicella)",
+        "Adults (higher risk of complications than children)",
+        "Older adults (≥50 years) - risk of herpes zoster increases with age",
+        "Healthcare workers without immunity (occupational exposure)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Varicella: prodrome of fever, malaise, anorexia for 1-2 days, followed by characteristic rash",
+          "Rash: pruritic vesicular rash that progresses through stages (macule → papule → vesicle → crust) over 24 hours. New crops appear over 3-5 days, resulting in lesions at different stages simultaneously ('dew drops on rose petals'). Rash starts on face/trunk and spreads to extremities (centripetal distribution)",
+          "Intense pruritus (itching)",
+          "Fever (usually 38-39°C)",
+          "Headache and malaise",
+          "Herpes zoster: prodromal pain, tingling, or burning in dermatomal distribution for 1-5 days, followed by unilateral vesicular rash in dermatomal pattern (most commonly thoracic or trigeminal dermatomes). Pain can be severe"
+        ],
+        "complications": [
+          "Secondary bacterial skin infections (Streptococcus pyogenes, Staphylococcus aureus) - most common complication",
+          "Pneumonia (primary varicella pneumonia in adults, pregnant women, immunocompromised - can be severe and fatal)",
+          "Encephalitis and cerebellar ataxia (1 in 4,000 cases)",
+          "Hemorrhagic varicella (immunocompromised)",
+          "Disseminated varicella (immunocompromised) - multi-organ involvement, high mortality",
+          "Congenital varicella syndrome (if maternal infection in first 20 weeks of pregnancy): limb hypoplasia, skin scarring, eye abnormalities, neurological defects",
+          "Neonatal varicella (if maternal infection 5 days before to 2 days after delivery): severe, disseminated disease with high mortality",
+          "Herpes zoster complications: postherpetic neuralgia (chronic pain lasting >90 days, common in elderly), ophthalmic zoster (vision loss), Ramsay Hunt syndrome (facial paralysis, hearing loss), disseminated zoster (immunocompromised)",
+          "Death (rare in healthy children; higher in adults, pregnant women, immunocompromised)"
+        ],
+        "caseDefinition": {
+          "suspected": "Varicella: acute onset of diffuse maculopapular-vesicular rash without other apparent cause. Herpes zoster: acute onset of unilateral painful vesicular rash in dermatomal distribution",
+          "confirmed": "Clinical illness + laboratory confirmation: positive VZV PCR from vesicular fluid or lesion swab, OR positive VZV IgM antibody, OR significant rise in VZV IgG antibody, OR direct fluorescent antibody (DFA) positive"
+        }
+      },
+      "diagnosis": [
+        "Clinical diagnosis based on characteristic rash (usually sufficient for varicella in typical cases)",
+        "PCR for VZV DNA from vesicular fluid, lesion swab, or scab - gold standard, high sensitivity and specificity",
+        "Direct fluorescent antibody (DFA) test on vesicular fluid or lesion scraping - rapid, but less sensitive than PCR",
+        "Serology: VZV-specific IgM antibody (acute infection), VZV-specific IgG antibody (immunity assessment or paired sera for diagnosis)",
+        "Tzanck smear (scraping from vesicle base) - shows multinucleated giant cells, but cannot distinguish VZV from HSV (not recommended)"
+      ],
+      "treatment": "Varicella: Supportive care (antipyretics, antihistamines for pruritus, calamine lotion, oatmeal baths). Acyclovir (oral or IV) recommended for: adolescents and adults, pregnant women, immunocompromised, neonates, severe disease, or complications. Start within 24 hours of rash onset for maximum benefit. Herpes zoster: Antiviral therapy (acyclovir, valacyclovir, or famciclovir) within 72 hours of rash onset reduces duration and severity. Analgesics for pain management. Corticosteroids may be added for severe pain. Isolation until all lesions have crusted.",
+      "infectionControl": {
+        "precautions": "Airborne Precautions + Contact Precautions. Use N95 respirator for varicella; surgical mask acceptable for localized zoster in immunocompetent patients. Place patient in Airborne Infection Isolation Room (AIIR) with negative pressure. Isolate until all lesions have crusted (varicella: typically 5-7 days after rash onset; zoster: until crusted). Disseminated zoster: same precautions as varicella",
+        "screening": "Screen all patients for varicella/zoster at admission. Assess immunity status of exposed individuals (vaccination history, history of varicella, serology)",
+        "cohorting": "Cohort varicella cases together if necessary; keep separate from immunocompromised and pregnant women",
+        "sourceControl": "Cover all lesions with clothing or dressings; surgical mask on patient if transport necessary",
+        "environmental": "Standard cleaning and disinfection. Ensure adequate ventilation. Wait 2 hours after patient leaves room before allowing susceptible individuals to enter",
+        "staffEducation": "All healthcare workers must have documented immunity to VZV: 2 doses of varicella vaccine, OR laboratory evidence of immunity (positive IgG), OR documented history of varicella or zoster diagnosed by healthcare provider. Non-immune staff should NOT care for varicella/zoster patients"
+      },
+      "outbreakTriggers": [
+        "Single case of varicella in high-risk setting (healthcare facility, school, daycare, institution)",
+        "≥2 epidemiologically linked varicella cases in school, healthcare facility, or institution",
+        "Nosocomial transmission of varicella or zoster"
+      ],
+      "reportingCommunication": [
+        "Notify infection control and public health authorities within 24 hours of suspected varicella outbreak",
+        "Contact tracing: identify all exposed individuals, assess immunity status",
+        "Post-exposure prophylaxis for susceptible contacts: varicella vaccine within 3-5 days of exposure (most effective), OR varicella-zoster immune globulin (VariZIG) within 10 days for high-risk individuals who cannot receive vaccine (immunocompromised, pregnant women, neonates)",
+        "Exclude non-immune exposed individuals from high-risk settings (healthcare, schools) from day 8 to day 21 post-exposure",
+        "Communicate with staff, patients, families, and administration"
+      ],
+      "prevention": [
+        "Vaccination: varicella vaccine (2 doses: first at 12-15 months, second at 4-6 years) - provides >90% protection against varicella and >95% against severe disease. Zoster vaccine (Shingrix, recombinant) for adults ≥50 years - reduces risk of herpes zoster by >90%",
+        "Post-exposure prophylaxis: varicella vaccine within 3-5 days of exposure for susceptible individuals ≥12 months; VariZIG within 10 days for high-risk individuals",
+        "Exclude non-immune individuals from exposure to varicella/zoster cases",
+        "Ensure all healthcare workers, teachers, and childcare workers have documented immunity",
+        "Isolate cases until all lesions have crusted",
+        "Educate on transmission prevention and early recognition of rash"
+      ],
+      "references": [
+        {
+          "label": "WHO - Varicella",
+          "url": "https://www.who.int/teams/health-product-policy-and-standards/standards-and-specifications/vaccine-standardization/varicella"
+        },
+        {
+          "label": "CDC - Varicella (Chickenpox)",
+          "url": "https://www.cdc.gov/chickenpox/index.html"
+        },
+        {
+          "label": "CDC - Herpes Zoster (Shingles)",
+          "url": "https://www.cdc.gov/shingles/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "parvovirus_b19",
+      "name": "Parvovirus B19",
+      "scientificName": "Human parvovirus B19, family Parvoviridae",
+      "definition": "Small non-enveloped single-stranded DNA virus causing erythema infectiosum (fifth disease), a common childhood exanthem characterized by 'slapped-cheek' facial rash. Parvovirus B19 also causes arthropathy in adults, transient aplastic crisis in individuals with hemolytic anemias, chronic anemia in immunocompromised individuals, and fetal hydrops/anemia if infection occurs during pregnancy. Outbreaks occur in schools, daycare centers, and households.",
+      "reservoir": {
+        "primary": [
+          "Humans only (no animal reservoir)"
+        ],
+        "secondary": [],
+        "notes": "Humans are the sole reservoir. Parvovirus B19 is highly stable in the environment and resistant to many disinfectants."
+      },
+      "transmission": {
+        "mode": "Respiratory secretions (droplets), vertical transmission (mother to fetus), blood products (rare)",
+        "routes": [
+          "Respiratory droplets from coughing, sneezing, or talking (primary route)",
+          "Direct contact with respiratory secretions",
+          "Vertical transmission (transplacental) during pregnancy - can cause fetal hydrops, severe anemia, and fetal death",
+          "Blood transfusion or blood products (rare, but virus can persist in blood)"
+        ],
+        "notes": "Most contagious during prodromal phase (before rash appears). Once rash appears, patient is generally no longer infectious. Transmission is most efficient in household and school settings."
+      },
+      "incubationPeriod": {
+        "range": "4-14 days (can be up to 21 days) from exposure to onset of symptoms",
+        "infectiousPeriod": "Infectious during prodromal phase (before rash appears), typically 5-10 days after exposure. Once rash appears, patient is generally no longer infectious (except immunocompromised individuals who may have prolonged viremia)",
+        "seasonality": "Year-round transmission; late winter-spring peaks in temperate climates",
+        "geographic": "Worldwide distribution"
+      },
+      "riskFactors": [
+        "Children (especially 5-15 years) in schools and daycare centers",
+        "Pregnant women (risk of fetal hydrops, severe fetal anemia, and fetal death, especially if infection in first half of pregnancy)",
+        "Individuals with chronic hemolytic anemias (sickle cell disease, thalassemia, hereditary spherocytosis) - risk of transient aplastic crisis",
+        "Immunocompromised individuals (HIV, cancer, transplant) - risk of chronic anemia and persistent infection",
+        "Healthcare workers (occupational exposure)",
+        "Household contacts of infected individuals"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Erythema infectiosum (fifth disease) in children: prodrome of mild fever, malaise, headache for 2-3 days, followed by characteristic 'slapped-cheek' facial rash (bright red, confluent erythema on cheeks, sparing nasolabial folds), then lacy reticular rash on trunk and extremities that may wax and wane for weeks",
+          "Arthralgia and arthritis in adults (especially women): symmetric polyarthritis affecting hands, wrists, knees, ankles - can mimic rheumatoid arthritis",
+          "Fever (usually low-grade or absent)",
+          "Pruritus (itching) of rash",
+          "Rash may recur with triggers (sunlight, heat, exercise, stress) for weeks to months"
+        ],
+        "complications": [
+          "Transient aplastic crisis in individuals with chronic hemolytic anemias (sickle cell disease, thalassemia) - sudden severe anemia due to temporary cessation of red blood cell production",
+          "Fetal hydrops and severe fetal anemia if maternal infection during pregnancy (risk ~10% if infection in first 20 weeks; can lead to fetal death)",
+          "Chronic anemia in immunocompromised individuals due to persistent parvovirus B19 infection",
+          "Myocarditis (rare)",
+          "Hepatitis (rare)",
+          "Neurological complications (rare): encephalitis, meningitis, peripheral neuropathy"
+        ],
+        "caseDefinition": {
+          "suspected": "Child with characteristic 'slapped-cheek' facial rash ± lacy reticular rash on body, OR adult with acute arthritis/arthralgia ± rash, OR individual with chronic hemolytic anemia presenting with severe anemia and reticulocytopenia, OR pregnant woman with exposure to parvovirus B19",
+          "confirmed": "Clinical illness + laboratory confirmation: positive parvovirus B19-specific IgM antibody, OR positive PCR for parvovirus B19 DNA from blood or tissue"
+        }
+      },
+      "diagnosis": [
+        "Serology: parvovirus B19-specific IgM antibody (indicates recent infection, detectable for 2-3 months) - most common diagnostic method",
+        "Parvovirus B19-specific IgG antibody (indicates past infection or immunity)",
+        "PCR for parvovirus B19 DNA from blood, bone marrow, or tissue - useful for immunocompromised individuals and prenatal diagnosis",
+        "Complete blood count (CBC) - shows anemia, reticulocytopenia in aplastic crisis",
+        "Fetal ultrasound - shows hydrops fetalis, ascites, pleural effusion if fetal infection"
+      ],
+      "treatment": "Supportive care: rest, hydration, analgesics for arthralgia. No specific antiviral therapy available. Transient aplastic crisis: blood transfusion if severe anemia. Chronic anemia in immunocompromised: intravenous immunoglobulin (IVIG) to clear persistent infection. Fetal hydrops: intrauterine blood transfusion if severe fetal anemia. Exclusion from school/daycare is NOT needed once rash appears (no longer infectious).",
+      "infectionControl": {
+        "precautions": "Standard Precautions for patients with rash (no longer infectious). Droplet Precautions for patients with aplastic crisis or chronic infection (may have ongoing viremia). Pregnant healthcare workers should avoid caring for patients with aplastic crisis or chronic parvovirus B19 infection",
+        "screening": "Screen pregnant women exposed to parvovirus B19 for serological evidence of infection; monitor fetus with serial ultrasounds if maternal infection confirmed",
+        "cohorting": "Not usually necessary; patients with rash are not infectious",
+        "sourceControl": "Standard respiratory hygiene during prodromal phase (before rash)",
+        "environmental": "Standard cleaning and disinfection",
+        "staffEducation": "Educate on transmission risk during prodromal phase (before rash); counsel pregnant staff on risks and precautions"
+      },
+      "outbreakTriggers": [
+        "≥2 cases of erythema infectiosum clustered in same classroom, school, or daycare within 2-3 weeks",
+        "Detection of parvovirus B19 infection in pregnancy or in setting with individuals with chronic hemolytic anemias"
+      ],
+      "reportingCommunication": [
+        "Report clusters of erythema infectiosum to public health authorities for surveillance",
+        "Monitor high-risk individuals: pregnant women (assess immunity, monitor fetus if infected), individuals with chronic hemolytic anemias (watch for aplastic crisis)",
+        "Communicate with schools, daycare centers, and families about outbreak",
+        "Educate that exclusion from school/daycare is NOT needed after rash onset (no longer infectious)"
+      ],
+      "prevention": [
+        "Hand hygiene and respiratory hygiene during prodromal phase",
+        "Exclusion from school/daycare is NOT needed once rash appears (patient is no longer infectious)",
+        "Educate pregnant women about risks and avoidance of exposure during outbreaks",
+        "No vaccine available",
+        "Screening of blood products to reduce transfusion-transmitted infection"
+      ],
+      "references": [
+        {
+          "label": "CDC - Parvovirus B19 (Fifth Disease)",
+          "url": "https://www.cdc.gov/parvovirusb19/index.html"
+        },
+        {
+          "label": "WHO - Parvovirus B19",
+          "url": "https://www.who.int/health-topics/parvovirus"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "enterovirus_hfmd",
+      "name": "Enteroviruses (Coxsackie/EVs)",
+      "scientificName": "Enteroviruses (Coxsackievirus A16, Enterovirus A71, and others), family Picornaviridae",
+      "definition": "Non-enveloped positive-sense single-stranded RNA viruses causing hand-foot-mouth disease (HFMD), a common childhood illness characterized by fever, oral ulcers, and vesicular rash on hands and feet. Coxsackievirus A16 is the most common cause; Enterovirus A71 (EV-A71) can cause severe neurological complications. Herpangina (painful oral ulcers without hand/foot rash) is also caused by enteroviruses. Outbreaks occur in daycare centers, schools, and households.",
+      "reservoir": {
+        "primary": [
+          "Humans (gastrointestinal tract and respiratory tract)"
+        ],
+        "secondary": [
+          "Environmental contamination (surfaces, water, fomites)"
+        ],
+        "notes": "Humans are the primary reservoir. Enteroviruses are shed in high concentrations in stool for weeks to months after infection, even after symptoms resolve. Virus is highly stable in the environment."
+      },
+      "transmission": {
+        "mode": "Fecal-oral route (primary), respiratory droplets, direct contact with vesicular fluid",
+        "routes": [
+          "Fecal-oral route (primary route) - contaminated hands, food, water, surfaces",
+          "Respiratory droplets from coughing, sneezing, or talking",
+          "Direct contact with vesicular fluid from skin lesions",
+          "Indirect contact via contaminated fomites (toys, doorknobs, shared items)"
+        ],
+        "notes": "Enteroviruses are highly contagious, especially in young children. Prolonged fecal shedding (weeks to months) contributes to transmission even after clinical recovery. Virus can survive on surfaces for days to weeks."
+      },
+      "incubationPeriod": {
+        "range": "3-6 days (average 4-5 days) from exposure to onset of symptoms",
+        "infectiousPeriod": "Infectious during acute illness (typically 7-10 days); prolonged fecal shedding for weeks to months after symptom resolution",
+        "seasonality": "Summer and fall peaks in temperate climates; year-round in tropical and subtropical regions",
+        "geographic": "Worldwide distribution; large outbreaks common in Asia-Pacific region"
+      },
+      "riskFactors": [
+        "Young children (especially <5 years) in daycare centers and schools",
+        "Infants and toddlers (highest incidence)",
+        "Immunocompromised individuals (risk of severe disease)",
+        "Crowded living conditions and communal settings",
+        "Poor hygiene and sanitation"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Fever (usually 38-39°C) for 1-2 days",
+          "Oral ulcers: painful vesicles and ulcers on tongue, buccal mucosa, palate, and gums - interfere with eating and drinking",
+          "Vesicular rash: small, oval, gray vesicles with red halo on palms, soles, and sometimes buttocks and genital area; non-pruritic",
+          "Sore throat and dysphagia (difficulty swallowing)",
+          "Malaise, irritability, and anorexia",
+          "Herpangina variant: painful oral ulcers on posterior pharynx and soft palate WITHOUT hand/foot rash"
+        ],
+        "complications": [
+          "Dehydration due to poor oral intake (most common complication)",
+          "Aseptic meningitis (Enterovirus A71)",
+          "Encephalitis and brainstem encephalitis (Enterovirus A71) - can be severe and fatal",
+          "Acute flaccid paralysis (Enterovirus A71, EV-D68) - polio-like paralysis",
+          "Myocarditis and pericarditis (rare)",
+          "Pulmonary edema and hemorrhage (Enterovirus A71) - can be rapidly fatal",
+          "Death (rare, but higher with Enterovirus A71 outbreaks)"
+        ],
+        "caseDefinition": {
+          "suspected": "Child with fever + oral ulcers + vesicular rash on hands and/or feet, OR herpangina (oral ulcers on posterior pharynx without hand/foot rash)",
+          "confirmed": "Clinical illness + laboratory confirmation: positive RT-PCR for enterovirus from throat swab, stool, vesicular fluid, or CSF"
+        }
+      },
+      "diagnosis": [
+        "Clinical diagnosis based on characteristic oral ulcers and hand/foot rash (usually sufficient)",
+        "RT-PCR for enterovirus RNA from throat swab, stool, vesicular fluid, or CSF - can identify specific enterovirus type (e.g., Coxsackievirus A16, Enterovirus A71)",
+        "Viral culture from clinical specimens - time-consuming, used for surveillance",
+        "Serology (paired sera) - retrospective diagnosis, not routinely used"
+      ],
+      "treatment": "Supportive care: antipyretics, analgesics for pain, hydration (oral or IV if dehydrated), soft diet. Topical oral anesthetics (lidocaine gel, magic mouthwash) for oral pain. No specific antiviral therapy available. Monitor for neurological complications (Enterovirus A71). Isolation and exclusion from daycare/school until fever resolves and oral lesions heal (typically 7-10 days).",
+      "infectionControl": {
+        "precautions": "Contact Precautions + Standard Precautions. Wear gown and gloves for all patient contact, especially diaper changes. Hand hygiene with soap and water (alcohol-based hand rub is less effective against enteroviruses)",
+        "screening": "Screen for symptoms in daycare and school settings during outbreaks",
+        "cohorting": "Cohort confirmed cases together if possible; assign dedicated staff",
+        "sourceControl": "Exclude ill children from daycare/school until fever resolves and oral lesions heal",
+        "environmental": "Enhanced cleaning and disinfection with EPA-registered disinfectants effective against non-enveloped viruses (e.g., bleach-based, accelerated hydrogen peroxide). Enteroviruses are resistant to alcohol-based disinfectants. Clean and disinfect toys, surfaces, and shared items frequently",
+        "staffEducation": "Strict hand hygiene with soap and water (most important measure); proper diaper changing technique; avoid touching face; educate caregivers on transmission prevention"
+      },
+      "outbreakTriggers": [
+        "≥2-3 cases of HFMD in same classroom, daycare center, or household within 1-2 weeks",
+        "Sudden local increase in HFMD cases above baseline",
+        "Detection of Enterovirus A71 (higher risk of severe complications)"
+      ],
+      "reportingCommunication": [
+        "Report clusters of HFMD to public health authorities for surveillance (standard reporting within 24 hours)",
+        "Enhanced surveillance for severe cases and neurological complications (Enterovirus A71)",
+        "Communicate with daycare centers, schools, and families about outbreak",
+        "Implement outbreak control measures: exclusion of ill children, enhanced cleaning, hand hygiene education",
+        "Group notifications to parents/caregivers"
+      ],
+      "prevention": [
+        "Hand hygiene with soap and water (most important measure) - especially after diaper changes, using toilet, before eating",
+        "Frequent cleaning and disinfection of toys, surfaces, and shared items with appropriate disinfectants (bleach-based)",
+        "Avoid sharing utensils, cups, towels, and personal items",
+        "Exclude ill children from daycare/school until fever resolves and oral lesions heal",
+        "Educate caregivers on proper hygiene and early recognition of symptoms",
+        "No vaccine available for most enteroviruses (except poliovirus)",
+        "Enterovirus A71 vaccine available in some countries (China)"
+      ],
+      "references": [
+        {
+          "label": "CDC - Hand, Foot, and Mouth Disease",
+          "url": "https://www.cdc.gov/hand-foot-mouth/index.html"
+        },
+        {
+          "label": "WHO - Hand, Foot and Mouth Disease",
+          "url": "https://www.who.int/westernpacific/emergencies/surveillance/archives/hand-foot-and-mouth-disease"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "monkeypox",
+      "name": "Monkeypox virus / Orthopoxviruses",
+      "scientificName": "Monkeypox virus (MPXV), genus Orthopoxvirus, family Poxviridae",
+      "definition": "Large enveloped double-stranded DNA virus causing mpox (formerly monkeypox), a zoonotic disease with clinical presentation similar to smallpox but generally less severe. Two genetic clades exist: Clade I (Central African, more severe) and Clade II (West African, milder). The 2022-2023 global outbreak (Clade IIb) demonstrated sustained human-to-human transmission, particularly among men who have sex with men (MSM). Characterized by fever, lymphadenopathy, and distinctive deep-seated vesiculopustular rash.",
+      "reservoir": {
+        "primary": [
+          "Wild rodents (rope squirrels, tree squirrels, Gambian pouched rats, dormice) in Central and West Africa",
+          "Non-human primates (secondary hosts)"
+        ],
+        "secondary": [
+          "Humans (during outbreaks with sustained human-to-human transmission)"
+        ],
+        "notes": "Natural reservoir is believed to be African rodents. Monkeys are incidental hosts (hence the misleading name). The 2022-2023 global outbreak demonstrated that humans can serve as reservoir during sustained transmission."
+      },
+      "transmission": {
+        "mode": "Direct contact with skin lesions or body fluids, respiratory droplets (prolonged face-to-face contact), contaminated fomites, zoonotic transmission",
+        "routes": [
+          "Direct contact with skin lesions, scabs, or body fluids of infected person or animal (primary route in 2022-2023 outbreak)",
+          "Respiratory droplets during prolonged face-to-face contact (>3 hours)",
+          "Contaminated fomites (bedding, clothing, towels, surfaces)",
+          "Sexual contact (close skin-to-skin contact during sexual activity - major route in 2022-2023 outbreak)",
+          "Vertical transmission (mother to fetus via placenta - congenital mpox)",
+          "Zoonotic transmission: direct contact with infected animals (hunting, butchering, consumption of bushmeat), animal bites or scratches"
+        ],
+        "notes": "The 2022-2023 outbreak showed that close intimate contact (including but not limited to sexual contact) is a major transmission route. Lesions in genital/perianal area are highly infectious. Virus can be transmitted from symptom onset until all lesions have crusted and healed."
+      },
+      "incubationPeriod": {
+        "range": "5-21 days (average 7-14 days) from exposure to symptom onset",
+        "infectiousPeriod": "Infectious from onset of prodromal symptoms (fever, lymphadenopathy) until all skin lesions have crusted, scabs have fallen off, and a fresh layer of skin has formed underneath (typically 2-4 weeks from symptom onset)",
+        "seasonality": "No clear seasonality; outbreaks can occur year-round",
+        "geographic": "Endemic in Central and West Africa (Democratic Republic of Congo, Nigeria, Cameroon, Central African Republic). 2022-2023 global outbreak affected >100 countries worldwide"
+      },
+      "riskFactors": [
+        "Close physical contact with infected person (household contacts, sexual partners, healthcare workers)",
+        "Men who have sex with men (MSM) - disproportionately affected in 2022-2023 outbreak",
+        "Unvaccinated individuals (no prior smallpox vaccination or mpox vaccination)",
+        "Immunocompromised individuals (HIV, cancer, transplant) - risk of severe disease",
+        "Children (higher risk of severe disease)",
+        "Pregnant women (risk of adverse pregnancy outcomes, congenital mpox)",
+        "Occupational exposure (healthcare workers, laboratory workers, animal handlers)",
+        "Travel to or residence in mpox-endemic areas in Africa",
+        "Contact with infected animals or consumption of bushmeat"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Prodrome (1-4 days before rash): fever, intense headache, lymphadenopathy (swollen lymph nodes - distinguishing feature from smallpox), back pain, myalgia, profound asthenia (weakness)",
+          "Rash: begins 1-4 days after fever onset; starts on face and spreads centrifugally to trunk, extremities, palms, soles, and mucous membranes (oral, genital, conjunctival). In 2022-2023 outbreak, rash often started in genital/perianal area",
+          "Rash evolution: macules → papules → vesicles → pustules (deep-seated, firm, well-circumscribed, often umbilicated) → scabs. All lesions in same stage of development (unlike varicella)",
+          "Lymphadenopathy: cervical, axillary, inguinal - characteristic feature",
+          "Proctitis (rectal pain, bleeding, tenesmus) - common in 2022-2023 outbreak with genital/perianal lesions"
+        ],
+        "complications": [
+          "Secondary bacterial skin infections",
+          "Pneumonitis and respiratory distress",
+          "Encephalitis",
+          "Keratitis and corneal ulceration (vision loss)",
+          "Sepsis",
+          "Severe disease in children, pregnant women, and immunocompromised",
+          "Congenital mpox (if maternal infection during pregnancy): fetal loss, stillbirth, congenital defects",
+          "Scarring and disfigurement from skin lesions",
+          "Death (case fatality rate: Clade I ~10%, Clade II ~1%, 2022-2023 outbreak <0.1%)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with unexplained acute rash + one or more of: fever, lymphadenopathy, headache, myalgia, back pain, OR person with epidemiological link to confirmed case, OR person with genital/perianal lesions",
+          "confirmed": "Suspected case + laboratory confirmation: positive PCR for orthopoxvirus DNA (monkeypox virus) from lesion swab, lesion crust, or other clinical specimen"
+        }
+      },
+      "diagnosis": [
+        "PCR for orthopoxvirus DNA (monkeypox virus) from lesion swab (roof or fluid of vesicle/pustule), lesion crust, or scab - gold standard",
+        "Electron microscopy (shows brick-shaped poxvirus particles) - not specific for monkeypox",
+        "Serology (IgM, IgG) - limited utility due to cross-reactivity with other orthopoxviruses",
+        "Viral culture - requires BSL-3 laboratory, rarely done",
+        "Sequencing for clade identification (Clade I vs Clade II)"
+      ],
+      "treatment": "Supportive care: pain management, hydration, wound care, treatment of secondary infections. Antivirals: tecovirimat (TPOXX) for severe disease, immunocompromised patients, or high-risk individuals (FDA-approved for smallpox, used under expanded access for mpox). Brincidofovir and cidofovir (alternative antivirals). Vaccinia immune globulin (VIG) for severe complications. Isolation until all lesions have crusted and healed (typically 2-4 weeks).",
+      "infectionControl": {
+        "precautions": "Contact Precautions + Droplet Precautions (or Airborne Precautions if extensive pulmonary involvement or aerosol-generating procedures). Wear gown, gloves, N95 respirator (or surgical mask if droplet precautions), and eye protection. Place patient in single room (negative pressure preferred if available). Isolate from symptom onset until all lesions have crusted, scabs have fallen off, and fresh skin has formed",
+        "screening": "Screen for mpox symptoms (rash, fever, lymphadenopathy) at healthcare entry points; isolate suspected cases immediately",
+        "cohorting": "Cohort confirmed mpox cases together if necessary; keep separate from immunocompromised and pregnant women",
+        "sourceControl": "Cover all lesions with clothing or dressings; surgical mask on patient; limit patient movement outside isolation room",
+        "environmental": "Enhanced cleaning and disinfection with EPA-registered disinfectants effective against poxviruses (e.g., bleach-based, accelerated hydrogen peroxide). Launder contaminated linens and clothing separately. Dispose of waste as regulated medical waste",
+        "staffEducation": "Proper donning/doffing of PPE; avoid direct contact with lesions or contaminated materials; vaccination for high-risk healthcare workers (JYNNEOS vaccine)"
+      },
+      "outbreakTriggers": [
+        "Any confirmed or suspected case of mpox (especially in non-endemic area)",
+        "Nosocomial transmission (healthcare-associated case)",
+        "Cluster of cases in community, household, or high-risk network",
+        "Detection of Clade I (more severe) in non-endemic area"
+      ],
+      "reportingCommunication": [
+        "Immediate notification (within 24 hours or sooner) of all suspected and confirmed mpox cases to local/national public health authorities - mpox is a notifiable disease and internationally reportable to WHO",
+        "Case reporting with detailed epidemiological information (travel history, animal contact, sexual history, close contacts)",
+        "Contact tracing: identify all close contacts (household, sexual, healthcare); monitor for 21 days",
+        "Post-exposure prophylaxis: JYNNEOS vaccine (modified vaccinia Ankara - MVA) within 4 days of exposure (ideally) or up to 14 days for outbreak control",
+        "Public risk alerts and health messaging, especially to high-risk communities (MSM networks in 2022-2023 outbreak)",
+        "Coordinate with public health authorities for epidemiological investigation and outbreak control"
+      ],
+      "prevention": [
+        "Vaccination: JYNNEOS vaccine (modified vaccinia Ankara - MVA, 2 doses 28 days apart) for pre-exposure prophylaxis (high-risk individuals: MSM with multiple partners, healthcare workers, laboratory workers) and post-exposure prophylaxis (within 4-14 days of exposure)",
+        "Avoid close physical contact with individuals who have mpox or suspected mpox",
+        "Avoid contact with animals that could harbor the virus (rodents, primates) in endemic areas; avoid bushmeat",
+        "Isolation of confirmed cases until all lesions have healed",
+        "Use of condoms and dental dams during sexual activity (may reduce but not eliminate risk)",
+        "Proper use of PPE for healthcare workers and caregivers",
+        "Enhanced cleaning and disinfection of contaminated environments",
+        "Public health messaging and outbreak communication to high-risk communities",
+        "Educate on early recognition of symptoms and seeking medical care"
+      ],
+      "references": [
+        {
+          "label": "WHO - Mpox (Monkeypox)",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/monkeypox"
+        },
+        {
+          "label": "CDC - Mpox",
+          "url": "https://www.cdc.gov/poxvirus/mpox/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    }
+  ]
+}

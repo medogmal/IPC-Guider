@@ -1,0 +1,133 @@
+import 'dart:convert';
+import 'package:flutter/services.dart';
+import '../models/hand_hygiene_section.dart';
+
+/// Repository for managing Hand Hygiene data
+/// Follows offline-first approach with JSON asset loading
+class HandHygieneRepository {
+  static const String _asset = 'assets/data/hand_hygiene.json';
+
+  // Singleton pattern
+  static final HandHygieneRepository _instance =
+      HandHygieneRepository._internal();
+  factory HandHygieneRepository() => _instance;
+  HandHygieneRepository._internal();
+
+  // In-memory cache
+  HandHygieneData? _cachedData;
+
+  /// Load all hand hygiene data from JSON asset
+  Future<HandHygieneData> loadHandHygieneData() async {
+    // Return cached data if available
+    if (_cachedData != null) {
+      return _cachedData!;
+    }
+
+    try {
+      final String jsonString = await rootBundle.loadString(_asset);
+      final Map<String, dynamic> json = jsonDecode(jsonString);
+      _cachedData = HandHygieneData.fromJson(json);
+      return _cachedData!;
+    } catch (e) {
+      throw Exception('Failed to load hand hygiene data: $e');
+    }
+  }
+
+  /// Get all sections
+  Future<List<HandHygieneSection>> getAllSections() async {
+    final data = await loadHandHygieneData();
+    return data.sections;
+  }
+
+  /// Get section by ID
+  Future<HandHygieneSection?> getSectionById(String id) async {
+    final sections = await getAllSections();
+    try {
+      return sections.firstWhere((section) => section.id == id);
+    } catch (e) {
+      return null;
+    }
+  }
+
+  /// Get page by ID (searches across all sections)
+  Future<HandHygienePage?> getPageById(String pageId) async {
+    final sections = await getAllSections();
+    for (final section in sections) {
+      try {
+        return section.pages.firstWhere((page) => page.id == pageId);
+      } catch (e) {
+        continue;
+      }
+    }
+    return null;
+  }
+
+  /// Search sections and pages by query
+  Future<List<HandHygieneSection>> searchSections(String query) async {
+    if (query.trim().isEmpty) {
+      return getAllSections();
+    }
+
+    final sections = await getAllSections();
+    final lowerQuery = query.toLowerCase();
+
+    // Filter sections and pages that match the query
+    final filteredSections = <HandHygieneSection>[];
+
+    for (final section in sections) {
+      // Check if section name or description matches
+      final sectionMatches = section.name.toLowerCase().contains(lowerQuery) ||
+          section.description.toLowerCase().contains(lowerQuery);
+
+      // Check if any page matches
+      final matchingPages = section.pages.where((page) {
+        return page.name.toLowerCase().contains(lowerQuery) ||
+            page.content.any((c) => c.toLowerCase().contains(lowerQuery)) ||
+            page.keyPoints.any((k) => k.toLowerCase().contains(lowerQuery));
+      }).toList();
+
+      // Include section if it matches or has matching pages
+      if (sectionMatches || matchingPages.isNotEmpty) {
+        filteredSections.add(
+          HandHygieneSection(
+            id: section.id,
+            name: section.name,
+            category: section.category,
+            description: section.description,
+            pages: matchingPages.isNotEmpty ? matchingPages : section.pages,
+          ),
+        );
+      }
+    }
+
+    return filteredSections;
+  }
+
+  /// Filter sections by category
+  Future<List<HandHygieneSection>> getSectionsByCategory(
+      String category) async {
+    if (category.toLowerCase() == 'all') {
+      return getAllSections();
+    }
+
+    final sections = await getAllSections();
+    return sections
+        .where((section) =>
+            section.category.toLowerCase() == category.toLowerCase())
+        .toList();
+  }
+
+  /// Get all unique categories
+  Future<List<String>> getCategories() async {
+    final sections = await getAllSections();
+    final categories = sections.map((s) => s.category).toSet().toList();
+    categories.sort();
+    return ['All', ...categories];
+  }
+
+  /// Clear cache (useful for testing or forcing reload)
+  void clearCache() {
+    _cachedData = null;
+  }
+}
+

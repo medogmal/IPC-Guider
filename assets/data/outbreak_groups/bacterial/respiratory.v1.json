@@ -1,0 +1,897 @@
+{
+  "version": 1,
+  "groupId": "respiratory",
+  "groupName": "Respiratory",
+  "type": "bacterial",
+  "updatedAt": "2025-01-11T00:00:00Z",
+  "pathogens": [
+    {
+      "id": "strep_pneumoniae_respiratory",
+      "name": "Streptococcus pneumoniae",
+      "scientificName": "Streptococcus pneumoniae (Pneumococcus)",
+      "definition": "Gram-positive diplococcus; leading cause of community-acquired pneumonia (CAP), meningitis, and invasive disease. S. pneumoniae is the most common bacterial cause of pneumonia worldwide.",
+      "reservoir": {
+        "primary": ["Human nasopharynx (asymptomatic carriage in 5-10% of adults, 20-40% of children)"],
+        "secondary": ["Respiratory secretions of infected individuals"],
+        "notes": "Humans are the only reservoir. Nasopharyngeal carriage is common, especially in young children. Carriage rates vary by age, season, and vaccination status."
+      },
+      "transmission": {
+        "mode": "Respiratory droplets",
+        "routes": [
+          "Respiratory droplets from close contact (coughing, sneezing)",
+          "Direct contact with respiratory secretions",
+          "Autoinoculation from nasopharynx to lungs"
+        ],
+        "notes": "Transmission is person-to-person via respiratory droplets. Pneumonia often follows viral upper respiratory infection."
+      },
+      "incubationPeriod": {
+        "range": "1-3 days (variable)",
+        "infectiousPeriod": "Infectious during symptomatic period (until effective antibiotic treatment)",
+        "seasonality": "Winter and spring peaks (respiratory season)",
+        "geographic": "Worldwide, with higher incidence in developing countries and among unvaccinated populations"
+      },
+      "riskFactors": [
+        "Age extremes (elderly >65 years, children <5 years)",
+        "Immunosuppression (HIV, cancer, transplant, corticosteroids)",
+        "Chronic diseases (lung disease, heart disease, diabetes, liver disease, kidney disease)",
+        "Asplenia or functional splenectomy",
+        "Smoking and alcohol abuse",
+        "Recent viral respiratory infection (influenza)",
+        "Crowded living conditions"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Fever and chills (often sudden onset)",
+          "Productive cough with purulent or rusty sputum",
+          "Dyspnea (shortness of breath)",
+          "Pleuritic chest pain",
+          "Tachypnea and tachycardia",
+          "Lobar consolidation on chest X-ray"
+        ],
+        "complications": [
+          "Bacteremia and sepsis",
+          "Meningitis",
+          "Empyema (pleural effusion)",
+          "Lung abscess",
+          "Respiratory failure",
+          "Death (5-7% mortality in hospitalized patients; higher in elderly)",
+          "Acute respiratory distress syndrome (ARDS)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with fever + cough + dyspnea + lobar consolidation on chest imaging + risk factors",
+          "confirmed": "Clinical illness + laboratory confirmation: positive sputum, blood, or pleural fluid culture for S. pneumoniae, OR positive urinary antigen test, OR PCR"
+        }
+      },
+      "diagnosis": [
+        "Sputum Gram stain and culture (Gram-positive diplococci)",
+        "Blood culture (positive in 25-30% of cases)",
+        "Urinary pneumococcal antigen test (rapid, detects most serotypes)",
+        "Chest X-ray (lobar consolidation, often single lobe)",
+        "PCR for S. pneumoniae",
+        "Pleural fluid culture (if empyema present)"
+      ],
+      "treatment": "Penicillins (penicillin G, amoxicillin) or cephalosporins (ceftriaxone, cefotaxime) if susceptible. Macrolides (azithromycin) or fluoroquinolones (levofloxacin, moxifloxacin) for penicillin-resistant strains or atypical coverage. Vancomycin for highly resistant strains. Duration: 5-7 days for uncomplicated CAP.",
+      "infectionControl": {
+        "precautions": "Droplet Precautions (surgical mask) for first 24 hours of effective antibiotic treatment; then Standard Precautions",
+        "screening": "Not routinely recommended",
+        "cohorting": "Isolate cases during first 24 hours of treatment",
+        "sourceControl": "Not applicable",
+        "environmental": "Standard cleaning",
+        "staffEducation": "Droplet precautions, recognition of severe pneumonia, vaccination importance, respiratory hygiene"
+      },
+      "outbreakTriggers": [
+        "Clusters of ≥2-3 severe CAP cases in a facility (hospital, nursing home)",
+        "Sudden spike in community pneumonia cases or closed group (military, prison)",
+        "Emergence of vaccine-escape serotypes",
+        "Increase above baseline rate"
+      ],
+      "reportingCommunication": [
+        "Notify public health within 24 hours of suspected outbreak",
+        "Contact tracing as indicated in closed settings",
+        "Assess vaccination coverage in affected population",
+        "Implement enhanced surveillance",
+        "Update stakeholders and healthcare providers"
+      ],
+      "prevention": [
+        "Vaccination: PCV13 (pneumococcal conjugate vaccine) for children and high-risk adults; PPSV23 (pneumococcal polysaccharide vaccine) for adults ≥65 years and high-risk groups",
+        "Respiratory hygiene and cough etiquette",
+        "Smoking cessation",
+        "Influenza vaccination (reduces risk of secondary bacterial pneumonia)",
+        "Early diagnosis and treatment",
+        "Management of chronic diseases"
+      ],
+      "references": [
+        {
+          "label": "WHO - Pneumococcal Disease",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/pneumonia"
+        },
+        {
+          "label": "CDC - Pneumococcal Disease",
+          "url": "https://www.cdc.gov/pneumococcal/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Respiratory Infections",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "mycobacterium_tuberculosis",
+      "name": "Mycobacterium tuberculosis (TB)",
+      "scientificName": "Mycobacterium tuberculosis",
+      "definition": "Acid-fast bacillus causing chronic pulmonary or extrapulmonary tuberculosis. TB is a major global health threat, with potential for latent infection and reactivation disease.",
+      "reservoir": {
+        "primary": ["Humans with active pulmonary tuberculosis"],
+        "secondary": ["Humans with latent TB infection (LTBI) - not infectious"],
+        "notes": "Humans are the only reservoir. Approximately 25% of the world's population has latent TB infection. Only active pulmonary TB is infectious."
+      },
+      "transmission": {
+        "mode": "Airborne (droplet nuclei)",
+        "routes": [
+          "Inhalation of airborne droplet nuclei (<5 microns) from coughing, sneezing, singing, or talking",
+          "Close and prolonged contact with infectious person (household, healthcare, congregate settings)",
+          "Poorly ventilated spaces increase transmission risk"
+        ],
+        "notes": "Transmission requires close and prolonged contact. Droplet nuclei can remain suspended in air for hours. Extrapulmonary TB (except laryngeal) is generally not infectious."
+      },
+      "incubationPeriod": {
+        "range": "Weeks to months (typically 2-12 weeks for primary infection; years for reactivation)",
+        "infectiousPeriod": "Infectious while pulmonary symptoms persist and until 2-3 weeks of effective anti-TB therapy (smear-negative and clinical improvement)",
+        "seasonality": "Year-round, no specific seasonal pattern",
+        "geographic": "Worldwide, with highest burden in sub-Saharan Africa, South Asia, and Southeast Asia"
+      },
+      "riskFactors": [
+        "Immunosuppression (HIV/AIDS, TNF-alpha inhibitors, corticosteroids, transplant)",
+        "Close and prolonged contact with active TB case",
+        "Healthcare workers",
+        "Congregate settings (prisons, homeless shelters, long-term care facilities)",
+        "Malnutrition and poverty",
+        "Diabetes, chronic kidney disease, silicosis",
+        "Substance abuse (alcohol, injection drugs)",
+        "Recent TB infection (<2 years)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Chronic cough (>2-3 weeks)",
+          "Hemoptysis (coughing up blood)",
+          "Weight loss and anorexia",
+          "Fever (often low-grade, night sweats)",
+          "Fatigue and malaise",
+          "Chest pain (if pleural involvement)",
+          "Extrapulmonary manifestations (lymphadenitis, meningitis, bone/joint, genitourinary)"
+        ],
+        "complications": [
+          "Miliary TB (disseminated disease)",
+          "TB meningitis",
+          "Respiratory failure",
+          "Massive hemoptysis",
+          "Drug-resistant TB (MDR-TB, XDR-TB)",
+          "Death (untreated TB has 50% mortality)",
+          "Post-TB lung disease (bronchiectasis, fibrosis)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with chronic cough + weight loss + fever + night sweats + risk factors (HIV, close contact, congregate setting) + chest X-ray abnormalities",
+          "confirmed": "Laboratory confirmation: positive AFB smear, positive culture for M. tuberculosis, OR positive nucleic acid amplification test (NAAT/PCR)"
+        }
+      },
+      "diagnosis": [
+        "Sputum AFB (acid-fast bacilli) smear microscopy (3 specimens)",
+        "Sputum culture for M. tuberculosis (gold standard, takes 2-8 weeks)",
+        "Nucleic acid amplification test (NAAT/PCR) - rapid, same-day results",
+        "Chest X-ray (upper lobe infiltrates, cavitation, lymphadenopathy)",
+        "Tuberculin skin test (TST) or Interferon-Gamma Release Assay (IGRA) for latent TB",
+        "Drug susceptibility testing (DST) for all culture-positive cases"
+      ],
+      "treatment": "Multi-drug anti-TB therapy: Intensive phase (2 months): Isoniazid + Rifampin + Pyrazinamide + Ethambutol (HRZE). Continuation phase (4 months): Isoniazid + Rifampin (HR). Total duration: 6 months for drug-susceptible pulmonary TB. MDR-TB requires 18-24 months with second-line drugs. Directly Observed Therapy (DOT) recommended.",
+      "infectionControl": {
+        "precautions": "Airborne Isolation (negative-pressure room, N95 respirator or PAPR for healthcare workers) until patient is non-infectious (3 consecutive negative AFB smears, clinical improvement, 2-3 weeks of effective therapy)",
+        "screening": "Contact investigation: screen household and close contacts with TST or IGRA; chest X-ray if positive",
+        "cohorting": "Isolate suspected/confirmed TB cases in airborne isolation rooms; cohort if multiple cases",
+        "sourceControl": "Surgical mask on patient when outside isolation room; cough etiquette",
+        "environmental": "Negative-pressure rooms with ≥12 air changes per hour (ACH); HEPA filtration; UV germicidal irradiation (UVGI)",
+        "staffEducation": "Airborne precautions, N95 fit testing, recognition of TB symptoms, contact investigation protocols, DOT importance"
+      },
+      "outbreakTriggers": [
+        "Any confirmed case in healthcare setting or closed community (prison, shelter, school)",
+        "≥2 epidemiologically linked cases (same strain by genotyping)",
+        "Cluster of cases above baseline rate",
+        "MDR-TB or XDR-TB case"
+      ],
+      "reportingCommunication": [
+        "Immediate public health notification within 24 hours of suspected or confirmed TB",
+        "Contact tracing and screening of high-risk contacts",
+        "Genotyping (RFLP, MIRU-VNTR, WGS) to confirm outbreak strain",
+        "Coordinate with TB control program",
+        "Implement enhanced infection control measures",
+        "Update stakeholders and healthcare providers"
+      ],
+      "prevention": [
+        "BCG vaccination (where indicated, primarily in high-burden countries)",
+        "Respiratory protection (N95 masks) for healthcare workers and close contacts",
+        "Early diagnosis and treatment of active TB",
+        "Treatment of latent TB infection (LTBI) in high-risk individuals",
+        "Infection control measures (airborne isolation, ventilation)",
+        "Contact investigation and screening",
+        "Public health education on TB symptoms and transmission"
+      ],
+      "references": [
+        {
+          "label": "WHO - Tuberculosis",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/tuberculosis"
+        },
+        {
+          "label": "CDC - Tuberculosis",
+          "url": "https://www.cdc.gov/tb/default.htm"
+        },
+        {
+          "label": "Saudi GDIPC - TB Guidelines",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "bordetella_pertussis",
+      "name": "Bordetella pertussis",
+      "scientificName": "Bordetella pertussis",
+      "definition": "Gram-negative coccobacillus causing pertussis (whooping cough). Pertussis is a highly contagious respiratory infection characterized by paroxysmal cough and inspiratory whoop.",
+      "reservoir": {
+        "primary": ["Humans (infected individuals and carriers)"],
+        "secondary": ["Respiratory secretions"],
+        "notes": "Humans are the only reservoir. Asymptomatic carriage is rare. Adolescents and adults with mild symptoms are often unrecognized sources of transmission to infants."
+      },
+      "transmission": {
+        "mode": "Respiratory droplets",
+        "routes": [
+          "Respiratory droplets from close contact (coughing, sneezing)",
+          "Direct contact with respiratory secretions",
+          "Highly contagious (attack rate 80-90% in susceptible household contacts)"
+        ],
+        "notes": "Transmission is highest during the catarrhal and early paroxysmal stages. Infants are at highest risk of severe disease and death."
+      },
+      "incubationPeriod": {
+        "range": "7-10 days (range 4-21 days)",
+        "infectiousPeriod": "Contagious from prodrome (catarrhal stage) through 3 weeks of paroxysmal cough, OR until 5 days after starting effective antibiotic therapy",
+        "seasonality": "Summer and fall peaks in temperate climates",
+        "geographic": "Worldwide, with resurgence in countries with high vaccination coverage due to waning immunity"
+      },
+      "riskFactors": [
+        "Unvaccinated or incompletely vaccinated individuals",
+        "Infants <6 months (too young to be fully vaccinated)",
+        "Close contacts of cases (household, daycare, school)",
+        "Waning immunity (adolescents and adults 5-10 years post-vaccination)",
+        "Healthcare workers",
+        "Pregnant women (risk of transmission to newborn)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Catarrhal stage (1-2 weeks): mild cough, rhinorrhea, low-grade fever (resembles common cold)",
+          "Paroxysmal stage (2-6 weeks): severe paroxysmal cough with inspiratory whoop, post-tussive vomiting, cyanosis",
+          "Convalescent stage (weeks to months): gradual resolution of cough",
+          "Infants: apnea, cyanosis, feeding difficulties (may not have whoop)"
+        ],
+        "complications": [
+          "Pneumonia (secondary bacterial infection)",
+          "Seizures and encephalopathy",
+          "Apnea and respiratory failure (infants)",
+          "Rib fractures from severe coughing",
+          "Weight loss and dehydration",
+          "Death (primarily in infants <6 months)",
+          "Subconjunctival hemorrhage, epistaxis"
+        ],
+        "caseDefinition": {
+          "suspected": "Clinical: cough illness lasting ≥2 weeks with paroxysms, whoop, or post-tussive vomiting, OR cough illness in infant <1 year with apnea",
+          "confirmed": "Clinical illness + laboratory confirmation: positive PCR or culture for B. pertussis, OR epidemiologic link to confirmed case"
+        }
+      },
+      "diagnosis": [
+        "Nasopharyngeal swab or aspirate for PCR (most sensitive, especially in first 3 weeks)",
+        "Nasopharyngeal culture (gold standard, but less sensitive and takes 5-7 days)",
+        "Serology (IgG antibodies) - useful for late diagnosis or epidemiologic studies",
+        "Chest X-ray (if pneumonia suspected)"
+      ],
+      "treatment": "Macrolides: azithromycin (5 days) or erythromycin (14 days) - first-line. Trimethoprim-sulfamethoxazole (alternative). Antibiotics most effective if started in catarrhal stage; reduce transmission but have limited effect on symptoms if started in paroxysmal stage. Supportive care: oxygen, hydration, nutrition.",
+      "infectionControl": {
+        "precautions": "Droplet Precautions (surgical mask) until 5 days after starting effective antibiotic therapy, OR 3 weeks after cough onset if no antibiotics",
+        "screening": "Not routinely recommended; identify close contacts for prophylaxis",
+        "cohorting": "Isolate cases; cohort if multiple cases",
+        "sourceControl": "Exclude cases from group settings (school, daycare, work) until non-infectious",
+        "environmental": "Standard cleaning",
+        "staffEducation": "Droplet precautions, recognition of pertussis (paroxysmal cough, whoop), contact prophylaxis protocols, vaccination importance"
+      },
+      "outbreakTriggers": [
+        "≥2 epidemiologically linked cases in institution (school, daycare, healthcare facility)",
+        "Sudden local increase in pertussis cases",
+        "Cluster above baseline rate",
+        "Single case in high-risk setting (neonatal unit, maternity ward)"
+      ],
+      "reportingCommunication": [
+        "Health authority alert within 24 hours of suspected or confirmed case",
+        "Close contact assessment and chemoprophylaxis (macrolides for household and close contacts)",
+        "Implement enhanced surveillance in affected settings",
+        "Vaccination campaigns (Tdap booster) if outbreak in adolescents/adults",
+        "Public health education on symptoms and prevention",
+        "Update stakeholders (schools, daycares, healthcare facilities)"
+      ],
+      "prevention": [
+        "Vaccination: DTaP (diphtheria-tetanus-acellular pertussis) for children at 2, 4, 6, 15-18 months, and 4-6 years; Tdap booster for adolescents (11-12 years) and adults",
+        "Maternal Tdap vaccination during each pregnancy (27-36 weeks) - protects newborns",
+        "Chemoprophylaxis for close contacts (macrolides)",
+        "Public and healthcare worker education on pertussis symptoms",
+        "Respiratory etiquette and cough hygiene",
+        "Prompt medical attention for prolonged cough",
+        "Cocooning strategy: vaccinate household contacts of newborns"
+      ],
+      "references": [
+        {
+          "label": "WHO - Pertussis",
+          "url": "https://www.who.int/teams/immunization-vaccines-and-biologicals/diseases/pertussis"
+        },
+        {
+          "label": "CDC - Pertussis (Whooping Cough)",
+          "url": "https://www.cdc.gov/pertussis/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Respiratory Infections",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "corynebacterium_diphtheriae",
+      "name": "Corynebacterium diphtheriae",
+      "scientificName": "Corynebacterium diphtheriae",
+      "definition": "Gram-positive rod causing diphtheria, a toxin-mediated disease characterized by pseudomembrane formation in the throat and systemic toxicity. Diphtheria is vaccine-preventable but remains a threat in unvaccinated populations.",
+      "reservoir": {
+        "primary": ["Human throat and nasopharynx (carriers and infected individuals)"],
+        "secondary": ["Skin lesions (cutaneous diphtheria)"],
+        "notes": "Humans are the only reservoir. Asymptomatic carriers can transmit the disease. Cutaneous diphtheria is less severe but can be a source of transmission."
+      },
+      "transmission": {
+        "mode": "Respiratory droplets and direct contact",
+        "routes": [
+          "Respiratory droplets from close contact (coughing, sneezing)",
+          "Direct contact with respiratory secretions",
+          "Direct contact with skin lesions (cutaneous diphtheria)",
+          "Fomites (contaminated objects)"
+        ],
+        "notes": "Transmission is person-to-person. Crowded settings and poor hygiene increase transmission risk."
+      },
+      "incubationPeriod": {
+        "range": "2-5 days (range 1-10 days)",
+        "infectiousPeriod": "Infectious until bacteria and toxin are eradicated (typically 2 weeks without treatment; <4 days with antibiotics)",
+        "seasonality": "Fall and winter peaks in temperate climates",
+        "geographic": "Worldwide, with highest incidence in areas with low vaccination coverage (sub-Saharan Africa, South Asia)"
+      },
+      "riskFactors": [
+        "Unvaccinated or incompletely vaccinated individuals",
+        "Crowded living conditions (refugee camps, prisons, homeless shelters)",
+        "Poor hygiene and sanitation",
+        "Travel to endemic areas",
+        "Close contact with cases or carriers",
+        "Immunocompromised individuals",
+        "Alcoholism and substance abuse"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Sore throat and difficulty swallowing",
+          "Low-grade fever and malaise",
+          "Adherent gray-white pseudomembrane on tonsils, pharynx, or larynx (hallmark)",
+          "Bull neck appearance (cervical lymphadenopathy and edema)",
+          "Hoarseness and stridor (if laryngeal involvement)",
+          "Cutaneous diphtheria: non-healing ulcers with gray membrane"
+        ],
+        "complications": [
+          "Myocarditis (cardiac toxicity) - leading cause of death",
+          "Neuritis (cranial nerve palsies, peripheral neuropathy)",
+          "Nephritis (kidney damage)",
+          "Airway obstruction (pseudomembrane)",
+          "Respiratory failure",
+          "Death (5-10% mortality with treatment; up to 50% without treatment)",
+          "Septic shock"
+        ],
+        "caseDefinition": {
+          "suspected": "Clinical: sore throat + adherent pseudomembrane on tonsils/pharynx + bull neck appearance, OR cutaneous ulcer with gray membrane + epidemiologic link",
+          "confirmed": "Clinical illness + laboratory confirmation: positive culture for toxigenic C. diphtheriae, OR positive PCR with toxin gene detection"
+        }
+      },
+      "diagnosis": [
+        "Throat or nasopharyngeal swab for culture (Loeffler medium, tellurite agar)",
+        "PCR for C. diphtheriae and toxin gene (tox)",
+        "Toxin detection (Elek test or PCR)",
+        "Gram stain (Gram-positive rods with metachromatic granules)",
+        "ECG (to detect myocarditis)",
+        "Throat examination (visualize pseudomembrane - do not remove forcibly)"
+      ],
+      "treatment": "Diphtheria antitoxin (DAT) - CRITICAL, must be given as soon as possible (neutralizes circulating toxin, does not affect toxin already bound to tissues). Antibiotics: penicillin G or erythromycin (14 days) - eradicates bacteria and stops toxin production. Supportive care: airway management, cardiac monitoring, bed rest. Isolation until 2 consecutive negative cultures (24 hours apart, after completing antibiotics).",
+      "infectionControl": {
+        "precautions": "Droplet and Contact Precautions until 2 consecutive negative cultures (24 hours apart, after completing antibiotics)",
+        "screening": "Identify and screen close contacts; obtain throat cultures",
+        "cohorting": "Strict isolation of cases; cohort if multiple cases",
+        "sourceControl": "Chemoprophylaxis of close contacts (erythromycin or penicillin for 7-10 days) + booster vaccination",
+        "environmental": "Thorough cleaning and disinfection of contaminated surfaces and fomites",
+        "staffEducation": "Droplet and contact precautions, recognition of diphtheria (pseudomembrane, bull neck), antitoxin administration urgency, contact prophylaxis protocols"
+      },
+      "outbreakTriggers": [
+        "Any single confirmed case (diphtheria is a public health emergency)",
+        "≥2 presumptive cases in a group or community",
+        "Cluster of sore throat cases with pseudomembrane",
+        "Case in unvaccinated or under-vaccinated population"
+      ],
+      "reportingCommunication": [
+        "Immediate health authority notification within 24 hours (or sooner) of suspected case",
+        "Contact tracing and screening of all close contacts",
+        "Mass chemoprophylaxis and vaccination campaigns in affected communities",
+        "Coordinate with public health for antitoxin procurement (often requires national/international coordination)",
+        "Public health alerts and media communication",
+        "Update stakeholders (schools, healthcare facilities, community leaders)"
+      ],
+      "prevention": [
+        "Vaccination: DTaP (diphtheria-tetanus-acellular pertussis) for children at 2, 4, 6, 15-18 months, and 4-6 years; Td or Tdap booster every 10 years for adults",
+        "Catch-up vaccination for unvaccinated or incompletely vaccinated individuals",
+        "Chemoprophylaxis and booster vaccination for close contacts",
+        "Hygiene and sanitation improvements",
+        "Reporting of sore throat outbreaks with pseudomembrane",
+        "Public health education on diphtheria symptoms and vaccination importance",
+        "Surveillance and outbreak response preparedness"
+      ],
+      "references": [
+        {
+          "label": "WHO - Diphtheria",
+          "url": "https://www.who.int/teams/immunization-vaccines-and-biologicals/diseases/diphtheria"
+        },
+        {
+          "label": "CDC - Diphtheria",
+          "url": "https://www.cdc.gov/diphtheria/index.html"
+        },
+        {
+          "label": "Saudi GDIPC - Vaccine-Preventable Diseases",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "chlamydia_psittaci",
+      "name": "Chlamydia psittaci",
+      "scientificName": "Chlamydia psittaci",
+      "definition": "Obligate intracellular bacteria causing psittacosis (parrot fever), a zoonotic atypical pneumonia. C. psittaci is transmitted from birds to humans and can cause severe respiratory illness.",
+      "reservoir": {
+        "primary": ["Birds (especially parrots, parakeets, cockatiels, pigeons, poultry)"],
+        "secondary": ["Contaminated bird droppings, feathers, and respiratory secretions"],
+        "notes": "Birds are the primary reservoir. Infected birds may be asymptomatic or show signs of illness (ruffled feathers, lethargy, diarrhea). Human-to-human transmission is extremely rare."
+      },
+      "transmission": {
+        "mode": "Inhalation of aerosolized particles",
+        "routes": [
+          "Inhalation of aerosolized dried bird droppings, respiratory secretions, or feathers",
+          "Direct contact with infected birds (pet shops, aviaries, poultry farms)",
+          "Handling infected bird carcasses or tissues",
+          "Rarely: human-to-human transmission (extremely rare, only a few documented cases)"
+        ],
+        "notes": "Transmission occurs through inhalation of contaminated aerosols. Brief exposure can be sufficient for infection. Occupational exposure (pet shop workers, veterinarians, poultry workers) increases risk."
+      },
+      "incubationPeriod": {
+        "range": "5-14 days (range 4-19 days)",
+        "infectiousPeriod": "Infectious period for birds is prolonged (weeks to months); human-to-human transmission is extremely rare",
+        "seasonality": "Year-round, no specific seasonal pattern",
+        "geographic": "Worldwide, wherever birds are kept or handled"
+      },
+      "riskFactors": [
+        "Bird exposure (pet birds, poultry, wild birds)",
+        "Occupational exposure (pet shop workers, veterinarians, poultry workers, bird breeders)",
+        "Elderly and immunocompromised individuals (higher risk of severe disease)",
+        "Cleaning bird cages or handling bird droppings without protection",
+        "Visiting aviaries or bird shows"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Atypical pneumonia (fever, dry cough, dyspnea)",
+          "Severe headache (often prominent)",
+          "Myalgia and malaise",
+          "Fever and chills",
+          "Sometimes hepatosplenomegaly (enlarged liver and spleen)",
+          "Relative bradycardia (pulse-temperature dissociation)",
+          "Gastrointestinal symptoms (nausea, vomiting, diarrhea)"
+        ],
+        "complications": [
+          "Severe pneumonia and respiratory failure",
+          "Endocarditis (rare but serious)",
+          "Myocarditis and pericarditis",
+          "Hepatitis",
+          "Encephalitis and meningitis",
+          "Disseminated intravascular coagulation (DIC)",
+          "Death (1% mortality with treatment; higher without treatment)"
+        ],
+        "caseDefinition": {
+          "suspected": "Clinical: atypical pneumonia + severe headache + bird exposure history (within 2 weeks)",
+          "confirmed": "Clinical illness + laboratory confirmation: positive serology (4-fold rise in antibody titer or single high titer), OR positive PCR from respiratory specimens"
+        }
+      },
+      "diagnosis": [
+        "Serology (complement fixation, microimmunofluorescence) - 4-fold rise in titer or single high titer",
+        "PCR from respiratory specimens (sputum, bronchoalveolar lavage) - specialized labs",
+        "Chest X-ray (patchy infiltrates, often lower lobes)",
+        "Culture (rarely performed due to biosafety concerns - requires BSL-3 lab)",
+        "History of bird exposure is key diagnostic clue"
+      ],
+      "treatment": "Doxycycline (100 mg twice daily for 10-14 days) - first-line. Macrolides (azithromycin, erythromycin) - alternative. Fluoroquinolones (levofloxacin, moxifloxacin) - alternative. Treatment should be started empirically if psittacosis is suspected, without waiting for laboratory confirmation.",
+      "infectionControl": {
+        "precautions": "Standard Precautions (human-to-human transmission is extremely rare)",
+        "screening": "Not routinely recommended; identify bird exposure sources",
+        "cohorting": "Not needed",
+        "sourceControl": "Identify and eliminate infected bird sources; quarantine and treat infected birds; proper disposal of bird carcasses",
+        "environmental": "Respiratory protection (N95 mask) during bird handling, cage cleaning, or necropsy; wet cleaning to avoid aerosolization; disinfection of contaminated areas",
+        "staffEducation": "Recognition of psittacosis (atypical pneumonia + bird exposure), biosafety for bird handlers, reporting requirements"
+      },
+      "outbreakTriggers": [
+        "≥2 cases epidemiologically linked to a shared bird exposure source (pet shop, aviary, poultry farm)",
+        "Cluster of atypical pneumonia cases with bird exposure",
+        "Single case with severe illness and confirmed bird source"
+      ],
+      "reportingCommunication": [
+        "Health authority reporting within 24 hours of suspected or confirmed case",
+        "Coordinated investigation with veterinary and public health authorities",
+        "Identify and investigate bird exposure sources",
+        "Quarantine and testing of implicated birds",
+        "Public health alerts to at-risk populations (bird owners, pet shop workers)",
+        "Update stakeholders (veterinary services, pet shops, poultry farms)"
+      ],
+      "prevention": [
+        "Educate bird handlers and breeders on psittacosis risks",
+        "Biosafety measures for at-risk workers (respiratory protection, hand hygiene)",
+        "Quarantine and testing of newly acquired birds (especially imported birds)",
+        "Proper ventilation in bird housing areas",
+        "Wet cleaning of bird cages to avoid aerosolization",
+        "Prompt veterinary care for sick birds",
+        "Avoid mouth-to-beak contact with birds",
+        "Reporting of sick birds to veterinary authorities"
+      ],
+      "references": [
+        {
+          "label": "CDC - Psittacosis",
+          "url": "https://www.cdc.gov/psittacosis/index.html"
+        },
+        {
+          "label": "WHO - Zoonoses",
+          "url": "https://www.who.int/health-topics/zoonoses"
+        },
+        {
+          "label": "Saudi GDIPC - Zoonotic Infections",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "mycoplasma_pneumoniae",
+      "name": "Mycoplasma pneumoniae",
+      "scientificName": "Mycoplasma pneumoniae",
+      "definition": "Wall-less, small bacteria causing atypical pneumonia (walking pneumonia), especially in children and adolescents. M. pneumoniae is a common cause of community-acquired pneumonia in school-aged children and young adults.",
+      "reservoir": {
+        "primary": ["Human respiratory tract"],
+        "secondary": ["Respiratory secretions"],
+        "notes": "Humans are the only reservoir. Asymptomatic carriage is uncommon. Transmission occurs through close contact in households, schools, and military barracks."
+      },
+      "transmission": {
+        "mode": "Respiratory droplets and close contact",
+        "routes": [
+          "Respiratory droplets from close contact (coughing, sneezing)",
+          "Direct contact with respiratory secretions",
+          "Prolonged close contact (household, school, dormitory)"
+        ],
+        "notes": "Transmission is slow and requires prolonged close contact. Incubation period is long (1-4 weeks), leading to gradual spread within communities."
+      },
+      "incubationPeriod": {
+        "range": "1-4 weeks (typically 2-3 weeks)",
+        "infectiousPeriod": "Infectious while symptomatic (can shed bacteria for weeks to months after symptom onset)",
+        "seasonality": "Year-round, with peaks in late summer and fall; epidemic cycles every 3-7 years",
+        "geographic": "Worldwide, with higher incidence in temperate climates"
+      },
+      "riskFactors": [
+        "School-aged children and adolescents (5-20 years)",
+        "Military recruits and boarding school students",
+        "Close contact settings (households, schools, dormitories)",
+        "Immunocompromised individuals (higher risk of severe disease)",
+        "Sickle cell disease (risk of acute chest syndrome)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Atypical pneumonia: gradual onset of dry, persistent cough",
+          "Fever (usually low-grade) and malaise",
+          "Headache and myalgia",
+          "Sore throat and hoarseness",
+          "Minimal sputum production",
+          "Chest X-ray findings out of proportion to physical exam (walking pneumonia)",
+          "Extrapulmonary manifestations: rash, hemolytic anemia, arthritis, encephalitis"
+        ],
+        "complications": [
+          "Severe pneumonia (rare)",
+          "Pleural effusion",
+          "Hemolytic anemia (cold agglutinin disease)",
+          "Encephalitis and meningitis",
+          "Guillain-Barré syndrome",
+          "Stevens-Johnson syndrome (rare)",
+          "Myocarditis and pericarditis",
+          "Acute chest syndrome (in sickle cell disease patients)"
+        ],
+        "caseDefinition": {
+          "suspected": "Clinical: atypical pneumonia (dry cough, fever, malaise) in school-aged child or young adult + chest X-ray infiltrates + epidemiologic link (school, household cluster)",
+          "confirmed": "Clinical illness + laboratory confirmation: positive PCR from respiratory specimen, OR 4-fold rise in serology (IgM or IgG)"
+        }
+      },
+      "diagnosis": [
+        "PCR from respiratory specimens (throat swab, sputum, nasopharyngeal swab) - most sensitive and specific",
+        "Serology (IgM and IgG antibodies) - IgM appears 1-2 weeks after symptom onset",
+        "Chest X-ray (patchy infiltrates, often bilateral lower lobes)",
+        "Culture (rarely performed, requires specialized media and takes 2-3 weeks)",
+        "Cold agglutinins (non-specific, positive in 50% of cases)"
+      ],
+      "treatment": "Macrolides (azithromycin, clarithromycin, erythromycin) - first-line. Tetracyclines (doxycycline) - alternative for older children and adults. Fluoroquinolones (levofloxacin, moxifloxacin) - alternative. Duration: 5-10 days. Note: Beta-lactams (penicillins, cephalosporins) are ineffective (M. pneumoniae lacks cell wall).",
+      "infectionControl": {
+        "precautions": "Droplet Precautions (surgical mask) for hospitalized patients; Standard Precautions for outpatients",
+        "screening": "Not routinely recommended",
+        "cohorting": "Cohort cases if multiple hospitalized patients",
+        "sourceControl": "Exclude symptomatic cases from close-contact settings (school, daycare) until clinically improved",
+        "environmental": "Standard cleaning",
+        "staffEducation": "Droplet precautions, recognition of atypical pneumonia, appropriate antibiotic selection (avoid beta-lactams)"
+      },
+      "outbreakTriggers": [
+        "≥2 epidemiologically linked cases in institutional or closed settings (school, military barracks, boarding school)",
+        "Cluster of atypical pneumonia cases above baseline rate",
+        "Sudden increase in community pneumonia cases in children/adolescents"
+      ],
+      "reportingCommunication": [
+        "Timely health authority notification within 24 hours of suspected outbreak",
+        "Enhanced surveillance in affected settings (schools, military)",
+        "Public health education on symptoms and prevention",
+        "Coordinate with schools and institutions for outbreak control",
+        "Update stakeholders and healthcare providers"
+      ],
+      "prevention": [
+        "Public and childcare awareness of atypical pneumonia symptoms",
+        "Respiratory hygiene and cough etiquette",
+        "Prompt medical attention for persistent cough",
+        "Exclude symptomatic individuals from close-contact settings",
+        "Hand hygiene",
+        "No vaccine currently available"
+      ],
+      "references": [
+        {
+          "label": "CDC - Mycoplasma pneumoniae Infection",
+          "url": "https://www.cdc.gov/pneumonia/atypical/mycoplasma.html"
+        },
+        {
+          "label": "WHO - Community-Acquired Pneumonia",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/pneumonia"
+        },
+        {
+          "label": "Saudi GDIPC - Respiratory Infections",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "haemophilus_influenzae_respiratory",
+      "name": "Haemophilus influenzae (type b and nontypeable)",
+      "scientificName": "Haemophilus influenzae",
+      "definition": "Gram-negative coccobacilli causing noninvasive (bronchitis, otitis media, sinusitis) and invasive (pneumonia, meningitis, epiglottitis, sepsis) respiratory infections. Type b (Hib) causes most invasive disease; nontypeable strains cause mucosal infections.",
+      "reservoir": {
+        "primary": ["Human nasopharynx (asymptomatic carriage in 2-5% of children, <1% of adults)"],
+        "secondary": ["Respiratory secretions"],
+        "notes": "Humans are the only reservoir. Carriage rates have dramatically decreased since introduction of Hib vaccine. Nontypeable H. influenzae (NTHi) is more common in adults with chronic lung disease."
+      },
+      "transmission": {
+        "mode": "Respiratory droplets",
+        "routes": [
+          "Respiratory droplets from close contact (coughing, sneezing)",
+          "Direct contact with respiratory secretions",
+          "Close contact with carriers or cases (household, daycare)"
+        ],
+        "notes": "Transmission requires close contact. Invasive Hib disease is rare in vaccinated populations. NTHi causes exacerbations of chronic obstructive pulmonary disease (COPD)."
+      },
+      "incubationPeriod": {
+        "range": "Type b: 2-4 days (variable); NTHi: variable",
+        "infectiousPeriod": "Contagious while symptomatic (until 24-48 hours after effective antibiotic treatment for invasive disease)",
+        "seasonality": "Fall and winter peaks (respiratory season)",
+        "geographic": "Worldwide, with highest incidence in unvaccinated populations and developing countries"
+      },
+      "riskFactors": [
+        "Unvaccinated children <5 years (especially <2 years) for Hib",
+        "Elderly and immunocompromised for NTHi",
+        "Chronic lung disease (COPD, bronchiectasis) for NTHi",
+        "Asplenia or functional splenectomy",
+        "Cochlear implants or CSF leaks",
+        "Smoking",
+        "Crowded living conditions"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Community-acquired pneumonia (fever, cough, dyspnea, chest pain)",
+          "Epiglottitis (stridor, drooling, tripod position) - medical emergency",
+          "Meningitis (fever, headache, stiff neck)",
+          "Sepsis and bacteremia",
+          "Bronchitis and exacerbations of COPD (NTHi)",
+          "Otitis media and sinusitis (NTHi)"
+        ],
+        "complications": [
+          "Respiratory failure",
+          "Empyema (pleural effusion)",
+          "Meningitis and neurological sequelae",
+          "Septic shock",
+          "Airway obstruction (epiglottitis)",
+          "Death (3-6% mortality for invasive disease with treatment)",
+          "Hearing loss (if meningitis)"
+        ],
+        "caseDefinition": {
+          "suspected": "Clinical: CAP, epiglottitis, meningitis, or sepsis + risk factors (unvaccinated child, elderly, chronic lung disease)",
+          "confirmed": "Clinical illness + laboratory confirmation: positive culture from blood, CSF, pleural fluid, or other sterile site for H. influenzae, OR positive PCR with serotyping (if type b)"
+        }
+      },
+      "diagnosis": [
+        "Culture from blood, CSF, pleural fluid, or other sterile sites (chocolate agar with CO2)",
+        "Gram stain (Gram-negative coccobacilli)",
+        "PCR for H. influenzae",
+        "Serotyping to confirm type b (capsular antigen detection)",
+        "Chest X-ray (lobar or patchy infiltrates)",
+        "Lateral neck X-ray (thumb sign for epiglottitis - but do not delay treatment)"
+      ],
+      "treatment": "Third-generation cephalosporins (ceftriaxone or cefotaxime) - first-line empiric (due to ampicillin resistance in 30-50% of strains). Fluoroquinolones (levofloxacin, moxifloxacin) - alternative for adults. Duration: 7-10 days for pneumonia; 10-14 days for meningitis. Epiglottitis requires airway management (intubation) + antibiotics.",
+      "infectionControl": {
+        "precautions": "Droplet Precautions (surgical mask) until 24 hours after effective antibiotic treatment for invasive disease",
+        "screening": "Not routinely recommended; identify close contacts for prophylaxis (if invasive Hib)",
+        "cohorting": "Isolate cases during first 24 hours of treatment",
+        "sourceControl": "Chemoprophylaxis for close contacts (rifampin) if household includes unvaccinated or incompletely vaccinated children <4 years (for invasive Hib only)",
+        "environmental": "Standard cleaning",
+        "staffEducation": "Droplet precautions, recognition of invasive H. influenzae disease (epiglottitis, meningitis), vaccination importance, contact prophylaxis protocols"
+      },
+      "outbreakTriggers": [
+        "≥2 linked invasive cases (especially Hib)",
+        "Spike over baseline rate",
+        "Single invasive Hib case in vaccinated population (suggests vaccine failure or waning immunity)",
+        "Cluster of pneumonia cases in elderly or COPD patients (NTHi)"
+      ],
+      "reportingCommunication": [
+        "Immediate health authority alert within 24 hours of invasive Hib case",
+        "Contact monitoring and prophylaxis (if Hib)",
+        "Assess vaccination coverage",
+        "Enhanced surveillance in affected settings",
+        "Update stakeholders and healthcare providers"
+      ],
+      "prevention": [
+        "Hib vaccination: primary series at 2, 4, 6 months + booster at 12-15 months (part of routine childhood immunization)",
+        "Catch-up vaccination for unvaccinated or incompletely vaccinated children",
+        "Chemoprophylaxis for close contacts (rifampin) if invasive Hib",
+        "Respiratory hygiene and cough etiquette",
+        "Smoking cessation",
+        "Prompt treatment of respiratory infections in COPD patients"
+      ],
+      "references": [
+        {
+          "label": "CDC - Haemophilus influenzae Disease",
+          "url": "https://www.cdc.gov/hi-disease/index.html"
+        },
+        {
+          "label": "WHO - Haemophilus influenzae type b (Hib)",
+          "url": "https://www.who.int/teams/immunization-vaccines-and-biologicals/diseases/haemophilus-influenzae-type-b"
+        },
+        {
+          "label": "Saudi GDIPC - Respiratory Infections",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "strep_pyogenes_respiratory",
+      "name": "Streptococcus pyogenes (Group A Streptococcus)",
+      "scientificName": "Streptococcus pyogenes (Group A Streptococcus, GAS)",
+      "definition": "Gram-positive cocci causing pharyngitis (strep throat), scarlet fever, pneumonia, toxic shock syndrome, and necrotizing pneumonia. GAS is a common cause of bacterial pharyngitis and can cause severe invasive disease.",
+      "reservoir": {
+        "primary": ["Human throat and skin"],
+        "secondary": ["Respiratory secretions", "Skin lesions"],
+        "notes": "Humans are the only reservoir. Asymptomatic pharyngeal carriage occurs in 5-15% of school-aged children. Skin colonization is common in tropical climates."
+      },
+      "transmission": {
+        "mode": "Respiratory droplets and direct contact",
+        "routes": [
+          "Respiratory droplets from close contact (coughing, sneezing, talking)",
+          "Direct contact with respiratory secretions",
+          "Direct contact with skin lesions (impetigo, cellulitis)",
+          "Rarely: foodborne transmission (contaminated food)"
+        ],
+        "notes": "Transmission is person-to-person. Pharyngitis is highly contagious, especially in crowded settings (schools, military barracks). Invasive GAS disease can follow viral respiratory infections (influenza, varicella)."
+      },
+      "incubationPeriod": {
+        "range": "1-3 days (range 12 hours to 5 days)",
+        "infectiousPeriod": "Contagious from onset of symptoms until 24 hours after starting effective antibiotic treatment (untreated: 2-3 weeks)",
+        "seasonality": "Winter and spring peaks for pharyngitis; summer for skin infections",
+        "geographic": "Worldwide, with higher incidence in temperate climates for pharyngitis and tropical climates for skin infections"
+      },
+      "riskFactors": [
+        "Age 5-15 years (pharyngitis)",
+        "Close contact settings (schools, military barracks, households)",
+        "Recent viral respiratory infection (influenza, varicella)",
+        "Immunocompromised individuals",
+        "Chronic diseases (diabetes, cancer, HIV)",
+        "Skin trauma or wounds",
+        "Injection drug use (invasive GAS)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Pharyngitis: sore throat, fever, tonsillar exudates, tender cervical lymphadenopathy, absence of cough",
+          "Scarlet fever: pharyngitis + sandpaper-like rash + strawberry tongue",
+          "Pneumonia: fever, cough, dyspnea, pleuritic chest pain (often post-influenza)",
+          "Necrotizing pneumonia: severe pneumonia with tissue necrosis and empyema",
+          "Toxic shock syndrome: fever, hypotension, multi-organ failure, diffuse erythematous rash",
+          "Invasive GAS: bacteremia, sepsis, necrotizing fasciitis"
+        ],
+        "complications": [
+          "Acute rheumatic fever (ARF) - follows untreated pharyngitis",
+          "Post-streptococcal glomerulonephritis (PSGN)",
+          "Peritonsillar abscess (quinsy)",
+          "Necrotizing pneumonia with empyema",
+          "Streptococcal toxic shock syndrome (STSS) - high mortality (30-50%)",
+          "Necrotizing fasciitis",
+          "Death (mortality varies: <1% for pharyngitis; 30-50% for STSS/necrotizing fasciitis)"
+        ],
+        "caseDefinition": {
+          "suspected": "Clinical: pharyngitis (sore throat, fever, tonsillar exudates, no cough) OR pneumonia post-influenza OR toxic shock syndrome + epidemiologic link",
+          "confirmed": "Clinical illness + laboratory confirmation: positive throat culture or rapid antigen detection test (RADT) for pharyngitis, OR positive culture from blood or sterile site for invasive disease"
+        }
+      },
+      "diagnosis": [
+        "Throat culture (gold standard for pharyngitis) - blood agar with beta-hemolysis",
+        "Rapid antigen detection test (RADT) - quick but less sensitive than culture",
+        "Blood culture (for invasive disease)",
+        "Culture from sterile sites (pleural fluid, CSF, tissue)",
+        "Chest X-ray (for pneumonia - lobar consolidation, empyema)",
+        "Anti-streptolysin O (ASO) titer (for post-streptococcal sequelae)"
+      ],
+      "treatment": "Penicillins (penicillin V, amoxicillin) - first-line for pharyngitis (10 days). Cephalosporins (cephalexin) - alternative. Macrolides (azithromycin, erythromycin) - if penicillin allergy. For invasive disease/necrotizing pneumonia: IV penicillin G + clindamycin (clindamycin inhibits toxin production). IVIG for toxic shock syndrome. Surgical debridement for necrotizing fasciitis.",
+      "infectionControl": {
+        "precautions": "Droplet Precautions (surgical mask) until 24 hours after effective antibiotic treatment",
+        "screening": "Not routinely recommended; screen close contacts if outbreak",
+        "cohorting": "Isolate cases during first 24 hours of treatment",
+        "sourceControl": "Exclude cases from school, daycare, or work until 24 hours after starting antibiotics",
+        "environmental": "Standard cleaning; disinfection of contaminated surfaces",
+        "staffEducation": "Droplet precautions, recognition of invasive GAS (necrotizing fasciitis, STSS), importance of early antibiotic treatment, post-streptococcal sequelae prevention"
+      },
+      "outbreakTriggers": [
+        "≥2 epidemiologically linked cases of pharyngitis or scarlet fever in institution (school, military, nursing home)",
+        "Cluster of invasive GAS cases (≥2 cases in same community within short time period)",
+        "Sudden increase in pharyngitis or scarlet fever cases above baseline",
+        "Post-influenza cluster of severe pneumonia or invasive GAS"
+      ],
+      "reportingCommunication": [
+        "Timely health authority notification within 24 hours of suspected outbreak or invasive GAS cluster",
+        "Enhanced surveillance in affected settings (schools, military, healthcare facilities)",
+        "Contact tracing for invasive GAS cases",
+        "Public health education on symptoms and prevention",
+        "Coordinate with schools and institutions for outbreak control",
+        "Update stakeholders and healthcare providers"
+      ],
+      "prevention": [
+        "Early diagnosis and treatment of pharyngitis (prevents acute rheumatic fever)",
+        "Respiratory hygiene and cough etiquette",
+        "Hand hygiene",
+        "Exclude symptomatic individuals from close-contact settings until 24 hours after starting antibiotics",
+        "Prompt treatment of skin infections",
+        "Influenza and varicella vaccination (reduces risk of invasive GAS)",
+        "No vaccine currently available for GAS",
+        "Chemoprophylaxis for close contacts of invasive GAS cases (controversial, case-by-case basis)"
+      ],
+      "references": [
+        {
+          "label": "CDC - Group A Streptococcal (GAS) Disease",
+          "url": "https://www.cdc.gov/groupastrep/index.html"
+        },
+        {
+          "label": "WHO - Streptococcal Infections",
+          "url": "https://www.who.int/health-topics/streptococcal-infections"
+        },
+        {
+          "label": "Saudi GDIPC - Respiratory Infections",
+          "url": "https://gdipc.org"
+        }
+      ]
+    }
+  ]
+}
+

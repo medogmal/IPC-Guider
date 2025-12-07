@@ -1,0 +1,1841 @@
+{
+  "version": 2,
+  "updatedAt": "2025-01-23T16:00:00Z",
+  "id": "intra-abdominal-infections",
+  "name": "Intra-Abdominal Infections",
+  "description": "Peritonitis, appendicitis, diverticulitis, cholecystitis, and abdominal abscesses",
+  "icon": "restaurant",
+  "color": "#FF5722",
+  "conditions": [
+    {
+      "id": "acute-appendicitis",
+      "name": "Acute Appendicitis",
+      "synonyms": ["appendicitis", "perforated appendix"],
+      "icd10": ["K35.80", "K35.32", "K35.33"],
+      "severity": ["moderate", "severe"],
+      "shortDescription": "Inflammation of the appendix requiring urgent surgical removal or antibiotics for uncomplicated cases",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Acute appendicitis is inflammation of the appendix due to obstruction (fecalith, lymphoid hyperplasia, tumor). Most common surgical emergency. Incidence: 7-9% lifetime risk. Mortality: <1% (uncomplicated), 5-15% (perforated with peritonitis). Classification: Uncomplicated (phlegmonous) vs complicated (gangrenous, perforated, abscess).",
+            "clinical_presentation": "Classic triad: (1) Periumbilical pain migrating to RLQ (McBurney's point), (2) Anorexia/nausea/vomiting, (3) Fever. Physical exam: RLQ tenderness, rebound tenderness, guarding, Rovsing sign (RLQ pain with LLQ palpation), psoas sign (pain with right hip extension), obturator sign (pain with right hip internal rotation). Atypical presentations: Retrocecal appendix (flank pain), pelvic appendix (suprapubic pain, diarrhea), pregnancy (pain higher due to displaced appendix).",
+            "diagnostic_criteria": "Clinical diagnosis supported by imaging. Alvarado score (MANTRELS): Migration of pain (1), Anorexia (1), Nausea/vomiting (1), Tenderness RLQ (2), Rebound tenderness (1), Elevated temperature (1), Leukocytosis (2), Shift to left (1). Score ≥7: High probability. CT abdomen/pelvis: Appendiceal diameter >6mm, wall thickening, periappendiceal fat stranding, abscess.",
+            "risk_factors": [
+              "Age 10-30 years (peak incidence)",
+              "Male sex (slight male predominance)",
+              "Family history of appendicitis",
+              "Low-fiber diet (fecalith formation)",
+              "Lymphoid hyperplasia (viral infection)",
+              "Pregnancy (2nd-3rd trimester, diagnostic challenge)"
+            ],
+            "red_flags": [
+              "Peritonitis (diffuse abdominal pain, rigidity, rebound) - perforated appendix, urgent surgery",
+              "Septic shock or hypotension - perforated with peritonitis, high mortality",
+              "Palpable RLQ mass - appendiceal abscess or phlegmon",
+              "Prolonged symptoms >48 hours - higher perforation risk (20-30%)",
+              "Immunosuppression or elderly - atypical presentation, higher mortality"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Clinical diagnosis in classic presentation. Imaging recommended if diagnosis uncertain or to assess for complications (perforation, abscess). CT abdomen/pelvis preferred (sensitivity 95%, specificity 94%). Ultrasound in children/pregnancy (avoid radiation).",
+            "essential_tests": [
+              "CBC with differential (leukocytosis 10,000-18,000, left shift)",
+              "CMP (assess hydration, electrolytes)",
+              "Urinalysis (rule out UTI, may have mild pyuria from appendiceal inflammation)",
+              "Pregnancy test (women of childbearing age)"
+            ],
+            "conditional_tests": [
+              "CT abdomen/pelvis with IV contrast: If diagnosis uncertain, assess for perforation/abscess. Findings: Appendiceal diameter >6mm, wall thickening, periappendiceal fat stranding, abscess, free fluid, free air (if perforated).",
+              "Ultrasound: Children, pregnancy, thin patients. Findings: Non-compressible appendix >6mm, hyperemia, periappendiceal fluid.",
+              "MRI abdomen/pelvis: Pregnancy (if ultrasound inconclusive), avoid radiation.",
+              "Blood cultures: If septic or perforated (polymicrobial bacteremia possible)"
+            ],
+            "when_not_to_test": "Do NOT delay surgery for imaging if classic presentation with peritonitis (clinical diagnosis sufficient). Do NOT use oral contrast for CT (delays imaging, aspiration risk). Do NOT perform rectal exam routinely (low diagnostic yield, patient discomfort).",
+            "turnaround_time": "CBC: <1 hour. CT abdomen/pelvis: 1-4 hours (urgent if septic). Ultrasound: 1-4 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "polymicrobial": "Appendicitis is polymicrobial infection with mixed aerobic and anaerobic bacteria from GI flora. Average 10-12 organisms isolated from peritoneal fluid or abscess.",
+            "aerobic_gram_negative": [
+              "E. coli (most common, 80-90%)",
+              "Klebsiella species",
+              "Enterobacter species",
+              "Pseudomonas aeruginosa (rare, healthcare-associated)"
+            ],
+            "aerobic_gram_positive": [
+              "Enterococcus species (30-40%)",
+              "Streptococcus species (viridans group)"
+            ],
+            "anaerobes": [
+              "Bacteroides fragilis (most common anaerobe, 70-80%)",
+              "Peptostreptococcus species",
+              "Clostridium species",
+              "Fusobacterium species"
+            ],
+            "resistance_patterns": "ESBL E. coli 15-30% (healthcare-associated). VRE 10-30% (healthcare-associated). Bacteroides: Increasing resistance to clindamycin (20-30%), metronidazole remains effective.",
+            "mdro_risk_factors": [
+              "Recent hospitalization or surgery",
+              "Recent antibiotics (within 90 days)",
+              "Healthcare-associated infection",
+              "Immunosuppression"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "uncomplicated_appendicitis": "Preoperative prophylaxis: Cefoxitin 2g IV x1 OR Cefotetan 2g IV x1 OR Ertapenem 1g IV x1 (within 60 minutes of incision). Alternative: Cefazolin 2g IV + Metronidazole 500mg IV x1. Postoperative: No antibiotics needed if uncomplicated (phlegmonous, no perforation).",
+            "complicated_appendicitis_perforated": "Piperacillin-tazobactam 3.375g IV q6h OR Cefepime 2g IV q8h + Metronidazole 500mg IV q8h OR Ertapenem 1g IV daily. Duration: 4-7 days postoperatively (until afebrile, tolerating diet, normal WBC).",
+            "appendiceal_abscess": "Percutaneous drainage + antibiotics: Piperacillin-tazobactam 3.375g IV q6h OR Cefepime 2g IV q8h + Metronidazole 500mg IV q8h OR Meropenem 1g IV q8h (if MDRO risk). Duration: 7-14 days (until abscess resolved on imaging). Interval appendectomy 6-12 weeks later.",
+            "healthcare_associated_or_mdro_risk": "Meropenem 1g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h + Vancomycin 15-20mg/kg IV q8-12h (if VRE risk). Duration: 4-7 days postoperatively.",
+            "alternatives": "Beta-lactam allergy: Aztreonam 2g IV q8h + Metronidazole 500mg IV q8h + Vancomycin 15-20mg/kg IV q8-12h. Fluoroquinolone: Levofloxacin 750mg IV daily + Metronidazole 500mg IV q8h (if susceptible).",
+            "avoid_list": "Avoid inadequate anaerobic coverage (metronidazole or beta-lactam/beta-lactamase inhibitor required). Avoid prolonged antibiotics for uncomplicated appendicitis (no benefit, increases resistance)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "uncomplicated_appendicitis": "Appendectomy (laparoscopic preferred, lower wound infection rate). No postoperative antibiotics needed. Alternative: Non-operative management with antibiotics (amoxicillin-clavulanate 875mg PO TID x 7-10 days) for select patients (no perforation, no abscess, patient preference). Success rate 70-80%, recurrence 20-30% within 1 year.",
+            "complicated_appendicitis_perforated": "Appendectomy + antibiotics. Narrow antibiotics based on culture results (if obtained). E. coli + Bacteroides: Ceftriaxone 2g IV daily + Metronidazole 500mg IV q8h OR Ertapenem 1g IV daily. Duration: 4-7 days postoperatively (until afebrile, tolerating diet, normal WBC).",
+            "appendiceal_abscess": "Percutaneous drainage + antibiotics (non-operative management). Narrow antibiotics based on culture results. Duration: 7-14 days (until abscess resolved on imaging). Interval appendectomy 6-12 weeks later (30-40% have underlying pathology: tumor, Crohn's disease).",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Switch from piperacillin-tazobactam to ceftriaxone + metronidazole if ESBL-negative. Discontinue vancomycin if no VRE. Switch IV to PO when tolerating diet.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Tolerating diet, (3) Improving WBC, (4) No signs of peritonitis. PO options: Amoxicillin-clavulanate 875mg PO TID OR Ciprofloxacin 500mg PO BID + Metronidazole 500mg PO TID."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "uncomplicated_appendicitis": "Preoperative prophylaxis only (single dose). No postoperative antibiotics.",
+            "complicated_appendicitis_perforated": "4-7 days postoperatively (until afebrile, tolerating diet, normal WBC). Fixed duration preferred over symptom-based (reduces antibiotic overuse).",
+            "appendiceal_abscess": "7-14 days (until abscess resolved on imaging). Interval appendectomy 6-12 weeks later.",
+            "monitoring": "Daily: Vital signs, abdominal exam, diet tolerance. Every 2-3 days: CBC (monitor WBC normalization). Repeat imaging: If persistent fever or clinical deterioration (assess for abscess, anastomotic leak if bowel resection performed).",
+            "stop_criteria": "Completed 4-7 days postoperatively (perforated). Afebrile >24 hours. Tolerating diet. Normal or improving WBC. No signs of peritonitis or abscess."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "surgical_approach": "Laparoscopic appendectomy preferred (lower wound infection, shorter hospital stay, faster recovery). Open appendectomy if: (1) Hemodynamic instability, (2) Diffuse peritonitis, (3) Inability to tolerate pneumoperitoneum, (4) Surgeon preference/experience. Timing: Urgent surgery within 12-24 hours (not emergent unless peritonitis/septic shock).",
+            "non_operative_management": "Antibiotics alone for uncomplicated appendicitis: Success rate 70-80%, recurrence 20-30% within 1 year. Indications: (1) Patient preference, (2) High surgical risk, (3) No perforation/abscess on imaging. Antibiotics: Amoxicillin-clavulanate 875mg PO TID x 7-10 days OR IV antibiotics if hospitalized. Close follow-up required.",
+            "appendiceal_abscess_management": "Percutaneous drainage + antibiotics (non-operative management) preferred over immediate surgery (lower morbidity). Indications for drainage: Abscess >3cm. Antibiotics alone if abscess <3cm. Interval appendectomy 6-12 weeks later (30-40% have underlying pathology: tumor, Crohn's disease, carcinoid).",
+            "pregnancy": "Appendicitis in pregnancy: Diagnostic challenge (displaced appendix, atypical pain location). Imaging: Ultrasound first, MRI if inconclusive (avoid CT radiation). Surgery: Safe in all trimesters, laparoscopic preferred (1st-2nd trimester). Antibiotics: Cefazolin 2g IV + Metronidazole 500mg IV (avoid fluoroquinolones). Fetal monitoring perioperatively.",
+            "elderly_immunocompromised": "Atypical presentation (minimal pain, low-grade fever). Higher perforation rate (30-50%). Higher mortality (5-15%). Lower threshold for imaging. Aggressive surgical management. Broader antibiotic coverage (consider MDRO).",
+            "pediatric": "Most common surgical emergency in children. Ultrasound preferred (avoid radiation). Laparoscopic appendectomy. Antibiotics: Cefoxitin 40mg/kg IV x1 (prophylaxis) OR Piperacillin-tazobactam 100mg/kg IV q6h (perforated)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "No postoperative antibiotics for uncomplicated appendicitis (single-dose prophylaxis only)",
+              "Fixed duration 4-7 days for perforated appendicitis (avoid prolonged courses)",
+              "De-escalate from piperacillin-tazobactam to ceftriaxone + metronidazole if ESBL-negative",
+              "Switch IV to PO when tolerating diet (amoxicillin-clavulanate, ciprofloxacin + metronidazole)",
+              "Discontinue vancomycin if no VRE"
+            ],
+            "timeout_checklist": [
+              "Is this uncomplicated or complicated appendicitis? (Determines antibiotic duration)",
+              "Is surgery performed? (Uncomplicated: no postoperative antibiotics needed)",
+              "Is this perforated? (4-7 days antibiotics postoperatively)",
+              "Is there an abscess? (Percutaneous drainage + 7-14 days antibiotics, interval appendectomy later)",
+              "Can I de-escalate antibiotics? (Based on culture results)",
+              "Can I switch IV to PO? (If tolerating diet)",
+              "Can I stop antibiotics? (If 4-7 days completed, afebrile, tolerating diet, normal WBC)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use prolonged antibiotics for uncomplicated appendicitis (no benefit). Do NOT continue antibiotics beyond 4-7 days for perforated appendicitis without clear indication. Do NOT use broad-spectrum antibiotics without MDRO risk factors.",
+            "patient_education": "Appendicitis requires surgery or antibiotics. Complete full antibiotic course if perforated. Watch for worsening symptoms (fever, abdominal pain). Follow-up in 2-4 weeks. If abscess treated non-operatively: Interval appendectomy in 6-12 weeks recommended."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "WSES Acute Appendicitis Guidelines (2020)",
+              "url": "https://wjes.biomedcentral.com/articles/10.1186/s13017-020-00306-3"
+            },
+            {
+              "label": "IDSA Intra-Abdominal Infections Guidelines (2024)",
+              "url": "https://www.idsociety.org/practice-guideline/intra-abdominal-infections/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "acute-diverticulitis",
+      "name": "Acute Diverticulitis",
+      "synonyms": ["diverticulitis", "perforated diverticulitis", "diverticular abscess"],
+      "icd10": ["K57.20", "K57.32", "K57.80"],
+      "severity": ["mild", "moderate", "severe"],
+      "shortDescription": "Inflammation of colonic diverticula with complications including abscess, perforation, and peritonitis",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Acute diverticulitis is inflammation/infection of colonic diverticula (outpouchings of colonic mucosa). Prevalence: 50% by age 60, 70% by age 80. Diverticulitis develops in 10-25% of patients with diverticulosis. Mortality: <1% (uncomplicated), 5-20% (perforated with peritonitis). Classification: Uncomplicated (75-80%) vs complicated (20-25%: abscess, perforation, fistula, stricture).",
+            "clinical_presentation": "LLQ abdominal pain (sigmoid colon most common, 90-95%). Fever, nausea, vomiting. Change in bowel habits (diarrhea or constipation). Physical exam: LLQ tenderness, guarding, rebound (if peritonitis), palpable mass (abscess or phlegmon). Right-sided diverticulitis (5-10%): RLQ pain, mimics appendicitis, more common in Asian populations.",
+            "diagnostic_criteria": "Clinical diagnosis supported by imaging. Hinchey Classification: Stage 0 (uncomplicated), Stage Ia (pericolic abscess <4cm), Stage Ib (pelvic abscess >4cm), Stage II (pelvic abscess), Stage III (purulent peritonitis), Stage IV (fecal peritonitis). CT abdomen/pelvis: Colonic wall thickening (>4mm), pericolonic fat stranding, abscess, free air (if perforated).",
+            "risk_factors": [
+              "Age >40 years (incidence increases with age)",
+              "Low-fiber diet (Western diet)",
+              "Obesity (BMI >30)",
+              "Physical inactivity",
+              "Smoking",
+              "NSAIDs or aspirin use (increases perforation risk)",
+              "Immunosuppression (corticosteroids, biologics)"
+            ],
+            "red_flags": [
+              "Peritonitis (diffuse abdominal pain, rigidity, rebound) - perforated diverticulitis, urgent surgery",
+              "Septic shock or hypotension - perforated with peritonitis, high mortality",
+              "Palpable LLQ mass - diverticular abscess",
+              "Free air on imaging - perforated diverticulitis, surgery required",
+              "Immunosuppression - higher complication rate, broader antibiotic coverage needed"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "CT abdomen/pelvis with IV contrast recommended for all suspected diverticulitis (confirms diagnosis, assesses complications). Clinical diagnosis alone insufficient (misdiagnosis rate 30-40%). Avoid colonoscopy during acute episode (perforation risk).",
+            "essential_tests": [
+              "CBC with differential (leukocytosis 10,000-15,000)",
+              "CMP (assess hydration, renal function)",
+              "CRP or ESR (elevated, correlates with severity)",
+              "Urinalysis (rule out UTI, may have sterile pyuria from bladder inflammation)"
+            ],
+            "conditional_tests": [
+              "CT abdomen/pelvis with IV contrast: Confirms diagnosis, assesses complications. Findings: Colonic wall thickening >4mm, pericolonic fat stranding, abscess, free fluid, free air (if perforated). Sensitivity 95%, specificity 97%.",
+              "Blood cultures: If septic, febrile, or immunocompromised",
+              "Percutaneous drainage: If abscess >4cm (Hinchey Ib-II)",
+              "Colonoscopy: 6-8 weeks after resolution (rule out colon cancer, confirm diverticulosis). Indicated in all first episodes."
+            ],
+            "when_not_to_test": "Do NOT perform colonoscopy during acute episode (perforation risk). Do NOT delay surgery for imaging if peritonitis/septic shock (clinical diagnosis sufficient). Do NOT use oral contrast for CT (delays imaging, aspiration risk).",
+            "turnaround_time": "CBC: <1 hour. CT abdomen/pelvis: 1-4 hours (urgent if septic). Blood cultures: Preliminary 24-48 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "polymicrobial": "Diverticulitis is polymicrobial infection with mixed aerobic and anaerobic bacteria from colonic flora. Average 8-10 organisms isolated from peritoneal fluid or abscess.",
+            "aerobic_gram_negative": [
+              "E. coli (most common, 80-90%)",
+              "Klebsiella species",
+              "Enterobacter species",
+              "Proteus species"
+            ],
+            "aerobic_gram_positive": [
+              "Enterococcus species (30-40%)",
+              "Streptococcus species (viridans group)"
+            ],
+            "anaerobes": [
+              "Bacteroides fragilis (most common anaerobe, 70-80%)",
+              "Peptostreptococcus species",
+              "Clostridium species",
+              "Fusobacterium species"
+            ],
+            "resistance_patterns": "ESBL E. coli 15-30% (healthcare-associated). VRE 10-30% (healthcare-associated). Bacteroides: Increasing resistance to clindamycin (20-30%), metronidazole remains effective.",
+            "mdro_risk_factors": [
+              "Recent hospitalization or surgery",
+              "Recent antibiotics (within 90 days)",
+              "Healthcare-associated infection",
+              "Immunosuppression (corticosteroids, biologics)"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "uncomplicated_diverticulitis_outpatient": "Amoxicillin-clavulanate 875mg PO TID x 7-10 days OR Ciprofloxacin 500mg PO BID + Metronidazole 500mg PO TID x 7-10 days. Alternative: Levofloxacin 750mg PO daily + Metronidazole 500mg PO TID x 7-10 days. Observation: Recent studies suggest antibiotics may not be needed for uncomplicated diverticulitis (select patients, close follow-up).",
+            "uncomplicated_diverticulitis_inpatient": "Ceftriaxone 2g IV daily + Metronidazole 500mg IV q8h OR Cefepime 2g IV q8h + Metronidazole 500mg IV q8h OR Piperacillin-tazobactam 3.375g IV q6h. Duration: Until afebrile and tolerating diet, then switch to PO to complete 7-10 days total.",
+            "complicated_diverticulitis_abscess": "Percutaneous drainage + antibiotics: Piperacillin-tazobactam 3.375g IV q6h OR Cefepime 2g IV q8h + Metronidazole 500mg IV q8h OR Ertapenem 1g IV daily. Duration: 7-14 days (until abscess resolved on imaging). Elective sigmoid resection 6-12 weeks later (recurrence risk 30-40%).",
+            "complicated_diverticulitis_perforation": "Urgent surgery + antibiotics: Piperacillin-tazobactam 3.375g IV q6h OR Meropenem 1g IV q8h (if MDRO risk) OR Cefepime 2g IV q8h + Metronidazole 500mg IV q8h + Vancomycin 15-20mg/kg IV q8-12h (if VRE risk). Duration: 4-7 days postoperatively.",
+            "immunocompromised": "Broader coverage: Meropenem 1g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h + Vancomycin 15-20mg/kg IV q8-12h. Duration: 7-14 days (longer than immunocompetent).",
+            "alternatives": "Beta-lactam allergy: Aztreonam 2g IV q8h + Metronidazole 500mg IV q8h + Vancomycin 15-20mg/kg IV q8-12h.",
+            "avoid_list": "Avoid inadequate anaerobic coverage (metronidazole or beta-lactam/beta-lactamase inhibitor required). Avoid NSAIDs (increase perforation risk). Avoid colonoscopy during acute episode (perforation risk)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "uncomplicated_diverticulitis": "Antibiotics (7-10 days) OR observation (select patients, recent studies suggest antibiotics may not be needed). Narrow antibiotics based on culture results if obtained. E. coli + Bacteroides: Ceftriaxone 2g IV daily + Metronidazole 500mg IV q8h OR Ertapenem 1g IV daily. Switch to PO when tolerating diet: Amoxicillin-clavulanate 875mg PO TID OR Ciprofloxacin 500mg PO BID + Metronidazole 500mg PO TID.",
+            "complicated_diverticulitis_abscess": "Percutaneous drainage + antibiotics (7-14 days). Narrow antibiotics based on culture results. Elective sigmoid resection 6-12 weeks later (recurrence risk 30-40%, higher if immunosuppressed).",
+            "complicated_diverticulitis_perforation": "Urgent surgery (Hartmann procedure: sigmoid resection + end colostomy, colostomy reversal 3-6 months later) OR primary resection with anastomosis (if minimal contamination, hemodynamically stable). Antibiotics: 4-7 days postoperatively. Narrow based on culture results.",
+            "recurrent_diverticulitis": "Elective sigmoid resection after 2nd episode (or 1st episode if immunocompromised, young age <50, complicated). Recurrence risk after 1st episode: 20-30%. Recurrence risk after 2nd episode: 50-60%.",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Switch from piperacillin-tazobactam to ceftriaxone + metronidazole if ESBL-negative. Discontinue vancomycin if no VRE. Switch IV to PO when tolerating diet.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Tolerating diet, (3) Improving WBC and CRP, (4) No signs of peritonitis. PO options: Amoxicillin-clavulanate 875mg PO TID OR Ciprofloxacin 500mg PO BID + Metronidazole 500mg PO TID."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "uncomplicated_diverticulitis": "7-10 days (outpatient or inpatient). Recent studies suggest antibiotics may not be needed for select uncomplicated cases (close follow-up required).",
+            "complicated_diverticulitis_abscess": "7-14 days (until abscess resolved on imaging)",
+            "complicated_diverticulitis_perforation": "4-7 days postoperatively",
+            "monitoring": "Daily: Vital signs, abdominal exam, diet tolerance. Every 2-3 days: CBC, CRP (monitor improvement). Repeat imaging: If persistent fever or clinical deterioration (assess for abscess, perforation). Colonoscopy: 6-8 weeks after resolution (rule out colon cancer, confirm diverticulosis).",
+            "stop_criteria": "Completed 7-10 days (uncomplicated) or 4-7 days postoperatively (perforated). Afebrile >24 hours. Tolerating diet. Normal or improving WBC and CRP. No signs of peritonitis or abscess."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "hinchey_classification": "Stage 0 (uncomplicated): Antibiotics, outpatient if mild. Stage Ia (pericolic abscess <4cm): Antibiotics, inpatient. Stage Ib (pelvic abscess >4cm): Percutaneous drainage + antibiotics. Stage II (pelvic abscess): Percutaneous drainage + antibiotics. Stage III (purulent peritonitis): Urgent surgery. Stage IV (fecal peritonitis): Urgent surgery.",
+            "surgical_indications": "Urgent surgery: Peritonitis (Hinchey III-IV), septic shock, free air, clinical deterioration despite antibiotics. Elective surgery: Recurrent diverticulitis (≥2 episodes), complicated diverticulitis (abscess, fistula, stricture), immunosuppressed (after 1st episode), young age <50 (after 1st-2nd episode, higher lifetime recurrence risk).",
+            "non_operative_management": "Antibiotics alone for uncomplicated diverticulitis: Success rate 70-85%. Recent studies suggest observation without antibiotics may be safe for select uncomplicated cases (no immunosuppression, able to tolerate diet, close follow-up). Percutaneous drainage for abscess >4cm: Success rate 70-80%, avoids urgent surgery.",
+            "immunocompromised": "Higher complication rate (perforation, abscess). Broader antibiotic coverage (meropenem, vancomycin). Longer duration (7-14 days). Lower threshold for surgery. Elective sigmoid resection after 1st episode (recurrence risk 50-60%).",
+            "right_sided_diverticulitis": "5-10% of diverticulitis, more common in Asian populations. Mimics appendicitis (RLQ pain). CT distinguishes (colonic wall thickening vs appendiceal inflammation). Treatment same as left-sided diverticulitis.",
+            "colonoscopy_after_resolution": "Recommended 6-8 weeks after resolution (rule out colon cancer, confirm diverticulosis). Colon cancer found in 1-2% of first episodes. Higher risk if: Age >50, rectal bleeding, weight loss, anemia, family history."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Consider observation without antibiotics for select uncomplicated diverticulitis (recent studies)",
+              "Fixed duration 7-10 days for uncomplicated diverticulitis (avoid prolonged courses)",
+              "De-escalate from piperacillin-tazobactam to ceftriaxone + metronidazole if ESBL-negative",
+              "Switch IV to PO when tolerating diet (amoxicillin-clavulanate, ciprofloxacin + metronidazole)",
+              "Discontinue vancomycin if no VRE"
+            ],
+            "timeout_checklist": [
+              "Is this uncomplicated or complicated diverticulitis? (Determines treatment: antibiotics vs drainage vs surgery)",
+              "Is there an abscess? (Percutaneous drainage if >4cm)",
+              "Is there peritonitis or free air? (Urgent surgery required)",
+              "Is patient immunocompromised? (Broader coverage, longer duration, lower threshold for surgery)",
+              "Can I de-escalate antibiotics? (Based on culture results)",
+              "Can I switch IV to PO? (If tolerating diet)",
+              "Can I stop antibiotics? (If 7-10 days completed, afebrile, tolerating diet, improving WBC/CRP)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use prolonged antibiotics beyond 7-10 days for uncomplicated diverticulitis. Do NOT use broad-spectrum antibiotics without MDRO risk factors. Do NOT perform colonoscopy during acute episode (perforation risk).",
+            "patient_education": "Diverticulitis is inflammation of colon pouches. Complete full antibiotic course. High-fiber diet after resolution (prevents recurrence). Avoid NSAIDs. Colonoscopy in 6-8 weeks (rule out colon cancer). Watch for worsening symptoms (fever, severe pain). Elective surgery may be recommended if recurrent."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "AGA Acute Diverticulitis Guidelines (2021)",
+              "url": "https://www.gastrojournal.org/article/S0016-5085(21)00581-1/fulltext"
+            },
+            {
+              "label": "IDSA Intra-Abdominal Infections Guidelines (2024)",
+              "url": "https://www.idsociety.org/practice-guideline/intra-abdominal-infections/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "acute-cholecystitis",
+      "name": "Acute Cholecystitis",
+      "synonyms": ["cholecystitis", "gallbladder infection", "gangrenous cholecystitis"],
+      "icd10": ["K81.0", "K81.1", "K81.9"],
+      "severity": ["moderate", "severe"],
+      "shortDescription": "Inflammation of the gallbladder requiring urgent cholecystectomy or drainage with antibiotics",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Acute cholecystitis is inflammation of the gallbladder, usually due to cystic duct obstruction by gallstone (90-95%). Incidence: 120,000 cholecystectomies/year in US. Mortality: 1-5% (uncomplicated), 10-30% (gangrenous, perforated). Classification: Uncomplicated vs complicated (gangrenous, emphysematous, perforated).",
+            "clinical_presentation": "RUQ abdominal pain (constant, severe, radiating to right shoulder/scapula). Fever, nausea, vomiting. Physical exam: RUQ tenderness, Murphy sign (inspiratory arrest with RUQ palpation during deep breath), palpable gallbladder (30%). Jaundice (10-15%, suggests choledocholithiasis or Mirizzi syndrome).",
+            "diagnostic_criteria": "Tokyo Guidelines 2018: (A) Local signs of inflammation (Murphy sign, RUQ mass/pain/tenderness), (B) Systemic signs (fever, elevated WBC, elevated CRP), (C) Imaging findings (RUQ ultrasound or CT). Definite diagnosis: A + B + C. Suspected diagnosis: A + B or A + C. Severity: Grade I (mild), Grade II (moderate), Grade III (severe).",
+            "risk_factors": [
+              "Gallstones (90-95% of cases)",
+              "Female sex (2-3x higher risk)",
+              "Age >40 years",
+              "Obesity",
+              "Rapid weight loss",
+              "Pregnancy",
+              "Diabetes mellitus (higher complication rate)",
+              "Acalculous cholecystitis (5-10%): Critical illness, TPN, prolonged fasting, burns, trauma, sepsis"
+            ],
+            "red_flags": [
+              "Septic shock or hypotension - gangrenous or perforated cholecystitis, urgent surgery",
+              "Peritonitis (diffuse abdominal pain, rigidity) - perforated cholecystitis",
+              "Jaundice + cholangitis (Charcot triad: fever, RUQ pain, jaundice) - choledocholithiasis, urgent ERCP",
+              "Emphysematous cholecystitis (gas in gallbladder wall) - high perforation risk, urgent surgery",
+              "Acalculous cholecystitis - critically ill patients, high mortality (30-50%)"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "RUQ ultrasound first-line imaging (sensitivity 80-90%, specificity 95%). CT abdomen if ultrasound inconclusive or to assess complications. HIDA scan if diagnosis uncertain (shows cystic duct obstruction). ERCP if choledocholithiasis suspected (jaundice, dilated CBD).",
+            "essential_tests": [
+              "CBC with differential (leukocytosis 12,000-15,000)",
+              "CMP (assess liver function, bilirubin, alkaline phosphatase)",
+              "Lipase (rule out pancreatitis)",
+              "RUQ ultrasound: Gallstones, gallbladder wall thickening >4mm, pericholecystic fluid, sonographic Murphy sign, dilated CBD (>6mm suggests choledocholithiasis)"
+            ],
+            "conditional_tests": [
+              "CT abdomen/pelvis with IV contrast: If ultrasound inconclusive or to assess complications (perforation, abscess, emphysematous cholecystitis). Findings: Gallbladder wall thickening, pericholecystic fluid/fat stranding, gas in wall (emphysematous).",
+              "HIDA scan (hepatobiliary scintigraphy): If diagnosis uncertain. Non-visualization of gallbladder confirms cystic duct obstruction (sensitivity 95%, specificity 90%).",
+              "MRCP: If choledocholithiasis suspected (jaundice, dilated CBD on ultrasound), non-invasive alternative to ERCP.",
+              "ERCP: If choledocholithiasis confirmed (therapeutic: stone extraction + sphincterotomy).",
+              "Blood cultures: If septic, febrile, or severe cholecystitis"
+            ],
+            "when_not_to_test": "Do NOT delay surgery for HIDA scan if classic presentation (clinical diagnosis sufficient). Do NOT perform ERCP without evidence of choledocholithiasis (complications: pancreatitis, perforation, bleeding).",
+            "turnaround_time": "CBC: <1 hour. RUQ ultrasound: 1-4 hours (urgent if septic). CT abdomen: 1-4 hours. HIDA scan: 2-4 hours. ERCP: 4-24 hours (urgent if cholangitis)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "polymicrobial": "Acute cholecystitis is often polymicrobial with mixed aerobic and anaerobic bacteria from biliary flora. Bile cultures positive in 50-70% of cases (higher if severe or complicated).",
+            "aerobic_gram_negative": [
+              "E. coli (most common, 50-60%)",
+              "Klebsiella species (20-30%)",
+              "Enterobacter species (10-15%)",
+              "Pseudomonas aeruginosa (5-10%, healthcare-associated)"
+            ],
+            "aerobic_gram_positive": [
+              "Enterococcus species (20-30%)",
+              "Streptococcus species (viridans group, 10-15%)"
+            ],
+            "anaerobes": [
+              "Bacteroides fragilis (10-20%)",
+              "Clostridium species (5-10%, emphysematous cholecystitis)",
+              "Peptostreptococcus species"
+            ],
+            "resistance_patterns": "ESBL E. coli 15-30% (healthcare-associated). VRE 10-30% (healthcare-associated). MDR Pseudomonas 30-50% (healthcare-associated, prior antibiotics).",
+            "mdro_risk_factors": [
+              "Recent hospitalization or biliary procedures",
+              "Recent antibiotics (within 90 days)",
+              "Healthcare-associated infection",
+              "Biliary stent or prior ERCP",
+              "Immunosuppression"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "mild_cholecystitis_grade_i": "Ceftriaxone 2g IV daily OR Cefazolin 2g IV q8h + Metronidazole 500mg IV q8h (if anaerobic coverage desired). Duration: Until cholecystectomy (within 72 hours), then discontinue postoperatively if uncomplicated.",
+            "moderate_cholecystitis_grade_ii": "Ceftriaxone 2g IV daily + Metronidazole 500mg IV q8h OR Piperacillin-tazobactam 3.375g IV q6h OR Cefepime 2g IV q8h + Metronidazole 500mg IV q8h. Duration: Until cholecystectomy, then 4-7 days postoperatively if complicated.",
+            "severe_cholecystitis_grade_iii": "Piperacillin-tazobactam 4.5g IV q6h OR Meropenem 1g IV q8h (if MDRO risk) OR Cefepime 2g IV q8h + Metronidazole 500mg IV q8h + Vancomycin 15-20mg/kg IV q8-12h (if VRE risk or septic shock). Duration: 4-7 days postoperatively.",
+            "healthcare_associated_or_mdro_risk": "Meropenem 1g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h + Vancomycin 15-20mg/kg IV q8-12h. Consider adding antifungal (micafungin 100mg IV daily) if critically ill, TPN, or prior biliary procedures.",
+            "acalculous_cholecystitis": "Broader coverage (critically ill patients): Piperacillin-tazobactam 4.5g IV q6h OR Meropenem 1g IV q8h + Vancomycin 15-20mg/kg IV q8-12h. Duration: 7-14 days (higher complication rate).",
+            "alternatives": "Beta-lactam allergy: Aztreonam 2g IV q8h + Metronidazole 500mg IV q8h + Vancomycin 15-20mg/kg IV q8-12h. Fluoroquinolone: Levofloxacin 750mg IV daily + Metronidazole 500mg IV q8h (if susceptible).",
+            "avoid_list": "Avoid inadequate Gram-negative coverage (ceftriaxone or cefepime required). Avoid inadequate anaerobic coverage if severe or complicated (metronidazole or beta-lactam/beta-lactamase inhibitor). Avoid delaying surgery >72 hours (increases complication rate)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "mild_cholecystitis": "Early cholecystectomy (within 72 hours, laparoscopic preferred). Antibiotics: Discontinue postoperatively if uncomplicated. No postoperative antibiotics needed if source controlled.",
+            "moderate_severe_cholecystitis": "Cholecystectomy (within 72 hours if stable, urgent if septic/perforated). Antibiotics: 4-7 days postoperatively if complicated (gangrenous, perforated, abscess). Narrow based on bile culture results. E. coli + Enterococcus: Ceftriaxone 2g IV daily + Ampicillin 2g IV q4h OR Piperacillin-tazobactam 3.375g IV q6h.",
+            "high_surgical_risk_or_unstable": "Percutaneous cholecystostomy (gallbladder drainage) + antibiotics. Duration: 7-14 days. Interval cholecystectomy 6-12 weeks later (if surgical risk improves).",
+            "choledocholithiasis": "ERCP (stone extraction + sphincterotomy) + cholecystectomy. Antibiotics: Ceftriaxone 2g IV daily + Metronidazole 500mg IV q8h. Duration: 4-7 days after ERCP and cholecystectomy.",
+            "de_escalation": "De-escalate within 48-72 hours based on bile culture results. Switch from piperacillin-tazobactam to ceftriaxone if ESBL-negative. Discontinue vancomycin if no VRE. Discontinue metronidazole if no anaerobes isolated (unless severe/complicated).",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Tolerating diet, (3) Improving WBC, (4) Cholecystectomy performed. PO options: Amoxicillin-clavulanate 875mg PO TID OR Ciprofloxacin 500mg PO BID + Metronidazole 500mg PO TID."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "mild_cholecystitis": "Until cholecystectomy (within 72 hours), then discontinue postoperatively if uncomplicated",
+            "moderate_severe_cholecystitis": "4-7 days postoperatively if complicated (gangrenous, perforated, abscess)",
+            "percutaneous_cholecystostomy": "7-14 days (until clinical improvement and drainage output minimal)",
+            "acalculous_cholecystitis": "7-14 days (higher complication rate, longer duration needed)",
+            "monitoring": "Daily: Vital signs, abdominal exam, diet tolerance, cholecystostomy output (if placed). Every 2-3 days: CBC, CMP (monitor WBC normalization, liver function). Repeat imaging: If persistent fever or clinical deterioration (assess for abscess, bile leak).",
+            "stop_criteria": "Completed 4-7 days postoperatively (if complicated). Afebrile >24 hours. Tolerating diet. Normal or improving WBC. Cholecystectomy performed or cholecystostomy output minimal."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "tokyo_guidelines_severity": "Grade I (mild): No organ dysfunction, healthy patient, laparoscopic cholecystectomy safe. Grade II (moderate): Elevated WBC >18,000, palpable RUQ mass, symptoms >72 hours, marked local inflammation. Grade III (severe): Organ dysfunction (cardiovascular, neurologic, respiratory, renal, hepatic, hematologic). Requires ICU, resuscitation, percutaneous drainage if unstable.",
+            "surgical_timing": "Early cholecystectomy (within 72 hours) preferred (lower complication rate, shorter hospital stay vs delayed surgery). Laparoscopic preferred (lower wound infection, faster recovery). Urgent surgery: Septic shock, peritonitis, emphysematous cholecystitis, gangrenous cholecystitis.",
+            "percutaneous_cholecystostomy": "Indications: High surgical risk (severe comorbidities, unstable), Grade III cholecystitis with organ dysfunction. Technique: Ultrasound or CT-guided drainage. Duration: 7-14 days, then interval cholecystectomy 6-12 weeks later (if surgical risk improves). Success rate: 80-90% for acute stabilization.",
+            "acalculous_cholecystitis": "5-10% of acute cholecystitis. Risk factors: Critical illness, TPN, prolonged fasting, burns, trauma, sepsis, mechanical ventilation. Higher mortality (30-50%). Diagnosis: RUQ ultrasound (gallbladder wall thickening, pericholecystic fluid, no gallstones). Treatment: Cholecystectomy or percutaneous cholecystostomy + broad-spectrum antibiotics (7-14 days).",
+            "emphysematous_cholecystitis": "Gas-forming organisms (Clostridium, E. coli, Klebsiella). Higher perforation risk (30-50%). Diagnosis: CT (gas in gallbladder wall or lumen). Treatment: Urgent cholecystectomy + broad-spectrum antibiotics (piperacillin-tazobactam or meropenem). Higher mortality (15-25%).",
+            "choledocholithiasis": "10-15% of patients with cholecystitis. Diagnosis: Jaundice, elevated bilirubin/alkaline phosphatase, dilated CBD >6mm on ultrasound. Treatment: ERCP (stone extraction + sphincterotomy) + cholecystectomy. Timing: ERCP first (if cholangitis or severe obstruction), then cholecystectomy within 72 hours.",
+            "pregnancy": "Cholecystitis in pregnancy: 2nd most common surgical emergency (after appendicitis). Imaging: Ultrasound first, MRI if inconclusive (avoid CT radiation). Surgery: Safe in all trimesters, laparoscopic preferred (2nd trimester safest). Antibiotics: Ceftriaxone 2g IV daily + Metronidazole 500mg IV q8h (avoid fluoroquinolones)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Discontinue antibiotics postoperatively if uncomplicated cholecystitis (source controlled)",
+              "Fixed duration 4-7 days for complicated cholecystitis (avoid prolonged courses)",
+              "De-escalate from piperacillin-tazobactam to ceftriaxone if ESBL-negative",
+              "Discontinue vancomycin if no VRE",
+              "Switch IV to PO when tolerating diet (amoxicillin-clavulanate, ciprofloxacin + metronidazole)"
+            ],
+            "timeout_checklist": [
+              "What is the severity? (Grade I-III, determines antibiotic choice and surgical timing)",
+              "Is cholecystectomy performed? (Discontinue antibiotics if uncomplicated)",
+              "Is this complicated? (Gangrenous, perforated, abscess - requires 4-7 days antibiotics)",
+              "Is there choledocholithiasis? (ERCP required before or after cholecystectomy)",
+              "Can I de-escalate antibiotics? (Based on bile culture results)",
+              "Can I switch IV to PO? (If tolerating diet)",
+              "Can I stop antibiotics? (If cholecystectomy performed and uncomplicated)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use prolonged antibiotics for uncomplicated cholecystitis after cholecystectomy (no benefit). Do NOT delay surgery beyond 72 hours (increases complication rate). Do NOT use broad-spectrum antibiotics without MDRO risk factors.",
+            "patient_education": "Cholecystitis is gallbladder infection requiring surgery. Early surgery (within 72 hours) preferred. Complete full antibiotic course if complicated. Watch for worsening symptoms (fever, severe pain, jaundice). Follow-up in 2-4 weeks. Low-fat diet after surgery (temporary)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "Tokyo Guidelines for Acute Cholecystitis (2018)",
+              "url": "https://link.springer.com/article/10.1007/s00534-017-1492-y"
+            },
+            {
+              "label": "IDSA Intra-Abdominal Infections Guidelines (2024)",
+              "url": "https://www.idsociety.org/practice-guideline/intra-abdominal-infections/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "acute-cholangitis",
+      "name": "Acute Cholangitis",
+      "synonyms": ["cholangitis", "ascending cholangitis", "suppurative cholangitis"],
+      "icd10": ["K83.0", "K83.09"],
+      "severity": ["severe", "critical"],
+      "shortDescription": "Biliary tract infection requiring urgent antibiotics and biliary drainage (ERCP or PTC)",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Acute cholangitis is bacterial infection of the biliary tree due to biliary obstruction. Most common cause: Choledocholithiasis (60-70%). Other causes: Biliary stricture, malignancy, biliary stent, parasites. Mortality: 5-10% (overall), 20-50% (severe with organ dysfunction). Requires urgent biliary drainage + antibiotics.",
+            "clinical_presentation": "Charcot triad (50-70%): (1) Fever/chills, (2) RUQ pain, (3) Jaundice. Reynolds pentad (severe, 10-20%): Charcot triad + (4) Altered mental status, (5) Hypotension/septic shock. Physical exam: RUQ tenderness, jaundice, fever, hypotension (if severe).",
+            "diagnostic_criteria": "Tokyo Guidelines 2018: (A) Systemic inflammation (fever, elevated WBC, elevated CRP), (B) Cholestasis (jaundice, elevated bilirubin/alkaline phosphatase/GGT), (C) Imaging (biliary dilatation, evidence of obstruction). Definite diagnosis: A + B + C. Suspected diagnosis: A + B or A + C. Severity: Grade I (mild), Grade II (moderate), Grade III (severe).",
+            "risk_factors": [
+              "Choledocholithiasis (most common, 60-70%)",
+              "Biliary stricture (benign or malignant)",
+              "Biliary stent or prior ERCP",
+              "Pancreatic or biliary malignancy",
+              "Primary sclerosing cholangitis",
+              "Parasites (Ascaris, Clonorchis, Opisthorchis - endemic areas)",
+              "Elderly age (higher mortality)"
+            ],
+            "red_flags": [
+              "Reynolds pentad (Charcot triad + altered mental status + hypotension) - severe cholangitis, urgent ERCP",
+              "Septic shock or hypotension - high mortality (20-50%), urgent biliary drainage",
+              "Altered mental status - severe cholangitis, ICU admission",
+              "Acute kidney injury or organ dysfunction - severe cholangitis",
+              "Bilirubin >5 mg/dL - severe obstruction, urgent drainage"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "RUQ ultrasound first-line imaging (assess biliary dilatation, choledocholithiasis). CT abdomen if ultrasound inconclusive. MRCP if diagnosis uncertain or to plan ERCP. ERCP therapeutic (biliary drainage + stone extraction + stent placement).",
+            "essential_tests": [
+              "CBC with differential (leukocytosis 12,000-20,000)",
+              "CMP (elevated bilirubin, alkaline phosphatase, GGT, assess renal function)",
+              "Lipase (rule out pancreatitis)",
+              "Blood cultures x2 sets BEFORE antibiotics (positive in 30-70%)",
+              "RUQ ultrasound: Biliary dilatation (CBD >6mm), choledocholithiasis, gallbladder stones"
+            ],
+            "conditional_tests": [
+              "CT abdomen/pelvis with IV contrast: If ultrasound inconclusive or to assess complications (abscess, perforation). Findings: Biliary dilatation, choledocholithiasis, biliary wall thickening.",
+              "MRCP: If diagnosis uncertain or to plan ERCP (non-invasive, detailed biliary anatomy, identifies stones, strictures, masses).",
+              "ERCP: Therapeutic (biliary drainage + stone extraction + sphincterotomy + stent placement). Timing: Within 24 hours (moderate-severe cholangitis), within 6-12 hours (severe with organ dysfunction).",
+              "PTC (percutaneous transhepatic cholangiography): If ERCP fails or not feasible (altered anatomy, duodenal obstruction).",
+              "Bile cultures: Obtained during ERCP (guides antibiotic therapy)"
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics for imaging or cultures if septic (start antibiotics within 1 hour). Do NOT delay ERCP beyond 24 hours for moderate-severe cholangitis (mortality increases). Do NOT perform MRCP if ERCP clearly indicated (delays drainage).",
+            "turnaround_time": "CBC: <1 hour. Blood cultures: Preliminary 24-48 hours. RUQ ultrasound: 1-4 hours (urgent if septic). MRCP: 2-24 hours. ERCP: 4-24 hours (urgent if severe)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "polymicrobial": "Acute cholangitis is often polymicrobial with mixed aerobic and anaerobic bacteria from biliary flora. Blood cultures positive in 30-70%. Bile cultures positive in 80-90%.",
+            "aerobic_gram_negative": [
+              "E. coli (most common, 40-50%)",
+              "Klebsiella species (20-30%)",
+              "Enterobacter species (10-20%)",
+              "Pseudomonas aeruginosa (10-15%, healthcare-associated, biliary stent)"
+            ],
+            "aerobic_gram_positive": [
+              "Enterococcus species (30-40%)",
+              "Streptococcus species (viridans group, 10-15%)"
+            ],
+            "anaerobes": [
+              "Bacteroides fragilis (10-20%)",
+              "Clostridium species (5-10%)"
+            ],
+            "resistance_patterns": "ESBL E. coli/Klebsiella 20-40% (healthcare-associated, biliary stent, prior ERCP). VRE 10-30% (healthcare-associated). MDR Pseudomonas 30-50% (biliary stent, prior antibiotics). Fluoroquinolone resistance 30-50%.",
+            "mdro_risk_factors": [
+              "Biliary stent or prior ERCP",
+              "Recent hospitalization or biliary procedures",
+              "Recent antibiotics (within 90 days)",
+              "Healthcare-associated infection",
+              "Immunosuppression"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "mild_cholangitis_grade_i": "Ceftriaxone 2g IV daily OR Cefepime 2g IV q8h. Add Metronidazole 500mg IV q8h if prior biliary surgery or biliary-enteric anastomosis (anaerobic coverage). Duration: 4-7 days after biliary drainage.",
+            "moderate_cholangitis_grade_ii": "Piperacillin-tazobactam 3.375g IV q6h OR Cefepime 2g IV q8h + Metronidazole 500mg IV q8h. Urgent ERCP within 24 hours. Duration: 4-7 days after biliary drainage.",
+            "severe_cholangitis_grade_iii": "Piperacillin-tazobactam 4.5g IV q6h OR Meropenem 1g IV q8h (if MDRO risk) OR Cefepime 2g IV q8h + Metronidazole 500mg IV q8h + Vancomycin 15-20mg/kg IV q8-12h (if VRE risk or septic shock). Urgent ERCP within 6-12 hours. Duration: 7-14 days.",
+            "healthcare_associated_or_biliary_stent": "Meropenem 1g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h + Vancomycin 15-20mg/kg IV q8-12h. Consider adding antifungal (micafungin 100mg IV daily) if critically ill, TPN, or multiple prior ERCP. Duration: 7-14 days.",
+            "alternatives": "Beta-lactam allergy: Aztreonam 2g IV q8h + Metronidazole 500mg IV q8h + Vancomycin 15-20mg/kg IV q8-12h. Fluoroquinolone: Levofloxacin 750mg IV daily + Metronidazole 500mg IV q8h (if susceptible, but high resistance rates).",
+            "avoid_list": "Avoid inadequate Gram-negative coverage (ceftriaxone or cefepime required). Avoid delaying biliary drainage (antibiotics alone insufficient, mortality increases). Avoid fluoroquinolones as empiric therapy (high resistance rates 30-50%)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "biliary_drainage": "CRITICAL for cure. ERCP (stone extraction + sphincterotomy + stent placement if needed). Timing: Within 24 hours (moderate), within 6-12 hours (severe). PTC if ERCP fails. Antibiotics alone = high failure rate without drainage.",
+            "targeted_antibiotics": "Narrow based on blood/bile culture results. E. coli + Enterococcus: Ceftriaxone 2g IV daily + Ampicillin 2g IV q4h OR Piperacillin-tazobactam 3.375g IV q6h. ESBL: Ertapenem 1g IV daily OR Meropenem 1g IV q8h. VRE: Daptomycin 8-10mg/kg IV daily OR Linezolid 600mg IV BID.",
+            "duration_after_drainage": "Mild (Grade I): 4-7 days after successful drainage. Moderate (Grade II): 4-7 days after successful drainage. Severe (Grade III): 7-14 days. Longer if bacteremia, abscess, or inadequate drainage.",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Switch from piperacillin-tazobactam to ceftriaxone if ESBL-negative. Discontinue vancomycin if no VRE. Discontinue metronidazole if no anaerobes (unless prior biliary surgery).",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Tolerating diet, (3) Improving WBC and bilirubin, (4) Successful biliary drainage. PO options: Amoxicillin-clavulanate 875mg PO TID OR Ciprofloxacin 500mg PO BID + Metronidazole 500mg PO TID (if susceptible)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "mild_cholangitis": "4-7 days after successful biliary drainage",
+            "moderate_cholangitis": "4-7 days after successful biliary drainage",
+            "severe_cholangitis": "7-14 days",
+            "bacteremia": "7-14 days (longer if persistent bacteremia or metastatic complications)",
+            "monitoring": "Daily: Vital signs, abdominal exam, jaundice, diet tolerance. Every 2-3 days: CBC, CMP (monitor WBC normalization, bilirubin/alkaline phosphatase improvement). Repeat imaging: If persistent fever or clinical deterioration (assess drainage adequacy, abscess). Repeat ERCP: If inadequate drainage or stent occlusion.",
+            "stop_criteria": "Completed 4-7 days (mild-moderate) or 7-14 days (severe) after successful drainage. Afebrile >24 hours. Tolerating diet. Normal or improving WBC, bilirubin, alkaline phosphatase. Successful biliary drainage confirmed."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "tokyo_guidelines_severity": "Grade I (mild): No organ dysfunction, responds to initial treatment. Grade II (moderate): Organ dysfunction (WBC >12,000 or <4,000, fever ≥39°C, age ≥75, bilirubin ≥5 mg/dL, albumin <3 g/dL). Grade III (severe): Organ dysfunction (cardiovascular, neurologic, respiratory, renal, hepatic, hematologic). Requires ICU, urgent ERCP within 6-12 hours.",
+            "ercp_timing": "Mild (Grade I): Within 24-48 hours. Moderate (Grade II): Within 24 hours. Severe (Grade III): Within 6-12 hours (urgent). Delay increases mortality. ERCP success rate: 85-95%. Complications: Pancreatitis (5%), bleeding (1%), perforation (<1%).",
+            "ptc_alternative": "Indications: ERCP failure, altered anatomy (Roux-en-Y, Billroth II), duodenal obstruction. Technique: Percutaneous transhepatic biliary drainage. Success rate: 90-95%. Complications: Bleeding, bile leak, sepsis. Interval ERCP or surgery after stabilization.",
+            "biliary_stent_management": "Plastic stents: Replace every 3-6 months (occlusion risk). Metal stents: Longer patency (6-12 months), used for malignant obstruction. Stent occlusion: Presents as recurrent cholangitis, requires urgent ERCP (stent replacement or cleaning).",
+            "recurrent_cholangitis": "Causes: Retained stones, biliary stricture, stent occlusion, malignancy. Workup: MRCP or ERCP (identify cause). Treatment: Repeat ERCP (stone extraction, stricture dilation, stent replacement) + antibiotics. Definitive: Surgery (hepaticojejunostomy) if recurrent despite ERCP.",
+            "immunocompromised": "Broader coverage (meropenem + vancomycin + micafungin). Longer duration (7-14 days minimum). Higher risk of MDRO and fungal infections. Lower threshold for ICU admission and urgent ERCP."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Fixed duration 4-7 days for mild-moderate cholangitis after successful drainage (avoid prolonged courses)",
+              "De-escalate from piperacillin-tazobactam to ceftriaxone if ESBL-negative",
+              "Discontinue vancomycin if no VRE",
+              "Discontinue metronidazole if no anaerobes (unless prior biliary surgery)",
+              "Switch IV to PO when tolerating diet and improving (amoxicillin-clavulanate, ciprofloxacin + metronidazole if susceptible)"
+            ],
+            "timeout_checklist": [
+              "What is the severity? (Grade I-III, determines ERCP timing and antibiotic duration)",
+              "Is biliary drainage successful? (ERCP or PTC performed, bilirubin improving)",
+              "Are blood/bile cultures available? (Narrow antibiotics based on results)",
+              "Can I de-escalate antibiotics? (Based on culture results)",
+              "Can I switch IV to PO? (If tolerating diet and improving)",
+              "Can I stop antibiotics? (If 4-7 days completed after successful drainage, afebrile, improving labs)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use prolonged antibiotics beyond 4-7 days for mild-moderate cholangitis after successful drainage. Do NOT delay ERCP (antibiotics alone insufficient). Do NOT use fluoroquinolones empirically (high resistance rates).",
+            "patient_education": "Cholangitis is biliary infection requiring urgent drainage (ERCP) + antibiotics. Complete full antibiotic course. Watch for worsening symptoms (fever, jaundice, confusion). Follow-up in 2-4 weeks. Stent replacement needed every 3-6 months if plastic stent placed."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "Tokyo Guidelines for Acute Cholangitis (2018)",
+              "url": "https://link.springer.com/article/10.1007/s00534-017-1493-x"
+            },
+            {
+              "label": "IDSA Intra-Abdominal Infections Guidelines (2024)",
+              "url": "https://www.idsociety.org/practice-guideline/intra-abdominal-infections/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "secondary-peritonitis",
+      "name": "Secondary Peritonitis",
+      "synonyms": ["peritonitis", "perforated viscus", "surgical peritonitis"],
+      "icd10": ["K65.0", "K65.1", "K65.9"],
+      "severity": ["severe", "critical"],
+      "shortDescription": "Peritoneal infection from perforated viscus or anastomotic leak requiring urgent surgery and antibiotics",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Secondary peritonitis is peritoneal infection due to perforation of GI tract or other intra-abdominal organ. Most common causes: Perforated appendix (30%), perforated peptic ulcer (20%), perforated diverticulitis (15%), anastomotic leak (10%), perforated colon cancer (5%). Mortality: 20-40% (depends on source, timing of surgery, comorbidities). Requires urgent surgery + antibiotics.",
+            "clinical_presentation": "Diffuse abdominal pain (sudden onset if perforation). Fever, nausea, vomiting. Physical exam: Diffuse tenderness, rigidity (board-like abdomen), rebound tenderness, guarding, absent bowel sounds, hypotension (if septic shock). Peritoneal signs: Pain with movement, cough, percussion.",
+            "diagnostic_criteria": "Clinical diagnosis: Peritoneal signs (rigidity, rebound, guarding) + imaging (free air, free fluid, abscess). CT abdomen/pelvis: Free air (pneumoperitoneum), free fluid, bowel wall thickening, abscess, extraluminal contrast (if oral contrast given). Mannheim Peritonitis Index (MPI): Predicts mortality (age, organ failure, malignancy, duration, extent, exudate). Score >29: High mortality (50%).",
+            "risk_factors": [
+              "Perforated appendix or diverticulitis",
+              "Perforated peptic ulcer (H. pylori, NSAIDs)",
+              "Anastomotic leak (postoperative day 5-7)",
+              "Perforated colon cancer or ischemic bowel",
+              "Trauma (penetrating or blunt abdominal trauma)",
+              "Elderly age or immunosuppression (higher mortality)"
+            ],
+            "red_flags": [
+              "Septic shock or hypotension - high mortality (40-60%), urgent surgery + resuscitation",
+              "Free air on imaging - perforated viscus, urgent surgery",
+              "Diffuse peritonitis - urgent surgery required",
+              "Anastomotic leak postoperatively - high mortality, urgent re-operation",
+              "Elderly or immunocompromised - atypical presentation, higher mortality"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "CT abdomen/pelvis with IV contrast (confirms diagnosis, identifies source). Upright chest X-ray or abdominal X-ray (free air under diaphragm). Do NOT delay surgery for imaging if peritonitis + hemodynamic instability (clinical diagnosis sufficient).",
+            "essential_tests": [
+              "CBC with differential (leukocytosis 15,000-25,000 or leukopenia if severe)",
+              "CMP (assess renal function, electrolytes, lactate)",
+              "Lactate (assess severity, guide resuscitation, lactate >4 mmol/L = high mortality)",
+              "Blood cultures x2 sets BEFORE antibiotics",
+              "Upright chest X-ray or abdominal X-ray: Free air under diaphragm (pneumoperitoneum, sensitivity 50-70%)"
+            ],
+            "conditional_tests": [
+              "CT abdomen/pelvis with IV contrast: Confirms diagnosis, identifies source. Findings: Free air, free fluid, bowel wall thickening, abscess, extraluminal contrast. Sensitivity 95%, specificity 95%.",
+              "Peritoneal fluid analysis (if diagnostic paracentesis performed): WBC >500 cells/mm³, Gram stain, culture (polymicrobial).",
+              "Intraoperative cultures: Peritoneal fluid or abscess fluid (guides antibiotic therapy)"
+            ],
+            "when_not_to_test": "Do NOT delay surgery for imaging if peritonitis + hemodynamic instability (clinical diagnosis sufficient, urgent surgery required). Do NOT use oral contrast for CT (delays imaging, aspiration risk, contrast extravasation if perforation).",
+            "turnaround_time": "CBC: <1 hour. Lactate: <1 hour. Blood cultures: Preliminary 24-48 hours. Chest X-ray: <1 hour. CT abdomen: 1-4 hours (urgent if septic)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "polymicrobial": "Secondary peritonitis is polymicrobial infection with mixed aerobic and anaerobic bacteria from GI flora. Average 10-15 organisms isolated from peritoneal fluid. Source determines microbiology: Upper GI (stomach, duodenum): Lower bacterial load, Gram-positives + Candida. Lower GI (colon): High bacterial load, Gram-negatives + anaerobes.",
+            "aerobic_gram_negative": [
+              "E. coli (most common, 70-80%)",
+              "Klebsiella species (20-30%)",
+              "Enterobacter species (15-20%)",
+              "Pseudomonas aeruginosa (10-15%, healthcare-associated)",
+              "Proteus species (10-15%)"
+            ],
+            "aerobic_gram_positive": [
+              "Enterococcus species (40-50%)",
+              "Streptococcus species (viridans group, 20-30%)",
+              "Staphylococcus aureus (10-15%, postoperative)"
+            ],
+            "anaerobes": [
+              "Bacteroides fragilis (most common anaerobe, 70-80%)",
+              "Peptostreptococcus species (30-40%)",
+              "Clostridium species (10-20%)",
+              "Fusobacterium species (10-15%)"
+            ],
+            "fungi": [
+              "Candida species (20-30%, upper GI perforation, postoperative, immunosuppressed, TPN, broad-spectrum antibiotics)"
+            ],
+            "resistance_patterns": "ESBL E. coli/Klebsiella 20-40% (healthcare-associated). VRE 15-30% (healthcare-associated, prior antibiotics). MDR Pseudomonas 30-50% (healthcare-associated, ICU). Fluconazole-resistant Candida 20-30%.",
+            "mdro_risk_factors": [
+              "Healthcare-associated infection (postoperative, anastomotic leak)",
+              "Recent hospitalization or surgery",
+              "Recent antibiotics (within 90 days)",
+              "ICU admission",
+              "Immunosuppression"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "community_acquired_mild_moderate": "Piperacillin-tazobactam 3.375g IV q6h OR Cefepime 2g IV q8h + Metronidazole 500mg IV q8h OR Ertapenem 1g IV daily. Duration: 4-7 days after source control (surgery).",
+            "community_acquired_severe_or_septic_shock": "Piperacillin-tazobactam 4.5g IV q6h OR Meropenem 1g IV q8h OR Cefepime 2g IV q8h + Metronidazole 500mg IV q8h. Duration: 4-7 days after source control.",
+            "healthcare_associated_or_postoperative": "Meropenem 1g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h + Vancomycin 15-20mg/kg IV q8-12h (if MRSA or VRE risk). Add Micafungin 100mg IV daily if upper GI perforation, postoperative, TPN, or immunosuppressed. Duration: 4-7 days after source control.",
+            "upper_gi_perforation": "Piperacillin-tazobactam 4.5g IV q6h + Micafungin 100mg IV daily OR Meropenem 1g IV q8h + Micafungin 100mg IV daily. Add Vancomycin 15-20mg/kg IV q8-12h if postoperative or MRSA risk. Duration: 4-7 days after source control.",
+            "alternatives": "Beta-lactam allergy: Aztreonam 2g IV q8h + Metronidazole 500mg IV q8h + Vancomycin 15-20mg/kg IV q8-12h. Fluoroquinolone: Levofloxacin 750mg IV daily + Metronidazole 500mg IV q8h (if susceptible).",
+            "avoid_list": "Avoid inadequate anaerobic coverage (metronidazole or beta-lactam/beta-lactamase inhibitor required). Avoid delaying surgery (antibiotics alone insufficient, mortality increases). Avoid inadequate source control (persistent infection, high failure rate)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "source_control": "CRITICAL for cure. Urgent surgery: Repair perforation, resect necrotic bowel, drain abscesses, washout peritoneal cavity. Timing: Within 6-12 hours of diagnosis. Antibiotics alone = high failure rate without source control. Damage control surgery if unstable: Abbreviated laparotomy, temporary abdominal closure, re-operation after resuscitation.",
+            "targeted_antibiotics": "Narrow based on intraoperative culture results. E. coli + Bacteroides + Enterococcus: Ceftriaxone 2g IV daily + Metronidazole 500mg IV q8h + Ampicillin 2g IV q4h OR Piperacillin-tazobactam 3.375g IV q6h. ESBL: Ertapenem 1g IV daily OR Meropenem 1g IV q8h. VRE: Daptomycin 8-10mg/kg IV daily OR Linezolid 600mg IV BID. Candida: Micafungin 100mg IV daily OR Fluconazole 800mg loading, then 400mg daily (if susceptible).",
+            "duration_after_source_control": "4-7 days after adequate source control (surgery). Fixed duration preferred over symptom-based (reduces antibiotic overuse). Longer if: Inadequate source control, persistent infection, bacteremia, immunosuppressed.",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Switch from meropenem to ceftriaxone + metronidazole if ESBL-negative. Discontinue vancomycin if no MRSA/VRE. Discontinue antifungal if no Candida isolated (unless high risk: upper GI perforation, postoperative, immunosuppressed).",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Tolerating diet, (3) Improving WBC and lactate, (4) Source controlled. PO options: Amoxicillin-clavulanate 875mg PO TID OR Ciprofloxacin 500mg PO BID + Metronidazole 500mg PO TID."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "adequate_source_control": "4-7 days after surgery (fixed duration preferred)",
+            "inadequate_source_control": "7-14 days (longer if persistent infection, abscess, or unable to achieve source control)",
+            "bacteremia": "7-14 days (longer if persistent bacteremia or metastatic complications)",
+            "monitoring": "Daily: Vital signs, abdominal exam, wound, drain output. Every 2-3 days: CBC, CMP, lactate (monitor WBC normalization, lactate clearance). Repeat imaging: If persistent fever or clinical deterioration (assess source control adequacy, abscess). Re-operation: If inadequate source control or clinical deterioration.",
+            "stop_criteria": "Completed 4-7 days after adequate source control. Afebrile >24 hours. Tolerating diet. Normal or improving WBC and lactate. Source controlled (surgery performed, drains in place, no abscess on imaging)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "source_control_principles": "CRITICAL for cure. Goals: (1) Eliminate source (repair perforation, resect necrotic bowel), (2) Drain abscesses, (3) Washout peritoneal cavity, (4) Prevent ongoing contamination. Timing: Within 6-12 hours of diagnosis. Damage control surgery if unstable: Abbreviated laparotomy, temporary abdominal closure, re-operation after resuscitation (24-48 hours).",
+            "mannheim_peritonitis_index": "Predicts mortality. Factors: Age >50 (5 points), female sex (5 points), organ failure (7 points), malignancy (4 points), duration >24 hours (4 points), colonic origin (4 points), diffuse peritonitis (6 points), exudate (fecal 12 points, purulent 6 points, clear 0 points). Score <21: Low mortality (0-10%). Score 21-29: Moderate mortality (10-30%). Score >29: High mortality (50%).",
+            "anastomotic_leak": "Postoperative complication (1-5% of anastomoses). Timing: Postoperative day 5-7 (peak). Presentation: Fever, abdominal pain, tachycardia, leukocytosis, drain output (purulent, fecal). Diagnosis: CT abdomen (free air, fluid collection, extraluminal contrast). Treatment: Urgent re-operation (repair leak, diverting ostomy, drainage) + broad-spectrum antibiotics (meropenem + vancomycin + micafungin). Mortality: 10-30%.",
+            "tertiary_peritonitis": "Persistent or recurrent peritonitis despite adequate source control and antibiotics. Causes: MDRO, Candida, inadequate source control, immunosuppression. Presentation: Persistent fever, leukocytosis, organ dysfunction. Treatment: Re-operation (source control), broader antibiotics (meropenem + vancomycin + micafungin), prolonged duration (14-21 days). Mortality: 50-70%.",
+            "immunocompromised": "Broader coverage (meropenem + vancomycin + micafungin). Longer duration (7-14 days minimum). Higher risk of MDRO, Candida, and tertiary peritonitis. Lower threshold for re-operation.",
+            "open_abdomen_management": "Indications: Damage control surgery, abdominal compartment syndrome, inability to close fascia. Management: Temporary abdominal closure (negative pressure wound therapy), serial re-operations (every 24-48 hours), definitive closure when stable. Antibiotics: Continue until definitive closure + 4-7 days."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Fixed duration 4-7 days after adequate source control (avoid prolonged courses)",
+              "De-escalate from meropenem to ceftriaxone + metronidazole if ESBL-negative",
+              "Discontinue vancomycin if no MRSA/VRE",
+              "Discontinue antifungal if no Candida isolated (unless high risk: upper GI perforation, postoperative, immunosuppressed)",
+              "Switch IV to PO when tolerating diet and source controlled"
+            ],
+            "timeout_checklist": [
+              "Is source controlled? (Surgery performed, perforation repaired, abscesses drained)",
+              "Are intraoperative cultures available? (Narrow antibiotics based on results)",
+              "Can I de-escalate antibiotics? (Based on culture results)",
+              "Can I discontinue antifungal? (If no Candida isolated and not high risk)",
+              "Can I switch IV to PO? (If tolerating diet and source controlled)",
+              "Can I stop antibiotics? (If 4-7 days completed after source control, afebrile, improving labs)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use prolonged antibiotics beyond 4-7 days after adequate source control. Do NOT delay surgery (antibiotics alone insufficient). Do NOT use antifungal empirically unless high risk (upper GI perforation, postoperative, immunosuppressed).",
+            "patient_education": "Peritonitis is serious abdominal infection requiring urgent surgery + antibiotics. Complete full antibiotic course. Watch for worsening symptoms (fever, abdominal pain, wound drainage). Follow-up in 2-4 weeks. Wound care critical if open abdomen or drains."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "WSES Intra-Abdominal Infections Guidelines (2017)",
+              "url": "https://wjes.biomedcentral.com/articles/10.1186/s13017-017-0132-7"
+            },
+            {
+              "label": "IDSA Intra-Abdominal Infections Guidelines (2024)",
+              "url": "https://www.idsociety.org/practice-guideline/intra-abdominal-infections/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "spontaneous-bacterial-peritonitis",
+      "name": "Spontaneous Bacterial Peritonitis (SBP)",
+      "synonyms": ["SBP", "primary peritonitis", "ascites infection"],
+      "icd10": ["K65.2", "R18.8"],
+      "severity": ["moderate", "severe"],
+      "shortDescription": "Infection of ascitic fluid in cirrhosis without perforation requiring antibiotics and albumin",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Spontaneous bacterial peritonitis (SBP) is infection of ascitic fluid without identifiable intra-abdominal source (no perforation). Occurs in cirrhosis with ascites. Incidence: 10-30% of hospitalized cirrhotic patients with ascites. Mortality: 20-40% (in-hospital), 50-70% (1-year). Recurrence: 70% within 1 year without prophylaxis. Requires antibiotics + albumin.",
+            "clinical_presentation": "Fever (50-70%), abdominal pain/tenderness (50-70%), altered mental status/hepatic encephalopathy (50%), nausea/vomiting, diarrhea. Asymptomatic in 10-30% (diagnosed on routine paracentesis). Physical exam: Ascites, abdominal tenderness (may be minimal), signs of cirrhosis (jaundice, spider angiomas, palmar erythema).",
+            "diagnostic_criteria": "Ascitic fluid PMN (polymorphonuclear leukocytes) ≥250 cells/mm³ + positive ascitic fluid culture (culture-positive SBP) OR Ascitic fluid PMN ≥250 cells/mm³ + negative culture (culture-negative SBP, 30-40% of cases). Exclude secondary peritonitis: Ascitic fluid protein >1 g/dL, glucose <50 mg/dL, LDH >upper limit of normal for serum, polymicrobial culture (suggests perforation).",
+            "risk_factors": [
+              "Cirrhosis with ascites (most common)",
+              "Low ascitic fluid protein <1.5 g/dL (impaired opsonization)",
+              "Prior SBP episode (recurrence risk 70% within 1 year)",
+              "GI bleeding (bacterial translocation)",
+              "Advanced cirrhosis (Child-Pugh C)",
+              "Hepatorenal syndrome or acute kidney injury"
+            ],
+            "red_flags": [
+              "Septic shock or hypotension - high mortality (50-70%), urgent resuscitation + antibiotics",
+              "Hepatic encephalopathy - suggests severe infection or hepatorenal syndrome",
+              "Acute kidney injury or hepatorenal syndrome - high mortality, albumin critical",
+              "Polymicrobial culture or ascitic fluid protein >1 g/dL - suggests secondary peritonitis (perforation), urgent imaging + surgery",
+              "Prior SBP - high recurrence risk, secondary prophylaxis required"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Diagnostic paracentesis for ALL hospitalized cirrhotic patients with ascites (even if asymptomatic). Repeat paracentesis at 48 hours to document response (PMN count should decrease by ≥25%).",
+            "essential_tests": [
+              "Diagnostic paracentesis: Ascitic fluid cell count with differential (PMN ≥250 cells/mm³ = SBP), Gram stain, culture (inoculate blood culture bottles at bedside, increases yield to 80-90%), total protein, albumin, glucose, LDH",
+              "Serum-ascites albumin gradient (SAAG): ≥1.1 g/dL confirms portal hypertension (cirrhosis)",
+              "CBC with differential (leukocytosis or leukopenia)",
+              "CMP (assess renal function, creatinine, bilirubin)",
+              "Blood cultures x2 sets (positive in 30-50%)"
+            ],
+            "conditional_tests": [
+              "Repeat paracentesis at 48 hours: Document response (PMN should decrease by ≥25%). If no response, consider resistant organism, inadequate antibiotic, or secondary peritonitis.",
+              "CT abdomen/pelvis: If secondary peritonitis suspected (polymicrobial culture, ascitic fluid protein >1 g/dL, no response to antibiotics). Findings: Perforation, abscess, bowel wall thickening.",
+              "Hepatic function tests: Assess severity of cirrhosis (Child-Pugh score, MELD score)"
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics for paracentesis results if high clinical suspicion (start empiric antibiotics immediately after paracentesis). Do NOT skip paracentesis (asymptomatic patients can have SBP). Do NOT delay albumin administration (reduces mortality).",
+            "turnaround_time": "Ascitic fluid cell count: 1-2 hours. Ascitic fluid culture: Preliminary 24-48 hours, final 5 days. Blood cultures: Preliminary 24-48 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "monomicrobial": "SBP is typically monomicrobial (single organism). Polymicrobial culture suggests secondary peritonitis (perforation).",
+            "aerobic_gram_negative": [
+              "E. coli (most common, 40-50%)",
+              "Klebsiella species (15-20%)",
+              "Enterobacter species (5-10%)",
+              "Pseudomonas aeruginosa (5-10%, healthcare-associated)"
+            ],
+            "aerobic_gram_positive": [
+              "Streptococcus species (viridans group, pneumoniae, 15-20%)",
+              "Enterococcus species (10-15%)",
+              "Staphylococcus aureus (5-10%, healthcare-associated)"
+            ],
+            "anaerobes": "Rare in SBP (<5%). Presence of anaerobes suggests secondary peritonitis (perforation).",
+            "resistance_patterns": "ESBL E. coli/Klebsiella 20-40% (healthcare-associated, prior antibiotics, prior SBP). Fluoroquinolone resistance 30-50% (prior fluoroquinolone prophylaxis). MDR Pseudomonas 30-50% (healthcare-associated).",
+            "mdro_risk_factors": [
+              "Healthcare-associated SBP (nosocomial, within 48 hours of hospitalization)",
+              "Prior fluoroquinolone prophylaxis",
+              "Recent antibiotics (within 90 days)",
+              "Prior SBP episode",
+              "Chronic kidney disease or hemodialysis"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "community_acquired_sbp": "Ceftriaxone 2g IV daily (preferred, covers E. coli, Klebsiella, Streptococcus) OR Cefotaxime 2g IV q8h. Add Albumin 1.5 g/kg IV within 6 hours, then 1 g/kg IV on day 3 (reduces mortality and hepatorenal syndrome). Duration: 5-7 days.",
+            "healthcare_associated_sbp_or_mdro_risk": "Piperacillin-tazobactam 4.5g IV q6h OR Meropenem 1g IV q8h (if prior fluoroquinolone prophylaxis or ESBL risk). Add Albumin 1.5 g/kg IV within 6 hours, then 1 g/kg IV on day 3. Duration: 7-14 days.",
+            "albumin_administration": "CRITICAL for reducing mortality and hepatorenal syndrome. Dose: 1.5 g/kg IV within 6 hours of diagnosis, then 1 g/kg IV on day 3. Reduces mortality from 30% to 10%. Reduces hepatorenal syndrome from 30% to 10%.",
+            "alternatives": "Beta-lactam allergy: Aztreonam 2g IV q8h (Gram-negative coverage) + Vancomycin 15-20mg/kg IV q8-12h (Gram-positive coverage). Fluoroquinolone: Levofloxacin 750mg IV daily (if susceptible, but high resistance rates if prior prophylaxis).",
+            "avoid_list": "Avoid fluoroquinolones if prior fluoroquinolone prophylaxis (high resistance rates 30-50%). Avoid aminoglycosides (nephrotoxic, high risk of hepatorenal syndrome). Avoid delaying albumin administration (reduces mortality)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "targeted_antibiotics": "Narrow based on ascitic fluid culture results. E. coli (susceptible): Ceftriaxone 2g IV daily. ESBL: Ertapenem 1g IV daily OR Meropenem 1g IV q8h. Streptococcus: Ceftriaxone 2g IV daily OR Penicillin G 4 million units IV q4h. Enterococcus: Ampicillin 2g IV q4h (if susceptible) OR Vancomycin 15-20mg/kg IV q8-12h (if VRE).",
+            "duration": "5-7 days (community-acquired, good response). 7-14 days (healthcare-associated, MDRO, slow response). Repeat paracentesis at 48 hours: PMN should decrease by ≥25%. If no response, consider resistant organism or secondary peritonitis.",
+            "secondary_prophylaxis": "REQUIRED after SBP episode (recurrence risk 70% within 1 year). Options: Norfloxacin 400mg PO daily (preferred, not available in US) OR Ciprofloxacin 500mg PO daily OR TMP-SMX DS 1 tablet PO daily. Continue until liver transplant or resolution of ascites.",
+            "primary_prophylaxis": "Indications: (1) Ascitic fluid protein <1.5 g/dL + advanced cirrhosis (Child-Pugh ≥9 or bilirubin ≥3 mg/dL or creatinine ≥1.2 mg/dL), (2) GI bleeding. Options: Norfloxacin 400mg PO daily OR Ciprofloxacin 500mg PO daily OR TMP-SMX DS 1 tablet PO daily. Duration: Until liver transplant or resolution of ascites.",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Switch from piperacillin-tazobactam to ceftriaxone if ESBL-negative. Discontinue vancomycin if no Gram-positive isolated.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Improving ascitic fluid PMN (repeat paracentesis at 48 hours), (3) Tolerating PO intake. PO options: Ciprofloxacin 500mg PO BID OR Amoxicillin-clavulanate 875mg PO TID (if susceptible)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "community_acquired_sbp": "5-7 days",
+            "healthcare_associated_sbp": "7-14 days",
+            "monitoring": "Repeat paracentesis at 48 hours: PMN should decrease by ≥25%. If no response, consider resistant organism, inadequate antibiotic, or secondary peritonitis. Daily: Vital signs, abdominal exam, mental status, urine output. Every 2-3 days: CBC, CMP (monitor WBC, creatinine, bilirubin).",
+            "stop_criteria": "Completed 5-7 days (community-acquired) or 7-14 days (healthcare-associated). Afebrile >24 hours. Improving ascitic fluid PMN (≥25% decrease at 48 hours). Improving WBC and clinical status. Start secondary prophylaxis after completing treatment."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "albumin_administration": "CRITICAL for reducing mortality and hepatorenal syndrome. Dose: 1.5 g/kg IV within 6 hours of diagnosis, then 1 g/kg IV on day 3. Mechanism: Expands plasma volume, improves renal perfusion, reduces hepatorenal syndrome. Reduces mortality from 30% to 10%. Reduces hepatorenal syndrome from 30% to 10%. Do NOT skip albumin (evidence-based, guideline-recommended).",
+            "secondary_peritonitis_vs_sbp": "Distinguish SBP from secondary peritonitis (perforation). SBP: Monomicrobial, ascitic fluid protein <1 g/dL, glucose >50 mg/dL, LDH <upper limit of normal. Secondary peritonitis: Polymicrobial, ascitic fluid protein >1 g/dL, glucose <50 mg/dL, LDH >upper limit of normal. If secondary peritonitis suspected: Urgent CT abdomen + surgery.",
+            "hepatorenal_syndrome": "Acute kidney injury in cirrhosis without other cause. Diagnosis: Creatinine ≥1.5 mg/dL, no improvement after 48 hours of albumin + diuretic withdrawal, no shock, no nephrotoxic drugs, no proteinuria/hematuria. Treatment: Albumin 1 g/kg IV daily + Midodrine 7.5-12.5mg PO TID + Octreotide 100-200mcg SC TID OR Terlipressin (not available in US). Definitive: Liver transplant.",
+            "primary_prophylaxis": "Indications: (1) Ascitic fluid protein <1.5 g/dL + advanced cirrhosis (Child-Pugh ≥9 or bilirubin ≥3 mg/dL or creatinine ≥1.2 mg/dL), (2) GI bleeding. Reduces SBP incidence from 20-30% to 5-10%. Options: Norfloxacin 400mg PO daily OR Ciprofloxacin 500mg PO daily OR TMP-SMX DS 1 tablet PO daily.",
+            "secondary_prophylaxis": "REQUIRED after SBP episode (recurrence risk 70% within 1 year). Reduces recurrence from 70% to 20%. Options: Norfloxacin 400mg PO daily OR Ciprofloxacin 500mg PO daily OR TMP-SMX DS 1 tablet PO daily. Continue until liver transplant or resolution of ascites.",
+            "liver_transplant": "Definitive treatment for cirrhosis. SBP is NOT a contraindication to transplant. Patients with SBP should be evaluated for transplant (high mortality without transplant)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Fixed duration 5-7 days for community-acquired SBP (avoid prolonged courses)",
+              "De-escalate from piperacillin-tazobactam to ceftriaxone if ESBL-negative",
+              "Discontinue vancomycin if no Gram-positive isolated",
+              "Switch IV to PO when improving (ciprofloxacin, amoxicillin-clavulanate)",
+              "Start secondary prophylaxis after completing treatment (norfloxacin, ciprofloxacin, TMP-SMX)"
+            ],
+            "timeout_checklist": [
+              "Is this SBP or secondary peritonitis? (Monomicrobial vs polymicrobial, ascitic fluid protein <1 vs >1 g/dL)",
+              "Is albumin administered? (1.5 g/kg within 6 hours, then 1 g/kg on day 3 - CRITICAL)",
+              "Is repeat paracentesis performed at 48 hours? (PMN should decrease by ≥25%)",
+              "Can I de-escalate antibiotics? (Based on culture results)",
+              "Can I switch IV to PO? (If improving)",
+              "Can I stop antibiotics? (If 5-7 days completed, improving PMN)",
+              "Is secondary prophylaxis started? (After completing treatment - REQUIRED)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use prolonged antibiotics beyond 5-7 days for community-acquired SBP. Do NOT skip albumin administration (reduces mortality). Do NOT skip secondary prophylaxis after SBP (recurrence risk 70% without prophylaxis).",
+            "patient_education": "SBP is serious infection of ascites fluid requiring antibiotics + albumin. Complete full antibiotic course. Start prophylactic antibiotics after treatment (prevents recurrence). Watch for worsening symptoms (fever, abdominal pain, confusion). Follow-up in 1-2 weeks. Liver transplant evaluation recommended."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "AASLD Practice Guidance on Ascites and SBP (2021)",
+              "url": "https://aasldpubs.onlinelibrary.wiley.com/doi/10.1002/hep.31884"
+            },
+            {
+              "label": "EASL Clinical Practice Guidelines on Ascites (2018)",
+              "url": "https://www.journal-of-hepatology.eu/article/S0168-8278(18)30215-0/fulltext"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "intra-abdominal-abscess",
+      "name": "Intra-Abdominal Abscess",
+      "synonyms": ["abdominal abscess", "hepatic abscess", "splenic abscess", "pelvic abscess"],
+      "icd10": ["K65.1", "K75.0", "D73.3", "K68.11"],
+      "severity": ["moderate", "severe"],
+      "shortDescription": "Localized collection of pus requiring drainage (percutaneous or surgical) and antibiotics",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Intra-abdominal abscess is localized collection of pus within the peritoneal cavity or solid organs. Common locations: Hepatic (liver, 40%), pelvic (20%), splenic (spleen, 15%), subphrenic (under diaphragm, 10%), periappendiceal (5%), other (10%). Mortality: 5-20% (depends on location, source, comorbidities). Requires drainage + antibiotics.",
+            "clinical_presentation": "Fever (80-90%), abdominal pain (location-specific), nausea, vomiting, anorexia. Physical exam: Localized tenderness, palpable mass (30-40%), signs of sepsis (if severe). Hepatic abscess: RUQ pain, hepatomegaly. Splenic abscess: LUQ pain, splenomegaly. Pelvic abscess: Suprapubic pain, rectal/vaginal tenderness.",
+            "diagnostic_criteria": "Clinical diagnosis + imaging. CT abdomen/pelvis: Fluid collection with rim enhancement, gas bubbles, mass effect. Ultrasound: Hypoechoic or complex fluid collection. Aspiration: Purulent fluid, positive Gram stain/culture.",
+            "risk_factors": [
+              "Recent abdominal surgery (postoperative abscess, 1-5%)",
+              "Perforated appendicitis or diverticulitis",
+              "Inflammatory bowel disease (Crohn's disease)",
+              "Pancreatitis (infected pancreatic necrosis)",
+              "Trauma (penetrating or blunt abdominal trauma)",
+              "Immunosuppression or diabetes (higher risk)",
+              "Bacteremia or endocarditis (hematogenous seeding to liver/spleen)"
+            ],
+            "red_flags": [
+              "Septic shock or hypotension - high mortality, urgent drainage + resuscitation",
+              "Multiple abscesses - suggests hematogenous seeding or inadequate source control",
+              "Gas-forming abscess - Clostridium or Gram-negatives, high mortality",
+              "Splenic abscess - high rupture risk (20-30%), urgent splenectomy if large",
+              "Hepatic abscess with jaundice - biliary obstruction, urgent ERCP"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "CT abdomen/pelvis with IV contrast (confirms diagnosis, guides drainage). Ultrasound for hepatic or splenic abscess (real-time guidance for drainage). Aspiration for culture (guides antibiotic therapy).",
+            "essential_tests": [
+              "CBC with differential (leukocytosis 12,000-20,000)",
+              "CMP (assess liver function, renal function)",
+              "Blood cultures x2 sets (positive in 30-50%, especially hepatic/splenic abscess)",
+              "CT abdomen/pelvis with IV contrast: Fluid collection with rim enhancement, gas bubbles, mass effect. Sensitivity 95%, specificity 95%."
+            ],
+            "conditional_tests": [
+              "Ultrasound: Hepatic or splenic abscess (real-time guidance for drainage). Hypoechoic or complex fluid collection.",
+              "Percutaneous aspiration or drainage: Obtain fluid for Gram stain, culture (aerobic + anaerobic + fungal), cell count. Guides antibiotic therapy.",
+              "MRCP or ERCP: If hepatic abscess with biliary obstruction (jaundice, dilated CBD)",
+              "Echocardiography (TEE): If splenic abscess or multiple abscesses (rule out endocarditis, hematogenous seeding)"
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics for imaging or cultures if septic (start empiric antibiotics immediately). Do NOT delay drainage (antibiotics alone insufficient, high failure rate 50-70%).",
+            "turnaround_time": "CBC: <1 hour. Blood cultures: Preliminary 24-48 hours. CT abdomen: 1-4 hours (urgent if septic). Abscess fluid culture: 24-72 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "polymicrobial": "Intra-abdominal abscesses are often polymicrobial with mixed aerobic and anaerobic bacteria. Hepatic/splenic abscesses may be monomicrobial (hematogenous seeding).",
+            "aerobic_gram_negative": [
+              "E. coli (most common, 50-60%)",
+              "Klebsiella species (20-30%, especially hepatic abscess)",
+              "Enterobacter species (10-15%)",
+              "Pseudomonas aeruginosa (10-15%, healthcare-associated)",
+              "Proteus species (5-10%)"
+            ],
+            "aerobic_gram_positive": [
+              "Enterococcus species (30-40%)",
+              "Streptococcus species (viridans group, milleri group, 20-30%)",
+              "Staphylococcus aureus (10-20%, hematogenous seeding, splenic abscess)"
+            ],
+            "anaerobes": [
+              "Bacteroides fragilis (40-50%)",
+              "Peptostreptococcus species (20-30%)",
+              "Clostridium species (10-15%)",
+              "Fusobacterium species (5-10%)"
+            ],
+            "fungi": [
+              "Candida species (10-20%, postoperative, immunosuppressed, TPN)"
+            ],
+            "parasites": [
+              "Entamoeba histolytica (amebic liver abscess, endemic areas: Mexico, Central/South America, Asia, Africa)"
+            ],
+            "resistance_patterns": "ESBL E. coli/Klebsiella 20-40% (healthcare-associated). VRE 15-30% (healthcare-associated). MDR Pseudomonas 30-50%. Fluconazole-resistant Candida 20-30%.",
+            "mdro_risk_factors": [
+              "Healthcare-associated abscess (postoperative)",
+              "Recent hospitalization or surgery",
+              "Recent antibiotics (within 90 days)",
+              "Immunosuppression"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "community_acquired_abscess": "Piperacillin-tazobactam 3.375g IV q6h OR Cefepime 2g IV q8h + Metronidazole 500mg IV q8h OR Ertapenem 1g IV daily. Duration: 7-14 days (after drainage).",
+            "healthcare_associated_or_postoperative": "Meropenem 1g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h + Vancomycin 15-20mg/kg IV q8-12h (if VRE risk). Add Micafungin 100mg IV daily if postoperative, TPN, or immunosuppressed. Duration: 7-14 days (after drainage).",
+            "hepatic_abscess": "Piperacillin-tazobactam 3.375g IV q6h OR Ceftriaxone 2g IV daily + Metronidazole 500mg IV q8h. If Klebsiella suspected (diabetes, Asian population): Add coverage for ESBL (meropenem if MDRO risk). Duration: 4-6 weeks (longer than other abscesses).",
+            "amebic_liver_abscess": "Metronidazole 750mg PO/IV TID x 7-10 days, then Paromomycin 500mg PO TID x 7 days (luminal agent, eradicates cysts). Drainage usually NOT needed (responds to antibiotics alone). Serology: Positive E. histolytica antibodies.",
+            "splenic_abscess": "Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h (covers S. aureus, Streptococcus, Gram-negatives). Splenectomy if large (>5cm), multiple abscesses, or no response to drainage + antibiotics. Duration: 4-6 weeks.",
+            "alternatives": "Beta-lactam allergy: Aztreonam 2g IV q8h + Metronidazole 500mg IV q8h + Vancomycin 15-20mg/kg IV q8-12h. Fluoroquinolone: Levofloxacin 750mg IV daily + Metronidazole 500mg IV q8h (if susceptible).",
+            "avoid_list": "Avoid antibiotics alone without drainage (high failure rate 50-70%). Avoid inadequate anaerobic coverage (metronidazole or beta-lactam/beta-lactamase inhibitor required). Avoid delaying drainage (mortality increases)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "drainage": "CRITICAL for cure. Percutaneous drainage (CT or ultrasound-guided) preferred (success rate 70-90%, lower morbidity than surgery). Indications for surgery: (1) Percutaneous drainage failure, (2) Multiple loculated abscesses, (3) Thick purulent material (unable to drain percutaneously), (4) Splenic abscess >5cm. Antibiotics alone = high failure rate 50-70%.",
+            "targeted_antibiotics": "Narrow based on abscess fluid culture results. E. coli + Bacteroides: Ceftriaxone 2g IV daily + Metronidazole 500mg IV q8h OR Ertapenem 1g IV daily. ESBL: Meropenem 1g IV q8h. VRE: Daptomycin 8-10mg/kg IV daily OR Linezolid 600mg IV BID. Candida: Micafungin 100mg IV daily OR Fluconazole 800mg loading, then 400mg daily (if susceptible).",
+            "duration_after_drainage": "7-14 days (most abscesses). 4-6 weeks (hepatic abscess, splenic abscess). Longer if: Inadequate drainage, persistent fever, immunosuppressed. Monitor with repeat imaging (CT or ultrasound) to document abscess resolution.",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Switch from meropenem to ceftriaxone + metronidazole if ESBL-negative. Discontinue vancomycin if no MRSA/VRE. Discontinue antifungal if no Candida isolated (unless high risk: postoperative, immunosuppressed).",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Tolerating diet, (3) Improving WBC, (4) Drainage catheter removed or output minimal. PO options: Amoxicillin-clavulanate 875mg PO TID OR Ciprofloxacin 500mg PO BID + Metronidazole 500mg PO TID."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "most_abscesses": "7-14 days after drainage",
+            "hepatic_abscess": "4-6 weeks (longer than other abscesses)",
+            "splenic_abscess": "4-6 weeks (or until splenectomy if indicated)",
+            "amebic_liver_abscess": "Metronidazole 7-10 days, then Paromomycin 7 days",
+            "monitoring": "Daily: Vital signs, abdominal exam, drainage output. Every 2-3 days: CBC, CMP (monitor WBC normalization). Repeat imaging: At 1-2 weeks to document abscess resolution. Remove drainage catheter when output <10-20 mL/day and abscess resolved on imaging.",
+            "stop_criteria": "Completed 7-14 days (or 4-6 weeks for hepatic/splenic). Afebrile >24 hours. Tolerating diet. Normal or improving WBC. Abscess resolved on repeat imaging. Drainage catheter removed."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "percutaneous_drainage": "Preferred over surgery (success rate 70-90%, lower morbidity). Technique: CT or ultrasound-guided catheter placement. Indications: Abscess >3-5cm, accessible location. Contraindications: Coagulopathy (correct INR <1.5, platelets >50,000), inaccessible location. Monitor drainage output (should decrease over 3-7 days). Remove catheter when output <10-20 mL/day and abscess resolved on imaging.",
+            "hepatic_abscess": "Pyogenic (bacterial, 80%): E. coli, Klebsiella (diabetes, Asian population). Amebic (parasitic, 10-20%): E. histolytica, endemic areas. Diagnosis: Serology (E. histolytica antibodies), aspiration (anchovy paste appearance). Treatment: Pyogenic: Drainage + antibiotics 4-6 weeks. Amebic: Metronidazole + paromomycin, drainage usually NOT needed.",
+            "splenic_abscess": "Rare (0.05-0.7% of abdominal abscesses). Causes: Hematogenous seeding (endocarditis, bacteremia), trauma, splenic infarct. Organisms: S. aureus (40%), Streptococcus (30%), Gram-negatives (20%). Treatment: Percutaneous drainage + antibiotics 4-6 weeks OR Splenectomy if large (>5cm), multiple abscesses, or no response. High rupture risk (20-30%).",
+            "postoperative_abscess": "Timing: Postoperative day 5-10 (peak). Presentation: Fever, leukocytosis, abdominal pain, ileus. Diagnosis: CT abdomen (fluid collection). Treatment: Percutaneous drainage + broad-spectrum antibiotics (meropenem + vancomycin + micafungin). Duration: 7-14 days. Consider re-operation if inadequate drainage or anastomotic leak.",
+            "immunocompromised": "Broader coverage (meropenem + vancomycin + micafungin). Longer duration (14-21 days minimum). Higher risk of MDRO, Candida, and atypical pathogens (Nocardia, Mycobacteria, fungi). Consider fungal cultures and extended-spectrum antibiotics.",
+            "multiple_abscesses": "Suggests hematogenous seeding (endocarditis, bacteremia) or inadequate source control. Workup: Echocardiography (TEE), blood cultures, identify primary source. Treatment: Drainage (percutaneous or surgical) + prolonged antibiotics (4-6 weeks). Consider surgery if percutaneous drainage fails."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Fixed duration 7-14 days for most abscesses after drainage (4-6 weeks for hepatic/splenic)",
+              "De-escalate from meropenem to ceftriaxone + metronidazole if ESBL-negative",
+              "Discontinue vancomycin if no MRSA/VRE",
+              "Discontinue antifungal if no Candida isolated (unless high risk: postoperative, immunosuppressed)",
+              "Switch IV to PO when improving and drainage catheter removed"
+            ],
+            "timeout_checklist": [
+              "Is drainage performed? (Percutaneous or surgical - CRITICAL for cure)",
+              "Are abscess fluid cultures available? (Narrow antibiotics based on results)",
+              "Is repeat imaging performed? (Document abscess resolution at 1-2 weeks)",
+              "Can I de-escalate antibiotics? (Based on culture results)",
+              "Can I switch IV to PO? (If improving and drainage catheter removed)",
+              "Can I stop antibiotics? (If 7-14 days completed, abscess resolved on imaging)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use antibiotics alone without drainage (high failure rate 50-70%). Do NOT use prolonged antibiotics beyond 7-14 days for most abscesses (4-6 weeks for hepatic/splenic). Do NOT use antifungal empirically unless high risk (postoperative, immunosuppressed).",
+            "patient_education": "Abscess is pus collection requiring drainage + antibiotics. Complete full antibiotic course. Watch for worsening symptoms (fever, abdominal pain). Follow-up imaging in 1-2 weeks (document resolution). Drainage catheter care if placed."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Intra-Abdominal Infections Guidelines (2024)",
+              "url": "https://www.idsociety.org/practice-guideline/intra-abdominal-infections/"
+            },
+            {
+              "label": "WSES Intra-Abdominal Infections Guidelines (2017)",
+              "url": "https://wjes.biomedcentral.com/articles/10.1186/s13017-017-0132-7"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pancreatitis-infected-necrosis",
+      "name": "Pancreatitis with Infected Necrosis",
+      "synonyms": ["infected pancreatic necrosis", "necrotizing pancreatitis", "pancreatic abscess"],
+      "icd10": ["K85.91", "K85.92"],
+      "severity": ["severe", "critical"],
+      "shortDescription": "Infection of pancreatic necrosis requiring drainage and antibiotics with high mortality",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Infected pancreatic necrosis is bacterial or fungal infection of necrotic pancreatic tissue complicating acute pancreatitis. Occurs in 10-30% of necrotizing pancreatitis (usually after 7-10 days). Mortality: 15-30% (infected necrosis), 40-70% (if septic shock). Requires drainage + antibiotics. Sterile necrosis does NOT require antibiotics.",
+            "clinical_presentation": "Persistent fever (>7-10 days after pancreatitis onset), worsening abdominal pain, sepsis, organ dysfunction. Physical exam: Abdominal tenderness, distension, ileus, signs of sepsis (hypotension, tachycardia). May have Grey Turner sign (flank ecchymosis) or Cullen sign (periumbilical ecchymosis).",
+            "diagnostic_criteria": "Clinical suspicion (persistent fever, sepsis after 7-10 days) + imaging (CT or MRI: pancreatic necrosis with gas bubbles) + positive culture (FNA or drainage fluid). Revised Atlanta Classification: Mild pancreatitis (no organ failure, no necrosis), Moderately severe (transient organ failure <48 hours or local complications), Severe (persistent organ failure >48 hours).",
+            "risk_factors": [
+              "Necrotizing pancreatitis (30% of acute pancreatitis)",
+              "Extensive necrosis (>30% of pancreas)",
+              "Prolonged hospitalization or ICU stay",
+              "Central venous catheter or invasive procedures",
+              "Organ failure or shock",
+              "Diabetes mellitus or immunosuppression"
+            ],
+            "red_flags": [
+              "Septic shock or persistent organ failure - high mortality (40-70%), urgent drainage",
+              "Gas bubbles in pancreatic necrosis on CT - confirms infection, urgent drainage",
+              "Persistent fever >7-10 days - suggests infected necrosis, obtain FNA or drainage",
+              "Worsening organ dysfunction - suggests infected necrosis or abdominal compartment syndrome",
+              "Fungal infection - high mortality (50-80%), requires antifungal therapy"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "CT abdomen/pelvis with IV contrast (assess necrosis extent, identify gas bubbles). FNA (fine needle aspiration) if diagnosis uncertain (Gram stain, culture). Delay drainage until necrosis is walled off (3-4 weeks, allows percutaneous or endoscopic drainage).",
+            "essential_tests": [
+              "CBC with differential (leukocytosis or leukopenia)",
+              "CMP (assess renal function, calcium, glucose)",
+              "Lipase (elevated, but may normalize after 7-10 days)",
+              "CRP or procalcitonin (elevated, suggests infection if rising after initial decline)",
+              "Blood cultures x2 sets (positive in 20-40%)",
+              "CT abdomen/pelvis with IV contrast: Pancreatic necrosis (non-enhancing pancreatic tissue), gas bubbles (confirms infection), fluid collections, vascular complications (pseudoaneurysm, thrombosis)"
+            ],
+            "conditional_tests": [
+              "FNA (fine needle aspiration): If diagnosis uncertain. Obtain fluid for Gram stain, culture (aerobic + anaerobic + fungal). Positive Gram stain or culture confirms infection.",
+              "MRI abdomen: If CT contraindicated (renal failure, contrast allergy). Better delineation of necrosis vs fluid.",
+              "Repeat CT at 7-10 days: If clinical deterioration or persistent fever (assess for infected necrosis, abscess, vascular complications)"
+            ],
+            "when_not_to_test": "Do NOT perform FNA routinely (risk of introducing infection into sterile necrosis). Do NOT delay antibiotics if clinical suspicion high (gas bubbles on CT, sepsis). Do NOT drain sterile necrosis (no benefit, increases infection risk).",
+            "turnaround_time": "CBC: <1 hour. Blood cultures: Preliminary 24-48 hours. CT abdomen: 1-4 hours (urgent if septic). FNA culture: 24-72 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "polymicrobial": "Infected pancreatic necrosis is often polymicrobial with mixed aerobic and anaerobic bacteria. Fungal infection in 10-30% (Candida, Aspergillus), especially if prolonged hospitalization, broad-spectrum antibiotics, or immunosuppressed.",
+            "aerobic_gram_negative": [
+              "E. coli (most common, 30-40%)",
+              "Klebsiella species (15-20%)",
+              "Enterobacter species (10-15%)",
+              "Pseudomonas aeruginosa (15-20%, healthcare-associated)",
+              "Acinetobacter species (5-10%, ICU)"
+            ],
+            "aerobic_gram_positive": [
+              "Enterococcus species (20-30%)",
+              "Staphylococcus aureus (10-15%, MRSA 30-50%)",
+              "Streptococcus species (5-10%)"
+            ],
+            "anaerobes": [
+              "Bacteroides fragilis (10-20%)",
+              "Peptostreptococcus species (5-10%)",
+              "Clostridium species (5-10%)"
+            ],
+            "fungi": [
+              "Candida species (10-30%, prolonged hospitalization, broad-spectrum antibiotics, TPN, immunosuppressed)",
+              "Aspergillus species (rare, <5%, immunosuppressed)"
+            ],
+            "resistance_patterns": "ESBL E. coli/Klebsiella 30-50% (healthcare-associated, ICU). VRE 20-40% (healthcare-associated, ICU). MDR Pseudomonas 40-60% (ICU, prior antibiotics). Fluconazole-resistant Candida 30-40%.",
+            "mdro_risk_factors": [
+              "Prolonged hospitalization or ICU stay",
+              "Recent antibiotics (within 90 days)",
+              "Central venous catheter or invasive procedures",
+              "Immunosuppression"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "suspected_infected_necrosis": "Meropenem 1g IV q8h (excellent pancreatic penetration) OR Piperacillin-tazobactam 4.5g IV q6h. Add Vancomycin 15-20mg/kg IV q8-12h if MRSA risk or septic shock. Add Micafungin 100mg IV daily if prolonged hospitalization (>7-10 days), broad-spectrum antibiotics, TPN, or immunosuppressed. Duration: Until drainage + 7-14 days after drainage.",
+            "confirmed_infected_necrosis": "Meropenem 1g IV q8h + Vancomycin 15-20mg/kg IV q8-12h + Micafungin 100mg IV daily (triple coverage: MDRO, MRSA, Candida). Drainage CRITICAL (percutaneous, endoscopic, or surgical). Duration: 7-14 days after drainage.",
+            "sterile_necrosis": "NO antibiotics (no benefit, increases resistance and fungal infection risk). Supportive care only. Antibiotics only if infection confirmed (FNA positive, gas bubbles on CT, sepsis).",
+            "alternatives": "Beta-lactam allergy: Aztreonam 2g IV q8h + Metronidazole 500mg IV q8h + Vancomycin 15-20mg/kg IV q8-12h + Micafungin 100mg IV daily. Fluoroquinolone: Levofloxacin 750mg IV daily + Metronidazole 500mg IV q8h (poor pancreatic penetration, not preferred).",
+            "avoid_list": "Avoid antibiotics for sterile necrosis (no benefit). Avoid inadequate pancreatic penetration (meropenem or piperacillin-tazobactam preferred). Avoid delaying drainage (antibiotics alone insufficient, mortality increases)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "drainage": "CRITICAL for cure. Timing: Delay until necrosis is walled off (3-4 weeks, allows less invasive drainage). Step-up approach: (1) Percutaneous drainage (CT-guided), (2) Endoscopic drainage (transgastric or transduodenal), (3) Minimally invasive necrosectomy (video-assisted retroperitoneal debridement), (4) Open necrosectomy (last resort, high morbidity). Antibiotics alone = high failure rate.",
+            "targeted_antibiotics": "Narrow based on FNA or drainage fluid culture results. E. coli + Enterococcus: Meropenem 1g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h. ESBL: Meropenem 1g IV q8h. VRE: Daptomycin 8-10mg/kg IV daily OR Linezolid 600mg IV BID. Candida: Micafungin 100mg IV daily OR Fluconazole 800mg loading, then 400mg daily (if susceptible). Aspergillus: Voriconazole 6mg/kg IV q12h x2, then 4mg/kg IV q12h.",
+            "duration_after_drainage": "7-14 days after drainage. Longer if: Inadequate drainage, persistent fever, fungal infection (14-21 days minimum), immunosuppressed. Monitor with repeat imaging (CT) to document necrosis resolution.",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Discontinue vancomycin if no MRSA. Discontinue antifungal if no Candida/Aspergillus isolated (unless high risk: prolonged hospitalization, immunosuppressed). Narrow Gram-negative coverage if ESBL-negative.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Tolerating diet, (3) Improving WBC and CRP, (4) Drainage catheter removed or output minimal. PO options: Amoxicillin-clavulanate 875mg PO TID OR Ciprofloxacin 500mg PO BID + Metronidazole 500mg PO TID (if susceptible)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "after_drainage": "7-14 days",
+            "fungal_infection": "14-21 days minimum (Candida), 6-12 weeks (Aspergillus)",
+            "sterile_necrosis": "NO antibiotics (no benefit)",
+            "monitoring": "Daily: Vital signs, abdominal exam, drainage output. Every 2-3 days: CBC, CMP, CRP (monitor WBC normalization, CRP decline). Repeat CT at 1-2 weeks: Document necrosis resolution, assess drainage adequacy. Remove drainage catheter when output <10-20 mL/day and necrosis resolved.",
+            "stop_criteria": "Completed 7-14 days after drainage. Afebrile >24 hours. Tolerating diet. Normal or improving WBC and CRP. Necrosis resolved or significantly improved on repeat CT. Drainage catheter removed."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "step_up_approach": "Preferred over open necrosectomy (lower mortality, lower morbidity). Steps: (1) Percutaneous drainage (CT-guided catheter), (2) Endoscopic drainage (transgastric or transduodenal), (3) Minimally invasive necrosectomy (VARD: video-assisted retroperitoneal debridement), (4) Open necrosectomy (last resort). Timing: Delay until necrosis is walled off (3-4 weeks). Success rate: 70-80% with step-up approach.",
+            "sterile_vs_infected_necrosis": "Sterile necrosis: NO antibiotics (no benefit, increases resistance and fungal infection risk). Supportive care only. Infected necrosis: Antibiotics + drainage. Diagnosis: Gas bubbles on CT (confirms infection), positive FNA culture, persistent fever/sepsis after 7-10 days. Do NOT use prophylactic antibiotics for sterile necrosis (no benefit, multiple RCTs).",
+            "fungal_infection": "High mortality (50-80%). Risk factors: Prolonged hospitalization (>7-10 days), broad-spectrum antibiotics, TPN, immunosuppressed. Organisms: Candida (most common), Aspergillus (rare). Treatment: Micafungin 100mg IV daily OR Voriconazole (if Aspergillus) + drainage. Duration: 14-21 days (Candida), 6-12 weeks (Aspergillus).",
+            "abdominal_compartment_syndrome": "Intra-abdominal hypertension (IAP >20 mmHg) with organ dysfunction. Causes: Massive fluid resuscitation, ileus, ascites, necrosis. Diagnosis: Bladder pressure measurement. Treatment: Decompressive laparotomy (if refractory to medical management). High mortality (40-60%).",
+            "vascular_complications": "Pseudoaneurysm (splenic, gastroduodenal, pancreaticoduodenal arteries): Risk of rupture, hemorrhage. Diagnosis: CT angiography. Treatment: Angiographic embolization OR surgery. Venous thrombosis (splenic vein, portal vein): Anticoagulation if symptomatic.",
+            "nutritional_support": "Enteral nutrition preferred (via nasojejunal tube, reduces infection risk vs TPN). TPN if enteral not tolerated. Early enteral nutrition (within 48-72 hours) reduces infection and mortality."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "NO antibiotics for sterile necrosis (no benefit, multiple RCTs)",
+              "Fixed duration 7-14 days after drainage for infected necrosis (avoid prolonged courses)",
+              "Discontinue vancomycin if no MRSA",
+              "Discontinue antifungal if no Candida/Aspergillus isolated (unless high risk: prolonged hospitalization, immunosuppressed)",
+              "Switch IV to PO when improving and drainage catheter removed"
+            ],
+            "timeout_checklist": [
+              "Is this sterile or infected necrosis? (Gas bubbles on CT, positive FNA, persistent fever/sepsis)",
+              "Are antibiotics indicated? (Only if infected necrosis confirmed)",
+              "Is drainage performed? (CRITICAL for cure if infected)",
+              "Are FNA or drainage fluid cultures available? (Narrow antibiotics based on results)",
+              "Can I discontinue antifungal? (If no Candida/Aspergillus and not high risk)",
+              "Can I stop antibiotics? (If 7-14 days completed after drainage, necrosis resolved)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use prophylactic antibiotics for sterile necrosis (no benefit, increases resistance and fungal infection). Do NOT use prolonged antibiotics beyond 7-14 days after drainage. Do NOT delay drainage (antibiotics alone insufficient).",
+            "patient_education": "Infected pancreatic necrosis is serious complication requiring drainage + antibiotics. Complete full antibiotic course. Watch for worsening symptoms (fever, abdominal pain). Follow-up imaging in 1-2 weeks (document resolution). Drainage catheter care if placed. Nutritional support critical for recovery."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "ACG Acute Pancreatitis Guidelines (2013)",
+              "url": "https://journals.lww.com/ajg/fulltext/2013/09000/american_college_of_gastroenterology_guideline_.11.aspx"
+            },
+            {
+              "label": "IAP/APA Acute Pancreatitis Guidelines (2013)",
+              "url": "https://gut.bmj.com/content/62/1/102"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "clostridium-difficile-colitis",
+      "name": "Clostridium difficile Colitis (CDI)",
+      "synonyms": ["C. diff colitis", "CDI", "pseudomembranous colitis", "antibiotic-associated colitis"],
+      "icd10": ["A04.7", "A04.72"],
+      "severity": ["mild", "moderate", "severe", "critical"],
+      "shortDescription": "Antibiotic-associated diarrhea caused by C. difficile toxins requiring specific antibiotics",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Clostridium difficile infection (CDI) is toxin-mediated colitis caused by C. difficile, usually after antibiotic exposure. Incidence: 500,000 cases/year in US. Mortality: 1-2% (mild-moderate), 15-30% (severe), 30-50% (fulminant with toxic megacolon). Recurrence: 20-30% after first episode, 40-60% after second episode. Classification: Non-severe, severe, fulminant.",
+            "clinical_presentation": "Watery diarrhea (≥3 unformed stools/24 hours), abdominal pain/cramping, fever, nausea. Severe: WBC >15,000, creatinine >1.5x baseline, albumin <3 g/dL. Fulminant: Hypotension, shock, ileus, toxic megacolon, perforation. Physical exam: Abdominal tenderness, distension (if ileus), signs of sepsis (if severe).",
+            "diagnostic_criteria": "Diarrhea (≥3 unformed stools/24 hours) + positive stool test (NAAT or toxin EIA) OR Colonoscopy/CT showing pseudomembranes. Severity: Non-severe (WBC ≤15,000, creatinine <1.5x baseline). Severe (WBC >15,000 OR creatinine >1.5x baseline). Fulminant (hypotension, shock, ileus, toxic megacolon).",
+            "risk_factors": [
+              "Antibiotic exposure (within 90 days, especially fluoroquinolones, clindamycin, cephalosporins, carbapenems)",
+              "Hospitalization or long-term care facility",
+              "Age >65 years",
+              "Proton pump inhibitors (PPIs)",
+              "Immunosuppression or chemotherapy",
+              "Inflammatory bowel disease",
+              "Recent GI surgery or manipulation"
+            ],
+            "red_flags": [
+              "Fulminant colitis (hypotension, shock, ileus, toxic megacolon) - high mortality (30-50%), urgent surgery",
+              "WBC >35,000 or lactate >5 mmol/L - high mortality, consider surgery",
+              "Ileus or toxic megacolon (colon >6cm on X-ray) - high perforation risk, urgent surgery",
+              "Recurrent CDI (≥2 episodes) - high recurrence risk (40-60%), consider FMT",
+              "Immunosuppression - higher severity and mortality"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Test only if diarrhea (≥3 unformed stools/24 hours). Do NOT test formed stools or asymptomatic patients (colonization common, 10-30% in hospitalized patients). Do NOT repeat testing within 7 days (test of cure not recommended).",
+            "essential_tests": [
+              "Stool C. difficile test: NAAT (nucleic acid amplification test, detects toxin genes, sensitivity 95%, specificity 95%) OR Toxin EIA (enzyme immunoassay, detects toxins A/B, sensitivity 70-80%, specificity 95-100%). Two-step algorithm preferred: GDH (glutamate dehydrogenase) screen + toxin EIA confirmation.",
+              "CBC with differential (leukocytosis, WBC >15,000 = severe)",
+              "CMP (creatinine >1.5x baseline = severe, albumin <3 g/dL = severe)"
+            ],
+            "conditional_tests": [
+              "Abdominal X-ray or CT abdomen: If severe or fulminant (assess for ileus, toxic megacolon, perforation). Findings: Colonic wall thickening (accordion sign), ascites, toxic megacolon (colon >6cm).",
+              "Colonoscopy: If diagnosis uncertain or to assess severity. Findings: Pseudomembranes (yellow-white plaques), colonic inflammation.",
+              "Lactate: If severe or fulminant (lactate >5 mmol/L = high mortality)"
+            ],
+            "when_not_to_test": "Do NOT test formed stools (colonization common). Do NOT test asymptomatic patients (test of cure not recommended). Do NOT repeat testing within 7 days (persistent positivity common, does not indicate treatment failure).",
+            "turnaround_time": "Stool NAAT: 1-4 hours. Stool toxin EIA: 2-4 hours. Abdominal X-ray: <1 hour. CT abdomen: 1-4 hours (urgent if fulminant)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Clostridium difficile (Clostridioides difficile): Gram-positive, spore-forming, anaerobic bacillus. Produces toxins A and B (cause colitis). Hypervirulent strain: NAP1/BI/027 (produces binary toxin, higher mortality).",
+            "pathogenesis": "Antibiotic exposure disrupts normal colonic flora → C. difficile overgrowth → toxin production → colitis. Spores survive in environment (months to years), transmitted via fecal-oral route.",
+            "colonization": "10-30% of hospitalized patients colonized (asymptomatic). Colonization does NOT require treatment (no benefit, increases resistance).",
+            "recurrence": "20-30% after first episode, 40-60% after second episode. Causes: Persistent spores, disrupted microbiome, reinfection. Treatment: Fidaxomicin (lower recurrence than vancomycin), FMT (fecal microbiota transplant) for recurrent CDI."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "non_severe_cdi": "Fidaxomicin 200mg PO BID x 10 days (preferred, lower recurrence 15% vs 25% with vancomycin) OR Vancomycin 125mg PO QID x 10 days. Metronidazole NO longer recommended first-line (inferior efficacy, neurotoxicity risk).",
+            "severe_cdi": "Vancomycin 125mg PO QID x 10 days (preferred) OR Fidaxomicin 200mg PO BID x 10 days. If ileus (unable to take PO): Vancomycin 500mg PO/NG QID + Metronidazole 500mg IV q8h + Vancomycin 500mg per rectum (retention enema) q6h.",
+            "fulminant_cdi": "Vancomycin 500mg PO/NG QID + Metronidazole 500mg IV q8h + Vancomycin 500mg per rectum (retention enema) q6h. Urgent surgery consultation (colectomy if perforation, toxic megacolon, or no response to medical therapy within 24-48 hours). Mortality: 30-50%.",
+            "first_recurrence": "Vancomycin 125mg PO QID x 10 days OR Fidaxomicin 200mg PO BID x 10 days (preferred, lower recurrence). Consider extended-pulsed vancomycin taper (125mg PO QID x 10-14 days, then BID x 7 days, then daily x 7 days, then every 2-3 days x 2-8 weeks).",
+            "second_or_subsequent_recurrence": "Fidaxomicin 200mg PO BID x 10 days OR Vancomycin taper/pulse (see above) OR Fecal microbiota transplant (FMT, cure rate 80-90%). Bezlotoxumab (monoclonal antibody against toxin B) 10mg/kg IV x1 (reduces recurrence from 30% to 17%, given with antibiotics).",
+            "alternatives": "If fidaxomicin/vancomycin unavailable: Metronidazole 500mg PO TID x 10 days (non-severe only, inferior efficacy). If unable to take PO: Vancomycin per NG tube or retention enema + metronidazole IV.",
+            "avoid_list": "Avoid metronidazole first-line (inferior efficacy, neurotoxicity). Avoid antidiarrheals (loperamide, diphenoxylate) - increase toxic megacolon risk. Avoid stopping antibiotics prematurely (complete 10-day course). Avoid unnecessary antibiotics (disrupt microbiome, increase recurrence)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "non_severe_cdi": "Fidaxomicin 200mg PO BID x 10 days (preferred) OR Vancomycin 125mg PO QID x 10 days. Duration: 10 days (fixed).",
+            "severe_cdi": "Vancomycin 125mg PO QID x 10 days. Duration: 10 days (fixed).",
+            "fulminant_cdi": "Vancomycin 500mg PO/NG QID + Metronidazole 500mg IV q8h + Vancomycin 500mg per rectum q6h. Surgery: Colectomy (subtotal colectomy with end ileostomy) if perforation, toxic megacolon, or no response within 24-48 hours. Mortality: 30-50% (fulminant), 50-80% (if surgery required).",
+            "recurrent_cdi": "Fidaxomicin 200mg PO BID x 10 days OR Vancomycin taper/pulse OR Fecal microbiota transplant (FMT). FMT: Cure rate 80-90%, indicated after ≥2 recurrences. Bezlotoxumab 10mg/kg IV x1 (reduces recurrence, given with antibiotics).",
+            "fecal_microbiota_transplant": "Indications: ≥2 recurrences despite appropriate antibiotics. Cure rate: 80-90%. Routes: Colonoscopy (preferred), capsules (oral), enema. Timing: After completing antibiotics (24-48 hours). Restores normal microbiome, prevents recurrence.",
+            "surgical_management": "Indications: Fulminant colitis with perforation, toxic megacolon, or no response to medical therapy within 24-48 hours. Procedure: Subtotal colectomy with end ileostomy (preserves rectum). Mortality: 50-80%. Alternative: Loop ileostomy + colonic lavage (investigational, lower mortality in some studies)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "initial_episode": "10 days (fixed duration)",
+            "recurrent_cdi": "10 days (fidaxomicin or vancomycin) OR Extended taper/pulse (vancomycin, 6-8 weeks total)",
+            "monitoring": "Daily: Stool frequency, abdominal exam, vital signs. Every 2-3 days: CBC, CMP (monitor WBC, creatinine). Abdominal X-ray or CT: If worsening symptoms (assess for toxic megacolon, perforation). Do NOT repeat stool testing (test of cure not recommended, persistent positivity common).",
+            "stop_criteria": "Completed 10 days. Diarrhea resolved or significantly improved. Improving WBC and clinical status. Do NOT repeat stool testing (test of cure not recommended)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "infection_control": "Contact precautions (gown + gloves) for duration of diarrhea + 48 hours after resolution. Private room preferred. Hand hygiene with soap and water (alcohol-based hand rub does NOT kill spores). Environmental cleaning with bleach (1:10 dilution, kills spores). Discontinue unnecessary antibiotics (reduces recurrence).",
+            "recurrent_cdi_management": "First recurrence (20-30%): Vancomycin or fidaxomicin x 10 days. Second recurrence (40-60%): Fidaxomicin OR vancomycin taper/pulse OR FMT. FMT: Cure rate 80-90%, restores microbiome. Bezlotoxumab: Monoclonal antibody, reduces recurrence from 30% to 17%, given with antibiotics.",
+            "fecal_microbiota_transplant": "Indications: ≥2 recurrences. Cure rate: 80-90%. Routes: Colonoscopy (preferred, 90% cure), capsules (oral, 80% cure), enema (70% cure). Timing: 24-48 hours after completing antibiotics. Donor screening: Extensive (blood, stool tests for pathogens). Restores normal microbiome, prevents recurrence.",
+            "fulminant_colitis_management": "High mortality (30-50%). Aggressive medical therapy: Vancomycin 500mg PO/NG QID + Metronidazole 500mg IV q8h + Vancomycin 500mg per rectum q6h. Urgent surgery consultation. Indications for surgery: Perforation, toxic megacolon (colon >6cm), WBC >50,000, lactate >5 mmol/L, no response within 24-48 hours. Procedure: Subtotal colectomy with end ileostomy. Mortality: 50-80% if surgery required.",
+            "antibiotic_stewardship": "Discontinue unnecessary antibiotics (reduces recurrence). Avoid high-risk antibiotics if possible (fluoroquinolones, clindamycin, cephalosporins, carbapenems). Avoid PPIs if not indicated (increases CDI risk). Probiotics NOT recommended (no proven benefit for CDI prevention or treatment).",
+            "pregnancy": "Vancomycin 125mg PO QID x 10 days (safe in pregnancy, minimal systemic absorption). Avoid metronidazole if possible (teratogenic in animals). FMT: Limited data in pregnancy, case-by-case decision."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Fixed duration 10 days (avoid prolonged courses for initial episode)",
+              "Discontinue unnecessary antibiotics (reduces recurrence)",
+              "Consider FMT for recurrent CDI (cure rate 80-90%, avoids prolonged antibiotics)",
+              "Do NOT repeat stool testing (test of cure not recommended)"
+            ],
+            "timeout_checklist": [
+              "Is this non-severe, severe, or fulminant CDI? (Determines treatment: fidaxomicin/vancomycin vs vancomycin + metronidazole + surgery)",
+              "Is this initial episode or recurrence? (Recurrence: consider fidaxomicin, vancomycin taper, or FMT)",
+              "Are unnecessary antibiotics discontinued? (Reduces recurrence)",
+              "Is surgery indicated? (Fulminant with perforation, toxic megacolon, or no response within 24-48 hours)",
+              "Can I stop antibiotics? (If 10 days completed, diarrhea resolved)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use metronidazole first-line (inferior efficacy). Do NOT use antidiarrheals (increase toxic megacolon risk). Do NOT repeat stool testing (test of cure not recommended). Do NOT use probiotics (no proven benefit).",
+            "patient_education": "C. diff is antibiotic-associated diarrhea requiring specific antibiotics. Complete full 10-day course. Hand hygiene with soap and water (alcohol does not kill spores). Watch for worsening symptoms (severe abdominal pain, bloody diarrhea, fever). Recurrence common (20-30%), report if diarrhea returns. Avoid unnecessary antibiotics."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA/SHEA C. difficile Guidelines (2021)",
+              "url": "https://academic.oup.com/cid/article/73/5/e1029/6298219"
+            },
+            {
+              "label": "ACG C. difficile Guidelines (2021)",
+              "url": "https://journals.lww.com/ajg/fulltext/2021/02000/acg_clinical_guidelines__prevention,_diagnosis,.11.aspx"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "typhlitis",
+      "name": "Typhlitis (Neutropenic Enterocolitis)",
+      "synonyms": ["neutropenic enterocolitis", "necrotizing enterocolitis", "ileocecal syndrome"],
+      "icd10": ["K52.9", "D70.9"],
+      "severity": ["severe", "critical"],
+      "shortDescription": "Life-threatening cecal inflammation in neutropenic patients requiring antibiotics and supportive care",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Typhlitis (neutropenic enterocolitis) is necrotizing inflammation of the cecum and terminal ileum in neutropenic patients. Occurs in 5-10% of patients with ANC <500 cells/mm³. Mortality: 30-50% (medical management), 50-80% (if surgery required). Most common in acute leukemia (AML, ALL), HSCT, and intensive chemotherapy. Requires broad-spectrum antibiotics + supportive care.",
+            "clinical_presentation": "RLQ abdominal pain (90%), fever (80-90%), diarrhea (watery or bloody, 60-70%), nausea/vomiting (50%). Physical exam: RLQ tenderness, rebound tenderness (if peritonitis), distension, absent bowel sounds (if ileus). Neutropenia: ANC <500 cells/mm³ (usually <100).",
+            "diagnostic_criteria": "Clinical triad: (1) Neutropenia (ANC <500 cells/mm³), (2) RLQ abdominal pain + fever, (3) Cecal wall thickening >4mm on CT. CT abdomen/pelvis: Cecal wall thickening (>4mm), pericolonic fat stranding, pneumatosis intestinalis (gas in bowel wall), free fluid, abscess.",
+            "risk_factors": [
+              "Profound neutropenia (ANC <100 cells/mm³)",
+              "Acute leukemia (AML, ALL, especially induction chemotherapy)",
+              "Hematopoietic stem cell transplant (HSCT)",
+              "Intensive chemotherapy (cytarabine, anthracyclines)",
+              "Mucositis or GI toxicity from chemotherapy",
+              "Immunosuppression or corticosteroids"
+            ],
+            "red_flags": [
+              "Peritonitis (diffuse abdominal pain, rigidity, rebound) - perforation, urgent surgery",
+              "Septic shock or hypotension - high mortality (50-80%), urgent resuscitation + antibiotics",
+              "Pneumatosis intestinalis or free air on CT - bowel necrosis/perforation, urgent surgery",
+              "Persistent symptoms despite antibiotics + G-CSF - consider surgery",
+              "Profound neutropenia (ANC <100) - high mortality, aggressive management"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "CT abdomen/pelvis with IV contrast (confirms diagnosis, assesses complications). Do NOT delay antibiotics for imaging if high clinical suspicion (neutropenia + RLQ pain + fever). Avoid colonoscopy (perforation risk in neutropenic patients).",
+            "essential_tests": [
+              "CBC with differential (ANC <500 cells/mm³, usually <100)",
+              "CMP (assess renal function, electrolytes)",
+              "Lactate (assess severity, guide resuscitation)",
+              "Blood cultures x2 sets BEFORE antibiotics (positive in 30-50%)",
+              "CT abdomen/pelvis with IV contrast: Cecal wall thickening >4mm (diagnostic), pericolonic fat stranding, pneumatosis intestinalis, free fluid, abscess, free air (if perforation). Sensitivity 90%, specificity 95%."
+            ],
+            "conditional_tests": [
+              "Stool studies: C. difficile (rule out CDI), bacterial culture (Salmonella, Campylobacter), viral PCR (CMV, adenovirus, norovirus). Send BEFORE antibiotics.",
+              "CMV PCR (blood): If prolonged diarrhea or colitis (CMV reactivation common in immunosuppressed)",
+              "Repeat CT at 48-72 hours: If no clinical improvement (assess for perforation, abscess, progression)"
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics for imaging if high clinical suspicion (start empiric antibiotics immediately). Do NOT perform colonoscopy (perforation risk in neutropenic patients). Do NOT perform barium enema (perforation risk).",
+            "turnaround_time": "CBC: <1 hour. Lactate: <1 hour. Blood cultures: Preliminary 24-48 hours. CT abdomen: 1-4 hours (urgent if septic). Stool studies: 24-72 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "polymicrobial": "Typhlitis is polymicrobial infection with mixed aerobic and anaerobic bacteria from GI flora. Bacteremia common (30-50%). Fungal infection in 20-30% (Candida, Aspergillus, Mucor).",
+            "aerobic_gram_negative": [
+              "E. coli (most common, 40-50%)",
+              "Klebsiella species (20-30%)",
+              "Pseudomonas aeruginosa (20-30%, high mortality)",
+              "Enterobacter species (15-20%)",
+              "Stenotrophomonas maltophilia (5-10%)"
+            ],
+            "aerobic_gram_positive": [
+              "Enterococcus species (20-30%, VRE common)",
+              "Streptococcus species (viridans group, 15-20%)",
+              "Staphylococcus aureus (10-15%, MRSA 30-50%)"
+            ],
+            "anaerobes": [
+              "Bacteroides fragilis (30-40%)",
+              "Clostridium species (15-20%, including C. difficile, C. septicum)",
+              "Peptostreptococcus species (10-15%)"
+            ],
+            "fungi": [
+              "Candida species (20-30%, prolonged neutropenia, broad-spectrum antibiotics)",
+              "Aspergillus species (5-10%, invasive aspergillosis)",
+              "Mucor species (rare, <5%, invasive mucormycosis)"
+            ],
+            "resistance_patterns": "ESBL E. coli/Klebsiella 30-50% (healthcare-associated). VRE 30-50% (healthcare-associated, prior antibiotics). MDR Pseudomonas 40-60% (prior antibiotics, ICU). Fluconazole-resistant Candida 30-40%.",
+            "mdro_risk_factors": [
+              "Prolonged hospitalization or ICU stay",
+              "Recent antibiotics (within 90 days)",
+              "Central venous catheter",
+              "Prior MDRO colonization or infection"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "initial_empiric_therapy": "Meropenem 1g IV q8h (broad coverage: Gram-negatives, Gram-positives, anaerobes) + Vancomycin 15-20mg/kg IV q8-12h (MRSA, VRE coverage) + Micafungin 100mg IV daily (Candida coverage). G-CSF (filgrastim 5mcg/kg SC daily) to accelerate neutrophil recovery. Duration: Until ANC >500 + afebrile + 7-14 days total.",
+            "alternative_regimens": "Piperacillin-tazobactam 4.5g IV q6h + Vancomycin 15-20mg/kg IV q8-12h + Micafungin 100mg IV daily OR Cefepime 2g IV q8h + Metronidazole 500mg IV q8h + Vancomycin 15-20mg/kg IV q8-12h + Micafungin 100mg IV daily.",
+            "g_csf_administration": "Filgrastim 5mcg/kg SC daily OR Pegfilgrastim 6mg SC x1. Accelerates neutrophil recovery (ANC >500 within 5-7 days vs 10-14 days without G-CSF). Reduces mortality. Continue until ANC >500 for 2 consecutive days.",
+            "alternatives": "Beta-lactam allergy: Aztreonam 2g IV q8h + Metronidazole 500mg IV q8h + Vancomycin 15-20mg/kg IV q8-12h + Micafungin 100mg IV daily. Fluoroquinolone: Levofloxacin 750mg IV daily + Metronidazole 500mg IV q8h (if susceptible, but high resistance rates).",
+            "avoid_list": "Avoid inadequate Gram-negative coverage (meropenem or piperacillin-tazobactam required). Avoid inadequate anaerobic coverage (metronidazole or beta-lactam/beta-lactamase inhibitor required). Avoid delaying G-CSF (accelerates neutrophil recovery, reduces mortality)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "medical_management": "Preferred over surgery (success rate 70-80%, lower mortality). Broad-spectrum antibiotics + G-CSF + supportive care (bowel rest, NPO, TPN if prolonged). Continue antibiotics until ANC >500 + afebrile + 7-14 days total. Narrow antibiotics based on blood culture results.",
+            "targeted_antibiotics": "Narrow based on blood culture results. E. coli + Bacteroides: Meropenem 1g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h. ESBL: Meropenem 1g IV q8h. VRE: Daptomycin 8-10mg/kg IV daily OR Linezolid 600mg IV BID. Candida: Micafungin 100mg IV daily OR Fluconazole 800mg loading, then 400mg daily (if susceptible). Aspergillus: Voriconazole 6mg/kg IV q12h x2, then 4mg/kg IV q12h.",
+            "surgical_indications": "Urgent surgery: Perforation (free air on CT), peritonitis, uncontrolled bleeding, clinical deterioration despite medical therapy (48-72 hours). Procedure: Right hemicolectomy (resect cecum + terminal ileum) + end ileostomy. Mortality: 50-80% if surgery required. Delay surgery if possible (allow neutrophil recovery, improves wound healing).",
+            "duration": "Until ANC >500 + afebrile + 7-14 days total. Longer if: Fungal infection (14-21 days minimum), bacteremia (7-14 days), inadequate neutrophil recovery.",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Discontinue vancomycin if no MRSA/VRE. Discontinue antifungal if no Candida/Aspergillus isolated (unless high risk: prolonged neutropenia, broad-spectrum antibiotics). Narrow Gram-negative coverage if ESBL-negative.",
+            "iv_to_po_switch": "Switch to PO when: (1) ANC >500, (2) Afebrile >24 hours, (3) Tolerating diet, (4) Improving WBC. PO options: Amoxicillin-clavulanate 875mg PO TID OR Ciprofloxacin 500mg PO BID + Metronidazole 500mg PO TID (if susceptible)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "medical_management": "Until ANC >500 + afebrile + 7-14 days total",
+            "fungal_infection": "14-21 days minimum (Candida), 6-12 weeks (Aspergillus)",
+            "bacteremia": "7-14 days",
+            "monitoring": "Daily: Vital signs, abdominal exam, stool output, ANC. Every 2-3 days: CBC (monitor ANC recovery), CMP, lactate. Repeat CT at 48-72 hours: If no clinical improvement (assess for perforation, abscess, progression). G-CSF: Continue until ANC >500 for 2 consecutive days.",
+            "stop_criteria": "Completed 7-14 days after ANC >500. Afebrile >24 hours. Tolerating diet. ANC >500 for 2 consecutive days. Improving abdominal pain and diarrhea. No complications (perforation, abscess)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "g_csf_administration": "CRITICAL for neutrophil recovery. Filgrastim 5mcg/kg SC daily OR Pegfilgrastim 6mg SC x1. Accelerates ANC >500 (5-7 days vs 10-14 days without G-CSF). Reduces mortality. Continue until ANC >500 for 2 consecutive days. Do NOT delay G-CSF (evidence-based, guideline-recommended).",
+            "medical_vs_surgical_management": "Medical management preferred (success rate 70-80%, lower mortality 30-50% vs 50-80% with surgery). Indications for surgery: Perforation, peritonitis, uncontrolled bleeding, clinical deterioration despite medical therapy (48-72 hours). Delay surgery if possible (allow neutrophil recovery, improves wound healing and anastomotic healing).",
+            "supportive_care": "Bowel rest (NPO), IV fluids, TPN if prolonged (>5-7 days). Pain management (avoid NSAIDs, increase perforation risk). Transfusion support (platelets >50,000 if bleeding, RBC if anemia). Monitor for complications (perforation, abscess, bleeding).",
+            "fungal_infection": "High risk: Prolonged neutropenia (>7-10 days), broad-spectrum antibiotics, mucositis. Organisms: Candida (most common), Aspergillus, Mucor. Treatment: Micafungin 100mg IV daily (empiric) OR Voriconazole (if Aspergillus confirmed). Duration: 14-21 days (Candida), 6-12 weeks (Aspergillus).",
+            "c_difficile_coinfection": "Common (10-20%) due to broad-spectrum antibiotics. Test stool for C. difficile. Treatment: Add vancomycin 125mg PO QID x 10 days (continue broad-spectrum antibiotics for typhlitis). Do NOT stop broad-spectrum antibiotics (typhlitis requires continued coverage).",
+            "immunocompromised_considerations": "Broader coverage (meropenem + vancomycin + micafungin). Longer duration (14-21 days minimum). Higher risk of MDRO, Candida, and atypical pathogens (CMV, adenovirus, norovirus). Consider viral studies (CMV PCR, stool viral PCR)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Discontinue vancomycin if no MRSA/VRE",
+              "Discontinue antifungal if no Candida/Aspergillus isolated (unless high risk: prolonged neutropenia, broad-spectrum antibiotics)",
+              "Narrow Gram-negative coverage if ESBL-negative",
+              "Switch IV to PO when ANC >500 and tolerating diet",
+              "Stop antibiotics when ANC >500 + afebrile + 7-14 days total"
+            ],
+            "timeout_checklist": [
+              "Is G-CSF administered? (CRITICAL for neutrophil recovery, reduces mortality)",
+              "Is ANC >500? (Continue antibiotics until ANC >500 + afebrile + 7-14 days)",
+              "Are blood cultures available? (Narrow antibiotics based on results)",
+              "Is surgery indicated? (Perforation, peritonitis, clinical deterioration despite medical therapy)",
+              "Can I discontinue antifungal? (If no Candida/Aspergillus and not high risk)",
+              "Can I stop antibiotics? (If ANC >500 + afebrile + 7-14 days completed)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT delay G-CSF (accelerates neutrophil recovery, reduces mortality). Do NOT perform surgery unless absolutely necessary (high mortality 50-80%). Do NOT use prolonged antibiotics beyond ANC >500 + afebrile + 7-14 days.",
+            "patient_education": "Typhlitis is serious bowel infection in neutropenic patients requiring antibiotics + G-CSF. Complete full antibiotic course. Watch for worsening symptoms (severe abdominal pain, bloody diarrhea, fever). Follow-up imaging if symptoms worsen. Neutrophil recovery critical for cure."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Febrile Neutropenia Guidelines (2011)",
+              "url": "https://academic.oup.com/cid/article/52/4/e56/382256"
+            },
+            {
+              "label": "NCCN Hematopoietic Growth Factors Guidelines (2024)",
+              "url": "https://www.nccn.org/professionals/physician_gls/pdf/growthfactors.pdf"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
+

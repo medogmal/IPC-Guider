@@ -1,0 +1,952 @@
+{
+  "version": 1,
+  "groupId": "hemorrhagic_bioterrorism",
+  "groupName": "Hemorrhagic Fever & Bioterrorism-Related Viral Outbreak Pathogens",
+  "type": "viral",
+  "updatedAt": "2025-01-14T00:00:00Z",
+  "pathogens": [
+    {
+      "id": "ebola",
+      "name": "Ebola virus (EVD)",
+      "scientificName": "Ebola virus (EBOV), genus Ebolavirus, family Filoviridae",
+      "definition": "Enveloped negative-sense single-stranded RNA virus causing Ebola virus disease (EVD), a severe viral hemorrhagic fever with high mortality rate (25-90% depending on outbreak and care quality). Transmitted through direct contact with blood and body fluids of infected individuals or animals. Major outbreaks in Africa, most notably 2014-2016 West Africa outbreak (28,600 cases, 11,325 deaths). High-consequence pathogen requiring BSL-4 containment and strict infection control. Vaccines and therapeutics now available.",
+      "reservoir": {
+        "primary": [
+          "Fruit bats (Pteropodidae family) - natural reservoir"
+        ],
+        "secondary": [
+          "Infected humans during outbreaks",
+          "Wild animals (primates, duikers, porcupines) - spillover hosts"
+        ],
+        "notes": "Fruit bats are asymptomatic carriers. Human outbreaks typically start from spillover event (contact with infected bat or bushmeat), then spread person-to-person. Five Ebola virus species: Zaire (most deadly), Sudan, Bundibugyo, Taï Forest, Reston (not pathogenic to humans)."
+      },
+      "transmission": {
+        "mode": "Direct contact with blood and body fluids of infected individuals or animals",
+        "routes": [
+          "Direct contact with blood, vomit, feces, urine, saliva, sweat, semen, breast milk, or other body fluids of symptomatic infected person",
+          "Contact with contaminated surfaces, objects, or materials (needles, syringes, bedding, clothing)",
+          "Unsafe burial practices: contact with body of deceased Ebola patient",
+          "Healthcare-associated transmission: inadequate infection control, lack of PPE",
+          "Sexual transmission: virus can persist in semen for months after recovery (up to 12-18 months)",
+          "Bushmeat: contact with infected wild animals (primates, bats, duikers)"
+        ],
+        "notes": "Ebola is NOT airborne. Transmission requires direct contact with body fluids. Patients are NOT infectious during incubation period (before symptoms). Most infectious during late stages of illness and after death. Healthcare workers and family caregivers at highest risk."
+      },
+      "incubationPeriod": {
+        "range": "2-21 days (average 8-10 days) from exposure to symptom onset",
+        "infectiousPeriod": "Infectious from symptom onset until recovery. Virus persists in immune-privileged sites after recovery: semen (up to 12-18 months), breast milk, eye fluid, spinal fluid. Survivors should abstain from sex or use condoms for 12 months after recovery",
+        "seasonality": "No clear seasonal pattern; outbreaks can occur year-round",
+        "geographic": "Endemic in Central and West Africa (Democratic Republic of Congo, Guinea, Liberia, Sierra Leone, Uganda, others). Sporadic outbreaks and isolated cases"
+      },
+      "riskFactors": [
+        "Healthcare workers caring for Ebola patients without adequate PPE (highest risk)",
+        "Family members and caregivers of Ebola patients",
+        "Participation in traditional burial practices (washing, touching body)",
+        "Contact with bushmeat (hunting, butchering, consuming wild animals)",
+        "Living in or traveling to Ebola-endemic areas during outbreaks",
+        "Laboratory workers handling Ebola specimens without BSL-4 precautions",
+        "Sexual contact with Ebola survivors (virus persists in semen)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Early symptoms (days 1-5): sudden onset of fever, severe fatigue, muscle pain, headache, sore throat",
+          "Gastrointestinal symptoms (days 3-7): nausea, vomiting, diarrhea (profuse, watery), abdominal pain",
+          "Hemorrhagic manifestations (days 5-7): bleeding from gums, nose, eyes, injection sites; blood in vomit, stool, urine; petechiae, ecchymoses",
+          "Late symptoms (days 7-12): multi-organ failure, shock, confusion, seizures, coma",
+          "Symptoms progress rapidly; death typically occurs 6-16 days after symptom onset"
+        ],
+        "complications": [
+          "Severe hemorrhagic manifestations and shock",
+          "Multi-organ failure (liver, kidney, respiratory)",
+          "Disseminated intravascular coagulation (DIC)",
+          "Neurological complications: encephalitis, seizures, coma",
+          "Secondary bacterial infections",
+          "Death (case fatality rate 25-90% depending on outbreak, virus species, and quality of care; ~50% average)",
+          "Post-Ebola syndrome in survivors: joint pain, vision problems, fatigue, headaches (can persist for months)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with sudden onset of fever + at least three of: headache, vomiting, diarrhea, abdominal pain, unexplained bleeding + epidemiological link (contact with Ebola patient, travel to endemic area, contact with bushmeat)",
+          "confirmed": "Suspected case + laboratory confirmation: positive RT-PCR for Ebola RNA, OR positive Ebola antigen test"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR for Ebola RNA from blood - gold standard; detectable from day 3 of illness",
+        "Ebola antigen detection (rapid diagnostic test) - point-of-care test, results in 15-30 minutes",
+        "IgM and IgG antibodies (ELISA) - IgM detectable from day 2-3, IgG from day 6-18",
+        "Viral isolation - requires BSL-4 laboratory; rarely performed",
+        "All laboratory work must be performed under BSL-4 or BSL-3+ conditions with strict biosafety protocols"
+      ],
+      "treatment": "Supportive care: aggressive IV fluid and electrolyte replacement, management of shock and multi-organ failure, blood transfusions, oxygen therapy, treatment of secondary infections. Specific therapeutics: Monoclonal antibody cocktails (Inmazeb, Ebanga) - approved by FDA, significantly reduce mortality. Remdesivir (antiviral) - used in some outbreaks. Intensive care support. Early treatment improves survival.",
+      "infectionControl": {
+        "precautions": "Contact Precautions + Droplet Precautions (some guidelines recommend Airborne Precautions for aerosol-generating procedures). Strict isolation in single room (negative pressure preferred). Full barrier PPE: double gloves, impermeable gown, N95 respirator or PAPR, face shield, boot covers, apron. Minimize invasive procedures. Dedicated equipment. Limit number of healthcare workers. No visitors except essential family with full PPE training",
+        "screening": "Screen all patients for Ebola symptoms and epidemiological risk factors at healthcare entry points in endemic areas or during outbreaks. Immediate isolation of suspected cases",
+        "cohorting": "Isolate each Ebola patient in separate single room if possible; cohort confirmed cases only if necessary",
+        "sourceControl": "Avoid aerosol-generating procedures if possible; use closed systems for blood collection; proper sharps disposal; safe handling of laboratory specimens (triple packaging, BSL-4)",
+        "environmental": "Enhanced cleaning and disinfection with EPA-registered disinfectants effective against Ebola (bleach-based, accelerated hydrogen peroxide). Careful handling and disposal of contaminated materials as Category A infectious waste. Safe burial practices: trained teams, body bags, no washing/touching of body",
+        "staffEducation": "Rigorous training on PPE donning/doffing (supervised); avoid direct contact with blood and body fluids; immediate reporting of exposures; post-exposure monitoring and prophylaxis (vaccine, monoclonal antibodies if available)"
+      },
+      "outbreakTriggers": [
+        "Any single suspected or confirmed case of Ebola virus disease (high-consequence pathogen)",
+        "Cluster of severe hemorrhagic illness with high mortality",
+        "Unexplained deaths in community or healthcare facility"
+      ],
+      "reportingCommunication": [
+        "Immediate international reporting (within hours) to WHO under International Health Regulations (IHR) - Ebola is a Public Health Emergency of International Concern (PHEIC)",
+        "Activate national and international outbreak response teams",
+        "Implement strict isolation and infection control measures immediately",
+        "Contact tracing: identify all contacts (healthcare workers, family members, community contacts); monitor for 21 days; consider ring vaccination",
+        "Coordinate with public health, infection control, laboratory, logistics, burial teams, community leaders, and international partners",
+        "Public health messaging: symptoms, transmission, when to seek care, safe burial practices",
+        "International travel advisories and screening at borders"
+      ],
+      "prevention": [
+        "Ebola vaccines: rVSV-ZEBOV (Ervebo) - single-dose vaccine, >95% effective; approved by FDA and WHO. Used for ring vaccination (vaccinate contacts and contacts of contacts) during outbreaks",
+        "Infection control in healthcare: strict isolation, full barrier PPE, safe injection practices, proper waste disposal, training",
+        "Safe burial practices: trained burial teams, body bags, no washing/touching of body, rapid burial",
+        "Avoid contact with bushmeat: do not hunt, butcher, or consume wild animals (bats, primates)",
+        "Community engagement: education on transmission, symptoms, safe practices, dispel myths",
+        "Survivor support: counseling, monitoring for post-Ebola syndrome, safe sex practices (condoms for 12 months)",
+        "Early detection and isolation of cases",
+        "Post-exposure prophylaxis: vaccine and/or monoclonal antibodies for high-risk exposures"
+      ],
+      "references": [
+        {
+          "label": "WHO - Ebola Virus Disease",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/ebola-virus-disease"
+        },
+        {
+          "label": "CDC - Ebola (Ebola Virus Disease)",
+          "url": "https://www.cdc.gov/vhf/ebola/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "marburg",
+      "name": "Marburg virus",
+      "scientificName": "Marburg virus (MARV), genus Marburgvirus, family Filoviridae",
+      "definition": "Enveloped negative-sense single-stranded RNA virus causing Marburg virus disease (MVD), a severe viral hemorrhagic fever clinically similar to Ebola with high mortality rate (23-90% depending on outbreak). Transmitted through direct contact with blood and body fluids. First identified in 1967 in Marburg, Germany (laboratory workers exposed to infected African green monkeys). Sporadic outbreaks in Africa. High-consequence pathogen requiring BSL-4 containment.",
+      "reservoir": {
+        "primary": [
+          "Fruit bats (Rousettus aegyptiacus - Egyptian fruit bat) - natural reservoir"
+        ],
+        "secondary": [
+          "Infected humans during outbreaks",
+          "Non-human primates - spillover hosts"
+        ],
+        "notes": "Rousettus aegyptiacus bats are asymptomatic carriers. Human outbreaks typically start from exposure to bat-inhabited caves or mines, then spread person-to-person. Two Marburg virus species: Marburg virus and Ravn virus."
+      },
+      "transmission": {
+        "mode": "Direct contact with blood and body fluids of infected individuals or animals",
+        "routes": [
+          "Direct contact with blood, vomit, feces, urine, saliva, sweat, semen, or other body fluids of symptomatic infected person",
+          "Contact with contaminated surfaces, objects, or materials",
+          "Unsafe burial practices: contact with body of deceased Marburg patient",
+          "Healthcare-associated transmission: inadequate infection control, lack of PPE",
+          "Sexual transmission: virus can persist in semen for months after recovery",
+          "Exposure to bat-inhabited caves or mines (index cases)",
+          "Contact with infected non-human primates"
+        ],
+        "notes": "Marburg is NOT airborne. Transmission requires direct contact with body fluids. Patients are NOT infectious during incubation period. Most infectious during late stages of illness and after death. Miners and cave explorers at risk for index cases."
+      },
+      "incubationPeriod": {
+        "range": "2-21 days (average 5-10 days) from exposure to symptom onset",
+        "infectiousPeriod": "Infectious from symptom onset until recovery. Virus persists in immune-privileged sites after recovery: semen (up to 7 weeks documented, possibly longer), eye fluid, spinal fluid",
+        "seasonality": "No clear seasonal pattern",
+        "geographic": "Endemic in sub-Saharan Africa (Uganda, Kenya, Democratic Republic of Congo, Angola, others). Sporadic outbreaks and isolated cases"
+      },
+      "riskFactors": [
+        "Miners and cave explorers (exposure to bat-inhabited caves/mines) - risk for index cases",
+        "Healthcare workers caring for Marburg patients without adequate PPE",
+        "Family members and caregivers of Marburg patients",
+        "Participation in traditional burial practices",
+        "Living in or traveling to Marburg-endemic areas during outbreaks",
+        "Laboratory workers handling Marburg specimens without BSL-4 precautions",
+        "Contact with non-human primates"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Early symptoms (days 1-5): sudden onset of high fever, severe headache, malaise, muscle pain",
+          "Gastrointestinal symptoms (days 3-5): nausea, vomiting, diarrhea (profuse, watery), abdominal pain",
+          "Characteristic appearance (day 5): 'ghost-like' drawn features, deep-set eyes, expressionless face, extreme lethargy",
+          "Hemorrhagic manifestations (days 5-7): bleeding from gums, nose, eyes, injection sites; blood in vomit, stool; petechiae, ecchymoses",
+          "Late symptoms (days 7-12): multi-organ failure, shock, confusion, seizures, coma",
+          "Death typically occurs 8-9 days after symptom onset"
+        ],
+        "complications": [
+          "Severe hemorrhagic manifestations and shock",
+          "Multi-organ failure (liver, kidney, respiratory)",
+          "Disseminated intravascular coagulation (DIC)",
+          "Neurological complications: encephalitis, seizures, coma",
+          "Orchitis (testicular inflammation) in males",
+          "Death (case fatality rate 23-90% depending on outbreak; ~50% average)",
+          "Post-Marburg syndrome in survivors: joint pain, vision problems, fatigue (similar to post-Ebola syndrome)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with sudden onset of high fever + at least three of: headache, vomiting, diarrhea, abdominal pain, unexplained bleeding + epidemiological link (contact with Marburg patient, travel to endemic area, cave/mine exposure, contact with bats/primates)",
+          "confirmed": "Suspected case + laboratory confirmation: positive RT-PCR for Marburg RNA, OR positive Marburg antigen test, OR viral isolation"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR for Marburg RNA from blood - gold standard; detectable from day 3 of illness",
+        "Marburg antigen detection - rapid diagnostic test",
+        "IgM and IgG antibodies (ELISA) - IgM detectable from day 5-7",
+        "Viral isolation - requires BSL-4 laboratory; rarely performed",
+        "All laboratory work must be performed under BSL-4 conditions"
+      ],
+      "treatment": "Supportive care: aggressive IV fluid and electrolyte replacement, management of shock and multi-organ failure, blood transfusions, oxygen therapy, treatment of secondary infections. Experimental antivirals: Remdesivir has been used in some cases (limited data). No approved specific therapeutics. Intensive care support. Early supportive care improves survival.",
+      "infectionControl": {
+        "precautions": "Contact Precautions + Droplet Precautions (some guidelines recommend Airborne Precautions for aerosol-generating procedures). Strict isolation in single room (negative pressure preferred). Full barrier PPE: double gloves, impermeable gown, N95 respirator or PAPR, face shield, boot covers, apron. Minimize invasive procedures. Dedicated equipment. Limit number of healthcare workers. No visitors except essential family with full PPE training",
+        "screening": "Screen for Marburg symptoms and epidemiological risk factors at healthcare entry points. Immediate isolation of suspected cases",
+        "cohorting": "Isolate each patient in separate single room if possible",
+        "sourceControl": "Avoid aerosol-generating procedures; use closed systems; proper sharps disposal; safe handling of laboratory specimens (BSL-4)",
+        "environmental": "Enhanced cleaning and disinfection with EPA-registered disinfectants (bleach-based). Category A infectious waste disposal. Safe burial practices",
+        "staffEducation": "Rigorous training on PPE donning/doffing; avoid direct contact with blood and body fluids; immediate reporting of exposures"
+      },
+      "outbreakTriggers": [
+        "Any single suspected or confirmed case of Marburg virus disease (high-consequence pathogen)",
+        "High-mortality cluster of hemorrhagic illness",
+        "Unexplained deaths in miners or cave explorers"
+      ],
+      "reportingCommunication": [
+        "Immediate international reporting (within hours) to WHO under IHR - Marburg is internationally notifiable",
+        "Activate rapid outbreak response teams",
+        "Implement strict isolation and infection control immediately",
+        "Contact tracing: identify all contacts; monitor for 21 days",
+        "Coordinate with public health, infection control, laboratory, burial teams, mining/cave authorities, and international partners",
+        "Public health messaging and travel advisories"
+      ],
+      "prevention": [
+        "Infection control in healthcare: strict isolation, full barrier PPE, training",
+        "Safe burial practices: trained burial teams, body bags, no washing/touching of body",
+        "Avoid exposure to bat-inhabited caves and mines in endemic areas",
+        "Community engagement and education",
+        "Early detection and isolation of cases",
+        "No vaccine currently available (under development)",
+        "Post-exposure monitoring for high-risk contacts"
+      ],
+      "references": [
+        {
+          "label": "WHO - Marburg Virus Disease",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/marburg-virus-disease"
+        },
+        {
+          "label": "CDC - Marburg Hemorrhagic Fever",
+          "url": "https://www.cdc.gov/vhf/marburg/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "lassa_fever",
+      "name": "Lassa fever virus",
+      "scientificName": "Lassa virus (LASV), genus Mammarenavirus, family Arenaviridae",
+      "definition": "Enveloped negative-sense single-stranded RNA virus causing Lassa fever, an acute viral hemorrhagic fever endemic in West Africa. Transmitted by Mastomys rodents (multimammate rats) through contact with rodent urine or feces. Most infections (80%) are mild or asymptomatic, but 20% develop severe disease with hemorrhagic manifestations and multi-organ failure. Case fatality rate 1% overall, 15-20% in hospitalized patients. Estimated 100,000-300,000 cases annually in West Africa. Ribavirin effective if started early.",
+      "reservoir": {
+        "primary": [
+          "Mastomys natalensis (multimammate rat) - natural reservoir"
+        ],
+        "secondary": [
+          "Infected humans during acute illness"
+        ],
+        "notes": "Mastomys rats are asymptomatic carriers and shed virus in urine and feces throughout their lives. Rats live in and around human dwellings in West Africa. Human infection occurs through contact with contaminated food, water, or surfaces. Person-to-person transmission occurs but is less efficient than Ebola/Marburg."
+      },
+      "transmission": {
+        "mode": "Contact with rodent urine/feces (primary), person-to-person transmission (secondary)",
+        "routes": [
+          "Inhalation of aerosolized rodent urine or feces (primary route)",
+          "Ingestion of food or water contaminated by rodent urine or feces",
+          "Direct contact with rodent urine, feces, or contaminated surfaces",
+          "Person-to-person transmission: contact with blood, urine, feces, vomit, or other body fluids of infected person (less efficient than Ebola)",
+          "Healthcare-associated transmission: inadequate infection control",
+          "Sexual transmission: virus can persist in semen for months after recovery"
+        ],
+        "notes": "Rodent-to-human transmission is primary route. Person-to-person transmission occurs but is less efficient than filoviruses. Healthcare workers at risk if inadequate infection control."
+      },
+      "incubationPeriod": {
+        "range": "6-21 days (average 10-12 days) from exposure to symptom onset",
+        "infectiousPeriod": "Infectious during acute illness (typically 2-3 weeks). Virus can persist in semen for up to 3 months after recovery",
+        "seasonality": "Year-round transmission, but increased during dry season (December-April) when rodents enter homes seeking food and water",
+        "geographic": "Endemic in West Africa: Nigeria, Sierra Leone, Liberia, Guinea, others. Estimated 100,000-300,000 cases annually. Imported cases in travelers"
+      },
+      "riskFactors": [
+        "Living in rural or agricultural areas of West Africa (endemic regions)",
+        "Poor housing conditions allowing rodent entry",
+        "Food storage practices that attract rodents",
+        "Healthcare workers caring for Lassa fever patients without adequate PPE",
+        "Pregnant women (higher mortality, fetal loss)",
+        "Immunocompromised individuals",
+        "Travelers to endemic areas"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Mild illness (80%): gradual onset of fever, malaise, weakness, headache - often indistinguishable from other febrile illnesses (malaria, typhoid)",
+          "Severe illness (20%): high fever, sore throat (pharyngitis with white patches - characteristic), chest pain (retrosternal), cough, nausea, vomiting, diarrhea, abdominal pain",
+          "Hemorrhagic manifestations: bleeding from gums, nose, eyes, gastrointestinal tract (less common than Ebola/Marburg)",
+          "Neurological symptoms: encephalitis, seizures, tremors, disorientation",
+          "Late symptoms: facial and neck edema, pleural effusion, ascites, shock, multi-organ failure",
+          "Deafness: occurs in 25% of survivors (permanent in two-thirds)"
+        ],
+        "complications": [
+          "Sensorineural deafness (25% of patients, permanent in two-thirds) - most common complication",
+          "Hemorrhagic manifestations and shock",
+          "Multi-organ failure (liver, kidney, respiratory)",
+          "Encephalitis and seizures",
+          "Pericarditis and pleural effusion",
+          "Fetal loss and maternal death in pregnant women (especially third trimester)",
+          "Death (case fatality rate 1% overall, 15-20% in hospitalized patients, up to 80% in pregnant women in third trimester)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with gradual onset of fever + sore throat + at least two of: retrosternal chest pain, cough, nausea, vomiting, diarrhea, headache, myalgia + residence in or travel to Lassa-endemic area",
+          "confirmed": "Suspected case + laboratory confirmation: positive RT-PCR for Lassa RNA, OR positive Lassa IgM antibody, OR viral isolation"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR for Lassa RNA from blood - gold standard; detectable from day 3 of illness",
+        "Lassa IgM antibody (ELISA) - detectable from day 10-14 onwards",
+        "Lassa IgG antibody - indicates past infection",
+        "Viral isolation - requires BSL-4 laboratory",
+        "All laboratory work should be performed under BSL-4 or BSL-3+ conditions"
+      ],
+      "treatment": "Ribavirin (antiviral): oral or IV ribavirin is effective if started within first 6 days of illness (reduces mortality by 5-fold). Supportive care: IV fluids, electrolyte management, management of shock and complications, treatment of secondary infections. Intensive care support for severe cases. Early treatment with ribavirin significantly improves outcomes.",
+      "infectionControl": {
+        "precautions": "Contact Precautions + Droplet Precautions + Airborne Precautions (due to aerosol transmission from rodents and potential for aerosol-generating procedures). Isolation in single room (negative pressure preferred). PPE: double gloves, gown, N95 respirator or PAPR, face shield. Dedicated equipment. Limit healthcare workers",
+        "screening": "Screen for Lassa fever symptoms in patients from endemic areas, especially with sore throat and retrosternal chest pain. Immediate isolation of suspected cases",
+        "cohorting": "Isolate each patient in separate single room if possible; cohort confirmed cases if necessary",
+        "sourceControl": "Minimize aerosol-generating procedures; proper sharps disposal; safe handling of laboratory specimens (BSL-4)",
+        "environmental": "Rodent control: eliminate rodent infestations, seal entry points, proper food storage. Enhanced cleaning and disinfection. Safe waste disposal",
+        "staffEducation": "Training on PPE, rodent control, early recognition of Lassa fever, ribavirin administration"
+      },
+      "outbreakTriggers": [
+        "Any single confirmed case in non-endemic area",
+        "Nosocomial transmission (healthcare-associated case)",
+        "Unusual cluster of severe febrile illness with hemorrhagic manifestations in endemic area"
+      ],
+      "reportingCommunication": [
+        "Rapid notification (within 24 hours) to health authorities - Lassa fever is internationally notifiable",
+        "Implement isolation and infection control measures",
+        "Contact tracing: identify contacts; monitor for 21 days; consider ribavirin prophylaxis for high-risk exposures",
+        "Coordinate with public health, infection control, laboratory, and rodent control",
+        "Public health messaging: rodent control, food hygiene, when to seek care",
+        "International alert for imported cases"
+      ],
+      "prevention": [
+        "Community rodent control (most important): eliminate rodent infestations, seal entry points, proper food storage in rodent-proof containers, environmental sanitation",
+        "Food hygiene: avoid food or water that may be contaminated by rodents",
+        "Infection control in healthcare: isolation, PPE, safe injection practices",
+        "Early detection and treatment with ribavirin",
+        "Post-exposure prophylaxis: ribavirin may be considered for high-risk exposures (healthcare workers, close contacts)",
+        "Public education: rodent control, food hygiene, symptoms, when to seek care",
+        "Vaccine under development (not yet available)"
+      ],
+      "references": [
+        {
+          "label": "WHO - Lassa Fever",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/lassa-fever"
+        },
+        {
+          "label": "CDC - Lassa Fever",
+          "url": "https://www.cdc.gov/vhf/lassa/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "cchf_hemorrhagic",
+      "name": "Crimean-Congo Hemorrhagic Fever (CCHF)",
+      "scientificName": "Crimean-Congo hemorrhagic fever virus (CCHFV), genus Orthonairovirus, family Nairoviridae (enveloped negative-sense single-stranded RNA virus)",
+      "definition": "Enveloped negative-sense single-stranded RNA virus causing severe hemorrhagic fever with high mortality rate (10-40%). CCHF is a zoonotic disease transmitted by ticks (Hyalomma genus) and through contact with blood or tissues of infected livestock or humans. Endemic in Africa, Asia, Middle East, and Eastern Europe. Nosocomial transmission is common and poses high risk to healthcare workers. High-consequence pathogen requiring strict infection control and biosafety measures.",
+      "reservoir": {
+        "primary": [
+          "Ticks (Hyalomma genus) - primary reservoir and vector",
+          "Wild and domestic animals (cattle, sheep, goats) - amplifying hosts"
+        ],
+        "secondary": [
+          "Infected humans (during acute illness)"
+        ],
+        "notes": "Ticks are the primary reservoir and vector. Hyalomma ticks maintain the virus through transstadial and transovarial transmission. Wild and domestic animals (especially cattle, sheep, goats) serve as amplifying hosts but do not develop clinical disease. Humans are dead-end hosts but can transmit to other humans through blood and body fluids."
+      },
+      "transmission": {
+        "mode": "Tick bite (primary), contact with blood or tissues of infected animals or humans",
+        "routes": [
+          "Tick bite: bite of infected Hyalomma tick - primary route in endemic areas",
+          "Contact with blood or tissues of infected livestock: slaughtering, butchering, veterinary procedures - major occupational risk",
+          "Nosocomial transmission: contact with blood or body fluids of infected patients - major risk to healthcare workers; accounts for significant proportion of cases",
+          "Crushing ticks with bare hands (while removing from animals or humans)",
+          "Percutaneous exposure: needlestick injuries, sharps injuries in healthcare settings",
+          "Mucous membrane exposure: splash of blood or body fluids to eyes, nose, mouth"
+        ],
+        "notes": "CCHF is highly infectious through blood and body fluid contact. Nosocomial transmission is common and poses extreme risk to healthcare workers. Virus is present in high concentrations in blood and body fluids during acute illness. No person-to-person transmission through respiratory route (not airborne)."
+      },
+      "incubationPeriod": {
+        "range": "1-14 days (mean 3-7 days) from tick bite or exposure to symptom onset. Shorter incubation (1-3 days) after contact with infected blood or tissues",
+        "infectiousPeriod": "Infectious during acute illness (typically 7-10 days from symptom onset). Virus is present in blood and body fluids during febrile and hemorrhagic phases. Patients are most infectious during hemorrhagic phase",
+        "seasonality": "Spring and summer peaks (April-September) corresponding to tick activity in endemic areas",
+        "geographic": "Endemic in Africa (especially sub-Saharan Africa), Asia (Middle East, Central Asia, South Asia), Eastern Europe (Balkans, Turkey, Russia). Not found in Americas, Western Europe, or Australia"
+      },
+      "riskFactors": [
+        "Livestock workers (farmers, herders, veterinarians, abattoir workers) - occupational exposure to infected animals and ticks",
+        "Healthcare workers caring for CCHF patients - high risk of nosocomial transmission",
+        "People living in or traveling to CCHF-endemic regions",
+        "Outdoor activities in endemic areas during tick season (hiking, camping, hunting)",
+        "Contact with infected patients or their blood/body fluids",
+        "Inadequate infection control practices in healthcare settings",
+        "Lack of personal protective equipment (PPE)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Sudden onset of high fever (39-41°C), severe headache, myalgia, back pain, joint pain",
+          "Nausea, vomiting, diarrhea, abdominal pain",
+          "Flushed face, conjunctival injection, petechiae on palate and skin",
+          "Hemorrhagic phase (days 3-6): petechiae, ecchymoses, epistaxis, hematemesis, melena, hematuria, vaginal bleeding, bleeding from venipuncture sites",
+          "Hepatomegaly, jaundice, liver dysfunction",
+          "Neurological symptoms: confusion, agitation, mood changes",
+          "Symptoms typically last 2-3 weeks in survivors"
+        ],
+        "complications": [
+          "Severe hemorrhagic manifestations: gastrointestinal bleeding, pulmonary hemorrhage, intracranial hemorrhage",
+          "Disseminated intravascular coagulation (DIC)",
+          "Multi-organ failure: liver failure, kidney failure, respiratory failure",
+          "Shock and cardiovascular collapse",
+          "Neurological complications: encephalitis, seizures",
+          "Secondary bacterial infections",
+          "Death (case fatality rate 10-40%, higher in nosocomial cases)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with sudden onset of high fever + hemorrhagic manifestations (petechiae, bleeding) + epidemiological link (tick bite, contact with livestock, travel to endemic area, contact with CCHF patient)",
+          "confirmed": "Clinical illness + laboratory confirmation: positive RT-PCR for CCHFV RNA from blood, OR positive CCHFV IgM antibody, OR viral isolation (BSL-4 required)"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR for CCHFV RNA from blood - gold standard for early diagnosis (first 7-10 days of illness); highly sensitive and specific",
+        "CCHFV IgM antibody (ELISA) - detectable from day 5-7 of illness; indicates acute infection",
+        "CCHFV IgG antibody - indicates past infection or convalescence",
+        "Viral isolation - requires BSL-4 laboratory; rarely performed",
+        "Complete blood count: thrombocytopenia, leukopenia",
+        "Coagulation studies: prolonged PT/PTT, elevated D-dimer (DIC)",
+        "Liver function tests: elevated ALT, AST, bilirubin",
+        "All laboratory work must be performed under BSL-3 or BSL-4 conditions"
+      ],
+      "treatment": "Supportive care: fluid and electrolyte management, blood product transfusions (platelets, fresh frozen plasma, packed red cells), management of hemorrhage and shock. Ribavirin (antiviral): oral or IV ribavirin may reduce mortality if started early (within first 5 days of illness); evidence is limited but WHO recommends consideration. Strict isolation and infection control. Intensive care support for severe cases. No vaccine available.",
+      "infectionControl": {
+        "precautions": "Contact Precautions + Droplet Precautions (some guidelines recommend Airborne Precautions for aerosol-generating procedures). Strict isolation in single room (negative pressure preferred). Full PPE: double gloves, impermeable gown, N95 respirator or PAPR, face shield, boot covers. Minimize invasive procedures. Dedicated equipment. Limit number of healthcare workers. No visitors except essential family with full PPE",
+        "screening": "Screen for CCHF symptoms (fever, hemorrhage) and epidemiological risk factors (tick bite, livestock contact, travel to endemic area) at healthcare entry points in endemic regions. Immediate isolation of suspected cases",
+        "cohorting": "Isolate each CCHF patient in separate single room; avoid cohorting due to high risk",
+        "sourceControl": "Avoid aerosol-generating procedures if possible; use closed systems for blood collection; proper sharps disposal; safe handling of laboratory specimens (BSL-3/4)",
+        "environmental": "Enhanced cleaning and disinfection with EPA-registered disinfectants effective against enveloped viruses (bleach-based, accelerated hydrogen peroxide). Careful handling and disposal of contaminated materials as Category A infectious waste",
+        "staffEducation": "Rigorous training on PPE donning/doffing; avoid direct contact with blood and body fluids; immediate reporting of exposures; post-exposure monitoring and ribavirin prophylaxis if indicated"
+      },
+      "outbreakTriggers": [
+        "Any single confirmed or suspected case of CCHF (high-consequence pathogen)",
+        "Cluster of hemorrhagic fever cases in endemic area",
+        "Nosocomial transmission (healthcare-associated case)",
+        "Outbreak in livestock with human cases"
+      ],
+      "reportingCommunication": [
+        "Urgent immediate reporting (within hours) of any suspected or confirmed CCHF case to infection control, hospital administration, and public health authorities - CCHF is a notifiable disease and internationally reportable to WHO under International Health Regulations (IHR)",
+        "Activate rapid outbreak response team",
+        "Implement strict isolation and infection control measures immediately",
+        "Contact tracing: identify all contacts (healthcare workers, family members, community contacts); monitor for 14 days; consider ribavirin prophylaxis for high-risk exposures",
+        "Coordinate with public health, veterinary services, and vector control for outbreak investigation and control",
+        "Public health alerts and health messaging to healthcare facilities and communities in endemic areas",
+        "International notification if case involves international travel"
+      ],
+      "prevention": [
+        "Personal protective equipment (PPE): full PPE for healthcare workers caring for CCHF patients; protective clothing for livestock workers and abattoir workers",
+        "Tick control and avoidance: use insect repellents (DEET, permethrin), wear protective clothing (long sleeves, pants, boots), perform tick checks, avoid tick-infested areas during peak season",
+        "Safe slaughter and butchering practices: use gloves and protective clothing when handling livestock; avoid contact with blood and tissues",
+        "Infection control in healthcare: strict isolation, full PPE, safe injection practices, proper waste disposal",
+        "Livestock vaccination: vaccine available for animals in some countries (reduces viral load in animals)",
+        "Vector control: acaricides for tick control on livestock and in environment",
+        "Public education: awareness campaigns for livestock workers, healthcare workers, and communities in endemic areas",
+        "Early detection and isolation of cases",
+        "Post-exposure prophylaxis: ribavirin may be considered for high-risk exposures (limited evidence)",
+        "No human vaccine available (under development)"
+      ],
+      "references": [
+        {
+          "label": "WHO - Crimean-Congo Hemorrhagic Fever",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/crimean-congo-haemorrhagic-fever"
+        },
+        {
+          "label": "CDC - Crimean-Congo Hemorrhagic Fever",
+          "url": "https://www.cdc.gov/vhf/crimean-congo/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "rvf_hemorrhagic",
+      "name": "Rift Valley fever virus (RVFV)",
+      "scientificName": "Rift Valley fever virus (RVFV), genus Phlebovirus, family Phenyiviridae (formerly Bunyaviridae)",
+      "definition": "Enveloped negative-sense single-stranded RNA virus causing Rift Valley fever, a zoonotic disease affecting livestock and humans. Transmitted by mosquitoes and through direct contact with infected animal tissues/fluids. Causes fever, hemorrhagic disease, and abortion storms in livestock. In humans, causes febrile illness with potential for severe complications (hemorrhagic fever, encephalitis, retinitis). Endemic in Africa and Arabian Peninsula. Outbreaks associated with heavy rainfall and flooding.",
+      "reservoir": {
+        "primary": [
+          "Mosquitoes (Aedes and Culex species) - primary reservoir",
+          "Livestock (cattle, sheep, goats, camels) - amplifying hosts"
+        ],
+        "secondary": [
+          "Wild ruminants"
+        ],
+        "notes": "Mosquitoes are primary reservoir; virus maintained through transovarial transmission in Aedes eggs (can survive years in dry conditions). Livestock develop high viremia and serve as amplifying hosts. Outbreaks triggered by heavy rainfall/flooding that leads to massive mosquito emergence."
+      },
+      "transmission": {
+        "mode": "Mosquito bite (Aedes, Culex), direct contact with infected animal blood/tissues/fluids",
+        "routes": [
+          "Mosquito bite: bite of infected Aedes or Culex mosquito",
+          "Direct contact with infected animal blood, tissues, or body fluids: slaughtering, butchering, assisting with animal births, veterinary procedures - major route for human infection",
+          "Aerosol inhalation: during slaughter or handling of infected animals",
+          "Consumption of unpasteurized milk from infected animals (possible but rare)",
+          "Laboratory exposure (rare)"
+        ],
+        "notes": "Most human infections occur through direct contact with infected livestock during outbreaks. Farmers, herders, abattoir workers, and veterinarians at highest risk. No documented person-to-person transmission."
+      },
+      "incubationPeriod": {
+        "range": "2-6 days (range 2-7 days) from exposure to symptom onset",
+        "infectiousPeriod": "Viremic during acute febrile phase (first week). Can transmit to mosquitoes during viremia",
+        "seasonality": "Outbreaks associated with heavy rainfall and flooding (creates ideal mosquito breeding conditions). Seasonal patterns vary by region",
+        "geographic": "Endemic in sub-Saharan Africa, Egypt, Madagascar, Arabian Peninsula (Saudi Arabia, Yemen). Potential for spread to other regions with competent vectors"
+      },
+      "riskFactors": [
+        "Farmers, herders, and livestock workers - occupational exposure to infected animals",
+        "Abattoir workers and butchers - exposure to infected animal blood and tissues",
+        "Veterinarians - exposure during animal care and procedures",
+        "People living in flood-prone areas in endemic regions",
+        "Consumption of unpasteurized milk",
+        "Laboratory workers handling RVFV"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Mild illness (most common): sudden onset of fever, headache, myalgia, back pain, nausea, vomiting, photophobia. Symptoms last 4-7 days",
+          "Ocular disease (0.5-2%): retinitis, macular edema, retinal hemorrhages - can cause permanent vision loss",
+          "Meningoencephalitis (1%): severe headache, confusion, seizures, focal neurological deficits, coma",
+          "Hemorrhagic fever (<1%): jaundice, hemorrhagic manifestations (hematemesis, melena, petechiae, bleeding gums), liver failure, shock"
+        ],
+        "complications": [
+          "Permanent vision loss (from retinitis) - occurs in 0.5-2% of cases",
+          "Meningoencephalitis - case fatality rate ~50%",
+          "Hemorrhagic fever - case fatality rate ~50%",
+          "Liver failure, kidney failure",
+          "Death (overall case fatality rate <1%, but up to 50% in severe cases)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with acute febrile illness + epidemiological link (contact with livestock, animal birth/slaughter, mosquito exposure in endemic area during outbreak, especially after heavy rainfall/flooding)",
+          "confirmed": "Suspected case + laboratory confirmation: positive RT-PCR for RVFV RNA, OR positive IgM antibody, OR 4-fold rise in IgG titer, OR viral isolation"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR for RVFV RNA from serum - gold standard for early diagnosis (first 7 days)",
+        "IgM antibody (ELISA) - detectable from day 2-3 onwards; indicates acute infection",
+        "IgG antibody (ELISA) - indicates past infection; 4-fold rise confirms acute infection",
+        "Liver function tests: elevated transaminases, bilirubin (in severe cases)",
+        "Complete blood count: leukopenia, thrombocytopenia (in severe cases)",
+        "Ophthalmologic examination: for retinitis (fundoscopy shows retinal lesions)",
+        "All laboratory work should be performed under BSL-3 conditions"
+      ],
+      "treatment": "Supportive care: fluids, antipyretics, pain management. Severe cases: intensive care, management of hemorrhage, liver failure, shock. Ribavirin: may be beneficial if started early (limited evidence). Ocular disease: ophthalmology consultation, corticosteroids may be considered. No specific antiviral therapy with proven efficacy. Livestock vaccine available (for animals, not humans).",
+      "infectionControl": {
+        "precautions": "Standard Precautions. No documented person-to-person transmission. Main focus is preventing exposure to infected animals and mosquitoes",
+        "screening": "Screen for RVF symptoms in people with animal contact or mosquito exposure in endemic areas during outbreaks",
+        "cohorting": "Not necessary",
+        "sourceControl": "Protect patients from mosquito bites during viremic phase",
+        "environmental": "Vector control: mosquito surveillance and control (larvicides, adulticiding). Animal control: restrict movement of livestock during outbreaks, safe disposal of animal carcasses",
+        "staffEducation": "Educate on RVF recognition, occupational risks (livestock workers), vector control, safe animal handling practices"
+      },
+      "outbreakTriggers": [
+        "≥2 linked human or animal cases in same area",
+        "Sudden increase in livestock abortions or deaths (abortion storms in sheep/goats)",
+        "Heavy rainfall or flooding in endemic areas (environmental trigger)",
+        "Detection of RVFV in mosquito pools or livestock"
+      ],
+      "reportingCommunication": [
+        "Immediate notification (within 24 hours) of suspected or confirmed RVF cases to animal and human health authorities - RVF is a notifiable disease",
+        "Implement One Health outbreak response: coordinate human health, animal health, and environmental agencies",
+        "Outbreak control measures: livestock movement restrictions, animal vaccination, vector control, public health messaging, safe slaughter practices",
+        "Enhanced surveillance: active case finding in humans and animals, mosquito surveillance, environmental monitoring (rainfall, flooding)",
+        "International notification if outbreak threatens other countries"
+      ],
+      "prevention": [
+        "Livestock vaccination: live attenuated and inactivated vaccines available for animals (most effective prevention)",
+        "Vector control: mosquito surveillance and control, eliminate breeding sites, larvicides",
+        "Personal protection for high-risk occupations: gloves, protective clothing, face shields when handling animals, assisting births, or slaughtering",
+        "Safe animal handling practices: avoid contact with blood and tissues of sick animals, proper disposal of aborted fetuses and placentas",
+        "Avoid consumption of unpasteurized milk during outbreaks",
+        "Restrict livestock movement during outbreaks",
+        "Public education: occupational risks, safe animal handling, mosquito bite prevention",
+        "Early warning systems: monitor rainfall, flooding, mosquito populations",
+        "No human vaccine widely available (experimental vaccines exist)"
+      ],
+      "references": [
+        {
+          "label": "WHO - Rift Valley Fever",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/rift-valley-fever"
+        },
+        {
+          "label": "CDC - Rift Valley Fever",
+          "url": "https://www.cdc.gov/vhf/rvf/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "yellow_fever_hemorrhagic",
+      "name": "Yellow fever virus",
+      "scientificName": "Yellow fever virus (YFV), genus Flavivirus, family Flaviviridae",
+      "definition": "Enveloped positive-sense single-stranded RNA virus causing yellow fever, an acute viral hemorrhagic disease with high mortality rate (20-50% in severe cases). Transmitted by mosquitoes (Aedes and Haemagogus species). Three transmission cycles: sylvatic (jungle), intermediate (savannah), and urban. Vaccine-preventable disease. Endemic in tropical Africa and South America. International Health Regulations require yellow fever vaccination for travelers to endemic areas.",
+      "reservoir": {
+        "primary": [
+          "Non-human primates (monkeys) - primary reservoir in sylvatic cycle",
+          "Aedes and Haemagogus mosquitoes"
+        ],
+        "secondary": [
+          "Humans (amplifying host in urban outbreaks)"
+        ],
+        "notes": "Sylvatic (jungle) cycle: monkeys and forest mosquitoes (Haemagogus in Americas, Aedes in Africa). Intermediate cycle: monkeys and peri-domestic mosquitoes in savannah. Urban cycle: humans and Aedes aegypti mosquitoes."
+      },
+      "transmission": {
+        "mode": "Mosquito bite (Aedes aegypti in urban cycle, Haemagogus and Aedes in sylvatic cycle)",
+        "routes": [
+          "Mosquito bite: bite of infected mosquito - only route of transmission",
+          "Sylvatic cycle: forest mosquitoes (Haemagogus in Americas, Aedes in Africa) transmit between monkeys and to humans entering forests",
+          "Urban cycle: Aedes aegypti transmits between humans in urban areas - can cause large explosive outbreaks"
+        ],
+        "notes": "No person-to-person transmission. Urban outbreaks occur when Aedes aegypti mosquitoes are present and unvaccinated humans are infected. Sylvatic yellow fever occurs in forest workers, hunters, travelers."
+      },
+      "incubationPeriod": {
+        "range": "3-6 days (range 3-7 days) from mosquito bite to symptom onset",
+        "infectiousPeriod": "Viremic (infectious to mosquitoes) from 1 day before symptom onset to 5 days after symptom onset",
+        "seasonality": "Year-round in tropical regions; seasonal peaks during rainy season",
+        "geographic": "Endemic in tropical Africa (47 countries) and South America (13 countries). Not found in Asia despite presence of competent vectors. Estimated 200,000 cases and 30,000 deaths annually"
+      },
+      "riskFactors": [
+        "Unvaccinated individuals (most important risk factor)",
+        "Travelers to yellow fever-endemic areas without vaccination",
+        "Forest workers, hunters, and people entering jungle areas (sylvatic yellow fever)",
+        "Urban residents in endemic areas during outbreaks (urban yellow fever)",
+        "Elderly (higher mortality)",
+        "Infants (higher mortality)",
+        "Immunocompromised individuals"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Acute phase (3-4 days): sudden onset of fever, chills, severe headache, back pain, myalgia, nausea, vomiting, fatigue. Faget sign: bradycardia despite high fever",
+          "Period of remission (24-48 hours): symptoms improve, many patients recover at this stage",
+          "Toxic phase (15% of cases): fever returns, jaundice (yellowing - gives disease its name), abdominal pain, vomiting (may contain blood - 'black vomit'), bleeding (gums, nose, eyes, stomach), oliguria, liver and kidney failure, delirium, seizures, coma"
+        ],
+        "complications": [
+          "Severe yellow fever (toxic phase): jaundice, hemorrhage, multi-organ failure (liver, kidney, heart)",
+          "Hepatorenal syndrome",
+          "Myocarditis and arrhythmias",
+          "Encephalitis",
+          "Secondary bacterial infections",
+          "Death (case fatality rate: 20-50% in severe cases, up to 80% in some outbreaks)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with acute onset of fever + jaundice within 14 days of symptom onset, AND residence in or travel to yellow fever-endemic area",
+          "confirmed": "Suspected case + laboratory confirmation: positive RT-PCR for yellow fever RNA, OR positive IgM antibody (with negative dengue IgM), OR 4-fold rise in IgG titer, OR viral isolation"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR for yellow fever RNA from serum - gold standard for early diagnosis (first 5 days)",
+        "IgM antibody (ELISA) - detectable from day 5 onwards; cross-reacts with other flaviviruses (dengue, Zika, West Nile)",
+        "Plaque reduction neutralization test (PRNT) - confirmatory test to differentiate from other flaviviruses",
+        "Liver function tests: elevated bilirubin, transaminases (ALT, AST), prolonged PT/PTT",
+        "Complete blood count: leukopenia, thrombocytopenia",
+        "Kidney function tests: elevated creatinine, BUN (renal failure)",
+        "Histopathology (post-mortem): mid-zonal hepatic necrosis with sparing of periportal hepatocytes (Councilman bodies)"
+      ],
+      "treatment": "Supportive care: hospitalization for severe cases, fluid and electrolyte management, blood transfusions for hemorrhage, dialysis for renal failure, intensive care for multi-organ failure. No specific antiviral therapy available. Avoid aspirin and NSAIDs (bleeding risk). Yellow fever vaccine for prevention (not treatment).",
+      "infectionControl": {
+        "precautions": "Standard Precautions. Yellow fever is not transmitted person-to-person. Main focus is vector control and vaccination",
+        "screening": "Screen for yellow fever symptoms in febrile patients from endemic areas; check vaccination status",
+        "cohorting": "Not necessary",
+        "sourceControl": "Protect viremic patients from mosquito bites to prevent transmission to mosquitoes. Isolate in screened rooms or use mosquito nets",
+        "environmental": "Vector control: eliminate mosquito breeding sites, indoor residual spraying, larvicides, urban mosquito control (Aedes aegypti)",
+        "staffEducation": "Educate on yellow fever recognition, vaccination requirements, vector control"
+      },
+      "outbreakTriggers": [
+        "Any confirmed non-imported yellow fever case (especially in urban area)",
+        "Death from suspected yellow fever",
+        "Sudden increase in acute jaundice cases in endemic area",
+        "Epizootic (outbreak in monkeys) in endemic area"
+      ],
+      "reportingCommunication": [
+        "Immediate reporting (within hours) of any suspected or confirmed yellow fever case to national public health authorities and WHO - yellow fever is internationally notifiable under International Health Regulations (IHR)",
+        "Implement outbreak control measures: mass vaccination campaigns, vector control (urban Aedes aegypti elimination), public health messaging",
+        "Enhanced surveillance: active case finding, entomological surveillance, epizootic surveillance (monkey deaths)",
+        "Travel advisories and vaccination requirements",
+        "Coordinate with vector control, immunization programs, wildlife/veterinary services, and international health authorities"
+      ],
+      "prevention": [
+        "Yellow fever vaccination (most effective prevention): live attenuated vaccine (17D strain), single dose provides lifelong immunity (>95% protection). Recommended for: all residents of endemic areas, travelers to endemic areas (required for entry to some countries)",
+        "Vector control: eliminate Aedes aegypti breeding sites in urban areas, indoor residual spraying, larvicides",
+        "Personal protection: insect repellent, long-sleeves and pants, mosquito nets",
+        "Travel advisories: vaccination required for travelers to endemic areas; some countries require proof of vaccination (International Certificate of Vaccination)",
+        "Mass vaccination campaigns during outbreaks",
+        "Epizootic surveillance: monitor monkey populations for yellow fever deaths (early warning)",
+        "Contraindications to vaccine: infants <9 months, pregnant women, severe immunosuppression, severe egg allergy, history of thymus disorder"
+      ],
+      "references": [
+        {
+          "label": "WHO - Yellow Fever",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/yellow-fever"
+        },
+        {
+          "label": "CDC - Yellow Fever",
+          "url": "https://www.cdc.gov/yellowfever/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "smallpox",
+      "name": "Variola virus (Smallpox)",
+      "scientificName": "Variola virus (VARV), genus Orthopoxvirus, family Poxviridae",
+      "definition": "Large enveloped double-stranded DNA virus causing smallpox, a severe and highly contagious disease eradicated globally in 1980 through vaccination. Two forms: Variola major (case fatality rate 30%) and Variola minor (case fatality rate 1%). Characterized by fever and distinctive progressive skin rash (centrifugal distribution). Transmitted person-to-person through respiratory droplets and contact. No population immunity exists. Major bioterrorism concern. Virus stocks exist only in two WHO-authorized laboratories (CDC, USA and Vector Institute, Russia).",
+      "reservoir": {
+        "primary": [
+          "Humans (reservoir extinct since eradication)"
+        ],
+        "secondary": [],
+        "notes": "Smallpox was eradicated in 1980. No natural reservoir exists. Virus stocks maintained in two WHO-authorized BSL-4 laboratories for research and vaccine development. Major bioterrorism concern due to lack of population immunity and high transmissibility."
+      },
+      "transmission": {
+        "mode": "Airborne, droplet, and contact transmission",
+        "routes": [
+          "Airborne transmission: inhalation of aerosolized virus from respiratory secretions (can spread over long distances)",
+          "Droplet transmission: large respiratory droplets from coughing, sneezing, talking",
+          "Direct contact: contact with skin lesions, scabs, or body fluids",
+          "Fomite transmission: contact with contaminated bedding, clothing, or objects (virus can survive on surfaces for days to weeks)",
+          "No animal or insect vectors"
+        ],
+        "notes": "Smallpox is highly contagious. One infected person can infect 5-7 others (R0=5-7). Most contagious during first week of rash. Airborne transmission allows spread over long distances. Fomites can remain infectious for extended periods."
+      },
+      "incubationPeriod": {
+        "range": "7-19 days (average 10-14 days) from exposure to symptom onset",
+        "infectiousPeriod": "Infectious from onset of rash until all scabs have fallen off (typically 3-4 weeks). Most contagious during first week of rash. NOT infectious during incubation period or prodrome (before rash)",
+        "seasonality": "No seasonal pattern (eradicated)",
+        "geographic": "Eradicated globally in 1980. Last naturally occurring case: Somalia, 1977. Last case (laboratory-acquired): UK, 1978"
+      },
+      "riskFactors": [
+        "No population immunity (vaccination discontinued after eradication)",
+        "Laboratory workers handling Variola virus (only in two authorized BSL-4 labs)",
+        "Bioterrorism event (intentional release)",
+        "Healthcare workers caring for smallpox patients (if outbreak occurs)",
+        "Close contacts of smallpox patients"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Prodrome (2-4 days): sudden onset of high fever (38-40°C), severe headache, back pain, malaise, vomiting. NO RASH during prodrome",
+          "Early rash (days 1-4): rash appears first on face, hands, forearms, then spreads to trunk (centrifugal distribution - opposite of chickenpox). Macules → papules → vesicles → pustules (all lesions in same stage of development - key diagnostic feature)",
+          "Pustular stage (days 5-8): vesicles become pustules (firm, deep-seated, umbilicated). Fever may return. Severe pain",
+          "Scab stage (days 9-14): pustules crust over and form scabs. Scabs fall off over 1-2 weeks, leaving pitted scars (pockmarks)",
+          "Characteristic features: centrifugal rash distribution, all lesions in same stage, lesions on palms and soles, deep-seated pustules"
+        ],
+        "complications": [
+          "Variola major: severe disease, 30% mortality. Complications: secondary bacterial infections, pneumonia, encephalitis, blindness (corneal scarring), arthritis",
+          "Hemorrhagic smallpox (rare, <3%): severe bleeding, 95-100% mortality",
+          "Flat-type smallpox (rare, <10%): flat lesions, 50-70% mortality",
+          "Permanent scarring (pockmarks) on face and body in survivors",
+          "Blindness from corneal scarring",
+          "Death (Variola major: 30%, Variola minor: 1%)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with acute onset of fever >38°C + characteristic centrifugal rash (all lesions in same stage, deep-seated pustules, lesions on palms/soles) + NO history of smallpox vaccination or recent contact with vaccinated person",
+          "confirmed": "Suspected case + laboratory confirmation: positive PCR for Variola DNA, OR electron microscopy showing brick-shaped poxvirus, OR viral isolation (BSL-4 required)"
+        }
+      },
+      "diagnosis": [
+        "PCR for Variola DNA from lesion fluid, scabs, or blood - gold standard; can differentiate Variola from other orthopoxviruses",
+        "Electron microscopy: brick-shaped poxvirus (cannot differentiate Variola from other poxviruses)",
+        "Viral isolation and culture - requires BSL-4 laboratory",
+        "Clinical diagnosis: characteristic centrifugal rash, all lesions in same stage, lesions on palms/soles",
+        "Differential diagnosis: chickenpox (varicella) - key differences: chickenpox has centripetal distribution, lesions in different stages, superficial vesicles, rare on palms/soles",
+        "All suspected smallpox specimens must be handled under BSL-4 conditions and reported immediately to WHO"
+      ],
+      "treatment": "Supportive care: fluid and electrolyte management, pain control, wound care, treatment of secondary bacterial infections. Antivirals: Tecovirimat (TPOXX) - FDA-approved antiviral for smallpox (stockpiled for bioterrorism preparedness); effective if started early. Cidofovir and Brincidofovir - alternative antivirals. Vaccination: smallpox vaccine (vaccinia virus) can prevent or reduce severity if given within 3-4 days of exposure (post-exposure prophylaxis). Vaccinia immune globulin (VIG) for vaccine complications.",
+      "infectionControl": {
+        "precautions": "Airborne Precautions + Contact Precautions. Strict isolation in negative pressure room. Full PPE: N95 respirator or PAPR, gown, gloves, face shield. Dedicated equipment. Limit healthcare workers. No visitors. Isolate until all scabs have fallen off",
+        "screening": "Immediate isolation of any suspected smallpox case. Screen all contacts for symptoms",
+        "cohorting": "Isolate each patient in separate negative pressure room if possible; cohort confirmed cases if necessary",
+        "sourceControl": "Patient should wear surgical mask if tolerated. Minimize aerosol-generating procedures",
+        "environmental": "Enhanced cleaning and disinfection with EPA-registered disinfectants effective against poxviruses (bleach-based). Careful handling of contaminated materials (bedding, clothing) - autoclave or incinerate. Virus can survive on fomites for extended periods",
+        "staffEducation": "Rigorous training on PPE, airborne/contact precautions, recognition of smallpox, vaccination procedures, ring vaccination strategy"
+      },
+      "outbreakTriggers": [
+        "Any single suspected or confirmed case of smallpox triggers immediate international alert and emergency response (smallpox is eradicated - any case is public health emergency of international concern)",
+        "Bioterrorism event (intentional release)"
+      ],
+      "reportingCommunication": [
+        "Immediate global notification (within hours) to WHO, CDC, and national health authorities - smallpox is internationally notifiable under IHR. Any suspected case is public health emergency",
+        "Activate emergency response: international outbreak response teams, bioterrorism response, mass vaccination planning",
+        "Implement strict isolation and infection control immediately",
+        "Ring vaccination: vaccinate all contacts and contacts of contacts (within 3-4 days of exposure)",
+        "Mass vaccination campaigns if widespread outbreak",
+        "Coordinate with public health, infection control, laboratory (BSL-4), law enforcement (bioterrorism investigation), military, and international partners",
+        "Public health messaging and risk communication",
+        "Travel restrictions and quarantine measures"
+      ],
+      "prevention": [
+        "Smallpox vaccination (vaccinia virus): ACAM2000 (live vaccinia virus, single dose) and JYNNEOS (live attenuated vaccinia virus, two doses) - stockpiled for bioterrorism preparedness. Vaccination provides immunity for 3-5 years, partial protection for 10+ years",
+        "Ring vaccination strategy: vaccinate all contacts and contacts of contacts within 3-4 days of exposure (can prevent or reduce severity)",
+        "Post-exposure prophylaxis: vaccination within 3-4 days of exposure",
+        "Strict laboratory biosafety: Variola virus stocks maintained only in two WHO-authorized BSL-4 laboratories (CDC, USA and Vector Institute, Russia)",
+        "Bioterrorism preparedness: vaccine stockpiles, response plans, healthcare worker training, surveillance",
+        "Isolation of cases until all scabs have fallen off",
+        "Infection control in healthcare: airborne/contact precautions, negative pressure rooms, PPE",
+        "Public education and preparedness drills"
+      ],
+      "references": [
+        {
+          "label": "WHO - Smallpox",
+          "url": "https://www.who.int/health-topics/smallpox"
+        },
+        {
+          "label": "CDC - Smallpox",
+          "url": "https://www.cdc.gov/smallpox/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "equine_encephalitis",
+      "name": "Venezuelan/Eastern/Western Equine Encephalitis viruses (VEEV/EEEV/WEEV)",
+      "scientificName": "Venezuelan equine encephalitis virus (VEEV), Eastern equine encephalitis virus (EEEV), Western equine encephalitis virus (WEEV), genus Alphavirus, family Togaviridae",
+      "definition": "Enveloped positive-sense single-stranded RNA viruses causing equine and human encephalitis. Transmitted by mosquitoes. Three distinct viruses with different geographic distributions, vectors, and severity. EEEV has highest human mortality (30-70%). VEEV can cause large outbreaks. All three are potential bioterrorism agents due to aerosol infectivity and ability to cause severe neurological disease. Category B bioterrorism agents (CDC).",
+      "reservoir": {
+        "primary": [
+          "Birds (EEEV, WEEV)",
+          "Rodents (VEEV)",
+          "Mosquitoes",
+          "Horses (amplifying hosts for all three)"
+        ],
+        "secondary": [],
+        "notes": "EEEV: birds are primary reservoir, Culiseta melanura mosquito maintains bird-mosquito cycle. WEEV: birds are primary reservoir, Culex tarsalis mosquito. VEEV: rodents are primary reservoir, multiple mosquito species. Horses develop high viremia and serve as amplifying hosts. Humans are dead-end hosts (low viremia, do not transmit back to mosquitoes)."
+      },
+      "transmission": {
+        "mode": "Mosquito bite (primary), aerosol transmission (laboratory/bioterrorism)",
+        "routes": [
+          "Mosquito bite: bite of infected mosquito - primary natural route",
+          "EEEV: Culiseta melanura (bird-mosquito cycle), Aedes and Coquillettidia (bridge vectors to humans/horses)",
+          "WEEV: Culex tarsalis (primary vector)",
+          "VEEV: Multiple mosquito species (Aedes, Culex, others)",
+          "Aerosol transmission: laboratory exposure, potential bioterrorism route (all three viruses are infectious via aerosol)",
+          "No person-to-person transmission"
+        ],
+        "notes": "Natural transmission is mosquito-borne. All three viruses are highly infectious via aerosol route (laboratory accidents documented). Bioterrorism concern due to aerosol infectivity, ability to cause severe disease, and ease of production."
+      },
+      "incubationPeriod": {
+        "range": "2-10 days (average 4-6 days) from mosquito bite to symptom onset. Shorter incubation (1-5 days) after aerosol exposure",
+        "infectiousPeriod": "Viremic during acute illness (first few days). Humans are dead-end hosts (low viremia, do not transmit to mosquitoes)",
+        "seasonality": "Summer and fall (June-October in Northern Hemisphere) corresponding to mosquito activity",
+        "geographic": "EEEV: Eastern USA, Caribbean, Central/South America. WEEV: Western USA, Canada, Central/South America. VEEV: Central and South America, southern USA (Texas, Florida). Sporadic cases and outbreaks"
+      },
+      "riskFactors": [
+        "Outdoor activities in endemic areas during mosquito season (agriculture, recreation)",
+        "Occupational exposure: farmers, outdoor workers, equestrians",
+        "Laboratory workers handling these viruses (aerosol risk)",
+        "Elderly and children (higher risk of severe neurological disease)",
+        "Immunocompromised individuals",
+        "Bioterrorism event (intentional aerosol release)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Mild illness (most common): sudden onset of fever, headache, myalgia, malaise - similar to influenza. Symptoms last 3-5 days",
+          "Neuroinvasive disease (encephalitis): severe headache, high fever, altered mental status, confusion, seizures, focal neurological deficits, coma. Onset 3-10 days after initial symptoms",
+          "EEEV: highest rate of neuroinvasive disease (30-50% of symptomatic cases) and mortality (30-70%)",
+          "VEEV: lower rate of neuroinvasive disease (<1% of symptomatic cases) but can cause large outbreaks",
+          "WEEV: intermediate severity, neuroinvasive disease more common in children and elderly"
+        ],
+        "complications": [
+          "Severe encephalitis: seizures, coma, permanent neurological sequelae",
+          "Long-term neurological sequelae in survivors: cognitive impairment, personality changes, seizures, paralysis (especially EEEV - 50-75% of survivors have permanent neurological damage)",
+          "Death: EEEV (30-70% mortality), WEEV (3-7% mortality), VEEV (<1% mortality)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with acute onset of fever + neurological symptoms (encephalitis, meningitis) during mosquito season + residence in or travel to endemic area, OR laboratory worker with potential exposure, OR suspected bioterrorism event",
+          "confirmed": "Suspected case + laboratory confirmation: positive IgM antibody in serum or CSF (with PRNT confirmation), OR 4-fold rise in IgG titer, OR positive RT-PCR from serum or CSF, OR viral isolation"
+        }
+      },
+      "diagnosis": [
+        "IgM antibody (ELISA) in serum or CSF - primary diagnostic test; detectable from day 3-8 onwards",
+        "Plaque reduction neutralization test (PRNT) - confirmatory test to differentiate from other alphaviruses",
+        "RT-PCR for viral RNA from serum or CSF - low sensitivity due to low viremia in humans",
+        "Viral isolation - requires BSL-3 laboratory",
+        "CSF analysis: pleocytosis (lymphocytic or neutrophilic), elevated protein, normal glucose",
+        "MRI brain: T2/FLAIR hyperintensities in basal ganglia, thalamus, brainstem (in encephalitis)",
+        "All laboratory work should be performed under BSL-3 conditions (potential bioterrorism agents)"
+      ],
+      "treatment": "Supportive care: hospitalization for neuroinvasive disease, seizure control, management of increased intracranial pressure, respiratory support if needed, intensive care. No specific antiviral therapy available. Rehabilitation for neurological sequelae. VEEV vaccine available for laboratory workers and military personnel (investigational new drug, not licensed).",
+      "infectionControl": {
+        "precautions": "Standard Precautions. No person-to-person transmission. Main focus is vector control and laboratory biosafety",
+        "screening": "Screen for symptoms in people with mosquito exposure in endemic areas or laboratory workers with potential exposure",
+        "cohorting": "Not necessary",
+        "sourceControl": "Protect patients from mosquito bites during viremic phase",
+        "environmental": "Vector control: mosquito surveillance and control (larvicides, adulticiding). Laboratory biosafety: BSL-3 required for work with these viruses; use biosafety cabinets to prevent aerosol exposure",
+        "staffEducation": "Educate on recognition of equine encephalitis, vector control, outdoor precautions, laboratory biosafety, bioterrorism preparedness"
+      },
+      "outbreakTriggers": [
+        "≥2 linked human or equine cases of encephalitis in same geographic area",
+        "Suspect cluster of neuroinvasive disease during mosquito season",
+        "Known or suspected bioterrorism event (aerosol release)",
+        "Laboratory exposure or accident"
+      ],
+      "reportingCommunication": [
+        "Report outbreak to public health and laboratory authorities",
+        "Immediate notification if bioterrorism suspected (law enforcement, FBI, CDC)",
+        "Implement outbreak control measures: mosquito surveillance and control, public health messaging, equine vaccination",
+        "Enhanced surveillance: active case finding, mosquito trapping and testing, equine surveillance",
+        "Coordinate with public health, vector control, veterinary services, laboratory (BSL-3), and law enforcement (if bioterrorism)",
+        "Public health messaging: outdoor precautions, mosquito bite prevention, equine vaccination"
+      ],
+      "prevention": [
+        "Vector control: mosquito surveillance and control, eliminate breeding sites, larvicides, adulticiding",
+        "Personal protection: insect repellent (DEET, picaridin), long-sleeves and pants, avoid outdoor activities at dusk/dawn (peak mosquito biting times)",
+        "Equine vaccination: vaccines available for horses (EEEV, WEEV, VEEV) - reduces equine cases and human risk",
+        "Human vaccination: VEEV vaccine (TC-83) available for laboratory workers and military personnel (investigational new drug, not licensed). EEEV and WEEV vaccines under development",
+        "Laboratory biosafety: BSL-3 required, biosafety cabinets, respiratory protection, training",
+        "Bioterrorism preparedness: surveillance, response plans, vaccine stockpiles (military)",
+        "Public education: outdoor precautions, mosquito bite prevention, report sick horses"
+      ],
+      "references": [
+        {
+          "label": "CDC - Eastern Equine Encephalitis",
+          "url": "https://www.cdc.gov/easternequineencephalitis/index.html"
+        },
+        {
+          "label": "CDC - Western Equine Encephalitis",
+          "url": "https://www.cdc.gov/westernequineencephalitis/index.html"
+        },
+        {
+          "label": "CDC - Venezuelan Equine Encephalitis",
+          "url": "https://www.cdc.gov/venezuelanequineencephalitis/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    }
+  ]
+}

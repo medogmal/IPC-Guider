@@ -1,0 +1,358 @@
+{
+  "version": 1,
+  "groupId": "dimorphic_fungal",
+  "groupName": "Dimorphic Fungal Outbreak Pathogens",
+  "type": "fungal",
+  "updatedAt": "2025-01-14T00:00:00Z",
+  "pathogens": [
+    {
+      "id": "histoplasma",
+      "name": "Histoplasma capsulatum",
+      "scientificName": "Histoplasma capsulatum, phylum Ascomycota, class Eurotiomycetes. Dimorphic fungus (mold in environment, yeast in tissue)",
+      "definition": "Dimorphic fungus causing histoplasmosis, the most common endemic mycosis in North America. Exists as mold in soil (produces microconidia) and converts to yeast form at body temperature. Endemic in Ohio and Mississippi River valleys (USA), Central/South America, Africa, Asia. Most infections are asymptomatic or mild. Severe disease in immunocompromised (disseminated histoplasmosis). Outbreaks associated with activities that disturb contaminated soil (construction, demolition, cave exploration, cleaning bird roosts).",
+      "reservoir": {
+        "primary": [
+          "Soil contaminated with bird droppings (chickens, starlings, blackbirds)",
+          "Soil contaminated with bat guano (bat caves, attics, old buildings)"
+        ],
+        "secondary": [
+          "Decaying wood",
+          "Compost"
+        ],
+        "notes": "Histoplasma thrives in nitrogen-rich soil contaminated with bird or bat droppings. Birds do not carry the fungus (body temperature too high) but their droppings enrich soil. Bats can be infected and excrete fungus in guano. Disturbance of contaminated soil releases airborne microconidia."
+      },
+      "transmission": {
+        "mode": "Inhalation of airborne microconidia from contaminated soil",
+        "routes": [
+          "Inhalation of airborne microconidia (2-5 micrometers) - primary route",
+          "Activities that disturb contaminated soil: construction, demolition, excavation, landscaping",
+          "Cave exploration (bat guano exposure)",
+          "Cleaning bird roosts, chicken coops, old buildings",
+          "Rarely: laboratory exposure (handling cultures)",
+          "No person-to-person transmission"
+        ],
+        "notes": "Microconidia become airborne when contaminated soil is disturbed. Can travel long distances on wind. Outbreaks often involve groups exposed to same contaminated site. No person-to-person transmission (yeast form in tissue is not infectious)."
+      },
+      "incubationPeriod": {
+        "range": "3-17 days (average 10 days) from exposure to symptom onset",
+        "infectiousPeriod": "Not contagious person-to-person. Environmental source remains infectious as long as contaminated soil present",
+        "seasonality": "Spring and fall (increased outdoor activities, soil disturbance)",
+        "geographic": "Endemic in Ohio and Mississippi River valleys (USA), Central and South America, parts of Africa and Asia. Sporadic cases worldwide"
+      },
+      "riskFactors": [
+        "Exposure to bat caves or bird roosts",
+        "Construction, demolition, excavation work in endemic areas",
+        "Outdoor occupations: farming, landscaping, forestry",
+        "Immunosuppression: HIV/AIDS (CD4 <200), transplant recipients, TNF-alpha inhibitors, corticosteroids",
+        "Infants and elderly (more severe disease)",
+        "Residence in or travel to endemic areas"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Asymptomatic infection: 90% of infections are asymptomatic or mild",
+          "Acute pulmonary histoplasmosis: flu-like illness (fever, chills, headache, myalgia, dry cough, chest pain), occurs 3-17 days after heavy exposure. Self-limited in immunocompetent",
+          "Chronic pulmonary histoplasmosis: chronic cough, weight loss, night sweats, hemoptysis - mimics tuberculosis. Occurs in patients with underlying lung disease (COPD, emphysema)",
+          "Disseminated histoplasmosis: fever, weight loss, hepatosplenomegaly, pancytopenia, adrenal insufficiency, CNS involvement (meningitis). Occurs in severely immunocompromised (HIV/AIDS, transplant)",
+          "Mediastinal complications: mediastinal lymphadenitis, fibrosing mediastinitis (rare, severe complication)"
+        ],
+        "complications": [
+          "Acute respiratory distress syndrome (ARDS) after heavy exposure",
+          "Fibrosing mediastinitis (progressive fibrosis of mediastinum, can be fatal)",
+          "Pericarditis",
+          "Adrenal insufficiency (Addison's disease)",
+          "CNS involvement: meningitis, brain lesions",
+          "Death (rare in immunocompetent; high mortality in disseminated disease if untreated)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with acute respiratory illness + exposure to contaminated soil, caves, or bird/bat droppings in endemic area within preceding 3 weeks, OR immunocompromised patient with fever + hepatosplenomegaly + pancytopenia",
+          "confirmed": "Clinical illness + laboratory confirmation: positive culture, histopathology showing yeast forms, positive Histoplasma antigen, or 4-fold rise in antibody titer"
+        }
+      },
+      "diagnosis": [
+        "Histoplasma antigen (urine or serum): rapid test, high sensitivity (>90%) for disseminated disease, lower for acute pulmonary. Useful for diagnosis and monitoring treatment response",
+        "Culture: blood, bone marrow, respiratory specimens, tissue - gold standard but slow (2-6 weeks). Yeast forms in tissue, mold in culture",
+        "Histopathology: tissue biopsy showing small (2-4 micrometers) oval yeast forms within macrophages. Silver stain (GMS, PAS)",
+        "Serology: complement fixation, immunodiffusion - useful for acute pulmonary histoplasmosis. 4-fold rise in titer or single high titer",
+        "PCR: blood or tissue - increasing use but not widely available",
+        "Chest X-ray/CT: diffuse nodular infiltrates, hilar lymphadenopathy, cavitation (chronic), calcified granulomas (old infection)"
+      ],
+      "treatment": "Itraconazole - first-line for mild to moderate histoplasmosis (oral, 6-12 weeks for acute pulmonary, 12-24 months for chronic pulmonary). Amphotericin B (liposomal) - first-line for severe or disseminated histoplasmosis (IV, 1-2 weeks), then step down to itraconazole. Fluconazole - alternative if itraconazole not tolerated. Treatment duration: acute pulmonary (6-12 weeks), chronic pulmonary (12-24 months), disseminated (12 months minimum). Lifelong suppressive therapy for HIV/AIDS patients with CD4 <150 until immune reconstitution. Corticosteroids for severe respiratory distress or mediastinal complications.",
+      "infectionControl": {
+        "precautions": "Standard Precautions (no person-to-person transmission). No isolation needed",
+        "screening": "Not applicable (no person-to-person transmission)",
+        "cohorting": "Not necessary",
+        "sourceControl": "Control environmental sources: avoid disturbing contaminated soil, decontaminate sites before work",
+        "environmental": "Environmental risk control: identify and remediate contaminated sites before construction/demolition. Soil decontamination: formaldehyde spray (3-5%) can reduce spore burden but not practical for large areas. Dust suppression: water spray during soil disturbance. Respiratory protection: N95 respirators or PAPRs for workers in high-risk areas (caves, construction in endemic areas, cleaning bird roosts). Restrict access to contaminated sites during remediation",
+        "staffEducation": "Educate workers on histoplasmosis risks, proper respiratory protection, recognition of symptoms, importance of reporting exposures"
+      },
+      "outbreakTriggers": [
+        "≥2 cases with common exposure site (caves, construction site, bird roost, old building) within 3-17 days",
+        "Cluster of severe respiratory disease in endemic area",
+        "Increased incidence above baseline in endemic area"
+      ],
+      "reportingCommunication": [
+        "Notify public health authorities if outbreak suspected",
+        "Initiate environmental investigation: identify exposure site, assess contamination, implement control measures",
+        "Case finding: identify all persons exposed to same site, screen for symptoms",
+        "Implement control measures: restrict access to contaminated site, respiratory protection for workers, soil decontamination if feasible",
+        "Communication with exposed persons: educate on symptoms, when to seek care",
+        "Coordinate with occupational health, environmental health, public health"
+      ],
+      "prevention": [
+        "Avoid exposure during soil disturbance in endemic areas: avoid caves, old buildings with bird/bat droppings, construction sites",
+        "Respiratory protection: N95 respirators or PAPRs for workers in high-risk areas (construction, demolition, cave exploration, cleaning bird roosts in endemic areas)",
+        "Environmental assessment: assess sites for contamination before construction/demolition, implement control measures",
+        "Dust suppression: water spray during soil disturbance",
+        "Soil decontamination: formaldehyde spray for small areas (not practical for large sites)",
+        "Worker education: recognize risks, use respiratory protection, report symptoms",
+        "Public education: avoid disturbing bird/bat droppings, recognize symptoms, seek care if exposed",
+        "Surveillance: monitor for outbreaks in endemic areas, investigate clusters"
+      ],
+      "references": [
+        {
+          "label": "CDC - Histoplasmosis",
+          "url": "https://www.cdc.gov/fungal/diseases/histoplasmosis/index.html"
+        },
+        {
+          "label": "WHO - Fungal Priority Pathogens List",
+          "url": "https://www.who.int/publications/i/item/9789240060241"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "blastomyces",
+      "name": "Blastomyces dermatitidis",
+      "scientificName": "Blastomyces dermatitidis, phylum Ascomycota, class Eurotiomycetes. Dimorphic fungus (mold in environment, yeast in tissue). Also B. gilchristii (recently recognized species)",
+      "definition": "Dimorphic fungus causing blastomycosis, an endemic mycosis in North America (Great Lakes, Ohio and Mississippi River valleys, southeastern USA, Canadian provinces). Exists as mold in soil (produces conidia) and converts to broad-based budding yeast at body temperature. Most infections are symptomatic (unlike histoplasmosis). Can cause severe pulmonary and disseminated disease. Outbreaks associated with outdoor activities near waterways, construction, and forestry work. Rare outside endemic areas.",
+      "reservoir": {
+        "primary": [
+          "Soil, especially moist soil near waterways (rivers, lakes, streams)",
+          "Decaying wood and vegetation"
+        ],
+        "secondary": [
+          "Beaver dams and lodges"
+        ],
+        "notes": "Blastomyces thrives in moist, acidic soil rich in organic matter, especially near waterways. Associated with wooded areas, riverbanks, and areas with beaver activity. Exact environmental niche not fully understood. Disturbance of contaminated soil releases airborne conidia."
+      },
+      "transmission": {
+        "mode": "Inhalation of airborne conidia from contaminated soil",
+        "routes": [
+          "Inhalation of airborne conidia - primary route",
+          "Outdoor activities: hunting, fishing, camping, canoeing near waterways",
+          "Occupational exposure: forestry work, construction, excavation",
+          "Rarely: direct inoculation through skin (dog bites, laboratory accidents)",
+          "No person-to-person transmission (except rare case reports of sexual transmission and organ transplant transmission)"
+        ],
+        "notes": "Conidia become airborne when contaminated soil is disturbed. Outbreaks often involve groups participating in outdoor activities near waterways. Dogs can develop blastomycosis and may serve as sentinels for environmental contamination. No routine person-to-person transmission."
+      },
+      "incubationPeriod": {
+        "range": "3-15 weeks (average 4-6 weeks) from exposure to symptom onset. Longer incubation than histoplasmosis",
+        "infectiousPeriod": "Not contagious person-to-person (except rare case reports). Environmental source remains infectious",
+        "seasonality": "Late summer and fall (increased outdoor activities)",
+        "geographic": "Endemic in North America: Great Lakes region, Ohio and Mississippi River valleys, southeastern USA, Canadian provinces (Ontario, Manitoba, Quebec). Rare outside North America"
+      },
+      "riskFactors": [
+        "Outdoor workers: forestry, construction, excavation",
+        "Outdoor recreational activities: hunting, fishing, camping, canoeing near waterways in endemic areas",
+        "Male gender (2:1 male predominance)",
+        "Immunosuppression (more severe disease): HIV/AIDS, transplant recipients, TNF-alpha inhibitors, corticosteroids",
+        "Residence in or travel to endemic areas",
+        "Dog ownership (dogs can develop blastomycosis and may indicate environmental exposure)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Pulmonary blastomycosis (most common): fever, cough (productive), chest pain, dyspnea, weight loss, night sweats. Symptoms often persist for weeks to months. Can mimic bacterial pneumonia, tuberculosis, or lung cancer",
+          "Cutaneous blastomycosis (40-80% of cases): verrucous (wart-like) or ulcerative skin lesions, often on face and extremities. Can be mistaken for squamous cell carcinoma",
+          "Osteoarticular blastomycosis: osteomyelitis (vertebral, long bones), septic arthritis",
+          "Genitourinary blastomycosis: prostatitis, epididymitis (males)",
+          "CNS blastomycosis: meningitis, brain abscess (rare but serious)",
+          "Disseminated blastomycosis: multi-organ involvement (lungs, skin, bones, CNS, prostate). More common in immunocompromised"
+        ],
+        "complications": [
+          "Acute respiratory distress syndrome (ARDS)",
+          "Chronic pulmonary disease with cavitation",
+          "CNS involvement: meningitis, brain abscess (high mortality)",
+          "Disseminated disease in immunocompromised",
+          "Death (mortality rate 2-6% with treatment; higher in immunocompromised and CNS disease)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with pulmonary infection + characteristic skin lesions + exposure to outdoor activities near waterways in endemic area, OR chronic pneumonia not responding to antibiotics in endemic area",
+          "confirmed": "Clinical illness + laboratory confirmation: positive culture, histopathology showing broad-based budding yeast, positive antigen, or PCR"
+        }
+      },
+      "diagnosis": [
+        "Culture: respiratory specimens, skin biopsy, tissue - gold standard but slow (1-4 weeks). Broad-based budding yeast in tissue, mold in culture",
+        "Histopathology: tissue biopsy showing large (8-15 micrometers) yeast with broad-based budding and thick refractile cell wall. Silver stain (GMS, PAS)",
+        "Blastomyces antigen (urine or serum): rapid test, sensitivity 70-90%. Cross-reacts with Histoplasma",
+        "Serology: limited utility (low sensitivity and specificity)",
+        "PCR: respiratory specimens or tissue - increasing use but not widely available",
+        "Chest X-ray/CT: consolidation, nodules, cavitation, mass-like lesions (can mimic lung cancer)"
+      ],
+      "treatment": "Itraconazole - first-line for mild to moderate blastomycosis (oral, 6-12 months). Amphotericin B (liposomal) - first-line for severe or CNS blastomycosis (IV, 1-2 weeks), then step down to itraconazole or fluconazole (for CNS). Fluconazole - alternative for CNS disease (better CNS penetration than itraconazole). Treatment duration: mild to moderate (6-12 months), CNS disease (12 months minimum), immunocompromised (lifelong suppressive therapy until immune reconstitution). All patients should be treated (unlike histoplasmosis - blastomycosis rarely self-resolves).",
+      "infectionControl": {
+        "precautions": "Standard Precautions (no routine person-to-person transmission). No isolation needed",
+        "screening": "Not applicable (no person-to-person transmission)",
+        "cohorting": "Not necessary",
+        "sourceControl": "Control environmental sources: avoid disturbing contaminated soil near waterways",
+        "environmental": "Environmental exposure control: identify high-risk areas (waterways, wooded areas in endemic regions). Respiratory protection: N95 respirators or PAPRs for workers in high-risk occupations (forestry, construction, excavation in endemic areas). Dust suppression during soil disturbance. Difficult to identify specific contaminated sites (environmental niche not well defined)",
+        "staffEducation": "Educate outdoor workers and recreational users on blastomycosis risks, proper respiratory protection, recognition of symptoms, importance of seeking care for persistent respiratory symptoms"
+      },
+      "outbreakTriggers": [
+        "≥2 epidemiologically linked cases (common exposure to outdoor activity or work site) within 3-15 weeks",
+        "Cluster of respiratory disease in endemic area, especially after outdoor group activities"
+      ],
+      "reportingCommunication": [
+        "Report any cluster or outbreak to public health authorities",
+        "Initiate environmental assessment: identify common exposure site, assess for environmental risk factors (waterways, construction, forestry)",
+        "Case finding: identify all persons exposed to same site or activity, screen for symptoms",
+        "Implement control measures: respiratory protection for workers, avoid disturbing soil in high-risk areas",
+        "Communication with exposed persons: educate on symptoms, importance of seeking care (blastomycosis rarely self-resolves)",
+        "Coordinate with occupational health, environmental health, public health",
+        "Veterinary surveillance: monitor for blastomycosis in dogs (sentinel species)"
+      ],
+      "prevention": [
+        "Protective respirators for at-risk outdoor occupations: forestry workers, construction workers, excavation workers in endemic areas",
+        "Avoid disturbing soil near waterways in endemic areas",
+        "Worker education: recognize risks, use respiratory protection, report persistent respiratory symptoms",
+        "Public education: recognize symptoms, seek care for persistent cough or skin lesions after outdoor activities in endemic areas",
+        "Surveillance: monitor for outbreaks, investigate clusters",
+        "Veterinary surveillance: monitor dogs for blastomycosis (may indicate environmental exposure risk for humans)"
+      ],
+      "references": [
+        {
+          "label": "CDC - Blastomycosis",
+          "url": "https://www.cdc.gov/fungal/diseases/blastomycosis/index.html"
+        },
+        {
+          "label": "WHO - Fungal Priority Pathogens List",
+          "url": "https://www.who.int/publications/i/item/9789240060241"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "coccidioides",
+      "name": "Coccidioides immitis/posadasii",
+      "scientificName": "Coccidioides immitis and C. posadasii, phylum Ascomycota, class Eurotiomycetes. Dimorphic fungi (mold in soil, spherules in tissue)",
+      "definition": "Dimorphic fungi causing coccidioidomycosis (Valley fever), an endemic mycosis in arid and semi-arid regions of southwestern USA, Mexico, Central and South America. C. immitis (California) and C. posadasii (Arizona, Texas, Mexico, South America) are clinically indistinguishable. Exists as mold in soil (produces highly infectious arthroconidia) and converts to spherules in tissue. Most infections are asymptomatic (60%) or self-limited. Can cause severe pulmonary and disseminated disease. Outbreaks associated with dust storms, construction, earthquakes, and outdoor activities in endemic areas.",
+      "reservoir": {
+        "primary": [
+          "Arid and semi-arid soil in endemic regions",
+          "Dust"
+        ],
+        "secondary": [],
+        "notes": "Coccidioides thrives in alkaline, sandy soil in hot, arid climates with low rainfall. Endemic in southwestern USA (California, Arizona, Nevada, New Mexico, Texas, Utah), Mexico, Central and South America. Arthroconidia become airborne with soil disturbance and can travel long distances on wind. Dust storms can cause large outbreaks."
+      },
+      "transmission": {
+        "mode": "Inhalation of airborne arthroconidia from contaminated dust",
+        "routes": [
+          "Inhalation of airborne arthroconidia (highly infectious - single arthroconidium can cause infection)",
+          "Dust storms - major cause of outbreaks",
+          "Construction, excavation, agricultural work in endemic areas",
+          "Outdoor recreational activities: hiking, camping, off-road driving",
+          "Earthquakes (soil disturbance)",
+          "Rarely: direct inoculation through skin, laboratory exposure",
+          "No person-to-person transmission (spherules in tissue are not infectious)"
+        ],
+        "notes": "Arthroconidia are highly infectious - single arthroconidium can cause infection. Become airborne with any soil disturbance. Can travel hundreds of miles on wind during dust storms. Outbreaks often involve large numbers of people exposed to same dust event. No person-to-person transmission."
+      },
+      "incubationPeriod": {
+        "range": "1-3 weeks (average 1-2 weeks) from exposure to symptom onset",
+        "infectiousPeriod": "Not contagious person-to-person. Environmental source remains infectious",
+        "seasonality": "Late summer and fall (dry season, increased dust), after rainy season (fungal growth), during dust storms",
+        "geographic": "Endemic in southwestern USA (California, Arizona, Nevada, New Mexico, Texas, Utah), northern Mexico, parts of Central and South America (Guatemala, Honduras, Venezuela, Argentina, Paraguay, Brazil)"
+      },
+      "riskFactors": [
+        "Residence in or travel to endemic areas",
+        "Dust exposure: construction, agricultural work, military training, outdoor recreation in endemic areas",
+        "Dust storms",
+        "Pregnancy (third trimester) - increased risk of dissemination",
+        "Immunosuppression: HIV/AIDS, transplant recipients, TNF-alpha inhibitors, corticosteroids - increased risk of dissemination",
+        "Race/ethnicity: African Americans, Filipinos, Native Americans, Hispanics - higher risk of disseminated disease",
+        "Diabetes mellitus",
+        "Chronic lung disease"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Asymptomatic infection: 60% of infections are asymptomatic",
+          "Acute coccidioidomycosis (Valley fever): flu-like illness (fever, cough, chest pain, headache, myalgia, fatigue, rash). Occurs 1-3 weeks after exposure. Self-limited in most (resolves in weeks to months)",
+          "Erythema nodosum: painful red nodules on shins (immune reaction, good prognosis)",
+          "Erythema multiforme: target lesions (immune reaction)",
+          "Chronic pulmonary coccidioidomycosis: chronic cough, weight loss, night sweats, cavitary lung lesions (thin-walled cavities)",
+          "Disseminated coccidioidomycosis: spread beyond lungs to skin, bones, joints, meninges. Meningitis most serious complication (chronic, often fatal if untreated). More common in immunocompromised, pregnant women, certain ethnic groups"
+        ],
+        "complications": [
+          "Chronic pulmonary cavities (can rupture causing pneumothorax)",
+          "Disseminated disease: skin lesions, osteomyelitis, septic arthritis, meningitis",
+          "Coccidioidal meningitis: chronic meningitis, hydrocephalus (requires lifelong treatment)",
+          "Death (rare in immunocompetent; high mortality in disseminated disease and meningitis if untreated)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with acute respiratory illness + residence in or travel to endemic area within preceding 3 weeks, OR chronic pulmonary disease with cavitary lesions in endemic area, OR meningitis in endemic area",
+          "confirmed": "Clinical illness + laboratory confirmation: positive culture, histopathology showing spherules, positive serology (IgM or IgG), or positive PCR"
+        }
+      },
+      "diagnosis": [
+        "Serology: IgM (early infection, appears 1-3 weeks), IgG (later infection, appears 3-6 weeks), complement fixation titer (indicates severity and dissemination). Serology is primary diagnostic method (90% sensitivity)",
+        "Culture: respiratory specimens, tissue, CSF - gold standard but slow (1-3 weeks) and hazardous (arthroconidia highly infectious - requires BSL-3). Spherules in tissue, mold in culture",
+        "Histopathology: tissue biopsy showing large (20-200 micrometers) spherules with endospores. Silver stain (GMS, PAS)",
+        "PCR: respiratory specimens, tissue, CSF - increasing use",
+        "Coccidioides antigen: urine or serum - limited availability",
+        "Chest X-ray/CT: infiltrates, nodules, cavities (thin-walled), hilar lymphadenopathy",
+        "CSF analysis (for meningitis): lymphocytic pleocytosis, elevated protein, low glucose, positive serology (complement fixation)"
+      ],
+      "treatment": "Fluconazole or itraconazole - first-line for mild to moderate coccidioidomycosis requiring treatment (many cases self-limited and do not require treatment). Amphotericin B (liposomal) - first-line for severe or disseminated coccidioidomycosis (IV, then step down to azole). Fluconazole preferred for meningitis (better CNS penetration). Treatment duration: acute pulmonary (3-6 months if treatment needed), chronic pulmonary (12-18 months), disseminated (12-18 months), meningitis (lifelong). Observation without treatment for mild acute pulmonary coccidioidomycosis in immunocompetent patients (many self-resolve).",
+      "infectionControl": {
+        "precautions": "Standard Precautions (no person-to-person transmission). No isolation needed. BSL-3 required for laboratory work with cultures (arthroconidia highly infectious)",
+        "screening": "Not applicable (no person-to-person transmission)",
+        "cohorting": "Not necessary",
+        "sourceControl": "Control environmental sources: dust control, avoid soil disturbance in endemic areas",
+        "environmental": "Dust control and avoidance: water spray during construction/excavation to suppress dust, avoid outdoor activities during dust storms, close windows during dust storms. Respiratory protection: N95 respirators or PAPRs for workers in high-risk occupations (construction, agricultural work, archaeology in endemic areas). Difficult to eliminate environmental source (widespread in soil)",
+        "staffEducation": "Educate residents and travelers to endemic areas on coccidioidomycosis risks, dust avoidance, recognition of symptoms, when to seek care. Educate workers on respiratory protection"
+      },
+      "outbreakTriggers": [
+        "≥2 cases linked to same exposure (dust storm, construction site, outdoor event) within 1-3 weeks",
+        "Increased incidence during or after dust storms in endemic areas",
+        "Cluster of cases after earthquakes or other events causing soil disturbance"
+      ],
+      "reportingCommunication": [
+        "Notify public health authorities in endemic areas if outbreak suspected",
+        "Surveillance for outbreaks: monitor case counts, investigate increases above baseline",
+        "Environmental investigation: identify exposure source (dust storm, construction, outdoor event)",
+        "Implement control measures: dust suppression, respiratory protection, public advisories during dust storms",
+        "Communication with public: travel advisories, dust avoidance, recognize symptoms, seek care",
+        "Coordinate with public health, environmental health, meteorology (dust storm forecasting)"
+      ],
+      "prevention": [
+        "Dust control measures: water spray during construction/excavation in endemic areas, pave roads, plant vegetation to stabilize soil",
+        "Travel advisories: inform travelers to endemic areas about coccidioidomycosis risk, dust avoidance",
+        "Public awareness: educate residents of endemic areas on risks, dust avoidance, symptom recognition",
+        "Respiratory protection: N95 respirators for workers in high-risk occupations (construction, agricultural work, archaeology in endemic areas)",
+        "Avoid outdoor activities during dust storms: stay indoors, close windows, use air conditioning with HEPA filters",
+        "Surveillance: monitor case counts in endemic areas, investigate outbreaks, dust storm surveillance",
+        "Research: vaccine development (no vaccine currently available)"
+      ],
+      "references": [
+        {
+          "label": "CDC - Coccidioidomycosis (Valley Fever)",
+          "url": "https://www.cdc.gov/fungal/diseases/coccidioidomycosis/index.html"
+        },
+        {
+          "label": "WHO - Fungal Priority Pathogens List",
+          "url": "https://www.who.int/publications/i/item/9789240060241"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    }
+  ]
+}

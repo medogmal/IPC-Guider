@@ -1,0 +1,2178 @@
+{
+  "version": 2,
+  "updatedAt": "2025-01-23T12:00:00Z",
+  "id": "skin-soft-tissue",
+  "name": "Skin & Soft Tissue Infections",
+  "description": "Cellulitis, abscesses, necrotizing infections, and wound infections",
+  "icon": "healing",
+  "color": "#FF9800",
+  "conditions": [
+    {
+      "id": "cellulitis",
+      "name": "Cellulitis",
+      "synonyms": ["erysipelas", "skin infection", "soft tissue infection"],
+      "icd10": ["L03.90", "L03.119", "A46"],
+      "severity": ["mild", "moderate", "severe"],
+      "shortDescription": "Acute bacterial infection of the dermis and subcutaneous tissue with spreading erythema, warmth, and swelling",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Cellulitis is an acute bacterial infection of the dermis and subcutaneous tissue characterized by spreading erythema, warmth, swelling, and tenderness. Erysipelas is a superficial form involving the upper dermis and lymphatics with well-demarcated borders.",
+            "clinical_presentation": "Acute onset of erythema, warmth, swelling, and tenderness of affected area. Systemic symptoms: Fever, chills, malaise. May have lymphangitis (red streaking) or regional lymphadenopathy. Erysipelas: Raised, well-demarcated, bright red, indurated plaque with sharp borders.",
+            "diagnostic_criteria": "Clinical diagnosis based on: (1) Erythema, (2) Warmth, (3) Swelling, (4) Tenderness. Systemic signs: Fever, leukocytosis. No specific diagnostic test required for uncomplicated cellulitis.",
+            "risk_factors": [
+              "Skin barrier disruption (trauma, wounds, ulcers, tinea pedis)",
+              "Lymphedema or venous insufficiency",
+              "Obesity",
+              "Diabetes mellitus",
+              "Immunosuppression",
+              "Prior episode of cellulitis (recurrence risk 8-20%)"
+            ],
+            "red_flags": [
+              "Rapidly spreading erythema (>2cm/hour) - consider necrotizing fasciitis",
+              "Severe pain out of proportion to exam - consider necrotizing infection",
+              "Bullae, skin necrosis, or crepitus - surgical emergency",
+              "Hypotension or altered mental status - septic shock",
+              "Facial cellulitis - risk of cavernous sinus thrombosis"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Blood cultures and imaging NOT routinely needed for uncomplicated cellulitis. Consider if severe, immunocompromised, or concern for deeper infection.",
+            "essential_tests": [
+              "Clinical diagnosis (no routine lab tests needed for uncomplicated cellulitis)",
+              "Mark borders of erythema with pen (to track progression)"
+            ],
+            "conditional_tests": [
+              "Blood cultures: If fever, systemic toxicity, immunocompromised, or severe infection",
+              "Wound culture: If purulent drainage present (NOT for non-purulent cellulitis)",
+              "Imaging (US, CT, MRI): If concern for abscess, necrotizing infection, or osteomyelitis",
+              "CBC, CRP, ESR: If severe or monitoring response to therapy"
+            ],
+            "when_not_to_test": "Do NOT routinely culture non-purulent cellulitis (low yield, often contaminated). Do NOT routinely obtain blood cultures for mild outpatient cellulitis.",
+            "turnaround_time": "Blood cultures: 24-48 hours. Imaging: Same day (urgent if necrotizing infection suspected)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": [
+              "Beta-hemolytic streptococci (Group A, C, G Streptococcus) - most common",
+              "Staphylococcus aureus (MSSA) - especially if purulent drainage",
+              "MRSA - if purulent, abscess, or risk factors (IVDU, prior MRSA, recent hospitalization)"
+            ],
+            "special_situations": {
+              "water_exposure": "Aeromonas hydrophila, Vibrio vulnificus (saltwater), Mycobacterium marinum",
+              "animal_bite": "Pasteurella multocida (cat/dog), Capnocytophaga (dog)",
+              "human_bite": "Eikenella corrodens, anaerobes",
+              "immunocompromised": "Pseudomonas aeruginosa, fungi (Cryptococcus, Mucor)"
+            },
+            "resistance_patterns": "MRSA prevalence varies by region (10-40% of S. aureus isolates). Beta-lactam resistance common in MRSA. Streptococci remain universally susceptible to beta-lactams.",
+            "mdro_risk_factors": [
+              "Prior MRSA infection or colonization",
+              "Recent hospitalization or nursing home residence",
+              "IVDU or HIV infection",
+              "Recent antibiotic use (within 3 months)",
+              "Purulent drainage or abscess"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "mild_outpatient": {
+              "non_purulent": "Cephalexin 500mg PO QID OR Dicloxacillin 500mg PO QID OR Amoxicillin-clavulanate 875mg PO BID (covers streptococci and MSSA)",
+              "purulent_or_mrsa_risk": "TMP-SMX DS 1-2 tabs PO BID + Cephalexin 500mg PO QID OR Doxycycline 100mg PO BID + Cephalexin 500mg PO QID OR Clindamycin 300-450mg PO TID (monotherapy if MRSA suspected)"
+            },
+            "moderate_outpatient": {
+              "non_purulent": "Cefazolin 1-2g IV q8h OR Ceftriaxone 1-2g IV daily (if IV therapy needed)",
+              "purulent_or_mrsa_risk": "Vancomycin 15-20mg/kg IV q8-12h OR Daptomycin 4mg/kg IV daily"
+            },
+            "severe_inpatient": {
+              "empiric": "Vancomycin 15-20mg/kg IV q8-12h (covers MRSA + streptococci) OR Linezolid 600mg IV/PO BID (if vancomycin intolerant)",
+              "necrotizing_infection": "Vancomycin 15-20mg/kg IV q8-12h + Piperacillin-tazobactam 3.375g IV q6h + Clindamycin 600-900mg IV q8h (toxin suppression)"
+            },
+            "alternatives": "Beta-lactam allergy: Clindamycin 300-450mg PO TID OR Doxycycline 100mg PO BID OR Levofloxacin 750mg PO daily (if fluoroquinolone-susceptible streptococci).",
+            "avoid_list": "Avoid fluoroquinolones for empiric streptococcal cellulitis (increasing resistance). Avoid TMP-SMX monotherapy for non-purulent cellulitis (poor streptococcal coverage)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "streptococcus_pyogenes": "Penicillin VK 500mg PO QID OR Amoxicillin 500mg PO TID OR Cefazolin 1-2g IV q8h (if IV needed). Duration: 5-10 days.",
+            "mssa": "Cephalexin 500mg PO QID OR Dicloxacillin 500mg PO QID OR Cefazolin 1-2g IV q8h (if IV needed). Duration: 5-10 days.",
+            "mrsa": "TMP-SMX DS 1-2 tabs PO BID OR Doxycycline 100mg PO BID OR Clindamycin 300-450mg PO TID (if susceptible). Severe: Vancomycin 15-20mg/kg IV q8-12h OR Daptomycin 4mg/kg IV daily. Duration: 7-14 days.",
+            "de_escalation": "Switch from vancomycin to oral agent (TMP-SMX, doxycycline, clindamycin) once MRSA confirmed and improving. Switch from broad-spectrum to narrow-spectrum (penicillin, cephalexin) if streptococcal infection confirmed.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Improving erythema/swelling, (3) Tolerating PO intake, (4) No concern for abscess or deep infection."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard": "5-10 days for uncomplicated cellulitis",
+            "short_course": "5 days if rapid response and no complications",
+            "prolonged": "10-14 days if slow response, severe infection, or immunocompromised",
+            "monitoring": "Mark borders of erythema daily. Expect improvement within 24-48 hours (decreased warmth, pain). Complete resolution may take 7-14 days. Repeat imaging if concern for abscess or necrotizing infection.",
+            "stop_criteria": "Resolution of erythema, warmth, swelling, and systemic symptoms. Residual induration or hyperpigmentation may persist for weeks (not indication to continue antibiotics)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "recurrent_cellulitis": "If ≥2 episodes in 1 year: Treat underlying risk factors (tinea pedis, lymphedema, venous insufficiency). Consider prophylaxis: Penicillin VK 250mg PO BID OR Erythromycin 250mg PO BID (if penicillin-allergic) for 6-12 months.",
+            "lymphedema": "Higher risk of recurrence. Treat aggressively. Consider compression therapy and lymphedema management.",
+            "diabetes": "Higher risk of complications. Ensure good glycemic control. Rule out osteomyelitis if overlying bone.",
+            "immunocompromised": "Broader differential (fungi, atypical bacteria). Consider imaging to rule out deeper infection. Longer duration (10-14 days).",
+            "pregnancy": "Preferred: Cephalexin, amoxicillin-clavulanate. Avoid: Fluoroquinolones, doxycycline, TMP-SMX (1st trimester)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Switch vancomycin to oral MRSA agent (TMP-SMX, doxycycline, clindamycin) once improving",
+              "Switch broad-spectrum to narrow-spectrum (penicillin, cephalexin) if streptococcal infection",
+              "Discontinue antibiotics at 5-7 days if rapid response"
+            ],
+            "timeout_checklist": [
+              "Is this truly cellulitis? (Consider mimics: stasis dermatitis, contact dermatitis, DVT)",
+              "Are blood cultures and imaging truly needed? (Usually NOT for uncomplicated cellulitis)",
+              "Is MRSA coverage needed? (Only if purulent drainage or risk factors)",
+              "Can I switch IV to PO? (Yes, if afebrile and improving)",
+              "Can I stop antibiotics? (Yes, if 5-7 days and resolved)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT treat cellulitis mimics (stasis dermatitis, contact dermatitis, lipodermatosclerosis). Do NOT continue antibiotics for residual induration or hyperpigmentation.",
+            "patient_education": "Elevate affected limb. Treat underlying risk factors (tinea pedis, dry skin). Seek care if worsening despite antibiotics (may need imaging or drainage)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Skin and Soft Tissue Infections Guidelines (2014)",
+              "url": "https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            },
+            {
+              "label": "CDC MRSA Guidelines (2024)",
+              "url": "https://www.cdc.gov/mrsa/healthcare/index.html"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "skin-abscess",
+      "name": "Skin Abscess",
+      "synonyms": ["cutaneous abscess", "subcutaneous abscess", "boil"],
+      "icd10": ["L02.91", "L02.211", "L02.31"],
+      "severity": ["mild", "moderate"],
+      "shortDescription": "Localized collection of pus within the dermis and subcutaneous tissue requiring incision and drainage",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "A skin abscess is a localized collection of pus within the dermis and deeper skin structures, typically caused by bacterial infection. Characterized by fluctuant, tender, erythematous nodule or mass.",
+            "clinical_presentation": "Painful, fluctuant, erythematous nodule or mass. May have overlying cellulitis. Systemic symptoms (fever, chills) if large or multiple abscesses. Spontaneous drainage of purulent material may occur.",
+            "diagnostic_criteria": "Clinical diagnosis based on: (1) Fluctuance on palpation, (2) Localized swelling, (3) Erythema, (4) Tenderness. Imaging (US) if uncertain or concern for deeper collection.",
+            "risk_factors": [
+              "MRSA colonization or prior infection",
+              "Close contact with MRSA-infected person",
+              "Crowded living conditions (military, prisons, sports teams)",
+              "Poor hygiene or skin trauma",
+              "Diabetes mellitus or immunosuppression",
+              "IVDU (injection drug use)"
+            ],
+            "red_flags": [
+              "Multiple abscesses or recurrent abscesses - consider MRSA colonization or immunodeficiency",
+              "Abscess with surrounding extensive cellulitis - may need IV antibiotics",
+              "Facial abscess (especially nasolabial triangle) - risk of cavernous sinus thrombosis",
+              "Perirectal abscess - may need surgical drainage, rule out fistula",
+              "Fever or systemic toxicity - consider bacteremia"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Wound culture of purulent drainage recommended (especially if treatment failure or recurrent abscesses). Blood cultures if fever or systemic toxicity.",
+            "essential_tests": [
+              "Incision and drainage (I&D) - PRIMARY treatment",
+              "Wound culture of purulent material (send for aerobic and anaerobic culture)"
+            ],
+            "conditional_tests": [
+              "Ultrasound: If uncertain diagnosis or concern for deeper abscess",
+              "Blood cultures: If fever, systemic toxicity, or immunocompromised",
+              "HIV test: If recurrent abscesses or opportunistic infections",
+              "Glucose: If recurrent abscesses (rule out diabetes)"
+            ],
+            "when_not_to_test": "Do NOT culture intact skin overlying abscess (will be contaminated). Do NOT delay I&D to obtain imaging if diagnosis clear.",
+            "turnaround_time": "Wound culture: 24-48 hours. Ultrasound: Same day if needed."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": [
+              "Staphylococcus aureus (MRSA > MSSA) - most common (70-80%)",
+              "Beta-hemolytic streptococci (Group A, B, C, G)",
+              "Anaerobes (if perirectal, axillary, or groin abscess)"
+            ],
+            "special_situations": {
+              "perirectal": "Anaerobes (Bacteroides, Peptostreptococcus), Enterobacteriaceae",
+              "ivdu": "MRSA, Pseudomonas aeruginosa, polymicrobial",
+              "water_exposure": "Aeromonas, Vibrio, Mycobacterium marinum",
+              "immunocompromised": "Fungi (Candida, Aspergillus), Nocardia, atypical mycobacteria"
+            },
+            "resistance_patterns": "MRSA prevalence 50-80% in community-acquired skin abscesses. Most MRSA isolates susceptible to TMP-SMX, doxycycline, clindamycin. Inducible clindamycin resistance (D-test positive) in 10-20% of MRSA.",
+            "mdro_risk_factors": [
+              "Prior MRSA infection or colonization",
+              "Recent hospitalization or antibiotic use",
+              "IVDU or HIV infection",
+              "Recurrent abscesses"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "i_and_d_alone": "Incision and drainage (I&D) ALONE is sufficient for simple abscesses <5cm without surrounding cellulitis or systemic symptoms. Antibiotics NOT routinely needed if adequate drainage achieved.",
+            "antibiotics_indicated": {
+              "indications": "Antibiotics indicated if: (1) Surrounding cellulitis >2cm, (2) Multiple abscesses, (3) Systemic symptoms (fever, tachycardia), (4) Immunocompromised, (5) Extremes of age, (6) Lack of response to I&D alone, (7) Difficult to drain completely",
+              "empiric_regimen": "TMP-SMX DS 1-2 tabs PO BID OR Doxycycline 100mg PO BID OR Clindamycin 300-450mg PO TID (covers MRSA)"
+            },
+            "severe_or_iv_needed": "Vancomycin 15-20mg/kg IV q8-12h OR Daptomycin 4mg/kg IV daily OR Linezolid 600mg IV/PO BID",
+            "alternatives": "Beta-lactam allergy: Doxycycline or TMP-SMX (already MRSA-active). Sulfa allergy: Doxycycline or clindamycin.",
+            "avoid_list": "Avoid beta-lactams (cephalexin, dicloxacillin) for empiric therapy if MRSA suspected (poor coverage). Avoid fluoroquinolones (increasing resistance)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "mrsa": "TMP-SMX DS 1-2 tabs PO BID OR Doxycycline 100mg PO BID OR Clindamycin 300-450mg PO TID (if D-test negative). Severe: Vancomycin 15-20mg/kg IV q8-12h OR Daptomycin 4mg/kg IV daily. Duration: 5-10 days.",
+            "mssa": "Cephalexin 500mg PO QID OR Dicloxacillin 500mg PO QID. Severe: Cefazolin 1-2g IV q8h OR Nafcillin 1-2g IV q4h. Duration: 5-7 days.",
+            "streptococcus": "Penicillin VK 500mg PO QID OR Amoxicillin 500mg PO TID. Severe: Penicillin G 2-4 million units IV q4-6h. Duration: 5-7 days.",
+            "anaerobes": "Amoxicillin-clavulanate 875mg PO BID OR Clindamycin 300-450mg PO TID. Severe: Ampicillin-sulbactam 3g IV q6h OR Piperacillin-tazobactam 3.375g IV q6h. Duration: 7-10 days.",
+            "de_escalation": "Switch from vancomycin to oral MRSA agent (TMP-SMX, doxycycline, clindamycin) once culture results available and improving.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Improving clinically, (3) Tolerating PO intake."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard": "5-7 days if antibiotics used (after adequate I&D)",
+            "short_course": "I&D alone (no antibiotics) if simple abscess <5cm without cellulitis",
+            "prolonged": "10-14 days if extensive cellulitis, slow response, or immunocompromised",
+            "monitoring": "Reassess in 48-72 hours. Expect improvement in pain, swelling, erythema. Repeat I&D if reaccumulation or inadequate drainage. Consider imaging if no improvement.",
+            "stop_criteria": "Resolution of erythema, drainage, and systemic symptoms. Wound may continue to drain for several days (not indication to continue antibiotics if otherwise improving)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "recurrent_abscesses": "If ≥2 abscesses in 6 months: (1) Test for MRSA colonization (nares, axilla, groin), (2) Decolonization: Mupirocin nasal ointment BID x 5 days + chlorhexidine body wash daily x 5-14 days, (3) Treat close contacts if also infected, (4) Improve hygiene, avoid sharing personal items.",
+            "perirectal_abscess": "Requires surgical evaluation (may need OR drainage). Cover anaerobes: Amoxicillin-clavulanate or metronidazole + fluoroquinolone. Rule out fistula or inflammatory bowel disease.",
+            "facial_abscess": "Higher risk of complications (cavernous sinus thrombosis). Consider IV antibiotics and close monitoring. Avoid manipulation of nasolabial triangle abscesses.",
+            "ivdu": "Higher risk of MRSA, Pseudomonas, polymicrobial. Consider broader coverage. Screen for HIV, HCV, endocarditis if bacteremic.",
+            "immunocompromised": "Broader differential (fungi, Nocardia, atypical mycobacteria). Consider biopsy and fungal cultures. Longer duration (10-14 days).",
+            "pregnancy": "Preferred: Cephalexin, amoxicillin-clavulanate, clindamycin. Avoid: Fluoroquinolones, doxycycline, TMP-SMX (1st trimester)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "I&D alone (no antibiotics) for simple abscesses <5cm without cellulitis",
+              "Switch vancomycin to oral MRSA agent (TMP-SMX, doxycycline, clindamycin) once improving",
+              "Discontinue antibiotics at 5-7 days if adequate drainage and resolution"
+            ],
+            "timeout_checklist": [
+              "Was adequate I&D performed? (Antibiotics are adjunct, not primary treatment)",
+              "Are antibiotics truly needed? (I&D alone sufficient for most simple abscesses)",
+              "Is MRSA coverage appropriate? (Yes, if purulent drainage)",
+              "Can I switch IV to PO? (Yes, if afebrile and improving)",
+              "Can I stop antibiotics? (Yes, if 5-7 days and resolved)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use antibiotics as substitute for adequate drainage. Do NOT continue antibiotics for persistent drainage if otherwise improving (wound may drain for days).",
+            "patient_education": "Keep wound clean and covered. Warm compresses may help drainage. Return if worsening, fever, or spreading redness. Decolonization if recurrent abscesses."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Skin and Soft Tissue Infections Guidelines (2014)",
+              "url": "https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            },
+            {
+              "label": "CDC MRSA Treatment Guidelines (2024)",
+              "url": "https://www.cdc.gov/mrsa/healthcare/clinicians/index.html"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "necrotizing-fasciitis",
+      "name": "Necrotizing Fasciitis",
+      "synonyms": ["necrotizing soft tissue infection", "NSTI", "flesh-eating disease"],
+      "icd10": ["M72.6", "A48.0"],
+      "severity": ["severe", "critical"],
+      "shortDescription": "Life-threatening deep soft tissue infection with necrosis of fascia and subcutaneous tissue requiring emergency surgical debridement",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Necrotizing fasciitis is a rapidly progressive, life-threatening infection of the deep fascia and subcutaneous tissue with secondary necrosis. Mortality 20-40% despite treatment. SURGICAL EMERGENCY requiring immediate debridement.",
+            "clinical_presentation": "EARLY (first 24 hours): Severe pain out of proportion to exam, swelling, erythema, fever, tachycardia. LATE (24-72 hours): Skin discoloration (dusky, purple, black), bullae, crepitus, anesthesia (nerve destruction), systemic toxicity (hypotension, altered mental status, organ failure).",
+            "diagnostic_criteria": "Clinical diagnosis + surgical exploration. LRINEC score ≥6 suggests necrotizing infection (but do NOT delay surgery for scoring). Imaging (CT, MRI) shows fascial thickening, gas, fluid tracking along fascial planes.",
+            "lrinec_score": {
+              "components": "CRP >150mg/L (4 points), WBC >25 or <4 (2 points), WBC 15-25 (1 point), Hemoglobin <11 (2 points), Sodium <135 (2 points), Creatinine >1.6 (2 points), Glucose >180 (1 point)",
+              "interpretation": "Score ≥6: High risk for necrotizing infection (PPV 92%). Score <6: Does NOT rule out necrotizing infection. Clinical suspicion overrides score."
+            },
+            "risk_factors": [
+              "Diabetes mellitus",
+              "Immunosuppression (HIV, cancer, steroids)",
+              "Peripheral vascular disease",
+              "IVDU or alcohol use disorder",
+              "Recent surgery or trauma",
+              "Obesity"
+            ],
+            "red_flags": [
+              "Pain out of proportion to exam - HALLMARK sign",
+              "Rapidly spreading erythema (>2cm/hour)",
+              "Skin necrosis, bullae, or crepitus - SURGICAL EMERGENCY",
+              "Hypotension or altered mental status - septic shock",
+              "Anesthesia over affected area - nerve destruction"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Do NOT delay surgery for diagnostic tests if high clinical suspicion. Obtain labs and imaging WHILE preparing for OR.",
+            "essential_tests": [
+              "SURGICAL EXPLORATION - definitive diagnosis and treatment",
+              "Blood cultures (before antibiotics)",
+              "CBC, CMP, CRP, lactate (for LRINEC score and severity assessment)",
+              "Tissue culture and Gram stain (intraoperative)"
+            ],
+            "conditional_tests": [
+              "CT or MRI: If diagnosis uncertain (shows fascial thickening, gas, fluid tracking). Do NOT delay surgery if high suspicion.",
+              "Plain X-ray: May show soft tissue gas (but absence does NOT rule out necrotizing infection)",
+              "Coagulation studies: If DIC suspected"
+            ],
+            "when_not_to_test": "Do NOT delay surgery to obtain imaging if clinical diagnosis clear. Do NOT wait for lab results to start antibiotics or go to OR.",
+            "turnaround_time": "Blood cultures: 24-48 hours. Imaging: Urgent (within 1-2 hours). Surgery: IMMEDIATE (within 6 hours of diagnosis)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "type_1_polymicrobial": {
+              "description": "70-80% of cases. Mixed aerobic and anaerobic bacteria.",
+              "pathogens": [
+                "Streptococcus pyogenes (Group A Strep)",
+                "Staphylococcus aureus (MRSA or MSSA)",
+                "Enterobacteriaceae (E. coli, Klebsiella)",
+                "Anaerobes (Bacteroides, Peptostreptococcus, Clostridium)"
+              ],
+              "risk_factors": "Diabetes, peripheral vascular disease, post-surgical, perirectal source"
+            },
+            "type_2_monomicrobial": {
+              "description": "20-30% of cases. Single virulent organism.",
+              "pathogens": [
+                "Streptococcus pyogenes (Group A Strep) - most common monomicrobial cause",
+                "Vibrio vulnificus (saltwater exposure)",
+                "Aeromonas hydrophila (freshwater exposure)",
+                "Clostridium perfringens (gas gangrene)"
+              ],
+              "risk_factors": "Healthy host, trauma, water exposure, IVDU"
+            },
+            "resistance_patterns": "MRSA prevalence 20-30% in necrotizing infections. Clostridium and Streptococcus remain penicillin-susceptible. Enterobacteriaceae may have ESBL (10-20%).",
+            "mdro_risk_factors": [
+              "Recent hospitalization or antibiotic use",
+              "IVDU or nursing home residence",
+              "Diabetes or immunosuppression"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "empiric_regimen": "Vancomycin 15-20mg/kg IV q8-12h + Piperacillin-tazobactam 3.375g IV q6h (or 4.5g IV q6h if >80kg) + Clindamycin 600-900mg IV q8h",
+            "rationale": "Vancomycin: MRSA coverage. Piperacillin-tazobactam: Broad Gram-negative and anaerobic coverage. Clindamycin: Toxin suppression (inhibits exotoxin production by Streptococcus and Staphylococcus).",
+            "alternative_regimen": "Vancomycin 15-20mg/kg IV q8-12h + Meropenem 1g IV q8h + Clindamycin 600-900mg IV q8h (if severe penicillin allergy or ESBL risk)",
+            "clindamycin_importance": "Clindamycin is CRITICAL for toxin suppression in streptococcal and staphylococcal necrotizing infections. Do NOT omit even if resistance suspected (use for toxin suppression, not bacterial killing).",
+            "avoid_list": "Do NOT use monotherapy. Do NOT omit clindamycin. Do NOT delay antibiotics while awaiting cultures."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "streptococcus_pyogenes": "Penicillin G 4 million units IV q4h + Clindamycin 600-900mg IV q8h. Duration: 10-14 days (until no further debridement needed and clinically stable).",
+            "mssa": "Nafcillin 2g IV q4h OR Cefazolin 2g IV q8h + Clindamycin 600-900mg IV q8h. Duration: 10-14 days.",
+            "mrsa": "Vancomycin 15-20mg/kg IV q8-12h OR Daptomycin 6-8mg/kg IV daily + Clindamycin 600-900mg IV q8h. Duration: 10-14 days.",
+            "polymicrobial": "Continue broad-spectrum coverage (vancomycin + piperacillin-tazobactam OR meropenem) until source control achieved and clinically improving. Duration: 10-14 days.",
+            "clostridium_perfringens": "Penicillin G 4 million units IV q4h + Clindamycin 600-900mg IV q8h. Hyperbaric oxygen may be considered (controversial). Duration: 10-14 days.",
+            "vibrio_vulnificus": "Doxycycline 100mg IV BID + Ceftriaxone 2g IV daily. Duration: 7-14 days.",
+            "de_escalation": "Narrow antibiotics based on culture results once source control achieved (adequate debridement). Continue clindamycin for toxin suppression even if narrowing other agents.",
+            "iv_to_po_switch": "Usually remain on IV therapy until no further debridement needed and clinically stable. May switch to PO for final days if improving and tolerating PO."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard": "10-14 days (until no further debridement needed and clinically stable)",
+            "prolonged": "14-21 days if extensive infection, slow response, or immunocompromised",
+            "monitoring": "Daily surgical reassessment for repeat debridement. Monitor for organ dysfunction (AKI, ARDS, DIC). Repeat imaging if concern for residual infection. Expect multiple trips to OR (average 2-4 debridements).",
+            "stop_criteria": "No further necrotic tissue on surgical exploration + resolution of systemic toxicity + wound healing/granulation tissue present."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "surgical_management": "EMERGENCY surgical debridement within 6 hours of diagnosis. Aggressive debridement of all necrotic tissue. Repeat debridement every 24-48 hours until no further necrosis. Amputation may be necessary. Delayed surgery increases mortality.",
+            "icu_management": "Most patients require ICU admission. Aggressive fluid resuscitation (may need 6-10L in first 24 hours). Vasopressor support common. Monitor for organ dysfunction (AKI, ARDS, DIC). Early goal-directed therapy.",
+            "ivig": "Consider IVIG 1-2g/kg (single dose or divided over 3 days) for streptococcal toxic shock syndrome. Evidence limited but may reduce mortality. Expensive ($5,000-$10,000 per dose).",
+            "hyperbaric_oxygen": "May be considered for clostridial gas gangrene or refractory cases. Evidence limited. Do NOT delay surgery to arrange hyperbaric oxygen.",
+            "pregnancy": "Preferred: Penicillin G + clindamycin + aztreonam (if Gram-negative coverage needed). Avoid: Fluoroquinolones, doxycycline. Fetal monitoring essential.",
+            "immunocompromised": "Higher mortality. Consider broader coverage (meropenem). Longer duration (14-21 days). May need antifungal coverage if prolonged neutropenia."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Narrow antibiotics based on culture results once source control achieved",
+              "Discontinue vancomycin if MRSA ruled out",
+              "Discontinue anaerobic coverage if monomicrobial streptococcal infection",
+              "Continue clindamycin for toxin suppression even if narrowing other agents"
+            ],
+            "timeout_checklist": [
+              "Has adequate surgical debridement been performed? (Antibiotics are adjunct, not primary treatment)",
+              "Is clindamycin included? (CRITICAL for toxin suppression)",
+              "Can I narrow antibiotics based on cultures? (Yes, once source control achieved)",
+              "Is patient improving? (If not, consider repeat debridement or imaging)",
+              "Can I stop antibiotics? (Yes, if 10-14 days, no further debridement, and clinically stable)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT delay surgery for diagnostic tests. Do NOT use antibiotics as substitute for surgical debridement. Do NOT omit clindamycin.",
+            "patient_education": "High mortality despite treatment (20-40%). Multiple surgeries likely. Prolonged recovery. Amputation may be necessary. Psychological support important."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Skin and Soft Tissue Infections Guidelines (2014)",
+              "url": "https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/"
+            },
+            {
+              "label": "Surgical Infection Society Guidelines for Necrotizing Infections (2014)",
+              "url": "https://www.surgicalinfectionsociety.org/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "diabetic-foot-infection",
+      "name": "Diabetic Foot Infection",
+      "synonyms": ["DFI", "diabetic ulcer infection", "diabetic wound infection"],
+      "icd10": ["E11.621", "L97.519", "E10.621"],
+      "severity": ["mild", "moderate", "severe"],
+      "shortDescription": "Bacterial infection of skin, soft tissue, or bone in diabetic foot ulcer requiring classification-based treatment",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Diabetic foot infection (DFI) is bacterial infection of the skin, soft tissue, or bone in a patient with diabetes, typically associated with foot ulcer. Leading cause of lower extremity amputation. Requires systematic classification and multidisciplinary management.",
+            "clinical_presentation": "Ulcer with signs of infection: Purulent drainage, erythema, warmth, swelling, tenderness, induration. Systemic symptoms (fever, chills) if moderate-severe. May have exposed bone, foul odor, or necrotic tissue. Neuropathy may mask pain.",
+            "idsa_classification": {
+              "uninfected": "No purulence or inflammation",
+              "mild": "Local infection involving skin and subcutaneous tissue only. Erythema >0.5cm but ≤2cm around ulcer. No systemic signs.",
+              "moderate": "Local infection with erythema >2cm OR involving deeper structures (abscess, osteomyelitis, septic arthritis, fasciitis). No systemic signs.",
+              "severe": "Local infection with systemic inflammatory response (fever >38°C or <36°C, tachycardia >90, WBC >12 or <4, or metabolic instability)"
+            },
+            "risk_factors": [
+              "Peripheral neuropathy (loss of protective sensation)",
+              "Peripheral arterial disease (PAD)",
+              "Poor glycemic control (HbA1c >8%)",
+              "Prior foot ulcer or amputation",
+              "Foot deformity or limited joint mobility",
+              "Inappropriate footwear"
+            ],
+            "red_flags": [
+              "Probe-to-bone test positive - high likelihood of osteomyelitis",
+              "Foul odor or necrotic tissue - consider anaerobes or necrotizing infection",
+              "Crepitus or gas on imaging - gas-forming organisms or necrotizing infection",
+              "Systemic toxicity - severe infection requiring hospitalization",
+              "Ischemic limb (absent pulses, cool, pale) - vascular surgery consult"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Obtain cultures for moderate-severe infections. Imaging if concern for osteomyelitis or deep abscess. Vascular assessment for all DFI.",
+            "essential_tests": [
+              "Probe-to-bone test (if positive, high likelihood of osteomyelitis)",
+              "Deep tissue culture or bone biopsy (preferred over swab culture)",
+              "Plain X-ray of foot (baseline, assess for osteomyelitis, gas, foreign body)",
+              "Vascular assessment (pulses, ABI, TcPO2 if available)"
+            ],
+            "conditional_tests": [
+              "MRI: Gold standard for osteomyelitis (sensitivity 90%, specificity 80%)",
+              "Bone biopsy with culture: Definitive diagnosis of osteomyelitis",
+              "Blood cultures: If systemic signs or severe infection",
+              "ESR, CRP: Elevated in osteomyelitis (but nonspecific)",
+              "HbA1c: Assess glycemic control"
+            ],
+            "when_not_to_test": "Do NOT culture uninfected ulcers (colonization, not infection). Do NOT use superficial swab cultures (contaminated, unreliable). Do NOT delay antibiotics for culture results if severe infection.",
+            "turnaround_time": "Wound culture: 24-48 hours. X-ray: Same day. MRI: 1-7 days. Bone biopsy: 3-5 days."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "mild_infection": {
+              "description": "Usually monomicrobial",
+              "pathogens": [
+                "Staphylococcus aureus (MSSA > MRSA)",
+                "Beta-hemolytic streptococci (Group A, B)"
+              ]
+            },
+            "moderate_severe_infection": {
+              "description": "Often polymicrobial (average 3-5 organisms)",
+              "pathogens": [
+                "Staphylococcus aureus (MRSA 20-30%)",
+                "Beta-hemolytic streptococci",
+                "Enterobacteriaceae (E. coli, Klebsiella, Proteus)",
+                "Enterococcus species",
+                "Anaerobes (Bacteroides, Peptostreptococcus) - if ischemia, necrosis, or foul odor",
+                "Pseudomonas aeruginosa - if chronic wound, prior antibiotics, or water exposure"
+              ]
+            },
+            "osteomyelitis": "Similar to soft tissue infection but may have Staphylococcus epidermidis (biofilm). Polymicrobial in 50-70% of cases.",
+            "resistance_patterns": "MRSA 20-30%. ESBL Enterobacteriaceae 10-20% (higher if prior antibiotics or hospitalization). Pseudomonas often resistant to fluoroquinolones.",
+            "mdro_risk_factors": [
+              "Prior antibiotics (within 3 months)",
+              "Recent hospitalization or nursing home",
+              "Chronic wound (>30 days)",
+              "Prior MDRO infection"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "mild_outpatient": "Cephalexin 500mg PO QID OR Dicloxacillin 500mg PO QID OR Amoxicillin-clavulanate 875mg PO BID. Duration: 1-2 weeks.",
+            "mild_with_mrsa_risk": "TMP-SMX DS 1-2 tabs PO BID + Amoxicillin-clavulanate 875mg PO BID OR Clindamycin 300-450mg PO TID (if MRSA suspected). Duration: 1-2 weeks.",
+            "moderate_outpatient": "Levofloxacin 750mg PO daily OR Moxifloxacin 400mg PO daily (broad-spectrum, covers MSSA, streptococci, Gram-negatives). Add MRSA coverage if risk factors: + TMP-SMX DS 1-2 tabs PO BID OR + Linezolid 600mg PO BID. Duration: 2-3 weeks.",
+            "moderate_severe_inpatient": "Vancomycin 15-20mg/kg IV q8-12h + Piperacillin-tazobactam 3.375g IV q6h OR Vancomycin + Ceftriaxone 2g IV daily + Metronidazole 500mg IV q8h. Duration: 2-4 weeks (longer if osteomyelitis).",
+            "pseudomonas_risk": "If chronic wound, prior antibiotics, or water exposure: Cefepime 2g IV q8h OR Piperacillin-tazobactam 3.375g IV q6h + Vancomycin 15-20mg/kg IV q8-12h.",
+            "alternatives": "Beta-lactam allergy: Levofloxacin 750mg PO/IV daily + Metronidazole 500mg PO/IV q8h + Vancomycin 15-20mg/kg IV q8-12h (if severe).",
+            "avoid_list": "Avoid monotherapy for moderate-severe infections. Avoid fluoroquinolones if recent use (resistance). Avoid oral therapy for severe infections until stable."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "mssa": "Cephalexin 500mg PO QID OR Cefazolin 1-2g IV q8h. Duration: 1-2 weeks (soft tissue), 4-6 weeks (osteomyelitis).",
+            "mrsa": "TMP-SMX DS 1-2 tabs PO BID OR Doxycycline 100mg PO BID OR Linezolid 600mg PO BID. Severe: Vancomycin 15-20mg/kg IV q8-12h OR Daptomycin 6mg/kg IV daily. Duration: 2-3 weeks (soft tissue), 6-8 weeks (osteomyelitis).",
+            "streptococcus": "Penicillin VK 500mg PO QID OR Amoxicillin 500mg PO TID. Severe: Penicillin G 2-4 million units IV q4-6h. Duration: 1-2 weeks.",
+            "enterobacteriaceae": "Ciprofloxacin 500-750mg PO BID OR Levofloxacin 750mg PO daily (if susceptible). Severe or ESBL: Ertapenem 1g IV daily OR Meropenem 1g IV q8h. Duration: 2-3 weeks.",
+            "pseudomonas": "Ciprofloxacin 750mg PO BID (if susceptible) OR Cefepime 2g IV q8h OR Piperacillin-tazobactam 3.375g IV q6h. Duration: 2-3 weeks.",
+            "anaerobes": "Amoxicillin-clavulanate 875mg PO BID OR Metronidazole 500mg PO/IV q8h. Duration: 2-3 weeks.",
+            "osteomyelitis": "Prolonged therapy: 4-6 weeks (if all infected bone resected) OR 6-12 weeks (if residual infected bone). Consider oral suppressive therapy if unresectable.",
+            "de_escalation": "Narrow antibiotics based on culture results. Switch from broad-spectrum to targeted therapy. Discontinue MRSA coverage if MSSA confirmed.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Improving clinically, (3) Tolerating PO intake, (4) Good bioavailability oral option available."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "mild": "1-2 weeks",
+            "moderate": "2-3 weeks",
+            "severe": "3-4 weeks",
+            "osteomyelitis": "4-6 weeks (if all infected bone resected) OR 6-12 weeks (if residual infected bone) OR lifelong suppression (if unresectable)",
+            "monitoring": "Weekly wound assessment. Mark borders of erythema. Reassess vascular status. Monitor for osteomyelitis (probe-to-bone, imaging). Repeat cultures if not improving. Monitor HbA1c and glycemic control.",
+            "stop_criteria": "Resolution of infection signs (erythema, drainage, warmth). Wound healing or granulation tissue present. Normalized inflammatory markers (if elevated). For osteomyelitis: Completed full course + clinical resolution."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "wound_care": "Debridement of necrotic tissue (sharp, surgical, or enzymatic). Offloading (total contact cast, walking boot, crutches). Moist wound healing. Negative pressure wound therapy if appropriate.",
+            "vascular_assessment": "ALL DFI patients need vascular assessment. ABI <0.9 or TcPO2 <30mmHg suggests PAD. Revascularization (angioplasty, bypass) may be needed for healing. Ischemic wounds unlikely to heal without revascularization.",
+            "glycemic_control": "Target HbA1c <7% for wound healing. Tight inpatient glucose control (140-180mg/dL). Avoid hypoglycemia.",
+            "osteomyelitis_management": "Surgical debridement preferred (removes infected bone, improves cure rate). Medical therapy alone: 60-80% cure if all bone resected, 20-40% if residual bone. Consider amputation if unresectable and failing medical therapy.",
+            "amputation_indications": "Uncontrolled infection despite antibiotics and debridement, extensive necrosis, ischemic limb not amenable to revascularization, patient preference.",
+            "multidisciplinary_team": "Infectious disease, podiatry, vascular surgery, endocrinology, wound care, orthotics. Diabetic foot clinic if available."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Narrow antibiotics based on culture results",
+              "Switch from IV to PO when stable and improving",
+              "Discontinue MRSA coverage if MSSA confirmed",
+              "Discontinue anaerobic coverage if not indicated",
+              "Shorten duration if adequate debridement and rapid response"
+            ],
+            "timeout_checklist": [
+              "Is this truly infection or just colonization? (Uninfected ulcers do NOT need antibiotics)",
+              "Have I obtained deep tissue culture (not swab)?",
+              "Is osteomyelitis present? (Probe-to-bone, imaging)",
+              "Is vascular assessment done? (May need revascularization)",
+              "Can I narrow antibiotics based on cultures?",
+              "Can I switch IV to PO?",
+              "Is wound care and offloading optimized?"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT treat uninfected ulcers with antibiotics (colonization is normal). Do NOT use prolonged antibiotics as substitute for adequate debridement or revascularization. Do NOT continue antibiotics for chronic wounds without active infection.",
+            "patient_education": "Foot care: Daily inspection, proper footwear, avoid barefoot walking. Glycemic control critical for healing. Offloading essential. Return if worsening, fever, or new drainage."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Diabetic Foot Infection Guidelines (2012, updated 2020)",
+              "url": "https://www.idsociety.org/practice-guideline/diabetic-foot-infections/"
+            },
+            {
+              "label": "International Working Group on the Diabetic Foot (IWGDF) Guidelines (2023)",
+              "url": "https://iwgdfguidelines.org/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "surgical-site-infection",
+      "name": "Surgical Site Infection (SSI)",
+      "synonyms": ["SSI", "post-operative wound infection", "surgical wound infection"],
+      "icd10": ["T81.4XXA", "T81.41XA", "T81.42XA"],
+      "severity": ["mild", "moderate", "severe"],
+      "shortDescription": "Infection occurring within 30-90 days after surgery involving skin, subcutaneous tissue, or deeper structures",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Surgical site infection (SSI) is infection occurring within 30 days (superficial/deep incisional) or 90 days (organ/space with implant) after surgery. Classified by CDC/NHSN criteria into superficial incisional, deep incisional, and organ/space SSI.",
+            "clinical_presentation": "Superficial: Purulent drainage, erythema, warmth, swelling, tenderness at incision. Deep: Fever, wound dehiscence, abscess, fascial involvement. Organ/space: Fever, organ-specific symptoms (e.g., peritonitis, mediastinitis).",
+            "cdc_classification": {
+              "superficial_incisional": "Involves skin and subcutaneous tissue only. Occurs within 30 days. At least one: Purulent drainage, positive culture, pain/tenderness/swelling/redness, surgeon diagnosis.",
+              "deep_incisional": "Involves fascia and muscle. Occurs within 30-90 days (if implant). At least one: Purulent drainage from deep incision, dehiscence or surgeon opens wound, abscess, fever + pain/tenderness.",
+              "organ_space": "Involves any part of body (excluding skin, fascia, muscle) opened or manipulated during surgery. Occurs within 30-90 days (if implant). At least one: Purulent drainage from drain, positive culture, abscess, surgeon diagnosis."
+            },
+            "risk_factors": [
+              "Prolonged surgery (>2 hours)",
+              "Contaminated or dirty wound classification",
+              "Diabetes mellitus or hyperglycemia (glucose >200mg/dL)",
+              "Obesity (BMI >30)",
+              "Smoking or malnutrition",
+              "Immunosuppression (steroids, chemotherapy)",
+              "Emergency surgery",
+              "Inadequate antibiotic prophylaxis"
+            ],
+            "red_flags": [
+              "Wound dehiscence - may indicate deep SSI or necrotizing infection",
+              "Systemic toxicity (fever, hypotension, tachycardia) - severe infection or sepsis",
+              "Foul odor or crepitus - anaerobes or gas-forming organisms",
+              "Mediastinitis (post-cardiac surgery) - high mortality, requires surgical debridement",
+              "Prosthetic joint infection - may require removal of hardware"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Obtain wound culture for purulent drainage. Imaging if concern for deep SSI or abscess. Blood cultures if systemic signs.",
+            "essential_tests": [
+              "Wound culture (deep tissue or purulent drainage, NOT superficial swab)",
+              "Gram stain (if available, guides empiric therapy)"
+            ],
+            "conditional_tests": [
+              "Blood cultures: If fever, systemic toxicity, or concern for bacteremia",
+              "Imaging (CT, MRI, US): If concern for deep SSI, abscess, or organ/space infection",
+              "CBC, CRP, ESR: If severe or monitoring response",
+              "Intraoperative cultures: If surgical exploration performed"
+            ],
+            "when_not_to_test": "Do NOT culture healing wounds without signs of infection. Do NOT use superficial swab cultures (contaminated). Do NOT delay treatment for culture results if severe infection.",
+            "turnaround_time": "Wound culture: 24-48 hours. Blood cultures: 24-48 hours. Imaging: Same day if urgent."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "clean_surgery": {
+              "description": "Cardiac, orthopedic, neurosurgery, vascular",
+              "pathogens": [
+                "Staphylococcus aureus (MSSA > MRSA) - most common",
+                "Coagulase-negative staphylococci (S. epidermidis) - especially with implants",
+                "Beta-hemolytic streptococci"
+              ]
+            },
+            "clean_contaminated_surgery": {
+              "description": "GI, GU, respiratory tract surgery",
+              "pathogens": [
+                "Staphylococcus aureus",
+                "Enterobacteriaceae (E. coli, Klebsiella)",
+                "Enterococcus species",
+                "Anaerobes (Bacteroides, Peptostreptococcus)"
+              ]
+            },
+            "contaminated_dirty_surgery": {
+              "description": "Perforated viscus, traumatic wound, abscess",
+              "pathogens": [
+                "Polymicrobial (average 3-5 organisms)",
+                "Enterobacteriaceae",
+                "Enterococcus",
+                "Anaerobes (Bacteroides, Clostridium)",
+                "Pseudomonas aeruginosa"
+              ]
+            },
+            "resistance_patterns": "MRSA 20-40% (higher in healthcare-associated SSI). ESBL Enterobacteriaceae 10-20%. VRE 5-10% (higher in abdominal surgery). Coagulase-negative staphylococci often methicillin-resistant.",
+            "mdro_risk_factors": [
+              "Prior MRSA colonization or infection",
+              "Recent hospitalization or antibiotics",
+              "Prolonged preoperative stay",
+              "ICU admission"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "superficial_clean_surgery": "Cephalexin 500mg PO QID OR Dicloxacillin 500mg PO QID. If MRSA risk: TMP-SMX DS 1-2 tabs PO BID OR Doxycycline 100mg PO BID. Duration: 5-7 days.",
+            "deep_clean_surgery": "Vancomycin 15-20mg/kg IV q8-12h (covers MRSA + coagulase-negative staph). Duration: 7-14 days (longer if implant involved).",
+            "clean_contaminated_gi_surgery": "Piperacillin-tazobactam 3.375g IV q6h OR Ceftriaxone 2g IV daily + Metronidazole 500mg IV q8h (covers Gram-negatives + anaerobes). Add vancomycin if MRSA risk. Duration: 7-14 days.",
+            "contaminated_dirty_surgery": "Vancomycin 15-20mg/kg IV q8-12h + Piperacillin-tazobactam 3.375g IV q6h OR Vancomycin + Meropenem 1g IV q8h (if ESBL risk). Duration: 7-14 days.",
+            "prosthetic_joint_infection": "Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h (covers MRSA, Gram-negatives, Pseudomonas). Consult orthopedics (may need hardware removal). Duration: 4-6 weeks (if hardware retained) OR 2-6 weeks (if hardware removed).",
+            "alternatives": "Beta-lactam allergy: Vancomycin + aztreonam (Gram-negative) + metronidazole (anaerobes). Vancomycin intolerance: Daptomycin 6mg/kg IV daily OR Linezolid 600mg IV/PO BID.",
+            "avoid_list": "Avoid monotherapy for moderate-severe SSI. Avoid oral therapy for deep SSI until stable. Avoid inadequate anaerobic coverage for GI surgery."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "mssa": "Cefazolin 1-2g IV q8h OR Nafcillin 2g IV q4h. PO: Cephalexin 500mg PO QID. Duration: 7-14 days.",
+            "mrsa": "Vancomycin 15-20mg/kg IV q8-12h OR Daptomycin 6mg/kg IV daily. PO: TMP-SMX DS 1-2 tabs PO BID OR Linezolid 600mg PO BID. Duration: 7-14 days (longer if implant).",
+            "enterobacteriaceae": "Ceftriaxone 2g IV daily OR Ciprofloxacin 400mg IV q12h (if susceptible). ESBL: Ertapenem 1g IV daily OR Meropenem 1g IV q8h. Duration: 7-14 days.",
+            "enterococcus": "Ampicillin 2g IV q4h (if susceptible). VRE: Linezolid 600mg IV/PO BID OR Daptomycin 6mg/kg IV daily. Duration: 7-14 days.",
+            "pseudomonas": "Cefepime 2g IV q8h OR Piperacillin-tazobactam 3.375g IV q6h OR Ciprofloxacin 400mg IV q12h (if susceptible). Duration: 7-14 days.",
+            "anaerobes": "Metronidazole 500mg IV/PO q8h OR Clindamycin 600-900mg IV q8h. Duration: 7-14 days.",
+            "prosthetic_joint_infection": "Rifampin 300-450mg PO BID added to primary agent (enhances biofilm penetration). Duration: 4-6 weeks (if hardware retained) OR 2-6 weeks (if hardware removed).",
+            "de_escalation": "Narrow antibiotics based on culture results. Switch from vancomycin to cefazolin if MSSA. Discontinue anaerobic coverage if not indicated.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Improving clinically, (3) Tolerating PO intake, (4) Good bioavailability oral option available."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "superficial_ssi": "5-7 days",
+            "deep_ssi": "7-14 days",
+            "organ_space_ssi": "7-14 days (may need longer if abscess or inadequate source control)",
+            "prosthetic_joint_infection": "4-6 weeks (if hardware retained) OR 2-6 weeks (if hardware removed and 2-stage revision)",
+            "mediastinitis": "4-6 weeks",
+            "monitoring": "Daily wound assessment. Mark borders of erythema. Reassess for abscess or deep infection if not improving. Repeat imaging if concern for residual infection. Monitor inflammatory markers (CRP, ESR) if elevated.",
+            "stop_criteria": "Resolution of infection signs (erythema, drainage, warmth, fever). Wound healing or granulation tissue present. Normalized inflammatory markers (if elevated)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "source_control": "Adequate drainage is CRITICAL. Open wound if purulent drainage or abscess. Remove sutures/staples if needed. Negative pressure wound therapy may be beneficial. Surgical debridement if necrotizing infection or deep SSI.",
+            "prosthetic_joint_infection": "Consult orthopedics. Options: (1) Debridement, antibiotics, and implant retention (DAIR) - if early (<3 weeks) and stable implant, (2) 2-stage revision - remove hardware, antibiotics, reimplant, (3) 1-stage revision - remove and reimplant same surgery, (4) Resection arthroplasty or amputation - if failed treatments.",
+            "mediastinitis": "Post-cardiac surgery complication (1-5% incidence, 10-40% mortality). Requires surgical debridement + prolonged antibiotics (4-6 weeks). Negative pressure wound therapy. Multidisciplinary management (cardiac surgery, infectious disease).",
+            "prevention": "Appropriate antibiotic prophylaxis (within 1 hour of incision, redose if prolonged surgery). Glycemic control (glucose <200mg/dL). Normothermia. Chlorhexidine skin prep. Hair clipping (not shaving). Smoking cessation.",
+            "immunocompromised": "Higher risk of SSI and MDRO. Consider broader coverage. Longer duration (14-21 days). May need antifungal coverage if prolonged neutropenia.",
+            "pregnancy": "Preferred: Cephalosporins, penicillins, aztreonam. Avoid: Fluoroquinolones, doxycycline, TMP-SMX (1st trimester)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Narrow antibiotics based on culture results",
+              "Switch from vancomycin to cefazolin if MSSA",
+              "Discontinue anaerobic coverage if not indicated",
+              "Switch from IV to PO when stable",
+              "Shorten duration if adequate source control and rapid response"
+            ],
+            "timeout_checklist": [
+              "Is this truly SSI or normal post-operative changes? (Erythema alone in first 48 hours may be normal)",
+              "Has adequate source control been achieved? (Drainage, debridement)",
+              "Have I obtained deep tissue culture (not swab)?",
+              "Can I narrow antibiotics based on cultures?",
+              "Can I switch IV to PO?",
+              "Is hardware involved? (May need removal)",
+              "Can I stop antibiotics? (If adequate duration and resolution)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT treat normal post-operative erythema (first 48 hours). Do NOT use prolonged antibiotics as substitute for adequate drainage. Do NOT continue antibiotics for chronic wounds without active infection.",
+            "patient_education": "Wound care: Keep clean and dry, change dressings as instructed. Return if worsening, fever, increased drainage, or wound dehiscence. Smoking cessation and glycemic control important for healing."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "CDC/NHSN Surgical Site Infection Criteria (2024)",
+              "url": "https://www.cdc.gov/nhsn/pdfs/pscmanual/9pscssicurrent.pdf"
+            },
+            {
+              "label": "WHO Guidelines for Prevention of Surgical Site Infection (2018)",
+              "url": "https://www.who.int/publications/i/item/9789241550475"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "impetigo",
+      "name": "Impetigo",
+      "synonyms": ["school sores", "impetigo contagiosa", "bullous impetigo"],
+      "icd10": ["L01.00", "L01.03", "L01.09"],
+      "severity": ["mild"],
+      "shortDescription": "Highly contagious superficial bacterial skin infection with honey-crusted lesions or bullae, common in children",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Impetigo is a highly contagious superficial bacterial skin infection primarily affecting children. Two forms: (1) Non-bullous (70%): Honey-crusted lesions, (2) Bullous (30%): Flaccid bullae that rupture leaving erosions.",
+            "clinical_presentation": "Non-bullous: Erythematous macules → vesicles/pustules → rupture → honey-colored crusts. Face (perioral, nose) and extremities most common. Bullous: Flaccid bullae (1-2cm) filled with clear/cloudy fluid → rupture → erosions with collarette of scale. Trunk and intertriginous areas. Minimal systemic symptoms.",
+            "diagnostic_criteria": "Clinical diagnosis based on characteristic appearance. Culture if atypical, recurrent, or outbreak investigation.",
+            "risk_factors": [
+              "Age 2-5 years (peak incidence)",
+              "Warm, humid climate or summer months",
+              "Crowded living conditions (daycare, schools, sports)",
+              "Poor hygiene or skin trauma (insect bites, eczema, scabies)",
+              "Nasal carriage of S. aureus",
+              "Contact with infected person"
+            ],
+            "red_flags": [
+              "Extensive involvement or systemic symptoms - consider staphylococcal scalded skin syndrome (SSSS)",
+              "Post-streptococcal glomerulonephritis - rare complication (hematuria, edema, hypertension)",
+              "Recurrent impetigo - consider MRSA colonization or underlying skin condition (eczema, scabies)"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Culture NOT routinely needed for typical impetigo. Consider if atypical presentation, treatment failure, recurrent infections, or outbreak investigation.",
+            "essential_tests": [
+              "Clinical diagnosis (no routine tests needed)"
+            ],
+            "conditional_tests": [
+              "Bacterial culture: If atypical, treatment failure, recurrent, or MRSA suspected",
+              "Urinalysis: If concern for post-streptococcal glomerulonephritis (hematuria, proteinuria)",
+              "ASO titer, anti-DNase B: If post-streptococcal glomerulonephritis suspected (elevated 2-3 weeks after infection)"
+            ],
+            "when_not_to_test": "Do NOT routinely culture typical impetigo (clinical diagnosis sufficient). Do NOT delay treatment for culture results.",
+            "turnaround_time": "Bacterial culture: 24-48 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "non_bullous_impetigo": {
+              "description": "70% of cases",
+              "pathogens": [
+                "Staphylococcus aureus (most common, 80-90%)",
+                "Streptococcus pyogenes (Group A Strep, 10-20%)",
+                "Mixed S. aureus + S. pyogenes (10%)"
+              ]
+            },
+            "bullous_impetigo": {
+              "description": "30% of cases",
+              "pathogens": [
+                "Staphylococcus aureus (100%, produces exfoliative toxin)"
+              ]
+            },
+            "resistance_patterns": "MRSA prevalence 10-30% in community-acquired impetigo (varies by region). Streptococcus pyogenes remains universally susceptible to beta-lactams. Mupirocin resistance rare (<5%) but increasing.",
+            "mdro_risk_factors": [
+              "Prior MRSA infection or colonization",
+              "Recent antibiotic use",
+              "Daycare or sports participation",
+              "Household contact with MRSA"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "localized_limited": "Mupirocin 2% ointment topically TID x 5 days (first-line for limited lesions <5). Alternative: Retapamulin 1% ointment topically BID x 5 days.",
+            "extensive_or_systemic": "Cephalexin 25-50mg/kg/day PO divided QID (max 500mg QID) x 7 days OR Dicloxacillin 12.5-25mg/kg/day PO divided QID (max 500mg QID) x 7 days. Alternative: Amoxicillin-clavulanate 25-45mg/kg/day PO divided BID x 7 days.",
+            "mrsa_suspected": "TMP-SMX 8-12mg/kg/day (TMP component) PO divided BID x 7 days OR Clindamycin 10-25mg/kg/day PO divided TID x 7 days (if <8 years or sulfa allergy). Alternative: Cephalexin + mupirocin (combination therapy).",
+            "alternatives": "Beta-lactam allergy: Clindamycin 10-25mg/kg/day PO divided TID x 7 days OR Azithromycin 10mg/kg PO day 1, then 5mg/kg PO daily x 4 days (if macrolide-susceptible).",
+            "avoid_list": "Avoid fluoroquinolones in children <18 years (tendon rupture risk). Avoid neomycin or bacitracin (high resistance rates, contact dermatitis)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "mssa": "Cephalexin 25-50mg/kg/day PO divided QID x 7 days OR Dicloxacillin 12.5-25mg/kg/day PO divided QID x 7 days. Topical: Mupirocin 2% ointment TID x 5 days (if limited).",
+            "mrsa": "TMP-SMX 8-12mg/kg/day (TMP component) PO divided BID x 7 days OR Clindamycin 10-25mg/kg/day PO divided TID x 7 days (if D-test negative). Topical: Mupirocin 2% ointment TID x 5 days (if limited and mupirocin-susceptible).",
+            "streptococcus_pyogenes": "Penicillin VK 25-50mg/kg/day PO divided TID-QID x 7 days OR Amoxicillin 25-45mg/kg/day PO divided BID x 7 days. Topical: Mupirocin 2% ointment TID x 5 days (if limited).",
+            "de_escalation": "Switch from broad-spectrum to narrow-spectrum based on culture results. Switch from oral to topical if limited lesions and improving.",
+            "iv_to_po_switch": "Not applicable (impetigo treated with PO or topical therapy)"
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "topical": "5 days (mupirocin or retapamulin)",
+            "oral": "7 days",
+            "monitoring": "Reassess in 3-5 days. Expect improvement in 2-3 days (decreased crusting, no new lesions). Complete resolution in 7-10 days. Culture if no improvement by 5 days.",
+            "stop_criteria": "Resolution of lesions (no new lesions, crusts resolved). Contagious until 24 hours after starting antibiotics or until lesions healed."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "infection_control": "Highly contagious. Exclude from school/daycare until 24 hours after starting antibiotics. Avoid sharing towels, clothing, toys. Wash hands frequently. Cover lesions with bandages.",
+            "recurrent_impetigo": "If ≥2 episodes in 6 months: (1) Test for S. aureus colonization (nares, axilla, groin), (2) Decolonization: Mupirocin nasal ointment BID x 5 days + chlorhexidine body wash daily x 5-14 days, (3) Treat underlying skin conditions (eczema, scabies), (4) Improve hygiene, (5) Treat household contacts if colonized.",
+            "eczema_herpeticum": "Differential diagnosis: Vesicular lesions in eczema patient. Caused by HSV. Requires acyclovir, not antibiotics. Consult dermatology if uncertain.",
+            "post_streptococcal_glomerulonephritis": "Rare complication (1-5% of streptococcal impetigo). Occurs 1-3 weeks after infection. Hematuria, edema, hypertension, elevated creatinine. Antibiotics do NOT prevent glomerulonephritis (but prevent spread). Supportive care, nephrology consult if severe.",
+            "pregnancy": "Preferred: Cephalexin, amoxicillin-clavulanate, mupirocin topical. Avoid: Fluoroquinolones, doxycycline, TMP-SMX (1st trimester).",
+            "neonates": "Bullous impetigo in neonates may progress to staphylococcal scalded skin syndrome (SSSS). Requires IV antibiotics (nafcillin or vancomycin) and hospitalization."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Use topical therapy (mupirocin) for limited lesions (<5 lesions)",
+              "Switch from oral to topical if improving and limited lesions",
+              "Narrow antibiotics based on culture results (if obtained)",
+              "Discontinue antibiotics at 5-7 days if resolved"
+            ],
+            "timeout_checklist": [
+              "Is this truly impetigo? (Consider eczema, HSV, contact dermatitis)",
+              "Can I use topical therapy alone? (Yes, if <5 lesions)",
+              "Is MRSA coverage needed? (Only if risk factors or treatment failure)",
+              "Can I stop antibiotics? (Yes, if 5-7 days and resolved)",
+              "Have I addressed infection control? (Exclude from school until 24 hours after antibiotics)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use oral antibiotics for limited lesions (topical sufficient). Do NOT use prolonged courses (5-7 days adequate). Do NOT treat contacts unless symptomatic.",
+            "patient_education": "Highly contagious. Keep lesions covered. Wash hands frequently. Avoid sharing personal items. Return to school/daycare 24 hours after starting antibiotics. Return if worsening or not improving in 3-5 days."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "AAP Red Book: Staphylococcal and Streptococcal Infections (2024)",
+              "url": "https://publications.aap.org/redbook"
+            },
+            {
+              "label": "IDSA Skin and Soft Tissue Infections Guidelines (2014)",
+              "url": "https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "animal-human-bites",
+      "name": "Animal & Human Bites",
+      "synonyms": ["dog bite", "cat bite", "human bite", "bite wound infection"],
+      "icd10": ["W54.0XXA", "W55.01XA", "W50.3XXA", "A28.0"],
+      "severity": ["mild", "moderate", "severe"],
+      "shortDescription": "Traumatic wound from animal or human bite with high risk of polymicrobial infection requiring prophylaxis or treatment",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Bite wounds from animals (dog, cat, other) or humans carry high risk of infection due to polymicrobial oral flora. Infection rate: Dog bites 5-15%, cat bites 30-50%, human bites 10-50%. Requires assessment for prophylaxis vs treatment.",
+            "clinical_presentation": "Puncture wound, laceration, or crush injury. Signs of infection: Erythema, warmth, swelling, purulent drainage, pain. Systemic symptoms (fever, lymphangitis) if moderate-severe. Cat bites: Deep puncture wounds (high infection risk). Human bites: Clenched-fist injury (fight bite) - high risk of joint/tendon involvement.",
+            "diagnostic_criteria": "Clinical diagnosis. Infection if: Erythema, warmth, swelling, purulent drainage, pain developing 8-24 hours after bite. Prophylaxis indicated if: High-risk bite (cat, human, hand, face, immunocompromised) presenting <24 hours.",
+            "risk_factors": [
+              "Cat bite (deep puncture, high infection rate)",
+              "Human bite (clenched-fist injury, high infection rate)",
+              "Hand, wrist, or foot bite (limited blood supply, joint/tendon involvement)",
+              "Facial bite (cosmetic, risk of CNS spread)",
+              "Immunocompromised (diabetes, HIV, asplenia, liver disease)",
+              "Delayed presentation (>24 hours)",
+              "Crush injury or devitalized tissue"
+            ],
+            "red_flags": [
+              "Clenched-fist injury (fight bite) - high risk of septic arthritis, tenosynovitis",
+              "Cat bite to hand - high risk of deep infection, osteomyelitis",
+              "Facial bite - risk of CNS spread, cosmetic concerns",
+              "Systemic toxicity - sepsis, bacteremia",
+              "Rabies risk - wild animal (bat, raccoon, skunk, fox), unprovoked attack"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Wound culture if infected (purulent drainage). Imaging if concern for fracture, foreign body, or deep infection. Rabies and tetanus assessment for all bites.",
+            "essential_tests": [
+              "Wound culture (aerobic and anaerobic) if infected",
+              "Tetanus status assessment (give Td or Tdap if >5 years since last dose)",
+              "Rabies risk assessment (animal type, provoked vs unprovoked, animal available for observation)"
+            ],
+            "conditional_tests": [
+              "X-ray: If concern for fracture, foreign body (tooth fragment), or osteomyelitis",
+              "Blood cultures: If systemic toxicity or concern for bacteremia",
+              "HIV, HBV, HCV testing: If human bite (source and victim testing)",
+              "Gram stain: If purulent drainage (guides empiric therapy)"
+            ],
+            "when_not_to_test": "Do NOT culture uninfected wounds (colonization, not infection). Do NOT delay prophylaxis for culture results.",
+            "turnaround_time": "Wound culture: 24-48 hours (anaerobes may take 5-7 days). X-ray: Same day."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "dog_bite": {
+              "description": "Polymicrobial (average 5 organisms)",
+              "pathogens": [
+                "Pasteurella multocida (50%) - early infection (<24 hours)",
+                "Staphylococcus aureus",
+                "Streptococcus species",
+                "Capnocytophaga canimorsus (asplenia, liver disease - can cause sepsis)",
+                "Anaerobes (Fusobacterium, Bacteroides, Porphyromonas)"
+              ]
+            },
+            "cat_bite": {
+              "description": "Polymicrobial, high infection rate (30-50%)",
+              "pathogens": [
+                "Pasteurella multocida (75-80%) - early infection (<24 hours)",
+                "Staphylococcus aureus",
+                "Streptococcus species",
+                "Bartonella henselae (cat-scratch disease)",
+                "Anaerobes"
+              ]
+            },
+            "human_bite": {
+              "description": "Polymicrobial (average 10 organisms)",
+              "pathogens": [
+                "Streptococcus species (viridans group)",
+                "Staphylococcus aureus (including MRSA)",
+                "Eikenella corrodens (30-50%, resistant to clindamycin)",
+                "Haemophilus influenzae",
+                "Anaerobes (Fusobacterium, Prevotella, Peptostreptococcus)"
+              ]
+            },
+            "resistance_patterns": "Pasteurella resistant to clindamycin, macrolides, cephalexin. Eikenella resistant to clindamycin, metronidazole. MRSA possible in human bites. Anaerobes resistant to aminoglycosides.",
+            "mdro_risk_factors": [
+              "Prior MRSA infection (human bites)",
+              "Recent antibiotic use",
+              "Healthcare-associated human bite"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "prophylaxis_indications": "Prophylaxis indicated if: (1) Cat bite, (2) Human bite, (3) Hand/wrist/foot bite, (4) Facial bite, (5) Immunocompromised, (6) Presenting <24 hours. Duration: 3-5 days.",
+            "prophylaxis_regimen": "Amoxicillin-clavulanate 875mg PO BID x 3-5 days (first-line, covers Pasteurella, Eikenella, anaerobes). Alternative: Doxycycline 100mg PO BID + Metronidazole 500mg PO TID x 3-5 days.",
+            "treatment_mild_moderate": "Amoxicillin-clavulanate 875mg PO BID x 7-14 days (first-line). Alternative: Doxycycline 100mg PO BID + Metronidazole 500mg PO TID x 7-14 days.",
+            "treatment_severe_iv": "Ampicillin-sulbactam 3g IV q6h OR Piperacillin-tazobactam 3.375g IV q6h. Alternative: Ceftriaxone 2g IV daily + Metronidazole 500mg IV q8h. Duration: 7-14 days (switch to PO when stable).",
+            "penicillin_allergy": "Doxycycline 100mg PO BID + Metronidazole 500mg PO TID OR Moxifloxacin 400mg PO daily (covers most pathogens except Eikenella). Severe allergy: Aztreonam 1-2g IV q8h + Metronidazole 500mg IV q8h + Vancomycin 15-20mg/kg IV q8-12h.",
+            "avoid_list": "Avoid clindamycin (Pasteurella and Eikenella resistant). Avoid cephalexin or dicloxacillin (Pasteurella resistant). Avoid metronidazole alone (Eikenella resistant). Avoid fluoroquinolones alone (anaerobic coverage inadequate)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "pasteurella": "Amoxicillin-clavulanate 875mg PO BID OR Penicillin VK 500mg PO QID. Severe: Ampicillin-sulbactam 3g IV q6h OR Penicillin G 2-4 million units IV q4-6h. Duration: 7-14 days.",
+            "eikenella": "Amoxicillin-clavulanate 875mg PO BID OR Ampicillin 500mg PO QID. Severe: Ampicillin-sulbactam 3g IV q6h OR Ceftriaxone 2g IV daily. Duration: 7-14 days.",
+            "staphylococcus_aureus": "Cephalexin 500mg PO QID (if MSSA) OR TMP-SMX DS 1-2 tabs PO BID (if MRSA). Severe: Cefazolin 1-2g IV q8h (MSSA) OR Vancomycin 15-20mg/kg IV q8-12h (MRSA). Duration: 7-14 days.",
+            "polymicrobial": "Continue broad-spectrum coverage (amoxicillin-clavulanate or ampicillin-sulbactam) to cover all pathogens. Duration: 7-14 days.",
+            "septic_arthritis_osteomyelitis": "Prolonged IV therapy: 4-6 weeks. Surgical debridement often required. Consult orthopedics or hand surgery.",
+            "de_escalation": "Narrow antibiotics based on culture results if monomicrobial. Continue broad-spectrum if polymicrobial.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Improving clinically, (3) Tolerating PO intake. Use amoxicillin-clavulanate or doxycycline + metronidazole."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "prophylaxis": "3-5 days",
+            "mild_moderate_infection": "7-14 days",
+            "severe_infection": "14-21 days",
+            "septic_arthritis_osteomyelitis": "4-6 weeks",
+            "monitoring": "Reassess in 24-48 hours. Expect improvement in 2-3 days (decreased erythema, pain, swelling). Repeat imaging if concern for abscess or osteomyelitis. Monitor for systemic symptoms.",
+            "stop_criteria": "Resolution of infection signs (erythema, drainage, warmth, fever). Wound healing or granulation tissue present."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "wound_management": "Irrigate copiously (high-pressure irrigation, 200-500mL saline). Debride devitalized tissue. PRIMARY CLOSURE: Facial bites (cosmetic), low-risk bites <12 hours. DELAYED CLOSURE or SECONDARY INTENTION: High-risk bites (cat, human, hand), >12 hours, puncture wounds, crush injuries.",
+            "clenched_fist_injury": "High-risk human bite over MCP joint (fight bite). High rate of septic arthritis, tenosynovitis, osteomyelitis. Requires hand surgery consult, IV antibiotics, possible surgical exploration. Do NOT underestimate severity.",
+            "rabies_prophylaxis": "Rabies risk: Bats, raccoons, skunks, foxes (high risk). Dogs, cats (low risk if vaccinated and available for 10-day observation). Rabies PEP if: (1) Wild animal (bat, raccoon, skunk, fox), (2) Unprovoked attack, (3) Animal unavailable for observation. PEP: Rabies immune globulin (20 IU/kg infiltrated around wound) + rabies vaccine (days 0, 3, 7, 14).",
+            "tetanus_prophylaxis": "Give Td or Tdap if >5 years since last dose (or >10 years if clean wound). Give TIG if <3 lifetime doses and dirty wound.",
+            "hiv_hbv_hcv_transmission": "Human bites: Low risk of HIV transmission (<1%). Higher risk of HBV, HCV. Test source and victim. PEP if high-risk exposure (deep bite, blood exposure, source HIV+). Consult infectious disease.",
+            "capnocytophaga_sepsis": "Asplenic or liver disease patients at risk of fulminant sepsis from dog bite (Capnocytophaga canimorsus). Requires aggressive IV antibiotics (ampicillin-sulbactam or ceftriaxone). High mortality if delayed.",
+            "pregnancy": "Preferred: Amoxicillin-clavulanate, ampicillin-sulbactam. Avoid: Fluoroquinolones, doxycycline, TMP-SMX (1st trimester)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Use prophylaxis (3-5 days) for high-risk uninfected bites, not treatment doses",
+              "Switch from IV to PO when stable (amoxicillin-clavulanate)",
+              "Narrow antibiotics based on culture results if monomicrobial",
+              "Discontinue antibiotics at 7-14 days if resolved"
+            ],
+            "timeout_checklist": [
+              "Is prophylaxis indicated? (Cat, human, hand, face, immunocompromised, <24 hours)",
+              "Is this infected or just prophylaxis? (Prophylaxis: 3-5 days, Treatment: 7-14 days)",
+              "Is wound management adequate? (Irrigation, debridement, closure decision)",
+              "Is rabies prophylaxis needed? (Wild animal, unprovoked, unavailable for observation)",
+              "Is tetanus up to date?",
+              "Can I switch IV to PO? (Yes, if stable and improving)",
+              "Can I stop antibiotics? (Yes, if adequate duration and resolved)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use clindamycin (Pasteurella and Eikenella resistant). Do NOT use prolonged prophylaxis (3-5 days sufficient). Do NOT treat uninfected low-risk bites (dog bite to extremity, >24 hours, no high-risk features).",
+            "patient_education": "Watch for signs of infection (redness, swelling, drainage, fever). Return if worsening or not improving in 2-3 days. Elevate affected limb. Keep wound clean. Report animal to authorities if rabies risk."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Skin and Soft Tissue Infections Guidelines (2014)",
+              "url": "https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/"
+            },
+            {
+              "label": "CDC Rabies Prevention Guidelines (2024)",
+              "url": "https://www.cdc.gov/rabies/medical_care/index.html"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pressure-ulcer-infection",
+      "name": "Pressure Ulcer Infection",
+      "synonyms": ["pressure injury infection", "decubitus ulcer infection", "bedsore infection"],
+      "icd10": ["L89.90", "L89.93", "L89.94"],
+      "severity": ["moderate", "severe"],
+      "shortDescription": "Bacterial infection of pressure-induced skin breakdown requiring staging-based treatment and wound care optimization",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Pressure ulcer infection is bacterial infection of pressure-induced skin breakdown, typically over bony prominences. Requires differentiation between colonization (all pressure ulcers) and true infection. Staging: Stage 1 (intact skin), Stage 2 (partial thickness), Stage 3 (full thickness), Stage 4 (deep tissue/bone), Unstageable (eschar).",
+            "clinical_presentation": "Signs of infection: Purulent drainage, foul odor, erythema extending >2cm from wound edge, warmth, induration, wound breakdown or delayed healing. Systemic symptoms (fever, chills, altered mental status in elderly) if severe. Osteomyelitis: Probe-to-bone positive, exposed bone, sinus tract.",
+            "diagnostic_criteria": "Clinical diagnosis. Infection if ≥2 signs: Purulent drainage, foul odor, erythema, warmth, induration, wound breakdown. Osteomyelitis if: Probe-to-bone positive, exposed bone, or imaging evidence.",
+            "risk_factors": [
+              "Immobility or spinal cord injury",
+              "Malnutrition (albumin <3.5g/dL)",
+              "Fecal or urinary incontinence",
+              "Diabetes mellitus",
+              "Peripheral vascular disease",
+              "Advanced age or nursing home residence",
+              "Immunosuppression"
+            ],
+            "red_flags": [
+              "Probe-to-bone positive - high likelihood of osteomyelitis (PPV 89%)",
+              "Systemic toxicity - bacteremia, sepsis",
+              "Foul odor or necrotic tissue - anaerobes, necrotizing infection",
+              "Rapid wound deterioration - consider necrotizing fasciitis",
+              "Sacral or ischial ulcer - high risk of osteomyelitis"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Obtain deep tissue culture or bone biopsy for infected ulcers. Imaging if concern for osteomyelitis. Do NOT culture all pressure ulcers (colonization is universal).",
+            "essential_tests": [
+              "Deep tissue biopsy or curettage (preferred over swab culture)",
+              "Probe-to-bone test (if positive, high likelihood of osteomyelitis)",
+              "Plain X-ray (baseline, assess for osteomyelitis)"
+            ],
+            "conditional_tests": [
+              "MRI: Gold standard for osteomyelitis (sensitivity 90%, specificity 80%)",
+              "Bone biopsy with culture: Definitive diagnosis of osteomyelitis",
+              "Blood cultures: If systemic signs or severe infection",
+              "ESR, CRP: Elevated in osteomyelitis (but nonspecific)",
+              "Albumin, prealbumin: Assess nutritional status"
+            ],
+            "when_not_to_test": "Do NOT culture uninfected ulcers (all pressure ulcers are colonized). Do NOT use superficial swab cultures (contaminated, unreliable). Do NOT delay antibiotics for culture results if severe infection.",
+            "turnaround_time": "Tissue culture: 24-48 hours (anaerobes 5-7 days). X-ray: Same day. MRI: 1-7 days. Bone biopsy: 3-5 days."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "typical_pathogens": {
+              "description": "Polymicrobial (average 4-6 organisms)",
+              "pathogens": [
+                "Staphylococcus aureus (MRSA 30-50%)",
+                "Beta-hemolytic streptococci",
+                "Enterobacteriaceae (E. coli, Klebsiella, Proteus)",
+                "Enterococcus species (including VRE)",
+                "Pseudomonas aeruginosa (chronic wounds, prior antibiotics)",
+                "Anaerobes (Bacteroides, Peptostreptococcus, Clostridium) - especially sacral/ischial ulcers"
+              ]
+            },
+            "osteomyelitis": "Similar to soft tissue but may have Staphylococcus epidermidis (biofilm). Polymicrobial in 60-80% of cases.",
+            "resistance_patterns": "MRSA 30-50%. VRE 10-20% (higher in nursing homes). ESBL Enterobacteriaceae 15-25%. Pseudomonas often resistant to fluoroquinolones. Anaerobes resistant to aminoglycosides.",
+            "mdro_risk_factors": [
+              "Nursing home residence",
+              "Prior antibiotics (within 3 months)",
+              "Chronic wound (>30 days)",
+              "Recent hospitalization",
+              "Prior MDRO infection"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "mild_moderate_outpatient": "Amoxicillin-clavulanate 875mg PO BID + TMP-SMX DS 1-2 tabs PO BID (covers MRSA, Gram-negatives, anaerobes). Alternative: Levofloxacin 750mg PO daily + Metronidazole 500mg PO TID.",
+            "severe_inpatient": "Vancomycin 15-20mg/kg IV q8-12h + Piperacillin-tazobactam 3.375g IV q6h (covers MRSA, Gram-negatives, Pseudomonas, anaerobes). Alternative: Vancomycin + Cefepime 2g IV q8h + Metronidazole 500mg IV q8h.",
+            "osteomyelitis": "Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h OR Vancomycin + Meropenem 1g IV q8h (if ESBL risk). Duration: 6-8 weeks (if all infected bone resected) OR 12+ weeks (if residual bone).",
+            "alternatives": "Beta-lactam allergy: Vancomycin + aztreonam 1-2g IV q8h + metronidazole 500mg IV q8h. Vancomycin intolerance: Daptomycin 6mg/kg IV daily OR Linezolid 600mg IV/PO BID.",
+            "avoid_list": "Avoid monotherapy for moderate-severe infections. Avoid oral therapy for severe infections until stable. Avoid inadequate anaerobic coverage for sacral/ischial ulcers."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "mssa": "Cefazolin 1-2g IV q8h OR Nafcillin 2g IV q4h. PO: Cephalexin 500mg PO QID. Duration: 2-3 weeks (soft tissue), 6-8 weeks (osteomyelitis).",
+            "mrsa": "Vancomycin 15-20mg/kg IV q8-12h OR Daptomycin 6mg/kg IV daily. PO: TMP-SMX DS 1-2 tabs PO BID OR Linezolid 600mg PO BID. Duration: 2-3 weeks (soft tissue), 6-8 weeks (osteomyelitis).",
+            "enterobacteriaceae": "Ceftriaxone 2g IV daily OR Ciprofloxacin 400mg IV q12h (if susceptible). ESBL: Ertapenem 1g IV daily OR Meropenem 1g IV q8h. Duration: 2-3 weeks.",
+            "pseudomonas": "Cefepime 2g IV q8h OR Piperacillin-tazobactam 3.375g IV q6h OR Ciprofloxacin 400mg IV q12h (if susceptible). Duration: 2-3 weeks.",
+            "anaerobes": "Metronidazole 500mg IV/PO q8h OR Clindamycin 600-900mg IV q8h. Duration: 2-3 weeks.",
+            "polymicrobial": "Continue broad-spectrum coverage to cover all pathogens. Duration: 2-3 weeks (soft tissue), 6-8 weeks (osteomyelitis).",
+            "de_escalation": "Narrow antibiotics based on culture results. Discontinue MRSA coverage if MSSA confirmed. Discontinue anaerobic coverage if not indicated.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Improving clinically, (3) Tolerating PO intake, (4) Good bioavailability oral option available."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "soft_tissue_infection": "2-3 weeks",
+            "osteomyelitis": "6-8 weeks (if all infected bone resected) OR 12+ weeks (if residual bone) OR lifelong suppression (if unresectable)",
+            "monitoring": "Weekly wound assessment. Measure wound size. Reassess for osteomyelitis (probe-to-bone, imaging). Repeat cultures if not improving. Monitor nutritional status (albumin, prealbumin).",
+            "stop_criteria": "Resolution of infection signs (erythema, drainage, odor, warmth). Wound healing or granulation tissue present. Normalized inflammatory markers (if elevated). For osteomyelitis: Completed full course + clinical resolution."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "wound_care": "Debridement of necrotic tissue (sharp, surgical, enzymatic, or autolytic). Offloading pressure (repositioning q2h, pressure-relieving surfaces). Moist wound healing. Negative pressure wound therapy if appropriate. Treat underlying conditions (malnutrition, incontinence).",
+            "osteomyelitis_management": "Surgical debridement preferred (removes infected bone, improves cure rate). Medical therapy alone: 60-80% cure if all bone resected, 20-40% if residual bone. Consider lifelong suppression if unresectable and failing medical therapy.",
+            "nutrition": "Optimize nutrition: Protein 1.25-1.5g/kg/day, calories 30-35 kcal/kg/day. Vitamin C, zinc supplementation if deficient. Albumin >3.5g/dL goal. Consult nutrition if albumin <3.0g/dL.",
+            "pressure_relief": "CRITICAL for healing. Repositioning q2h. Pressure-relieving mattress (low air loss, alternating pressure). Avoid donut cushions (increase pressure). Offload heels (pillow under calves).",
+            "incontinence_management": "Bowel and bladder program. Barrier creams. Fecal management system if severe diarrhea. Foley catheter only if necessary (increases infection risk).",
+            "multidisciplinary_team": "Wound care nurse, physical therapy, occupational therapy, nutrition, infectious disease. Wound clinic if available."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Do NOT treat colonization (all pressure ulcers are colonized)",
+              "Narrow antibiotics based on culture results",
+              "Switch from IV to PO when stable and improving",
+              "Discontinue MRSA coverage if MSSA confirmed",
+              "Discontinue anaerobic coverage if not indicated"
+            ],
+            "timeout_checklist": [
+              "Is this truly infection or just colonization? (Need ≥2 signs of infection)",
+              "Have I obtained deep tissue culture (not swab)?",
+              "Is osteomyelitis present? (Probe-to-bone, imaging)",
+              "Is wound care optimized? (Debridement, offloading, nutrition)",
+              "Can I narrow antibiotics based on cultures?",
+              "Can I switch IV to PO?",
+              "Can I stop antibiotics? (If adequate duration and resolved)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT treat colonization (all pressure ulcers are colonized). Do NOT use prolonged antibiotics as substitute for adequate wound care and pressure relief. Do NOT continue antibiotics for chronic wounds without active infection.",
+            "patient_education": "Pressure relief is CRITICAL (repositioning q2h). Nutrition important for healing. Keep wound clean. Report worsening, fever, or increased drainage."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Diabetic Foot Infection Guidelines (2012) - applicable to pressure ulcers",
+              "url": "https://www.idsociety.org/practice-guideline/diabetic-foot-infections/"
+            },
+            {
+              "label": "National Pressure Injury Advisory Panel (NPIAP) Guidelines (2024)",
+              "url": "https://npiap.com/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "erysipelas",
+      "name": "Erysipelas",
+      "synonyms": ["St. Anthony's fire", "superficial cellulitis"],
+      "icd10": ["A46", "L03.90"],
+      "severity": ["mild", "moderate"],
+      "shortDescription": "Superficial bacterial skin infection with well-demarcated raised borders, primarily caused by streptococci",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Erysipelas is a superficial form of cellulitis involving the upper dermis and lymphatics, characterized by well-demarcated, raised, bright red, indurated plaque with sharp borders. Primarily caused by beta-hemolytic streptococci.",
+            "clinical_presentation": "Acute onset of bright red, raised, indurated plaque with sharp, well-demarcated borders. Peau d'orange (orange peel) appearance. Face (butterfly distribution) or lower extremities most common. Systemic symptoms: Fever, chills, malaise. May have lymphangitis or regional lymphadenopathy.",
+            "diagnostic_criteria": "Clinical diagnosis based on: (1) Well-demarcated raised erythema, (2) Sharp borders, (3) Peau d'orange appearance, (4) Systemic symptoms common. Differentiate from cellulitis (deeper, less well-demarcated).",
+            "risk_factors": [
+              "Lymphedema or venous insufficiency",
+              "Skin barrier disruption (tinea pedis, fissures, ulcers)",
+              "Prior episode of erysipelas (recurrence risk 20-30%)",
+              "Obesity",
+              "Diabetes mellitus",
+              "Immunosuppression"
+            ],
+            "red_flags": [
+              "Facial erysipelas - risk of cavernous sinus thrombosis",
+              "Rapidly spreading erythema - consider necrotizing fasciitis",
+              "Bullae or skin necrosis - deeper infection",
+              "Hypotension or altered mental status - septic shock",
+              "Recurrent episodes - consider underlying lymphedema or chronic venous insufficiency"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Blood cultures and imaging NOT routinely needed for uncomplicated erysipelas. Consider if severe, immunocompromised, or concern for deeper infection.",
+            "essential_tests": [
+              "Clinical diagnosis (no routine lab tests needed)",
+              "Mark borders of erythema with pen (to track progression)"
+            ],
+            "conditional_tests": [
+              "Blood cultures: If fever, systemic toxicity, immunocompromised, or severe infection (positive in 5% of cases)",
+              "Imaging (US, CT, MRI): If concern for abscess or necrotizing infection",
+              "CBC, CRP, ESR: If severe or monitoring response to therapy"
+            ],
+            "when_not_to_test": "Do NOT routinely culture non-purulent erysipelas (low yield). Do NOT routinely obtain blood cultures for mild outpatient erysipelas.",
+            "turnaround_time": "Blood cultures: 24-48 hours. Imaging: Same day (urgent if necrotizing infection suspected)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": [
+              "Beta-hemolytic streptococci (Group A, C, G Streptococcus) - 90% of cases",
+              "Staphylococcus aureus - rare in classic erysipelas (more common in cellulitis)"
+            ],
+            "special_situations": {
+              "facial_erysipelas": "Group A Streptococcus most common",
+              "lower_extremity": "Group A, C, or G Streptococcus",
+              "immunocompromised": "Consider broader differential (fungi, atypical bacteria)"
+            },
+            "resistance_patterns": "Streptococci remain universally susceptible to beta-lactams. Macrolide resistance increasing (10-20% in some regions).",
+            "mdro_risk_factors": "MRSA rare in classic erysipelas (consider if purulent drainage or atypical presentation)"
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "mild_outpatient": "Penicillin VK 500mg PO QID OR Amoxicillin 500mg PO TID (first-line for streptococcal infection). Alternative: Cephalexin 500mg PO QID.",
+            "moderate_outpatient": "Cefazolin 1-2g IV q8h OR Ceftriaxone 1-2g IV daily (if IV therapy needed)",
+            "severe_inpatient": "Penicillin G 2-4 million units IV q4-6h OR Ceftriaxone 2g IV daily. Add clindamycin 600-900mg IV q8h if concern for toxin-mediated disease (streptococcal toxic shock syndrome).",
+            "alternatives": "Beta-lactam allergy: Clindamycin 300-450mg PO TID OR Doxycycline 100mg PO BID OR Levofloxacin 750mg PO daily (if fluoroquinolone-susceptible streptococci).",
+            "avoid_list": "Avoid TMP-SMX monotherapy (poor streptococcal coverage). Avoid fluoroquinolones for empiric streptococcal infection (increasing resistance)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "streptococcus_pyogenes": "Penicillin VK 500mg PO QID OR Amoxicillin 500mg PO TID OR Penicillin G 2-4 million units IV q4-6h (if IV needed). Duration: 5-10 days.",
+            "de_escalation": "Switch from broad-spectrum to penicillin if streptococcal infection confirmed. Switch from IV to PO when stable.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Improving erythema/swelling, (3) Tolerating PO intake."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard": "5-10 days",
+            "short_course": "5 days if rapid response and no complications",
+            "prolonged": "10-14 days if slow response, severe infection, or immunocompromised",
+            "monitoring": "Mark borders of erythema daily. Expect improvement within 24-48 hours (decreased warmth, pain). Complete resolution may take 7-14 days. Residual induration or hyperpigmentation may persist for weeks.",
+            "stop_criteria": "Resolution of erythema, warmth, swelling, and systemic symptoms. Residual induration or hyperpigmentation NOT indication to continue antibiotics."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "recurrent_erysipelas": "If ≥2 episodes in 1 year: Treat underlying risk factors (tinea pedis, lymphedema, venous insufficiency, fissures). Consider prophylaxis: Penicillin VK 250mg PO BID OR Erythromycin 250mg PO BID (if penicillin-allergic) for 6-12 months.",
+            "lymphedema": "Higher risk of recurrence (20-30%). Treat aggressively. Consider compression therapy and lymphedema management (manual lymphatic drainage, compression garments).",
+            "facial_erysipelas": "Higher risk of complications (cavernous sinus thrombosis). Consider IV antibiotics and close monitoring. Avoid manipulation of facial lesions.",
+            "immunocompromised": "Broader differential (fungi, atypical bacteria). Consider imaging to rule out deeper infection. Longer duration (10-14 days).",
+            "pregnancy": "Preferred: Penicillin, amoxicillin, cephalexin. Avoid: Fluoroquinolones, doxycycline, TMP-SMX (1st trimester)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Use narrow-spectrum penicillin for streptococcal erysipelas (not broad-spectrum)",
+              "Switch from IV to PO when stable and improving",
+              "Discontinue antibiotics at 5-7 days if rapid response"
+            ],
+            "timeout_checklist": [
+              "Is this truly erysipelas? (Well-demarcated, raised borders, peau d'orange)",
+              "Is streptococcal infection most likely? (Yes, use penicillin)",
+              "Are blood cultures and imaging truly needed? (Usually NOT for uncomplicated erysipelas)",
+              "Can I switch IV to PO? (Yes, if afebrile and improving)",
+              "Can I stop antibiotics? (Yes, if 5-7 days and resolved)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use broad-spectrum antibiotics for classic erysipelas (penicillin sufficient). Do NOT continue antibiotics for residual induration or hyperpigmentation.",
+            "patient_education": "Elevate affected limb. Treat underlying risk factors (tinea pedis, dry skin, fissures). Seek care if worsening despite antibiotics. Consider prophylaxis if recurrent."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Skin and Soft Tissue Infections Guidelines (2014)",
+              "url": "https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            },
+            {
+              "label": "British Association of Dermatologists Guidelines for Erysipelas (2023)",
+              "url": "https://www.bad.org.uk/healthcare-professionals/clinical-standards/clinical-guidelines"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "folliculitis-furuncles",
+      "name": "Folliculitis & Furuncles",
+      "synonyms": ["boils", "carbuncles", "hot tub folliculitis"],
+      "icd10": ["L73.9", "L02.92", "L02.93"],
+      "severity": ["mild", "moderate"],
+      "shortDescription": "Bacterial infection of hair follicles (folliculitis) or deeper nodules (furuncles/carbuncles) requiring drainage and antibiotics",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Folliculitis: Superficial infection of hair follicle (pustule at follicle opening). Furuncle (boil): Deep infection of hair follicle extending into dermis (painful nodule with central pustule). Carbuncle: Cluster of furuncles with multiple drainage points.",
+            "clinical_presentation": "Folliculitis: Small pustules at hair follicle openings, minimal pain. Furuncle: Painful, erythematous, fluctuant nodule (0.5-3cm) with central pustule, may spontaneously drain. Carbuncle: Large, deep, painful mass with multiple drainage points, systemic symptoms common.",
+            "diagnostic_criteria": "Clinical diagnosis. Folliculitis: Pustules at follicle openings. Furuncle: Fluctuant nodule with central pustule. Carbuncle: Cluster of furuncles with multiple drainage points.",
+            "risk_factors": [
+              "MRSA colonization or prior infection",
+              "Shaving, waxing, or friction (tight clothing)",
+              "Hot tub or swimming pool exposure (Pseudomonas folliculitis)",
+              "Diabetes mellitus or immunosuppression",
+              "Obesity or hyperhidrosis",
+              "Occlusive clothing or poor hygiene"
+            ],
+            "red_flags": [
+              "Carbuncle with systemic symptoms - may need IV antibiotics",
+              "Facial furuncle (especially nasolabial triangle) - risk of cavernous sinus thrombosis",
+              "Recurrent furuncles - consider MRSA colonization or immunodeficiency",
+              "Multiple furuncles or carbuncles - consider diabetes or immunosuppression"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Culture purulent drainage from furuncles/carbuncles (especially if recurrent or treatment failure). Do NOT culture folliculitis.",
+            "essential_tests": [
+              "Incision and drainage (I&D) for furuncles/carbuncles - PRIMARY treatment",
+              "Wound culture of purulent material (if furuncle/carbuncle)"
+            ],
+            "conditional_tests": [
+              "Blood cultures: If systemic toxicity or carbuncle with fever",
+              "Glucose: If recurrent furuncles (rule out diabetes)",
+              "HIV test: If recurrent infections or opportunistic infections",
+              "MRSA colonization screening: If recurrent furuncles (nares, axilla, groin)"
+            ],
+            "when_not_to_test": "Do NOT culture folliculitis (superficial, self-limited). Do NOT delay I&D to obtain imaging if diagnosis clear.",
+            "turnaround_time": "Wound culture: 24-48 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "folliculitis": {
+              "bacterial": "Staphylococcus aureus (most common), Pseudomonas aeruginosa (hot tub folliculitis)",
+              "fungal": "Malassezia (pityrosporum folliculitis) - trunk, immunosuppressed",
+              "other": "Demodex mites, herpes simplex (herpetic folliculitis)"
+            },
+            "furuncles_carbuncles": {
+              "description": "Staphylococcus aureus (MRSA > MSSA) - 80-90% of cases",
+              "other": "Beta-hemolytic streptococci (rare)"
+            },
+            "resistance_patterns": "MRSA prevalence 50-80% in community-acquired furuncles. Most MRSA isolates susceptible to TMP-SMX, doxycycline, clindamycin. Pseudomonas often resistant to fluoroquinolones.",
+            "mdro_risk_factors": [
+              "Prior MRSA infection or colonization",
+              "Recent hospitalization or antibiotic use",
+              "IVDU or HIV infection",
+              "Recurrent furuncles"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "folliculitis_mild": "Topical mupirocin 2% ointment BID x 5-7 days OR Topical clindamycin 1% solution BID x 5-7 days. Warm compresses. Avoid shaving affected area.",
+            "folliculitis_extensive": "TMP-SMX DS 1-2 tabs PO BID x 7 days OR Doxycycline 100mg PO BID x 7 days (if MRSA suspected). Cephalexin 500mg PO QID x 7 days (if MSSA likely).",
+            "hot_tub_folliculitis": "Self-limited (resolves in 7-10 days without treatment). Ciprofloxacin 500mg PO BID x 7 days if severe or immunocompromised.",
+            "furuncle_small": "I&D alone (no antibiotics) if <5cm, no surrounding cellulitis, no systemic symptoms. Warm compresses to promote drainage.",
+            "furuncle_antibiotics_indicated": "TMP-SMX DS 1-2 tabs PO BID x 5-7 days OR Doxycycline 100mg PO BID x 5-7 days OR Clindamycin 300-450mg PO TID x 5-7 days. Indications: Surrounding cellulitis, multiple furuncles, systemic symptoms, immunocompromised, failed I&D alone.",
+            "carbuncle": "I&D + antibiotics. TMP-SMX DS 1-2 tabs PO BID x 7-10 days OR Doxycycline 100mg PO BID x 7-10 days. If systemic symptoms: Vancomycin 15-20mg/kg IV q8-12h.",
+            "alternatives": "Beta-lactam allergy: Doxycycline or TMP-SMX (already MRSA-active). Sulfa allergy: Doxycycline or clindamycin.",
+            "avoid_list": "Avoid beta-lactams (cephalexin, dicloxacillin) for empiric therapy if MRSA suspected. Avoid fluoroquinolones (increasing resistance)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "mrsa": "TMP-SMX DS 1-2 tabs PO BID OR Doxycycline 100mg PO BID OR Clindamycin 300-450mg PO TID (if D-test negative). Severe: Vancomycin 15-20mg/kg IV q8-12h. Duration: 5-10 days.",
+            "mssa": "Cephalexin 500mg PO QID OR Dicloxacillin 500mg PO QID. Severe: Cefazolin 1-2g IV q8h. Duration: 5-7 days.",
+            "pseudomonas": "Ciprofloxacin 500mg PO BID x 7 days (if hot tub folliculitis and severe).",
+            "de_escalation": "Switch from vancomycin to oral MRSA agent (TMP-SMX, doxycycline, clindamycin) once culture results available and improving.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >24 hours, (2) Improving clinically, (3) Tolerating PO intake."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "folliculitis": "5-7 days (topical or oral)",
+            "furuncle": "5-7 days (if antibiotics used after I&D)",
+            "carbuncle": "7-10 days",
+            "monitoring": "Reassess in 48-72 hours. Expect improvement in pain, swelling, erythema. Repeat I&D if reaccumulation or inadequate drainage.",
+            "stop_criteria": "Resolution of erythema, drainage, and systemic symptoms. Lesion may continue to drain for several days (not indication to continue antibiotics if otherwise improving)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "recurrent_furuncles": "If ≥2 furuncles in 6 months: (1) Test for MRSA colonization (nares, axilla, groin), (2) Decolonization: Mupirocin nasal ointment BID x 5 days + chlorhexidine body wash daily x 5-14 days, (3) Treat close contacts if also infected, (4) Improve hygiene (daily showers, avoid sharing personal items), (5) Consider suppressive antibiotics if decolonization fails (TMP-SMX DS 1 tab PO daily x 3-6 months).",
+            "facial_furuncle": "Higher risk of complications (cavernous sinus thrombosis). Avoid manipulation. Consider IV antibiotics and close monitoring. Do NOT squeeze or manipulate nasolabial triangle furuncles.",
+            "hot_tub_folliculitis": "Pseudomonas aeruginosa from inadequately chlorinated hot tubs/pools. Self-limited (7-10 days). Treatment usually not needed. Prevent by proper hot tub maintenance (chlorine 2-4 ppm, pH 7.2-7.8).",
+            "pityrosporum_folliculitis": "Fungal folliculitis (Malassezia). Trunk distribution, immunosuppressed. Treat with topical or oral antifungals (ketoconazole shampoo, fluconazole 200mg PO weekly x 2-4 weeks).",
+            "immunocompromised": "Higher risk of recurrent infections and MDRO. Consider broader coverage. Longer duration (10-14 days). May need antifungal coverage.",
+            "pregnancy": "Preferred: Cephalexin, clindamycin, mupirocin topical. Avoid: Fluoroquinolones, doxycycline, TMP-SMX (1st trimester)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "I&D alone (no antibiotics) for small furuncles <5cm without cellulitis",
+              "Topical therapy for mild folliculitis (no oral antibiotics)",
+              "Switch vancomycin to oral MRSA agent once improving",
+              "Discontinue antibiotics at 5-7 days if adequate drainage and resolution"
+            ],
+            "timeout_checklist": [
+              "Was adequate I&D performed? (Antibiotics are adjunct, not primary treatment for furuncles)",
+              "Are antibiotics truly needed? (I&D alone sufficient for small furuncles)",
+              "Is MRSA coverage appropriate? (Yes, if purulent drainage)",
+              "Can I switch IV to PO? (Yes, if afebrile and improving)",
+              "Can I stop antibiotics? (Yes, if 5-7 days and resolved)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use antibiotics as substitute for adequate drainage. Do NOT treat mild folliculitis with oral antibiotics (topical sufficient). Do NOT continue antibiotics for persistent drainage if otherwise improving.",
+            "patient_education": "Warm compresses promote drainage. Keep lesions clean and covered. Avoid shaving affected areas. Do NOT squeeze or manipulate furuncles. Decolonization if recurrent. Improve hygiene, avoid sharing personal items."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Skin and Soft Tissue Infections Guidelines (2014)",
+              "url": "https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/"
+            },
+            {
+              "label": "CDC MRSA Treatment Guidelines (2024)",
+              "url": "https://www.cdc.gov/mrsa/healthcare/clinicians/index.html"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hidradenitis-suppurativa",
+      "name": "Hidradenitis Suppurativa",
+      "synonyms": ["acne inversa", "HS"],
+      "icd10": ["L73.2"],
+      "severity": ["mild", "moderate", "severe"],
+      "shortDescription": "Chronic inflammatory condition of apocrine glands with recurrent painful nodules, abscesses, and sinus tracts requiring multimodal therapy",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Hidradenitis suppurativa (HS) is a chronic, recurrent, inflammatory condition affecting apocrine gland-bearing areas (axilla, groin, perianal, inframammary). Characterized by painful nodules, abscesses, sinus tracts, and scarring. NOT primarily infectious (inflammatory), but secondary bacterial infection common.",
+            "clinical_presentation": "Painful, deep-seated nodules in apocrine areas. May progress to abscesses, draining sinus tracts, and scarring. Hurley staging: Stage I (nodules/abscesses, no sinus tracts), Stage II (recurrent abscesses with sinus tracts, limited scarring), Stage III (diffuse involvement, multiple sinus tracts, extensive scarring).",
+            "diagnostic_criteria": "Clinical diagnosis. Criteria: (1) Typical lesions (nodules, abscesses, sinus tracts), (2) Typical locations (axilla, groin, perianal, inframammary), (3) Recurrent (≥2 episodes in 6 months). Biopsy rarely needed.",
+            "risk_factors": [
+              "Obesity (BMI >30)",
+              "Smoking (90% of patients)",
+              "Female sex (3:1 ratio)",
+              "Age 20-40 years (peak incidence)",
+              "Family history (30-40% have affected relative)",
+              "Metabolic syndrome or insulin resistance"
+            ],
+            "red_flags": [
+              "Extensive involvement (Hurley Stage III) - may need surgical excision",
+              "Systemic symptoms (fever, malaise) - secondary bacterial infection",
+              "Squamous cell carcinoma - rare complication of chronic HS",
+              "Severe pain or functional impairment - consider biologics or surgery"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Culture purulent drainage if concern for secondary bacterial infection. Imaging if concern for deep abscess or fistula. Biopsy if diagnosis uncertain.",
+            "essential_tests": [
+              "Clinical diagnosis (no routine tests needed)",
+              "Hurley staging (I, II, III) to guide treatment"
+            ],
+            "conditional_tests": [
+              "Wound culture: If purulent drainage or systemic symptoms (secondary infection)",
+              "Ultrasound: Assess extent of sinus tracts and abscesses",
+              "MRI: If concern for deep fistula or perianal involvement",
+              "Biopsy: If diagnosis uncertain (exclude other conditions: Crohn's disease, actinomycosis, lymphogranuloma venereum)"
+            ],
+            "when_not_to_test": "Do NOT routinely culture HS lesions (colonization common, not always infection). Do NOT delay treatment for biopsy if diagnosis clear.",
+            "turnaround_time": "Wound culture: 24-48 hours. Ultrasound: Same day. MRI: 1-7 days."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "primary_pathophysiology": "HS is primarily INFLAMMATORY (follicular occlusion, immune dysregulation), NOT infectious. However, secondary bacterial infection common.",
+            "secondary_infection_pathogens": [
+              "Staphylococcus aureus (including MRSA)",
+              "Coagulase-negative staphylococci",
+              "Streptococcus species",
+              "Anaerobes (Prevotella, Porphyromonas, Peptostreptococcus)",
+              "Corynebacterium species"
+            ],
+            "resistance_patterns": "MRSA common in chronic HS. Anaerobes resistant to aminoglycosides. Polymicrobial infection common.",
+            "mdro_risk_factors": [
+              "Chronic HS with multiple antibiotic courses",
+              "Prior MRSA infection",
+              "Recent hospitalization"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "hurley_stage_i": "Topical clindamycin 1% solution BID (first-line). Oral: Doxycycline 100mg PO BID OR Minocycline 100mg PO BID (anti-inflammatory effect). Duration: 3-6 months trial.",
+            "hurley_stage_ii": "Clindamycin 300mg PO BID + Rifampin 300mg PO BID x 10-12 weeks (first-line combination). Alternative: Doxycycline 100mg PO BID x 3-6 months. Consider biologics if inadequate response (adalimumab).",
+            "hurley_stage_iii": "Clindamycin + rifampin x 10-12 weeks. Biologics (adalimumab 40mg SC weekly - FDA approved for HS). Surgical excision of affected areas (definitive treatment).",
+            "acute_flare_secondary_infection": "TMP-SMX DS 1-2 tabs PO BID + Clindamycin 300-450mg PO TID x 7-14 days (covers MRSA and anaerobes). Severe: Vancomycin 15-20mg/kg IV q8-12h + Metronidazole 500mg IV q8h.",
+            "alternatives": "Rifampin allergy: Doxycycline or minocycline monotherapy. Clindamycin allergy: Doxycycline + rifampin.",
+            "avoid_list": "Avoid short courses of antibiotics (ineffective for chronic HS). Avoid monotherapy for moderate-severe HS (combination therapy superior)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "chronic_suppression": "Clindamycin 300mg PO BID + Rifampin 300mg PO BID x 10-12 weeks (most effective antibiotic regimen). Doxycycline 100mg PO BID x 3-6 months (alternative).",
+            "biologics": "Adalimumab 40mg SC weekly (FDA approved for moderate-severe HS). Infliximab, secukinumab (off-label). Consult dermatology for biologic initiation.",
+            "surgical": "Wide excision of affected areas (definitive treatment for Hurley Stage III or refractory disease). Deroofing, laser therapy, or CO2 laser (less invasive options).",
+            "adjunctive_therapies": "Weight loss (if obese), smoking cessation (critical), zinc supplementation (220mg PO daily), retinoids (isotretinoin - off-label), hormonal therapy (spironolactone, finasteride - women).",
+            "de_escalation": "Discontinue antibiotics after 10-12 weeks if improved. Transition to topical therapy or biologics for maintenance.",
+            "iv_to_po_switch": "Switch to PO when acute infection resolved (afebrile, decreased drainage)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "acute_flare": "7-14 days (if secondary bacterial infection)",
+            "chronic_suppression": "10-12 weeks (clindamycin + rifampin) OR 3-6 months (doxycycline)",
+            "biologics": "Long-term (months to years) - consult dermatology",
+            "monitoring": "Reassess every 4-6 weeks. Monitor for improvement in pain, drainage, new lesions. Hurley staging reassessment. Monitor liver function if on rifampin or biologics.",
+            "stop_criteria": "Improvement in symptoms (decreased pain, drainage, new lesions). Transition to maintenance therapy (topical, biologics) or surgery if inadequate response."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "lifestyle_modifications": "CRITICAL for management: (1) Smoking cessation (most important), (2) Weight loss (if obese), (3) Loose-fitting clothing, (4) Avoid shaving affected areas, (5) Antiseptic washes (chlorhexidine, benzoyl peroxide).",
+            "pain_management": "NSAIDs, acetaminophen. Opioids if severe pain. Gabapentin or pregabalin for neuropathic pain (chronic HS).",
+            "incision_drainage": "I&D provides temporary relief but does NOT cure HS (recurrence common). Consider for acute abscesses. Avoid repeated I&D (worsens scarring).",
+            "multidisciplinary_care": "Dermatology (primary), infectious disease (if recurrent infections), surgery (if Hurley Stage III), pain management, mental health (depression, anxiety common).",
+            "associated_conditions": "Screen for metabolic syndrome, diabetes, inflammatory bowel disease (Crohn's), spondyloarthropathy, pyoderma gangrenosum.",
+            "pregnancy": "Preferred: Clindamycin topical, cephalexin. Avoid: Doxycycline, minocycline, rifampin, biologics (consult dermatology). HS often improves during pregnancy."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Recognize HS as inflammatory (not infectious) - antibiotics are adjunct, not primary treatment",
+              "Use topical therapy for Hurley Stage I (avoid oral antibiotics)",
+              "Discontinue antibiotics after 10-12 weeks if improved (transition to biologics or surgery)",
+              "Avoid repeated short courses of antibiotics (ineffective, promotes resistance)"
+            ],
+            "timeout_checklist": [
+              "Is this truly HS? (Recurrent nodules/abscesses in apocrine areas)",
+              "What is the Hurley stage? (Guides treatment)",
+              "Is this acute infection or chronic inflammation? (Acute: short course, Chronic: long course or biologics)",
+              "Have I addressed lifestyle modifications? (Smoking cessation, weight loss)",
+              "Is surgery indicated? (Hurley Stage III or refractory disease)",
+              "Can I stop antibiotics? (Yes, after 10-12 weeks if improved)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use repeated short courses of antibiotics (ineffective). Do NOT use antibiotics as substitute for lifestyle modifications and definitive therapy (biologics, surgery).",
+            "patient_education": "HS is chronic inflammatory condition, NOT just infection. Smoking cessation is CRITICAL. Weight loss if obese. Avoid tight clothing and shaving. Long-term management needed (biologics, surgery). Support groups available."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "North American Clinical Management Guidelines for Hidradenitis Suppurativa (2019)",
+              "url": "https://www.jaad.org/article/S0190-9622(19)30380-2/fulltext"
+            },
+            {
+              "label": "European S1 Guideline on Hidradenitis Suppurativa (2020)",
+              "url": "https://onlinelibrary.wiley.com/doi/10.1111/jdv.16219"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "burn-wound-infection",
+      "name": "Burn Wound Infection",
+      "synonyms": ["burn sepsis", "infected burn"],
+      "icd10": ["T30.0", "T31.0", "L08.9"],
+      "severity": ["moderate", "severe", "critical"],
+      "shortDescription": "Bacterial or fungal infection of burn wounds requiring topical antimicrobials, systemic antibiotics, and surgical debridement",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Burn wound infection is bacterial or fungal invasion of burn eschar or underlying tissue. Classification: (1) Colonization (all burns), (2) Burn wound infection (local signs), (3) Invasive burn wound infection (histologic invasion), (4) Burn sepsis (systemic infection). High mortality if invasive infection or sepsis.",
+            "clinical_presentation": "Local signs: Conversion of partial-thickness to full-thickness burn, rapid eschar separation, discoloration (black, brown, violaceous), hemorrhagic lesions, foul odor. Systemic signs: Fever or hypothermia, tachycardia, hypotension, altered mental status, ileus, hyperglycemia. Invasive infection: Rapid deterioration, septic shock.",
+            "diagnostic_criteria": "Clinical diagnosis. Invasive infection if: (1) Histologic evidence of invasion (>10^5 CFU/g tissue + invasion on biopsy), (2) Rapid eschar separation, (3) Systemic signs. Burn sepsis: Systemic infection + organ dysfunction.",
+            "risk_factors": [
+              "Large burn (>20% TBSA)",
+              "Full-thickness burn (3rd or 4th degree)",
+              "Delayed excision or inadequate debridement",
+              "Inhalation injury",
+              "Extremes of age (<5 years or >60 years)",
+              "Immunosuppression or diabetes",
+              "Prolonged hospitalization"
+            ],
+            "red_flags": [
+              "Rapid eschar separation or burn conversion - invasive infection",
+              "Green discoloration - Pseudomonas aeruginosa (high mortality)",
+              "Black necrotic lesions - invasive fungal infection (Mucor, Aspergillus)",
+              "Septic shock - burn sepsis (mortality 50-70%)",
+              "Inhalation injury + burn - higher infection risk"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Quantitative burn wound biopsy (gold standard) if concern for invasive infection. Surface swabs unreliable (colonization). Blood cultures if systemic signs.",
+            "essential_tests": [
+              "Quantitative burn wound biopsy (>10^5 CFU/g = infection)",
+              "Histopathology (assess tissue invasion)",
+              "Blood cultures (if fever or systemic signs)"
+            ],
+            "conditional_tests": [
+              "Surface swab culture: If biopsy not available (less reliable, guides empiric therapy)",
+              "Fungal culture and stain: If black necrotic lesions or immunosuppressed",
+              "Procalcitonin: Elevated in burn sepsis (>2 ng/mL)",
+              "Lactate: Elevated in septic shock",
+              "Imaging (CT, MRI): If concern for deep abscess or necrotizing infection"
+            ],
+            "when_not_to_test": "Do NOT rely on surface swabs alone (all burns are colonized). Do NOT delay treatment for biopsy results if invasive infection suspected.",
+            "turnaround_time": "Quantitative culture: 24-48 hours. Histopathology: 24-48 hours. Blood cultures: 24-48 hours. Fungal culture: 5-7 days."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "early_infection": {
+              "description": "First 0-5 days post-burn",
+              "pathogens": [
+                "Staphylococcus aureus (MRSA common)",
+                "Beta-hemolytic streptococci (Group A Strep - rapid progression)"
+              ]
+            },
+            "late_infection": {
+              "description": "After 5 days post-burn",
+              "pathogens": [
+                "Pseudomonas aeruginosa (most common, green discoloration, high mortality)",
+                "Acinetobacter baumannii (MDR common)",
+                "Klebsiella pneumoniae (ESBL, CRE)",
+                "Enterobacter species",
+                "Candida species (especially if prolonged antibiotics)",
+                "Invasive molds (Mucor, Aspergillus - immunosuppressed, black necrotic lesions)"
+              ]
+            },
+            "resistance_patterns": "MRSA 40-60%. Pseudomonas often MDR (resistant to fluoroquinolones, cephalosporins). Acinetobacter often XDR. ESBL and CRE Enterobacteriaceae increasing. Candida resistance (azole-resistant C. glabrata, C. auris).",
+            "mdro_risk_factors": [
+              "Large burn (>20% TBSA)",
+              "Prolonged hospitalization (>7 days)",
+              "Prior antibiotics",
+              "ICU admission",
+              "Mechanical ventilation"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "topical_prophylaxis": "Silver sulfadiazine 1% cream BID (first-line, broad-spectrum) OR Mafenide acetate 11.2% cream BID (penetrates eschar, Pseudomonas coverage) OR Silver-impregnated dressings. Apply after debridement and hydrotherapy.",
+            "early_infection": "Vancomycin 15-20mg/kg IV q8-12h (MRSA, Strep) + Piperacillin-tazobactam 3.375g IV q6h (Gram-negatives, Pseudomonas). Alternative: Vancomycin + Cefepime 2g IV q8h.",
+            "late_infection_pseudomonas_risk": "Vancomycin 15-20mg/kg IV q8-12h + Meropenem 1g IV q8h OR Vancomycin + Cefepime 2g IV q8h + Amikacin 15mg/kg IV daily (if MDR Pseudomonas or Acinetobacter).",
+            "invasive_fungal_infection": "Amphotericin B 1mg/kg IV daily (if Mucor suspected - black necrotic lesions) OR Voriconazole 6mg/kg IV q12h x 2 doses, then 4mg/kg IV q12h (if Aspergillus). Surgical debridement CRITICAL.",
+            "burn_sepsis": "Broad-spectrum: Vancomycin + Meropenem + Micafungin 100mg IV daily (if prolonged antibiotics or TPN). Aggressive resuscitation, source control (debridement), ICU care.",
+            "alternatives": "Vancomycin intolerance: Daptomycin 8-10mg/kg IV daily (higher dose for burn patients) OR Linezolid 600mg IV BID. Carbapenem allergy: Aztreonam + aminoglycoside.",
+            "avoid_list": "Avoid monotherapy for invasive infection. Avoid inadequate Pseudomonas coverage in late infections. Avoid delaying surgical debridement."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "mrsa": "Vancomycin 15-20mg/kg IV q8-12h OR Daptomycin 8-10mg/kg IV daily. Duration: 7-14 days (soft tissue), 4-6 weeks (osteomyelitis).",
+            "pseudomonas": "Cefepime 2g IV q8h OR Piperacillin-tazobactam 3.375g IV q6h OR Meropenem 1g IV q8h (if resistant). Add aminoglycoside (amikacin 15mg/kg IV daily) if severe or MDR. Duration: 7-14 days.",
+            "acinetobacter": "Meropenem 1g IV q8h (if susceptible) OR Colistin 5mg/kg loading, then 2.5mg/kg IV q12h (if XDR) + Tigecycline 100mg IV x1, then 50mg IV q12h. Duration: 7-14 days.",
+            "candida": "Micafungin 100mg IV daily OR Caspofungin 70mg IV x1, then 50mg IV daily OR Fluconazole 400-800mg IV daily (if susceptible). Duration: 14 days after last positive culture and resolution of symptoms.",
+            "invasive_molds": "Amphotericin B 1mg/kg IV daily (Mucor) OR Voriconazole 6mg/kg IV q12h x 2, then 4mg/kg IV q12h (Aspergillus). Surgical debridement CRITICAL. Duration: Weeks to months (consult infectious disease).",
+            "de_escalation": "Narrow antibiotics based on culture results. Discontinue antifungal if cultures negative. Discontinue MRSA coverage if MSSA confirmed.",
+            "iv_to_po_switch": "Generally NOT appropriate for invasive burn wound infection (continue IV until resolved). Consider PO for mild superficial infections only."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "topical_prophylaxis": "Until wound closure or skin grafting",
+            "burn_wound_infection": "7-14 days (until infection resolved and wound healing)",
+            "invasive_infection": "14-21 days (until infection resolved)",
+            "burn_sepsis": "14-21 days (until infection resolved and organ dysfunction improved)",
+            "osteomyelitis": "4-6 weeks",
+            "invasive_fungal": "Weeks to months (consult infectious disease)",
+            "monitoring": "Daily wound assessment. Quantitative cultures every 3-5 days if invasive infection. Monitor inflammatory markers (WBC, CRP, procalcitonin). Reassess for surgical debridement.",
+            "stop_criteria": "Resolution of infection signs (eschar stable, no purulence, granulation tissue). Afebrile >48 hours. Normalized inflammatory markers. Wound closure or successful grafting."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "surgical_management": "CRITICAL for invasive infection. Early excision and grafting (within 24-72 hours) reduces infection risk. Debridement of infected eschar. Fasciotomy if compartment syndrome. Amputation if life-threatening infection.",
+            "topical_antimicrobials": "Silver sulfadiazine: Broad-spectrum, painless, but poor eschar penetration. Mafenide acetate: Excellent eschar penetration, Pseudomonas coverage, but painful and carbonic anhydrase inhibitor (metabolic acidosis). Silver-impregnated dressings: Convenient, less frequent changes.",
+            "pharmacokinetics": "Burn patients have altered pharmacokinetics: Increased volume of distribution, increased renal clearance, decreased protein binding. May need HIGHER doses and MORE frequent dosing (e.g., vancomycin 20-25mg/kg q8h, piperacillin-tazobactam 4.5g q6h). Therapeutic drug monitoring critical (vancomycin trough 15-20 mcg/mL).",
+            "inhalation_injury": "Higher infection risk. Bronchoscopy for diagnosis. Aggressive pulmonary toilet. Avoid prophylactic antibiotics (increases resistance). Treat pneumonia if develops.",
+            "nutrition": "Hypermetabolic state. High protein (1.5-2g/kg/day), high calorie (25-30 kcal/kg/day + 40 kcal per % TBSA burned). Enteral nutrition preferred. Vitamin C, zinc supplementation.",
+            "multidisciplinary_team": "Burn surgeon, infectious disease, critical care, wound care, physical therapy, occupational therapy, nutrition, mental health."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Do NOT use prophylactic systemic antibiotics (increases resistance, no benefit)",
+              "Use topical antimicrobials for prophylaxis (not systemic antibiotics)",
+              "Narrow antibiotics based on quantitative culture results",
+              "Discontinue antifungal if cultures negative",
+              "Discontinue antibiotics once infection resolved and wound healing"
+            ],
+            "timeout_checklist": [
+              "Is this colonization or true infection? (Quantitative culture >10^5 CFU/g)",
+              "Is surgical debridement adequate? (Antibiotics are adjunct, not substitute for surgery)",
+              "Are antibiotic doses appropriate for burn patients? (May need higher doses)",
+              "Is antifungal coverage needed? (If prolonged antibiotics, TPN, or black necrotic lesions)",
+              "Can I narrow antibiotics based on cultures?",
+              "Can I stop antibiotics? (If infection resolved and wound healing)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use prophylactic systemic antibiotics (no benefit, increases resistance). Do NOT continue antibiotics for colonization (all burns are colonized). Do NOT use antibiotics as substitute for adequate surgical debridement.",
+            "patient_education": "Burn wound care critical (daily dressing changes, topical antimicrobials). Watch for signs of infection (increased pain, odor, drainage, fever). Nutrition important for healing. Physical therapy to prevent contractures."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "American Burn Association Practice Guidelines for Burn Care (2024)",
+              "url": "https://ameriburn.org/resources/practice-guidelines/"
+            },
+            {
+              "label": "Surgical Infection Society Guidelines for Burn Wound Infections (2016)",
+              "url": "https://www.surgicalinfection.org/guidelines"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
+

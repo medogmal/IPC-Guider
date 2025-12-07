@@ -1,0 +1,1174 @@
+{
+  "version": 1,
+  "updatedAt": "2025-11-25T01:00:00Z",
+  "id": "gastrointestinal-diarrheal",
+  "name": "Gastrointestinal & Diarrheal Infections",
+  "description": "Infectious diarrhea, gastroenteritis, C. difficile, and foodborne illnesses",
+  "icon": "restaurant",
+  "color": "#FF9800",
+  "conditions": [
+    {
+      "id": "clostridioides-difficile-infection",
+      "name": "Clostridioides difficile Infection (CDI)",
+      "synonyms": [
+        "C. diff",
+        "C. difficile colitis",
+        "pseudomembranous colitis",
+        "antibiotic-associated diarrhea"
+      ],
+      "icd10": [
+        "A04.7",
+        "A04.72"
+      ],
+      "severity": [
+        "mild",
+        "moderate",
+        "severe",
+        "critical"
+      ],
+      "shortDescription": "Antibiotic-associated diarrhea caused by C. difficile toxins, requiring specific antibiotics and infection control measures",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Clostridioides difficile infection (CDI) is toxin-mediated colitis caused by C. difficile, typically following antibiotic exposure. Severity: Mild-moderate (90%), severe (10%), fulminant (1-3%). Mortality: <1% (mild), 5-10% (severe), 30-50% (fulminant). Recurrence: 20-30% after first episode, 40-60% after second episode.",
+            "clinical_presentation": "Watery diarrhea (≥3 unformed stools in 24 hours), abdominal pain/cramping, fever, leukocytosis. Severe: WBC >15,000, creatinine >1.5x baseline, albumin <3g/dL, pseudomembranous colitis on colonoscopy. Fulminant: Hypotension, shock, ileus, megacolon, perforation.",
+            "diagnostic_criteria": "Diarrhea (≥3 unformed stools in 24 hours) + positive C. difficile test (NAAT or toxin EIA) OR pseudomembranous colitis on colonoscopy. Do NOT test formed stools or asymptomatic patients.",
+            "risk_factors": [
+              "Antibiotic exposure (especially clindamycin, fluoroquinolones, cephalosporins, carbapenems) within 3 months",
+              "Age >65 years",
+              "Hospitalization or long-term care facility",
+              "Proton pump inhibitors (PPIs)",
+              "Immunosuppression (chemotherapy, IBD, transplant)",
+              "Prior CDI (recurrence risk 20-30%)"
+            ],
+            "red_flags": [
+              "Fulminant colitis - hypotension, shock, ileus, megacolon, perforation, requires urgent surgery",
+              "Severe CDI - WBC >15,000, creatinine >1.5x baseline, requires vancomycin (not metronidazole)",
+              "Recurrent CDI - 20-30% after first episode, 40-60% after second, requires fidaxomicin or FMT",
+              "Ileus or toxic megacolon - vancomycin PO + PR, surgery if no improvement in 24-48 hours",
+              "Leukemoid reaction (WBC >50,000) - very high mortality (50-80%)"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Test ONLY if: (1) Diarrhea (≥3 unformed stools in 24 hours), (2) No laxatives in past 48 hours, (3) No other obvious cause. Do NOT test formed stools, asymptomatic patients, or test of cure (remains positive for weeks).",
+            "essential_tests": [
+              "C. difficile NAAT (nucleic acid amplification test): Sensitivity 90-95%, detects toxin genes (tcdB). Preferred test.",
+              "C. difficile toxin EIA (enzyme immunoassay): Sensitivity 70-85%, detects toxins A/B. Less sensitive than NAAT.",
+              "Two-step algorithm: NAAT (screen) + toxin EIA (confirm). Reduces false positives from colonization.",
+              "CBC with differential: Leukocytosis (WBC >15,000 suggests severe CDI)",
+              "CMP: Creatinine (>1.5x baseline suggests severe CDI), albumin (<3g/dL suggests severe)"
+            ],
+            "conditional_tests": [
+              "CT abdomen/pelvis: If severe CDI, ileus, or toxic megacolon suspected. Findings: Colonic wall thickening, ascites, megacolon.",
+              "Colonoscopy: If diagnosis uncertain or fulminant colitis. Findings: Pseudomembranes (yellow-white plaques).",
+              "Stool culture: Not routinely recommended (slow, requires anaerobic culture)."
+            ],
+            "when_not_to_test": "Do NOT test formed stools (low yield, high false positive). Do NOT test asymptomatic patients (colonization, not infection). Do NOT test for cure (remains positive for weeks after treatment). Do NOT repeat testing within 7 days (same episode).",
+            "turnaround_time": "NAAT: 1-4 hours. Toxin EIA: 2-4 hours. CT: <24 hours (urgent if severe). Colonoscopy: 1-7 days (urgent if fulminant)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Clostridioides difficile (formerly Clostridium difficile). Gram-positive, spore-forming, anaerobic bacillus. Produces toxins A (enterotoxin) and B (cytotoxin). Toxin B is more potent and essential for disease.",
+            "pathogenesis": "Antibiotic exposure disrupts normal gut flora → C. difficile colonization → toxin production → colonic inflammation and diarrhea. Spores survive on surfaces for months, transmitted via fecal-oral route.",
+            "ribotypes": "NAP1/BI/027 (hypervirulent strain): Produces more toxin, associated with severe disease and outbreaks. Binary toxin (CDT): Additional toxin in some strains, associated with severe disease.",
+            "colonization_vs_infection": "Colonization: C. difficile present without symptoms (5-15% healthy adults, 20-40% hospitalized patients). Infection: Toxin-mediated diarrhea and colitis. Do NOT treat colonization.",
+            "resistance": "Metronidazole resistance: Increasing (10-20% in some regions). Vancomycin resistance: Rare (<1%). Fidaxomicin: No resistance reported."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "initial_nonsevere_cdi": "Fidaxomicin 200mg PO BID x 10 days (preferred, lower recurrence 15% vs 25% with vancomycin) OR Vancomycin 125mg PO QID x 10 days. Do NOT use metronidazole (inferior efficacy, no longer recommended for initial episode).",
+            "initial_severe_cdi": "Vancomycin 125mg PO QID x 10 days. Severe = WBC >15,000 OR creatinine >1.5x baseline. Do NOT use metronidazole for severe CDI.",
+            "initial_fulminant_cdi": "Vancomycin 500mg PO QID + Metronidazole 500mg IV q8h. If ileus: Add vancomycin 500mg PR (rectal) q6h via enema. Urgent surgical consultation (colectomy if no improvement in 24-48 hours).",
+            "first_recurrence": "Fidaxomicin 200mg PO BID x 10 days (preferred, lower recurrence) OR Vancomycin 125mg PO QID x 10 days, then taper/pulse (125mg PO BID x 7 days, then daily x 7 days, then every 2-3 days x 2-8 weeks).",
+            "second_or_later_recurrence": "Fidaxomicin 200mg PO BID x 10 days OR Vancomycin taper/pulse OR Fecal microbiota transplantation (FMT, cure rate 80-90%).",
+            "alternatives": "Metronidazole 500mg PO TID x 10 days: Only if fidaxomicin and vancomycin unavailable (inferior efficacy, not recommended). Bezlotoxumab (monoclonal antibody against toxin B): Add to antibiotics for recurrent CDI (reduces recurrence 40% → 27%).",
+            "avoid_list": "Avoid metronidazole for initial episode (inferior to vancomycin/fidaxomicin). Avoid antiperistaltic agents (loperamide, diphenoxylate) - may worsen colitis and increase toxic megacolon risk. Avoid unnecessary antibiotics (prolong CDI risk)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "initial_nonsevere_cdi": "Fidaxomicin 200mg PO BID x 10 days (preferred, lower recurrence 15% vs 25%) OR Vancomycin 125mg PO QID x 10 days. Cure rate: 90-95%.",
+            "initial_severe_cdi": "Vancomycin 125mg PO QID x 10 days. Cure rate: 85-90%. Higher doses (500mg QID) do NOT improve outcomes.",
+            "initial_fulminant_cdi": "Vancomycin 500mg PO QID + Metronidazole 500mg IV q8h. If ileus: Add vancomycin 500mg PR (rectal) q6h via enema (mix with 100-500mL saline). Urgent surgical consultation. Colectomy if no improvement in 24-48 hours (mortality 30-50% with surgery, 80% without).",
+            "first_recurrence": "Fidaxomicin 200mg PO BID x 10 days (preferred, recurrence 15%) OR Vancomycin taper/pulse: 125mg PO QID x 10-14 days, then 125mg PO BID x 7 days, then 125mg PO daily x 7 days, then 125mg PO every 2-3 days x 2-8 weeks.",
+            "second_or_later_recurrence": "Fidaxomicin 200mg PO BID x 10 days OR Vancomycin taper/pulse OR Fecal microbiota transplantation (FMT). FMT: Cure rate 80-90%, preferred after 2+ recurrences. Bezlotoxumab: Add to antibiotics (reduces recurrence 40% → 27%).",
+            "fecal_microbiota_transplantation": "FMT: Restores gut microbiota. Indications: ≥2 recurrences OR severe CDI not responding to antibiotics. Routes: Colonoscopy (preferred), capsules, nasogastric tube. Cure rate: 80-90%. Screening required (donor stool tested for pathogens).",
+            "bezlotoxumab": "Monoclonal antibody against C. difficile toxin B. Dose: 10mg/kg IV x1 during antibiotic therapy. Indications: High recurrence risk (age >65, severe CDI, ≥2 prior episodes, immunosuppression). Reduces recurrence 40% → 27%. Does NOT treat active infection (use with antibiotics).",
+            "de_escalation": "Continue full course (10 days minimum). Do NOT shorten duration (increases recurrence). Do NOT test for cure (remains positive for weeks).",
+            "iv_to_po_switch": "Vancomycin and fidaxomicin are PO only (not absorbed, act locally in colon). Metronidazole IV used only for fulminant CDI with ileus (cannot take PO)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "initial_episode": "10 days (fidaxomicin or vancomycin standard dose)",
+            "first_recurrence": "10 days (fidaxomicin) OR taper/pulse (vancomycin, 6-8 weeks total)",
+            "second_or_later_recurrence": "10 days (fidaxomicin) OR taper/pulse (vancomycin) OR FMT",
+            "fulminant_cdi": "10-14 days (if survives without surgery). Continue until clinical improvement.",
+            "monitoring": "Daily: Stool frequency, abdominal pain, fever, WBC. Repeat WBC and creatinine at 48-72 hours (assess response). Do NOT repeat C. difficile test (remains positive for weeks). Monitor for recurrence (20-30% within 8 weeks).",
+            "stop_criteria": "Completed 10 days therapy. Diarrhea resolved or improving. Afebrile. WBC normalizing. Do NOT test for cure (remains positive). Educate on recurrence risk and symptoms."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "fulminant_colitis": "Hypotension, shock, ileus, megacolon, perforation. WBC >35,000 or <2,000, lactate >5, end-organ failure. Management: Vancomycin 500mg PO QID + Metronidazole 500mg IV q8h. If ileus: Add vancomycin 500mg PR q6h. Urgent surgical consultation. Colectomy (subtotal colectomy with end ileostomy) if no improvement in 24-48 hours. Mortality: 30-50% with surgery, 80% without.",
+            "ileus_or_toxic_megacolon": "Ileus: Absent bowel sounds, no stool output, abdominal distension. Toxic megacolon: Colon diameter >6cm on X-ray. Management: Vancomycin 500mg PO QID + 500mg PR q6h (rectal enema) + Metronidazole 500mg IV q8h. NPO, NG tube, IV fluids. Urgent surgery if no improvement in 24-48 hours.",
+            "recurrent_cdi": "20-30% after first episode, 40-60% after second. Risk factors: Age >65, continued antibiotics, PPIs, immunosuppression. Management: Fidaxomicin (preferred) OR vancomycin taper/pulse OR FMT (after ≥2 recurrences). Bezlotoxumab reduces recurrence. Discontinue PPIs if possible. Probiotic evidence weak.",
+            "fecal_microbiota_transplantation": "FMT: Restores gut microbiota. Indications: ≥2 recurrences OR severe CDI not responding. Cure rate: 80-90%. Routes: Colonoscopy (preferred, 90% cure), capsules (80% cure), NG tube (70% cure). Donor screening required (stool tested for pathogens, blood tested for HIV, hepatitis). Rare risks: Transmission of infection, aspiration (NG route).",
+            "pregnancy": "Preferred: Vancomycin 125mg PO QID (not absorbed, safe). Avoid: Metronidazole (teratogenic in animals, avoid in 1st trimester if possible). Fidaxomicin: Limited data, use if benefits outweigh risks. FMT: Limited data, case reports successful.",
+            "immunocompromised": "Higher risk of severe CDI and recurrence. Preferred: Vancomycin or fidaxomicin. Longer duration may be needed. FMT safe and effective in immunocompromised (including HIV, transplant, IBD). Bezlotoxumab recommended (high recurrence risk).",
+            "infection_control": "Contact precautions: Private room (preferred), gown and gloves for all contact. Hand hygiene: Soap and water (alcohol does NOT kill spores). Environmental cleaning: Bleach-based disinfectant (1:10 dilution, 5,000 ppm chlorine). Continue precautions until diarrhea resolved for 48 hours. Antibiotic stewardship: Minimize unnecessary antibiotics (especially clindamycin, fluoroquinolones, cephalosporins)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Do NOT use metronidazole for initial episode (inferior to vancomycin/fidaxomicin)",
+              "Do NOT use high-dose vancomycin (500mg QID) for nonsevere CDI (125mg QID sufficient)",
+              "Discontinue other antibiotics if possible (prolongs CDI risk and increases recurrence)",
+              "Discontinue PPIs if possible (increases CDI risk and recurrence)"
+            ],
+            "timeout_checklist": [
+              "Is this CDI or another cause of diarrhea? (Test only if ≥3 unformed stools in 24 hours)",
+              "Is this severe CDI? (WBC >15,000 OR creatinine >1.5x baseline → vancomycin, not metronidazole)",
+              "Is this fulminant CDI? (Hypotension, ileus, megacolon → vancomycin PO + PR + metronidazole IV + surgery consult)",
+              "Is this a recurrence? (Prior CDI within 8 weeks → fidaxomicin or vancomycin taper/pulse or FMT)",
+              "Can I stop other antibiotics? (Discontinue if possible, increases recurrence risk)",
+              "Can I stop PPIs? (Discontinue if possible, increases CDI risk)",
+              "Is contact precautions in place? (Private room, gown/gloves, soap and water, bleach cleaning)",
+              "Is this test of cure? (Do NOT test, remains positive for weeks)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT treat asymptomatic colonization (positive test without diarrhea). Do NOT use antiperistaltic agents (loperamide, may worsen colitis). Do NOT test for cure (remains positive for weeks). Do NOT repeat testing within 7 days (same episode).",
+            "diagnostic_stewardship": "Do NOT test formed stools (low yield, high false positive). Do NOT test asymptomatic patients (colonization, not infection). Do NOT test within 7 days of prior test (same episode). Use two-step algorithm (NAAT + toxin EIA) to reduce false positives from colonization.",
+            "prevention": "Antibiotic stewardship: Minimize unnecessary antibiotics, especially clindamycin, fluoroquinolones, cephalosporins, carbapenems. Discontinue antibiotics as soon as possible. Avoid PPIs if not indicated. Hand hygiene: Soap and water (alcohol does NOT kill spores). Environmental cleaning: Bleach-based disinfectant. Contact precautions for CDI patients."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA/SHEA Clinical Practice Guidelines for C. difficile Infection (2021 Update)",
+              "url": "https://www.idsociety.org/practice-guideline/clostridioides-difficile-2021-focused-update/"
+            },
+            {
+              "label": "CDC Clinical Guidance for C. difficile Infection Prevention (2024)",
+              "url": "https://www.cdc.gov/c-diff/hcp/clinical-guidance/index.html"
+            },
+            {
+              "label": "SHEA Strategies to Prevent C. difficile Infections (2023)",
+              "url": "https://shea-online.org/guidance/strategies-to-prevent-clostridioides-difficile-infections-in-acute-care-hospitals-2022-update/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "acute-infectious-diarrhea",
+      "name": "Acute Infectious Diarrhea (Gastroenteritis)",
+      "synonyms": [
+        "acute gastroenteritis",
+        "traveler's diarrhea",
+        "food poisoning",
+        "viral gastroenteritis"
+      ],
+      "icd10": [
+        "A09",
+        "K52.9",
+        "A08.4"
+      ],
+      "severity": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "shortDescription": "Acute diarrhea (≥3 loose stools in 24 hours) lasting <14 days, usually viral or bacterial, mostly self-limited",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Acute infectious diarrhea is ≥3 loose or watery stools in 24 hours lasting <14 days. Causes: Viral (50-70%, norovirus, rotavirus), bacterial (15-20%, Campylobacter, Salmonella, Shigella, E. coli), parasitic (10-15%, Giardia, Cryptosporidium). Most cases self-limited (3-7 days). Mortality: <0.1% (developed countries), 5-10% (developing countries, children).",
+            "clinical_presentation": "Watery diarrhea, nausea, vomiting, abdominal cramping, fever (if bacterial). Dehydration: Thirst, dry mucous membranes, decreased urine output, tachycardia, hypotension. Dysentery: Bloody diarrhea, fever, tenesmus (Shigella, Campylobacter, E. coli O157:H7, Entamoeba).",
+            "diagnostic_criteria": "Clinical diagnosis: ≥3 loose stools in 24 hours + acute onset (<14 days). Stool testing indicated if: Severe illness, bloody diarrhea, fever, immunocompromised, healthcare-associated, outbreak, persistent >7 days.",
+            "risk_factors": [
+              "Travel to endemic areas (traveler's diarrhea, 30-70% of travelers)",
+              "Contaminated food or water (foodborne illness)",
+              "Daycare attendance or contact with young children",
+              "Immunosuppression (HIV, chemotherapy, transplant)",
+              "Antibiotic exposure (C. difficile risk)",
+              "Proton pump inhibitors (PPIs, decreased gastric acid)"
+            ],
+            "red_flags": [
+              "Severe dehydration - hypotension, tachycardia, altered mental status, requires IV fluids",
+              "Bloody diarrhea (dysentery) - Shigella, Campylobacter, E. coli O157:H7, Entamoeba, requires stool culture",
+              "Fever >38.5°C + bloody diarrhea - invasive bacterial infection, requires antibiotics",
+              "Immunocompromised - higher risk of severe disease, opportunistic pathogens, requires stool testing",
+              "Hemolytic uremic syndrome (HUS) - E. coli O157:H7, thrombocytopenia, hemolytic anemia, renal failure"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Stool testing indicated if: (1) Severe illness (dehydration, hospitalization), (2) Bloody diarrhea, (3) Fever >38.5°C, (4) Immunocompromised, (5) Healthcare-associated, (6) Outbreak, (7) Persistent >7 days. Do NOT test mild, self-limited diarrhea (low yield, expensive).",
+            "essential_tests": [
+              "Stool culture: For bacterial pathogens (Campylobacter, Salmonella, Shigella, E. coli O157:H7). Indicated if bloody diarrhea or fever.",
+              "Stool PCR panel (GI pathogen panel): Detects bacteria, viruses, parasites. Sensitivity 90-95%. Faster than culture (4-6 hours vs 48-72 hours). Expensive, may detect colonization.",
+              "Stool ova and parasites (O&P): For parasites (Giardia, Cryptosporidium, Entamoeba). Indicated if persistent diarrhea >7 days, travel, immunocompromised. Requires 3 samples.",
+              "Stool WBC or lactoferrin: Marker of inflammation. Positive in invasive bacterial diarrhea (Shigella, Campylobacter, Salmonella). Low sensitivity, not routinely recommended."
+            ],
+            "conditional_tests": [
+              "C. difficile testing: If antibiotic exposure within 3 months, healthcare-associated, age >65",
+              "Giardia/Cryptosporidium antigen: If persistent diarrhea >7 days, travel, immunocompromised",
+              "E. coli O157:H7 testing: If bloody diarrhea (HUS risk). Do NOT use antibiotics (increases HUS risk).",
+              "Blood cultures: If fever + severe illness or immunocompromised (bacteremia risk with Salmonella, Campylobacter)",
+              "CBC, CMP: If severe dehydration or hospitalized (assess electrolytes, renal function)"
+            ],
+            "when_not_to_test": "Do NOT test mild, self-limited diarrhea (low yield, expensive). Do NOT test for cure (may remain positive for weeks). Do NOT use GI panel routinely (expensive, detects colonization, unclear clinical significance).",
+            "turnaround_time": "Stool culture: 48-72 hours. Stool PCR panel: 4-6 hours. O&P: 24-48 hours (requires 3 samples over 3-7 days). C. difficile: 1-4 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "viral_causes": {
+              "norovirus": "Most common cause of acute gastroenteritis (50-70%). Highly contagious. Outbreaks in cruise ships, nursing homes, schools. Watery diarrhea, vomiting, nausea. Self-limited (1-3 days). No specific treatment.",
+              "rotavirus": "Common in children <5 years (vaccine available). Watery diarrhea, vomiting, fever. Self-limited (3-7 days). Supportive care.",
+              "adenovirus": "5-10% of viral gastroenteritis in children. Watery diarrhea, vomiting. Self-limited (5-12 days).",
+              "astrovirus_sapovirus": "Rare. Watery diarrhea, vomiting. Self-limited."
+            },
+            "bacterial_causes": {
+              "campylobacter": "Most common bacterial cause (15-20%). Bloody diarrhea, fever, abdominal pain. Self-limited (5-7 days). Antibiotics if severe (azithromycin). Complications: Guillain-Barré syndrome (1:1,000), reactive arthritis.",
+              "salmonella_nontyphoidal": "10-15% of bacterial diarrhea. Watery or bloody diarrhea, fever, abdominal cramping. Self-limited (5-7 days). Antibiotics NOT recommended (prolongs carrier state) unless severe or high-risk (age <3 months, >50 years, immunocompromised, prosthetic implants).",
+              "shigella": "5-10% of bacterial diarrhea. Bloody diarrhea (dysentery), fever, tenesmus. Highly contagious (10-100 organisms). Antibiotics recommended (azithromycin, ciprofloxacin). Complications: Hemolytic uremic syndrome (rare), reactive arthritis.",
+              "e_coli_o157_h7_stec": "Shiga toxin-producing E. coli (STEC). Bloody diarrhea, abdominal cramping, NO fever. Hemolytic uremic syndrome (HUS) in 5-10% (thrombocytopenia, hemolytic anemia, renal failure). Do NOT use antibiotics (increases HUS risk 2-3x). Supportive care only.",
+              "e_coli_etec": "Enterotoxigenic E. coli (ETEC). Most common cause of traveler's diarrhea (40-60%). Watery diarrhea, abdominal cramping, nausea. Self-limited (3-5 days). Antibiotics if severe (azithromycin, rifaximin).",
+              "yersinia_enterocolitica": "Rare. Bloody diarrhea, fever, right lower quadrant pain (mimics appendicitis). Self-limited. Antibiotics if severe (ciprofloxacin, TMP-SMX)."
+            },
+            "parasitic_causes": {
+              "giardia_lamblia": "Most common parasitic cause. Watery diarrhea, bloating, flatulence, malabsorption. Persistent (weeks to months). Diagnosis: Stool O&P or Giardia antigen. Treatment: Metronidazole or nitazoxanide.",
+              "cryptosporidium": "Watery diarrhea, abdominal cramping. Self-limited in immunocompetent (7-14 days). Chronic in HIV/AIDS (CD4 <50). Diagnosis: Stool O&P or Cryptosporidium antigen. Treatment: Nitazoxanide (immunocompetent), ART (HIV/AIDS).",
+              "entamoeba_histolytica": "Bloody diarrhea (dysentery), liver abscess. Endemic in developing countries. Diagnosis: Stool O&P, serology, PCR. Treatment: Metronidazole + paromomycin.",
+              "cyclospora": "Watery diarrhea, fatigue, weight loss. Persistent (weeks). Travel to endemic areas (Latin America, Asia). Diagnosis: Stool O&P (modified acid-fast stain). Treatment: TMP-SMX."
+            }
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "mild_watery_diarrhea": "Supportive care ONLY (oral rehydration, diet). No antibiotics (most cases viral, self-limited). Loperamide 4mg PO x1, then 2mg after each loose stool (max 16mg/day) if no fever or bloody diarrhea.",
+            "moderate_to_severe_diarrhea_or_dysentery": "Azithromycin 500mg PO daily x 3 days OR Ciprofloxacin 500mg PO BID x 3 days (covers Campylobacter, Shigella, Salmonella, ETEC). Avoid ciprofloxacin if travel to South/Southeast Asia (high fluoroquinolone resistance).",
+            "travelers_diarrhea": "Azithromycin 500mg PO daily x 3 days (preferred, covers fluoroquinolone-resistant Campylobacter) OR Rifaximin 200mg PO TID x 3 days (non-invasive diarrhea only, not absorbed). Loperamide 4mg PO x1, then 2mg after each loose stool (max 16mg/day) if no fever or bloody diarrhea.",
+            "bloody_diarrhea_suspected_e_coli_o157": "Do NOT use antibiotics (increases HUS risk 2-3x). Supportive care only (IV fluids, monitor for HUS). Obtain stool culture for E. coli O157:H7. Monitor CBC, CMP, LDH (assess for HUS).",
+            "immunocompromised": "Azithromycin 500mg PO daily x 7-14 days OR Ciprofloxacin 500mg PO BID x 7-14 days. Longer duration (higher risk of bacteremia, relapse). Obtain stool culture and O&P (opportunistic pathogens).",
+            "alternatives": "Penicillin allergy: Azithromycin (safe). Fluoroquinolone resistance: Azithromycin. Pregnancy: Azithromycin (safe), avoid fluoroquinolones.",
+            "avoid_list": "Avoid antibiotics for mild, watery diarrhea (most cases viral, self-limited). Avoid antibiotics for E. coli O157:H7 (increases HUS risk). Avoid loperamide if fever or bloody diarrhea (may worsen invasive infection). Avoid antibiotics for nontyphoidal Salmonella (prolongs carrier state) unless severe or high-risk."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "campylobacter": "Azithromycin 500mg PO daily x 3 days (preferred, fluoroquinolone resistance 20-50%) OR Ciprofloxacin 500mg PO BID x 3 days (if susceptible). Antibiotics reduce duration 1-2 days if started early (<3 days of symptoms).",
+            "salmonella_nontyphoidal": "Supportive care ONLY (antibiotics prolong carrier state). Antibiotics indicated ONLY if: (1) Severe illness (hospitalized, bacteremia), (2) High-risk (age <3 months, >50 years, immunocompromised, prosthetic implants, valvular heart disease). If antibiotics needed: Ciprofloxacin 500mg PO BID x 5-7 days OR Azithromycin 500mg PO daily x 5-7 days.",
+            "shigella": "Azithromycin 500mg PO daily x 3 days (preferred, fluoroquinolone resistance 30-70%) OR Ciprofloxacin 500mg PO BID x 3 days (if susceptible). Antibiotics reduce duration and shedding (public health benefit).",
+            "e_coli_o157_h7_stec": "Do NOT use antibiotics (increases HUS risk 2-3x). Supportive care ONLY (IV fluids, monitor for HUS). Monitor CBC, CMP, LDH daily (assess for HUS: Thrombocytopenia <150,000, hemolytic anemia, elevated creatinine). Dialysis if renal failure.",
+            "e_coli_etec_travelers_diarrhea": "Azithromycin 500mg PO daily x 3 days OR Rifaximin 200mg PO TID x 3 days (non-invasive diarrhea only). Loperamide 4mg PO x1, then 2mg after each loose stool (max 16mg/day) if no fever or bloody diarrhea.",
+            "yersinia": "Supportive care (most cases self-limited). Antibiotics if severe: Ciprofloxacin 500mg PO BID x 5-7 days OR TMP-SMX DS PO BID x 5-7 days.",
+            "giardia": "Metronidazole 250mg PO TID x 5-7 days OR Nitazoxanide 500mg PO BID x 3 days OR Tinidazole 2g PO x1 (single dose, preferred for compliance).",
+            "cryptosporidium": "Immunocompetent: Nitazoxanide 500mg PO BID x 3 days (modest benefit, self-limited). HIV/AIDS: ART (restore CD4 >100, diarrhea resolves). Chronic cryptosporidiosis: Nitazoxanide 500mg PO BID x 14 days.",
+            "entamoeba_histolytica": "Metronidazole 750mg PO TID x 7-10 days + Paromomycin 25-35mg/kg/day PO divided TID x 7 days (luminal agent, eradicates cysts). Liver abscess: Metronidazole 750mg PO TID x 7-10 days, drainage if large (>5cm) or no response.",
+            "cyclospora": "TMP-SMX DS PO BID x 7-10 days. HIV/AIDS: TMP-SMX DS PO BID x 10 days, then TMP-SMX SS PO daily (suppression).",
+            "de_escalation": "Discontinue antibiotics if stool culture negative and symptoms improving. Switch from IV to PO when tolerating oral intake.",
+            "iv_to_po_switch": "Switch to PO when: (1) Tolerating oral intake, (2) Afebrile >24 hours, (3) Hemodynamically stable. Most cases can be treated PO from start."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "campylobacter_shigella_etec": "3 days (azithromycin or ciprofloxacin)",
+            "salmonella_if_indicated": "5-7 days (only if severe or high-risk)",
+            "yersinia": "5-7 days (only if severe)",
+            "giardia": "5-7 days (metronidazole) OR 3 days (nitazoxanide) OR 1 day (tinidazole)",
+            "cryptosporidium": "3 days (immunocompetent) OR 14 days (HIV/AIDS)",
+            "entamoeba": "7-10 days (metronidazole + paromomycin)",
+            "cyclospora": "7-10 days (TMP-SMX)",
+            "monitoring": "Daily: Stool frequency, hydration status, fever. Repeat stool culture if persistent fever or bloody diarrhea after 48-72 hours. Monitor for HUS if E. coli O157:H7 (CBC, CMP, LDH daily x 7-10 days).",
+            "stop_criteria": "Diarrhea resolved or improving. Afebrile. Tolerating oral intake. Hydration adequate. Do NOT test for cure (may remain positive for weeks)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "hemolytic_uremic_syndrome": "Complication of E. coli O157:H7 (STEC) in 5-10%. Triad: Thrombocytopenia (<150,000), hemolytic anemia (schistocytes, elevated LDH), acute renal failure (elevated creatinine). Onset 5-10 days after diarrhea. Management: Supportive care (IV fluids, transfusions, dialysis if needed). Do NOT use antibiotics (increases HUS risk 2-3x). Do NOT use antiperistaltic agents. Mortality 3-5%, chronic renal disease 12%.",
+            "travelers_diarrhea": "30-70% of travelers to endemic areas (Latin America, Africa, Asia). Causes: ETEC (40-60%), Campylobacter (15%), Shigella (10%), Salmonella (5%), viruses (10%). Prevention: Avoid tap water, ice, raw foods, street vendors. Treatment: Azithromycin 500mg PO daily x 3 days OR Rifaximin 200mg PO TID x 3 days. Loperamide for symptom relief (if no fever or bloody diarrhea). Prophylaxis: Rifaximin 200mg PO daily (if high-risk travel, short duration).",
+            "foodborne_outbreaks": "Common pathogens: Norovirus (cruise ships, nursing homes), Salmonella (eggs, poultry), E. coli O157:H7 (ground beef, leafy greens), Campylobacter (poultry), Shigella (person-to-person). Report to public health (outbreak investigation). Infection control: Hand hygiene, food safety, isolation.",
+            "immunocompromised": "Higher risk of severe disease, bacteremia, opportunistic pathogens (Cryptosporidium, Cyclospora, Isospora, Microsporidia, CMV, MAC). Obtain stool culture and O&P. Longer duration of antibiotics (7-14 days). Consider blood cultures if fever. HIV/AIDS: ART critical for Cryptosporidium, Cyclospora, Isospora.",
+            "pregnancy": "Preferred: Azithromycin (safe). Avoid: Fluoroquinolones (cartilage damage), metronidazole (avoid in 1st trimester if possible). Supportive care: Oral rehydration, IV fluids if severe dehydration. Monitor fetal well-being.",
+            "reactive_arthritis": "Complication of Campylobacter, Shigella, Salmonella, Yersinia (1-3%). Onset 1-4 weeks after diarrhea. Triad: Arthritis (knees, ankles), urethritis, conjunctivitis (Reiter syndrome). HLA-B27 positive in 60-80%. Management: NSAIDs, DMARDs if severe. Self-limited (3-12 months).",
+            "guillain_barre_syndrome": "Rare complication of Campylobacter (1:1,000). Onset 1-3 weeks after diarrhea. Ascending paralysis, areflexia, respiratory failure. Management: IVIG or plasmapheresis, supportive care. Mortality 5%, residual weakness 20%."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Do NOT use antibiotics for mild, watery diarrhea (most cases viral, self-limited)",
+              "Do NOT use antibiotics for nontyphoidal Salmonella (prolongs carrier state) unless severe or high-risk",
+              "Do NOT use antibiotics for E. coli O157:H7 (increases HUS risk 2-3x)",
+              "Discontinue antibiotics if stool culture negative and symptoms improving",
+              "Use 3-day courses (azithromycin, ciprofloxacin) instead of 5-7 days for Campylobacter, Shigella, ETEC"
+            ],
+            "timeout_checklist": [
+              "Is this infectious diarrhea or another cause? (IBD, IBS, medication side effect)",
+              "Is stool testing indicated? (Severe, bloody, fever, immunocompromised, persistent >7 days)",
+              "Is this E. coli O157:H7? (Bloody diarrhea, no fever → Do NOT use antibiotics, monitor for HUS)",
+              "Are antibiotics indicated? (Severe, bloody, fever, immunocompromised, traveler's diarrhea)",
+              "Is this nontyphoidal Salmonella? (Do NOT use antibiotics unless severe or high-risk)",
+              "Is the patient dehydrated? (Oral rehydration vs IV fluids)",
+              "Can I use loperamide? (Only if no fever or bloody diarrhea)",
+              "Is this an outbreak? (Report to public health)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use antibiotics for mild, watery diarrhea (most cases viral, self-limited). Do NOT use loperamide if fever or bloody diarrhea (may worsen invasive infection). Do NOT test for cure (may remain positive for weeks). Do NOT use GI panel routinely (expensive, detects colonization).",
+            "diagnostic_stewardship": "Do NOT test mild, self-limited diarrhea (low yield, expensive). Stool testing indicated ONLY if: Severe, bloody, fever, immunocompromised, healthcare-associated, outbreak, persistent >7 days. Use stool culture (cheaper) instead of GI panel unless outbreak or immunocompromised.",
+            "prevention": "Hand hygiene: Soap and water (alcohol does NOT kill norovirus, parasites). Food safety: Cook meat thoroughly, avoid raw eggs, wash produce. Water safety: Boil or filter water in endemic areas. Traveler's diarrhea: Avoid tap water, ice, raw foods, street vendors. Vaccines: Rotavirus (children), cholera (travelers to endemic areas)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Clinical Practice Guidelines for Infectious Diarrhea (2017)",
+              "url": "https://www.idsociety.org/practice-guideline/infectious-diarrhea/"
+            },
+            {
+              "label": "ACG Clinical Guideline: Acute Diarrheal Infections (2016)",
+              "url": "https://journals.lww.com/ajg/fulltext/2016/05000/acg_clinical_guideline__diagnosis,_treatment,_and.14.aspx"
+            },
+            {
+              "label": "CDC Foodborne Diseases Active Surveillance Network (FoodNet)",
+              "url": "https://www.cdc.gov/foodnet/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "typhoid-fever",
+      "name": "Typhoid Fever (Enteric Fever)",
+      "synonyms": [
+        "enteric fever",
+        "Salmonella typhi",
+        "paratyphoid fever"
+      ],
+      "icd10": [
+        "A01.0",
+        "A01.1",
+        "A01.4"
+      ],
+      "severity": [
+        "moderate",
+        "severe",
+        "critical"
+      ],
+      "shortDescription": "Systemic illness caused by Salmonella typhi, requiring antibiotics and often hospitalization",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Typhoid fever (enteric fever) is a systemic illness caused by Salmonella enterica serotype Typhi (S. typhi) or Paratyphi (paratyphoid fever). Endemic in South Asia, Africa, Latin America. Mortality: <1% (with treatment), 10-30% (without treatment). Transmission: Fecal-oral route, contaminated food/water.",
+            "clinical_presentation": "Fever (sustained, 39-40°C), headache, abdominal pain, constipation (early) or diarrhea (late), rose spots (salmon-colored macules on trunk, 30%), relative bradycardia (pulse-temperature dissociation), hepatosplenomegaly. Complications: Intestinal perforation (1-3%), GI bleeding (10%), encephalopathy, myocarditis.",
+            "diagnostic_criteria": "Clinical suspicion (fever + travel to endemic area) + positive blood culture (sensitivity 40-80%) OR bone marrow culture (sensitivity 80-95%, gold standard). Widal test (serology) NOT recommended (low sensitivity/specificity).",
+            "risk_factors": [
+              "Travel to endemic areas (South Asia, Africa, Latin America)",
+              "Consumption of contaminated food or water",
+              "Close contact with chronic carrier",
+              "Achlorhydria or PPI use (decreased gastric acid)",
+              "HIV/AIDS or immunosuppression"
+            ],
+            "red_flags": [
+              "Intestinal perforation - acute abdomen, peritonitis, requires urgent surgery, mortality 10-30%",
+              "GI bleeding - melena, hematemesis, requires transfusion, mortality 5-10%",
+              "Encephalopathy - altered mental status, seizures, coma, mortality 10-20%",
+              "Myocarditis - chest pain, arrhythmias, heart failure, mortality 5-10%",
+              "Fluoroquinolone resistance - common in South Asia (>90%), use azithromycin or ceftriaxone"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Suspect typhoid fever if: Fever >3 days + travel to endemic area + abdominal symptoms. Obtain blood cultures BEFORE antibiotics. Bone marrow culture if blood cultures negative (higher yield).",
+            "essential_tests": [
+              "Blood cultures x2 sets BEFORE antibiotics: Sensitivity 40-80% (higher in first week). Positive in 40-80% of cases.",
+              "CBC with differential: Leukopenia (WBC <4,000) or normal WBC (unlike other bacterial infections), anemia, thrombocytopenia.",
+              "CMP: Elevated transaminases (ALT/AST 2-3x normal in 50%), hyponatremia."
+            ],
+            "conditional_tests": [
+              "Bone marrow culture: Gold standard, sensitivity 80-95% (higher than blood culture). Indicated if blood cultures negative and high clinical suspicion.",
+              "Stool culture: Positive in 30-40% (lower than blood culture). Useful for detecting chronic carriers (positive >1 year after infection).",
+              "Widal test (serology): NOT recommended (low sensitivity 50-70%, low specificity, cross-reacts with other Salmonella).",
+              "CT abdomen: If complications suspected (perforation, abscess, cholecystitis)."
+            ],
+            "when_not_to_test": "Do NOT use Widal test (low sensitivity/specificity, not recommended by WHO/CDC). Do NOT delay antibiotics for bone marrow culture if blood cultures obtained.",
+            "turnaround_time": "Blood cultures: Preliminary 24-48 hours, final 5 days. Bone marrow culture: 48-72 hours. Stool culture: 48-72 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Salmonella enterica serotype Typhi (S. typhi) or Paratyphi (S. paratyphi A, B, C). Gram-negative, facultative anaerobic bacillus. Exclusively human pathogen (no animal reservoir). Chronic carrier state: 1-5% of patients (bacteria persist in gallbladder >1 year).",
+            "pathogenesis": "Ingestion of contaminated food/water → invasion of small intestine → bacteremia → dissemination to liver, spleen, bone marrow, gallbladder → re-seeding of intestine → intestinal ulceration (Peyer's patches) → perforation/bleeding.",
+            "resistance_patterns": {
+              "fluoroquinolone_resistance": "Common in South Asia (>90%), Africa (30-50%). Nalidixic acid resistance predicts clinical failure with ciprofloxacin. Use azithromycin or ceftriaxone instead.",
+              "multidrug_resistance": "Resistance to chloramphenicol, ampicillin, TMP-SMX (MDR typhoid). Common in South Asia (10-20%). Use fluoroquinolones (if susceptible), azithromycin, or ceftriaxone.",
+              "extensively_drug_resistant": "XDR typhoid: Resistance to fluoroquinolones, cephalosporins, macrolides. Emerging in Pakistan (2016 outbreak). Use carbapenems (meropenem) or azithromycin (if susceptible)."
+            },
+            "chronic_carrier": "1-5% of patients become chronic carriers (bacteria persist in gallbladder >1 year). Risk factors: Age >40, female, gallstones, chronic cholecystitis. Diagnosis: Positive stool or urine culture >1 year after infection. Treatment: Ciprofloxacin 750mg PO BID x 28 days OR cholecystectomy if gallstones."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "uncomplicated_typhoid_travel_to_south_asia": "Azithromycin 500mg PO daily x 7 days (preferred, fluoroquinolone resistance >90% in South Asia) OR Ceftriaxone 2g IV daily x 7-14 days (if severe or unable to take PO).",
+            "uncomplicated_typhoid_travel_to_other_endemic_areas": "Ciprofloxacin 500mg PO BID x 7 days (if fluoroquinolone susceptible) OR Azithromycin 500mg PO daily x 7 days OR Ceftriaxone 2g IV daily x 7-14 days.",
+            "severe_or_complicated_typhoid": "Ceftriaxone 2g IV daily x 10-14 days OR Azithromycin 500mg PO/IV daily x 7-10 days. Add dexamethasone 3mg/kg IV x1, then 1mg/kg IV q6h x 8 doses if severe (encephalopathy, shock, mortality reduction 10% → 4%).",
+            "xdr_typhoid": "Meropenem 1g IV q8h x 10-14 days OR Azithromycin 500mg PO/IV daily x 7-10 days (if susceptible). Consult infectious disease.",
+            "alternatives": "Penicillin allergy: Azithromycin or fluoroquinolone (if susceptible). Fluoroquinolone resistance: Azithromycin or ceftriaxone.",
+            "avoid_list": "Avoid fluoroquinolones if travel to South Asia (resistance >90%). Avoid chloramphenicol, ampicillin, TMP-SMX (high resistance, no longer recommended). Avoid short courses (<7 days, high relapse rate)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "fluoroquinolone_susceptible": "Ciprofloxacin 500mg PO BID x 7 days OR Levofloxacin 500mg PO daily x 7 days. Cure rate: 95-98%. Relapse rate: 2-5%.",
+            "fluoroquinolone_resistant_or_south_asia": "Azithromycin 500mg PO daily x 7 days (preferred, cure rate 90-95%) OR Ceftriaxone 2g IV daily x 7-14 days (cure rate 95-98%).",
+            "severe_or_complicated_typhoid": "Ceftriaxone 2g IV daily x 10-14 days. Add dexamethasone 3mg/kg IV x1, then 1mg/kg IV q6h x 8 doses if encephalopathy or shock (reduces mortality 10% → 4%).",
+            "xdr_typhoid": "Meropenem 1g IV q8h x 10-14 days OR Azithromycin 500mg PO/IV daily x 10-14 days (if susceptible, higher dose and longer duration). Cure rate: 85-90%.",
+            "chronic_carrier": "Ciprofloxacin 750mg PO BID x 28 days (cure rate 80-90%) OR Cholecystectomy if gallstones (cure rate 85-95%). Longer duration needed (4 weeks minimum).",
+            "de_escalation": "Switch from IV to PO when: Afebrile >48 hours, tolerating oral intake, clinically improving. Switch from ceftriaxone to ciprofloxacin or azithromycin PO to complete 7-14 days total.",
+            "iv_to_po_switch": "Switch to PO when: Afebrile >48 hours, tolerating oral intake, clinically improving. Ceftriaxone → Ciprofloxacin 500mg PO BID OR Azithromycin 500mg PO daily."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "uncomplicated_typhoid": "7 days (ciprofloxacin or azithromycin) OR 7-14 days (ceftriaxone)",
+            "severe_or_complicated_typhoid": "10-14 days",
+            "xdr_typhoid": "10-14 days (meropenem or azithromycin)",
+            "chronic_carrier": "28 days (ciprofloxacin) OR cholecystectomy",
+            "monitoring": "Daily: Fever curve, abdominal exam, mental status. Repeat blood cultures if persistent fever after 48-72 hours. Monitor for complications (perforation, bleeding, encephalopathy). CBC, CMP weekly. Stool culture at end of therapy (assess carrier state).",
+            "stop_criteria": "Completed 7-14 days therapy. Afebrile >48 hours. Clinically improving. Tolerating oral intake. No complications. Stool culture negative (if obtained)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "intestinal_perforation": "Complication in 1-3% (usually week 2-3 of illness). Acute abdomen, peritonitis, free air on X-ray. Management: Urgent surgery (primary repair or resection), IV antibiotics (ceftriaxone + metronidazole), IV fluids, NPO. Mortality: 10-30%.",
+            "gi_bleeding": "Complication in 10% (usually week 2-3). Melena, hematemesis, anemia. Management: Transfusion if severe, endoscopy if massive bleeding, continue antibiotics. Mortality: 5-10%.",
+            "encephalopathy": "Complication in 5-10%. Altered mental status, delirium, seizures, coma. Management: Dexamethasone 3mg/kg IV x1, then 1mg/kg IV q6h x 8 doses (reduces mortality 10% → 4%), ceftriaxone 2g IV daily, supportive care. Mortality: 10-20%.",
+            "myocarditis": "Rare complication (<1%). Chest pain, arrhythmias, heart failure, elevated troponin. Management: Supportive care, antibiotics, avoid NSAIDs. Mortality: 5-10%.",
+            "chronic_carrier": "1-5% of patients. Bacteria persist in gallbladder >1 year. Risk factors: Age >40, female, gallstones. Diagnosis: Positive stool or urine culture >1 year after infection. Treatment: Ciprofloxacin 750mg PO BID x 28 days OR cholecystectomy if gallstones. Public health: Exclude from food handling.",
+            "pregnancy": "Preferred: Ceftriaxone 2g IV daily x 7-14 days (safe). Avoid: Fluoroquinolones (cartilage damage). Azithromycin: Limited data, use if benefits outweigh risks. Higher risk of complications (perforation, bleeding, fetal loss).",
+            "immunocompromised": "Higher risk of severe disease, bacteremia, relapse. Longer duration (10-14 days minimum). Consider secondary prophylaxis if recurrent (ciprofloxacin 500mg PO daily).",
+            "prevention": "Vaccine: Ty21a (oral, live attenuated) OR Vi polysaccharide (injectable). Efficacy: 50-80%. Duration: 5-7 years. Indicated for travelers to endemic areas. Food/water safety: Boil or filter water, avoid raw foods, street vendors. Hand hygiene."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Switch from IV to PO when afebrile >48 hours and tolerating oral intake",
+              "Switch from ceftriaxone to ciprofloxacin or azithromycin PO (if susceptible)",
+              "Use 7-day courses (ciprofloxacin, azithromycin) instead of 10-14 days for uncomplicated typhoid",
+              "Avoid fluoroquinolones if travel to South Asia (resistance >90%)"
+            ],
+            "timeout_checklist": [
+              "Is this typhoid fever or another cause of fever? (Travel to endemic area, sustained fever, relative bradycardia)",
+              "Are blood cultures obtained BEFORE antibiotics?",
+              "What is the travel history? (South Asia → avoid fluoroquinolones, use azithromycin or ceftriaxone)",
+              "Is this severe or complicated? (Encephalopathy, perforation, bleeding → ceftriaxone + dexamethasone)",
+              "Is this XDR typhoid? (Pakistan outbreak → meropenem or azithromycin)",
+              "Can I switch IV to PO? (Afebrile >48 hours, tolerating oral intake)",
+              "Is this a chronic carrier? (Positive stool culture >1 year → ciprofloxacin 28 days or cholecystectomy)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use Widal test (low sensitivity/specificity, not recommended). Do NOT use chloramphenicol, ampicillin, TMP-SMX (high resistance, no longer recommended). Do NOT use short courses (<7 days, high relapse rate). Do NOT use fluoroquinolones if travel to South Asia (resistance >90%).",
+            "diagnostic_stewardship": "Do NOT use Widal test (low sensitivity/specificity, not recommended by WHO/CDC). Obtain blood cultures BEFORE antibiotics. Bone marrow culture if blood cultures negative and high clinical suspicion (gold standard, sensitivity 80-95%).",
+            "prevention": "Vaccine: Ty21a (oral) OR Vi polysaccharide (injectable) for travelers to endemic areas. Food/water safety: Boil or filter water, avoid raw foods, street vendors. Hand hygiene. Chronic carrier screening: Exclude from food handling."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "CDC Clinical Guidance for Typhoid Fever (2024)",
+              "url": "https://www.cdc.gov/typhoid-fever/hcp/clinical-guidance/index.html"
+            },
+            {
+              "label": "WHO Position Paper on Typhoid Vaccines (2018)",
+              "url": "https://www.who.int/publications/i/item/who-wer9313-14"
+            },
+            {
+              "label": "IDSA Clinical Practice Guidelines for Infectious Diarrhea (2017)",
+              "url": "https://www.idsociety.org/practice-guideline/infectious-diarrhea/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cholera",
+      "name": "Cholera",
+      "synonyms": [
+        "Vibrio cholerae",
+        "cholera gravis",
+        "rice-water stool"
+      ],
+      "icd10": [
+        "A00.0",
+        "A00.1",
+        "A00.9"
+      ],
+      "severity": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "shortDescription": "Acute secretory diarrhea caused by Vibrio cholerae toxin, requiring aggressive rehydration",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Cholera is acute secretory diarrhea caused by toxigenic strains of Vibrio cholerae (serogroups O1 and O139). Endemic in South Asia, Africa, Haiti. Mortality: <1% (with rehydration), 25-50% (without treatment). Transmission: Fecal-oral route, contaminated water.",
+            "clinical_presentation": "Profuse watery diarrhea (rice-water stool, 10-20 liters/day), vomiting, rapid dehydration (within hours), muscle cramps, hypotension, shock. No fever (afebrile). Incubation: 12 hours to 5 days (usually 2-3 days). Asymptomatic: 75% of infections.",
+            "diagnostic_criteria": "Clinical diagnosis: Profuse watery diarrhea (rice-water stool) + rapid dehydration + travel to endemic area or outbreak. Stool culture confirms diagnosis (V. cholerae O1 or O139).",
+            "risk_factors": [
+              "Travel to endemic areas (South Asia, Africa, Haiti)",
+              "Consumption of contaminated water or seafood",
+              "Poor sanitation and hygiene",
+              "Achlorhydria or PPI use (decreased gastric acid)",
+              "Blood group O (2x risk of severe disease)"
+            ],
+            "red_flags": [
+              "Severe dehydration - sunken eyes, poor skin turgor, hypotension, altered mental status, requires IV fluids",
+              "Hypovolemic shock - tachycardia, hypotension, oliguria, requires aggressive IV rehydration",
+              "Hypokalemia - muscle weakness, arrhythmias, requires potassium supplementation",
+              "Hypoglycemia - altered mental status, seizures (children), requires glucose",
+              "Acute kidney injury - oliguria, elevated creatinine, requires IV fluids and dialysis if severe"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Suspect cholera if: Profuse watery diarrhea (rice-water stool) + rapid dehydration + travel to endemic area or outbreak. Obtain stool culture for confirmation and public health reporting.",
+            "essential_tests": [
+              "Stool culture: V. cholerae O1 or O139 on TCBS agar (thiosulfate-citrate-bile salts-sucrose). Sensitivity 80-90%. Required for public health reporting.",
+              "Rapid diagnostic test (RDT): Crystal VC dipstick. Sensitivity 90-95%, specificity 95-98%. Results in 15 minutes. Useful in outbreak settings.",
+              "CMP: Hypokalemia (K <3.5), hyponatremia (Na <135), elevated creatinine (AKI), metabolic acidosis (low bicarbonate).",
+              "CBC: Hemoconcentration (elevated Hct), leukocytosis (WBC 10-20,000)."
+            ],
+            "conditional_tests": [
+              "Stool microscopy: Darting motility of V. cholerae (rapid diagnosis, low sensitivity).",
+              "Blood cultures: Rarely positive (<1%), not routinely recommended.",
+              "Arterial blood gas: If severe acidosis suspected (pH <7.2, bicarbonate <10)."
+            ],
+            "when_not_to_test": "Do NOT delay rehydration for testing (rehydration is life-saving, testing is confirmatory). Do NOT skip stool culture (required for public health reporting and outbreak investigation).",
+            "turnaround_time": "Stool culture: 18-24 hours (preliminary), 48-72 hours (final). RDT: 15 minutes. CMP: <1 hour."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Vibrio cholerae. Gram-negative, comma-shaped, motile bacillus. Serogroups O1 (classical and El Tor biotypes) and O139 cause epidemic cholera. Non-O1/non-O139 strains cause sporadic diarrhea (milder).",
+            "pathogenesis": "Ingestion of contaminated water → colonization of small intestine → production of cholera toxin (CTX) → activation of adenylate cyclase → secretion of chloride and water → profuse watery diarrhea (10-20 liters/day) → rapid dehydration.",
+            "cholera_toxin": "CTX: AB5 toxin. B subunit binds to GM1 ganglioside on enterocytes. A subunit activates adenylate cyclase → increased cAMP → chloride secretion → water follows → secretory diarrhea. Toxin-mediated (not invasive, no inflammation, no fever).",
+            "resistance_patterns": "Tetracycline resistance: Common in some regions (20-50%). Fluoroquinolone resistance: Emerging (10-20%). Azithromycin: Low resistance (<5%), preferred in many regions.",
+            "asymptomatic_carriers": "75% of infections are asymptomatic or mild. Carriers shed bacteria for 7-14 days (can transmit to others). Chronic carrier state rare (<1%)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "rehydration_primary_treatment": "Rehydration is PRIMARY treatment (reduces mortality 25-50% → <1%). Antibiotics are ADJUNCTIVE (reduce duration and volume of diarrhea by 50%, reduce shedding).",
+            "oral_rehydration_solution": "ORS (oral rehydration solution): WHO formula (glucose 75mmol/L, sodium 75mmol/L, potassium 20mmol/L, chloride 65mmol/L, citrate 10mmol/L). Give 50-100mL/kg over 4 hours for mild-moderate dehydration. Maintenance: Match ongoing losses (200-400mL after each stool).",
+            "iv_rehydration": "IV fluids for severe dehydration or shock: Ringer's lactate OR 0.9% saline. Give 100mL/kg over 3-6 hours (adults: 30mL/kg in first hour, then 70mL/kg over 2-5 hours). Children: 100mL/kg over 3-6 hours. Switch to ORS when able to drink.",
+            "antibiotics": "Azithromycin 1g PO x1 (preferred, low resistance) OR Doxycycline 300mg PO x1 OR Ciprofloxacin 1g PO x1. Antibiotics reduce duration 3-5 days → 1-2 days and volume by 50%. Give AFTER rehydration started.",
+            "children": "Azithromycin 20mg/kg PO x1 (max 1g) OR Erythromycin 12.5mg/kg PO QID x 3 days. Avoid tetracyclines if <8 years (tooth staining).",
+            "pregnant_women": "Azithromycin 1g PO x1 (safe) OR Erythromycin 500mg PO QID x 3 days. Avoid tetracyclines and fluoroquinolones.",
+            "alternatives": "Tetracycline resistance: Azithromycin or ciprofloxacin. Fluoroquinolone resistance: Azithromycin. Macrolide resistance: Doxycycline or ciprofloxacin.",
+            "avoid_list": "Avoid antiperistaltic agents (loperamide, may worsen dehydration). Avoid antibiotics without rehydration (rehydration is life-saving, antibiotics are adjunctive)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "rehydration": "ORS for mild-moderate dehydration (50-100mL/kg over 4 hours). IV fluids for severe dehydration (Ringer's lactate or 0.9% saline, 100mL/kg over 3-6 hours). Potassium supplementation (20-40mEq/L in IV fluids or ORS). Zinc supplementation (children: 20mg PO daily x 10-14 days, reduces duration and severity).",
+            "azithromycin": "Azithromycin 1g PO x1 (preferred, low resistance <5%, single dose). Cure rate: 90-95%. Reduces duration 3-5 days → 1-2 days and volume by 50%.",
+            "doxycycline": "Doxycycline 300mg PO x1 (single dose) OR 100mg PO BID x 3 days. Cure rate: 85-90%. Resistance 20-50% in some regions. Avoid if <8 years (tooth staining).",
+            "ciprofloxacin": "Ciprofloxacin 1g PO x1 (single dose) OR 500mg PO BID x 3 days. Cure rate: 85-90%. Resistance 10-20% in some regions.",
+            "erythromycin": "Erythromycin 500mg PO QID x 3 days (children: 12.5mg/kg PO QID x 3 days). Cure rate: 80-85%. Alternative if azithromycin unavailable.",
+            "tetracycline": "Tetracycline 500mg PO QID x 3 days. Cure rate: 85-90%. Resistance 20-50% in some regions. Avoid if <8 years.",
+            "de_escalation": "Single-dose antibiotics (azithromycin, doxycycline, ciprofloxacin) preferred over 3-day courses (equal efficacy, better compliance).",
+            "iv_to_po_switch": "Switch to ORS when: Able to drink, vomiting stopped, hemodynamically stable. Most patients can switch within 4-6 hours."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "rehydration": "Continue until diarrhea stops (usually 2-5 days). Maintenance ORS: Match ongoing losses (200-400mL after each stool).",
+            "antibiotics": "Single dose (azithromycin, doxycycline, ciprofloxacin) OR 3 days (erythromycin, tetracycline)",
+            "zinc_supplementation": "10-14 days (children, reduces duration and severity)",
+            "monitoring": "Hourly: Vital signs, urine output, mental status (first 4-6 hours). Daily: Weight, stool output, electrolytes (K, Na, bicarbonate). Monitor for complications (hypokalemia, hypoglycemia, AKI).",
+            "stop_criteria": "Diarrhea stopped or minimal. Hydration adequate (normal vital signs, urine output >0.5mL/kg/hr). Electrolytes normalized. Tolerating oral intake."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "severe_dehydration": "Sunken eyes, poor skin turgor, hypotension, altered mental status, oliguria. Management: IV fluids (Ringer's lactate or 0.9% saline, 100mL/kg over 3-6 hours). Adults: 30mL/kg in first hour, then 70mL/kg over 2-5 hours. Children: 100mL/kg over 3-6 hours. Switch to ORS when able to drink. Mortality: <1% with rehydration, 25-50% without.",
+            "hypokalemia": "Common (K <3.5). Muscle weakness, arrhythmias, ileus. Management: Potassium supplementation (20-40mEq/L in IV fluids or ORS). Monitor ECG if severe (K <2.5).",
+            "hypoglycemia": "Common in children. Altered mental status, seizures. Management: Glucose 10% 2-3mL/kg IV bolus OR 50% dextrose 1mL/kg IV (diluted 1:5). Monitor blood glucose.",
+            "acute_kidney_injury": "Oliguria, elevated creatinine. Management: Aggressive IV rehydration. Dialysis if severe (creatinine >5, oliguria despite fluids). Usually reversible with rehydration.",
+            "pregnancy": "Higher risk of fetal loss, preterm labor. Preferred: Azithromycin 1g PO x1 OR Erythromycin 500mg PO QID x 3 days. Avoid tetracyclines and fluoroquinolones. Aggressive rehydration critical.",
+            "children": "Higher risk of hypoglycemia, severe dehydration. Zinc supplementation (20mg PO daily x 10-14 days) reduces duration and severity. Breastfeeding should continue. Avoid tetracyclines if <8 years.",
+            "outbreak_response": "Case definition: Acute watery diarrhea in endemic area or outbreak. Isolation: Contact precautions, separate latrines. Water treatment: Chlorination, boiling. Oral cholera vaccine (OCV): 2 doses, 1-6 weeks apart, efficacy 60-80% for 3-5 years. Mass vaccination in outbreak settings.",
+            "prevention": "Water treatment: Boil, filter, or chlorinate water. Food safety: Cook food thoroughly, avoid raw seafood. Hand hygiene: Soap and water. Oral cholera vaccine (OCV): Dukoral, Shanchol, Euvichol. Efficacy: 60-80% for 3-5 years. Indicated for travelers to endemic areas or outbreak settings."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Use single-dose antibiotics (azithromycin, doxycycline, ciprofloxacin) instead of 3-day courses",
+              "Switch from IV to ORS when able to drink (within 4-6 hours)",
+              "Rehydration is PRIMARY treatment, antibiotics are ADJUNCTIVE (do NOT delay rehydration for antibiotics)"
+            ],
+            "timeout_checklist": [
+              "Is this cholera or another cause of diarrhea? (Profuse watery diarrhea, rice-water stool, rapid dehydration, afebrile)",
+              "Is rehydration started? (PRIMARY treatment, life-saving)",
+              "What is the degree of dehydration? (Mild-moderate → ORS, severe → IV fluids)",
+              "Are electrolytes checked? (Hypokalemia, hyponatremia, metabolic acidosis)",
+              "Is stool culture obtained? (Required for public health reporting)",
+              "Can I switch IV to ORS? (Able to drink, vomiting stopped, hemodynamically stable)",
+              "Is this an outbreak? (Report to public health, isolation, water treatment, mass vaccination)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT delay rehydration for antibiotics (rehydration is life-saving, antibiotics are adjunctive). Do NOT use antiperistaltic agents (loperamide, may worsen dehydration). Do NOT use 3-day antibiotic courses if single dose available (equal efficacy, better compliance).",
+            "diagnostic_stewardship": "Do NOT delay rehydration for testing (rehydration is life-saving, testing is confirmatory). Obtain stool culture for public health reporting and outbreak investigation. Use RDT (rapid diagnostic test) in outbreak settings (results in 15 minutes).",
+            "prevention": "Water treatment: Boil, filter, or chlorinate water. Food safety: Cook food thoroughly, avoid raw seafood. Hand hygiene: Soap and water. Oral cholera vaccine (OCV) for travelers to endemic areas or outbreak settings. Mass vaccination in outbreak response."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "WHO Guidelines for Cholera Treatment (2024)",
+              "url": "https://www.who.int/news-room/fact-sheets/detail/cholera"
+            },
+            {
+              "label": "CDC Cholera Treatment Guidance (2025)",
+              "url": "https://www.cdc.gov/cholera/treatment/index.html"
+            },
+            {
+              "label": "IDSA Clinical Practice Guidelines for Infectious Diarrhea (2017)",
+              "url": "https://www.idsociety.org/practice-guideline/infectious-diarrhea/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hepatitis-a",
+      "name": "Hepatitis A (Acute Viral Hepatitis)",
+      "synonyms": [
+        "HAV",
+        "infectious hepatitis",
+        "epidemic jaundice"
+      ],
+      "icd10": [
+        "B15.0",
+        "B15.9"
+      ],
+      "severity": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "shortDescription": "Acute viral hepatitis transmitted via fecal-oral route, self-limited, vaccine-preventable",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Hepatitis A (HAV) is acute viral hepatitis caused by hepatitis A virus (RNA virus, Picornaviridae family). Transmission: Fecal-oral route, contaminated food/water, person-to-person. Self-limited (no chronic infection). Mortality: <0.5% (higher in age >50 years, chronic liver disease). Vaccine-preventable.",
+            "clinical_presentation": "Incubation: 15-50 days (average 28 days). Prodrome: Fever, malaise, anorexia, nausea, vomiting, abdominal pain (1-2 weeks). Icteric phase: Jaundice, dark urine, pale stools, pruritus (2-6 weeks). Asymptomatic: 70% of children <6 years, 30% of adults. Recovery: 2-6 months (most cases).",
+            "diagnostic_criteria": "Clinical suspicion (jaundice + travel to endemic area or outbreak) + positive anti-HAV IgM (acute infection). Elevated ALT/AST (10-100x normal). Elevated bilirubin (2-20mg/dL).",
+            "risk_factors": [
+              "Travel to endemic areas (developing countries, poor sanitation)",
+              "Consumption of contaminated food or water (shellfish, raw produce)",
+              "Close contact with infected person (household, daycare)",
+              "Men who have sex with men (MSM)",
+              "Injection drug use (IVDU)",
+              "Chronic liver disease (higher risk of fulminant hepatitis)"
+            ],
+            "red_flags": [
+              "Fulminant hepatic failure - encephalopathy, coagulopathy (INR >1.5), hypoglycemia, requires liver transplant evaluation, mortality 50-80%",
+              "Prolonged cholestasis - jaundice >3 months, pruritus, elevated bilirubin/alkaline phosphatase",
+              "Relapsing hepatitis - recurrence of symptoms after initial improvement (10-20%), self-limited",
+              "Chronic liver disease - higher risk of fulminant hepatitis (mortality 2-5% vs <0.5%)",
+              "Age >50 years - higher risk of severe disease and mortality"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Suspect hepatitis A if: Jaundice + travel to endemic area or outbreak + elevated ALT/AST. Obtain anti-HAV IgM for diagnosis. Report to public health (outbreak investigation, contact tracing).",
+            "essential_tests": [
+              "Anti-HAV IgM: Positive in acute infection. Appears at symptom onset, persists 3-6 months. Sensitivity 95-100%, specificity 95-100%.",
+              "ALT/AST: Elevated 10-100x normal (ALT usually >AST). Peak at symptom onset, normalize in 2-6 months.",
+              "Total bilirubin: Elevated 2-20mg/dL (direct bilirubin predominates). Peak 1-2 weeks after symptom onset.",
+              "Alkaline phosphatase: Mildly elevated (2-3x normal).",
+              "PT/INR: Normal (if elevated >1.5, consider fulminant hepatic failure)."
+            ],
+            "conditional_tests": [
+              "Anti-HAV IgG: Positive in past infection or vaccination (immunity). Persists lifelong. Not useful for acute diagnosis.",
+              "CBC: Leukopenia, lymphocytosis, atypical lymphocytes.",
+              "Hepatitis B and C serology: If chronic liver disease suspected or risk factors present.",
+              "Ultrasound abdomen: If cholestasis prolonged (>3 months) or biliary obstruction suspected.",
+              "Liver biopsy: Rarely needed (diagnosis is serologic). Consider if atypical presentation or fulminant hepatitis."
+            ],
+            "when_not_to_test": "Do NOT test anti-HAV IgG for acute diagnosis (indicates past infection or vaccination, not acute). Do NOT perform liver biopsy routinely (diagnosis is serologic).",
+            "turnaround_time": "Anti-HAV IgM: 1-4 hours. ALT/AST, bilirubin: <1 hour. Ultrasound: 1-7 days."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Hepatitis A virus (HAV). RNA virus, Picornaviridae family. Single serotype (vaccine provides lifelong immunity). Stable in environment (survives 1 month at room temperature, resistant to acid, heat 60°C x 1 hour).",
+            "pathogenesis": "Ingestion of contaminated food/water → replication in liver → hepatocyte injury (immune-mediated, not direct cytopathic) → elevated ALT/AST → jaundice. Virus shed in stool 1-2 weeks before symptom onset and 1-2 weeks after (peak infectivity before jaundice).",
+            "transmission": "Fecal-oral route. Contaminated food/water (shellfish, raw produce, ice). Person-to-person (household, daycare, sexual contact). Parenteral (rare, IVDU). No chronic carrier state (virus cleared in 2-6 months).",
+            "immunity": "Anti-HAV IgM: Acute infection (3-6 months). Anti-HAV IgG: Past infection or vaccination (lifelong immunity). No chronic infection (unlike hepatitis B and C).",
+            "incubation_period": "15-50 days (average 28 days). Infectivity: 1-2 weeks before symptom onset to 1-2 weeks after (peak before jaundice)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "supportive_care_only": "No specific antiviral treatment. Supportive care: Rest, hydration, nutrition, avoid hepatotoxic drugs (acetaminophen, alcohol, NSAIDs). Most cases self-limited (recovery in 2-6 months).",
+            "post_exposure_prophylaxis": "Hepatitis A vaccine (preferred) OR Immune globulin (IG). Indications: Close contact with HAV case within 2 weeks. Vaccine: 1 dose (if age >12 months, healthy). IG: 0.1mL/kg IM x1 (if age <12 months, immunocompromised, chronic liver disease, vaccine contraindicated). Give within 2 weeks of exposure (preferably within 7 days).",
+            "fulminant_hepatic_failure": "Supportive care: IV fluids, glucose (prevent hypoglycemia), lactulose (prevent encephalopathy), vitamin K (correct coagulopathy). Avoid sedatives, hepatotoxic drugs. Urgent liver transplant evaluation (mortality 50-80% without transplant).",
+            "symptomatic_treatment": "Nausea/vomiting: Ondansetron 4-8mg PO q8h. Pruritus: Cholestyramine 4g PO BID-QID (binds bile acids). Avoid antihistamines (sedation, encephalopathy risk).",
+            "alternatives": "No antiviral therapy available. Supportive care only.",
+            "avoid_list": "Avoid hepatotoxic drugs: Acetaminophen (if ALT >1,000), alcohol, NSAIDs, herbal supplements. Avoid sedatives (encephalopathy risk). Avoid unnecessary medications."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "supportive_care": "Rest, hydration, nutrition. Small frequent meals (anorexia common). Avoid alcohol, hepatotoxic drugs. Monitor ALT/AST, bilirubin, PT/INR weekly until improving.",
+            "post_exposure_prophylaxis": "Hepatitis A vaccine 1 dose (preferred, if age >12 months, healthy). Efficacy: 95% if given within 2 weeks of exposure. OR Immune globulin 0.1mL/kg IM x1 (if age <12 months, immunocompromised, chronic liver disease). Efficacy: 85% if given within 2 weeks.",
+            "fulminant_hepatic_failure": "Urgent liver transplant evaluation. Supportive care: IV fluids, glucose 10% infusion (prevent hypoglycemia), lactulose 30mL PO q2-4h (prevent encephalopathy), vitamin K 10mg IV daily x 3 days (correct coagulopathy). Monitor: Glucose q2-4h, ammonia, PT/INR, mental status. Mortality: 50-80% without transplant, 60-80% with transplant.",
+            "prolonged_cholestasis": "Cholestyramine 4g PO BID-QID (binds bile acids, reduces pruritus). Ursodeoxycholic acid 13-15mg/kg/day PO divided BID-TID (may reduce cholestasis, limited evidence). Monitor bilirubin, alkaline phosphatase monthly. Usually resolves in 3-6 months.",
+            "relapsing_hepatitis": "Supportive care only (self-limited). Recurrence of symptoms after initial improvement (10-20%). ALT/AST re-elevation, jaundice. Usually resolves in 2-4 weeks. No specific treatment.",
+            "de_escalation": "No antibiotics or antivirals needed. Supportive care only.",
+            "iv_to_po_switch": "Not applicable (no IV therapy for uncomplicated hepatitis A)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "supportive_care": "Continue until recovery (2-6 months for most cases). Avoid alcohol for 6 months.",
+            "post_exposure_prophylaxis": "Vaccine: 1 dose (booster at 6-12 months for long-term immunity). IG: Single dose (protection 3-5 months).",
+            "monitoring": "Weekly: ALT/AST, bilirubin, PT/INR (until improving). Monthly: ALT/AST, bilirubin (until normalized). Monitor for complications (fulminant hepatitis, prolonged cholestasis, relapse).",
+            "stop_criteria": "ALT/AST normalized or near-normal. Bilirubin normalized. Symptoms resolved. PT/INR normal. No complications."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "fulminant_hepatic_failure": "Rare (<0.5%), higher in age >50 years, chronic liver disease. Encephalopathy, coagulopathy (INR >1.5), hypoglycemia, cerebral edema. Management: Urgent liver transplant evaluation, supportive care (IV fluids, glucose, lactulose, vitamin K). Mortality: 50-80% without transplant, 60-80% with transplant.",
+            "prolonged_cholestasis": "10-20% of cases. Jaundice >3 months, pruritus, elevated bilirubin/alkaline phosphatase. Management: Cholestyramine (pruritus), ursodeoxycholic acid (may reduce cholestasis). Usually resolves in 3-6 months. Rule out biliary obstruction (ultrasound).",
+            "relapsing_hepatitis": "10-20% of cases. Recurrence of symptoms after initial improvement (2-4 weeks). ALT/AST re-elevation, jaundice. Self-limited (resolves in 2-4 weeks). No specific treatment.",
+            "chronic_liver_disease": "Higher risk of fulminant hepatitis (mortality 2-5% vs <0.5%). Hepatitis A vaccine recommended for all patients with chronic liver disease (hepatitis B, hepatitis C, cirrhosis, NAFLD).",
+            "pregnancy": "No increased risk of vertical transmission or congenital malformations. Supportive care. Hepatitis A vaccine safe in pregnancy (inactivated vaccine). Post-exposure prophylaxis: Vaccine preferred, IG if vaccine contraindicated.",
+            "immunocompromised": "Higher risk of severe disease. Supportive care. Post-exposure prophylaxis: IG preferred (vaccine may be less effective). Hepatitis A vaccine recommended for HIV, transplant, chemotherapy patients.",
+            "outbreak_response": "Case definition: Acute hepatitis + positive anti-HAV IgM. Isolation: Standard precautions, hand hygiene (soap and water, alcohol does NOT kill HAV). Contact tracing: Identify close contacts, offer post-exposure prophylaxis (vaccine or IG within 2 weeks). Food handler exclusion: Exclude from work until 1 week after jaundice onset or 2 weeks after symptom onset (if no jaundice).",
+            "prevention": "Hepatitis A vaccine: 2 doses (0, 6-12 months). Efficacy: 95-100%, duration >20 years. Indications: All children age 12-23 months, travelers to endemic areas, MSM, IVDU, chronic liver disease, clotting factor disorders. Hand hygiene: Soap and water (alcohol does NOT kill HAV). Food safety: Cook food thoroughly, avoid raw shellfish, wash produce."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "No antibiotics or antivirals needed (supportive care only)",
+              "Avoid unnecessary medications (hepatotoxic drugs, sedatives)",
+              "Post-exposure prophylaxis: Vaccine preferred over IG (longer protection, cost-effective)"
+            ],
+            "timeout_checklist": [
+              "Is this hepatitis A or another cause of jaundice? (Anti-HAV IgM positive)",
+              "Is this fulminant hepatic failure? (Encephalopathy, INR >1.5 → urgent liver transplant evaluation)",
+              "Is this prolonged cholestasis? (Jaundice >3 months → cholestyramine, ursodeoxycholic acid)",
+              "Is this a relapse? (Recurrence after improvement → supportive care, self-limited)",
+              "Are close contacts identified? (Offer post-exposure prophylaxis within 2 weeks)",
+              "Is this an outbreak? (Report to public health, contact tracing, food handler exclusion)",
+              "Is hepatitis A vaccine given? (Prevention for high-risk groups)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use antibiotics or antivirals (no specific treatment, supportive care only). Do NOT use hepatotoxic drugs (acetaminophen if ALT >1,000, alcohol, NSAIDs). Do NOT use sedatives (encephalopathy risk). Do NOT perform liver biopsy routinely (diagnosis is serologic).",
+            "diagnostic_stewardship": "Do NOT test anti-HAV IgG for acute diagnosis (indicates past infection or vaccination, not acute). Test anti-HAV IgM for acute diagnosis. Report to public health (outbreak investigation, contact tracing).",
+            "prevention": "Hepatitis A vaccine: All children age 12-23 months, travelers to endemic areas, MSM, IVDU, chronic liver disease. Post-exposure prophylaxis: Vaccine or IG within 2 weeks of exposure. Hand hygiene: Soap and water (alcohol does NOT kill HAV). Food safety: Cook food thoroughly, avoid raw shellfish."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "WHO Hepatitis A Fact Sheet (2025)",
+              "url": "https://www.who.int/news-room/fact-sheets/detail/hepatitis-a"
+            },
+            {
+              "label": "CDC Clinical Overview of Viral Hepatitis (2025)",
+              "url": "https://www.cdc.gov/hepatitis/hcp/clinical-overview/index.html"
+            },
+            {
+              "label": "AASLD Practice Guidance on Acute Liver Failure (2023)",
+              "url": "https://www.aasld.org/practice-guidelines"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "foodborne-illness",
+      "name": "Foodborne Illness (Bacterial Food Poisoning)",
+      "synonyms": [
+        "food poisoning",
+        "bacterial gastroenteritis",
+        "foodborne disease"
+      ],
+      "icd10": [
+        "A05.0",
+        "A05.1",
+        "A05.2",
+        "A05.3",
+        "A05.4",
+        "A05.5",
+        "A05.8",
+        "A05.9"
+      ],
+      "severity": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "shortDescription": "Acute illness from ingestion of contaminated food, usually self-limited, supportive care",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Foodborne illness (food poisoning) is acute illness from ingestion of food contaminated with bacteria, toxins, viruses, or parasites. Most common: Norovirus (58%), Salmonella (11%), Clostridium perfringens (10%), Campylobacter (9%). Incidence: 48 million cases/year in US. Mortality: 3,000 deaths/year.",
+            "clinical_presentation": "Nausea, vomiting, diarrhea, abdominal cramps, fever (bacterial). Onset: 1-72 hours after ingestion (varies by pathogen). Duration: 1-7 days (most cases self-limited). Dehydration: Common (especially children, elderly).",
+            "diagnostic_criteria": "Clinical diagnosis: Acute GI symptoms + food exposure history + cluster of cases (outbreak). Stool culture or PCR confirms pathogen (not routinely needed for mild cases).",
+            "risk_factors": [
+              "Consumption of high-risk foods (raw/undercooked meat, poultry, seafood, eggs, unpasteurized dairy, raw produce)",
+              "Improper food handling (inadequate cooking, cross-contamination, improper storage)",
+              "Immunocompromised (HIV, transplant, chemotherapy, biologics)",
+              "Age extremes (infants, elderly)",
+              "Achlorhydria or PPI use (decreased gastric acid)"
+            ],
+            "red_flags": [
+              "Severe dehydration - sunken eyes, poor skin turgor, hypotension, altered mental status, requires IV fluids",
+              "Bloody diarrhea - suggests invasive pathogen (Shigella, Campylobacter, E. coli O157:H7, Salmonella), requires stool culture",
+              "High fever >38.5°C - suggests invasive bacterial infection, may require antibiotics",
+              "Neurologic symptoms - botulism (descending paralysis), Listeria (meningitis), requires urgent evaluation",
+              "Hemolytic uremic syndrome (HUS) - E. coli O157:H7, thrombocytopenia, hemolytic anemia, renal failure, do NOT use antibiotics"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Test if: Bloody diarrhea, high fever, severe dehydration, immunocompromised, outbreak investigation, symptoms >7 days. Do NOT test mild cases (self-limited, supportive care only).",
+            "essential_tests": [
+              "Stool culture: Salmonella, Shigella, Campylobacter, E. coli O157:H7. Sensitivity 70-90%. Indicated if bloody diarrhea, high fever, severe symptoms.",
+              "Stool PCR panel: Multiplex PCR (bacterial, viral, parasitic pathogens). Sensitivity 90-95%, specificity 95-98%. Expensive, use selectively.",
+              "CBC: Leukocytosis (bacterial), hemoconcentration (dehydration), thrombocytopenia (HUS).",
+              "CMP: Electrolyte abnormalities (hypokalemia, hyponatremia), elevated creatinine (AKI, HUS)."
+            ],
+            "conditional_tests": [
+              "Stool O&P (ova and parasites): If symptoms >7 days, travel to endemic area, immunocompromised. Sensitivity 50-70% (requires 3 samples).",
+              "Stool toxin assay: C. difficile toxin (if recent antibiotics, healthcare exposure). Botulinum toxin (if neurologic symptoms).",
+              "Blood cultures: If high fever, severe illness, immunocompromised. Positive in <5% of foodborne illness.",
+              "CT abdomen: If severe abdominal pain, peritonitis, toxic megacolon suspected."
+            ],
+            "when_not_to_test": "Do NOT test mild cases (self-limited, supportive care only). Do NOT test formed stools (low yield). Do NOT test asymptomatic contacts (not indicated unless outbreak investigation).",
+            "turnaround_time": "Stool culture: 48-72 hours. Stool PCR: 1-4 hours. CBC, CMP: <1 hour."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "common_pathogens": {
+              "norovirus": "Most common (58%). Vomiting predominant, short incubation (12-48 hours), self-limited (1-3 days). No specific treatment.",
+              "salmonella": "11% of cases. Diarrhea, fever, abdominal cramps. Incubation 6-72 hours. Duration 4-7 days. Do NOT use antibiotics (prolongs carrier state) unless severe/high-risk.",
+              "clostridium_perfringens": "10% of cases. Watery diarrhea, abdominal cramps, NO fever. Incubation 6-24 hours. Duration 24 hours. Toxin-mediated (preformed toxin in food). No treatment needed.",
+              "campylobacter": "9% of cases. Bloody diarrhea, fever, abdominal cramps. Incubation 2-5 days. Duration 5-7 days. Azithromycin if severe (fluoroquinolone resistance 20-50%).",
+              "staphylococcus_aureus": "Vomiting predominant, short incubation (1-6 hours), self-limited (6-24 hours). Toxin-mediated (preformed toxin in food). No treatment needed.",
+              "bacillus_cereus": "Vomiting (emetic form, 1-6 hours) OR diarrhea (diarrheal form, 8-16 hours). Toxin-mediated. Self-limited (6-24 hours). No treatment needed.",
+              "e_coli_o157h7": "Bloody diarrhea, abdominal cramps, NO fever. Incubation 3-4 days. Duration 5-7 days. Do NOT use antibiotics (increases HUS risk 2-3x). Supportive care only.",
+              "shigella": "Bloody diarrhea, fever, abdominal cramps. Incubation 1-3 days. Duration 5-7 days. Azithromycin if severe (fluoroquinolone resistance 30-70%).",
+              "listeria": "Rare. Fever, muscle aches, diarrhea. High-risk: Pregnancy, elderly, immunocompromised. Can cause meningitis, sepsis. Ampicillin + gentamicin.",
+              "vibrio": "Seafood-associated (raw oysters). Watery diarrhea, abdominal cramps. V. parahaemolyticus (self-limited). V. vulnificus (sepsis, high mortality in cirrhosis). Doxycycline + ceftriaxone."
+            },
+            "incubation_periods": {
+              "1_6_hours": "Preformed toxin: S. aureus, B. cereus (emetic)",
+              "6_24_hours": "C. perfringens, B. cereus (diarrheal)",
+              "12_48_hours": "Norovirus",
+              "1_3_days": "Shigella, E. coli O157:H7",
+              "2_5_days": "Campylobacter",
+              "6_72_hours": "Salmonella"
+            },
+            "high_risk_foods": {
+              "poultry": "Salmonella, Campylobacter",
+              "ground_beef": "E. coli O157:H7, Salmonella",
+              "seafood": "Vibrio, Norovirus",
+              "eggs": "Salmonella",
+              "unpasteurized_dairy": "Salmonella, Campylobacter, Listeria, E. coli O157:H7",
+              "raw_produce": "E. coli O157:H7, Salmonella, Norovirus",
+              "deli_meats": "Listeria"
+            }
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "mild_watery_diarrhea": "Supportive care ONLY (oral rehydration, diet). No antibiotics (most cases viral or self-limited bacterial). Loperamide 4mg PO x1, then 2mg after each loose stool (max 16mg/day) if no fever or bloody diarrhea.",
+            "moderate_to_severe_or_bloody_diarrhea": "Azithromycin 500mg PO daily x 3 days OR Ciprofloxacin 500mg PO BID x 3 days (covers Campylobacter, Shigella, Salmonella). Avoid ciprofloxacin if travel to South/Southeast Asia (fluoroquinolone resistance 20-50%).",
+            "suspected_e_coli_o157h7": "Do NOT use antibiotics (increases HUS risk 2-3x). Supportive care only (IV fluids, monitor for HUS). Obtain stool culture for E. coli O157:H7. Monitor CBC, CMP, LDH daily x 7-10 days (assess for HUS).",
+            "suspected_listeria": "Ampicillin 2g IV q4h + Gentamicin 5-7mg/kg IV daily (synergy). Duration: 14-21 days (bacteremia), 21 days (meningitis). High-risk: Pregnancy, elderly, immunocompromised.",
+            "suspected_vibrio_vulnificus": "Doxycycline 100mg IV/PO BID + Ceftriaxone 2g IV daily. Duration: 7-14 days. High mortality in cirrhosis (50%). Urgent surgical debridement if necrotizing soft tissue infection.",
+            "alternatives": "Penicillin allergy: Azithromycin or fluoroquinolone (if susceptible). Fluoroquinolone resistance: Azithromycin.",
+            "avoid_list": "Avoid antibiotics for mild cases (self-limited, supportive care only). Avoid antibiotics for E. coli O157:H7 (increases HUS risk). Avoid antibiotics for nontyphoidal Salmonella (prolongs carrier state) unless severe/high-risk. Avoid antiperistaltic agents (loperamide) if bloody diarrhea or high fever."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "supportive_care": "Oral rehydration solution (ORS) for mild-moderate dehydration. IV fluids (Ringer's lactate or 0.9% saline) for severe dehydration. Diet: BRAT diet (bananas, rice, applesauce, toast) initially, advance as tolerated. Avoid dairy (lactose intolerance common after gastroenteritis).",
+            "campylobacter": "Azithromycin 500mg PO daily x 3 days (preferred, fluoroquinolone resistance 20-50%). Cure rate: 90-95%. Reduces duration 5-7 days → 2-3 days.",
+            "shigella": "Azithromycin 500mg PO daily x 3 days (preferred, fluoroquinolone resistance 30-70%). Cure rate: 90-95%. Reduces duration 5-7 days → 2-3 days.",
+            "salmonella": "Do NOT use antibiotics (prolongs carrier state 2-4 weeks → 2-4 months) unless severe/high-risk. Severe: Azithromycin 500mg PO daily x 5-7 days OR Ciprofloxacin 500mg PO BID x 5-7 days. High-risk: Age <3 months or >50 years, immunocompromised, prosthetic implants, valvular heart disease.",
+            "e_coli_o157h7": "Do NOT use antibiotics (increases HUS risk 2-3x). Supportive care only (IV fluids, monitor for HUS). Monitor CBC, CMP, LDH daily x 7-10 days. HUS develops in 5-10% (usually day 7-10).",
+            "listeria": "Ampicillin 2g IV q4h + Gentamicin 5-7mg/kg IV daily x 14-21 days (bacteremia) OR 21 days (meningitis). Alternative: TMP-SMX 5mg/kg IV q8h (if penicillin allergy).",
+            "vibrio_vulnificus": "Doxycycline 100mg IV/PO BID + Ceftriaxone 2g IV daily x 7-14 days. Urgent surgical debridement if necrotizing soft tissue infection. Mortality: 50% in cirrhosis.",
+            "de_escalation": "Switch from IV to PO when: Able to drink, vomiting stopped, hemodynamically stable. Most patients can switch within 24-48 hours.",
+            "iv_to_po_switch": "Switch to PO when: Able to drink, vomiting stopped, hemodynamically stable. Ceftriaxone → Ciprofloxacin 500mg PO BID OR Azithromycin 500mg PO daily."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "supportive_care": "Continue until diarrhea stops (usually 1-7 days). Maintenance ORS: Match ongoing losses.",
+            "antibiotics": "3 days (Campylobacter, Shigella), 5-7 days (Salmonella if severe), 7-14 days (Vibrio vulnificus), 14-21 days (Listeria)",
+            "monitoring": "Daily: Vital signs, urine output, stool output, weight. Monitor for complications (dehydration, HUS, sepsis). Repeat stool culture if persistent symptoms >7 days.",
+            "stop_criteria": "Diarrhea stopped or minimal. Hydration adequate (normal vital signs, urine output >0.5mL/kg/hr). Tolerating oral intake. No fever. No complications."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "hemolytic_uremic_syndrome": "Complication of E. coli O157:H7 (5-10%, usually day 7-10). Triad: Thrombocytopenia, hemolytic anemia, renal failure. Management: Supportive care (IV fluids, transfusion, dialysis if severe). Do NOT use antibiotics (increases risk 2-3x). Do NOT use antiperistaltic agents. Mortality: 3-5%. Chronic kidney disease: 12%.",
+            "reactive_arthritis": "Complication of Campylobacter, Shigella, Salmonella, Yersinia (1-3%, usually 1-3 weeks after infection). Triad: Arthritis, urethritis, conjunctivitis (Reiter's syndrome). Management: NSAIDs, physical therapy. Usually self-limited (3-12 months). HLA-B27 positive (50-80%).",
+            "guillain_barre_syndrome": "Rare complication of Campylobacter (1 in 1,000 cases, usually 1-3 weeks after infection). Ascending paralysis, areflexia, respiratory failure. Management: IVIG or plasmapheresis, supportive care. Mortality: 5%. Full recovery: 70%.",
+            "pregnancy": "Higher risk of fetal loss, preterm labor (Listeria, Salmonella). Preferred: Azithromycin 500mg PO daily x 3 days. Avoid fluoroquinolones. Listeria: Ampicillin 2g IV q4h x 14-21 days. Aggressive rehydration critical.",
+            "immunocompromised": "Higher risk of severe disease, bacteremia, prolonged shedding. Longer duration (7-14 days). Consider secondary prophylaxis if recurrent (TMP-SMX DS PO daily).",
+            "outbreak_investigation": "Case definition: Acute GI symptoms + food exposure history + cluster of cases. Isolation: Contact precautions, hand hygiene. Food handler exclusion: Exclude from work until 24-48 hours after symptoms resolve (varies by pathogen). Report to public health (outbreak investigation, food recall).",
+            "prevention": "Food safety: Cook food thoroughly (poultry 165°F, ground beef 160°F, eggs 145°F). Avoid cross-contamination (separate cutting boards for raw meat and produce). Refrigerate promptly (<2 hours, <1 hour if >90°F). Avoid high-risk foods (raw/undercooked meat, unpasteurized dairy, raw seafood). Hand hygiene: Soap and water before food handling."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Do NOT use antibiotics for mild cases (self-limited, supportive care only)",
+              "Do NOT use antibiotics for E. coli O157:H7 (increases HUS risk 2-3x)",
+              "Do NOT use antibiotics for nontyphoidal Salmonella (prolongs carrier state) unless severe/high-risk",
+              "Use 3-day antibiotic courses (Campylobacter, Shigella) instead of 5-7 days",
+              "Switch from IV to PO when able to drink (within 24-48 hours)"
+            ],
+            "timeout_checklist": [
+              "Is this foodborne illness or another cause of diarrhea? (Food exposure history, cluster of cases)",
+              "Is this mild or severe? (Mild → supportive care only, severe → antibiotics)",
+              "Is this E. coli O157:H7? (Do NOT use antibiotics, monitor for HUS)",
+              "Is this Salmonella? (Do NOT use antibiotics unless severe/high-risk)",
+              "Is this Listeria? (High-risk: Pregnancy, elderly, immunocompromised → ampicillin + gentamicin)",
+              "Is this an outbreak? (Report to public health, food handler exclusion)",
+              "Can I switch IV to PO? (Able to drink, vomiting stopped, hemodynamically stable)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use antibiotics for mild cases (self-limited, supportive care only). Do NOT test mild cases (not indicated). Do NOT use antiperistaltic agents (loperamide) if bloody diarrhea or high fever. Do NOT use antibiotics for E. coli O157:H7 or nontyphoidal Salmonella (unless severe/high-risk).",
+            "diagnostic_stewardship": "Do NOT test mild cases (self-limited, supportive care only). Test if: Bloody diarrhea, high fever, severe dehydration, immunocompromised, outbreak investigation, symptoms >7 days. Report to public health (outbreak investigation, food recall).",
+            "prevention": "Food safety: Cook food thoroughly, avoid cross-contamination, refrigerate promptly, avoid high-risk foods. Hand hygiene: Soap and water before food handling. Food handler exclusion: Exclude from work until 24-48 hours after symptoms resolve."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "CDC FoodNet Surveillance (2024)",
+              "url": "https://www.cdc.gov/foodnet/"
+            },
+            {
+              "label": "IDSA Clinical Practice Guidelines for Infectious Diarrhea (2017)",
+              "url": "https://www.idsociety.org/practice-guideline/infectious-diarrhea/"
+            },
+            {
+              "label": "FDA Food Safety Modernization Act (2024)",
+              "url": "https://www.fda.gov/food/food-safety-modernization-act-fsma"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
+

@@ -1,0 +1,1657 @@
+{
+  "version": 1,
+  "updatedAt": "2025-01-23T00:00:00Z",
+  "id": "upper-respiratory",
+  "name": "Upper Respiratory Infections",
+  "description": "Pharyngitis, sinusitis, otitis, and upper airway infections",
+  "icon": "face",
+  "color": "#03A9F4",
+  "conditions": [
+    {
+      "id": "acute-pharyngitis",
+      "name": "Acute Pharyngitis (Strep Throat)",
+      "synonyms": ["strep throat", "pharyngitis", "sore throat", "GAS pharyngitis", "tonsillitis"],
+      "icd10": ["J02.0", "J02.9", "J03.0", "J03.9"],
+      "severity": ["mild", "moderate"],
+      "shortDescription": "Acute inflammation of the pharynx and tonsils, most commonly caused by Group A Streptococcus (GAS) or viral pathogens",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "clinical_presentation": "Sudden onset of sore throat, pain with swallowing (odynophagia), fever (>38°C), tonsillar exudates, tender anterior cervical lymphadenopathy, absence of cough or rhinorrhea (suggests bacterial etiology)",
+            "centor_criteria": [
+              "Tonsillar exudates (1 point)",
+              "Tender anterior cervical lymphadenopathy (1 point)",
+              "Fever >38°C (1 point)",
+              "Absence of cough (1 point)",
+              "Age 3-14 years (+1 point), Age 15-44 (0 points), Age ≥45 (-1 point)"
+            ],
+            "centor_interpretation": {
+              "score_0_1": "1-2.5% probability of GAS → No testing or antibiotics",
+              "score_2_3": "10-17% probability of GAS → Rapid antigen test or throat culture",
+              "score_4_5": "43-56% probability of GAS → Consider empiric treatment or test"
+            },
+            "red_flags": [
+              "Stridor or respiratory distress (epiglottitis, peritonsillar abscess)",
+              "Drooling or inability to swallow (deep space infection)",
+              "Trismus (peritonsillar abscess)",
+              "Severe unilateral throat pain (peritonsillar abscess)",
+              "Muffled 'hot potato' voice (peritonsillar abscess)",
+              "Neck stiffness or swelling (retropharyngeal abscess, Lemierre syndrome)"
+            ],
+            "complications": [
+              "Acute rheumatic fever (ARF) - prevented by antibiotic treatment within 9 days",
+              "Post-streptococcal glomerulonephritis (PSGN) - not prevented by antibiotics",
+              "Peritonsillar abscess",
+              "Retropharyngeal abscess",
+              "Scarlet fever",
+              "Toxic shock syndrome (rare)"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Test patients with Centor score ≥2 or clinical suspicion of GAS pharyngitis. Do NOT test patients with clear viral symptoms (cough, rhinorrhea, conjunctivitis, hoarseness)",
+            "essential_tests": [
+              "Rapid Antigen Detection Test (RADT) - 15 minutes, 86-95% sensitivity, 95-99% specificity",
+              "Throat culture (if RADT negative in children/adolescents) - 24-48 hours, gold standard",
+              "Clinical scoring (Centor or McIsaac criteria)"
+            ],
+            "conditional_tests": [
+              "Monospot or EBV serology (if suspected infectious mononucleosis)",
+              "Gonorrhea/Chlamydia NAAT (if sexually active with pharyngeal exposure)",
+              "HIV testing (if recurrent pharyngitis or risk factors)",
+              "CT neck with contrast (if suspected deep space infection)"
+            ],
+            "not_recommended": [
+              "Routine testing for viral pharyngitis (no treatment benefit)",
+              "Testing asymptomatic contacts",
+              "Post-treatment test of cure (unless high risk for ARF)"
+            ]
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": [
+              "Group A Streptococcus (Streptococcus pyogenes) - 15-30% of adults, 20-40% of children",
+              "Respiratory viruses (70-85% of cases) - Rhinovirus, Coronavirus, Adenovirus, Influenza, Parainfluenza, RSV, EBV",
+              "Group C/G Streptococcus - 5-10% (unclear if treatment needed)",
+              "Fusobacterium necrophorum - rare, causes Lemierre syndrome in adolescents/young adults",
+              "Neisseria gonorrhoeae - sexually transmitted pharyngitis",
+              "Mycoplasma pneumoniae, Chlamydia pneumoniae - atypical causes"
+            ],
+            "resistance_patterns": "GAS remains universally susceptible to penicillin (no resistance reported). Macrolide resistance: 5-15% in North America, up to 30-40% in some Asian countries",
+            "mdro_risk_factors": [
+              "Recent macrolide use (azithromycin resistance)",
+              "Travel to high-resistance regions (Asia, Southern Europe)"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": {
+              "adults": "Penicillin V 500mg PO BID-TID x 10 days OR Amoxicillin 500mg PO TID (or 1000mg BID) x 10 days",
+              "children": "Amoxicillin 50mg/kg/day PO divided BID (max 1000mg/dose) x 10 days OR Penicillin V 250mg PO BID-TID (weight <27kg) or 500mg PO BID-TID (weight ≥27kg) x 10 days"
+            },
+            "penicillin_allergy": {
+              "non_severe": "Cephalexin 500mg PO BID x 10 days (adults) OR Cefadroxil 30mg/kg/day PO once daily x 10 days (children)",
+              "severe_ige_mediated": "Azithromycin 500mg PO x 1 day, then 250mg PO daily x 4 days (total 5 days) OR Clarithromycin 250mg PO BID x 10 days"
+            },
+            "single_dose_option": "Benzathine penicillin G 1.2 million units IM x 1 dose (adults) OR 600,000 units IM x 1 dose (weight <27kg) - use if adherence concern",
+            "notes": [
+              "Amoxicillin preferred over penicillin V (better taste, fewer daily doses, equal efficacy)",
+              "Avoid fluoroquinolones (unnecessary broad spectrum)",
+              "Avoid TMP-SMX (not effective against GAS)",
+              "Treatment within 9 days prevents acute rheumatic fever",
+              "Symptom improvement expected within 24-48 hours"
+            ]
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive Therapy",
+          "content": {
+            "group_a_streptococcus": {
+              "first_line": "Penicillin V 500mg PO BID-TID x 10 days OR Amoxicillin 500mg PO TID x 10 days",
+              "alternative": "Cephalexin 500mg PO BID x 10 days (penicillin allergy, non-severe)",
+              "duration": "10 days (required to prevent acute rheumatic fever)",
+              "notes": "GAS is universally susceptible to penicillin. Shorter courses (5-7 days) not recommended due to ARF risk"
+            },
+            "group_c_g_streptococcus": {
+              "first_line": "Same as GAS treatment (unclear if treatment necessary)",
+              "notes": "Clinical significance uncertain; not associated with acute rheumatic fever"
+            },
+            "fusobacterium_necrophorum": {
+              "first_line": "Penicillin G 2-4 million units IV q4-6h + Metronidazole 500mg IV q8h",
+              "alternative": "Clindamycin 600-900mg IV q8h (monotherapy)",
+              "duration": "2-3 weeks IV, then PO to complete 4-6 weeks total",
+              "notes": "Causes Lemierre syndrome (septic thrombophlebitis of internal jugular vein). Requires imaging and anticoagulation consideration"
+            },
+            "neisseria_gonorrhoeae": {
+              "first_line": "Ceftriaxone 500mg IM x 1 dose (weight <150kg) OR 1g IM x 1 dose (weight ≥150kg) + Doxycycline 100mg PO BID x 7 days",
+              "notes": "Treat for concurrent chlamydia. Test for other STIs. Partner notification required"
+            }
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration",
+          "content": {
+            "uncomplicated_gas": "10 days (required to prevent acute rheumatic fever - do NOT shorten)",
+            "viral_pharyngitis": "Supportive care only, symptoms resolve in 3-7 days",
+            "monitoring_parameters": [
+              "Clinical improvement within 24-48 hours of antibiotics",
+              "Resolution of fever within 24-48 hours",
+              "Ability to swallow and maintain hydration",
+              "Development of complications (abscess, rash, joint pain)"
+            ],
+            "stop_criteria": [
+              "Completion of 10-day course for GAS",
+              "No test of cure needed unless high risk for acute rheumatic fever",
+              "Return to school/work after 24 hours of antibiotics and afebrile"
+            ],
+            "treatment_failure": "If no improvement after 48-72 hours: Consider peritonsillar abscess, deep space infection, non-GAS etiology (EBV, gonorrhea), non-adherence, or resistant organism (rare)"
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Populations",
+          "content": {
+            "pregnancy": {
+              "safe_options": "Penicillin V, Amoxicillin, Cephalexin (all Category B)",
+              "avoid": "Fluoroquinolones (Category C), Tetracyclines (Category D)",
+              "notes": "GAS pharyngitis in pregnancy should be treated to prevent maternal complications"
+            },
+            "renal_impairment": {
+              "mild_moderate": "No dose adjustment for penicillins or cephalosporins",
+              "severe_dialysis": "Penicillin V 250-500mg PO BID-TID (reduce frequency). Amoxicillin 250-500mg PO q12-24h"
+            },
+            "recurrent_pharyngitis": {
+              "definition": "≥3 episodes in 6 months or ≥5 episodes in 12 months",
+              "evaluation": [
+                "Confirm GAS with throat culture (not just RADT)",
+                "Rule out chronic carrier state (treat only symptomatic episodes)",
+                "Consider tonsillectomy referral (ENT)",
+                "Screen household contacts for GAS carriage"
+              ],
+              "treatment_options": "Clindamycin 300mg PO TID x 10 days (better eradication of GAS carriage) OR Amoxicillin-clavulanate 875mg PO BID x 10 days"
+            },
+            "gas_carrier_state": {
+              "definition": "Positive GAS culture without symptoms (10-15% of children, 5% of adults)",
+              "management": "Do NOT treat asymptomatic carriers. Treat only if symptomatic or high risk for ARF",
+              "eradication_regimen": "Clindamycin 20mg/kg/day PO divided TID x 10 days (if needed)"
+            },
+            "drug_interactions": {
+              "warfarin": {
+                "interaction": "Penicillins and macrolides may increase INR",
+                "management": "Monitor INR closely, adjust warfarin dose as needed"
+              },
+              "oral_contraceptives": {
+                "interaction": "Antibiotics may reduce OCP efficacy (controversial)",
+                "management": "Advise backup contraception during treatment and 7 days after"
+              }
+            }
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Antimicrobial Stewardship",
+          "content": {
+            "avoid_unnecessary_antibiotics": [
+              "Do NOT treat viral pharyngitis (70-85% of cases)",
+              "Use Centor/McIsaac criteria to guide testing",
+              "Do NOT treat based on 'red throat' alone",
+              "Do NOT treat asymptomatic GAS carriers",
+              "Do NOT prescribe antibiotics while awaiting culture results (unless high Centor score)"
+            ],
+            "timeout_checklist": [
+              "Day 2-3: Confirm GAS positive result. If negative, STOP antibiotics",
+              "Day 2-3: Assess clinical improvement. If worsening, re-evaluate for complications",
+              "Day 10: Ensure completion of full 10-day course"
+            ],
+            "narrow_spectrum_preferred": "Penicillin V or Amoxicillin are first-line (narrow spectrum, effective, inexpensive). Avoid azithromycin due to resistance and broader spectrum",
+            "patient_education": [
+              "Antibiotics do NOT help viral sore throat",
+              "Symptom relief expected in 24-48 hours, but complete 10-day course",
+              "Contagious until 24 hours after starting antibiotics",
+              "Supportive care: Acetaminophen/ibuprofen for pain, warm salt water gargles, throat lozenges, adequate hydration"
+            ]
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Clinical Practice Guideline for Group A Streptococcal Pharyngitis (2025 Update)",
+              "url": "https://www.idsociety.org/practice-guideline/streptococcal-pharyngitis2/"
+            },
+            {
+              "label": "CDC Clinical Guidance for Group A Streptococcal Pharyngitis (2025)",
+              "url": "https://www.cdc.gov/group-a-strep/hcp/clinical-guidance/strep-throat.html"
+            },
+            {
+              "label": "Shulman ST, et al. Clinical Practice Guideline for the Diagnosis and Management of Group A Streptococcal Pharyngitis: 2012 Update by IDSA",
+              "url": "https://academic.oup.com/cid/article/55/10/e86/321183"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "acute-sinusitis",
+      "name": "Acute Bacterial Rhinosinusitis (ABRS)",
+      "synonyms": ["sinusitis", "rhinosinusitis", "sinus infection", "maxillary sinusitis"],
+      "icd10": ["J01.0", "J01.1", "J01.9", "J32.0", "J32.9"],
+      "severity": ["mild", "moderate", "severe"],
+      "shortDescription": "Acute inflammation of the paranasal sinuses, differentiated into viral (common cold) and bacterial (requiring antibiotics)",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "clinical_presentation": "Nasal congestion, purulent nasal discharge (anterior or posterior), facial pain/pressure/fullness (especially unilateral), hyposmia/anosmia, cough (worse at night), dental pain (maxillary sinusitis), fever (if bacterial)",
+            "viral_vs_bacterial_differentiation": {
+              "viral_rhinosinusitis": "Symptoms <10 days, improving after 5-7 days. Treat with supportive care only",
+              "acute_bacterial_rhinosinusitis": "Requires ONE of: (1) Persistent symptoms ≥10 days without improvement, (2) Severe symptoms ≥3-4 days (fever ≥39°C + purulent discharge + facial pain), (3) Worsening symptoms after initial improvement (double sickening)"
+            },
+            "red_flags": [
+              "Severe headache or altered mental status (intracranial extension)",
+              "Visual changes, periorbital edema, ophthalmoplegia (orbital cellulitis/abscess)",
+              "Severe unilateral facial pain or swelling (complicated sinusitis)",
+              "Meningeal signs (meningitis, epidural abscess)",
+              "Cranial nerve deficits (cavernous sinus thrombosis)",
+              "Immunocompromised with fever (fungal sinusitis risk)"
+            ],
+            "complications": [
+              "Orbital cellulitis or abscess (most common complication)",
+              "Intracranial extension: meningitis, epidural abscess, subdural empyema, brain abscess",
+              "Cavernous sinus thrombosis",
+              "Osteomyelitis of frontal bone (Pott's puffy tumor)",
+              "Chronic rhinosinusitis (symptoms >12 weeks)"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Diagnosis is CLINICAL. Imaging and cultures are NOT routinely needed for uncomplicated ABRS",
+            "essential_tests": [
+              "Clinical diagnosis based on symptom duration and severity",
+              "No routine imaging or cultures for uncomplicated cases"
+            ],
+            "conditional_tests": [
+              "CT sinuses with contrast (if suspected complications: orbital, intracranial)",
+              "MRI brain with contrast (if suspected intracranial extension)",
+              "Sinus aspiration or endoscopic culture (if severe, immunocompromised, or treatment failure)",
+              "Nasal endoscopy (by ENT specialist)"
+            ],
+            "not_recommended": [
+              "Routine sinus X-rays (low sensitivity and specificity)",
+              "Routine CT for uncomplicated ABRS (overdiagnosis, radiation)",
+              "Nasal swab cultures (do not correlate with sinus aspirate)"
+            ]
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": [
+              "Streptococcus pneumoniae - 30-40% (most common)",
+              "Haemophilus influenzae (non-typeable) - 20-30%",
+              "Moraxella catarrhalis - 10-15%",
+              "Streptococcus pyogenes (Group A Strep) - 5%",
+              "Staphylococcus aureus - 5% (more common in chronic sinusitis)",
+              "Anaerobes - 5-10% (especially with dental source)"
+            ],
+            "resistance_patterns": "S. pneumoniae: 30-40% penicillin non-susceptible, 25-35% macrolide resistant. H. influenzae: 30-40% beta-lactamase positive. M. catarrhalis: >95% beta-lactamase positive",
+            "mdro_risk_factors": [
+              "Antibiotic use within past 30 days",
+              "Hospitalization within past 5 days",
+              "Age <2 years or >65 years",
+              "Daycare attendance",
+              "Recent pneumococcal or influenza infection"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": {
+              "no_recent_antibiotics": "Amoxicillin-clavulanate 875mg PO BID OR 2000mg PO BID (high-dose) x 5-7 days",
+              "recent_antibiotics_or_risk_factors": "Amoxicillin-clavulanate 2000mg PO BID (high-dose) x 5-7 days OR Levofloxacin 750mg PO daily x 5 days"
+            },
+            "penicillin_allergy": {
+              "non_severe": "Cefpodoxime 200mg PO BID x 5-7 days OR Cefdinir 300mg PO BID x 5-7 days",
+              "severe_ige_mediated": "Levofloxacin 750mg PO daily x 5 days OR Moxifloxacin 400mg PO daily x 5 days"
+            },
+            "pediatric": {
+              "first_line": "Amoxicillin-clavulanate 90mg/kg/day (amoxicillin component) PO divided BID x 10-14 days",
+              "penicillin_allergy": "Cefpodoxime 10mg/kg/day PO divided BID x 10-14 days OR Levofloxacin 10-20mg/kg/day PO divided BID x 10-14 days (if severe allergy)"
+            },
+            "watchful_waiting": "Consider 3-day observation without antibiotics for mild-moderate symptoms in adults. Prescribe antibiotics if no improvement or worsening",
+            "notes": [
+              "Amoxicillin-clavulanate preferred over amoxicillin alone (covers beta-lactamase producers)",
+              "High-dose amoxicillin-clavulanate for risk factors or recent antibiotics",
+              "Avoid azithromycin (high resistance rates)",
+              "Avoid TMP-SMX (inadequate S. pneumoniae coverage)",
+              "Duration: 5-7 days for adults, 10-14 days for children"
+            ]
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive Therapy",
+          "content": {
+            "streptococcus_pneumoniae": {
+              "penicillin_susceptible": "Amoxicillin 500mg PO TID x 5-7 days",
+              "penicillin_resistant": "Amoxicillin-clavulanate 2000mg PO BID x 5-7 days OR Levofloxacin 750mg PO daily x 5 days",
+              "notes": "High-dose amoxicillin overcomes intermediate resistance"
+            },
+            "haemophilus_influenzae": {
+              "beta_lactamase_negative": "Amoxicillin 500mg PO TID x 5-7 days",
+              "beta_lactamase_positive": "Amoxicillin-clavulanate 875mg PO BID x 5-7 days",
+              "notes": "30-40% produce beta-lactamase"
+            },
+            "moraxella_catarrhalis": {
+              "first_line": "Amoxicillin-clavulanate 875mg PO BID x 5-7 days",
+              "notes": ">95% produce beta-lactamase, resistant to amoxicillin alone"
+            },
+            "staphylococcus_aureus": {
+              "mssa": "Amoxicillin-clavulanate 875mg PO BID x 7-10 days OR Cephalexin 500mg PO QID x 7-10 days",
+              "mrsa": "TMP-SMX 1-2 DS tablets PO BID x 7-10 days OR Doxycycline 100mg PO BID x 7-10 days OR Linezolid 600mg PO BID x 7-10 days",
+              "notes": "Consider MRSA if nasal colonization, recent hospitalization, or treatment failure"
+            }
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration",
+          "content": {
+            "uncomplicated": "5-7 days for adults (shorter courses as effective as 10-14 days). 10-14 days for children",
+            "complicated": "7-14 days (if orbital or intracranial complications, may need IV therapy and longer duration)",
+            "monitoring_parameters": [
+              "Clinical improvement within 48-72 hours",
+              "Resolution of fever within 48 hours",
+              "Decreased facial pain and nasal discharge",
+              "Monitor for complications (vision changes, severe headache, altered mental status)"
+            ],
+            "stop_criteria": [
+              "Completion of 5-7 day course (adults) or 10-14 day course (children)",
+              "Resolution of symptoms",
+              "No routine follow-up imaging needed if clinically improved"
+            ],
+            "treatment_failure": "If no improvement after 72 hours: Consider resistant organism, viral etiology, non-infectious cause (allergic rhinitis), anatomic obstruction, or complications. Consider CT imaging and ENT referral"
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Populations",
+          "content": {
+            "pregnancy": {
+              "safe_options": "Amoxicillin-clavulanate (Category B), Cefpodoxime (Category B)",
+              "avoid": "Fluoroquinolones (Category C), Tetracyclines (Category D)",
+              "notes": "Treat bacterial sinusitis to prevent maternal complications. Saline irrigation and intranasal steroids are safe"
+            },
+            "immunocompromised": {
+              "hiv_cd4_less_than_200": {
+                "additional_pathogens": "Aspergillus, Mucor, Cryptococcus, Pseudomonas aeruginosa",
+                "empiric_coverage": "Broad-spectrum antibiotics + antifungal coverage. Consider Piperacillin-tazobactam 4.5g IV q6h + Voriconazole 6mg/kg IV q12h x 2 doses, then 4mg/kg IV q12h",
+                "diagnostic_tests": "CT sinuses, sinus aspiration for culture and fungal stains, serum galactomannan, beta-D-glucan"
+              },
+              "neutropenia_less_than_500": {
+                "additional_pathogens": "Aspergillus, Mucor (invasive fungal sinusitis)",
+                "empiric_coverage": "Broad-spectrum antibiotics + mold-active antifungal (Voriconazole, Posaconazole, or Amphotericin B)",
+                "notes": "Urgent ENT consultation for endoscopy and biopsy. Invasive fungal sinusitis is life-threatening"
+              },
+              "diabetes_poorly_controlled": {
+                "additional_pathogens": "Mucor, Rhizopus (mucormycosis)",
+                "red_flags": "Black necrotic eschar on nasal mucosa or palate, facial numbness, vision changes",
+                "management": "Urgent ENT and ID consultation. Amphotericin B + surgical debridement. Control hyperglycemia"
+              }
+            },
+            "chronic_rhinosinusitis": {
+              "definition": "Symptoms >12 weeks",
+              "management": "ENT referral for endoscopy. Consider CT sinuses. May need prolonged antibiotics (3-6 weeks), intranasal steroids, saline irrigation, or surgery (FESS)",
+              "pathogens": "S. aureus (including MRSA), Pseudomonas aeruginosa, anaerobes, biofilms"
+            },
+            "drug_interactions": {
+              "fluoroquinolones": {
+                "interaction": "Prolong QT interval. Avoid with other QT-prolonging drugs (amiodarone, sotalol, macrolides)",
+                "management": "Check baseline ECG if risk factors. Monitor electrolytes (K, Mg)"
+              },
+              "warfarin": {
+                "interaction": "Antibiotics may increase INR",
+                "management": "Monitor INR closely, adjust warfarin dose"
+              }
+            }
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Antimicrobial Stewardship",
+          "content": {
+            "avoid_unnecessary_antibiotics": [
+              "Do NOT treat viral rhinosinusitis (symptoms <10 days, improving)",
+              "90-98% of acute rhinosinusitis is viral",
+              "Use clinical criteria to differentiate viral from bacterial",
+              "Consider watchful waiting for 3 days in mild-moderate cases",
+              "Do NOT prescribe antibiotics for common cold"
+            ],
+            "timeout_checklist": [
+              "Day 3: Reassess if watchful waiting. Start antibiotics if no improvement or worsening",
+              "Day 3-4: Assess clinical response. If worsening, consider complications or resistant organism",
+              "Day 5-7: Complete course for adults. Reassess if not improved"
+            ],
+            "narrow_spectrum_preferred": "Amoxicillin-clavulanate is first-line (covers common pathogens and beta-lactamase producers). Avoid fluoroquinolones unless penicillin allergy or treatment failure",
+            "patient_education": [
+              "Most sinus infections are viral and do NOT need antibiotics",
+              "Antibiotics only if symptoms persist >10 days, severe symptoms >3-4 days, or worsening after initial improvement",
+              "Supportive care: Saline nasal irrigation, intranasal steroids, decongestants (≤3 days), analgesics, adequate hydration",
+              "Symptom improvement expected in 3-4 days with antibiotics",
+              "Return if vision changes, severe headache, or worsening symptoms"
+            ]
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "CDC Outpatient Clinical Care for Adults: Acute Bacterial Rhinosinusitis (2024)",
+              "url": "https://www.cdc.gov/antibiotic-use/hcp/clinical-care/adult-outpatient.html"
+            },
+            {
+              "label": "Chow AW, et al. IDSA Clinical Practice Guideline for Acute Bacterial Rhinosinusitis in Children and Adults (2012)",
+              "url": "https://academic.oup.com/cid/article/54/8/e72/367144"
+            },
+            {
+              "label": "Rosenfeld RM, et al. Clinical Practice Guideline (Update): Adult Sinusitis. Otolaryngol Head Neck Surg (2015)",
+              "url": "https://journals.sagepub.com/doi/10.1177/0194599815572097"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "acute-otitis-media",
+      "name": "Acute Otitis Media (AOM)",
+      "synonyms": ["AOM", "ear infection", "otitis media", "middle ear infection"],
+      "icd10": ["H66.0", "H66.9", "H66.4"],
+      "severity": ["mild", "moderate", "severe"],
+      "shortDescription": "Acute infection of the middle ear, most common in children aged 6 months to 2 years",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "clinical_presentation": "Ear pain (otalgia), fever, irritability, decreased hearing, recent URI symptoms. In infants: pulling at ears, poor feeding, sleep disturbance",
+            "diagnostic_criteria": "Requires ALL three: (1) Acute onset of symptoms, (2) Middle ear effusion (bulging TM, limited mobility, air-fluid level, otorrhea), (3) Signs of middle ear inflammation (erythema of TM, distinct otalgia)",
+            "severity_classification": {
+              "mild": "Mild otalgia <48 hours, temperature <39°C",
+              "moderate": "Moderate otalgia 48 hours or more, temperature ≥39°C",
+              "severe": "Severe otalgia, temperature ≥39°C, or toxic appearance"
+            },
+            "red_flags": [
+              "Mastoiditis (postauricular swelling, erythema, tenderness, protruding auricle)",
+              "Meningitis (altered mental status, neck stiffness, severe headache)",
+              "Facial nerve palsy (facial asymmetry)",
+              "Labyrinthitis (vertigo, nystagmus, hearing loss)",
+              "Intracranial complications (brain abscess, sigmoid sinus thrombosis)"
+            ],
+            "complications": ["Mastoiditis", "Meningitis", "Brain abscess", "Hearing loss", "Tympanic membrane perforation", "Chronic suppurative otitis media"]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Diagnosis is CLINICAL based on otoscopy. Tympanocentesis rarely needed except for complications or treatment failure",
+            "essential_tests": ["Pneumatic otoscopy (assess TM mobility)", "Otoscopy (assess TM appearance: bulging, erythema, perforation, otorrhea)"],
+            "conditional_tests": ["Tympanocentesis (if severe, immunocompromised, neonate, or treatment failure)", "CT temporal bones (if suspected mastoiditis or intracranial complications)", "Hearing assessment (if recurrent AOM or chronic effusion)"],
+            "not_recommended": ["Routine tympanocentesis for uncomplicated AOM", "Routine imaging for uncomplicated AOM"]
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": ["Streptococcus pneumoniae - 30-40%", "Haemophilus influenzae (non-typeable) - 25-30%", "Moraxella catarrhalis - 10-15%", "Streptococcus pyogenes (Group A Strep) - 5%", "Staphylococcus aureus - 5% (especially with tympanostomy tubes)", "Viral (RSV, Influenza, Rhinovirus) - 20-30% (often co-infection)"],
+            "resistance_patterns": "S. pneumoniae: 30-40% penicillin non-susceptible. H. influenzae: 30-40% beta-lactamase positive. M. catarrhalis: >95% beta-lactamase positive",
+            "mdro_risk_factors": ["Antibiotic use within past 30 days", "Daycare attendance", "Age <2 years", "Recent AOM episode", "Tympanostomy tubes"]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": {
+              "children_6_months_to_2_years": "Amoxicillin 80-90mg/kg/day PO divided BID x 10 days (high-dose for resistance)",
+              "children_over_2_years": "Amoxicillin 80-90mg/kg/day PO divided BID x 5-7 days",
+              "adults": "Amoxicillin 500mg PO TID OR 875mg PO BID x 5-7 days"
+            },
+            "treatment_failure_or_risk_factors": "Amoxicillin-clavulanate 90mg/kg/day (amoxicillin component) PO divided BID x 10 days (children) OR 875mg PO BID x 7-10 days (adults)",
+            "penicillin_allergy": {
+              "non_severe": "Cefdinir 14mg/kg/day PO divided BID x 10 days OR Cefuroxime 30mg/kg/day PO divided BID x 10 days",
+              "severe_ige_mediated": "Azithromycin 10mg/kg PO x 1 day, then 5mg/kg PO daily x 4 days (total 5 days) OR Levofloxacin 10-20mg/kg/day PO divided BID x 10 days"
+            },
+            "watchful_waiting": "Consider 48-72 hour observation without antibiotics for: (1) Age ≥6 months with non-severe unilateral AOM, (2) Age ≥2 years with non-severe bilateral AOM. Provide rescue antibiotic prescription. Start antibiotics if no improvement or worsening",
+            "notes": ["High-dose amoxicillin (80-90mg/kg/day) for children to overcome pneumococcal resistance", "Bilateral AOM in children 6-23 months requires antibiotics (AAP guideline)", "Shorter courses (5-7 days) for children >2 years with uncomplicated AOM", "Avoid azithromycin due to high resistance rates"]
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive Therapy",
+          "content": {
+            "streptococcus_pneumoniae": {"penicillin_susceptible": "Amoxicillin 80-90mg/kg/day PO divided BID x 5-10 days", "penicillin_resistant": "Amoxicillin-clavulanate 90mg/kg/day PO divided BID x 10 days OR Ceftriaxone 50mg/kg IM/IV daily x 3 days"},
+            "haemophilus_influenzae": {"beta_lactamase_negative": "Amoxicillin 80-90mg/kg/day PO divided BID x 5-10 days", "beta_lactamase_positive": "Amoxicillin-clavulanate 90mg/kg/day PO divided BID x 10 days"},
+            "moraxella_catarrhalis": {"first_line": "Amoxicillin-clavulanate 90mg/kg/day PO divided BID x 10 days", "notes": ">95% produce beta-lactamase"},
+            "staphylococcus_aureus": {"mssa": "Amoxicillin-clavulanate 90mg/kg/day PO divided BID x 10 days", "mrsa": "Clindamycin 30-40mg/kg/day PO divided TID x 10 days OR TMP-SMX 8-12mg/kg/day (TMP component) PO divided BID x 10 days"}
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration",
+          "content": {
+            "uncomplicated": "10 days for children <2 years or severe AOM. 5-7 days for children ≥2 years with mild-moderate AOM. 5-7 days for adults",
+            "complicated": "10-14 days (if mastoiditis, meningitis, or treatment failure)",
+            "monitoring_parameters": ["Clinical improvement within 48-72 hours", "Resolution of fever within 48 hours", "Decreased otalgia", "Improved TM appearance on follow-up otoscopy (if performed)"],
+            "stop_criteria": ["Completion of antibiotic course", "Resolution of symptoms", "Follow-up at 2-3 months if recurrent AOM or persistent effusion (assess hearing)"],
+            "treatment_failure": "If no improvement after 48-72 hours: Consider resistant organism, non-bacterial etiology, mastoiditis, or incorrect diagnosis. Switch to amoxicillin-clavulanate or ceftriaxone. Consider tympanocentesis"
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Populations",
+          "content": {
+            "recurrent_aom": {"definition": "≥3 episodes in 6 months OR ≥4 episodes in 12 months", "management": ["Prophylactic antibiotics NOT routinely recommended", "Consider tympanostomy tubes (ENT referral)", "Ensure up-to-date pneumococcal and influenza vaccines", "Avoid smoke exposure, promote breastfeeding"], "prophylaxis_if_needed": "Amoxicillin 20mg/kg PO once daily during winter months (controversial, not routinely recommended)"},
+            "tympanostomy_tubes": {"pathogens": "S. aureus (including MRSA), Pseudomonas aeruginosa, S. pneumoniae", "treatment": "Ciprofloxacin-dexamethasone otic drops BID x 7 days (if otorrhea) + Oral antibiotics if systemic symptoms"},
+            "neonates_less_than_1_month": {"management": "Hospitalize for IV antibiotics. Consider sepsis workup (blood culture, LP if indicated)", "empiric_coverage": "Ampicillin 50mg/kg IV q8h + Cefotaxime 50mg/kg IV q8h OR Gentamicin 2.5mg/kg IV q8-12h"},
+            "immunocompromised": {"additional_pathogens": "Pseudomonas aeruginosa, Aspergillus", "empiric_coverage": "Broad-spectrum antibiotics: Ceftazidime 50mg/kg IV q8h OR Piperacillin-tazobactam 100mg/kg IV q6h. Consider antifungal if neutropenic"},
+            "pregnancy": {"safe_options": "Amoxicillin, Amoxicillin-clavulanate, Cephalosporins (all Category B)", "avoid": "Fluoroquinolones (Category C), Tetracyclines (Category D)"}
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Antimicrobial Stewardship",
+          "content": {
+            "avoid_unnecessary_antibiotics": ["Consider watchful waiting for non-severe AOM in children ≥6 months", "Do NOT treat otitis media with effusion (OME) without acute infection", "Ensure accurate diagnosis (bulging TM + acute symptoms required)", "Provide rescue antibiotic prescription for watchful waiting cases"],
+            "timeout_checklist": ["Day 2-3: Reassess if watchful waiting. Start antibiotics if no improvement or worsening", "Day 3-4: Assess clinical response. If no improvement, consider treatment failure", "Day 5-10: Complete course based on age and severity"],
+            "narrow_spectrum_preferred": "Amoxicillin is first-line (narrow spectrum, effective, inexpensive). Use amoxicillin-clavulanate only for treatment failure or risk factors",
+            "patient_education": ["Antibiotics speed recovery by 12-24 hours but most AOM resolves spontaneously", "Pain management: Ibuprofen or acetaminophen. Topical anesthetic drops (if no perforation)", "Watchful waiting is safe for non-severe cases with close follow-up", "Return if fever persists >48 hours, worsening pain, or new symptoms (swelling behind ear, severe headache)"]
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {"label": "AAP Clinical Practice Guideline: Diagnosis and Management of Acute Otitis Media (2024 Update)", "url": "https://publications.aap.org/pediatrics/article/doi/10.1542/peds.2024-069474/201120/Acute-Otitis-Media"},
+            {"label": "Lieberthal AS, et al. The Diagnosis and Management of Acute Otitis Media. Pediatrics (2013)", "url": "https://publications.aap.org/pediatrics/article/131/3/e964/31566/The-Diagnosis-and-Management-of-Acute-Otitis-Media"},
+            {"label": "CDC Outpatient Clinical Care for Pediatric Populations: Acute Otitis Media (2024)", "url": "https://www.cdc.gov/antibiotic-use/hcp/clinical-care/pediatric-outpatient.html"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "influenza",
+      "name": "Influenza (Seasonal Flu)",
+      "synonyms": ["flu", "influenza", "seasonal influenza", "influenza A", "influenza B"],
+      "icd10": ["J10.1", "J10.8", "J11.1", "J11.8"],
+      "severity": ["mild", "moderate", "severe"],
+      "shortDescription": "Acute viral respiratory illness caused by influenza A or B viruses, characterized by sudden onset of fever, myalgia, and respiratory symptoms",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "clinical_presentation": "Sudden onset of fever (38-40°C), myalgia, headache, malaise, dry cough, sore throat, rhinorrhea. Gastrointestinal symptoms (nausea, vomiting, diarrhea) more common in children",
+            "high_risk_groups": ["Age <2 years or ≥65 years", "Pregnancy or postpartum <2 weeks", "Chronic lung disease (asthma, COPD)", "Cardiovascular disease (except hypertension alone)", "Chronic kidney, liver, neurologic, hematologic, or metabolic disorders (including DM)", "Immunosuppression (HIV, cancer, transplant, chronic steroids)", "BMI ≥40", "Residents of nursing homes or long-term care facilities", "American Indian/Alaska Native persons"],
+            "red_flags": ["Respiratory distress (dyspnea, tachypnea, hypoxia)", "Altered mental status or seizures", "Severe dehydration", "Secondary bacterial pneumonia (worsening after initial improvement)", "Myocarditis or pericarditis", "Rhabdomyolysis", "Multi-organ failure"],
+            "complications": ["Primary influenza pneumonia", "Secondary bacterial pneumonia (S. pneumoniae, S. aureus including MRSA, H. influenzae)", "Exacerbation of chronic conditions (asthma, COPD, CHF)", "Myocarditis, pericarditis", "Encephalitis, encephalopathy", "Rhabdomyolysis", "Death"]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Test hospitalized patients, high-risk outpatients, or when results will influence clinical management. Testing NOT routinely needed for uncomplicated outpatient influenza",
+            "essential_tests": ["Rapid Influenza Diagnostic Test (RIDT) - 15 minutes, 50-70% sensitivity, 90-95% specificity", "Rapid Molecular Assay (e.g., Xpert Flu) - 15-30 minutes, 90-95% sensitivity, 95-99% specificity (preferred)", "RT-PCR (reference standard) - 1-6 hours, >95% sensitivity and specificity"],
+            "conditional_tests": ["Chest X-ray (if suspected pneumonia)", "Pulse oximetry or ABG (if respiratory distress)", "CBC, CMP (if hospitalized)", "Blood cultures (if suspected bacterial co-infection)", "Sputum culture (if productive cough and suspected bacterial pneumonia)"],
+            "not_recommended": ["Routine testing for uncomplicated outpatient influenza during peak season (treat empirically)", "Negative RIDT does NOT rule out influenza (low sensitivity)"]
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": ["Influenza A (H1N1, H3N2) - most common, more severe", "Influenza B - less common, milder", "Secondary bacterial pathogens: S. pneumoniae, S. aureus (including MRSA), H. influenzae, Group A Streptococcus"],
+            "resistance_patterns": "Oseltamivir resistance: <2% in seasonal influenza A(H1N1)pdm09 and A(H3N2). Adamantanes (amantadine, rimantadine) NOT recommended due to high resistance (>99%)",
+            "mdro_risk_factors": ["Immunocompromised (prolonged viral shedding and resistance development)", "Oseltamivir use without clinical improvement"]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "antiviral_indications": ["ALL hospitalized patients with suspected or confirmed influenza", "ALL high-risk outpatients (see high-risk groups)", "Outpatients with severe, complicated, or progressive illness", "Ideally within 48 hours of symptom onset, but benefit even if >48 hours in hospitalized or high-risk patients"],
+            "first_line": {"adults": "Oseltamivir 75mg PO BID x 5 days", "children": "Oseltamivir dosing by weight: <15kg: 30mg PO BID, 15-23kg: 45mg PO BID, 23-40kg: 60mg PO BID, >40kg: 75mg PO BID x 5 days", "infants_less_than_1_year": "Oseltamivir 3mg/kg PO BID x 5 days"},
+            "alternative": {"zanamivir": "Zanamivir 10mg (2 inhalations) BID x 5 days (age ≥7 years, avoid if asthma/COPD)", "peramivir": "Peramivir 600mg IV x 1 dose (if unable to take oral/inhaled)", "baloxavir": "Baloxavir 40mg PO x 1 dose (weight 40-80kg) OR 80mg PO x 1 dose (weight >80kg) - age ≥12 years"},
+            "hospitalized_severe": "Oseltamivir 75mg PO/NG BID x 5-10 days (longer duration if immunocompromised or severe illness). Consider double-dose (150mg BID) if critically ill or immunocompromised",
+            "bacterial_co_infection_coverage": "If suspected secondary bacterial pneumonia: Add Ceftriaxone 1-2g IV daily + Azithromycin 500mg IV daily OR Vancomycin 15-20mg/kg IV q8-12h (if MRSA risk) + Ceftriaxone",
+            "notes": ["Start antivirals as soon as possible, ideally within 48 hours", "Benefit even if >48 hours in hospitalized or high-risk patients", "Do NOT wait for test results if high clinical suspicion", "Antivirals reduce duration by 1-2 days and reduce complications"]
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive Therapy",
+          "content": {
+            "influenza_a_or_b": {"first_line": "Oseltamivir 75mg PO BID x 5 days", "duration": "5 days for uncomplicated. 10 days or longer for immunocompromised or severe illness", "notes": "Oseltamivir is active against both influenza A and B"},
+            "oseltamivir_resistant": {"alternative": "Zanamivir 10mg inhaled BID x 5 days OR Peramivir 600mg IV x 1 dose", "notes": "Rare (<2%). Consider if no clinical improvement after 3-5 days of oseltamivir"},
+            "secondary_bacterial_pneumonia": {"streptococcus_pneumoniae": "Ceftriaxone 1-2g IV daily OR Amoxicillin-clavulanate 875mg PO BID", "staphylococcus_aureus_mssa": "Cefazolin 2g IV q8h OR Nafcillin 2g IV q4h", "staphylococcus_aureus_mrsa": "Vancomycin 15-20mg/kg IV q8-12h OR Linezolid 600mg IV/PO BID", "haemophilus_influenzae": "Ceftriaxone 1-2g IV daily OR Amoxicillin-clavulanate 875mg PO BID"}
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration",
+          "content": {
+            "uncomplicated": "5 days of oseltamivir. Symptoms typically resolve in 3-7 days",
+            "complicated_or_immunocompromised": "10 days or longer. Continue until clinical improvement and viral clearance (if tested)",
+            "monitoring_parameters": ["Clinical improvement within 48-72 hours", "Resolution of fever within 48-72 hours", "Oxygen saturation (if hospitalized)", "Development of complications (bacterial pneumonia, respiratory failure)"],
+            "stop_criteria": ["Completion of 5-day course for uncomplicated influenza", "Clinical improvement and afebrile for 24 hours", "No routine viral testing for clearance needed"],
+            "treatment_failure": "If no improvement after 3-5 days of oseltamivir: Consider oseltamivir resistance (rare), secondary bacterial infection, non-influenza etiology, or complications. Check chest X-ray, consider bacterial cultures, switch to zanamivir or peramivir"
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Populations",
+          "content": {
+            "pregnancy": {"safe_options": "Oseltamivir 75mg PO BID x 5 days (Category C, but recommended - benefits outweigh risks)", "notes": "Pregnant women are at high risk for severe influenza. Treat immediately, do NOT delay for test results"},
+            "immunocompromised": {"hiv_cd4_less_than_200": {"treatment": "Oseltamivir 75mg PO BID x 10 days or longer. Consider double-dose (150mg BID) if severe", "notes": "Prolonged viral shedding. Monitor for resistance. May need extended treatment"}, "neutropenia_less_than_500": {"treatment": "Oseltamivir 75mg PO BID x 10 days or longer + Broad-spectrum antibiotics for bacterial co-infection", "notes": "High risk for bacterial co-infection and complications"}, "solid_organ_transplant": {"treatment": "Oseltamivir 75mg PO BID x 10 days or longer. Consider double-dose if severe", "notes": "Prolonged viral shedding. Risk of graft rejection"}},
+            "renal_impairment": {"mild_moderate": "CrCl 30-60: Oseltamivir 30mg PO BID. CrCl 10-30: Oseltamivir 30mg PO daily", "severe_dialysis": "CrCl <10: Oseltamivir 30mg PO after each dialysis session (3x/week). CRRT: Oseltamivir 75mg PO daily"},
+            "chemoprophylaxis": {"indications": "Close contact with confirmed influenza + high-risk for complications + within 48 hours of exposure", "regimen": "Oseltamivir 75mg PO daily x 10 days (or duration of exposure + 10 days)", "notes": "NOT a substitute for vaccination. Use only in specific high-risk situations"}
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Antimicrobial Stewardship",
+          "content": {
+            "avoid_unnecessary_antibiotics": ["Do NOT routinely prescribe antibiotics for uncomplicated influenza", "Antibiotics do NOT treat viral influenza", "Only add antibiotics if suspected secondary bacterial infection (worsening after initial improvement, productive cough, focal infiltrate on CXR)"],
+            "timeout_checklist": ["Day 2-3: Assess clinical response to oseltamivir. If worsening, consider bacterial co-infection or complications", "Day 5: Complete oseltamivir course for uncomplicated cases", "Day 5-7: If not improved, re-evaluate for bacterial pneumonia or other complications"],
+            "antiviral_stewardship": ["Start oseltamivir within 48 hours for maximum benefit", "Do NOT wait for test results if high clinical suspicion in high-risk patients", "Do NOT use adamantanes (amantadine, rimantadine) due to resistance", "Oseltamivir is first-line (oral, well-tolerated, effective against A and B)"],
+            "patient_education": ["Antivirals reduce symptom duration by 1-2 days and reduce complications", "Antibiotics do NOT help influenza", "Supportive care: Rest, hydration, acetaminophen/ibuprofen for fever and myalgia", "Contagious from 1 day before symptoms to 5-7 days after symptom onset", "Return if difficulty breathing, chest pain, confusion, severe weakness, or worsening after initial improvement", "Annual influenza vaccination is the best prevention"]
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {"label": "CDC Influenza Antiviral Medications: Summary for Clinicians (2024-2025 Season)", "url": "https://www.cdc.gov/flu/hcp/antivirals/summary-clinicians.html"},
+            {"label": "IDSA Guidelines on the Treatment and Management of Patients with Influenza (2023)", "url": "https://www.idsociety.org/practice-guideline/influenza/"},
+            {"label": "AAP Recommendations for Prevention and Control of Influenza in Children (2024-2025)", "url": "https://publications.aap.org/pediatrics/article/doi/10.1542/peds.2024-068506/202845/Recommendations-for-Prevention-and-Control-of"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "epiglottitis",
+      "name": "Acute Epiglottitis (Supraglottitis)",
+      "synonyms": ["epiglottitis", "supraglottitis", "epiglottic abscess"],
+      "icd10": ["J05.1", "J05.10", "J05.11"],
+      "severity": ["severe", "life-threatening"],
+      "shortDescription": "Life-threatening infection and inflammation of the epiglottis and supraglottic structures, causing airway obstruction",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "clinical_presentation": "Sudden onset of high fever (>39°C), severe sore throat, muffled voice, drooling, dysphagia, respiratory distress, stridor (late sign), tripod positioning (sitting forward, neck extended)",
+            "classic_triad": ["Drooling", "Dysphagia", "Distress (respiratory)"],
+            "age_distribution": "Historically children 2-7 years (H. influenzae type b), now more common in adults due to Hib vaccine. Adult epiglottitis: mean age 40-50 years",
+            "red_flags": ["Stridor (impending airway obstruction)", "Respiratory distress (tachypnea, retractions, cyanosis)", "Inability to swallow secretions (drooling)", "Toxic appearance", "Rapid progression of symptoms", "Tripod positioning"],
+            "complications": ["Complete airway obstruction (life-threatening emergency)", "Respiratory arrest", "Epiglottic abscess", "Sepsis", "Pneumonia", "Death if airway not secured"],
+            "differential_diagnosis": ["Croup (gradual onset, barky cough, no drooling)", "Peritonsillar abscess (unilateral, trismus)", "Retropharyngeal abscess (neck stiffness)", "Foreign body aspiration", "Angioedema"]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "EMERGENCY! Do NOT delay airway management for diagnostics. Diagnosis is CLINICAL. Imaging and direct visualization only after airway secured",
+            "essential_tests": ["Clinical diagnosis based on presentation", "Lateral neck X-ray (if stable and low suspicion) - shows 'thumb sign' (swollen epiglottis)", "Direct laryngoscopy (in OR with anesthesia and ENT present) - gold standard but ONLY if airway equipment ready"],
+            "conditional_tests": ["Blood cultures (after airway secured)", "Epiglottic culture (during intubation)", "CBC, CRP (after airway secured)", "CT neck with contrast (if suspected abscess, ONLY after airway secured)"],
+            "critical_warnings": ["Do NOT examine throat with tongue depressor (may precipitate complete obstruction)", "Do NOT lay patient supine (worsens obstruction)", "Do NOT agitate patient (may precipitate obstruction)", "Do NOT send patient alone for X-ray", "Keep patient calm, sitting upright, with parent if child"],
+            "thumb_sign": "Lateral neck X-ray shows swollen epiglottis resembling a thumb (normal epiglottis is thin like a finger)"
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": ["Haemophilus influenzae type b (Hib) - rare in vaccinated populations", "Streptococcus pneumoniae - most common in adults", "Streptococcus pyogenes (Group A Strep)", "Staphylococcus aureus (including MRSA)", "Haemophilus parainfluenzae", "Viral (HSV, Varicella) - rare"],
+            "resistance_patterns": "S. pneumoniae: 30-40% penicillin non-susceptible. S. aureus: 30-50% MRSA in some regions",
+            "mdro_risk_factors": ["Recent hospitalization", "Recent antibiotics", "MRSA colonization", "Immunocompromised"]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "airway_management_first": "AIRWAY FIRST! Secure airway before antibiotics. Call anesthesia, ENT, and ICU immediately. Prepare for emergency cricothyrotomy",
+            "first_line": {"adults": "Ceftriaxone 2g IV q24h + Vancomycin 15-20mg/kg IV q8-12h (MRSA coverage)", "children": "Ceftriaxone 50-100mg/kg IV q24h (max 2g) + Vancomycin 15mg/kg IV q6h OR Clindamycin 10mg/kg IV q8h"},
+            "alternative": "Ampicillin-sulbactam 3g IV q6h (adults) OR 50mg/kg IV q6h (children) + Vancomycin (if MRSA risk)",
+            "adjunctive_therapy": {"corticosteroids": "Dexamethasone 0.6mg/kg IV/IM x 1 dose (max 10mg) - may reduce airway edema, controversial", "nebulized_epinephrine": "Racemic epinephrine 0.5mL of 2.25% solution in 3mL NS - temporary measure while preparing for intubation"},
+            "notes": ["Broad-spectrum coverage for S. pneumoniae, H. influenzae, S. aureus (including MRSA), and Group A Strep", "Do NOT delay antibiotics once airway secured", "Admit to ICU for monitoring", "Duration: 7-10 days IV, then PO to complete 10-14 days total"]
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive Therapy",
+          "content": {
+            "haemophilus_influenzae": {"first_line": "Ceftriaxone 2g IV q24h x 7-10 days", "alternative": "Ampicillin-sulbactam 3g IV q6h x 7-10 days (if beta-lactamase negative)", "notes": "Rare in vaccinated populations"},
+            "streptococcus_pneumoniae": {"penicillin_susceptible": "Penicillin G 2-4 million units IV q4-6h x 7-10 days", "penicillin_resistant": "Ceftriaxone 2g IV q24h x 7-10 days OR Vancomycin 15-20mg/kg IV q8-12h x 7-10 days"},
+            "staphylococcus_aureus": {"mssa": "Nafcillin 2g IV q4h OR Cefazolin 2g IV q8h x 7-10 days", "mrsa": "Vancomycin 15-20mg/kg IV q8-12h OR Linezolid 600mg IV/PO BID x 7-10 days"},
+            "group_a_streptococcus": {"first_line": "Penicillin G 2-4 million units IV q4-6h + Clindamycin 600-900mg IV q8h x 7-10 days", "notes": "Add clindamycin for toxin suppression"}
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration",
+          "content": {
+            "uncomplicated": "7-10 days IV antibiotics, then transition to PO to complete 10-14 days total",
+            "complicated": "10-14 days IV if abscess or sepsis",
+            "monitoring_parameters": ["Airway patency (continuous monitoring in ICU)", "Respiratory status (oxygen saturation, work of breathing)", "Clinical improvement (decreased fever, improved swallowing)", "Epiglottic swelling (serial laryngoscopy before extubation)"],
+            "extubation_criteria": ["Afebrile for 24-48 hours", "Clinical improvement", "Decreased epiglottic swelling on laryngoscopy", "Leak test positive (air leak around endotracheal tube)", "Typically 24-72 hours after intubation"],
+            "stop_criteria": ["Completion of 10-14 day antibiotic course", "Resolution of symptoms", "Successful extubation and stable airway"]
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Populations",
+          "content": {
+            "children": {"notes": "Rare due to Hib vaccine. If occurs, consider vaccine failure or non-Hib etiology. Ensure up-to-date Hib vaccination", "airway_management": "Smaller airway, higher risk of complete obstruction. Have multiple endotracheal tube sizes ready. Consider fiberoptic intubation"},
+            "immunocompromised": {"additional_pathogens": "Candida, Aspergillus, atypical bacteria", "empiric_coverage": "Broad-spectrum antibiotics + antifungal coverage if neutropenic. Piperacillin-tazobactam 4.5g IV q6h + Vancomycin + Fluconazole 400mg IV daily"},
+            "pregnancy": {"safe_options": "Ceftriaxone, Ampicillin-sulbactam, Vancomycin (all Category B)", "airway_management": "Increased risk of difficult intubation due to airway edema. Early anesthesia consultation"},
+            "adults_vs_children": {"adults": "More gradual onset (2-3 days vs hours in children). Less likely to need intubation (50% vs 90% in children). Higher mortality if not treated promptly", "children": "Rapid onset, higher intubation rate, better prognosis if airway secured"}
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Antimicrobial Stewardship",
+          "content": {
+            "broad_spectrum_justified": "Epiglottitis is a life-threatening emergency. Broad-spectrum empiric coverage is appropriate until cultures available",
+            "timeout_checklist": ["Day 2-3: Review culture results. De-escalate to narrow-spectrum antibiotics based on susceptibilities", "Day 5-7: Assess clinical response. Consider transition to PO antibiotics if improved and tolerating PO", "Day 10-14: Complete antibiotic course"],
+            "de_escalation_opportunities": ["If H. influenzae: De-escalate to ceftriaxone alone", "If S. pneumoniae (penicillin-susceptible): De-escalate to penicillin G", "If MSSA: De-escalate to nafcillin or cefazolin", "If MRSA: Continue vancomycin or linezolid"],
+            "prevention": ["Hib vaccine (routine childhood immunization) - dramatically reduced incidence", "Pneumococcal vaccine (PCV13, PPSV23)", "Avoid smoking and secondhand smoke exposure"],
+            "patient_education": ["Epiglottitis is a medical emergency requiring immediate hospitalization", "Airway obstruction can occur rapidly - do NOT delay seeking care", "Full recovery expected with prompt treatment", "Ensure up-to-date vaccinations (Hib, pneumococcal)"]
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {"label": "Glynn F, Fenton JE. Diagnosis and management of supraglottitis (epiglottitis). Curr Infect Dis Rep (2008)", "url": "https://link.springer.com/article/10.1007/s11908-008-0026-8"},
+            {"label": "Guardiani E, et al. Supraglottitis in the era following widespread immunization against Haemophilus influenzae type B. Laryngoscope (2010)", "url": "https://onlinelibrary.wiley.com/doi/10.1002/lary.20994"},
+            {"label": "CDC Haemophilus influenzae Disease (Including Hib): Clinician Information", "url": "https://www.cdc.gov/hib/hcp/index.html"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "peritonsillar-abscess",
+      "name": "Peritonsillar Abscess (Quinsy)",
+      "synonyms": ["quinsy", "peritonsillar abscess", "PTA", "tonsillar abscess"],
+      "icd10": ["J36"],
+      "severity": ["moderate", "severe"],
+      "shortDescription": "Collection of pus between the tonsillar capsule and pharyngeal constrictor muscle, most common deep space infection of the head and neck",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "clinical_presentation": "Severe unilateral throat pain, odynophagia, trismus (difficulty opening mouth), muffled 'hot potato' voice, drooling, fever, unilateral tonsillar swelling with deviation of uvula to contralateral side",
+            "classic_findings": ["Unilateral tonsillar swelling", "Uvula deviation away from affected side", "Trismus (inability to open mouth >3cm)", "Muffled voice", "Drooling"],
+            "age_distribution": "Most common in adolescents and young adults (15-30 years). Rare in children <10 years",
+            "red_flags": ["Respiratory distress or stridor (airway compromise)", "Inability to swallow secretions", "Severe trismus (complete inability to open mouth)", "Neck swelling or stiffness (retropharyngeal or parapharyngeal extension)", "Sepsis (hypotension, tachycardia, altered mental status)"],
+            "complications": ["Airway obstruction (rare)", "Parapharyngeal abscess", "Retropharyngeal abscess", "Mediastinitis", "Jugular vein thrombosis (Lemierre syndrome)", "Aspiration pneumonia", "Sepsis", "Carotid artery erosion (rare)"],
+            "differential_diagnosis": ["Peritonsillar cellulitis (no abscess)", "Retropharyngeal abscess", "Parapharyngeal abscess", "Epiglottitis", "Infectious mononucleosis", "Lymphoma"]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Diagnosis is CLINICAL. Imaging only if uncertain diagnosis or suspected deep space extension",
+            "essential_tests": ["Clinical examination (unilateral tonsillar swelling, uvula deviation, trismus)", "Needle aspiration (diagnostic and therapeutic) - yields pus"],
+            "conditional_tests": ["CT neck with contrast (if uncertain diagnosis, suspected deep space extension, or failed drainage)", "Intraoral ultrasound (if available, can differentiate abscess from cellulitis)", "Throat culture or abscess culture (guide antibiotic therapy)", "Monospot or EBV serology (if suspected infectious mononucleosis)"],
+            "not_recommended": ["Routine CT for classic presentation (clinical diagnosis sufficient)", "MRI (takes too long, CT preferred if imaging needed)"]
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": ["Polymicrobial (70-80%): Streptococcus pyogenes (Group A Strep) + Anaerobes (Fusobacterium, Prevotella, Peptostreptococcus)", "Streptococcus pyogenes alone - 20-30%", "Staphylococcus aureus - 5-10%", "Haemophilus influenzae - rare"],
+            "resistance_patterns": "Group A Strep: universally susceptible to penicillin. Anaerobes: 20-30% produce beta-lactamase (resistant to penicillin alone). S. aureus: 30-50% MRSA",
+            "mdro_risk_factors": ["Recent antibiotics", "MRSA colonization", "Recurrent PTA"]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "drainage_required": "Antibiotics ALONE are insufficient. Drainage required: Needle aspiration OR Incision and drainage OR Tonsillectomy (quinsy tonsillectomy)",
+            "first_line": {"outpatient": "Amoxicillin-clavulanate 875mg PO BID x 10-14 days + Dexamethasone 10mg IV/IM x 1 dose (reduces pain and trismus)", "inpatient": "Ampicillin-sulbactam 3g IV q6h OR Clindamycin 600-900mg IV q8h x 3-5 days, then PO to complete 10-14 days"},
+            "penicillin_allergy": "Clindamycin 300-450mg PO TID x 10-14 days (outpatient) OR 600-900mg IV q8h (inpatient)",
+            "mrsa_risk": "Add Vancomycin 15-20mg/kg IV q8-12h OR TMP-SMX 1-2 DS tablets PO BID (if MRSA colonization or risk factors)",
+            "adjunctive_therapy": {"corticosteroids": "Dexamethasone 10mg IV/IM x 1 dose - reduces pain, trismus, and hospital stay", "analgesics": "Acetaminophen, ibuprofen, or opioids for severe pain", "hydration": "IV fluids if unable to tolerate PO due to pain"},
+            "notes": ["Amoxicillin-clavulanate or clindamycin cover Group A Strep + anaerobes", "Avoid penicillin alone (does not cover beta-lactamase-producing anaerobes)", "Corticosteroids reduce symptoms but do NOT replace drainage"]
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive Therapy",
+          "content": {
+            "group_a_streptococcus_plus_anaerobes": {"first_line": "Amoxicillin-clavulanate 875mg PO BID x 10-14 days OR Clindamycin 300-450mg PO TID x 10-14 days", "notes": "Most common etiology (polymicrobial)"},
+            "staphylococcus_aureus": {"mssa": "Amoxicillin-clavulanate 875mg PO BID x 10-14 days OR Cephalexin 500mg PO QID x 10-14 days", "mrsa": "TMP-SMX 1-2 DS tablets PO BID x 10-14 days OR Clindamycin 300-450mg PO TID x 10-14 days OR Linezolid 600mg PO BID x 10-14 days"},
+            "drainage_methods": {"needle_aspiration": "18-gauge needle, aspirate 3-5mL pus. Success rate 80-90%. Can repeat if recurs", "incision_and_drainage": "Scalpel incision at point of maximal fluctuance. Success rate 90-95%. More definitive than aspiration", "tonsillectomy": "Quinsy tonsillectomy (immediate) or interval tonsillectomy (6-8 weeks later). Indicated for recurrent PTA, failed drainage, or airway compromise"}
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration",
+          "content": {
+            "uncomplicated": "10-14 days total. IV antibiotics x 3-5 days (if hospitalized), then PO to complete course",
+            "complicated": "14 days or longer if deep space extension or sepsis",
+            "monitoring_parameters": ["Clinical improvement within 24-48 hours after drainage", "Resolution of fever within 24-48 hours", "Improved trismus and ability to swallow", "No re-accumulation of abscess"],
+            "stop_criteria": ["Completion of 10-14 day antibiotic course", "Resolution of symptoms", "Able to tolerate PO intake", "No recurrence"],
+            "treatment_failure": "If no improvement after drainage + antibiotics for 48-72 hours: Consider inadequate drainage, resistant organism, deep space extension (parapharyngeal, retropharyngeal), or alternative diagnosis. Obtain CT neck with contrast. Consider ENT consultation for repeat drainage or tonsillectomy"
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Populations",
+          "content": {
+            "recurrent_pta": {"definition": "≥2 episodes", "management": "Interval tonsillectomy (6-8 weeks after acute episode) recommended. Reduces recurrence risk from 10-15% to <1%", "notes": "Recurrence rate after first PTA: 10-15%. After second PTA: 30-40%"},
+            "immunocompromised": {"additional_pathogens": "Candida, Aspergillus, atypical bacteria", "empiric_coverage": "Broad-spectrum antibiotics + antifungal if neutropenic. Piperacillin-tazobactam 4.5g IV q6h + Vancomycin + Fluconazole 400mg IV daily", "notes": "Higher risk for complications and deep space extension"},
+            "pregnancy": {"safe_options": "Amoxicillin-clavulanate, Clindamycin (both Category B)", "drainage": "Needle aspiration or I&D safe during pregnancy. Avoid quinsy tonsillectomy unless life-threatening", "notes": "Treat promptly to prevent maternal and fetal complications"},
+            "children": {"notes": "Rare in children <10 years. If occurs, consider immunodeficiency or anatomic abnormality", "drainage": "May require general anesthesia for drainage (less cooperative than adults)"},
+            "diabetes": {"notes": "Higher risk for complications and slower healing. Ensure good glycemic control"}
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Antimicrobial Stewardship",
+          "content": {
+            "drainage_essential": "Antibiotics alone have 50% failure rate. Drainage is essential for cure",
+            "timeout_checklist": ["Day 1: Perform drainage (needle aspiration or I&D) + start antibiotics", "Day 2-3: Assess clinical response. If no improvement, consider inadequate drainage or resistant organism", "Day 5-7: Transition to PO antibiotics if improved and tolerating PO", "Day 10-14: Complete antibiotic course"],
+            "narrow_spectrum_preferred": "Amoxicillin-clavulanate or clindamycin are first-line (cover Group A Strep + anaerobes). Avoid broad-spectrum agents unless complications",
+            "de_escalation_opportunities": ["If culture shows Group A Strep alone: De-escalate to penicillin V 500mg PO QID", "If culture shows MSSA: De-escalate to cephalexin 500mg PO QID", "If culture shows anaerobes alone: Continue clindamycin or amoxicillin-clavulanate"],
+            "patient_education": ["PTA requires drainage + antibiotics (antibiotics alone insufficient)", "Expect improvement within 24-48 hours after drainage", "Complete full antibiotic course even if feeling better", "Recurrence risk 10-15%. Consider tonsillectomy if recurs", "Return if worsening pain, difficulty breathing, neck swelling, or no improvement after 48 hours", "Soft diet, adequate hydration, pain control important for recovery"]
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {"label": "Galioto NJ. Peritonsillar Abscess. Am Fam Physician (2017)", "url": "https://www.aafp.org/pubs/afp/issues/2017/0501/p501.html"},
+            {"label": "Powell J, Wilson JA. An evidence-based review of peritonsillar abscess. Clin Otolaryngol (2012)", "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1749-4486.2012.02452.x"},
+            {"label": "Johnson RF, et al. Peritonsillar Abscess. StatPearls (2024)", "url": "https://www.ncbi.nlm.nih.gov/books/NBK519509/"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "retropharyngeal-abscess",
+      "name": "Retropharyngeal Abscess",
+      "synonyms": ["retropharyngeal abscess", "RPA", "deep neck infection", "retropharyngeal space infection"],
+      "icd10": ["J39.0", "J39.1"],
+      "severity": ["severe", "life-threatening"],
+      "shortDescription": "Deep space infection of the retropharyngeal space, potentially life-threatening with risk of airway obstruction and mediastinitis",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "clinical_presentation": "Fever, severe neck pain, dysphagia, odynophagia, drooling, muffled voice, neck stiffness, limited neck extension, torticollis, respiratory distress, toxic appearance",
+            "age_distribution": "Most common in children <5 years (50-75% of cases). Can occur in adults, often with predisposing factors (trauma, foreign body, immunocompromised)",
+            "anatomy": "Retropharyngeal space: potential space between posterior pharyngeal wall and prevertebral fascia, extends from skull base to mediastinum (T1-T2 level)",
+            "red_flags": ["Respiratory distress or stridor (airway compromise)", "Inability to extend neck (meningismus)", "Severe neck swelling", "Sepsis (hypotension, tachycardia, altered mental status)", "Mediastinitis (chest pain, subcutaneous emphysema)", "Aspiration pneumonia"],
+            "complications": ["Airway obstruction (life-threatening)", "Mediastinitis (descending necrotizing mediastinitis)", "Jugular vein thrombosis (Lemierre syndrome)", "Carotid artery erosion or thrombosis", "Epidural abscess", "Aspiration pneumonia", "Sepsis", "Death"],
+            "differential_diagnosis": ["Peritonsillar abscess", "Parapharyngeal abscess", "Epiglottitis", "Meningitis", "Cervical lymphadenitis", "Vertebral osteomyelitis"]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "HIGH SUSPICION = IMMEDIATE IMAGING. Do NOT delay imaging if suspected. Secure airway first if respiratory distress",
+            "essential_tests": ["CT neck with IV contrast (gold standard) - shows fluid collection in retropharyngeal space, rim enhancement, gas bubbles", "Lateral neck X-ray (if CT unavailable) - shows prevertebral soft tissue swelling (>7mm at C2, >14mm at C6 in children; >22mm at C6 in adults)", "Blood cultures (before antibiotics)"],
+            "conditional_tests": ["CT chest with contrast (if suspected mediastinitis)", "CBC, CRP, ESR (elevated WBC, inflammatory markers)", "Throat culture or abscess culture (if drained)", "Flexible laryngoscopy (assess airway, visualize posterior pharyngeal wall bulging)"],
+            "imaging_findings": ["Prevertebral soft tissue swelling", "Fluid collection with rim enhancement", "Gas bubbles (suggests anaerobic infection)", "Loss of normal cervical lordosis", "Mediastinal extension (descending infection)"],
+            "critical_warnings": ["Do NOT agitate patient (may precipitate airway obstruction)", "Keep patient upright, calm, with parent if child", "Have airway equipment ready (intubation, cricothyrotomy)", "ENT and anesthesia consultation IMMEDIATELY"]
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": ["Polymicrobial (60-80%): Streptococcus pyogenes (Group A Strep) + Staphylococcus aureus + Anaerobes (Fusobacterium, Prevotella, Peptostreptococcus)", "Staphylococcus aureus (including MRSA) - 20-30%", "Streptococcus pyogenes (Group A Strep) - 20-30%", "Anaerobes (Fusobacterium necrophorum, Prevotella, Bacteroides) - 40-60%", "Haemophilus influenzae - rare", "Klebsiella pneumoniae - rare"],
+            "resistance_patterns": "S. aureus: 30-50% MRSA in some regions. Anaerobes: 20-30% produce beta-lactamase",
+            "mdro_risk_factors": ["Recent hospitalization", "Recent antibiotics", "MRSA colonization", "Immunocompromised", "IV drug use"]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "airway_and_surgical_management": "AIRWAY FIRST! Secure airway if respiratory distress. Surgical drainage required for large abscesses (>2cm), airway compromise, or no improvement after 24-48h antibiotics. ENT consultation IMMEDIATELY",
+            "first_line": {"adults": "Ampicillin-sulbactam 3g IV q6h + Vancomycin 15-20mg/kg IV q8-12h OR Piperacillin-tazobactam 4.5g IV q6h + Vancomycin 15-20mg/kg IV q8-12h", "children": "Ampicillin-sulbactam 50mg/kg IV q6h (max 3g) + Vancomycin 15mg/kg IV q6h OR Clindamycin 10-13mg/kg IV q8h (max 900mg) + Ceftriaxone 50-100mg/kg IV q24h (max 2g)"},
+            "alternative": "Clindamycin 600-900mg IV q8h + Ceftriaxone 2g IV q24h (adults) OR Clindamycin 10-13mg/kg IV q8h + Ceftriaxone 50-100mg/kg IV q24h (children)",
+            "mrsa_coverage_required": "Add Vancomycin 15-20mg/kg IV q8-12h OR Linezolid 600mg IV BID (adults) OR 10mg/kg IV q8h (children) if MRSA risk factors",
+            "notes": ["Broad-spectrum coverage for Group A Strep, S. aureus (including MRSA), and anaerobes", "Clindamycin has excellent anaerobic coverage and penetrates abscesses well", "Duration: 2-3 weeks IV, then PO to complete 4-6 weeks total", "Admit to ICU for airway monitoring", "NPO until airway secure and swallowing safe"]
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive Therapy",
+          "content": {
+            "group_a_streptococcus_plus_anaerobes": {"first_line": "Ampicillin-sulbactam 3g IV q6h x 2-3 weeks, then Amoxicillin-clavulanate 875mg PO BID to complete 4-6 weeks", "alternative": "Clindamycin 600-900mg IV q8h x 2-3 weeks, then 300-450mg PO TID to complete 4-6 weeks"},
+            "staphylococcus_aureus": {"mssa": "Nafcillin 2g IV q4h OR Cefazolin 2g IV q8h x 2-3 weeks, then Cephalexin 500mg PO QID to complete 4-6 weeks", "mrsa": "Vancomycin 15-20mg/kg IV q8-12h x 2-3 weeks, then Linezolid 600mg PO BID OR TMP-SMX 1-2 DS tablets PO BID to complete 4-6 weeks"},
+            "polymicrobial": {"first_line": "Continue broad-spectrum coverage (ampicillin-sulbactam or piperacillin-tazobactam + vancomycin) x 2-3 weeks, then PO to complete 4-6 weeks", "notes": "Most common scenario. Adjust based on culture results"},
+            "surgical_drainage": {"indications": "Abscess >2cm, airway compromise, no improvement after 24-48h antibiotics, mediastinal extension", "methods": "Transoral drainage (intraoral incision) OR External drainage (transcervical approach) OR CT-guided needle aspiration", "notes": "Surgery + antibiotics superior to antibiotics alone for large abscesses"}
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration",
+          "content": {
+            "uncomplicated": "2-3 weeks IV antibiotics, then transition to PO to complete 4-6 weeks total",
+            "complicated": "4-6 weeks IV if mediastinitis, osteomyelitis, or extensive infection. May require longer duration",
+            "monitoring_parameters": ["Airway patency (continuous monitoring in ICU)", "Clinical improvement (decreased fever, improved swallowing, decreased neck pain)", "Repeat imaging (CT neck) at 48-72 hours if no improvement", "Resolution of abscess on imaging before stopping antibiotics"],
+            "stop_criteria": ["Completion of 4-6 week antibiotic course", "Resolution of symptoms", "Able to tolerate PO intake", "Repeat imaging shows resolution or significant reduction of abscess"],
+            "treatment_failure": "If no improvement after 48-72 hours: Consider inadequate drainage, resistant organism, mediastinal extension, or alternative diagnosis. Obtain repeat CT neck/chest. ENT re-evaluation for surgical drainage"
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Populations",
+          "content": {
+            "children": {"notes": "Most common age group (<5 years). Often follows upper respiratory infection or pharyngitis. May present with refusal to eat, drooling, neck stiffness. Require general anesthesia for drainage", "airway_management": "Smaller airway, higher risk of obstruction. Avoid agitation. Have pediatric airway equipment ready"},
+            "immunocompromised": {"additional_pathogens": "Candida, Aspergillus, Mycobacterium tuberculosis, atypical bacteria", "empiric_coverage": "Broad-spectrum antibiotics + antifungal if neutropenic. Piperacillin-tazobactam 4.5g IV q6h + Vancomycin + Fluconazole 400mg IV daily OR Voriconazole 6mg/kg IV q12h x 2 doses, then 4mg/kg IV q12h", "notes": "Higher risk for complications, mediastinitis, and mortality"},
+            "diabetes": {"notes": "Higher risk for complications and slower healing. Ensure good glycemic control. Consider longer antibiotic duration"},
+            "iv_drug_users": {"notes": "Higher risk for MRSA, polymicrobial infection, and Lemierre syndrome (Fusobacterium necrophorum with jugular vein thrombosis). Ensure MRSA coverage"},
+            "adults": {"notes": "Less common than children. Often have predisposing factors (trauma, foreign body, dental infection, immunocompromised). Higher risk for mediastinitis"}
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Antimicrobial Stewardship",
+          "content": {
+            "broad_spectrum_justified": "Retropharyngeal abscess is a life-threatening emergency. Broad-spectrum empiric coverage is appropriate until cultures available",
+            "timeout_checklist": ["Day 1: Start broad-spectrum antibiotics + ENT consultation for drainage", "Day 2-3: Review culture results. De-escalate based on susceptibilities", "Week 2-3: Transition to PO antibiotics if improved and tolerating PO", "Week 4-6: Complete antibiotic course. Repeat imaging to confirm resolution"],
+            "de_escalation_opportunities": ["If culture shows Group A Strep alone: De-escalate to penicillin G or ampicillin", "If culture shows MSSA: De-escalate to nafcillin or cefazolin", "If culture shows anaerobes alone: Continue clindamycin or ampicillin-sulbactam", "If culture shows MRSA: Continue vancomycin or linezolid"],
+            "prevention": ["Prompt treatment of pharyngitis and upper respiratory infections", "Good oral hygiene", "Avoid foreign body aspiration in children", "Vaccination (Hib, pneumococcal)"],
+            "patient_education": ["Retropharyngeal abscess is a serious infection requiring hospitalization and often surgery", "Airway obstruction can occur - seek immediate care if difficulty breathing", "Long antibiotic course (4-6 weeks) required to prevent recurrence", "Follow-up imaging needed to confirm resolution", "Return if worsening neck pain, difficulty breathing, chest pain, or fever"]
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {"label": "Craig FW, Schunk JE. Retropharyngeal Abscess in Children: Clinical Presentation, Utility of Imaging, and Current Management. Pediatrics (2003)", "url": "https://publications.aap.org/pediatrics/article/111/6/1394/28891"},
+            {"label": "Grisaru-Soen G, et al. Retropharyngeal and Parapharyngeal Abscesses in Children. Clin Pediatr (2010)", "url": "https://journals.sagepub.com/doi/10.1177/0009922809356465"},
+            {"label": "Novis SJ, et al. Pediatric Deep Space Neck Infections in U.S. Children, 2000-2009. Int J Pediatr Otorhinolaryngol (2014)", "url": "https://www.sciencedirect.com/science/article/abs/pii/S0165587614000281"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "laryngitis",
+      "name": "Acute Laryngitis",
+      "synonyms": ["laryngitis", "acute laryngitis", "hoarseness", "voice loss", "laryngeal inflammation"],
+      "icd10": ["J04.0", "J37.0"],
+      "severity": ["mild"],
+      "shortDescription": "Inflammation of the larynx causing hoarseness, voice changes, and throat discomfort, usually viral and self-limited",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "clinical_presentation": "Hoarseness or voice loss (dysphonia), dry cough, throat clearing, sore throat (mild), sensation of throat tickle or rawness, low-grade fever (if present), symptoms worsen with voice use",
+            "duration": "Acute laryngitis: <3 weeks. Chronic laryngitis: >3 weeks",
+            "etiology": "Viral (90-95%): Rhinovirus, Influenza, Parainfluenza, Adenovirus, RSV, Coronavirus. Bacterial (rare): M. catarrhalis, H. influenzae, S. pneumoniae. Non-infectious: Voice overuse, GERD, smoking, allergens",
+            "red_flags": ["Stridor (airway obstruction)", "Severe dyspnea or respiratory distress", "Inability to swallow secretions (drooling)", "High fever >39°C (suggests bacterial infection or epiglottitis)", "Symptoms >3 weeks (chronic laryngitis, consider malignancy)", "Hemoptysis (coughing up blood)", "Weight loss or night sweats (TB, malignancy)"],
+            "complications": ["Airway obstruction (rare, mainly in children)", "Chronic laryngitis", "Vocal cord nodules or polyps (from voice overuse)", "Laryngeal stenosis (rare)"],
+            "differential_diagnosis": ["Viral upper respiratory infection (most common)", "Epiglottitis (severe, life-threatening)", "Croup (children, barky cough)", "GERD (chronic hoarseness)", "Laryngeal cancer (chronic hoarseness, smokers)", "Vocal cord paralysis", "Allergic laryngitis"]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Diagnosis is CLINICAL. Testing only if atypical presentation, severe symptoms, or chronic (>3 weeks)",
+            "essential_tests": ["Clinical diagnosis based on history and physical exam", "Laryngoscopy (if chronic >3 weeks, suspected malignancy, or severe symptoms) - visualize vocal cords"],
+            "conditional_tests": ["Viral testing (influenza, COVID-19) if indicated for treatment decisions", "Throat culture (if suspected bacterial infection - rare)", "Chest X-ray (if suspected pneumonia or TB)", "Barium swallow or pH probe (if suspected GERD)", "CT neck (if suspected abscess or mass)"],
+            "not_recommended": ["Routine throat culture (laryngitis is usually viral)", "Routine antibiotics (no benefit for viral laryngitis)", "Routine imaging (clinical diagnosis sufficient)"]
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": ["Viral (90-95%): Rhinovirus (most common), Influenza A/B, Parainfluenza, Adenovirus, RSV, Coronavirus (including SARS-CoV-2), HSV (rare)", "Bacterial (rare, <5%): Moraxella catarrhalis, Haemophilus influenzae, Streptococcus pneumoniae, Mycobacterium tuberculosis (chronic)", "Fungal (immunocompromised): Candida, Aspergillus"],
+            "resistance_patterns": "Not applicable (viral etiology in >90% of cases)",
+            "mdro_risk_factors": "Not applicable (antibiotics rarely indicated)"
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "antibiotics_not_indicated": "Antibiotics are NOT indicated for acute viral laryngitis (90-95% of cases). Antibiotics do NOT reduce duration or severity of symptoms",
+            "supportive_care": {"voice_rest": "Most important! Avoid talking, whispering, shouting. Use written communication if possible", "hydration": "Drink plenty of fluids. Use humidifier or steam inhalation", "avoid_irritants": "No smoking, avoid secondhand smoke, avoid alcohol, avoid caffeine (dehydrating)", "throat_lozenges": "Soothe throat discomfort", "analgesics": "Acetaminophen or ibuprofen for pain/fever"},
+            "antiviral_therapy": {"influenza": "Oseltamivir 75mg PO BID x 5 days if influenza confirmed and within 48 hours of symptom onset", "covid_19": "Consider nirmatrelvir-ritonavir (Paxlovid) or molnupiravir if high-risk and within 5 days of symptom onset"},
+            "corticosteroids": {"indication": "Consider dexamethasone 0.6mg/kg PO/IM x 1 dose (max 10mg) for severe laryngitis in performers or professional voice users who need rapid recovery. NOT routine", "notes": "Limited evidence. May reduce inflammation and speed recovery. Use sparingly"},
+            "antibiotics_if_bacterial": {"rare_indications": "Only if suspected bacterial infection (high fever, purulent sputum, no improvement after 7-10 days, immunocompromised)", "first_line": "Amoxicillin-clavulanate 875mg PO BID x 7-10 days OR Doxycycline 100mg PO BID x 7-10 days"}
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive Therapy",
+          "content": {
+            "viral_laryngitis": {"treatment": "Supportive care only. Voice rest, hydration, avoid irritants. Symptoms resolve in 7-10 days", "notes": "90-95% of cases. Antibiotics NOT indicated"},
+            "influenza": {"treatment": "Oseltamivir 75mg PO BID x 5 days (if within 48 hours of symptom onset)", "notes": "Reduces duration by 1-2 days if started early"},
+            "bacterial_laryngitis": {"rare": "Amoxicillin-clavulanate 875mg PO BID x 7-10 days OR Doxycycline 100mg PO BID x 7-10 days", "notes": "Very rare. Only if high suspicion for bacterial infection"},
+            "chronic_laryngitis": {"gerd_related": "PPI (omeprazole 20-40mg PO daily) x 8-12 weeks + lifestyle modifications (elevate head of bed, avoid late meals, weight loss)", "smoking_related": "Smoking cessation (most important!). Voice therapy", "voice_overuse": "Voice rest, voice therapy, speech-language pathology referral", "allergic": "Antihistamines, nasal corticosteroids, avoid allergens"}
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration",
+          "content": {
+            "acute_viral_laryngitis": "7-10 days. Symptoms typically peak at 2-3 days, then gradually improve. Voice may take 1-2 weeks to fully recover",
+            "chronic_laryngitis": ">3 weeks. Requires evaluation for underlying cause (GERD, smoking, voice overuse, malignancy)",
+            "monitoring_parameters": ["Voice quality (gradual improvement expected)", "Resolution of cough and throat discomfort", "Ability to speak without pain"],
+            "stop_criteria": ["Resolution of symptoms (7-10 days for viral laryngitis)", "If antibiotics given (rare): Complete 7-10 day course"],
+            "when_to_refer": ["Hoarseness >3 weeks (ENT referral for laryngoscopy)", "Suspected malignancy (smoker, age >40, weight loss)", "Recurrent laryngitis (>3 episodes per year)", "Professional voice users (singers, teachers, public speakers) - consider voice therapy"]
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Populations",
+          "content": {
+            "professional_voice_users": {"notes": "Singers, teachers, public speakers, actors. Voice rest is critical. Consider short course of corticosteroids (dexamethasone 0.6mg/kg x 1 dose) for rapid recovery if performance imminent. Refer to speech-language pathology for voice therapy", "prevention": "Vocal hygiene (hydration, avoid shouting, warm-up exercises), avoid smoking and irritants"},
+            "children": {"notes": "Laryngitis less common in children than adults. If present, consider croup (barky cough, stridor) or epiglottitis (severe, life-threatening). Ensure adequate hydration. Avoid cough suppressants in young children", "red_flags": "Stridor, respiratory distress, drooling, high fever - consider croup or epiglottitis"},
+            "immunocompromised": {"additional_pathogens": "Candida (thrush), Aspergillus, HSV, CMV, Mycobacterium tuberculosis", "empiric_coverage": "If suspected fungal: Fluconazole 200mg PO daily. If suspected TB: Refer for TB evaluation and treatment", "notes": "Higher risk for bacterial and fungal laryngitis. Lower threshold for laryngoscopy and culture"},
+            "smokers": {"notes": "Higher risk for chronic laryngitis and laryngeal cancer. Smoking cessation is MOST IMPORTANT intervention. If hoarseness >3 weeks, refer for laryngoscopy to rule out malignancy"},
+            "gerd_patients": {"notes": "GERD is a common cause of chronic laryngitis. Treat with PPI (omeprazole 20-40mg PO daily) x 8-12 weeks + lifestyle modifications. May take 2-3 months to see improvement"}
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Antimicrobial Stewardship",
+          "content": {
+            "antibiotics_not_indicated": "Acute laryngitis is VIRAL in 90-95% of cases. Antibiotics do NOT reduce duration or severity. Avoid unnecessary antibiotic use",
+            "patient_education": ["Laryngitis is usually caused by a virus and will resolve on its own in 7-10 days", "Antibiotics do NOT help viral laryngitis and can cause side effects", "Voice rest is the MOST IMPORTANT treatment", "Drink plenty of fluids, use humidifier, avoid smoking and irritants", "Return if symptoms worsen, difficulty breathing, high fever, or hoarseness >3 weeks"],
+            "when_antibiotics_appropriate": ["Suspected bacterial infection (rare): High fever, purulent sputum, no improvement after 7-10 days, immunocompromised", "Chronic laryngitis with bacterial culture confirmation"],
+            "prevention": ["Hand hygiene (prevent viral spread)", "Avoid close contact with sick individuals", "Influenza and COVID-19 vaccination", "Smoking cessation", "Vocal hygiene (avoid shouting, stay hydrated)", "Treat GERD if present"]
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {"label": "Wood JM, et al. Acute Laryngitis. N Engl J Med (2014)", "url": "https://www.nejm.org/doi/full/10.1056/NEJMcp1314325"},
+            {"label": "Reveiz L, et al. Antibiotics for acute laryngitis in adults. Cochrane Database Syst Rev (2015)", "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD004783.pub5/full"},
+            {"label": "CDC - Laryngitis: When Antibiotics Aren't Needed", "url": "https://www.cdc.gov/antibiotic-use/laryngitis.html"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "croup",
+      "name": "Croup (Laryngotracheobronchitis)",
+      "synonyms": ["croup", "laryngotracheobronchitis", "viral croup", "barky cough", "seal-like cough"],
+      "icd10": ["J05.0", "J38.5"],
+      "severity": ["mild", "moderate", "severe"],
+      "shortDescription": "Viral infection of the upper airway causing barky cough, stridor, and respiratory distress, most common in children 6 months to 3 years",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "clinical_presentation": "Barky 'seal-like' cough, inspiratory stridor, hoarseness, respiratory distress (retractions, nasal flaring), low-grade fever, symptoms worse at night, preceded by URI symptoms (runny nose, cough) for 1-2 days",
+            "classic_triad": ["Barky cough", "Inspiratory stridor", "Hoarseness"],
+            "age_distribution": "Peak incidence: 6 months to 3 years (60% of cases). Can occur up to 6 years. Rare in adults",
+            "seasonal_pattern": "Fall and winter (October-March). Parainfluenza virus peaks in fall",
+            "severity_scoring": "Westley Croup Score (0-17 points): Mild (0-2), Moderate (3-7), Severe (8-11), Impending respiratory failure (≥12)",
+            "red_flags": ["Severe stridor at rest", "Severe respiratory distress (retractions, cyanosis, altered mental status)", "Inability to drink or drooling (suggests epiglottitis, not croup)", "Toxic appearance (suggests bacterial tracheitis)", "No improvement or worsening after corticosteroids and nebulized epinephrine"],
+            "complications": ["Respiratory failure (rare)", "Hypoxia", "Dehydration", "Bacterial tracheitis (rare, severe complication)", "Pneumonia"],
+            "differential_diagnosis": ["Epiglottitis (drooling, toxic appearance, no barky cough)", "Bacterial tracheitis (toxic, high fever, no response to croup treatment)", "Foreign body aspiration (sudden onset, unilateral wheezing)", "Retropharyngeal abscess (neck stiffness, drooling)", "Anaphylaxis (acute onset, urticaria, hypotension)"]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Diagnosis is CLINICAL. Imaging and testing NOT routinely needed. Do NOT agitate child with unnecessary procedures",
+            "essential_tests": ["Clinical diagnosis based on barky cough, stridor, and age", "Westley Croup Score (assess severity)"],
+            "conditional_tests": ["Pulse oximetry (if moderate-severe croup or respiratory distress)", "Lateral neck X-ray (if uncertain diagnosis) - shows 'steeple sign' (subglottic narrowing). NOT routinely needed", "AP neck X-ray - shows subglottic narrowing", "Viral testing (influenza, RSV, COVID-19) - may guide treatment but not routinely needed"],
+            "not_recommended": ["Routine X-rays (clinical diagnosis sufficient, may agitate child)", "Throat examination with tongue depressor (may precipitate obstruction if epiglottitis)", "Blood tests (not helpful for diagnosis)"],
+            "steeple_sign": "Lateral or AP neck X-ray shows narrowing of subglottic trachea resembling a church steeple (normal trachea is wider)"
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": ["Viral (>95%): Parainfluenza virus type 1 (most common, 75%), Parainfluenza types 2 and 3, Influenza A and B, RSV, Adenovirus, Rhinovirus, Coronavirus (including SARS-CoV-2), Measles (rare)", "Bacterial (rare, <1%): Staphylococcus aureus, Streptococcus pneumoniae, Haemophilus influenzae (bacterial tracheitis complication)"],
+            "resistance_patterns": "Not applicable (viral etiology)",
+            "mdro_risk_factors": "Not applicable (antibiotics not indicated for viral croup)"
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "corticosteroids": {"first_line": "Dexamethasone 0.6mg/kg PO/IM/IV x 1 dose (max 10mg) - MOST IMPORTANT treatment. Reduces symptoms within 6 hours, reduces ED visits and hospitalizations", "alternative": "Prednisolone 1-2mg/kg PO x 1 dose (if dexamethasone unavailable)", "budesonide": "Nebulized budesonide 2mg x 1 dose (alternative to dexamethasone, but less convenient)", "notes": "Single dose usually sufficient. Repeat dose at 12-24 hours if symptoms persist"},
+            "nebulized_epinephrine": {"indication": "Moderate-severe croup (stridor at rest, respiratory distress). Provides rapid but temporary relief (1-2 hours)", "dose": "Racemic epinephrine 0.5mL of 2.25% solution in 3mL NS nebulized OR L-epinephrine 5mL of 1:1000 solution nebulized", "notes": "Observe for 2-4 hours after epinephrine (rebound stridor possible). Discharge safe if no stridor at rest after 2-4 hours"},
+            "supportive_care": {"hydration": "Encourage PO fluids. IV fluids if unable to drink", "humidified_air": "Cool mist humidifier (limited evidence, but may provide comfort). Avoid hot steam (risk of burns)", "minimize_agitation": "Keep child calm, with parent. Crying worsens stridor", "oxygen": "Supplemental oxygen if SpO2 <92%"},
+            "antibiotics_not_indicated": "Antibiotics NOT indicated for viral croup. Only consider if suspected bacterial tracheitis (toxic appearance, high fever, no response to croup treatment)"
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive Therapy",
+          "content": {
+            "mild_croup": {"treatment": "Dexamethasone 0.6mg/kg PO x 1 dose. Supportive care at home. Symptoms resolve in 2-3 days", "discharge_criteria": "No stridor at rest, good PO intake, reliable parents, able to return if worsening"},
+            "moderate_croup": {"treatment": "Dexamethasone 0.6mg/kg PO/IM x 1 dose + Nebulized epinephrine. Observe 2-4 hours. Discharge if improved", "admission_criteria": "Persistent stridor at rest after treatment, respiratory distress, poor PO intake, unreliable parents"},
+            "severe_croup": {"treatment": "Dexamethasone 0.6mg/kg IV x 1 dose + Nebulized epinephrine (repeat q20-30min PRN). Admit to hospital. Consider ICU if impending respiratory failure", "intubation": "Rarely needed (<1%). Use smaller endotracheal tube (0.5-1mm smaller than usual). Consider heliox (helium-oxygen mixture) to reduce work of breathing"},
+            "bacterial_tracheitis": {"rare_complication": "If suspected (toxic appearance, high fever, purulent secretions, no response to croup treatment): Admit to ICU. Antibiotics: Vancomycin 15mg/kg IV q6h + Ceftriaxone 50-100mg/kg IV q24h. May require intubation and airway suctioning"}
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration",
+          "content": {
+            "typical_course": "Symptoms peak at 2-3 days, then gradually improve. Total duration 5-7 days. Barky cough may persist for 1-2 weeks",
+            "corticosteroid_effect": "Dexamethasone reduces symptoms within 6 hours. Single dose usually sufficient. Repeat at 12-24 hours if symptoms persist",
+            "monitoring_parameters": ["Stridor (should improve within 6 hours of dexamethasone)", "Respiratory distress (retractions, nasal flaring)", "Oxygen saturation (maintain SpO2 >92%)", "Hydration status (PO intake, urine output)"],
+            "discharge_criteria": ["No stridor at rest (or minimal stridor with agitation only)", "No respiratory distress", "Good PO intake", "SpO2 >92% on room air", "At least 2-4 hours after nebulized epinephrine (if given)", "Reliable parents with clear return precautions"],
+            "when_to_return": ["Worsening stridor or respiratory distress", "Inability to drink fluids", "Drooling (suggests epiglottitis)", "High fever >39°C (suggests bacterial infection)", "Lethargy or altered mental status", "Cyanosis or severe retractions"]
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Populations",
+          "content": {
+            "infants_less_than_6_months": {"notes": "Croup less common in infants <6 months. If present, consider alternative diagnoses (congenital airway anomaly, foreign body, bacterial tracheitis). Lower threshold for admission"},
+            "recurrent_croup": {"definition": "≥3 episodes per year OR ≥2 episodes requiring hospitalization", "evaluation": "Consider underlying airway abnormality (subglottic stenosis, laryngomalacia, tracheomalacia). Refer to ENT for laryngoscopy and bronchoscopy", "management": "Same as acute croup. Consider prophylactic dexamethasone at first sign of URI symptoms"},
+            "immunocompromised": {"notes": "Higher risk for severe croup and bacterial tracheitis. Lower threshold for admission and antibiotics. Consider broader viral testing (influenza, RSV, COVID-19)"},
+            "asthma": {"notes": "Children with asthma may have more severe croup. Consider adding albuterol nebulization if wheezing present. Ensure asthma controller medications optimized"},
+            "adults": {"notes": "Croup very rare in adults. If present, consider alternative diagnoses (epiglottitis, foreign body, angioedema, anaphylaxis). Adults have larger airways, so less likely to have severe obstruction"}
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Antimicrobial Stewardship",
+          "content": {
+            "antibiotics_not_indicated": "Croup is VIRAL (>95% of cases). Antibiotics do NOT reduce duration or severity. Avoid unnecessary antibiotic use",
+            "corticosteroids_are_key": "Dexamethasone 0.6mg/kg x 1 dose is the MOST IMPORTANT treatment. Reduces symptoms, ED visits, and hospitalizations. Use in ALL cases of croup (mild, moderate, severe)",
+            "nebulized_epinephrine": "Use for moderate-severe croup (stridor at rest, respiratory distress). Provides rapid but temporary relief. Observe 2-4 hours after use",
+            "when_antibiotics_appropriate": ["Suspected bacterial tracheitis (rare): Toxic appearance, high fever, purulent secretions, no response to croup treatment. Admit to ICU + Vancomycin + Ceftriaxone"],
+            "patient_education": ["Croup is caused by a virus and will resolve on its own in 5-7 days", "Dexamethasone helps reduce swelling in the airway", "Symptoms are often worse at night", "Keep child calm (crying worsens stridor)", "Use cool mist humidifier for comfort", "Return if worsening stridor, difficulty breathing, drooling, high fever, or inability to drink"],
+            "prevention": ["Hand hygiene (prevent viral spread)", "Avoid close contact with sick individuals", "Influenza vaccination (reduces influenza-associated croup)"]
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {"label": "AAP - Clinical Practice Guideline: The Diagnosis, Management, and Prevention of Bronchiolitis (2024)", "url": "https://publications.aap.org/pediatrics/article/154/3/e2024067382/199736"},
+            {"label": "Bjornson C, Johnson DW. Croup. Lancet (2008)", "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(08)60170-1/fulltext"},
+            {"label": "Johnson DW. Croup. BMJ Clin Evid (2014)", "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4178284/"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "covid-19-upper-respiratory",
+      "name": "COVID-19 (Mild-Moderate Upper Respiratory)",
+      "synonyms": ["COVID-19", "coronavirus", "SARS-CoV-2", "COVID", "coronavirus disease"],
+      "icd10": ["U07.1", "J12.82"],
+      "severity": ["mild", "moderate"],
+      "shortDescription": "Mild-moderate COVID-19 presenting as upper respiratory infection, managed in outpatient setting with supportive care and antivirals for high-risk patients",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "clinical_presentation": "Fever or chills, cough, sore throat, nasal congestion or runny nose, fatigue, headache, myalgias, loss of taste or smell (anosmia/ageusia), shortness of breath (mild), nausea, vomiting, diarrhea",
+            "severity_classification": "Mild: Symptoms without dyspnea or abnormal imaging. Moderate: Evidence of lower respiratory disease (dyspnea, abnormal imaging) but SpO2 ≥94% on room air. Severe: SpO2 <94%, PaO2/FiO2 <300, respiratory rate >30, lung infiltrates >50%",
+            "high_risk_groups": ["Age ≥65 years", "Immunocompromised (HIV, transplant, chemotherapy, immunosuppressive drugs)", "Chronic lung disease (COPD, asthma, ILD)", "Cardiovascular disease (heart failure, CAD)", "Diabetes", "Chronic kidney disease", "Obesity (BMI ≥30)", "Pregnancy", "Smoking", "Cancer"],
+            "red_flags": ["Severe dyspnea or respiratory distress", "SpO2 <94% on room air", "Confusion or altered mental status", "Inability to maintain hydration", "Persistent chest pain or pressure", "Cyanosis", "Severe or worsening symptoms after initial improvement"],
+            "complications": ["Pneumonia (progression to severe COVID-19)", "Acute respiratory distress syndrome (ARDS)", "Thromboembolism (DVT, PE)", "Myocarditis", "Acute kidney injury", "Multi-organ failure", "Long COVID (post-acute sequelae)", "Secondary bacterial pneumonia"],
+            "differential_diagnosis": ["Influenza", "RSV", "Other viral URI (rhinovirus, adenovirus)", "Bacterial pneumonia", "Pulmonary embolism"]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Test if symptoms consistent with COVID-19, especially if high-risk or considering antiviral treatment. Testing guides treatment decisions and isolation precautions",
+            "essential_tests": ["NAAT (PCR) - gold standard, high sensitivity and specificity", "Rapid antigen test - lower sensitivity than PCR, but results in 15-30 minutes. Repeat if negative and high suspicion"],
+            "conditional_tests": ["Pulse oximetry (all patients) - assess for hypoxemia", "Chest X-ray (if dyspnea or suspected pneumonia)", "CBC, CMP, CRP, D-dimer (if moderate-severe or hospitalized)", "Influenza and RSV testing (co-infection possible)"],
+            "not_recommended": ["Routine imaging for mild cases without dyspnea", "Antibody testing for acute diagnosis (not helpful in acute phase)"],
+            "timing_of_testing": "Test as soon as symptoms develop. NAAT most sensitive in first 5-7 days. Antigen tests best when viral load high (first 5 days)"
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "pathogen": "SARS-CoV-2 (Severe Acute Respiratory Syndrome Coronavirus 2) - RNA virus, Betacoronavirus genus",
+            "variants": "Multiple variants (Alpha, Beta, Gamma, Delta, Omicron subvariants). Omicron variants (BA.1, BA.2, BA.4, BA.5, XBB, JN.1) predominant as of 2024-2025. Variants differ in transmissibility, severity, and immune evasion",
+            "transmission": "Respiratory droplets and aerosols. Incubation period: 2-14 days (median 5 days). Contagious 2 days before symptom onset through 10 days after (longer if immunocompromised)",
+            "resistance_patterns": "Antiviral resistance rare but emerging. Nirmatrelvir resistance mutations reported. Monoclonal antibodies largely ineffective against current Omicron variants"
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "antiviral_therapy_high_risk": {"nirmatrelvir_ritonavir": "Nirmatrelvir 300mg + Ritonavir 100mg PO BID x 5 days. Start within 5 days of symptom onset. MOST EFFECTIVE antiviral. Reduces hospitalization by 89% in high-risk patients", "contraindications": "Severe renal or hepatic impairment. Multiple drug interactions (ritonavir is CYP3A4 inhibitor). Check drug interactions before prescribing", "molnupiravir": "Molnupiravir 800mg PO BID x 5 days. Alternative if nirmatrelvir-ritonavir contraindicated. Less effective (30% reduction in hospitalization). Avoid in pregnancy", "remdesivir": "Remdesivir 200mg IV x 1, then 100mg IV daily x 2 days (total 3 days). Outpatient infusion for high-risk patients. Reduces hospitalization by 87%"},
+            "supportive_care": {"hydration": "Drink plenty of fluids", "analgesics": "Acetaminophen or ibuprofen for fever and pain", "rest": "Adequate rest and sleep", "isolation": "Isolate for at least 5 days from symptom onset AND until fever-free for 24 hours without antipyretics AND symptoms improving"},
+            "not_recommended": {"antibiotics": "NOT indicated unless suspected bacterial co-infection or secondary bacterial pneumonia", "hydroxychloroquine": "NOT recommended (no benefit, potential harm)", "ivermectin": "NOT recommended (no benefit)", "corticosteroids": "NOT recommended for mild-moderate outpatient COVID-19 (only for hospitalized patients requiring oxygen)"},
+            "monoclonal_antibodies": "Most monoclonal antibodies (bamlanivimab, casirivimab-imdevimab, sotrovimab) are NOT effective against current Omicron variants. NOT recommended as of 2024-2025"
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive Therapy",
+          "content": {
+            "mild_covid_19_low_risk": {"treatment": "Supportive care only. Hydration, acetaminophen/ibuprofen, rest. Isolate for 5 days. Symptoms resolve in 7-10 days", "notes": "Antivirals NOT routinely recommended for low-risk patients (age <65, no comorbidities)"},
+            "mild_moderate_covid_19_high_risk": {"first_line": "Nirmatrelvir-ritonavir (Paxlovid) 300mg/100mg PO BID x 5 days. Start within 5 days of symptom onset. Check drug interactions", "alternative": "Molnupiravir 800mg PO BID x 5 days (if nirmatrelvir-ritonavir contraindicated) OR Remdesivir 200mg IV x 1, then 100mg IV daily x 2 days (outpatient infusion)", "notes": "Antivirals reduce hospitalization and death in high-risk patients. Most effective if started within 5 days of symptom onset"},
+            "renal_dosing": {"nirmatrelvir_ritonavir": "eGFR 30-59: Nirmatrelvir 150mg + Ritonavir 100mg PO BID x 5 days. eGFR <30: NOT recommended", "molnupiravir": "No dose adjustment needed", "remdesivir": "eGFR ≥30: No adjustment. eGFR <30: NOT recommended"},
+            "pregnancy": {"safe_options": "Nirmatrelvir-ritonavir (preferred) OR Remdesivir. Avoid molnupiravir (teratogenic in animal studies)", "notes": "Pregnant women are high-risk. Treat with antivirals if within 5 days of symptom onset"}
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration",
+          "content": {
+            "typical_course": "Symptoms peak at 4-5 days, then gradually improve. Most patients recover in 7-14 days. Fatigue may persist for weeks",
+            "isolation_duration": "Isolate for at least 5 days from symptom onset AND until fever-free for 24 hours without antipyretics AND symptoms improving. Wear mask around others for 10 days total",
+            "antiviral_duration": "Nirmatrelvir-ritonavir, molnupiravir: 5 days. Remdesivir: 3 days (outpatient)",
+            "monitoring_parameters": ["Oxygen saturation (pulse oximetry at home if available)", "Symptom progression (worsening dyspnea, chest pain, confusion)", "Hydration status", "Fever resolution"],
+            "when_to_seek_care": ["Difficulty breathing or shortness of breath", "Persistent chest pain or pressure", "Confusion or inability to stay awake", "Bluish lips or face", "SpO2 <94% on room air", "Severe or worsening symptoms after initial improvement"],
+            "long_covid": "Post-acute sequelae of COVID-19 (PASC): Symptoms persisting >4 weeks after acute infection. Common symptoms: Fatigue, brain fog, dyspnea, palpitations, myalgias. Refer to Long COVID clinic if symptoms persist >12 weeks"
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Populations",
+          "content": {
+            "immunocompromised": {"notes": "Higher risk for severe disease and prolonged viral shedding. Treat with antivirals (nirmatrelvir-ritonavir or remdesivir) regardless of symptom duration. Consider longer isolation (≥10 days). May require repeat testing to document viral clearance", "additional_therapy": "Consider tixagevimab-cilgavimab (Evusheld) for pre-exposure prophylaxis if severely immunocompromised (no longer widely available as of 2024)"},
+            "pregnancy": {"notes": "Pregnant women are high-risk for severe COVID-19. Treat with nirmatrelvir-ritonavir (preferred) or remdesivir if within 5 days of symptom onset. Monitor closely for progression. Vaccination strongly recommended", "safe_antivirals": "Nirmatrelvir-ritonavir, Remdesivir. Avoid molnupiravir"},
+            "children": {"notes": "Children generally have milder disease than adults. Antivirals (nirmatrelvir-ritonavir) approved for age ≥12 years and weight ≥40kg. Supportive care for most children. Monitor for MIS-C (multisystem inflammatory syndrome in children) 2-6 weeks after infection"},
+            "renal_impairment": {"nirmatrelvir_ritonavir": "eGFR 30-59: Reduce dose to 150mg/100mg BID. eGFR <30: NOT recommended", "molnupiravir": "No adjustment", "remdesivir": "eGFR <30: NOT recommended"},
+            "drug_interactions": {"nirmatrelvir_ritonavir": "Ritonavir is strong CYP3A4 inhibitor. Multiple drug interactions. Check interactions before prescribing. Contraindicated with: Alfuzosin, amiodarone, colchicine (renal/hepatic impairment), ergot derivatives, lovastatin, simvastatin, pimozide, ranolazine, sildenafil (for PAH), triazolam, midazolam (oral). Adjust doses of many other drugs"}
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Antimicrobial Stewardship",
+          "content": {
+            "antivirals_for_high_risk": "Antivirals (nirmatrelvir-ritonavir, molnupiravir, remdesivir) reduce hospitalization and death in HIGH-RISK patients. Start within 5 days of symptom onset. NOT routinely recommended for low-risk patients",
+            "antibiotics_not_indicated": "Antibiotics NOT indicated for COVID-19 unless suspected bacterial co-infection or secondary bacterial pneumonia. Avoid unnecessary antibiotic use",
+            "corticosteroids_not_outpatient": "Corticosteroids (dexamethasone) NOT recommended for mild-moderate outpatient COVID-19. Only for hospitalized patients requiring oxygen",
+            "monoclonal_antibodies_obsolete": "Most monoclonal antibodies are NOT effective against current Omicron variants (as of 2024-2025). Do NOT use",
+            "patient_education": ["COVID-19 is caused by SARS-CoV-2 virus", "Most people recover in 7-14 days with supportive care", "Antivirals (Paxlovid) reduce hospitalization if you are high-risk and start within 5 days", "Isolate for at least 5 days and until fever-free for 24 hours", "Wear mask around others for 10 days total", "Seek care if difficulty breathing, chest pain, confusion, or SpO2 <94%", "Vaccination and boosters reduce risk of severe disease"],
+            "prevention": ["Vaccination and boosters (most important!)", "Mask wearing in crowded indoor settings", "Hand hygiene", "Avoid close contact with sick individuals", "Improve ventilation", "Test before gatherings"]
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {"label": "NIH COVID-19 Treatment Guidelines (2024-2025)", "url": "https://www.covid19treatmentguidelines.nih.gov/"},
+            {"label": "CDC COVID-19 Clinical Care Guidance (2024)", "url": "https://www.cdc.gov/covid/hcp/clinical-care/index.html"},
+            {"label": "WHO COVID-19 Clinical Management: Living Guideline (2024)", "url": "https://www.who.int/publications/i/item/WHO-2019-nCoV-clinical-2023.2"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "infectious-mononucleosis",
+      "name": "Infectious Mononucleosis (Mono)",
+      "synonyms": ["mononucleosis", "mono", "kissing disease", "EBV infection", "glandular fever"],
+      "icd10": ["B27.0", "B27.9"],
+      "severity": ["mild", "moderate"],
+      "shortDescription": "Epstein-Barr virus infection causing fever, pharyngitis, lymphadenopathy, and fatigue, most common in adolescents and young adults",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "clinical_presentation": "Fever (often high, 38-40°C), severe pharyngitis (often with exudates), posterior cervical lymphadenopathy (bilateral, tender), fatigue (profound, may last weeks-months), splenomegaly (50-60%), hepatomegaly (10-15%), palatal petechiae, maculopapular rash (especially if given amoxicillin/ampicillin)",
+            "classic_triad": ["Fever", "Pharyngitis", "Lymphadenopathy (especially posterior cervical)"],
+            "age_distribution": "Peak incidence: 15-24 years (adolescents and young adults). Can occur at any age. Primary infection in young children often asymptomatic or mild",
+            "incubation_period": "4-6 weeks (long incubation period)",
+            "red_flags": ["Severe abdominal pain (splenic rupture)", "Respiratory distress (airway obstruction from tonsillar hypertrophy)", "Severe headache or neurologic symptoms (meningitis, encephalitis)", "Jaundice (severe hepatitis)", "Severe thrombocytopenia or anemia", "Inability to swallow or drink (dehydration)"],
+            "complications": ["Splenic rupture (0.1-0.5%, life-threatening)", "Airway obstruction (tonsillar hypertrophy)", "Hepatitis (mild elevation of transaminases common, severe hepatitis rare)", "Hemolytic anemia", "Thrombocytopenia", "Neurologic (meningitis, encephalitis, Guillain-Barré syndrome - rare)", "Myocarditis, pericarditis (rare)", "Chronic active EBV (very rare)"],
+            "differential_diagnosis": ["Streptococcal pharyngitis (GAS)", "CMV mononucleosis", "Acute HIV infection", "Toxoplasmosis", "Acute hepatitis", "Lymphoma", "Acute leukemia"]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Suspect in adolescents/young adults with fever, pharyngitis, lymphadenopathy, and fatigue. Test to confirm diagnosis and guide management",
+            "essential_tests": ["Monospot (heterophile antibody test) - rapid, 70-90% sensitive in first week, >90% sensitive after 2 weeks. False negatives in children <4 years", "CBC with differential - lymphocytosis (>50% lymphocytes) with atypical lymphocytes (>10%)", "Throat culture or rapid strep test (to rule out GAS co-infection)"],
+            "conditional_tests": ["EBV serology (if monospot negative but high suspicion) - VCA IgM (acute infection), VCA IgG (past infection), EBNA IgG (past infection, appears after 2-4 months)", "LFTs (AST, ALT, bilirubin) - mild elevation common (80%), severe hepatitis rare", "Abdominal ultrasound (if suspected splenomegaly or splenic rupture)", "CMV serology (if EBV negative)"],
+            "not_recommended": ["Routine imaging (clinical diagnosis sufficient)", "Routine EBV PCR (not needed for diagnosis, used for monitoring in transplant patients)"],
+            "typical_lab_findings": ["Lymphocytosis (>50% lymphocytes)", "Atypical lymphocytes (>10%)", "Mild thrombocytopenia (common)", "Mild transaminase elevation (AST, ALT 2-3x normal)"]
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "pathogen": "Epstein-Barr virus (EBV) - Human herpesvirus 4 (HHV-4), DNA virus, Herpesviridae family",
+            "transmission": "Saliva (kissing, sharing drinks/utensils). Close contact required. Incubation period: 4-6 weeks",
+            "epidemiology": "90-95% of adults worldwide have been infected with EBV by age 40. Primary infection in adolescents/young adults causes symptomatic mononucleosis in 50% of cases. Primary infection in young children often asymptomatic",
+            "viral_shedding": "EBV shed in saliva for months after acute infection. Lifelong latent infection in B cells. Periodic reactivation and shedding throughout life",
+            "other_causes_of_mononucleosis_syndrome": ["Cytomegalovirus (CMV) - 5-10% of mono cases", "Acute HIV infection", "Toxoplasma gondii", "HHV-6", "Adenovirus"]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "no_specific_antiviral": "No specific antiviral therapy for EBV. Acyclovir, valacyclovir, and ganciclovir are NOT effective for infectious mononucleosis. Treatment is SUPPORTIVE",
+            "supportive_care": {"rest": "Adequate rest. Avoid strenuous activity and contact sports for 3-4 weeks (risk of splenic rupture)", "hydration": "Drink plenty of fluids. IV fluids if unable to tolerate PO", "analgesics": "Acetaminophen or ibuprofen for fever and pain. Avoid aspirin in children (Reye syndrome risk)", "throat_lozenges": "Soothe throat discomfort", "soft_diet": "Soft foods if severe pharyngitis"},
+            "corticosteroids": {"indication": "Consider for severe complications ONLY: Impending airway obstruction (tonsillar hypertrophy), severe thrombocytopenia, hemolytic anemia, neurologic complications", "dose": "Prednisone 1mg/kg PO daily (max 60mg) x 5-7 days, then taper. OR Dexamethasone 0.6mg/kg IV/IM x 1 dose (max 10mg)", "notes": "NOT routinely recommended. Use only for severe complications. May prolong viral shedding"},
+            "antibiotics": {"not_indicated": "Antibiotics NOT indicated for EBV mononucleosis. Avoid amoxicillin and ampicillin (cause maculopapular rash in 80-100% of mono patients)", "if_gas_coinfection": "If GAS co-infection confirmed (positive throat culture): Use cephalexin 500mg PO QID x 10 days OR azithromycin 500mg PO x 1, then 250mg daily x 4 days. AVOID amoxicillin/ampicillin"},
+            "activity_restriction": "Avoid contact sports and heavy lifting for 3-4 weeks (risk of splenic rupture). Gradual return to activity as tolerated"
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive Therapy",
+          "content": {
+            "uncomplicated_mononucleosis": {"treatment": "Supportive care only. Rest, hydration, acetaminophen/ibuprofen. Avoid contact sports x 3-4 weeks. Symptoms resolve in 2-4 weeks (fatigue may persist for months)", "notes": "No antiviral therapy effective. Antibiotics NOT indicated"},
+            "impending_airway_obstruction": {"treatment": "Prednisone 1mg/kg PO daily (max 60mg) x 5-7 days, then taper. Consider hospitalization for observation. ENT consultation if severe", "notes": "Rare complication. Corticosteroids reduce tonsillar swelling"},
+            "splenic_rupture": {"emergency": "SURGICAL EMERGENCY. Presents with severe abdominal pain, left shoulder pain (Kehr sign), hypotension, tachycardia. Immediate surgical consultation. May require splenectomy or splenic artery embolization", "notes": "Rare (0.1-0.5%) but life-threatening. Most occur in first 3 weeks of illness. Avoid abdominal palpation"},
+            "severe_hepatitis": {"treatment": "Supportive care. Monitor LFTs. Avoid hepatotoxic drugs. Consider corticosteroids if severe (prednisone 1mg/kg daily x 5-7 days)", "notes": "Mild transaminase elevation common (80%). Severe hepatitis or jaundice rare"},
+            "neurologic_complications": {"treatment": "Hospitalization. Corticosteroids (prednisone 1mg/kg daily or dexamethasone 10mg IV q6h). Neurology consultation. Supportive care", "notes": "Rare complications: Meningitis, encephalitis, Guillain-Barré syndrome, Bell's palsy"}
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration",
+          "content": {
+            "typical_course": "Acute symptoms (fever, pharyngitis) resolve in 2-4 weeks. Fatigue may persist for weeks to months (50% of patients). Lymphadenopathy and splenomegaly may persist for 4-6 weeks",
+            "return_to_activity": "Avoid contact sports and heavy lifting for 3-4 weeks from symptom onset (risk of splenic rupture). Gradual return to normal activity as tolerated. Return to school/work when fever resolves and able to perform activities",
+            "monitoring_parameters": ["Symptom resolution (fever, pharyngitis, fatigue)", "Spleen size (avoid abdominal palpation, use ultrasound if needed)", "LFTs (if elevated, repeat in 2-4 weeks)", "CBC (if severe thrombocytopenia or anemia)"],
+            "when_to_return": ["Severe abdominal pain (splenic rupture)", "Difficulty breathing (airway obstruction)", "Severe headache or neurologic symptoms", "Jaundice", "Inability to drink fluids (dehydration)", "Worsening symptoms after initial improvement"],
+            "chronic_fatigue": "Fatigue may persist for 6 months in 10-20% of patients. Gradual improvement expected. If fatigue persists >6 months, consider alternative diagnoses (chronic fatigue syndrome, depression, other infections)"
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Populations",
+          "content": {
+            "children_less_than_4_years": {"notes": "Primary EBV infection in young children often asymptomatic or mild (nonspecific URI symptoms). Monospot often false negative (use EBV serology if suspected). Avoid aspirin (Reye syndrome risk)"},
+            "immunocompromised": {"notes": "Higher risk for severe or chronic active EBV infection. May develop EBV-associated lymphoproliferative disorder (post-transplant lymphoproliferative disorder - PTLD). Monitor EBV viral load. Consider antiviral therapy (ganciclovir, rituximab) in consultation with infectious disease specialist", "ptld": "Post-transplant lymphoproliferative disorder: EBV-driven B-cell proliferation in transplant patients. Presents with fever, lymphadenopathy, organ dysfunction. Requires reduction of immunosuppression + rituximab ± chemotherapy"},
+            "pregnancy": {"notes": "Primary EBV infection during pregnancy is rare (most women already immune). No increased risk of congenital abnormalities. Supportive care. Acetaminophen safe for fever/pain. Avoid NSAIDs in third trimester"},
+            "athletes": {"notes": "Avoid contact sports and heavy lifting for 3-4 weeks (risk of splenic rupture). Gradual return to training as tolerated. Clearance from physician before return to contact sports. Consider ultrasound to confirm spleen size normalized"},
+            "amoxicillin_ampicillin_rash": {"notes": "80-100% of mono patients develop maculopapular rash if given amoxicillin or ampicillin. NOT a true penicillin allergy. Rash is due to interaction between EBV and aminopenicillins. Patients can safely receive penicillin in future"}
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Antimicrobial Stewardship",
+          "content": {
+            "no_antiviral_therapy": "No effective antiviral therapy for EBV mononucleosis. Acyclovir, valacyclovir, and ganciclovir are NOT effective. Treatment is supportive",
+            "antibiotics_not_indicated": "Antibiotics NOT indicated for EBV mononucleosis. Avoid amoxicillin and ampicillin (cause rash in 80-100% of mono patients). Only use antibiotics if GAS co-infection confirmed",
+            "corticosteroids_limited_role": "Corticosteroids NOT routinely recommended. Use only for severe complications (impending airway obstruction, severe thrombocytopenia, hemolytic anemia, neurologic complications). May prolong viral shedding",
+            "avoid_unnecessary_testing": "Monospot + CBC with differential sufficient for diagnosis in most cases. EBV serology only if monospot negative but high suspicion. Routine imaging not needed",
+            "patient_education": ["Infectious mononucleosis is caused by Epstein-Barr virus (EBV)", "No specific antiviral treatment. Symptoms resolve on their own in 2-4 weeks", "Rest and avoid strenuous activity for 3-4 weeks (risk of splenic rupture)", "Avoid contact sports and heavy lifting for 3-4 weeks", "Fatigue may persist for weeks to months", "Avoid sharing drinks, utensils, or kissing (spread through saliva)", "Return if severe abdominal pain, difficulty breathing, severe headache, or inability to drink", "If prescribed amoxicillin/ampicillin and develop rash, this is NOT a true penicillin allergy"],
+            "prevention": ["Avoid sharing drinks, utensils, or kissing with infected individuals", "Hand hygiene", "No vaccine available for EBV"]
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {"label": "Ebell MH. Epstein-Barr Virus Infectious Mononucleosis. Am Fam Physician (2004)", "url": "https://www.aafp.org/pubs/afp/issues/2004/1001/p1279.html"},
+            {"label": "CDC - Epstein-Barr Virus and Infectious Mononucleosis", "url": "https://www.cdc.gov/epstein-barr/about-mono.html"},
+            {"label": "Womack J, Jimenez M. Common Questions About Infectious Mononucleosis. Am Fam Physician (2015)", "url": "https://www.aafp.org/pubs/afp/issues/2015/0301/p372.html"}
+          ]
+        }
+      }
+    },
+    {
+      "id": "acute-rhinosinusitis-viral",
+      "name": "Acute Rhinosinusitis (Viral URI)",
+      "synonyms": ["viral URI", "common cold", "viral rhinosinusitis", "acute viral rhinosinusitis", "viral sinusitis"],
+      "icd10": ["J00", "J01.90"],
+      "severity": ["mild"],
+      "shortDescription": "Viral upper respiratory infection causing nasal congestion, rhinorrhea, and facial pressure, self-limited and does not require antibiotics",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "clinical_presentation": "Nasal congestion, rhinorrhea (clear or colored), facial pressure or pain, postnasal drip, cough, sore throat, sneezing, low-grade fever (if present), hyposmia (decreased smell), symptoms <10 days",
+            "viral_vs_bacterial": "Viral (90-98% of acute rhinosinusitis): Symptoms <10 days, gradual improvement. Bacterial (2-10%): Persistent symptoms ≥10 days without improvement, severe symptoms ≥3-4 days (high fever ≥39°C, purulent nasal discharge, facial pain), or worsening after initial improvement (double sickening)",
+            "etiology": "Viral (90-98%): Rhinovirus (most common), Coronavirus, Influenza, Parainfluenza, Adenovirus, RSV. Bacterial (2-10%): S. pneumoniae, H. influenzae, M. catarrhalis",
+            "red_flags": ["Severe headache or facial pain", "Visual changes or periorbital edema (orbital complications)", "Severe unilateral facial pain or swelling", "Neurologic symptoms (meningitis, brain abscess)", "Immunocompromised (risk for fungal sinusitis)"],
+            "complications": ["Progression to acute bacterial rhinosinusitis (2-10%)", "Orbital complications (preseptal cellulitis, orbital cellulitis, subperiosteal abscess)", "Intracranial complications (meningitis, epidural abscess, brain abscess - rare)", "Chronic rhinosinusitis (symptoms >12 weeks)"],
+            "differential_diagnosis": ["Acute bacterial rhinosinusitis", "Allergic rhinitis", "Vasomotor rhinitis", "Nasal polyps", "Deviated septum", "Foreign body (children)", "Dental infection"]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Diagnosis is CLINICAL. Testing and imaging NOT routinely needed for uncomplicated viral URI",
+            "essential_tests": ["Clinical diagnosis based on symptoms <10 days without severe features"],
+            "conditional_tests": ["Influenza testing (if influenza suspected and within 48 hours of symptom onset - may guide antiviral treatment)", "COVID-19 testing (if symptoms consistent with COVID-19)", "CT sinus (if suspected complications: orbital cellulitis, intracranial extension, or recurrent/chronic sinusitis)", "Nasal endoscopy (if recurrent or chronic sinusitis)"],
+            "not_recommended": ["Routine sinus X-ray (low sensitivity and specificity, not helpful)", "Routine CT sinus (not needed for uncomplicated viral URI)", "Routine nasal culture (not helpful for diagnosis)"],
+            "imaging_indications": "CT sinus with contrast ONLY if: Suspected complications (orbital, intracranial), immunocompromised, recurrent/chronic sinusitis, or failed antibiotic therapy"
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": ["Viral (90-98%): Rhinovirus (30-50%), Coronavirus (10-15%), Influenza A/B (5-15%), Parainfluenza (5%), Adenovirus (5%), RSV (5%), Enterovirus", "Bacterial (2-10%, if progression to ABRS): Streptococcus pneumoniae (30%), Haemophilus influenzae (20%), Moraxella catarrhalis (20%), Streptococcus pyogenes, Staphylococcus aureus"],
+            "resistance_patterns": "Not applicable for viral URI. For bacterial sinusitis: S. pneumoniae 30-40% penicillin non-susceptible, H. influenzae and M. catarrhalis 20-30% produce beta-lactamase",
+            "mdro_risk_factors": "Not applicable (antibiotics not indicated for viral URI)"
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "antibiotics_not_indicated": "Antibiotics are NOT indicated for viral URI. 90-98% of acute rhinosinusitis is viral and self-limited. Antibiotics do NOT reduce duration or severity of viral URI",
+            "supportive_care": {"analgesics": "Acetaminophen or ibuprofen for pain and fever", "nasal_saline": "Nasal saline irrigation or spray (most effective symptomatic treatment). Use 2-3 times daily", "decongestants": "Oral decongestants (pseudoephedrine 30-60mg PO q4-6h) or nasal decongestants (oxymetazoline spray, max 3 days to avoid rebound congestion)", "antihistamines": "First-generation antihistamines (diphenhydramine, chlorpheniramine) may reduce rhinorrhea but cause sedation. NOT recommended for viral URI", "intranasal_corticosteroids": "Mometasone or fluticasone nasal spray may reduce symptoms. Use 1-2 sprays per nostril daily", "hydration": "Drink plenty of fluids", "humidification": "Cool mist humidifier"},
+            "antiviral_therapy": {"influenza": "Oseltamivir 75mg PO BID x 5 days if influenza confirmed and within 48 hours of symptom onset", "covid_19": "Consider nirmatrelvir-ritonavir (Paxlovid) if high-risk and within 5 days of symptom onset"},
+            "not_recommended": {"antibiotics": "NOT indicated for viral URI (no benefit, risk of side effects and resistance)", "zinc": "Insufficient evidence. May reduce duration by 1-2 days if started within 24 hours", "vitamin_c": "No benefit for treatment (may reduce duration by 8% if taken prophylactically)", "echinacea": "No benefit"}
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive Therapy",
+          "content": {
+            "viral_uri": {"treatment": "Supportive care only. Nasal saline irrigation, analgesics, decongestants (short-term), intranasal corticosteroids. Symptoms resolve in 7-10 days", "notes": "Antibiotics NOT indicated. 90-98% of acute rhinosinusitis is viral"},
+            "progression_to_bacterial_sinusitis": {"criteria": "Persistent symptoms ≥10 days without improvement, severe symptoms ≥3-4 days (high fever ≥39°C, purulent discharge, facial pain), or worsening after initial improvement", "treatment": "See Acute Bacterial Rhinosinusitis condition. First-line: Amoxicillin-clavulanate 875mg PO BID x 5-7 days"},
+            "influenza": {"treatment": "Oseltamivir 75mg PO BID x 5 days (if within 48 hours of symptom onset)", "notes": "Reduces duration by 1-2 days if started early"},
+            "covid_19": {"treatment": "Nirmatrelvir-ritonavir (Paxlovid) 300mg/100mg PO BID x 5 days if high-risk and within 5 days of symptom onset", "notes": "See COVID-19 Upper Respiratory condition for details"}
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration",
+          "content": {
+            "typical_course": "Symptoms peak at 2-3 days, then gradually improve. Most patients recover in 7-10 days. Cough may persist for 2-3 weeks",
+            "when_to_consider_antibiotics": "If symptoms persist ≥10 days without improvement, severe symptoms ≥3-4 days, or worsening after initial improvement (suggests bacterial sinusitis)",
+            "monitoring_parameters": ["Symptom progression (should improve by day 7-10)", "Development of severe symptoms (high fever, severe facial pain, visual changes)", "Worsening after initial improvement (double sickening)"],
+            "when_to_return": ["Symptoms persist >10 days without improvement", "Severe symptoms (high fever ≥39°C, severe facial pain, purulent discharge)", "Worsening after initial improvement", "Visual changes or periorbital swelling", "Severe headache or neurologic symptoms", "Immunocompromised"]
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Populations",
+          "content": {
+            "children": {"notes": "Viral URI very common in children (6-8 episodes per year). Symptoms similar to adults. Avoid aspirin (Reye syndrome risk). Avoid cough and cold medications in children <4 years (FDA warning). Nasal saline and supportive care are mainstays"},
+            "immunocompromised": {"notes": "Higher risk for progression to bacterial or fungal sinusitis. Lower threshold for imaging (CT sinus) and ENT consultation. Consider antibiotics if symptoms persist >7 days. Fungal sinusitis (Aspergillus, Mucor) can be life-threatening in neutropenic patients"},
+            "pregnancy": {"notes": "Viral URI common during pregnancy. Supportive care safe. Acetaminophen safe for fever/pain. Avoid NSAIDs in third trimester. Nasal saline irrigation safe. Pseudoephedrine: avoid in first trimester (possible association with gastroschisis). Intranasal corticosteroids (budesonide, mometasone) are Category B"},
+            "elderly": {"notes": "Higher risk for complications (pneumonia, exacerbation of COPD/CHF). Monitor closely. Ensure adequate hydration. Consider influenza and COVID-19 testing"},
+            "asthma_copd": {"notes": "Viral URI can trigger asthma exacerbation or AECOPD. Ensure inhaler technique optimized. Consider short course of oral corticosteroids if exacerbation. Monitor for bacterial superinfection"}
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Antimicrobial Stewardship",
+          "content": {
+            "antibiotics_not_indicated": "Viral URI is the MOST COMMON reason for inappropriate antibiotic prescribing. 90-98% of acute rhinosinusitis is viral. Antibiotics do NOT reduce duration or severity. Avoid unnecessary antibiotic use",
+            "patient_education": ["Your symptoms are caused by a virus, not bacteria", "Antibiotics do NOT help viral infections and can cause side effects", "Symptoms will improve on their own in 7-10 days", "Use nasal saline irrigation, pain relievers, and decongestants for symptom relief", "Return if symptoms persist >10 days, severe symptoms develop, or worsening after initial improvement", "Prevent spread: Hand hygiene, cover coughs/sneezes, avoid close contact when sick"],
+            "when_antibiotics_appropriate": ["Symptoms persist ≥10 days without improvement (suggests bacterial sinusitis)", "Severe symptoms ≥3-4 days (high fever ≥39°C, purulent discharge, severe facial pain)", "Worsening after initial improvement (double sickening)"],
+            "prevention": ["Hand hygiene (most important!)", "Avoid close contact with sick individuals", "Influenza and COVID-19 vaccination", "Avoid smoking and secondhand smoke", "Adequate sleep and nutrition"]
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {"label": "CDC - Sinus Infection (Sinusitis): When Antibiotics Aren't Needed", "url": "https://www.cdc.gov/antibiotic-use/sinus-infection.html"},
+            {"label": "Rosenfeld RM, et al. Clinical Practice Guideline (Update): Adult Sinusitis. Otolaryngol Head Neck Surg (2015)", "url": "https://journals.sagepub.com/doi/10.1177/0194599815572097"},
+            {"label": "Wald ER, et al. Clinical Practice Guideline for the Diagnosis and Management of Acute Bacterial Sinusitis in Children. Pediatrics (2013)", "url": "https://publications.aap.org/pediatrics/article/132/1/e262/31426"}
+          ]
+        }
+      }
+    }
+  ]
+}
+

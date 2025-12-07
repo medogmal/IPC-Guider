@@ -1,0 +1,1792 @@
+{
+  "version": 1,
+  "updatedAt": "2025-11-25T05:00:00Z",
+  "id": "sexually-transmitted-infections",
+  "name": "Sexually Transmitted Infections (STI)",
+  "description": "Bacterial, viral, and parasitic sexually transmitted infections including gonorrhea, chlamydia, syphilis, herpes, HPV, and pelvic inflammatory disease",
+  "icon": "favorite_border",
+  "color": "#E91E63",
+  "conditions": [
+    {
+      "id": "gonorrhea-urogenital",
+      "name": "Gonorrhea (Urogenital)",
+      "synonyms": [
+        "gonococcal infection",
+        "GC",
+        "Neisseria gonorrhoeae"
+      ],
+      "icd10": [
+        "A54.0",
+        "A54.00",
+        "A54.01",
+        "A54.1",
+        "A54.2"
+      ],
+      "severity": [
+        "mild",
+        "moderate"
+      ],
+      "shortDescription": "Bacterial STI caused by Neisseria gonorrhoeae requiring dual therapy with ceftriaxone plus azithromycin or doxycycline",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Bacterial sexually transmitted infection caused by Neisseria gonorrhoeae (Gram-negative diplococci). Second most common bacterial STI in US (1.6 million cases annually). Increasing cephalosporin resistance (5-10% reduced susceptibility). Complications: Pelvic inflammatory disease (PID 10-20% of women), epididymitis (men), disseminated gonococcal infection (DGI 0.5-3%), infertility. Co-infection with Chlamydia trachomatis common (30-50%).",
+            "clinical_presentation": "Men: Urethritis (dysuria, purulent urethral discharge, 80-90% symptomatic within 2-5 days). Women: Cervicitis (mucopurulent cervical discharge, dysuria, intermenstrual bleeding, 50-70% asymptomatic). Pharyngeal: Sore throat (90% asymptomatic). Rectal: Proctitis (anal discharge, pain, bleeding, 90% asymptomatic). Physical exam: Purulent discharge, cervical motion tenderness (PID), testicular tenderness (epididymitis).",
+            "diagnostic_criteria": "NAAT (nucleic acid amplification test) from urine (men), endocervical swab (women), pharyngeal swab, or rectal swab. Culture if: Suspected treatment failure, suspected resistance, or medicolegal cases (sexual assault). Test of cure (TOC) 7-14 days after treatment if: Pharyngeal infection, suspected treatment failure, or pregnancy.",
+            "risk_factors": [
+              "Age 15-24 years (highest incidence)",
+              "Multiple sexual partners",
+              "New sexual partner in past 60 days",
+              "Inconsistent condom use",
+              "Men who have sex with men (MSM)",
+              "History of prior STI",
+              "Sex work or exchange sex for drugs/money"
+            ],
+            "red_flags": [
+              "Disseminated gonococcal infection (DGI) - fever, polyarthralgia, tenosynovitis, petechial or pustular skin lesions, requires IV antibiotics + hospitalization",
+              "Pelvic inflammatory disease (PID) - lower abdominal pain, cervical motion tenderness, fever, requires empiric treatment for gonorrhea + chlamydia + anaerobes",
+              "Epididymitis - testicular pain, swelling, fever, requires empiric treatment for gonorrhea + chlamydia",
+              "Gonococcal conjunctivitis - purulent eye discharge, requires urgent ophthalmology referral + IV ceftriaxone",
+              "Neonatal gonococcal ophthalmia - requires IV ceftriaxone + ophthalmology referral (can cause blindness)"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Test if: Symptomatic (dysuria, discharge, pelvic pain), sexual contact with infected partner, or screening (sexually active women <25 years, MSM annually, pregnancy). Test all anatomic sites of exposure (urogenital, pharyngeal, rectal).",
+            "essential_tests": [
+              "NAAT (nucleic acid amplification test): First-void urine (men), endocervical swab (women), pharyngeal swab, rectal swab. Sensitivity 95-99%, specificity 99%. Preferred test (more sensitive than culture).",
+              "Gram stain (urethral discharge): Gram-negative intracellular diplococci. Sensitivity 90-95% (men), 50-70% (women). Use for immediate diagnosis in symptomatic men.",
+              "Test for co-infection: Chlamydia NAAT (co-infection 30-50%), HIV, syphilis (RPR or VDRL), hepatitis B and C (if MSM or high-risk)."
+            ],
+            "conditional_tests": [
+              "Culture: If suspected treatment failure, suspected resistance, or medicolegal cases (sexual assault). Thayer-Martin agar (chocolate agar with antibiotics). Sensitivity 80-90%. Allows antimicrobial susceptibility testing.",
+              "Test of cure (TOC): NAAT 7-14 days after treatment if pharyngeal infection, suspected treatment failure, or pregnancy. Do NOT test <7 days (false positive from dead organisms).",
+              "Disseminated gonococcal infection (DGI): Blood cultures (positive 20-30%), synovial fluid culture (positive 50%), skin lesion culture (positive 5%)."
+            ],
+            "when_not_to_test": "Do NOT routinely test of cure for uncomplicated urogenital gonorrhea (unless pharyngeal, treatment failure, or pregnancy). Do NOT test <7 days after treatment (false positive).",
+            "turnaround_time": "NAAT: 24-48 hours. Gram stain: <1 hour. Culture: 48-72 hours. Antimicrobial susceptibility testing: 72-96 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Neisseria gonorrhoeae (Gram-negative diplococci, oxidase-positive). Obligate human pathogen. Transmitted via sexual contact (urogenital, pharyngeal, rectal). Incubation period 2-5 days (range 1-14 days).",
+            "pathogenesis": "Attaches to columnar epithelium (urethra, endocervix, rectum, pharynx, conjunctiva) → local inflammation → purulent discharge. Can ascend to upper genital tract → PID (women) or epididymitis (men). Hematogenous dissemination → DGI (0.5-3%, arthritis-dermatitis syndrome).",
+            "resistance_patterns": {
+              "cephalosporin_resistance": "Ceftriaxone: Reduced susceptibility 5-10% (MIC 0.125-0.25 mg/L), resistance rare (<1%, MIC ≥0.5 mg/L). Cefixime: Reduced susceptibility 10-20%, treatment failures reported (no longer recommended as first-line).",
+              "fluoroquinolone_resistance": "Ciprofloxacin: Resistance 30-40% in US, >90% in Asia. Do NOT use fluoroquinolones for gonorrhea (CDC 2007).",
+              "azithromycin_resistance": "Azithromycin: Resistance 5-10% (MIC ≥2 mg/L), high-level resistance <1% (MIC ≥256 mg/L). Do NOT use azithromycin monotherapy (rapid resistance development).",
+              "penicillin_resistance": "Penicillin: Resistance 30-40% (beta-lactamase producing or chromosomally mediated). Do NOT use penicillin for gonorrhea."
+            },
+            "timing_critical": "Treat immediately after diagnosis (do NOT wait for culture results). Dual therapy (ceftriaxone + azithromycin or doxycycline) required to prevent resistance and treat co-infection with chlamydia."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line_uncomplicated": "Ceftriaxone 500mg IM x1 (if weight ≥150 kg, use 1g IM x1) + Doxycycline 100mg PO BID x 7 days (preferred for chlamydia co-treatment, CDC 2021). Alternative: Ceftriaxone 500mg IM x1 + Azithromycin 1g PO x1 (if doxycycline contraindicated).",
+            "pharyngeal_gonorrhea": "Ceftriaxone 500mg IM x1 + Doxycycline 100mg PO BID x 7 days. Pharyngeal gonorrhea harder to eradicate (ceftriaxone 500mg cure rate 97-99%, cefixime cure rate 80-90%). Test of cure (TOC) 7-14 days after treatment REQUIRED.",
+            "rectal_gonorrhea": "Ceftriaxone 500mg IM x1 + Doxycycline 100mg PO BID x 7 days. Same regimen as urogenital.",
+            "ceftriaxone_allergy": "Gentamicin 240mg IM x1 + Azithromycin 2g PO x1 (CDC 2021 alternative). Cure rate 95-98%. Test of cure (TOC) 7-14 days after treatment REQUIRED.",
+            "pregnancy": "Ceftriaxone 500mg IM x1 + Azithromycin 1g PO x1 (avoid doxycycline in pregnancy). Test of cure (TOC) 7-14 days after treatment REQUIRED. Treat sexual partners.",
+            "avoid_list": "Avoid fluoroquinolones (ciprofloxacin, resistance 30-40%). Avoid cefixime (oral cephalosporin, reduced susceptibility 10-20%, treatment failures reported). Avoid azithromycin monotherapy (rapid resistance development). Avoid penicillin (resistance 30-40%)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "ceftriaxone_susceptible": "Ceftriaxone 500mg IM x1 + Doxycycline 100mg PO BID x 7 days (preferred). Alternative: Ceftriaxone 500mg IM x1 + Azithromycin 1g PO x1.",
+            "ceftriaxone_reduced_susceptibility": "Ceftriaxone 1g IM x1 + Azithromycin 2g PO x1. Consult infectious disease specialist. Test of cure (TOC) 7-14 days after treatment REQUIRED. Report to CDC (ceftriaxone MIC ≥0.125 mg/L).",
+            "treatment_failure": "Persistent symptoms or positive NAAT 7-14 days after treatment. Causes: Reinfection (most common), resistance, non-adherence. Management: Repeat NAAT + culture with antimicrobial susceptibility testing. Treat with ceftriaxone 1g IM x1 + azithromycin 2g PO x1. Consult infectious disease specialist. Report to CDC.",
+            "disseminated_gonococcal_infection": "Ceftriaxone 1g IV q24h x 7-14 days (until 24-48 hours after clinical improvement, then switch to PO). Alternative: Ceftriaxone 1g IM q24h x 7-14 days. Hospitalization recommended. Arthrocentesis if septic arthritis (synovial fluid culture). Test for HIV, syphilis, hepatitis B and C.",
+            "gonococcal_conjunctivitis": "Ceftriaxone 1g IM x1 + Saline irrigation. Urgent ophthalmology referral (can cause corneal perforation). Test of cure (TOC) 7-14 days after treatment REQUIRED.",
+            "neonatal_gonococcal_ophthalmia": "Ceftriaxone 25-50mg/kg IV or IM x1 (max 125mg) + Saline irrigation. Urgent ophthalmology referral. Hospitalization. Test mother and treat sexual partners.",
+            "duration": "Uncomplicated urogenital, pharyngeal, rectal: Single dose ceftriaxone + 7 days doxycycline. DGI: 7-14 days IV, then switch to PO. Gonococcal meningitis: 10-14 days IV. Gonococcal endocarditis: 4-6 weeks IV."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "Uncomplicated urogenital, pharyngeal, rectal: Ceftriaxone 500mg IM x1 + Doxycycline 100mg PO BID x 7 days. DGI: 7-14 days IV, then switch to PO. Gonococcal meningitis: 10-14 days IV. Gonococcal endocarditis: 4-6 weeks IV.",
+            "monitoring": "Test of cure (TOC) 7-14 days after treatment if: Pharyngeal infection, suspected treatment failure, or pregnancy. Rescreen 3 months after treatment (reinfection rate 10-20%). Partner notification and treatment (all sexual partners in past 60 days).",
+            "stop_criteria": "Complete treatment even if symptoms resolve. Test of cure (TOC) negative. Sexual partners treated. Abstain from sexual activity x 7 days after treatment and until partners treated."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "pregnancy": "Ceftriaxone 500mg IM x1 + Azithromycin 1g PO x1 (avoid doxycycline). Test of cure (TOC) 7-14 days after treatment REQUIRED. Rescreen in third trimester. Treat sexual partners. Neonatal prophylaxis: Erythromycin 0.5% ophthalmic ointment x1 (prevents gonococcal ophthalmia).",
+            "msm": "Screen annually (urogenital, pharyngeal, rectal). Higher risk of pharyngeal and rectal gonorrhea (often asymptomatic). Test for HIV, syphilis, hepatitis B and C. PrEP (pre-exposure prophylaxis) for HIV if high-risk.",
+            "hiv_coinfection": "Same treatment regimen. Higher risk of treatment failure and DGI. Test of cure (TOC) 7-14 days after treatment REQUIRED. Rescreen 3 months after treatment.",
+            "pelvic_inflammatory_disease": "Empiric treatment for gonorrhea + chlamydia + anaerobes. Ceftriaxone 500mg IM x1 + Doxycycline 100mg PO BID x 14 days + Metronidazole 500mg PO BID x 14 days. Hospitalize if: Severe, pregnant, tubo-ovarian abscess, or failed outpatient therapy.",
+            "epididymitis": "Empiric treatment for gonorrhea + chlamydia. Ceftriaxone 500mg IM x1 + Doxycycline 100mg PO BID x 10 days. Supportive care: NSAIDs, scrotal elevation, ice packs. Ultrasound if: Severe, concern for testicular torsion, or abscess.",
+            "sexual_assault": "Empiric treatment for gonorrhea + chlamydia + trichomoniasis. Ceftriaxone 500mg IM x1 + Azithromycin 1g PO x1 + Metronidazole 2g PO x1. Emergency contraception. HIV PEP (post-exposure prophylaxis) if high-risk. Hepatitis B vaccine if not immune. Follow-up testing 2 weeks, 6 weeks, 3 months, 6 months."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Dual therapy (ceftriaxone + doxycycline or azithromycin) required to prevent resistance and treat chlamydia co-infection (30-50%)",
+              "Do NOT use fluoroquinolones (ciprofloxacin, resistance 30-40%)",
+              "Do NOT use cefixime (oral cephalosporin, reduced susceptibility 10-20%, treatment failures reported)",
+              "Do NOT use azithromycin monotherapy (rapid resistance development)",
+              "Test of cure (TOC) 7-14 days after treatment if pharyngeal infection, suspected treatment failure, or pregnancy"
+            ],
+            "timeout_checklist": [
+              "Is dual therapy prescribed? (Ceftriaxone 500mg IM x1 + Doxycycline 100mg PO BID x 7 days)",
+              "Is chlamydia co-treatment included? (Doxycycline 100mg PO BID x 7 days OR Azithromycin 1g PO x1)",
+              "Are all anatomic sites of exposure tested? (Urogenital, pharyngeal, rectal)",
+              "Is test of cure (TOC) indicated? (Pharyngeal infection, suspected treatment failure, or pregnancy)",
+              "Are sexual partners notified and treated? (All partners in past 60 days)",
+              "Is patient counseled to abstain from sex x 7 days after treatment and until partners treated?",
+              "Is rescreen arranged? (3 months after treatment, reinfection rate 10-20%)",
+              "Is HIV, syphilis, hepatitis B and C testing offered?"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT routinely test of cure for uncomplicated urogenital gonorrhea (unless pharyngeal, treatment failure, or pregnancy). Do NOT test <7 days after treatment (false positive from dead organisms). Do NOT use fluoroquinolones, cefixime, azithromycin monotherapy, or penicillin.",
+            "diagnostic_stewardship": "NAAT preferred (more sensitive than culture). Culture if suspected treatment failure, suspected resistance, or medicolegal cases. Test all anatomic sites of exposure (urogenital, pharyngeal, rectal). Test for co-infection (chlamydia, HIV, syphilis, hepatitis B and C).",
+            "prevention": "Condom use (reduces transmission by 80-90%). Screen sexually active women <25 years annually. Screen MSM annually (urogenital, pharyngeal, rectal). Partner notification and treatment (all partners in past 60 days). Abstain from sex x 7 days after treatment and until partners treated."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "CDC Sexually Transmitted Infections Treatment Guidelines (2021)",
+              "url": "https://www.cdc.gov/std/treatment-guidelines/default.htm"
+            },
+            {
+              "label": "CDC Gonorrhea Treatment and Care (2024)",
+              "url": "https://www.cdc.gov/gonorrhea/hcp/treatment.html"
+            },
+            {
+              "label": "WHO Guidelines for the Treatment of Neisseria gonorrhoeae (2024)",
+              "url": "https://www.who.int/publications/i/item/9789240029415"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "chlamydia-urogenital",
+      "name": "Chlamydia (Urogenital)",
+      "synonyms": [
+        "chlamydial infection",
+        "CT",
+        "Chlamydia trachomatis"
+      ],
+      "icd10": [
+        "A56.0",
+        "A56.00",
+        "A56.01",
+        "A56.2"
+      ],
+      "severity": [
+        "mild",
+        "moderate"
+      ],
+      "shortDescription": "Most common bacterial STI requiring doxycycline 100mg PO BID x 7 days or azithromycin 1g PO x1",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Bacterial sexually transmitted infection caused by Chlamydia trachomatis (obligate intracellular bacterium). Most common bacterial STI in US (4 million cases annually). Complications: Pelvic inflammatory disease (PID 10-20% of women), ectopic pregnancy (6-fold increased risk), infertility (tubal factor infertility 10-20%), epididymitis (men), reactive arthritis (1-3%). Co-infection with Neisseria gonorrhoeae common (30-50%).",
+            "clinical_presentation": "Men: Urethritis (dysuria, clear or white urethral discharge, 50% asymptomatic). Women: Cervicitis (mucopurulent cervical discharge, dysuria, intermenstrual bleeding, 70-80% asymptomatic). Rectal: Proctitis (anal discharge, pain, bleeding, 90% asymptomatic). Pharyngeal: Rare (<5%). Physical exam: Mucopurulent discharge, cervical friability, cervical motion tenderness (PID), testicular tenderness (epididymitis).",
+            "diagnostic_criteria": "NAAT (nucleic acid amplification test) from urine (men), endocervical swab (women), or rectal swab. Test of cure (TOC) 3-4 weeks after treatment if: Pregnancy, suspected non-adherence, or persistent symptoms. Rescreen 3 months after treatment (reinfection rate 10-20%).",
+            "risk_factors": [
+              "Age 15-24 years (highest incidence, 60% of cases)",
+              "Multiple sexual partners",
+              "New sexual partner in past 60 days",
+              "Inconsistent condom use",
+              "History of prior STI",
+              "Sex work or exchange sex for drugs/money"
+            ],
+            "red_flags": [
+              "Pelvic inflammatory disease (PID) - lower abdominal pain, cervical motion tenderness, fever, requires empiric treatment for chlamydia + gonorrhea + anaerobes",
+              "Epididymitis - testicular pain, swelling, fever, requires empiric treatment for chlamydia + gonorrhea",
+              "Reactive arthritis (Reiter syndrome) - arthritis, urethritis, conjunctivitis, requires NSAIDs + doxycycline",
+              "Lymphogranuloma venereum (LGV) - painless genital ulcer → inguinal lymphadenopathy → proctocolitis, requires doxycycline 100mg BID x 21 days",
+              "Neonatal chlamydial conjunctivitis or pneumonia - requires erythromycin 50mg/kg/day PO divided QID x 14 days"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Test if: Symptomatic (dysuria, discharge, pelvic pain), sexual contact with infected partner, or screening (sexually active women <25 years annually, pregnant women, MSM annually). Test all anatomic sites of exposure (urogenital, rectal).",
+            "essential_tests": [
+              "NAAT (nucleic acid amplification test): First-void urine (men), endocervical swab (women), rectal swab. Sensitivity 95-99%, specificity 99%. Preferred test.",
+              "Test for co-infection: Gonorrhea NAAT (co-infection 30-50%), HIV, syphilis (RPR or VDRL), hepatitis B and C (if MSM or high-risk)."
+            ],
+            "conditional_tests": [
+              "Test of cure (TOC): NAAT 3-4 weeks after treatment if pregnancy, suspected non-adherence, or persistent symptoms. Do NOT test <3 weeks (false positive from dead organisms).",
+              "Lymphogranuloma venereum (LGV): If inguinal lymphadenopathy or proctocolitis, send rectal swab for LGV-specific NAAT (serovars L1, L2, L3). Requires doxycycline 100mg BID x 21 days (longer than non-LGV chlamydia)."
+            ],
+            "when_not_to_test": "Do NOT routinely test of cure for uncomplicated chlamydia (unless pregnancy, non-adherence, or persistent symptoms). Do NOT test <3 weeks after treatment (false positive). Culture NOT available (obligate intracellular bacterium).",
+            "turnaround_time": "NAAT: 24-48 hours. LGV-specific NAAT: 3-5 days."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Chlamydia trachomatis (obligate intracellular bacterium, Gram-negative). Serovars D-K: Urogenital infections. Serovars L1-L3: Lymphogranuloma venereum (LGV). Transmitted via sexual contact (urogenital, rectal). Incubation period 7-14 days (range 5-21 days).",
+            "pathogenesis": "Attaches to columnar epithelium (urethra, endocervix, rectum) → intracellular replication → local inflammation → mucopurulent discharge. Can ascend to upper genital tract → PID (women) or epididymitis (men). Chronic infection → tubal scarring → ectopic pregnancy or infertility. LGV: Painless genital ulcer → inguinal lymphadenopathy → proctocolitis (if rectal).",
+            "resistance_patterns": {
+              "no_resistance": "Chlamydia trachomatis: NO clinically significant resistance to doxycycline or azithromycin. Treatment failures rare (<5%, usually due to reinfection or non-adherence)."
+            },
+            "timing_critical": "Treat immediately after diagnosis. Doxycycline 100mg PO BID x 7 days preferred (cure rate 97-99%, better than azithromycin 1g x1 cure rate 95-97%). Abstain from sex x 7 days after treatment and until partners treated."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": "Doxycycline 100mg PO BID x 7 days (preferred, cure rate 97-99%, CDC 2021). Alternative: Azithromycin 1g PO x1 (cure rate 95-97%, use if adherence concern or doxycycline contraindicated).",
+            "pregnancy": "Azithromycin 1g PO x1 (preferred, avoid doxycycline). Alternative: Amoxicillin 500mg PO TID x 7 days (cure rate 90-95%). Test of cure (TOC) 3-4 weeks after treatment REQUIRED. Rescreen in third trimester. Treat sexual partners.",
+            "rectal_chlamydia": "Doxycycline 100mg PO BID x 7 days (preferred). Alternative: Azithromycin 1g PO x1. Same regimen as urogenital.",
+            "lymphogranuloma_venereum": "Doxycycline 100mg PO BID x 21 days (longer than non-LGV chlamydia). Alternative: Azithromycin 1g PO weekly x 3 weeks. Requires LGV-specific NAAT (serovars L1, L2, L3). Inguinal lymphadenopathy or proctocolitis.",
+            "neonatal_chlamydial_conjunctivitis_or_pneumonia": "Erythromycin 50mg/kg/day PO divided QID x 14 days. Alternative: Azithromycin 20mg/kg PO daily x 3 days. Test mother and treat sexual partners. Ophthalmology referral if conjunctivitis.",
+            "avoid_list": "Avoid fluoroquinolones (ofloxacin, levofloxacin, NOT recommended by CDC 2021). Avoid erythromycin in adults (GI side effects, poor adherence)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "chlamydia_trachomatis_serovars_d_k": "Doxycycline 100mg PO BID x 7 days (preferred, cure rate 97-99%). Alternative: Azithromycin 1g PO x1 (cure rate 95-97%).",
+            "lymphogranuloma_venereum_serovars_l1_l3": "Doxycycline 100mg PO BID x 21 days (longer than non-LGV chlamydia). Alternative: Azithromycin 1g PO weekly x 3 weeks.",
+            "treatment_failure": "Persistent symptoms or positive NAAT 3-4 weeks after treatment. Causes: Reinfection (most common), non-adherence, LGV (requires 21 days doxycycline). Management: Repeat NAAT (including LGV-specific NAAT if rectal). Retreat with doxycycline 100mg BID x 7 days (or 21 days if LGV). Treat sexual partners.",
+            "pelvic_inflammatory_disease": "Empiric treatment for chlamydia + gonorrhea + anaerobes. Ceftriaxone 500mg IM x1 + Doxycycline 100mg PO BID x 14 days + Metronidazole 500mg PO BID x 14 days. Hospitalize if: Severe, pregnant, tubo-ovarian abscess, or failed outpatient therapy.",
+            "epididymitis": "Empiric treatment for chlamydia + gonorrhea. Ceftriaxone 500mg IM x1 + Doxycycline 100mg PO BID x 10 days. Supportive care: NSAIDs, scrotal elevation, ice packs. Ultrasound if: Severe, concern for testicular torsion, or abscess.",
+            "reactive_arthritis": "Arthritis, urethritis, conjunctivitis (Reiter syndrome). NSAIDs + Doxycycline 100mg PO BID x 7 days (treat chlamydia even if NAAT negative, may be triggered by prior infection). Rheumatology referral if severe or persistent.",
+            "duration": "Uncomplicated urogenital or rectal: Doxycycline 100mg BID x 7 days OR Azithromycin 1g x1. LGV: Doxycycline 100mg BID x 21 days. PID: Doxycycline 100mg BID x 14 days. Epididymitis: Doxycycline 100mg BID x 10 days."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "Uncomplicated urogenital or rectal: Doxycycline 100mg PO BID x 7 days (preferred) OR Azithromycin 1g PO x1. LGV: Doxycycline 100mg BID x 21 days. PID: Doxycycline 100mg BID x 14 days. Epididymitis: Doxycycline 100mg BID x 10 days.",
+            "monitoring": "Test of cure (TOC) 3-4 weeks after treatment if: Pregnancy, suspected non-adherence, or persistent symptoms. Rescreen 3 months after treatment (reinfection rate 10-20%). Partner notification and treatment (all sexual partners in past 60 days).",
+            "stop_criteria": "Complete treatment even if symptoms resolve. Test of cure (TOC) negative (if indicated). Sexual partners treated. Abstain from sexual activity x 7 days after treatment and until partners treated."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "pregnancy": "Azithromycin 1g PO x1 (preferred, avoid doxycycline). Alternative: Amoxicillin 500mg PO TID x 7 days. Test of cure (TOC) 3-4 weeks after treatment REQUIRED. Rescreen in third trimester. Treat sexual partners. Neonatal prophylaxis: Erythromycin 0.5% ophthalmic ointment x1 (prevents chlamydial conjunctivitis).",
+            "msm": "Screen annually (urogenital, rectal). Higher risk of rectal chlamydia (often asymptomatic). Test for HIV, syphilis, hepatitis B and C. PrEP (pre-exposure prophylaxis) for HIV if high-risk.",
+            "hiv_coinfection": "Same treatment regimen. Test of cure (TOC) 3-4 weeks after treatment REQUIRED. Rescreen 3 months after treatment.",
+            "lymphogranuloma_venereum": "Serovars L1, L2, L3. Painless genital ulcer → inguinal lymphadenopathy (buboes) → proctocolitis (if rectal). Doxycycline 100mg PO BID x 21 days (longer than non-LGV chlamydia). Requires LGV-specific NAAT. More common in MSM. Buboes may require aspiration (do NOT incise).",
+            "reactive_arthritis": "Arthritis, urethritis, conjunctivitis (Reiter syndrome). Triggered by chlamydia infection (1-3% of cases). NSAIDs + Doxycycline 100mg PO BID x 7 days (treat chlamydia even if NAAT negative). Rheumatology referral if severe or persistent. HLA-B27 positive in 60-80%.",
+            "sexual_assault": "Empiric treatment for chlamydia + gonorrhea + trichomoniasis. Ceftriaxone 500mg IM x1 + Azithromycin 1g PO x1 + Metronidazole 2g PO x1. Emergency contraception. HIV PEP (post-exposure prophylaxis) if high-risk. Hepatitis B vaccine if not immune. Follow-up testing 2 weeks, 6 weeks, 3 months, 6 months."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Doxycycline 100mg PO BID x 7 days preferred (cure rate 97-99%, better than azithromycin 1g x1 cure rate 95-97%)",
+              "Do NOT routinely test of cure for uncomplicated chlamydia (unless pregnancy, non-adherence, or persistent symptoms)",
+              "Do NOT test <3 weeks after treatment (false positive from dead organisms)",
+              "Rescreen 3 months after treatment (reinfection rate 10-20%)"
+            ],
+            "timeout_checklist": [
+              "Is doxycycline 100mg PO BID x 7 days prescribed? (Preferred, cure rate 97-99%)",
+              "Is azithromycin 1g PO x1 used only if adherence concern or doxycycline contraindicated?",
+              "Is test of cure (TOC) indicated? (Pregnancy, non-adherence, or persistent symptoms)",
+              "Are sexual partners notified and treated? (All partners in past 60 days)",
+              "Is patient counseled to abstain from sex x 7 days after treatment and until partners treated?",
+              "Is rescreen arranged? (3 months after treatment, reinfection rate 10-20%)",
+              "Is HIV, syphilis, hepatitis B and C testing offered?",
+              "Is gonorrhea co-treatment included if indicated? (Co-infection 30-50%)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT routinely test of cure for uncomplicated chlamydia (unless pregnancy, non-adherence, or persistent symptoms). Do NOT test <3 weeks after treatment (false positive). Do NOT use fluoroquinolones (ofloxacin, levofloxacin, NOT recommended by CDC 2021).",
+            "diagnostic_stewardship": "NAAT preferred. Test all anatomic sites of exposure (urogenital, rectal). Test for co-infection (gonorrhea, HIV, syphilis, hepatitis B and C). LGV-specific NAAT if inguinal lymphadenopathy or proctocolitis.",
+            "prevention": "Condom use (reduces transmission by 80-90%). Screen sexually active women <25 years annually. Screen MSM annually (urogenital, rectal). Partner notification and treatment (all partners in past 60 days). Abstain from sex x 7 days after treatment and until partners treated."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "CDC Sexually Transmitted Infections Treatment Guidelines (2021)",
+              "url": "https://www.cdc.gov/std/treatment-guidelines/default.htm"
+            },
+            {
+              "label": "CDC Chlamydia Treatment and Care (2024)",
+              "url": "https://www.cdc.gov/chlamydia/hcp/treatment.html"
+            },
+            {
+              "label": "WHO Guidelines for the Treatment of Chlamydia trachomatis (2024)",
+              "url": "https://www.who.int/publications/i/item/9789240029415"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "syphilis",
+      "name": "Syphilis (Primary, Secondary, Latent)",
+      "synonyms": [
+        "lues",
+        "great imitator",
+        "Treponema pallidum"
+      ],
+      "icd10": [
+        "A51.0",
+        "A51.1",
+        "A51.2",
+        "A51.3",
+        "A51.4",
+        "A51.5",
+        "A52.0",
+        "A52.1",
+        "A52.2",
+        "A52.3",
+        "A53.0",
+        "A53.9"
+      ],
+      "severity": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "shortDescription": "Bacterial STI caused by Treponema pallidum requiring benzathine penicillin G 2.4 million units IM x1 (primary/secondary/early latent) or x3 weekly (late latent/tertiary)",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Bacterial sexually transmitted infection caused by Treponema pallidum (spirochete). Incidence increasing (176,000 cases in US 2021, 74% increase since 2017). Stages: Primary (chancre), Secondary (rash, lymphadenopathy), Latent (asymptomatic), Tertiary (cardiovascular, gummatous, neurosyphilis). Complications: Neurosyphilis (5-10% if untreated), cardiovascular syphilis (10-30% if untreated), congenital syphilis (if untreated in pregnancy).",
+            "clinical_presentation": "Primary (3-90 days after exposure, median 21 days): Painless genital ulcer (chancre), firm, indurated, clean base, regional lymphadenopathy. Secondary (4-10 weeks after chancre): Diffuse maculopapular rash (palms and soles), condyloma lata (moist wart-like lesions), mucous patches, fever, lymphadenopathy, alopecia. Latent: Asymptomatic (positive serology). Tertiary (10-30 years): Gummas (granulomatous lesions), aortitis, neurosyphilis (tabes dorsalis, general paresis).",
+            "diagnostic_criteria": "Nontreponemal test (RPR or VDRL, quantitative titer) + Treponemal test (FTA-ABS, TP-PA, or EIA). Positive nontreponemal + positive treponemal = active or prior syphilis (titer ≥1:4 suggests active). Darkfield microscopy or PCR of chancre fluid (if available). Neurosyphilis: CSF VDRL (specific but insensitive 30-70%), CSF pleocytosis (WBC >5), CSF protein >45 mg/dL.",
+            "risk_factors": [
+              "Men who have sex with men (MSM, 50-60% of cases)",
+              "Multiple sexual partners",
+              "HIV coinfection (30-50% of MSM with syphilis)",
+              "History of prior STI",
+              "Sex work or exchange sex for drugs/money",
+              "Incarceration"
+            ],
+            "red_flags": [
+              "Neurosyphilis - headache, altered mental status, cranial nerve palsies, stroke, meningitis, requires IV penicillin G 18-24 million units/day x 10-14 days + LP",
+              "Ocular syphilis - uveitis, optic neuritis, vision loss, requires IV penicillin G + ophthalmology referral",
+              "Otic syphilis - hearing loss, tinnitus, vertigo, requires IV penicillin G + ENT referral",
+              "Congenital syphilis - if mother untreated or inadequately treated, requires IV penicillin G 50,000 units/kg q12h x 10 days + full evaluation",
+              "Jarisch-Herxheimer reaction - fever, chills, myalgia, hypotension within 24 hours of treatment (10-25% of primary/secondary syphilis), self-limited, supportive care"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Test if: Genital ulcer, rash (especially palms and soles), sexual contact with infected partner, or screening (MSM annually, pregnant women, HIV-positive, high-risk). Test for co-infection (HIV, gonorrhea, chlamydia, hepatitis B and C).",
+            "essential_tests": [
+              "Nontreponemal test (RPR or VDRL): Quantitative titer. Positive in 78% of primary, 100% of secondary, 95% of latent. Titer ≥1:4 suggests active infection. Titer decreases with treatment (4-fold decrease in 6-12 months indicates cure). False positive: Pregnancy, autoimmune disease, infection, malignancy (titer usually <1:8).",
+              "Treponemal test (FTA-ABS, TP-PA, or EIA): Confirms syphilis. Remains positive for life (even after treatment). Use to confirm positive nontreponemal test.",
+              "Darkfield microscopy or PCR: If chancre present, scrape lesion and examine for spirochetes. Specific but requires expertise."
+            ],
+            "conditional_tests": [
+              "Lumbar puncture (LP): If neurosyphilis suspected (headache, altered mental status, cranial nerve palsies, stroke, meningitis), ocular syphilis, otic syphilis, tertiary syphilis, HIV coinfection with RPR ≥1:32, or treatment failure. CSF VDRL (specific but insensitive 30-70%), CSF pleocytosis (WBC >5), CSF protein >45 mg/dL.",
+              "HIV test: All patients with syphilis (co-infection 30-50% of MSM).",
+              "Pregnancy test: All women of childbearing age (congenital syphilis if untreated)."
+            ],
+            "when_not_to_test": "Do NOT use nontreponemal test alone (false positive). Do NOT use treponemal test alone (cannot distinguish active from prior infection). Do NOT test <3 weeks after exposure (window period, false negative).",
+            "turnaround_time": "RPR or VDRL: 1-2 hours. Treponemal test: 24-48 hours. Darkfield microscopy: <1 hour. PCR: 24-48 hours. CSF VDRL: 24-48 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Treponema pallidum (spirochete, Gram-negative, cannot be cultured). Transmitted via sexual contact (direct contact with chancre or rash), vertical transmission (mother to fetus), or blood transfusion (rare). Incubation period 10-90 days (median 21 days).",
+            "pathogenesis": "Primary: Spirochetes enter through mucosa or skin → local replication → chancre (painless ulcer) + regional lymphadenopathy. Secondary: Hematogenous dissemination → diffuse rash, lymphadenopathy, mucous patches, condyloma lata. Latent: Asymptomatic (spirochetes persist in tissues). Tertiary: Chronic inflammation → gummas, aortitis, neurosyphilis.",
+            "resistance_patterns": {
+              "no_resistance": "Treponema pallidum: NO resistance to penicillin (100% susceptible). Penicillin remains first-line therapy since 1940s."
+            },
+            "timing_critical": "Treat immediately after diagnosis. Benzathine penicillin G 2.4 million units IM x1 (primary, secondary, early latent <1 year) OR x3 weekly (late latent ≥1 year, tertiary). Neurosyphilis: IV penicillin G 18-24 million units/day x 10-14 days."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "primary_secondary_early_latent": "Benzathine penicillin G 2.4 million units IM x1 (single dose). Early latent: <1 year duration or acquired within past year. Cure rate >95%.",
+            "late_latent_tertiary": "Benzathine penicillin G 2.4 million units IM weekly x 3 doses (total 7.2 million units). Late latent: ≥1 year duration or unknown duration. Tertiary: Gummatous or cardiovascular syphilis (NOT neurosyphilis). Cure rate >90%.",
+            "neurosyphilis": "Aqueous crystalline penicillin G 18-24 million units/day IV (3-4 million units IV q4h OR continuous infusion) x 10-14 days. Alternative: Procaine penicillin G 2.4 million units IM daily + Probenecid 500mg PO QID x 10-14 days. Lumbar puncture (LP) required to confirm diagnosis. Repeat LP 6 months after treatment (CSF should normalize).",
+            "penicillin_allergy": "Doxycycline 100mg PO BID x 14 days (primary, secondary, early latent) OR x 28 days (late latent, tertiary). Alternative: Ceftriaxone 1-2g IV or IM daily x 10-14 days. Penicillin desensitization preferred if: Neurosyphilis, ocular syphilis, otic syphilis, or pregnancy (doxycycline and ceftriaxone NOT recommended).",
+            "pregnancy": "Benzathine penicillin G 2.4 million units IM x1 (primary, secondary, early latent) OR x3 weekly (late latent, tertiary). Penicillin desensitization if penicillin allergy (doxycycline and ceftriaxone contraindicated in pregnancy). Ultrasound to assess fetal infection. Treat before 28 weeks gestation to prevent congenital syphilis.",
+            "avoid_list": "Avoid azithromycin (resistance 20-30%, treatment failures reported). Avoid fluoroquinolones (NOT effective). Do NOT use doxycycline or ceftriaxone for neurosyphilis, ocular syphilis, otic syphilis, or pregnancy (penicillin desensitization required)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "primary_syphilis": "Benzathine penicillin G 2.4 million units IM x1. Cure rate >95%. RPR titer should decrease 4-fold in 6-12 months (e.g., 1:32 → 1:8).",
+            "secondary_syphilis": "Benzathine penicillin G 2.4 million units IM x1. Cure rate >95%. RPR titer should decrease 4-fold in 6-12 months. Jarisch-Herxheimer reaction common (10-25%, fever, chills, myalgia, hypotension within 24 hours, self-limited, supportive care).",
+            "early_latent_syphilis": "Benzathine penicillin G 2.4 million units IM x1. Early latent: <1 year duration or acquired within past year. Cure rate >95%.",
+            "late_latent_syphilis": "Benzathine penicillin G 2.4 million units IM weekly x 3 doses. Late latent: ≥1 year duration or unknown duration. Cure rate >90%. RPR titer may not decrease 4-fold (serologic cure less common in late latent).",
+            "tertiary_syphilis": "Gummatous or cardiovascular: Benzathine penicillin G 2.4 million units IM weekly x 3 doses. Neurosyphilis: Aqueous crystalline penicillin G 18-24 million units/day IV x 10-14 days. Repeat LP 6 months after treatment (CSF should normalize).",
+            "neurosyphilis": "Aqueous crystalline penicillin G 18-24 million units/day IV (3-4 million units IV q4h OR continuous infusion) x 10-14 days. Repeat LP 6 months after treatment (CSF should normalize, WBC <5, protein <45 mg/dL, VDRL negative). If CSF not normalized → retreat with IV penicillin G x 10-14 days.",
+            "ocular_or_otic_syphilis": "Aqueous crystalline penicillin G 18-24 million units/day IV x 10-14 days (same as neurosyphilis). Ophthalmology or ENT referral. Corticosteroids (prednisone 1mg/kg/day) may be used adjunctively (controversial).",
+            "congenital_syphilis": "Aqueous crystalline penicillin G 50,000 units/kg IV q12h x 7 days, then q8h x 3 days (total 10 days). Alternative: Procaine penicillin G 50,000 units/kg IM daily x 10 days. Full evaluation: LP, CBC, LFTs, long bone X-rays, ophthalmology, audiology. Treat if: Mother untreated, inadequately treated, or treated <4 weeks before delivery.",
+            "treatment_failure": "Persistent or recurrent symptoms, or RPR titer not decreased 4-fold in 6-12 months. Causes: Reinfection (most common), neurosyphilis (LP required), HIV coinfection. Management: Repeat RPR, HIV test, LP (rule out neurosyphilis). Retreat with benzathine penicillin G 2.4 million units IM weekly x 3 doses OR IV penicillin G if neurosyphilis."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "Primary, secondary, early latent: Benzathine penicillin G 2.4 million units IM x1. Late latent, tertiary: Benzathine penicillin G 2.4 million units IM weekly x 3 doses. Neurosyphilis: IV penicillin G 18-24 million units/day x 10-14 days.",
+            "monitoring": "RPR titer at 6, 12, 24 months after treatment. Cure: 4-fold decrease in titer in 6-12 months (e.g., 1:32 → 1:8). Serologic cure less common in late latent (titer may remain positive at low level). Neurosyphilis: Repeat LP 6 months after treatment (CSF should normalize). HIV coinfection: RPR titer at 3, 6, 9, 12, 24 months (higher risk of treatment failure).",
+            "stop_criteria": "Complete treatment. RPR titer decreased 4-fold in 6-12 months. Sexual partners treated. Abstain from sexual activity until treatment complete and partners treated."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "pregnancy": "Benzathine penicillin G 2.4 million units IM x1 (primary, secondary, early latent) OR x3 weekly (late latent, tertiary). Penicillin desensitization if penicillin allergy (doxycycline and ceftriaxone contraindicated). Ultrasound to assess fetal infection. Treat before 28 weeks gestation to prevent congenital syphilis. Monthly RPR titers during pregnancy. Rescreen in third trimester. Jarisch-Herxheimer reaction may cause preterm labor or fetal distress (monitor closely).",
+            "hiv_coinfection": "Same treatment regimen. Higher risk of neurosyphilis (LP if RPR ≥1:32 or CD4 <350). Higher risk of treatment failure (RPR titer at 3, 6, 9, 12, 24 months). Consider benzathine penicillin G 2.4 million units IM weekly x 3 doses for primary or secondary syphilis (some experts recommend).",
+            "msm": "Screen annually (RPR + treponemal test). Higher risk of syphilis (50-60% of cases). Test for HIV, gonorrhea, chlamydia, hepatitis B and C. PrEP (pre-exposure prophylaxis) for HIV if high-risk.",
+            "neurosyphilis": "Headache, altered mental status, cranial nerve palsies, stroke, meningitis, tabes dorsalis, general paresis. LP required (CSF VDRL, WBC, protein). IV penicillin G 18-24 million units/day x 10-14 days. Repeat LP 6 months after treatment (CSF should normalize). If CSF not normalized → retreat.",
+            "ocular_or_otic_syphilis": "Uveitis, optic neuritis, vision loss, hearing loss, tinnitus, vertigo. IV penicillin G 18-24 million units/day x 10-14 days (same as neurosyphilis). Ophthalmology or ENT referral. Corticosteroids (prednisone 1mg/kg/day) may be used adjunctively.",
+            "jarisch_herxheimer_reaction": "Fever, chills, myalgia, hypotension within 24 hours of treatment (10-25% of primary/secondary syphilis). Self-limited (resolves in 24 hours). Supportive care (antipyretics, fluids). Do NOT discontinue antibiotics. Warn patients before treatment. May cause preterm labor or fetal distress in pregnancy (monitor closely)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Benzathine penicillin G remains first-line (NO resistance since 1940s)",
+              "Single dose for primary, secondary, early latent (cure rate >95%)",
+              "RPR titer should decrease 4-fold in 6-12 months (indicates cure)",
+              "Do NOT use azithromycin (resistance 20-30%, treatment failures reported)",
+              "Penicillin desensitization if penicillin allergy and neurosyphilis, ocular syphilis, otic syphilis, or pregnancy"
+            ],
+            "timeout_checklist": [
+              "Is benzathine penicillin G 2.4 million units IM prescribed? (x1 for primary/secondary/early latent, x3 weekly for late latent/tertiary)",
+              "Is stage of syphilis determined? (Primary, secondary, early latent, late latent, tertiary, neurosyphilis)",
+              "Is LP indicated? (Neurosyphilis suspected, ocular syphilis, otic syphilis, tertiary syphilis, HIV coinfection with RPR ≥1:32, or treatment failure)",
+              "Is HIV test performed? (Co-infection 30-50% of MSM)",
+              "Is pregnancy test performed? (Congenital syphilis if untreated)",
+              "Are sexual partners notified and treated? (All partners in past 90 days for primary, 6 months for secondary, 1 year for early latent)",
+              "Is RPR titer follow-up arranged? (6, 12, 24 months after treatment)",
+              "Is patient counseled about Jarisch-Herxheimer reaction? (Fever, chills, myalgia within 24 hours, self-limited)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use azithromycin (resistance 20-30%). Do NOT use fluoroquinolones (NOT effective). Do NOT use doxycycline or ceftriaxone for neurosyphilis, ocular syphilis, otic syphilis, or pregnancy (penicillin desensitization required). Do NOT test <3 weeks after exposure (window period).",
+            "diagnostic_stewardship": "Nontreponemal test (RPR or VDRL, quantitative titer) + Treponemal test (FTA-ABS, TP-PA, or EIA). LP if neurosyphilis suspected. HIV test all patients. Pregnancy test all women of childbearing age.",
+            "prevention": "Condom use (reduces transmission by 80-90%). Screen MSM annually. Screen pregnant women (first visit, third trimester, delivery). Partner notification and treatment (all partners in past 90 days for primary, 6 months for secondary, 1 year for early latent). Abstain from sex until treatment complete and partners treated."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "CDC Sexually Transmitted Infections Treatment Guidelines (2021)",
+              "url": "https://www.cdc.gov/std/treatment-guidelines/default.htm"
+            },
+            {
+              "label": "CDC Syphilis Treatment and Care (2024)",
+              "url": "https://www.cdc.gov/syphilis/hcp/treatment.html"
+            },
+            {
+              "label": "WHO Guidelines for the Treatment of Treponema pallidum (Syphilis) (2024)",
+              "url": "https://www.who.int/publications/i/item/9789240029415"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "genital-herpes",
+      "name": "Genital Herpes (HSV-1/2)",
+      "synonyms": [
+        "herpes simplex virus",
+        "HSV",
+        "genital HSV"
+      ],
+      "icd10": [
+        "A60.0",
+        "A60.00",
+        "A60.01",
+        "A60.02",
+        "A60.09"
+      ],
+      "severity": [
+        "mild",
+        "moderate"
+      ],
+      "shortDescription": "Viral STI caused by HSV-1 or HSV-2 requiring antiviral therapy (valacyclovir, acyclovir, or famciclovir) for episodic or suppressive treatment",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Viral sexually transmitted infection caused by herpes simplex virus type 1 (HSV-1, 30-50% of genital herpes) or type 2 (HSV-2, 50-70% of genital herpes). Lifelong infection (virus remains latent in dorsal root ganglia). Seroprevalence: HSV-2 12% of US adults, HSV-1 48%. Recurrence rate: HSV-2 (4-6 episodes/year), HSV-1 (1-2 episodes/year). Complications: Neonatal herpes (if primary infection during pregnancy, 30-50% transmission), aseptic meningitis (10-30% of primary infection), urinary retention (10-20%).",
+            "clinical_presentation": "Primary infection (first episode): Multiple painful vesicles or ulcers on genitals, fever, malaise, inguinal lymphadenopathy, dysuria. Duration 2-3 weeks. Recurrent infection: Fewer lesions, milder symptoms, prodrome (tingling, burning), duration 7-10 days. Asymptomatic shedding common (10-20% of days, can transmit virus). Physical exam: Grouped vesicles on erythematous base → shallow ulcers with erythematous border.",
+            "diagnostic_criteria": "PCR or viral culture from vesicle or ulcer (PCR preferred, sensitivity 95-99%). Type-specific serology (HSV-1 IgG, HSV-2 IgG) to distinguish HSV-1 from HSV-2 and diagnose asymptomatic infection. Tzanck smear (multinucleated giant cells) NOT recommended (low sensitivity, cannot distinguish HSV from VZV).",
+            "risk_factors": [
+              "Multiple sexual partners",
+              "History of other STI",
+              "Immunosuppression (HIV, transplant, chemotherapy)",
+              "Female sex (HSV-2 seroprevalence 16% women vs 8% men)",
+              "Black race (HSV-2 seroprevalence 35% vs 12% overall)"
+            ],
+            "red_flags": [
+              "Neonatal herpes - if primary infection during pregnancy (30-50% transmission), requires IV acyclovir 60mg/kg/day divided TID x 14-21 days + full evaluation",
+              "Disseminated herpes - if immunocompromised (HIV, transplant, chemotherapy), requires IV acyclovir 5-10mg/kg q8h x 7-14 days + hospitalization",
+              "Herpes encephalitis - altered mental status, seizures, focal neurologic deficits, requires IV acyclovir 10mg/kg q8h x 14-21 days + MRI + LP",
+              "Aseptic meningitis - headache, neck stiffness, photophobia (10-30% of primary infection), self-limited, supportive care",
+              "Urinary retention - if severe dysuria (10-20%), may require catheterization"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Test if: Genital vesicles or ulcers, suspected primary infection, or screening (asymptomatic partners of HSV-positive patients). PCR or viral culture from vesicle or ulcer (PCR preferred). Type-specific serology (HSV-1 IgG, HSV-2 IgG) if no active lesions.",
+            "essential_tests": [
+              "PCR from vesicle or ulcer: Sensitivity 95-99%, specificity 99%. Preferred test (more sensitive than culture). Can distinguish HSV-1 from HSV-2.",
+              "Viral culture from vesicle or ulcer: Sensitivity 50-70% (lower if ulcer stage or recurrent infection), specificity 99%. Can distinguish HSV-1 from HSV-2.",
+              "Type-specific serology (HSV-1 IgG, HSV-2 IgG): Diagnose asymptomatic infection, distinguish HSV-1 from HSV-2. Seroconversion 2-12 weeks after infection. Positive HSV-2 IgG indicates prior HSV-2 infection (genital or oral)."
+            ],
+            "conditional_tests": [
+              "Tzanck smear: Multinucleated giant cells. NOT recommended (low sensitivity 40-60%, cannot distinguish HSV from VZV).",
+              "HIV test: All patients with genital herpes (co-infection increases HSV recurrence and transmission).",
+              "Pregnancy test: All women of childbearing age (neonatal herpes if primary infection during pregnancy)."
+            ],
+            "when_not_to_test": "Do NOT use Tzanck smear (low sensitivity, cannot distinguish HSV from VZV). Do NOT use serology for diagnosis of active lesions (use PCR or culture). Do NOT routinely screen asymptomatic general population (CDC does NOT recommend).",
+            "turnaround_time": "PCR: 24-48 hours. Viral culture: 2-5 days. Type-specific serology: 24-48 hours. Tzanck smear: <1 hour."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Herpes simplex virus type 1 (HSV-1, 30-50% of genital herpes, traditionally oral herpes) or type 2 (HSV-2, 50-70% of genital herpes, traditionally genital herpes). Double-stranded DNA virus. Transmitted via sexual contact (direct contact with lesions or asymptomatic shedding). Incubation period 2-12 days (median 4 days).",
+            "pathogenesis": "Primary infection: Virus enters through mucosa or skin → local replication → vesicles or ulcers → regional lymphadenopathy. Virus travels via sensory nerves → dorsal root ganglia (sacral ganglia for genital herpes) → latency. Recurrent infection: Virus reactivates from dorsal root ganglia → travels via sensory nerves → skin or mucosa → vesicles or ulcers. Asymptomatic shedding: Virus reactivates without symptoms (10-20% of days, can transmit virus).",
+            "resistance_patterns": {
+              "acyclovir_resistance": "Acyclovir resistance: Rare (<1% in immunocompetent, 5-10% in immunocompromised). Mechanism: Thymidine kinase deficiency or DNA polymerase mutation. Treatment: Foscarnet 40mg/kg IV q8h x 7-14 days (if acyclovir-resistant)."
+            },
+            "timing_critical": "Start antiviral therapy within 72 hours of symptom onset (most effective if started within 24 hours). Episodic therapy: Valacyclovir 1g PO BID x 7-10 days (primary) or x 5 days (recurrent). Suppressive therapy: Valacyclovir 500mg PO daily (reduces recurrence by 70-80%, reduces transmission by 50%)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "primary_infection": "Valacyclovir 1g PO BID x 7-10 days (preferred, better bioavailability). Alternative: Acyclovir 400mg PO TID x 7-10 days OR Famciclovir 250mg PO TID x 7-10 days. Start within 72 hours of symptom onset (most effective if started within 24 hours).",
+            "recurrent_infection_episodic": "Valacyclovir 500mg PO BID x 3 days OR 1g PO daily x 5 days (preferred). Alternative: Acyclovir 800mg PO BID x 5 days OR Famciclovir 1g PO BID x 1 day. Start within 24 hours of symptom onset or during prodrome (tingling, burning).",
+            "suppressive_therapy": "Valacyclovir 500mg PO daily (if <10 recurrences/year) OR 1g PO daily (if ≥10 recurrences/year). Alternative: Acyclovir 400mg PO BID OR Famciclovir 250mg PO BID. Reduces recurrence by 70-80%, reduces transmission by 50%. Consider if: ≥6 recurrences/year, severe recurrences, or discordant couple (one partner HSV-positive, other HSV-negative).",
+            "severe_or_disseminated": "Acyclovir 5-10mg/kg IV q8h x 7-14 days. Use if: Severe (extensive lesions, systemic symptoms), disseminated (if immunocompromised), or complications (meningitis, encephalitis, hepatitis). Hospitalization. Switch to PO when improved.",
+            "pregnancy": "Primary infection: Acyclovir 400mg PO TID x 7-10 days (safe in pregnancy). Suppressive therapy: Acyclovir 400mg PO TID starting at 36 weeks gestation until delivery (reduces recurrence at delivery, reduces need for cesarean section). Cesarean section if: Active lesions or prodrome at delivery (prevents neonatal herpes).",
+            "avoid_list": "Avoid topical acyclovir (NOT effective, poor bioavailability). Do NOT delay treatment (start within 72 hours of symptom onset, most effective if started within 24 hours)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "hsv_1_or_hsv_2": "Same treatment regimen for HSV-1 and HSV-2. Valacyclovir 1g PO BID x 7-10 days (primary) OR 500mg PO BID x 3 days (recurrent). Suppressive therapy: Valacyclovir 500mg PO daily.",
+            "acyclovir_resistant": "Foscarnet 40mg/kg IV q8h x 7-14 days. Rare (<1% in immunocompetent, 5-10% in immunocompromised). Mechanism: Thymidine kinase deficiency or DNA polymerase mutation. Hospitalization. Nephrotoxic (monitor creatinine, electrolytes).",
+            "neonatal_herpes": "Acyclovir 60mg/kg/day IV divided TID x 14 days (skin/eye/mouth disease) OR x 21 days (disseminated or CNS disease). Hospitalization. Full evaluation: LP, CSF PCR, liver enzymes, ophthalmology. Suppressive therapy: Acyclovir 300mg/m2 PO TID x 6 months after IV treatment (reduces recurrence, improves neurodevelopmental outcomes).",
+            "herpes_encephalitis": "Acyclovir 10mg/kg IV q8h x 14-21 days. MRI (temporal lobe involvement), LP (CSF PCR for HSV, lymphocytic pleocytosis, elevated protein, normal glucose). Mortality 70% if untreated, 20-30% if treated. Neurodevelopmental sequelae common (50-70%).",
+            "disseminated_herpes": "Acyclovir 5-10mg/kg IV q8h x 7-14 days. If immunocompromised (HIV, transplant, chemotherapy). Hepatitis, pneumonitis, esophagitis, encephalitis. Hospitalization. Switch to PO when improved.",
+            "duration": "Primary infection: 7-10 days. Recurrent infection: 3-5 days. Suppressive therapy: Continuous (reassess annually, consider stopping after 1 year to assess recurrence rate). Severe or disseminated: 7-14 days IV, then switch to PO."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "Primary infection: Valacyclovir 1g PO BID x 7-10 days. Recurrent infection: Valacyclovir 500mg PO BID x 3 days. Suppressive therapy: Valacyclovir 500mg PO daily (continuous, reassess annually). Severe or disseminated: Acyclovir 5-10mg/kg IV q8h x 7-14 days.",
+            "monitoring": "Episodic therapy: No follow-up needed (self-limited). Suppressive therapy: Reassess annually (consider stopping after 1 year to assess recurrence rate). Pregnancy: Suppressive therapy starting at 36 weeks gestation until delivery. Neonatal herpes: Suppressive therapy x 6 months after IV treatment.",
+            "stop_criteria": "Complete treatment even if lesions heal. Suppressive therapy: Reassess annually (consider stopping after 1 year to assess recurrence rate, 20-30% have no recurrence after stopping)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "pregnancy": "Primary infection during pregnancy: 30-50% transmission to neonate (highest risk if primary infection during third trimester or at delivery). Acyclovir 400mg PO TID x 7-10 days (safe in pregnancy). Suppressive therapy: Acyclovir 400mg PO TID starting at 36 weeks gestation until delivery (reduces recurrence at delivery, reduces need for cesarean section). Cesarean section if: Active lesions or prodrome at delivery (prevents neonatal herpes).",
+            "hiv_coinfection": "Higher recurrence rate (more frequent, more severe, longer duration). Higher risk of acyclovir resistance (5-10%). Suppressive therapy recommended (valacyclovir 500mg PO daily). Higher risk of HSV transmission and HIV transmission (HSV increases HIV viral load, genital ulcers increase HIV transmission by 2-5 fold).",
+            "immunocompromised": "Higher risk of severe or disseminated herpes (hepatitis, pneumonitis, esophagitis, encephalitis). Acyclovir 5-10mg/kg IV q8h x 7-14 days. Hospitalization. Higher risk of acyclovir resistance (5-10%, foscarnet if resistant).",
+            "discordant_couples": "One partner HSV-positive, other HSV-negative. Suppressive therapy (valacyclovir 500mg PO daily) reduces transmission by 50%. Condom use reduces transmission by 30-50%. Avoid sex during outbreaks or prodrome. Counsel about asymptomatic shedding (10-20% of days, can transmit virus).",
+            "asymptomatic_shedding": "Virus reactivates without symptoms (10-20% of days, can transmit virus). HSV-2 sheds more frequently than HSV-1 (15-20% vs 5-10% of days). Suppressive therapy reduces shedding by 80-90%.",
+            "counseling": "Lifelong infection (no cure, virus remains latent in dorsal root ganglia). Recurrence rate: HSV-2 (4-6 episodes/year), HSV-1 (1-2 episodes/year). Recurrence decreases over time (50% decrease in first year). Asymptomatic shedding (10-20% of days, can transmit virus). Suppressive therapy reduces recurrence by 70-80%, reduces transmission by 50%. Condom use reduces transmission by 30-50%. Avoid sex during outbreaks or prodrome."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Start antiviral therapy within 72 hours of symptom onset (most effective if started within 24 hours)",
+              "Episodic therapy: Valacyclovir 500mg PO BID x 3 days (recurrent infection)",
+              "Suppressive therapy: Valacyclovir 500mg PO daily (reduces recurrence by 70-80%, reduces transmission by 50%)",
+              "Reassess suppressive therapy annually (consider stopping after 1 year to assess recurrence rate)"
+            ],
+            "timeout_checklist": [
+              "Is antiviral therapy started within 72 hours of symptom onset? (Most effective if started within 24 hours)",
+              "Is valacyclovir 1g PO BID x 7-10 days prescribed for primary infection?",
+              "Is valacyclovir 500mg PO BID x 3 days prescribed for recurrent infection?",
+              "Is suppressive therapy indicated? (≥6 recurrences/year, severe recurrences, or discordant couple)",
+              "Is HIV test performed? (Co-infection increases HSV recurrence and transmission)",
+              "Is pregnancy test performed? (Neonatal herpes if primary infection during pregnancy)",
+              "Is patient counseled about lifelong infection, recurrence, asymptomatic shedding, and transmission?",
+              "Is partner notification discussed? (Discordant couples, suppressive therapy reduces transmission by 50%)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid topical acyclovir (NOT effective, poor bioavailability). Do NOT delay treatment (start within 72 hours of symptom onset). Do NOT use Tzanck smear (low sensitivity, cannot distinguish HSV from VZV). Do NOT routinely screen asymptomatic general population (CDC does NOT recommend).",
+            "diagnostic_stewardship": "PCR from vesicle or ulcer (preferred, sensitivity 95-99%). Type-specific serology (HSV-1 IgG, HSV-2 IgG) if no active lesions. HIV test all patients.",
+            "prevention": "Suppressive therapy (valacyclovir 500mg PO daily) reduces transmission by 50%. Condom use reduces transmission by 30-50%. Avoid sex during outbreaks or prodrome. Counsel about asymptomatic shedding (10-20% of days, can transmit virus). Cesarean section if active lesions or prodrome at delivery (prevents neonatal herpes)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "CDC Sexually Transmitted Infections Treatment Guidelines (2021)",
+              "url": "https://www.cdc.gov/std/treatment-guidelines/default.htm"
+            },
+            {
+              "label": "CDC Genital Herpes Treatment and Care (2024)",
+              "url": "https://www.cdc.gov/genital-herpes/hcp/treatment.html"
+            },
+            {
+              "label": "WHO Guidelines for the Treatment of Genital Herpes Simplex Virus (2024)",
+              "url": "https://www.who.int/publications/i/item/9789240029415"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hpv-genital-warts",
+      "name": "Human Papillomavirus (HPV) / Genital Warts",
+      "synonyms": [
+        "condyloma acuminata",
+        "anogenital warts",
+        "HPV"
+      ],
+      "icd10": [
+        "A63.0",
+        "B97.7"
+      ],
+      "severity": [
+        "mild"
+      ],
+      "shortDescription": "Viral STI caused by HPV types 6 and 11 requiring topical therapy (imiquimod, podofilox, sinecatechins) or provider-applied therapy (cryotherapy, TCA, surgical removal)",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Viral sexually transmitted infection caused by human papillomavirus (HPV). Low-risk types 6 and 11 (90% of genital warts, benign). High-risk types 16 and 18 (70% of cervical cancer, NOT visible warts). Most common viral STI (14 million new infections annually in US). Seroprevalence: 40-50% of sexually active adults. Complications: Cervical cancer (high-risk types), anal cancer, oropharyngeal cancer. Genital warts: Benign, self-limited (90% resolve spontaneously in 2 years), recurrence rate 20-30%.",
+            "clinical_presentation": "Genital warts: Flesh-colored, pink, or white papules or plaques on genitals or perianal area. Cauliflower-like (exophytic), flat, or papular. Asymptomatic or pruritic. Physical exam: Soft, non-tender, pedunculated or sessile papules. Acetowhitening (turn white with 3-5% acetic acid, NOT specific). High-risk HPV: Asymptomatic (detected by Pap smear or HPV test).",
+            "diagnostic_criteria": "Clinical diagnosis (visual inspection). Biopsy if: Diagnosis uncertain, atypical appearance, pigmented lesions, indurated lesions, fixed lesions, or immunocompromised. HPV DNA test NOT recommended for genital warts (does NOT change management). Pap smear and HPV test for cervical cancer screening (women 21-65 years).",
+            "risk_factors": [
+              "Multiple sexual partners",
+              "Early age of first sexual intercourse",
+              "Immunosuppression (HIV, transplant, chemotherapy)",
+              "Smoking",
+              "Lack of HPV vaccination"
+            ],
+            "red_flags": [
+              "Cervical cancer - abnormal Pap smear or HPV test (high-risk types 16, 18), requires colposcopy and biopsy",
+              "Anal cancer - if MSM or HIV-positive, requires anal Pap smear and high-resolution anoscopy",
+              "Oropharyngeal cancer - if high-risk HPV (type 16), requires ENT referral",
+              "Immunocompromised - extensive or refractory warts, higher risk of malignancy, requires biopsy",
+              "Pregnancy - genital warts may proliferate, avoid podofilox and imiquimod (teratogenic), use cryotherapy or TCA"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Clinical diagnosis (visual inspection). Biopsy if: Diagnosis uncertain, atypical appearance, pigmented lesions, indurated lesions, fixed lesions, or immunocompromised. Pap smear and HPV test for cervical cancer screening (women 21-65 years).",
+            "essential_tests": [
+              "Clinical diagnosis: Visual inspection. Flesh-colored, pink, or white papules or plaques on genitals or perianal area. Cauliflower-like (exophytic), flat, or papular.",
+              "Pap smear: Cervical cancer screening (women 21-65 years). Every 3 years (age 21-29) OR Every 5 years with HPV co-test (age 30-65).",
+              "HPV test: Cervical cancer screening (women 30-65 years). High-risk types 16, 18 (70% of cervical cancer)."
+            ],
+            "conditional_tests": [
+              "Biopsy: If diagnosis uncertain, atypical appearance, pigmented lesions, indurated lesions, fixed lesions, or immunocompromised. Rule out squamous cell carcinoma, Bowen disease, or bowenoid papulosis.",
+              "Acetowhitening: Apply 3-5% acetic acid, warts turn white. NOT specific (normal skin, inflammation, or trauma can also turn white). NOT recommended for diagnosis.",
+              "HIV test: All patients with genital warts (co-infection increases wart recurrence and malignancy risk)."
+            ],
+            "when_not_to_test": "Do NOT use HPV DNA test for genital warts (does NOT change management, low-risk types 6 and 11 cause warts, NOT high-risk types). Do NOT use acetowhitening for diagnosis (NOT specific). Do NOT biopsy all warts (clinical diagnosis sufficient if typical appearance).",
+            "turnaround_time": "Clinical diagnosis: Immediate. Biopsy: 3-5 days. Pap smear: 1-2 weeks. HPV test: 1-2 weeks."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Human papillomavirus (HPV, double-stranded DNA virus). Low-risk types 6 and 11 (90% of genital warts, benign). High-risk types 16 and 18 (70% of cervical cancer, NOT visible warts). Transmitted via sexual contact (skin-to-skin contact, condoms reduce transmission by 30-50%). Incubation period 3 weeks to 8 months (median 3 months).",
+            "pathogenesis": "HPV infects basal epithelial cells → viral replication → epithelial proliferation → genital warts (low-risk types) OR dysplasia → cancer (high-risk types). Low-risk types 6 and 11: Benign warts, self-limited (90% resolve spontaneously in 2 years). High-risk types 16 and 18: Persistent infection → cervical intraepithelial neoplasia (CIN) → cervical cancer (10-20 years).",
+            "resistance_patterns": {
+              "no_resistance": "HPV: No antiviral resistance (no antiviral drugs available). Treatment targets wart removal (cryotherapy, TCA, surgical removal) or immune modulation (imiquimod, sinecatechins)."
+            },
+            "timing_critical": "Genital warts: Self-limited (90% resolve spontaneously in 2 years). Treatment optional (cosmetic, symptomatic relief). Recurrence rate 20-30% after treatment. High-risk HPV: Cervical cancer screening (Pap smear and HPV test) to detect dysplasia early."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "patient_applied_therapy": "Imiquimod 5% cream: Apply at bedtime 3 times/week x up to 16 weeks. Wash off after 6-10 hours. Immune modulator (stimulates interferon production). Cure rate 40-50%, recurrence rate 10-20%. Alternative: Podofilox 0.5% solution or gel: Apply BID x 3 days, then 4 days off, repeat x up to 4 cycles. Antimitotic (inhibits cell division). Cure rate 45-70%, recurrence rate 30-60%. Alternative: Sinecatechins 15% ointment: Apply TID x up to 16 weeks. Green tea extract (antioxidant, immune modulator). Cure rate 50-60%, recurrence rate 10-20%.",
+            "provider_applied_therapy": "Cryotherapy (liquid nitrogen): Apply until wart turns white, repeat every 1-2 weeks x 3-6 treatments. Cure rate 60-80%, recurrence rate 20-30%. Alternative: Trichloroacetic acid (TCA) 80-90%: Apply to wart, neutralize with soap or sodium bicarbonate, repeat weekly x 3-6 treatments. Cure rate 60-80%, recurrence rate 30-40%. Alternative: Surgical removal (excision, electrocautery, laser): Immediate removal, cure rate 70-90%, recurrence rate 20-30%. Use if: Large warts, refractory warts, or patient preference.",
+            "pregnancy": "Cryotherapy OR TCA 80-90% (safe in pregnancy). Avoid imiquimod, podofilox, sinecatechins (teratogenic or insufficient safety data). Genital warts may proliferate during pregnancy (increased vascularity, immune suppression). Cesarean section NOT routinely indicated (unless warts obstruct birth canal or risk of hemorrhage).",
+            "immunocompromised": "Higher risk of extensive or refractory warts. Higher risk of malignancy (biopsy if atypical). Combination therapy (patient-applied + provider-applied) may be more effective. Surgical removal if refractory.",
+            "avoid_list": "Avoid podophyllin resin (NOT recommended by CDC 2021, replaced by podofilox, higher toxicity). Avoid 5-fluorouracil (NOT recommended by CDC 2021, insufficient evidence). Avoid interferon (NOT recommended by CDC 2021, high cost, low efficacy, significant side effects)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "hpv_types_6_11": "Same treatment regimen for all genital warts (HPV types 6 and 11). Patient-applied: Imiquimod 5% cream 3 times/week x up to 16 weeks OR Podofilox 0.5% BID x 3 days, then 4 days off, repeat x up to 4 cycles. Provider-applied: Cryotherapy every 1-2 weeks x 3-6 treatments OR TCA 80-90% weekly x 3-6 treatments OR Surgical removal.",
+            "refractory_warts": "Persistent after 3-6 treatments. Combination therapy (patient-applied + provider-applied) OR Surgical removal (excision, electrocautery, laser). Biopsy to rule out malignancy (squamous cell carcinoma, Bowen disease, bowenoid papulosis).",
+            "recurrent_warts": "Recurrence rate 20-30% after treatment. Retreat with same or different therapy. Consider suppressive therapy (imiquimod 3 times/week x 3-6 months after wart clearance, reduces recurrence by 50%).",
+            "high_risk_hpv": "Cervical dysplasia (CIN 1, 2, 3): Colposcopy and biopsy. CIN 1: Observation (70% regress spontaneously). CIN 2-3: Excisional procedure (LEEP, cone biopsy) or ablative procedure (cryotherapy, laser). Cervical cancer: Gynecology oncology referral (surgery, radiation, chemotherapy).",
+            "duration": "Patient-applied: Imiquimod x up to 16 weeks, Podofilox x up to 4 cycles, Sinecatechins x up to 16 weeks. Provider-applied: Cryotherapy or TCA x 3-6 treatments (every 1-2 weeks). Surgical removal: Single treatment."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "Patient-applied: Imiquimod 3 times/week x up to 16 weeks, Podofilox BID x 3 days, then 4 days off, repeat x up to 4 cycles, Sinecatechins TID x up to 16 weeks. Provider-applied: Cryotherapy or TCA every 1-2 weeks x 3-6 treatments. Surgical removal: Single treatment.",
+            "monitoring": "Follow-up every 1-2 weeks (provider-applied therapy) or every 4-8 weeks (patient-applied therapy). Assess wart clearance, side effects, recurrence. Pap smear and HPV test for cervical cancer screening (women 21-65 years, every 3-5 years).",
+            "stop_criteria": "Wart clearance (complete resolution). Recurrence rate 20-30% after treatment. Retreat if recurrence. Consider suppressive therapy (imiquimod 3 times/week x 3-6 months after wart clearance, reduces recurrence by 50%)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "pregnancy": "Genital warts may proliferate during pregnancy (increased vascularity, immune suppression). Cryotherapy OR TCA 80-90% (safe in pregnancy). Avoid imiquimod, podofilox, sinecatechins (teratogenic or insufficient safety data). Cesarean section NOT routinely indicated (unless warts obstruct birth canal or risk of hemorrhage). Neonatal laryngeal papillomatosis rare (<0.1%, if mother has genital warts at delivery).",
+            "hiv_coinfection": "Higher risk of extensive or refractory warts. Higher risk of malignancy (anal cancer, cervical cancer). Biopsy if atypical. Combination therapy (patient-applied + provider-applied) may be more effective. Anal Pap smear and high-resolution anoscopy (MSM or HIV-positive, screen for anal dysplasia).",
+            "immunocompromised": "Higher risk of extensive or refractory warts. Higher risk of malignancy (squamous cell carcinoma, Bowen disease, bowenoid papulosis). Biopsy if atypical. Combination therapy or surgical removal if refractory.",
+            "cervical_cancer_screening": "Women 21-65 years: Pap smear every 3 years (age 21-29) OR Pap smear + HPV test every 5 years (age 30-65). Abnormal Pap smear or positive high-risk HPV → Colposcopy and biopsy. CIN 1: Observation. CIN 2-3: Excisional or ablative procedure. Cervical cancer: Gynecology oncology referral.",
+            "hpv_vaccination": "Gardasil 9 (9-valent HPV vaccine): Protects against HPV types 6, 11, 16, 18, 31, 33, 45, 52, 58. Prevents 90% of genital warts and 90% of cervical cancer. Recommended: Age 11-12 years (2 doses, 6-12 months apart) OR Age 13-26 years (catch-up, 2-3 doses) OR Age 27-45 years (shared decision-making, 3 doses). Vaccine does NOT treat existing infection or warts.",
+            "counseling": "Genital warts: Benign, self-limited (90% resolve spontaneously in 2 years). Treatment optional (cosmetic, symptomatic relief). Recurrence rate 20-30% after treatment. Condom use reduces transmission by 30-50% (HPV transmitted by skin-to-skin contact, condoms do NOT cover all genital skin). HPV vaccination prevents 90% of genital warts and 90% of cervical cancer. Partner notification NOT required (most sexually active adults have HPV)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Genital warts: Self-limited (90% resolve spontaneously in 2 years), treatment optional (cosmetic, symptomatic relief)",
+              "Patient-applied therapy (imiquimod, podofilox, sinecatechins) allows self-treatment at home",
+              "Do NOT use HPV DNA test for genital warts (does NOT change management)",
+              "Do NOT biopsy all warts (clinical diagnosis sufficient if typical appearance)"
+            ],
+            "timeout_checklist": [
+              "Is clinical diagnosis confirmed by visual inspection?",
+              "Is biopsy indicated? (Diagnosis uncertain, atypical appearance, pigmented, indurated, fixed, or immunocompromised)",
+              "Is patient-applied therapy (imiquimod, podofilox, sinecatechins) OR provider-applied therapy (cryotherapy, TCA, surgical removal) selected?",
+              "Is pregnancy excluded? (Avoid imiquimod, podofilox, sinecatechins in pregnancy)",
+              "Is HIV test performed? (Co-infection increases wart recurrence and malignancy risk)",
+              "Is cervical cancer screening up to date? (Women 21-65 years, Pap smear and HPV test)",
+              "Is HPV vaccination discussed? (Gardasil 9, prevents 90% of genital warts and 90% of cervical cancer)",
+              "Is patient counseled about benign nature, self-limited course, recurrence, and transmission?"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use HPV DNA test for genital warts (does NOT change management). Do NOT use acetowhitening for diagnosis (NOT specific). Do NOT biopsy all warts (clinical diagnosis sufficient if typical appearance). Avoid podophyllin resin, 5-fluorouracil, interferon (NOT recommended by CDC 2021).",
+            "diagnostic_stewardship": "Clinical diagnosis (visual inspection). Biopsy if diagnosis uncertain or atypical. Pap smear and HPV test for cervical cancer screening (women 21-65 years). HIV test all patients.",
+            "prevention": "HPV vaccination (Gardasil 9, prevents 90% of genital warts and 90% of cervical cancer). Condom use reduces transmission by 30-50%. Cervical cancer screening (Pap smear and HPV test, women 21-65 years). Partner notification NOT required (most sexually active adults have HPV)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "CDC Sexually Transmitted Infections Treatment Guidelines (2021)",
+              "url": "https://www.cdc.gov/std/treatment-guidelines/default.htm"
+            },
+            {
+              "label": "CDC Human Papillomavirus (HPV) Treatment and Care (2024)",
+              "url": "https://www.cdc.gov/hpv/hcp/treatment.html"
+            },
+            {
+              "label": "ACOG Practice Bulletin: Cervical Cancer Screening (2021)",
+              "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2021/04/cervical-cancer-screening-and-prevention"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "trichomoniasis",
+      "name": "Trichomoniasis",
+      "synonyms": [
+        "trich",
+        "Trichomonas vaginalis"
+      ],
+      "icd10": [
+        "A59.0",
+        "A59.00",
+        "A59.01"
+      ],
+      "severity": [
+        "mild"
+      ],
+      "shortDescription": "Parasitic STI caused by Trichomonas vaginalis requiring metronidazole 2g PO x1 or tinidazole 2g PO x1",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Parasitic sexually transmitted infection caused by Trichomonas vaginalis (flagellated protozoan). Most common non-viral STI worldwide (3.7 million cases annually in US). Complications: Increased risk of HIV transmission (2-3 fold), preterm birth (if pregnant), pelvic inflammatory disease (PID). Men: Often asymptomatic (70-80%), spontaneous clearance common (50% in 3 months).",
+            "clinical_presentation": "Women: Vaginal discharge (yellow-green, frothy, malodorous), vulvovaginal irritation, dysuria, dyspareunia. Physical exam: Strawberry cervix (petechiae on cervix, 2-5%), vaginal erythema, pH >4.5. Men: Urethritis (dysuria, urethral discharge, 20-30% symptomatic), prostatitis (rare). Asymptomatic: 50-70% of women, 70-80% of men.",
+            "diagnostic_criteria": "NAAT (nucleic acid amplification test) from vaginal swab (women) or urine (men). Sensitivity 95-99%, specificity 99%. Preferred test. Wet mount microscopy: Motile trichomonads (sensitivity 50-70%, specificity 99%). Culture: Sensitivity 75-95%, specificity 99%. pH >4.5 (normal vaginal pH 3.8-4.5).",
+            "risk_factors": [
+              "Multiple sexual partners",
+              "History of other STI",
+              "Inconsistent condom use",
+              "Black race (prevalence 13% vs 1.8% overall)",
+              "Older age (prevalence increases with age, 11% in women >40 years)"
+            ],
+            "red_flags": [
+              "Pregnancy - increased risk of preterm birth, low birth weight, premature rupture of membranes, requires treatment (metronidazole 2g PO x1, safe in pregnancy)",
+              "HIV coinfection - increased risk of HIV transmission (2-3 fold), requires treatment",
+              "Pelvic inflammatory disease (PID) - lower abdominal pain, cervical motion tenderness, fever, requires empiric treatment for gonorrhea + chlamydia + anaerobes",
+              "Metronidazole resistance - persistent symptoms after treatment (5-10%), requires tinidazole 2g PO daily x 5 days or higher dose metronidazole"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Test if: Symptomatic (vaginal discharge, dysuria, vulvovaginal irritation), sexual contact with infected partner, or screening (high-risk women, HIV-positive). NAAT from vaginal swab (women) or urine (men). Test for co-infection (gonorrhea, chlamydia, HIV, syphilis).",
+            "essential_tests": [
+              "NAAT (nucleic acid amplification test): Vaginal swab (women) or urine (men). Sensitivity 95-99%, specificity 99%. Preferred test (more sensitive than wet mount or culture).",
+              "Wet mount microscopy: Vaginal discharge + saline. Motile trichomonads (pear-shaped, flagellated). Sensitivity 50-70%, specificity 99%. Immediate results. Use if NAAT unavailable.",
+              "Vaginal pH: pH >4.5 suggests trichomoniasis (normal vaginal pH 3.8-4.5). NOT specific (bacterial vaginosis also pH >4.5)."
+            ],
+            "conditional_tests": [
+              "Culture: If NAAT unavailable. InPouch TV culture (sensitivity 75-95%, specificity 99%). Turnaround time 3-7 days.",
+              "Test for co-infection: Gonorrhea NAAT, chlamydia NAAT, HIV, syphilis (RPR or VDRL).",
+              "Pregnancy test: All women of childbearing age (preterm birth if untreated)."
+            ],
+            "when_not_to_test": "Do NOT rely on wet mount alone (sensitivity 50-70%, false negative common). Do NOT use Pap smear for diagnosis (sensitivity 60-70%, false positive common). Do NOT use vaginal pH alone (NOT specific).",
+            "turnaround_time": "NAAT: 24-48 hours. Wet mount: Immediate. Culture: 3-7 days. Vaginal pH: Immediate."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Trichomonas vaginalis (flagellated protozoan, anaerobic). Transmitted via sexual contact (direct contact with vaginal or urethral secretions). Incubation period 5-28 days (median 7 days). Men: Often asymptomatic (70-80%), spontaneous clearance common (50% in 3 months).",
+            "pathogenesis": "Trichomonads attach to vaginal or urethral epithelium → local inflammation → vaginal discharge (women) or urethritis (men). Increases vaginal pH (>4.5) → disrupts normal vaginal flora → bacterial vaginosis (co-infection 60-80%). Increases HIV transmission (2-3 fold, disrupts epithelial barrier, increases HIV viral load).",
+            "resistance_patterns": {
+              "metronidazole_resistance": "Metronidazole resistance: 5-10% (low-level resistance, MIC 50-100 mcg/mL). High-level resistance rare (<1%, MIC >100 mcg/mL). Treatment: Tinidazole 2g PO daily x 5 days (more effective than metronidazole for resistant strains) OR Metronidazole 2g PO BID x 7 days."
+            },
+            "timing_critical": "Treat immediately after diagnosis. Metronidazole 2g PO x1 (single dose, cure rate 85-95%) OR Tinidazole 2g PO x1 (single dose, cure rate 90-95%, better tolerated). Treat sexual partners (all partners in past 60 days). Abstain from sex x 7 days after treatment and until partners treated."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": "Metronidazole 2g PO x1 (single dose, cure rate 85-95%, CDC 2021 preferred). Alternative: Tinidazole 2g PO x1 (single dose, cure rate 90-95%, better tolerated, fewer GI side effects, more expensive). Alternative: Metronidazole 500mg PO BID x 7 days (cure rate 90-95%, use if adherence concern with single dose).",
+            "pregnancy": "Metronidazole 2g PO x1 (safe in pregnancy, all trimesters). Alternative: Metronidazole 500mg PO BID x 7 days. Treat to reduce risk of preterm birth, low birth weight, premature rupture of membranes. Avoid tinidazole (insufficient safety data in pregnancy).",
+            "hiv_coinfection": "Metronidazole 500mg PO BID x 7 days (preferred, higher cure rate than single dose in HIV-positive women). Alternative: Metronidazole 2g PO x1. Test of cure (TOC) 3 months after treatment REQUIRED (higher risk of treatment failure).",
+            "metronidazole_resistance": "Persistent symptoms after metronidazole 2g x1. Tinidazole 2g PO daily x 5 days (more effective than metronidazole for resistant strains, cure rate 90-95%). Alternative: Metronidazole 2g PO BID x 7 days. Consult infectious disease specialist if persistent after tinidazole.",
+            "avoid_list": "Avoid alcohol during treatment and x 24 hours after metronidazole (disulfiram-like reaction, nausea, vomiting, flushing) OR x 72 hours after tinidazole. Do NOT use topical metronidazole (NOT effective for trichomoniasis, only for bacterial vaginosis)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "trichomonas_vaginalis": "Metronidazole 2g PO x1 (single dose, cure rate 85-95%). Alternative: Tinidazole 2g PO x1 (cure rate 90-95%). Alternative: Metronidazole 500mg PO BID x 7 days (cure rate 90-95%).",
+            "treatment_failure": "Persistent symptoms after metronidazole 2g x1. Causes: Reinfection (most common), metronidazole resistance (5-10%), non-adherence. Management: Repeat NAAT, treat sexual partners. Tinidazole 2g PO daily x 5 days (more effective than metronidazole for resistant strains). Alternative: Metronidazole 2g PO BID x 7 days. Consult infectious disease specialist if persistent after tinidazole.",
+            "high_level_metronidazole_resistance": "Rare (<1%, MIC >100 mcg/mL). Tinidazole 2g PO daily x 14 days OR Metronidazole 2-3g PO daily x 14 days. Consult infectious disease specialist. CDC consultation available (404-718-4141).",
+            "duration": "Single dose: Metronidazole 2g PO x1 OR Tinidazole 2g PO x1. Multi-day: Metronidazole 500mg PO BID x 7 days. Resistant: Tinidazole 2g PO daily x 5 days OR Metronidazole 2g PO BID x 7 days."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "Single dose: Metronidazole 2g PO x1 (preferred) OR Tinidazole 2g PO x1. Multi-day: Metronidazole 500mg PO BID x 7 days. Resistant: Tinidazole 2g PO daily x 5 days OR Metronidazole 2g PO BID x 7 days.",
+            "monitoring": "Test of cure (TOC) NOT routinely recommended (unless HIV-positive, pregnant, or persistent symptoms). Rescreen 3 months after treatment (reinfection rate 10-20%). Partner notification and treatment (all sexual partners in past 60 days).",
+            "stop_criteria": "Complete treatment even if symptoms resolve. Sexual partners treated. Abstain from sexual activity x 7 days after treatment and until partners treated. Avoid alcohol during treatment and x 24 hours after metronidazole OR x 72 hours after tinidazole."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "pregnancy": "Metronidazole 2g PO x1 (safe in pregnancy, all trimesters) OR Metronidazole 500mg PO BID x 7 days. Treat to reduce risk of preterm birth, low birth weight, premature rupture of membranes. Avoid tinidazole (insufficient safety data). Test of cure (TOC) 3 months after treatment REQUIRED. Treat sexual partners.",
+            "hiv_coinfection": "Metronidazole 500mg PO BID x 7 days (preferred, higher cure rate than single dose in HIV-positive women). Alternative: Metronidazole 2g PO x1. Test of cure (TOC) 3 months after treatment REQUIRED (higher risk of treatment failure). Increases HIV transmission (2-3 fold, disrupts epithelial barrier, increases HIV viral load).",
+            "bacterial_vaginosis_coinfection": "Co-infection 60-80%. Metronidazole 2g PO x1 treats both trichomoniasis and bacterial vaginosis. Alternative: Metronidazole 500mg PO BID x 7 days.",
+            "men": "Often asymptomatic (70-80%). Spontaneous clearance common (50% in 3 months). Treat if: Symptomatic (urethritis, dysuria, urethral discharge) OR Sexual partner diagnosed with trichomoniasis. Metronidazole 2g PO x1 OR Tinidazole 2g PO x1.",
+            "metronidazole_allergy": "Rare (<1%). Desensitization protocol available (consult infectious disease specialist). Alternative: Tinidazole 2g PO x1 (cross-reactivity rare but possible).",
+            "counseling": "Treat sexual partners (all partners in past 60 days). Abstain from sex x 7 days after treatment and until partners treated. Avoid alcohol during treatment and x 24 hours after metronidazole OR x 72 hours after tinidazole (disulfiram-like reaction). Rescreen 3 months after treatment (reinfection rate 10-20%). Condom use reduces transmission."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Single dose metronidazole 2g PO x1 (cure rate 85-95%, preferred for adherence)",
+              "Do NOT routinely test of cure (unless HIV-positive, pregnant, or persistent symptoms)",
+              "Treat sexual partners (all partners in past 60 days, reduces reinfection)",
+              "Rescreen 3 months after treatment (reinfection rate 10-20%)"
+            ],
+            "timeout_checklist": [
+              "Is metronidazole 2g PO x1 OR tinidazole 2g PO x1 prescribed? (Single dose preferred)",
+              "Is pregnancy excluded? (Metronidazole safe in pregnancy, avoid tinidazole)",
+              "Is HIV test performed? (Co-infection increases HIV transmission 2-3 fold)",
+              "Are sexual partners notified and treated? (All partners in past 60 days)",
+              "Is patient counseled to abstain from sex x 7 days after treatment and until partners treated?",
+              "Is patient counseled to avoid alcohol during treatment and x 24 hours after metronidazole OR x 72 hours after tinidazole?",
+              "Is rescreen arranged? (3 months after treatment, reinfection rate 10-20%)",
+              "Is test of cure (TOC) indicated? (HIV-positive, pregnant, or persistent symptoms)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT rely on wet mount alone (sensitivity 50-70%, false negative common). Do NOT use Pap smear for diagnosis (sensitivity 60-70%, false positive common). Do NOT use topical metronidazole (NOT effective for trichomoniasis). Do NOT routinely test of cure (unless HIV-positive, pregnant, or persistent symptoms).",
+            "diagnostic_stewardship": "NAAT preferred (sensitivity 95-99%). Wet mount if NAAT unavailable (sensitivity 50-70%). Test for co-infection (gonorrhea, chlamydia, HIV, syphilis). Pregnancy test all women of childbearing age.",
+            "prevention": "Condom use reduces transmission. Screen high-risk women (multiple partners, history of STI, HIV-positive). Partner notification and treatment (all partners in past 60 days). Abstain from sex x 7 days after treatment and until partners treated."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "CDC Sexually Transmitted Infections Treatment Guidelines (2021)",
+              "url": "https://www.cdc.gov/std/treatment-guidelines/default.htm"
+            },
+            {
+              "label": "CDC Trichomoniasis Treatment and Care (2024)",
+              "url": "https://www.cdc.gov/trichomoniasis/hcp/treatment.html"
+            },
+            {
+              "label": "WHO Guidelines for the Treatment of Trichomonas vaginalis (2024)",
+              "url": "https://www.who.int/publications/i/item/9789240029415"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "bacterial-vaginosis",
+      "name": "Bacterial Vaginosis (BV)",
+      "synonyms": [
+        "BV",
+        "Gardnerella vaginalis",
+        "vaginal dysbiosis"
+      ],
+      "icd10": [
+        "N76.0"
+      ],
+      "severity": [
+        "mild"
+      ],
+      "shortDescription": "Vaginal dysbiosis requiring metronidazole 500mg PO BID x 7 days or metronidazole 0.75% gel intravaginally daily x 5 days",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Vaginal dysbiosis (disruption of normal vaginal flora). NOT a sexually transmitted infection (but associated with sexual activity). Decrease in Lactobacillus (normal flora) → overgrowth of anaerobes (Gardnerella vaginalis, Prevotella, Mobiluncus). Most common cause of vaginal discharge (40-50%). Complications: Increased risk of HIV transmission (2-fold), preterm birth (if pregnant), pelvic inflammatory disease (PID), post-surgical infections (hysterectomy, abortion).",
+            "clinical_presentation": "Vaginal discharge (thin, gray-white, homogeneous, fishy odor, worse after sex or menses). Asymptomatic: 50% of women with BV. NO vulvovaginal irritation, NO dysuria, NO dyspareunia (if present, consider trichomoniasis or candidiasis). Physical exam: Thin gray-white discharge coating vaginal walls, pH >4.5, positive whiff test (fishy odor with 10% KOH).",
+            "diagnostic_criteria": "Amsel criteria (3 of 4): Thin gray-white discharge, pH >4.5, positive whiff test (fishy odor with 10% KOH), clue cells on wet mount (>20%). Nugent score (Gram stain): 7-10 = BV, 4-6 = intermediate, 0-3 = normal. NAAT (nucleic acid amplification test) available but NOT routinely recommended.",
+            "risk_factors": [
+              "Multiple sexual partners or new sexual partner",
+              "Douching",
+              "Lack of condom use",
+              "Smoking",
+              "Black race (prevalence 30% vs 10% overall)",
+              "IUD use"
+            ],
+            "red_flags": [
+              "Pregnancy - increased risk of preterm birth, low birth weight, premature rupture of membranes, requires treatment (metronidazole 500mg PO BID x 7 days, safe in pregnancy)",
+              "Pelvic inflammatory disease (PID) - lower abdominal pain, cervical motion tenderness, fever, requires empiric treatment for gonorrhea + chlamydia + anaerobes",
+              "Post-surgical infection - if hysterectomy, abortion, or other gynecologic surgery, requires treatment before procedure",
+              "HIV coinfection - increased risk of HIV transmission (2-fold), requires treatment"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Test if: Symptomatic (vaginal discharge, fishy odor), pregnant (screen at first prenatal visit if high-risk), or before gynecologic surgery. Amsel criteria (3 of 4) OR Nugent score (Gram stain) OR NAAT.",
+            "essential_tests": [
+              "Amsel criteria (3 of 4): Thin gray-white discharge, pH >4.5, positive whiff test (fishy odor with 10% KOH), clue cells on wet mount (>20%, epithelial cells covered with bacteria).",
+              "Vaginal pH: pH >4.5 (normal vaginal pH 3.8-4.5). NOT specific (trichomoniasis also pH >4.5).",
+              "Whiff test: Add 10% KOH to vaginal discharge, fishy odor (amine odor from anaerobes).",
+              "Wet mount microscopy: Clue cells (>20%, epithelial cells covered with bacteria, obscured cell borders)."
+            ],
+            "conditional_tests": [
+              "Nugent score (Gram stain): 7-10 = BV, 4-6 = intermediate, 0-3 = normal. Gold standard but requires expertise. Use if Amsel criteria unavailable.",
+              "NAAT (nucleic acid amplification test): Available but NOT routinely recommended (Amsel criteria or Nugent score preferred). Use if wet mount unavailable.",
+              "Test for co-infection: Trichomoniasis NAAT (co-infection 60-80%), gonorrhea NAAT, chlamydia NAAT, HIV."
+            ],
+            "when_not_to_test": "Do NOT routinely screen asymptomatic non-pregnant women (treatment does NOT prevent recurrence). Do NOT use Pap smear for diagnosis (sensitivity 50%, false positive common). Do NOT culture (Gardnerella vaginalis present in 50% of normal women).",
+            "turnaround_time": "Amsel criteria: Immediate. Vaginal pH: Immediate. Whiff test: Immediate. Wet mount: Immediate. Nugent score: 1-2 days. NAAT: 24-48 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Vaginal dysbiosis (NOT a single organism). Decrease in Lactobacillus (normal flora, produces lactic acid and hydrogen peroxide, maintains pH 3.8-4.5) → overgrowth of anaerobes (Gardnerella vaginalis, Prevotella, Mobiluncus, Atopobium, Megasphaera). pH increases to >4.5 → anaerobes produce amines (fishy odor).",
+            "pathogenesis": "Disruption of normal vaginal flora (douching, multiple sexual partners, antibiotics) → decrease in Lactobacillus → overgrowth of anaerobes → vaginal discharge, fishy odor. NOT sexually transmitted (but associated with sexual activity). Recurrence common (30% in 3 months, 50% in 12 months).",
+            "resistance_patterns": {
+              "metronidazole_resistance": "Metronidazole resistance: Rare (<5%). Treatment failure usually due to recurrence (reinfection or relapse), NOT resistance. Recurrence rate 30% in 3 months, 50% in 12 months."
+            },
+            "timing_critical": "Treat if: Symptomatic, pregnant, or before gynecologic surgery. Do NOT treat asymptomatic non-pregnant women (treatment does NOT prevent recurrence). Metronidazole 500mg PO BID x 7 days (cure rate 80-90%) OR Metronidazole 0.75% gel intravaginally daily x 5 days (cure rate 75-85%)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line_oral": "Metronidazole 500mg PO BID x 7 days (cure rate 80-90%, CDC 2021 preferred). Alternative: Metronidazole 2g PO x1 (single dose, cure rate 70-80%, higher recurrence rate, use if adherence concern). Alternative: Clindamycin 300mg PO BID x 7 days (cure rate 80-90%, more expensive).",
+            "first_line_intravaginal": "Metronidazole 0.75% gel intravaginally daily x 5 days (cure rate 75-85%). Alternative: Clindamycin 2% cream intravaginally at bedtime x 7 days (cure rate 80-90%, oil-based, weakens latex condoms). Alternative: Clindamycin 100mg ovules intravaginally at bedtime x 3 days (cure rate 80-90%).",
+            "pregnancy": "Metronidazole 500mg PO BID x 7 days (safe in pregnancy, all trimesters) OR Metronidazole 2g PO x1 OR Clindamycin 300mg PO BID x 7 days. Treat to reduce risk of preterm birth, low birth weight, premature rupture of membranes. Avoid intravaginal clindamycin in second half of pregnancy (increased risk of adverse events).",
+            "recurrent_bv": "Recurrence rate 30% in 3 months, 50% in 12 months. Treat acute episode: Metronidazole 500mg PO BID x 7 days. Suppressive therapy: Metronidazole 0.75% gel intravaginally twice weekly x 4-6 months (reduces recurrence by 50%). Alternative: Boric acid 600mg intravaginally daily x 21 days, then twice weekly x 4-6 months.",
+            "avoid_list": "Avoid alcohol during treatment and x 24 hours after metronidazole (disulfiram-like reaction). Do NOT treat asymptomatic non-pregnant women (treatment does NOT prevent recurrence). Do NOT treat male partners (does NOT reduce recurrence)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "bacterial_vaginosis": "Metronidazole 500mg PO BID x 7 days (cure rate 80-90%) OR Metronidazole 0.75% gel intravaginally daily x 5 days (cure rate 75-85%) OR Clindamycin 300mg PO BID x 7 days (cure rate 80-90%) OR Clindamycin 2% cream intravaginally at bedtime x 7 days (cure rate 80-90%).",
+            "treatment_failure": "Persistent symptoms after treatment. Causes: Recurrence (most common, 30% in 3 months), non-adherence, resistant organism (rare). Management: Repeat Amsel criteria or Nugent score. Retreat with metronidazole 500mg PO BID x 7 days OR clindamycin 300mg PO BID x 7 days. Consider suppressive therapy (metronidazole 0.75% gel intravaginally twice weekly x 4-6 months).",
+            "recurrent_bv": "≥3 episodes in 12 months. Treat acute episode: Metronidazole 500mg PO BID x 7 days. Suppressive therapy: Metronidazole 0.75% gel intravaginally twice weekly x 4-6 months (reduces recurrence by 50%). Alternative: Boric acid 600mg intravaginally daily x 21 days, then twice weekly x 4-6 months. Lactobacillus probiotics (limited evidence, may reduce recurrence).",
+            "duration": "Acute episode: Metronidazole 500mg PO BID x 7 days OR Metronidazole 0.75% gel intravaginally daily x 5 days. Suppressive therapy: Metronidazole 0.75% gel intravaginally twice weekly x 4-6 months."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "Acute episode: Metronidazole 500mg PO BID x 7 days OR Metronidazole 0.75% gel intravaginally daily x 5 days OR Clindamycin 300mg PO BID x 7 days OR Clindamycin 2% cream intravaginally at bedtime x 7 days. Suppressive therapy: Metronidazole 0.75% gel intravaginally twice weekly x 4-6 months.",
+            "monitoring": "Test of cure (TOC) NOT routinely recommended (unless pregnant or persistent symptoms). Recurrence common (30% in 3 months, 50% in 12 months). Retreat if symptomatic recurrence. Consider suppressive therapy if ≥3 episodes in 12 months.",
+            "stop_criteria": "Complete treatment even if symptoms resolve. Avoid alcohol during treatment and x 24 hours after metronidazole. Avoid douching (disrupts normal vaginal flora, increases recurrence)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "pregnancy": "Metronidazole 500mg PO BID x 7 days (safe in pregnancy, all trimesters) OR Metronidazole 2g PO x1 OR Clindamycin 300mg PO BID x 7 days. Treat to reduce risk of preterm birth, low birth weight, premature rupture of membranes. Avoid intravaginal clindamycin in second half of pregnancy (increased risk of adverse events). Test of cure (TOC) 1 month after treatment REQUIRED.",
+            "hiv_coinfection": "Increased risk of HIV transmission (2-fold, disrupts epithelial barrier). Same treatment regimen. Test of cure (TOC) 1 month after treatment REQUIRED (higher risk of treatment failure).",
+            "before_gynecologic_surgery": "Treat before hysterectomy, abortion, or other gynecologic surgery (reduces risk of post-surgical infection by 50%). Metronidazole 500mg PO BID x 7 days OR Metronidazole 0.75% gel intravaginally daily x 5 days.",
+            "recurrent_bv": "≥3 episodes in 12 months. Treat acute episode: Metronidazole 500mg PO BID x 7 days. Suppressive therapy: Metronidazole 0.75% gel intravaginally twice weekly x 4-6 months (reduces recurrence by 50%). Alternative: Boric acid 600mg intravaginally daily x 21 days, then twice weekly x 4-6 months. Lactobacillus probiotics (limited evidence). Avoid douching, multiple sexual partners.",
+            "male_partners": "Do NOT treat male partners (does NOT reduce recurrence). BV NOT sexually transmitted (but associated with sexual activity).",
+            "counseling": "BV NOT sexually transmitted (but associated with sexual activity). Recurrence common (30% in 3 months, 50% in 12 months). Avoid douching (disrupts normal vaginal flora, increases recurrence). Avoid alcohol during treatment and x 24 hours after metronidazole. Intravaginal clindamycin cream is oil-based (weakens latex condoms)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Do NOT treat asymptomatic non-pregnant women (treatment does NOT prevent recurrence)",
+              "Do NOT treat male partners (does NOT reduce recurrence)",
+              "Do NOT routinely test of cure (unless pregnant or persistent symptoms)",
+              "Suppressive therapy (metronidazole 0.75% gel intravaginally twice weekly x 4-6 months) reduces recurrence by 50% if ≥3 episodes in 12 months"
+            ],
+            "timeout_checklist": [
+              "Is diagnosis confirmed by Amsel criteria (3 of 4) OR Nugent score?",
+              "Is metronidazole 500mg PO BID x 7 days OR metronidazole 0.75% gel intravaginally daily x 5 days prescribed?",
+              "Is pregnancy excluded? (Metronidazole safe in pregnancy, avoid intravaginal clindamycin in second half of pregnancy)",
+              "Is treatment indicated? (Symptomatic, pregnant, or before gynecologic surgery)",
+              "Is patient counseled to avoid alcohol during treatment and x 24 hours after metronidazole?",
+              "Is patient counseled to avoid douching? (Disrupts normal vaginal flora, increases recurrence)",
+              "Is suppressive therapy indicated? (≥3 episodes in 12 months)",
+              "Is male partner treatment avoided? (Does NOT reduce recurrence)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT treat asymptomatic non-pregnant women (treatment does NOT prevent recurrence). Do NOT treat male partners (does NOT reduce recurrence). Do NOT routinely test of cure (unless pregnant or persistent symptoms). Do NOT routinely screen asymptomatic non-pregnant women.",
+            "diagnostic_stewardship": "Amsel criteria (3 of 4) OR Nugent score (Gram stain). Test for co-infection (trichomoniasis, gonorrhea, chlamydia, HIV). Pregnancy test all women of childbearing age.",
+            "prevention": "Avoid douching (disrupts normal vaginal flora, increases recurrence). Condom use may reduce recurrence. Lactobacillus probiotics (limited evidence). Suppressive therapy (metronidazole 0.75% gel intravaginally twice weekly x 4-6 months) if ≥3 episodes in 12 months."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "CDC Sexually Transmitted Infections Treatment Guidelines (2021)",
+              "url": "https://www.cdc.gov/std/treatment-guidelines/default.htm"
+            },
+            {
+              "label": "CDC Bacterial Vaginosis Treatment and Care (2024)",
+              "url": "https://www.cdc.gov/bacterial-vaginosis/hcp/treatment.html"
+            },
+            {
+              "label": "ACOG Practice Bulletin: Vaginitis in Nonpregnant Patients (2020)",
+              "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2020/02/vaginitis-in-nonpregnant-patients"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "pelvic-inflammatory-disease",
+      "name": "Pelvic Inflammatory Disease (PID)",
+      "synonyms": [
+        "PID",
+        "salpingitis",
+        "endometritis",
+        "tubo-ovarian abscess"
+      ],
+      "icd10": [
+        "N70.0",
+        "N70.9",
+        "N71.0",
+        "N71.9",
+        "N73.0"
+      ],
+      "severity": [
+        "moderate",
+        "severe"
+      ],
+      "shortDescription": "Polymicrobial upper genital tract infection requiring empiric treatment for gonorrhea, chlamydia, and anaerobes (ceftriaxone + doxycycline + metronidazole)",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Polymicrobial infection of upper female genital tract (endometrium, fallopian tubes, ovaries, pelvic peritoneum). Organisms: N. gonorrhoeae (30-50%), C. trachomatis (30-50%), anaerobes (Prevotella, Bacteroides), Gram-negatives (E. coli), Mycoplasma genitalium. 10-20% of women with untreated gonorrhea or chlamydia develop PID. Complications: Tubo-ovarian abscess (15-20%), ectopic pregnancy (6-10 fold increased risk), infertility (10-20%), chronic pelvic pain (20-30%).",
+            "clinical_presentation": "Lower abdominal pain (bilateral), abnormal vaginal discharge, abnormal uterine bleeding, dyspareunia, fever (30-40%). Physical exam: Cervical motion tenderness (chandelier sign), uterine tenderness, adnexal tenderness. Fitz-Hugh-Curtis syndrome: Perihepatitis (right upper quadrant pain, 5-10%).",
+            "diagnostic_criteria": "Minimum criteria (CDC 2021): Sexually active young woman + pelvic or lower abdominal pain + cervical motion tenderness OR uterine tenderness OR adnexal tenderness. Additional criteria: Fever >38.3°C, abnormal cervical or vaginal discharge, elevated ESR or CRP, documented gonorrhea or chlamydia. Definitive criteria: Endometrial biopsy (endometritis), transvaginal ultrasound or MRI (thickened fluid-filled tubes, tubo-ovarian abscess), laparoscopy (pelvic inflammation).",
+            "risk_factors": [
+              "Age <25 years",
+              "Multiple sexual partners or new sexual partner",
+              "History of PID or STI",
+              "Inconsistent condom use",
+              "Douching",
+              "Recent IUD insertion (within 3 weeks)"
+            ],
+            "red_flags": [
+              "Tubo-ovarian abscess - palpable adnexal mass, fever, severe pain, requires IV antibiotics + hospitalization + possible drainage or surgery",
+              "Ectopic pregnancy - positive pregnancy test, unilateral pain, vaginal bleeding, requires urgent ultrasound + gynecology consult",
+              "Appendicitis - right lower quadrant pain, fever, nausea, vomiting, requires surgical consult",
+              "Sepsis - hypotension, tachycardia, altered mental status, requires IV antibiotics + hospitalization + ICU",
+              "Fitz-Hugh-Curtis syndrome - perihepatitis, right upper quadrant pain (5-10%), self-limited with PID treatment"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Test if: Sexually active young woman + pelvic or lower abdominal pain + cervical motion tenderness OR uterine tenderness OR adnexal tenderness. Low threshold for diagnosis (delay in treatment increases risk of complications). Test for gonorrhea, chlamydia, pregnancy, HIV.",
+            "essential_tests": [
+              "Gonorrhea NAAT: Cervical or vaginal swab. Positive in 30-50% of PID cases.",
+              "Chlamydia NAAT: Cervical or vaginal swab. Positive in 30-50% of PID cases.",
+              "Pregnancy test: Rule out ectopic pregnancy (positive in 5-10% of PID cases).",
+              "CBC: Leukocytosis (WBC >10,000, 50-60% of PID cases).",
+              "ESR or CRP: Elevated in 70-80% of PID cases. Non-specific."
+            ],
+            "conditional_tests": [
+              "Transvaginal ultrasound: If severe, palpable adnexal mass, or failed outpatient therapy. Thickened fluid-filled tubes (salpingitis), tubo-ovarian abscess, free fluid.",
+              "Endometrial biopsy: If diagnosis uncertain. Endometritis (plasma cells on histology). Invasive, rarely needed.",
+              "Laparoscopy: Gold standard but invasive. Use if diagnosis uncertain, failed medical therapy, or tubo-ovarian abscess requiring drainage.",
+              "HIV test: All patients with PID (co-infection increases PID severity and recurrence).",
+              "Syphilis test (RPR or VDRL): All patients with PID."
+            ],
+            "when_not_to_test": "Do NOT delay treatment while awaiting test results (low threshold for empiric treatment, delay increases risk of complications). Do NOT require fever or elevated WBC for diagnosis (present in only 30-60% of PID cases).",
+            "turnaround_time": "Gonorrhea NAAT: 24-48 hours. Chlamydia NAAT: 24-48 hours. Pregnancy test: <5 minutes. CBC: 1-2 hours. ESR or CRP: 1-2 hours. Transvaginal ultrasound: Same day."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Polymicrobial. N. gonorrhoeae (30-50%), C. trachomatis (30-50%), anaerobes (Prevotella, Bacteroides, Peptostreptococcus, 25-50%), Gram-negatives (E. coli, 10-20%), Mycoplasma genitalium (10-30%), Ureaplasma urealyticum (10-20%). Often mixed infection (2-3 organisms).",
+            "pathogenesis": "Ascending infection from cervix → endometrium (endometritis) → fallopian tubes (salpingitis) → ovaries (oophoritis) → pelvic peritoneum (peritonitis). N. gonorrhoeae and C. trachomatis initiate infection → disrupt epithelial barrier → secondary invasion by anaerobes and Gram-negatives. Complications: Tubo-ovarian abscess (15-20%), ectopic pregnancy (6-10 fold increased risk), infertility (10-20%), chronic pelvic pain (20-30%).",
+            "resistance_patterns": {
+              "gonorrhea_resistance": "N. gonorrhoeae: Fluoroquinolone resistance 30-40%, cefixime reduced susceptibility 10-20%. Use ceftriaxone 500mg IM x1 (cure rate 97-99%).",
+              "chlamydia_resistance": "C. trachomatis: NO clinically significant resistance to doxycycline or azithromycin."
+            },
+            "timing_critical": "Start empiric treatment immediately (do NOT delay while awaiting test results). Delay in treatment increases risk of complications (infertility, ectopic pregnancy, chronic pelvic pain). Outpatient: Ceftriaxone 500mg IM x1 + Doxycycline 100mg PO BID x 14 days + Metronidazole 500mg PO BID x 14 days. Inpatient: Cefotetan 2g IV q12h + Doxycycline 100mg IV/PO BID OR Cefoxitin 2g IV q6h + Doxycycline 100mg IV/PO BID."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "outpatient_regimen": "Ceftriaxone 500mg IM x1 (if weight ≥150 kg, use 1g IM x1) + Doxycycline 100mg PO BID x 14 days + Metronidazole 500mg PO BID x 14 days (CDC 2021 preferred, covers gonorrhea, chlamydia, anaerobes). Alternative: Cefoxitin 2g IM x1 + Probenecid 1g PO x1 + Doxycycline 100mg PO BID x 14 days + Metronidazole 500mg PO BID x 14 days. Alternative: Ceftriaxone 500mg IM x1 + Azithromycin 1g PO weekly x 2 weeks (if doxycycline contraindicated).",
+            "inpatient_regimen_a": "Cefotetan 2g IV q12h + Doxycycline 100mg IV or PO BID. Continue until 24 hours after clinical improvement, then switch to Doxycycline 100mg PO BID + Metronidazole 500mg PO BID to complete 14 days total.",
+            "inpatient_regimen_b": "Cefoxitin 2g IV q6h + Doxycycline 100mg IV or PO BID. Continue until 24 hours after clinical improvement, then switch to Doxycycline 100mg PO BID + Metronidazole 500mg PO BID to complete 14 days total.",
+            "inpatient_regimen_c": "Clindamycin 900mg IV q8h + Gentamicin 5mg/kg IV daily (or 2mg/kg loading dose, then 1.5mg/kg q8h). Continue until 24 hours after clinical improvement, then switch to Doxycycline 100mg PO BID + Metronidazole 500mg PO BID OR Clindamycin 450mg PO QID to complete 14 days total.",
+            "hospitalization_criteria": "Hospitalize if: Severe (high fever, nausea, vomiting, severe pain), tubo-ovarian abscess, pregnancy, failed outpatient therapy (no improvement in 48-72 hours), unable to tolerate PO, or diagnostic uncertainty (appendicitis, ectopic pregnancy).",
+            "avoid_list": "Avoid fluoroquinolones (ciprofloxacin, levofloxacin, resistance 30-40% for gonorrhea). Do NOT delay treatment while awaiting test results (low threshold for empiric treatment)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "gonorrhea_chlamydia_pid": "Ceftriaxone 500mg IM x1 + Doxycycline 100mg PO BID x 14 days + Metronidazole 500mg PO BID x 14 days (covers gonorrhea, chlamydia, anaerobes). Continue doxycycline + metronidazole x 14 days total.",
+            "tubo_ovarian_abscess": "Hospitalization. IV antibiotics: Cefotetan 2g IV q12h + Doxycycline 100mg IV/PO BID OR Clindamycin 900mg IV q8h + Gentamicin 5mg/kg IV daily. Continue until 24 hours after clinical improvement, then switch to PO to complete 14 days total. Drainage if: Abscess >9 cm, failed medical therapy (no improvement in 48-72 hours), or ruptured abscess. Surgery if: Ruptured abscess with peritonitis or sepsis.",
+            "fitz_hugh_curtis_syndrome": "Perihepatitis (right upper quadrant pain, 5-10%). Same treatment as PID. Self-limited with PID treatment. Ultrasound or CT if diagnosis uncertain (rule out cholecystitis, hepatitis).",
+            "duration": "Outpatient: Doxycycline 100mg PO BID + Metronidazole 500mg PO BID x 14 days total (after ceftriaxone 500mg IM x1). Inpatient: IV antibiotics until 24 hours after clinical improvement, then switch to PO to complete 14 days total."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "Outpatient: Ceftriaxone 500mg IM x1 + Doxycycline 100mg PO BID + Metronidazole 500mg PO BID x 14 days total. Inpatient: IV antibiotics until 24 hours after clinical improvement, then switch to PO to complete 14 days total.",
+            "monitoring": "Outpatient: Follow-up in 48-72 hours (assess clinical improvement). Hospitalize if no improvement. Inpatient: Daily assessment (fever, pain, WBC, CRP). Switch to PO when 24 hours after clinical improvement. Test of cure (TOC) for gonorrhea and chlamydia 3-4 weeks after treatment. Rescreen 3 months after treatment (reinfection rate 10-20%).",
+            "stop_criteria": "Complete 14 days total treatment even if symptoms resolve. Treat sexual partners (all partners in past 60 days). Abstain from sexual activity until treatment completed and partners treated."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "pregnancy": "Hospitalization REQUIRED. IV antibiotics: Cefotetan 2g IV q12h + Doxycycline 100mg IV/PO BID (avoid doxycycline if possible, use azithromycin 500mg IV daily instead) OR Clindamycin 900mg IV q8h + Gentamicin 5mg/kg IV daily. Continue until 24 hours after clinical improvement, then switch to Azithromycin 500mg PO daily + Metronidazole 500mg PO BID to complete 14 days total. Obstetrics consult. Increased risk of preterm birth, fetal loss.",
+            "hiv_coinfection": "Same treatment regimen. Higher risk of tubo-ovarian abscess and treatment failure. Hospitalization if severe. Test of cure (TOC) 3-4 weeks after treatment REQUIRED.",
+            "iud_in_place": "Do NOT routinely remove IUD (removal does NOT improve outcomes). Remove IUD if: No clinical improvement in 48-72 hours OR Tubo-ovarian abscess. Continue antibiotics x 14 days total.",
+            "tubo_ovarian_abscess": "Hospitalization. IV antibiotics x 24 hours after clinical improvement, then switch to PO to complete 14 days total. Drainage if: Abscess >9 cm, failed medical therapy (no improvement in 48-72 hours), or ruptured abscess. Percutaneous drainage (CT-guided or ultrasound-guided) OR Transvaginal drainage OR Laparoscopic drainage. Surgery if: Ruptured abscess with peritonitis or sepsis.",
+            "partner_notification": "Treat all sexual partners in past 60 days. Empiric treatment for gonorrhea + chlamydia (ceftriaxone 500mg IM x1 + doxycycline 100mg PO BID x 7 days). Abstain from sexual activity until treatment completed and partners treated.",
+            "counseling": "Complications: Tubo-ovarian abscess (15-20%), ectopic pregnancy (6-10 fold increased risk), infertility (10-20%), chronic pelvic pain (20-30%). Recurrence rate 20-25%. Treat sexual partners (all partners in past 60 days). Abstain from sexual activity until treatment completed and partners treated. Condom use reduces risk. Avoid douching."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Start empiric treatment immediately (do NOT delay while awaiting test results, low threshold for diagnosis)",
+              "Outpatient treatment if mild-moderate (ceftriaxone 500mg IM x1 + doxycycline 100mg PO BID + metronidazole 500mg PO BID x 14 days)",
+              "Hospitalize if: Severe, tubo-ovarian abscess, pregnancy, failed outpatient therapy, unable to tolerate PO, or diagnostic uncertainty",
+              "Switch from IV to PO when 24 hours after clinical improvement (complete 14 days total)"
+            ],
+            "timeout_checklist": [
+              "Is diagnosis confirmed by minimum criteria? (Sexually active young woman + pelvic pain + cervical motion tenderness OR uterine tenderness OR adnexal tenderness)",
+              "Is empiric treatment started immediately? (Do NOT delay while awaiting test results)",
+              "Is ceftriaxone 500mg IM x1 + doxycycline 100mg PO BID + metronidazole 500mg PO BID x 14 days prescribed? (Outpatient)",
+              "Is hospitalization indicated? (Severe, tubo-ovarian abscess, pregnancy, failed outpatient therapy, unable to tolerate PO, or diagnostic uncertainty)",
+              "Is pregnancy excluded? (Positive pregnancy test in 5-10% of PID cases, requires hospitalization)",
+              "Is HIV test performed? (Co-infection increases PID severity and recurrence)",
+              "Are sexual partners notified and treated? (All partners in past 60 days)",
+              "Is follow-up arranged? (48-72 hours for outpatient, test of cure 3-4 weeks, rescreen 3 months)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid fluoroquinolones (ciprofloxacin, levofloxacin, resistance 30-40% for gonorrhea). Do NOT delay treatment while awaiting test results. Do NOT require fever or elevated WBC for diagnosis (present in only 30-60% of PID cases). Do NOT routinely remove IUD (removal does NOT improve outcomes).",
+            "diagnostic_stewardship": "Low threshold for diagnosis (minimum criteria: sexually active young woman + pelvic pain + cervical motion tenderness OR uterine tenderness OR adnexal tenderness). Test for gonorrhea, chlamydia, pregnancy, HIV. Transvaginal ultrasound if severe or palpable adnexal mass.",
+            "prevention": "Screen for gonorrhea and chlamydia (sexually active women <25 years, annually). Treat gonorrhea and chlamydia promptly (reduces PID risk by 50%). Condom use reduces risk. Avoid douching. Partner notification and treatment."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "CDC Sexually Transmitted Infections Treatment Guidelines (2021)",
+              "url": "https://www.cdc.gov/std/treatment-guidelines/default.htm"
+            },
+            {
+              "label": "CDC Pelvic Inflammatory Disease (PID) Treatment and Care (2024)",
+              "url": "https://www.cdc.gov/pid/hcp/treatment.html"
+            },
+            {
+              "label": "ACOG Practice Bulletin: Pelvic Inflammatory Disease (2020)",
+              "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2020/05/pelvic-inflammatory-disease"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "epididymitis",
+      "name": "Epididymitis",
+      "synonyms": [
+        "epididymo-orchitis",
+        "testicular pain"
+      ],
+      "icd10": [
+        "N45.1",
+        "N45.3",
+        "N45.4"
+      ],
+      "severity": [
+        "moderate"
+      ],
+      "shortDescription": "Epididymal inflammation requiring age-based treatment: <35 years (ceftriaxone + doxycycline for STI), ≥35 years (fluoroquinolone for enteric organisms)",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Inflammation of epididymis (coiled tube at back of testicle). Age <35 years: N. gonorrhoeae (30-50%), C. trachomatis (50-70%). Age ≥35 years: E. coli (50-70%), Enterobacteriaceae (20-30%). Complications: Abscess (5-10%), testicular infarction (rare), infertility (rare, <5%).",
+            "clinical_presentation": "Unilateral scrotal pain (gradual onset over 1-2 days), scrotal swelling, dysuria, urethral discharge (if STI). Physical exam: Tender, swollen epididymis (posterior testicle), positive Prehn sign (pain relief with testicular elevation), cremasteric reflex intact (distinguishes from testicular torsion). Fever (30-40%).",
+            "diagnostic_criteria": "Clinical diagnosis: Unilateral scrotal pain + tender epididymis + dysuria or urethral discharge. Ultrasound if: Diagnosis uncertain, concern for testicular torsion, abscess, or tumor. Increased blood flow to epididymis (color Doppler), thickened epididymis, hydrocele.",
+            "risk_factors": [
+              "Age <35 years: Multiple sexual partners, history of STI, inconsistent condom use",
+              "Age ≥35 years: Benign prostatic hyperplasia (BPH), recent urinary tract instrumentation, recent urinary tract infection",
+              "Insertive anal intercourse (E. coli)",
+              "Amiodarone use (chemical epididymitis, rare)"
+            ],
+            "red_flags": [
+              "Testicular torsion - sudden onset (<6 hours), severe pain, absent cremasteric reflex, horizontal lie of testicle, requires urgent ultrasound + urology consult + surgery within 6 hours",
+              "Abscess - persistent fever, severe pain, fluctuant mass, requires ultrasound + drainage or surgery",
+              "Fournier gangrene - necrotizing fasciitis of scrotum, crepitus, skin necrosis, requires urgent surgery + broad-spectrum antibiotics + ICU",
+              "Testicular tumor - painless mass, does NOT improve with antibiotics, requires ultrasound + urology referral"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Test if: Unilateral scrotal pain + tender epididymis. Test for gonorrhea, chlamydia, urinalysis, urine culture. Ultrasound if diagnosis uncertain or concern for testicular torsion.",
+            "essential_tests": [
+              "Gonorrhea NAAT: First-void urine (men). Positive in 30-50% of epididymitis in men <35 years.",
+              "Chlamydia NAAT: First-void urine (men). Positive in 50-70% of epididymitis in men <35 years.",
+              "Urinalysis: Pyuria (WBC >10/hpf, 70-80% of epididymitis). Bacteriuria (if enteric organisms).",
+              "Urine culture: If age ≥35 years or insertive anal intercourse. E. coli (50-70%), Enterobacteriaceae (20-30%)."
+            ],
+            "conditional_tests": [
+              "Scrotal ultrasound with color Doppler: If diagnosis uncertain, concern for testicular torsion, abscess, or tumor. Increased blood flow to epididymis (distinguishes from testicular torsion, decreased blood flow), thickened epididymis (>10 mm), hydrocele.",
+              "HIV test: All patients with epididymitis (co-infection increases STI risk).",
+              "Syphilis test (RPR or VDRL): All patients with epididymitis."
+            ],
+            "when_not_to_test": "Do NOT delay treatment while awaiting test results (start empiric treatment immediately). Do NOT routinely ultrasound if diagnosis clear (clinical diagnosis sufficient).",
+            "turnaround_time": "Gonorrhea NAAT: 24-48 hours. Chlamydia NAAT: 24-48 hours. Urinalysis: 1-2 hours. Urine culture: 24-48 hours. Scrotal ultrasound: Same day."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Age <35 years: N. gonorrhoeae (30-50%), C. trachomatis (50-70%). Age ≥35 years: E. coli (50-70%), Enterobacteriaceae (Klebsiella, Proteus, Pseudomonas, 20-30%). Insertive anal intercourse: E. coli (most common). Amiodarone: Chemical epididymitis (rare, non-infectious).",
+            "pathogenesis": "Ascending infection from urethra → vas deferens → epididymis. STI (gonorrhea, chlamydia): Sexual transmission → urethritis → epididymitis. Enteric organisms (E. coli): Urinary tract infection or instrumentation → reflux of infected urine → epididymitis. Complications: Abscess (5-10%), testicular infarction (rare), infertility (rare, <5%).",
+            "resistance_patterns": {
+              "gonorrhea_resistance": "N. gonorrhoeae: Fluoroquinolone resistance 30-40%, cefixime reduced susceptibility 10-20%. Use ceftriaxone 500mg IM x1 (cure rate 97-99%).",
+              "chlamydia_resistance": "C. trachomatis: NO clinically significant resistance to doxycycline or azithromycin.",
+              "e_coli_resistance": "E. coli: Fluoroquinolone resistance 20-30% (increasing). Use levofloxacin 500mg PO daily x 10 days OR ofloxacin 300mg PO BID x 10 days. If fluoroquinolone resistance suspected, use ceftriaxone 1g IV daily x 10 days."
+            },
+            "timing_critical": "Start empiric treatment immediately (do NOT delay while awaiting test results). Age <35 years: Ceftriaxone 500mg IM x1 + Doxycycline 100mg PO BID x 10 days. Age ≥35 years: Levofloxacin 500mg PO daily x 10 days OR Ofloxacin 300mg PO BID x 10 days."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "age_less_than_35": "Ceftriaxone 500mg IM x1 (if weight ≥150 kg, use 1g IM x1) + Doxycycline 100mg PO BID x 10 days (CDC 2021 preferred, covers gonorrhea and chlamydia). Alternative: Ceftriaxone 500mg IM x1 + Azithromycin 1g PO x1 (if doxycycline contraindicated).",
+            "age_35_or_older": "Levofloxacin 500mg PO daily x 10 days (covers E. coli and Enterobacteriaceae). Alternative: Ofloxacin 300mg PO BID x 10 days. If fluoroquinolone resistance suspected (recent fluoroquinolone use, travel to high-resistance area): Ceftriaxone 1g IV daily x 10 days.",
+            "insertive_anal_intercourse": "Ceftriaxone 500mg IM x1 + Levofloxacin 500mg PO daily x 10 days (covers gonorrhea, chlamydia, and E. coli). Alternative: Ceftriaxone 500mg IM x1 + Ofloxacin 300mg PO BID x 10 days.",
+            "supportive_care": "NSAIDs (ibuprofen 400-600mg PO TID, naproxen 500mg PO BID) for pain and inflammation. Scrotal elevation (jockstrap or rolled towel). Ice packs (15-20 minutes, 3-4 times/day). Avoid heavy lifting, strenuous activity, sexual activity until symptoms resolve.",
+            "avoid_list": "Avoid fluoroquinolones if age <35 years (gonorrhea resistance 30-40%). Do NOT delay treatment while awaiting test results. Do NOT use single-dose azithromycin alone (insufficient for epididymitis, requires 10 days treatment)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "gonorrhea_chlamydia": "Ceftriaxone 500mg IM x1 + Doxycycline 100mg PO BID x 10 days (covers gonorrhea and chlamydia). Continue doxycycline x 10 days total.",
+            "e_coli_enterobacteriaceae": "Levofloxacin 500mg PO daily x 10 days OR Ofloxacin 300mg PO BID x 10 days. If fluoroquinolone resistance: Ceftriaxone 1g IV daily x 10 days OR Cefixime 400mg PO BID x 10 days (if susceptible).",
+            "abscess": "Ultrasound-guided drainage OR Surgical drainage. Continue antibiotics x 10-14 days total. Urology referral.",
+            "treatment_failure": "Persistent symptoms after 3-5 days. Causes: Wrong organism (testicular torsion, tumor, abscess), resistant organism, non-adherence. Management: Ultrasound (rule out abscess, torsion, tumor). Urology referral. Broaden antibiotics (ceftriaxone 1g IV daily + doxycycline 100mg PO BID).",
+            "duration": "Age <35 years: Doxycycline 100mg PO BID x 10 days (after ceftriaxone 500mg IM x1). Age ≥35 years: Levofloxacin 500mg PO daily x 10 days OR Ofloxacin 300mg PO BID x 10 days. Abscess: 10-14 days total."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "Age <35 years: Ceftriaxone 500mg IM x1 + Doxycycline 100mg PO BID x 10 days. Age ≥35 years: Levofloxacin 500mg PO daily x 10 days OR Ofloxacin 300mg PO BID x 10 days. Abscess: 10-14 days total.",
+            "monitoring": "Follow-up in 3-5 days (assess clinical improvement). Ultrasound if no improvement (rule out abscess, torsion, tumor). Test of cure (TOC) for gonorrhea and chlamydia 3-4 weeks after treatment (if STI). Rescreen 3 months after treatment (reinfection rate 10-20%).",
+            "stop_criteria": "Complete 10 days treatment even if symptoms resolve. Treat sexual partners (if STI, all partners in past 60 days). Abstain from sexual activity until treatment completed and partners treated. Avoid heavy lifting, strenuous activity until symptoms resolve."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "testicular_torsion": "Sudden onset (<6 hours), severe pain, absent cremasteric reflex, horizontal lie of testicle, decreased blood flow on ultrasound. Requires urgent urology consult + surgery within 6 hours (salvage rate 90% if <6 hours, 50% if 6-12 hours, <10% if >12 hours). Do NOT delay surgery for antibiotics.",
+            "abscess": "Persistent fever, severe pain, fluctuant mass on ultrasound. Ultrasound-guided drainage OR Surgical drainage. Continue antibiotics x 10-14 days total. Urology referral.",
+            "hiv_coinfection": "Same treatment regimen. Higher risk of STI. Test of cure (TOC) 3-4 weeks after treatment REQUIRED.",
+            "insertive_anal_intercourse": "E. coli most common. Ceftriaxone 500mg IM x1 + Levofloxacin 500mg PO daily x 10 days (covers gonorrhea, chlamydia, and E. coli).",
+            "amiodarone_epididymitis": "Chemical epididymitis (rare, non-infectious). Discontinue amiodarone if possible. NSAIDs for pain. Self-limited (resolves in 1-2 weeks after stopping amiodarone).",
+            "partner_notification": "If STI (gonorrhea, chlamydia): Treat all sexual partners in past 60 days. Empiric treatment for gonorrhea + chlamydia (ceftriaxone 500mg IM x1 + doxycycline 100mg PO BID x 7 days). Abstain from sexual activity until treatment completed and partners treated.",
+            "counseling": "Complications: Abscess (5-10%), testicular infarction (rare), infertility (rare, <5%). Supportive care: NSAIDs, scrotal elevation, ice packs. Avoid heavy lifting, strenuous activity, sexual activity until symptoms resolve. If STI: Treat sexual partners, abstain from sex until treatment completed and partners treated, condom use reduces risk."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Start empiric treatment immediately (do NOT delay while awaiting test results)",
+              "Age-based treatment: <35 years (ceftriaxone + doxycycline for STI), ≥35 years (fluoroquinolone for enteric organisms)",
+              "Do NOT routinely ultrasound if diagnosis clear (clinical diagnosis sufficient)",
+              "Follow-up in 3-5 days (assess clinical improvement, ultrasound if no improvement)"
+            ],
+            "timeout_checklist": [
+              "Is diagnosis confirmed by clinical criteria? (Unilateral scrotal pain + tender epididymis + dysuria or urethral discharge)",
+              "Is testicular torsion ruled out? (Gradual onset, positive Prehn sign, cremasteric reflex intact, increased blood flow on ultrasound)",
+              "Is age-based treatment prescribed? (<35 years: ceftriaxone + doxycycline, ≥35 years: fluoroquinolone)",
+              "Is supportive care prescribed? (NSAIDs, scrotal elevation, ice packs)",
+              "Is HIV test performed? (Co-infection increases STI risk)",
+              "Are sexual partners notified and treated? (If STI, all partners in past 60 days)",
+              "Is follow-up arranged? (3-5 days, test of cure 3-4 weeks if STI, rescreen 3 months)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid fluoroquinolones if age <35 years (gonorrhea resistance 30-40%). Do NOT delay treatment while awaiting test results. Do NOT use single-dose azithromycin alone (insufficient for epididymitis). Do NOT routinely ultrasound if diagnosis clear.",
+            "diagnostic_stewardship": "Clinical diagnosis (unilateral scrotal pain + tender epididymis). Test for gonorrhea, chlamydia, urinalysis, urine culture. Ultrasound if diagnosis uncertain or concern for testicular torsion. HIV test all patients.",
+            "prevention": "Screen for gonorrhea and chlamydia (sexually active men <35 years, annually if high-risk). Treat gonorrhea and chlamydia promptly. Condom use reduces risk. Partner notification and treatment."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "CDC Sexually Transmitted Infections Treatment Guidelines (2021)",
+              "url": "https://www.cdc.gov/std/treatment-guidelines/default.htm"
+            },
+            {
+              "label": "CDC Epididymitis Treatment and Care (2024)",
+              "url": "https://www.cdc.gov/epididymitis/hcp/treatment.html"
+            },
+            {
+              "label": "AUA/ASRM Guideline: Evaluation and Management of Acute Epididymitis (2015)",
+              "url": "https://www.auanet.org/guidelines/guidelines/epididymitis"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "proctitis-sti",
+      "name": "Proctitis (STI-related)",
+      "synonyms": [
+        "rectal inflammation",
+        "anorectal infection",
+        "LGV proctitis"
+      ],
+      "icd10": [
+        "K62.89",
+        "A54.6",
+        "A55"
+      ],
+      "severity": [
+        "moderate"
+      ],
+      "shortDescription": "Anorectal inflammation requiring empiric treatment for gonorrhea, chlamydia (including LGV), and HSV (ceftriaxone + doxycycline ± valacyclovir)",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Inflammation of rectal mucosa (distal 15 cm). Organisms: N. gonorrhoeae (30-50%), C. trachomatis including LGV serovars L1-L3 (20-40%), HSV (10-30%), Treponema pallidum (5-10%). More common in MSM (men who have sex with men). Complications: Stricture (if LGV, 10-20%), fistula (if LGV, 5-10%), chronic proctitis.",
+            "clinical_presentation": "Anorectal pain, tenesmus (painful urge to defecate), rectal discharge (mucopurulent or bloody), constipation, hematochezia (bright red blood per rectum). Physical exam: Rectal tenderness, mucopurulent discharge, ulcers (if HSV or syphilis), inguinal lymphadenopathy (if LGV). Anoscopy: Mucosal inflammation, friability, ulcers, exudate.",
+            "diagnostic_criteria": "Clinical diagnosis: Anorectal pain + tenesmus + rectal discharge. Anoscopy: Mucosal inflammation, friability, ulcers. NAAT for gonorrhea, chlamydia (including LGV), HSV. Syphilis serology (RPR or VDRL). Biopsy if diagnosis uncertain (rule out inflammatory bowel disease, malignancy).",
+            "risk_factors": [
+              "MSM (men who have sex with men)",
+              "Receptive anal intercourse",
+              "Multiple sexual partners",
+              "History of other STI",
+              "HIV coinfection"
+            ],
+            "red_flags": [
+              "LGV proctitis - severe proctocolitis, inguinal lymphadenopathy (buboes), stricture (10-20%), fistula (5-10%), requires doxycycline 100mg PO BID x 21 days (longer than non-LGV chlamydia)",
+              "HSV proctitis - severe pain, ulcers, urinary retention (10-20%), requires valacyclovir 1g PO BID x 7-10 days",
+              "Syphilis proctitis - painless ulcer (chancre), rash, lymphadenopathy, requires benzathine penicillin G 2.4 million units IM x1",
+              "Inflammatory bowel disease (IBD) - chronic symptoms, weight loss, extraintestinal manifestations, requires colonoscopy + biopsy + gastroenterology referral",
+              "Colorectal cancer - age >50 years, weight loss, anemia, requires colonoscopy + biopsy + oncology referral"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Test if: Anorectal pain + tenesmus + rectal discharge. NAAT for gonorrhea, chlamydia (including LGV), HSV. Syphilis serology (RPR or VDRL). Anoscopy if available.",
+            "essential_tests": [
+              "Gonorrhea NAAT: Rectal swab. Positive in 30-50% of STI-related proctitis.",
+              "Chlamydia NAAT: Rectal swab. Positive in 20-40% of STI-related proctitis. LGV-specific NAAT if available (serovars L1, L2, L3).",
+              "HSV PCR: Rectal swab or ulcer swab. Positive in 10-30% of STI-related proctitis.",
+              "Syphilis serology (RPR or VDRL): Positive in 5-10% of STI-related proctitis."
+            ],
+            "conditional_tests": [
+              "Anoscopy: Mucosal inflammation, friability, ulcers, exudate. Use if available (improves diagnostic accuracy).",
+              "LGV-specific NAAT: If severe proctocolitis or inguinal lymphadenopathy. Serovars L1, L2, L3. Requires specialized lab.",
+              "Biopsy: If diagnosis uncertain, chronic symptoms, or concern for inflammatory bowel disease or malignancy. Histology: Acute inflammation (proctitis), granulomas (LGV, Crohn disease), dysplasia (malignancy).",
+              "HIV test: All patients with proctitis (co-infection increases STI risk and severity).",
+              "Stool culture: If diarrhea or concern for enteric infection (Shigella, Campylobacter, Salmonella)."
+            ],
+            "when_not_to_test": "Do NOT delay treatment while awaiting test results (start empiric treatment immediately). Do NOT routinely biopsy if diagnosis clear (clinical diagnosis + NAAT sufficient).",
+            "turnaround_time": "Gonorrhea NAAT: 24-48 hours. Chlamydia NAAT: 24-48 hours. HSV PCR: 24-48 hours. Syphilis serology: 24-48 hours. LGV-specific NAAT: 3-7 days. Biopsy: 3-5 days."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "N. gonorrhoeae (30-50%), C. trachomatis including LGV serovars L1-L3 (20-40%), HSV-1 or HSV-2 (10-30%), Treponema pallidum (5-10%). LGV (lymphogranuloma venereum): C. trachomatis serovars L1, L2, L3 (more invasive than non-LGV chlamydia, causes severe proctocolitis, inguinal lymphadenopathy, stricture, fistula).",
+            "pathogenesis": "Receptive anal intercourse → direct inoculation of rectum → mucosal inflammation → proctitis. LGV: Invades lymphatic system → inguinal lymphadenopathy (buboes) → chronic inflammation → stricture (10-20%), fistula (5-10%). HSV: Painful ulcers, urinary retention (10-20%). Syphilis: Painless ulcer (chancre), secondary syphilis (rash, lymphadenopathy).",
+            "resistance_patterns": {
+              "gonorrhea_resistance": "N. gonorrhoeae: Fluoroquinolone resistance 30-40%, cefixime reduced susceptibility 10-20%. Use ceftriaxone 500mg IM x1 (cure rate 97-99%).",
+              "chlamydia_resistance": "C. trachomatis: NO clinically significant resistance to doxycycline or azithromycin.",
+              "hsv_resistance": "HSV: Acyclovir resistance rare (<1% in immunocompetent, 5-10% in immunocompromised)."
+            },
+            "timing_critical": "Start empiric treatment immediately (do NOT delay while awaiting test results). Empiric: Ceftriaxone 500mg IM x1 + Doxycycline 100mg PO BID x 7 days (covers gonorrhea and chlamydia). If LGV suspected: Doxycycline 100mg PO BID x 21 days (longer). If HSV suspected: Add valacyclovir 1g PO BID x 7-10 days."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": "Ceftriaxone 500mg IM x1 (if weight ≥150 kg, use 1g IM x1) + Doxycycline 100mg PO BID x 7 days (CDC 2021 preferred, covers gonorrhea and non-LGV chlamydia). If LGV suspected (severe proctocolitis, inguinal lymphadenopathy): Doxycycline 100mg PO BID x 21 days (longer than non-LGV chlamydia).",
+            "if_hsv_suspected": "Add valacyclovir 1g PO BID x 7-10 days (if painful ulcers, vesicles, or urinary retention). Alternative: Acyclovir 400mg PO TID x 7-10 days.",
+            "if_syphilis_suspected": "Benzathine penicillin G 2.4 million units IM x1 (if painless ulcer, rash, or positive syphilis serology). Treat empirically if high suspicion (do NOT delay while awaiting serology).",
+            "lgv_proctitis": "Doxycycline 100mg PO BID x 21 days (longer than non-LGV chlamydia, CDC 2021 preferred). Alternative: Azithromycin 1g PO weekly x 3 weeks. Requires LGV-specific NAAT (serovars L1, L2, L3). Inguinal lymphadenopathy (buboes), severe proctocolitis, stricture (10-20%), fistula (5-10%).",
+            "avoid_list": "Avoid fluoroquinolones (ciprofloxacin, levofloxacin, resistance 30-40% for gonorrhea). Do NOT delay treatment while awaiting test results. Do NOT use single-dose azithromycin alone (insufficient for proctitis, requires 7-21 days treatment)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "gonorrhea_chlamydia": "Ceftriaxone 500mg IM x1 + Doxycycline 100mg PO BID x 7 days (covers gonorrhea and non-LGV chlamydia). Continue doxycycline x 7 days total.",
+            "lgv_proctitis": "Doxycycline 100mg PO BID x 21 days (longer than non-LGV chlamydia). Alternative: Azithromycin 1g PO weekly x 3 weeks. Requires LGV-specific NAAT (serovars L1, L2, L3). Inguinal lymphadenopathy (buboes), severe proctocolitis, stricture (10-20%), fistula (5-10%).",
+            "hsv_proctitis": "Valacyclovir 1g PO BID x 7-10 days (primary episode) OR 500mg PO BID x 3 days (recurrent episode). Alternative: Acyclovir 400mg PO TID x 7-10 days. Painful ulcers, vesicles, urinary retention (10-20%).",
+            "syphilis_proctitis": "Benzathine penicillin G 2.4 million units IM x1 (primary or secondary syphilis). Painless ulcer (chancre), rash, lymphadenopathy. Follow-up RPR titer at 6, 12, 24 months (4-fold decrease indicates cure).",
+            "treatment_failure": "Persistent symptoms after 7 days. Causes: LGV (requires 21 days doxycycline), HSV (add valacyclovir), resistant organism, non-adherence, inflammatory bowel disease, malignancy. Management: Anoscopy, biopsy, LGV-specific NAAT. Extend doxycycline to 21 days. Add valacyclovir if HSV suspected. Gastroenterology referral if chronic symptoms.",
+            "duration": "Non-LGV chlamydia: Doxycycline 100mg PO BID x 7 days. LGV: Doxycycline 100mg PO BID x 21 days. HSV: Valacyclovir 1g PO BID x 7-10 days. Syphilis: Benzathine penicillin G 2.4 million units IM x1."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard_duration": "Non-LGV chlamydia: Ceftriaxone 500mg IM x1 + Doxycycline 100mg PO BID x 7 days. LGV: Doxycycline 100mg PO BID x 21 days. HSV: Valacyclovir 1g PO BID x 7-10 days. Syphilis: Benzathine penicillin G 2.4 million units IM x1.",
+            "monitoring": "Follow-up in 7 days (assess clinical improvement). Anoscopy if no improvement (rule out LGV, HSV, syphilis, inflammatory bowel disease, malignancy). Test of cure (TOC) for gonorrhea and chlamydia 3-4 weeks after treatment. Rescreen 3 months after treatment (reinfection rate 10-20%).",
+            "stop_criteria": "Complete treatment even if symptoms resolve. Treat sexual partners (all partners in past 60 days). Abstain from sexual activity until treatment completed and partners treated. Condom use reduces risk."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "lgv_proctitis": "Doxycycline 100mg PO BID x 21 days (longer than non-LGV chlamydia). Requires LGV-specific NAAT (serovars L1, L2, L3). Inguinal lymphadenopathy (buboes, may require aspiration if fluctuant), severe proctocolitis, stricture (10-20%, may require dilation or surgery), fistula (5-10%, may require surgery). More common in MSM, HIV-positive.",
+            "hsv_proctitis": "Valacyclovir 1g PO BID x 7-10 days. Painful ulcers, vesicles, urinary retention (10-20%, may require catheterization). Recurrent episodes: Valacyclovir 500mg PO BID x 3 days. Suppressive therapy: Valacyclovir 500mg PO daily (if ≥6 recurrences/year).",
+            "syphilis_proctitis": "Benzathine penicillin G 2.4 million units IM x1. Painless ulcer (chancre), rash, lymphadenopathy. Follow-up RPR titer at 6, 12, 24 months (4-fold decrease indicates cure). HIV coinfection: Higher risk of neurosyphilis, consider lumbar puncture if neurologic symptoms.",
+            "hiv_coinfection": "Same treatment regimen. Higher risk of LGV, HSV, syphilis. Higher risk of treatment failure. Test of cure (TOC) 3-4 weeks after treatment REQUIRED. Rescreen 3 months after treatment.",
+            "inflammatory_bowel_disease": "Chronic symptoms, weight loss, extraintestinal manifestations (arthritis, uveitis, erythema nodosum). Colonoscopy + biopsy. Gastroenterology referral. Treatment: Aminosalicylates (mesalamine), corticosteroids, immunomodulators (azathioprine, infliximab).",
+            "partner_notification": "Treat all sexual partners in past 60 days. Empiric treatment for gonorrhea + chlamydia (ceftriaxone 500mg IM x1 + doxycycline 100mg PO BID x 7 days, extend to 21 days if LGV). Abstain from sexual activity until treatment completed and partners treated.",
+            "counseling": "Complications: Stricture (if LGV, 10-20%), fistula (if LGV, 5-10%), chronic proctitis. Treat sexual partners (all partners in past 60 days). Abstain from sexual activity until treatment completed and partners treated. Condom use reduces risk. Screen for other STI (gonorrhea, chlamydia, HIV, syphilis)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Start empiric treatment immediately (do NOT delay while awaiting test results)",
+              "Ceftriaxone 500mg IM x1 + Doxycycline 100mg PO BID x 7 days (covers gonorrhea and non-LGV chlamydia)",
+              "If LGV suspected: Extend doxycycline to 21 days (severe proctocolitis, inguinal lymphadenopathy)",
+              "If HSV suspected: Add valacyclovir 1g PO BID x 7-10 days (painful ulcers, vesicles)"
+            ],
+            "timeout_checklist": [
+              "Is diagnosis confirmed by clinical criteria? (Anorectal pain + tenesmus + rectal discharge)",
+              "Is empiric treatment started immediately? (Ceftriaxone 500mg IM x1 + Doxycycline 100mg PO BID x 7 days)",
+              "Is LGV suspected? (Severe proctocolitis, inguinal lymphadenopathy, extend doxycycline to 21 days)",
+              "Is HSV suspected? (Painful ulcers, vesicles, add valacyclovir 1g PO BID x 7-10 days)",
+              "Is syphilis suspected? (Painless ulcer, rash, benzathine penicillin G 2.4 million units IM x1)",
+              "Is HIV test performed? (Co-infection increases STI risk and severity)",
+              "Are sexual partners notified and treated? (All partners in past 60 days)",
+              "Is follow-up arranged? (7 days, test of cure 3-4 weeks, rescreen 3 months)"
+            ],
+            "avoid_unnecessary_treatment": "Avoid fluoroquinolones (ciprofloxacin, levofloxacin, resistance 30-40% for gonorrhea). Do NOT delay treatment while awaiting test results. Do NOT use single-dose azithromycin alone (insufficient for proctitis). Do NOT routinely biopsy if diagnosis clear.",
+            "diagnostic_stewardship": "Clinical diagnosis (anorectal pain + tenesmus + rectal discharge). NAAT for gonorrhea, chlamydia (including LGV), HSV. Syphilis serology (RPR or VDRL). Anoscopy if available. HIV test all patients.",
+            "prevention": "Screen for gonorrhea and chlamydia (MSM, annually at all sites: urogenital, pharyngeal, rectal). Treat gonorrhea and chlamydia promptly. Condom use reduces risk. Partner notification and treatment. HIV PrEP (pre-exposure prophylaxis) for high-risk MSM."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "CDC Sexually Transmitted Infections Treatment Guidelines (2021)",
+              "url": "https://www.cdc.gov/std/treatment-guidelines/default.htm"
+            },
+            {
+              "label": "CDC Proctitis, Proctocolitis, and Enteritis Treatment (2024)",
+              "url": "https://www.cdc.gov/std/treatment-guidelines/proctitis.htm"
+            },
+            {
+              "label": "WHO Guidelines for the Treatment of Chlamydia trachomatis (2024)",
+              "url": "https://www.who.int/publications/i/item/9789240029415"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
+

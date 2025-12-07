@@ -1,0 +1,611 @@
+{
+  "title": "Antimicrobial Stewardship Quiz",
+  "description": "Comprehensive quiz covering AMS principles, resistance mechanisms, prescribing guidelines, and stewardship interventions for healthcare-associated infection prevention",
+  "version": "1.0",
+  "module": "stewardship",
+  "totalStages": 5,
+  "questionsPerStage": 10,
+  "questions": [
+    {
+      "id": "ams_s1_q1",
+      "module": "stewardship",
+      "stage": 1,
+      "question": "The CDC Core Elements of Hospital Antibiotic Stewardship Programs include all of the following EXCEPT:",
+      "options": ["Leadership commitment", "Accountability (single physician leader responsible for program outcomes)", "Pharmacy expertise", "Mandatory infectious disease consultation for all antibiotic prescriptions"],
+      "answerIndex": 3,
+      "explanation": "The 7 CDC Core Elements are: (1) Leadership commitment, (2) Accountability, (3) Drug expertise, (4) Action (implementing interventions), (5) Tracking, (6) Reporting, (7) Education. Mandatory ID consultation for ALL prescriptions is not a core element, though targeted ID consultation for specific scenarios (e.g., positive blood cultures, prolonged therapy) is a common stewardship intervention.",
+      "references": [
+        {"label": "CDC Core Elements of Hospital Antibiotic Stewardship Programs", "url": "https://www.cdc.gov/antibiotic-use/core-elements/hospital.html"}
+      ]
+    },
+    {
+      "id": "ams_s1_q2",
+      "module": "stewardship",
+      "stage": 1,
+      "question": "The primary goal of antimicrobial stewardship is to:",
+      "options": ["Reduce pharmacy costs", "Optimize patient outcomes while minimizing unintended consequences (resistance, toxicity, C. difficile)", "Eliminate all antibiotic use", "Increase hospital revenue"],
+      "answerIndex": 1,
+      "explanation": "The primary goal of AMS is to optimize patient outcomes (cure infection, prevent complications) while minimizing unintended consequences including antimicrobial resistance, adverse drug events (toxicity, allergic reactions), and C. difficile infection. Cost reduction is a secondary benefit, not the primary goal.",
+      "references": [
+        {"label": "IDSA/SHEA Guidelines for Developing an Institutional Program to Enhance Antimicrobial Stewardship", "url": "https://www.idsociety.org/practice-guideline/antimicrobial-stewardship/"}
+      ]
+    },
+    {
+      "id": "ams_s1_q3",
+      "module": "stewardship",
+      "stage": 1,
+      "question": "Which of the following is an example of 'prospective audit and feedback' in antimicrobial stewardship?",
+      "options": ["Requiring pre-authorization before prescribing restricted antibiotics", "Reviewing antibiotic prescriptions 48-72 hours after initiation and providing recommendations to prescribers", "Automatic stop orders after 7 days", "Formulary restriction"],
+      "answerIndex": 1,
+      "explanation": "Prospective audit and feedback involves reviewing antibiotic prescriptions after they have been initiated (typically 48-72 hours) and providing recommendations to prescribers (e.g., de-escalation, dose optimization, duration). Pre-authorization is a different strategy (prior authorization/restriction). Prospective audit is less disruptive to workflow and preserves prescriber autonomy while providing education.",
+      "references": [
+        {"label": "IDSA/SHEA Antimicrobial Stewardship Guidelines", "url": "https://www.idsociety.org/practice-guideline/antimicrobial-stewardship/"}
+      ]
+    },
+    {
+      "id": "ams_s1_q4",
+      "module": "stewardship",
+      "stage": 1,
+      "question": "The 'Days of Therapy' (DOT) metric in antimicrobial stewardship measures:",
+      "options": ["Total number of days a patient receives any antibiotic", "Number of antibiotic doses administered per 1,000 patient-days", "Aggregate number of days that patients receive specific antimicrobial agents, normalized per 1,000 patient-days or days-present", "Average length of antibiotic therapy per patient"],
+      "answerIndex": 2,
+      "explanation": "DOT measures the aggregate number of days that patients receive specific antimicrobial agents, normalized per 1,000 patient-days or days-present. It is the preferred metric for tracking antibiotic use because it accounts for combination therapy (e.g., patient on vancomycin + piperacillin-tazobactam = 2 DOT). DOT is more sensitive than DDD (Defined Daily Dose) for detecting changes in antibiotic use.",
+      "references": [
+        {"label": "CDC Antibiotic Use Metrics", "url": "https://www.cdc.gov/antibiotic-use/data/index.html"}
+      ]
+    },
+    {
+      "id": "ams_s1_q5",
+      "module": "stewardship",
+      "stage": 1,
+      "question": "A 65-year-old patient with community-acquired pneumonia (CAP) is started on ceftriaxone and azithromycin. Blood cultures are negative at 48 hours, and the patient is clinically improving. The MOST appropriate stewardship intervention is:",
+      "options": ["Continue both antibiotics for 7-10 days", "Discontinue azithromycin and continue ceftriaxone alone (de-escalation based on negative cultures and clinical improvement)", "Switch to oral amoxicillin-clavulanate (IV-to-PO conversion)", "Add vancomycin for MRSA coverage"],
+      "answerIndex": 2,
+      "explanation": "For CAP with negative blood cultures and clinical improvement at 48-72 hours, the best stewardship intervention is IV-to-PO conversion (switch to oral amoxicillin or amoxicillin-clavulanate). This allows earlier discharge, reduces IV line complications, and lowers costs. De-escalation (stopping azithromycin) is also appropriate if atypical coverage is no longer needed, but IV-to-PO conversion is the priority intervention for a clinically improving patient.",
+      "references": [
+        {"label": "IDSA/ATS Community-Acquired Pneumonia Guidelines", "url": "https://www.idsociety.org/practice-guideline/community-acquired-pneumonia/"}
+      ]
+    },
+    {
+      "id": "ams_s1_q6",
+      "module": "stewardship",
+      "stage": 1,
+      "question": "The 'antibiotic timeout' at 48-72 hours after initiation should include assessment of all of the following EXCEPT:",
+      "options": ["Is the patient improving clinically?", "Are culture results available to guide de-escalation?", "Can IV antibiotics be switched to oral?", "Should the patient be switched to a more expensive broad-spectrum antibiotic regardless of clinical status?"],
+      "answerIndex": 3,
+      "explanation": "The antibiotic timeout at 48-72 hours should assess: (1) Clinical improvement, (2) Culture results (de-escalation opportunity), (3) IV-to-PO conversion, (4) Appropriate dose/duration, (5) Need for continued therapy. Switching to more expensive broad-spectrum antibiotics without clinical indication contradicts stewardship principles. The goal is de-escalation to narrower-spectrum agents when possible.",
+      "references": [
+        {"label": "CDC Antibiotic Prescribing and Use - Antibiotic Timeout", "url": "https://www.cdc.gov/antibiotic-use/core-elements/hospital.html"}
+      ]
+    },
+    {
+      "id": "ams_s1_q7",
+      "module": "stewardship",
+      "stage": 1,
+      "question": "Which of the following antibiotics is considered 'broad-spectrum' and a common target for stewardship restriction?",
+      "options": ["Penicillin G", "Cephalexin", "Meropenem (carbapenem)", "Azithromycin"],
+      "answerIndex": 2,
+      "explanation": "Carbapenems (meropenem, imipenem, ertapenem) are broad-spectrum antibiotics that cover Gram-positive, Gram-negative (including ESBL-producers), and anaerobic bacteria. They are commonly restricted in stewardship programs due to their association with carbapenem-resistant Enterobacterales (CRE) and C. difficile. Penicillin G and cephalexin are narrow-spectrum; azithromycin is moderate-spectrum.",
+      "references": [
+        {"label": "IDSA Antimicrobial Stewardship - Carbapenem Stewardship", "url": "https://www.idsociety.org/practice-guideline/antimicrobial-stewardship/"}
+      ]
+    },
+    {
+      "id": "ams_s1_q8",
+      "module": "stewardship",
+      "stage": 1,
+      "question": "The recommended duration of antibiotic therapy for uncomplicated community-acquired pneumonia (CAP) in a hospitalized patient who is clinically stable is:",
+      "options": ["3 days", "5 days", "7-10 days", "14 days"],
+      "answerIndex": 1,
+      "explanation": "IDSA/ATS guidelines recommend 5 days of antibiotic therapy for uncomplicated CAP in patients who are clinically stable (afebrile for 48-72 hours, improving symptoms, able to take oral medications). Shorter durations (5 days vs. 7-10 days) have equivalent outcomes and reduce antibiotic exposure, resistance, and adverse events. Longer durations (14 days) are reserved for complicated cases (e.g., empyema, bacteremia).",
+      "references": [
+        {"label": "IDSA/ATS Community-Acquired Pneumonia Guidelines", "url": "https://www.idsociety.org/practice-guideline/community-acquired-pneumonia/"}
+      ]
+    },
+    {
+      "id": "ams_s1_q9",
+      "module": "stewardship",
+      "stage": 1,
+      "question": "A patient with suspected urinary tract infection (UTI) has a urine culture growing >100,000 CFU/mL of E. coli. However, the patient is asymptomatic (no dysuria, frequency, urgency, fever). The MOST appropriate management is:",
+      "options": ["Treat with ciprofloxacin for 7 days", "Treat with nitrofurantoin for 5 days", "No antibiotic treatment (asymptomatic bacteriuria does not require treatment in most patients)", "Treat with IV ceftriaxone"],
+      "answerIndex": 2,
+      "explanation": "Asymptomatic bacteriuria (ASB) is the presence of bacteria in urine without symptoms. ASB does NOT require antibiotic treatment in most patients (except pregnant women and patients undergoing urologic procedures with mucosal bleeding). Treating ASB increases antibiotic resistance, adverse events, and C. difficile risk without improving outcomes. This is a key stewardship principle.",
+      "references": [
+        {"label": "IDSA Guidelines for Asymptomatic Bacteriuria", "url": "https://www.idsociety.org/practice-guideline/asymptomatic-bacteriuria/"}
+      ]
+    },
+    {
+      "id": "ams_s1_q10",
+      "module": "stewardship",
+      "stage": 1,
+      "question": "The 'antibiogram' is a tool used in antimicrobial stewardship to:",
+      "options": ["Track antibiotic costs", "Display local antimicrobial susceptibility patterns to guide empiric therapy selection", "Monitor adverse drug reactions", "Calculate antibiotic doses"],
+      "answerIndex": 1,
+      "explanation": "An antibiogram is a periodic summary of antimicrobial susceptibility data for common pathogens isolated in a specific healthcare facility or unit. It displays the percentage of isolates susceptible to various antibiotics, helping clinicians select appropriate empiric therapy based on local resistance patterns. Antibiograms should be updated annually and stratified by unit (ICU vs. ward) when possible.",
+      "references": [
+        {"label": "CLSI Guidelines for Antibiogram Development", "url": "https://clsi.org/"}
+      ]
+    },
+    {
+      "id": "ams_s2_q1",
+      "module": "stewardship",
+      "stage": 2,
+      "question": "A 70-year-old patient with hospital-acquired pneumonia (HAP) is started on vancomycin and piperacillin-tazobactam. Respiratory culture grows Pseudomonas aeruginosa susceptible to piperacillin-tazobactam, cefepime, and ciprofloxacin. The BEST stewardship intervention is:",
+      "options": ["Continue both vancomycin and piperacillin-tazobactam for 14 days", "Discontinue vancomycin (de-escalate to piperacillin-tazobactam monotherapy)", "Switch to meropenem", "Add amikacin for double Pseudomonas coverage"],
+      "answerIndex": 1,
+      "explanation": "With culture-confirmed Pseudomonas aeruginosa and no MRSA isolated, vancomycin should be discontinued (de-escalation). Piperacillin-tazobactam monotherapy is appropriate for susceptible Pseudomonas HAP. Continuing unnecessary vancomycin increases risk of nephrotoxicity, C. difficile, and VRE. Meropenem is unnecessarily broad. Double Pseudomonas coverage is not routinely recommended unless severe sepsis/septic shock.",
+      "references": [
+        {"label": "IDSA/ATS Hospital-Acquired Pneumonia Guidelines", "url": "https://www.idsociety.org/practice-guideline/hospital-acquired-pneumonia/"}
+      ]
+    },
+    {
+      "id": "ams_s2_q2",
+      "module": "stewardship",
+      "stage": 2,
+      "question": "A patient with cellulitis is improving on IV ceftriaxone after 3 days. Vital signs are stable, and the patient can tolerate oral medications. The MOST appropriate stewardship intervention is:",
+      "options": ["Continue IV ceftriaxone for 7 more days", "Switch to oral cephalexin (IV-to-PO conversion)", "Switch to IV vancomycin", "Discontinue antibiotics immediately"],
+      "answerIndex": 1,
+      "explanation": "For cellulitis with clinical improvement and ability to tolerate oral medications, IV-to-PO conversion is appropriate. Oral cephalexin (or amoxicillin-clavulanate) provides adequate coverage for streptococci and methicillin-susceptible S. aureus. IV-to-PO conversion reduces line complications, allows earlier discharge, and lowers costs without compromising outcomes. Total duration is typically 5-7 days.",
+      "references": [
+        {"label": "IDSA Practice Guidelines for Skin and Soft Tissue Infections", "url": "https://www.idsociety.org/practice-guideline/skin-and-soft-tissue-infections/"}
+      ]
+    },
+    {
+      "id": "ams_s2_q3",
+      "module": "stewardship",
+      "stage": 2,
+      "question": "A patient with suspected sepsis is started on vancomycin and meropenem. Blood cultures at 48 hours show no growth. The patient is afebrile and clinically improved. Procalcitonin is 0.3 ng/mL (normal <0.5). The BEST stewardship action is:",
+      "options": ["Continue both antibiotics for 7 days", "Discontinue antibiotics (negative cultures, clinical improvement, low procalcitonin suggest non-bacterial etiology)", "Switch to oral antibiotics", "Add fluconazole for fungal coverage"],
+      "answerIndex": 1,
+      "explanation": "With negative blood cultures at 48 hours, clinical improvement, and low procalcitonin (<0.5 ng/mL), bacterial infection is unlikely. Antibiotics should be discontinued to avoid unnecessary exposure, resistance, and adverse events. Procalcitonin-guided therapy is a validated stewardship tool for reducing antibiotic duration in suspected sepsis with negative cultures. If infection is confirmed, antibiotics can be restarted.",
+      "references": [
+        {"label": "CDC Sepsis Antibiotic Stewardship", "url": "https://www.cdc.gov/sepsis/clinicaltools/index.html"}
+      ]
+    },
+    {
+      "id": "ams_s2_q4",
+      "module": "stewardship",
+      "stage": 2,
+      "question": "A patient with acute uncomplicated cystitis (UTI) in a non-pregnant woman is prescribed ciprofloxacin for 7 days. The MOST appropriate stewardship intervention is:",
+      "options": ["Approve the prescription as written", "Recommend nitrofurantoin for 5 days (first-line agent, shorter duration)", "Recommend IV ceftriaxone", "Recommend trimethoprim-sulfamethoxazole for 14 days"],
+      "answerIndex": 1,
+      "explanation": "For acute uncomplicated cystitis in non-pregnant women, first-line agents are nitrofurantoin (5 days), trimethoprim-sulfamethoxazole (3 days if local resistance <20%), or fosfomycin (single dose). Fluoroquinolones (ciprofloxacin) should be reserved for complicated UTI or pyelonephritis due to resistance concerns and adverse effects (tendinopathy, C. difficile). Duration for ciprofloxacin, if used, is 3 days, not 7.",
+      "references": [
+        {"label": "IDSA Guidelines for Urinary Tract Infections", "url": "https://www.idsociety.org/practice-guideline/urinary-tract-infections/"}
+      ]
+    },
+    {
+      "id": "ams_s2_q5",
+      "module": "stewardship",
+      "stage": 2,
+      "question": "A patient with MRSA bacteremia is treated with vancomycin. Repeat blood cultures at 48 hours are negative. The recommended total duration of therapy is:",
+      "options": ["7 days", "14 days (uncomplicated bacteremia with cleared cultures and no endocarditis)", "21 days", "6 weeks"],
+      "answerIndex": 1,
+      "explanation": "For uncomplicated MRSA bacteremia (no endocarditis, no implanted devices, cleared blood cultures within 2-4 days), the recommended duration is 14 days from the first negative blood culture. Complicated bacteremia (persistent bacteremia, endocarditis, osteomyelitis) requires 4-6 weeks. Shorter durations (7 days) are associated with higher relapse rates.",
+      "references": [
+        {"label": "IDSA Guidelines for MRSA Infections", "url": "https://www.idsociety.org/practice-guideline/mrsa/"}
+      ]
+    },
+    {
+      "id": "ams_s2_q6",
+      "module": "stewardship",
+      "stage": 2,
+      "question": "A patient with C. difficile infection (CDI) is started on oral vancomycin 125 mg four times daily. After 5 days, diarrhea has resolved. The MOST appropriate duration of therapy is:",
+      "options": ["5 days", "10 days (standard duration for initial CDI episode)", "14 days", "6 weeks"],
+      "answerIndex": 1,
+      "explanation": "For initial C. difficile infection, the recommended duration of oral vancomycin (or fidaxomicin) is 10 days, regardless of symptom resolution. Shorter durations increase recurrence risk. For severe/fulminant CDI, vancomycin 500 mg four times daily (higher dose) is recommended. For recurrent CDI, longer tapered/pulsed regimens or fidaxomicin are preferred.",
+      "references": [
+        {"label": "IDSA/SHEA Guidelines for C. difficile Infection", "url": "https://www.idsociety.org/practice-guideline/c-difficile/"}
+      ]
+    },
+    {
+      "id": "ams_s2_q7",
+      "module": "stewardship",
+      "stage": 2,
+      "question": "A patient with intra-abdominal infection (perforated appendicitis) undergoes successful source control (appendectomy). Cultures grow E. coli and Bacteroides fragilis, both susceptible to piperacillin-tazobactam. The recommended duration of postoperative antibiotics is:",
+      "options": ["24 hours", "4 days (adequate source control achieved)", "7 days", "14 days"],
+      "answerIndex": 1,
+      "explanation": "For intra-abdominal infections with adequate source control (successful surgery, no ongoing peritonitis), the recommended antibiotic duration is 4 days (or until clinical resolution if sooner). Longer durations (7-14 days) do not improve outcomes and increase resistance and adverse events. If source control is inadequate, longer therapy may be needed.",
+      "references": [
+        {"label": "IDSA Guidelines for Intra-Abdominal Infections", "url": "https://www.idsociety.org/practice-guideline/intra-abdominal-infections/"}
+      ]
+    },
+    {
+      "id": "ams_s2_q8",
+      "module": "stewardship",
+      "stage": 2,
+      "question": "A patient with suspected meningitis is started on vancomycin, ceftriaxone, and dexamethasone. CSF culture at 48 hours shows no growth, and CSF parameters are normal. The MOST appropriate action is:",
+      "options": ["Continue antibiotics for 14 days", "Discontinue antibiotics (negative CSF culture and normal parameters rule out bacterial meningitis)", "Switch to oral antibiotics", "Add acyclovir"],
+      "answerIndex": 1,
+      "explanation": "With negative CSF culture at 48 hours and normal CSF parameters (glucose, protein, cell count), bacterial meningitis is ruled out. Antibiotics should be discontinued to avoid unnecessary exposure. If viral meningitis is suspected (lymphocytic pleocytosis), acyclovir may be considered for HSV. Continuing antibiotics for 14 days without confirmed bacterial infection is inappropriate.",
+      "references": [
+        {"label": "IDSA Guidelines for Bacterial Meningitis", "url": "https://www.idsociety.org/practice-guideline/bacterial-meningitis/"}
+      ]
+    },
+    {
+      "id": "ams_s2_q9",
+      "module": "stewardship",
+      "stage": 2,
+      "question": "A patient with febrile neutropenia (ANC <500) is started on cefepime. Blood cultures at 48 hours are negative, and fever has resolved. The patient remains neutropenic (ANC 300). The MOST appropriate action is:",
+      "options": ["Discontinue cefepime immediately", "Continue cefepime until ANC recovery (>500) or 7 days, whichever is longer", "Switch to oral antibiotics", "Add vancomycin"],
+      "answerIndex": 1,
+      "explanation": "For febrile neutropenia with negative cultures and clinical improvement, antibiotics should be continued until ANC recovery (>500) or for at least 7 days, whichever is longer. Early discontinuation in persistent neutropenia increases risk of breakthrough infection. If fever persists beyond 4-7 days, consider adding antifungal therapy (e.g., micafungin).",
+      "references": [
+        {"label": "IDSA Guidelines for Febrile Neutropenia", "url": "https://www.idsociety.org/practice-guideline/febrile-neutropenia/"}
+      ]
+    },
+    {
+      "id": "ams_s2_q10",
+      "module": "stewardship",
+      "stage": 2,
+      "question": "A patient with ventilator-associated pneumonia (VAP) is treated with vancomycin and cefepime. Respiratory culture grows MSSA (methicillin-susceptible S. aureus). The BEST stewardship intervention is:",
+      "options": ["Continue both antibiotics", "Switch vancomycin to nafcillin or cefazolin (de-escalate to narrower-spectrum agent for MSSA)", "Add meropenem", "Discontinue all antibiotics"],
+      "answerIndex": 1,
+      "explanation": "For MSSA pneumonia, vancomycin should be switched to nafcillin or cefazolin (narrower-spectrum beta-lactams with superior efficacy for MSSA). Vancomycin has inferior outcomes for MSSA compared to beta-lactams and increases nephrotoxicity risk. Cefepime can be discontinued if no Gram-negative pathogen is isolated. This is a classic de-escalation scenario.",
+      "references": [
+        {"label": "IDSA/ATS Hospital-Acquired Pneumonia Guidelines", "url": "https://www.idsociety.org/practice-guideline/hospital-acquired-pneumonia/"}
+      ]
+    },
+    {
+      "id": "ams_s3_q1",
+      "module": "stewardship",
+      "stage": 3,
+      "question": "A patient with a documented penicillin allergy (rash 20 years ago, no anaphylaxis) requires treatment for MSSA bacteremia. The MOST appropriate antibiotic choice is:",
+      "options": ["Vancomycin (avoid all beta-lactams)", "Cefazolin (first-generation cephalosporin with <1% cross-reactivity for non-anaphylactic penicillin allergy)", "Daptomycin", "Linezolid"],
+      "answerIndex": 1,
+      "explanation": "For non-anaphylactic penicillin allergy (rash, no angioedema/anaphylaxis), the cross-reactivity risk with cephalosporins is <1-3%. Cefazolin is the preferred agent for MSSA bacteremia due to superior efficacy compared to vancomycin. Vancomycin should be reserved for true beta-lactam allergy or MRSA. Daptomycin and linezolid are alternatives but less preferred for MSSA bacteremia. Penicillin allergy assessment is a key stewardship intervention.",
+      "references": [
+        {"label": "IDSA Guidelines for Beta-Lactam Allergy", "url": "https://www.idsociety.org/practice-guideline/beta-lactam-allergy/"}
+      ]
+    },
+    {
+      "id": "ams_s3_q2",
+      "module": "stewardship",
+      "stage": 3,
+      "question": "A patient with ESBL-producing E. coli urinary tract infection (UTI) has the following susceptibilities: resistant to ceftriaxone, susceptible to ertapenem, cefepime, and nitrofurantoin. The patient is clinically stable and can tolerate oral medications. The BEST antibiotic choice is:",
+      "options": ["Ertapenem IV (carbapenem)", "Cefepime IV", "Nitrofurantoin PO (oral carbapenem-sparing agent for uncomplicated UTI)", "Ciprofloxacin PO"],
+      "answerIndex": 2,
+      "explanation": "For ESBL-producing E. coli uncomplicated UTI in a clinically stable patient, nitrofurantoin (oral) is preferred to spare carbapenems and avoid IV therapy. Nitrofurantoin achieves high urinary concentrations and is effective for uncomplicated UTI despite ESBL. Carbapenems (ertapenem) should be reserved for complicated infections or sepsis. Cefepime may be used for ESBL UTI but requires IV access. This is a carbapenem-sparing strategy.",
+      "references": [
+        {"label": "IDSA Guidelines for Urinary Tract Infections", "url": "https://www.idsociety.org/practice-guideline/urinary-tract-infections/"}
+      ]
+    },
+    {
+      "id": "ams_s3_q3",
+      "module": "stewardship",
+      "stage": 3,
+      "question": "A patient with osteomyelitis is treated with IV ceftriaxone for 4 weeks. The patient is clinically improved, and CRP has decreased from 120 mg/L to 30 mg/L. The MOST appropriate next step is:",
+      "options": ["Continue IV ceftriaxone for 2 more weeks (total 6 weeks)", "Switch to oral antibiotics (e.g., amoxicillin-clavulanate or ciprofloxacin) to complete 6 weeks total (IV-to-PO conversion)", "Discontinue antibiotics", "Switch to vancomycin"],
+      "answerIndex": 1,
+      "explanation": "For osteomyelitis with clinical improvement and decreasing inflammatory markers, IV-to-PO conversion is appropriate after initial IV therapy (typically 2-4 weeks). Oral antibiotics with high bioavailability (e.g., fluoroquinolones, linezolid, amoxicillin-clavulanate) can complete the 6-week course. This reduces line complications, allows outpatient therapy, and lowers costs without compromising outcomes. Total duration for osteomyelitis is typically 6 weeks.",
+      "references": [
+        {"label": "IDSA Guidelines for Osteomyelitis", "url": "https://www.idsociety.org/practice-guideline/osteomyelitis/"}
+      ]
+    },
+    {
+      "id": "ams_s3_q4",
+      "module": "stewardship",
+      "stage": 3,
+      "question": "A patient with hospital-acquired pneumonia (HAP) is started on vancomycin (trough 15-20 mcg/mL target) and piperacillin-tazobactam. After 3 days, serum creatinine increases from 1.0 to 2.5 mg/dL. The MOST likely cause and appropriate action is:",
+      "options": ["Vancomycin nephrotoxicity; discontinue vancomycin and switch to linezolid", "Piperacillin-tazobactam nephrotoxicity; discontinue piperacillin-tazobactam", "Synergistic nephrotoxicity from vancomycin + piperacillin-tazobactam; consider de-escalation or alternative agents", "Unrelated to antibiotics; continue both"],
+      "answerIndex": 2,
+      "explanation": "Vancomycin + piperacillin-tazobactam combination has synergistic nephrotoxicity risk (up to 20-30% incidence). If AKI develops, consider: (1) De-escalate based on cultures (discontinue vancomycin if no MRSA, or discontinue piperacillin-tazobactam if no Pseudomonas), (2) Switch vancomycin to linezolid or ceftaroline, (3) Switch piperacillin-tazobactam to cefepime. Monitoring renal function and de-escalation are key stewardship interventions.",
+      "references": [
+        {"label": "IDSA/ATS Hospital-Acquired Pneumonia Guidelines", "url": "https://www.idsociety.org/practice-guideline/hospital-acquired-pneumonia/"}
+      ]
+    },
+    {
+      "id": "ams_s3_q5",
+      "module": "stewardship",
+      "stage": 3,
+      "question": "A patient with Pseudomonas aeruginosa bacteremia is treated with cefepime. Repeat blood cultures at 48 hours are negative. The isolate is susceptible to cefepime (MIC 2 mcg/mL), ceftazidime, meropenem, and ciprofloxacin. The MOST appropriate duration of therapy is:",
+      "options": ["7 days", "14 days (standard duration for Gram-negative bacteremia with cleared cultures)", "21 days", "4 weeks"],
+      "answerIndex": 1,
+      "explanation": "For Gram-negative bacteremia (including Pseudomonas) with cleared blood cultures and no endocarditis/metastatic infection, the recommended duration is 14 days from the first negative culture. Shorter durations (7 days) may be considered for uncomplicated cases, but 14 days is standard. Longer durations (21-28 days) are reserved for complicated infections (endocarditis, osteomyelitis).",
+      "references": [
+        {"label": "IDSA Guidelines for Bloodstream Infections", "url": "https://www.idsociety.org/practice-guideline/bloodstream-infections/"}
+      ]
+    },
+    {
+      "id": "ams_s3_q6",
+      "module": "stewardship",
+      "stage": 3,
+      "question": "A patient with suspected bacterial meningitis is started on vancomycin, ceftriaxone, and ampicillin (for Listeria coverage). CSF culture grows Streptococcus pneumoniae susceptible to ceftriaxone (MIC 0.06 mcg/mL). The BEST stewardship intervention is:",
+      "options": ["Continue all three antibiotics for 14 days", "Discontinue vancomycin and ampicillin; continue ceftriaxone monotherapy for 10-14 days (de-escalation)", "Switch to oral amoxicillin", "Add meropenem"],
+      "answerIndex": 1,
+      "explanation": "For pneumococcal meningitis with ceftriaxone-susceptible isolate (MIC ≤0.5 mcg/mL), ceftriaxone monotherapy is appropriate. Vancomycin can be discontinued (only needed for ceftriaxone-resistant pneumococcus). Ampicillin can be discontinued (only needed for Listeria, which is rare in immunocompetent adults <50 years). Duration is 10-14 days. This is a classic de-escalation scenario.",
+      "references": [
+        {"label": "IDSA Guidelines for Bacterial Meningitis", "url": "https://www.idsociety.org/practice-guideline/bacterial-meningitis/"}
+      ]
+    },
+    {
+      "id": "ams_s3_q7",
+      "module": "stewardship",
+      "stage": 3,
+      "question": "A patient with recurrent C. difficile infection (third episode in 6 months) is treated with oral vancomycin 125 mg four times daily for 10 days. After completion, diarrhea recurs within 2 weeks. The MOST appropriate treatment is:",
+      "options": ["Repeat oral vancomycin 125 mg four times daily for 10 days", "Oral vancomycin tapered/pulsed regimen (e.g., 125 mg four times daily for 10-14 days, then twice daily for 7 days, then once daily for 7 days, then every 2-3 days for 2-8 weeks)", "Fidaxomicin 200 mg twice daily for 10 days", "Fecal microbiota transplantation (FMT)"],
+      "answerIndex": 1,
+      "explanation": "For recurrent C. difficile infection (≥2 recurrences), treatment options include: (1) Oral vancomycin tapered/pulsed regimen (preferred for multiple recurrences), (2) Fidaxomicin (superior to vancomycin for preventing recurrence but expensive), (3) Fecal microbiota transplantation (FMT) for ≥2 recurrences. Repeating standard vancomycin 10-day course is less effective. Tapered/pulsed vancomycin allows gut microbiota recovery.",
+      "references": [
+        {"label": "IDSA/SHEA Guidelines for C. difficile Infection", "url": "https://www.idsociety.org/practice-guideline/c-difficile/"}
+      ]
+    },
+    {
+      "id": "ams_s3_q8",
+      "module": "stewardship",
+      "stage": 3,
+      "question": "A patient with diabetic foot osteomyelitis undergoes surgical debridement. Bone culture grows MRSA. The patient is clinically improved after 4 weeks of IV vancomycin. The MOST appropriate next step is:",
+      "options": ["Discontinue antibiotics (adequate source control achieved)", "Continue IV vancomycin for 2 more weeks (total 6 weeks)", "Switch to oral linezolid or trimethoprim-sulfamethoxazole to complete 6 weeks total (IV-to-PO conversion)", "Switch to daptomycin"],
+      "answerIndex": 2,
+      "explanation": "For diabetic foot osteomyelitis with adequate surgical debridement and clinical improvement, IV-to-PO conversion after 2-4 weeks of IV therapy is appropriate. Oral agents with high bioavailability and bone penetration (linezolid, trimethoprim-sulfamethoxazole, fluoroquinolones) can complete the 6-week course. This allows outpatient therapy and reduces line complications. Total duration is typically 6 weeks for osteomyelitis with debridement.",
+      "references": [
+        {"label": "IDSA Guidelines for Diabetic Foot Infections", "url": "https://www.idsociety.org/practice-guideline/diabetic-foot-infections/"}
+      ]
+    },
+    {
+      "id": "ams_s3_q9",
+      "module": "stewardship",
+      "stage": 3,
+      "question": "A patient with neutropenic fever (ANC 200) is started on cefepime. After 5 days, fever persists despite negative blood cultures. CT chest shows no infiltrates. The MOST appropriate action is:",
+      "options": ["Continue cefepime alone", "Add vancomycin for MRSA coverage", "Add empiric antifungal therapy (e.g., micafungin or liposomal amphotericin B) for suspected invasive fungal infection", "Discontinue cefepime"],
+      "answerIndex": 2,
+      "explanation": "For persistent fever in neutropenic patients beyond 4-7 days despite broad-spectrum antibiotics and negative cultures, empiric antifungal therapy should be added for suspected invasive fungal infection (Candida, Aspergillus). Micafungin or liposomal amphotericin B are preferred. Vancomycin is not routinely added unless catheter-related infection or skin/soft tissue infection is suspected. Cefepime should be continued.",
+      "references": [
+        {"label": "IDSA Guidelines for Febrile Neutropenia", "url": "https://www.idsociety.org/practice-guideline/febrile-neutropenia/"}
+      ]
+    },
+    {
+      "id": "ams_s3_q10",
+      "module": "stewardship",
+      "stage": 3,
+      "question": "A patient with prosthetic joint infection (hip) is treated with IV antibiotics for 6 weeks, followed by oral suppressive therapy. The MOST appropriate duration of oral suppressive therapy is:",
+      "options": ["3 months", "6 months", "Lifelong (indefinite suppression if prosthesis is retained)", "No suppressive therapy needed"],
+      "answerIndex": 2,
+      "explanation": "For prosthetic joint infection managed with debridement and retention of prosthesis (DAIR), lifelong oral suppressive therapy is recommended to prevent recurrence. Common suppressive agents include fluoroquinolones (for Gram-negatives), trimethoprim-sulfamethoxazole or doxycycline (for MRSA), or amoxicillin (for streptococci). If prosthesis is removed (two-stage exchange), suppressive therapy is not needed after reimplantation.",
+      "references": [
+        {"label": "IDSA Guidelines for Prosthetic Joint Infection", "url": "https://www.idsociety.org/practice-guideline/prosthetic-joint-infection/"}
+      ]
+    },
+    {
+      "id": "ams_s4_q1",
+      "module": "stewardship",
+      "stage": 4,
+      "question": "A patient with carbapenem-resistant Enterobacterales (CRE) urinary tract infection has the following susceptibilities: resistant to all carbapenems, cephalosporins, and fluoroquinolones; susceptible to colistin (MIC 1 mcg/mL), tigecycline (MIC 0.5 mcg/mL), and ceftazidime-avibactam. The patient has severe sepsis. The BEST antibiotic choice is:",
+      "options": ["Colistin IV", "Tigecycline IV", "Ceftazidime-avibactam IV (novel beta-lactam/beta-lactamase inhibitor with activity against KPC-producing CRE)", "Combination therapy with colistin + tigecycline"],
+      "answerIndex": 2,
+      "explanation": "For CRE infections with severe sepsis, ceftazidime-avibactam is preferred due to superior efficacy and lower toxicity compared to colistin. Ceftazidime-avibactam has activity against KPC-producing CRE (most common mechanism in US). Tigecycline has poor urinary concentrations and should not be used for UTI. Colistin has nephrotoxicity and neurotoxicity risks. Combination therapy may be considered for severe infections, but monotherapy with ceftazidime-avibactam is often adequate.",
+      "references": [
+        {"label": "IDSA Guidance on CRE Treatment", "url": "https://www.idsociety.org/practice-guideline/cre/"}
+      ]
+    },
+    {
+      "id": "ams_s4_q2",
+      "module": "stewardship",
+      "stage": 4,
+      "question": "A patient with difficult-to-treat resistant (DTR) Pseudomonas aeruginosa pneumonia (resistant to all beta-lactams except ceftolozane-tazobactam, susceptible to colistin and amikacin) is treated with ceftolozane-tazobactam. After 5 days, clinical improvement is minimal. The MOST appropriate action is:",
+      "options": ["Continue ceftolozane-tazobactam monotherapy", "Add inhaled colistin or tobramycin (adjunctive inhaled therapy for pneumonia)", "Switch to IV colistin monotherapy", "Add oral ciprofloxacin"],
+      "answerIndex": 1,
+      "explanation": "For DTR Pseudomonas pneumonia with suboptimal response to IV therapy, adding inhaled antibiotics (colistin or tobramycin) can improve outcomes by achieving high lung concentrations. Combination therapy (IV + inhaled) is preferred for severe DTR Pseudomonas pneumonia. Switching to colistin monotherapy is less effective due to poor lung penetration. Ciprofloxacin is not active (resistant). Ceftolozane-tazobactam is a novel anti-pseudomonal cephalosporin.",
+      "references": [
+        {"label": "IDSA/ATS Hospital-Acquired Pneumonia Guidelines", "url": "https://www.idsociety.org/practice-guideline/hospital-acquired-pneumonia/"}
+      ]
+    },
+    {
+      "id": "ams_s4_q3",
+      "module": "stewardship",
+      "stage": 4,
+      "question": "A patient with MRSA bacteremia is treated with vancomycin (trough 15-20 mcg/mL). After 5 days, repeat blood cultures remain positive for MRSA. Vancomycin MIC is 2 mcg/mL (susceptible but high MIC). The MOST appropriate action is:",
+      "options": ["Increase vancomycin dose to achieve higher trough (20-25 mcg/mL)", "Switch to daptomycin 8-10 mg/kg/day (higher dose for bacteremia)", "Add gentamicin for synergy", "Switch to linezolid"],
+      "answerIndex": 1,
+      "explanation": "For persistent MRSA bacteremia despite adequate vancomycin therapy (especially with MIC ≥1.5 mcg/mL, 'MIC creep'), switching to daptomycin is recommended. Daptomycin 8-10 mg/kg/day (higher dose) is preferred for bacteremia. Increasing vancomycin trough >20 mcg/mL increases nephrotoxicity without proven benefit. Gentamicin synergy is not routinely recommended. Linezolid is bacteriostatic and not preferred for bacteremia. Evaluate for endocarditis or metastatic infection.",
+      "references": [
+        {"label": "IDSA Guidelines for MRSA Infections", "url": "https://www.idsociety.org/practice-guideline/mrsa/"}
+      ]
+    },
+    {
+      "id": "ams_s4_q4",
+      "module": "stewardship",
+      "stage": 4,
+      "question": "A patient with severe penicillin allergy (anaphylaxis) requires treatment for Enterococcus faecalis endocarditis (ampicillin-susceptible, vancomycin-susceptible). The MOST appropriate antibiotic regimen is:",
+      "options": ["Vancomycin + gentamicin", "Daptomycin 8-10 mg/kg/day + ceftriaxone (synergistic combination for enterococcal endocarditis in beta-lactam-allergic patients)", "Linezolid", "Vancomycin monotherapy"],
+      "answerIndex": 1,
+      "explanation": "For enterococcal endocarditis in patients with severe penicillin allergy, daptomycin (8-10 mg/kg/day) + ceftriaxone is a synergistic combination with proven efficacy. Vancomycin + gentamicin is an alternative but has higher nephrotoxicity and ototoxicity. Linezolid is bacteriostatic and not preferred for endocarditis. Vancomycin monotherapy is inadequate (enterococci are tolerant to vancomycin). Ceftriaxone has minimal cross-reactivity with penicillin in anaphylaxis.",
+      "references": [
+        {"label": "AHA Guidelines for Infective Endocarditis", "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000296"}
+      ]
+    },
+    {
+      "id": "ams_s4_q5",
+      "module": "stewardship",
+      "stage": 4,
+      "question": "A patient with Candida albicans candidemia is treated with micafungin. Repeat blood cultures at 48 hours are negative. Ophthalmology exam shows no endophthalmitis. Echocardiogram shows no vegetations. The recommended total duration of therapy is:",
+      "options": ["7 days", "14 days from first negative blood culture (standard duration for uncomplicated candidemia)", "21 days", "6 weeks"],
+      "answerIndex": 1,
+      "explanation": "For uncomplicated candidemia (cleared blood cultures, no endophthalmitis, no endocarditis, no metastatic infection), the recommended duration is 14 days from the first negative blood culture. Echinocandins (micafungin, caspofungin, anidulafungin) are preferred for initial therapy. Fluconazole step-down is appropriate for susceptible isolates after clinical improvement. Shorter durations increase relapse risk; longer durations are for complicated infections.",
+      "references": [
+        {"label": "IDSA Guidelines for Candidiasis", "url": "https://www.idsociety.org/practice-guideline/candidiasis/"}
+      ]
+    },
+    {
+      "id": "ams_s4_q6",
+      "module": "stewardship",
+      "stage": 4,
+      "question": "A patient with suspected Legionella pneumonia (severe CAP, hyponatremia, diarrhea, no response to beta-lactam therapy) is started on azithromycin. Legionella urinary antigen is positive. The MOST appropriate antibiotic regimen is:",
+      "options": ["Azithromycin monotherapy", "Levofloxacin (respiratory fluoroquinolone with superior Legionella activity)", "Azithromycin + ceftriaxone", "Doxycycline"],
+      "answerIndex": 1,
+      "explanation": "For severe Legionella pneumonia, levofloxacin (or moxifloxacin) is preferred due to superior intracellular penetration and bactericidal activity compared to macrolides (azithromycin). Fluoroquinolones achieve higher lung and intracellular concentrations. Azithromycin is acceptable for mild-moderate cases. Combination therapy is not needed. Doxycycline is an alternative but less preferred. Duration is 7-10 days (fluoroquinolones) or 10-14 days (macrolides).",
+      "references": [
+        {"label": "IDSA/ATS Community-Acquired Pneumonia Guidelines", "url": "https://www.idsociety.org/practice-guideline/community-acquired-pneumonia/"}
+      ]
+    },
+    {
+      "id": "ams_s4_q7",
+      "module": "stewardship",
+      "stage": 4,
+      "question": "A patient with VRE (vancomycin-resistant Enterococcus faecium) bacteremia is treated with daptomycin 8 mg/kg/day. After 5 days, repeat blood cultures remain positive. Daptomycin MIC increases from 2 to 8 mcg/mL (resistant). The MOST appropriate action is:",
+      "options": ["Increase daptomycin dose to 10-12 mg/kg/day", "Switch to linezolid 600 mg IV twice daily", "Add gentamicin for synergy", "Switch to tigecycline"],
+      "answerIndex": 1,
+      "explanation": "For daptomycin-resistant VRE bacteremia, linezolid is the preferred alternative. Linezolid is bacteriostatic but has proven efficacy for VRE bacteremia. Increasing daptomycin dose is unlikely to overcome resistance. Gentamicin has poor activity against VRE. Tigecycline is bacteriostatic and not preferred for bacteremia. Newer agents (oritavancin, dalbavancin, tedizolid) may be considered but have limited data for VRE bacteremia. Evaluate for endocarditis or metastatic infection.",
+      "references": [
+        {"label": "IDSA Guidelines for VRE Infections", "url": "https://www.idsociety.org/practice-guideline/vre/"}
+      ]
+    },
+    {
+      "id": "ams_s4_q8",
+      "module": "stewardship",
+      "stage": 4,
+      "question": "A patient with hospital-acquired pneumonia (HAP) is treated with vancomycin and cefepime. Respiratory culture grows Stenotrophomonas maltophilia (intrinsically resistant to carbapenems). Susceptibilities show: trimethoprim-sulfamethoxazole (susceptible), levofloxacin (susceptible), minocycline (susceptible). The BEST antibiotic choice is:",
+      "options": ["Continue vancomycin + cefepime", "Switch to trimethoprim-sulfamethoxazole (first-line agent for Stenotrophomonas)", "Switch to meropenem", "Switch to colistin"],
+      "answerIndex": 1,
+      "explanation": "Stenotrophomonas maltophilia is intrinsically resistant to carbapenems and most beta-lactams. Trimethoprim-sulfamethoxazole is the first-line agent for Stenotrophomonas pneumonia. Alternatives include levofloxacin, minocycline, or tigecycline. Vancomycin and cefepime have no activity. Meropenem is ineffective (intrinsic resistance). Colistin has variable activity and is not first-line. Stenotrophomonas is an emerging pathogen in immunocompromised patients and those with prolonged antibiotic exposure.",
+      "references": [
+        {"label": "IDSA/ATS Hospital-Acquired Pneumonia Guidelines", "url": "https://www.idsociety.org/practice-guideline/hospital-acquired-pneumonia/"}
+      ]
+    },
+    {
+      "id": "ams_s4_q9",
+      "module": "stewardship",
+      "stage": 4,
+      "question": "A patient with neutropenic fever is treated with cefepime and micafungin. Galactomannan antigen is positive (index 1.5). CT chest shows a nodule with 'halo sign'. The MOST likely diagnosis and appropriate treatment is:",
+      "options": ["Bacterial pneumonia; continue cefepime", "Invasive aspergillosis; switch to voriconazole or isavuconazole (first-line agents for invasive aspergillosis)", "Candida pneumonia; continue micafungin", "Pneumocystis pneumonia; add trimethoprim-sulfamethoxazole"],
+      "answerIndex": 1,
+      "explanation": "Positive galactomannan antigen + halo sign on CT chest in a neutropenic patient is highly suggestive of invasive pulmonary aspergillosis. Voriconazole or isavuconazole are first-line agents. Liposomal amphotericin B is an alternative. Micafungin (echinocandin) has no activity against Aspergillus. Cefepime should be continued for bacterial coverage. Duration is typically 6-12 weeks or until neutrophil recovery and radiologic improvement.",
+      "references": [
+        {"label": "IDSA Guidelines for Aspergillosis", "url": "https://www.idsociety.org/practice-guideline/aspergillosis/"}
+      ]
+    },
+    {
+      "id": "ams_s4_q10",
+      "module": "stewardship",
+      "stage": 4,
+      "question": "A patient with MRSA pneumonia is treated with vancomycin (trough 15-20 mcg/mL). After 7 days, clinical improvement is minimal. Vancomycin MIC is 1 mcg/mL (susceptible). The MOST appropriate action is:",
+      "options": ["Continue vancomycin", "Switch to linezolid 600 mg IV twice daily (superior lung penetration for MRSA pneumonia)", "Add rifampin for synergy", "Switch to daptomycin"],
+      "answerIndex": 1,
+      "explanation": "For MRSA pneumonia with suboptimal response to vancomycin, linezolid is preferred due to superior lung penetration (100% bioavailability, high epithelial lining fluid concentrations). Linezolid has shown superior outcomes compared to vancomycin in some studies of MRSA pneumonia. Daptomycin is inactivated by pulmonary surfactant and should NOT be used for pneumonia. Rifampin monotherapy leads to rapid resistance. Vancomycin has poor lung penetration.",
+      "references": [
+        {"label": "IDSA/ATS Hospital-Acquired Pneumonia Guidelines", "url": "https://www.idsociety.org/practice-guideline/hospital-acquired-pneumonia/"}
+      ]
+    },
+    {
+      "id": "ams_s5_q1",
+      "module": "stewardship",
+      "stage": 5,
+      "question": "A patient with KPC-producing carbapenem-resistant Klebsiella pneumoniae (CRKP) bacteremia is treated with ceftazidime-avibactam. After 3 days, repeat blood cultures remain positive. Repeat susceptibility testing shows ceftazidime-avibactam resistance (MIC >256 mcg/mL). The MOST likely resistance mechanism and appropriate treatment is:",
+      "options": ["KPC mutation; switch to meropenem-vaborbactam", "blaKPC gene loss with porin mutation; switch to cefiderocol (novel siderophore cephalosporin with activity against metallo-beta-lactamases and porin-deficient strains)", "OXA-48 production; switch to colistin", "NDM production; switch to tigecycline"],
+      "answerIndex": 1,
+      "explanation": "Ceftazidime-avibactam resistance in KPC-producing CRE can occur via: (1) KPC mutations (rare), (2) blaKPC gene loss with porin mutations (more common). Cefiderocol is a novel siderophore cephalosporin with activity against CRE (including metallo-beta-lactamases like NDM, VIM, IMP) and porin-deficient strains. Meropenem-vaborbactam has activity against KPC but not metallo-beta-lactamases. Colistin and tigecycline are alternatives but have toxicity/efficacy concerns. Cefiderocol is a last-resort agent for pan-resistant Gram-negatives.",
+      "references": [
+        {"label": "IDSA Guidance on CRE Treatment", "url": "https://www.idsociety.org/practice-guideline/cre/"}
+      ]
+    },
+    {
+      "id": "ams_s5_q2",
+      "module": "stewardship",
+      "stage": 5,
+      "question": "A patient with MRSA bacteremia and endocarditis is treated with daptomycin 10 mg/kg/day. After 7 days, repeat blood cultures remain positive. Daptomycin MIC is 0.5 mcg/mL (susceptible). The MOST appropriate action is:",
+      "options": ["Increase daptomycin dose to 12 mg/kg/day", "Add gentamicin for synergy", "Add ceftaroline (synergistic combination: daptomycin + ceftaroline for refractory MRSA bacteremia/endocarditis)", "Switch to linezolid"],
+      "answerIndex": 2,
+      "explanation": "For refractory MRSA bacteremia/endocarditis despite adequate daptomycin therapy, adding ceftaroline (anti-MRSA cephalosporin) provides synergy. The daptomycin + ceftaroline combination has shown efficacy in case series for persistent MRSA bacteremia. Increasing daptomycin dose >10 mg/kg/day has limited data. Gentamicin synergy is not routinely recommended (nephrotoxicity, ototoxicity). Linezolid is bacteriostatic and not preferred for endocarditis. Evaluate for metastatic infection or inadequate source control.",
+      "references": [
+        {"label": "IDSA Guidelines for MRSA Infections", "url": "https://www.idsociety.org/practice-guideline/mrsa/"}
+      ]
+    },
+    {
+      "id": "ams_s5_q3",
+      "module": "stewardship",
+      "stage": 5,
+      "question": "A patient with severe penicillin allergy (anaphylaxis) requires desensitization for syphilis treatment (neurosyphilis). The MOST appropriate desensitization protocol is:",
+      "options": ["Oral penicillin V desensitization followed by IV penicillin G", "IV ceftriaxone (no desensitization needed)", "Doxycycline (alternative for penicillin-allergic patients)", "Azithromycin"],
+      "answerIndex": 0,
+      "explanation": "For neurosyphilis in penicillin-allergic patients, penicillin desensitization is recommended because no alternative antibiotic has equivalent efficacy. Oral penicillin V desensitization (gradual dose escalation over 4-6 hours) followed by IV penicillin G is the standard protocol. Ceftriaxone is an alternative for non-anaphylactic allergy but not for anaphylaxis. Doxycycline and azithromycin have inferior efficacy for neurosyphilis. Desensitization should be performed in ICU with resuscitation equipment available.",
+      "references": [
+        {"label": "CDC STD Treatment Guidelines - Syphilis", "url": "https://www.cdc.gov/std/treatment-guidelines/syphilis.htm"}
+      ]
+    },
+    {
+      "id": "ams_s5_q4",
+      "module": "stewardship",
+      "stage": 5,
+      "question": "A patient with pan-resistant Acinetobacter baumannii ventilator-associated pneumonia (resistant to all antibiotics except colistin, MIC 1 mcg/mL) is treated with IV colistin 5 million units loading dose, then 2.5 million units twice daily. After 5 days, clinical improvement is minimal. The MOST appropriate action is:",
+      "options": ["Increase colistin dose", "Add rifampin for synergy", "Add inhaled colistin (adjunctive inhaled therapy to achieve high lung concentrations)", "Switch to tigecycline"],
+      "answerIndex": 2,
+      "explanation": "For pan-resistant Acinetobacter pneumonia with suboptimal response to IV colistin, adding inhaled colistin (or inhaled amikacin if susceptible) can improve outcomes by achieving high lung concentrations. IV colistin has poor lung penetration. Combination therapy (IV + inhaled colistin) is preferred for severe Acinetobacter pneumonia. Rifampin synergy is controversial. Tigecycline has poor lung penetration and should not be used for pneumonia. Colistin dose optimization (loading dose + maintenance) is critical.",
+      "references": [
+        {"label": "IDSA/ATS Hospital-Acquired Pneumonia Guidelines", "url": "https://www.idsociety.org/practice-guideline/hospital-acquired-pneumonia/"}
+      ]
+    },
+    {
+      "id": "ams_s5_q5",
+      "module": "stewardship",
+      "stage": 5,
+      "question": "A patient with Mycobacterium abscessus pulmonary infection (clarithromycin-susceptible) is started on azithromycin, amikacin, and cefoxitin. After 4 weeks, repeat sputum culture shows clarithromycin resistance (MIC >32 mcg/mL). The MOST likely resistance mechanism is:",
+      "options": ["Intrinsic erm(41) gene induction (adaptive resistance to macrolides in M. abscessus)", "Efflux pump upregulation", "Target site mutation", "Biofilm formation"],
+      "answerIndex": 0,
+      "explanation": "M. abscessus has an inducible erm(41) gene that confers adaptive resistance to macrolides (clarithromycin, azithromycin) after 3-14 days of exposure. This is a unique resistance mechanism in M. abscessus. Treatment requires combination therapy (macrolide + amikacin + cefoxitin or imipenem) for at least 12 months. If erm(41) is induced, macrolides should be discontinued and alternative regimens (tigecycline, linezolid, clofazimine) considered. M. abscessus is one of the most difficult-to-treat mycobacteria.",
+      "references": [
+        {"label": "ATS/IDSA Guidelines for Nontuberculous Mycobacterial Diseases", "url": "https://www.idsociety.org/practice-guideline/ntm/"}
+      ]
+    },
+    {
+      "id": "ams_s5_q6",
+      "module": "stewardship",
+      "stage": 5,
+      "question": "A patient with Enterococcus faecium bacteremia (vancomycin-resistant, linezolid-resistant, daptomycin-resistant) is treated with quinupristin-dalfopristin. After 3 days, the patient develops severe myalgias and arthralgias. The MOST appropriate action is:",
+      "options": ["Continue quinupristin-dalfopristin (myalgias are expected)", "Switch to oritavancin or dalbavancin (novel lipoglycopeptides with activity against VRE)", "Switch to tigecycline", "Add corticosteroids for myalgias"],
+      "answerIndex": 1,
+      "explanation": "For multi-drug-resistant VRE (linezolid-resistant, daptomycin-resistant), novel lipoglycopeptides (oritavancin, dalbavancin) or tedizolid (novel oxazolidinone) are options. Quinupristin-dalfopristin has activity against E. faecium but causes severe myalgias/arthralgias in 30-50% of patients, often requiring discontinuation. Oritavancin and dalbavancin have long half-lives (weekly dosing) and activity against VRE. Tigecycline is bacteriostatic and not preferred for bacteremia. This is a last-resort scenario requiring ID consultation.",
+      "references": [
+        {"label": "IDSA Guidelines for VRE Infections", "url": "https://www.idsociety.org/practice-guideline/vre/"}
+      ]
+    },
+    {
+      "id": "ams_s5_q7",
+      "module": "stewardship",
+      "stage": 5,
+      "question": "A patient with Burkholderia cepacia complex pneumonia (cystic fibrosis patient) has the following susceptibilities: susceptible to trimethoprim-sulfamethoxazole, meropenem, and minocycline; resistant to ceftazidime and ciprofloxacin. The MOST appropriate antibiotic regimen is:",
+      "options": ["Trimethoprim-sulfamethoxazole monotherapy", "Meropenem + trimethoprim-sulfamethoxazole (combination therapy for severe B. cepacia infections)", "Ceftazidime + tobramycin", "Colistin"],
+      "answerIndex": 1,
+      "explanation": "Burkholderia cepacia complex is intrinsically resistant to many antibiotics (aminoglycosides, polymyxins). For severe infections (pneumonia, bacteremia), combination therapy is recommended: meropenem + trimethoprim-sulfamethoxazole, or meropenem + minocycline. Monotherapy has high failure rates. Ceftazidime and ciprofloxacin have variable activity. Colistin is ineffective (intrinsic resistance). B. cepacia is a major concern in cystic fibrosis patients and is associated with 'cepacia syndrome' (rapid decline, bacteremia).",
+      "references": [
+        {"label": "Cystic Fibrosis Foundation Guidelines for Pulmonary Exacerbations", "url": "https://www.cff.org/"}
+      ]
+    },
+    {
+      "id": "ams_s5_q8",
+      "module": "stewardship",
+      "stage": 5,
+      "question": "A patient with Nocardia asteroides brain abscess is treated with trimethoprim-sulfamethoxazole. After 4 weeks, MRI shows minimal improvement. The MOST appropriate action is:",
+      "options": ["Continue trimethoprim-sulfamethoxazole monotherapy for 12 months", "Add imipenem or amikacin (combination therapy for CNS nocardiosis)", "Switch to ceftriaxone", "Discontinue antibiotics and pursue surgical drainage"],
+      "answerIndex": 1,
+      "explanation": "For CNS nocardiosis (brain abscess, meningitis), combination therapy is recommended: trimethoprim-sulfamethoxazole + imipenem (or meropenem) or + amikacin. Monotherapy has high failure rates for CNS infections. Duration is 12 months or longer. Surgical drainage may be needed for large abscesses. Ceftriaxone has poor activity against Nocardia. Nocardia is an opportunistic pathogen in immunocompromised patients (transplant, HIV, corticosteroids).",
+      "references": [
+        {"label": "IDSA Guidelines for Nocardiosis", "url": "https://www.idsociety.org/practice-guideline/nocardiosis/"}
+      ]
+    },
+    {
+      "id": "ams_s5_q9",
+      "module": "stewardship",
+      "stage": 5,
+      "question": "A patient with extensively drug-resistant (XDR) tuberculosis (resistant to isoniazid, rifampin, fluoroquinolones, and injectable agents) is started on a novel regimen including bedaquiline, linezolid, and delamanid. After 2 months, QTc interval increases from 420 ms to 510 ms. The MOST likely causative agent and appropriate action is:",
+      "options": ["Linezolid; discontinue linezolid", "Bedaquiline (known to prolong QTc); reduce dose or discontinue if QTc >500 ms, monitor ECG weekly", "Delamanid; discontinue delamanid", "Unrelated to antibiotics; continue all agents"],
+      "answerIndex": 1,
+      "explanation": "Bedaquiline (novel ATP synthase inhibitor for MDR/XDR-TB) is known to prolong QTc interval. QTc >500 ms or increase >60 ms from baseline requires dose reduction or discontinuation. ECG monitoring is required weekly for first month, then monthly. Delamanid also prolongs QTc but less than bedaquiline. Linezolid does not prolong QTc but causes myelosuppression and neuropathy. XDR-TB treatment requires 18-24 months with ≥4 active agents. Bedaquiline and delamanid are critical components of XDR-TB regimens.",
+      "references": [
+        {"label": "WHO Guidelines for Drug-Resistant Tuberculosis", "url": "https://www.who.int/teams/global-tuberculosis-programme/tb-reports"}
+      ]
+    },
+    {
+      "id": "ams_s5_q10",
+      "module": "stewardship",
+      "stage": 5,
+      "question": "A patient with Elizabethkingia meningoseptica bacteremia (rare Gram-negative pathogen) has the following susceptibilities: resistant to all beta-lactams (including carbapenems), fluoroquinolones, and aminoglycosides; susceptible to minocycline (MIC 2 mcg/mL), trimethoprim-sulfamethoxazole (MIC 1 mcg/mL), and rifampin. The MOST appropriate antibiotic regimen is:",
+      "options": ["Minocycline monotherapy", "Minocycline + rifampin (combination therapy for severe Elizabethkingia infections)", "Colistin", "Tigecycline"],
+      "answerIndex": 1,
+      "explanation": "Elizabethkingia meningoseptica is intrinsically resistant to most antibiotics (beta-lactams including carbapenems, aminoglycosides, colistin). For severe infections (bacteremia, meningitis), combination therapy is recommended: minocycline + rifampin, or minocycline + trimethoprim-sulfamethoxazole. Monotherapy has high failure rates. Tigecycline is an alternative but has poor serum concentrations. Elizabethkingia is an emerging pathogen in immunocompromised patients and neonates, associated with contaminated water sources and medical devices.",
+      "references": [
+        {"label": "CDC Elizabethkingia Outbreak Investigations", "url": "https://www.cdc.gov/elizabethkingia/"}
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,1821 @@
+{
+  "version": 1,
+  "updatedAt": "2025-01-20T00:00:00Z",
+  "id": "lower-respiratory",
+  "name": "Lower Respiratory Infections",
+  "description": "Pneumonia, bronchitis, and lower airway infections",
+  "icon": "air",
+  "color": "#2196F3",
+  "conditions": [
+    {
+      "id": "CAP",
+      "name": "Community-Acquired Pneumonia (CAP)",
+      "synonyms": [
+        "CAP",
+        "pneumonia",
+        "lung infection"
+      ],
+      "icd10": [
+        "J18.9",
+        "J15.9"
+      ],
+      "severity": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "shortDescription": "Acute infection of the pulmonary parenchyma acquired outside the hospital",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "clinical_presentation": "Fever, cough (productive OR non-productive), dyspnea, pleuritic chest pain, tachypnea, hypoxemia. Physical exam may reveal crackles, bronchial breath sounds, OR dullness to percussion.",
+            "diagnostic_criteria": "Clinical symptoms + radiographic infiltrate (chest X-ray OR CT) + exclusion of alternative diagnoses.",
+            "red_flags": [
+              "Hypotension (SBP <90 mmHg)",
+              "Respiratory failure requiring mechanical ventilation",
+              "Altered mental status",
+              "Multilobar infiltrates",
+              "Septic shock"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "All patients with suspected CAP should have chest imaging. Blood cultures and sputum cultures recommended for hospitalized patients, especially those with severe CAP OR risk factors for MDRO.",
+            "essential_tests": [
+              "Chest X-ray (PA and lateral)",
+              "Pulse oximetry OR ABG",
+              "CBC with differential",
+              "Basic metabolic panel",
+              "Blood cultures (2 sets) before antibiotics"
+            ],
+            "conditional_tests": [
+              "Sputum Gram stain and culture (if productive cough)",
+              "Urinary antigen tests (Legionella, Pneumococcus)",
+              "Respiratory viral panel (influenza season)",
+              "CT chest (if X-ray inconclusive)"
+            ],
+            "turnaround_time": "Blood cultures: 24-48 hours. Urinary antigens: 1-2 hours. Respiratory PCR: 1-4 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": [
+              "Streptococcus pneumoniae (30-40% of cases)",
+              "Haemophilus influenzae (10-20%, more common in COPD)",
+              "Mycoplasma pneumoniae (10-20%, younger patients)",
+              "Chlamydophila pneumoniae (5-10%)",
+              "Legionella pneumophila (2-8%, travel/water exposure)",
+              "Respiratory viruses (influenza, RSV, SARS-CoV-2, 20-30%)"
+            ],
+            "resistance_patterns": "Macrolide resistance in S. pneumoniae: 20-40% in some regions. Penicillin resistance: 30-40% (but cephalosporins remain effective for pneumonia). H. influenzae: 30-40% produce beta-lactamase.",
+            "mdro_risk_factors": [
+              "Recent hospitalization within 90 days",
+              "Recent antibiotic use within 90 days (any class)",
+              "Chronic hemodialysis",
+              "Immunosuppression (HIV, transplant, chemotherapy)",
+              "Structural lung disease (bronchiectasis, COPD)"
+            ],
+            "resistance_considerations": {
+              "global_trends": "MRSA prevalence declining in many regions (10-20% of S. aureus isolates). ESBL-producing Enterobacterales increasing in healthcare-associated pneumonia.",
+              "high_risk_populations": "Prior antibiotics within 90 days significantly increases resistance risk across all pathogen classes."
+            }
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": {
+              "mild_outpatient": "Amoxicillin 1g PO TID OR Doxycycline 100mg PO BID",
+              "moderate_outpatient": "Amoxicillin-clavulanate 875mg PO BID + Azithromycin 500mg PO x1, then 250mg daily",
+              "severe_hospitalized": "Ceftriaxone 1-2g IV daily + Azithromycin 500mg IV daily OR Levofloxacin 750mg IV daily"
+            },
+            "alternatives": "Beta-lactam allergy: Levofloxacin OR moxifloxacin monotherapy",
+            "avoid_list": "Avoid fluoroquinolones if recent use (90 days) OR high local resistance"
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "pathogen_specific_dosing": {
+              "streptococcus_pneumoniae": {
+                "penicillin_susceptible": {
+                  "first_line": "Penicillin G 2-4 million units IV q4h OR Amoxicillin 1g PO q8h",
+                  "alternative": "Ceftriaxone 1g IV q24h",
+                  "duration": "5-7 days (minimum 5 days afebrile)"
+                },
+                "penicillin_resistant": {
+                  "mic_4_to_8": "Ceftriaxone 2g IV q24h OR Levofloxacin 750mg IV/PO q24h",
+                  "mic_greater_than_8": "Vancomycin 15-20mg/kg IV q8-12h OR Linezolid 600mg IV/PO q12h",
+                  "note": "Penicillin resistance does NOT predict cephalosporin resistance for pneumonia"
+                }
+              },
+              "haemophilus_influenzae": {
+                "beta_lactamase_negative": "Ampicillin 2g IV q6h",
+                "beta_lactamase_positive": "Amoxicillin-clavulanate 875mg PO q12h OR Ceftriaxone 1g IV q24h",
+                "note": "30-40% produce beta-lactamase"
+              },
+              "legionella": {
+                "first_line": "Levofloxacin 750mg IV/PO q24h OR Azithromycin 500mg IV/PO q24h",
+                "duration": "7-10 days (immunocompetent), 14-21 days (immunocompromised)",
+                "note": "Fluoroquinolones preferred over macrolides for severe disease"
+              },
+              "MRSA": {
+                "first_line": "Vancomycin 15-20mg/kg IV q8-12h (target trough 15-20 mcg/mL)",
+                "alternative": "Linezolid 600mg IV/PO q12h",
+                "duration": "7-14 days (minimum 7 days after last positive culture)",
+                "note": "Consider necrotizing pneumonia - may need longer duration"
+              },
+              "pseudomonas_aeruginosa": {
+                "first_line": "Piperacillin-tazobactam 4.5g IV q6h OR Cefepime 2g IV q8h",
+                "severe": "Add aminoglycoside (tobramycin 5-7mg/kg IV q24h) for first 3-5 days",
+                "duration": "14 days (minimum)",
+                "note": "Always obtain susceptibilities - resistance common"
+              }
+            },
+            "pathogen_specific": {
+              "S_pneumoniae": "See pathogen-specific dosing table above",
+              "H_influenzae": "See pathogen-specific dosing table above",
+              "Legionella": "See pathogen-specific dosing table above"
+            },
+            "de_escalation": "Switch to narrow-spectrum oral therapy once clinically stable and pathogen identified",
+            "IV_to_po_switch": "Criteria: Afebrile >24h, hemodynamically stable, improving symptoms, able to take PO"
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard": "5-7 days for most cases",
+            "short_course": "5 days if clinically stable and afebrile",
+            "prolonged": "7-14 days for severe CAP, bacteremia, OR complications (empyema, abscess)",
+            "biomarker_guided_therapy": {
+              "procalcitonin": {
+                "initiation": "<0.25 ng/mL: consider withholding antibiotics (low probability of bacterial infection)",
+                "stopping": "Decrease >80% from peak OR <0.25 ng/mL: safe to stop antibiotics",
+                "evidence": "Reduces antibiotic duration by 2-3 days without increasing mortality (multiple RCTs)",
+                "limitations": "Not validated in immunocompromised, not widely available"
+              },
+              "CRP": {
+                "stopping": "Decrease >50% from peak suggests clinical response",
+                "note": "Less specific than procalcitonin, but more widely available"
+              }
+            }
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "renal_dose": "Adjust beta-lactams and fluoroquinolones for CrCl <30 mL/min",
+            "pregnancy": "Preferred: Amoxicillin, ceftriaxone, azithromycin. Avoid: Fluoroquinolones, doxycycline",
+            "obesity": "Consider higher doses of beta-lactams (e.g., ceftriaxone 2g daily)",
+            "immunocompromised_patients": {
+              "hiv_cd4_less_than_200": {
+                "additional_pathogens": "PCP (Pneumocystis jirovecii), Cryptococcus, Mycobacterium avium complex",
+                "empiric_coverage": "Add TMP-SMX 15-20mg/kg/day (TMP component) IV divided q6-8h for PCP coverage",
+                "diagnostic_tests": "Induced sputum OR bronchoscopy with BAL for PCP, fungal, mycobacterial cultures"
+              },
+              "neutropenia_less_than_500": {
+                "additional_pathogens": "Aspergillus, Mucor, Pseudomonas, Stenotrophomonas",
+                "empiric_coverage": "Broad-spectrum beta-lactam + aminoglycoside + voriconazole OR amphotericin B",
+                "diagnostic_tests": "CT chest (halo sign, air crescent sign), serum galactomannan, BAL"
+              },
+              "solid_organ_transplant": {
+                "timeline": "<1 month: nosocomial bacteria. 1-6 months: CMV, PCP, Aspergillus. >6 months: community pathogens",
+                "prophylaxis": "TMP-SMX for PCP, valganciclovir for CMV (first 3-6 months)",
+                "note": "Always consider drug interactions with immunosuppressants (tacrolimus, cyclosporine)"
+              }
+            },
+            "drug_interactions": {
+              "fluoroquinolones": {
+                "black_box_warnings": [
+                  "Tendon rupture (especially Achilles) - risk increased with age >60, corticosteroids, transplant",
+                  "Peripheral neuropathy (may be irreversible)",
+                  "CNS effects (seizures, confusion, psychosis)",
+                  "Aortic aneurysm/dissection - avoid in patients with known aneurysm OR risk factors"
+                ],
+                "drug_interactions": [
+                  "QTc prolongation: avoid with other QT-prolonging drugs (azithromycin, amiodarone)",
+                  "Warfarin: increases INR - monitor closely",
+                  "Antacids/iron: reduce absorption - separate by 2-4 hours"
+                ],
+                "when_to_avoid": "Reserve for Pseudomonas OR penicillin-allergic patients. NOT first-line for CAP."
+              },
+              "macrolides": {
+                "qtc_prolongation": "Azithromycin can prolong QTc - avoid in patients with QTc >450ms OR on other QT drugs",
+                "drug_interactions": [
+                  "Warfarin: increases INR",
+                  "Statins: increased risk of rhabdomyolysis (especially with clarithromycin)"
+                ]
+              },
+              "vancomycin": {
+                "nephrotoxicity": "Monitor trough levels (target 15-20 mcg/mL for pneumonia). Avoid concurrent nephrotoxins (NSAIDs, aminoglycosides).",
+                "red_man_syndrome": "Infuse over 60-90 minutes to prevent histamine release"
+              }
+            },
+            "imaging_follow_up": {
+              "routine_follow_up": "Chest X-ray at 6 weeks for all patients >50 years OR smokers (rule out underlying malignancy)",
+              "early_follow_up": "Repeat CXR at 48-72h if: no clinical improvement, worsening symptoms, OR concern for complications",
+              "ct_indications": [
+                "Failure to improve after 72h of appropriate antibiotics",
+                "Suspected empyema OR lung abscess",
+                "Recurrent pneumonia in same location (rule out obstruction)",
+                "Immunocompromised (evaluate for fungal/atypical infections)"
+              ],
+              "resolution_time": "Radiographic resolution lags clinical improvement: 4-6 weeks for young patients, 12 weeks for elderly/COPD"
+            },
+            "clinical_pearls": [
+              "Sputum Gram stain is underutilized - can guide early therapy if quality specimen (>25 PMNs, <10 epithelial cells per LPF)",
+              "Procalcitonin <0.25 ng/mL has 90% NPV for bacterial pneumonia - consider stopping antibiotics",
+              "Parapneumonic effusion in 40% of CAP - tap if >1cm on lateral decubitus film",
+              "Failure to improve by 72h: consider resistant organism, empyema, PE, OR non-infectious mimic",
+              "POst-obstructive pneumonia: always follow-up CXR at 6 weeks to rule out underlying malignancy",
+              "CURB-65 score ≥2 OR PSI class IV-V: consider hospitalization",
+              "Legionella: think of travel, water exposure, hyponatremia, elevated LFTS"
+            ]
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "avoid_unnecessary_cultures": "Outpatient CAP: Cultures not routinely needed",
+            "timeout_checklist": [
+              "Review culture results at 48-72 hours",
+              "De-escalate to narrow-spectrum therapy",
+              "Switch IV to PO when appropriate",
+              "Reassess duration (avoid >7 days unless complicated)"
+            ],
+            "IV_to_po_opportunities": "Most patients can switch to PO by day 2-3 if clinically stable"
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA/ATS Community-Acquired Pneumonia Guidelines (2019)",
+              "url": "https://www.idsociety.org/practice-guideline/community-acquired-pneumonia-CAP-in-adults/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            },
+            {
+              "label": "WHO Guidelines for Management of Pneumonia",
+              "url": "https://www.WHO.int/teams/integrated-health-services/clinical-services-and-systems/surgical-care/pneumonia"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "HAP-VAP",
+      "name": "Hospital-Acquired Pneumonia (HAP) / Ventilator-Associated Pneumonia (VAP)",
+      "synonyms": [
+        "HAP",
+        "VAP",
+        "nosocomial pneumonia"
+      ],
+      "icd10": [
+        "J18.9",
+        "J95.851"
+      ],
+      "severity": [
+        "moderate",
+        "severe"
+      ],
+      "shortDescription": "Pneumonia occurring ≥48 hours after hospital admission OR intubation",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "clinical_presentation": "New OR progressive infiltrate on chest imaging + clinical signs (fever, leukocytosis, purulent sputum, hypoxemia)",
+            "diagnostic_criteria": "HAP: ≥48h after admission. VAP: ≥48h after intubation. Clinical + radiographic evidence.",
+            "red_flags": [
+              "Septic shock",
+              "Rapid progression",
+              "Multidrug-resistant organisms",
+              "Immunosuppression"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "All patients: Obtain lower respiratory tract cultures before starting antibiotics",
+            "essential_tests": [
+              "Chest X-ray OR CT",
+              "Blood cultures (2 sets)",
+              "Respiratory culture (endotracheal aspirate OR BAL)",
+              "CBC, CMP"
+            ],
+            "conditional_tests": [
+              "MRSA nasal PCR (negative predictive value for MRSA pneumonia)",
+              "Respiratory viral panel",
+              "Fungal cultures (if immunocompromised)"
+            ],
+            "turnaround_time": "Cultures: 48-72 hours. MRSA PCR: 1-2 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "likely_pathogens": [
+              "Pseudomonas aeruginosa (20-30% of HAP/VAP)",
+              "MRSA (15-30% in ICUs)",
+              "Klebsiella pneumoniae (10-20%, ESBL common)",
+              "Acinetobacter baumannii (5-15%, often MDR)",
+              "Enterobacter spp. (5-10%, AmpC resistance)",
+              "Stenotrophomonas maltophilia (5%, intrinsically resistant)"
+            ],
+            "resistance_patterns": "High rates of ESBL (20-40%), carbapenem resistance (5-20%), and MRSA (15-30%) in ICUs. Pseudomonas: 20-30% resistant to cefepime/piperacillin-tazobactam.",
+            "mdro_risk_factors": [
+              "Prior IV antibiotics within 90 days (strongest predictor)",
+              "≥5 days hospitalization before pneumonia onset",
+              "Septic shock at presentation",
+              "ARDS requiring mechanical ventilation",
+              "Renal replacement therapy (hemodialysis/CRRT)"
+            ],
+            "resistance_considerations": {
+              "global_trends": "Carbapenem-resistant Enterobacterales (CRE) increasing globally (5-20% in some regions). Extensively drug-resistant (XDR) Pseudomonas and Acinetobacter emerging.",
+              "high_risk_populations": "ICU patients with prolonged hospitalization (>7 days) and multiple antibiotic courses have 50-70% risk of MDRO."
+            }
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "first_line": {
+              "no_mdro_risk": "Piperacillin-tazobactam 4.5g IV q6h OR Cefepime 2g IV q8h OR Meropenem 1g IV q8h",
+              "mdro_risk": "Antipseudomonal beta-lactam (pip-tazo, cefepime, OR meropenem) + Vancomycin 15-20mg/kg IV q8-12h OR Linezolid 600mg IV q12h"
+            },
+            "alternatives": "If carbapenem-resistant: Ceftazidime-avibactam, meropenem-vaborbactam, OR polymyxin-based regimen",
+            "avoid_list": "Avoid monotherapy in severe HAP/VAP with MDRO risk"
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "pathogen_specific_dosing": {
+              "MRSA": {
+                "first_line": "Vancomycin 15-20mg/kg IV q8-12h (target trough 15-20 mcg/mL for pneumonia)",
+                "alternative": "Linezolid 600mg IV/PO q12h (preferred if vancomycin MIC ≥1.5 OR renal dysfunction)",
+                "duration": "7-14 days (minimum 7 days after clinical stability)",
+                "note": "Linezolid has better lung penetration than vancomycin; consider for severe VAP"
+              },
+              "pseudomonas_aeruginosa": {
+                "first_line": "Cefepime 2g IV q8h OR Piperacillin-tazobactam 4.5g IV q6h (based on susceptibility)",
+                "alternative": "Meropenem 1g IV q8h OR Aztreonam 2g IV q8h (if beta-lactam allergy)",
+                "severe": "Consider combination therapy (beta-lactam + aminoglycoside OR fluoroquinolone) for first 3-5 days",
+                "duration": "14 days (minimum)",
+                "note": "Always check susceptibilities - resistance rates 20-30% for cefepime/pip-tazo"
+              },
+              "esbl_klebsiella": {
+                "first_line": "Meropenem 1g IV q8h OR Ertapenem 1g IV q24h (if not Pseudomonas)",
+                "alternative": "Ceftazidime-avibactam 2.5g IV q8h (if carbapenem-sparing desired)",
+                "duration": "7-14 days",
+                "note": "Avoid cephalosporins and piperacillin-tazobactam even if susceptible in vitro"
+              },
+              "cre_carbapenem_resistant": {
+                "first_line": "Ceftazidime-avibactam 2.5g IV q8h OR Meropenem-vaborbactam 4g IV q8h",
+                "alternative": "Polymyxin B 2.5mg/kg loading, then 1.5mg/kg q12h + Tigecycline 100mg loading, then 50mg q12h",
+                "duration": "14-21 days",
+                "note": "Consult infectious disease specialist. Consider combination therapy for severe infections."
+              },
+              "acinetobacter_baumannii": {
+                "first_line": "Ampicillin-sulbactam 3g IV q6h (if susceptible) OR Polymyxin B-based regimen",
+                "alternative": "Tigecycline 100mg loading, then 50mg IV q12h + Carbapenem (if susceptible)",
+                "duration": "14-21 days",
+                "note": "Often XDR - consult ID. Inhaled colistin may be adjunctive therapy."
+              }
+            },
+            "pathogen_specific": {
+              "MRSA": "See pathogen-specific dosing table above",
+              "Pseudomonas": "See pathogen-specific dosing table above",
+              "ESBL_Klebsiella": "See pathogen-specific dosing table above",
+              "CRE": "See pathogen-specific dosing table above"
+            },
+            "de_escalation": "Narrow to single agent once pathogen identified and susceptibilities known. Stop MRSA coverage if cultures negative and MRSA nasal PCR negative.",
+            "IV_to_po_switch": "Limited PO options for HAP/VAP; most require full IV course. Linezolid and fluoroquinolones have excellent bioavailability if PO switch needed."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "standard": "7 days for most cases",
+            "short_course": "7 days if good clinical response and susceptible pathogen",
+            "prolonged": "14 days for non-fermenting GNRs (Pseudomonas, Acinetobacter), MRSA with bacteremia, OR slow clinical response",
+            "biomarker_guided_therapy": {
+              "procalcitonin": {
+                "stopping": "Decrease >80% from peak OR <0.5 ng/mL: consider stopping antibiotics at day 7",
+                "evidence": "Safe to shorten duration in HAP/VAP with good clinical response (multiple RCTs)",
+                "limitations": "Not validated for MDRO infections OR immunocompromised patients"
+              },
+              "clinical_stability_criteria": {
+                "criteria": [
+                  "Afebrile >48 hours",
+                  "Hemodynamically stable (no vasopressors)",
+                  "Improving oxygenation (PaO2/FiO2 ratio improving)",
+                  "Decreasing WBC and inflammatory markers"
+                ],
+                "note": "If all criteria met at day 7, consider stopping antibiotics (even if radiographic improvement incomplete)"
+              }
+            }
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "renal_dose": "Adjust all beta-lactams, vancomycin, and aminoglycosides for renal function. Use CRRT dosing if on continuous renal replacement therapy.",
+            "obesity": "Use actual body weight for vancomycin loading dose (25-30mg/kg); consider extended infusion beta-lactams (cefepime 2g over 4h, pip-tazo 4.5g over 4h)",
+            "immunocompromised": "Consider fungal coverage (voriconazole, amphotericin B) if risk factors present (neutropenia, transplant, prolonged corticosteroids)",
+            "drug_interactions": {
+              "vancomycin": {
+                "nephrotoxicity": "Monitor trough levels q3-4 days. Target 15-20 mcg/mL for pneumonia. Avoid concurrent nephrotoxins (aminoglycosides, NSAIDs, contrast).",
+                "red_man_syndrome": "Infuse over 90-120 minutes (1g/hour max rate)"
+              },
+              "linezolid": {
+                "serotonin_syndrome": "Avoid with SSRIs, SNRIs, MAOIs. Risk of serotonin syndrome.",
+                "myelosuppression": "Monitor CBC weekly. Thrombocytopenia and anemia common after 2 weeks.",
+                "note": "No renal dose adjustment needed - advantage in renal failure"
+              },
+              "Polymyxins": {
+                "nephrotoxicity": "Occurs in 30-60% of patients. Monitor SCr daily. Avoid other nephrotoxins.",
+                "neurotoxicity": "Paresthesias, dizziness, ataxia. Reduce dose in renal dysfunction."
+              }
+            },
+            "clinical_pearls": [
+              "MRSA nasal PCR negative has 95% NPV for MRSA pneumonia - stop empiric MRSA coverage if negative",
+              "Endotracheal aspirate (ETA) is non-inferior to BAL for diagnosis - less invasive",
+              "Ventilator bundle reduces VAP: HOB elevation, daily sedation vacation, oral care with chlorhexidine",
+              "Failure to improve by day 3: consider resistant organism, empyema, OR non-infectious mimic (ARDS, PE, CHF)",
+              "Double Pseudomonas coverage (beta-lactam + aminoglycoside/fluoroquinolone) does NOT improve outcomes - use monotherapy once susceptible",
+              "Acinetobacter and Stenotrophomonas: often XDR - consult ID early"
+            ]
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "timeout_checklist": [
+              "Review cultures at 48-72 hours",
+              "De-escalate MRSA coverage if cultures negative and MRSA PCR negative",
+              "De-escalate to monotherapy if single pathogen identified",
+              "Reassess duration at day 7"
+            ],
+            "IV_to_po_opportunities": "Limited; most HAP/VAP requires full IV course"
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA/ATS Hospital-Acquired and Ventilator-Associated Pneumonia Guidelines (2016)",
+              "url": "https://www.idsociety.org/practice-guideline/hospital-acquired-and-ventilator-associated-pneumonia/"
+            },
+            {
+              "label": "CDC HAI Prevention Guidelines",
+              "url": "https://www.CDC.gov/hai/prevent/prevent_pubs.html"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "HCAP",
+      "name": "Healthcare-Associated Pneumonia (HCAP)",
+      "synonyms": [
+        "HCAP",
+        "healthcare pneumonia",
+        "nursing home pneumonia"
+      ],
+      "icd10": [
+        "J18.9",
+        "J15.9"
+      ],
+      "severity": [
+        "moderate",
+        "severe"
+      ],
+      "shortDescription": "Pneumonia in patients with recent healthcare exposure (nursing home, dialysis, home infusion, hospitalization within 90 days)",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Pneumonia occurring in patients with recent healthcare contact: nursing home residents, hospitalization within 90 days, home infusion therapy, chronic dialysis within 30 days, OR immunosuppression.",
+            "clinical_presentation": "Similar to CAP: fever, cough, dyspnea, pleuritic chest pain. Higher risk of multidrug-resistant organisms (MDRO) compared to CAP.",
+            "risk_factors": [
+              "Nursing home residence",
+              "Hospitalization within 90 days",
+              "Chronic hemodialysis",
+              "Home wound care OR IV therapy",
+              "Immunosuppression (chemotherapy, steroids)",
+              "Prior antibiotic use within 90 days"
+            ],
+            "note": "The HCAP designation was removed from 2016 IDSA/ATS HAP/VAP guidelines due to poor predictive value for MDRO. Current approach: individualized risk assessment for MDRO rather than blanket HCAP category."
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "essential_tests": [
+              "Chest X-ray (PA and lateral)",
+              "Pulse oximetry OR ABG",
+              "CBC with differential",
+              "Basic metabolic panel",
+              "Blood cultures (2 sets) before antibiotics",
+              "Sputum Gram stain and culture (high yield for MDRO)"
+            ],
+            "conditional_tests": [
+              "Respiratory viral panel (influenza season)",
+              "Urinary antigen tests (Legionella, Pneumococcus)",
+              "CT chest (if X-ray inconclusive)",
+              "Procalcitonin (to guide antibiotic duration)"
+            ],
+            "severity_assessment": "Use CURB-65 OR PSI to determine admission need. Consider ICU admission for severe sepsis, respiratory failure, OR hemodynamic instability."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology & Pathogens",
+          "content": {
+            "common_pathogens": [
+              "Streptococcus pneumoniae (most common)",
+              "Haemophilus influenzae",
+              "Staphylococcus aureus (including MRSA)",
+              "Gram-negative bacilli (E. coli, Klebsiella, Pseudomonas aeruginosa)",
+              "Anaerobes (if aspiration risk)"
+            ],
+            "mdro_risk_factors": [
+              "Prior IV antibiotics within 90 days",
+              "Prior MDRO colonization OR infection",
+              "Hospitalization ≥5 days in past 90 days",
+              "High local MDRO prevalence (>10-20%)"
+            ],
+            "resistance_patterns": "MRSA prevalence 10-30% in HCAP. Pseudomonas risk increased with structural lung disease (bronchiectasis, COPD) OR prior fluoroquinolone use."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Antibiotic Therapy",
+          "content": {
+            "low_mdro_risk": {
+              "regimen": "Treat as CAP (see CAP module)",
+              "options": [
+                "Ceftriaxone 1-2g IV q24h + Azithromycin 500mg IV/PO q24h",
+                "Levofloxacin 750mg IV/PO q24h (monotherapy)",
+                "Ceftriaxone 1-2g IV q24h + Doxycycline 100mg PO q12h"
+              ]
+            },
+            "high_mdro_risk": {
+              "regimen": "Broad-spectrum coverage for MRSA + Pseudomonas",
+              "options": [
+                "Vancomycin 15-20mg/kg IV q8-12h (target trough 15-20) + Piperacillin-tazobactam 4.5g IV q6h",
+                "Linezolid 600mg IV/PO q12h + Cefepime 2g IV q8h",
+                "Vancomycin + Meropenem 1g IV q8h (if prior carbapenem-resistant organism)"
+              ],
+              "note": "Add azithromycin 500mg IV q24h if atypical coverage needed (Legionella risk)"
+            },
+            "de_escalation": "De-escalate based on culture results and clinical response within 48-72 hours. Discontinue MRSA coverage if MRSA-negative cultures and clinical improvement."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Pathogen-Directed Therapy",
+          "content": {
+            "strep_pneumoniae": "Ceftriaxone 1-2g IV q24h OR Penicillin G 2-4 MU IV q4h (if susceptible)",
+            "MRSA": "Vancomycin 15-20mg/kg IV q8-12h OR Linezolid 600mg IV/PO q12h",
+            "pseudomonas": "Piperacillin-tazobactam 4.5g IV q6h OR Cefepime 2g IV q8h OR Meropenem 1g IV q8h",
+            "h_influenzae": "Ceftriaxone 1-2g IV q24h OR Ampicillin-sulbactam 3g IV q6h",
+            "klebsiella_esbl": "Meropenem 1g IV q8h OR Ertapenem 1g IV q24h",
+            "IV_to_po_switch": "Switch to PO when: afebrile >24h, hemodynamically stable, improving clinically, able to take PO, functioning GI tract"
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Treatment Duration",
+          "content": {
+            "standard_duration": "5-7 days for most patients with good clinical response",
+            "extended_duration": "7-14 days for: MRSA pneumonia, Pseudomonas pneumonia, bacteremic pneumonia, slow clinical response, immunocompromised",
+            "stopping_criteria": [
+              "Afebrile for 48-72 hours",
+              "Hemodynamically stable",
+              "Improving respiratory symptoms",
+              "Able to take oral medications",
+              "No evidence of metastatic infection"
+            ],
+            "procalcitonin_guided": "Consider procalcitonin-guided therapy: stop antibiotics when PCT <0.25 ng/mL OR decreased by 80% from peak"
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Populations",
+          "content": {
+            "renal_impairment": "Adjust doses for beta-lactams, vancomycin, fluoroquinolones. Avoid aminoglycosides if possible. Monitor vancomycin trough levels.",
+            "hepatic_impairment": "Use caution with linezolid (risk of lactic acidosis). Avoid tigecycline in severe hepatic dysfunction.",
+            "pregnancy": "Preferred: Ceftriaxone + Azithromycin. Avoid fluoroquinolones, doxycycline, aminoglycosides.",
+            "immunocompromised": "Broader coverage needed. Consider fungal (Aspergillus, Pneumocystis) and viral (CMV) etiologies. Consult infectious disease specialist."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Antimicrobial Stewardship",
+          "content": {
+            "red_flags": [
+              "Empiric MRSA/Pseudomonas coverage without risk factors",
+              "Continuation of broad-spectrum antibiotics beyond 48-72h without positive cultures",
+              "Failure to de-escalate based on culture results",
+              "Treatment duration >7 days without clear indication"
+            ],
+            "IV_to_po_criteria": [
+              "Afebrile >24 hours",
+              "Hemodynamically stable (HR <100, SBP >90)",
+              "Improving respiratory symptoms",
+              "Oxygen saturation >90% on room air OR baseline",
+              "Able to take and absorb oral medications"
+            ],
+            "antibiotic_timeout": "Perform 48-72 hour review: Are cultures positive? Is patient improving? Can we narrow spectrum? Can we switch to PO? Can we stop antibiotics?"
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "Clinical References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA/ATS HAP/VAP Guidelines (2016) - HCAP Discussion",
+              "url": "https://www.idsociety.org/practice-guideline/hospital-acquired-and-ventilator-associated-pneumonia/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "aspiration-pneumonia",
+      "name": "Aspiration Pneumonia",
+      "synonyms": [
+        "aspiration pneumonia",
+        "aspiration pneumonitis",
+        "chemical pneumonitis"
+      ],
+      "icd10": [
+        "J69.0",
+        "J69.8"
+      ],
+      "severity": [
+        "moderate",
+        "severe"
+      ],
+      "shortDescription": "Pneumonia resulting from aspiration of oropharyngeal OR gastric contents into the lower respiratory tract",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Aspiration pneumonia: bacterial infection following aspiration of colonized oropharyngeal secretions. Aspiration pneumonitis: chemical injury from gastric acid (Mendelson syndrome) - does NOT require antibiotics.",
+            "clinical_presentation": "Fever, cough (often productive with foul-smelling sputum), dyspnea, pleuritic chest pain. Infiltrates typically in dependent lung segments (right lower lobe, posterior segments).",
+            "risk_factors": [
+              "Dysphagia (stroke, dementia, Parkinson's)",
+              "Altered mental status (sedation, alcohol, seizures)",
+              "Gastroesophageal reflux disease (GERD)",
+              "Mechanical ventilation OR tracheostomy",
+              "POor oral hygiene",
+              "Tube feeding",
+              "Advanced age with frailty"
+            ],
+            "key_distinction": "Aspiration pneumonitis (chemical injury) presents acutely (<2h) with dyspnea, tachypnea, hypoxemia but NO fever initially. Aspiration pneumonia (bacterial infection) develops over 24-48h with fever and purulent sputum."
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "essential_tests": [
+              "Chest X-ray (look for infiltrates in dependent segments: RLL, posterior segments)",
+              "Pulse oximetry OR ABG",
+              "CBC with differential (leukocytosis suggests bacterial infection)",
+              "Basic metabolic panel",
+              "Blood cultures (if febrile OR septic)"
+            ],
+            "conditional_tests": [
+              "Sputum Gram stain and culture (if productive cough)",
+              "CT chest (if complicated by abscess OR empyema)",
+              "Swallowing evaluation (speech pathology consult)",
+              "Modified barium swallow OR FEES (fiberoptic endoscopic evaluation of swallowing)"
+            ],
+            "diagnostic_stewardship": "Do NOT treat aspiration pneumonitis (chemical injury) with antibiotics. Only treat if bacterial infection is suspected (fever, purulent sputum, leukocytosis, infiltrate persisting >48h)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology & Pathogens",
+          "content": {
+            "common_pathogens": [
+              "Streptococcus pneumoniae",
+              "Haemophilus influenzae",
+              "Staphylococcus aureus",
+              "Gram-negative bacilli (E. coli, Klebsiella, Enterobacter)",
+              "Oral anaerobes (Peptostreptococcus, Prevotella, Bacteroides) - role controversial"
+            ],
+            "anaerobic_coverage_controversy": "Current evidence (2024) does NOT support routine anaerobic coverage. Anaerobes rarely isolated from aspiration pneumonia cultures. Reserve anaerobic coverage for lung abscess OR empyema.",
+            "community_vs_healthcare": "Community-acquired aspiration: typical CAP pathogens. Healthcare-associated aspiration: higher risk of MRSA and Pseudomonas."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Antibiotic Therapy",
+          "content": {
+            "community_acquired": {
+              "regimen": "Treat as CAP - NO routine anaerobic coverage needed",
+              "options": [
+                "Ceftriaxone 1-2g IV q24h + Azithromycin 500mg IV/PO q24h",
+                "Levofloxacin 750mg IV/PO q24h (monotherapy)",
+                "Ampicillin-sulbactam 3g IV q6h (if mild, provides some anaerobic coverage)"
+              ]
+            },
+            "healthcare_associated": {
+              "regimen": "Broader coverage for MRSA/Pseudomonas if risk factors present",
+              "options": [
+                "Vancomycin 15-20mg/kg IV q8-12h + Piperacillin-tazobactam 4.5g IV q6h",
+                "Linezolid 600mg IV/PO q12h + Cefepime 2g IV q8h"
+              ]
+            },
+            "anaerobic_coverage_indications": {
+              "when_to_add": "Only if: lung abscess, empyema, necrotizing pneumonia, OR putrid sputum",
+              "options": [
+                "Ampicillin-sulbactam 3g IV q6h",
+                "Piperacillin-tazobactam 4.5g IV q6h",
+                "Clindamycin 600-900mg IV q8h (add to beta-lactam)"
+              ]
+            },
+            "note": "Avoid unnecessary anaerobic coverage (clindamycin, metronidazole) unless clear indication. Overuse contributes to C. difficile risk."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Pathogen-Directed Therapy",
+          "content": {
+            "strep_pneumoniae": "Ceftriaxone 1-2g IV q24h OR Penicillin G 2-4 MU IV q4h",
+            "MRSA": "Vancomycin 15-20mg/kg IV q8-12h OR Linezolid 600mg IV/PO q12h",
+            "pseudomonas": "Piperacillin-tazobactam 4.5g IV q6h OR Cefepime 2g IV q8h",
+            "anaerobes": "Ampicillin-sulbactam 3g IV q6h OR Clindamycin 600-900mg IV q8h",
+            "de_escalation": "Narrow spectrum based on culture results. Discontinue anaerobic coverage if no abscess/empyema and clinical improvement.",
+            "IV_to_po_switch": "Switch when clinically stable: Amoxicillin-clavulanate 875mg PO q12h OR Levofloxacin 750mg PO q24h"
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Treatment Duration",
+          "content": {
+            "standard_duration": "5-7 days for uncomplicated aspiration pneumonia with good clinical response",
+            "extended_duration": "7-14 days for: complicated pneumonia, bacteremia, slow clinical response, immunocompromised",
+            "lung_abscess": "3-4 weeks IV therapy, then switch to PO for total 6-8 weeks (see Lung Abscess module)",
+            "stopping_criteria": [
+              "Afebrile for 48-72 hours",
+              "Hemodynamically stable",
+              "Improving respiratory symptoms",
+              "Able to take oral medications safely (swallowing evaluation)",
+              "No evidence of abscess OR empyema"
+            ]
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Populations & Prevention",
+          "content": {
+            "prevention_strategies": [
+              "Swallowing evaluation and dysphagia management (reduces recurrence by 50%)",
+              "Elevate head of bed 30-45 degrees during feeding and for 30-60 min after",
+              "Oral hygiene (tooth brushing BID, chlorhexidine mouthwash) - reduces bacterial load",
+              "Avoid sedatives and anticholinergics when possible",
+              "Consider PEG tube if recurrent aspiration (controversial - does NOT prevent aspiration)",
+              "Treat GERD if present (but PPIs may INCREASE aspiration risk by altering gastric pH)"
+            ],
+            "renal_impairment": "Adjust beta-lactam doses. Monitor vancomycin levels. Avoid aminoglycosides.",
+            "pregnancy": "Preferred: Ampicillin-sulbactam OR Ceftriaxone + Azithromycin. Avoid fluoroquinolones.",
+            "immunocompromised": "Consider broader coverage and longer duration. Rule out fungal (Aspergillus) OR viral (CMV) etiologies.",
+            "clinical_pearls": [
+              "Witnessed aspiration + infiltrate in dependent segment (RLL, posterior segments) = aspiration pneumonia",
+              "Anaerobic coverage is OVERUSED - reserve for lung abscess OR empyema",
+              "Swallowing evaluation reduces recurrent aspiration by 50%",
+              "Proton pump inhibitors INCREASE aspiration pneumonia risk (alter gastric pH, promote bacterial overgrowth)",
+              "Tube feeding does NOT prevent aspiration - consider post-pyloric feeding if recurrent",
+              "Foul-smelling sputum suggests anaerobes - but still rare in aspiration pneumonia without abscess",
+              "Aspiration pneumonitis (chemical injury) resolves in 48-72h without antibiotics - do NOT treat empirically"
+            ]
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Antimicrobial Stewardship",
+          "content": {
+            "red_flags": [
+              "Treating aspiration pneumonitis (chemical injury) with antibiotics - NOT indicated",
+              "Routine anaerobic coverage without lung abscess OR empyema",
+              "Prolonged antibiotic therapy (>7 days) without clear indication",
+              "Failure to perform swallowing evaluation to prevent recurrence"
+            ],
+            "key_stewardship_points": [
+              "Aspiration pneumonitis does NOT require antibiotics (supportive care only)",
+              "Anaerobic coverage NOT routinely needed for aspiration pneumonia",
+              "Treat as CAP unless healthcare-associated risk factors present",
+              "Address underlying aspiration risk (dysphagia, GERD, oral hygiene)"
+            ],
+            "antibiotic_timeout": "48-72h review: Is this bacterial infection OR chemical pneumonitis? Are cultures positive? Can we narrow spectrum? Can we stop anaerobic coverage?"
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "Clinical References",
+          "content": {},
+          "references": [
+            {
+              "label": "ATS/IDSA Aspiration Pneumonia Guidelines",
+              "url": "https://www.thoracic.org/statements/resources/mtpi/aspiration-pneumonia.pdf"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            },
+            {
+              "label": "CHEST Journal - Aspiration Pneumonia (2024)",
+              "url": "https://journal.chestnet.org/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "lung-abscess",
+      "name": "Lung Abscess",
+      "synonyms": [
+        "lung abscess",
+        "pulmonary abscess",
+        "necrotizing pneumonia"
+      ],
+      "icd10": [
+        "J85.2",
+        "J85.1"
+      ],
+      "severity": [
+        "severe"
+      ],
+      "shortDescription": "Necrotic cavity within the lung parenchyma containing purulent material, typically >2cm in diameter",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Lung abscess: necrotic cavity (>2cm) with air-fluid level on imaging, containing purulent material. Necrotizing pneumonia: multiple small (<2cm) abscesses within consolidated lung.",
+            "clinical_presentation": "Subacute onset (weeks): fever, productive cough with foul-smelling/putrid sputum, weight loss, night sweats, pleuritic chest pain, hemoptysis. Chronic symptoms distinguish from acute pneumonia.",
+            "risk_factors": [
+              "Aspiration (alcoholism, seizures, stroke, dysphagia)",
+              "POor oral hygiene OR periodontal disease",
+              "Immunosuppression (HIV, steroids, chemotherapy)",
+              "Bronchial obstruction (tumor, foreign body)",
+              "Septic emboli (endocarditis, IV drug use)",
+              "Necrotizing pneumonia (S. aureus, Klebsiella, Pseudomonas)"
+            ],
+            "complications": "Empyema, bronchopleural fistula, massive hemoptysis, septic emboli, brain abscess"
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "essential_tests": [
+              "Chest X-ray (thick-walled cavity with air-fluid level)",
+              "CT chest with contrast (defines size, location, complications)",
+              "Blood cultures (2 sets)",
+              "CBC with differential",
+              "Basic metabolic panel",
+              "Sputum Gram stain and culture (if productive)"
+            ],
+            "conditional_tests": [
+              "Bronchoscopy with BAL (if sputum non-diagnostic, rule out malignancy)",
+              "CT-guided percutaneous aspiration (if bronchoscopy non-diagnostic)",
+              "Anaerobic cultures (if putrid sputum)",
+              "Fungal cultures (if immunocompromised)",
+              "Echocardiography (rule out endocarditis if septic emboli suspected)"
+            ],
+            "imaging_features": "Chest X-ray: thick-walled cavity (>4mm) with air-fluid level, typically in dependent segments (posterior upper lobes, superior lower lobes). CT: better defines size, multilocularity, pleural involvement."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology & Pathogens",
+          "content": {
+            "primary_lung_abscess": {
+              "definition": "Aspiration-related, community-acquired",
+              "pathogens": [
+                "Anaerobes (60-80%): Peptostreptococcus, Prevotella, Bacteroides, Fusobacterium",
+                "Streptococcus milleri group (S. anginosus, S. constellatus, S. intermedius)",
+                "Staphylococcus aureus",
+                "Klebsiella pneumoniae (alcoholics, diabetics)",
+                "Mixed aerobic-anaerobic flora (common)"
+              ]
+            },
+            "secondary_lung_abscess": {
+              "definition": "POst-obstructive, hematogenous, OR healthcare-associated",
+              "pathogens": [
+                "Staphylococcus aureus (including MRSA) - post-influenza, IVDU",
+                "Pseudomonas aeruginosa - healthcare-associated, bronchiectasis",
+                "Klebsiella pneumoniae - alcoholics, diabetics",
+                "Nocardia - immunocompromised",
+                "Fungi (Aspergillus, Mucor) - immunocompromised"
+              ]
+            },
+            "note": "Anaerobic cultures often negative due to fastidious organisms. Putrid sputum is pathognomonic for anaerobes."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Antibiotic Therapy",
+          "content": {
+            "primary_lung_abscess": {
+              "regimen": "Anaerobic coverage essential",
+              "first_line": [
+                "Ampicillin-sulbactam 3g IV q6h",
+                "Piperacillin-tazobactam 4.5g IV q6h",
+                "Clindamycin 600-900mg IV q8h + Ceftriaxone 2g IV q24h"
+              ],
+              "alternative": [
+                "Meropenem 1g IV q8h (if severe OR failed initial therapy)",
+                "Ertapenem 1g IV q24h (if ESBL risk)"
+              ]
+            },
+            "secondary_lung_abscess": {
+              "regimen": "Broader coverage for MRSA/Pseudomonas",
+              "options": [
+                "Vancomycin 15-20mg/kg IV q8-12h + Piperacillin-tazobactam 4.5g IV q6h",
+                "Linezolid 600mg IV/PO q12h + Meropenem 1g IV q8h"
+              ]
+            },
+            "immunocompromised": "Add antifungal coverage (voriconazole OR amphotericin B) if fungal abscess suspected. Consider Nocardia (TMP-SMX).",
+            "note": "Metronidazole monotherapy is INADEQUATE (poor activity against aerobic streptococci). Always combine with beta-lactam OR use combination agent."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Pathogen-Directed Therapy",
+          "content": {
+            "anaerobes": "Ampicillin-sulbactam 3g IV q6h OR Clindamycin 600-900mg IV q8h OR Metronidazole 500mg IV q8h (with beta-lactam)",
+            "strep_milleri": "Penicillin G 2-4 MU IV q4h OR Ceftriaxone 2g IV q24h",
+            "MRSA": "Vancomycin 15-20mg/kg IV q8-12h OR Linezolid 600mg IV/PO q12h",
+            "klebsiella": "Ceftriaxone 2g IV q24h OR Meropenem 1g IV q8h (if ESBL)",
+            "pseudomonas": "Piperacillin-tazobactam 4.5g IV q6h OR Cefepime 2g IV q8h OR Meropenem 1g IV q8h",
+            "nocardia": "TMP-SMX 5mg/kg (TMP component) IV q6-8h for 6-12 months",
+            "IV_to_po_switch": "Switch after clinical improvement (afebrile, decreasing cavity size on imaging): Amoxicillin-clavulanate 875mg PO q12h OR Clindamycin 450mg PO q6h"
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Treatment Duration",
+          "content": {
+            "standard_duration": "Prolonged therapy required: 3-4 weeks IV, then switch to PO for total 6-8 weeks",
+            "extended_duration": "Large abscesses (>6cm), slow response, OR immunocompromised: 8-12 weeks total",
+            "monitoring": "Serial chest X-rays every 2-4 weeks to document cavity resolution. CT chest if no improvement after 4-6 weeks.",
+            "stopping_criteria": [
+              "Clinical improvement (afebrile, resolution of symptoms)",
+              "Radiographic improvement (decreasing cavity size, resolving air-fluid level)",
+              "Normalization of inflammatory markers (WBC, CRP)",
+              "Complete cavity resolution not required before stopping antibiotics"
+            ],
+            "note": "Radiographic resolution lags clinical improvement by weeks to months. Do not prolong antibiotics solely for persistent cavity if clinically improved."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Populations & Procedures",
+          "content": {
+            "surgical_indications": [
+              "Failure of medical therapy after 4-6 weeks",
+              "Large abscess (>6cm) with poor drainage",
+              "Massive hemoptysis",
+              "Suspected malignancy OR foreign body",
+              "Bronchopleural fistula OR empyema"
+            ],
+            "percutaneous_drainage": "Consider CT-guided drainage for large (>4-6cm) peripheral abscesses not responding to antibiotics. Contraindicated if high bleeding risk OR central location.",
+            "bronchoscopy": "Therapeutic bronchoscopy for drainage rarely effective. Mainly diagnostic (rule out obstruction, obtain cultures).",
+            "renal_impairment": "Adjust beta-lactam and vancomycin doses. Avoid aminoglycosides.",
+            "pregnancy": "Preferred: Ampicillin-sulbactam OR Piperacillin-tazobactam. Avoid fluoroquinolones, metronidazole (1st trimester)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Antimicrobial Stewardship",
+          "content": {
+            "red_flags": [
+              "Metronidazole monotherapy (inadequate for aerobic streptococci)",
+              "Inadequate anaerobic coverage (e.g., ceftriaxone alone)",
+              "Premature switch to PO before clinical stability",
+              "Prolonged IV therapy beyond 3-4 weeks without clear indication",
+              "Failure to obtain cultures before starting antibiotics"
+            ],
+            "key_stewardship_points": [
+              "Always provide anaerobic coverage for primary lung abscess",
+              "Prolonged therapy (6-8 weeks total) is necessary - do not stop prematurely",
+              "Switch to PO after 3-4 weeks IV if clinically improving",
+              "Radiographic resolution lags clinical improvement - do not over-treat",
+              "Consider surgical consultation if no improvement after 4-6 weeks"
+            ],
+            "antibiotic_timeout": "Weekly review: Is patient improving clinically? Are cultures positive? Can we narrow spectrum? Is cavity size decreasing? Ready for IV-to-PO switch?"
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "Clinical References",
+          "content": {},
+          "references": [
+            {
+              "label": "Johns Hopkins ABX Guide - Lung Abscess",
+              "url": "https://www.hopkinsguides.com/hopkins/view/Johns_Hopkins_ABX_Guide/540131/all/Lung_Abscess"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            },
+            {
+              "label": "StatPearls - Lung Abscess (2024)",
+              "url": "https://www.ncbi.nlm.nih.gov/books/NBK555920/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "acute-bronchitis",
+      "name": "Acute Bronchitis",
+      "synonyms": [
+        "acute bronchitis",
+        "chest cold",
+        "acute cough illness"
+      ],
+      "icd10": [
+        "J20.9",
+        "J40"
+      ],
+      "severity": [
+        "mild"
+      ],
+      "shortDescription": "Self-limited inflammation of the bronchi, typically viral, presenting with acute cough lasting <3 weeks",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Acute bronchitis: self-limited inflammation of the large airways (bronchi) causing acute cough, typically lasting 1-3 weeks. Predominantly viral etiology (>90%).",
+            "clinical_presentation": "Acute cough (productive OR non-productive) lasting <3 weeks, with OR without sputum production. May have low-grade fever, wheezing, chest discomfort. NO signs of pneumonia (no focal consolidation, no hypoxemia).",
+            "key_distinction": "Acute bronchitis vs pneumonia: Bronchitis has NO focal consolidation on chest X-ray, NO hypoxemia, NO tachypnea, NO high fever (>38.5°C). If these present, consider pneumonia.",
+            "viral_etiology": [
+              "Rhinovirus (most common)",
+              "Coronavirus (including SARS-CoV-2)",
+              "Influenza A and B",
+              "Respiratory syncytial virus (RSV)",
+              "Adenovirus",
+              "Parainfluenza"
+            ],
+            "bacterial_etiology": "Rare (<10%): Bordetella pertussis (whooping cough), Mycoplasma pneumoniae, Chlamydia pneumoniae"
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "clinical_diagnosis": "Acute bronchitis is a CLINICAL diagnosis. Routine testing is NOT recommended for uncomplicated cases.",
+            "when_not_to_test": [
+              "No chest X-ray needed if: age <65, HR <100, RR <24, temp <38°C, no focal consolidation on exam",
+              "No sputum culture (not helpful - often colonization)",
+              "No procalcitonin (not validated for acute bronchitis)",
+              "No routine viral testing (does not change management)"
+            ],
+            "when_to_test": [
+              "Chest X-ray: if pneumonia suspected (focal findings, hypoxemia, high fever, tachypnea)",
+              "Influenza testing: if influenza season and <48h symptom onset (antiviral eligible)",
+              "Pertussis testing (PCR OR culture): if paroxysmal cough, post-tussive emesis, inspiratory whoop, OR exposure",
+              "COVID-19 testing: if compatible symptoms and local prevalence"
+            ],
+            "diagnostic_stewardship": "Avoid unnecessary testing. Chest X-ray and labs do NOT reduce antibiotic prescribing and increase costs."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology & Pathogens",
+          "content": {
+            "viral_predominance": "Viruses cause >90% of acute bronchitis cases. Bacterial superinfection is rare.",
+            "color_of_sputum_myth": "Purulent (green/yellow) sputum does NOT indicate bacterial infection. Sputum color is due to neutrophil peroxidase, not bacteria. Do NOT use sputum color to guide antibiotic prescribing.",
+            "pertussis": "Bordetella pertussis: paroxysmal cough lasting >2 weeks, post-tussive emesis, inspiratory whoop. More common in adolescents/adults with waning immunity.",
+            "atypical_bacteria": "Mycoplasma pneumoniae and Chlamydia pneumoniae: cause prolonged cough (>3 weeks) but rarely require treatment in immunocompetent adults."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Treatment Approach",
+          "content": {
+            "antibiotics_not_recommended": "Antibiotics are NOT recommended for routine acute bronchitis in healthy adults. No benefit in symptom duration OR severity. Increases adverse effects and antibiotic resistance.",
+            "symptomatic_treatment": [
+              "Cough suppressants: Dextromethorphan 10-20mg PO q4-6h PRN",
+              "Expectorants: Guaifenesin 200-400mg PO q4h PRN",
+              "NSAIDs: Ibuprofen 400mg PO q6-8h OR Acetaminophen 500-1000mg PO q6h PRN",
+              "Honey: 1-2 teaspoons for cough (evidence-based, especially in children >1 year)",
+              "Hydration and rest"
+            ],
+            "when_to_consider_antibiotics": {
+              "pertussis_confirmed": "Azithromycin 500mg PO day 1, then 250mg PO days 2-5 (OR 500mg PO daily x3 days)",
+              "pertussis_suspected": "Treat if <3 weeks of symptoms (reduces transmission) OR high-risk contacts (infants, pregnant women)",
+              "copd_exacerbation": "See AECOPD module - antibiotics indicated if increased dyspnea + increased sputum purulence + increased sputum volume"
+            },
+            "influenza": "Oseltamivir 75mg PO q12h x5 days if <48h symptom onset and high-risk patient OR severe illness"
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Pathogen-Specific Therapy",
+          "content": {
+            "pertussis": {
+              "first_line": "Azithromycin 500mg PO day 1, then 250mg PO days 2-5 (total 5 days)",
+              "alternatives": [
+                "Clarithromycin 500mg PO q12h x7 days",
+                "TMP-SMX DS 1 tab PO q12h x14 days (if macrolide allergy)"
+              ],
+              "note": "Antibiotics do NOT improve symptoms if >3 weeks of cough. Treat to reduce transmission."
+            },
+            "mycoplasma_chlamydia": {
+              "indication": "Only if prolonged symptoms (>3 weeks) and high suspicion",
+              "options": [
+                "Azithromycin 500mg PO day 1, then 250mg PO days 2-5",
+                "Doxycycline 100mg PO q12h x7-10 days"
+              ]
+            },
+            "viral": "Supportive care only. Antibiotics NOT indicated."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Expected Course & Duration",
+          "content": {
+            "natural_history": "Acute cough typically lasts 1-3 weeks. 50% of patients still coughing at 2 weeks, 25% at 3 weeks. This is NORMAL and does NOT indicate bacterial infection.",
+            "when_to_reassess": "Reassess if: cough persists >3 weeks, worsening symptoms, new fever, dyspnea, hemoptysis, OR weight loss. Consider alternative diagnoses (pneumonia, pertussis, asthma, GERD, post-nasal drip).",
+            "antibiotic_duration_if_indicated": {
+              "pertussis": "5 days (azithromycin) OR 7-14 days (clarithromycin, TMP-SMX)",
+              "mycoplasma_chlamydia": "5-10 days"
+            }
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Populations",
+          "content": {
+            "copd_patients": "Acute bronchitis in COPD patients may represent AECOPD. See AECOPD module for antibiotic indications (Anthonisen criteria).",
+            "immunocompromised": "Lower threshold for chest X-ray and antibiotics. Consider atypical pathogens (fungi, PCP).",
+            "pregnancy": "Symptomatic treatment preferred. If antibiotics needed: Azithromycin OR Amoxicillin. Avoid doxycycline, fluoroquinolones.",
+            "elderly": "Higher risk of pneumonia. Lower threshold for chest X-ray if fever, tachypnea, OR hypoxemia.",
+            "pertussis_contacts": "POst-exposure prophylaxis: Azithromycin 500mg PO day 1, then 250mg PO days 2-5 for close contacts (especially infants, pregnant women)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Antimicrobial Stewardship",
+          "content": {
+            "red_flags": [
+              "Prescribing antibiotics for uncomplicated acute bronchitis (viral illness)",
+              "Using sputum color (green/yellow) to justify antibiotics",
+              "Ordering chest X-ray OR labs for low-risk patients (increases antibiotic prescribing)",
+              "Prescribing fluoroquinolones OR broad-spectrum antibiotics for acute bronchitis"
+            ],
+            "key_stewardship_messages": [
+              "Acute bronchitis is viral in >90% of cases - antibiotics NOT indicated",
+              "Purulent sputum does NOT mean bacterial infection",
+              "Cough lasting 1-3 weeks is NORMAL for acute bronchitis",
+              "Patient education is key: 'Antibiotics will not help your cough and may cause harm'",
+              "Offer symptomatic treatment (cough suppressants, NSAIDs, honey)"
+            ],
+            "patient_education": "Explain: 'Your cough is caused by a virus. Antibiotics do not work against viruses and will not make you feel better faster. They can cause side effects like diarrhea and allergic reactions. Your cough should improve in 1-3 weeks with rest and symptomatic treatment.'",
+            "delayed_prescribing": "Consider delayed antibiotic prescription strategy: 'Fill this prescription only if your symptoms worsen OR do not improve after 7 days.' Reduces antibiotic use by 30-40%."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "Clinical References",
+          "content": {},
+          "references": [
+            {
+              "label": "CDC - Acute Bronchitis Guidelines",
+              "url": "https://www.CDC.gov/antibiotic-use/bronchitis.html"
+            },
+            {
+              "label": "ACCP Acute Bronchitis Guidelines",
+              "url": "https://journal.chestnet.org/"
+            },
+            {
+              "label": "StatPearls - Acute Bronchitis (2024)",
+              "url": "https://www.ncbi.nlm.nih.gov/books/NBK448067/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "AECOPD",
+      "name": "Acute Exacerbation of COPD (AECOPD)",
+      "synonyms": [
+        "AECOPD",
+        "COPD exacerbation",
+        "acute bronchitis in COPD"
+      ],
+      "icd10": [
+        "J44.0",
+        "J44.1"
+      ],
+      "severity": [
+        "mild",
+        "moderate",
+        "severe"
+      ],
+      "shortDescription": "Acute worsening of respiratory symptoms in COPD patients beyond normal day-to-day variation, requiring change in medication",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "AECOPD: acute worsening of respiratory symptoms (dyspnea, cough, sputum production/purulence) beyond normal day-to-day variation, requiring change in regular medication.",
+            "clinical_presentation": "Increased dyspnea, increased sputum volume, increased sputum purulence (Anthonisen criteria). May have fever, wheezing, chest tightness, fatigue.",
+            "anthonisen_criteria": {
+              "type_1_severe": "All 3 cardinal symptoms: increased dyspnea + increased sputum volume + increased sputum purulence",
+              "type_2_moderate": "2 of 3 cardinal symptoms",
+              "type_3_mild": "1 cardinal symptom + ≥1 of: URTI in past 5 days, fever, increased wheezing, increased cough, increased HR/RR"
+            },
+            "triggers": [
+              "Viral infections (50-70%): rhinovirus, influenza, RSV, coronavirus",
+              "Bacterial infections (40-50%): H. influenzae, S. pneumoniae, M. catarrhalis, P. aeruginosa",
+              "Environmental: air pollution, temperature changes",
+              "Non-infectious: heart failure, pulmonary embolism, pneumothorax, medication non-adherence"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "clinical_diagnosis": "AECOPD is primarily a clinical diagnosis based on symptom worsening.",
+            "essential_tests": [
+              "Pulse oximetry OR ABG (assess hypoxemia, hypercapnia)",
+              "Chest X-ray (rule out pneumonia, pneumothorax, heart failure)",
+              "ECG (rule out cardiac ischemia, arrhythmia)",
+              "CBC (leukocytosis suggests bacterial infection)"
+            ],
+            "conditional_tests": [
+              "Sputum Gram stain and culture (if purulent sputum, frequent exacerbations, OR ICU admission)",
+              "Blood cultures (if febrile OR septic)",
+              "BNP OR pro-BNP (if heart failure suspected)",
+              "D-dimer and CT angiography (if PE suspected)",
+              "Respiratory viral panel (influenza season)"
+            ],
+            "severity_assessment": {
+              "mild": "Increased symptoms, no respiratory failure, outpatient management",
+              "moderate": "Increased symptoms, no respiratory failure, hospitalization needed",
+              "severe": "Respiratory failure (hypoxemia, hypercapnia, acidosis) OR ICU admission"
+            }
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology & Pathogens",
+          "content": {
+            "bacterial_pathogens": [
+              "Haemophilus influenzae (30-40%)",
+              "Streptococcus pneumoniae (10-15%)",
+              "Moraxella catarrhalis (10-15%)",
+              "Pseudomonas aeruginosa (5-10% - risk factors: severe COPD, frequent exacerbations, recent antibiotics, bronchiectasis)"
+            ],
+            "viral_pathogens": [
+              "Rhinovirus (most common)",
+              "Influenza A and B",
+              "Respiratory syncytial virus (RSV)",
+              "Coronavirus (including SARS-CoV-2)",
+              "Parainfluenza"
+            ],
+            "pseudomonas_risk_factors": [
+              "FEV1 <50% predicted",
+              "≥4 exacerbations per year",
+              "Recent hospitalization OR antibiotics",
+              "Chronic oral corticosteroids",
+              "Bronchiectasis"
+            ]
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Antibiotic Therapy Indications",
+          "content": {
+            "when_to_use_antibiotics": {
+              "indicated": "Anthonisen Type 1 (all 3 symptoms) OR Type 2 (2 of 3 symptoms) exacerbations",
+              "also_indicated": "Severe exacerbation requiring mechanical ventilation (invasive OR non-invasive)",
+              "not_indicated": "Anthonisen Type 3 (1 symptom) exacerbations - treat with bronchodilators and corticosteroids only"
+            },
+            "outpatient_mild_moderate": {
+              "no_pseudomonas_risk": [
+                "Amoxicillin-clavulanate 875mg PO q12h x5 days",
+                "Azithromycin 500mg PO day 1, then 250mg PO days 2-5",
+                "Doxycycline 100mg PO q12h x5 days",
+                "Cefuroxime 500mg PO q12h x5 days"
+              ],
+              "pseudomonas_risk": [
+                "Levofloxacin 750mg PO q24h x5 days",
+                "Ciprofloxacin 500-750mg PO q12h x5 days"
+              ]
+            },
+            "inpatient_severe": {
+              "no_pseudomonas_risk": [
+                "Ceftriaxone 1-2g IV q24h",
+                "Ampicillin-sulbactam 3g IV q6h",
+                "Levofloxacin 750mg IV q24h"
+              ],
+              "pseudomonas_risk": [
+                "Piperacillin-tazobactam 4.5g IV q6h",
+                "Cefepime 2g IV q8h",
+                "Meropenem 1g IV q8h (if prior carbapenem-resistant organism)"
+              ]
+            },
+            "duration": "5 days for most patients (non-inferior to 7-14 days). Extend to 7 days if slow response OR Pseudomonas."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Pathogen-Directed Therapy",
+          "content": {
+            "h_influenzae": "Amoxicillin-clavulanate 875mg PO q12h OR Ceftriaxone 1g IV q24h",
+            "s_pneumoniae": "Amoxicillin 1g PO q8h OR Ceftriaxone 1g IV q24h",
+            "m_catarrhalis": "Amoxicillin-clavulanate 875mg PO q12h OR Azithromycin 500mg PO q24h",
+            "pseudomonas": "Ciprofloxacin 500-750mg PO q12h OR Piperacillin-tazobactam 4.5g IV q6h OR Cefepime 2g IV q8h",
+            "de_escalation": "Narrow spectrum based on culture results. Switch to PO when clinically stable.",
+            "note": "Most AECOPD are viral OR non-infectious. Do not prolong antibiotics beyond 5 days without clear indication."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Treatment Duration",
+          "content": {
+            "antibiotic_duration": "5 days for most AECOPD (non-inferior to longer courses)",
+            "extended_duration": "7 days if: Pseudomonas infection, slow clinical response, severe exacerbation requiring ICU",
+            "corticosteroid_duration": "Prednisone 40mg PO daily x5 days (equivalent to longer courses with fewer side effects)",
+            "stopping_criteria": [
+              "Improved dyspnea and sputum production",
+              "Return to baseline respiratory status",
+              "No fever",
+              "Stable oxygen saturation"
+            ],
+            "note": "Longer antibiotic courses (>7 days) do NOT improve outcomes and increase adverse effects and resistance."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Adjunctive Therapy & Prevention",
+          "content": {
+            "bronchodilators": {
+              "saba": "Albuterol 2.5-5mg nebulized q4-6h OR 2-4 puffs MDI q4-6h",
+              "sama": "Ipratropium 0.5mg nebulized q6h OR 2-4 puffs MDI q6h",
+              "combination": "Albuterol-ipratropium nebulized q4-6h (more effective than either alone)"
+            },
+            "corticosteroids": {
+              "indication": "All hospitalized AECOPD patients",
+              "regimen": "Prednisone 40mg PO daily x5 days OR Methylprednisolone 125mg IV q6h x72h then taper",
+              "note": "Longer courses (>5-7 days) increase adverse effects without additional benefit"
+            },
+            "oxygen_therapy": "Target SpO2 88-92% (avoid hyperoxia - risk of CO2 retention)",
+            "ventilatory_support": {
+              "niv": "Non-invasive ventilation (BiPAP) for: pH 7.25-7.35, PaCO2 >45 mmHg, RR >25",
+              "invasive": "Intubation for: pH <7.25, severe hypoxemia, altered mental status, respiratory arrest"
+            },
+            "prevention": [
+              "Smoking cessation (most important)",
+              "Influenza vaccine (annual)",
+              "Pneumococcal vaccine (PCV20 OR PCV15 + PPSV23)",
+              "COVID-19 vaccine",
+              "Inhaled corticosteroids + LABA for frequent exacerbators (≥2 per year)",
+              "Pulmonary rehabilitation"
+            ]
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Antimicrobial Stewardship",
+          "content": {
+            "red_flags": [
+              "Prescribing antibiotics for Anthonisen Type 3 exacerbations (1 symptom only)",
+              "Using fluoroquinolones as first-line without Pseudomonas risk factors",
+              "Antibiotic duration >5-7 days without clear indication",
+              "Failure to use corticosteroids (more important than antibiotics for AECOPD)",
+              "Using sputum color alone to justify antibiotics"
+            ],
+            "key_stewardship_points": [
+              "Not all AECOPD require antibiotics - use Anthonisen criteria",
+              "5 days of antibiotics is sufficient for most patients",
+              "Corticosteroids are MORE important than antibiotics for AECOPD",
+              "Avoid fluoroquinolones unless Pseudomonas risk factors present",
+              "Sputum purulence alone does NOT indicate bacterial infection"
+            ],
+            "antibiotic_timeout": "48-72h review: Is patient improving? Are cultures positive? Can we stop antibiotics at day 5? Are corticosteroids being used appropriately?"
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "Clinical References",
+          "content": {},
+          "references": [
+            {
+              "label": "GOLD COPD Guidelines (2025)",
+              "url": "https://goldcopd.org/2025-gold-report/"
+            },
+            {
+              "label": "ATS/ERS COPD Exacerbation Guidelines",
+              "url": "https://www.thoracic.org/statements/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "bronchiectasis",
+      "name": "Bronchiectasis with Acute Infection",
+      "synonyms": [
+        "bronchiectasis",
+        "bronchiectasis exacerbation",
+        "infected bronchiectasis"
+      ],
+      "icd10": [
+        "J47.0",
+        "J47.1",
+        "J47.9"
+      ],
+      "severity": [
+        "moderate",
+        "severe"
+      ],
+      "shortDescription": "Permanent dilation of bronchi with recurrent infections, characterized by chronic productive cough and frequent exacerbations",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Bronchiectasis: permanent, abnormal dilation of bronchi due to chronic inflammation and infection. Characterized by chronic productive cough, recurrent respiratory infections, and progressive lung damage.",
+            "clinical_presentation": "Chronic daily productive cough with purulent sputum, recurrent respiratory infections, dyspnea, hemoptysis, fatigue, weight loss. Acute exacerbation: increased sputum volume/purulence, worsening dyspnea, fever.",
+            "etiology": [
+              "POst-infectious (TB, severe pneumonia, pertussis)",
+              "Cystic fibrosis (most common in children)",
+              "Immunodeficiency (CVID, HIV, hypogammaglobulinemia)",
+              "Allergic bronchopulmonary aspergillosis (ABPA)",
+              "Primary ciliary dyskinesia",
+              "Connective tissue disease (RA, Sjögren's)",
+              "Idiopathic (40-50% of cases)"
+            ],
+            "exacerbation_criteria": "≥3 of: increased sputum volume, increased sputum purulence, increased dyspnea, increased cough, fever, malaise, reduced lung function, radiographic changes"
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "essential_tests": [
+              "High-resolution CT chest (gold standard for diagnosis - shows bronchial dilation, signet ring sign)",
+              "Sputum Gram stain and culture (essential for pathogen identification)",
+              "Pulse oximetry OR ABG",
+              "CBC with differential",
+              "Basic metabolic panel"
+            ],
+            "conditional_tests": [
+              "Pulmonary function tests (assess severity, obstruction)",
+              "Immunoglobulin levels (IgG, IgA, IgM, IgE) - rule out immunodeficiency",
+              "Aspergillus IgE and precipitins (rule out ABPA)",
+              "Sweat chloride test (rule out CF in young patients)",
+              "Alpha-1 antitrypsin level",
+              "Rheumatoid factor, ANA (rule out connective tissue disease)",
+              "Mycobacterial cultures (if endemic area OR risk factors)"
+            ],
+            "severity_assessment": "Bronchiectasis Severity Index (BSI) OR FACED score to predict exacerbations and mortality"
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology & Pathogens",
+          "content": {
+            "common_pathogens": [
+              "Haemophilus influenzae (40-50% - most common)",
+              "Pseudomonas aeruginosa (20-30% - associated with worse outcomes)",
+              "Moraxella catarrhalis (10-15%)",
+              "Streptococcus pneumoniae (10-15%)",
+              "Staphylococcus aureus (including MRSA) (5-10%)"
+            ],
+            "chronic_colonization": "Pseudomonas aeruginosa chronic colonization (≥2 positive cultures ≥3 months apart) associated with: more frequent exacerbations, accelerated lung function decline, increased mortality",
+            "nontuberculous_mycobacteria": "NTM (M. avium complex, M. abscessus) in 10-20% of bronchiectasis patients. Suspect if: refractory symptoms, cavitary disease, nodular infiltrates. Requires prolonged multi-drug therapy.",
+            "aspergillus": "Aspergillus fumigatus colonization common. ABPA if: elevated IgE, eosinophilia, positive Aspergillus IgE/precipitins, central bronchiectasis."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Antibiotic Therapy for Exacerbations",
+          "content": {
+            "mild_exacerbation_outpatient": {
+              "no_pseudomonas": [
+                "Amoxicillin-clavulanate 875mg PO q12h x14 days",
+                "Azithromycin 500mg PO day 1, then 250mg PO days 2-14",
+                "Doxycycline 100mg PO q12h x14 days"
+              ],
+              "pseudomonas_colonized": [
+                "Ciprofloxacin 500-750mg PO q12h x14 days",
+                "Levofloxacin 750mg PO q24h x14 days"
+              ]
+            },
+            "severe_exacerbation_inpatient": {
+              "no_pseudomonas": [
+                "Ceftriaxone 2g IV q24h",
+                "Ampicillin-sulbactam 3g IV q6h",
+                "Piperacillin-tazobactam 4.5g IV q6h"
+              ],
+              "pseudomonas_colonized": [
+                "Piperacillin-tazobactam 4.5g IV q6h",
+                "Cefepime 2g IV q8h",
+                "Meropenem 1g IV q8h (if MDR Pseudomonas)",
+                "Consider dual anti-pseudomonal therapy: beta-lactam + aminoglycoside OR fluoroquinolone"
+              ]
+            },
+            "duration": "14 days for most exacerbations (longer than CAP/AECOPD due to impaired clearance). Extend to 21 days if Pseudomonas OR slow response.",
+            "note": "Always obtain sputum culture before starting antibiotics. Tailor therapy based on prior culture results and local resistance patterns."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Pathogen-Directed Therapy",
+          "content": {
+            "h_influenzae": "Amoxicillin-clavulanate 875mg PO q12h OR Ceftriaxone 2g IV q24h",
+            "pseudomonas": {
+              "oral": "Ciprofloxacin 750mg PO q12h x14-21 days",
+              "IV": "Piperacillin-tazobactam 4.5g IV q6h OR Cefepime 2g IV q8h OR Meropenem 1g IV q8h",
+              "dual_therapy": "Consider for severe infection OR MDR: beta-lactam + aminoglycoside (tobramycin 5-7mg/kg IV q24h) OR + ciprofloxacin"
+            },
+            "MRSA": "Vancomycin 15-20mg/kg IV q8-12h OR Linezolid 600mg IV/PO q12h",
+            "s_pneumoniae": "Amoxicillin 1g PO q8h OR Ceftriaxone 2g IV q24h",
+            "m_catarrhalis": "Amoxicillin-clavulanate 875mg PO q12h OR Azithromycin 500mg PO q24h",
+            "ntm": "Consult infectious disease specialist. Typically: Azithromycin + Ethambutol + Rifampin for M. avium complex (12-18 months)"
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Treatment Duration & Monitoring",
+          "content": {
+            "acute_exacerbation": "14 days for most pathogens. Extend to 21 days for Pseudomonas OR slow clinical response.",
+            "chronic_suppressive_therapy": {
+              "indication": "≥3 exacerbations per year requiring antibiotics",
+              "options": [
+                "Azithromycin 250-500mg PO 3x/week (reduces exacerbations by 40-50%)",
+                "Inhaled tobramycin 300mg nebulized q12h (28 days on, 28 days off) for Pseudomonas",
+                "Inhaled colistin 1-2 MU nebulized q12h for MDR Pseudomonas"
+              ],
+              "monitoring": "Baseline and periodic: audiometry (azithromycin), renal function (aminoglycosides), sputum cultures, ECG (QTc prolongation)"
+            },
+            "stopping_criteria": [
+              "Return to baseline sputum volume and purulence",
+              "Improved dyspnea and cough",
+              "No fever",
+              "Stable OR improved lung function"
+            ]
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Airway Clearance & Prevention",
+          "content": {
+            "airway_clearance": {
+              "essential": "Daily airway clearance is cornerstone of bronchiectasis management",
+              "techniques": [
+                "Chest physiotherapy (postural drainage, percussion)",
+                "POsitive expiratory pressure (PEP) devices",
+                "High-frequency chest wall oscillation vests",
+                "Autogenic drainage"
+              ],
+              "mucolytics": [
+                "Hypertonic saline 7% nebulized q12h (improves mucus clearance)",
+                "Dornase alfa (DNase) - only for CF-related bronchiectasis"
+              ]
+            },
+            "prevention_strategies": [
+              "Daily airway clearance (most important)",
+              "Influenza vaccine (annual)",
+              "Pneumococcal vaccine (PCV20 OR PCV15 + PPSV23)",
+              "COVID-19 vaccine",
+              "Avoid smoking and secondhand smoke",
+              "Treat underlying cause (immunodeficiency, ABPA, GERD)"
+            ],
+            "surgical_indications": "Localized disease with recurrent infections OR massive hemoptysis refractory to medical therapy. Lung transplant for end-stage disease."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Antimicrobial Stewardship",
+          "content": {
+            "red_flags": [
+              "Treating chronic colonization (positive culture without symptoms) - NOT indicated",
+              "Inadequate treatment duration (<14 days) for acute exacerbations",
+              "Failure to obtain sputum cultures before starting antibiotics",
+              "Empiric anti-pseudomonal therapy without prior Pseudomonas colonization",
+              "Long-term suppressive antibiotics without clear indication (≥3 exacerbations/year)"
+            ],
+            "key_stewardship_points": [
+              "Chronic colonization does NOT require treatment - only treat symptomatic exacerbations",
+              "Always obtain sputum culture to guide therapy",
+              "14-day duration is standard (longer than CAP/AECOPD)",
+              "Reserve fluoroquinolones for Pseudomonas-colonized patients",
+              "Airway clearance is MORE important than antibiotics for long-term management"
+            ],
+            "chronic_suppressive_therapy_criteria": "Only use if ≥3 exacerbations per year despite optimal airway clearance. Monitor for resistance and adverse effects.",
+            "antibiotic_timeout": "Weekly review: Is patient improving? Are cultures back? Can we narrow spectrum? Is duration appropriate (14 days)? Is airway clearance optimized?"
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "Clinical References",
+          "content": {},
+          "references": [
+            {
+              "label": "ERS Bronchiectasis Guidelines (2025)",
+              "url": "https://erj.ersjournals.com/"
+            },
+            {
+              "label": "BTS Bronchiectasis Guidelines",
+              "url": "https://www.brit-thoracic.org.uk/quality-improvement/guidelines/bronchiectasis/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "common_respiratory_pathogens": {
+    "streptococcus_pneumoniae": {
+      "epidemiology": "Most common bacterial cause of CAP (30-40%). Incidence decreased with PCV13/PCV20 vaccination.",
+      "clinical_clues": "Rust-colored sputum, lobar consolidation on CXR, bacteremia in 20-30% of hospitalized patients",
+      "resistance": "Penicillin resistance 30-40% (but cephalosporins still effective for pneumonia). Macrolide resistance 20-40%.",
+      "treatment": "Penicillin-susceptible: Penicillin G OR Amoxicillin. Penicillin-resistant: Ceftriaxone OR Levofloxacin.",
+      "prevention": "PCV20 (single dose) OR PCV15 + PPSV23 (1 year apart) for adults ≥65 years OR immunocompromised",
+      "note": "Penicillin MIC ≤2 mcg/mL is still treatable with high-dose penicillin OR ceftriaxone for pneumonia"
+    },
+    "haemophilus_influenzae": {
+      "epidemiology": "10-20% of CAP, more common in COPD patients and smokers",
+      "clinical_clues": "Purulent sputum, COPD exacerbation, chronic bronchitis, non-typeable strains most common",
+      "resistance": "30-40% produce beta-lactamase (resistant to ampicillin)",
+      "treatment": "Beta-lactamase negative: Ampicillin. Beta-lactamase positive: Amoxicillin-clavulanate OR Ceftriaxone.",
+      "prevention": "Hib vaccine (children), smoking cessation, COPD management",
+      "note": "Non-typeable H. influenzae (NTHi) not covered by Hib vaccine - common in COPD exacerbations"
+    },
+    "legionella_pneumophila": {
+      "epidemiology": "2-8% of CAP, higher in outbreaks (water systems, cooling towers, travel)",
+      "clinical_clues": "Hyponatremia, elevated LFTS, diarrhea, relative bradycardia, travel/water exposure history",
+      "resistance": "Rare - fluoroquinolones and macrolides remain highly effective",
+      "treatment": "Levofloxacin 750mg q24h (preferred for severe) OR Azithromycin 500mg q24h",
+      "prevention": "Water system maintenance, avoid hot tubs/whirlpools in immunocompromised",
+      "note": "Urinary antigen test detects only L. pneumophila serogroup 1 (70% of cases) - negative test does not rule out"
+    },
+    "mrsa_methicillin_resistant_staph_aureus": {
+      "epidemiology": "10-20% of S. aureus isolates, declining in many regions. Risk factors: IVDU, recent hospitalization, hemodialysis",
+      "clinical_clues": "Necrotizing pneumonia, cavitation, empyema, post-influenza pneumonia, IVDU",
+      "resistance": "Resistant to all beta-lactams except ceftaroline. Vancomycin MIC creep (MIC 1.5-2) associated with treatment failure.",
+      "treatment": "Vancomycin 15-20mg/kg q8-12h (target trough 15-20) OR Linezolid 600mg q12h (better lung penetration)",
+      "prevention": "Contact precautions, decolonization (mupirocin nasal + chlorhexidine baths) for recurrent infections",
+      "note": "MRSA nasal PCR negative has 95% NPV for MRSA pneumonia - can stop empiric coverage if negative"
+    },
+    "pseudomonas_aeruginosa": {
+      "epidemiology": "20-30% of HAP/VAP, rare in CAP except in bronchiectasis/COPD with prior colonization",
+      "clinical_clues": "Structural lung disease (bronchiectasis, COPD), prior antibiotics, healthcare exposure, green sputum",
+      "resistance": "20-30% resistant to cefepime/piperacillin-tazobactam. Carbapenem resistance 10-20%. XDR strains emerging.",
+      "treatment": "Cefepime 2g q8h OR Piperacillin-tazobactam 4.5g q6h OR Meropenem 1g q8h (based on susceptibility)",
+      "prevention": "Avoid unnecessary antibiotics, optimize airway clearance in bronchiectasis",
+      "note": "Double coverage (beta-lactam + aminoglycoside/fluoroquinolone) does NOT improve outcomes - use monotherapy once susceptible"
+    },
+    "klebsiella_pneumoniae": {
+      "epidemiology": "10-20% of HAP/VAP, classic 'currant jelly' sputum in alcoholics (rare now)",
+      "clinical_clues": "Healthcare exposure, diabetes, alcoholism, upper lobe cavitation (rare)",
+      "resistance": "ESBL production 20-40% in healthcare settings. Carbapenem resistance (KPC) 5-20% in endemic areas.",
+      "treatment": "ESBL: Meropenem OR Ertapenem. CRE: Ceftazidime-avibactam OR Meropenem-vaborbactam.",
+      "prevention": "Contact precautions for CRE, hand hygiene, antibiotic stewardship",
+      "note": "Avoid cephalosporins and piperacillin-tazobactam for ESBL even if susceptible in vitro (inoculum effect)"
+    },
+    "mycoplasma_pneumoniae": {
+      "epidemiology": "10-20% of CAP, more common in younger patients (<40 years), outbreaks in closed communities",
+      "clinical_clues": "Gradual onset, dry cough, extrapulmonary manifestations (rash, hemolytic anemia, myocarditis)",
+      "resistance": "Macrolide resistance increasing (10-30% in some regions, especially Asia)",
+      "treatment": "Azithromycin 500mg x1, then 250mg q24h OR Doxycycline 100mg q12h OR Levofloxacin 750mg q24h",
+      "prevention": "None available (no vaccine)",
+      "note": "Atypical pathogen - not visible on Gram stain, no cell wall (beta-lactams ineffective)"
+    },
+    "anaerobes_oral_flora": {
+      "epidemiology": "Historically thought common in aspiration pneumonia, but rarely isolated in modern studies",
+      "clinical_clues": "Foul-smelling sputum, lung abscess, empyema, necrotizing pneumonia, poor dentition",
+      "resistance": "Bacteroides fragilis: 20-40% resistant to clindamycin",
+      "treatment": "Ampicillin-sulbactam 3g q6h OR Piperacillin-tazobactam 4.5g q6h OR Clindamycin 600-900mg q8h",
+      "prevention": "Oral hygiene, treat periodontal disease",
+      "note": "Routine anaerobic coverage NOT recommended for aspiration pneumonia - only for lung abscess OR empyema"
+    }
+  }
+}

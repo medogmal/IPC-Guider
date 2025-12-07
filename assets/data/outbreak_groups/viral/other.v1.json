@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "updatedAt": "2025-01-11T00:00:00Z",
+  "groupId": "other_viral",
+  "groupName": "Other Viral Pathogens",
+  "pathogens": [
+    {
+      "id": "rabies",
+      "name": "Rabies Virus",
+      "scientificName": "Rabies lyssavirus",
+      "definition": "A fatal viral encephalitis transmitted through the saliva of infected animals, primarily through bites. Rabies is almost always fatal once clinical symptoms appear, but is preventable through post-exposure prophylaxis (PEP).",
+      "transmissionMode": "Zoonotic (animal bite, scratch, or mucous membrane exposure to infected saliva)",
+      "incubationPeriod": "1-3 months (range: 1 week to 1 year)",
+      "infectiousPeriod": "Animals: 3-7 days before symptom onset until death; Humans: Not transmitted person-to-person",
+      "clinicalPresentation": "Prodrome (fever, headache, malaise) → Acute neurologic phase (anxiety, confusion, agitation, hallucinations, hydrophobia, aerophobia) → Coma → Death",
+      "diagnosticTests": "Direct fluorescent antibody (DFA) test on brain tissue, RT-PCR, serology (antibody detection in CSF/serum)",
+      "isolationPrecautions": "Standard Precautions (no person-to-person transmission)",
+      "ppe": "Standard PPE for healthcare workers; Post-exposure prophylaxis (PEP) for exposed individuals",
+      "controlMeasures": "Immediate wound washing, post-exposure prophylaxis (rabies immunoglobulin + vaccine series), animal control, pre-exposure vaccination for high-risk individuals",
+      "outbreakRisk": "Low (sporadic cases, no person-to-person transmission)",
+      "notifiable": true,
+      "references": [
+        {"title": "WHO Rabies Fact Sheet", "url": "https://www.who.int/news-room/fact-sheets/detail/rabies"},
+        {"title": "CDC Rabies", "url": "https://www.cdc.gov/rabies/index.html"}
+      ]
+    },
+    {
+      "id": "monkeypox",
+      "name": "Mpox (Monkeypox)",
+      "scientificName": "Monkeypox virus (Orthopoxvirus)",
+      "definition": "A zoonotic viral disease caused by the monkeypox virus, related to smallpox but generally less severe. Characterized by fever, rash, and lymphadenopathy.",
+      "transmissionMode": "Zoonotic (animal-to-human), close contact with infected person (respiratory droplets, skin lesions, contaminated materials), sexual contact",
+      "incubationPeriod": "5-21 days (average 7-14 days)",
+      "infectiousPeriod": "From symptom onset until all lesions have crusted over and healed",
+      "clinicalPresentation": "Fever, headache, muscle aches, lymphadenopathy → Rash (macules → papules → vesicles → pustules → scabs) starting on face and spreading to body",
+      "diagnosticTests": "PCR from lesion swabs, serology",
+      "isolationPrecautions": "Contact + Airborne Precautions (until all lesions crusted)",
+      "ppe": "N95 respirator, gown, gloves, eye protection",
+      "controlMeasures": "Isolation of cases, contact tracing, vaccination (smallpox vaccine provides cross-protection), environmental cleaning",
+      "outbreakRisk": "Moderate (2022 global outbreak demonstrated sustained human-to-human transmission)",
+      "notifiable": true,
+      "references": [
+        {"title": "WHO Mpox", "url": "https://www.who.int/news-room/fact-sheets/detail/monkeypox"},
+        {"title": "CDC Mpox", "url": "https://www.cdc.gov/poxvirus/mpox/index.html"}
+      ]
+    },
+    {
+      "id": "polio",
+      "name": "Poliovirus",
+      "scientificName": "Poliovirus (Enterovirus)",
+      "definition": "A highly infectious viral disease that primarily affects young children and can cause irreversible paralysis. Polio has been eradicated in most countries through vaccination but remains endemic in some regions.",
+      "transmissionMode": "Fecal-oral route, contaminated water/food, person-to-person",
+      "incubationPeriod": "6-20 days (average 7-14 days)",
+      "infectiousPeriod": "7-10 days before symptom onset to 3-6 weeks after",
+      "clinicalPresentation": "Most infections asymptomatic; Minor illness (fever, fatigue, headache, vomiting); Nonparalytic (aseptic meningitis); Paralytic polio (acute flaccid paralysis)",
+      "diagnosticTests": "Viral culture from stool, throat swab, CSF; PCR; Serology",
+      "isolationPrecautions": "Contact Precautions (until 2 negative stool cultures)",
+      "ppe": "Gown, gloves, hand hygiene",
+      "controlMeasures": "Vaccination (OPV or IPV), isolation of cases, contact tracing, environmental surveillance (wastewater testing), hand hygiene, safe water/sanitation",
+      "outbreakRisk": "High in unvaccinated populations; Vaccine-derived poliovirus (VDPV) outbreaks possible",
+      "notifiable": true,
+      "references": [
+        {"title": "WHO Poliomyelitis", "url": "https://www.who.int/news-room/fact-sheets/detail/poliomyelitis"},
+        {"title": "CDC Polio", "url": "https://www.cdc.gov/polio/index.html"}
+      ]
+    }
+  ]
+}
+

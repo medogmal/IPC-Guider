@@ -1,0 +1,800 @@
+{
+  "version": 1,
+  "groupId": "gastroenteric_viral",
+  "groupName": "Gastroenteric (Enteric/Waterborne) Viral Outbreak Pathogens",
+  "type": "viral",
+  "updatedAt": "2025-01-14T00:00:00Z",
+  "pathogens": [
+    {
+      "id": "norovirus",
+      "name": "Norovirus",
+      "scientificName": "Norovirus (formerly Norwalk virus), genus Norovirus, family Caliciviridae",
+      "definition": "Non-enveloped positive-sense single-stranded RNA virus and the leading cause of acute gastroenteritis outbreaks worldwide in all age groups. Norovirus is highly contagious, environmentally stable, and causes explosive outbreaks in closed and semi-closed settings such as cruise ships, hospitals, long-term care facilities, schools, and restaurants. Characterized by sudden onset of vomiting and diarrhea with low infectious dose (<100 viral particles).",
+      "reservoir": {
+        "primary": [
+          "Humans (only known reservoir)"
+        ],
+        "secondary": [
+          "Environmental contamination (surfaces, fomites, water, food)"
+        ],
+        "notes": "Humans are the sole reservoir. Norovirus is highly stable in the environment and can survive on surfaces for days to weeks, in water for months, and is resistant to many common disinfectants including alcohol-based hand sanitizers. Multiple genogroups (GI, GII) and genotypes exist; GII.4 is most common."
+      },
+      "transmission": {
+        "mode": "Fecal-oral route (primary), contaminated food and water, aerosols from vomit, person-to-person contact",
+        "routes": [
+          "Fecal-oral route: contaminated hands, food, water, surfaces",
+          "Foodborne transmission: contaminated food (especially raw or undercooked shellfish, fresh produce, food handled by infected food workers)",
+          "Waterborne transmission: contaminated drinking water, recreational water, ice",
+          "Aerosol transmission: inhalation of aerosolized vomit particles (can spread virus widely in enclosed spaces)",
+          "Person-to-person contact: direct contact with infected individuals or their vomit/stool"
+        ],
+        "notes": "Norovirus is extremely contagious with very low infectious dose (<100 particles). Vomiting can generate aerosols that contaminate surfaces and spread virus over wide areas. Infected food handlers are a major source of foodborne outbreaks. Virus can be transmitted before symptoms appear and for days to weeks after recovery."
+      },
+      "incubationPeriod": {
+        "range": "12-48 hours (average 24-36 hours) from exposure to symptom onset",
+        "infectiousPeriod": "Infectious from onset of symptoms to at least 3 days after symptom resolution; can shed virus for up to 2-3 weeks after recovery (longer in immunocompromised). Peak viral shedding during acute illness",
+        "seasonality": "Year-round transmission; winter peaks in temperate climates ('winter vomiting disease')",
+        "geographic": "Worldwide distribution"
+      },
+      "riskFactors": [
+        "Crowded settings: cruise ships, hospitals, long-term care facilities, schools, military barracks, prisons",
+        "Food service workers and consumers of contaminated food",
+        "Healthcare workers and caregivers (occupational exposure)",
+        "Children in daycare centers and schools",
+        "Elderly residents of long-term care facilities",
+        "Immunocompromised individuals (prolonged shedding, chronic infection)",
+        "Travelers (exposure to contaminated food/water)",
+        "Poor hand hygiene and inadequate environmental cleaning"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Sudden onset of nausea and vomiting (often projectile vomiting)",
+          "Watery diarrhea (non-bloody)",
+          "Abdominal cramps and pain",
+          "Low-grade fever (37.5-38.5°C) or no fever",
+          "Headache and myalgia",
+          "Malaise and fatigue",
+          "Symptoms typically last 1-3 days (self-limited)"
+        ],
+        "complications": [
+          "Dehydration (most common complication, especially in young children and elderly)",
+          "Electrolyte imbalances",
+          "Severe dehydration requiring hospitalization and IV fluids",
+          "Aspiration pneumonia (from vomiting)",
+          "Chronic norovirus infection in immunocompromised individuals",
+          "Death (rare, but can occur in elderly and debilitated individuals)"
+        ],
+        "caseDefinition": {
+          "suspected": "Acute onset of vomiting and/or diarrhea in person with epidemiological link to confirmed outbreak, OR cluster of acute gastroenteritis with compatible clinical features (vomiting in >50% of cases, mean duration 12-60 hours, mean incubation 24-48 hours)",
+          "confirmed": "Clinical illness + laboratory confirmation: positive RT-PCR for norovirus from stool or vomit specimen"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR for norovirus RNA from stool or vomit specimen - gold standard, high sensitivity and specificity, can identify genogroup and genotype",
+        "Rapid antigen tests (enzyme immunoassay) - lower sensitivity than PCR, used for outbreak investigation",
+        "Electron microscopy - rarely used, requires specialized equipment",
+        "Clinical diagnosis based on outbreak characteristics (Kaplan criteria: vomiting in >50%, mean duration 12-60 hours, mean incubation 24-48 hours, negative bacterial stool culture)"
+      ],
+      "treatment": "Supportive care: oral rehydration solution (ORS) for mild-moderate dehydration; IV fluids for severe dehydration. Antiemetics (ondansetron) for severe vomiting. Antidiarrheals generally not recommended. No specific antiviral therapy available. Exclude ill individuals from work/school until 48-72 hours after symptom resolution (especially food handlers and healthcare workers).",
+      "infectionControl": {
+        "precautions": "Contact Precautions + Enteric Precautions. Wear gown and gloves for all patient contact; use dedicated equipment. Hand hygiene with soap and water (alcohol-based hand rub is NOT effective against norovirus). Isolate in single room with dedicated toilet or cohort with other norovirus cases. Maintain precautions until 48 hours after symptom resolution",
+        "screening": "Screen for gastrointestinal symptoms; isolate suspected cases immediately",
+        "cohorting": "Cohort confirmed norovirus cases together; assign dedicated staff who are not caring for high-risk patients",
+        "sourceControl": "Contain vomit and stool immediately; use appropriate PPE during cleanup",
+        "environmental": "Enhanced cleaning and disinfection with EPA-registered disinfectants effective against norovirus (sodium hypochlorite/bleach at 1,000-5,000 ppm). Clean up vomit and stool spills immediately with appropriate PPE. Discard contaminated food. Launder contaminated linens separately. Norovirus is resistant to alcohol-based disinfectants",
+        "staffEducation": "Strict hand hygiene with soap and water; proper use of PPE; immediate reporting of symptoms; exclude ill staff until 48-72 hours after symptom resolution; educate on vomit cleanup procedures"
+      },
+      "outbreakTriggers": [
+        "≥2-3 epidemiologically linked cases of acute gastroenteritis within 72 hours in same setting (ward, facility, cruise ship, school, restaurant)",
+        "Cluster of acute gastroenteritis with compatible clinical features (sudden onset, vomiting predominant, short duration)",
+        "Rapid increase in gastroenteritis cases above baseline",
+        "Foodborne or waterborne outbreak suspected"
+      ],
+      "reportingCommunication": [
+        "Notify infection control and public health authorities within 24 hours of suspected norovirus outbreak",
+        "Initiate outbreak management team: infection control, epidemiology, environmental health, food safety, communications",
+        "Implement outbreak control measures: isolation/cohorting, enhanced cleaning, exclusion of ill staff, restriction of admissions/transfers if necessary",
+        "Conduct epidemiological investigation: line listing, attack rates, food/water source investigation",
+        "Communicate with staff, patients, families, and media as per protocol",
+        "Submit specimens for laboratory confirmation and genotyping"
+      ],
+      "prevention": [
+        "Hand hygiene with soap and water (most important measure) - especially after using toilet, changing diapers, before eating or preparing food",
+        "Exclude ill individuals (especially food handlers and healthcare workers) from work/school until 48-72 hours after symptom resolution",
+        "Food safety: proper handwashing by food handlers, cook shellfish thoroughly, wash fruits and vegetables, avoid food preparation when ill",
+        "Water safety: ensure safe drinking water, avoid swallowing recreational water",
+        "Environmental cleaning and disinfection with bleach-based products (1,000-5,000 ppm sodium hypochlorite)",
+        "Immediate cleanup of vomit and stool spills with appropriate PPE",
+        "Educate on transmission prevention and early recognition of symptoms",
+        "No vaccine currently available (under development)"
+      ],
+      "references": [
+        {
+          "label": "WHO - Norovirus",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/norovirus"
+        },
+        {
+          "label": "CDC - Norovirus",
+          "url": "https://www.cdc.gov/norovirus/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "rotavirus",
+      "name": "Rotavirus",
+      "scientificName": "Rotavirus, genus Rotavirus, family Reoviridae (segmented double-stranded RNA virus)",
+      "definition": "Segmented double-stranded RNA virus and the leading cause of severe acute gastroenteritis in infants and young children worldwide before widespread vaccine introduction. Rotavirus causes severe dehydrating diarrhea and is highly contagious. Outbreaks occur in daycare centers, pediatric wards, and households. Multiple serotypes exist (G and P types); vaccines target most common serotypes.",
+      "reservoir": {
+        "primary": [
+          "Humans only (no animal reservoir for human rotavirus strains)"
+        ],
+        "secondary": [
+          "Environmental contamination (surfaces, fomites, water)"
+        ],
+        "notes": "Humans are the sole reservoir for human rotavirus strains. Virus is highly stable in the environment and can survive on surfaces for days. Animal rotaviruses exist but rarely infect humans."
+      },
+      "transmission": {
+        "mode": "Fecal-oral route (primary), contaminated surfaces and fomites, contaminated food and water",
+        "routes": [
+          "Fecal-oral route: contaminated hands, surfaces, toys, shared items",
+          "Person-to-person contact: direct contact with infected children or their stool",
+          "Contaminated fomites: toys, doorknobs, changing tables, cribs",
+          "Foodborne and waterborne transmission (less common than norovirus)",
+          "Respiratory droplets (possible but minor route)"
+        ],
+        "notes": "Rotavirus is highly contagious with very low infectious dose (10-100 viral particles). Virus is shed in high concentrations in stool (up to 10^11 particles per gram). Transmission is most efficient in daycare centers and pediatric settings."
+      },
+      "incubationPeriod": {
+        "range": "1-3 days (average 2 days) from exposure to symptom onset",
+        "infectiousPeriod": "Infectious from onset of symptoms and while excreting virus in stool (typically up to 10 days, but can be longer in immunocompromised children). Peak viral shedding during acute illness",
+        "seasonality": "Winter peaks in temperate climates (November-March in Northern Hemisphere); year-round in tropical regions",
+        "geographic": "Worldwide distribution; highest burden in low- and middle-income countries"
+      },
+      "riskFactors": [
+        "Young children (especially 6 months to 2 years) - highest incidence",
+        "Infants and toddlers in daycare centers and childcare facilities",
+        "Unvaccinated children",
+        "Hospitalized children (nosocomial transmission)",
+        "Immunocompromised children (severe and prolonged disease)",
+        "Malnourished children (higher risk of severe disease and death)",
+        "Crowded living conditions and poor sanitation",
+        "Lack of exclusive breastfeeding (breastfeeding provides some protection)"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Acute onset of watery diarrhea (profuse, non-bloody)",
+          "Vomiting (often precedes diarrhea)",
+          "Fever (38-39°C)",
+          "Abdominal cramps and pain",
+          "Dehydration (can be severe and life-threatening in young children)",
+          "Symptoms typically last 3-8 days"
+        ],
+        "complications": [
+          "Severe dehydration (most common and serious complication) - can lead to shock and death",
+          "Electrolyte imbalances (hyponatremia, hypernatremia, acidosis)",
+          "Seizures (due to electrolyte imbalances or fever)",
+          "Acute kidney injury (due to severe dehydration)",
+          "Malnutrition (especially in developing countries)",
+          "Nosocomial infections (hospital-acquired rotavirus)",
+          "Death (rare in developed countries with access to rehydration therapy; major cause of child mortality in low-resource settings)"
+        ],
+        "caseDefinition": {
+          "suspected": "Child with acute onset of watery diarrhea ± vomiting and fever, especially during rotavirus season or in outbreak setting",
+          "confirmed": "Clinical illness + laboratory confirmation: positive RT-PCR or rapid antigen test for rotavirus from stool specimen"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR for rotavirus RNA from stool - gold standard, high sensitivity, can identify G and P serotypes",
+        "Rapid antigen tests (enzyme immunoassay, lateral flow assay) from stool - widely used, good sensitivity and specificity, results in 15-30 minutes",
+        "Electron microscopy - shows characteristic wheel-like virus particles, rarely used",
+        "Viral culture - not routinely performed"
+      ],
+      "treatment": "Supportive care: oral rehydration solution (ORS) for mild-moderate dehydration (WHO/UNICEF low-osmolarity ORS); IV fluids for severe dehydration. Zinc supplementation (10-20 mg/day for 10-14 days) reduces duration and severity of diarrhea. Continue breastfeeding and age-appropriate feeding. Antiemetics and antidiarrheals generally not recommended in children. No specific antiviral therapy available. Rotavirus vaccines for prevention (not treatment).",
+      "infectionControl": {
+        "precautions": "Contact Precautions + Standard Precautions. Wear gown and gloves for all patient contact, especially diaper changes. Hand hygiene with soap and water (alcohol-based hand rub is less effective against rotavirus). Isolate in single room or cohort with other rotavirus cases. Maintain precautions for duration of illness and until diarrhea resolves",
+        "screening": "Screen for gastrointestinal symptoms in pediatric admissions; isolate suspected cases",
+        "cohorting": "Cohort confirmed rotavirus cases together in pediatric wards; assign dedicated staff",
+        "sourceControl": "Proper diaper changing technique; contain stool; immediate cleanup of contaminated areas",
+        "environmental": "Enhanced cleaning and disinfection with EPA-registered disinfectants effective against non-enveloped viruses (bleach-based, accelerated hydrogen peroxide). Clean and disinfect toys, cribs, changing tables, and high-touch surfaces frequently. Rotavirus is resistant to alcohol-based disinfectants",
+        "staffEducation": "Strict hand hygiene with soap and water (most important measure); proper diaper changing technique; avoid touching face; educate caregivers on transmission prevention and rehydration therapy"
+      },
+      "outbreakTriggers": [
+        "≥2 epidemiologically linked cases of acute gastroenteritis in same daycare center, pediatric ward, or household within 1-3 days",
+        "Sudden spike in pediatric gastroenteritis cases above baseline",
+        "Nosocomial transmission (hospital-acquired cases)"
+      ],
+      "reportingCommunication": [
+        "Report clusters of acute gastroenteritis in pediatric settings to infection control and public health authorities within 24 hours",
+        "Enhanced surveillance for severe cases requiring hospitalization",
+        "Communicate with daycare centers, schools, and families about outbreak",
+        "Implement outbreak control measures: isolation/cohorting, enhanced cleaning, exclusion of ill children, hand hygiene education",
+        "Promote rotavirus vaccination in community",
+        "Group notifications to parents/caregivers"
+      ],
+      "prevention": [
+        "Rotavirus vaccination (most effective prevention): RotaTeq (3 doses at 2, 4, 6 months) or Rotarix (2 doses at 2, 4 months) - oral live attenuated vaccines, highly effective (85-98% against severe disease)",
+        "Hand hygiene with soap and water - especially after diaper changes, using toilet, before eating or preparing food",
+        "Exclusive breastfeeding for first 6 months (provides some protection)",
+        "Frequent cleaning and disinfection of toys, surfaces, and shared items with appropriate disinfectants (bleach-based)",
+        "Proper diaper changing technique and disposal",
+        "Exclude ill children from daycare/school until diarrhea resolves (typically 24 hours after last episode)",
+        "Educate caregivers on proper hygiene, early recognition of dehydration, and use of oral rehydration solution",
+        "Safe water and sanitation",
+        "Zinc supplementation in low-resource settings"
+      ],
+      "references": [
+        {
+          "label": "WHO - Rotavirus",
+          "url": "https://www.who.int/teams/immunization-vaccines-and-biologicals/diseases/rotavirus"
+        },
+        {
+          "label": "CDC - Rotavirus",
+          "url": "https://www.cdc.gov/rotavirus/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "astrovirus",
+      "name": "Astrovirus",
+      "scientificName": "Human astrovirus (HAstV), family Astroviridae (positive-sense single-stranded RNA virus)",
+      "definition": "Non-enveloped positive-sense single-stranded RNA virus causing mild to moderate acute gastroenteritis, primarily in infants, young children, elderly, and immunocompromised individuals. Astrovirus is less common than norovirus and rotavirus but causes outbreaks in childcare facilities, schools, hospitals, and long-term care facilities. Eight serotypes (HAstV-1 to HAstV-8) have been identified; HAstV-1 is most common.",
+      "reservoir": {
+        "primary": [
+          "Humans (especially children)"
+        ],
+        "secondary": [
+          "Environmental contamination (surfaces, water)"
+        ],
+        "notes": "Humans are the primary reservoir. Virus is shed in stool and can contaminate surfaces and water. Astrovirus is environmentally stable."
+      },
+      "transmission": {
+        "mode": "Fecal-oral route (primary), contaminated surfaces and fomites, contaminated food and water",
+        "routes": [
+          "Fecal-oral route: contaminated hands, surfaces, toys",
+          "Person-to-person contact: direct contact with infected individuals or their stool",
+          "Contaminated fomites: toys, doorknobs, shared items",
+          "Foodborne transmission: contaminated food (especially shellfish)",
+          "Waterborne transmission: contaminated drinking water or recreational water"
+        ],
+        "notes": "Astrovirus is moderately contagious. Transmission is most efficient in childcare settings and institutions. Virus can be shed in stool for several days after symptom resolution."
+      },
+      "incubationPeriod": {
+        "range": "3-4 days (range 1-4 days) from exposure to symptom onset",
+        "infectiousPeriod": "Infectious during symptomatic period and for a few days after symptom resolution (typically 5-7 days total). Prolonged shedding can occur in immunocompromised individuals",
+        "seasonality": "Winter peaks in temperate climates; year-round transmission possible",
+        "geographic": "Worldwide distribution"
+      },
+      "riskFactors": [
+        "Infants and preschool children (especially <5 years)",
+        "Elderly residents of long-term care facilities",
+        "Immunocompromised individuals (HIV, cancer, transplant) - risk of severe and prolonged disease",
+        "Institutionalized children and adults",
+        "Crowded settings (daycare centers, schools, hospitals, nursing homes)",
+        "Poor hygiene and sanitation"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Mild to moderate watery diarrhea (non-bloody)",
+          "Nausea and vomiting (less prominent than norovirus)",
+          "Abdominal pain and cramps",
+          "Low-grade fever or no fever",
+          "Headache and malaise",
+          "Symptoms typically last 2-4 days (milder and shorter than rotavirus)"
+        ],
+        "complications": [
+          "Dehydration (usually mild to moderate)",
+          "Severe or prolonged diarrhea in immunocompromised individuals",
+          "Nosocomial infections (hospital-acquired)",
+          "Rarely severe complications (less severe than rotavirus or norovirus)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with acute onset of mild to moderate diarrhea ± vomiting, especially in outbreak setting or childcare facility",
+          "confirmed": "Clinical illness + laboratory confirmation: positive RT-PCR for astrovirus from stool specimen"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR for astrovirus RNA from stool - gold standard, high sensitivity, can identify serotype",
+        "Enzyme immunoassay (EIA) for astrovirus antigen in stool - less sensitive than PCR",
+        "Electron microscopy - shows characteristic star-shaped virus particles (astro = star), rarely used"
+      ],
+      "treatment": "Supportive care: oral rehydration solution (ORS) for mild-moderate dehydration; IV fluids if needed. Continue normal diet and breastfeeding. No specific antiviral therapy available. Symptoms are usually self-limited and resolve within 2-4 days.",
+      "infectionControl": {
+        "precautions": "Contact Precautions + Standard Precautions. Wear gown and gloves for patient contact. Hand hygiene with soap and water. Isolate in single room or cohort with other astrovirus cases. Maintain precautions for duration of illness",
+        "screening": "Screen for gastrointestinal symptoms; isolate suspected cases",
+        "cohorting": "Cohort confirmed cases together if outbreak occurs",
+        "sourceControl": "Proper hygiene and containment of stool",
+        "environmental": "Regular cleaning and disinfection with appropriate disinfectants (bleach-based or accelerated hydrogen peroxide)",
+        "staffEducation": "Hand hygiene with soap and water; proper diaper changing technique; outbreak notification if cluster detected"
+      },
+      "outbreakTriggers": [
+        "≥2-3 epidemiologically linked cases of acute gastroenteritis in same childcare setting, school, or institution",
+        "Spike in gastroenteritis cases in pediatric or long-term care facility above expected baseline"
+      ],
+      "reportingCommunication": [
+        "Notify infection control and public health authorities as required for enteric clusters",
+        "Monitor children and vulnerable populations in affected settings",
+        "Implement outbreak control measures: isolation, enhanced cleaning, hand hygiene education",
+        "Communicate with families and caregivers"
+      ],
+      "prevention": [
+        "Hand hygiene with soap and water - especially after using toilet, changing diapers, before eating or preparing food",
+        "Regular cleaning and disinfection of surfaces, toys, and shared items",
+        "Water and food safety: ensure safe drinking water, proper food handling",
+        "Exclude ill children from daycare/school until diarrhea resolves",
+        "Educate caregivers on transmission prevention and hygiene",
+        "No vaccine available"
+      ],
+      "references": [
+        {
+          "label": "WHO - Diarrhoeal Disease",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease"
+        },
+        {
+          "label": "CDC - Astrovirus",
+          "url": "https://www.cdc.gov/astrovirus/index.html"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "sapovirus",
+      "name": "Sapovirus",
+      "scientificName": "Sapovirus, genus Sapovirus, family Caliciviridae (related to norovirus)",
+      "definition": "Non-enveloped positive-sense single-stranded RNA virus in the Caliciviridae family (related to norovirus) causing acute gastroenteritis, primarily in children but also in adults. Sapovirus is less common than norovirus but causes similar clinical presentation with diarrhea, vomiting, and abdominal pain. Outbreaks occur in childcare facilities, schools, long-term care facilities, and food service settings.",
+      "reservoir": {
+        "primary": [
+          "Humans (especially children)"
+        ],
+        "secondary": [
+          "Environmental contamination (surfaces, water, food)"
+        ],
+        "notes": "Humans are the primary reservoir. Virus is shed in stool and can contaminate surfaces, water, and food. Sapovirus is environmentally stable."
+      },
+      "transmission": {
+        "mode": "Fecal-oral route (primary), contaminated food and water, person-to-person contact",
+        "routes": [
+          "Fecal-oral route: contaminated hands, surfaces, toys",
+          "Foodborne transmission: contaminated food (especially raw or undercooked shellfish, fresh produce, food handled by infected food workers)",
+          "Waterborne transmission: contaminated drinking water, recreational water",
+          "Person-to-person contact: direct contact with infected individuals or their stool"
+        ],
+        "notes": "Sapovirus transmission is similar to norovirus but generally less explosive. Transmission is most efficient in childcare settings and food service environments."
+      },
+      "incubationPeriod": {
+        "range": "1-4 days (average 2-3 days) from exposure to symptom onset",
+        "infectiousPeriod": "Infectious during symptomatic period and for several days after symptom resolution. Prolonged shedding can occur",
+        "seasonality": "Year-round transmission; possible winter peaks",
+        "geographic": "Worldwide distribution"
+      },
+      "riskFactors": [
+        "Preschool children and young children in daycare centers",
+        "Elderly residents of long-term care facilities",
+        "Food service workers and consumers of contaminated food",
+        "Crowded settings (daycare, schools, nursing homes)",
+        "Poor hand hygiene and inadequate food safety practices"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Watery diarrhea (non-bloody)",
+          "Vomiting (less prominent than norovirus)",
+          "Abdominal pain and cramps",
+          "Mild fever or no fever",
+          "Nausea",
+          "Symptoms typically last 2-4 days (similar to norovirus but often milder)"
+        ],
+        "complications": [
+          "Dehydration (usually mild to moderate)",
+          "Severe dehydration in young children and elderly (rare)",
+          "Nosocomial infections"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with acute onset of diarrhea and/or vomiting with epidemiological link to outbreak or food exposure",
+          "confirmed": "Clinical illness + laboratory confirmation: positive RT-PCR for sapovirus from stool specimen"
+        }
+      },
+      "diagnosis": [
+        "RT-PCR for sapovirus RNA from stool - gold standard, high sensitivity",
+        "Enzyme immunoassay - less commonly available than for norovirus",
+        "Electron microscopy - rarely used"
+      ],
+      "treatment": "Supportive care: oral rehydration solution (ORS) for mild-moderate dehydration; IV fluids if needed. No specific antiviral therapy available. Symptoms are usually self-limited.",
+      "infectionControl": {
+        "precautions": "Contact Precautions + Enteric Precautions. Wear gown and gloves for patient contact. Hand hygiene with soap and water (alcohol-based hand rub is less effective). Isolate in single room or cohort with other sapovirus cases",
+        "screening": "Screen for gastrointestinal symptoms; isolate suspected cases",
+        "cohorting": "Cohort confirmed cases together if outbreak occurs",
+        "sourceControl": "Proper hygiene and containment of stool and vomit",
+        "environmental": "Robust cleaning and disinfection with EPA-registered disinfectants effective against non-enveloped viruses (bleach-based, accelerated hydrogen peroxide)",
+        "staffEducation": "Hand hygiene with soap and water; proper food handling; exclude ill staff until symptom resolution"
+      },
+      "outbreakTriggers": [
+        "≥2 epidemiologically linked cases of acute gastroenteritis in same setting (daycare, school, long-term care facility, food service)",
+        "Cluster of gastroenteritis cases in childcare or aged care facility",
+        "Sudden spike in gastroenteritis cases in daycare or school above baseline"
+      ],
+      "reportingCommunication": [
+        "Notify cluster/outbreak to infection control and public health authorities by standard pathway (within 24 hours)",
+        "Implement outbreak control measures: isolation, enhanced cleaning, exclusion of ill staff, food safety review",
+        "Communicate with affected settings and families"
+      ],
+      "prevention": [
+        "Hand hygiene with soap and water - especially after using toilet, before eating or preparing food",
+        "Environmental hygiene: regular cleaning and disinfection of surfaces and shared items",
+        "Food safety: proper handwashing by food handlers, cook food thoroughly, wash produce",
+        "Water safety: ensure safe drinking water",
+        "Exclude ill individuals (especially food handlers) from work until symptom resolution",
+        "No vaccine available"
+      ],
+      "references": [
+        {
+          "label": "CDC - Sapovirus",
+          "url": "https://www.cdc.gov/sapovirus/index.html"
+        },
+        {
+          "label": "WHO - Diarrhoeal Disease",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "enteric_adenovirus",
+      "name": "Enteric Adenovirus (40/41)",
+      "scientificName": "Human adenovirus serotypes 40 and 41 (HAdV-40, HAdV-41), family Adenoviridae (double-stranded DNA virus)",
+      "definition": "Non-enveloped double-stranded DNA viruses (serotypes 40 and 41) causing persistent and pediatric diarrhea outbreaks, primarily in children under 2 years. Unlike respiratory adenoviruses (types 1-7, 14, 21), enteric adenoviruses (types 40 and 41) specifically target the gastrointestinal tract. Outbreaks occur in daycare centers, pediatric wards, and institutions.",
+      "reservoir": {
+        "primary": [
+          "Humans only (no animal reservoir)"
+        ],
+        "secondary": [
+          "Environmental contamination (surfaces, water)"
+        ],
+        "notes": "Humans are the sole reservoir. Enteric adenoviruses are highly stable in the environment and resistant to many disinfectants, including alcohol-based products. Virus can survive on surfaces for weeks."
+      },
+      "transmission": {
+        "mode": "Fecal-oral route (primary), contaminated surfaces and water, person-to-person contact",
+        "routes": [
+          "Fecal-oral route: contaminated hands, surfaces, toys",
+          "Person-to-person contact: direct contact with infected children or their stool",
+          "Contaminated fomites: toys, doorknobs, changing tables",
+          "Waterborne transmission: contaminated drinking water, recreational water (adenoviruses are resistant to chlorination)",
+          "Respiratory droplets (minor route for enteric types)"
+        ],
+        "notes": "Enteric adenoviruses are moderately contagious. Transmission is most efficient in daycare centers and pediatric settings. Prolonged viral shedding (weeks to months) can occur, especially in immunocompromised children."
+      },
+      "incubationPeriod": {
+        "range": "3-10 days (average 7-8 days) from exposure to symptom onset - longer than most other viral gastroenteritis",
+        "infectiousPeriod": "Contagious while symptoms last and for several days to weeks after symptom resolution. Prolonged shedding (weeks to months) can occur in immunocompromised individuals",
+        "seasonality": "Year-round transmission; no clear seasonal pattern",
+        "geographic": "Worldwide distribution"
+      },
+      "riskFactors": [
+        "Children under 2 years (highest incidence)",
+        "Infants and toddlers in daycare centers and childcare facilities",
+        "Hospitalized children (nosocomial transmission)",
+        "Immunocompromised children (severe and prolonged disease)",
+        "Institutionalized children",
+        "Crowded living conditions"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Watery diarrhea (non-bloody, can be prolonged - lasting 8-12 days or longer)",
+          "Vomiting (less prominent than rotavirus)",
+          "Low-grade fever or no fever",
+          "Abdominal pain and cramps",
+          "Dehydration (usually mild to moderate)",
+          "Symptoms typically last 8-12 days (longer duration than rotavirus or norovirus)"
+        ],
+        "complications": [
+          "Dehydration (usually mild to moderate, but can be severe in young infants)",
+          "Prolonged diarrhea (can last weeks)",
+          "Intussusception (rare)",
+          "Severe or disseminated disease in immunocompromised children",
+          "Nosocomial infections (hospital-acquired)"
+        ],
+        "caseDefinition": {
+          "suspected": "Child under 2 years with prolonged watery diarrhea (>7 days) ± vomiting and low-grade fever",
+          "confirmed": "Clinical illness + laboratory confirmation: positive PCR or antigen test for enteric adenovirus (types 40/41) from stool specimen"
+        }
+      },
+      "diagnosis": [
+        "PCR for adenovirus DNA from stool - gold standard, can differentiate enteric types (40/41) from respiratory types",
+        "Rapid antigen tests (enzyme immunoassay, lateral flow assay) for enteric adenovirus from stool - widely used, good sensitivity",
+        "Electron microscopy - shows characteristic icosahedral virus particles, rarely used",
+        "Viral culture - difficult and time-consuming for enteric adenoviruses"
+      ],
+      "treatment": "Supportive care: oral rehydration solution (ORS) for mild-moderate dehydration; IV fluids if needed. Continue breastfeeding and age-appropriate feeding. No specific antiviral therapy available for immunocompetent children. Cidofovir may be considered for severe disease in immunocompromised children (off-label use). Symptoms usually resolve spontaneously but may be prolonged.",
+      "infectionControl": {
+        "precautions": "Contact Precautions + Standard Precautions. Wear gown and gloves for all patient contact, especially diaper changes. Hand hygiene with soap and water (alcohol-based hand rub is NOT effective against adenoviruses). Isolate in single room or cohort with other adenovirus cases. Maintain precautions for duration of illness and until diarrhea resolves",
+        "screening": "Screen for gastrointestinal symptoms in pediatric admissions; isolate suspected cases",
+        "cohorting": "Cohort confirmed enteric adenovirus cases together in pediatric wards; assign dedicated staff",
+        "sourceControl": "Proper diaper changing technique; contain stool; immediate cleanup of contaminated areas",
+        "environmental": "Enhanced cleaning and disinfection with EPA-registered disinfectants effective against non-enveloped viruses (bleach-based at 1,000-5,000 ppm, accelerated hydrogen peroxide). Adenoviruses are highly resistant to alcohol-based disinfectants and many common disinfectants. Clean and disinfect toys, cribs, changing tables, and high-touch surfaces frequently",
+        "staffEducation": "Strict hand hygiene with soap and water; proper diaper changing technique; educate caregivers on transmission prevention and prolonged shedding"
+      },
+      "outbreakTriggers": [
+        "Clusters of prolonged diarrhea in pediatric wards or daycare centers",
+        "Spike in pediatric gastroenteritis cases above expected baseline level",
+        "Nosocomial transmission (hospital-acquired cases)"
+      ],
+      "reportingCommunication": [
+        "Notify infection control and public health authorities for institutional outbreaks",
+        "Implement outbreak control measures: isolation/cohorting, enhanced cleaning, hand hygiene education",
+        "Provide guidance for hygiene and infection prevention to daycare centers and families",
+        "Monitor for prolonged shedding and secondary cases"
+      ],
+      "prevention": [
+        "Hand hygiene with soap and water - especially after diaper changes, using toilet, before eating",
+        "Surface and environmental hygiene: frequent cleaning and disinfection with appropriate disinfectants (bleach-based, NOT alcohol-based)",
+        "Proper diaper changing technique and disposal",
+        "Breastfeeding (provides some protection)",
+        "Exclude ill children from daycare/school until diarrhea resolves (typically 24 hours after last episode)",
+        "Educate caregivers on proper hygiene and prolonged viral shedding",
+        "Water safety: adenoviruses are resistant to chlorination; ensure proper water treatment",
+        "No vaccine available for enteric adenoviruses (vaccines exist for respiratory adenoviruses but only for military use)"
+      ],
+      "references": [
+        {
+          "label": "CDC - Adenovirus",
+          "url": "https://www.cdc.gov/adenovirus/index.html"
+        },
+        {
+          "label": "WHO - Diarrhoeal Disease",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/diarrhoeal-disease"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "hepatitis_a",
+      "name": "Hepatitis A virus",
+      "scientificName": "Hepatitis A virus (HAV), genus Hepatovirus, family Picornaviridae (positive-sense single-stranded RNA virus)",
+      "definition": "Non-enveloped positive-sense single-stranded RNA virus causing acute hepatitis ranging from mild illness to severe liver disease. Hepatitis A is highly contagious and transmitted via fecal-oral route, often through contaminated food and water. Outbreaks occur in communities, schools, daycare centers, food service settings, and among travelers to endemic areas. Unlike hepatitis B and C, hepatitis A does not cause chronic infection but can cause acute liver failure (rare).",
+      "reservoir": {
+        "primary": [
+          "Humans only (no animal reservoir)"
+        ],
+        "secondary": [
+          "Environmental contamination (water, food, surfaces)"
+        ],
+        "notes": "Humans are the sole reservoir. Virus is shed in high concentrations in stool (up to 10^8 particles per gram) during incubation period and early acute phase. Virus is highly stable in the environment and resistant to heat, acid, and many disinfectants."
+      },
+      "transmission": {
+        "mode": "Fecal-oral route (primary), contaminated food and water, person-to-person contact",
+        "routes": [
+          "Fecal-oral route: contaminated hands, food, water, surfaces",
+          "Foodborne transmission: contaminated food (especially raw or undercooked shellfish, fresh produce, food handled by infected food workers) - major source of outbreaks",
+          "Waterborne transmission: contaminated drinking water, ice, recreational water",
+          "Person-to-person contact: household and sexual contact (including men who have sex with men - MSM)",
+          "Parenteral transmission: blood transfusion, injection drug use (rare)"
+        ],
+        "notes": "Hepatitis A is highly contagious with low infectious dose. Peak viral shedding occurs 1-2 weeks before symptom onset (during incubation period), making transmission difficult to prevent. Infected food handlers are a major source of foodborne outbreaks. Virus can survive on hands for hours and on surfaces for weeks."
+      },
+      "incubationPeriod": {
+        "range": "15-50 days (mean 28-30 days) from exposure to symptom onset - one of the longest incubation periods for viral gastroenteritis",
+        "infectiousPeriod": "Contagious from 2 weeks before symptom onset (during incubation period) to 1 week after onset of jaundice. Peak viral shedding occurs 1-2 weeks before jaundice. Children may shed virus for longer periods (up to several months)",
+        "seasonality": "Year-round transmission; possible fall-winter peaks in temperate climates",
+        "geographic": "Worldwide distribution; highest burden in low- and middle-income countries with poor sanitation. Endemic in Africa, Asia, Central and South America"
+      },
+      "riskFactors": [
+        "Unvaccinated individuals",
+        "Travelers to hepatitis A endemic areas (Africa, Asia, Central/South America, Middle East)",
+        "Men who have sex with men (MSM)",
+        "People who use injection drugs or non-injection drugs",
+        "Household and sexual contacts of infected persons",
+        "Food service workers and consumers of contaminated food",
+        "Children in daycare centers and their contacts",
+        "People experiencing homelessness",
+        "People with chronic liver disease (risk of severe disease and acute liver failure)",
+        "Immunocompromised individuals"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Prodrome (1-7 days): fever, malaise, anorexia, nausea, vomiting, abdominal pain (right upper quadrant)",
+          "Jaundice (yellowing of skin and eyes) - develops in most adults but less common in children <6 years",
+          "Dark urine (tea-colored) and pale stools (clay-colored)",
+          "Hepatomegaly (enlarged liver) and right upper quadrant tenderness",
+          "Pruritus (itching)",
+          "Symptoms typically last 2-8 weeks; can be prolonged or relapsing in some cases"
+        ],
+        "complications": [
+          "Prolonged or relapsing hepatitis (can last up to 6 months)",
+          "Cholestatic hepatitis (prolonged jaundice and pruritus)",
+          "Acute liver failure (fulminant hepatitis) - rare (<0.5%) but can be fatal; higher risk in adults >50 years and those with chronic liver disease",
+          "Extrahepatic manifestations: arthralgia, rash, vasculitis, kidney injury (rare)",
+          "Death (case fatality rate: overall <0.5%, but higher in adults >50 years and those with chronic liver disease)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with acute onset of fever, malaise, anorexia, nausea, abdominal pain, and jaundice OR elevated liver enzymes (ALT/AST), especially with epidemiological link to confirmed case or exposure to contaminated food/water",
+          "confirmed": "Clinical illness + laboratory confirmation: positive anti-HAV IgM antibody (indicates acute or recent infection)"
+        }
+      },
+      "diagnosis": [
+        "Serology: anti-HAV IgM antibody - gold standard for diagnosis of acute hepatitis A infection (detectable at symptom onset, persists for 3-6 months)",
+        "Anti-HAV IgG antibody - indicates past infection or immunity from vaccination (not useful for acute diagnosis)",
+        "Liver function tests: elevated ALT and AST (often >1,000 IU/L), elevated bilirubin, elevated alkaline phosphatase",
+        "RT-PCR for HAV RNA from stool or serum - used for outbreak investigation and genotyping, not routinely needed for diagnosis"
+      ],
+      "treatment": "Supportive care: rest, hydration, nutrition, avoid alcohol and hepatotoxic drugs. No specific antiviral therapy available. Most patients recover fully without treatment. Monitor liver function. Hospitalization may be needed for severe cases or acute liver failure. Post-exposure prophylaxis: hepatitis A vaccine (within 2 weeks of exposure, preferred for healthy individuals 1-40 years) or immune globulin (within 2 weeks of exposure, for infants <12 months, immunocompromised, chronic liver disease, adults >40 years).",
+      "infectionControl": {
+        "precautions": "Contact Precautions + Enteric Precautions for duration of hospitalization (typically 1 week after onset of jaundice). Wear gown and gloves for patient contact. Hand hygiene with soap and water (alcohol-based hand rub is less effective). Isolate in single room with dedicated toilet",
+        "screening": "Screen for hepatitis A symptoms (jaundice, dark urine, abdominal pain); obtain travel and exposure history",
+        "cohorting": "Not usually necessary; most patients are not hospitalized",
+        "sourceControl": "Exclude infected individuals from food handling and water handling until 1 week after onset of jaundice or as directed by public health",
+        "environmental": "Enhanced cleaning and disinfection with EPA-registered disinfectants effective against non-enveloped viruses (bleach-based at 1,000-5,000 ppm). HAV is resistant to alcohol-based disinfectants",
+        "staffEducation": "Hand hygiene with soap and water; proper food handling; vaccination for high-risk staff (food handlers, healthcare workers, travelers)"
+      },
+      "outbreakTriggers": [
+        "Any single confirmed case of hepatitis A in institution (school, daycare, healthcare facility, food service)",
+        "≥2 epidemiologically linked cases in community, household, or high-risk network",
+        "Rise in hepatitis A cases above baseline",
+        "Foodborne or waterborne outbreak suspected"
+      ],
+      "reportingCommunication": [
+        "Immediate reporting (within 24 hours) of all suspected and confirmed hepatitis A cases to local/national public health authorities - hepatitis A is a notifiable disease",
+        "Initiate outbreak investigation: identify source (food, water, person-to-person), conduct contact tracing",
+        "Implement outbreak control measures: post-exposure prophylaxis (vaccine or immune globulin) for close contacts, exclude infected food handlers, food/water safety investigation",
+        "Public health alerts and health messaging to affected communities",
+        "Coordinate with public health authorities for epidemiological investigation and outbreak management"
+      ],
+      "prevention": [
+        "Hepatitis A vaccination (most effective prevention): 2-dose series (0 and 6-12 months) - highly effective (>95% protection). Recommended for: all children at age 1 year, travelers to endemic areas, MSM, people who use drugs, people with chronic liver disease, food handlers, healthcare workers, people experiencing homelessness",
+        "Hand hygiene with soap and water - especially after using toilet, changing diapers, before eating or preparing food (most important measure)",
+        "Food safety: proper handwashing by food handlers, cook food thoroughly (especially shellfish), wash fruits and vegetables, avoid food preparation when ill",
+        "Water safety: ensure safe drinking water, avoid ice from unknown sources, avoid swallowing recreational water",
+        "Exclude infected individuals (especially food handlers) from work until 1 week after onset of jaundice",
+        "Post-exposure prophylaxis: hepatitis A vaccine or immune globulin within 2 weeks of exposure for close contacts",
+        "Educate on transmission prevention and early recognition of symptoms",
+        "Improved sanitation and hygiene in endemic areas"
+      ],
+      "references": [
+        {
+          "label": "WHO - Hepatitis A",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/hepatitis-a"
+        },
+        {
+          "label": "CDC - Hepatitis A",
+          "url": "https://www.cdc.gov/hepatitis/hav/index.htm"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "hepatitis_e",
+      "name": "Hepatitis E virus",
+      "scientificName": "Hepatitis E virus (HEV), genus Orthohepevirus, family Hepeviridae (positive-sense single-stranded RNA virus)",
+      "definition": "Non-enveloped positive-sense single-stranded RNA virus causing acute hepatitis, primarily transmitted through contaminated water in areas with poor sanitation. Hepatitis E is a major cause of waterborne hepatitis outbreaks in developing countries and is particularly severe in pregnant women (high mortality rate 15-25%). Four main genotypes: genotypes 1 and 2 (human-only, waterborne, endemic in Asia and Africa), genotypes 3 and 4 (zoonotic, foodborne, found in developed countries). Unlike hepatitis A, hepatitis E can cause chronic infection in immunocompromised individuals.",
+      "reservoir": {
+        "primary": [
+          "Humans (genotypes 1 and 2)",
+          "Pigs, wild boar, deer (genotypes 3 and 4)"
+        ],
+        "secondary": [
+          "Environmental contamination (water, food)"
+        ],
+        "notes": "Genotypes 1 and 2 are human-only and cause large waterborne outbreaks in developing countries. Genotypes 3 and 4 are zoonotic (pigs are main reservoir) and cause sporadic cases in developed countries through consumption of undercooked pork, wild boar, deer, and shellfish. Virus is environmentally stable and can survive in water for extended periods."
+      },
+      "transmission": {
+        "mode": "Fecal-oral route (primary), contaminated water (main route for genotypes 1 and 2), contaminated food (main route for genotypes 3 and 4)",
+        "routes": [
+          "Waterborne transmission: contaminated drinking water (main route for genotypes 1 and 2 in endemic areas) - causes large outbreaks, especially after floods and in refugee camps",
+          "Foodborne transmission: undercooked or raw pork, wild boar, deer meat, shellfish (main route for genotypes 3 and 4 in developed countries)",
+          "Person-to-person contact: household contact (less efficient than hepatitis A)",
+          "Vertical transmission: mother to fetus during pregnancy (can cause fetal loss and neonatal hepatitis)",
+          "Blood transfusion (rare but documented)"
+        ],
+        "notes": "Waterborne transmission is the predominant route in developing countries (genotypes 1 and 2), causing large outbreaks affecting thousands. Foodborne transmission (undercooked pork and game meat) is the main route in developed countries (genotypes 3 and 4). Pregnant women are at very high risk of severe disease and death."
+      },
+      "incubationPeriod": {
+        "range": "2-8 weeks (mean 40 days, range 15-60 days) from exposure to symptom onset",
+        "infectiousPeriod": "Contagious during incubation period and acute illness; viral shedding in stool typically lasts 2-4 weeks. Chronic infection and prolonged shedding can occur in immunocompromised individuals",
+        "seasonality": "Year-round transmission; outbreaks often follow floods, heavy rains, and natural disasters that contaminate water supplies",
+        "geographic": "Worldwide distribution. Genotypes 1 and 2 endemic in Asia (especially South Asia), Africa, Central America. Genotypes 3 and 4 found in developed countries (Europe, North America, Japan, China)"
+      },
+      "riskFactors": [
+        "Pregnant women (highest risk group - mortality rate 15-25%, especially in third trimester)",
+        "Residents of or travelers to hepatitis E endemic areas (Asia, Africa, Central America)",
+        "Areas with poor water and sanitation infrastructure",
+        "Populations affected by floods, natural disasters, humanitarian crises, refugee camps",
+        "Consumers of undercooked pork, wild boar, deer, or shellfish (genotypes 3 and 4)",
+        "Immunocompromised individuals (risk of chronic hepatitis E)",
+        "People with chronic liver disease (risk of severe disease and acute liver failure)",
+        "Occupational exposure: pig farmers, slaughterhouse workers, veterinarians"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Prodrome: fever, malaise, anorexia, nausea, vomiting, abdominal pain",
+          "Jaundice (yellowing of skin and eyes)",
+          "Dark urine and pale stools",
+          "Hepatomegaly (enlarged liver) and right upper quadrant tenderness",
+          "Arthralgia (joint pain)",
+          "Symptoms typically last 1-6 weeks; usually self-limited in non-pregnant adults"
+        ],
+        "complications": [
+          "Acute liver failure (fulminant hepatitis) - especially in pregnant women (mortality 15-25% in third trimester), people with chronic liver disease, and elderly",
+          "Fetal loss, stillbirth, and neonatal death if maternal infection during pregnancy",
+          "Chronic hepatitis E in immunocompromised individuals (HIV, transplant recipients, cancer patients) - can lead to cirrhosis",
+          "Extrahepatic manifestations: neurological (Guillain-Barré syndrome, neuralgic amyotrophy, encephalitis), kidney injury, pancreatitis, thrombocytopenia (rare)",
+          "Death (case fatality rate: 0.5-4% overall, but 15-25% in pregnant women)"
+        ],
+        "caseDefinition": {
+          "suspected": "Person with acute onset of jaundice and elevated liver enzymes, especially in outbreak setting, pregnant woman, or person with exposure to contaminated water or undercooked pork/game meat",
+          "confirmed": "Clinical illness + laboratory confirmation: positive anti-HEV IgM antibody OR positive HEV RNA by PCR (NAAT)"
+        }
+      },
+      "diagnosis": [
+        "Serology: anti-HEV IgM antibody - indicates acute or recent infection (detectable at symptom onset, persists for 3-6 months). Note: serological tests have variable sensitivity and specificity",
+        "Anti-HEV IgG antibody - indicates past infection or immunity (not useful for acute diagnosis)",
+        "RT-PCR for HEV RNA from stool or serum - gold standard for diagnosis, especially in immunocompromised individuals (who may not mount antibody response). Can identify genotype",
+        "Liver function tests: elevated ALT and AST, elevated bilirubin, elevated alkaline phosphatase"
+      ],
+      "treatment": "Supportive care: rest, hydration, nutrition, avoid alcohol and hepatotoxic drugs. No specific antiviral therapy for acute hepatitis E in immunocompetent individuals. Ribavirin (off-label) for chronic hepatitis E in immunocompromised individuals. Pregnant women: close monitoring, supportive care; no proven effective treatment. Hospitalization may be needed for severe cases or acute liver failure. Reduce immunosuppression if possible in transplant recipients with chronic HEV.",
+      "infectionControl": {
+        "precautions": "Contact Precautions + Enteric Precautions for hospitalized patients. Wear gown and gloves for patient contact. Hand hygiene with soap and water. Isolate in single room with dedicated toilet",
+        "screening": "Screen for hepatitis E symptoms (jaundice, dark urine, abdominal pain); obtain travel, water exposure, and food history (undercooked pork/game meat)",
+        "cohorting": "Not usually necessary; most patients are not hospitalized unless severe",
+        "sourceControl": "Water safety interventions: ensure safe drinking water, avoid contaminated water sources",
+        "environmental": "Water safety: chlorination, boiling, or filtration of drinking water. Enhanced hygiene in outbreak settings",
+        "staffEducation": "Hand hygiene; water and food safety education; awareness of high risk in pregnant women"
+      },
+      "outbreakTriggers": [
+        "Clusters of unexplained acute hepatitis or jaundice in community",
+        "≥2-3 epidemiologically linked cases of hepatitis E",
+        "Spike in hepatitis cases following floods, heavy rains, or natural disasters",
+        "Waterborne outbreak suspected (contaminated water supply)",
+        "Foodborne outbreak suspected (contaminated pork or game meat)"
+      ],
+      "reportingCommunication": [
+        "Notify local/national public health authorities of suspected hepatitis E outbreak (within 24 hours)",
+        "Start outbreak investigation: identify water or food source, conduct environmental assessment",
+        "Implement water safety interventions: provide safe drinking water, chlorination, boiling, water quality testing",
+        "Water surveillance: test water sources for fecal contamination and HEV RNA",
+        "Public health alerts and awareness campaigns: educate on water safety, food safety, and risks in pregnancy",
+        "Coordinate with public health, environmental health, and water authorities for outbreak control"
+      ],
+      "prevention": [
+        "Water and sanitation safety: ensure safe drinking water (boiling, chlorination, filtration), improve sanitation infrastructure, avoid drinking untreated water in endemic areas",
+        "Food safety: cook pork, wild boar, deer, and shellfish thoroughly (internal temperature ≥71°C/160°F); avoid raw or undercooked meat",
+        "Hand hygiene with soap and water - especially after using toilet, before eating or preparing food",
+        "Awareness campaigns: educate pregnant women and high-risk groups on risks and prevention",
+        "Occupational safety: proper hygiene and protective equipment for pig farmers, slaughterhouse workers, veterinarians",
+        "Vaccine: hepatitis E vaccine (HEV 239, Hecolin) available in China but not widely available elsewhere; not yet WHO-prequalified",
+        "Emergency response: provide safe water and sanitation in disaster-affected areas, refugee camps, and humanitarian crises",
+        "Pregnant women: avoid travel to hepatitis E endemic areas if possible; ensure safe water and food"
+      ],
+      "references": [
+        {
+          "label": "WHO - Hepatitis E",
+          "url": "https://www.who.int/news-room/fact-sheets/detail/hepatitis-e"
+        },
+        {
+          "label": "CDC - Hepatitis E",
+          "url": "https://www.cdc.gov/hepatitis/hev/index.htm"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    }
+  ]
+}

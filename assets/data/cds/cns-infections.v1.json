@@ -1,0 +1,1348 @@
+{
+  "version": 2,
+  "updatedAt": "2025-01-23T20:00:00Z",
+  "id": "cns-infections",
+  "name": "CNS Infections",
+  "description": "Meningitis, encephalitis, brain abscess, and central nervous system infections",
+  "icon": "psychology",
+  "color": "#3F51B5",
+  "conditions": [
+    {
+      "id": "bacterial-meningitis",
+      "name": "Bacterial Meningitis",
+      "synonyms": ["acute bacterial meningitis", "purulent meningitis"],
+      "icd10": ["G00.9", "G00.2", "G00.1"],
+      "severity": ["severe", "critical"],
+      "shortDescription": "Life-threatening bacterial infection of the meninges requiring urgent antibiotics and steroids",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Bacterial meningitis is acute bacterial infection of the meninges (membranes covering brain and spinal cord). Incidence: 1-2 cases per 100,000 adults/year. Mortality: 15-30% (despite treatment). Neurological sequelae: 20-30% (hearing loss, cognitive impairment, seizures). Requires urgent antibiotics + dexamethasone. Time-critical emergency.",
+            "clinical_presentation": "Classic triad (50-60%): Fever, neck stiffness, altered mental status. Headache (90%), photophobia (80%), nausea/vomiting (70%). Physical exam: Nuchal rigidity (80%), Kernig sign (50%), Brudzinski sign (50%), petechial rash (N. meningitidis, 50-60%), focal neurological deficits (20-30%), seizures (20-30%).",
+            "diagnostic_criteria": "Clinical suspicion (fever + neck stiffness + altered mental status) + CSF analysis (pleocytosis, elevated protein, low glucose, positive Gram stain/culture). CSF findings: WBC >1,000 cells/mm³ (PMN predominance >80%), protein >200 mg/dL, glucose <40 mg/dL or CSF:serum glucose ratio <0.4.",
+            "risk_factors": [
+              "Age extremes (infants, elderly >60 years)",
+              "Immunosuppression (HIV, chemotherapy, corticosteroids)",
+              "Asplenia or complement deficiency",
+              "CSF leak (skull fracture, neurosurgery, cochlear implant)",
+              "Sinusitis, otitis media, or mastoiditis (contiguous spread)",
+              "Endocarditis or bacteremia (hematogenous spread)",
+              "Crowded living conditions (military, college dormitories)"
+            ],
+            "red_flags": [
+              "Altered mental status or GCS <14 - high mortality (30-50%), urgent antibiotics + steroids",
+              "Seizures or focal neurological deficits - suggests cerebritis, abscess, or increased ICP",
+              "Petechial rash - N. meningitidis, high mortality (10-20%), urgent antibiotics",
+              "Papilledema or signs of increased ICP - risk of herniation, CT before LP",
+              "Immunocompromised - broader differential (Listeria, TB, fungal, viral)"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Lumbar puncture (LP) CRITICAL for diagnosis. Perform LP immediately if no contraindications. CT head BEFORE LP if: Altered mental status (GCS <14), focal neurological deficits, papilledema, immunocompromised, seizures, or signs of increased ICP. Do NOT delay antibiotics for LP or CT (start empiric antibiotics immediately if LP delayed >30-60 minutes).",
+            "essential_tests": [
+              "Blood cultures x2 sets BEFORE antibiotics (positive in 50-80%)",
+              "Lumbar puncture (LP): Opening pressure, cell count with differential, protein, glucose, Gram stain, bacterial culture (aerobic + anaerobic). CSF findings: WBC >1,000 cells/mm³ (PMN >80%), protein >200 mg/dL, glucose <40 mg/dL or CSF:serum glucose ratio <0.4. Gram stain positive in 60-90%.",
+              "Serum glucose (compare to CSF glucose, CSF:serum ratio <0.4 = bacterial)",
+              "CBC with differential (leukocytosis 15,000-30,000)",
+              "CMP (assess renal function, electrolytes, SIADH common)"
+            ],
+            "conditional_tests": [
+              "CT head with contrast: BEFORE LP if altered mental status, focal deficits, papilledema, immunocompromised, seizures, or signs of increased ICP. Assess for mass effect, abscess, hydrocephalus.",
+              "CSF PCR: Bacterial PCR (S. pneumoniae, N. meningitidis, H. influenzae, L. monocytogenes) if prior antibiotics or negative Gram stain. Viral PCR (HSV, VZV, enterovirus) to rule out viral meningitis.",
+              "CSF latex agglutination: Rapid antigen detection (S. pneumoniae, N. meningitidis, H. influenzae). Sensitivity 50-90%, specificity 95-100%.",
+              "Procalcitonin: Elevated in bacterial meningitis (>0.5 ng/mL), helps distinguish from viral meningitis."
+            ],
+            "when_not_to_test": "Do NOT delay antibiotics for LP or CT (start empiric antibiotics immediately if LP delayed >30-60 minutes). Do NOT perform LP if contraindications (signs of increased ICP, coagulopathy with INR >1.5 or platelets <50,000, skin infection at LP site).",
+            "turnaround_time": "Blood cultures: Preliminary 24-48 hours. CSF Gram stain: <1 hour. CSF culture: 24-72 hours. CSF PCR: 2-6 hours. CT head: <1 hour (urgent)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "age_specific_pathogens": "Adults 18-50 years: S. pneumoniae (50%), N. meningitidis (25%), H. influenzae (10%). Adults >50 years: S. pneumoniae (50%), L. monocytogenes (15%), Gram-negatives (10%). Immunocompromised: L. monocytogenes (20-30%), Gram-negatives (15-20%), S. aureus (10%).",
+            "streptococcus_pneumoniae": "Most common cause (50% of bacterial meningitis). Gram-positive diplococci. Mortality: 20-30%. Neurological sequelae: 30-40% (hearing loss most common). Penicillin resistance: 30-50% (intermediate or high-level). Ceftriaxone or cefotaxime preferred.",
+            "neisseria_meningitidis": "Second most common (25%). Gram-negative diplococci. Petechial rash in 50-60%. Mortality: 10-20%. Fulminant meningococcemia: Purpura fulminans, DIC, shock, mortality 40-50%. Droplet precautions for 24 hours after antibiotics. Chemoprophylaxis for close contacts.",
+            "listeria_monocytogenes": "Gram-positive rod. Risk factors: Age >50 years, immunocompromised, pregnancy, alcoholism. Mortality: 20-30%. Cephalosporins NOT effective (intrinsic resistance). Ampicillin or penicillin G required.",
+            "haemophilus_influenzae": "Gram-negative coccobacillus. Rare since Hib vaccine (10% of cases). Beta-lactamase production common (30-50%). Ceftriaxone or cefotaxime preferred.",
+            "gram_negative_bacilli": "E. coli, Klebsiella, Pseudomonas. Risk factors: Neurosurgery, CSF shunt, head trauma, elderly, immunocompromised. ESBL common (30-50%). Meropenem or cefepime preferred.",
+            "staphylococcus_aureus": "Risk factors: Neurosurgery, CSF shunt, endocarditis, bacteremia. MRSA common (30-50%). Vancomycin required.",
+            "resistance_patterns": "Penicillin-resistant S. pneumoniae 30-50%. Beta-lactamase H. influenzae 30-50%. ESBL Gram-negatives 30-50%. MRSA 30-50%."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "adults_18_50_years": "Vancomycin 15-20mg/kg IV q8-12h (target trough 15-20 mcg/mL) + Ceftriaxone 2g IV q12h OR Cefotaxime 2g IV q4-6h. Dexamethasone 10mg IV q6h x 4 days (start 10-20 minutes BEFORE or WITH first antibiotic dose). Duration: 10-14 days.",
+            "adults_over_50_or_immunocompromised": "Vancomycin 15-20mg/kg IV q8-12h + Ceftriaxone 2g IV q12h + Ampicillin 2g IV q4h (Listeria coverage). Dexamethasone 10mg IV q6h x 4 days. Duration: 14-21 days (Listeria requires 21 days minimum).",
+            "post_neurosurgery_or_csf_shunt": "Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h OR Meropenem 2g IV q8h (Pseudomonas and ESBL coverage). Dexamethasone controversial (may reduce antibiotic penetration). Duration: 14-21 days.",
+            "dexamethasone_administration": "CRITICAL: Start 10-20 minutes BEFORE or WITH first antibiotic dose. Dose: 10mg IV q6h x 4 days. Reduces mortality (S. pneumoniae, 15% vs 25% without steroids) and neurological sequelae (hearing loss, cognitive impairment). Contraindications: Immunocompromised, suspected TB or fungal meningitis.",
+            "alternatives": "Beta-lactam allergy: Vancomycin 15-20mg/kg IV q8-12h + Moxifloxacin 400mg IV daily + TMP-SMX 5mg/kg IV q6-8h (Listeria coverage). Chloramphenicol 25mg/kg IV q6h (alternative, but resistance increasing).",
+            "avoid_list": "Avoid delaying antibiotics for LP or CT (start empiric antibiotics immediately if LP delayed >30-60 minutes). Avoid cephalosporins alone for Listeria (intrinsic resistance). Avoid dexamethasone in immunocompromised or suspected TB/fungal meningitis."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "s_pneumoniae_penicillin_sensitive": "Penicillin G 4 million units IV q4h OR Ceftriaxone 2g IV q12h. Dexamethasone 10mg IV q6h x 4 days. Duration: 10-14 days.",
+            "s_pneumoniae_penicillin_resistant": "Vancomycin 15-20mg/kg IV q8-12h + Ceftriaxone 2g IV q12h (synergistic). Dexamethasone 10mg IV q6h x 4 days. Duration: 10-14 days.",
+            "n_meningitidis": "Penicillin G 4 million units IV q4h OR Ceftriaxone 2g IV q12h. Dexamethasone 10mg IV q6h x 4 days. Duration: 7 days. Droplet precautions for 24 hours after antibiotics. Chemoprophylaxis for close contacts: Ciprofloxacin 500mg PO x1 OR Ceftriaxone 250mg IM x1 OR Rifampin 600mg PO BID x 2 days.",
+            "l_monocytogenes": "Ampicillin 2g IV q4h OR Penicillin G 4 million units IV q4h. Add Gentamicin 5-7mg/kg IV daily x 7 days (synergistic, improves outcomes). NO dexamethasone (may reduce antibiotic penetration). Duration: 21 days minimum.",
+            "h_influenzae": "Ceftriaxone 2g IV q12h OR Cefotaxime 2g IV q4-6h. Dexamethasone 10mg IV q6h x 4 days. Duration: 7-10 days.",
+            "gram_negative_bacilli": "Ceftriaxone 2g IV q12h OR Cefepime 2g IV q8h. If ESBL: Meropenem 2g IV q8h. If Pseudomonas: Cefepime 2g IV q8h OR Meropenem 2g IV q8h. Duration: 21 days.",
+            "s_aureus_mssa": "Nafcillin 2g IV q4h OR Cefazolin 2g IV q8h. Duration: 14-21 days.",
+            "s_aureus_mrsa": "Vancomycin 15-20mg/kg IV q8-12h (target trough 15-20 mcg/mL). Duration: 14-21 days.",
+            "de_escalation": "De-escalate within 48-72 hours based on CSF culture results. Discontinue vancomycin if no MRSA or penicillin-resistant S. pneumoniae. Discontinue ampicillin if no Listeria. Narrow Gram-negative coverage if ESBL-negative."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "n_meningitidis": "7 days",
+            "h_influenzae": "7-10 days",
+            "s_pneumoniae": "10-14 days",
+            "gram_negative_bacilli": "21 days",
+            "l_monocytogenes": "21 days minimum",
+            "s_aureus": "14-21 days",
+            "monitoring": "Daily: Vital signs, neurological exam, GCS. Every 2-3 days: CBC, CMP (monitor SIADH, hyponatremia common). Repeat LP at 48-72 hours: If no clinical improvement (assess CSF sterilization, WBC should decrease by ≥50%). Audiometry: Before discharge and at 4 weeks (assess hearing loss).",
+            "stop_criteria": "Completed appropriate duration. Afebrile >24 hours. Improving neurological status. CSF sterilized (if repeat LP performed). No complications (abscess, hydrocephalus, ventriculitis)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "dexamethasone_use": "CRITICAL: Start 10-20 minutes BEFORE or WITH first antibiotic dose. Dose: 10mg IV q6h x 4 days. Reduces mortality (S. pneumoniae, 15% vs 25% without steroids) and neurological sequelae (hearing loss 20% vs 35%, cognitive impairment). Contraindications: Immunocompromised, suspected TB or fungal meningitis. Discontinue if CSF culture shows Listeria (may reduce antibiotic penetration).",
+            "chemoprophylaxis_for_contacts": "N. meningitidis: Chemoprophylaxis for close contacts (household, daycare, direct exposure to oral secretions). Regimens: Ciprofloxacin 500mg PO x1 (preferred) OR Ceftriaxone 250mg IM x1 OR Rifampin 600mg PO BID x 2 days. H. influenzae: Chemoprophylaxis for household contacts if unvaccinated children <4 years. Rifampin 600mg PO daily x 4 days.",
+            "csf_shunt_infection": "Organisms: S. epidermidis (40%), S. aureus (20%), Gram-negatives (20%). Treatment: Vancomycin + cefepime or meropenem. Shunt removal CRITICAL (antibiotics alone fail in 80-90%). Duration: 10-14 days after shunt removal and CSF sterilization.",
+            "increased_icp_management": "Elevate head of bed 30 degrees. Avoid hypotension (maintain MAP >80 mmHg). Hyperventilation (target PaCO2 30-35 mmHg) if herniation imminent. Mannitol 0.25-1g/kg IV OR Hypertonic saline 3% (if refractory). Neurosurgery consultation if hydrocephalus or mass effect (may require EVD: external ventricular drain).",
+            "siadh_management": "Common complication (30-40%). Hyponatremia (Na <135 mEq/L). Treatment: Fluid restriction (1-1.5 L/day), hypertonic saline 3% if severe (Na <120 mEq/L or symptomatic). Monitor serum sodium every 6-12 hours.",
+            "neurological_sequelae": "Hearing loss (20-30%, most common), cognitive impairment (10-20%), seizures (10-15%), hydrocephalus (5-10%), focal neurological deficits (5-10%). Audiometry before discharge and at 4 weeks. Neuropsychological testing at 3-6 months."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "De-escalate within 48-72 hours based on CSF culture results",
+              "Discontinue vancomycin if no MRSA or penicillin-resistant S. pneumoniae",
+              "Discontinue ampicillin if no Listeria (age <50 and immunocompetent)",
+              "Narrow Gram-negative coverage if ESBL-negative",
+              "Fixed duration based on organism (7 days for N. meningitidis, 10-14 days for S. pneumoniae)"
+            ],
+            "timeout_checklist": [
+              "Is dexamethasone administered? (Start BEFORE or WITH first antibiotic dose)",
+              "Are CSF culture results available? (De-escalate antibiotics based on results)",
+              "Is repeat LP indicated? (If no clinical improvement at 48-72 hours)",
+              "Is chemoprophylaxis indicated? (N. meningitidis or H. influenzae for close contacts)",
+              "Can I discontinue ampicillin? (If no Listeria and age <50, immunocompetent)",
+              "Can I stop antibiotics? (If appropriate duration completed, afebrile, improving)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT delay antibiotics for LP or CT (start empiric antibiotics immediately if LP delayed >30-60 minutes). Do NOT use cephalosporins alone for Listeria (intrinsic resistance). Do NOT use dexamethasone in immunocompromised or suspected TB/fungal meningitis.",
+            "patient_education": "Bacterial meningitis is life-threatening infection requiring urgent antibiotics. Complete full antibiotic course. Watch for complications (hearing loss, seizures, cognitive impairment). Audiometry before discharge and at 4 weeks. Neuropsychological testing at 3-6 months. Chemoprophylaxis for close contacts if N. meningitidis."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Bacterial Meningitis Guidelines (2004, updated 2017)",
+              "url": "https://academic.oup.com/cid/article/39/9/1267/356518"
+            },
+            {
+              "label": "ESCMID Bacterial Meningitis Guidelines (2016)",
+              "url": "https://www.clinicalmicrobiologyandinfection.com/article/S1198-743X(16)00024-8/fulltext"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "viral-encephalitis",
+      "name": "Viral Encephalitis",
+      "synonyms": ["HSV encephalitis", "herpes encephalitis", "acute viral encephalitis"],
+      "icd10": ["A86", "B00.4", "A87.0"],
+      "severity": ["severe", "critical"],
+      "shortDescription": "Viral infection of brain parenchyma requiring urgent acyclovir for HSV encephalitis",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Viral encephalitis is inflammation of brain parenchyma caused by viral infection. HSV-1 most common cause (50-75% of identified cases). Incidence: 5-10 cases per 100,000/year. Mortality: 10-30% (HSV encephalitis, despite treatment). Neurological sequelae: 40-60% (memory impairment, personality changes, seizures). Requires urgent acyclovir.",
+            "clinical_presentation": "Fever (90%), altered mental status (90%), headache (80%), seizures (60%), focal neurological deficits (50%), behavioral changes (40%). Physical exam: Confusion, disorientation, memory impairment, aphasia, hemiparesis, cranial nerve palsies. HSV encephalitis: Temporal lobe involvement (memory, behavior, language).",
+            "diagnostic_criteria": "Clinical suspicion (fever + altered mental status + seizures or focal deficits) + CSF analysis (lymphocytic pleocytosis, elevated protein, normal glucose) + CSF HSV PCR (positive) + MRI brain (temporal lobe abnormalities). CSF findings: WBC 10-500 cells/mm³ (lymphocyte predominance >50%), protein 50-200 mg/dL, glucose normal (>50 mg/dL or CSF:serum ratio >0.6).",
+            "risk_factors": [
+              "Immunosuppression (HIV, chemotherapy, transplant)",
+              "Age extremes (infants, elderly)",
+              "Seasonal exposure (arboviruses: West Nile, Eastern equine encephalitis)",
+              "Geographic exposure (rabies, Japanese encephalitis)",
+              "Recent travel or outdoor activities (tick-borne encephalitis)",
+              "HSV-1 reactivation (most common, no clear trigger)"
+            ],
+            "red_flags": [
+              "Altered mental status or GCS <14 - high mortality (30-50%), urgent acyclovir",
+              "Seizures or status epilepticus - suggests HSV encephalitis, urgent acyclovir",
+              "Focal neurological deficits - suggests HSV encephalitis (temporal lobe), urgent acyclovir",
+              "Immunocompromised - broader differential (CMV, VZV, HHV-6, JC virus)",
+              "Rapid progression - suggests HSV, rabies, or Eastern equine encephalitis"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Lumbar puncture (LP) CRITICAL for diagnosis. MRI brain with contrast (temporal lobe abnormalities in HSV encephalitis). EEG (periodic lateralizing epileptiform discharges in HSV encephalitis). Do NOT delay acyclovir for LP or MRI (start empiric acyclovir immediately if clinical suspicion high).",
+            "essential_tests": [
+              "Lumbar puncture (LP): Cell count with differential, protein, glucose, HSV-1/2 PCR, VZV PCR, enterovirus PCR. CSF findings: WBC 10-500 cells/mm³ (lymphocyte >50%), protein 50-200 mg/dL, glucose normal (>50 mg/dL). RBC in CSF (hemorrhagic, suggests HSV encephalitis).",
+              "CSF HSV-1/2 PCR: Sensitivity 95%, specificity 100%. Gold standard for HSV encephalitis. Positive in 95% if obtained within 72 hours of symptom onset.",
+              "MRI brain with contrast: Temporal lobe abnormalities (T2/FLAIR hyperintensity, hemorrhage) in HSV encephalitis. Sensitivity 90%, specificity 95%. More sensitive than CT.",
+              "EEG: Periodic lateralizing epileptiform discharges (PLEDs) in HSV encephalitis. Sensitivity 80%, specificity 90%."
+            ],
+            "conditional_tests": [
+              "CSF VZV PCR: If rash, immunocompromised, or HSV PCR negative.",
+              "CSF enterovirus PCR: If summer/fall, aseptic meningitis presentation.",
+              "CSF arbovirus IgM: West Nile virus, Eastern equine encephalitis, St. Louis encephalitis (if seasonal, geographic exposure).",
+              "CSF CMV PCR: If immunocompromised (HIV, transplant).",
+              "Serum HIV test: If risk factors or immunocompromised.",
+              "Brain biopsy: If diagnosis uncertain and no response to empiric therapy (last resort, high morbidity)."
+            ],
+            "when_not_to_test": "Do NOT delay acyclovir for LP or MRI (start empiric acyclovir immediately if clinical suspicion high). Do NOT perform LP if contraindications (signs of increased ICP, coagulopathy, skin infection at LP site).",
+            "turnaround_time": "CSF HSV PCR: 2-6 hours. CSF enterovirus PCR: 2-6 hours. MRI brain: 1-4 hours (urgent). EEG: 1-2 hours (urgent)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "hsv_1": "Most common cause of sporadic viral encephalitis (50-75% of identified cases). Reactivation of latent virus (trigeminal ganglion). Temporal lobe involvement (memory, behavior, language). Mortality: 10-30% (despite treatment). Neurological sequelae: 40-60%.",
+            "hsv_2": "Rare cause of encephalitis in adults (5-10%). More common in neonates. Genital herpes reactivation. Milder than HSV-1.",
+            "vzv": "Varicella-zoster virus. Risk factors: Immunocompromised, elderly, prior varicella or zoster. Rash may precede or follow encephalitis. Mortality: 10-20%.",
+            "enteroviruses": "Coxsackievirus, echovirus. Summer/fall seasonality. Aseptic meningitis more common than encephalitis. Self-limited, supportive care.",
+            "arboviruses": "West Nile virus (most common arbovirus in US), Eastern equine encephalitis (high mortality 30-50%), St. Louis encephalitis, La Crosse encephalitis. Seasonal (summer/fall), mosquito-borne. Geographic variation.",
+            "cmv": "Cytomegalovirus. Immunocompromised (HIV with CD4 <50, transplant). Ventriculoencephalitis. Ganciclovir or foscarnet.",
+            "hhv_6": "Human herpesvirus 6. Immunocompromised (transplant, especially HSCT). Limbic encephalitis. Ganciclovir or foscarnet.",
+            "rabies": "Rare but fatal (mortality >99%). Animal bite (dog, bat, raccoon). Hydrophobia, aerophobia, agitation. No effective treatment. Post-exposure prophylaxis CRITICAL.",
+            "other": "Influenza, measles, mumps, rubella (rare in vaccinated populations). Japanese encephalitis (Asia), tick-borne encephalitis (Europe)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "suspected_hsv_encephalitis": "Acyclovir 10mg/kg IV q8h (30mg/kg/day). Start immediately if clinical suspicion high (fever + altered mental status + seizures or focal deficits). Do NOT delay for LP or MRI. Duration: 14-21 days (HSV encephalitis). Adjust dose for renal function (CrCl <50 mL/min).",
+            "immunocompromised": "Acyclovir 10mg/kg IV q8h + Ganciclovir 5mg/kg IV q12h (CMV coverage). Consider adding foscarnet 60mg/kg IV q8h or 90mg/kg IV q12h if CMV or HHV-6 suspected.",
+            "arbovirus_suspected": "Supportive care only (no specific antiviral therapy). Acyclovir 10mg/kg IV q8h until HSV ruled out by CSF PCR.",
+            "alternatives": "Acyclovir allergy: Foscarnet 60mg/kg IV q8h or 90mg/kg IV q12h (HSV, VZV, CMV coverage). Requires aggressive hydration (nephrotoxic).",
+            "avoid_list": "Avoid delaying acyclovir for LP or MRI (start empiric acyclovir immediately if clinical suspicion high). Avoid stopping acyclovir prematurely (complete 14-21 days for HSV encephalitis). Avoid inadequate dosing (10mg/kg IV q8h required, not lower doses)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "hsv_1_or_hsv_2_encephalitis": "Acyclovir 10mg/kg IV q8h x 14-21 days. Repeat CSF HSV PCR at end of therapy (should be negative). If positive, extend therapy. Oral valacyclovir 1g TID x 3-6 months after IV therapy (reduces relapse, investigational).",
+            "vzv_encephalitis": "Acyclovir 10-15mg/kg IV q8h x 14-21 days. Higher dose than HSV. Adjust for renal function.",
+            "cmv_encephalitis": "Ganciclovir 5mg/kg IV q12h x 21 days OR Foscarnet 60mg/kg IV q8h or 90mg/kg IV q12h x 21 days. Maintenance therapy if immunocompromised (HIV with CD4 <50, transplant): Valganciclovir 900mg PO daily.",
+            "hhv_6_encephalitis": "Ganciclovir 5mg/kg IV q12h x 21 days OR Foscarnet 60mg/kg IV q8h or 90mg/kg IV q12h x 21 days. Reduce immunosuppression if transplant patient.",
+            "enterovirus_encephalitis": "Supportive care only (no specific antiviral therapy). Self-limited. Pleconaril (investigational, not FDA-approved).",
+            "arbovirus_encephalitis": "Supportive care only (no specific antiviral therapy). West Nile virus: IVIG (investigational). Eastern equine encephalitis: High mortality (30-50%), supportive care.",
+            "rabies": "No effective treatment (mortality >99%). Post-exposure prophylaxis CRITICAL: Rabies immune globulin (RIG) 20 IU/kg (infiltrate wound site) + Rabies vaccine (4 doses: day 0, 3, 7, 14). Pre-exposure prophylaxis for high-risk (veterinarians, travelers): Rabies vaccine (3 doses: day 0, 7, 21-28).",
+            "supportive_care": "Seizure management (levetiracetam, phenytoin). Increased ICP management (elevate head of bed, mannitol, hypertonic saline). Mechanical ventilation if GCS <8. ICU monitoring."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "hsv_encephalitis": "14-21 days (IV acyclovir). Repeat CSF HSV PCR at end of therapy (should be negative). If positive, extend therapy. Oral valacyclovir 1g TID x 3-6 months after IV therapy (reduces relapse, investigational).",
+            "vzv_encephalitis": "14-21 days",
+            "cmv_encephalitis": "21 days (induction), then maintenance therapy if immunocompromised (valganciclovir 900mg PO daily)",
+            "hhv_6_encephalitis": "21 days",
+            "monitoring": "Daily: Vital signs, neurological exam, GCS, seizure activity. Every 2-3 days: CBC, CMP, LFTs (monitor acyclovir toxicity: nephrotoxicity, hepatotoxicity). Repeat MRI at 1-2 weeks: Assess progression or improvement. Repeat CSF HSV PCR at end of therapy: Should be negative (if positive, extend therapy).",
+            "stop_criteria": "Completed 14-21 days. Improving neurological status. CSF HSV PCR negative (if repeat performed). No complications (abscess, hydrocephalus, refractory seizures)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "hsv_encephalitis_management": "Acyclovir 10mg/kg IV q8h x 14-21 days. Start immediately if clinical suspicion high (do NOT delay for LP or MRI). Temporal lobe involvement (memory, behavior, language). Mortality: 10-30% (despite treatment). Neurological sequelae: 40-60% (memory impairment, personality changes, seizures). Repeat CSF HSV PCR at end of therapy (should be negative). Oral valacyclovir 1g TID x 3-6 months after IV therapy (reduces relapse, investigational).",
+            "acyclovir_dosing_and_toxicity": "Dose: 10mg/kg IV q8h (30mg/kg/day). Adjust for renal function: CrCl 25-50 mL/min: 10mg/kg IV q12h. CrCl 10-25 mL/min: 10mg/kg IV q24h. CrCl <10 mL/min: 5mg/kg IV q24h. Toxicity: Nephrotoxicity (crystalline nephropathy, ensure adequate hydration 2-3 L/day), neurotoxicity (tremor, confusion, seizures, rare), hepatotoxicity (monitor LFTs).",
+            "seizure_management": "Common complication (60% of HSV encephalitis). First-line: Levetiracetam 1,000-1,500mg IV load, then 500-1,000mg IV BID OR Phenytoin 15-20mg/kg IV load, then 100mg IV TID. Status epilepticus: Benzodiazepines (lorazepam 4mg IV) + phenytoin or levetiracetam. Prophylactic antiepileptics controversial (consider if high risk: HSV encephalitis, hemorrhagic lesions).",
+            "increased_icp_management": "Elevate head of bed 30 degrees. Avoid hypotension (maintain MAP >80 mmHg). Hyperventilation (target PaCO2 30-35 mmHg) if herniation imminent. Mannitol 0.25-1g/kg IV OR Hypertonic saline 3% (if refractory). Neurosurgery consultation if mass effect or hydrocephalus (may require ICP monitor or EVD).",
+            "immunocompromised_considerations": "Broader differential: CMV, VZV, HHV-6, JC virus (PML), toxoplasmosis. Empiric therapy: Acyclovir 10mg/kg IV q8h + Ganciclovir 5mg/kg IV q12h. CSF PCR: HSV, VZV, CMV, HHV-6, JC virus. Brain MRI: Assess for PML (JC virus), toxoplasmosis (ring-enhancing lesions).",
+            "neurological_sequelae": "Memory impairment (40-50%, most common), personality changes (30-40%), seizures (20-30%), aphasia (10-20%), hemiparesis (10-15%). Neuropsychological testing at 3-6 months. Rehabilitation (physical therapy, occupational therapy, speech therapy). Long-term antiepileptics if seizures."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Discontinue acyclovir if CSF HSV PCR negative AND alternative diagnosis confirmed (bacterial meningitis, autoimmune encephalitis)",
+              "Fixed duration 14-21 days for HSV encephalitis (avoid prolonged courses)",
+              "Discontinue ganciclovir if CSF CMV PCR negative (immunocompromised)",
+              "Switch to oral valacyclovir after IV acyclovir (investigational, reduces relapse)"
+            ],
+            "timeout_checklist": [
+              "Is acyclovir started? (Do NOT delay for LP or MRI if clinical suspicion high)",
+              "Are CSF PCR results available? (HSV, VZV, enterovirus, CMV)",
+              "Is MRI brain performed? (Temporal lobe abnormalities in HSV encephalitis)",
+              "Is EEG performed? (PLEDs in HSV encephalitis)",
+              "Can I discontinue acyclovir? (If CSF HSV PCR negative AND alternative diagnosis confirmed)",
+              "Can I stop acyclovir? (If 14-21 days completed, improving, CSF HSV PCR negative)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT delay acyclovir for LP or MRI (start empiric acyclovir immediately if clinical suspicion high). Do NOT stop acyclovir prematurely (complete 14-21 days for HSV encephalitis). Do NOT use inadequate dosing (10mg/kg IV q8h required).",
+            "patient_education": "Viral encephalitis is serious brain infection requiring urgent acyclovir. Complete full acyclovir course (14-21 days). Watch for complications (seizures, memory impairment, personality changes). Neuropsychological testing at 3-6 months. Rehabilitation may be needed. Long-term antiepileptics if seizures."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Encephalitis Guidelines (2008)",
+              "url": "https://academic.oup.com/cid/article/47/3/303/296892"
+            },
+            {
+              "label": "AAN HSV Encephalitis Guidelines (2018)",
+              "url": "https://www.aan.com/Guidelines/home/GuidelineDetail/891"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "brain-abscess",
+      "name": "Brain Abscess",
+      "synonyms": ["cerebral abscess", "intracranial abscess"],
+      "icd10": ["G06.0"],
+      "severity": ["severe", "critical"],
+      "shortDescription": "Localized brain infection requiring drainage and prolonged antibiotics with high mortality",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Brain abscess is localized collection of pus within brain parenchyma. Incidence: 0.3-1.3 cases per 100,000/year. Mortality: 10-20% (despite treatment). Neurological sequelae: 30-50% (seizures, focal deficits). Requires drainage + prolonged antibiotics (4-8 weeks). Sources: Contiguous spread (50%, sinusitis, otitis, mastoiditis), hematogenous (25%, endocarditis, lung abscess), trauma/neurosurgery (10%), cryptogenic (15%).",
+            "clinical_presentation": "Headache (70-90%), fever (50-70%), focal neurological deficits (50-60%), altered mental status (40-50%), seizures (25-45%), nausea/vomiting (40%). Physical exam: Focal deficits (hemiparesis, aphasia, visual field defects), papilledema (25%, increased ICP), meningismus (15%). Triad (headache + fever + focal deficit) present in only 20-50%.",
+            "diagnostic_criteria": "Clinical suspicion (headache + focal deficit ± fever) + CT or MRI brain (ring-enhancing lesion with surrounding edema). MRI more sensitive than CT. Diagnosis confirmed by aspiration or excision (Gram stain, culture).",
+            "risk_factors": [
+              "Sinusitis, otitis media, or mastoiditis (contiguous spread, 50%)",
+              "Endocarditis or bacteremia (hematogenous spread, 25%)",
+              "Congenital heart disease with right-to-left shunt (bypasses pulmonary filtration)",
+              "Immunosuppression (HIV, transplant, chemotherapy)",
+              "Head trauma or neurosurgery (10%)",
+              "Dental infection or poor dentition",
+              "Chronic lung disease (lung abscess, bronchiectasis)"
+            ],
+            "red_flags": [
+              "Altered mental status or GCS <14 - high mortality (30-50%), urgent drainage",
+              "Signs of increased ICP (papilledema, bradycardia, hypertension) - risk of herniation, urgent neurosurgery",
+              "Multiple abscesses - suggests hematogenous spread (endocarditis, bacteremia), high mortality",
+              "Rupture into ventricle - ventriculitis, high mortality (50-80%), urgent EVD + antibiotics",
+              "Immunocompromised - broader differential (Toxoplasma, Nocardia, fungi, TB)"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "MRI brain with contrast (gold standard, sensitivity 95%, specificity 95%). CT head with contrast if MRI unavailable (sensitivity 90%). Aspiration or excision for culture (guides antibiotic therapy). Blood cultures x2 sets (positive in 10-30%). Do NOT perform LP (contraindicated, risk of herniation).",
+            "essential_tests": [
+              "MRI brain with contrast: Ring-enhancing lesion with surrounding edema, restricted diffusion (DWI), smooth capsule. Sensitivity 95%, specificity 95%. More sensitive than CT for early cerebritis, posterior fossa, multiple abscesses.",
+              "CT head with contrast: Ring-enhancing lesion with surrounding edema, mass effect. Sensitivity 90%. Faster than MRI, useful if unstable.",
+              "Blood cultures x2 sets BEFORE antibiotics (positive in 10-30%)",
+              "CBC with differential (leukocytosis 10,000-20,000)",
+              "CMP (assess renal function, electrolytes)",
+              "ESR, CRP (elevated, nonspecific)"
+            ],
+            "conditional_tests": [
+              "Aspiration or excision: Obtain pus for Gram stain, culture (aerobic + anaerobic + fungal + mycobacterial), PCR (16S rRNA if culture-negative). Guides antibiotic therapy. Indications: Diagnosis uncertain, no response to empiric antibiotics, large abscess (>2.5cm).",
+              "Echocardiography (TEE): If multiple abscesses or bacteremia (rule out endocarditis, hematogenous source).",
+              "Chest X-ray or CT chest: If lung abscess suspected (hematogenous source).",
+              "Sinus CT: If sinusitis suspected (contiguous spread).",
+              "Dental evaluation: If poor dentition or dental infection (source)."
+            ],
+            "when_not_to_test": "Do NOT perform LP (contraindicated, risk of herniation due to mass effect). Do NOT delay antibiotics for imaging or cultures (start empiric antibiotics immediately if clinical suspicion high).",
+            "turnaround_time": "MRI brain: 1-4 hours (urgent). CT head: <1 hour (urgent). Blood cultures: Preliminary 24-48 hours. Abscess culture: 24-72 hours (aerobic/anaerobic), 4-6 weeks (mycobacterial)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "polymicrobial": "Brain abscesses are often polymicrobial (30-60%) with mixed aerobic and anaerobic bacteria. Culture-negative in 10-30% (prior antibiotics, fastidious organisms).",
+            "aerobic_streptococci": "Most common (60-70%): Streptococcus milleri group (S. anginosus, S. constellatus, S. intermedius), viridans streptococci. Source: Dental, sinusitis, otitis.",
+            "staphylococcus_aureus": "20-30%. Source: Trauma, neurosurgery, endocarditis, bacteremia. MRSA common (30-50%).",
+            "anaerobes": "30-50%: Bacteroides species, Prevotella species, Fusobacterium species, Peptostreptococcus species. Source: Dental, sinusitis, otitis, lung abscess.",
+            "gram_negative_bacilli": "20-30%: E. coli, Klebsiella, Pseudomonas, Proteus. Source: Otitis, sinusitis, neurosurgery, immunocompromised. ESBL common (30-50%).",
+            "fungi": "Immunocompromised: Aspergillus (most common), Candida, Mucor, Cryptococcus. Mortality 50-80%.",
+            "parasites": "Toxoplasma gondii (HIV with CD4 <100), Taenia solium (neurocysticercosis, endemic areas).",
+            "mycobacteria": "Tuberculosis (TB abscess, tuberculoma). Endemic areas, immunocompromised.",
+            "nocardia": "Immunocompromised (transplant, corticosteroids). Pulmonary source. TMP-SMX treatment.",
+            "resistance_patterns": "MRSA 30-50%. ESBL Gram-negatives 30-50%. Multidrug-resistant Pseudomonas 30-40%."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "contiguous_spread": "Ceftriaxone 2g IV q12h + Metronidazole 500mg IV q8h + Vancomycin 15-20mg/kg IV q8-12h. Covers Streptococcus, anaerobes, MRSA. Duration: 4-8 weeks (IV, then PO if improving).",
+            "post_trauma_or_neurosurgery": "Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h OR Meropenem 2g IV q8h. Covers MRSA, Pseudomonas, ESBL. Duration: 4-8 weeks.",
+            "hematogenous_spread": "Vancomycin 15-20mg/kg IV q8-12h + Ceftriaxone 2g IV q12h + Metronidazole 500mg IV q8h. Covers S. aureus, Streptococcus, anaerobes. Workup for source (endocarditis, lung abscess). Duration: 4-8 weeks.",
+            "immunocompromised": "Vancomycin 15-20mg/kg IV q8-12h + Meropenem 2g IV q8h + Voriconazole 6mg/kg IV q12h x2, then 4mg/kg IV q12h (Aspergillus coverage). Consider TMP-SMX 5mg/kg IV q6-8h (Nocardia, Toxoplasma). Duration: 6-12 weeks minimum.",
+            "drainage": "CRITICAL for cure. Aspiration (stereotactic needle aspiration) OR Excision (craniotomy). Indications: Abscess >2.5cm, no response to antibiotics alone (48-72 hours), multiple abscesses, rupture into ventricle. Antibiotics alone = high failure rate (50-70%).",
+            "alternatives": "Beta-lactam allergy: Vancomycin 15-20mg/kg IV q8-12h + Aztreonam 2g IV q8h + Metronidazole 500mg IV q8h. Fluoroquinolone: Levofloxacin 750mg IV daily + Metronidazole 500mg IV q8h (if susceptible).",
+            "avoid_list": "Avoid antibiotics alone without drainage (high failure rate 50-70% if abscess >2.5cm). Avoid inadequate anaerobic coverage (metronidazole required). Avoid delaying drainage (mortality increases)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "drainage": "CRITICAL for cure. Aspiration (stereotactic needle aspiration, preferred if single abscess, accessible location) OR Excision (craniotomy, if multiple abscesses, posterior fossa, multiloculated, or failed aspiration). Repeat aspiration if no response (48-72 hours). Antibiotics alone = high failure rate (50-70%) if abscess >2.5cm.",
+            "targeted_antibiotics": "Narrow based on abscess culture results. Streptococcus (penicillin-sensitive): Penicillin G 4 million units IV q4h + Metronidazole 500mg IV q8h. MRSA: Vancomycin 15-20mg/kg IV q8-12h. MSSA: Nafcillin 2g IV q4h. Gram-negatives: Ceftriaxone 2g IV q12h OR Cefepime 2g IV q8h. ESBL: Meropenem 2g IV q8h. Anaerobes: Metronidazole 500mg IV q8h.",
+            "duration": "4-8 weeks total (IV + PO). IV therapy: 4-6 weeks minimum. Switch to PO when: (1) Afebrile >1 week, (2) Improving neurologically, (3) Abscess resolved or significantly reduced on repeat MRI. PO options: Amoxicillin-clavulanate 875mg PO TID OR Ciprofloxacin 500mg PO BID + Metronidazole 500mg PO TID (if susceptible).",
+            "monitoring": "Repeat MRI at 2 weeks: Assess abscess size (should decrease by ≥50%). Repeat MRI at 4-6 weeks: Document resolution or significant reduction. If abscess enlarging or no improvement: Repeat drainage, consider alternative diagnosis (tumor, autoimmune).",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Discontinue vancomycin if no MRSA. Discontinue metronidazole if no anaerobes. Narrow Gram-negative coverage if ESBL-negative.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >1 week, (2) Improving neurologically, (3) Abscess resolved or significantly reduced on repeat MRI (>50% reduction). PO options: Amoxicillin-clavulanate 875mg PO TID OR Ciprofloxacin 500mg PO BID + Metronidazole 500mg PO TID."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "total_duration": "4-8 weeks (IV + PO). IV therapy: 4-6 weeks minimum. PO therapy: 2-4 weeks (after IV).",
+            "monitoring": "Daily: Vital signs, neurological exam, GCS, seizure activity. Every 2-3 days: CBC, CMP (monitor WBC normalization). Repeat MRI at 2 weeks: Assess abscess size (should decrease by ≥50%). Repeat MRI at 4-6 weeks: Document resolution or significant reduction. If abscess enlarging or no improvement: Repeat drainage, consider alternative diagnosis.",
+            "stop_criteria": "Completed 4-8 weeks. Afebrile >1 week. Improving neurologically. Abscess resolved or significantly reduced on repeat MRI (>50% reduction). No complications (rupture, ventriculitis, refractory seizures)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "drainage_indications": "Abscess >2.5cm (antibiotics alone fail in 50-70%). No response to antibiotics alone (48-72 hours). Multiple abscesses (aspiration of largest). Rupture into ventricle (urgent EVD + antibiotics). Diagnosis uncertain (obtain tissue for culture, histopathology). Aspiration preferred over excision (lower morbidity, similar outcomes).",
+            "seizure_management": "Common complication (25-45%). Prophylactic antiepileptics recommended (levetiracetam 500-1,000mg IV BID OR phenytoin 100mg IV TID). Continue for 3-12 months after abscess resolution. Discontinue if no seizures and normal EEG.",
+            "increased_icp_management": "Elevate head of bed 30 degrees. Dexamethasone 10mg IV, then 4mg IV q6h (reduces edema, use cautiously as may impair antibiotic penetration and immune response). Mannitol 0.25-1g/kg IV OR Hypertonic saline 3% (if refractory). Neurosurgery consultation if mass effect or hydrocephalus (may require ICP monitor or EVD).",
+            "rupture_into_ventricle": "Ventriculitis. High mortality (50-80%). Treatment: Urgent EVD (external ventricular drain) + IV antibiotics + intraventricular antibiotics (vancomycin 10-20mg daily, gentamicin 5-10mg daily via EVD). Duration: Until CSF sterilized (repeat CSF cultures every 2-3 days).",
+            "immunocompromised_considerations": "Broader differential: Toxoplasma (HIV with CD4 <100, multiple ring-enhancing lesions), Nocardia (transplant, corticosteroids), Aspergillus (neutropenia, transplant), TB (tuberculoma). Empiric therapy: Vancomycin + meropenem + voriconazole + TMP-SMX. Biopsy often required for diagnosis.",
+            "toxoplasma_encephalitis": "HIV with CD4 <100. Multiple ring-enhancing lesions. Treatment: Pyrimethamine 200mg PO loading, then 50-75mg PO daily + Sulfadiazine 1-1.5g PO QID + Leucovorin 10-25mg PO daily. Duration: 6 weeks (acute), then maintenance therapy (pyrimethamine 25-50mg PO daily + sulfadiazine 500-1,000mg PO QID) until CD4 >200 for 6 months."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "De-escalate within 48-72 hours based on abscess culture results",
+              "Discontinue vancomycin if no MRSA",
+              "Discontinue metronidazole if no anaerobes",
+              "Narrow Gram-negative coverage if ESBL-negative",
+              "Switch IV to PO when afebrile >1 week and abscess reduced >50% on MRI",
+              "Fixed duration 4-8 weeks (avoid prolonged courses)"
+            ],
+            "timeout_checklist": [
+              "Is drainage performed? (CRITICAL for cure if abscess >2.5cm)",
+              "Are abscess culture results available? (Narrow antibiotics based on results)",
+              "Is repeat MRI performed? (At 2 weeks, assess abscess size reduction)",
+              "Can I de-escalate antibiotics? (Based on culture results)",
+              "Can I switch IV to PO? (If afebrile >1 week and abscess reduced >50%)",
+              "Can I stop antibiotics? (If 4-8 weeks completed, abscess resolved on MRI)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use antibiotics alone without drainage (high failure rate 50-70% if abscess >2.5cm). Do NOT use prolonged antibiotics beyond 4-8 weeks. Do NOT delay drainage (mortality increases).",
+            "patient_education": "Brain abscess is serious infection requiring drainage + prolonged antibiotics (4-8 weeks). Complete full antibiotic course. Watch for complications (seizures, focal deficits, increased ICP). Follow-up MRI at 2 weeks and 4-6 weeks (document resolution). Prophylactic antiepileptics for 3-12 months."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Brain Abscess Guidelines (2004)",
+              "url": "https://academic.oup.com/cid/article/39/9/1267/356518"
+            },
+            {
+              "label": "Neurosurgery Brain Abscess Guidelines (2016)",
+              "url": "https://academic.oup.com/neurosurgery/article/78/3/422/2555093"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "tuberculous-meningitis",
+      "name": "Tuberculous Meningitis (TBM)",
+      "synonyms": ["TB meningitis", "CNS tuberculosis"],
+      "icd10": ["A17.0", "A17.1"],
+      "severity": ["severe", "critical"],
+      "shortDescription": "TB infection of meninges requiring prolonged multi-drug therapy with high mortality",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Tuberculous meningitis (TBM) is Mycobacterium tuberculosis infection of the meninges. Most severe form of TB. Mortality: 20-50% (despite treatment). Neurological sequelae: 50-70% (hydrocephalus, stroke, cranial nerve palsies). Requires prolonged multi-drug therapy (9-12 months). Endemic areas: Asia, Africa, Latin America. Risk factors: HIV, immunosuppression.",
+            "clinical_presentation": "Subacute onset (2-3 weeks): Fever (80%), headache (90%), altered mental status (70%), neck stiffness (60%), vomiting (50%). Cranial nerve palsies (30-50%, CN VI most common). Focal neurological deficits (20-30%). Seizures (10-20%). Physical exam: Nuchal rigidity, cranial nerve palsies, papilledema (increased ICP).",
+            "diagnostic_criteria": "Clinical suspicion (subacute meningitis, endemic area, HIV) + CSF analysis (lymphocytic pleocytosis, elevated protein, low glucose) + positive AFB smear or culture or GeneXpert MTB/RIF. CSF findings: WBC 100-500 cells/mm³ (lymphocyte >50%), protein 100-500 mg/dL, glucose <45 mg/dL or CSF:serum ratio <0.5. AFB smear positive in only 10-20%, culture positive in 50-80% (takes 4-8 weeks).",
+            "risk_factors": [
+              "HIV infection (CD4 <200, 10-30% of HIV-associated TB)",
+              "Immunosuppression (corticosteroids, TNF-alpha inhibitors, transplant)",
+              "Endemic areas (Asia, Africa, Latin America)",
+              "Close contact with active pulmonary TB",
+              "Malnutrition or alcoholism",
+              "Age extremes (infants, elderly)"
+            ],
+            "red_flags": [
+              "Altered mental status or GCS <14 - high mortality (50-70%), urgent treatment",
+              "Hydrocephalus - common complication (50-70%), may require VP shunt",
+              "Stroke - vasculitis, basal meningeal inflammation, mortality 30-50%",
+              "HIV coinfection - higher mortality (40-60%), immune reconstitution inflammatory syndrome (IRIS) risk",
+              "Delayed treatment - mortality increases significantly (start empiric therapy if high suspicion)"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Lumbar puncture (LP) CRITICAL. Large volume CSF (10-15 mL) improves diagnostic yield. GeneXpert MTB/RIF (rapid PCR, 2-4 hours). MRI brain with contrast (basal meningeal enhancement, hydrocephalus, tuberculomas). Do NOT delay treatment for culture results (start empiric therapy if high suspicion).",
+            "essential_tests": [
+              "Lumbar puncture (LP): Large volume CSF (10-15 mL). Cell count with differential, protein, glucose, AFB smear, mycobacterial culture, GeneXpert MTB/RIF. CSF findings: WBC 100-500 cells/mm³ (lymphocyte >50%), protein 100-500 mg/dL, glucose <45 mg/dL or CSF:serum ratio <0.5.",
+              "CSF AFB smear: Positive in only 10-20%. Sensitivity increases with large volume CSF and repeat LPs.",
+              "CSF mycobacterial culture: Gold standard. Positive in 50-80%. Takes 4-8 weeks (liquid media) or 6-8 weeks (solid media).",
+              "CSF GeneXpert MTB/RIF: Rapid PCR (2-4 hours). Sensitivity 50-80%, specificity 95-100%. Detects rifampin resistance.",
+              "MRI brain with contrast: Basal meningeal enhancement (80%), hydrocephalus (50-70%), tuberculomas (30%), infarcts (20-30%, vasculitis)."
+            ],
+            "conditional_tests": [
+              "Chest X-ray or CT chest: Active pulmonary TB in 50-70%. Miliary TB pattern.",
+              "HIV test: All patients (HIV coinfection common in endemic areas).",
+              "Sputum AFB smear and culture: If pulmonary TB suspected.",
+              "CT head: If MRI unavailable. Less sensitive than MRI for basal meningeal enhancement.",
+              "Repeat LP: If initial LP negative but high clinical suspicion. Increases diagnostic yield."
+            ],
+            "when_not_to_test": "Do NOT delay treatment for culture results (start empiric therapy if high suspicion: subacute meningitis, endemic area, HIV, lymphocytic CSF with low glucose). Do NOT perform LP if contraindications (signs of increased ICP with mass effect, coagulopathy).",
+            "turnaround_time": "CSF AFB smear: 1-2 hours. CSF GeneXpert MTB/RIF: 2-4 hours. CSF mycobacterial culture: 4-8 weeks. MRI brain: 1-4 hours (urgent)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Mycobacterium tuberculosis: Acid-fast bacillus (AFB). Slow-growing (doubling time 15-20 hours). Aerobic. Intracellular pathogen.",
+            "pathogenesis": "Hematogenous spread from primary pulmonary TB → Rich focus (subependymal granuloma) → rupture into subarachnoid space → basal meningitis → vasculitis, hydrocephalus, cranial nerve palsies.",
+            "drug_resistance": "Multidrug-resistant TB (MDR-TB): Resistant to isoniazid + rifampin (5-10% of cases). Extensively drug-resistant TB (XDR-TB): Resistant to isoniazid + rifampin + fluoroquinolone + second-line injectable (1-2% of cases). GeneXpert MTB/RIF detects rifampin resistance (marker for MDR-TB).",
+            "hiv_coinfection": "Common in endemic areas (30-50% of TBM patients). Higher mortality (40-60%). Immune reconstitution inflammatory syndrome (IRIS) risk (10-30%, occurs 2-8 weeks after starting ART). Paradoxical worsening despite appropriate TB treatment."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "standard_regimen": "Isoniazid 5mg/kg PO/IV daily (max 300mg) + Rifampin 10mg/kg PO/IV daily (max 600mg) + Pyrazinamide 25mg/kg PO daily (max 2g) + Ethambutol 15mg/kg PO daily (max 1.6g). Intensive phase: 2 months (all 4 drugs). Continuation phase: 7-10 months (isoniazid + rifampin). Total duration: 9-12 months.",
+            "adjunctive_dexamethasone": "CRITICAL: Reduces mortality and neurological sequelae. Dose: Dexamethasone 0.4mg/kg IV/PO daily x 4 weeks, then taper over 4 weeks (total 8 weeks). Start with first dose of TB drugs. Contraindications: None (benefit outweighs risk even in HIV).",
+            "hiv_coinfection": "Same TB regimen. Start TB treatment immediately. Delay ART initiation: 2-8 weeks after starting TB treatment (reduces IRIS risk). Exception: CD4 <50, start ART within 2 weeks (mortality benefit outweighs IRIS risk).",
+            "mdr_tb_suspected": "If rifampin resistance detected (GeneXpert) or high MDR-TB prevalence area: Levofloxacin 750-1,000mg PO daily + Linezolid 600mg PO BID + Bedaquiline 400mg PO daily x 2 weeks, then 200mg PO TIW + Cycloserine 500-750mg PO daily. Consult infectious disease specialist.",
+            "alternatives": "If unable to take PO: Isoniazid IV, rifampin IV, levofloxacin IV. Pyrazinamide and ethambutol: No IV formulation (use NG tube or wait until able to take PO).",
+            "avoid_list": "Avoid delaying treatment for culture results (start empiric therapy if high suspicion). Avoid omitting dexamethasone (reduces mortality and neurological sequelae). Avoid starting ART too early in HIV (increases IRIS risk, delay 2-8 weeks)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "drug_susceptible_tb": "Isoniazid 5mg/kg PO daily + Rifampin 10mg/kg PO daily + Pyrazinamide 25mg/kg PO daily + Ethambutol 15mg/kg PO daily x 2 months (intensive phase), then Isoniazid + Rifampin x 7-10 months (continuation phase). Total duration: 9-12 months. Dexamethasone 0.4mg/kg PO daily x 4 weeks, then taper over 4 weeks.",
+            "mdr_tb": "Levofloxacin 750-1,000mg PO daily + Linezolid 600mg PO BID + Bedaquiline 400mg PO daily x 2 weeks, then 200mg PO TIW + Cycloserine 500-750mg PO daily + Clofazimine 100mg PO daily. Duration: 18-24 months. Consult infectious disease specialist.",
+            "xdr_tb": "Individualized regimen based on susceptibility testing. May include: Linezolid, bedaquiline, delamanid, pretomanid, clofazimine, cycloserine, moxifloxacin. Duration: 18-24 months. Consult infectious disease specialist.",
+            "monitoring": "Monthly: CBC, CMP, LFTs (monitor drug toxicity: hepatotoxicity, nephrotoxicity). Baseline and monthly: Visual acuity and color vision (ethambutol optic neuritis). Repeat LP at 2-4 weeks: Assess CSF improvement (WBC should decrease, glucose should increase). Repeat MRI at 2-4 weeks: Assess hydrocephalus, tuberculomas.",
+            "drug_toxicity": "Isoniazid: Hepatotoxicity (10-20%), peripheral neuropathy (give pyridoxine 25-50mg daily). Rifampin: Hepatotoxicity, drug interactions (CYP450 inducer). Pyrazinamide: Hepatotoxicity, hyperuricemia. Ethambutol: Optic neuritis (dose-related, monitor visual acuity monthly). Linezolid: Myelosuppression, peripheral neuropathy."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "drug_susceptible_tb": "9-12 months total. Intensive phase: 2 months (4 drugs). Continuation phase: 7-10 months (2 drugs).",
+            "mdr_tb": "18-24 months",
+            "dexamethasone": "8 weeks total (4 weeks full dose, 4 weeks taper)",
+            "monitoring": "Monthly: CBC, CMP, LFTs, visual acuity. Repeat LP at 2-4 weeks: Assess CSF improvement. Repeat MRI at 2-4 weeks: Assess hydrocephalus, tuberculomas. End of treatment: Repeat MRI to document resolution.",
+            "stop_criteria": "Completed 9-12 months (drug-susceptible) or 18-24 months (MDR-TB). Clinical improvement (afebrile, improving neurologically). CSF normalized or significantly improved. No complications (hydrocephalus, tuberculomas resolved)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "dexamethasone_use": "CRITICAL: Reduces mortality (RR 0.75) and neurological sequelae. Dose: 0.4mg/kg IV/PO daily x 4 weeks, then taper over 4 weeks (total 8 weeks). Start with first dose of TB drugs. Benefit in all patients (HIV-positive and HIV-negative). No contraindications.",
+            "hydrocephalus_management": "Common complication (50-70%). Communicating (most common) or obstructive. Treatment: Serial LPs (temporary), acetazolamide (temporary), VP shunt (definitive if persistent). Indications for VP shunt: Persistent hydrocephalus despite medical management, progressive neurological deterioration.",
+            "iris_in_hiv": "Immune reconstitution inflammatory syndrome. Occurs in 10-30% of HIV-TBM patients after starting ART. Timing: 2-8 weeks after starting ART. Presentation: Paradoxical worsening (fever, headache, new neurological deficits, enlarging tuberculomas) despite appropriate TB treatment. Treatment: Continue TB drugs + ART, add corticosteroids (prednisone 1mg/kg daily, taper over 4-8 weeks).",
+            "stroke_management": "Vasculitis, basal meningeal inflammation. Occurs in 20-30%. Presentation: Focal neurological deficits, altered mental status. MRI: Infarcts (basal ganglia, internal capsule, brainstem). Treatment: TB drugs + dexamethasone, supportive care. Anticoagulation controversial (no proven benefit).",
+            "tuberculomas": "Intracranial granulomas. Occur in 30% of TBM. Presentation: Mass effect, seizures, focal deficits. MRI: Ring-enhancing lesions. Treatment: TB drugs + dexamethasone. May enlarge initially (paradoxical reaction), then resolve over months. Surgery if mass effect or no response to medical therapy.",
+            "pregnancy": "TB drugs safe in pregnancy (benefit outweighs risk). Avoid streptomycin (ototoxicity). Pyridoxine 25-50mg daily (prevent isoniazid-induced neuropathy). Dexamethasone safe in pregnancy."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Narrow regimen based on susceptibility testing (if drug-susceptible, use standard 4-drug regimen)",
+              "Fixed duration 9-12 months (drug-susceptible) or 18-24 months (MDR-TB)",
+              "Discontinue dexamethasone after 8 weeks (no benefit beyond 8 weeks)",
+              "Monitor drug toxicity monthly (hepatotoxicity, optic neuritis, myelosuppression)"
+            ],
+            "timeout_checklist": [
+              "Is dexamethasone started? (CRITICAL: Reduces mortality and neurological sequelae)",
+              "Are CSF culture and susceptibility results available? (Narrow regimen based on results)",
+              "Is HIV testing performed? (Common coinfection in endemic areas)",
+              "Is ART delayed appropriately? (2-8 weeks after starting TB treatment, reduces IRIS risk)",
+              "Is hydrocephalus managed? (VP shunt if persistent)",
+              "Can I stop treatment? (If 9-12 months completed, clinical improvement, CSF normalized)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT delay treatment for culture results (start empiric therapy if high suspicion). Do NOT omit dexamethasone (reduces mortality and neurological sequelae). Do NOT start ART too early in HIV (increases IRIS risk, delay 2-8 weeks).",
+            "patient_education": "TB meningitis requires prolonged treatment (9-12 months). Complete full course (do not stop early). Take medications daily (adherence critical). Watch for drug toxicity (jaundice, vision changes, numbness). Follow-up monthly (monitor response and toxicity). HIV patients: Delay ART 2-8 weeks (reduces IRIS risk)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "WHO TB Meningitis Guidelines (2021)",
+              "url": "https://www.who.int/publications/i/item/9789240029415"
+            },
+            {
+              "label": "ATS/CDC/IDSA TB Guidelines (2016)",
+              "url": "https://academic.oup.com/cid/article/63/7/e147/2196792"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cryptococcal-meningitis",
+      "name": "Cryptococcal Meningitis",
+      "synonyms": ["fungal meningitis", "Cryptococcus meningitis"],
+      "icd10": ["B45.1"],
+      "severity": ["severe", "critical"],
+      "shortDescription": "Fungal meningitis in immunocompromised requiring amphotericin B and prolonged therapy",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Cryptococcal meningitis is fungal infection of meninges caused by Cryptococcus neoformans (most common) or C. gattii. Most common fungal CNS infection. Occurs primarily in immunocompromised (HIV with CD4 <100, transplant, corticosteroids). Mortality: 20-30% (HIV), 40-60% (non-HIV immunocompromised). Requires prolonged therapy (induction, consolidation, maintenance). Leading cause of AIDS-related death in sub-Saharan Africa.",
+            "clinical_presentation": "Subacute onset (1-2 weeks): Headache (80-90%), fever (60-80%), altered mental status (50-60%), nausea/vomiting (40-50%), neck stiffness (30-40%). Visual changes (20-30%, increased ICP). Seizures (10-15%). Physical exam: Nuchal rigidity (30-40%), papilledema (20-30%, increased ICP), cranial nerve palsies (10-20%).",
+            "diagnostic_criteria": "Clinical suspicion (immunocompromised + subacute meningitis) + CSF analysis (lymphocytic pleocytosis, elevated protein, low glucose) + positive CSF cryptococcal antigen (CrAg) or India ink or culture. CSF findings: WBC 20-200 cells/mm³ (lymphocyte >50%), protein 50-200 mg/dL, glucose <40 mg/dL. Opening pressure often elevated (>25 cm H2O).",
+            "risk_factors": [
+              "HIV infection (CD4 <100, most common risk factor)",
+              "Solid organ transplant (kidney, liver, heart)",
+              "Hematopoietic stem cell transplant (HSCT)",
+              "Corticosteroid therapy (chronic, high-dose)",
+              "TNF-alpha inhibitors (infliximab, adalimumab)",
+              "Hematologic malignancies (lymphoma, leukemia)",
+              "Idiopathic CD4 lymphocytopenia (rare)"
+            ],
+            "red_flags": [
+              "Increased ICP (opening pressure >25 cm H2O) - common (50-70%), requires serial LPs or VP shunt",
+              "Altered mental status or GCS <14 - high mortality (40-60%), urgent treatment",
+              "Visual changes - increased ICP, risk of blindness, urgent LP",
+              "HIV with CD4 <100 - high mortality (20-30%), start ART after 2-10 weeks",
+              "High fungal burden (CSF CrAg titer >1:1024) - poor prognosis, aggressive management"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Lumbar puncture (LP) CRITICAL. Measure opening pressure (often elevated >25 cm H2O). CSF cryptococcal antigen (CrAg) most sensitive test (sensitivity 95-100%). India ink stain (sensitivity 50-80%). Serum CrAg (screening test in HIV with CD4 <100). Do NOT delay treatment if high suspicion.",
+            "essential_tests": [
+              "Lumbar puncture (LP): Measure opening pressure (often elevated >25 cm H2O). Cell count with differential, protein, glucose, cryptococcal antigen (CrAg), India ink stain, fungal culture. CSF findings: WBC 20-200 cells/mm³ (lymphocyte >50%), protein 50-200 mg/dL, glucose <40 mg/dL.",
+              "CSF cryptococcal antigen (CrAg): Most sensitive test. Sensitivity 95-100%, specificity 95-100%. Quantitative titer (>1:1024 = high fungal burden, poor prognosis).",
+              "CSF India ink stain: Encapsulated yeast. Sensitivity 50-80% (HIV), 25-50% (non-HIV). Specificity 95-100%.",
+              "CSF fungal culture: Gold standard. Positive in 90-95%. Takes 3-7 days.",
+              "Serum cryptococcal antigen (CrAg): Screening test in HIV with CD4 <100. Sensitivity 95-100%. If positive, perform LP (rule out meningitis)."
+            ],
+            "conditional_tests": [
+              "MRI brain with contrast: If focal neurological deficits or altered mental status. Findings: Cryptococcomas (10-20%, ring-enhancing lesions), hydrocephalus (10-15%), dilated Virchow-Robin spaces.",
+              "Chest X-ray or CT chest: Pulmonary cryptococcosis in 30-50% (nodules, infiltrates).",
+              "Blood cultures (fungal): Positive in 20-30% (disseminated disease).",
+              "HIV test: All patients (HIV most common risk factor).",
+              "CD4 count: If HIV-positive (CD4 <100 in 90% of HIV-cryptococcal meningitis)."
+            ],
+            "when_not_to_test": "Do NOT delay treatment if high suspicion (immunocompromised + subacute meningitis). Do NOT perform LP if contraindications (signs of increased ICP with mass effect, coagulopathy).",
+            "turnaround_time": "CSF CrAg: 1-2 hours. CSF India ink: <1 hour. CSF fungal culture: 3-7 days. Serum CrAg: 1-2 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Cryptococcus neoformans (most common, 95%): Encapsulated yeast. Environmental source: Soil, bird droppings (pigeons). Inhalation → pulmonary infection → hematogenous spread to CNS. Cryptococcus gattii (5%): Tropical/subtropical regions (Australia, Pacific Northwest). Affects immunocompetent hosts.",
+            "pathogenesis": "Inhalation of spores → pulmonary infection (often asymptomatic) → hematogenous dissemination → CNS infection (crosses blood-brain barrier). Polysaccharide capsule (virulence factor, evades immune system).",
+            "antifungal_resistance": "Rare. Fluconazole resistance <5%. Amphotericin B resistance <1%.",
+            "hiv_coinfection": "Most common risk factor (CD4 <100 in 90%). Leading cause of AIDS-related death in sub-Saharan Africa. Mortality: 20-30% (despite treatment). Immune reconstitution inflammatory syndrome (IRIS) risk (10-30%, occurs 2-8 weeks after starting ART)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "induction_phase": "Amphotericin B deoxycholate 0.7-1mg/kg IV daily + Flucytosine 100mg/kg PO daily (divided q6h) x 2 weeks. Alternative: Liposomal amphotericin B 3-4mg/kg IV daily (less nephrotoxic, preferred if renal impairment). Duration: 2 weeks (HIV), 4 weeks (non-HIV immunocompromised).",
+            "consolidation_phase": "Fluconazole 400mg PO daily x 8 weeks (after induction phase). Start after CSF culture negative (repeat LP at 2 weeks).",
+            "maintenance_phase": "Fluconazole 200mg PO daily. Duration: Until immune reconstitution (HIV: CD4 >200 for 6 months on ART. Non-HIV: Continue indefinitely if immunosuppression persists).",
+            "increased_icp_management": "CRITICAL: Serial LPs (daily or every other day) to reduce opening pressure to <20 cm H2O. Remove 20-30 mL CSF per LP. If refractory: Lumbar drain OR VP shunt. Acetazolamide and mannitol NOT effective (do not use).",
+            "hiv_coinfection": "Same antifungal regimen. Delay ART initiation: 2-10 weeks after starting antifungal therapy (reduces IRIS risk, mortality benefit). Exception: CD4 <50 with other OIs, start ART within 2 weeks.",
+            "alternatives": "If flucytosine unavailable: Amphotericin B 0.7-1mg/kg IV daily alone x 4-6 weeks (less effective, higher mortality). If unable to take PO: Fluconazole IV.",
+            "avoid_list": "Avoid fluconazole monotherapy for induction (high mortality, inferior to amphotericin B + flucytosine). Avoid inadequate ICP management (serial LPs critical, reduces mortality). Avoid starting ART too early in HIV (increases IRIS risk, delay 2-10 weeks)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "induction_phase": "Amphotericin B deoxycholate 0.7-1mg/kg IV daily + Flucytosine 100mg/kg PO daily (divided q6h) x 2 weeks (HIV) or 4 weeks (non-HIV). Monitor: Daily creatinine, electrolytes (amphotericin B nephrotoxicity, hypokalemia, hypomagnesemia). Twice weekly: CBC (flucytosine myelosuppression).",
+            "consolidation_phase": "Fluconazole 400mg PO daily x 8 weeks. Start after CSF culture negative (repeat LP at 2 weeks to document sterilization).",
+            "maintenance_phase": "Fluconazole 200mg PO daily. Duration: HIV: Until CD4 >200 for 6 months on ART. Non-HIV: Continue indefinitely if immunosuppression persists (transplant, corticosteroids).",
+            "increased_icp_management": "Serial LPs (daily or every other day) to reduce opening pressure to <20 cm H2O. Remove 20-30 mL CSF per LP. Continue until opening pressure <20 cm H2O on 2 consecutive LPs. If refractory (>2 weeks): Lumbar drain (temporary) OR VP shunt (definitive). Acetazolamide and mannitol NOT effective.",
+            "monitoring": "Repeat LP at 2 weeks: Document CSF sterilization (culture should be negative). If positive, extend induction phase. Daily: Creatinine, electrolytes (amphotericin B toxicity). Twice weekly: CBC (flucytosine myelosuppression). Weekly: LFTs.",
+            "drug_toxicity": "Amphotericin B: Nephrotoxicity (50-80%, monitor creatinine daily), hypokalemia (50%), hypomagnesemia (30%), infusion reactions (fever, chills, rigors, premedicate with acetaminophen + diphenhydramine). Flucytosine: Myelosuppression (20-30%, monitor CBC twice weekly), hepatotoxicity (10%)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "induction_phase": "2 weeks (HIV), 4 weeks (non-HIV immunocompromised)",
+            "consolidation_phase": "8 weeks",
+            "maintenance_phase": "HIV: Until CD4 >200 for 6 months on ART. Non-HIV: Continue indefinitely if immunosuppression persists.",
+            "monitoring": "Repeat LP at 2 weeks: Document CSF sterilization (culture should be negative). Daily: Creatinine, electrolytes. Twice weekly: CBC. Weekly: LFTs. Serial LPs: If increased ICP (daily or every other day until opening pressure <20 cm H2O).",
+            "stop_criteria": "Completed induction (2-4 weeks) + consolidation (8 weeks). CSF culture negative at 2 weeks. Immune reconstitution (HIV: CD4 >200 for 6 months on ART). No complications (increased ICP resolved, cryptococcomas resolved)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "increased_icp_management": "CRITICAL: Most important predictor of mortality. Occurs in 50-70%. Serial LPs (daily or every other day) to reduce opening pressure to <20 cm H2O. Remove 20-30 mL CSF per LP. Continue until opening pressure <20 cm H2O on 2 consecutive LPs. If refractory: Lumbar drain OR VP shunt. Acetazolamide and mannitol NOT effective (do not use). Corticosteroids NOT recommended (may worsen outcomes).",
+            "iris_in_hiv": "Immune reconstitution inflammatory syndrome. Occurs in 10-30% of HIV-cryptococcal meningitis patients after starting ART. Timing: 2-8 weeks after starting ART. Presentation: Paradoxical worsening (fever, headache, new neurological deficits, enlarging cryptococcomas) despite appropriate antifungal therapy. Treatment: Continue antifungal therapy + ART, add corticosteroids (prednisone 0.5-1mg/kg daily, taper over 4-8 weeks) if severe.",
+            "art_timing_in_hiv": "Delay ART initiation: 2-10 weeks after starting antifungal therapy (reduces IRIS risk, mortality benefit). Exception: CD4 <50 with other opportunistic infections, start ART within 2 weeks (mortality benefit outweighs IRIS risk). Do NOT start ART immediately (increases mortality).",
+            "cryptococcomas": "Intracranial granulomas. Occur in 10-20%. Presentation: Mass effect, seizures, focal deficits. MRI: Ring-enhancing lesions. Treatment: Antifungal therapy (same regimen as meningitis). May enlarge initially (paradoxical reaction, IRIS), then resolve over months. Surgery if mass effect or no response to medical therapy.",
+            "flucytosine_monitoring": "Myelosuppression (20-30%): Monitor CBC twice weekly. Dose adjustment: CrCl 20-40 mL/min: 50mg/kg/day. CrCl 10-20 mL/min: 25mg/kg/day. CrCl <10 mL/min: Avoid (or 25mg/kg after dialysis). Therapeutic drug monitoring: Target peak level 30-80 mcg/mL (if available).",
+            "pregnancy": "Amphotericin B safe in pregnancy (category B). Fluconazole teratogenic (avoid in first trimester, use amphotericin B alone). Flucytosine teratogenic (avoid, use amphotericin B alone)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Switch from amphotericin B + flucytosine to fluconazole after 2-4 weeks (induction phase completed, CSF culture negative)",
+              "Reduce fluconazole from 400mg to 200mg daily after 8 weeks (consolidation phase completed)",
+              "Discontinue fluconazole when immune reconstitution achieved (HIV: CD4 >200 for 6 months on ART)",
+              "Monitor drug toxicity (amphotericin B nephrotoxicity, flucytosine myelosuppression)"
+            ],
+            "timeout_checklist": [
+              "Is increased ICP managed? (Serial LPs CRITICAL, reduces mortality)",
+              "Is repeat LP performed at 2 weeks? (Document CSF sterilization)",
+              "Is ART delayed appropriately? (2-10 weeks after starting antifungal therapy, reduces IRIS risk)",
+              "Can I switch to fluconazole? (If induction phase completed, CSF culture negative)",
+              "Can I reduce fluconazole dose? (If consolidation phase completed, 8 weeks)",
+              "Can I stop fluconazole? (If immune reconstitution achieved, HIV: CD4 >200 for 6 months on ART)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use fluconazole monotherapy for induction (high mortality, inferior to amphotericin B + flucytosine). Do NOT use acetazolamide or mannitol for increased ICP (NOT effective, serial LPs required). Do NOT start ART too early in HIV (increases IRIS risk, delay 2-10 weeks).",
+            "patient_education": "Cryptococcal meningitis requires prolonged treatment (induction, consolidation, maintenance). Complete full course (do not stop early). Serial LPs may be needed (reduce pressure, prevent blindness). Watch for drug toxicity (kidney function, blood counts). HIV patients: Delay ART 2-10 weeks (reduces IRIS risk). Maintenance therapy until CD4 >200 for 6 months."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Cryptococcal Meningitis Guidelines (2010, updated 2018)",
+              "url": "https://academic.oup.com/cid/article/50/3/291/316577"
+            },
+            {
+              "label": "WHO Cryptococcal Meningitis Guidelines (2018)",
+              "url": "https://www.who.int/publications/i/item/978-92-4-155011-8"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "spinal-epidural-abscess",
+      "name": "Spinal Epidural Abscess",
+      "synonyms": ["epidural abscess", "spinal abscess"],
+      "icd10": ["G06.1"],
+      "severity": ["severe", "critical"],
+      "shortDescription": "Surgical emergency requiring urgent drainage to prevent permanent paralysis",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Spinal epidural abscess is collection of pus in epidural space of spinal canal. Surgical emergency. Incidence: 2-3 cases per 100,000/year (increasing). Mortality: 5-15%. Permanent neurological deficit: 20-40% (paralysis, bowel/bladder dysfunction). Requires urgent MRI + drainage + antibiotics. Time-critical emergency (irreversible spinal cord damage within hours).",
+            "clinical_presentation": "Classic triad (15%): Back pain (90%), fever (70%), neurological deficit (50%). Stages: (1) Back pain (days), (2) Radicular pain (days-weeks), (3) Motor weakness (hours-days), (4) Paralysis (hours). Physical exam: Spinal tenderness, fever, motor weakness, sensory loss, bowel/bladder dysfunction.",
+            "diagnostic_criteria": "Clinical suspicion (back pain + fever + neurological deficit) + MRI spine with contrast (epidural collection with rim enhancement, spinal cord compression). MRI gold standard (sensitivity 95%, specificity 95%).",
+            "risk_factors": [
+              "Diabetes mellitus (30-50%)",
+              "IV drug use (15-30%)",
+              "Spinal procedures (epidural injection, spinal surgery, LP)",
+              "Bacteremia or endocarditis (hematogenous spread)",
+              "Immunosuppression (HIV, corticosteroids, transplant)",
+              "Chronic kidney disease or dialysis",
+              "Spinal trauma or degenerative disease"
+            ],
+            "red_flags": [
+              "Motor weakness or paralysis - irreversible spinal cord damage within hours, URGENT surgery",
+              "Bowel/bladder dysfunction - cauda equina syndrome, URGENT surgery",
+              "Rapidly progressive symptoms - high risk of permanent paralysis, URGENT surgery",
+              "Bacteremia or endocarditis - hematogenous spread, high mortality",
+              "Immunocompromised - broader differential (TB, fungi, Nocardia)"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "MRI spine with contrast URGENT (gold standard, sensitivity 95%, specificity 95%). Do NOT delay MRI or surgery for antibiotics (start empiric antibiotics immediately, but do NOT delay surgery). Blood cultures x2 sets (positive in 60-90%). Do NOT perform LP (contraindicated, risk of introducing infection into subarachnoid space).",
+            "essential_tests": [
+              "MRI spine with contrast: Epidural collection with rim enhancement, spinal cord compression, vertebral osteomyelitis (30-50%). Sensitivity 95%, specificity 95%. Gold standard.",
+              "Blood cultures x2 sets BEFORE antibiotics (positive in 60-90%)",
+              "CBC with differential (leukocytosis 15,000-25,000)",
+              "CMP (assess renal function)",
+              "ESR, CRP (elevated, ESR >30 mm/hr in 95%)"
+            ],
+            "conditional_tests": [
+              "CT spine with contrast: If MRI unavailable or contraindicated (pacemaker, metal implants). Less sensitive than MRI (sensitivity 70-80%).",
+              "Echocardiography (TEE): If bacteremia or multiple abscesses (rule out endocarditis, hematogenous source).",
+              "Aspiration or surgical drainage: Obtain pus for Gram stain, culture (aerobic + anaerobic + fungal + mycobacterial). Guides antibiotic therapy."
+            ],
+            "when_not_to_test": "Do NOT perform LP (contraindicated, risk of introducing infection into subarachnoid space). Do NOT delay MRI or surgery for antibiotics (start empiric antibiotics immediately, but do NOT delay surgery).",
+            "turnaround_time": "MRI spine: 1-4 hours (URGENT). Blood cultures: Preliminary 24-48 hours. Abscess culture: 24-72 hours (aerobic/anaerobic), 4-6 weeks (mycobacterial)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "staphylococcus_aureus": "Most common (50-70%). MRSA common (30-50%). Source: Bacteremia, endocarditis, IV drug use, spinal procedures.",
+            "streptococcus_species": "15-20%: Viridans streptococci, S. milleri group. Source: Dental, endocarditis.",
+            "gram_negative_bacilli": "15-20%: E. coli, Pseudomonas, Klebsiella. Source: Urinary tract, GI, spinal procedures. ESBL common (30-50%).",
+            "anaerobes": "5-10%: Bacteroides, Peptostreptococcus. Source: Dental, GI.",
+            "mycobacteria": "TB (Pott's disease): Vertebral osteomyelitis + epidural abscess. Endemic areas, immunocompromised. Subacute presentation (weeks-months).",
+            "fungi": "Rare (<5%): Aspergillus, Candida. Immunocompromised, spinal procedures.",
+            "polymicrobial": "10-20%: Mixed aerobic and anaerobic bacteria.",
+            "resistance_patterns": "MRSA 30-50%. ESBL Gram-negatives 30-50%. Multidrug-resistant Pseudomonas 30-40%."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "standard_regimen": "Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h OR Meropenem 2g IV q8h. Covers MRSA, Pseudomonas, ESBL. Duration: 4-8 weeks (IV, then PO if improving).",
+            "iv_drug_use": "Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h. Covers MRSA, Pseudomonas. Duration: 4-8 weeks.",
+            "post_spinal_procedure": "Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h OR Meropenem 2g IV q8h. Covers MRSA, Pseudomonas, ESBL. Duration: 4-8 weeks.",
+            "tb_suspected": "If subacute presentation (weeks-months), vertebral osteomyelitis, endemic area: Add TB regimen (isoniazid + rifampin + pyrazinamide + ethambutol). Consult infectious disease specialist.",
+            "urgent_surgery": "CRITICAL if motor weakness, bowel/bladder dysfunction, or rapidly progressive symptoms. Laminectomy + drainage. Do NOT delay surgery for antibiotics (start empiric antibiotics immediately, but do NOT delay surgery). Irreversible spinal cord damage within hours.",
+            "alternatives": "Beta-lactam allergy: Vancomycin 15-20mg/kg IV q8-12h + Aztreonam 2g IV q8h. Fluoroquinolone: Levofloxacin 750mg IV daily (if susceptible).",
+            "avoid_list": "Avoid delaying surgery if motor weakness or bowel/bladder dysfunction (irreversible spinal cord damage within hours). Avoid inadequate MRSA coverage (vancomycin required). Avoid inadequate Gram-negative coverage (cefepime or meropenem required)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "urgent_surgery": "CRITICAL if motor weakness, bowel/bladder dysfunction, or rapidly progressive symptoms. Laminectomy + drainage. Timing: Within 24 hours (ideally within 12 hours). Delay >24 hours = higher risk of permanent paralysis. Medical management alone: Only if no neurological deficit, small abscess, high surgical risk.",
+            "targeted_antibiotics": "Narrow based on blood or abscess culture results. MRSA: Vancomycin 15-20mg/kg IV q8-12h. MSSA: Nafcillin 2g IV q4h OR Cefazolin 2g IV q8h. Streptococcus: Penicillin G 4 million units IV q4h OR Ceftriaxone 2g IV q12h. Gram-negatives: Ceftriaxone 2g IV q12h OR Cefepime 2g IV q8h. ESBL: Meropenem 2g IV q8h.",
+            "duration": "4-8 weeks total (IV + PO). IV therapy: 4-6 weeks minimum. Switch to PO when: (1) Afebrile >1 week, (2) Improving neurologically, (3) Abscess resolved or significantly reduced on repeat MRI. PO options: Linezolid 600mg PO BID (MRSA) OR Ciprofloxacin 500mg PO BID (Gram-negatives, if susceptible).",
+            "monitoring": "Repeat MRI at 2 weeks: Assess abscess size (should decrease by ≥50%). Repeat MRI at 4-6 weeks: Document resolution or significant reduction. If abscess enlarging or no improvement: Repeat surgery, consider alternative diagnosis.",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Discontinue vancomycin if no MRSA. Narrow Gram-negative coverage if ESBL-negative.",
+            "iv_to_po_switch": "Switch to PO when: (1) Afebrile >1 week, (2) Improving neurologically, (3) Abscess resolved or significantly reduced on repeat MRI (>50% reduction). PO options: Linezolid 600mg PO BID (MRSA) OR Ciprofloxacin 500mg PO BID + Rifampin 600mg PO daily (if susceptible)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "total_duration": "4-8 weeks (IV + PO). IV therapy: 4-6 weeks minimum. PO therapy: 2-4 weeks (after IV).",
+            "monitoring": "Daily: Vital signs, neurological exam, motor strength, sensory level, bowel/bladder function. Every 2-3 days: CBC, CMP (monitor WBC normalization). Repeat MRI at 2 weeks: Assess abscess size (should decrease by ≥50%). Repeat MRI at 4-6 weeks: Document resolution or significant reduction.",
+            "stop_criteria": "Completed 4-8 weeks. Afebrile >1 week. Improving or stable neurologically. Abscess resolved or significantly reduced on repeat MRI (>50% reduction). No complications (recurrence, vertebral osteomyelitis)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "surgical_indications": "URGENT surgery if: (1) Motor weakness or paralysis, (2) Bowel/bladder dysfunction (cauda equina syndrome), (3) Rapidly progressive symptoms, (4) Spinal cord compression on MRI. Timing: Within 24 hours (ideally within 12 hours). Delay >24 hours = higher risk of permanent paralysis (50-70%). Medical management alone: Only if no neurological deficit, small abscess (<3cm), high surgical risk.",
+            "medical_management_alone": "Indications: No neurological deficit, small abscess (<3cm), high surgical risk. Antibiotics: Vancomycin + cefepime or meropenem x 4-8 weeks. Close monitoring: Daily neurological exam. Repeat MRI at 48-72 hours: If no improvement or worsening, proceed to surgery. Success rate: 50-70% (lower than surgery).",
+            "neurological_recovery": "Depends on preoperative neurological status. No deficit: 90-95% full recovery. Motor weakness: 50-70% full recovery. Paralysis: 10-30% full recovery. Timing of surgery CRITICAL: Surgery within 24 hours = better outcomes. Delay >24 hours = higher risk of permanent paralysis.",
+            "vertebral_osteomyelitis": "Common association (30-50%). Presentation: Back pain, vertebral tenderness. MRI: Vertebral body destruction, disc space narrowing. Treatment: Same antibiotics, longer duration (6-12 weeks). May require vertebral stabilization (surgery).",
+            "tb_epidural_abscess": "Pott's disease: TB vertebral osteomyelitis + epidural abscess. Subacute presentation (weeks-months). MRI: Vertebral destruction, paraspinal abscess, epidural abscess. Treatment: TB regimen (isoniazid + rifampin + pyrazinamide + ethambutol) x 9-12 months + surgery (drainage, vertebral stabilization). Dexamethasone controversial.",
+            "recurrence": "Occurs in 5-10%. Risk factors: Inadequate drainage, inadequate antibiotic duration, persistent bacteremia, vertebral osteomyelitis. Treatment: Repeat surgery + prolonged antibiotics (6-12 weeks)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "De-escalate within 48-72 hours based on blood or abscess culture results",
+              "Discontinue vancomycin if no MRSA",
+              "Narrow Gram-negative coverage if ESBL-negative",
+              "Switch IV to PO when afebrile >1 week and abscess reduced >50% on MRI",
+              "Fixed duration 4-8 weeks (avoid prolonged courses unless vertebral osteomyelitis)"
+            ],
+            "timeout_checklist": [
+              "Is urgent surgery indicated? (Motor weakness, bowel/bladder dysfunction, rapidly progressive symptoms)",
+              "Are blood or abscess culture results available? (Narrow antibiotics based on results)",
+              "Is repeat MRI performed? (At 2 weeks, assess abscess size reduction)",
+              "Can I de-escalate antibiotics? (Based on culture results)",
+              "Can I switch IV to PO? (If afebrile >1 week and abscess reduced >50%)",
+              "Can I stop antibiotics? (If 4-8 weeks completed, abscess resolved on MRI)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT delay surgery if motor weakness or bowel/bladder dysfunction (irreversible spinal cord damage within hours). Do NOT use prolonged antibiotics beyond 4-8 weeks (unless vertebral osteomyelitis). Do NOT use medical management alone if neurological deficit present (surgery required).",
+            "patient_education": "Spinal epidural abscess is surgical emergency requiring urgent drainage + antibiotics (4-8 weeks). Complete full antibiotic course. Watch for worsening symptoms (motor weakness, bowel/bladder dysfunction). Follow-up MRI at 2 weeks and 4-6 weeks (document resolution). Neurological recovery depends on preoperative status (surgery within 24 hours = better outcomes)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Spinal Epidural Abscess Guidelines (2015)",
+              "url": "https://academic.oup.com/cid/article/61/8/e26/452579"
+            },
+            {
+              "label": "Neurosurgery Spinal Epidural Abscess Guidelines (2014)",
+              "url": "https://thejns.org/spine/view/journals/j-neurosurg-spine/20/1/article-p1.xml"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "subdural-empyema",
+      "name": "Subdural Empyema",
+      "synonyms": ["subdural abscess", "intracranial empyema"],
+      "icd10": ["G06.2"],
+      "severity": ["severe", "critical"],
+      "shortDescription": "Surgical emergency requiring urgent drainage with high mortality",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Subdural empyema is collection of pus between dura and arachnoid mater. Surgical emergency. Incidence: 0.5-2 cases per 100,000/year. Mortality: 10-20% (despite treatment). Neurological sequelae: 30-50% (seizures, focal deficits). Requires urgent drainage + antibiotics. Sources: Sinusitis (50%), otitis/mastoiditis (20%), trauma/neurosurgery (10%), meningitis (10%).",
+            "clinical_presentation": "Acute onset (days): Headache (80-90%), fever (70-80%), altered mental status (50-60%), focal neurological deficits (50-60%), seizures (40-50%). Physical exam: Focal deficits (hemiparesis, aphasia), meningismus (30-40%), papilledema (20-30%, increased ICP).",
+            "diagnostic_criteria": "Clinical suspicion (headache + fever + focal deficit ± seizures) + CT or MRI brain with contrast (crescent-shaped collection along cerebral convexity, rim enhancement). MRI more sensitive than CT.",
+            "risk_factors": [
+              "Sinusitis (50%, frontal or ethmoid sinusitis)",
+              "Otitis media or mastoiditis (20%)",
+              "Head trauma or neurosurgery (10%)",
+              "Meningitis (10%, complication)",
+              "Immunosuppression (HIV, transplant, chemotherapy)",
+              "Dental infection"
+            ],
+            "red_flags": [
+              "Altered mental status or GCS <14 - high mortality (30-50%), urgent drainage",
+              "Seizures - common complication (40-50%), status epilepticus risk",
+              "Rapidly progressive symptoms - high risk of herniation, urgent drainage",
+              "Signs of increased ICP (papilledema, bradycardia, hypertension) - risk of herniation, urgent neurosurgery",
+              "Immunocompromised - broader differential (fungi, TB, Nocardia)"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "MRI brain with contrast (gold standard, sensitivity 95%). CT head with contrast if MRI unavailable (sensitivity 85%). Drainage for culture (guides antibiotic therapy). Blood cultures x2 sets (positive in 20-40%). Do NOT perform LP (contraindicated, risk of herniation).",
+            "essential_tests": [
+              "MRI brain with contrast: Crescent-shaped collection along cerebral convexity (subdural space), rim enhancement, mass effect, midline shift. Sensitivity 95%. More sensitive than CT.",
+              "CT head with contrast: Crescent-shaped hypodense collection, rim enhancement, mass effect. Sensitivity 85%. Faster than MRI, useful if unstable.",
+              "Blood cultures x2 sets BEFORE antibiotics (positive in 20-40%)",
+              "CBC with differential (leukocytosis 15,000-25,000)",
+              "CMP (assess renal function, electrolytes)",
+              "ESR, CRP (elevated, nonspecific)"
+            ],
+            "conditional_tests": [
+              "Drainage (craniotomy or burr holes): Obtain pus for Gram stain, culture (aerobic + anaerobic + fungal). Guides antibiotic therapy. CRITICAL for diagnosis and treatment.",
+              "Sinus CT: If sinusitis suspected (source, 50%).",
+              "Temporal bone CT: If otitis or mastoiditis suspected (source, 20%).",
+              "EEG: If seizures (common complication, 40-50%)."
+            ],
+            "when_not_to_test": "Do NOT perform LP (contraindicated, risk of herniation due to mass effect). Do NOT delay antibiotics or surgery for imaging or cultures (start empiric antibiotics immediately, urgent drainage).",
+            "turnaround_time": "MRI brain: 1-4 hours (urgent). CT head: <1 hour (urgent). Blood cultures: Preliminary 24-48 hours. Empyema culture: 24-72 hours (aerobic/anaerobic)."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "polymicrobial": "Subdural empyemas are often polymicrobial (40-60%) with mixed aerobic and anaerobic bacteria. Culture-negative in 10-20% (prior antibiotics).",
+            "aerobic_streptococci": "Most common (50-70%): Streptococcus milleri group (S. anginosus, S. constellatus, S. intermedius), viridans streptococci. Source: Sinusitis, dental, otitis.",
+            "staphylococcus_aureus": "20-30%. Source: Trauma, neurosurgery, bacteremia. MRSA common (30-50%).",
+            "anaerobes": "40-60%: Bacteroides species, Prevotella species, Fusobacterium species, Peptostreptococcus species. Source: Sinusitis, dental, otitis.",
+            "gram_negative_bacilli": "15-25%: E. coli, Klebsiella, Pseudomonas, Proteus. Source: Sinusitis, otitis, neurosurgery. ESBL common (30-50%).",
+            "fungi": "Rare (<5%): Aspergillus, Candida. Immunocompromised.",
+            "resistance_patterns": "MRSA 30-50%. ESBL Gram-negatives 30-50%. Multidrug-resistant Pseudomonas 30-40%."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "standard_regimen": "Ceftriaxone 2g IV q12h + Metronidazole 500mg IV q8h + Vancomycin 15-20mg/kg IV q8-12h. Covers Streptococcus, anaerobes, MRSA. Duration: 4-6 weeks (IV).",
+            "post_trauma_or_neurosurgery": "Vancomycin 15-20mg/kg IV q8-12h + Cefepime 2g IV q8h OR Meropenem 2g IV q8h. Covers MRSA, Pseudomonas, ESBL. Duration: 4-6 weeks.",
+            "urgent_drainage": "CRITICAL for cure. Craniotomy (preferred, allows complete drainage) OR Burr holes (if unstable, temporary). Indications: All cases (subdural empyema requires drainage, antibiotics alone fail). Timing: Within 24 hours (urgent).",
+            "seizure_management": "Common complication (40-50%). Prophylactic antiepileptics recommended (levetiracetam 500-1,000mg IV BID OR phenytoin 100mg IV TID). Continue for 3-12 months after empyema resolution.",
+            "alternatives": "Beta-lactam allergy: Vancomycin 15-20mg/kg IV q8-12h + Aztreonam 2g IV q8h + Metronidazole 500mg IV q8h. Fluoroquinolone: Levofloxacin 750mg IV daily + Metronidazole 500mg IV q8h (if susceptible).",
+            "avoid_list": "Avoid antibiotics alone without drainage (high failure rate, subdural empyema requires drainage). Avoid inadequate anaerobic coverage (metronidazole required). Avoid delaying drainage (mortality increases)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "urgent_drainage": "CRITICAL for cure. Craniotomy (preferred, allows complete drainage, lower recurrence) OR Burr holes (if unstable, temporary, higher recurrence). Timing: Within 24 hours (urgent). Antibiotics alone = high failure rate (70-90%). Repeat drainage if no response (48-72 hours).",
+            "targeted_antibiotics": "Narrow based on empyema culture results. Streptococcus (penicillin-sensitive): Penicillin G 4 million units IV q4h + Metronidazole 500mg IV q8h. MRSA: Vancomycin 15-20mg/kg IV q8-12h. MSSA: Nafcillin 2g IV q4h. Gram-negatives: Ceftriaxone 2g IV q12h OR Cefepime 2g IV q8h. ESBL: Meropenem 2g IV q8h. Anaerobes: Metronidazole 500mg IV q8h.",
+            "duration": "4-6 weeks (IV). Longer than brain abscess (subdural space harder to sterilize). PO switch controversial (most experts recommend IV for full duration).",
+            "monitoring": "Repeat MRI at 2 weeks: Assess empyema size (should decrease by ≥50%). Repeat MRI at 4-6 weeks: Document resolution. If empyema enlarging or no improvement: Repeat drainage, consider alternative diagnosis.",
+            "de_escalation": "De-escalate within 48-72 hours based on culture results. Discontinue vancomycin if no MRSA. Discontinue metronidazole if no anaerobes. Narrow Gram-negative coverage if ESBL-negative.",
+            "iv_to_po_switch": "Controversial. Most experts recommend IV for full duration (4-6 weeks). If PO switch considered: Only after empyema resolved on MRI, afebrile >2 weeks, improving neurologically."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "total_duration": "4-6 weeks (IV). Longer than brain abscess (subdural space harder to sterilize).",
+            "monitoring": "Daily: Vital signs, neurological exam, GCS, seizure activity. Every 2-3 days: CBC, CMP (monitor WBC normalization). Repeat MRI at 2 weeks: Assess empyema size (should decrease by ≥50%). Repeat MRI at 4-6 weeks: Document resolution. If empyema enlarging or no improvement: Repeat drainage.",
+            "stop_criteria": "Completed 4-6 weeks. Afebrile >2 weeks. Improving neurologically. Empyema resolved on repeat MRI. No complications (recurrence, seizures controlled)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "drainage_technique": "Craniotomy (preferred): Complete drainage, lower recurrence (5-10%). Burr holes: Temporary, if unstable, higher recurrence (20-30%). Timing: Within 24 hours (urgent). Delay >24 hours = higher mortality. Antibiotics alone = high failure rate (70-90%).",
+            "seizure_management": "Common complication (40-50%). Prophylactic antiepileptics recommended (levetiracetam 500-1,000mg IV BID OR phenytoin 100mg IV TID). Continue for 3-12 months after empyema resolution. Status epilepticus risk (10-20%). Long-term epilepsy risk (30-40%).",
+            "increased_icp_management": "Common complication (30-50%). Elevate head of bed 30 degrees. Dexamethasone 10mg IV, then 4mg IV q6h (reduces edema, use cautiously as may impair antibiotic penetration). Mannitol 0.25-1g/kg IV OR Hypertonic saline 3% (if refractory). Neurosurgery consultation if mass effect or herniation risk.",
+            "source_control": "Sinusitis (50%): ENT consultation, sinus drainage (functional endoscopic sinus surgery, FESS) if persistent. Otitis/mastoiditis (20%): ENT consultation, mastoidectomy if persistent. Dental infection: Dental extraction.",
+            "recurrence": "Occurs in 10-20%. Risk factors: Inadequate drainage (burr holes), inadequate antibiotic duration, persistent source (sinusitis, otitis). Treatment: Repeat craniotomy + prolonged antibiotics (6-8 weeks).",
+            "neurological_sequelae": "Common (30-50%): Seizures (30-40%, long-term epilepsy), focal deficits (hemiparesis, aphasia, 20-30%), cognitive impairment (10-20%). Rehabilitation often required."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "De-escalate within 48-72 hours based on empyema culture results",
+              "Discontinue vancomycin if no MRSA",
+              "Discontinue metronidazole if no anaerobes",
+              "Narrow Gram-negative coverage if ESBL-negative",
+              "Fixed duration 4-6 weeks (avoid prolonged courses)"
+            ],
+            "timeout_checklist": [
+              "Is drainage performed? (CRITICAL for cure, antibiotics alone fail)",
+              "Are empyema culture results available? (Narrow antibiotics based on results)",
+              "Is source controlled? (Sinusitis, otitis, dental infection)",
+              "Is repeat MRI performed? (At 2 weeks, assess empyema size reduction)",
+              "Can I de-escalate antibiotics? (Based on culture results)",
+              "Can I stop antibiotics? (If 4-6 weeks completed, empyema resolved on MRI)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use antibiotics alone without drainage (high failure rate 70-90%). Do NOT use prolonged antibiotics beyond 4-6 weeks. Do NOT delay drainage (mortality increases).",
+            "patient_education": "Subdural empyema is surgical emergency requiring urgent drainage + antibiotics (4-6 weeks). Complete full antibiotic course. Watch for complications (seizures, focal deficits, increased ICP). Follow-up MRI at 2 weeks and 4-6 weeks (document resolution). Prophylactic antiepileptics for 3-12 months. Long-term seizure risk (30-40%)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "IDSA Subdural Empyema Guidelines (2004)",
+              "url": "https://academic.oup.com/cid/article/39/9/1267/356518"
+            },
+            {
+              "label": "Neurosurgery Subdural Empyema Guidelines (2016)",
+              "url": "https://academic.oup.com/neurosurgery/article/78/3/422/2555093"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "neurocysticercosis",
+      "name": "Neurocysticercosis",
+      "synonyms": ["cysticercosis", "Taenia solium infection"],
+      "icd10": ["B69.0"],
+      "severity": ["moderate", "severe"],
+      "shortDescription": "Parasitic CNS infection causing seizures requiring antiparasitics and corticosteroids",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Neurocysticercosis is CNS infection caused by larval stage of Taenia solium (pork tapeworm). Most common parasitic CNS infection worldwide. Leading cause of acquired epilepsy in endemic areas (Latin America, Asia, Africa, sub-Saharan Africa). Transmission: Fecal-oral (ingestion of T. solium eggs from contaminated food/water). Incubation: Months to years. Mortality: <5% (most cases benign).",
+            "clinical_presentation": "Seizures (70-90%, most common presentation, focal or generalized), headache (40-60%), focal neurological deficits (20-30%), altered mental status (10-20%), increased ICP (10-20%, hydrocephalus). Physical exam: Often normal. Focal deficits if large cysts or multiple cysts.",
+            "diagnostic_criteria": "Clinical suspicion (seizures + endemic area exposure) + CT or MRI brain (cysts with scolex, calcifications) + serology (serum or CSF antibodies). Definitive diagnosis: Histopathology (biopsy, rarely needed).",
+            "risk_factors": [
+              "Endemic area exposure (Latin America, Asia, Africa, sub-Saharan Africa)",
+              "Travel to endemic areas",
+              "Poor sanitation or hygiene",
+              "Household contact with T. solium carrier (tapeworm)",
+              "Consumption of undercooked pork (not required, fecal-oral transmission)"
+            ],
+            "red_flags": [
+              "Increased ICP or hydrocephalus - requires VP shunt, high mortality if untreated",
+              "Intraventricular cysts - high risk of hydrocephalus, may require surgical removal",
+              "Spinal cysts - rare, may cause myelopathy, requires surgery",
+              "Encephalitic form (cysticercal encephalitis) - massive infection, high mortality (10-20%), requires corticosteroids",
+              "Ocular cysts - requires surgical removal (antiparasitics contraindicated, may cause blindness)"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "MRI brain (gold standard, more sensitive than CT). CT head (shows calcifications better than MRI). Serology (serum or CSF antibodies). Stool exam for T. solium eggs or proglottids (if intestinal tapeworm suspected). Ophthalmology exam (rule out ocular cysts before starting antiparasitics).",
+            "essential_tests": [
+              "MRI brain: Cysts with scolex (pathognomonic, 'dot sign'), multiple cysts in different stages (vesicular, colloidal, granular, calcified), surrounding edema. Sensitivity 95%.",
+              "CT head: Cysts, calcifications (better than MRI for calcifications). Sensitivity 85%. Useful for follow-up (assess calcifications).",
+              "Serology (serum or CSF antibodies): Enzyme-linked immunoelectrotransfer blot (EITB, gold standard, sensitivity 95%, specificity 100%). ELISA (sensitivity 80%, specificity 90%). Positive serology supports diagnosis but does not confirm active infection (may be positive for years after infection).",
+              "Ophthalmology exam: Rule out ocular cysts (retinal or vitreous cysts). CRITICAL before starting antiparasitics (antiparasitics may cause inflammation and blindness if ocular cysts present)."
+            ],
+            "conditional_tests": [
+              "Stool exam for T. solium eggs or proglottids: If intestinal tapeworm suspected (carrier). Treat with praziquantel 5-10mg/kg PO x1 (prevents reinfection).",
+              "Lumbar puncture (LP): If meningitis suspected. CSF findings: Lymphocytic pleocytosis (10-500 cells/mm³), elevated protein (50-200 mg/dL), normal or low glucose. CSF antibodies (EITB or ELISA).",
+              "EEG: If seizures (common complication, 70-90%).",
+              "MRI spine: If spinal symptoms (myelopathy, radiculopathy). Spinal cysts rare (<5%)."
+            ],
+            "when_not_to_test": "Do NOT start antiparasitics before ophthalmology exam (rule out ocular cysts, antiparasitics may cause blindness). Do NOT perform LP if contraindications (signs of increased ICP with mass effect).",
+            "turnaround_time": "MRI brain: 1-4 hours. CT head: <1 hour. Serology (EITB): 3-7 days. Stool exam: 1-2 days."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Taenia solium (pork tapeworm): Cestode (tapeworm). Larval stage (cysticercus) infects CNS. Adult tapeworm lives in human intestine (definitive host). Pigs are intermediate host.",
+            "transmission": "Fecal-oral: Ingestion of T. solium eggs from contaminated food/water (from human carrier with intestinal tapeworm). NOT from eating undercooked pork (that causes intestinal tapeworm, not neurocysticercosis). Autoinfection: Reverse peristalsis in tapeworm carrier (eggs migrate from intestine to stomach, then hatch and disseminate).",
+            "life_cycle": "Human ingests eggs → eggs hatch in intestine → larvae (oncospheres) penetrate intestinal wall → hematogenous dissemination → larvae encyst in CNS (cysticerci) → cysts remain viable for years → cysts degenerate → inflammation → seizures, symptoms.",
+            "cyst_stages": "Vesicular (viable cyst, minimal inflammation), Colloidal (degenerating cyst, inflammation, edema, symptoms), Granular (further degeneration, granuloma), Calcified (dead cyst, calcification, inactive). Symptoms most common during colloidal stage (inflammation).",
+            "endemic_areas": "Latin America (Mexico, Central America, South America), Asia (India, China, Southeast Asia), Africa (sub-Saharan Africa). Rare in developed countries (except immigrants or travelers)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "antiparasitic_therapy": "Albendazole 15mg/kg/day PO (divided BID, max 800mg/day) x 10-14 days + Praziquantel 50mg/kg/day PO (divided TID) x 10-14 days. Combination more effective than monotherapy. Start AFTER ophthalmology exam (rule out ocular cysts).",
+            "adjunctive_corticosteroids": "CRITICAL: Reduces inflammation and edema. Dexamethasone 6-12mg PO/IV daily OR Prednisone 1mg/kg PO daily. Start 1-2 days BEFORE antiparasitics, continue during antiparasitic therapy, taper over 2-4 weeks after completing antiparasitics. Reduces seizures and neurological symptoms.",
+            "antiepileptic_therapy": "Seizures common (70-90%). Start antiepileptics (levetiracetam 500-1,000mg PO BID OR phenytoin 100mg PO TID). Continue for 1-2 years after last seizure. Discontinue if seizure-free and calcifications only (inactive disease).",
+            "indications_for_antiparasitics": "Viable cysts (vesicular or colloidal stage) with symptoms (seizures, headache, focal deficits). NOT indicated for: Calcified cysts only (inactive disease), single enhancing lesion (may resolve spontaneously), ocular cysts (contraindicated, may cause blindness), encephalitic form (massive infection, corticosteroids alone initially).",
+            "ocular_cysts": "Antiparasitics CONTRAINDICATED (may cause inflammation and blindness). Treatment: Surgical removal (vitrectomy). Ophthalmology consultation CRITICAL before starting antiparasitics.",
+            "avoid_list": "Avoid antiparasitics before ophthalmology exam (rule out ocular cysts). Avoid antiparasitics without corticosteroids (increases inflammation and symptoms). Avoid antiparasitics for calcified cysts only (inactive disease, no benefit)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "parenchymal_cysts": "Albendazole 15mg/kg/day PO (divided BID, max 800mg/day) x 10-14 days + Praziquantel 50mg/kg/day PO (divided TID) x 10-14 days + Dexamethasone 6-12mg PO daily (start 1-2 days before antiparasitics, taper over 2-4 weeks after completing antiparasitics). Antiepileptics for seizures.",
+            "single_enhancing_lesion": "May resolve spontaneously (50-70%). Antiparasitics controversial (some experts recommend, others observe). Corticosteroids + antiepileptics recommended. Follow-up MRI at 3-6 months (document resolution).",
+            "intraventricular_cysts": "High risk of hydrocephalus. Treatment: Surgical removal (endoscopic or open) + VP shunt if hydrocephalus. Antiparasitics controversial (may cause inflammation and worsen hydrocephalus). Neurosurgery consultation CRITICAL.",
+            "subarachnoid_cysts": "Racemose form (grape-like clusters). Difficult to treat. Antiparasitics + corticosteroids x 4-8 weeks (longer than parenchymal cysts). May require VP shunt if hydrocephalus. Neurosurgery consultation.",
+            "encephalitic_form": "Massive infection (>100 cysts). High mortality (10-20%). Treatment: Corticosteroids alone initially (dexamethasone 12-24mg PO/IV daily x 4-8 weeks, taper slowly). Delay antiparasitics until inflammation controlled (2-4 weeks). Antiepileptics. ICU monitoring.",
+            "spinal_cysts": "Rare (<5%). Presentation: Myelopathy, radiculopathy. Treatment: Surgical removal + antiparasitics + corticosteroids. Neurosurgery consultation.",
+            "monitoring": "Repeat MRI at 3-6 months: Assess cyst resolution or calcification. Repeat MRI at 1 year: Document inactive disease (calcifications only). Antiepileptics: Continue for 1-2 years after last seizure. Discontinue if seizure-free and calcifications only."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "antiparasitic_therapy": "10-14 days (parenchymal cysts), 4-8 weeks (subarachnoid cysts or encephalitic form)",
+            "corticosteroids": "Start 1-2 days before antiparasitics, continue during antiparasitic therapy, taper over 2-4 weeks after completing antiparasitics. Longer for encephalitic form (4-8 weeks, taper slowly).",
+            "antiepileptic_therapy": "1-2 years after last seizure. Discontinue if seizure-free and calcifications only (inactive disease).",
+            "monitoring": "Repeat MRI at 3-6 months: Assess cyst resolution or calcification. Repeat MRI at 1 year: Document inactive disease (calcifications only). Antiepileptics: Monitor seizure frequency, drug levels.",
+            "stop_criteria": "Completed antiparasitic therapy (10-14 days or 4-8 weeks). Cysts resolved or calcified on repeat MRI. Seizure-free for 1-2 years (consider discontinuing antiepileptics). No complications (hydrocephalus, increased ICP)."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "single_enhancing_lesion": "Most common presentation in endemic areas. May be neurocysticercosis (50-70%) or other causes (tuberculoma, toxoplasmosis, tumor). May resolve spontaneously (50-70%). Antiparasitics controversial (some experts recommend, others observe). Corticosteroids + antiepileptics recommended. Follow-up MRI at 3-6 months (document resolution). If not resolving: Biopsy.",
+            "hydrocephalus_management": "Common complication (10-20%). Causes: Intraventricular cysts (obstructive), subarachnoid inflammation (communicating). Treatment: VP shunt (definitive). Surgical removal of intraventricular cysts if accessible. Antiparasitics controversial (may worsen hydrocephalus).",
+            "ocular_cysts_management": "Antiparasitics CONTRAINDICATED (may cause inflammation and blindness). Treatment: Surgical removal (vitrectomy). Ophthalmology consultation CRITICAL before starting antiparasitics. Ophthalmology exam mandatory for all patients before antiparasitic therapy.",
+            "encephalitic_form_management": "Massive infection (>100 cysts). High mortality (10-20%). Treatment: Corticosteroids alone initially (dexamethasone 12-24mg PO/IV daily x 4-8 weeks, taper slowly). Delay antiparasitics until inflammation controlled (2-4 weeks). Antiepileptics. ICU monitoring. Antiparasitics may worsen inflammation initially (paradoxical reaction).",
+            "pregnancy": "Albendazole teratogenic (avoid in first trimester, category C). Praziquantel safe in pregnancy (category B). Delay antiparasitic therapy until after delivery if possible. Corticosteroids safe in pregnancy. Antiepileptics: Levetiracetam preferred (safer in pregnancy).",
+            "household_screening": "Screen household contacts for intestinal tapeworm (stool exam). Treat with praziquantel 5-10mg/kg PO x1 (prevents transmission). Educate on hygiene and sanitation."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Do NOT use antiparasitics for calcified cysts only (inactive disease, no benefit)",
+              "Do NOT use antiparasitics for single enhancing lesion if resolving spontaneously (follow-up MRI at 3-6 months)",
+              "Discontinue antiepileptics after 1-2 years if seizure-free and calcifications only",
+              "Fixed duration 10-14 days (parenchymal cysts) or 4-8 weeks (subarachnoid/encephalitic)"
+            ],
+            "timeout_checklist": [
+              "Is ophthalmology exam performed? (Rule out ocular cysts before starting antiparasitics)",
+              "Are corticosteroids started? (CRITICAL: Reduces inflammation and symptoms)",
+              "Are antiepileptics started? (Seizures common, 70-90%)",
+              "Is repeat MRI performed? (At 3-6 months, assess cyst resolution or calcification)",
+              "Can I stop antiparasitics? (If 10-14 days completed)",
+              "Can I stop antiepileptics? (If seizure-free for 1-2 years and calcifications only)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use antiparasitics before ophthalmology exam (rule out ocular cysts). Do NOT use antiparasitics without corticosteroids (increases inflammation). Do NOT use antiparasitics for calcified cysts only (inactive disease, no benefit). Do NOT use antiparasitics for ocular cysts (contraindicated, may cause blindness).",
+            "patient_education": "Neurocysticercosis is parasitic infection requiring antiparasitics (10-14 days) + corticosteroids + antiepileptics. Complete full course. Ophthalmology exam required before starting antiparasitics (rule out eye cysts). Watch for worsening symptoms during treatment (inflammation, paradoxical reaction). Follow-up MRI at 3-6 months (document resolution). Antiepileptics for 1-2 years. Screen household contacts for tapeworm. Hygiene and sanitation education."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "AAN Neurocysticercosis Guidelines (2013)",
+              "url": "https://n.neurology.org/content/80/15/1424"
+            },
+            {
+              "label": "WHO Neurocysticercosis Guidelines (2021)",
+              "url": "https://www.who.int/publications/i/item/9789240027183"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
+

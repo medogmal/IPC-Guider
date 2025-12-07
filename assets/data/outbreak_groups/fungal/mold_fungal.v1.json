@@ -1,0 +1,614 @@
+{
+  "version": 1,
+  "groupId": "mold_fungal",
+  "groupName": "Mold Outbreak Pathogens",
+  "type": "fungal",
+  "updatedAt": "2025-01-14T00:00:00Z",
+  "pathogens": [
+    {
+      "id": "aspergillus",
+      "name": "Aspergillus spp. (especially A. fumigatus)",
+      "scientificName": "Aspergillus species, phylum Ascomycota, class Eurotiomycetes. Most common: A. fumigatus, A. flavus, A. niger, A. terreus",
+      "definition": "Ubiquitous environmental filamentous mold (fungus) causing invasive aspergillosis, the most common invasive mold infection in immunocompromised patients. A. fumigatus accounts for 90% of invasive infections. Produces airborne spores (conidia) that are inhaled. Can cause allergic reactions (allergic bronchopulmonary aspergillosis), chronic pulmonary aspergillosis, or life-threatening invasive disease. Healthcare-associated outbreaks linked to hospital construction, renovation, contaminated air systems, and water. Mortality rate 30-90% for invasive aspergillosis depending on host factors.",
+      "reservoir": {
+        "primary": [
+          "Soil",
+          "Decaying vegetation and organic matter",
+          "Dust",
+          "Hospital construction and renovation sites"
+        ],
+        "secondary": [
+          "Hospital air handling systems",
+          "Water systems",
+          "Contaminated medical equipment"
+        ],
+        "notes": "Aspergillus is ubiquitous in environment. Spores are constantly present in outdoor and indoor air. Hospital construction, renovation, and demolition activities generate high spore concentrations. Contaminated air handling systems (HVAC) and water systems can disseminate spores throughout healthcare facilities."
+      },
+      "transmission": {
+        "mode": "Airborne transmission via inhalation of spores",
+        "routes": [
+          "Inhalation of airborne spores (conidia) - primary route",
+          "Hospital construction, renovation, demolition activities - generate high spore concentrations",
+          "Contaminated air handling systems (HVAC) - disseminate spores",
+          "Contaminated water systems",
+          "Rarely: direct inoculation through traumatic injury or contaminated medical devices"
+        ],
+        "notes": "Aspergillus spores are 2-3 micrometers in diameter and easily inhaled into alveoli. Construction activities can increase airborne spore counts 10-100 fold. Immunocompromised patients are highly susceptible even to low spore concentrations. No person-to-person transmission."
+      },
+      "incubationPeriod": {
+        "range": "Days to weeks from exposure to symptom onset. Variable incubation period depending on immune status and spore burden",
+        "infectiousPeriod": "Not transmissible person-to-person. Environmental source remains infectious as long as spores are present",
+        "seasonality": "Year-round; outbreaks often associated with construction activities (any season)",
+        "geographic": "Worldwide distribution"
+      },
+      "riskFactors": [
+        "Hematologic malignancy (acute leukemia, lymphoma) - highest risk",
+        "Hematopoietic stem cell transplant (HSCT) recipients",
+        "Solid organ transplant recipients",
+        "Prolonged neutropenia (<500 neutrophils/μL for >10 days)",
+        "High-dose corticosteroid therapy",
+        "Advanced HIV/AIDS",
+        "Chronic granulomatous disease",
+        "Prolonged ICU stay with mechanical ventilation",
+        "Severe burns",
+        "Chronic obstructive pulmonary disease (COPD) - for chronic pulmonary aspergillosis",
+        "Proximity to hospital construction or renovation"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Invasive pulmonary aspergillosis (IPA) - most common: fever unresponsive to antibiotics, cough, chest pain, hemoptysis, dyspnea. Nodular lung infiltrates on imaging",
+          "Tracheobronchitis: cough, dyspnea, wheezing in mechanically ventilated patients",
+          "Invasive sinusitis: fever, facial pain, nasal discharge, nasal ulceration, black necrotic lesions",
+          "Disseminated aspergillosis: CNS involvement (brain abscess, meningitis), skin lesions, endocarditis, osteomyelitis",
+          "Allergic bronchopulmonary aspergillosis (ABPA): wheezing, cough, eosinophilia in asthma/cystic fibrosis patients",
+          "Chronic pulmonary aspergillosis: chronic cough, weight loss, fatigue, cavitary lung lesions"
+        ],
+        "complications": [
+          "Angioinvasion: Aspergillus invades blood vessels causing thrombosis, infarction, hemorrhage",
+          "Hemoptysis (massive bleeding)",
+          "Respiratory failure",
+          "CNS dissemination: brain abscess, stroke",
+          "Death (mortality rate 30-90% for invasive aspergillosis depending on immune status and treatment timing)"
+        ],
+        "caseDefinition": {
+          "suspected": "Immunocompromised patient with fever unresponsive to antibiotics + pulmonary infiltrates + risk factors (neutropenia, transplant, construction exposure)",
+          "probable": "Host factors + clinical/radiological criteria (nodular infiltrates, halo sign, air-crescent sign) + mycological evidence (galactomannan antigen positive, PCR positive)",
+          "proven": "Histopathological or culture evidence of Aspergillus from sterile site (lung biopsy, BAL)"
+        }
+      },
+      "diagnosis": [
+        "Culture of respiratory specimens: sputum, bronchoalveolar lavage (BAL), lung biopsy - gold standard but low sensitivity",
+        "Galactomannan antigen: serum or BAL fluid - useful screening test (sensitivity 70-80% for invasive aspergillosis)",
+        "Beta-D-glucan: serum biomarker (not specific for Aspergillus)",
+        "PCR: blood or BAL - increasing use, high sensitivity",
+        "Histopathology: lung biopsy showing septate hyphae with acute angle branching (45 degrees) - definitive diagnosis",
+        "Imaging: chest CT showing nodular infiltrates, halo sign (ground-glass opacity around nodule), air-crescent sign (late finding)",
+        "Antifungal susceptibility testing: important for A. terreus (amphotericin B resistant) and azole-resistant strains"
+      ],
+      "treatment": "Voriconazole - first-line treatment for invasive aspergillosis (oral or IV). Isavuconazole - alternative first-line agent. Liposomal amphotericin B - alternative for azole-resistant or intolerant patients. Posaconazole - salvage therapy. Combination therapy (voriconazole + echinocandin) for severe cases. Surgery: resection of localized lesions, debridement of necrotic tissue. Treatment duration: minimum 6-12 weeks, often longer. Immune reconstitution: reduce immunosuppression if possible, G-CSF for neutropenia.",
+      "infectionControl": {
+        "precautions": "Standard Precautions (no person-to-person transmission). Airborne Precautions for protective environment (not isolation of patient, but protection from environmental spores)",
+        "screening": "Environmental air sampling during construction, routine surveillance of high-risk units",
+        "cohorting": "Not necessary (no person-to-person transmission)",
+        "sourceControl": "Control environmental sources: construction barriers, HEPA filtration, air quality monitoring",
+        "environmental": "HEPA filtration: positive pressure rooms with HEPA filters for high-risk patients (HSCT, leukemia). Construction barriers: seal construction areas, negative pressure in construction zones, HEPA-filtered exhaust. Air quality monitoring: measure airborne spore counts during construction. Water system maintenance: prevent Aspergillus growth in water systems. Environmental cleaning: HEPA-filtered vacuums, wet mopping to minimize dust",
+        "staffEducation": "Educate staff on construction-related risks, proper use of protective environment, recognition of invasive aspergillosis, environmental control measures"
+      },
+      "outbreakTriggers": [
+        "≥2 linked invasive aspergillosis cases in high-risk units (HSCT, hematology, ICU) over short time period (weeks to months)",
+        "Increased incidence of invasive aspergillosis above baseline rate",
+        "Sporadic cases with radiological or epidemiological link to construction activity",
+        "Environmental sampling showing elevated Aspergillus spore counts"
+      ],
+      "reportingCommunication": [
+        "Immediate notification to infection prevention and control team",
+        "Notify hospital administration and facilities management",
+        "Initiate outbreak investigation: case finding, environmental assessment, air sampling, review of construction activities",
+        "Implement outbreak control measures: enhance HEPA filtration, seal construction areas, restrict patient movement, consider prophylaxis for high-risk patients",
+        "Molecular typing: compare patient isolates and environmental isolates to confirm outbreak",
+        "Communication with staff, patients, families regarding construction risks and protective measures",
+        "Notify public health authorities if outbreak"
+      ],
+      "prevention": [
+        "Air quality monitoring: routine monitoring of airborne spore counts in high-risk units, intensive monitoring during construction",
+        "Construction control: infection control risk assessment (ICRA) before construction, seal construction areas with barriers, negative pressure in construction zones, HEPA-filtered exhaust, wet methods to minimize dust, restrict patient access to construction areas",
+        "HEPA filtration: positive pressure rooms with HEPA filters for high-risk patients (HSCT, acute leukemia), >12 air changes per hour",
+        "Protective environment: single rooms with positive pressure, HEPA filtration, sealed windows, anteroom, restricted visitors",
+        "Antifungal prophylaxis: posaconazole or voriconazole for high-risk patients (HSCT, acute leukemia during neutropenia)",
+        "Environmental cleaning: HEPA-filtered vacuums, wet mopping, minimize dust generation",
+        "Water system maintenance: prevent Aspergillus growth in water systems, regular maintenance",
+        "Staff and patient education: avoid construction areas, report symptoms early, proper use of protective environment",
+        "Surveillance: monitor invasive aspergillosis rates, investigate clusters"
+      ],
+      "references": [
+        {
+          "label": "CDC - Aspergillosis",
+          "url": "https://www.cdc.gov/fungal/diseases/aspergillosis/index.html"
+        },
+        {
+          "label": "WHO - Fungal Priority Pathogens List",
+          "url": "https://www.who.int/publications/i/item/9789240060241"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "mucorales",
+      "name": "Mucorales (Mucormycosis)",
+      "scientificName": "Order Mucorales, phylum Mucoromycota. Common genera: Rhizopus, Mucor, Rhizomucor, Lichtheimia (formerly Absidia), Cunninghamella",
+      "definition": "Filamentous molds causing mucormycosis (formerly zygomycosis), a rare but aggressive angioinvasive fungal infection with high mortality (40-80%). Characterized by rapid progression, tissue necrosis, and vascular invasion. Affects immunocompromised patients, diabetics (especially diabetic ketoacidosis), and trauma victims. Clinical forms: rhinocerebral, pulmonary, cutaneous, gastrointestinal, disseminated. Healthcare-associated outbreaks linked to contaminated hospital environment, construction, contaminated medical supplies (bandages, tongue depressors).",
+      "reservoir": {
+        "primary": [
+          "Decaying organic matter (compost, soil, rotting wood)",
+          "Hospital dust and construction debris",
+          "Contaminated water"
+        ],
+        "secondary": [
+          "Contaminated medical supplies (bandages, tongue depressors, adhesive tape)",
+          "Hospital air handling systems"
+        ],
+        "notes": "Mucorales are ubiquitous environmental molds found in soil and decaying vegetation. Spores are larger (3-11 micrometers) than Aspergillus. Hospital construction and water damage can increase environmental spore burden. Outbreaks linked to contaminated medical supplies and linen."
+      },
+      "transmission": {
+        "mode": "Airborne spores inhaled, wound contamination, rarely ingestion",
+        "routes": [
+          "Inhalation of airborne spores - primary route for rhinocerebral and pulmonary mucormycosis",
+          "Direct inoculation: traumatic injury, contaminated wound dressings, contaminated medical supplies",
+          "Ingestion: contaminated food (rare)",
+          "Hospital construction and renovation - generate high spore concentrations",
+          "Water damage and flooding - promote mold growth"
+        ],
+        "notes": "Mucorales spores are larger than Aspergillus and less easily inhaled into deep lung. Direct inoculation through breaks in skin is important route. No person-to-person transmission. Rapid progression once infection established due to angioinvasion."
+      },
+      "incubationPeriod": {
+        "range": "Days from exposure to symptom onset. Rapid progression once infected (hours to days)",
+        "infectiousPeriod": "Not transmissible person-to-person. Environmental source remains infectious",
+        "seasonality": "Year-round; outbreaks associated with construction, water damage, natural disasters (tornadoes, floods)",
+        "geographic": "Worldwide distribution"
+      },
+      "riskFactors": [
+        "Diabetes mellitus, especially diabetic ketoacidosis (DKA) - major risk factor for rhinocerebral mucormycosis",
+        "Hematologic malignancy and hematopoietic stem cell transplant",
+        "Prolonged neutropenia",
+        "High-dose corticosteroid therapy",
+        "Solid organ transplant recipients",
+        "Iron overload (deferoxamine therapy, hemochromatosis)",
+        "Trauma, burns, surgical wounds",
+        "Malnutrition",
+        "COVID-19 (especially with corticosteroid use) - recent association",
+        "Proximity to hospital construction or water damage"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Rhinocerebral mucormycosis (most common in diabetics): facial pain, headache, fever, nasal congestion, black necrotic lesions on nasal mucosa or palate, proptosis (eye bulging), vision loss, altered mental status (CNS extension)",
+          "Pulmonary mucormycosis: fever, cough, chest pain, hemoptysis, dyspnea. Rapidly progressive pneumonia",
+          "Cutaneous mucormycosis: painful erythematous or necrotic skin lesions, black eschar, cellulitis",
+          "Gastrointestinal mucormycosis (rare): abdominal pain, nausea, vomiting, GI bleeding, bowel perforation",
+          "Disseminated mucormycosis: multi-organ involvement, septic shock"
+        ],
+        "complications": [
+          "Angioinvasion: Mucorales invade blood vessels causing thrombosis, tissue infarction, necrosis",
+          "Rhinocerebral extension: invasion into brain, cavernous sinus thrombosis, stroke",
+          "Massive hemoptysis",
+          "Bowel perforation and peritonitis",
+          "Death (mortality rate 40-80% depending on site and immune status; >90% for disseminated disease)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with risk factors (diabetes/DKA, neutropenia, immunosuppression) + rapidly progressive sinusitis with black necrotic lesions, OR rapidly progressive pneumonia, OR necrotizing skin infection",
+          "proven": "Histopathology showing broad, ribbon-like, non-septate hyphae with right-angle (90 degree) branching + tissue invasion, OR culture of Mucorales from sterile site"
+        }
+      },
+      "diagnosis": [
+        "Histopathology: tissue biopsy showing broad (6-25 micrometers), ribbon-like, non-septate (or sparsely septate) hyphae with right-angle (90 degree) branching and angioinvasion - gold standard",
+        "Culture: tissue biopsy or surgical specimen - Mucorales grow rapidly on fungal media but are often not recovered from blood or respiratory specimens",
+        "PCR: tissue or serum - increasing use but not widely available",
+        "Imaging: CT or MRI showing sinusitis with bone erosion (rhinocerebral), nodular infiltrates or cavitation (pulmonary), soft tissue necrosis (cutaneous)",
+        "Direct microscopy: KOH preparation of tissue showing characteristic hyphae",
+        "Note: Galactomannan and beta-D-glucan are NEGATIVE in mucormycosis (important difference from aspergillosis)"
+      ],
+      "treatment": "Liposomal amphotericin B - first-line treatment (high-dose: 5-10 mg/kg/day). Posaconazole or isavuconazole - alternative or step-down therapy after initial amphotericin B. Surgery essential: aggressive surgical debridement of necrotic tissue (often multiple surgeries required). Control underlying condition: correct DKA, reduce immunosuppression if possible, discontinue deferoxamine. Hyperbaric oxygen - adjunctive therapy (limited evidence). Treatment duration: weeks to months until infection resolved and immune reconstitution. Early diagnosis and treatment critical - delay increases mortality.",
+      "infectionControl": {
+        "precautions": "Standard Precautions (no person-to-person transmission). Airborne Precautions for protective environment during construction",
+        "screening": "Environmental surveillance during construction, water damage events",
+        "cohorting": "Not necessary (no person-to-person transmission)",
+        "sourceControl": "Control environmental sources: construction barriers, repair water damage, remove contaminated materials",
+        "environmental": "Airborne isolation for high-risk patients during construction. Control dust and water contamination: seal construction areas, negative pressure in construction zones, repair water leaks promptly, remove water-damaged materials, HEPA filtration. Inspect and discard contaminated medical supplies (bandages, tongue depressors, linen). Environmental cleaning: HEPA-filtered vacuums, wet methods",
+        "staffEducation": "Early recognition of mucormycosis (black necrotic lesions, rapidly progressive infection), construction-related risks, proper wound care, environmental control"
+      },
+      "outbreakTriggers": [
+        "Multiple invasive mucormycosis cases in same unit or facility within short time period",
+        "Construction-related clusters",
+        "Cases linked to contaminated medical supplies or water damage"
+      ],
+      "reportingCommunication": [
+        "Immediate notification to infection prevention and control team",
+        "Notify hospital administration and facilities management",
+        "Implement emergency outbreak control measures: environmental assessment, air and surface sampling, review of construction activities, inspection of medical supplies",
+        "Molecular typing: compare patient isolates and environmental isolates",
+        "Implement control measures: seal construction areas, enhance HEPA filtration, remove contaminated supplies, repair water damage",
+        "Communication with staff, patients, families",
+        "Notify public health authorities"
+      ],
+      "prevention": [
+        "Diabetes control: aggressive management of hyperglycemia, prevent DKA",
+        "Environmental control: construction barriers and ICRA, prompt repair of water damage, remove water-damaged materials, HEPA filtration for high-risk patients",
+        "Dust and water contamination control: seal construction areas, negative pressure in construction zones, repair leaks promptly",
+        "Medical supply quality control: inspect supplies for contamination, proper storage",
+        "Protective environment: HEPA-filtered rooms for high-risk patients during construction",
+        "Wound care: proper wound cleaning and dressing, avoid contaminated supplies",
+        "Staff awareness: recognize early signs of mucormycosis (black necrotic lesions, rapidly progressive infection), high index of suspicion in diabetics and immunocompromised",
+        "Surveillance: monitor mucormycosis cases, investigate clusters"
+      ],
+      "references": [
+        {
+          "label": "CDC - Mucormycosis",
+          "url": "https://www.cdc.gov/fungal/diseases/mucormycosis/index.html"
+        },
+        {
+          "label": "WHO - Fungal Priority Pathogens List",
+          "url": "https://www.who.int/publications/i/item/9789240060241"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "fusarium",
+      "name": "Fusarium spp.",
+      "scientificName": "Fusarium species, phylum Ascomycota. Common species: F. solani, F. oxysporum, F. verticillioides, F. proliferatum",
+      "definition": "Environmental filamentous mold causing localized infections (keratitis, onychomycosis, skin infections) and disseminated infections in severely immunocompromised patients. Second most common invasive mold infection after Aspergillus in hematology patients. Unique among molds in ability to cause fungemia (positive blood cultures). Often resistant to multiple antifungals. Healthcare-associated outbreaks linked to contaminated water systems, medical devices, and hospital environment.",
+      "reservoir": {
+        "primary": [
+          "Soil",
+          "Plants and plant debris",
+          "Water (including hospital water systems)",
+          "Hospital environment"
+        ],
+        "secondary": [
+          "Contaminated medical devices",
+          "Contact lens solutions",
+          "Contaminated hospital linens"
+        ],
+        "notes": "Fusarium is ubiquitous in environment, especially soil and water. Can colonize hospital water systems (pipes, faucets, showers). Outbreaks linked to contaminated water, medical devices, and construction."
+      },
+      "transmission": {
+        "mode": "Airborne spores inhaled, traumatic inoculation, water exposure",
+        "routes": [
+          "Inhalation of airborne spores - pulmonary infections",
+          "Traumatic inoculation: penetrating injury, contaminated contact lenses (keratitis), contaminated medical devices",
+          "Water exposure: contaminated hospital water systems, showers, faucets",
+          "Direct contact with contaminated surfaces or materials",
+          "Rarely: ingestion"
+        ],
+        "notes": "Fusarium can cause both localized infections (keratitis, skin) in immunocompetent hosts and disseminated infections in immunocompromised. Water systems are important reservoir in healthcare. No person-to-person transmission."
+      },
+      "incubationPeriod": {
+        "range": "Days to weeks from exposure to symptom onset. Rapid disease progression in immunosuppressed patients",
+        "infectiousPeriod": "Not transmissible person-to-person. Environmental source remains infectious",
+        "seasonality": "Year-round; outbreaks associated with water system contamination or construction",
+        "geographic": "Worldwide distribution"
+      },
+      "riskFactors": [
+        "Prolonged neutropenia (<100 neutrophils/μL) - highest risk for disseminated infection",
+        "Hematologic malignancy (acute leukemia, lymphoma)",
+        "Hematopoietic stem cell transplant recipients",
+        "Burns (extensive burns at high risk)",
+        "Trauma with soil or plant contamination",
+        "Contact lens wear (for keratitis)",
+        "Corticosteroid therapy",
+        "Solid organ transplant recipients",
+        "Exposure to contaminated water systems"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Keratitis (eye infection): eye pain, redness, photophobia, vision loss - most common in contact lens wearers",
+          "Skin lesions: painful erythematous or necrotic papules, nodules, or ulcers - characteristic in disseminated fusariosis",
+          "Fungemia: positive blood cultures (unique among molds), fever, sepsis",
+          "Pulmonary infection: fever, cough, chest pain, dyspnea, nodular infiltrates",
+          "Sinusitis: facial pain, nasal discharge, fever",
+          "Disseminated fusariosis: skin lesions + fungemia + pulmonary or sinus involvement, multi-organ failure"
+        ],
+        "complications": [
+          "Disseminated infection in neutropenic patients (high mortality 50-80%)",
+          "Endophthalmitis and vision loss",
+          "Septic shock",
+          "Multi-organ failure",
+          "Death (mortality rate 50-80% for disseminated fusariosis)"
+        ],
+        "caseDefinition": {
+          "suspected": "Immunocompromised patient with skin lesions + fever, OR keratitis in contact lens wearer, OR positive blood culture for mold",
+          "proven": "Culture or histopathology showing Fusarium from clinical specimen (blood, tissue, corneal scraping)"
+        }
+      },
+      "diagnosis": [
+        "Culture: Fusarium grows readily on fungal media from blood, tissue, corneal scrapings - positive blood cultures in 40-60% of disseminated cases (unique among molds)",
+        "Histopathology: tissue biopsy showing septate hyphae with acute angle branching (similar to Aspergillus but cannot distinguish morphologically)",
+        "Molecular identification: PCR, DNA sequencing - required for species identification",
+        "Corneal scraping: for keratitis - KOH preparation and culture",
+        "Imaging: chest CT showing nodular infiltrates, cavitation",
+        "Antifungal susceptibility testing: often resistant to multiple antifungals"
+      ],
+      "treatment": "Amphotericin B (liposomal or lipid complex) - first-line treatment. Voriconazole - alternative or combination therapy. Posaconazole - salvage therapy. Combination therapy (amphotericin B + voriconazole) for severe infections. Surgery: debridement of necrotic tissue, removal of infected devices. Immune reconstitution: reduce immunosuppression if possible, G-CSF for neutropenia (critical for survival). Treatment duration: prolonged (weeks to months) until immune recovery. Note: Fusarium often resistant to multiple antifungals; treatment guided by susceptibility testing. Keratitis: topical antifungals (natamycin, voriconazole), sometimes surgical debridement or keratoplasty.",
+      "infectionControl": {
+        "precautions": "Contact Precautions for skin lesions. Airborne Precautions for protective environment. Standard Precautions otherwise",
+        "screening": "Environmental surveillance: water system testing, air sampling during construction",
+        "cohorting": "Not necessary (no person-to-person transmission)",
+        "sourceControl": "Control environmental sources: water system maintenance, construction barriers",
+        "environmental": "Water system control: regular maintenance and disinfection of hospital water systems, point-of-use filters for high-risk patients, avoid water exposure for neutropenic patients. Construction control: barriers, HEPA filtration, air quality monitoring. Environmental cleaning: HEPA-filtered vacuums, wet methods. Inspect and maintain medical devices",
+        "staffEducation": "Recognition of fusariosis (skin lesions, positive blood cultures for mold), water system risks, proper contact lens hygiene, environmental control"
+      },
+      "outbreakTriggers": [
+        "≥2 healthcare-associated respiratory or cutaneous Fusarium infections within defined time period",
+        "Cluster of keratitis cases",
+        "Cases linked to water system contamination or construction"
+      ],
+      "reportingCommunication": [
+        "Notify infection prevention and control team",
+        "Implement outbreak investigation: case finding, environmental assessment, water system testing, review of medical device use",
+        "Molecular typing: compare patient isolates and environmental isolates",
+        "Implement control measures: water system disinfection, point-of-use filters, construction barriers, device inspection",
+        "Communication with staff, patients, families",
+        "Notify public health authorities if outbreak"
+      ],
+      "prevention": [
+        "Water system maintenance: regular disinfection, prevent stagnation, point-of-use filters for high-risk patients (HSCT, neutropenia)",
+        "Avoid water exposure for neutropenic patients: no showers, use sterile water for oral care",
+        "Construction control: barriers, HEPA filtration, air quality monitoring",
+        "Medical device quality control: proper sterilization, inspect for contamination",
+        "Contact lens hygiene: proper cleaning and disinfection, avoid tap water exposure, replace as recommended",
+        "Environmental cleaning: routine cleaning, HEPA-filtered vacuums",
+        "Surveillance: monitor Fusarium infections, investigate clusters, water system testing",
+        "Staff education: recognition of fusariosis, water system risks, contact lens safety"
+      ],
+      "references": [
+        {
+          "label": "CDC - Fusarium",
+          "url": "https://www.cdc.gov/fungal/diseases/fusariosis/index.html"
+        },
+        {
+          "label": "WHO - Fungal Priority Pathogens List",
+          "url": "https://www.who.int/publications/i/item/9789240060241"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "scedosporium",
+      "name": "Scedosporium spp.",
+      "scientificName": "Scedosporium species, phylum Ascomycota. Main species: S. apiospermum (teleomorph: Pseudallescheria boydii), S. aurantiacum, S. boydii, Lomentospora prolificans (formerly S. prolificans)",
+      "definition": "Opportunistic filamentous mold causing invasive infections in immunocompromised patients and localized infections after trauma or near-drowning. Second or third most common invasive mold after Aspergillus and Fusarium in some centers. Often resistant to multiple antifungals, especially Lomentospora prolificans (pan-resistant). Clinical manifestations: pneumonia, sinusitis, brain abscess, disseminated infection, skin/soft tissue infections. Healthcare-associated outbreaks linked to contaminated hospital water systems and plumbing.",
+      "reservoir": {
+        "primary": [
+          "Soil",
+          "Stagnant water, sewage, polluted water",
+          "Hospital plumbing and water systems"
+        ],
+        "secondary": [
+          "Decaying vegetation",
+          "Manure"
+        ],
+        "notes": "Scedosporium has affinity for water and is commonly found in polluted water, sewage, and stagnant water. Can colonize hospital water systems (pipes, drains, showers). Near-drowning in contaminated water is risk factor. Outbreaks linked to hospital water systems."
+      },
+      "transmission": {
+        "mode": "Airborne spores inhaled, traumatic inoculation, water exposure",
+        "routes": [
+          "Inhalation of airborne spores - pulmonary and sinus infections",
+          "Traumatic inoculation: penetrating injury, near-drowning in contaminated water",
+          "Water exposure: contaminated hospital water systems, showers",
+          "Rarely: dissemination from colonized respiratory tract in cystic fibrosis patients"
+        ],
+        "notes": "Near-drowning in contaminated water is classic risk factor. Hospital water systems are important reservoir. No person-to-person transmission."
+      },
+      "incubationPeriod": {
+        "range": "Variable; days to weeks from exposure to symptom onset. Rapid progression in immunocompromised patients",
+        "infectiousPeriod": "Not transmissible person-to-person. Environmental source remains infectious",
+        "seasonality": "Year-round; outbreaks associated with water system contamination",
+        "geographic": "Worldwide distribution; more common in temperate climates"
+      },
+      "riskFactors": [
+        "Immunosuppression: hematologic malignancy, transplant recipients, corticosteroids",
+        "Cystic fibrosis (chronic colonization and infection)",
+        "Near-drowning (especially in contaminated water)",
+        "Trauma with soil or water contamination",
+        "Prolonged neutropenia",
+        "Solid organ transplant (especially lung transplant)",
+        "Chronic granulomatous disease",
+        "Exposure to contaminated hospital water systems"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Pulmonary infection: fever, cough, chest pain, dyspnea, nodular infiltrates or cavitation",
+          "Sinusitis: facial pain, nasal discharge, fever, headache",
+          "Brain abscess: headache, focal neurological deficits, seizures, altered mental status - characteristic complication",
+          "Skin and soft tissue infections: cellulitis, abscess, necrotizing fasciitis after trauma or near-drowning",
+          "Disseminated infection: multi-organ involvement, fungemia (rare)",
+          "Chronic colonization in cystic fibrosis: chronic cough, declining lung function"
+        ],
+        "complications": [
+          "CNS dissemination: brain abscess (common complication, even in absence of obvious CNS symptoms)",
+          "Endocarditis",
+          "Osteomyelitis and arthritis",
+          "Death (mortality rate 50-80% for invasive infections; >90% for Lomentospora prolificans due to pan-resistance)"
+        ],
+        "caseDefinition": {
+          "suspected": "Immunocompromised patient with invasive mold infection, OR near-drowning victim with pneumonia or skin infection, OR cystic fibrosis patient with chronic respiratory colonization",
+          "proven": "Culture or histopathology showing Scedosporium from clinical specimen (tissue, respiratory, blood)"
+        }
+      },
+      "diagnosis": [
+        "Culture: Scedosporium grows on fungal media; species identification by morphology or molecular methods",
+        "Histopathology: tissue biopsy showing septate hyphae with acute angle branching (morphologically similar to Aspergillus - cannot distinguish)",
+        "Molecular identification: PCR, DNA sequencing - required for species identification (important for treatment - L. prolificans is pan-resistant)",
+        "Imaging: chest CT showing nodular infiltrates or cavitation; brain MRI showing abscess",
+        "Antifungal susceptibility testing: essential due to variable resistance patterns",
+        "Galactomannan: may be positive (cross-reacts with Scedosporium)"
+      ],
+      "treatment": "Voriconazole - first-line treatment for S. apiospermum and S. aurantiacum. Posaconazole - alternative. Combination therapy (voriconazole + terbinafine or voriconazole + micafungin) for severe infections. Lomentospora prolificans: pan-resistant to most antifungals; combination therapy with multiple agents (voriconazole + terbinafine + micafungin) with limited success. Surgery: debridement of necrotic tissue, drainage of abscesses (especially brain abscess). Immune reconstitution: reduce immunosuppression if possible. Treatment duration: prolonged (months) until immune recovery. Note: Scedosporium is resistant to amphotericin B (important difference from Aspergillus).",
+      "infectionControl": {
+        "precautions": "Standard Precautions (no person-to-person transmission). Airborne Precautions for protective environment",
+        "screening": "Environmental surveillance: water system testing in high-risk units",
+        "cohorting": "Not necessary (no person-to-person transmission)",
+        "sourceControl": "Control environmental sources: water system maintenance, construction barriers",
+        "environmental": "Water system control: regular maintenance and disinfection, point-of-use filters for high-risk patients, avoid water exposure for immunocompromised. Construction control: barriers, HEPA filtration. Environmental cleaning: routine cleaning, HEPA-filtered vacuums. Strict environmental controls in ICU and transplant units",
+        "staffEducation": "Recognition of Scedosporium infections (brain abscess, near-drowning association), water system risks, antifungal resistance patterns, environmental control"
+      },
+      "outbreakTriggers": [
+        "Occurrence of ≥2 linked Scedosporium infections in same unit or facility within defined time period",
+        "Cases in ICU or transplant unit",
+        "Cases linked to water system contamination"
+      ],
+      "reportingCommunication": [
+        "Immediate notification to infection prevention and control team",
+        "Implement outbreak investigation: case finding, environmental assessment, water system testing",
+        "Molecular typing: compare patient isolates and environmental isolates",
+        "Implement control measures: water system disinfection, point-of-use filters, construction barriers",
+        "Enhanced environmental surveillance",
+        "Communication with staff, patients, families",
+        "Notify public health authorities if outbreak"
+      ],
+      "prevention": [
+        "Water system maintenance: regular disinfection, prevent stagnation, point-of-use filters for high-risk patients",
+        "Avoid water exposure for immunocompromised patients: no showers, use sterile water",
+        "Construction control: barriers, HEPA filtration, air quality monitoring",
+        "Environmental cleaning: routine cleaning, HEPA-filtered vacuums",
+        "Staff education: recognition of Scedosporium (brain abscess, near-drowning), water system risks, resistance patterns",
+        "Surveillance: monitor Scedosporium infections, investigate clusters, water system testing",
+        "Environmental maintenance: proper drainage, prevent water stagnation"
+      ],
+      "references": [
+        {
+          "label": "CDC - Scedosporium",
+          "url": "https://www.cdc.gov/fungal/diseases/other-fungal-diseases.html"
+        },
+        {
+          "label": "WHO - Fungal Priority Pathogens List",
+          "url": "https://www.who.int/publications/i/item/9789240060241"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    },
+    {
+      "id": "exserohilum",
+      "name": "Exserohilum rostratum",
+      "scientificName": "Exserohilum rostratum, phylum Ascomycota, class Dothideomycetes",
+      "definition": "Environmental dematiaceous (darkly pigmented) mold causing rare opportunistic infections. Gained prominence in 2012 multistate outbreak in USA linked to contaminated methylprednisolone acetate injections (fungal meningitis outbreak - 753 cases, 64 deaths). Causes meningitis, epidural abscess, arachnoiditis, stroke, and localized infections. Infections typically follow traumatic inoculation or contaminated medical products. Difficult to treat due to antifungal resistance and CNS penetration challenges.",
+      "reservoir": {
+        "primary": [
+          "Soil",
+          "Plants and grasses",
+          "Environmental contaminant"
+        ],
+        "secondary": [
+          "Contaminated medical products (compounded medications, injections)"
+        ],
+        "notes": "Exserohilum is environmental mold found in soil and plants. Not typically found in healthcare environment. Healthcare-associated infections result from contaminated compounded medications or medical products. 2012 outbreak traced to contaminated methylprednisolone injections from compounding pharmacy."
+      },
+      "transmission": {
+        "mode": "Contaminated medical products (injections), traumatic inoculation",
+        "routes": [
+          "Contaminated injectable medications: epidural steroid injections, intra-articular injections (2012 outbreak)",
+          "Traumatic inoculation: penetrating injury with soil or plant material",
+          "Rarely: inhalation (sinusitis, pneumonia)"
+        ],
+        "notes": "Healthcare-associated infections result from contaminated compounded medications. 2012 multistate outbreak involved contaminated methylprednisolone acetate for epidural injection. No person-to-person transmission."
+      },
+      "incubationPeriod": {
+        "range": "Days to weeks from injection or inoculation to symptom onset. In 2012 outbreak: median 18 days (range 4-82 days) from injection to symptom onset",
+        "infectiousPeriod": "Not transmissible person-to-person",
+        "seasonality": "No seasonal pattern; outbreaks related to contaminated medical products",
+        "geographic": "Worldwide distribution; 2012 outbreak in USA"
+      },
+      "riskFactors": [
+        "Receipt of contaminated injectable medications (epidural steroid injections, intra-articular injections)",
+        "Immunosuppression (increases severity)",
+        "Traumatic injury with soil or plant contamination"
+      ],
+      "clinicalFeatures": {
+        "symptoms": [
+          "Fungal meningitis (from contaminated epidural injections): headache, fever, neck stiffness, photophobia, nausea, vomiting, altered mental status. Onset days to weeks after injection",
+          "Arachnoiditis: severe back pain, radicular pain, neurological deficits",
+          "Epidural abscess: back pain, fever, neurological deficits, paralysis",
+          "Stroke: focal neurological deficits, altered mental status (due to vasculitis)",
+          "Localized infections: skin abscess, soft tissue infection, osteomyelitis at injection site",
+          "Peripheral joint infections: arthritis after intra-articular injection",
+          "Rarely: sinusitis, pneumonia"
+        ],
+        "complications": [
+          "Stroke and permanent neurological deficits",
+          "Arachnoiditis with chronic pain",
+          "Paralysis",
+          "Hydrocephalus",
+          "Death (mortality rate ~8% in 2012 outbreak; higher in immunocompromised)"
+        ],
+        "caseDefinition": {
+          "suspected": "Patient with meningitis, epidural abscess, or localized infection + history of epidural or intra-articular injection within preceding 3 months",
+          "confirmed": "Clinical infection + laboratory identification of Exserohilum from CSF, tissue, or other clinical specimen"
+        }
+      },
+      "diagnosis": [
+        "CSF analysis: pleocytosis (lymphocytic or eosinophilic), elevated protein, low glucose, positive fungal culture or PCR",
+        "Culture: CSF, tissue, abscess fluid - Exserohilum grows on fungal media (dematiaceous colonies)",
+        "Histopathology: tissue showing pigmented (dematiaceous) septate hyphae",
+        "PCR: CSF or tissue - useful for rapid diagnosis",
+        "MRI spine/brain: epidural abscess, arachnoiditis, meningeal enhancement, stroke",
+        "Antifungal susceptibility testing: variable resistance patterns"
+      ],
+      "treatment": "Voriconazole - first-line treatment (good CNS penetration). Amphotericin B (liposomal) - alternative or combination therapy. Combination therapy (voriconazole + amphotericin B) for severe CNS infections. Surgery: drainage of epidural abscess, debridement of localized infections. Treatment duration: prolonged (months) - in 2012 outbreak, median treatment duration 6 months. Challenges: CNS penetration of antifungals, antifungal resistance, chronic arachnoiditis. Corticosteroids: controversial - may reduce inflammation but worsen infection.",
+      "infectionControl": {
+        "precautions": "Standard Precautions (no person-to-person transmission)",
+        "screening": "Not applicable (no environmental reservoir in healthcare)",
+        "cohorting": "Not necessary",
+        "sourceControl": "Control contaminated medical products: recall contaminated lots, investigate compounding pharmacy",
+        "environmental": "Sterile product control: proper compounding practices, environmental monitoring of compounding facilities, USP <797> compliance. Safe injection practices: use sterile technique, single-dose vials, proper storage",
+        "staffEducation": "Recognition of injection-related fungal infections, safe injection practices, sterile compounding education, surveillance of product sources"
+      },
+      "outbreakTriggers": [
+        "Single case of confirmed injection-related Exserohilum infection (high suspicion for contaminated product)",
+        "Cluster of meningitis or epidural abscess cases with common exposure (same injection product, same facility)"
+      ],
+      "reportingCommunication": [
+        "Immediate notification to infection prevention and control team upon single case",
+        "Immediate notification to public health authorities (state and CDC) - potential multistate outbreak",
+        "Implement outbreak investigation: case finding (identify all patients who received same product), product recall, trace contaminated lots, investigate compounding pharmacy",
+        "Coordinate with FDA, CDC, state health departments",
+        "Public health alert: notify healthcare facilities and patients who received potentially contaminated products",
+        "Communication with affected patients and families",
+        "Legal and regulatory actions against compounding pharmacy if indicated"
+      ],
+      "prevention": [
+        "Sterile compounding education: proper aseptic technique, environmental controls, personnel training, quality assurance",
+        "Compliance with USP <797> standards: environmental monitoring, sterile compounding practices, beyond-use dating",
+        "Surveillance of compounded product sources: monitor for contamination, inspect compounding pharmacies",
+        "Safe injection practices: use sterile technique, single-dose vials, proper storage and handling",
+        "Regulatory oversight: FDA inspection of compounding pharmacies, enforcement of standards",
+        "Staff education: recognition of injection-related infections, reporting of clusters",
+        "Patient education: report symptoms after injections (headache, back pain, fever)"
+      ],
+      "references": [
+        {
+          "label": "CDC - Exserohilum and Fungal Meningitis Outbreak",
+          "url": "https://www.cdc.gov/fungal/outbreaks/meningitis.html"
+        },
+        {
+          "label": "WHO - Fungal Priority Pathogens List",
+          "url": "https://www.who.int/publications/i/item/9789240060241"
+        },
+        {
+          "label": "Saudi GDIPC Manual",
+          "url": "https://gdipc.org"
+        }
+      ]
+    }
+  ]
+}

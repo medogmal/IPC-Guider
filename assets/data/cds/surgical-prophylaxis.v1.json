@@ -1,0 +1,1050 @@
+{
+  "version": 1,
+  "updatedAt": "2025-11-25T02:00:00Z",
+  "id": "surgical-prophylaxis",
+  "name": "Surgical Prophylaxis",
+  "description": "Perioperative antibiotic prophylaxis for surgical site infection prevention",
+  "icon": "medical_services",
+  "color": "#9C27B0",
+  "conditions": [
+    {
+      "id": "cardiac-surgery-prophylaxis",
+      "name": "Cardiac Surgery Prophylaxis",
+      "synonyms": [
+        "CABG prophylaxis",
+        "valve surgery prophylaxis",
+        "cardiac device prophylaxis"
+      ],
+      "icd10": [
+        "Z29.2"
+      ],
+      "severity": [
+        "prophylaxis"
+      ],
+      "shortDescription": "Antibiotic prophylaxis for cardiac surgery including CABG, valve replacement, and device implantation",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Perioperative antibiotic prophylaxis for cardiac surgery (CABG, valve replacement, cardiac device implantation). SSI rate: 1-5% (superficial), 0.5-2% (deep sternal wound infection, mediastinitis). Mortality: 10-40% (mediastinitis). Goal: Prevent SSI by achieving therapeutic antibiotic levels before incision.",
+            "clinical_presentation": "Prophylaxis (not treatment). Target pathogens: Staphylococcus aureus (MSSA, MRSA), coagulase-negative staphylococci (CoNS), Gram-negative bacilli. High-risk: Prolonged surgery (>4 hours), diabetes, obesity, renal failure, immunosuppression.",
+            "diagnostic_criteria": "Not applicable (prophylaxis, not treatment).",
+            "risk_factors": [
+              "Prolonged surgery (>4 hours)",
+              "Diabetes mellitus (HbA1c >7%)",
+              "Obesity (BMI >30)",
+              "Renal failure (CrCl <30)",
+              "Immunosuppression (steroids, biologics)",
+              "MRSA colonization (nasal swab positive)",
+              "Emergency surgery",
+              "Prolonged preoperative hospitalization (>2 days)"
+            ],
+            "red_flags": [
+              "Deep sternal wound infection (mediastinitis) - fever, sternal instability, purulent drainage, mortality 10-40%",
+              "MRSA colonization - requires vancomycin prophylaxis (cefazolin inadequate)",
+              "Beta-lactam allergy - requires alternative prophylaxis (vancomycin or clindamycin)",
+              "Obesity (>120kg) - requires weight-based dosing (cefazolin 3g, vancomycin 20mg/kg)",
+              "Prolonged surgery (>4 hours) - requires intraoperative redosing"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "MRSA nasal swab screening: Obtain preoperatively if institutional protocol. Positive → vancomycin prophylaxis. Negative → cefazolin prophylaxis.",
+            "essential_tests": [
+              "MRSA nasal swab (PCR): If institutional protocol. Sensitivity 90-95%, specificity 95-98%. Results in 1-4 hours. Positive → vancomycin prophylaxis.",
+              "Baseline labs: CBC, CMP, coagulation (PT/INR, aPTT). Assess renal function for dosing adjustments.",
+              "HbA1c: If diabetic. Target <7% (higher risk of SSI if >7%)."
+            ],
+            "conditional_tests": [
+              "Blood glucose: Perioperative glucose control (target <180mg/dL). Hyperglycemia increases SSI risk 2-3x.",
+              "Albumin: If malnourished. Low albumin (<3g/dL) increases SSI risk."
+            ],
+            "when_not_to_test": "Do NOT delay surgery for MRSA screening if not institutional protocol. Do NOT obtain cultures preoperatively (prophylaxis, not treatment).",
+            "turnaround_time": "MRSA nasal swab: 1-4 hours. Baseline labs: <1 hour."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Target pathogens: Staphylococcus aureus (MSSA 60-70%, MRSA 10-30%), coagulase-negative staphylococci (CoNS 20-30%), Gram-negative bacilli (E. coli, Klebsiella, Enterobacter 5-10%). Mediastinitis: S. aureus (40-50%), CoNS (20-30%), Gram-negatives (10-20%), polymicrobial (10-20%).",
+            "pathogenesis": "Intraoperative contamination: Skin flora (S. aureus, CoNS) → surgical site → biofilm formation (especially with prosthetic material) → SSI. Prophylaxis goal: Achieve therapeutic antibiotic levels in tissue BEFORE incision (within 60 minutes, 120 minutes for vancomycin).",
+            "resistance_patterns": {
+              "mrsa_prevalence": "10-30% of S. aureus isolates. Higher in: ICU patients, prolonged hospitalization, prior antibiotics, nasal colonization. Cefazolin INADEQUATE for MRSA. Vancomycin required.",
+              "cons_resistance": "CoNS: 70-80% methicillin-resistant. Vancomycin effective. Often contaminants but can cause device-related infections.",
+              "gram_negative_resistance": "ESBL: 10-20% of E. coli, Klebsiella. Cefazolin may be inadequate. Consider cefoxitin or ertapenem if high local prevalence."
+            },
+            "timing_critical": "Antibiotic administration: Within 60 minutes before incision (cefazolin, cefoxitin). Within 120 minutes before incision (vancomycin, fluoroquinolones). Redosing: If surgery >4 hours OR blood loss >1,500mL (cefazolin q4h, vancomycin q12h)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "standard_prophylaxis": "Cefazolin 2g IV within 60 minutes before incision (preferred). If weight >120kg: Cefazolin 3g IV. Redose q4h if surgery >4 hours OR blood loss >1,500mL. Discontinue within 24-48 hours postoperatively (24 hours preferred).",
+            "mrsa_colonization_or_high_prevalence": "Vancomycin 15mg/kg IV (max 2g) within 120 minutes before incision. If weight >120kg: Vancomycin 20mg/kg IV. Redose q12h if surgery >6 hours. Discontinue within 24-48 hours postoperatively.",
+            "beta_lactam_allergy": "Vancomycin 15mg/kg IV (max 2g) within 120 minutes before incision OR Clindamycin 900mg IV within 60 minutes before incision. Redose vancomycin q12h, clindamycin q6h if prolonged surgery.",
+            "combination_therapy": "If MRSA colonization + Gram-negative coverage needed: Vancomycin 15mg/kg IV + Gentamicin 5mg/kg IV OR Vancomycin + Cefazolin 2g IV. Discontinue within 24-48 hours.",
+            "alternatives": "Cefuroxime 1.5g IV (alternative to cefazolin, longer half-life). Clindamycin 900mg IV (if beta-lactam allergy, no MRSA coverage). Aztreonam 2g IV (if beta-lactam allergy, Gram-negative coverage only).",
+            "avoid_list": "Avoid prolonged prophylaxis (>48 hours, increases resistance and C. difficile risk). Avoid fluoroquinolones (reserve for treatment, high resistance rates). Avoid vancomycin if MRSA risk low (cefazolin preferred, narrower spectrum)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "standard_prophylaxis": "Cefazolin 2g IV (3g if >120kg) within 60 minutes before incision. Redose q4h if surgery >4 hours. Discontinue within 24 hours postoperatively (preferred) OR 48 hours maximum.",
+            "mrsa_prophylaxis": "Vancomycin 15mg/kg IV (20mg/kg if >120kg) within 120 minutes before incision. Redose q12h if surgery >6 hours. Discontinue within 24-48 hours postoperatively.",
+            "weight_based_dosing": "Cefazolin: 2g (<120kg), 3g (≥120kg). Vancomycin: 15mg/kg (<120kg), 20mg/kg (≥120kg), max 2g per dose. Gentamicin: 5mg/kg (actual body weight).",
+            "timing": "Cefazolin: Within 60 minutes before incision. Vancomycin: Within 120 minutes before incision (slow infusion, 1g over 60 minutes to prevent red man syndrome). Redosing: Cefazolin q4h, vancomycin q12h, gentamicin q24h.",
+            "duration": "Discontinue within 24 hours postoperatively (preferred, SCIP measure). Maximum 48 hours. Prolonged prophylaxis (>48 hours) does NOT reduce SSI and increases resistance and C. difficile risk.",
+            "de_escalation": "Discontinue prophylaxis within 24 hours. Do NOT continue antibiotics postoperatively unless documented infection (fever, wound drainage, positive cultures).",
+            "iv_to_po_switch": "Not applicable (prophylaxis discontinued within 24-48 hours, IV only)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "prophylaxis_duration": "Single preoperative dose + intraoperative redosing (if surgery >4 hours). Discontinue within 24 hours postoperatively (preferred) OR 48 hours maximum.",
+            "scip_measure": "SCIP-Inf-2: Prophylactic antibiotics discontinued within 24 hours after surgery end time (48 hours for cardiac surgery). Compliance improves outcomes and reduces resistance.",
+            "monitoring": "Intraoperative: Ensure redosing if surgery >4 hours OR blood loss >1,500mL. Postoperative: Monitor for SSI (fever, wound drainage, sternal instability). Discontinue prophylaxis within 24-48 hours.",
+            "stop_criteria": "24 hours after surgery end time (preferred). Maximum 48 hours. Do NOT continue prophylaxis beyond 48 hours unless documented infection."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "mrsa_colonization": "MRSA nasal swab positive: Vancomycin 15mg/kg IV within 120 minutes before incision. Mupirocin nasal ointment BID x 5 days preoperatively (decolonization, reduces SSI 40%). Chlorhexidine bath night before and morning of surgery.",
+            "obesity": "Weight >120kg: Cefazolin 3g IV (not 2g). Vancomycin 20mg/kg IV (not 15mg/kg). Higher SSI risk (2-3x). Ensure adequate tissue penetration.",
+            "renal_failure": "CrCl <30: Cefazolin 2g IV preoperatively (no adjustment for single dose). Vancomycin: Load 20-25mg/kg IV, then adjust based on levels (target trough 15-20 for prophylaxis NOT needed, single dose adequate). Avoid gentamicin if CrCl <30.",
+            "diabetes": "Perioperative glucose control: Target <180mg/dL (hyperglycemia increases SSI risk 2-3x). Insulin infusion if needed. HbA1c <7% optimal.",
+            "prolonged_surgery": "Surgery >4 hours: Redose cefazolin q4h, vancomycin q12h, gentamicin q24h. Surgery >6 hours: Consider additional redosing. Blood loss >1,500mL: Redose antibiotics.",
+            "emergency_surgery": "Same prophylaxis as elective surgery. Administer antibiotics within 60 minutes before incision (120 minutes for vancomycin). Do NOT delay surgery for antibiotics.",
+            "prosthetic_material": "Valve replacement, device implantation: Same prophylaxis (cefazolin or vancomycin). Biofilm risk higher (CoNS, S. aureus). Discontinue within 24-48 hours (prolonged prophylaxis does NOT reduce infection).",
+            "mediastinitis_prevention": "Deep sternal wound infection: Mortality 10-40%. Prevention: Appropriate prophylaxis, glucose control, minimize operative time, sternal closure technique, negative pressure wound therapy if high risk."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Discontinue prophylaxis within 24 hours postoperatively (preferred, SCIP measure)",
+              "Do NOT continue prophylaxis beyond 48 hours (increases resistance and C. difficile risk)",
+              "Use cefazolin (not vancomycin) if MRSA risk low (narrower spectrum)",
+              "Avoid combination therapy unless MRSA colonization + Gram-negative risk"
+            ],
+            "timeout_checklist": [
+              "Is antibiotic given within 60 minutes before incision? (120 minutes for vancomycin)",
+              "Is correct antibiotic chosen? (Cefazolin preferred, vancomycin if MRSA risk)",
+              "Is correct dose given? (Weight-based: cefazolin 2-3g, vancomycin 15-20mg/kg)",
+              "Is redosing needed? (Surgery >4 hours OR blood loss >1,500mL)",
+              "Is prophylaxis discontinued within 24 hours? (48 hours maximum)",
+              "Is MRSA screening done? (If institutional protocol)",
+              "Is glucose controlled? (Target <180mg/dL)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT continue prophylaxis beyond 48 hours (no benefit, increases resistance). Do NOT use vancomycin routinely (reserve for MRSA risk). Do NOT use fluoroquinolones for prophylaxis (reserve for treatment). Do NOT use broad-spectrum antibiotics (cefazolin adequate for most cases).",
+            "diagnostic_stewardship": "MRSA nasal swab screening: If institutional protocol. Positive → vancomycin. Negative → cefazolin. Do NOT obtain cultures preoperatively (prophylaxis, not treatment).",
+            "prevention": "Chlorhexidine bath night before and morning of surgery. Mupirocin nasal ointment if MRSA colonization. Glucose control (target <180mg/dL). Minimize operative time. Appropriate hair removal (clippers, not razors). Normothermia (avoid hypothermia)."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "ASHP/IDSA/SIS/SHEA Guidelines for Antimicrobial Prophylaxis in Surgery (2013)",
+              "url": "https://www.idsociety.org/practice-guideline/antimicrobial-prophylaxis-in-surgery/"
+            },
+            {
+              "label": "CDC Surgical Site Infection Prevention Guideline (2024)",
+              "url": "https://www.cdc.gov/infection-control/hcp/surgical-site-infection/index.html"
+            },
+            {
+              "label": "WHO Global Guidelines for Prevention of Surgical Site Infection (2018)",
+              "url": "https://www.who.int/publications/i/item/9789241550475"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "orthopedic-surgery-prophylaxis",
+      "name": "Orthopedic Surgery Prophylaxis (with Hardware)",
+      "synonyms": [
+        "joint replacement prophylaxis",
+        "spinal hardware prophylaxis",
+        "fracture fixation prophylaxis"
+      ],
+      "icd10": [
+        "Z29.2"
+      ],
+      "severity": [
+        "prophylaxis"
+      ],
+      "shortDescription": "Antibiotic prophylaxis for orthopedic surgery with hardware implantation (joint replacement, spinal fusion, fracture fixation)",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Perioperative antibiotic prophylaxis for orthopedic surgery with hardware implantation (total joint arthroplasty, spinal fusion, fracture fixation). SSI rate: 1-2% (superficial), 0.5-1% (deep prosthetic joint infection). Mortality: <1%. Goal: Prevent SSI and prosthetic joint infection (PJI).",
+            "clinical_presentation": "Prophylaxis (not treatment). Target pathogens: Staphylococcus aureus (MSSA, MRSA), coagulase-negative staphylococci (CoNS). High-risk: Prolonged surgery (>2 hours), diabetes, obesity, rheumatoid arthritis, immunosuppression, revision surgery.",
+            "diagnostic_criteria": "Not applicable (prophylaxis, not treatment).",
+            "risk_factors": [
+              "Prolonged surgery (>2 hours)",
+              "Diabetes mellitus",
+              "Obesity (BMI >30)",
+              "Rheumatoid arthritis",
+              "Immunosuppression (steroids, biologics)",
+              "MRSA colonization",
+              "Revision surgery",
+              "Prior joint infection"
+            ],
+            "red_flags": [
+              "Prosthetic joint infection (PJI) - fever, joint pain, swelling, requires hardware removal, mortality <1% but high morbidity",
+              "MRSA colonization - requires vancomycin prophylaxis (cefazolin inadequate)",
+              "Beta-lactam allergy - requires alternative prophylaxis (vancomycin or clindamycin)",
+              "Obesity (>120kg) - requires weight-based dosing (cefazolin 3g, vancomycin 20mg/kg)",
+              "Prolonged surgery (>4 hours) - requires intraoperative redosing"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "MRSA nasal swab screening: Obtain preoperatively if institutional protocol. Positive → vancomycin prophylaxis. Negative → cefazolin prophylaxis.",
+            "essential_tests": [
+              "MRSA nasal swab (PCR): If institutional protocol. Positive → vancomycin prophylaxis.",
+              "Baseline labs: CBC, CMP. Assess renal function for dosing adjustments.",
+              "HbA1c: If diabetic. Target <7%."
+            ],
+            "conditional_tests": [
+              "Blood glucose: Perioperative glucose control (target <180mg/dL).",
+              "ESR, CRP: If revision surgery or prior infection suspected."
+            ],
+            "when_not_to_test": "Do NOT delay surgery for MRSA screening if not institutional protocol.",
+            "turnaround_time": "MRSA nasal swab: 1-4 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Target pathogens: Staphylococcus aureus (MSSA 60-70%, MRSA 10-30%), coagulase-negative staphylococci (CoNS 20-30%). PJI: S. aureus (30-40%), CoNS (30-40%), Streptococcus (10%), Gram-negatives (5-10%), polymicrobial (10%).",
+            "pathogenesis": "Intraoperative contamination: Skin flora → surgical site → biofilm formation on hardware → PJI. Prophylaxis goal: Achieve therapeutic antibiotic levels in bone/tissue BEFORE incision.",
+            "resistance_patterns": {
+              "mrsa_prevalence": "10-30% of S. aureus isolates. Cefazolin INADEQUATE for MRSA. Vancomycin required.",
+              "cons_resistance": "CoNS: 70-80% methicillin-resistant. Vancomycin effective."
+            },
+            "timing_critical": "Antibiotic administration: Within 60 minutes before incision (cefazolin). Within 120 minutes before incision (vancomycin). Redosing: If surgery >4 hours (cefazolin q4h, vancomycin q12h)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "standard_prophylaxis": "Cefazolin 2g IV within 60 minutes before incision (preferred). If weight >120kg: Cefazolin 3g IV. Redose q4h if surgery >4 hours. Discontinue within 24 hours postoperatively.",
+            "mrsa_colonization_or_high_prevalence": "Vancomycin 15mg/kg IV (max 2g) within 120 minutes before incision. If weight >120kg: Vancomycin 20mg/kg IV. Redose q12h if surgery >6 hours. Discontinue within 24 hours postoperatively.",
+            "beta_lactam_allergy": "Vancomycin 15mg/kg IV (max 2g) within 120 minutes before incision OR Clindamycin 900mg IV within 60 minutes before incision.",
+            "alternatives": "Cefuroxime 1.5g IV (alternative to cefazolin). Clindamycin 900mg IV (if beta-lactam allergy).",
+            "avoid_list": "Avoid prolonged prophylaxis (>24 hours, no benefit, increases resistance). Avoid vancomycin if MRSA risk low (cefazolin preferred)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "standard_prophylaxis": "Cefazolin 2g IV (3g if >120kg) within 60 minutes before incision. Redose q4h if surgery >4 hours. Discontinue within 24 hours postoperatively.",
+            "mrsa_prophylaxis": "Vancomycin 15mg/kg IV (20mg/kg if >120kg) within 120 minutes before incision. Redose q12h if surgery >6 hours. Discontinue within 24 hours postoperatively.",
+            "weight_based_dosing": "Cefazolin: 2g (<120kg), 3g (≥120kg). Vancomycin: 15mg/kg (<120kg), 20mg/kg (≥120kg).",
+            "timing": "Cefazolin: Within 60 minutes before incision. Vancomycin: Within 120 minutes before incision.",
+            "duration": "Discontinue within 24 hours postoperatively. Prolonged prophylaxis (>24 hours) does NOT reduce PJI and increases resistance.",
+            "de_escalation": "Discontinue prophylaxis within 24 hours.",
+            "iv_to_po_switch": "Not applicable (prophylaxis discontinued within 24 hours, IV only)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "prophylaxis_duration": "Single preoperative dose + intraoperative redosing (if surgery >4 hours). Discontinue within 24 hours postoperatively.",
+            "scip_measure": "SCIP-Inf-2: Prophylactic antibiotics discontinued within 24 hours after surgery end time. Compliance improves outcomes.",
+            "monitoring": "Intraoperative: Ensure redosing if surgery >4 hours. Postoperative: Monitor for SSI (fever, wound drainage, joint pain). Discontinue prophylaxis within 24 hours.",
+            "stop_criteria": "24 hours after surgery end time. Do NOT continue prophylaxis beyond 24 hours unless documented infection."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "mrsa_colonization": "MRSA nasal swab positive: Vancomycin 15mg/kg IV within 120 minutes before incision. Mupirocin nasal ointment BID x 5 days preoperatively. Chlorhexidine bath night before and morning of surgery.",
+            "obesity": "Weight >120kg: Cefazolin 3g IV. Vancomycin 20mg/kg IV. Higher SSI risk (2-3x).",
+            "diabetes": "Perioperative glucose control: Target <180mg/dL. HbA1c <7% optimal.",
+            "prolonged_surgery": "Surgery >4 hours: Redose cefazolin q4h, vancomycin q12h.",
+            "revision_surgery": "Higher PJI risk (2-3x). Same prophylaxis (cefazolin or vancomycin). Consider extended prophylaxis (24 hours) if high risk.",
+            "open_fracture": "Different protocol (treatment, not prophylaxis). Cefazolin 2g IV q8h + Gentamicin 5mg/kg IV daily x 24-72 hours (Gustilo grade-dependent).",
+            "pji_prevention": "PJI: 0.5-1% (primary), 2-3% (revision). Prevention: Appropriate prophylaxis, glucose control, minimize operative time, laminar airflow, body exhaust suits."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Discontinue prophylaxis within 24 hours postoperatively (SCIP measure)",
+              "Do NOT continue prophylaxis beyond 24 hours (no benefit, increases resistance)",
+              "Use cefazolin (not vancomycin) if MRSA risk low"
+            ],
+            "timeout_checklist": [
+              "Is antibiotic given within 60 minutes before incision? (120 minutes for vancomycin)",
+              "Is correct antibiotic chosen? (Cefazolin preferred, vancomycin if MRSA risk)",
+              "Is correct dose given? (Weight-based: cefazolin 2-3g, vancomycin 15-20mg/kg)",
+              "Is redosing needed? (Surgery >4 hours)",
+              "Is prophylaxis discontinued within 24 hours?",
+              "Is MRSA screening done? (If institutional protocol)",
+              "Is glucose controlled? (Target <180mg/dL)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT continue prophylaxis beyond 24 hours (no benefit). Do NOT use vancomycin routinely (reserve for MRSA risk). Do NOT use broad-spectrum antibiotics (cefazolin adequate).",
+            "diagnostic_stewardship": "MRSA nasal swab screening: If institutional protocol. Positive → vancomycin. Negative → cefazolin.",
+            "prevention": "Chlorhexidine bath night before and morning of surgery. Mupirocin nasal ointment if MRSA colonization. Glucose control. Minimize operative time. Laminar airflow. Body exhaust suits."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "ASHP/IDSA/SIS/SHEA Guidelines for Antimicrobial Prophylaxis in Surgery (2013)",
+              "url": "https://www.idsociety.org/practice-guideline/antimicrobial-prophylaxis-in-surgery/"
+            },
+            {
+              "label": "CDC Surgical Site Infection Prevention Guideline (2024)",
+              "url": "https://www.cdc.gov/infection-control/hcp/surgical-site-infection/index.html"
+            },
+            {
+              "label": "AAOS Appropriate Use Criteria for Antibiotic Prophylaxis (2019)",
+              "url": "https://www.aaos.org/quality/quality-programs/lower-extremity-programs/appropriate-use-criteria/"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "colorectal-surgery-prophylaxis",
+      "name": "Colorectal Surgery Prophylaxis",
+      "synonyms": [
+        "colon surgery prophylaxis",
+        "bowel surgery prophylaxis"
+      ],
+      "icd10": [
+        "Z29.2"
+      ],
+      "severity": [
+        "prophylaxis"
+      ],
+      "shortDescription": "Antibiotic prophylaxis for colorectal surgery with mechanical bowel prep and oral antibiotics",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Perioperative antibiotic prophylaxis for colorectal surgery (colectomy, low anterior resection, abdominoperineal resection). SSI rate: 5-15% (higher than other clean-contaminated surgeries). Goal: Prevent SSI by covering Gram-negatives and anaerobes.",
+            "clinical_presentation": "Prophylaxis (not treatment). Target pathogens: Gram-negative bacilli (E. coli, Klebsiella, Proteus), anaerobes (Bacteroides fragilis, Clostridium). High-risk: Prolonged surgery, obesity, diabetes, immunosuppression, emergency surgery.",
+            "diagnostic_criteria": "Not applicable (prophylaxis, not treatment).",
+            "risk_factors": [
+              "Prolonged surgery (>3 hours)",
+              "Obesity (BMI >30)",
+              "Diabetes mellitus",
+              "Immunosuppression",
+              "Emergency surgery",
+              "Bowel obstruction or perforation",
+              "Malnutrition (albumin <3g/dL)"
+            ],
+            "red_flags": [
+              "Anastomotic leak - fever, abdominal pain, peritonitis, requires reoperation, mortality 10-20%",
+              "Intra-abdominal abscess - fever, leukocytosis, requires drainage",
+              "Beta-lactam allergy - requires alternative prophylaxis (fluoroquinolone + metronidazole)",
+              "Emergency surgery - higher SSI risk (2-3x)"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Baseline labs: CBC, CMP. Assess renal function for dosing adjustments.",
+            "essential_tests": [
+              "CBC: Baseline WBC, hemoglobin.",
+              "CMP: Assess renal function (cefoxitin, ertapenem dosing).",
+              "Albumin: If malnourished. Low albumin (<3g/dL) increases SSI risk."
+            ],
+            "conditional_tests": [
+              "Blood glucose: Perioperative glucose control (target <180mg/dL).",
+              "MRSA nasal swab: If institutional protocol (less critical for colorectal surgery, Gram-negatives/anaerobes more important)."
+            ],
+            "when_not_to_test": "Do NOT delay surgery for testing.",
+            "turnaround_time": "Baseline labs: <1 hour."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Target pathogens: Gram-negative bacilli (E. coli 40-50%, Klebsiella 10-15%, Proteus 5-10%), anaerobes (Bacteroides fragilis 30-40%, Clostridium 5-10%). SSI: Polymicrobial (60-70%), E. coli (30-40%), Bacteroides (20-30%), Enterococcus (10-15%).",
+            "pathogenesis": "Intraoperative contamination: Bowel flora → surgical site → SSI. Prophylaxis goal: Achieve therapeutic antibiotic levels in tissue BEFORE incision. Mechanical bowel prep + oral antibiotics reduce bacterial load.",
+            "resistance_patterns": {
+              "esbl": "ESBL: 10-20% of E. coli, Klebsiella. Cefoxitin may be inadequate. Consider ertapenem if high local prevalence.",
+              "anaerobe_resistance": "Bacteroides: Resistance to clindamycin 20-30%. Metronidazole effective (resistance <5%)."
+            },
+            "timing_critical": "Antibiotic administration: Within 60 minutes before incision. Oral antibiotics: 19:00, 20:00, 23:00 day before surgery (neomycin 1g + erythromycin 1g OR metronidazole 1g). Mechanical bowel prep: Polyethylene glycol day before surgery."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "standard_prophylaxis": "Cefoxitin 2g IV within 60 minutes before incision (preferred, covers Gram-negatives + anaerobes) OR Cefazolin 2g IV + Metronidazole 500mg IV OR Ertapenem 1g IV. Redose cefoxitin q2h if surgery >3 hours. Discontinue within 24 hours postoperatively.",
+            "mechanical_bowel_prep_plus_oral_antibiotics": "Mechanical bowel prep (polyethylene glycol 4L day before surgery) + Oral antibiotics (neomycin 1g + erythromycin 1g OR metronidazole 1g at 19:00, 20:00, 23:00 day before surgery). Reduces SSI 40-50%. Still give IV prophylaxis.",
+            "beta_lactam_allergy": "Ciprofloxacin 400mg IV + Metronidazole 500mg IV within 60 minutes before incision OR Aztreonam 2g IV + Metronidazole 500mg IV.",
+            "alternatives": "Cefotetan 2g IV (alternative to cefoxitin, longer half-life). Ampicillin-sulbactam 3g IV (covers Gram-negatives + anaerobes + Enterococcus).",
+            "avoid_list": "Avoid cefazolin alone (inadequate anaerobic coverage, must add metronidazole). Avoid prolonged prophylaxis (>24 hours, increases resistance and C. difficile risk)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "standard_prophylaxis": "Cefoxitin 2g IV within 60 minutes before incision. Redose q2h if surgery >3 hours. Discontinue within 24 hours postoperatively.",
+            "combination_therapy": "Cefazolin 2g IV + Metronidazole 500mg IV within 60 minutes before incision. Redose cefazolin q4h, metronidazole q8h if prolonged surgery. Discontinue within 24 hours.",
+            "ertapenem": "Ertapenem 1g IV within 60 minutes before incision. No redosing needed (long half-life 4 hours). Discontinue within 24 hours. Reserve for high ESBL prevalence.",
+            "timing": "IV antibiotics: Within 60 minutes before incision. Oral antibiotics: 19:00, 20:00, 23:00 day before surgery.",
+            "duration": "Discontinue within 24 hours postoperatively. Prolonged prophylaxis (>24 hours) does NOT reduce SSI and increases C. difficile risk.",
+            "de_escalation": "Discontinue prophylaxis within 24 hours.",
+            "iv_to_po_switch": "Not applicable (prophylaxis discontinued within 24 hours, IV only)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "prophylaxis_duration": "Single preoperative dose + intraoperative redosing (if surgery >3 hours). Discontinue within 24 hours postoperatively.",
+            "scip_measure": "SCIP-Inf-2: Prophylactic antibiotics discontinued within 24 hours after surgery end time. Compliance improves outcomes.",
+            "monitoring": "Intraoperative: Ensure redosing if surgery >3 hours. Postoperative: Monitor for SSI (fever, abdominal pain, wound drainage). Discontinue prophylaxis within 24 hours.",
+            "stop_criteria": "24 hours after surgery end time. Do NOT continue prophylaxis beyond 24 hours unless documented infection."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "mechanical_bowel_prep_plus_oral_antibiotics": "Mechanical bowel prep (polyethylene glycol 4L) + Oral antibiotics (neomycin 1g + erythromycin 1g OR metronidazole 1g at 19:00, 20:00, 23:00 day before surgery). Reduces SSI 40-50% (from 15% → 8%). Still give IV prophylaxis (oral antibiotics alone inadequate).",
+            "emergency_surgery": "Higher SSI risk (2-3x). Same prophylaxis (cefoxitin or cefazolin + metronidazole). Consider extending to 24 hours if bowel perforation or peritonitis.",
+            "obesity": "Weight >120kg: Cefoxitin 3g IV (not 2g). Cefazolin 3g IV + Metronidazole 500mg IV. Higher SSI risk (2-3x).",
+            "diabetes": "Perioperative glucose control: Target <180mg/dL. HbA1c <7% optimal.",
+            "anastomotic_leak": "Complication in 3-5%. Fever, abdominal pain, peritonitis, elevated WBC. Management: CT abdomen, drainage, reoperation if severe. Mortality: 10-20%.",
+            "c_difficile_risk": "Colorectal surgery: High C. difficile risk (bowel manipulation, antibiotics). Avoid prolonged prophylaxis (>24 hours). Consider probiotics postoperatively (limited evidence)."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Discontinue prophylaxis within 24 hours postoperatively (SCIP measure)",
+              "Do NOT continue prophylaxis beyond 24 hours (increases C. difficile risk)",
+              "Use cefoxitin (not ertapenem) if ESBL prevalence low (narrower spectrum)",
+              "Mechanical bowel prep + oral antibiotics reduce SSI 40-50% (use routinely)"
+            ],
+            "timeout_checklist": [
+              "Is IV antibiotic given within 60 minutes before incision?",
+              "Is correct antibiotic chosen? (Cefoxitin OR cefazolin + metronidazole)",
+              "Is mechanical bowel prep + oral antibiotics given? (Reduces SSI 40-50%)",
+              "Is redosing needed? (Surgery >3 hours)",
+              "Is prophylaxis discontinued within 24 hours?",
+              "Is glucose controlled? (Target <180mg/dL)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use cefazolin alone (inadequate anaerobic coverage, must add metronidazole). Do NOT continue prophylaxis beyond 24 hours (increases C. difficile risk). Do NOT use ertapenem routinely (reserve for high ESBL prevalence).",
+            "diagnostic_stewardship": "Do NOT obtain cultures preoperatively (prophylaxis, not treatment).",
+            "prevention": "Mechanical bowel prep + oral antibiotics (reduces SSI 40-50%). Glucose control. Minimize operative time. Normothermia. Appropriate hair removal."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "ASHP/IDSA/SIS/SHEA Guidelines for Antimicrobial Prophylaxis in Surgery (2013)",
+              "url": "https://www.idsociety.org/practice-guideline/antimicrobial-prophylaxis-in-surgery/"
+            },
+            {
+              "label": "CDC Surgical Site Infection Prevention Guideline (2024)",
+              "url": "https://www.cdc.gov/infection-control/hcp/surgical-site-infection/index.html"
+            },
+            {
+              "label": "ASCRS/SAGES Guidelines for Colorectal Surgery (2022)",
+              "url": "https://fascrs.org/clinical-practice-guidelines"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "neurosurgery-prophylaxis",
+      "name": "Neurosurgery Prophylaxis (Craniotomy, Spinal)",
+      "synonyms": [
+        "craniotomy prophylaxis",
+        "spinal surgery prophylaxis",
+        "CSF shunt prophylaxis"
+      ],
+      "icd10": [
+        "Z29.2"
+      ],
+      "severity": [
+        "prophylaxis"
+      ],
+      "shortDescription": "Antibiotic prophylaxis for neurosurgery including craniotomy, spinal surgery, and CSF shunt placement",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Perioperative antibiotic prophylaxis for neurosurgery (craniotomy, spinal surgery, CSF shunt placement). SSI rate: 1-5% (craniotomy), 0.5-3% (spinal surgery), 5-15% (CSF shunt). Mortality: 5-10% (meningitis). Goal: Prevent SSI and meningitis.",
+            "clinical_presentation": "Prophylaxis (not treatment). Target pathogens: Staphylococcus aureus (MSSA, MRSA), coagulase-negative staphylococci (CoNS). High-risk: Prolonged surgery, CSF leak, revision surgery, immunosuppression.",
+            "diagnostic_criteria": "Not applicable (prophylaxis, not treatment).",
+            "risk_factors": [
+              "Prolonged surgery (>4 hours)",
+              "CSF leak",
+              "Revision surgery",
+              "Immunosuppression",
+              "MRSA colonization",
+              "Diabetes mellitus",
+              "Obesity"
+            ],
+            "red_flags": [
+              "Meningitis - fever, headache, neck stiffness, altered mental status, mortality 5-10%",
+              "CSF shunt infection - fever, headache, shunt malfunction, requires shunt removal",
+              "MRSA colonization - requires vancomycin prophylaxis (cefazolin inadequate)",
+              "Beta-lactam allergy - requires alternative prophylaxis (vancomycin or clindamycin)",
+              "Prolonged surgery (>4 hours) - requires intraoperative redosing"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "MRSA nasal swab screening: Obtain preoperatively if institutional protocol. Positive → vancomycin prophylaxis.",
+            "essential_tests": [
+              "MRSA nasal swab (PCR): If institutional protocol. Positive → vancomycin prophylaxis.",
+              "Baseline labs: CBC, CMP."
+            ],
+            "conditional_tests": [
+              "Blood glucose: Perioperative glucose control (target <180mg/dL)."
+            ],
+            "when_not_to_test": "Do NOT delay surgery for MRSA screening if not institutional protocol.",
+            "turnaround_time": "MRSA nasal swab: 1-4 hours."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Target pathogens: Staphylococcus aureus (MSSA 60-70%, MRSA 10-30%), coagulase-negative staphylococci (CoNS 20-30%). Meningitis: S. aureus (30-40%), CoNS (20-30%), Gram-negatives (10-15%), Streptococcus (5-10%).",
+            "pathogenesis": "Intraoperative contamination: Skin flora → surgical site → meningitis or SSI. Prophylaxis goal: Achieve therapeutic antibiotic levels in tissue/CSF BEFORE incision.",
+            "resistance_patterns": {
+              "mrsa_prevalence": "10-30% of S. aureus isolates. Cefazolin INADEQUATE for MRSA. Vancomycin required.",
+              "cons_resistance": "CoNS: 70-80% methicillin-resistant. Vancomycin effective."
+            },
+            "timing_critical": "Antibiotic administration: Within 60 minutes before incision (cefazolin). Within 120 minutes before incision (vancomycin). Redosing: If surgery >4 hours (cefazolin q4h, vancomycin q12h)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "standard_prophylaxis": "Cefazolin 2g IV within 60 minutes before incision (preferred). If weight >120kg: Cefazolin 3g IV. Redose q4h if surgery >4 hours. Discontinue within 24 hours postoperatively.",
+            "mrsa_colonization_or_high_prevalence": "Vancomycin 15mg/kg IV (max 2g) within 120 minutes before incision. If weight >120kg: Vancomycin 20mg/kg IV. Redose q12h if surgery >6 hours. Discontinue within 24 hours postoperatively.",
+            "csf_shunt_placement": "Cefazolin 2g IV OR Vancomycin 15mg/kg IV (if high MRSA prevalence). Consider single dose of intrathecal vancomycin 10mg (controversial, reduces shunt infection 50% but neurotoxicity risk).",
+            "beta_lactam_allergy": "Vancomycin 15mg/kg IV (max 2g) within 120 minutes before incision OR Clindamycin 900mg IV within 60 minutes before incision.",
+            "alternatives": "Cefuroxime 1.5g IV (alternative to cefazolin). Clindamycin 900mg IV (if beta-lactam allergy).",
+            "avoid_list": "Avoid prolonged prophylaxis (>24 hours, no benefit, increases resistance). Avoid vancomycin if MRSA risk low (cefazolin preferred)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "standard_prophylaxis": "Cefazolin 2g IV (3g if >120kg) within 60 minutes before incision. Redose q4h if surgery >4 hours. Discontinue within 24 hours postoperatively.",
+            "mrsa_prophylaxis": "Vancomycin 15mg/kg IV (20mg/kg if >120kg) within 120 minutes before incision. Redose q12h if surgery >6 hours. Discontinue within 24 hours postoperatively.",
+            "weight_based_dosing": "Cefazolin: 2g (<120kg), 3g (≥120kg). Vancomycin: 15mg/kg (<120kg), 20mg/kg (≥120kg).",
+            "timing": "Cefazolin: Within 60 minutes before incision. Vancomycin: Within 120 minutes before incision.",
+            "duration": "Discontinue within 24 hours postoperatively. Prolonged prophylaxis (>24 hours) does NOT reduce SSI and increases resistance.",
+            "de_escalation": "Discontinue prophylaxis within 24 hours.",
+            "iv_to_po_switch": "Not applicable (prophylaxis discontinued within 24 hours, IV only)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "prophylaxis_duration": "Single preoperative dose + intraoperative redosing (if surgery >4 hours). Discontinue within 24 hours postoperatively.",
+            "scip_measure": "SCIP-Inf-2: Prophylactic antibiotics discontinued within 24 hours after surgery end time. Compliance improves outcomes.",
+            "monitoring": "Intraoperative: Ensure redosing if surgery >4 hours. Postoperative: Monitor for SSI (fever, wound drainage, headache, neck stiffness). Discontinue prophylaxis within 24 hours.",
+            "stop_criteria": "24 hours after surgery end time. Do NOT continue prophylaxis beyond 24 hours unless documented infection."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "mrsa_colonization": "MRSA nasal swab positive: Vancomycin 15mg/kg IV within 120 minutes before incision. Mupirocin nasal ointment BID x 5 days preoperatively. Chlorhexidine bath night before and morning of surgery.",
+            "csf_shunt_placement": "SSI rate: 5-15% (higher than other neurosurgery). Cefazolin 2g IV OR Vancomycin 15mg/kg IV (if high MRSA prevalence). Intrathecal vancomycin 10mg (controversial, reduces shunt infection 50% but neurotoxicity risk, not routinely recommended).",
+            "csf_leak": "Higher SSI risk (2-3x). Same prophylaxis (cefazolin or vancomycin). Consider extending to 24 hours if persistent CSF leak.",
+            "revision_surgery": "Higher SSI risk (2-3x). Same prophylaxis (cefazolin or vancomycin).",
+            "spinal_surgery_with_hardware": "Same as orthopedic prophylaxis. Cefazolin 2g IV (3g if >120kg). Discontinue within 24 hours.",
+            "meningitis_prevention": "Meningitis: 1-3% (craniotomy), 0.5-1% (spinal surgery). Mortality: 5-10%. Prevention: Appropriate prophylaxis, minimize operative time, avoid CSF leak."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Discontinue prophylaxis within 24 hours postoperatively (SCIP measure)",
+              "Do NOT continue prophylaxis beyond 24 hours (no benefit, increases resistance)",
+              "Use cefazolin (not vancomycin) if MRSA risk low"
+            ],
+            "timeout_checklist": [
+              "Is antibiotic given within 60 minutes before incision? (120 minutes for vancomycin)",
+              "Is correct antibiotic chosen? (Cefazolin preferred, vancomycin if MRSA risk)",
+              "Is correct dose given? (Weight-based: cefazolin 2-3g, vancomycin 15-20mg/kg)",
+              "Is redosing needed? (Surgery >4 hours)",
+              "Is prophylaxis discontinued within 24 hours?",
+              "Is MRSA screening done? (If institutional protocol)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT continue prophylaxis beyond 24 hours (no benefit). Do NOT use vancomycin routinely (reserve for MRSA risk). Do NOT use intrathecal vancomycin routinely (neurotoxicity risk, controversial).",
+            "diagnostic_stewardship": "MRSA nasal swab screening: If institutional protocol. Positive → vancomycin. Negative → cefazolin.",
+            "prevention": "Chlorhexidine bath night before and morning of surgery. Mupirocin nasal ointment if MRSA colonization. Minimize operative time. Avoid CSF leak."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "ASHP/IDSA/SIS/SHEA Guidelines for Antimicrobial Prophylaxis in Surgery (2013)",
+              "url": "https://www.idsociety.org/practice-guideline/antimicrobial-prophylaxis-in-surgery/"
+            },
+            {
+              "label": "CDC Surgical Site Infection Prevention Guideline (2024)",
+              "url": "https://www.cdc.gov/infection-control/hcp/surgical-site-infection/index.html"
+            },
+            {
+              "label": "Neurosurgical Infection Prevention Guidelines (2017)",
+              "url": "https://www.aans.org/Guidelines"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "hysterectomy-prophylaxis",
+      "name": "Hysterectomy Prophylaxis (Vaginal/Abdominal)",
+      "synonyms": [
+        "vaginal hysterectomy prophylaxis",
+        "abdominal hysterectomy prophylaxis"
+      ],
+      "icd10": [
+        "Z29.2"
+      ],
+      "severity": [
+        "prophylaxis"
+      ],
+      "shortDescription": "Antibiotic prophylaxis for hysterectomy (vaginal or abdominal) with single preoperative dose",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Perioperative antibiotic prophylaxis for hysterectomy (vaginal or abdominal). SSI rate: 3-5% (vaginal), 5-10% (abdominal). Goal: Prevent SSI by covering Gram-negatives, anaerobes, Streptococcus, Enterococcus.",
+            "clinical_presentation": "Prophylaxis (not treatment). Target pathogens: Gram-negative bacilli (E. coli, Klebsiella), anaerobes (Bacteroides), Streptococcus, Enterococcus. High-risk: Prolonged surgery, obesity, diabetes, immunosuppression.",
+            "diagnostic_criteria": "Not applicable (prophylaxis, not treatment).",
+            "risk_factors": [
+              "Prolonged surgery (>3 hours)",
+              "Obesity (BMI >30)",
+              "Diabetes mellitus",
+              "Immunosuppression",
+              "Bacterial vaginosis",
+              "Malignancy"
+            ],
+            "red_flags": [
+              "Pelvic abscess - fever, pelvic pain, requires drainage",
+              "Vaginal cuff infection - fever, purulent drainage from vaginal cuff",
+              "Beta-lactam allergy - requires alternative prophylaxis (fluoroquinolone + metronidazole OR clindamycin + gentamicin)",
+              "Obesity (>120kg) - requires weight-based dosing"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Baseline labs: CBC, CMP.",
+            "essential_tests": [
+              "CBC: Baseline WBC, hemoglobin.",
+              "CMP: Assess renal function."
+            ],
+            "conditional_tests": [
+              "Blood glucose: Perioperative glucose control (target <180mg/dL).",
+              "Vaginal culture: If bacterial vaginosis suspected (treat preoperatively)."
+            ],
+            "when_not_to_test": "Do NOT delay surgery for testing.",
+            "turnaround_time": "Baseline labs: <1 hour."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Target pathogens: Gram-negative bacilli (E. coli 30-40%, Klebsiella 10-15%), anaerobes (Bacteroides 20-30%), Streptococcus (15-20%), Enterococcus (10-15%). SSI: Polymicrobial (50-60%), E. coli (20-30%), Bacteroides (15-20%), Enterococcus (10-15%).",
+            "pathogenesis": "Intraoperative contamination: Vaginal flora → surgical site → SSI. Prophylaxis goal: Achieve therapeutic antibiotic levels in tissue BEFORE incision.",
+            "resistance_patterns": {
+              "esbl": "ESBL: 10-20% of E. coli, Klebsiella. Cefazolin may be inadequate. Consider ertapenem if high local prevalence.",
+              "enterococcus": "Enterococcus: Ampicillin-resistant (VRE) 10-20%. Cefazolin does NOT cover Enterococcus (acceptable, low pathogenicity in SSI)."
+            },
+            "timing_critical": "Antibiotic administration: Within 60 minutes before incision. Single dose adequate (no postoperative doses needed)."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "standard_prophylaxis": "Cefazolin 2g IV + Metronidazole 500mg IV within 60 minutes before incision (preferred) OR Cefoxitin 2g IV OR Cefotetan 2g IV. Single dose adequate (no postoperative doses needed). If weight >120kg: Cefazolin 3g IV + Metronidazole 500mg IV OR Cefoxitin 3g IV.",
+            "beta_lactam_allergy": "Ciprofloxacin 400mg IV + Metronidazole 500mg IV within 60 minutes before incision OR Clindamycin 900mg IV + Gentamicin 5mg/kg IV.",
+            "alternatives": "Ampicillin-sulbactam 3g IV (covers Gram-negatives + anaerobes + Enterococcus). Ertapenem 1g IV (reserve for high ESBL prevalence).",
+            "avoid_list": "Avoid cefazolin alone (inadequate anaerobic coverage, must add metronidazole). Avoid prolonged prophylaxis (single dose adequate, no postoperative doses needed)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "standard_prophylaxis": "Cefazolin 2g IV + Metronidazole 500mg IV within 60 minutes before incision. Single dose adequate (no postoperative doses needed).",
+            "cefoxitin": "Cefoxitin 2g IV (3g if >120kg) within 60 minutes before incision. Single dose adequate.",
+            "weight_based_dosing": "Cefazolin: 2g (<120kg), 3g (≥120kg). Cefoxitin: 2g (<120kg), 3g (≥120kg). Metronidazole: 500mg (all weights).",
+            "timing": "Within 60 minutes before incision.",
+            "duration": "Single dose (no postoperative doses needed). Do NOT continue prophylaxis postoperatively.",
+            "de_escalation": "Single dose only. Do NOT continue postoperatively.",
+            "iv_to_po_switch": "Not applicable (single dose only, IV)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "prophylaxis_duration": "Single preoperative dose. No postoperative doses needed.",
+            "scip_measure": "SCIP-Inf-2: Prophylactic antibiotics discontinued within 24 hours after surgery end time. Single dose adequate (no postoperative doses).",
+            "monitoring": "Postoperative: Monitor for SSI (fever, wound drainage, pelvic pain). Do NOT continue prophylaxis postoperatively.",
+            "stop_criteria": "Single dose only. Do NOT continue postoperatively unless documented infection."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "vaginal_vs_abdominal": "Same prophylaxis for vaginal and abdominal hysterectomy. Single dose adequate for both.",
+            "bacterial_vaginosis": "Treat preoperatively (metronidazole 500mg PO BID x 7 days OR clindamycin 300mg PO BID x 7 days). Reduces SSI 50%.",
+            "obesity": "Weight >120kg: Cefazolin 3g IV + Metronidazole 500mg IV OR Cefoxitin 3g IV. Higher SSI risk (2-3x).",
+            "diabetes": "Perioperative glucose control: Target <180mg/dL. HbA1c <7% optimal.",
+            "malignancy": "Higher SSI risk (1.5-2x). Same prophylaxis (single dose adequate).",
+            "vaginal_cuff_infection": "Complication in 2-5%. Fever, purulent drainage from vaginal cuff. Management: Antibiotics (cefoxitin or cefazolin + metronidazole x 7-14 days), drainage if abscess."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Single dose adequate (no postoperative doses needed)",
+              "Do NOT continue prophylaxis postoperatively (no benefit, increases resistance)",
+              "Use cefazolin + metronidazole (not ertapenem) if ESBL prevalence low"
+            ],
+            "timeout_checklist": [
+              "Is antibiotic given within 60 minutes before incision?",
+              "Is correct antibiotic chosen? (Cefazolin + metronidazole OR cefoxitin)",
+              "Is correct dose given? (Weight-based: cefazolin 2-3g, cefoxitin 2-3g)",
+              "Is single dose only? (No postoperative doses needed)",
+              "Is bacterial vaginosis treated preoperatively? (Reduces SSI 50%)",
+              "Is glucose controlled? (Target <180mg/dL)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT use cefazolin alone (inadequate anaerobic coverage, must add metronidazole). Do NOT continue prophylaxis postoperatively (single dose adequate). Do NOT use ertapenem routinely (reserve for high ESBL prevalence).",
+            "diagnostic_stewardship": "Do NOT obtain cultures preoperatively (prophylaxis, not treatment). Treat bacterial vaginosis preoperatively (reduces SSI 50%).",
+            "prevention": "Treat bacterial vaginosis preoperatively. Glucose control. Minimize operative time. Appropriate hair removal."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "ASHP/IDSA/SIS/SHEA Guidelines for Antimicrobial Prophylaxis in Surgery (2013)",
+              "url": "https://www.idsociety.org/practice-guideline/antimicrobial-prophylaxis-in-surgery/"
+            },
+            {
+              "label": "CDC Surgical Site Infection Prevention Guideline (2024)",
+              "url": "https://www.cdc.gov/infection-control/hcp/surgical-site-infection/index.html"
+            },
+            {
+              "label": "ACOG Practice Bulletin on Antibiotic Prophylaxis (2018)",
+              "url": "https://www.acog.org/clinical/clinical-guidance/practice-bulletin"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "cesarean-section-prophylaxis",
+      "name": "Cesarean Section Prophylaxis",
+      "synonyms": [
+        "C-section prophylaxis",
+        "cesarean delivery prophylaxis"
+      ],
+      "icd10": [
+        "Z29.2"
+      ],
+      "severity": [
+        "prophylaxis"
+      ],
+      "shortDescription": "Antibiotic prophylaxis for cesarean section BEFORE skin incision (not after cord clamping)",
+      "sections": {
+        "overview": {
+          "id": "overview",
+          "title": "Overview & Clinical Presentation",
+          "content": {
+            "definition": "Perioperative antibiotic prophylaxis for cesarean section. SSI rate: 3-5% (elective), 5-10% (emergency). Goal: Prevent SSI and endometritis by administering antibiotics BEFORE skin incision (NOT after cord clamping, timing changed in 2010).",
+            "clinical_presentation": "Prophylaxis (not treatment). Target pathogens: Gram-negative bacilli (E. coli, Klebsiella), anaerobes (Bacteroides), Streptococcus, Enterococcus. High-risk: Emergency cesarean, prolonged labor, prolonged rupture of membranes, obesity, diabetes.",
+            "diagnostic_criteria": "Not applicable (prophylaxis, not treatment).",
+            "risk_factors": [
+              "Emergency cesarean section",
+              "Prolonged labor (>12 hours)",
+              "Prolonged rupture of membranes (>6 hours)",
+              "Obesity (BMI >30)",
+              "Diabetes mellitus",
+              "Chorioamnionitis",
+              "Multiple vaginal exams"
+            ],
+            "red_flags": [
+              "Endometritis - fever, uterine tenderness, foul-smelling lochia, requires antibiotics x 24-48 hours",
+              "Wound infection - fever, wound drainage, erythema, requires antibiotics x 7-14 days",
+              "Beta-lactam allergy - requires alternative prophylaxis (clindamycin + gentamicin)",
+              "Obesity (>120kg) - requires weight-based dosing (cefazolin 3g)",
+              "Chorioamnionitis - requires treatment (not prophylaxis), ampicillin + gentamicin"
+            ]
+          },
+          "references": []
+        },
+        "diagnostics": {
+          "id": "diagnostics",
+          "title": "Diagnostic Strategy & Tests",
+          "content": {
+            "when_to_test": "Baseline labs: CBC, blood type and screen.",
+            "essential_tests": [
+              "CBC: Baseline WBC, hemoglobin.",
+              "Blood type and screen: For potential transfusion."
+            ],
+            "conditional_tests": [
+              "Blood glucose: If diabetic (target <180mg/dL).",
+              "GBS culture: If unknown GBS status and preterm labor (treat with penicillin, not cefazolin)."
+            ],
+            "when_not_to_test": "Do NOT delay cesarean for testing.",
+            "turnaround_time": "CBC: <1 hour."
+          },
+          "references": []
+        },
+        "microbiology": {
+          "id": "microbiology",
+          "title": "Microbiology",
+          "content": {
+            "organism": "Target pathogens: Gram-negative bacilli (E. coli 30-40%, Klebsiella 10-15%), anaerobes (Bacteroides 20-30%), Streptococcus (15-20%), Enterococcus (10-15%). Endometritis: Polymicrobial (60-70%), E. coli (30-40%), Bacteroides (20-30%), Enterococcus (10-15%).",
+            "pathogenesis": "Intraoperative contamination: Vaginal/skin flora → surgical site → SSI or endometritis. Prophylaxis goal: Achieve therapeutic antibiotic levels in tissue BEFORE incision. Timing changed in 2010: BEFORE skin incision (not after cord clamping) reduces SSI 50%.",
+            "resistance_patterns": {
+              "esbl": "ESBL: 10-20% of E. coli, Klebsiella. Cefazolin may be inadequate. Consider ertapenem if high local prevalence.",
+              "enterococcus": "Enterococcus: Ampicillin-resistant (VRE) 10-20%. Cefazolin does NOT cover Enterococcus (acceptable, low pathogenicity in SSI)."
+            },
+            "timing_critical": "Antibiotic administration: Within 60 minutes BEFORE skin incision (NOT after cord clamping). Timing changed in 2010 based on RCTs showing 50% reduction in SSI. Single dose adequate."
+          },
+          "references": []
+        },
+        "empiric": {
+          "id": "empiric",
+          "title": "Empiric Therapy",
+          "content": {
+            "standard_prophylaxis": "Cefazolin 2g IV within 60 minutes BEFORE skin incision (preferred). If weight >120kg: Cefazolin 3g IV. Single dose adequate (no postoperative doses needed). Timing: BEFORE skin incision (NOT after cord clamping, reduces SSI 50%).",
+            "beta_lactam_allergy": "Clindamycin 900mg IV + Gentamicin 5mg/kg IV within 60 minutes BEFORE skin incision.",
+            "alternatives": "Cefoxitin 2g IV (covers Gram-negatives + anaerobes). Ampicillin-sulbactam 3g IV (covers Gram-negatives + anaerobes + Enterococcus).",
+            "avoid_list": "Avoid administering antibiotics AFTER cord clamping (old practice, increases SSI 2x). Avoid prolonged prophylaxis (single dose adequate, no postoperative doses needed)."
+          },
+          "references": []
+        },
+        "definitive": {
+          "id": "definitive",
+          "title": "Definitive (Targeted) Therapy",
+          "content": {
+            "standard_prophylaxis": "Cefazolin 2g IV (3g if >120kg) within 60 minutes BEFORE skin incision. Single dose adequate (no postoperative doses needed).",
+            "weight_based_dosing": "Cefazolin: 2g (<120kg), 3g (≥120kg).",
+            "timing": "Within 60 minutes BEFORE skin incision (NOT after cord clamping). Timing changed in 2010 based on RCTs.",
+            "duration": "Single dose (no postoperative doses needed). Do NOT continue prophylaxis postoperatively.",
+            "de_escalation": "Single dose only. Do NOT continue postoperatively.",
+            "iv_to_po_switch": "Not applicable (single dose only, IV)."
+          },
+          "references": []
+        },
+        "duration": {
+          "id": "duration",
+          "title": "Duration of Therapy",
+          "content": {
+            "prophylaxis_duration": "Single preoperative dose. No postoperative doses needed.",
+            "scip_measure": "SCIP-Inf-2: Prophylactic antibiotics discontinued within 24 hours after surgery end time. Single dose adequate (no postoperative doses).",
+            "monitoring": "Postoperative: Monitor for SSI (fever, wound drainage) and endometritis (fever, uterine tenderness, foul-smelling lochia). Do NOT continue prophylaxis postoperatively.",
+            "stop_criteria": "Single dose only. Do NOT continue postoperatively unless documented infection."
+          },
+          "references": []
+        },
+        "special": {
+          "id": "special",
+          "title": "Special Considerations",
+          "content": {
+            "timing_change_2010": "Timing changed in 2010: BEFORE skin incision (not after cord clamping). RCTs showed 50% reduction in SSI (from 10% → 5%). No increased neonatal sepsis. Now standard of care.",
+            "obesity": "Weight >120kg: Cefazolin 3g IV (not 2g). Higher SSI risk (2-3x).",
+            "diabetes": "Perioperative glucose control: Target <180mg/dL. HbA1c <7% optimal.",
+            "emergency_cesarean": "Higher SSI risk (2x). Same prophylaxis (cefazolin 2-3g BEFORE skin incision). Single dose adequate.",
+            "prolonged_rupture_of_membranes": "Higher SSI risk (1.5-2x). Same prophylaxis (single dose adequate).",
+            "chorioamnionitis": "Treatment (not prophylaxis). Ampicillin 2g IV q6h + Gentamicin 5mg/kg IV daily until afebrile x 24-48 hours, then switch to amoxicillin 500mg PO TID x 7 days total.",
+            "endometritis": "Complication in 5-10%. Fever, uterine tenderness, foul-smelling lochia. Management: Clindamycin 900mg IV q8h + Gentamicin 5mg/kg IV daily until afebrile x 24-48 hours (no oral step-down needed).",
+            "gbs_prophylaxis": "If GBS positive: Penicillin G 5 million units IV x1, then 2.5-3 million units IV q4h until delivery (GBS prophylaxis, separate from surgical prophylaxis). Still give cefazolin for surgical prophylaxis."
+          },
+          "references": []
+        },
+        "stewardship": {
+          "id": "stewardship",
+          "title": "Stewardship & Diagnostic Alerts",
+          "content": {
+            "de_escalation_opportunities": [
+              "Single dose adequate (no postoperative doses needed)",
+              "Do NOT continue prophylaxis postoperatively (no benefit, increases resistance)",
+              "Administer BEFORE skin incision (not after cord clamping, reduces SSI 50%)"
+            ],
+            "timeout_checklist": [
+              "Is antibiotic given within 60 minutes BEFORE skin incision? (NOT after cord clamping)",
+              "Is correct antibiotic chosen? (Cefazolin preferred)",
+              "Is correct dose given? (Weight-based: cefazolin 2-3g)",
+              "Is single dose only? (No postoperative doses needed)",
+              "Is GBS prophylaxis given if GBS positive? (Penicillin, separate from surgical prophylaxis)",
+              "Is glucose controlled? (Target <180mg/dL)"
+            ],
+            "avoid_unnecessary_treatment": "Do NOT administer antibiotics AFTER cord clamping (old practice, increases SSI 2x). Do NOT continue prophylaxis postoperatively (single dose adequate). Do NOT use broad-spectrum antibiotics (cefazolin adequate).",
+            "diagnostic_stewardship": "Do NOT obtain cultures preoperatively (prophylaxis, not treatment).",
+            "prevention": "Administer antibiotics BEFORE skin incision (not after cord clamping). Glucose control. Minimize operative time. Appropriate hair removal. Chlorhexidine-alcohol skin prep."
+          },
+          "references": []
+        },
+        "references": {
+          "id": "references",
+          "title": "References",
+          "content": {},
+          "references": [
+            {
+              "label": "ASHP/IDSA/SIS/SHEA Guidelines for Antimicrobial Prophylaxis in Surgery (2013)",
+              "url": "https://www.idsociety.org/practice-guideline/antimicrobial-prophylaxis-in-surgery/"
+            },
+            {
+              "label": "CDC Surgical Site Infection Prevention Guideline (2024)",
+              "url": "https://www.cdc.gov/infection-control/hcp/surgical-site-infection/index.html"
+            },
+            {
+              "label": "ACOG Committee Opinion on Antibiotic Prophylaxis for Cesarean Delivery (2018)",
+              "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion"
+            },
+            {
+              "label": "Sanford Guide to Antimicrobial Therapy (2025)",
+              "url": "https://www.sanfordguide.com/"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
