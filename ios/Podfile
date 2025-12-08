@@ -2,6 +2,8 @@ platform :ios, '13.0'
 ENV['COCOAPODS_DISABLE_STATS'] = 'true'
 
 def flutter_root
+  env_root = ENV['FLUTTER_ROOT']
+  return env_root if env_root && File.directory?(env_root)
   generated_xcconfig = File.expand_path(File.join('..', 'Flutter', 'Generated.xcconfig'), __FILE__)
   unless File.exist?(generated_xcconfig)
     raise "#{generated_xcconfig} must exist. Run 'flutter pub get' first."
