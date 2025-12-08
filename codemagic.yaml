@@ -3,7 +3,7 @@ workflows:
     name: iOS Release
     environment:
       flutter: 3.24.5
-      xcode: 15.4
+      xcode: 16.2
     scripts:
       - name: Clean Flutter
         script: flutter clean
