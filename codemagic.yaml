@@ -2,15 +2,40 @@ workflows:
   ios_release:
     name: iOS Release
     environment:
-      flutter: stable
-      xcode: 16.1
+      flutter: 3.24.5
+      xcode: 15.4
     scripts:
-      - name: Flutter clean
+      - name: Clean Flutter
         script: flutter clean
-      - name: Install dependencies
+
+      - name: Pub get
         script: flutter pub get
-      - name: Build iOS release (no tree shake icons)
-        script: flutter build ios --release --no-tree-shake-icons --verbose
+
+      - name: Remove old Pods
+        script: |
+          cd ios
+          rm -rf Pods
+          rm -rf Podfile.lock
+          rm -rf Flutter/Flutter.framework
+          rm -rf Flutter/App.framework
+          cd ..
+
+      - name: Install working CocoaPods version
+        script: |
+          sudo gem uninstall cocoapods -a -x || true
+          sudo gem install cocoapods -v 1.12.1
+          pod --version
+
+      - name: Pod install
+        script: |
+          cd ios
+          pod repo update
+          pod install
+          cd ..
+
+      - name: Build iOS Release
+        script: flutter build ios --release --no-tree-shake-icons
+
     artifacts:
       - build/ios/**/*.ipa
       - build/app/outputs/**
