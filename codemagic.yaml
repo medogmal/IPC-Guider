@@ -9,6 +9,11 @@ workflows:
         script: flutter clean
       - name: Install dependencies
         script: flutter pub get
+      - name: CocoaPods install
+        script: |
+          cd ios
+          pod repo update || true
+          pod install
       - name: Build iOS release (no tree shake icons)
         script: flutter build ios --release --no-tree-shake-icons
     artifacts:
