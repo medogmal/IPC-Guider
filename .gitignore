@@ -50,3 +50,4 @@ android/app/build/
 *.jks
 *.keystore
 android/key.properties
+android/app/upload-key.pem
