@@ -2,8 +2,8 @@ workflows:
   ios_release:
     name: iOS Release
     environment:
-      flutter: 3.10.5
-      xcode: 16.2
+      flutter: stable
+      xcode: latest
     scripts:
       - name: Clean Flutter
         script: flutter clean
@@ -114,8 +114,8 @@ workflows:
   default_workflow:
     name: Default Workflow
     environment:
-      flutter: 3.10.5
-      xcode: 16.2
+      flutter: stable
+      xcode: latest
     scripts:
       - name: Clean Flutter
         script: flutter clean
