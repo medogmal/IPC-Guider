@@ -65,6 +65,15 @@ post_install do |installer|
       header_paths << hp
       framework_paths << File.dirname(hp)
     end
+    # Fallback to engine artifacts under FLUTTER_ROOT if Pods path is missing
+    begin
+      engine_root = File.join(flutter_root, 'bin', 'cache', 'artifacts', 'engine', 'ios')
+      Dir.glob(File.join(engine_root, '**', 'Flutter.framework', 'Headers')).each do |hp|
+        header_paths << hp
+        framework_paths << File.dirname(hp)
+      end
+    rescue
+    end
     installer.pods_project.targets.each do |t|
       t.build_configurations.each do |config|
         config.build_settings['ENABLE_BITCODE'] = 'NO'
