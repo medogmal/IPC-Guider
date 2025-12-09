@@ -41,6 +41,35 @@ workflows:
           pod install
           cd ..
 
+      - name: Fix iOS App Icons (remove alpha)
+        script: |
+          ICONSET_DIR="ios/Runner/Assets.xcassets/AppIcon.appiconset"
+          if [ -d "$ICONSET_DIR" ]; then
+            if command -v magick >/dev/null 2>&1; then
+              for f in "$ICONSET_DIR"/*.png; do
+                [ -f "$f" ] || continue
+                magick "$f" -background white -alpha remove -alpha off -flatten "$f"
+              done
+            else
+              python3 - << 'PY'
+import os
+from PIL import Image
+iconset_dir = "ios/Runner/Assets.xcassets/AppIcon.appiconset"
+for fname in os.listdir(iconset_dir):
+    if fname.lower().endswith('.png'):
+        p = os.path.join(iconset_dir, fname)
+        im = Image.open(p)
+        has_alpha = (im.mode in ('RGBA','LA')) or (im.mode=='P' and 'transparency' in im.info)
+        if has_alpha:
+            if im.mode != 'RGBA':
+                im = im.convert('RGBA')
+            bg = Image.new('RGB', im.size, (255,255,255))
+            bg.paste(im, mask=im.split()[3])
+            bg.save(p, 'PNG')
+PY
+            fi
+          fi
+
       - name: Build iOS Release
         script: flutter build ios --release --no-tree-shake-icons --verbose
 
@@ -88,6 +117,35 @@ workflows:
           pod repo update
           pod install
           cd ..
+
+      - name: Fix iOS App Icons (remove alpha)
+        script: |
+          ICONSET_DIR="ios/Runner/Assets.xcassets/AppIcon.appiconset"
+          if [ -d "$ICONSET_DIR" ]; then
+            if command -v magick >/dev/null 2>&1; then
+              for f in "$ICONSET_DIR"/*.png; do
+                [ -f "$f" ] || continue
+                magick "$f" -background white -alpha remove -alpha off -flatten "$f"
+              done
+            else
+              python3 - << 'PY'
+import os
+from PIL import Image
+iconset_dir = "ios/Runner/Assets.xcassets/AppIcon.appiconset"
+for fname in os.listdir(iconset_dir):
+    if fname.lower().endswith('.png'):
+        p = os.path.join(iconset_dir, fname)
+        im = Image.open(p)
+        has_alpha = (im.mode in ('RGBA','LA')) or (im.mode=='P' and 'transparency' in im.info)
+        if has_alpha:
+            if im.mode != 'RGBA':
+                im = im.convert('RGBA')
+            bg = Image.new('RGB', im.size, (255,255,255))
+            bg.paste(im, mask=im.split()[3])
+            bg.save(p, 'PNG')
+PY
+            fi
+          fi
 
       - name: Build IPA with export options
         script: |
