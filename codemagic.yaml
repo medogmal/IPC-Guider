@@ -62,7 +62,7 @@ workflows:
             fi
             for f in "$ICONSET_DIR"/*.png; do
               [ -f "$f" ] || continue
-              magick "$f" -background white -alpha remove -alpha off -flatten "$f"
+              magick "$f" -background white -alpha remove -alpha off -flatten -define png:color-type=2 -strip "$f"
             done
           fi
 
@@ -158,7 +158,7 @@ workflows:
             fi
             for f in "$ICONSET_DIR"/*.png; do
               [ -f "$f" ] || continue
-              magick "$f" -background white -alpha remove -alpha off -flatten "$f"
+              magick "$f" -background white -alpha remove -alpha off -flatten -define png:color-type=2 -strip "$f"
             done
           fi
 
