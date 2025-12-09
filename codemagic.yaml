@@ -92,7 +92,7 @@ workflows:
       - name: Build IPA with export options
         script: |
           if [ -f /Users/builder/export_options.plist ]; then
-            flutter build ipa --release --export-options-plist /Users/builder/export_options.plist --verbose
+            flutter build ipa --release --no-tree-shake-icons --export-options-plist /Users/builder/export_options.plist --verbose
           else
             flutter build ios --release --no-tree-shake-icons --verbose
           fi
