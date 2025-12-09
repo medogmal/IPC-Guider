@@ -59,6 +59,7 @@ post_install do |installer|
   end
   begin
     pods_root = installer.sandbox.root.to_s
+    project_dir = File.dirname(File.realpath(__FILE__))
     header_paths = []
     framework_paths = []
     Dir.glob(File.join(pods_root, 'Flutter', 'Flutter.xcframework', '**', 'Flutter.framework', 'Headers')).each do |hp|
@@ -74,6 +75,11 @@ post_install do |installer|
       end
     rescue
     end
+    # Also include local ios/Flutter directory if legacy frameworks exist
+    Dir.glob(File.join(project_dir, 'Flutter', '**', 'Flutter.framework', 'Headers')).each do |hp|
+      header_paths << hp
+      framework_paths << File.dirname(hp)
+    end
     installer.pods_project.targets.each do |t|
       t.build_configurations.each do |config|
         config.build_settings['ENABLE_BITCODE'] = 'NO'
@@ -81,7 +87,7 @@ post_install do |installer|
         config.build_settings['CLANG_ENABLE_MODULES'] = 'YES'
         current_headers = config.build_settings['HEADER_SEARCH_PATHS'] || "$(inherited)"
         current_frameworks = config.build_settings['FRAMEWORK_SEARCH_PATHS'] || "$(inherited)"
-        headers = "#{current_headers} $(PODS_ROOT)/Headers/Public #{header_paths.join(' ')}"
+        headers = "#{current_headers} $(PODS_ROOT)/Headers/Public #{header_paths.join(' ')} #{project_dir}/Flutter"
         frameworks = "#{current_frameworks} $(PODS_ROOT)/** #{framework_paths.join(' ')}"
         config.build_settings['HEADER_SEARCH_PATHS'] = headers
         config.build_settings['FRAMEWORK_SEARCH_PATHS'] = frameworks
