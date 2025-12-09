@@ -82,21 +82,21 @@ post_install do |installer|
     framework_paths = []
     Dir.glob(File.join(pods_root, 'Flutter', 'Flutter.xcframework', '**', 'Flutter.framework', 'Headers')).each do |hp|
       header_paths << hp
-      framework_paths << File.dirname(hp)
+      framework_paths << File.expand_path('..', File.dirname(hp))
     end
     # Fallback to engine artifacts under FLUTTER_ROOT if Pods path is missing
     begin
       engine_root = File.join(flutter_root, 'bin', 'cache', 'artifacts', 'engine', 'ios')
       Dir.glob(File.join(engine_root, '**', 'Flutter.framework', 'Headers')).each do |hp|
         header_paths << hp
-        framework_paths << File.dirname(hp)
+        framework_paths << File.expand_path('..', File.dirname(hp))
       end
     rescue
     end
     # Also include local ios/Flutter directory if legacy frameworks exist
     Dir.glob(File.join(project_dir, 'Flutter', '**', 'Flutter.framework', 'Headers')).each do |hp|
       header_paths << hp
-      framework_paths << File.dirname(hp)
+      framework_paths << File.expand_path('..', File.dirname(hp))
     end
     installer.pods_project.targets.each do |t|
       t.build_configurations.each do |config|
