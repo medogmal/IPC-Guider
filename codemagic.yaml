@@ -60,7 +60,7 @@ workflows:
                 magick "$f" -background white -alpha remove -alpha off -flatten "$f"
               done
             else
-              python3 - << 'PY'
+              cat > /tmp/remove_alpha.py <<'PY'
 import os
 from PIL import Image
 iconset_dir = "ios/Runner/Assets.xcassets/AppIcon.appiconset"
@@ -76,6 +76,7 @@ for fname in os.listdir(iconset_dir):
             bg.paste(im, mask=im.split()[3])
             bg.save(p, 'PNG')
 PY
+              python3 /tmp/remove_alpha.py
             fi
           fi
 
@@ -169,7 +170,7 @@ PY
                 magick "$f" -background white -alpha remove -alpha off -flatten "$f"
               done
             else
-              python3 - << 'PY'
+              cat > /tmp/remove_alpha.py <<'PY'
 import os
 from PIL import Image
 iconset_dir = "ios/Runner/Assets.xcassets/AppIcon.appiconset"
@@ -185,6 +186,7 @@ for fname in os.listdir(iconset_dir):
             bg.paste(im, mask=im.split()[3])
             bg.save(p, 'PNG')
 PY
+              python3 /tmp/remove_alpha.py
             fi
           fi
 
