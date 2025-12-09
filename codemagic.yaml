@@ -26,18 +26,23 @@ workflows:
           sudo gem install cocoapods -v 1.12.1
           pod --version
 
+      - name: Set FLUTTER_ROOT for subsequent steps
+        script: |
+          echo "export FLUTTER_ROOT=$(flutter sdk-path)" >> $CM_ENV
+
       - name: Precache iOS engine artifacts
         script: flutter precache --ios
 
       - name: Pod install
         script: |
           cd ios
+          pod deintegrate || true
           pod repo update
           pod install
           cd ..
 
       - name: Build iOS Release
-        script: flutter build ios --release --no-tree-shake-icons
+        script: flutter build ios --release --no-tree-shake-icons --verbose
 
     artifacts:
       - build/ios/**/*.ipa
