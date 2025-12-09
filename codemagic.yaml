@@ -15,10 +15,13 @@ workflows:
         script: dart run flutter_launcher_icons
 
       - name: Generate iOS Splash (flutter_native_splash)
-        script: dart run flutter_native_splash
+        script: dart run flutter_native_splash:create
 
-      - name: Install Pillow for icon processing
-        script: python3 -m pip install --user pillow
+      - name: Install ImageMagick (if missing)
+        script: |
+          if ! command -v magick >/dev/null 2>&1; then
+            brew list imagemagick >/dev/null 2>&1 || brew install imagemagick
+          fi
 
       - name: Remove old Pods
         script: |
@@ -54,30 +57,13 @@ workflows:
         script: |
           ICONSET_DIR="ios/Runner/Assets.xcassets/AppIcon.appiconset"
           if [ -d "$ICONSET_DIR" ]; then
-            if command -v magick >/dev/null 2>&1; then
-              for f in "$ICONSET_DIR"/*.png; do
-                [ -f "$f" ] || continue
-                magick "$f" -background white -alpha remove -alpha off -flatten "$f"
-              done
-            else
-              cat > /tmp/remove_alpha.py <<'PY'
-import os
-from PIL import Image
-iconset_dir = "ios/Runner/Assets.xcassets/AppIcon.appiconset"
-for fname in os.listdir(iconset_dir):
-    if fname.lower().endswith('.png'):
-        p = os.path.join(iconset_dir, fname)
-        im = Image.open(p)
-        has_alpha = (im.mode in ('RGBA','LA')) or (im.mode=='P' and 'transparency' in im.info)
-        if has_alpha:
-            if im.mode != 'RGBA':
-                im = im.convert('RGBA')
-            bg = Image.new('RGB', im.size, (255,255,255))
-            bg.paste(im, mask=im.split()[3])
-            bg.save(p, 'PNG')
-PY
-              python3 /tmp/remove_alpha.py
+            if ! command -v magick >/dev/null 2>&1; then
+              brew list imagemagick >/dev/null 2>&1 || brew install imagemagick
             fi
+            for f in "$ICONSET_DIR"/*.png; do
+              [ -f "$f" ] || continue
+              magick "$f" -background white -alpha remove -alpha off -flatten "$f"
+            done
           fi
 
       - name: Verify iOS Marketing Icon has no alpha
@@ -125,10 +111,13 @@ PY
         script: dart run flutter_launcher_icons
 
       - name: Generate iOS Splash (flutter_native_splash)
-        script: dart run flutter_native_splash
+        script: dart run flutter_native_splash:create
 
-      - name: Install Pillow for icon processing
-        script: python3 -m pip install --user pillow
+      - name: Install ImageMagick (if missing)
+        script: |
+          if ! command -v magick >/dev/null 2>&1; then
+            brew list imagemagick >/dev/null 2>&1 || brew install imagemagick
+          fi
 
       - name: Remove old Pods
         script: |
@@ -164,30 +153,13 @@ PY
         script: |
           ICONSET_DIR="ios/Runner/Assets.xcassets/AppIcon.appiconset"
           if [ -d "$ICONSET_DIR" ]; then
-            if command -v magick >/dev/null 2>&1; then
-              for f in "$ICONSET_DIR"/*.png; do
-                [ -f "$f" ] || continue
-                magick "$f" -background white -alpha remove -alpha off -flatten "$f"
-              done
-            else
-              cat > /tmp/remove_alpha.py <<'PY'
-import os
-from PIL import Image
-iconset_dir = "ios/Runner/Assets.xcassets/AppIcon.appiconset"
-for fname in os.listdir(iconset_dir):
-    if fname.lower().endswith('.png'):
-        p = os.path.join(iconset_dir, fname)
-        im = Image.open(p)
-        has_alpha = (im.mode in ('RGBA','LA')) or (im.mode=='P' and 'transparency' in im.info)
-        if has_alpha:
-            if im.mode != 'RGBA':
-                im = im.convert('RGBA')
-            bg = Image.new('RGB', im.size, (255,255,255))
-            bg.paste(im, mask=im.split()[3])
-            bg.save(p, 'PNG')
-PY
-              python3 /tmp/remove_alpha.py
+            if ! command -v magick >/dev/null 2>&1; then
+              brew list imagemagick >/dev/null 2>&1 || brew install imagemagick
             fi
+            for f in "$ICONSET_DIR"/*.png; do
+              [ -f "$f" ] || continue
+              magick "$f" -background white -alpha remove -alpha off -flatten "$f"
+            done
           fi
 
       - name: Verify iOS Marketing Icon has no alpha
