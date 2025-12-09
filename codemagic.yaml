@@ -18,7 +18,7 @@ workflows:
         script: dart run flutter_native_splash
 
       - name: Install Pillow for icon processing
-        script: pip3 install --user pillow
+        script: python3 -m pip install --user pillow
 
       - name: Remove old Pods
         script: |
@@ -128,7 +128,7 @@ PY
         script: dart run flutter_native_splash
 
       - name: Install Pillow for icon processing
-        script: pip3 install --user pillow
+        script: python3 -m pip install --user pillow
 
       - name: Remove old Pods
         script: |
