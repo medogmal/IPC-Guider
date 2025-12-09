@@ -190,9 +190,21 @@ class QuickActionsService {
       }
 
       final List<dynamic> jsonList = json.decode(jsonString);
-      final List<QuickActionItem> actions = jsonList
-          .map((json) => QuickActionItem.fromJson(json as Map<String, dynamic>))
-          .toList();
+      final all = getAllAvailableActions();
+      final byId = {for (final a in all) a.id: a};
+      final List<QuickActionItem> actions = [];
+      for (final item in jsonList) {
+        if (item is String) {
+          final found = byId[item];
+          if (found != null) actions.add(found);
+        } else if (item is Map<String, dynamic>) {
+          final id = item['id'] as String?;
+          if (id != null) {
+            final found = byId[id];
+            if (found != null) actions.add(found);
+          }
+        }
+      }
 
       // Validate that actions still exist in available actions
       final availableIds = getAllAvailableActions().map((a) => a.id).toSet();
@@ -216,8 +228,8 @@ class QuickActionsService {
       final limitedActions = actions.take(_maxQuickActions).toList();
 
       final prefs = await SharedPreferences.getInstance();
-      final jsonList = limitedActions.map((a) => a.toJson()).toList();
-      final jsonString = json.encode(jsonList);
+      final ids = limitedActions.map((a) => a.id).toList();
+      final jsonString = json.encode(ids);
 
       return await prefs.setString(_storageKey, jsonString);
     } catch (e) {
@@ -255,4 +267,3 @@ class QuickActionsService {
     return grouped;
   }
 }
-
