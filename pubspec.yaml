@@ -48,6 +48,7 @@ dev_dependencies:
     sdk: flutter
   flutter_lints: ^3.0.1
   flutter_launcher_icons: ^0.14.1
+  flutter_native_splash: ^2.4.0
   hive_generator: ^2.0.1
   build_runner: ^2.4.13
 
@@ -85,3 +86,9 @@ flutter_launcher_icons:
   macos:
     generate: true
     image_path: "assets/icons/ipc_icon.png"
+flutter_native_splash:
+  ios: true
+  android: false
+  color: "#FFFFFF"
+  image: assets/icons/ipc_icon_1024.png
+  ios_content_mode: center
