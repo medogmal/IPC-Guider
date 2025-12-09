@@ -14,6 +14,9 @@ workflows:
       - name: Generate iOS App Icons (flutter_launcher_icons)
         script: dart run flutter_launcher_icons
 
+      - name: Install Pillow for icon processing
+        script: pip3 install --user pillow
+
       - name: Remove old Pods
         script: |
           cd ios
@@ -73,6 +76,13 @@ PY
             fi
           fi
 
+      - name: Verify iOS Marketing Icon has no alpha
+        script: |
+          ICON="ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png"
+          if [ -f "$ICON" ]; then
+            sips -g hasAlpha "$ICON" | grep -q "no" && echo "Marketing icon has no alpha" || { echo "Alpha still present"; exit 1; }
+          fi
+
       - name: Build iOS Release
         script: flutter build ios --release --no-tree-shake-icons --verbose
 
@@ -93,6 +103,9 @@ PY
 
       - name: Generate iOS App Icons (flutter_launcher_icons)
         script: dart run flutter_launcher_icons
+
+      - name: Install Pillow for icon processing
+        script: pip3 install --user pillow
 
       - name: Remove old Pods
         script: |
@@ -151,6 +164,13 @@ for fname in os.listdir(iconset_dir):
             bg.save(p, 'PNG')
 PY
             fi
+          fi
+
+      - name: Verify iOS Marketing Icon has no alpha
+        script: |
+          ICON="ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png"
+          if [ -f "$ICON" ]; then
+            sips -g hasAlpha "$ICON" | grep -q "no" && echo "Marketing icon has no alpha" || { echo "Alpha still present"; exit 1; }
           fi
 
       - name: Build IPA with export options
