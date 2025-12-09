@@ -23,6 +23,15 @@ workflows:
             brew list imagemagick >/dev/null 2>&1 || brew install imagemagick
           fi
 
+      - name: If JPG icon exists, convert to PNG path
+        script: |
+          ICON_JPG="assets/icons/ipc_icon_1024.jpg"
+          ICON_PNG="assets/icons/ipc_icon_1024.png"
+          if [ -f "$ICON_JPG" ]; then
+            magick "$ICON_JPG" -background white -alpha remove -alpha off -flatten -colorspace sRGB -type TrueColor -define png:bit-depth=8 -define png:color-type=2 -strip "$ICON_PNG"
+            echo "Converted JPG to PNG at $ICON_PNG"
+          fi
+
       - name: Preprocess 1024 icon asset (flatten, sRGB, no alpha)
         script: |
           ICON_SRC="assets/icons/ipc_icon_1024.png"
@@ -133,6 +142,15 @@ workflows:
         script: |
           if ! command -v magick >/dev/null 2>&1; then
             brew list imagemagick >/dev/null 2>&1 || brew install imagemagick
+          fi
+
+      - name: If JPG icon exists, convert to PNG path
+        script: |
+          ICON_JPG="assets/icons/ipc_icon_1024.jpg"
+          ICON_PNG="assets/icons/ipc_icon_1024.png"
+          if [ -f "$ICON_JPG" ]; then
+            magick "$ICON_JPG" -background white -alpha remove -alpha off -flatten -colorspace sRGB -type TrueColor -define png:bit-depth=8 -define png:color-type=2 -strip "$ICON_PNG"
+            echo "Converted JPG to PNG at $ICON_PNG"
           fi
 
       - name: Preprocess 1024 icon asset (flatten, sRGB, no alpha)
