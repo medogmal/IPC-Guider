@@ -70,6 +70,8 @@ flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
   image_path: "assets/icons/ipc_icon.png"
+  image_path_ios: "assets/icons/ipc_icon_1024.png"
+  remove_alpha_ios: true
   min_sdk_android: 21 # android min sdk min:16, default 21
   web:
     generate: true

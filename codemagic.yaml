@@ -11,6 +11,9 @@ workflows:
       - name: Pub get
         script: flutter pub get
 
+      - name: Generate iOS App Icons (flutter_launcher_icons)
+        script: dart run flutter_launcher_icons
+
       - name: Remove old Pods
         script: |
           cd ios
@@ -87,6 +90,9 @@ PY
 
       - name: Pub get
         script: flutter pub get
+
+      - name: Generate iOS App Icons (flutter_launcher_icons)
+        script: dart run flutter_launcher_icons
 
       - name: Remove old Pods
         script: |
