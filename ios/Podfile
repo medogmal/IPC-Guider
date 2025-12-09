@@ -6,6 +6,16 @@ install! 'cocoapods', :warn_for_unused_master_specs_repo => false
 def flutter_root
   env_root = ENV['FLUTTER_ROOT']
   return env_root if env_root && File.directory?(env_root)
+  begin
+    which_flutter = `which flutter`.strip
+    if which_flutter && which_flutter.length > 0 && File.exist?(which_flutter)
+      real = File.realpath(which_flutter)
+      candidate = File.expand_path('..', File.dirname(real))
+      return candidate if File.directory?(candidate)
+    end
+  rescue => e
+    puts e
+  end
   generated_xcconfig = File.expand_path(File.join('..', 'Flutter', 'Generated.xcconfig'), __FILE__)
   unless File.exist?(generated_xcconfig)
     raise "#{generated_xcconfig} must exist. Run 'flutter pub get' first."
@@ -27,6 +37,14 @@ target 'Runner' do
 end
 
 post_install do |installer|
+  begin
+    fr = flutter_root
+    flutter_bin = File.join(fr, 'bin', 'flutter')
+    system("#{flutter_bin} --version")
+    system("#{flutter_bin} precache --ios")
+  rescue => e
+    puts e
+  end
   begin
     if defined?(flutter_post_install)
       flutter_post_install(installer)
@@ -87,10 +105,12 @@ post_install do |installer|
         config.build_settings['CLANG_ENABLE_MODULES'] = 'YES'
         current_headers = config.build_settings['HEADER_SEARCH_PATHS'] || "$(inherited)"
         current_frameworks = config.build_settings['FRAMEWORK_SEARCH_PATHS'] || "$(inherited)"
+        current_ldflags = config.build_settings['OTHER_LDFLAGS'] || "$(inherited)"
         headers = "#{current_headers} $(PODS_ROOT)/Headers/Public #{header_paths.join(' ')} #{project_dir}/Flutter"
-        frameworks = "#{current_frameworks} $(PODS_ROOT)/** #{framework_paths.join(' ')}"
+        frameworks = "#{current_frameworks} $(PODS_ROOT)/** #{framework_paths.join(' ')} $(FLUTTER_ROOT)/bin/cache/artifacts/engine/ios/**"
         config.build_settings['HEADER_SEARCH_PATHS'] = headers
         config.build_settings['FRAMEWORK_SEARCH_PATHS'] = frameworks
+        config.build_settings['OTHER_LDFLAGS'] = "#{current_ldflags} -framework Flutter"
       end
     end
   rescue => e
