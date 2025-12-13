@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:ui';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -2101,11 +2102,14 @@ class _EpidemicCurveGeneratorState extends State<EpidemicCurveGenerator> {
           screenshotBytes: image,
         );
 
+        final box = context.findRenderObject() as RenderBox?;
+        final origin = box != null ? (box.localToGlobal(Offset.zero) & box.size) : const Rect.fromLTWH(0, 0, 1, 1);
         await Share.shareXFiles(
           [XFile.fromData(watermarkedImage, name: filename, mimeType: 'image/png')],
           text: 'Enhanced Epidemic Curve - ${_outbreakPattern?.type ?? 'Unknown Pattern'}\n'
                 'Generated: ${timestamp.toString().split('.')[0]}\n'
                 'Total Cases: ${_stats?.totalCases ?? 0}',
+          sharePositionOrigin: origin,
         );
       }
     } catch (e) {

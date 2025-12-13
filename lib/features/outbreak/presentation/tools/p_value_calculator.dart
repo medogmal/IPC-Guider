@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:ui';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -1652,6 +1653,8 @@ class _PValueCalculatorState extends ConsumerState<PValueCalculator> {
         final timestamp = DateTime.now();
         final filename = 'ipc_pvalue_${timestamp.millisecondsSinceEpoch}.png';
         
+        final box = context.findRenderObject() as RenderBox?;
+        final origin = box != null ? (box.localToGlobal(Offset.zero) & box.size) : const Rect.fromLTWH(0, 0, 1, 1);
         await Share.shareXFiles(
           [XFile.fromData(image, name: filename, mimeType: 'image/png')],
           text: 'P-Value Analysis\n'
@@ -1659,6 +1662,7 @@ class _PValueCalculatorState extends ConsumerState<PValueCalculator> {
                 'P-Value: ${_pValue!.toStringAsFixed(6)}\n'
                 'Significance: $_significance\n'
                 'Generated: ${timestamp.toString().split('.')[0]}',
+          sharePositionOrigin: origin,
         );
       }
     } catch (e) {

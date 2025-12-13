@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:ui';
 import 'dart:io';
 import '../../../../../core/design/design_tokens.dart';
 import '../../../../../core/services/unified_export_service.dart';
@@ -1716,9 +1717,12 @@ class _SurgicalProphylaxisAdvisorScreenState extends State<SurgicalProphylaxisAd
       final imageFile = File(imagePath);
       await imageFile.writeAsBytes(image);
 
+      final box = context.findRenderObject() as RenderBox?;
+      final origin = box != null ? (box.localToGlobal(Offset.zero) & box.size) : const Rect.fromLTWH(0, 0, 1, 1);
       await Share.shareXFiles(
         [XFile(imagePath)],
         subject: 'Surgical Prophylaxis Recommendation',
+        sharePositionOrigin: origin,
       );
 
       if (mounted) {
@@ -1741,4 +1745,3 @@ class _SurgicalProphylaxisAdvisorScreenState extends State<SurgicalProphylaxisAd
     }
   }
 }
-

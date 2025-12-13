@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:ui';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -1464,11 +1465,14 @@ class _HistogramToolState extends State<HistogramTool> {
           screenshotBytes: image,
         );
 
+        final box = context.findRenderObject() as RenderBox?;
+        final origin = box != null ? (box.localToGlobal(Offset.zero) & box.size) : const Rect.fromLTWH(0, 0, 1, 1);
         await Share.shareXFiles(
           [XFile.fromData(watermarkedImage, name: filename, mimeType: 'image/png')],
           text: 'Histogram - $_selectedVariable\n'
                 'Generated: ${timestamp.toString().split('.')[0]}\n'
                 'N = ${_stats?.n ?? 0}',
+          sharePositionOrigin: origin,
         );
       }
     } catch (e) {

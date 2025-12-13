@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:pdf/pdf.dart';
@@ -135,9 +136,12 @@ class UnifiedExportService {
       );
 
       // Share the file
+      final box = context.findRenderObject() as RenderBox?;
+      final origin = box != null ? (box.localToGlobal(Offset.zero) & box.size) : const Rect.fromLTWH(0, 0, 1, 1);
       await Share.shareXFiles(
         [file],
         text: shareText ?? '$appName Export - $filename',
+        sharePositionOrigin: origin,
       );
 
       if (context.mounted) {
@@ -776,9 +780,12 @@ class UnifiedExportService {
         mimeType: 'application/pdf',
       );
       
+      final box = context.findRenderObject() as RenderBox?;
+      final origin = box != null ? (box.localToGlobal(Offset.zero) & box.size) : const Rect.fromLTWH(0, 0, 1, 1);
       await Share.shareXFiles(
         [file],
         text: 'IPC Guider - $toolName Results',
+        sharePositionOrigin: origin,
       );
       
       if (context.mounted) {
@@ -956,9 +963,12 @@ class UnifiedExportService {
         mimeType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
       );
 
+      final box = context.findRenderObject() as RenderBox?;
+      final origin = box != null ? (box.localToGlobal(Offset.zero) & box.size) : const Rect.fromLTWH(0, 0, 1, 1);
       await Share.shareXFiles(
         [file],
         text: 'IPC Guider - $toolName Results',
+        sharePositionOrigin: origin,
       );
 
       if (context.mounted) {
@@ -1042,9 +1052,12 @@ class UnifiedExportService {
         mimeType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
       );
 
+      final box = context.findRenderObject() as RenderBox?;
+      final origin = box != null ? (box.localToGlobal(Offset.zero) & box.size) : const Rect.fromLTWH(0, 0, 1, 1);
       await Share.shareXFiles(
         [file],
         text: 'IPC Guider - $toolName Data',
+        sharePositionOrigin: origin,
       );
 
       if (context.mounted) {
@@ -1297,9 +1310,12 @@ class UnifiedExportService {
       );
 
       // Share the file
+      final box = context.findRenderObject() as RenderBox?;
+      final origin = box != null ? (box.localToGlobal(Offset.zero) & box.size) : const Rect.fromLTWH(0, 0, 1, 1);
       await Share.shareXFiles(
         [file],
         text: 'IPC Guider - $toolName Results',
+        sharePositionOrigin: origin,
       );
 
       if (context.mounted) {

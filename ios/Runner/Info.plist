@@ -1,77 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>CFBundleDevelopmentRegion</key>
-	<string>$(DEVELOPMENT_LANGUAGE)</string>
-	<key>CFBundleDisplayName</key>
-	<string>IPC Guider</string>
-	<key>CFBundleExecutable</key>
-	<string>$(EXECUTABLE_NAME)</string>
-	<key>CFBundleIdentifier</key>
-	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
-	<key>CFBundleInfoDictionaryVersion</key>
-	<string>6.0</string>
-	<key>CFBundleName</key>
-	<string>IPC Guider</string>
-	<key>CFBundlePackageType</key>
-	<string>APPL</string>
-	<key>CFBundleShortVersionString</key>
-	<string>$(FLUTTER_BUILD_NAME)</string>
-	<key>CFBundleSignature</key>
-	<string>????</string>
-	<key>CFBundleVersion</key>
-	<string>$(FLUTTER_BUILD_NUMBER)</string>
-	<key>LSRequiresIPhoneOS</key>
-	<true/>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
-	<key>UISupportedInterfaceOrientations</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>UISupportedInterfaceOrientations~ipad</key>
-	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationPortraitUpsideDown</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
-	</array>
-	<key>CADisableMinimumFrameDurationOnPhone</key>
-	<true/>
-	<key>UIApplicationSupportsIndirectInputEvents</key>
-	<true/>
-	<!-- Privacy Descriptions (Required by App Store) -->
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>IPC Guider needs access to your photo library to save exported calculator results and charts as images.</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>IPC Guider needs permission to save exported data, charts, and reports to your photo library.</string>
-	<!-- App Store Metadata -->
-	<key>NSPrivacyPolicyURL</key>
-	<string>https://superyazeed.github.io/ipcguider-privacy/</string>
-	<key>NSAppTransportSecurity</key>
 	<dict>
-		<key>NSAllowsArbitraryLoads</key>
+		<key>CFBundleDevelopmentRegion</key>
+		<string>$(DEVELOPMENT_LANGUAGE)</string>
+		<key>CFBundleDisplayName</key>
+		<string>IPC Guider</string>
+		<key>CFBundleExecutable</key>
+		<string>$(EXECUTABLE_NAME)</string>
+		<key>CFBundleIdentifier</key>
+		<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+		<key>CFBundleInfoDictionaryVersion</key>
+		<string>6.0</string>
+		<key>CFBundleName</key>
+		<string>IPC Guider</string>
+		<key>CFBundlePackageType</key>
+		<string>APPL</string>
+		<key>CFBundleShortVersionString</key>
+		<string>$(FLUTTER_BUILD_NAME)</string>
+		<key>CFBundleSignature</key>
+		<string>????</string>
+		<key>CFBundleVersion</key>
+		<string>$(FLUTTER_BUILD_NUMBER)</string>
+		<key>LSRequiresIPhoneOS</key>
+		<true/>
+		<key>UILaunchStoryboardName</key>
+		<string>LaunchScreen</string>
+		<key>UIMainStoryboardFile</key>
+		<string>Main</string>
+		<key>UISupportedInterfaceOrientations</key>
+		<array>
+			<string>UIInterfaceOrientationPortrait</string>
+			<string>UIInterfaceOrientationLandscapeLeft</string>
+			<string>UIInterfaceOrientationLandscapeRight</string>
+		</array>
+		<key>UISupportedInterfaceOrientations~ipad</key>
+		<array>
+			<string>UIInterfaceOrientationPortrait</string>
+			<string>UIInterfaceOrientationPortraitUpsideDown</string>
+			<string>UIInterfaceOrientationLandscapeLeft</string>
+			<string>UIInterfaceOrientationLandscapeRight</string>
+		</array>
+		<key>CADisableMinimumFrameDurationOnPhone</key>
+		<true/>
+		<key>UIApplicationSupportsIndirectInputEvents</key>
+		<true/>
+		<!-- Privacy Descriptions (Required by App Store) -->
+		<key>NSPhotoLibraryUsageDescription</key>
+		<string>IPC Guider needs access to your photo library to save exported calculator results and charts as images.</string>
+		<key>NSPhotoLibraryAddUsageDescription</key>
+		<string>IPC Guider needs permission to save exported data, charts, and reports to your photo library.</string>
+		<!-- App Store Metadata -->
+		<key>NSPrivacyPolicyURL</key>
+		<string>https://superyazeed.github.io/ipcguider-privacy/</string>
+		<key>NSAppTransportSecurity</key>
+		<dict>
+			<key>NSAllowsArbitraryLoads</key>
+			<false/>
+		</dict>
+		<!-- URL Schemes for url_launcher (Required for opening external links) -->
+		<key>LSApplicationQueriesSchemes</key>
+		<array>
+			<string>http</string>
+			<string>https</string>
+			<string>mailto</string>
+		</array>
+		<!-- Supported Languages -->
+		<key>CFBundleLocalizations</key>
+		<array>
+			<string>en</string>
+		</array>
+		<!-- App Category -->
+		<key>LSApplicationCategoryType</key>
+		<string>public.app-category.medical</string>
+		<key>UIStatusBarHidden</key>
 		<false/>
 	</dict>
-	<!-- URL Schemes for url_launcher (Required for opening external links) -->
-	<key>LSApplicationQueriesSchemes</key>
-	<array>
-		<string>http</string>
-		<string>https</string>
-		<string>mailto</string>
-	</array>
-	<!-- Supported Languages -->
-	<key>CFBundleLocalizations</key>
-	<array>
-		<string>en</string>
-	</array>
-	<!-- App Category -->
-	<key>LSApplicationCategoryType</key>
-	<string>public.app-category.medical</string>
-</dict>
 </plist>

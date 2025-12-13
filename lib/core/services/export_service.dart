@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:ui';
 import 'package:flutter/foundation.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:share_plus/share_plus.dart';
@@ -42,6 +43,7 @@ class ExportService {
       await Share.shareXFiles(
         [XFile(file.path, name: fileName)],
         subject: 'Export from IPC Guider',
+        sharePositionOrigin: const Rect.fromLTWH(0, 0, 1, 1),
       );
     } catch (e) {
       if (kDebugMode) {
@@ -83,6 +85,7 @@ class ExportService {
       await Share.shareXFiles(
         [XFile(file.path, name: fileName)],
         subject: 'Export from IPC Guider',
+        sharePositionOrigin: const Rect.fromLTWH(0, 0, 1, 1),
       );
     } catch (e) {
       if (kDebugMode) {

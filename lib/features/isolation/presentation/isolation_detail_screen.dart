@@ -68,7 +68,15 @@ class _IsolationDetailScreenState extends ConsumerState<IsolationDetailScreen> {
       final dir = await path_provider.getTemporaryDirectory();
       final file = File('${dir.path}/$filename');
       await file.writeAsBytes(bytes);
-      await Share.shareXFiles([XFile(file.path)], text: 'Isolation signage');
+      final box = context.findRenderObject() as RenderBox?;
+      final origin = box != null
+          ? (box.localToGlobal(ui.Offset.zero) & box.size)
+          : const ui.Rect.fromLTWH(0, 0, 1, 1);
+      await Share.shareXFiles(
+        [XFile(file.path)],
+        text: 'Isolation signage',
+        sharePositionOrigin: origin,
+      );
     } catch (e) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(

@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:ui';
 import 'dart:typed_data';
 import 'package:excel/excel.dart';
 import 'package:csv/csv.dart';
@@ -213,6 +214,7 @@ class HistoryExportService {
         [XFile(file.path, mimeType: mimeType)],
         subject: 'IPC Guider History Export',
         text: 'History export containing ${entries.length} entries',
+        sharePositionOrigin: const Rect.fromLTWH(0, 0, 1, 1),
       );
 
       // Clean up temporary file after a delay

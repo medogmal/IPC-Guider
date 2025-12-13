@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:ui';
 import 'dart:io';
 import 'package:csv/csv.dart';
 import 'package:excel/excel.dart';
@@ -156,6 +157,7 @@ class ExportService {
         [XFile(file.path)],
         text: 'IPC Calculator Export - $fileName',
         subject: 'Calculator Results Export',
+        sharePositionOrigin: const Rect.fromLTWH(0, 0, 1, 1),
       );
 
       return ExportResult.success(
@@ -400,6 +402,7 @@ class ExportService {
         await Share.shareXFiles(
           [XFile(filePath)],
           text: 'IPC Calculator Export',
+          sharePositionOrigin: const Rect.fromLTWH(0, 0, 1, 1),
         );
       }
     } catch (e) {

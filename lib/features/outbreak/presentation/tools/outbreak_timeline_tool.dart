@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:ui';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:share_plus/share_plus.dart';
@@ -1082,11 +1083,14 @@ class _OutbreakTimelineToolState extends State<OutbreakTimelineTool> {
           screenshotBytes: image,
         );
 
+        final box = context.findRenderObject() as RenderBox?;
+        final origin = box != null ? (box.localToGlobal(Offset.zero) & box.size) : const Rect.fromLTWH(0, 0, 1, 1);
         await Share.shareXFiles(
           [XFile.fromData(watermarkedImage, name: filename, mimeType: 'image/png')],
           text: 'Outbreak Timeline\n'
                 'Generated: ${timestamp.toString().split('.')[0]}\n'
                 'Total Events: ${_events.length}',
+          sharePositionOrigin: origin,
         );
       }
     } catch (e) {

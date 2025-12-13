@@ -1,4 +1,5 @@
 import 'package:flutter/foundation.dart';
+import 'dart:ui';
 import 'package:share_plus/share_plus.dart';
 import 'package:path_provider/path_provider.dart';
 import 'dart:io';
@@ -17,6 +18,7 @@ class PlatformExportService {
       await Share.shareXFiles(
         [XFile(tempFile.path, name: fileName, mimeType: mimeType)],
         text: 'IPC Calculator Export - $fileName',
+        sharePositionOrigin: const Rect.fromLTWH(0, 0, 1, 1),
       );
 
       // Clean up the temporary file

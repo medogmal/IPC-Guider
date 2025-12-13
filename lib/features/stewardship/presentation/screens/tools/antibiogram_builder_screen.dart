@@ -2330,10 +2330,13 @@ class _AntibiogramBuilderScreenState extends State<AntibiogramBuilderScreen> {
       await file.writeAsBytes(await pdf.save());
 
       // Share the file
+      final box = context.findRenderObject() as RenderBox?;
+      final origin = box != null ? (box.localToGlobal(ui.Offset.zero) & box.size) : const ui.Rect.fromLTWH(0, 0, 1, 1);
       await Share.shareXFiles(
         [XFile(file.path)],
         subject: 'Cumulative Antibiogram Report',
         text: 'Antibiogram report for ${metadata['facilityName']}',
+        sharePositionOrigin: origin,
       );
 
       _showSuccess('PDF exported successfully');
@@ -2571,10 +2574,13 @@ class _AntibiogramBuilderScreenState extends State<AntibiogramBuilderScreen> {
         await file.writeAsBytes(bytes);
 
         // Share the file
+        final box = context.findRenderObject() as RenderBox?;
+        final origin = box != null ? (box.localToGlobal(ui.Offset.zero) & box.size) : const ui.Rect.fromLTWH(0, 0, 1, 1);
         await Share.shareXFiles(
           [XFile(file.path)],
           subject: 'Cumulative Antibiogram Report',
           text: 'Antibiogram report for ${metadata['facilityName']}',
+          sharePositionOrigin: origin,
         );
 
         _showSuccess('Excel file exported successfully');
@@ -2765,10 +2771,13 @@ class _AntibiogramBuilderScreenState extends State<AntibiogramBuilderScreen> {
       }
 
       // Share the files
+      final box = context.findRenderObject() as RenderBox?;
+      final origin = box != null ? (box.localToGlobal(ui.Offset.zero) & box.size) : const ui.Rect.fromLTWH(0, 0, 1, 1);
       await Share.shareXFiles(
         files,
         subject: 'Cumulative Antibiogram Report (CSV)',
         text: 'Antibiogram report for ${metadata['facilityName']}',
+        sharePositionOrigin: origin,
       );
 
       _showSuccess('CSV files exported successfully');
@@ -2927,10 +2936,13 @@ class _AntibiogramBuilderScreenState extends State<AntibiogramBuilderScreen> {
       await file.writeAsString(buffer.toString());
 
       // Share the file
+      final box = context.findRenderObject() as RenderBox?;
+      final origin = box != null ? (box.localToGlobal(ui.Offset.zero) & box.size) : const ui.Rect.fromLTWH(0, 0, 1, 1);
       await Share.shareXFiles(
         [XFile(file.path)],
         subject: 'Cumulative Antibiogram Report',
         text: 'Antibiogram report for ${metadata['facilityName']}',
+        sharePositionOrigin: origin,
       );
 
       _showSuccess('Text file exported successfully');
@@ -3081,10 +3093,13 @@ class _AntibiogramBuilderScreenState extends State<AntibiogramBuilderScreen> {
       }
 
       // Share the file
+      final box = context.findRenderObject() as RenderBox?;
+      final origin = box != null ? (box.localToGlobal(ui.Offset.zero) & box.size) : const ui.Rect.fromLTWH(0, 0, 1, 1);
       await Share.shareXFiles(
         [XFile(file.path)],
         subject: 'Cumulative Antibiogram Report',
         text: 'Antibiogram report for ${metadata['facilityName']}',
+        sharePositionOrigin: origin,
       );
 
       _showSuccess('Image exported successfully');
